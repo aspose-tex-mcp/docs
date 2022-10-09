@@ -6,7 +6,7 @@ description: TeX Native API สำหรับ .NET, Java และ C++ นี�
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/i18n/upper-banner h1="เรียงไฟล์ TeX บนแพลตฟอร์มใด ๆ" h2="Native APIs เพื่อจัดเรียงและแปลงไฟล์ TeX" logoImageSrc="https://www.aspose.cloud/templates/aspose/img/products/tex/aspose_tex.svg" pfName="" downloadUrl="https://downloads.aspose.com/tex" tryOnlineUrl="https://products.aspose.app/tex/family" >}}
+{{< blocks/products/pf/i18n/upper-banner h1="เรียงไฟล์ TeX บนแพลตฟอร์มใด ๆ" h2="Native APIs เพื่อจัดเรียงและแปลงไฟล์ TeX" logoImageSrc="https://www.aspose.cloud/templates/aspose/img/products/tex/aspose_tex.svg" pfName="" downloadUrl="https://releases.aspose.com/tex" tryOnlineUrl="https://products.aspose.app/tex/family" >}}
 
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/product-card-row title="Aspose.TeX High Code APIs รวมอยู่ด้วย" >}}
@@ -47,6 +47,6 @@ Native Java APIs สำหรับเดสก์ท็อป เว็บ ห�
 
 {{< /blocks/products/pf/i18n/support-learning-resources >}}
 
-{{< blocks/products/pf/i18n/download-section downloadFreeTrialLink="https://downloads.aspose.com/tex" pricingInformationLink="https://purchase.aspose.com/pricing/tex" >}}
+{{< blocks/products/pf/i18n/download-section downloadFreeTrialLink="https://releases.aspose.com/tex" pricingInformationLink="https://purchase.aspose.com/pricing/tex" >}}
 
 {{< /blocks/products/pf/main-wrap-class >}}

@@ -7,7 +7,7 @@ keywords: tex conversion api cpp, tex converter c++ integrate
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/i18n/upper-banner h1="C++ TeX Manipulation Library" h2="Δακτυλογραφήστε και μετατρέψτε αρχεία TeX και LaTeX σε εφαρμογές που βασίζονται στη C++." logoImageSrc="https://www.aspose.cloud/templates/aspose/img/products/tex/headers/aspose_tex-for-cpp.svg" pfName="Aspose.TeX" subTitlepfName="for C++" downloadUrl="https://downloads.aspose.com/tex/cpp" tryOnlineUrl="https://products.aspose.app/tex/family" >}}
+{{< blocks/products/pf/i18n/upper-banner h1="C++ TeX Manipulation Library" h2="Δακτυλογραφήστε και μετατρέψτε αρχεία TeX και LaTeX σε εφαρμογές που βασίζονται στη C++." logoImageSrc="https://www.aspose.cloud/templates/aspose/img/products/tex/headers/aspose_tex-for-cpp.svg" pfName="Aspose.TeX" subTitlepfName="for C++" downloadUrl="https://releases.aspose.com/tex/cpp" tryOnlineUrl="https://products.aspose.app/tex/family" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.TeX" subTitlepfName="for C++" >}}
 
@@ -342,7 +342,7 @@ keywords: tex conversion api cpp, tex converter c++ integrate
 
 {{< /blocks/products/pf/i18n/support-learning-resources >}}
 
-{{< blocks/products/pf/i18n/download-section downloadFreeTrialLink="https://downloads.aspose.com/tex/cpp" pricingInformationLink="https://purchase.aspose.com/pricing/tex/cpp" >}}
+{{< blocks/products/pf/i18n/download-section downloadFreeTrialLink="https://releases.aspose.com/tex/cpp" pricingInformationLink="https://purchase.aspose.com/pricing/tex/cpp" >}}
 
 {{< blocks/products/pf/offers-section pfName="Aspose.TeX" description="Το Aspose.TeX προσφέρει μεμονωμένα API διαχείρισης TeX για άλλα δημοφιλή περιβάλλοντα ανάπτυξης όπως αναφέρονται παρακάτω:" >}}
 

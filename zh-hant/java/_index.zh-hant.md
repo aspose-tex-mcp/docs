@@ -6,7 +6,7 @@ description: Java TeX 庫，用於處理 Java 應用程序中的 TeX 文件。�
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/i18n/upper-banner h1="用於處理 TeX 文件的 Java API" h2="在基於 Java 的應用程序中排版和轉換 TeX 和 LaTeX 文件。" logoImageSrc="https://www.aspose.cloud/templates/aspose/img/products/tex/headers/aspose_tex-for-java.svg" pfName="Aspose.TeX for Java" subTitlepfName="for Java" downloadUrl="https://downloads.aspose.com/tex/java" tryOnlineUrl="https://products.aspose.app/tex/family" >}}
+{{< blocks/products/pf/i18n/upper-banner h1="用於處理 TeX 文件的 Java API" h2="在基於 Java 的應用程序中排版和轉換 TeX 和 LaTeX 文件。" logoImageSrc="https://www.aspose.cloud/templates/aspose/img/products/tex/headers/aspose_tex-for-java.svg" pfName="Aspose.TeX for Java" subTitlepfName="for Java" downloadUrl="https://releases.aspose.com/tex/java" tryOnlineUrl="https://products.aspose.app/tex/family" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.TeX" subTitlepfName="for Java" >}}
 
@@ -336,7 +336,7 @@ Aspose.TeX for Java 是一個靈活且易於使用的庫，用於排版 TeX 和 
 
 {{< /blocks/products/pf/i18n/support-learning-resources >}}
 
-{{< blocks/products/pf/i18n/download-section downloadFreeTrialLink="https://downloads.aspose.com/tex/java" pricingInformationLink="https://purchase.aspose.com/pricing/tex/java" >}}
+{{< blocks/products/pf/i18n/download-section downloadFreeTrialLink="https://releases.aspose.com/tex/java" pricingInformationLink="https://purchase.aspose.com/pricing/tex/java" >}}
 
 {{< blocks/products/pf/offers-section pfName="Aspose.TeX" description="Aspose.TeX 為其他流行的開發環境提供了單獨的 TeX 處理 API，如下所列：" >}}
 

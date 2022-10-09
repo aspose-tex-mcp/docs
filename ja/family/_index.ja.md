@@ -6,7 +6,7 @@ description: .NET、Java、およびC++用のTeXネイティブAPI。これは�
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/i18n/upper-banner h1="任意のプラットフォームで組版TeXファイル" h2="TeXファイルをタイプセットおよび変換するためのネイティブAPI。" logoImageSrc="https://www.aspose.cloud/templates/aspose/img/products/tex/aspose_tex.svg" pfName="" downloadUrl="https://downloads.aspose.com/tex" tryOnlineUrl="https://products.aspose.app/tex/family" >}}
+{{< blocks/products/pf/i18n/upper-banner h1="任意のプラットフォームで組版TeXファイル" h2="TeXファイルをタイプセットおよび変換するためのネイティブAPI。" logoImageSrc="https://www.aspose.cloud/templates/aspose/img/products/tex/aspose_tex.svg" pfName="" downloadUrl="https://releases.aspose.com/tex" tryOnlineUrl="https://products.aspose.app/tex/family" >}}
 
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/product-card-row title="Aspose.TeXハイコードAPIには次のものが含まれます" >}}
@@ -47,6 +47,6 @@ TeXファイルの植字および変換機能をC++アプリケーションに�
 
 {{< /blocks/products/pf/i18n/support-learning-resources >}}
 
-{{< blocks/products/pf/i18n/download-section downloadFreeTrialLink="https://downloads.aspose.com/tex" pricingInformationLink="https://purchase.aspose.com/pricing/tex" >}}
+{{< blocks/products/pf/i18n/download-section downloadFreeTrialLink="https://releases.aspose.com/tex" pricingInformationLink="https://purchase.aspose.com/pricing/tex" >}}
 
 {{< /blocks/products/pf/main-wrap-class >}}

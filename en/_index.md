@@ -6,7 +6,7 @@ description: TeX High Code APIs and Apps to typeset, process, and convert TeX do
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/upper-banner h1="TeX Integration Solution" h2="API solution and cross-platform applications to typeset, edit, and convert TeX (LaTeX) files." logoImageSrc="https://www.aspose.cloud/templates/aspose/img/products/tex/headers/aspose_tex-brand.svg" imageAlt="Aspose.TeX Product Solution" downloadUrl="https://downloads.aspose.com/tex/net" tryOnlineUrl="https://products.aspose.app/tex/family" >}}
+{{< blocks/products/pf/upper-banner h1="TeX Integration Solution" h2="API solution and cross-platform applications to typeset, edit, and convert TeX (LaTeX) files." logoImageSrc="https://www.aspose.cloud/templates/aspose/img/products/tex/headers/aspose_tex-brand.svg" imageAlt="Aspose.TeX Product Solution" downloadUrl="https://releases.aspose.com/tex/net" tryOnlineUrl="https://products.aspose.app/tex/family" >}}
 
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/product-card-row title="Aspose.TeX High Code APIs Include" >}}
@@ -41,13 +41,13 @@ Convert TeX and LaTeX files to PDF, XPS or image formats.
 Combine several TeX or LaTeX files into a single PDF file.
 {{< /blocks/products/pf/product >}}
 
-{{< blocks/products/pf/center-button href="https://products.aspose.app/page/applications" innerText="View All No Code Apps" >}}
+{{< blocks/products/pf/center-button href="https://products.aspose.app/tex/applications" innerText="View All No Code Apps" >}}
 
 {{< /blocks/products/pf/product-card-row >}}
 
 {{< /blocks/products/pf/main-container >}}
 
-{{< blocks/products/pf/testimonials title="What People Are Saying" subTitle="Don't just take our word for it. See what users have to say about Aspose." caseStudiesLink="https://downloads.aspose.com/corporate/case-studies/aspose.total/" >}}
+{{< blocks/products/pf/testimonials title="What People Are Saying" subTitle="Don't just take our word for it. See what users have to say about Aspose." caseStudiesLink="https://releases.aspose.com/corporate/case-studies/aspose.total/" >}}
 
 {{< blocks/products/pf/testimonials-quote >}}
 <p class="first">

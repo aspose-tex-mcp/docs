@@ -6,7 +6,7 @@ description: API e app TeX High Code per comporre, elaborare e convertire docume
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/i18n/upper-banner h1="Soluzione di integrazione TeX" h2="Soluzione API e applicazioni multipiattaforma per comporre, modificare e convertire file TeX (LaTeX)." logoImageSrc="https://www.aspose.cloud/templates/aspose/img/products/tex/headers/aspose_tex-brand.svg" imageAlt="Aspose.TeX Product Solution" downloadUrl="https://downloads.aspose.com/tex/net" tryOnlineUrl="https://products.aspose.app/tex/family" >}}
+{{< blocks/products/pf/i18n/upper-banner h1="Soluzione di integrazione TeX" h2="Soluzione API e applicazioni multipiattaforma per comporre, modificare e convertire file TeX (LaTeX)." logoImageSrc="https://www.aspose.cloud/templates/aspose/img/products/tex/headers/aspose_tex-brand.svg" imageAlt="Aspose.TeX Product Solution" downloadUrl="https://releases.aspose.com/tex/net" tryOnlineUrl="https://products.aspose.app/tex/family" >}}
 
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/product-card-row title="Le API Aspose.TeX High Code includono" >}}
@@ -41,13 +41,13 @@ Converti file TeX e LaTeX in PDF, XPS o formati immagine.
 Combina diversi file TeX o LaTeX in un unico file PDF.
 {{< /blocks/products/pf/product >}}
 
-{{< blocks/products/pf/center-button href="https://products.aspose.app/page/applications" innerText="Visualizza tutte le app senza codice" >}}
+{{< blocks/products/pf/center-button href="https://products.aspose.app/tex/applications" innerText="Visualizza tutte le app senza codice" >}}
 
 {{< /blocks/products/pf/product-card-row >}}
 
 {{< /blocks/products/pf/main-container >}}
 
-{{< blocks/products/pf/i18n/testimonials title="Cosa dicono le persone" subTitle="Non crederci sulla parola. Guarda cosa hanno da dire gli utenti su Aspose." caseStudiesLink="https://downloads.aspose.com/corporate/case-studies/aspose.total/" >}}
+{{< blocks/products/pf/i18n/testimonials title="Cosa dicono le persone" subTitle="Non crederci sulla parola. Guarda cosa hanno da dire gli utenti su Aspose." caseStudiesLink="https://releases.aspose.com/corporate/case-studies/aspose.total/" >}}
 
 {{< blocks/products/pf/testimonials-quote >}}
 <p class="first">

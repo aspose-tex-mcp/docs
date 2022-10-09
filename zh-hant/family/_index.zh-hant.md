@@ -6,7 +6,7 @@ description: 用於 .NET、Java 和 C++ 的 TeX 本機 API。這是一個易於�
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/i18n/upper-banner h1="在任何平台上排版 TeX 文件" h2="用於排版和轉換 TeX 文件的本機 API。" logoImageSrc="https://www.aspose.cloud/templates/aspose/img/products/tex/aspose_tex.svg" pfName="" downloadUrl="https://downloads.aspose.com/tex" tryOnlineUrl="https://products.aspose.app/tex/family" >}}
+{{< blocks/products/pf/i18n/upper-banner h1="在任何平台上排版 TeX 文件" h2="用於排版和轉換 TeX 文件的本機 API。" logoImageSrc="https://www.aspose.cloud/templates/aspose/img/products/tex/aspose_tex.svg" pfName="" downloadUrl="https://releases.aspose.com/tex" tryOnlineUrl="https://products.aspose.app/tex/family" >}}
 
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/product-card-row title="Aspose.TeX 高代碼 API 包括" >}}
@@ -47,6 +47,6 @@ description: 用於 .NET、Java 和 C++ 的 TeX 本機 API。這是一個易於�
 
 {{< /blocks/products/pf/i18n/support-learning-resources >}}
 
-{{< blocks/products/pf/i18n/download-section downloadFreeTrialLink="https://downloads.aspose.com/tex" pricingInformationLink="https://purchase.aspose.com/pricing/tex" >}}
+{{< blocks/products/pf/i18n/download-section downloadFreeTrialLink="https://releases.aspose.com/tex" pricingInformationLink="https://purchase.aspose.com/pricing/tex" >}}
 
 {{< /blocks/products/pf/main-wrap-class >}}

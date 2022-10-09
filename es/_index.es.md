@@ -6,7 +6,7 @@ description: API y aplicaciones TeX High Code para componer, procesar y converti
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/i18n/upper-banner h1="Solución de integración TeX" h2="Solución API y aplicaciones multiplataforma para componer, editar y convertir archivos TeX (LaTeX)." logoImageSrc="https://www.aspose.cloud/templates/aspose/img/products/tex/headers/aspose_tex-brand.svg" imageAlt="Aspose.TeX Product Solution" downloadUrl="https://downloads.aspose.com/tex/net" tryOnlineUrl="https://products.aspose.app/tex/family" >}}
+{{< blocks/products/pf/i18n/upper-banner h1="Solución de integración TeX" h2="Solución API y aplicaciones multiplataforma para componer, editar y convertir archivos TeX (LaTeX)." logoImageSrc="https://www.aspose.cloud/templates/aspose/img/products/tex/headers/aspose_tex-brand.svg" imageAlt="Aspose.TeX Product Solution" downloadUrl="https://releases.aspose.com/tex/net" tryOnlineUrl="https://products.aspose.app/tex/family" >}}
 
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/product-card-row title="Las API de alto código de Aspose.TeX incluyen" >}}
@@ -41,13 +41,13 @@ Convierta archivos TeX y LaTeX a PDF, XPS o formatos de imagen.
 Combine varios archivos TeX o LaTeX en un solo archivo PDF.
 {{< /blocks/products/pf/product >}}
 
-{{< blocks/products/pf/center-button href="https://products.aspose.app/page/applications" innerText="Ver todas las aplicaciones sin código" >}}
+{{< blocks/products/pf/center-button href="https://products.aspose.app/tex/applications" innerText="Ver todas las aplicaciones sin código" >}}
 
 {{< /blocks/products/pf/product-card-row >}}
 
 {{< /blocks/products/pf/main-container >}}
 
-{{< blocks/products/pf/i18n/testimonials title="Lo que la gente esta diciendo" subTitle="No se fíe sólo de nuestra palabra. Vea lo que los usuarios tienen que decir sobre Aspose." caseStudiesLink="https://downloads.aspose.com/corporate/case-studies/aspose.total/" >}}
+{{< blocks/products/pf/i18n/testimonials title="Lo que la gente esta diciendo" subTitle="No se fíe sólo de nuestra palabra. Vea lo que los usuarios tienen que decir sobre Aspose." caseStudiesLink="https://releases.aspose.com/corporate/case-studies/aspose.total/" >}}
 
 {{< blocks/products/pf/testimonials-quote >}}
 <p class="first">

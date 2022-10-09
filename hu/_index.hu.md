@@ -6,7 +6,7 @@ description: TeX High Code API-k és alkalmazások a TeX dokumentumok szedéséh
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/i18n/upper-banner h1="TeX integrációs megoldás" h2="API-megoldás és többplatformos alkalmazások TeX (LaTeX) fájlok szedésére, szerkesztésére és konvertálására." logoImageSrc="https://www.aspose.cloud/templates/aspose/img/products/tex/headers/aspose_tex-brand.svg" imageAlt="Aspose.TeX Product Solution" downloadUrl="https://downloads.aspose.com/tex/net" tryOnlineUrl="https://products.aspose.app/tex/family" >}}
+{{< blocks/products/pf/i18n/upper-banner h1="TeX integrációs megoldás" h2="API-megoldás és többplatformos alkalmazások TeX (LaTeX) fájlok szedésére, szerkesztésére és konvertálására." logoImageSrc="https://www.aspose.cloud/templates/aspose/img/products/tex/headers/aspose_tex-brand.svg" imageAlt="Aspose.TeX Product Solution" downloadUrl="https://releases.aspose.com/tex/net" tryOnlineUrl="https://products.aspose.app/tex/family" >}}
 
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/product-card-row title="Az Aspose.TeX High Code API-k közé tartozik" >}}
@@ -41,13 +41,13 @@ Konvertálja a TeX és LaTeX fájlokat PDF, XPS vagy képformátumokká.
 Kombináljon több TeX vagy LaTeX fájlt egyetlen PDF fájlba.
 {{< /blocks/products/pf/product >}}
 
-{{< blocks/products/pf/center-button href="https://products.aspose.app/page/applications" innerText="Az összes kód nélküli alkalmazás megtekintése" >}}
+{{< blocks/products/pf/center-button href="https://products.aspose.app/tex/applications" innerText="Az összes kód nélküli alkalmazás megtekintése" >}}
 
 {{< /blocks/products/pf/product-card-row >}}
 
 {{< /blocks/products/pf/main-container >}}
 
-{{< blocks/products/pf/i18n/testimonials title="Mit mondanak az emberek" subTitle="Ne csak szót fogadjon. Nézze meg, mit mondanak a felhasználók az Aspose-ról." caseStudiesLink="https://downloads.aspose.com/corporate/case-studies/aspose.total/" >}}
+{{< blocks/products/pf/i18n/testimonials title="Mit mondanak az emberek" subTitle="Ne csak szót fogadjon. Nézze meg, mit mondanak a felhasználók az Aspose-ról." caseStudiesLink="https://releases.aspose.com/corporate/case-studies/aspose.total/" >}}
 
 {{< blocks/products/pf/testimonials-quote >}}
 <p class="first">

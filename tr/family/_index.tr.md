@@ -6,7 +6,7 @@ description: .NET, Java ve C++ için TeX Yerel API'leri. Bu, TeX ve LaTeX dosyal
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/i18n/upper-banner h1="TeX dosyalarını herhangi bir Platformda yazın" h2="TeX dosyalarını dizmek ve dönüştürmek için yerel API'ler." logoImageSrc="https://www.aspose.cloud/templates/aspose/img/products/tex/aspose_tex.svg" pfName="" downloadUrl="https://downloads.aspose.com/tex" tryOnlineUrl="https://products.aspose.app/tex/family" >}}
+{{< blocks/products/pf/i18n/upper-banner h1="TeX dosyalarını herhangi bir Platformda yazın" h2="TeX dosyalarını dizmek ve dönüştürmek için yerel API'ler." logoImageSrc="https://www.aspose.cloud/templates/aspose/img/products/tex/aspose_tex.svg" pfName="" downloadUrl="https://releases.aspose.com/tex" tryOnlineUrl="https://products.aspose.app/tex/family" >}}
 
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/product-card-row title="Aspose.TeX Yüksek Kod API'leri şunları içerir:" >}}
@@ -47,6 +47,6 @@ TeX dosya dizgi ve dönüştürme işlevselliğini C++ uygulamalarına entegre e
 
 {{< /blocks/products/pf/i18n/support-learning-resources >}}
 
-{{< blocks/products/pf/i18n/download-section downloadFreeTrialLink="https://downloads.aspose.com/tex" pricingInformationLink="https://purchase.aspose.com/pricing/tex" >}}
+{{< blocks/products/pf/i18n/download-section downloadFreeTrialLink="https://releases.aspose.com/tex" pricingInformationLink="https://purchase.aspose.com/pricing/tex" >}}
 
 {{< /blocks/products/pf/main-wrap-class >}}

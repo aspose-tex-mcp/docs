@@ -7,7 +7,7 @@ keywords: tex conversie api cpp, tex converter c++ integreren
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/i18n/upper-banner h1="C++ TeX-manipulatiebibliotheek" h2="Zet en converteer TeX- en LaTeX-bestanden in op C++ gebaseerde applicaties." logoImageSrc="https://www.aspose.cloud/templates/aspose/img/products/tex/headers/aspose_tex-for-cpp.svg" pfName="Aspose.TeX" subTitlepfName="for C++" downloadUrl="https://downloads.aspose.com/tex/cpp" tryOnlineUrl="https://products.aspose.app/tex/family" >}}
+{{< blocks/products/pf/i18n/upper-banner h1="C++ TeX-manipulatiebibliotheek" h2="Zet en converteer TeX- en LaTeX-bestanden in op C++ gebaseerde applicaties." logoImageSrc="https://www.aspose.cloud/templates/aspose/img/products/tex/headers/aspose_tex-for-cpp.svg" pfName="Aspose.TeX" subTitlepfName="for C++" downloadUrl="https://releases.aspose.com/tex/cpp" tryOnlineUrl="https://products.aspose.app/tex/family" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.TeX" subTitlepfName="for C++" >}}
 
@@ -342,7 +342,7 @@ Aspose.TeX voor C++ is een flexibele en gebruiksvriendelijke bibliotheek om TeX-
 
 {{< /blocks/products/pf/i18n/support-learning-resources >}}
 
-{{< blocks/products/pf/i18n/download-section downloadFreeTrialLink="https://downloads.aspose.com/tex/cpp" pricingInformationLink="https://purchase.aspose.com/pricing/tex/cpp" >}}
+{{< blocks/products/pf/i18n/download-section downloadFreeTrialLink="https://releases.aspose.com/tex/cpp" pricingInformationLink="https://purchase.aspose.com/pricing/tex/cpp" >}}
 
 {{< blocks/products/pf/offers-section pfName="Aspose.TeX" description="Aspose.TeX biedt individuele TeX-beheer-API's voor andere populaire ontwikkelomgevingen, zoals hieronder vermeld:" >}}
 

@@ -6,7 +6,7 @@ description: ไลบรารี Java TeX เพื่อประมวลผ
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/i18n/upper-banner h1="Java APIs เพื่อประมวลผลไฟล์ TeX" h2="เรียงพิมพ์และแปลงไฟล์ TeX และ LaTeX ภายในแอปพลิเคชันที่ใช้ Java" logoImageSrc="https://www.aspose.cloud/templates/aspose/img/products/tex/headers/aspose_tex-for-java.svg" pfName="Aspose.TeX for Java" subTitlepfName="for Java" downloadUrl="https://downloads.aspose.com/tex/java" tryOnlineUrl="https://products.aspose.app/tex/family" >}}
+{{< blocks/products/pf/i18n/upper-banner h1="Java APIs เพื่อประมวลผลไฟล์ TeX" h2="เรียงพิมพ์และแปลงไฟล์ TeX และ LaTeX ภายในแอปพลิเคชันที่ใช้ Java" logoImageSrc="https://www.aspose.cloud/templates/aspose/img/products/tex/headers/aspose_tex-for-java.svg" pfName="Aspose.TeX for Java" subTitlepfName="for Java" downloadUrl="https://releases.aspose.com/tex/java" tryOnlineUrl="https://products.aspose.app/tex/family" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.TeX" subTitlepfName="for Java" >}}
 
@@ -336,7 +336,7 @@ Aspose.TeX สำหรับ Java เป็นไลบรารีที่ย
 
 {{< /blocks/products/pf/i18n/support-learning-resources >}}
 
-{{< blocks/products/pf/i18n/download-section downloadFreeTrialLink="https://downloads.aspose.com/tex/java" pricingInformationLink="https://purchase.aspose.com/pricing/tex/java" >}}
+{{< blocks/products/pf/i18n/download-section downloadFreeTrialLink="https://releases.aspose.com/tex/java" pricingInformationLink="https://purchase.aspose.com/pricing/tex/java" >}}
 
 {{< blocks/products/pf/offers-section pfName="Aspose.TeX" description="Aspose.TeX เสนอ API การประมวลผล TeX แต่ละรายการสำหรับสภาพแวดล้อมการพัฒนายอดนิยมอื่นๆ ตามรายการด้านล่าง:" >}}
 

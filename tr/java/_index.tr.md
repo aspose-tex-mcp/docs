@@ -6,7 +6,7 @@ description: Java uygulamaları içinde TeX dosyalarını işlemek için Java Te
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/i18n/upper-banner h1="TeX dosyalarını işlemek için Java API'leri" h2="Java tabanlı uygulamalarda TeX ve LaTeX dosyalarını yazın ve dönüştürün." logoImageSrc="https://www.aspose.cloud/templates/aspose/img/products/tex/headers/aspose_tex-for-java.svg" pfName="Aspose.TeX for Java" subTitlepfName="for Java" downloadUrl="https://downloads.aspose.com/tex/java" tryOnlineUrl="https://products.aspose.app/tex/family" >}}
+{{< blocks/products/pf/i18n/upper-banner h1="TeX dosyalarını işlemek için Java API'leri" h2="Java tabanlı uygulamalarda TeX ve LaTeX dosyalarını yazın ve dönüştürün." logoImageSrc="https://www.aspose.cloud/templates/aspose/img/products/tex/headers/aspose_tex-for-java.svg" pfName="Aspose.TeX for Java" subTitlepfName="for Java" downloadUrl="https://releases.aspose.com/tex/java" tryOnlineUrl="https://products.aspose.app/tex/family" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.TeX" subTitlepfName="for Java" >}}
 
@@ -336,7 +336,7 @@ Aspose.TeX for Java, TeX ve LaTeX dosyalarını dizmek için esnek ve kullanım�
 
 {{< /blocks/products/pf/i18n/support-learning-resources >}}
 
-{{< blocks/products/pf/i18n/download-section downloadFreeTrialLink="https://downloads.aspose.com/tex/java" pricingInformationLink="https://purchase.aspose.com/pricing/tex/java" >}}
+{{< blocks/products/pf/i18n/download-section downloadFreeTrialLink="https://releases.aspose.com/tex/java" pricingInformationLink="https://purchase.aspose.com/pricing/tex/java" >}}
 
 {{< blocks/products/pf/offers-section pfName="Aspose.TeX" description="Aspose.TeX, aşağıda listelenen diğer popüler geliştirme ortamları için bireysel TeX işleme API'leri sunar:" >}}
 

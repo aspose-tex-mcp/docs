@@ -6,7 +6,7 @@ description: Thư viện Java TeX để xử lý các tệp TeX trong các ứng
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/i18n/upper-banner h1="Các API Java để xử lý tệp TeX" h2="Thiết lập và chuyển đổi các tệp TeX và LaTeX trong các ứng dụng dựa trên Java." logoImageSrc="https://www.aspose.cloud/templates/aspose/img/products/tex/headers/aspose_tex-for-java.svg" pfName="Aspose.TeX for Java" subTitlepfName="for Java" downloadUrl="https://downloads.aspose.com/tex/java" tryOnlineUrl="https://products.aspose.app/tex/family" >}}
+{{< blocks/products/pf/i18n/upper-banner h1="Các API Java để xử lý tệp TeX" h2="Thiết lập và chuyển đổi các tệp TeX và LaTeX trong các ứng dụng dựa trên Java." logoImageSrc="https://www.aspose.cloud/templates/aspose/img/products/tex/headers/aspose_tex-for-java.svg" pfName="Aspose.TeX for Java" subTitlepfName="for Java" downloadUrl="https://releases.aspose.com/tex/java" tryOnlineUrl="https://products.aspose.app/tex/family" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.TeX" subTitlepfName="for Java" >}}
 
@@ -336,7 +336,7 @@ Aspose.TeX cho Java là một thư viện linh hoạt và dễ sử dụng để
 
 {{< /blocks/products/pf/i18n/support-learning-resources >}}
 
-{{< blocks/products/pf/i18n/download-section downloadFreeTrialLink="https://downloads.aspose.com/tex/java" pricingInformationLink="https://purchase.aspose.com/pricing/tex/java" >}}
+{{< blocks/products/pf/i18n/download-section downloadFreeTrialLink="https://releases.aspose.com/tex/java" pricingInformationLink="https://purchase.aspose.com/pricing/tex/java" >}}
 
 {{< blocks/products/pf/offers-section pfName="Aspose.TeX" description="Aspose.TeX cung cấp các API xử lý TeX riêng lẻ cho các môi trường phát triển phổ biến khác như được liệt kê bên dưới:" >}}
 

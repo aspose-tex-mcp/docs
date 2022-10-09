@@ -6,7 +6,7 @@ description: Java 애플리케이션 내에서 TeX 파일을 처리하기 위한
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/i18n/upper-banner h1="TeX 파일을 처리하는 Java API" h2="Java 기반 응용 프로그램 내에서 TeX 및 LaTeX 파일을 조판 및 변환합니다." logoImageSrc="https://www.aspose.cloud/templates/aspose/img/products/tex/headers/aspose_tex-for-java.svg" pfName="Aspose.TeX for Java" subTitlepfName="for Java" downloadUrl="https://downloads.aspose.com/tex/java" tryOnlineUrl="https://products.aspose.app/tex/family" >}}
+{{< blocks/products/pf/i18n/upper-banner h1="TeX 파일을 처리하는 Java API" h2="Java 기반 응용 프로그램 내에서 TeX 및 LaTeX 파일을 조판 및 변환합니다." logoImageSrc="https://www.aspose.cloud/templates/aspose/img/products/tex/headers/aspose_tex-for-java.svg" pfName="Aspose.TeX for Java" subTitlepfName="for Java" downloadUrl="https://releases.aspose.com/tex/java" tryOnlineUrl="https://products.aspose.app/tex/family" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.TeX" subTitlepfName="for Java" >}}
 
@@ -336,7 +336,7 @@ Aspose.TeX for Java는 TeX 및 LaTeX 파일을 조판하는 유연하고 사용�
 
 {{< /blocks/products/pf/i18n/support-learning-resources >}}
 
-{{< blocks/products/pf/i18n/download-section downloadFreeTrialLink="https://downloads.aspose.com/tex/java" pricingInformationLink="https://purchase.aspose.com/pricing/tex/java" >}}
+{{< blocks/products/pf/i18n/download-section downloadFreeTrialLink="https://releases.aspose.com/tex/java" pricingInformationLink="https://purchase.aspose.com/pricing/tex/java" >}}
 
 {{< blocks/products/pf/offers-section pfName="Aspose.TeX" description="Aspose.TeX는 아래 나열된 다른 인기 있는 개발 환경을 위한 개별 TeX 처리 API를 제공합니다." >}}
 

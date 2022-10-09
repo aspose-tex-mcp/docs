@@ -6,7 +6,7 @@ description: TeX Native APIs cho .NET, Java và C++. Đây là một giải phá
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/i18n/upper-banner h1="Tập hợp các tệp TeX trên bất kỳ Nền tảng nào" h2="Các API gốc để sắp chữ và chuyển đổi tệp TeX." logoImageSrc="https://www.aspose.cloud/templates/aspose/img/products/tex/aspose_tex.svg" pfName="" downloadUrl="https://downloads.aspose.com/tex" tryOnlineUrl="https://products.aspose.app/tex/family" >}}
+{{< blocks/products/pf/i18n/upper-banner h1="Tập hợp các tệp TeX trên bất kỳ Nền tảng nào" h2="Các API gốc để sắp chữ và chuyển đổi tệp TeX." logoImageSrc="https://www.aspose.cloud/templates/aspose/img/products/tex/aspose_tex.svg" pfName="" downloadUrl="https://releases.aspose.com/tex" tryOnlineUrl="https://products.aspose.app/tex/family" >}}
 
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/product-card-row title="Bao gồm API mã cao Aspose.TeX" >}}
@@ -47,6 +47,6 @@ Tích hợp chức năng sắp xếp và chuyển đổi tệp TeX vào các ứ
 
 {{< /blocks/products/pf/i18n/support-learning-resources >}}
 
-{{< blocks/products/pf/i18n/download-section downloadFreeTrialLink="https://downloads.aspose.com/tex" pricingInformationLink="https://purchase.aspose.com/pricing/tex" >}}
+{{< blocks/products/pf/i18n/download-section downloadFreeTrialLink="https://releases.aspose.com/tex" pricingInformationLink="https://purchase.aspose.com/pricing/tex" >}}
 
 {{< /blocks/products/pf/main-wrap-class >}}

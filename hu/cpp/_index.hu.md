@@ -7,7 +7,7 @@ keywords: tex converter api cpp, tex converter c++ integrate
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/i18n/upper-banner h1="C++ TeX Manipulation Library" h2="TeX és LaTeX fájlok gépelése és konvertálása C++ alapú alkalmazásokban." logoImageSrc="https://www.aspose.cloud/templates/aspose/img/products/tex/headers/aspose_tex-for-cpp.svg" pfName="Aspose.TeX" subTitlepfName="for C++" downloadUrl="https://downloads.aspose.com/tex/cpp" tryOnlineUrl="https://products.aspose.app/tex/family" >}}
+{{< blocks/products/pf/i18n/upper-banner h1="C++ TeX Manipulation Library" h2="TeX és LaTeX fájlok gépelése és konvertálása C++ alapú alkalmazásokban." logoImageSrc="https://www.aspose.cloud/templates/aspose/img/products/tex/headers/aspose_tex-for-cpp.svg" pfName="Aspose.TeX" subTitlepfName="for C++" downloadUrl="https://releases.aspose.com/tex/cpp" tryOnlineUrl="https://products.aspose.app/tex/family" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.TeX" subTitlepfName="for C++" >}}
 
@@ -342,7 +342,7 @@ Az Aspose.TeX for C++ egy rugalmas és könnyen használható könyvtár a TeX �
 
 {{< /blocks/products/pf/i18n/support-learning-resources >}}
 
-{{< blocks/products/pf/i18n/download-section downloadFreeTrialLink="https://downloads.aspose.com/tex/cpp" pricingInformationLink="https://purchase.aspose.com/pricing/tex/cpp" >}}
+{{< blocks/products/pf/i18n/download-section downloadFreeTrialLink="https://releases.aspose.com/tex/cpp" pricingInformationLink="https://purchase.aspose.com/pricing/tex/cpp" >}}
 
 {{< blocks/products/pf/offers-section pfName="Aspose.TeX" description="Az Aspose.TeX egyedi TeX felügyeleti API-kat kínál más népszerű fejlesztői környezetekhez, az alábbiak szerint:" >}}
 

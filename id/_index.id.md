@@ -6,7 +6,7 @@ description: API dan Aplikasi Kode Tinggi TeX untuk mengeset, memproses, dan men
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/i18n/upper-banner h1="Solusi Integrasi TeX" h2="Solusi API dan aplikasi lintas platform untuk mengeset, mengedit, dan mengonversi file TeX (LaTeX)." logoImageSrc="https://www.aspose.cloud/templates/aspose/img/products/tex/headers/aspose_tex-brand.svg" imageAlt="Aspose.TeX Product Solution" downloadUrl="https://downloads.aspose.com/tex/net" tryOnlineUrl="https://products.aspose.app/tex/family" >}}
+{{< blocks/products/pf/i18n/upper-banner h1="Solusi Integrasi TeX" h2="Solusi API dan aplikasi lintas platform untuk mengeset, mengedit, dan mengonversi file TeX (LaTeX)." logoImageSrc="https://www.aspose.cloud/templates/aspose/img/products/tex/headers/aspose_tex-brand.svg" imageAlt="Aspose.TeX Product Solution" downloadUrl="https://releases.aspose.com/tex/net" tryOnlineUrl="https://products.aspose.app/tex/family" >}}
 
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/product-card-row title="Aspose.TeX API Kode Tinggi Termasuk" >}}
@@ -41,13 +41,13 @@ Konversikan file TeX dan LaTeX ke PDF, XPS, atau format gambar.
 Gabungkan beberapa file TeX atau LaTeX menjadi satu file PDF.
 {{< /blocks/products/pf/product >}}
 
-{{< blocks/products/pf/center-button href="https://products.aspose.app/page/applications" innerText="Lihat Semua Aplikasi Tanpa Kode" >}}
+{{< blocks/products/pf/center-button href="https://products.aspose.app/tex/applications" innerText="Lihat Semua Aplikasi Tanpa Kode" >}}
 
 {{< /blocks/products/pf/product-card-row >}}
 
 {{< /blocks/products/pf/main-container >}}
 
-{{< blocks/products/pf/i18n/testimonials title="Apa yang Orang Katakan" subTitle="Jangan hanya mengambil kata kami untuk itu. Lihat apa yang pengguna katakan tentang Aspose." caseStudiesLink="https://downloads.aspose.com/corporate/case-studies/aspose.total/" >}}
+{{< blocks/products/pf/i18n/testimonials title="Apa yang Orang Katakan" subTitle="Jangan hanya mengambil kata kami untuk itu. Lihat apa yang pengguna katakan tentang Aspose." caseStudiesLink="https://releases.aspose.com/corporate/case-studies/aspose.total/" >}}
 
 {{< blocks/products/pf/testimonials-quote >}}
 <p class="first">

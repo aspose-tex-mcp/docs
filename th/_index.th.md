@@ -6,7 +6,7 @@ description: TeX High Code API และแอปเพื่อจัดเร�
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/i18n/upper-banner h1="TeX Integration Solution" h2="โซลูชัน API และแอปพลิเคชันข้ามแพลตฟอร์มเพื่อจัดเรียง แก้ไข และแปลงไฟล์ TeX (LaTeX)" logoImageSrc="https://www.aspose.cloud/templates/aspose/img/products/tex/headers/aspose_tex-brand.svg" imageAlt="Aspose.TeX Product Solution" downloadUrl="https://downloads.aspose.com/tex/net" tryOnlineUrl="https://products.aspose.app/tex/family" >}}
+{{< blocks/products/pf/i18n/upper-banner h1="TeX Integration Solution" h2="โซลูชัน API และแอปพลิเคชันข้ามแพลตฟอร์มเพื่อจัดเรียง แก้ไข และแปลงไฟล์ TeX (LaTeX)" logoImageSrc="https://www.aspose.cloud/templates/aspose/img/products/tex/headers/aspose_tex-brand.svg" imageAlt="Aspose.TeX Product Solution" downloadUrl="https://releases.aspose.com/tex/net" tryOnlineUrl="https://products.aspose.app/tex/family" >}}
 
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/product-card-row title="Aspose.TeX High Code APIs รวมอยู่ด้วย" >}}
@@ -41,13 +41,13 @@ C++ On Premise API เพื่อพิมพ์ TeX และแปลงไ�
 รวมไฟล์ TeX หรือ LaTeX หลายไฟล์เป็นไฟล์ PDF ไฟล์เดียว
 {{< /blocks/products/pf/product >}}
 
-{{< blocks/products/pf/center-button href="https://products.aspose.app/page/applications" innerText="ดูทั้งหมด No Code Apps" >}}
+{{< blocks/products/pf/center-button href="https://products.aspose.app/tex/applications" innerText="ดูทั้งหมด No Code Apps" >}}
 
 {{< /blocks/products/pf/product-card-row >}}
 
 {{< /blocks/products/pf/main-container >}}
 
-{{< blocks/products/pf/i18n/testimonials title="สิ่งที่ผู้คนกำลังพูด" subTitle="อย่าเพิ่งใช้คำพูดของเราสำหรับมัน ดูว่าผู้ใช้พูดถึง Aspose อย่างไร" caseStudiesLink="https://downloads.aspose.com/corporate/case-studies/aspose.total/" >}}
+{{< blocks/products/pf/i18n/testimonials title="สิ่งที่ผู้คนกำลังพูด" subTitle="อย่าเพิ่งใช้คำพูดของเราสำหรับมัน ดูว่าผู้ใช้พูดถึง Aspose อย่างไร" caseStudiesLink="https://releases.aspose.com/corporate/case-studies/aspose.total/" >}}
 
 {{< blocks/products/pf/testimonials-quote >}}
 <p class="first">

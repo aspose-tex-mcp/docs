@@ -6,7 +6,7 @@ description: C# ASP.NET Knihovna VB.NET pro sazbu TeXových dokumentů. Řešen�
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/i18n/upper-banner h1=".NET API pro sazbu souborů TeX" h2="Vysázet soubory TeXu v aplikacích založených na .NET." logoImageSrc="https://www.aspose.cloud/templates/aspose/img/products/tex/headers/aspose_tex-for-net.svg" pfName="Aspose.TeX for .NET" subTitlepfName="for .NET" downloadUrl="https://downloads.aspose.com/tex/net" tryOnlineUrl="https://products.aspose.app/tex/family" >}}
+{{< blocks/products/pf/i18n/upper-banner h1=".NET API pro sazbu souborů TeX" h2="Vysázet soubory TeXu v aplikacích založených na .NET." logoImageSrc="https://www.aspose.cloud/templates/aspose/img/products/tex/headers/aspose_tex-for-net.svg" pfName="Aspose.TeX for .NET" subTitlepfName="for .NET" downloadUrl="https://releases.aspose.com/tex/net" tryOnlineUrl="https://products.aspose.app/tex/family" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.TeX" subTitlepfName="for .NET" >}}
 
@@ -412,7 +412,7 @@ ttfFont.Save("ouputDirectoryPath"+Montserrat-Regular_out.ttf);</code></pre>
 
 {{< /blocks/products/pf/i18n/support-learning-resources >}}
 
-{{< blocks/products/pf/i18n/download-section downloadFreeTrialLink="https://downloads.aspose.com/tex/net" pricingInformationLink="https://purchase.aspose.com/pricing/tex/net" >}}
+{{< blocks/products/pf/i18n/download-section downloadFreeTrialLink="https://releases.aspose.com/tex/net" pricingInformationLink="https://purchase.aspose.com/pricing/tex/net" >}}
 
 {{< blocks/products/pf/offers-section pfName="Aspose.TeX" description="Aspose.TeX nabízí individuální rozhraní API pro zpracování TeXu pro další populární vývojová prostředí, jak je uvedeno níže:" >}}
 

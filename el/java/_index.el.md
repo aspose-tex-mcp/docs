@@ -6,7 +6,7 @@ description: Βιβλιοθήκη Java TeX για επεξεργασία αρχ�
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/i18n/upper-banner h1="Java API για την επεξεργασία αρχείων TeX" h2="Δακτυλογραφήστε και μετατρέψτε αρχεία TeX και LaTeX σε εφαρμογές που βασίζονται σε Java." logoImageSrc="https://www.aspose.cloud/templates/aspose/img/products/tex/headers/aspose_tex-for-java.svg" pfName="Aspose.TeX for Java" subTitlepfName="for Java" downloadUrl="https://downloads.aspose.com/tex/java" tryOnlineUrl="https://products.aspose.app/tex/family" >}}
+{{< blocks/products/pf/i18n/upper-banner h1="Java API για την επεξεργασία αρχείων TeX" h2="Δακτυλογραφήστε και μετατρέψτε αρχεία TeX και LaTeX σε εφαρμογές που βασίζονται σε Java." logoImageSrc="https://www.aspose.cloud/templates/aspose/img/products/tex/headers/aspose_tex-for-java.svg" pfName="Aspose.TeX for Java" subTitlepfName="for Java" downloadUrl="https://releases.aspose.com/tex/java" tryOnlineUrl="https://products.aspose.app/tex/family" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.TeX" subTitlepfName="for Java" >}}
 
@@ -336,7 +336,7 @@ description: Βιβλιοθήκη Java TeX για επεξεργασία αρχ�
 
 {{< /blocks/products/pf/i18n/support-learning-resources >}}
 
-{{< blocks/products/pf/i18n/download-section downloadFreeTrialLink="https://downloads.aspose.com/tex/java" pricingInformationLink="https://purchase.aspose.com/pricing/tex/java" >}}
+{{< blocks/products/pf/i18n/download-section downloadFreeTrialLink="https://releases.aspose.com/tex/java" pricingInformationLink="https://purchase.aspose.com/pricing/tex/java" >}}
 
 {{< blocks/products/pf/offers-section pfName="Aspose.TeX" description="Το Aspose.TeX προσφέρει μεμονωμένα API επεξεργασίας TeX για άλλα δημοφιλή περιβάλλοντα ανάπτυξης όπως αναφέρονται παρακάτω:" >}}
 

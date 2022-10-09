@@ -3,11 +3,11 @@ title: واجهة برمجة تطبيقات تكامل ومعالجة C++ TeX - 
 weight: 50
 url: /ar/cpp/ 
 description: مكتبة C++ TeX لمعالجة ملفات TeX داخل تطبيقات C++. يوفر وظائف التنضيد جنبًا إلى جنب مع تحويل TeX إلى تنسيقات PDf و SVG و XPS وتنسيقات أخرى.
-keywords: تكس تحويل api cpp ، تكس محول c + + دمج
+keywords: تكس تحويل api cpp و تكس محول c + + دمج
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/i18n/upper-banner h1="مكتبة معالجة C++ TeX" h2="تنضيد وتحويل ملفات TeX و LaTeX ضمن التطبيقات القائمة على ++ C." logoImageSrc="https://www.aspose.cloud/templates/aspose/img/products/tex/headers/aspose_tex-for-cpp.svg" pfName="Aspose.TeX" subTitlepfName="for C++" downloadUrl="https://downloads.aspose.com/tex/cpp" tryOnlineUrl="https://products.aspose.app/tex/family" >}}
+{{< blocks/products/pf/i18n/upper-banner h1="مكتبة معالجة C++ TeX" h2="تنضيد وتحويل ملفات TeX و LaTeX ضمن التطبيقات القائمة على ++ C." logoImageSrc="https://www.aspose.cloud/templates/aspose/img/products/tex/headers/aspose_tex-for-cpp.svg" pfName="Aspose.TeX" subTitlepfName="for C++" downloadUrl="https://releases.aspose.com/tex/cpp" tryOnlineUrl="https://products.aspose.app/tex/family" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.TeX" subTitlepfName="for C++" >}}
 
@@ -15,11 +15,11 @@ keywords: تكس تحويل api cpp ، تكس محول c + + دمج
 
 {{< blocks/products/pf/i18n/tab-content >}}
 <p>
-TeX هي لغة برمجة ، قد تجدها تسمى لغة ترميز البيانات. في الوقت نفسه ، فإن TeX هو محرك مترجم يفهم هذه اللغة ونظام التنضيد ككل.
-يتم استخدامه لكتابة النص الرياضي أو الفني. تم إنشاء العديد من الحزم المختلفة على أساس ΤeΧ. أشهر هذه الحزمة هي LaTeX. يتيح للمؤلفين التركيز على النص وترك عملية الطباعة للبرنامج. باستخدام LaTeX ، من السهل إنشاء وإدارة المستندات المهيكلة.
+TeX هي لغة برمجة و قد تجدها تسمى لغة ترميز البيانات. في الوقت نفسه و فإن TeX هو محرك مترجم يفهم هذه اللغة ونظام التنضيد ككل.
+يتم استخدامه لكتابة النص الرياضي أو الفني. تم إنشاء العديد من الحزم المختلفة على أساس ΤeΧ. أشهر هذه الحزمة هي LaTeX. يتيح للمؤلفين التركيز على النص وترك عملية الطباعة للبرنامج. باستخدام LaTeX و من السهل إنشاء وإدارة المستندات المهيكلة.
 </p>
 <p>
-Aspose.TeX for C++ هي مكتبة مرنة وسهلة الاستخدام لتنضيد ملفات TeX و LaTeX. تدعم واجهة برمجة التطبيقات تنسيقات إخراج متعددة مثل XPS و PDF و PNG و JPEG و TIFF و SVG و BMP. وهذا يعني أنه من خلال وظائف هذه المكتبة ، يمكنك تحويل ملفات TeX و LaTeX إلى أي من تنسيقات الإخراج. باستخدام الحل ، يمكنك إنشاء تنسيق TeX مخصص إذا كنت ترغب في إنشاء و / أو تنضيد مجموعة من المستندات المصممة بشكل موحد. 
+Aspose.TeX for C++ هي مكتبة مرنة وسهلة الاستخدام لتنضيد ملفات TeX و LaTeX. تدعم واجهة برمجة التطبيقات تنسيقات إخراج متعددة مثل XPS و PDF و PNG و JPEG و TIFF و SVG و BMP. وهذا يعني أنه من خلال وظائف هذه المكتبة و يمكنك تحويل ملفات TeX و LaTeX إلى أي من تنسيقات الإخراج. باستخدام الحل و يمكنك إنشاء تنسيق TeX مخصص إذا كنت ترغب في إنشاء و / أو تنضيد مجموعة من المستندات المصممة بشكل موحد. 
 </p>
 
 {{< /blocks/products/pf/i18n/tab-content >}}
@@ -342,7 +342,7 @@ Aspose.TeX for C++ هي مكتبة مرنة وسهلة الاستخدام لتن
 
 {{< /blocks/products/pf/i18n/support-learning-resources >}}
 
-{{< blocks/products/pf/i18n/download-section downloadFreeTrialLink="https://downloads.aspose.com/tex/cpp" pricingInformationLink="https://purchase.aspose.com/pricing/tex/cpp" >}}
+{{< blocks/products/pf/i18n/download-section downloadFreeTrialLink="https://releases.aspose.com/tex/cpp" pricingInformationLink="https://purchase.aspose.com/pricing/tex/cpp" >}}
 
 {{< blocks/products/pf/offers-section pfName="Aspose.TeX" description="تقدم Aspose.TeX واجهات برمجة تطبيقات إدارة TeX فردية لبيئات التطوير الشائعة الأخرى كما هو مذكور أدناه:" >}}
 

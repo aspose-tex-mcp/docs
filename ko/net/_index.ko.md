@@ -6,7 +6,7 @@ description: TeX 문서를 조판하기 위한 C# ASP.NET VB.NET 라이브러리
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/i18n/upper-banner h1="TeX 파일을 조판하기 위한 .NET API" h2=".NET 기반 응용 프로그램 내에서 TeX 파일을 조판합니다." logoImageSrc="https://www.aspose.cloud/templates/aspose/img/products/tex/headers/aspose_tex-for-net.svg" pfName="Aspose.TeX for .NET" subTitlepfName="for .NET" downloadUrl="https://downloads.aspose.com/tex/net" tryOnlineUrl="https://products.aspose.app/tex/family" >}}
+{{< blocks/products/pf/i18n/upper-banner h1="TeX 파일을 조판하기 위한 .NET API" h2=".NET 기반 응용 프로그램 내에서 TeX 파일을 조판합니다." logoImageSrc="https://www.aspose.cloud/templates/aspose/img/products/tex/headers/aspose_tex-for-net.svg" pfName="Aspose.TeX for .NET" subTitlepfName="for .NET" downloadUrl="https://releases.aspose.com/tex/net" tryOnlineUrl="https://products.aspose.app/tex/family" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.TeX" subTitlepfName="for .NET" >}}
 
@@ -412,7 +412,7 @@ ttfFont.Save("ouputDirectoryPath"+Montserrat-Regular_out.ttf);</code></pre>
 
 {{< /blocks/products/pf/i18n/support-learning-resources >}}
 
-{{< blocks/products/pf/i18n/download-section downloadFreeTrialLink="https://downloads.aspose.com/tex/net" pricingInformationLink="https://purchase.aspose.com/pricing/tex/net" >}}
+{{< blocks/products/pf/i18n/download-section downloadFreeTrialLink="https://releases.aspose.com/tex/net" pricingInformationLink="https://purchase.aspose.com/pricing/tex/net" >}}
 
 {{< blocks/products/pf/offers-section pfName="Aspose.TeX" description="Aspose.TeX는 아래 나열된 다른 인기 있는 개발 환경을 위한 개별 TeX 처리 API를 제공합니다." >}}
 

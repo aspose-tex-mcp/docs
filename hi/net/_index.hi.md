@@ -2,11 +2,11 @@
 title: TeX दस्तावेज़ों को संसाधित करने के लिए .NET API और ऐप्स 
 weight: 20
 url: /hi/net/ 
-description: सी # एएसपी.नेट वीबीएनईटी पुस्तकालय टीएक्स दस्तावेजों को टाइप करने के लिए। समाधान एक्सपीएस, पीडीएफ, एसवीजी, पीएनजी, जेपीईजी, टीआईएफएफ, बीएमपी जैसे कई आउटपुट फ़ाइल स्वरूपों का समर्थन करता है।
+description: C# एएसपी.नेट वीबीएनईटी पुस्तकालय टीएक्स दस्तावेजों को टाइप करने के लिए। समाधान XPS, PDF, SVG, PNG, JPEG, TIFF, BMP जैसे कई आउटपुट फ़ाइल स्वरूपों का समर्थन करता है।
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/i18n/upper-banner h1="टीएक्स फाइलों को टाइप करने के लिए .NET एपीआई" h2=".NET आधारित अनुप्रयोगों के भीतर टाइपसेट टीएक्स फाइलें।" logoImageSrc="https://www.aspose.cloud/templates/aspose/img/products/tex/headers/aspose_tex-for-net.svg" pfName="Aspose.TeX for .NET" subTitlepfName="for .NET" downloadUrl="https://downloads.aspose.com/tex/net" tryOnlineUrl="https://products.aspose.app/tex/family" >}}
+{{< blocks/products/pf/i18n/upper-banner h1="टीएक्स फाइलों को टाइप करने के लिए .NET एपीआई" h2=".NET आधारित अनुप्रयोगों के भीतर टाइपसेट टीएक्स फाइलें।" logoImageSrc="https://www.aspose.cloud/templates/aspose/img/products/tex/headers/aspose_tex-for-net.svg" pfName="Aspose.TeX for .NET" subTitlepfName="for .NET" downloadUrl="https://releases.aspose.com/tex/net" tryOnlineUrl="https://products.aspose.app/tex/family" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.TeX" subTitlepfName="for .NET" >}}
 
@@ -19,7 +19,7 @@ description: सी # एएसपी.नेट वीबीएनईटी प�
 इसका उपयोग गणितीय या तकनीकी पाठ लेखन के लिए किया जाता है। eΧ के आधार पर कई अलग-अलग पैकेट बनाए गए हैं। सबसे प्रसिद्ध ऐसा पैकेट LaTeX है। यह लेखकों को पाठ पर ध्यान केंद्रित करने देता है और टाइपोग्राफी प्रक्रिया को कार्यक्रम पर छोड़ देता है। LaTeX के साथ संरचित दस्तावेज़ बनाना और प्रबंधित करना आसान है।
 </p>
 <p>
-.NET के लिए Aspose.TeX TeX और LaTeX फ़ाइलों को टाइप करने के लिए एक लचीली और उपयोग में आसान लाइब्रेरी है। एपीआई एक्सपीएस, पीडीएफ, पीएनजी, जेपीईजी, टीआईएफएफ, एसवीजी, बीएमपी जैसे कई आउटपुट स्वरूपों का समर्थन करता है। इसका मतलब था कि इस पुस्तकालय की कार्यक्षमता के साथ आप टीएक्स और लाटेक्स फाइलों को किसी भी आउटपुट प्रारूप में परिवर्तित कर सकते हैं। समाधान के साथ, यदि आप समान रूप से डिज़ाइन किए गए दस्तावेज़ों का एक समूह बनाना और/या टाइप करना चाहते हैं तो आप एक कस्टम टीएक्स प्रारूप बना सकते हैं।
+.NET के लिए Aspose.TeX TeX और LaTeX फ़ाइलों को टाइप करने के लिए एक लचीली और उपयोग में आसान लाइब्रेरी है। एपीआई XPS, PDF, PNG, JPEG, TIFF, SVG, BMP जैसे कई आउटपुट स्वरूपों का समर्थन करता है। इसका मतलब था कि इस पुस्तकालय की कार्यक्षमता के साथ आप टीएक्स और लाTEX फाइलों को किसी भी आउटपुट प्रारूप में परिवर्तित कर सकते हैं। समाधान के साथ, यदि आप समान रूप से डिज़ाइन किए गए दस्तावेज़ों का एक समूह बनाना और/या टाइप करना चाहते हैं तो आप एक कस्टम टीएक्स प्रारूप बना सकते हैं।
 </p>
 
 {{< /blocks/products/pf/i18n/tab-content >}}
@@ -412,7 +412,7 @@ ttfFont.Save("ouputDirectoryPath"+Montserrat-Regular_out.ttf);</code></pre>
 
 {{< /blocks/products/pf/i18n/support-learning-resources >}}
 
-{{< blocks/products/pf/i18n/download-section downloadFreeTrialLink="https://downloads.aspose.com/tex/net" pricingInformationLink="https://purchase.aspose.com/pricing/tex/net" >}}
+{{< blocks/products/pf/i18n/download-section downloadFreeTrialLink="https://releases.aspose.com/tex/net" pricingInformationLink="https://purchase.aspose.com/pricing/tex/net" >}}
 
 {{< blocks/products/pf/offers-section pfName="Aspose.TeX" description="Aspose.TeX नीचे सूचीबद्ध अन्य लोकप्रिय विकास परिवेशों के लिए अलग-अलग TeX संसाधन API प्रदान करता है:" >}}
 

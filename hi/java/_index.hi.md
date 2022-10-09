@@ -1,12 +1,12 @@
 ---
-title: टीएक्स और लाटेक्स डॉक्स को संसाधित करने के लिए जावा एपीआई
+title: टीएक्स और लाTEX डॉक्स को संसाधित करने के लिए जावा एपीआई
 weight: 40
 url: /hi/java/ 
-description: जावा अनुप्रयोगों के भीतर टीएक्स फाइलों को संसाधित करने के लिए जावा टीएक्स पुस्तकालय। यह टाइपसेटिंग कार्यक्षमता और टीएक्स को पीडीएफ, एसवीजी, एक्सपीएस, और अन्य प्रारूपों में रूपांतरण प्रदान करता है।
+description: जावा अनुप्रयोगों के भीतर टीएक्स फाइलों को संसाधित करने के लिए जावा टीएक्स पुस्तकालय। यह टाइपसेटिंग कार्यक्षमता और टीएक्स को PDF, SVG, XPS, और अन्य प्रारूपों में रूपांतरण प्रदान करता है।
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/i18n/upper-banner h1="टीएक्स फाइलों को संसाधित करने के लिए जावा एपीआई" h2="जावा आधारित अनुप्रयोगों के भीतर टीएक्स और लाटेक्स फाइलों को टाइप करें और कनवर्ट करें।" logoImageSrc="https://www.aspose.cloud/templates/aspose/img/products/tex/headers/aspose_tex-for-java.svg" pfName="Aspose.TeX for Java" subTitlepfName="for Java" downloadUrl="https://downloads.aspose.com/tex/java" tryOnlineUrl="https://products.aspose.app/tex/family" >}}
+{{< blocks/products/pf/i18n/upper-banner h1="टीएक्स फाइलों को संसाधित करने के लिए जावा एपीआई" h2="जावा आधारित अनुप्रयोगों के भीतर टीएक्स और लाTEX फाइलों को टाइप करें और ।" logoImageSrc="https://www.aspose.cloud/templates/aspose/img/products/tex/headers/aspose_tex-for-java.svg" pfName="Aspose.TeX for Java" subTitlepfName="for Java" downloadUrl="https://releases.aspose.com/tex/java" tryOnlineUrl="https://products.aspose.app/tex/family" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.TeX" subTitlepfName="for Java" >}}
 
@@ -18,7 +18,7 @@ description: जावा अनुप्रयोगों के भीतर 
 इसका उपयोग गणितीय या तकनीकी पाठ लेखन के लिए किया जाता है। eΧ के आधार पर कई अलग-अलग पैकेट बनाए गए हैं। सबसे प्रसिद्ध ऐसा पैकेट LaTeX है। यह लेखकों को पाठ पर ध्यान केंद्रित करने देता है और टाइपोग्राफी प्रक्रिया को कार्यक्रम पर छोड़ देता है। LaTeX के साथ संरचित दस्तावेज़ बनाना और प्रबंधित करना आसान है।
 </p>
 <p>
-जावा के लिए Aspose.TeX TeX और LaTeX फ़ाइलों को टाइप करने के लिए एक लचीली और उपयोग में आसान लाइब्रेरी है। एपीआई एक्सपीएस, पीडीएफ, पीएनजी, जेपीईजी, टीआईएफएफ, एसवीजी, बीएमपी जैसे कई आउटपुट स्वरूपों का समर्थन करता है। इसका मतलब था कि इस पुस्तकालय की कार्यक्षमता के साथ आप टीएक्स और लाटेक्स फाइलों को किसी भी आउटपुट प्रारूप में परिवर्तित कर सकते हैं। समाधान के साथ, यदि आप समान रूप से डिज़ाइन किए गए दस्तावेज़ों का एक समूह बनाना और/या टाइप करना चाहते हैं तो आप एक कस्टम टीएक्स प्रारूप बना सकते हैं। 
+जावा के लिए Aspose.TeX TeX और LaTeX फ़ाइलों को टाइप करने के लिए एक लचीली और उपयोग में आसान लाइब्रेरी है। एपीआई XPS, PDF, PNG, JPEG, TIFF, SVG, BMP जैसे कई आउटपुट स्वरूपों का समर्थन करता है। इसका मतलब था कि इस पुस्तकालय की कार्यक्षमता के साथ आप टीएक्स और लाTEX फाइलों को किसी भी आउटपुट प्रारूप में परिवर्तित कर सकते हैं। समाधान के साथ, यदि आप समान रूप से डिज़ाइन किए गए दस्तावेज़ों का एक समूह बनाना और/या टाइप करना चाहते हैं तो आप एक कस्टम टीएक्स प्रारूप बना सकते हैं। 
 </p>
 
 {{< /blocks/products/pf/i18n/tab-content >}}
@@ -62,7 +62,7 @@ description: जावा अनुप्रयोगों के भीतर 
      टाइपसेट टीएक्स फाइलें
     </li>
     <li>
-     एक्सपीएस, पीडीएफ, पीएनजी, जेपीईजी, टीआईएफएफ, बीएमपी जैसे विभिन्न प्रारूपों में आउटपुट दस्तावेज प्राप्त करें
+     XPS, PDF, PNG, JPEG, TIFF, BMP जैसे विभिन्न प्रारूपों में आउटपुट दस्तावेज प्राप्त करें
     </li>
     <li>
      एक स्ट्रीम में आउटपुट दस्तावेज़ लिखें
@@ -336,7 +336,7 @@ description: जावा अनुप्रयोगों के भीतर 
 
 {{< /blocks/products/pf/i18n/support-learning-resources >}}
 
-{{< blocks/products/pf/i18n/download-section downloadFreeTrialLink="https://downloads.aspose.com/tex/java" pricingInformationLink="https://purchase.aspose.com/pricing/tex/java" >}}
+{{< blocks/products/pf/i18n/download-section downloadFreeTrialLink="https://releases.aspose.com/tex/java" pricingInformationLink="https://purchase.aspose.com/pricing/tex/java" >}}
 
 {{< blocks/products/pf/offers-section pfName="Aspose.TeX" description="Aspose.TeX नीचे सूचीबद्ध अन्य लोकप्रिय विकास परिवेशों के लिए अलग-अलग TeX संसाधन API प्रदान करता है:" >}}
 

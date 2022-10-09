@@ -3,11 +3,11 @@ title: API de procesamiento e integración C++ TeX - Aspose
 weight: 50
 url: /es/cpp/ 
 description: Biblioteca C++ TeX para procesar archivos TeX dentro de aplicaciones C++. Ofrece funcionalidad de composición tipográfica junto con conversión de TeX a PDf, SVG, XPS y otros formatos.
-keywords: tex conversión api cpp, tex convertidor c ++ integrar
+keywords: tex conversión api cpp, tex convertidor C++ integrar
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/i18n/upper-banner h1="Biblioteca de manipulación C++ TeX" h2="Componga y convierta archivos TeX y LaTeX dentro de aplicaciones basadas en C++." logoImageSrc="https://www.aspose.cloud/templates/aspose/img/products/tex/headers/aspose_tex-for-cpp.svg" pfName="Aspose.TeX" subTitlepfName="for C++" downloadUrl="https://downloads.aspose.com/tex/cpp" tryOnlineUrl="https://products.aspose.app/tex/family" >}}
+{{< blocks/products/pf/i18n/upper-banner h1="Biblioteca de manipulación C++ TeX" h2="Componga y convierta archivos TeX y LaTeX dentro de aplicaciones basadas en C++." logoImageSrc="https://www.aspose.cloud/templates/aspose/img/products/tex/headers/aspose_tex-for-cpp.svg" pfName="Aspose.TeX" subTitlepfName="for C++" downloadUrl="https://releases.aspose.com/tex/cpp" tryOnlineUrl="https://products.aspose.app/tex/family" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.TeX" subTitlepfName="for C++" >}}
 
@@ -342,7 +342,7 @@ Aspose.TeX para C++ es una biblioteca flexible y fácil de usar para componer ar
 
 {{< /blocks/products/pf/i18n/support-learning-resources >}}
 
-{{< blocks/products/pf/i18n/download-section downloadFreeTrialLink="https://downloads.aspose.com/tex/cpp" pricingInformationLink="https://purchase.aspose.com/pricing/tex/cpp" >}}
+{{< blocks/products/pf/i18n/download-section downloadFreeTrialLink="https://releases.aspose.com/tex/cpp" pricingInformationLink="https://purchase.aspose.com/pricing/tex/cpp" >}}
 
 {{< blocks/products/pf/offers-section pfName="Aspose.TeX" description="Aspose.TeX ofrece API de administración de TeX individuales para otros entornos de desarrollo populares, como se indica a continuación:" >}}
 

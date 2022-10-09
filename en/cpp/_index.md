@@ -1,13 +1,13 @@
 ---
-title: C++ TeX Integration and Processing API - Aspose 
+title: C++ TeX Integration and Processing API - Aspose
 weight: 50
-url: /cpp/ 
+url: /cpp/
 description: C++ TeX library to process TeX files within C++ applications. It offers typesetting functionality along with conversion TeX to PDf, SVG, XPS, and other formats.
 keywords: tex conversion api cpp, tex converter c++ integrate
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/upper-banner h1="C++ TeX Manipulation Library" h2="Typeset and convert TeX and LaTeX files within C++ based applications." logoImageSrc="https://www.aspose.cloud/templates/aspose/img/products/tex/headers/aspose_tex-for-cpp.svg" pfName="Aspose.TeX" subTitlepfName="for C++" downloadUrl="https://downloads.aspose.com/tex/cpp" tryOnlineUrl="https://products.aspose.app/tex/family" >}}
+{{< blocks/products/pf/upper-banner h1="C++ TeX Manipulation Library" h2="Typeset and convert TeX and LaTeX files within C++ based applications." logoImageSrc="https://www.aspose.cloud/templates/aspose/img/products/tex/headers/aspose_tex-for-cpp.svg" pfName="Aspose.TeX" subTitlepfName="for C++" downloadUrl="https://releases.aspose.com/tex/cpp" tryOnlineUrl="https://products.aspose.app/tex/family" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.TeX" subTitlepfName="for C++" >}}
 
@@ -19,7 +19,7 @@ TeX is a programming language, you may find it called a data markup one. At the 
 It is used for mathematical or technical text writing. Many different packets have been created on the basis of ΤeΧ. The most famous such packet is LaTeX. It lets authors focus on the text and leave the typography process to the program. With LaTeX the structured documents are easy to create and manage.
 </p>
 <p>
-Aspose.TeX for C++ is a flexible and easy-to-use library to typeset TeX and LaTeX files. API supports multiple output formats like XPS, PDF, PNG, JPEG, TIFF, SVG, BMP. It meant that with the functionality of this library you can convert TeX and LaTeX files to any of the output formats. With the solution, you can create a custom TeX format if you want to create and/or typeset a bunch of documents designed uniformly. 
+Aspose.TeX for C++ is a flexible and easy-to-use library to typeset TeX and LaTeX files. API supports multiple output formats like XPS, PDF, PNG, JPEG, TIFF, SVG, BMP. It meant that with the functionality of this library you can convert TeX and LaTeX files to any of the output formats. With the solution, you can create a custom TeX format if you want to create and/or typeset a bunch of documents designed uniformly.
 </p>
 
 {{< /blocks/products/pf/tab-content >}}
@@ -326,6 +326,7 @@ Aspose.TeX for C++ is a flexible and easy-to-use library to typeset TeX and LaTe
 {{< blocks/products/pf/slr-element name="Documentation" href="https://docs.aspose.com/tex/cpp" >}}
 {{< blocks/products/pf/slr-element name="Source Code" href="https://github.com/aspose-tex/Aspose.TeX-for-C" >}}
 {{< blocks/products/pf/slr-element name="API References" href="https://reference.aspose.com/tex/cpp" >}}
+{{< blocks/products/pf/slr-element name="Repository" href="https://repository.aspose.com/tex/" >}}
 {{< blocks/products/pf/slr-element name="Tutorial Videos" href="https://www.youtube.com/user/asposevideo" >}}
 {{< /blocks/products/pf/slr-tab >}}
 
@@ -342,7 +343,7 @@ Aspose.TeX for C++ is a flexible and easy-to-use library to typeset TeX and LaTe
 
 {{< /blocks/products/pf/support-learning-resources >}}
 
-{{< blocks/products/pf/download-section downloadFreeTrialLink="https://downloads.aspose.com/tex/cpp" pricingInformationLink="https://purchase.aspose.com/pricing/tex/cpp" >}}
+{{< blocks/products/pf/download-section downloadFreeTrialLink="https://releases.aspose.com/tex/cpp" pricingInformationLink="https://purchase.aspose.com/pricing/tex/cpp" >}}
 
 {{< blocks/products/pf/offers-section pfName="Aspose.TeX" description="Aspose.TeX offers individual TeX management APIs for other popular development environments as listed below:" >}}
 

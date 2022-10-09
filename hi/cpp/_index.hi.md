@@ -2,12 +2,12 @@
 title: C++ TeX इंटीग्रेशन और प्रोसेसिंग API - Aspose 
 weight: 50
 url: /hi/cpp/ 
-description: सी ++ टीएक्स लाइब्रेरी सी ++ अनुप्रयोगों के भीतर टीएक्स फाइलों को संसाधित करने के लिए। यह टीएक्स को पीडीएफ, एसवीजी, एक्सपीएस और अन्य प्रारूपों में रूपांतरण के साथ टाइपसेटिंग कार्यक्षमता प्रदान करता है।
-keywords: टेक्स रूपांतरण एपीआई सीपीपी, टेक्स कनवर्टर सी ++ एकीकृत
+description: C++ टीएक्स लाइब्रेरी C++ अनुप्रयोगों के भीतर टीएक्स फाइलों को संसाधित करने के लिए। यह टीएक्स को PDF, SVG, XPS और अन्य प्रारूपों में रूपांतरण के साथ टाइपसेटिंग कार्यक्षमता प्रदान करता है।
+keywords: TEX रूपांतरण एपीआई सीपीपी, TEX कनवर्टर C++ एकीकृत
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/i18n/upper-banner h1="सी ++ टीएक्स मैनिपुलेशन लाइब्रेरी" h2="C++ आधारित अनुप्रयोगों के भीतर TeX और LaTeX फ़ाइलों को टाइप करें और कनवर्ट करें।" logoImageSrc="https://www.aspose.cloud/templates/aspose/img/products/tex/headers/aspose_tex-for-cpp.svg" pfName="Aspose.TeX" subTitlepfName="for C++" downloadUrl="https://downloads.aspose.com/tex/cpp" tryOnlineUrl="https://products.aspose.app/tex/family" >}}
+{{< blocks/products/pf/i18n/upper-banner h1="C++ टीएक्स मैनिपुलेशन लाइब्रेरी" h2="C++ आधारित अनुप्रयोगों के भीतर TeX और LaTeX फ़ाइलों को टाइप करें और ।" logoImageSrc="https://www.aspose.cloud/templates/aspose/img/products/tex/headers/aspose_tex-for-cpp.svg" pfName="Aspose.TeX" subTitlepfName="for C++" downloadUrl="https://releases.aspose.com/tex/cpp" tryOnlineUrl="https://products.aspose.app/tex/family" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.TeX" subTitlepfName="for C++" >}}
 
@@ -19,7 +19,7 @@ keywords: टेक्स रूपांतरण एपीआई सीपी�
 इसका उपयोग गणितीय या तकनीकी पाठ लेखन के लिए किया जाता है। eΧ के आधार पर कई अलग-अलग पैकेट बनाए गए हैं। सबसे प्रसिद्ध ऐसा पैकेट LaTeX है। यह लेखकों को पाठ पर ध्यान केंद्रित करने देता है और टाइपोग्राफी प्रक्रिया को कार्यक्रम पर छोड़ देता है। LaTeX के साथ संरचित दस्तावेज़ बनाना और प्रबंधित करना आसान है।
 </p>
 <p>
-Aspose.TeX C++ के लिए TeX और LaTeX फ़ाइलों को टाइप करने के लिए एक लचीली और उपयोग में आसान लाइब्रेरी है। एपीआई एक्सपीएस, पीडीएफ, पीएनजी, जेपीईजी, टीआईएफएफ, एसवीजी, बीएमपी जैसे कई आउटपुट स्वरूपों का समर्थन करता है। इसका मतलब था कि इस पुस्तकालय की कार्यक्षमता के साथ आप टीएक्स और लाटेक्स फाइलों को किसी भी आउटपुट प्रारूप में परिवर्तित कर सकते हैं। समाधान के साथ, यदि आप समान रूप से डिज़ाइन किए गए दस्तावेज़ों का एक समूह बनाना और/या टाइप करना चाहते हैं तो आप एक कस्टम टीएक्स प्रारूप बना सकते हैं। 
+Aspose.TeX C++ के लिए TeX और LaTeX फ़ाइलों को टाइप करने के लिए एक लचीली और उपयोग में आसान लाइब्रेरी है। एपीआई XPS, PDF, PNG, JPEG, TIFF, SVG, BMP जैसे कई आउटपुट स्वरूपों का समर्थन करता है। इसका मतलब था कि इस पुस्तकालय की कार्यक्षमता के साथ आप टीएक्स और लाTEX फाइलों को किसी भी आउटपुट प्रारूप में परिवर्तित कर सकते हैं। समाधान के साथ, यदि आप समान रूप से डिज़ाइन किए गए दस्तावेज़ों का एक समूह बनाना और/या टाइप करना चाहते हैं तो आप एक कस्टम टीएक्स प्रारूप बना सकते हैं। 
 </p>
 
 {{< /blocks/products/pf/i18n/tab-content >}}
@@ -63,7 +63,7 @@ Aspose.TeX C++ के लिए TeX और LaTeX फ़ाइलों को �
      टाइपसेट टीएक्स फाइलें
     </li>
     <li>
-     एक्सपीएस, पीडीएफ, पीएनजी, जेपीईजी, टीआईएफएफ, बीएमपी जैसे विभिन्न प्रारूपों में आउटपुट दस्तावेज प्राप्त करें
+     XPS, PDF, PNG, JPEG, TIFF, BMP जैसे विभिन्न प्रारूपों में आउटपुट दस्तावेज प्राप्त करें
     </li>
     <li>
      एक स्ट्रीम में आउटपुट दस्तावेज़ लिखें
@@ -86,7 +86,7 @@ Aspose.TeX C++ के लिए TeX और LaTeX फ़ाइलों को �
  </div>
  <!--/row-->
  <div class="d1-logo">
-  <img width="70" height="75" alt="सी++ टीएक्स प्रोसेसिंग एपीआई" src="https://www.aspose.cloud/templates/aspose/img/products/tex/aspose_tex-for-cpp.svg"/>
+  <img width="70" height="75" alt="C++ टीएक्स प्रोसेसिंग एपीआई" src="https://www.aspose.cloud/templates/aspose/img/products/tex/aspose_tex-for-cpp.svg"/>
   <header>
    Aspose.TeX
   </header>
@@ -104,7 +104,7 @@ Aspose.TeX C++ के लिए TeX और LaTeX फ़ाइलों को �
 
 {{< /blocks/products/pf/carousel-item >}}
 
-{{< blocks/products/pf/carousel-item h3="प्लेटफार्म स्वतंत्रता" description="पुस्तकालय विंडोज और लिनक्स प्लेटफॉर्म पर विकसित सी ++ अनुप्रयोगों का पूरी तरह से समर्थन करता है [सिस्टम आवश्यकताएं](https://docs.aspose.com/tex/cpp/system-requirements/)." >}}
+{{< blocks/products/pf/carousel-item h3="प्लेटफार्म स्वतंत्रता" description="पुस्तकालय विंडोज और लिनक्स प्लेटफॉर्म पर विकसित C++ अनुप्रयोगों का पूरी तरह से समर्थन करता है [सिस्टम आवश्यकताएं](https://docs.aspose.com/tex/cpp/system-requirements/)." >}}
 <div class="diagram1 d1-cplus">
  <div class="d1-row">
   <div class="d1-col d1-left">
@@ -210,7 +210,7 @@ Aspose.TeX C++ के लिए TeX और LaTeX फ़ाइलों को �
  </div>
  <!--/row-->
  <div class="d1-logo">
-  <img width="70" height="75" alt="सी ++ टीएक्स एपीआई" src="https://www.aspose.cloud/templates/aspose/img/products/tex/aspose_tex-for-cpp.svg"/>
+  <img width="70" height="75" alt="C++ टीएक्स एपीआई" src="https://www.aspose.cloud/templates/aspose/img/products/tex/aspose_tex-for-cpp.svg"/>
   <header>
    Aspose.TeX
   </header>
@@ -238,7 +238,7 @@ Aspose.TeX C++ के लिए TeX और LaTeX फ़ाइलों को �
  <div class="row">
   <div class="container">
    <h2 class="h2title">
-    उन्नत सी++ टीएक्स फाइलें टाइपिंग एपीआई विशेषताएं
+    उन्नत C++ टीएक्स फाइलें टाइपिंग एपीआई विशेषताएं
    </h2>
    <p>
    </p>
@@ -310,7 +310,7 @@ Aspose.TeX C++ के लिए TeX और LaTeX फ़ाइलों को �
      टाइपसेट टीएक्स फाइलें
     </h2>
     <p>
-     Aspose.TeX सी ++ के लिए आसानी से टीएक्स फाइलों को टाइप कर सकता है <a href="/tex/cpp/conversion/">दस्तावेज़ प्राप्त करें</a> विभिन्न स्वरूपों में।
+     Aspose.TeX C++ के लिए आसानी से टीएक्स फाइलों को टाइप कर सकता है <a href="/tex/cpp/conversion/">दस्तावेज़ प्राप्त करें</a> विभिन्न स्वरूपों में।
     </p>
    </div>
   </div>
@@ -342,7 +342,7 @@ Aspose.TeX C++ के लिए TeX और LaTeX फ़ाइलों को �
 
 {{< /blocks/products/pf/i18n/support-learning-resources >}}
 
-{{< blocks/products/pf/i18n/download-section downloadFreeTrialLink="https://downloads.aspose.com/tex/cpp" pricingInformationLink="https://purchase.aspose.com/pricing/tex/cpp" >}}
+{{< blocks/products/pf/i18n/download-section downloadFreeTrialLink="https://releases.aspose.com/tex/cpp" pricingInformationLink="https://purchase.aspose.com/pricing/tex/cpp" >}}
 
 {{< blocks/products/pf/offers-section pfName="Aspose.TeX" description="Aspose.TeX नीचे सूचीबद्ध अन्य लोकप्रिय विकास परिवेशों के लिए अलग-अलग TeX प्रबंधन API प्रदान करता है:" >}}
 

@@ -6,7 +6,7 @@ description: TeXドキュメントをタイプセット、処理、変換する�
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/i18n/upper-banner h1="TeX統合ソリューション" h2="TeX（LaTeX）ファイルを植字、編集、変換するためのAPIソリューションとクロスプラットフォームアプリケーション。" logoImageSrc="https://www.aspose.cloud/templates/aspose/img/products/tex/headers/aspose_tex-brand.svg" imageAlt="Aspose.TeX Product Solution" downloadUrl="https://downloads.aspose.com/tex/net" tryOnlineUrl="https://products.aspose.app/tex/family" >}}
+{{< blocks/products/pf/i18n/upper-banner h1="TeX統合ソリューション" h2="TeX（LaTeX）ファイルを植字、編集、変換するためのAPIソリューションとクロスプラットフォームアプリケーション。" logoImageSrc="https://www.aspose.cloud/templates/aspose/img/products/tex/headers/aspose_tex-brand.svg" imageAlt="Aspose.TeX Product Solution" downloadUrl="https://releases.aspose.com/tex/net" tryOnlineUrl="https://products.aspose.app/tex/family" >}}
 
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/product-card-row title="Aspose.TeXハイコードAPIには次のものが含まれます" >}}
@@ -41,13 +41,13 @@ TeXおよびLaTeXファイルをPDF、XPS、または画像形式に変換しま
 複数のTeXまたはLaTeXファイルを1つのPDFファイルに結合します。
 {{< /blocks/products/pf/product >}}
 
-{{< blocks/products/pf/center-button href="https://products.aspose.app/page/applications" innerText="すべてのノーコードアプリを表示" >}}
+{{< blocks/products/pf/center-button href="https://products.aspose.app/tex/applications" innerText="すべてのノーコードアプリを表示" >}}
 
 {{< /blocks/products/pf/product-card-row >}}
 
 {{< /blocks/products/pf/main-container >}}
 
-{{< blocks/products/pf/i18n/testimonials title="人々が言っていること" subTitle="私たちの言葉をそのまま受け入れるのではありません。 Asposeについてユーザーが何を言わなければならないかを見てください。" caseStudiesLink="https://downloads.aspose.com/corporate/case-studies/aspose.total/" >}}
+{{< blocks/products/pf/i18n/testimonials title="人々が言っていること" subTitle="私たちの言葉をそのまま受け入れるのではありません。 Asposeについてユーザーが何を言わなければならないかを見てください。" caseStudiesLink="https://releases.aspose.com/corporate/case-studies/aspose.total/" >}}
 
 {{< blocks/products/pf/testimonials-quote >}}
 <p class="first">

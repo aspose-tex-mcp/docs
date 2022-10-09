@@ -6,7 +6,7 @@ description: TeX 문서를 조판, 처리 및 변환하는 TeX High Code API 및
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/i18n/upper-banner h1="TeX 통합 솔루션" h2="TeX(LaTeX) 파일을 조판, 편집 및 변환하기 위한 API 솔루션 및 크로스 플랫폼 애플리케이션." logoImageSrc="https://www.aspose.cloud/templates/aspose/img/products/tex/headers/aspose_tex-brand.svg" imageAlt="Aspose.TeX Product Solution" downloadUrl="https://downloads.aspose.com/tex/net" tryOnlineUrl="https://products.aspose.app/tex/family" >}}
+{{< blocks/products/pf/i18n/upper-banner h1="TeX 통합 솔루션" h2="TeX(LaTeX) 파일을 조판, 편집 및 변환하기 위한 API 솔루션 및 크로스 플랫폼 애플리케이션." logoImageSrc="https://www.aspose.cloud/templates/aspose/img/products/tex/headers/aspose_tex-brand.svg" imageAlt="Aspose.TeX Product Solution" downloadUrl="https://releases.aspose.com/tex/net" tryOnlineUrl="https://products.aspose.app/tex/family" >}}
 
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/product-card-row title="Aspose.TeX 하이 코드 API 포함" >}}
@@ -41,13 +41,13 @@ TeX 및 LaTeX 파일을 PDF, XPS 또는 이미지 형식으로 변환합니다.
 여러 TeX 또는 LaTeX 파일을 하나의 PDF 파일로 결합합니다.
 {{< /blocks/products/pf/product >}}
 
-{{< blocks/products/pf/center-button href="https://products.aspose.app/page/applications" innerText="코드 없음 앱 모두 보기" >}}
+{{< blocks/products/pf/center-button href="https://products.aspose.app/tex/applications" innerText="코드 없음 앱 모두 보기" >}}
 
 {{< /blocks/products/pf/product-card-row >}}
 
 {{< /blocks/products/pf/main-container >}}
 
-{{< blocks/products/pf/i18n/testimonials title="사람들이 말하는 것" subTitle="우리의 말을 그대로 받아들이지 마십시오. Aspose에 대한 사용자의 평가를 확인하세요." caseStudiesLink="https://downloads.aspose.com/corporate/case-studies/aspose.total/" >}}
+{{< blocks/products/pf/i18n/testimonials title="사람들이 말하는 것" subTitle="우리의 말을 그대로 받아들이지 마십시오. Aspose에 대한 사용자의 평가를 확인하세요." caseStudiesLink="https://releases.aspose.com/corporate/case-studies/aspose.total/" >}}
 
 {{< blocks/products/pf/testimonials-quote >}}
 <p class="first">

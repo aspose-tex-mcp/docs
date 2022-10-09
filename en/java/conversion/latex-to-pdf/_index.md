@@ -1,5 +1,7 @@
 ---
-title: Convert LaTeX to PDF | Java 
+translation: true
+template: /_templates/_conversion-child-java.md
+title: LaTeX to PDF Conversion API| Java 
 description: LaTeX to PDF conversion functionality. Integrate this on-premise Java library into your project or use cross-platform applications to convert LaTeX to PDF.
 keywords: latex to pdf api java, latex2pdf integrate
 url: /java/conversion/latex-to-pdf/
@@ -8,108 +10,45 @@ platformtag: java
 feature: conversion
 informat: LATEX
 outformat: PDF
-otherformats: TIFF JPEG PNG BMP
+otherformats: TIFF JPEG PNG PDF
 ---
 
-{{< blocks/products/pf/main-wrap-class isAutogenPage="true" >}}
-{{< blocks/products/pf/agp/upper-banner-autogen h1="Java Api Solution to convert LaTeX to PDF." h2=" Integrate LaTeX to PDF conversion functionality of On-premise Java library into your own project.">}}
-{{< blocks/products/pf/main-container >}}
+{{<section banner>}}
+---
+h1: LaTeX to PDF
+h2: Convert LaTeX to PDF via API Solution for Java
+---
 
-{{% blocks/products/pf/agp/content h2="How to Convert LATEX to PDF Using Java" %}}
+{{<section overview>}}
+---
+title: "How to Convert LaTeX to PDF Using Java"
+p1: "Aspose.TeX for LaTeX to PDF converter transforms LaTeX file to PDF image with using of any language supported by Java."
+p2: "The API you see here can be also used to create your own cross-platform application or be integrated into your Java project."
+p3: "In order to convert LaTeX to PDF:"
+p4: "Use [Aspose.TeX for Java](https://products.aspose.com/tex/java) API which is a feature-rich, powerful and easy to use conversion API for Java platform."
+p5: "You can download its latest version directly from [Aspose Maven Repository](https://repository.aspose.com/tex/) and install it within your Maven-based project by adding the following configurations to the pom.xml."
+---
 
-In order to render LATEX to PDF, we’ll use <a href="https://products.aspose.com/tex/java">Aspose.TeX for Java</a> API which is a feature-rich, powerful and easy to use conversion API for Java platform. You can download its latest version directly from <a href="https://repository.aspose.com/webapp/#/artifacts/browse/tree/General/repo/com/aspose/aspose-tex">Maven</a> and install it within your Maven-based project by adding the following configurations to the pom.xml.
+{{<section feature1>}}
+---
+title: "Steps to LATEX to PDF Conversion on Java"
+h3: "This code sample explains LATEX to PDF Java Conversion"
+item1: "Aspose.TeX makes it easy for the developers to transform LATEX files to PDF in just a few lines of code."
+item2: "Initialize [*TeXOptions*](https://reference.aspose.com/tex/java/com.aspose.tex/TeXOptions) to create conversion options for Object LaTeX format."
+item3: "In order to set space, or area, where the TeX output will be written, set the system working directory for the output using [*OutputWorkingDirectory*](https://reference.aspose.com/tex/java/com.aspose.tex/TeXOptions#getOutputWorkingDirectory--)"
+item4: "Initialize the options for saving in PDF format using [*PdfSaveOptions*](https://reference.aspose.com/tex/java/com.aspose.tex.rendering/PdfSaveOptions)."
+item5: "Run LaTeX to PDF conversion using [*TeXJob()*](https://reference.aspose.com/tex/java/com.aspose.tex/TeXJob) Method."
+---
 
-{{% blocks/products/pf/agp/code-block title="Repository" offSpacer="true" %}}
+{{<section feature2>}}
+---
+title: System Requirements
+item1: "Aspose.TeX for Java is supported on all major operating systems. Just make sure that you have the following prerequisites:"
+item2: "J2SE 8.0 (1.8) or above."
+---
 
-```cs
-<repository>
-    <id>snapshots</id>
-    <name>repo</name>
-    <url>http://repository.aspose.com/repo/</url>
-</repository>
-```
-
-{{% /blocks/products/pf/agp/code-block %}}
-
-{{% blocks/products/pf/agp/code-block title="Dependency" offSpacer="true" %}}
-
-```cs
-<dependency>
-    <groupId>com.aspose</groupId>
-    <artifactId>aspose-tex</artifactId>
-    <version>21.4</version>
-</dependency>
-```
-
-{{% /blocks/products/pf/agp/code-block %}}
-
-{{% /blocks/products/pf/agp/content %}}
-
-{{< blocks/products/pf/agp/feature-section isGrey="true" >}}
-
-{{% blocks/products/pf/agp/feature-section-col title="LATEX to PDF Conversion on Java" %}}
-1. Initialize [TeXOptions](https://reference.aspose.com/tex/java/com.aspose.tex/TeXOptions) to create conversion options for Object LaTeX format
-2. In order to set space, or area, where the TeX output will be written, set system working directory for the output using [OutputWorkingDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/TeXOptions#getOutputWorkingDirectory--)
-3. Initialize the options for saving in PDF format using [PdfSaveOptions](https://reference.aspose.com/tex/java/com.aspose.tex.rendering/PdfSaveOptions)
-4. Run LaTeX to PDF conversion using [TeXJob](https://reference.aspose.com/tex/java/com.aspose.tex/TeXJob) method
-{{% /blocks/products/pf/agp/feature-section-col %}}
-
-{{% blocks/products/pf/agp/feature-section-col title="System Requirements" %}}
-{{% blocks/products/pf/agp/text %}}
-Aspose.TeX for Java is supported on all major operating systems. Just make sure that you have the following prerequisites.
-{{% /blocks/products/pf/agp/text %}}
-- J2SE 8.0 (1.8) or above.
-{{% /blocks/products/pf/agp/feature-section-col %}}
-{{< /blocks/products/pf/agp/feature-section >}}
-
-{{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/agp/feature-section >}}
-{{< app/tex/converter "C++ code example TeX to Images,XPS,PDF or SVG conversion" LTX PDF XPS SVG JPEG PNG TIFF BMP >}}
-// Create conversion options for Object TeX format on Object TeX engine extension.
-TeXOptions options = TeXOptions.consoleAppOptions(TeXConfig.objectLaTeX());
-
-// Specify the file system working directory for the output.
-options.setOutputWorkingDirectory(new OutputFileSystemDirectory(Utils.getOutputDirectory()));
-
-// Initialize the options for saving in {{output upper}} format.
-// Use relevant image save options
-options.setSaveOptions(new {{output camel}}SaveOptions());
-
-// Run TeX to {{output upper}} conversion.
-{{#if_output 'XPS' 'PDF' 'SVG'}}
-new TeXJob(Utils.getInputDirectory() + "{{inputFile}}", new {{output camel}}Device(), options).run();
-{{/if_output}}
-{{#if_output 'BMP' 'JPEG' 'PNG' 'TIFF'}}
-new TeXJob(Utils.getInputDirectory() + "{{inputFile}}", new ImageDevice(), options).run();
-{{/if_output}}
-
-{{< /app/tex/converter >}}
-{{< /blocks/products/pf/agp/feature-section >}}
-{{< /blocks/products/pf/main-wrap-class>}}
-
-{{< blocks/products/pf/agp/about-file-autogen >}}
-
-{{< blocks/products/pf/support-learning-resources >}}
-{{< blocks/products/pf/slr-tab tabTitle="Learning Resources" tabId="resources" >}}
-{{< blocks/products/pf/slr-element name="Documentation" href="https://docs.aspose.com/tex/cpp" >}}
-{{< blocks/products/pf/slr-element name="Source Code" href="https://github.com/aspose-tex/Aspose.TeX-for-C" >}}
-{{< blocks/products/pf/slr-element name="API References" href="https://reference.aspose.com/tex/cpp" >}}
-{{< blocks/products/pf/slr-element name="Tutorial Videos" href="https://www.youtube.com/user/asposevideo" >}}
-{{< /blocks/products/pf/slr-tab >}}
-
-{{< blocks/products/pf/slr-tab tabTitle="Product Support" tabId="support" >}}
-{{< blocks/products/pf/slr-element name="Free Support" href="https://forum.aspose.com/c/tex" >}}
-{{< blocks/products/pf/slr-element name="Paid Support" href="https://helpdesk.aspose.com/" >}}
-{{< blocks/products/pf/slr-element name="Blog" href="https://blog.aspose.com/category/tex/" >}}
-{{< /blocks/products/pf/slr-tab >}}
-
-{{< blocks/products/pf/slr-tab tabTitle="Why Aspose.TeX for C++?" tabId="success-stories" >}}
-{{< blocks/products/pf/slr-element name="Customers List" href="https://about.aspose.com/customers/" >}}
-{{< blocks/products/pf/slr-element name="Success Stories" href="https://about.aspose.com/customers/success-stories/" >}}
-{{< /blocks/products/pf/slr-tab >}}
-
-{{< /blocks/products/pf/support-learning-resources >}}
-
-{{< blocks/products/pf/agp/other-supported-autogen >}}
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
+{{<section widget>}}
+---
+title: "Java code example TeX to Images,XPS,PDF or SVG conversion"
+formats: LTX PDF XPS SVG JPEG PNG TIFF PDF
+---
