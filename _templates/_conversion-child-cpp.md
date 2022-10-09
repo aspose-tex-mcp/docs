@@ -62,7 +62,7 @@ TeXOptions options = TeXOptions.ConsoleAppOptions(TeXConfig.ObjectTeX);
 options.OutputWorkingDirectory = new OutputFileSystemDirectory(RunExamples.OutputDirectory);
 options.SaveOptions = new {{output camel}}SaveOptions();
 new TeXJob(Path.Combine(RunExamples.InputDirectory, "{{inputFile}}"), new ImageDevice(), options).Run();
-{{< /app/tex/converter >}}
+{{</app/converter >}}
 {{< /blocks/products/pf/agp/feature-section>}}
 {{< /blocks/products/pf/main-wrap-class>}}
 

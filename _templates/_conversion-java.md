@@ -62,7 +62,7 @@ feature: conversion
     new TeXJob(Utils.getInputDirectory() + "{{inputFile}}", new ImageDevice(), options).run();
 {{/if_output}}
 
-{{< /app/tex/converter >}}
+{{</app/converter >}}
 {{< /blocks/products/pf/agp/feature-section>}}
 
 

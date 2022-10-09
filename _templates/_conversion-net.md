@@ -61,7 +61,7 @@ feature: conversion
 {{#if_output 'BMP' 'JPEG' 'PNG' 'TIFF'}}
     new TeXJob(Path.Combine(RunExamples.InputDirectory, "{{inputFile}}"), new ImageDevice(), options).Run();
 {{/if_output}}
-{{< /app/tex/converter >}}
+{{</app/converter >}}
 {{< /blocks/products/pf/agp/feature-section>}}
 
 

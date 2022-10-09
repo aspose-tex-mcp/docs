@@ -66,7 +66,7 @@ feature: conversion
 {{#if_output 'BMP' 'JPEG' 'PNG' 'TIFF'}}
     System::MakeObject<Aspose::TeX::TeXJob>(u"{{inputFile}}", System::MakeObject<ImageDevice>(), options)->Run();
 {{/if_output}}
-{{< /app/tex/converter >}}
+{{</app/converter >}}
 {{< /blocks/products/pf/agp/feature-section>}}
 
 {{< blocks/products/pf/feature-page-options pairs="tex-to-pdf tex-to-xps tex-to-svg tex-to-png tex-to-bmp tex-to-tiff tex-to-jpeg latex-to-pdf latex-to-xps latex-to-svg latex-to-png latex-to-bmp latex-to-tiff latex-to-jpeg" >}}
