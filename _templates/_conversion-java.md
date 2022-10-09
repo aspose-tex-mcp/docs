@@ -43,7 +43,7 @@ feature: conversion
 {{% /blocks/products/pf/feature-page-section %}}
 
 {{< blocks/products/pf/agp/feature-section >}}
-{{< app/tex/converter "{{i18n.feature1.h3}}" TeX PDF XPS SVG "JPEG|JPG" PNG TIFF BMP >}}
+{{<app/converter "{{i18n.feature1.h3}}" TeX PDF XPS SVG "JPEG|JPG" PNG TIFF BMP >}}
     // Create conversion options for Object TeX format on Object TeX engine extension.
     TeXOptions options = TeXOptions.consoleAppOptions(TeXConfig.objectLaTeX());
 

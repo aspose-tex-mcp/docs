@@ -44,7 +44,7 @@ feature: conversion
 {{% /blocks/products/pf/feature-page-section %}}
 
 {{< blocks/products/pf/agp/feature-section >}}
-{{< app/tex/converter "{{i18n.feature1.h3}}" TeX PDF XPS SVG "JPEG|JPG" PNG TIFF BMP >}}
+{{<app/converter "{{i18n.feature1.h3}}" TeX PDF XPS SVG "JPEG|JPG" PNG TIFF BMP >}}
     // Create typesetting options for default ObjectTeX format on ObjectTeX engine extension.
     System::SharedPtr<TeXOptions> options = TeXOptions::ConsoleAppOptions(TeXConfig::ObjectTeX());
 

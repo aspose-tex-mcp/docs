@@ -79,7 +79,7 @@ otherformats: {{i18n.otherformats}}
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/agp/feature-section >}}
-{{< app/tex/converter "{{i18n.widget.title}}" {{i18n.widget.formats}}>}}
+{{<app/converter "{{i18n.widget.title}}" {{i18n.widget.formats}}>}}
 TeXOptions options = TeXOptions.ConsoleAppOptions(TeXConfig.ObjectTeX);
 options.OutputWorkingDirectory = new OutputFileSystemDirectory(RunExamples.OutputDirectory);
 options.SaveOptions = new {{output camel}}SaveOptions();
