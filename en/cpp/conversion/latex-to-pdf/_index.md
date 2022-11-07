@@ -22,7 +22,7 @@ h2: Convert LaTeX to PDF via API Solution for C++.
 {{<section overview>}}
 ---
 title: "How to Convert LaTeX to PDF Using C++"
-p1: "Aspose.TeX for LaTeX to PDF converter transforms LaTeX file to PDF image with using of any language supported by C++."
+p1: "Aspose.TeX for LaTeX to PDF converter transforms LaTeX file to PDF with using of any language supported by C++."
 p2: "The API you see here can be used to create your own cross-platform application or be integrated into your C++ project."
 p3: "In order to convert LaTeX to PDF:"
 p4: "Aspose.TeX for C++ API which is a feature-rich, powerful and easy to use document manipulation and conversion API for C++ platform."

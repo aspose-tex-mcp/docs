@@ -3,7 +3,7 @@ translation: true
 template: /_templates/_conversion-child-net.md
 title: TeX เป็น PNG Conversion API| .NET
 description: ฟังก์ชันการแปลง TeX เป็น PNG รวมไลบรารี .NET ภายในองค์กรนี้เข้ากับโครงการของคุณหรือใช้แอปพลิเคชันข้ามแพลตฟอร์มเพื่อแปลง TeX เป็น PNG
-keywords: 'tex ถึง png api net, tex2png รวม c #'
+keywords: 'tex ถึง png api net, tex2png รวม C#'
 url: /net/conversion/tex-to-png/
 family: tex
 platformtag: net
@@ -17,13 +17,13 @@ otherformats: BMP JPEG TIFF PDF SVG XPS
 {{<section banner>}}
 ---
 h1: TeX เป็น PNG
-h2: "แปลง TeX เป็น PNG ผ่าน API Solution สำหรับ C # .NET"
+h2: "แปลง TeX เป็น PNG ผ่าน API Solution สำหรับ C# .NET"
 ---
 
 {{<section overview>}}
 ---
-title: "วิธีแปลง TeX เป็น PNG โดยใช้ C # .NET"
-p1: "Aspose.TeX สำหรับตัวแปลง TeX เป็น PNG แปลงไฟล์ TeX เป็นภาพ PNG โดยใช้ภาษาใด ๆ ที่ C # รองรับ"
+title: "วิธีแปลง TeX เป็น PNG โดยใช้ C# .NET"
+p1: "Aspose.TeX สำหรับตัวแปลง TeX เป็น PNG แปลงไฟล์ TeX เป็นภาพ PNG โดยใช้ภาษาใด ๆ ที่ C# รองรับ"
 p2: "API ที่คุณเห็นที่นี่สามารถใช้เพื่อสร้างแอปพลิเคชันข้ามแพลตฟอร์มของคุณเองหรือรวมเข้ากับโปรเจ็กต์ .NET ของคุณได้"
 p3: "ในการแปลง TeX เป็น PNG:"
 p4: "ใช้ Aspose.TeX สำหรับ .NET API ซึ่งเป็น API การจัดการและการแปลงเอกสารที่มีคุณลักษณะหลากหลาย มีประสิทธิภาพ และใช้งานง่ายสำหรับ C#"
@@ -32,7 +32,7 @@ p5: "คุณสามารถดาวน์โหลดเวอร์ชั
 
 {{<section feature1>}}
 ---
-title: "ขั้นตอนในการแปลง TeX เป็น PNG โดยใช้ C #"
+title: "ขั้นตอนในการแปลง TeX เป็น PNG โดยใช้ C#"
 h3: "ตัวอย่างโค้ดนี้อธิบาย TeX เป็น PNG .NET Conversion"
 item1: "Aspose.TeX ช่วยให้นักพัฒนาแปลงไฟล์ TeX เป็น PNG ได้ง่ายในโค้ดเพียงไม่กี่บรรทัด"
 item2: "เริ่มต้น [*TeXOptions*](https://reference.aspose.com/tex/net/aspose.tex/texoptions/)"

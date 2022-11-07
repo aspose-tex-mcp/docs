@@ -3,7 +3,7 @@ translation: true
 template: /_templates/_conversion-child-net.md
 title: API de conversão de LaTeX para JPEG | .NET
 description: Funcionalidade de conversão de LaTeX para JPEG. Integre esta biblioteca .NET local em seu projeto ou use aplicativos multiplataforma para converter LaTeX para JPEG.
-keywords: 'latex para jpeg api net, latex2jpeg integre c #'
+keywords: 'latex para jpeg api net, latex2jpeg integre C#'
 url: /net/conversion/latex-to-jpeg/
 family: tex
 platformtag: net

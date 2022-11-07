@@ -3,7 +3,7 @@ translation: true
 template: /_templates/_conversion-child-net.md
 title: TeX เป็น TIFF Conversion API| .NET
 description: ฟังก์ชันการแปลง TeX เป็น TIFF รวมไลบรารี .NET ภายในองค์กรนี้เข้ากับโครงการของคุณหรือใช้แอปพลิเคชันข้ามแพลตฟอร์มเพื่อแปลง TeX เป็น TIFF
-keywords: 'tex ถึง tiff api net, text2tiff รวม c #'
+keywords: 'tex ถึง tiff api net, text2tiff รวม C#'
 url: /net/conversion/tex-to-tiff/
 family: tex
 platformtag: net
@@ -23,7 +23,7 @@ h2: "แปลง TeX เป็น TIFF ผ่าน API Solution สำหร�
 {{<section overview>}}
 ---
 title: "วิธีแปลง TeX เป็น TIFF โดยใช้ C# .NET"
-p1: "Aspose.TeX สำหรับตัวแปลง TeX เป็น TIFF แปลงไฟล์ TeX เป็นภาพ TIFF โดยใช้ภาษาใด ๆ ที่ C # รองรับ"
+p1: "Aspose.TeX สำหรับตัวแปลง TeX เป็น TIFF แปลงไฟล์ TeX เป็นภาพ TIFF โดยใช้ภาษาใด ๆ ที่ C# รองรับ"
 p2: "API ที่คุณเห็นที่นี่สามารถใช้เพื่อสร้างแอปพลิเคชันข้ามแพลตฟอร์มของคุณเองหรือรวมเข้ากับโปรเจ็กต์ .NET ของคุณได้"
 p3: "ในการแปลง TeX เป็น TIFF:"
 p4: "ใช้ Aspose.TeX สำหรับ .NET API ซึ่งเป็น API การจัดการและการแปลงเอกสารที่มีคุณลักษณะหลากหลาย มีประสิทธิภาพ และใช้งานง่ายสำหรับ C#"

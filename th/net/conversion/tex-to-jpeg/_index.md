@@ -3,7 +3,7 @@ translation: true
 template: /_templates/_conversion-child-net.md
 title: TeX เป็น JPEG Conversion API| .NET
 description: ฟังก์ชั่นการแปลง TeX เป็น JPEG รวมไลบรารี .NET ภายในองค์กรนี้เข้ากับโครงการของคุณหรือใช้แอปพลิเคชันข้ามแพลตฟอร์มเพื่อแปลง TeX เป็น JPEG
-keywords: 'tex เป็น jpeg api net, tex2jpeg รวม c #'
+keywords: 'tex เป็น jpeg api net, tex2jpeg รวม C#'
 url: /net/conversion/tex-to-jpeg/
 family: tex
 platformtag: net
@@ -22,8 +22,8 @@ h2: "แปลง TeX เป็น JPEG ผ่าน API Solution สำหร�
 
 {{<section overview>}}
 ---
-title: "วิธีแปลง TeX เป็น JPEG โดยใช้ C # .NET"
-p1: "Aspose.TeX สำหรับตัวแปลง TeX เป็น JPEG แปลงไฟล์ TeX เป็นภาพ JPEG โดยใช้ภาษาใด ๆ ที่ C # รองรับ"
+title: "วิธีแปลง TeX เป็น JPEG โดยใช้ C# .NET"
+p1: "Aspose.TeX สำหรับตัวแปลง TeX เป็น JPEG แปลงไฟล์ TeX เป็นภาพ JPEG โดยใช้ภาษาใด ๆ ที่ C# รองรับ"
 p2: "API ที่คุณเห็นที่นี่สามารถใช้เพื่อสร้างแอปพลิเคชันข้ามแพลตฟอร์มของคุณเองหรือรวมเข้ากับโปรเจ็กต์ .NET ของคุณได้"
 p3: "ในการแปลง TeX เป็น JPEG:"
 p4: "ใช้ Aspose.TeX สำหรับ .NET API ซึ่งเป็น API การจัดการและการแปลงเอกสารที่มีคุณลักษณะหลากหลาย มีประสิทธิภาพ และใช้งานง่ายสำหรับ C#"

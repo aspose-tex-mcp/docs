@@ -32,7 +32,7 @@ p5: "Vous pouvez télécharger directement sa dernière version, ouvrez simpleme
 
 {{<section feature1>}}
 ---
-title: "Étapes pour convertir LATEX en JPEG en utilisant C #"
+title: "Étapes pour convertir LATEX en JPEG en utilisant C#"
 h3: "Cet exemple de code explique la conversion LATEX en JPEG .NET"
 item1: "Aspose.TeX permet aux développeurs de transformer facilement des fichiers LATEX en JPEG en quelques lignes de code."
 item2: "Initialisez [*TeXOptions*](https://reference.aspose.com/tex/net/aspose.tex/texoptions/)."

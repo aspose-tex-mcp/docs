@@ -3,7 +3,7 @@ translation: true
 template: /_templates/_conversion-child-net.md
 title: LaTeX เป็น JPEG Conversion API| .NET
 description: ฟังก์ชันการแปลง LaTeX เป็น JPEG รวมไลบรารี .NET ภายในองค์กรนี้เข้ากับโครงการของคุณหรือใช้แอปพลิเคชันข้ามแพลตฟอร์มเพื่อแปลง LaTeX เป็น JPEG
-keywords: 'latex เป็น jpeg api net, latex2jpeg รวม c #'
+keywords: 'latex เป็น jpeg api net, latex2jpeg รวม C#'
 url: /net/conversion/latex-to-jpeg/
 family: tex
 platformtag: net
@@ -22,7 +22,7 @@ h2: "แปลง LaTeX เป็น JPEG ผ่าน API Solution สำหร
 
 {{<section overview>}}
 ---
-title: "วิธีแปลง LaTeX เป็น JPEG โดยใช้ C # .NET"
+title: "วิธีแปลง LaTeX เป็น JPEG โดยใช้ C# .NET"
 p1: "Aspose.TeX สำหรับตัวแปลง LaTeX เป็น JPEG จะแปลงไฟล์ LaTeX เป็นภาพ JPEG โดยใช้ภาษาใดก็ได้ที่รองรับโดย C#"
 p2: "API ที่คุณเห็นที่นี่สามารถใช้เพื่อสร้างแอปพลิเคชันข้ามแพลตฟอร์มของคุณเองหรือรวมเข้ากับโปรเจ็กต์ .NET ของคุณได้"
 p3: "ในการแปลง LaTeX เป็น JPEG:"

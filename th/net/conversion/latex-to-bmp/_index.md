@@ -3,7 +3,7 @@ translation: true
 template: /_templates/_conversion-child-net.md
 title: LaTeX เป็น BMP Conversion API| .NET
 description: ฟังก์ชันการแปลง LaTeX เป็น BMP รวมไลบรารี .NET ภายในองค์กรนี้เข้ากับโครงการของคุณหรือใช้แอปพลิเคชันข้ามแพลตฟอร์มเพื่อแปลง LaTeX เป็น BMP
-keywords: 'latex เป็น bmp api net, latex2bmp รวม c #'
+keywords: 'latex เป็น bmp api net, latex2bmp รวม C#'
 url: /net/conversion/latex-to-bmp/
 family: tex
 platformtag: net
@@ -22,7 +22,7 @@ h2: "แปลง LaTeX เป็น BMP ผ่าน API Solution สำหร�
 {{<section overview>}}
 ---
 title: "วิธีแปลง LaTeX เป็น BMP โดยใช้ C# .NET"
-p1: "Aspose.TeX สำหรับตัวแปลง LaTeX เป็น BMP แปลงไฟล์ LaTeX เป็นอิมเมจ BMP โดยใช้ภาษาใดก็ได้ที่รองรับโดย C #"
+p1: "Aspose.TeX สำหรับตัวแปลง LaTeX เป็น BMP แปลงไฟล์ LaTeX เป็นอิมเมจ BMP โดยใช้ภาษาใดก็ได้ที่รองรับโดย C#"
 p2: "API ที่คุณเห็นที่นี่สามารถใช้เพื่อสร้างแอปพลิเคชันข้ามแพลตฟอร์มของคุณเองหรือรวมเข้ากับโปรเจ็กต์ .NET ของคุณได้"
 p3: "ในการแปลง LaTeX เป็น BMP:"
 p4: "ใช้ Aspose.TeX สำหรับ .NET API ซึ่งเป็น API การจัดการและการแปลงเอกสารที่มีคุณลักษณะหลากหลาย มีประสิทธิภาพ และใช้งานง่ายสำหรับ C#"

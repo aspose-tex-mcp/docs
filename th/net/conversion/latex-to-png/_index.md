@@ -3,7 +3,7 @@ translation: true
 template: /_templates/_conversion-child-net.md
 title: LaTeX เป็น PNG Conversion API| .NET
 description: ฟังก์ชันการแปลง LaTeX เป็น PNG รวมไลบรารี .NET ภายในองค์กรนี้เข้ากับโครงการของคุณหรือใช้แอปพลิเคชันข้ามแพลตฟอร์มเพื่อแปลง LaTeX เป็น PNG
-keywords: 'latex เป็น png api net, latex2png รวม c #'
+keywords: 'latex เป็น png api net, latex2png รวม C#'
 url: /net/conversion/latex-to-png/
 family: tex
 platformtag: net
@@ -21,8 +21,8 @@ h2: "แปลง LaTeX เป็น PNG ผ่าน API Solution สำหร�
 
 {{<section overview>}}
 ---
-title: "วิธีแปลง LaTeX เป็น PNG โดยใช้ C # .NET"
-p1: "Aspose.TeX สำหรับตัวแปลง LaTeX เป็น PNG แปลงไฟล์ LaTeX เป็นภาพ PNG โดยใช้ภาษาใดก็ได้ที่รองรับโดย C #"
+title: "วิธีแปลง LaTeX เป็น PNG โดยใช้ C# .NET"
+p1: "Aspose.TeX สำหรับตัวแปลง LaTeX เป็น PNG แปลงไฟล์ LaTeX เป็นภาพ PNG โดยใช้ภาษาใดก็ได้ที่รองรับโดย C#"
 p2: "API ที่คุณเห็นที่นี่สามารถใช้เพื่อสร้างแอปพลิเคชันข้ามแพลตฟอร์มของคุณเองหรือรวมเข้ากับโปรเจ็กต์ .NET ของคุณได้"
 p3: "ในการแปลง LaTeX เป็น PNG:"
 p4: "ใช้ Aspose.TeX สำหรับ .NET API ซึ่งเป็น API การจัดการและการแปลงเอกสารที่มีคุณลักษณะหลากหลาย มีประสิทธิภาพ และใช้งานง่ายสำหรับ C#"
@@ -31,7 +31,7 @@ p5: "คุณสามารถดาวน์โหลดเวอร์ชั
 
 {{<section feature1>}}
 ---
-title: "ขั้นตอนในการแปลง LATEX เป็น PNG โดยใช้ C #"
+title: "ขั้นตอนในการแปลง LATEX เป็น PNG โดยใช้ C#"
 h3: "ตัวอย่างโค้ดนี้อธิบาย LATEX เป็น PNG .NET Conversion"
 item1: "Aspose.TeX ช่วยให้นักพัฒนาแปลงไฟล์ LATEX เป็น PNG ได้ง่ายในโค้ดเพียงไม่กี่บรรทัด"
 item2: "เริ่มต้น [*TeXOptions*](https://reference.aspose.com/tex/net/aspose.tex/texoptions/)"

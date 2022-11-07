@@ -37,7 +37,7 @@ item1: "يُسهل Aspose.TeX على المطورين تحويل ملفات TEX 
 item2: "قم بتهيئة [*TeXOptions*](https://reference.aspose.com/tex/java/com.aspose.tex/TeXOptions) لإنشاء خيارات تحويل لتنسيق Object TeX."
 item3: "لتعيين مساحة و أو منطقة و حيث سيتم كتابة إخراج TeX و قم بتعيين دليل عمل النظام للمخرجات باستخدام [*OutputWorkingDirectory*](https://reference.aspose.com/tex/java/com.aspose.tex/TeXOptions#getOutputWorkingDirectory--)"
 item4: "قم بتهيئة خيارات الحفظ بتنسيق PNG باستخدام [*PngSaveOptions*](https://reference.aspose.com/tex/java/com.aspose.tex.rendering/PngSaveOptions)."
-item5: "قم بتشغيل تحويل TeX إلى PNG باستخدام أسلوب [*TeXJob ()*](https://reference.aspose.com/tex/java/com.aspose.tex/TeXJob)."
+item5: "قم بتشغيل تحويل TeX إلى PNG باستخدام أسلوب [*TeXJob()*](https://reference.aspose.com/tex/java/com.aspose.tex/TeXJob)."
 ---
 
 {{<section feature2>}}

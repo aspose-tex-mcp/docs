@@ -3,7 +3,7 @@ translation: true
 template: /_templates/_conversion-child-net.md
 title: API de conversion LaTeX vers BMP | .NET
 description: Fonctionnalité de conversion LaTeX vers BMP. Intégrez cette bibliothèque .NET sur site dans votre projet ou utilisez des applications multiplateformes pour convertir LaTeX en BMP.
-keywords: 'latex vers bmp api net, latex2bmp intègre c #'
+keywords: 'latex vers bmp api net, latex2bmp intègre C#'
 url: /net/conversion/latex-to-bmp/
 family: tex
 platformtag: net
@@ -31,7 +31,7 @@ p5: "Vous pouvez télécharger directement sa dernière version, ouvrez simpleme
 
 {{<section feature1>}}
 ---
-title: "Étapes pour convertir LATEX en BMP en utilisant C #"
+title: "Étapes pour convertir LATEX en BMP en utilisant C#"
 h3: "Cet exemple de code explique la conversion LATEX vers BMP .NET"
 item1: "Aspose.TeX permet aux développeurs de transformer facilement des fichiers LATEX en BMP en quelques lignes de code."
 item2: "Initialisez [*TeXOptions*](https://reference.aspose.com/tex/net/aspose.tex/texoptions/)."

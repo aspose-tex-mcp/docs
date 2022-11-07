@@ -32,7 +32,7 @@ p5: "Вы можете загрузить его последнюю версию
 
 {{<section feature1>}}
 ---
-title: "Шаги по преобразованию TeX в PNG с помощью C #"
+title: "Шаги по преобразованию TeX в PNG с помощью C#"
 h3: "Этот пример кода объясняет преобразование TeX в PNG .NET"
 item1: "Aspose.TeX позволяет разработчикам легко преобразовывать файлы TeX в PNG всего за несколько строк кода."
 item2: "Инициализируйте [*TeXOptions*](https://reference.aspose.com/tex/net/aspose.tex/texoptions/)."

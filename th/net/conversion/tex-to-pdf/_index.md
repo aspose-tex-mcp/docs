@@ -3,7 +3,7 @@ translation: true
 template: /_templates/_conversion-child-net.md
 title: TeX เป็น PDF Conversion API| .NET
 description: ฟังก์ชันการแปลง TeX เป็น PDF รวมไลบรารี .NET ภายในองค์กรนี้เข้ากับโครงการของคุณหรือใช้แอปพลิเคชันข้ามแพลตฟอร์มเพื่อแปลง TeX เป็น PDF
-keywords: 'tex เป็น pdf api net, tex2pdf รวม c #'
+keywords: 'tex เป็น pdf api net, tex2pdf รวม C#'
 url: /net/conversion/tex-to-pdf/
 family: tex
 platformtag: net
@@ -23,7 +23,7 @@ h2: "แปลง TeX เป็น PDF ผ่าน API Solution สำหรั
 {{<section overview>}}
 ---
 title: "วิธีแปลง TeX เป็น PDF โดยใช้ C# .NET"
-p1: "Aspose.TeX สำหรับ TeX เป็น PDF converter แปลงไฟล์ TeX เป็นรูปภาพ PDF โดยใช้ภาษาใด ๆ ที่ C # รองรับ"
+p1: "Aspose.TeX สำหรับ TeX เป็น PDF converter แปลงไฟล์ TeX เป็นรูปภาพ PDF โดยใช้ภาษาใด ๆ ที่ C# รองรับ"
 p2: "API ที่คุณเห็นที่นี่สามารถใช้เพื่อสร้างแอปพลิเคชันข้ามแพลตฟอร์มของคุณเองหรือรวมเข้ากับโปรเจ็กต์ .NET ของคุณได้"
 p3: "ในการแปลง TeX เป็น PDF:"
 p4: "ใช้ Aspose.TeX สำหรับ .NET API ซึ่งเป็น API การจัดการและการแปลงเอกสารที่มีคุณลักษณะหลากหลาย มีประสิทธิภาพ และใช้งานง่ายสำหรับ C#"

@@ -23,7 +23,7 @@ h2: "Convert TeX to PDF via API Solution for C# .NET."
 {{<section overview>}}
 ---
 title: "How to Convert TeX to PDF Using C# .NET"
-p1: "Aspose.TeX for TeX to PDF converter transforms TeX file to PDF image with using of any language supported by C#."
+p1: "Aspose.TeX for TeX to PDF converter transforms TeX file to PDF with using of any language supported by C#."
 p2: "The API you see here can be used to create your own cross-platform application or be integrated into your .NET project."
 p3: "In order to convert TeX to PDF:"
 p4: "Use Aspose.TeX for .NET API which is a feature-rich, powerful and easy to use document manipulation and conversion API for C#."

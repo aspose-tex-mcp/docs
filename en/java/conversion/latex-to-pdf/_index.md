@@ -22,7 +22,7 @@ h2: Convert LaTeX to PDF via API Solution for Java
 {{<section overview>}}
 ---
 title: "How to Convert LaTeX to PDF Using Java"
-p1: "Aspose.TeX for LaTeX to PDF converter transforms LaTeX file to PDF image with using of any language supported by Java."
+p1: "Aspose.TeX for LaTeX to PDF converter transforms LaTeX file to PDF with using of any language supported by Java."
 p2: "The API you see here can be also used to create your own cross-platform application or be integrated into your Java project."
 p3: "In order to convert LaTeX to PDF:"
 p4: "Use [Aspose.TeX for Java](https://products.aspose.com/tex/java) API which is a feature-rich, powerful and easy to use conversion API for Java platform."

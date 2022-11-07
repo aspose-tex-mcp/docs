@@ -17,7 +17,7 @@ otherformats: BMP PNG JPEG TIFF SVG XPS
 {{<section banner>}}
 ---
 h1: TeX en PDF
-h2: "Convertissez TeX en PDF via la solution API pour C # .NET."
+h2: "Convertissez TeX en PDF via la solution API pour C# .NET."
 ---
 
 {{<section overview>}}

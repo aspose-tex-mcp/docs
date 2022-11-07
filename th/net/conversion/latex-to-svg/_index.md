@@ -3,7 +3,7 @@ translation: true
 template: /_templates/_conversion-child-net.md
 title: LaTeX เป็น SVG Conversion API| .NET
 description: ฟังก์ชันการแปลง LaTeX เป็น SVG รวมไลบรารี .NET ภายในองค์กรนี้เข้ากับโครงการของคุณหรือใช้แอปพลิเคชันข้ามแพลตฟอร์มเพื่อแปลง LaTeX เป็น SVG
-keywords: 'latex เป็น svg api net, latex2svg รวม c #'
+keywords: 'latex เป็น svg api net, latex2svg รวม C#'
 url: /net/conversion/latex-to-svg/
 family: tex
 platformtag: net
@@ -22,7 +22,7 @@ h2: "แปลง LaTeX เป็น SVG ผ่าน API Solution สำหร�
 {{<section overview>}}
 ---
 title: "วิธีแปลง LaTeX เป็น SVG โดยใช้ C# .NET"
-p1: "Aspose.TeX สำหรับตัวแปลง LaTeX เป็น SVG แปลงไฟล์ LaTeX เป็นภาพ SVG โดยใช้ภาษาใดก็ได้ที่ C # รองรับ"
+p1: "Aspose.TeX สำหรับตัวแปลง LaTeX เป็น SVG แปลงไฟล์ LaTeX เป็นภาพ SVG โดยใช้ภาษาใดก็ได้ที่ C# รองรับ"
 p2: "API ที่คุณเห็นที่นี่สามารถใช้เพื่อสร้างแอปพลิเคชันข้ามแพลตฟอร์มของคุณเองหรือรวมเข้ากับโปรเจ็กต์ .NET ของคุณได้"
 p3: "ในการแปลง LaTeX เป็น SVG:"
 p4: "ใช้ Aspose.TeX สำหรับ .NET API ซึ่งเป็น API การจัดการและการแปลงเอกสารที่มีคุณลักษณะหลากหลาย มีประสิทธิภาพ และใช้งานง่ายสำหรับ C#"
