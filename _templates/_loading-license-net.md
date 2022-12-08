@@ -8,6 +8,8 @@ family: tex
 platformtag: net
 ---
 
+{{<meta path="/{{lang}}/meta/features/default.md" section="faqloadlicense">}}
+
 {{< blocks/products/pf/main-wrap-class isAutogenPage="true" >}}
 {{< blocks/products/pf/agp/upper-banner-autogen h1="{{i18n.banner.h1}}" h2="{{i18n.banner.h2}}">}}
 
@@ -84,6 +86,27 @@ platformtag: net
 {{< /highlight >}}
 {{% /blocks/products/pf/agp/code-block %}}
 {{% /blocks/products/pf/feature-page-section %}}
+
+
+{{% blocks/products/pf/agp/content %}}
+
+<br><br>
+
+<h2>{{<import path="/{{lang}}/partials/_faqs-features.md" section="faq-loadlicense.h2">}}</h2>
+
+<b>1. {{<import path="/{{lang}}/partials/_faqs-features.md" section="faq-loadlicense.Q1">}}</b>
+
+{{<import path="/{{lang}}/partials/_faqs-features.md" section="faq-loadlicense.A1">}}
+
+<b>2. {{<import path="/{{lang}}/partials/_faqs-features.md" section="faq-loadlicense.Q2">}}</b>
+
+{{<import path="/{{lang}}/partials/_faqs-features.md" section="faq-loadlicense.A2">}}
+
+<b>3. {{<import path="/{{lang}}/partials/_faqs-features.md" section="faq-loadlicense.Q3">}}</b>
+
+{{<import path="/{{lang}}/partials/_faqs-features.md" section="faq-loadlicense.A3">}}
+
+{{% /blocks/products/pf/agp/content %}}
 
 
 {{< blocks/products/pf/agp/about-file-section >}}     

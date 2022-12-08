@@ -8,6 +8,8 @@ family: tex
 platformtag: net
 ---
 
+{{<meta path="/{{lang}}/meta/features/default.md" section="faqcustomoutput">}}
+
 {{< blocks/products/pf/main-wrap-class isAutogenPage="true" >}}
 {{< blocks/products/pf/agp/upper-banner-autogen h1="{{i18n.banner.h1}}" h2="{{i18n.banner.h2}}">}}
 
@@ -73,6 +75,31 @@ platformtag: net
 {{< /highlight >}}
 {{% /blocks/products/pf/agp/code-block %}}
 {{% /blocks/products/pf/feature-page-section %}}
+
+
+{{% blocks/products/pf/agp/content %}}
+
+<br><br>
+
+<h2>{{<import path="/{{lang}}/partials/_faqs-features.md" section="faq-customoutput.h2">}}</h2>
+
+<b>1. {{<import path="/{{lang}}/partials/_faqs-features.md" section="faq-customoutput.Q1">}}</b>
+
+{{<import path="/{{lang}}/partials/_faqs-features.md" section="faq-customoutput.A1">}}
+
+<b>2. {{<import path="/{{lang}}/partials/_faqs-features.md" section="faq-customoutput.Q2">}}</b>
+
+{{<import path="/{{lang}}/partials/_faqs-features.md" section="faq-customoutput.A2">}}
+
+<b>3. {{<import path="/{{lang}}/partials/_faqs-features.md" section="faq-customoutput.Q3">}}</b>
+
+{{<import path="/{{lang}}/partials/_faqs-features.md" section="faq-customoutput.A3">}}
+
+<b>4. {{<import path="/{{lang}}/partials/_faqs-features.md" section="faq-customoutput.Q4">}}</b>
+
+{{<import path="/{{lang}}/partials/_faqs-features.md" section="faq-customoutput.A4">}}
+
+{{% /blocks/products/pf/agp/content %}}
 
 
 {{< blocks/products/pf/agp/about-file-section >}}     
