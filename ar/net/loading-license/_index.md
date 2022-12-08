@@ -27,7 +27,7 @@ p4: "افتح مدير الحزم NuGet ، وابحث عن Aspose.TeX وقم ب�
 ---
 title: 'خطوات تحميل ترخيص TeX من ملف C#.'
 h3: "C# كود لتحميل الرخصة من ملف"
-item1: "قم بتهيئة كائن الترخيص عن طريق فئة [*الترخيص*](https://reference.aspose.com/tex/net/aspose.tex/license/)."
+item1: "قم بتهيئة كائن الترخيص عن طريق فئة [*License*](https://reference.aspose.com/tex/net/aspose.tex/license/)."
 item2: "قم بتعيين الترخيص باستخدام طريقة [*SetLicense()*](https://reference.aspose.com/tex/net/aspose.tex/license/setlicense/#setlicense_1)."
 ---
 
@@ -35,7 +35,7 @@ item2: "قم بتعيين الترخيص باستخدام طريقة [*SetLicens
 ---
 title: 'خطوات تحميل ترخيص TeX من تيار C#.'
 h3: "C# كود لتحميل الترخيص من تيار"
-item1: "تهيئة كائن الترخيص عن طريق فئة *الترخيص* المذكورة أعلاه."
+item1: "تهيئة كائن الترخيص عن طريق فئة *License* المذكورة أعلاه."
 item2: "تحميل الترخيص في FileStream."
 item3: "لتعيين الترخيص الذي تم تحميله ، استخدم الطريقة *SetLicense() *."
 ---
