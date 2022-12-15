@@ -18,7 +18,7 @@ h2: "Get the license of TeX from a file or stream C# .NET"
 {{<section overview>}}
 ---
 p1: "TeX is known as one of the data markup languages. It is the main core of the publication set system (computer typesetting). It is questionable to consider [*TeX*](https://docs.aspose.com/tex/net/what-is-tex/) as a file format, because it is a programming language. And on the other hand, it is an interpreter engine that understands this language. Anyway, in short, its main purpose is to help with the creation of mathematical or technical text writing."
-p2: "Using Aspose.TeX API in your own project do not forget to upload the license not to violate the copyright. Here you will find code snippets that explain how to load it from a stream and from a file. To run the examples we need:"
+p2: "Using Aspose.TeX API in your own project do not forget to set the license to your components. Here you will find code snippets that explain how to load it from a stream and from a file. To run the examples we need:"
 p3: "Aspose.TeX for .NET API which is a feature-rich, powerful and easy-to-use document manipulation and conversion API for C# platform."
 p4: "Open the NuGet package manager, and search for Aspose.TeX and install. You may also use the following command from the Package Manager Console."
 ---
