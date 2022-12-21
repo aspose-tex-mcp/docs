@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /_templates/_customize-output-net.md
-title: 創建自定義輸出 TeX | .NET API 解決方案
+title: 創建自定義輸出 TeX | .NET API 解決方案 | Aspose
 url: /net/customize-output/
 description: ".NET API 解決方案與 TeX 一起工作。閱讀示例如何使用幾行 C# 代碼為 TeX 文件創建自定義輸出。"
 informat: TEX

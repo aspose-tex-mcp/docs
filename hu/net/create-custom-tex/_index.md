@@ -3,7 +3,7 @@ translation: true
 template: /_templates/_create-custom-tex-net.md
 title: Egyedi TeX fájlok | .NET API megoldás
 url: /net/create-custom-tex/
-description: ".NET API megoldás a TeX-szel való együttműködéshez. Tartalmazza az egyéni TeX formátumok létrehozásának funkcióját. C# példák a TeX testreszabásához szükséges funkciókra."
+description: ".NET API a TeX-szel való együttműködéshez. Tartalmazza az egyéni TeX formátumok létrehozásának funkcióját. C# példák a TeX testreszabásához szükséges."
 informat: TEX
 family: tex
 platformtag: net

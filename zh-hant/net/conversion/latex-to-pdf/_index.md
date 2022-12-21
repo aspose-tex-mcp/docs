@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /_templates/_conversion-child-net.md
-title: LaTeX 到 PDF 轉換 API |  .NET
+title: LaTeX 到 PDF 轉換 API | .NET | Aspose
 description: LaTeX 到 PDF 的轉換功能。將此本地 .NET 庫集成到您的項目中，或使用跨平台應用程序將 LaTeX 轉換為 PDF。
 keywords: latex to pdf api net，latex2pdf 集成 c#
 url: /net/conversion/latex-to-pdf/

@@ -3,7 +3,7 @@ translation: true
 template: /_templates/_loading-license-net.md
 title: 라이센스 TeX 로드 | .NET API 솔루션
 url: /net/loading-license/
-description: "TeX와 함께 작동하는 .NET API 솔루션. 몇 줄의 C# 코드로 파일 또는 스트림에서 라이선스 정보를 로드합니다."
+description: "TeX와 함께 작동하는 .NET API 솔루션. 몇 줄의 C# 코드로 파일 또는 스트림에서 라이선스 정보를 로드합니다. Aspose"
 informat: TEX
 family: tex
 platformtag: net

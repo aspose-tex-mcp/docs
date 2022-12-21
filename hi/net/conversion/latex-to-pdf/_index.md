@@ -2,7 +2,7 @@
 translation: true
 template: /_templates/_conversion-child-net.md
 title: "लाटेक्स से PDF कन्वर्जन एपीआई | .NET"
-description: "LaTeX से PDF रूपांतरण कार्यक्षमता। इस ऑन-प्रिमाइसेस .NET लाइब्रेरी को अपने प्रोजेक्ट में एकीकृत करें या LaTeX को PDF में बदलने के लिए क्रॉस-प्लेटफ़ॉर्म एप्लिकेशन का उपयोग करें।"
+description: "LaTeX से PDF। इस .NET लाइब्रेरी को अपने प्रोजेक्ट में एकीकृत करें या LaTeX को PDF में बदलने के लिए क्रॉस-प्लेटफ़ॉर्म एप्लिकेशन का उपयोग करें।"
 keywords: "लेटेक्स से PDF एपीआई नेट, लेटेक्स 2 PDF C# को एकीकृत करता है"
 url: /net/conversion/latex-to-pdf/
 family: tex

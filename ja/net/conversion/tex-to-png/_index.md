@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /_templates/_conversion-child-net.md
-title: TeX から PNG への変換 API | .NET
+title: TeX から PNG への変換 API | .NET  解決
 description: TeX から PNG への変換機能。このオンプレミス .NET ライブラリをプロジェクトに統合するか、クロスプラットフォーム アプリケーションを使用して TeX を PNG に変換します。
 keywords: texからpng apiネットへ、tex2pngはc#を統合
 url: /net/conversion/tex-to-png/

@@ -2,7 +2,7 @@
 translation: true
 template: /_templates/_conversion-child-cpp.md
 title: TEX'den PNG'ye Dönüştürme API'sı | C++
-description: TeX'ten PNG'ye dönüştürme işlevi. Bu şirket içi C++ kitaplığını projenize entegre edin veya TeX'i PNG'ye dönüştürmek için platformlar arası uygulamaları kullanın.
+description: TeX'ten PNG'ye. Bu şirket içi C++ kitaplığını projenize entegre edin veya TeX'i PNG'ye dönüştürmek için platformlar arası uygulamaları kullanın.
 keywords: tex'ten png'ye api cpp, tex2png entegre c++
 url: /cpp/conversion/tex-to-png/
 family: tex

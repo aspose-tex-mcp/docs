@@ -2,7 +2,7 @@
 translation: true
 template: /_templates/_conversion-child-java.md
 title: API de conversion TeX vers JPEG | Java
-description: Fonctionnalité de conversion TeX vers JPEG. Intégrez cette bibliothèque Java sur site dans votre projet ou utilisez des applications multiplateformes pour convertir TeX en JPEG.
+description: Conversion TeX vers JPEG. Intégrez bibliothèque Java sur site dans votre projet ou utilisez des applications multiplateformes pour convertir TeX en JPEG.
 keywords: tex vers Jpeg api jpeg, tex2jpeg intégrer
 url: /java/conversion/tex-to-jpeg/
 family: tex

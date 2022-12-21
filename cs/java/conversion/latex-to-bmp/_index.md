@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /_templates/_conversion-child-java.md
-title: LaTeX na BMP Conversion API| Java
+title: LaTeX na BMP Konvertor API | Java
 description: Funkce převodu LaTeX do BMP. Integrujte tuto místní knihovnu Java do svého projektu nebo použijte multiplatformní aplikace pro převod LaTeXu na BMP.
 keywords: latex do bmp api java, latex2bmp integrovat
 url: /java/conversion/latex-to-bmp/

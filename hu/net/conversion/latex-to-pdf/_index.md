@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /_templates/_conversion-child-net.md
-title: LaTeX to PDF Conversion API| .NET
-description: LaTeX PDF konvertálási funkció. Integrálja ezt a helyszíni .NET-könyvtárat a projektjébe, vagy használjon többplatformos alkalmazásokat a LaTeX PDF-be konvertálásához.
+title: LaTeX to PDF Átalakító API| .NET
+description: LaTeX PDF konvertálási. Integrálja .NET-könyvtárat a projektjébe, vagy használjon többplatformos alkalmazásokat a LaTeX PDF-be konvertálásához.
 keywords: latex pdf-be api net, latex2pdf integráció c#
 url: /net/conversion/latex-to-pdf/
 family: tex

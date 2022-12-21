@@ -2,7 +2,7 @@
 translation: true
 template: /_templates/_conversion-child-net.md
 title: API преобразования LaTeX в XPS | .NET
-description: Функция преобразования LaTeX в XPS. Интегрируйте эту локальную библиотеку .NET в свой проект или используйте кроссплатформенные приложения для преобразования LaTeX в XPS.
+description: Конверсия LaTeX в XPS. Интегрируйте эту локальную библиотеку .NET в свой проект или используйте кроссплатформенные приложения для преобразования LaTeX в XPS.
 keywords: латекс для XPS API Net, Latex2XPS интегрировать С#
 url: /net/conversion/latex-to-xps/
 family: tex

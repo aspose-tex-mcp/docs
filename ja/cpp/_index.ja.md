@@ -1,5 +1,5 @@
 ---
-title: C++TeX統合および処理API-Aspose 
+title: C++TeX 統合および処理 API 解決-Aspose 
 weight: 50
 url: /ja/cpp/ 
 description: C++アプリケーション内でTeXファイルを処理するためのC++TeXライブラリ。 TeXからPDf、SVG、XPS、およびその他の形式への変換とともに植字機能を提供します。

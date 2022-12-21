@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /_templates/_conversion-child-java.md
-title: LaTeX에서 PDF로 변환 API | Java
+title: LaTeX에서 PDF로 변환 API | Java  해결책
 description: LaTeX에서 PDF로의 변환 기능. 이 사내 Java 라이브러리를 프로젝트에 통합하거나 크로스 플랫폼 애플리케이션을 사용하여 LaTeX를 PDF로 변환하십시오.
 keywords: latex to pdf API 자바, latex2pdf 통합
 url: /java/conversion/latex-to-pdf/

@@ -2,7 +2,7 @@
 title: .NET API's en apps om TeX-documenten te verwerken 
 weight: 20
 url: /nl/net/ 
-description: C# ASP.NET VB.NET bibliotheek om TeX-documenten te zetten. De oplossing ondersteunt veel uitvoerbestandsindelingen zoals XPS, PDF, SVG, PNG, JPEG, TIFF, BMP.
+description: C# ASP.NET VB.NET bibliotheek om TeX-documenten te zetten. De oplossing ondersteunt veel uitvoerbestandsindelingen zoals XPS, PDF, SVG, PNG, JPEG, TIFF.
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}

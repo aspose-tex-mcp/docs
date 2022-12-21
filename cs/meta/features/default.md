@@ -7,7 +7,7 @@ deploy: false
 {{<section faqcreatecustomtex>}}
 ---
 qs[1].name: "Co je šablona LaTeX?"
-qs[1].text: "Šablona je uložená sada vlastností, nastavení nebo struktury, kterou lze použít na nově vytvořený dokument a ušetřit tak čas. Pro LaTeX to může být soubor, který obsahuje informace o formátu stránky, fontech, třídě dokumentu, obsažených balíčcích atd."
+qs[1].text: "Šablona je uložená sada vlastností, nastavení nebo struktury, kterou lze použít na nově vytvořený dokument a ušetřit tak čas. Pro LaTeX na může být soubor, který obsahuje informace o formátu stránky, fontech, třídě dokumentu, obsažených balíčcích atd."
 qs[2].name: "Jak mohu používat šablony LaTeX?"
 qs[2].text: "Pokud nepoužíváte žádný další software a šablona je pouze soubor .tex, stačí ji otevřít a začít pracovat. Mějte na paměti, že změny neukládáte přímo do tohoto dokumentu, ale použijete možnost Uložit jako."
 qs[3].name: "Jak nastavit typ dokumentu LaTeX?"

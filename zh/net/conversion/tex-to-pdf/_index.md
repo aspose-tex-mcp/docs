@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /_templates/_conversion-child-net.md
-title: TeX 到 PDF 转换 API | .NET
-description: TeX 到 PDF 的转换功能。将此本地 .NET 库集成到您的项目中，或使用跨平台应用程序将 TeX 转换为 PDF。
+title: TeX 到 PDF 转换 API | .NET 解决方案
+description: TeX 到 PDF 的转换功能。Aspose.TEX API。将此本地 .NET 库集成到您的项目中，或使用跨平台应用程序将 TeX 转换为 PDF。
 keywords: tex to pdf api net, tex2pdf 集成 c#
 url: /net/conversion/tex-to-pdf/
 family: tex

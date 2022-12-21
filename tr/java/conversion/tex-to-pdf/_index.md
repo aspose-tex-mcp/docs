@@ -2,7 +2,7 @@
 translation: true
 template: /_templates/_conversion-child-java.md
 title: TeX'ten PDF'ye Dönüştürme API'sı | Java
-description: TeX'ten PDF'ye dönüştürme işlevi. Bu şirket içi Java kitaplığını projenize entegre edin veya TeX'i PDF'ye dönüştürmek için platformlar arası uygulamaları kullanın.
+description: TeX'ten PDF'ye. Bu şirket içi Java kitaplığını projenize entegre edin veya TeX'i PDF'ye dönüştürmek için platformlar arası uygulamaları kullanın.
 keywords: tex'ten pdf'ye api jpeg, tex2pdf entegrasyonu
 url: /java/conversion/tex-to-pdf/
 family: tex

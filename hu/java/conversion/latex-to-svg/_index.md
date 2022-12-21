@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /_templates/_conversion-child-java.md
-title: LaTeX to SVG Conversion API| Java
-description: LaTeX-SVG konvertálási funkció. Integrálja ezt a helyszíni Java-könyvtárat a projektjébe, vagy használjon többplatformos alkalmazásokat a LaTeX SVG-vé konvertálásához.
+title: LaTeX to SVG Átalakító API| Java
+description: LaTeX-SVG konvertálási. Integrálja Java-könyvtárat a projektjébe, vagy használjon többplatformos alkalmazásokat a LaTeX SVG-vé konvertálásához.
 keywords: latex svg-be api java, latex2svg integrálása
 url: /java/conversion/latex-to-svg/
 family: tex

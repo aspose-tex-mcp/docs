@@ -2,7 +2,7 @@
 translation: true
 template: /_templates/_conversion-child-cpp.md
 title: API de conversão de TEX para BMP | C++
-description: Funcionalidade de conversão de TEX para BMP. Integre esta biblioteca C++ local em seu projeto ou use aplicativos multiplataforma para converter TeX em BMP.
+description: Conversão de TEX para BMP. Integre esta biblioteca C++ local em seu projeto ou use aplicativos multiplataforma para converter TeX em BMP.
 keywords: tex para bmp api cpp, tex2bmp integrar c++
 url: /cpp/conversion/tex-to-bmp/
 family: tex

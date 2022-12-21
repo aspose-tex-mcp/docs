@@ -2,7 +2,7 @@
 translation: true
 template: /_templates/_conversion-child-net.md
 title: Interfejs API konwersji TeX do PDF | .NET
-description: Funkcjonalność konwersji TeX do PDF. Zintegruj tę lokalną bibliotekę .NET ze swoim projektem lub użyj aplikacji wieloplatformowych, aby przekonwertować TeX na PDF.
+description: Konwersji TeX do PDF. Zintegruj tę lokalną bibliotekę .NET ze swoim projektem lub użyj aplikacji wieloplatformowych, aby przekonwertować TeX na PDF.
 keywords: tex do pdf api net, integracja tex2pdf c#
 url: /net/conversion/tex-to-pdf/
 family: tex

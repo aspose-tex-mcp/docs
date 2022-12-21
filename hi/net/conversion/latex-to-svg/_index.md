@@ -2,7 +2,7 @@
 translation: true
 template: /_templates/_conversion-child-net.md
 title: "लाटेक्स से SVG कन्वर्जन एपीआई | .NET"
-description: "SVG रूपांतरण कार्यक्षमता के लिए लाटेक्स। इस ऑन-प्रिमाइसेस .NET लाइब्रेरी को अपने प्रोजेक्ट में एकीकृत करें या LaTeX को SVG में बदलने के लिए क्रॉस-प्लेटफ़ॉर्म एप्लिकेशन का उपयोग करें।"
+description: "लाटेक्स से एसवीजी। इस .NET लाइब्रेरी को अपनी परियोजनाओं में एकीकृत करें या LaTeX को SVG में बदलने के लिए एक क्रॉस-प्लेटफ़ॉर्म एप्लिकेशन का उपयोग करें।"
 keywords: "SVG एपीआई नेट के लिए लेटेक्स, लेटेक्स 2 SVG एकीकृत C#"
 url: /net/conversion/latex-to-svg/
 family: tex

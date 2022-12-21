@@ -1,5 +1,5 @@
 ---
-title: C++ TeX 集成和處理 API - Aspose 
+title: C++ LaTeX(TeX) 集成和處理 API |  Aspose 
 weight: 50
 url: /zh-hant/cpp/ 
 description: C++ TeX 庫，用於處理 C++ 應用程序中的 TeX 文件。它提供排版功能以及將 TeX 轉換為 PDf、SVG、XPS 和其他格式的功能。

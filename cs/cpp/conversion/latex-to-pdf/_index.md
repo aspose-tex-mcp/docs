@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /_templates/_conversion-child-cpp.md
-title: LaTeX to PDF Conversion API| C++
+title: LaTeX na PDF Konvertor API | C++
 description: Funkce převodu LaTeX do PDF. Integrujte tuto místní knihovnu C++ do svého projektu nebo použijte multiplatformní aplikace pro převod LaTeXu do PDF.
 keywords: latex do pdf api cpp, latex2pdf integrovat c++
 url: /cpp/conversion/latex-to-pdf/
@@ -22,7 +22,7 @@ h2: Převeďte LaTeX do PDF pomocí řešení API pro C++.
 {{<section overview>}}
 ---
 title: "Jak převést LaTeX do PDF pomocí C++"
-p1: "Aspose.TeX for LaTeX to PDF converter transformuje LaTeX soubor na PDF obrázek s použitím libovolného jazyka podporovaného C++."
+p1: "Aspose.TeX for LaTeX na PDF converter transformuje LaTeX soubor na PDF obrázek s použitím libovolného jazyka podporovaného C++."
 p2: "Rozhraní API, které zde vidíte, lze použít k vytvoření vlastní aplikace pro více platforem nebo k integraci do vašeho projektu C++."
 p3: "Chcete-li převést LaTeX do PDF:"
 p4: "Aspose.TeX for C++ API, což je funkčně bohaté, výkonné a snadno použitelné API pro manipulaci a konverzi dokumentů pro platformu C++."

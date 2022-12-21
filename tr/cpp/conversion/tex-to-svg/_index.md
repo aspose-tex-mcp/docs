@@ -2,7 +2,7 @@
 translation: true
 template: /_templates/_conversion-child-cpp.md
 title: TEX'den SVG'ye Dönüştürme API'si | C++
-description: TeX'ten SVG'ye dönüştürme işlevi. Bu şirket içi C++ kitaplığını projenize entegre edin veya TeX'i SVG'ye dönüştürmek için platformlar arası uygulamaları kullanın.
+description: TeX'ten SVG'ye. Bu şirket içi C++ kitaplığını projenize entegre edin veya TeX'i SVG'ye dönüştürmek için platformlar arası uygulamaları kullanın.
 keywords: tex'ten svg'ye api cpp, tex2svg, c++'ı entegre eder
 url: /cpp/conversion/tex-to-svg/
 family: tex

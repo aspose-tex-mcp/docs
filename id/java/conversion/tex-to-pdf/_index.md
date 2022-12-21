@@ -2,7 +2,7 @@
 translation: true
 template: /_templates/_conversion-child-java.md
 title: API Konversi TeX ke PDF | Java
-description: Fungsi konversi TeX ke PDF. Integrasikan pustaka Java on-premise ini ke dalam proyek Anda atau gunakan aplikasi lintas platform untuk mengonversi TeX ke PDF.
+description: Konversi TeX ke PDF. Integrasikan pustaka Java on-premise ini ke dalam proyek Anda atau gunakan aplikasi lintas platform untuk mengonversi TeX ke PDF.
 keywords: tex ke pdf api jpeg, integrasi tex2pdf
 url: /java/conversion/tex-to-pdf/
 family: tex

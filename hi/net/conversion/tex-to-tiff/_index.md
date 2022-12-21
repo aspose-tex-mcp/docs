@@ -2,7 +2,7 @@
 translation: true
 template: /_templates/_conversion-child-net.md
 title: "टीएक्स टू TIFF कन्वर्जन एपीआई | .NET"
-description: "टीएक्स से TIFF रूपांतरण कार्यक्षमता। इस ऑन-प्रिमाइसेस .NET लाइब्रेरी को अपने प्रोजेक्ट में एकीकृत करें या TeX को TIFF में बदलने के लिए क्रॉस-प्लेटफ़ॉर्म एप्लिकेशन का उपयोग करें।"
+description: "टीएक्स से TIFF। इस .NET लाइब्रेरी को अपने प्रोजेक्ट में एकीकृत करें या TeX को TIFF में बदलने के लिए क्रॉस-प्लेटफ़ॉर्म एप्लिकेशन का उपयोग करें।"
 keywords: "टेक्स टू टिफ एपीआई नेट, टेक्स2टीफ इंटीग्रेटेड C#"
 url: /net/conversion/tex-to-tiff/
 family: tex

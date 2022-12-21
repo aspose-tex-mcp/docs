@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /_templates/_conversion-child-net.md
-title: LaTeX에서 PDF로 변환 API | .NET
+title: LaTeX에서 PDF로 변환 API | .NET 해결책
 description: LaTeX에서 PDF로의 변환 기능. 이 온프레미스 .NET 라이브러리를 프로젝트에 통합하거나 크로스 플랫폼 애플리케이션을 사용하여 LaTeX를 PDF로 변환합니다.
 keywords: latex to pdf api net, latex2pdf는 C#을 통합합니다.
 url: /net/conversion/latex-to-pdf/

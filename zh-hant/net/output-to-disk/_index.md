@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /_templates/_output-to-disk-net.md
-title: 將 TeX 輸出寫入磁盤 | .NET API 解決方案
+title: 將 TeX 輸出寫入磁盤 | .NET API 解決方案 | Aspose
 url: /net/output-to-disk/
 description: ".NET API 解決方案與 TeX 一起工作。通過示例了解如何使用幾行 C# 代碼為 TeX 文件創建自定義輸出。"
 informat: TEX

@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /_templates/_conversion-java.md
-title: TeX (LaTeX) 文件转换 | Java
+title: TeX (LaTeX) 文件转换 | Java | Aspose 解决方案
 url: /java/conversion/
 description: TeX(LaTeX) 转换 Java API 解决方案。只需几行 Java 代码即可将 LaTeX 文件转换为 PDF、XPS 和图像，包括 PNG、JPEG、TIFF、BMP。
 keywords: tex 转换 api java, tex 转换器 java 集成

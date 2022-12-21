@@ -2,7 +2,7 @@
 translation: true
 template: /_templates/_conversion-child-cpp.md
 title: Interfejs API konwersji LaTeX do PNG | C++
-description: Funkcjonalność konwersji LaTeX do PNG. Zintegruj tę lokalną bibliotekę C++ ze swoim projektem lub użyj aplikacji wieloplatformowych, aby przekonwertować LaTeX na PNG.
+description: Konwersji LaTeX do PNG. Zintegruj tę lokalną bibliotekę C++ ze swoim projektem lub użyj aplikacji wieloplatformowych, aby przekonwertować LaTeX na PNG.
 keywords: lateks do png api cpp, latex2png zintegruj c++
 url: /cpp/conversion/latex-to-png/
 family: tex

@@ -1,5 +1,5 @@
 ---
-title: .NET API 和應用程序來處理 TeX 文檔 
+title: .NET API 和應用程序來處理 TeX 文檔 | Aspose 
 weight: 20
 url: /zh-hant/net/ 
 description: 用於排版 TeX 文檔的 C# ASP.NET VB.NET 庫。該解決方案支持多種輸出文件格式，如 XPS、PDF、SVG、PNG、JPEG、TIFF、BMP。

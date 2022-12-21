@@ -1,5 +1,5 @@
 ---
-title: TeX 문서를 처리하기 위한 .NET API 및 앱 
+title: TeX 문서를 처리하기 위한 .NET API 해결책 
 weight: 20
 url: /ko/net/ 
 description: TeX 문서를 조판하기 위한 C# ASP.NET VB.NET 라이브러리. 이 솔루션은 XPS, PDF, SVG, PNG, JPEG, TIFF, BMP와 같은 다양한 출력 파일 형식을 지원합니다.

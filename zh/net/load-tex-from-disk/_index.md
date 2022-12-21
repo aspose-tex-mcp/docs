@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /_templates/_load-tex-from-disk-net.md
-title: 从磁盘加载 TeX | .NET API 解决方案
+title: 从磁盘加载 TeX | .NET API 解决方案 | Aspose API 解决方案
 url: /net/load-tex-from-disk/
 description: ".NET API 解决方案与 TeX 一起工作。通过示例了解如何使用几行 C# 代码从磁盘加载 TeX 文件。"
 informat: TEX

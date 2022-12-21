@@ -2,7 +2,7 @@
 title: TeX ve LaTeX API ve web çözümleri
 weight: 30
 url: /tr/
-description: TeX belgelerini dizmek, işlemek ve dönüştürmek için TeX Yüksek Kod API'leri ve Uygulamaları. Bu çözüm ayrıca PDF, EPS, SVG ve çoğu görüntü formatını çıktı formatı olarak destekler.
+description: TeX dizmek, işlemek ve dönüştürmek için TeX API'leri ve Uygulamaları. Bu çözüm ayrıca PDF, EPS, ve çoğu görüntü formatını çıktı formatı olarak destekler.
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}

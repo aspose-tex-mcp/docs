@@ -2,7 +2,7 @@
 translation: true
 template: /_templates/_conversion-child-java.md
 title: लाTEX से XPS कन्वर्जन एपीआई | Java
-description: "LATEX से XPS रूपांतरण कार्यक्षमता। इस ऑन-प्रिमाइसेस जावा लाइब्रेरी को अपने प्रोजेक्ट में एकीकृत करें या लाTEX को XPS में बदलने के लिए क्रॉस-प्लेटफ़ॉर्म एप्लिकेशन का उपयोग करें।"
+description: "LATEX से XPS। इस जावा लाइब्रेरी को अपने प्रोजेक्ट में एकीकृत करें या लाTEX को XPS में बदलने के लिए क्रॉस-प्लेटफ़ॉर्म एप्लिकेशन का उपयोग करें।"
 keywords: लेTEX टू XPS एपीआई जावा, लेTEX2XPS एकीकृत
 url: /java/conversion/latex-to-xps/
 family: tex

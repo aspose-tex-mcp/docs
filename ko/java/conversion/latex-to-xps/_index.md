@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /_templates/_conversion-child-java.md
-title: LaTeX에서 XPS로의 변환 API | Java
+title: LaTeX에서 XPS로의 변환 API | Java  해결책
 description: LaTeX에서 XPS로의 변환 기능. 이 온프레미스 Java 라이브러리를 프로젝트에 통합하거나 크로스 플랫폼 애플리케이션을 사용하여 LaTeX를 XPS로 변환하십시오.
 keywords: 라텍스에서 xps API 자바로, latex2xps 통합
 url: /java/conversion/latex-to-xps/

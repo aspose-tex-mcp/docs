@@ -2,7 +2,7 @@
 translation: true
 template: /_templates/_conversion-child-java.md
 title: API chuyển đổi từ LaTeX sang JPEG | Java
-description: Chức năng chuyển đổi LaTeX sang JPEG. Tích hợp thư viện Java tại chỗ này vào dự án của bạn hoặc sử dụng các ứng dụng đa nền tảng để chuyển đổi LaTeX sang JPEG.
+description: LaTeX sang JPEG. Tích hợp thư viện Java tại chỗ này vào dự án của bạn hoặc sử dụng các ứng dụng đa nền tảng để chuyển đổi LaTeX sang JPEG.
 keywords: latex sang jpeg api java, tích hợp latex2jpeg
 url: /java/conversion/latex-to-jpeg/
 family: tex

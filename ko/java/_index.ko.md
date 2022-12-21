@@ -1,5 +1,5 @@
 ---
-title: TeX 및 LaTeX 문서를 처리하는 Java API
+title: TeX 및 LaTeX 문서를 처리하는 Java API 해결책
 weight: 40
 url: /ko/java/ 
 description: Java 애플리케이션 내에서 TeX 파일을 처리하기 위한 Java TeX 라이브러리. 조판 기능과 TeX를 PDf, SVG, XPS 및 기타 형식으로 변환하는 기능을 제공합니다.

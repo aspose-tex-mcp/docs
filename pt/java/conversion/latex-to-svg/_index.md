@@ -2,7 +2,7 @@
 translation: true
 template: /_templates/_conversion-child-java.md
 title: API de conversão de LaTeX para SVG | Java
-description: Funcionalidade de conversão de LaTeX para SVG. Integre esta biblioteca Java local em seu projeto ou use aplicativos multiplataforma para converter LaTeX em SVG.
+description: Conversão de LaTeX para SVG. Integre esta biblioteca Java local em seu projeto ou use aplicativos multiplataforma para converter LaTeX em SVG.
 keywords: latex para svg api java, integração de latex2svg
 url: /java/conversion/latex-to-svg/
 family: tex

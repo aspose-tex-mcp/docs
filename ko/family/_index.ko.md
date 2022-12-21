@@ -1,5 +1,5 @@
 ---
-title: Java, .NET 및 C++용 TeX API 솔루션
+title: Java, .NET 및 C++용 TeX API 해결책 솔루션
 weight: 10
 url: /ko/family
 description: .NET, Java 및 C++용 TeX 기본 API. 이것은 사용하기 쉽고 모든 플랫폼에서 TeX 및 LaTeX 파일을 조판, 처리 및 변환하는 통합 솔루션입니다.

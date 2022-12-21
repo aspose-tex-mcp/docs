@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /_templates/_conversion-child-java.md
-title: LaTeX 到 PDF 轉換 API | Java
+title: LaTeX 到 PDF轉換 API | Java | Aspose
 description: LaTeX 到 PDF 的轉換功能。將此本地 Java 庫集成到您的項目中，或使用跨平台應用程序將 LaTeX 轉換為 PDF。
 keywords: 乳膠到pdf api java，latex2pdf 集成
 url: /java/conversion/latex-to-pdf/

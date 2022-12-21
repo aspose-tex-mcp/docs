@@ -2,7 +2,7 @@
 title: API voor integratie en verwerking van C++ TeX - Aspose 
 weight: 50
 url: /nl/cpp/ 
-description: C++ TeX-bibliotheek om TeX-bestanden in C++-toepassingen te verwerken. Het biedt zetwerkfunctionaliteit samen met conversie van TeX naar pdf, SVG, XPS en andere formaten.
+description: C++ TeX-API om TeX-bestanden in C++-toepassingen te verwerken. Het biedt zetwerkfunctionaliteit samen met conversie van TeX naar pdf, SVG, XPS.
 keywords: tex conversie api cpp, tex converter c++ integreren
 ---
 

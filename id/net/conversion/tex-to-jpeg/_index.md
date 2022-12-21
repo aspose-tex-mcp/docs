@@ -2,7 +2,7 @@
 translation: true
 template: /_templates/_conversion-child-net.md
 title: API Konversi TeX ke JPEG | .BERSIH
-description: Fungsi konversi TeX ke JPEG. Integrasikan pustaka .NET lokal ini ke dalam proyek Anda atau gunakan aplikasi lintas platform untuk mengonversi TeX ke JPEG.
+description: Konversi TeX ke JPEG. Integrasikan pustaka .NET lokal ini ke dalam proyek Anda atau gunakan aplikasi lintas platform untuk mengonversi TeX ke JPEG.
 keywords: tex ke jpeg api net, tex2jpeg mengintegrasikan c#
 url: /net/conversion/tex-to-jpeg/
 family: tex

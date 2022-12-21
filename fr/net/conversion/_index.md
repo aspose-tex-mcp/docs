@@ -3,7 +3,7 @@ translation: true
 template: /_templates/_conversion-net.md
 title: Conversion de fichiers TeX (LaTeX) | .NET"
 url: /net/conversion/
-description: Fonctionnalité de conversion TeX et LaTeX. Convertissez les fichiers TeX / LaTeX en formats PDF, SVG, XPS et image, notamment PNG, JPEG, TIFF et BMP à l'aide de cette solution d'API .NET.
+description: Conversion TeX et LaTeX. Convertissez les fichiers TeX / LaTeX en formats PDF, SVG, XPS et image, notamment PNG, JPEG, TIFF et BMP à l'aide de cette solution d'API .NET.
 keywords: conversion tex api c#, convertisseur tex c# intégrer
 family: tex
 platformtag: net

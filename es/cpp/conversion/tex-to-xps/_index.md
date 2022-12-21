@@ -2,7 +2,7 @@
 translation: true
 template: /_templates/_conversion-child-cpp.md
 title: API de conversión de TEX a XPS | C++
-description: Funcionalidad de conversión de TeX a XPS. Integre esta biblioteca C++ local en su proyecto o use aplicaciones multiplataforma para convertir TeX a XPS.
+description: Conversión de TeX a XPS. Integre esta biblioteca C++ local en su proyecto o use aplicaciones multiplataforma para convertir TeX a XPS.
 keywords: tex a xps api cpp, tex2xps integran c++
 url: /cpp/conversion/tex-to-xps/
 family: tex

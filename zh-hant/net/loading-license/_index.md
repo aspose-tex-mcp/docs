@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /_templates/_loading-license-net.md
-title: 加載許可證 TeX | .NET API 解決方案
+title: 加載許可證 TeX | .NET API 解決方案 | Aspose
 url: /net/loading-license/
 description: ".NET API 解決方案與 TeX 一起工作。使用幾行 C# 代碼從文件或流中加載許可證信息。"
 informat: TEX

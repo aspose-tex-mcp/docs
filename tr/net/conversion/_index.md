@@ -3,7 +3,7 @@ translation: true
 template: /_templates/_conversion-net.md
 title: TeX (LaTeX) Dosyaları Dönüştürme | .NET
 url: /net/conversion/
-description: TeX ve LaTeX dönüştürme işlevi. Bu .NET API çözümünü kullanarak TeX / LaTeX dosyalarını PDF, SVG, XPS ve PNG, JPEG, TIFF ve BMP dahil olmak üzere görüntü formatlarına dönüştürün.
+description: TeX ve LaTeX dönüştürme işlevi. Bu .NET API çözümünü kullanarak TeX dosyalarını PDF, SVG, XPS ve PNG, JPEG, TIFF ve BMP dahil olmak üzere görüntü formatlarına dönüştürün.
 keywords: tex dönüştürme api c#, tex dönüştürücü c# entegre
 family: tex
 platformtag: net

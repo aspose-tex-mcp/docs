@@ -1,5 +1,5 @@
 ---
-title: C++ TeX 통합 및 처리 API - Aspose 
+title: C++ TeX 통합 및 처리 API 해결책 - Aspose 
 weight: 50
 url: /ko/cpp/ 
 description: C++ 응용 프로그램 내에서 TeX 파일을 처리하기 위한 C++ TeX 라이브러리. TeX를 PDf, SVG, XPS 및 기타 형식으로 변환하는 것과 함께 조판 기능을 제공합니다.

@@ -2,7 +2,7 @@
 translation: true
 template: /_templates/_conversion-child-net.md
 title: API Konversi TeX ke SVG | .BERSIH
-description: Fungsi konversi TeX ke SVG. Integrasikan pustaka .NET lokal ini ke dalam proyek Anda atau gunakan aplikasi lintas platform untuk mengonversi TeX ke SVG.
+description: Konversi TeX ke SVG. Integrasikan pustaka .NET lokal ini ke dalam proyek Anda atau gunakan aplikasi lintas platform untuk mengonversi TeX ke SVG.
 keywords: tex ke svg api net, tex2svg mengintegrasikan c#
 url: /net/conversion/tex-to-svg/
 family: tex

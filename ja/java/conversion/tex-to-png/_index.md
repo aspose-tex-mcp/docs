@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /_templates/_conversion-child-java.md
-title: TeX から PNG への変換 API | Java
+title: TeX から PNG への変換 API | Java  解決
 description: TeX から PNG への変換機能。このオンプレミス Java ライブラリをプロジェクトに統合するか、クロスプラットフォーム アプリケーションを使用して TeX を PNG に変換します。
 keywords: texからpng apiへのJava、tex2pngの統合
 url: /java/conversion/tex-to-png/

@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /_templates/_conversion-cpp.md
-title: TeX (LaTeX) 文件轉換 | C++
+title: TeX (LaTeX) 文件轉換 | C++ | Aspose
 url: /cpp/conversion/
 keywords: tex 轉換器 cpp api, tex 轉換器 c++ api
 description: "TeX(LaTeX) 轉換 C++ API 解決方案。只需幾行 C++ 代碼即可將 LaTeX 文件轉換為 PDF、XPS 和圖像，包括 PNG、JPEG、TIFF、BMP。"

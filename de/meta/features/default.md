@@ -67,7 +67,7 @@ qs[3].text: "Erstellen Sie zunächst Konvertierungsoptionen mit *ConsoleAppOptio
 qs[1].name: "Welche Klassen werden verwendet, um eine TeX-Datei aus ZIP zu laden?"
 qs[1].text: "Um die Ausgabe/Eingabe von aus ZIP geladenen TeX-Dateien zu manipulieren, verwenden Sie die ZipDirectory-Klassen von [*Aspose.TeX.IO*](https://reference.aspose.com/tex/net/aspose.tex.io/) Namensraum."
 qs[2].name: "Wie installiere ich das TeX-Paket?"
-qs[2].text: "Öffnen Sie dazu den NuGet-Paket-Manager, suchen Sie nach Aspose.TeX und installieren oder verwenden Sie den folgenden Befehl von der Paket-Manager-Konsole."
+qs[2].text: "Öffnen Sie dazu den NuGet-Paket-Manager, suchen Sie nach Aspose.TeX und installieren oder verwendt  den folgenden Befehl von der Paket-Manager-Konsole."
 qs[3].name: "Wie lade ich eine TeX-Datei aus ZIP?"
 qs[3].text: "Öffnen Sie den Stream im ZIP-Archiv für die Ein- und Ausgabe. Erstellen Sie dann Konvertierungsoptionen mit *ConsoleAppOptions()*. Geben Sie als Nächstes ein ZIP-Archiv-Arbeitsverzeichnis für die Ein- und Ausgabe an. Geben Sie die Konsole als Ausgabeterminal an, definieren Sie die Speicheroptionen und führen Sie den Job aus."
 ---

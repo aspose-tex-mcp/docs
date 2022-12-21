@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /_templates/_customize-input-net.md
-title: 創建自定義輸入 TeX | .NET API 解決方案
+title: 創建自定義輸入 TeX | .NET API 解決方案 | Aspose
 url: /net/customize-input/
 description: ".NET API 解決方案與 TeX 一起工作。通過示例了解如何使用幾行 C# 代碼為 TeX 文件創建自定義輸入。"
 keywords: 自定義輸入tex net api, C# api 自定義tex

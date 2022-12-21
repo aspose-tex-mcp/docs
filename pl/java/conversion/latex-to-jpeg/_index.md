@@ -2,7 +2,7 @@
 translation: true
 template: /_templates/_conversion-child-java.md
 title: Interfejs API konwersji LaTeX na JPEG | Java
-description: Funkcjonalność konwersji LaTeX na JPEG. Zintegruj tę lokalną bibliotekę Java ze swoim projektem lub użyj aplikacji wieloplatformowych, aby przekonwertować LaTeX na JPEG.
+description: Konwersji LaTeX na JPEG. Zintegruj tę lokalną bibliotekę Java ze swoim projektem lub użyj aplikacji wieloplatformowych, aby przekonwertować LaTeX na JPEG.
 keywords: lateks do jpeg api java, integracja latex2jpeg
 url: /java/conversion/latex-to-jpeg/
 family: tex

@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /_templates/_conversion-child-cpp.md
-title: TEX 到 SVG 轉換 API | C++
+title: TEX 到 SVG轉換 API | C++ | Aspose
 description: TeX 到 SVG 的轉換功能。將此本地 C++ 庫集成到您的項目中，或使用跨平台應用程序將 TeX 轉換為 SVG。
 keywords: tex to svg api cpp, tex2svg 集成 c++
 url: /cpp/conversion/tex-to-svg/

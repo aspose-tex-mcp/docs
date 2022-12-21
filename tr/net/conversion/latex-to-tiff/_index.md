@@ -2,7 +2,7 @@
 translation: true
 template: /_templates/_conversion-child-net.md
 title: LaTeX'ten TIFF'ye Dönüştürme API'sı | .NET
-description: LaTeX'ten TIFF'ye dönüştürme işlevi. Bu şirket içi .NET kitaplığını projenize entegre edin veya LaTeX'i TIFF'e dönüştürmek için platformlar arası uygulamaları kullanın.
+description: LaTeX'ten TIFF'ye. Bu şirket içi .NET kitaplığını projenize entegre edin veya LaTeX'i TIFF'e dönüştürmek için platformlar arası uygulamaları kullanın.
 keywords: 'api net tiff için lateks, latex2tiff C# entegre'
 url: /net/conversion/latex-to-tiff/
 family: tex

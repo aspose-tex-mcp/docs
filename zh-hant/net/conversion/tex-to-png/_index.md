@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /_templates/_conversion-child-net.md
-title: TeX 到 PNG 轉換 API |  .NET
+title: TeX 到 PNG 轉換 API | .NET | Aspose
 description: TeX 到 PNG 的轉換功能。將此本地 .NET 庫集成到您的項目中，或使用跨平台應用程序將 TeX 轉換為 PNG。
 keywords: tex to png api net, tex2png 集成 c#
 url: /net/conversion/tex-to-png/

@@ -2,7 +2,7 @@
 translation: true
 template: /_templates/_conversion-child-cpp.md
 title: Interfejs API konwersji LaTeX do SVG | C++
-description: Funkcjonalność konwersji LaTeX do SVG. Zintegruj tę lokalną bibliotekę C++ ze swoim projektem lub użyj aplikacji wieloplatformowych, aby przekonwertować LaTeX na SVG.
+description: Konwersji LaTeX do SVG. Zintegruj tę lokalną bibliotekę C++ ze swoim projektem lub użyj aplikacji wieloplatformowych, aby przekonwertować LaTeX na SVG.
 keywords: lateks do svg api cpp, latex2svg zintegruj c++
 url: /cpp/conversion/latex-to-svg/
 family: tex

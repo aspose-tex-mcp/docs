@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /_templates/_conversion-child-cpp.md
-title: LaTeX から TIFF への変換 API | C++
+title: LaTeX から TIFF への変換 API | C++  解決
 description: LaTeX から TIFF への変換機能。このオンプレミス C++ ライブラリをプロジェクトに統合するか、クロスプラットフォーム アプリケーションを使用して LaTeX を TIFF に変換します。
 keywords: latex to tiff api cpp、latex2tiffはc ++を統合します
 url: /cpp/conversion/latex-to-tiff/

@@ -2,7 +2,7 @@
 title: TeX và LaTeX API và các giải pháp web
 weight: 30
 url: /vi/
-description: Ứng dụng và API mã cao TeX để sắp chữ, xử lý và chuyển đổi tài liệu TeX. Giải pháp này cũng hỗ trợ PDF, EPS, SVG và hầu hết các định dạng hình ảnh dưới dạng định dạng đầu ra.
+description: Ứng dụng và API mã cao TeX để sắp chữ, xử lý và chuyển đổi tài liệu TeX. Giải pháp này cũng hỗ trợ PDF, EPS, SVG dưới dạng định dạng đầu ra.
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}

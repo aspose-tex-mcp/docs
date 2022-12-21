@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /_templates/_conversion-child-java.md
-title: LaTeX to JPEG Conversion API| Java
+title: LaTeX na JPEG Konvertor API | Java
 description: Funkce převodu LaTeX na JPEG. Integrujte tuto místní knihovnu Java do svého projektu nebo použijte multiplatformní aplikace pro převod LaTeXu na JPEG.
 keywords: latex do jpeg api java, latex2jpeg integrovat
 url: /java/conversion/latex-to-jpeg/
@@ -22,7 +22,7 @@ h2: Převeďte LaTeX na JPEG pomocí API Solution for Java
 {{<section overview>}}
 ---
 title: "Jak převést LaTeX do JPEG pomocí Java"
-p1: "Aspose.TeX for LaTeX to JPEG converter transformuje LaTeX soubor na obrázek JPEG s použitím libovolného jazyka podporovaného Javou."
+p1: "Aspose.TeX for LaTeX na JPEG converter transformuje LaTeX soubor na obrázek JPEG s použitím libovolného jazyka podporovaného Javou."
 p2: "Rozhraní API, které zde vidíte, lze také použít k vytvoření vlastní aplikace pro více platforem nebo k integraci do vašeho projektu Java."
 p3: "Chcete-li převést LaTeX na JPEG:"
 p4: "Použijte [Aspose.TeX for Java](https://products.aspose.com/tex/java) API, což je funkčně bohaté, výkonné a snadno použitelné konverzní API pro platformu Java."

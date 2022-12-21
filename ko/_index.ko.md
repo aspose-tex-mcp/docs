@@ -1,5 +1,5 @@
 ---
-title: TeX 및 LaTeX API 및 웹 솔루션
+title: TeX 및 LaTeX API 해결책 및 웹 솔루션
 weight: 30
 url: /ko/
 description: TeX 문서를 조판, 처리 및 변환하는 TeX High Code API 및 앱. 이 솔루션은 또한 PDF, EPS, SVG 및 대부분의 이미지 형식을 출력 형식으로 지원합니다.

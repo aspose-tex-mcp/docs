@@ -1,9 +1,9 @@
 ﻿---
 translation: true
 template: /_templates/_output-to-zip-net.md
-title: TeX в ZIP | .NET API-решение
+title: TeX в ZIP | .NET API-решение | Aspose
 url: /net/output-to-zip/
-description: "Решение .NET API для работы с TeX. Функция преобразования TeX в ZIP позволяет сохранить файл TeX как самый популярный архив. Примеры C# этой функциональности."
+description: "Решение .NET API для работы с TeX. Конверсия TeX в ZIP позволяет сохранить файл TeX как самый популярный архив. Примеры C# этой функциональности."
 informat: TEX
 family: tex
 platformtag: net

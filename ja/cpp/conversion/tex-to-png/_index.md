@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /_templates/_conversion-child-cpp.md
-title: TEX から PNG への変換 API | C++
+title: TEX から PNG への変換 API | C++  解決
 description: TeX から PNG への変換機能。このオンプレミス C++ ライブラリをプロジェクトに統合するか、クロスプラットフォーム アプリケーションを使用して TeX を PNG に変換します。
 keywords: texからpng apiへのcpp、tex2pngはc ++を統合します
 url: /cpp/conversion/tex-to-png/

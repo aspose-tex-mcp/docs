@@ -2,7 +2,7 @@
 translation: true
 template: /_templates/_conversion-child-java.md
 title: "टीएक्स टू PDF कन्वर्जन एपीआई | Java"
-description: "टीएक्स से PDF रूपांतरण कार्यक्षमता। इस ऑन-प्रिमाइसेस जावा लाइब्रेरी को अपने प्रोजेक्ट में एकीकृत करें या टीएक्स को PDF में बदलने के लिए क्रॉस-प्लेटफ़ॉर्म एप्लिकेशन का उपयोग करें।"
+description: "टीएक्स से PDF। इस जावा लाइब्रेरी को अपने प्रोजेक्ट में एकीकृत करें या टीएक्स को PDF में बदलने के लिए क्रॉस-प्लेटफ़ॉर्म एप्लिकेशन का उपयोग करें।"
 keywords: TEX टू PDF़ एपीआई JPEG, TEX2PDF इंटीग्रेट
 url: /java/conversion/tex-to-pdf/
 family: tex

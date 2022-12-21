@@ -2,7 +2,7 @@
 translation: true
 template: /_templates/_conversion-child-cpp.md
 title: API konwersji TEX-a na JPEG | C++
-description: Funkcjonalność konwersji TeX do JPEG. Zintegruj tę lokalną bibliotekę C++ ze swoim projektem lub użyj aplikacji wieloplatformowych, aby przekonwertować TeX na JPEG.
+description: Konwersji TeX do JPEG. Zintegruj tę lokalną bibliotekę C++ ze swoim projektem lub użyj aplikacji wieloplatformowych, aby przekonwertować TeX na JPEG.
 keywords: tex do jpeg api cpp, tex2jpeg integracja c++
 url: /cpp/conversion/tex-to-jpeg/
 family: tex

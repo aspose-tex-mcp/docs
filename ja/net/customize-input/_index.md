@@ -3,7 +3,7 @@ translation: true
 template: /_templates/_customize-input-net.md
 title: カスタム入力 TeX を作成 | .NET API ソリューション
 url: /net/customize-input/
-description: "TeX で動作する .NET API ソリューション。数行の C# コードで TeX ファイルのカスタム入力を作成する方法を例で学びます。"
+description: "TeX で動作する .NET API ソリューション。数行の C# コードで TeX ファイルのカスタム入力を作成する方法を例で学びます。Aspose"
 keywords: カスタム入力 tex net api、tex をカスタマイズするための C# api
 informat: TEX
 family: tex

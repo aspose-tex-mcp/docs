@@ -2,7 +2,7 @@
 translation: true
 template: /_templates/_conversion-child-cpp.md
 title: LaTeX'ten SVG'ye Dönüştürme API'sı | C++
-description: LaTeX'ten SVG'ye dönüştürme işlevi. Bu şirket içi C++ kitaplığını projenize entegre edin veya LaTeX'i SVG'ye dönüştürmek için platformlar arası uygulamaları kullanın.
+description: LaTeX'ten SVG'ye. Bu şirket içi C++ kitaplığını projenize entegre edin veya LaTeX'i SVG'ye dönüştürmek için platformlar arası uygulamaları kullanın.
 keywords: lateksten svg api cpp'ye, latex2svg c++'ı entegre eder
 url: /cpp/conversion/latex-to-svg/
 family: tex

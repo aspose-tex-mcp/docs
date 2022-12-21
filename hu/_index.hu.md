@@ -2,7 +2,7 @@
 title: TeX és LaTeX API és webes megoldások
 weight: 30
 url: /hu/
-description: TeX High Code API-k és alkalmazások a TeX dokumentumok szedéséhez, feldolgozásához és konvertálásához. Ez a megoldás a PDF, EPS, SVG és a legtöbb képformátumot is támogatja kimeneti formátumként.
+description: TeX API-k és alkalmazások a TeX szedéséhez, feldolgozásához és konvertálásához. Ez a megoldás a PDF, EPS, SVG és a  is támogatja kimeneti formátumként.
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}

@@ -2,7 +2,7 @@
 title: Java API untuk memproses TeX dan LaTeX Docs
 weight: 40
 url: /id/java/ 
-description: Pustaka Java TeX untuk memproses file TeX dalam aplikasi Java. Ini menawarkan fungsionalitas pengaturan huruf dan konversi TeX ke PDf, SVG, XPS, dan format lainnya.
+description: Pustaka Java TeX untuk memproses file TeX dalam aplikasi Java. Ini menawarkan pengaturan huruf dan konversi TeX ke PDf, SVG, XPS, dan format lainnya.
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}

@@ -2,7 +2,7 @@
 translation: true
 template: /_templates/_conversion-child-java.md
 title: TeX naar XPS conversie API | Java
-description: TeX naar XPS conversie functionaliteit. Integreer deze on-premise Java-bibliotheek in uw project of gebruik platformonafhankelijke applicaties om TeX naar XPS te converteren.
+description: TeX naar XPS conversie. Integreer deze  Java-bibliotheek in uw project of gebruik platformonafhankelijke applicaties om TeX naar XPS te converteren.
 keywords: tex naar xps api java, tex2xps integreren
 url: /java/conversion/tex-to-xps/
 family: tex

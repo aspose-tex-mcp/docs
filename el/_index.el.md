@@ -2,7 +2,7 @@
 title: TeX και LaTeX API και λύσεις web
 weight: 30
 url: /el/
-description: API και εφαρμογές TeX High Code για στοιχειοθέτηση, επεξεργασία και μετατροπή εγγράφων TeX. Αυτή η λύση υποστηρίζει επίσης PDF, EPS, SVG και τις περισσότερες μορφές εικόνας ως μορφές εξόδου.
+description: API και εφαρμογές TeX για στοιχειοθέτηση, επεξεργασία και μετατροπή εγγράφων TeX. Αυτή η λύση υποστηρίζει επίσης PDF, EPS, SVG ως μορφές εξόδου.
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}

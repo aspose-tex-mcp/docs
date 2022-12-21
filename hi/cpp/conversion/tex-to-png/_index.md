@@ -2,7 +2,7 @@
 translation: true
 template: /_templates/_conversion-child-cpp.md
 title: "TEX टू PNG कन्वर्जन एपीआई | C++"
-description: "टीएक्स से PNG रूपांतरण कार्यक्षमता। इस ऑन-प्रिमाइसेस C++ लाइब्रेरी को अपने प्रोजेक्ट में एकीकृत करें या TeX को PNG में बदलने के लिए क्रॉस-प्लेटफ़ॉर्म एप्लिकेशन का उपयोग करें।"
+description: "टीएक्स से PNG। इस C++ लाइब्रेरी को अपने प्रोजेक्ट में एकीकृत करें या TeX को PNG में बदलने के लिए क्रॉस-प्लेटफ़ॉर्म एप्लिकेशन का उपयोग करें।"
 keywords: "TEX टू PNG एपीआई सीपीपी, TEX2PNG इंटीग्रेटेड C++"
 url: /cpp/conversion/tex-to-png/
 family: tex

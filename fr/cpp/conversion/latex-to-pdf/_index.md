@@ -2,7 +2,7 @@
 translation: true
 template: /_templates/_conversion-child-cpp.md
 title: API de conversion LaTeX en PDF | C++
-description: Fonctionnalité de conversion LaTeX en PDF. Intégrez cette bibliothèque C++ sur site dans votre projet ou utilisez des applications multiplateformes pour convertir LaTeX en PDF.
+description: Conversion LaTeX en PDF. Intégrez bibliothèque C++ sur site dans votre projet ou utilisez des applications multiplateformes pour convertir LaTeX en PDF.
 keywords: latex en pdf api cpp, latex2pdf intègre c++
 url: /cpp/conversion/latex-to-pdf/
 family: tex

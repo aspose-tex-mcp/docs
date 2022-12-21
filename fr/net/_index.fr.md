@@ -2,7 +2,7 @@
 title: API et applications .NET pour traiter les documents TeX 
 weight: 20
 url: /fr/net/ 
-description: Bibliothèque C# ASP.NET VB.NET pour composer des documents TeX. La solution prend en charge de nombreux formats de fichiers de sortie tels que XPS, PDF, SVG, PNG, JPEG, TIFF, BMP.
+description: Bibliothèque C# ASP.NET VB.NET pour composer TeX. La solution prend en charge de de fichiers de sortie tels que XPS, PDF, SVG, PNG, JPEG, TIFF, BMP.
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}

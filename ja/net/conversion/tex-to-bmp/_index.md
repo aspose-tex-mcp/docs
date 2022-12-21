@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /_templates/_conversion-child-net.md
-title: TeX から BMP への変換 API | .NET
+title: TeX から BMP への変換 API | .NET  解決
 description: TeX から BMP への変換機能。このオンプレミス .NET ライブラリをプロジェクトに統合するか、クロスプラットフォーム アプリケーションを使用して TeX を BMP に変換します。
 keywords: texからbmp api netへ、tex2bmpはc#を統合
 url: /net/conversion/tex-to-bmp/

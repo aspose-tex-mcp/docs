@@ -2,7 +2,7 @@
 translation: true
 template: /_templates/_conversion-child-java.md
 title: API преобразования TeX в XPS | Java
-description: Функциональность преобразования TeX в XPS. Интегрируйте эту локальную библиотеку Java в свой проект или используйте кроссплатформенные приложения для преобразования TeX в XPS.
+description: Конверсия TeX в XPS. Интегрируйте эту локальную библиотеку Java в свой проект или используйте кроссплатформенные приложения для преобразования TeX в XPS.
 keywords: tex to xps api java, интеграция tex2xps
 url: /java/conversion/tex-to-xps/
 family: tex

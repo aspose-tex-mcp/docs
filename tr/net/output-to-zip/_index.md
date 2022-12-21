@@ -3,7 +3,7 @@ translation: true
 template: /_templates/_output-to-zip-net.md
 title: TeX'den ZIP'ye | .NET API Çözümü
 url: /net/output-to-zip/
-description: "TeX ile çalışmak için .NET API Çözümü. TeX'ten ZIP'ye dönüştürme işlevi, TeX dosyanızı en popüler arşiv olarak kaydetmenizi sağlar. Bu işlevin C# örnekleri."
+description: "TeX ile çalışmak için .NET API Çözümü. TeX'ten ZIP'ye dönüştürme işlevi, TeX dosyanızı en popüler arşiv olarak kaydetmenizi sağlar. Bu işlevin C# örnekleri"
 informat: TEX
 family: tex
 platformtag: net

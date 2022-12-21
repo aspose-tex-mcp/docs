@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /_templates/_conversion-child-cpp.md
-title: LaTeX から PDF への変換 API | C++
+title: LaTeX から PDF への変換 API | C++  解決
 description: LaTeX から PDF への変換機能。このオンプレミス C++ ライブラリをプロジェクトに統合するか、クロスプラットフォーム アプリケーションを使用して LaTeX を PDF に変換します。
 keywords: latex to pdf api cpp、latex2pdfはc ++を統合します
 url: /cpp/conversion/latex-to-pdf/

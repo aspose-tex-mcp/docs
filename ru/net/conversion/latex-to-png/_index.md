@@ -2,7 +2,7 @@
 translation: true
 template: /_templates/_conversion-child-net.md
 title: API преобразования LaTeX в PNG | .NET
-description: Функция преобразования LaTeX в PNG. Интегрируйте эту локальную библиотеку .NET в свой проект или используйте кроссплатформенные приложения для преобразования LaTeX в PNG.
+description: Конверсия LaTeX в PNG. Интегрируйте эту локальную библиотеку .NET в свой проект или используйте кроссплатформенные приложения для преобразования LaTeX в PNG.
 keywords: латекс в png сеть API, латекс2png интегрировать С#
 url: /net/conversion/latex-to-png/
 family: tex

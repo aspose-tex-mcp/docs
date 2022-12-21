@@ -2,7 +2,7 @@
 title: API de integração e processamento C++ TeX - Aspose 
 weight: 50
 url: /pt/cpp/ 
-description: Biblioteca C++ TeX para processar arquivos TeX dentro de aplicativos C++. Oferece funcionalidade de composição juntamente com conversão de TeX para PDF, SVG, XPS e outros formatos.
+description: Biblioteca C++ TeX para processar arquivos TeX dentro de aplicativos C++. Funcionalidade de conversão de TeX para PDF, SVG, XPS e outros formatos.
 keywords: tex conversão api cpp, tex converter c++ integr
 ---
 

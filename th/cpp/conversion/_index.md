@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /_templates/_conversion-cpp.md
-title: การแปลงไฟล์ TeX (LaTeX) | C++
+title: การแปลงไฟล์ TeX (LaTeX) | C++ | Aspose
 url: /cpp/conversion/
 keywords: เท็กซ์คอนเวอร์เตอร์ cpp api, เท็กซ์คอนเวอร์เตอร์ c++ api
 description: โซลูชันการแปลง TeX (LaTeX) C++ API แปลงไฟล์ LaTeX เป็น PDF, XPS และรูปภาพ รวมถึง PNG, JPEG, TIFF, BMP ด้วยโค้ด C++ สองสามบรรทัด

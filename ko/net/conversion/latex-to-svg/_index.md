@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /_templates/_conversion-child-net.md
-title: LaTeX에서 SVG로의 변환 API | .NET
+title: LaTeX에서 SVG로의 변환 API | .NET 해결책
 description: LaTeX에서 SVG로의 변환 기능. 이 온프레미스 .NET 라이브러리를 프로젝트에 통합하거나 크로스 플랫폼 애플리케이션을 사용하여 LaTeX를 SVG로 변환하십시오.
 keywords: svg API net에 라텍스, latex2svg 통합 C#
 url: /net/conversion/latex-to-svg/

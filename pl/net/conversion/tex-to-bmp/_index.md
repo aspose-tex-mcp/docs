@@ -2,7 +2,7 @@
 translation: true
 template: /_templates/_conversion-child-net.md
 title: API konwersji TeX na BMP | .NET
-description: Funkcjonalność konwersji TeX do BMP. Zintegruj tę lokalną bibliotekę .NET ze swoim projektem lub użyj aplikacji wieloplatformowych, aby przekonwertować TeX na BMP.
+description: Konwersji TeX do BMP. Zintegruj tę lokalną bibliotekę .NET ze swoim projektem lub użyj aplikacji wieloplatformowych, aby przekonwertować TeX na BMP.
 keywords: tex do bmp api net, integracja tex2bmp c#
 url: /net/conversion/tex-to-bmp/
 family: tex

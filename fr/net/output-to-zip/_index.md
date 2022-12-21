@@ -3,7 +3,7 @@ translation: true
 template: /_templates/_output-to-zip-net.md
 title: TeX vers ZIP | Solution d'API .NET
 url: /net/output-to-zip/
-description: "Solution API .NET pour travailler avec TeX. La fonctionnalité de conversion TeX vers ZIP vous permet d'enregistrer votre fichier TeX en tant qu'archive la plus populaire. Exemples C# de cette fonctionnalité."
+description: "La Conversion TeX vers ZIP vous permet d'enregistrer votre fichier TeX en tant qu'archive la plus populaire. Exemples C# de cette fonctionnalité."
 informat: TEX
 family: tex
 platformtag: net

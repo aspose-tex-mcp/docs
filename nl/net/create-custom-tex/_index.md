@@ -3,7 +3,7 @@ translation: true
 template: /_templates/_create-custom-tex-net.md
 title: Op maat gemaakte TeX-bestanden | .NET API
 url: /net/create-custom-tex/
-description: ".NET API Oplossing om met TeX te werken. Bevat de functionaliteit om aangepaste TeX-indelingen te maken. C# voorbeelden van functionaliteit om TeX aan te passen."
+description: ".NET API om met TeX te werken. Bevat de functionaliteit om aangepaste TeX-indelingen te maken. C# voorbeelden van functionaliteit om TeX aan te passen."
 informat: TEX
 family: tex
 platformtag: net

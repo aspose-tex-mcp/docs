@@ -2,7 +2,7 @@
 title: API Java per elaborare documenti TeX e LaTeX
 weight: 40
 url: /it/java/ 
-description: Libreria Java TeX per elaborare file TeX all'interno di applicazioni Java. Offre funzionalità di composizione e conversione da TeX a PDf, SVG, XPS e altri formati.
+description: Libreria Java TeX per elaborare TeX all'interno di applicazioni Java. Offre funzionalità di composizione e conversione da TeX a PDf, SVG, e altri formati.
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}

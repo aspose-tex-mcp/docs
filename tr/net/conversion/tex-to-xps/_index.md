@@ -2,7 +2,7 @@
 translation: true
 template: /_templates/_conversion-child-net.md
 title: TeX'ten XPS'ye Dönüştürme API'si | .NET
-description: TeX'ten XPS'ye dönüştürme işlevi. Bu şirket içi .NET kitaplığını projenize entegre edin veya TeX'i XPS'ye dönüştürmek için platformlar arası uygulamaları kullanın.
+description: TeX'ten XPS'ye. Bu şirket içi .NET kitaplığını projenize entegre edin veya TeX'i XPS'ye dönüştürmek için platformlar arası uygulamaları kullanın.
 keywords: tex'ten xps'e api net, tex2xps c#'ı entegre ediyor
 url: /net/conversion/tex-to-xps/
 family: tex

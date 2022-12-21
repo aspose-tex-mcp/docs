@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /_templates/_output-to-zip-net.md
-title: TeX 到 ZIP | .NET API 解決方案
+title: TeX 到 ZIP | .NET API 解決方案 | Aspose
 url: /net/output-to-zip/
 description: ".NET API 解決方案與 TeX 一起工作。 TeX 到 ZIP 轉換功能可讓您將 TeX 文件保存為最流行的存檔。此功能的 C# 示例。"
 informat: TEX

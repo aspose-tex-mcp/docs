@@ -2,7 +2,7 @@
 title: C++ TeX integrációs és feldolgozási API – Aspose 
 weight: 50
 url: /hu/cpp/ 
-description: C++ TeX könyvtár a TeX fájlok C++ alkalmazásokon belüli feldolgozásához. Szedési funkciókat kínál, valamint a TeX konvertálását PDf, SVG, XPS és más formátumokká.
+description: C++ TeX könyvtár a TeX C++ alkalmazásokon belüli feldolgozásához. Szedési funkciókat kínál, valamint a TeX konvertálását PDf, SVG, XPS és más formátumokká
 keywords: tex converter api cpp, tex converter c++ integrate
 ---
 

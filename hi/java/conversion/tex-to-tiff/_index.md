@@ -2,7 +2,7 @@
 translation: true
 template: /_templates/_conversion-child-java.md
 title: "टीएक्स टू TIFF कन्वर्जन एपीआई | Java"
-description: "टीएक्स से TIFF रूपांतरण कार्यक्षमता। इस ऑन-प्रिमाइसेस जावा लाइब्रेरी को अपने प्रोजेक्ट में एकीकृत करें या टीएक्स को TIFF में बदलने के लिए क्रॉस-प्लेटफ़ॉर्म एप्लिकेशन का उपयोग करें।"
+description: "टीएक्स से TIFF। इस जावा लाइब्रेरी को अपने प्रोजेक्ट में एकीकृत करें या टीएक्स को TIFF में बदलने के लिए क्रॉस-प्लेटफ़ॉर्म एप्लिकेशन का उपयोग करें।"
 keywords: TEX टू टिफ एपीआई जावा, TEX2टीफ इंटीग्रेट
 url: /java/conversion/tex-to-tiff/
 family: tex

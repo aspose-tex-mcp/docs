@@ -3,7 +3,7 @@ translation: true
 template: /_templates/_conversion-net.md
 title: Konversi File TeX (LaTeX) | .BERSIH
 url: /net/conversion/
-description: Fungsi konversi TeX dan LaTeX. Konversikan file TeX / LaTeX ke PDF, SVG, XPS, dan format gambar termasuk PNG, JPEG, TIFF, dan BMP menggunakan solusi .NET API ini.
+description: Konversi TeX dan LaTeX. Konversikan file TeX / LaTeX ke PDF, SVG, XPS, dan format gambar termasuk PNG, JPEG, TIFF, dan BMP menggunakan solusi .NET API ini.
 keywords: konversi tex api c#, konverter tex c# integrasi
 family: tex
 platformtag: net

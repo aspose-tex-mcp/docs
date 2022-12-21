@@ -2,7 +2,7 @@
 translation: true
 template: /_templates/_conversion-child-java.md
 title: LaTeX till PDF Conversion API| Java
-description: LaTeX till PDF-konverteringsfunktion. Integrera detta lokala Java-bibliotek i ditt projekt eller använd plattformsoberoende applikationer för att konvertera LaTeX till PDF.
+description: LaTeX till PDF-konvertering. Integrera dettaJava-bibliotek i ditt projekt eller använd plattformsoberoende applikationer för att konvertera LaTeX till PDF.
 keywords: latex till pdf api java, latex2pdf integrera
 url: /java/conversion/latex-to-pdf/
 family: tex

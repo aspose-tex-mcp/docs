@@ -3,7 +3,7 @@ translation: true
 template: /_templates/_create-custom-tex-net.md
 title: Προσαρμοσμένα αρχεία TeX | Λύση .NET API
 url: /net/create-custom-tex/
-description: "Λύση .NET API για εργασία με TeX. Περιλαμβάνει τη δυνατότητα δημιουργίας προσαρμοσμένων μορφών TeX. C# παραδείγματα λειτουργικότητας για την προσαρμογή του TeX."
+description: ".NET API για εργασία με TeX. Περιλαμβάνει τη δυνατότητα δημιουργίας προσαρμοσμένων μορφών TeX. C# παραδείγματα λειτουργικότητας για την προσαρμογή του TeX. "
 informat: TEX
 family: tex
 platformtag: net

@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /_templates/_conversion-child-java.md
-title: TeX 到 XPS 轉換 API | Java
+title: TeX 到 XPS轉換 API | Java | Aspose
 description: TeX 到 XPS 的轉換功能。將此本地 Java 庫集成到您的項目中，或使用跨平台應用程序將 TeX 轉換為 XPS。
 keywords: tex 到 xps api java, tex2xps 集成
 url: /java/conversion/tex-to-xps/

@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /_templates/_conversion-child-cpp.md
-title: LaTeX 到 PDF 转换 API | C++
-description: LaTeX 到 PDF 的转换功能。将此本地 C++ 库集成到您的项目中，或使用跨平台应用程序将 LaTeX 转换为 PDF。
+title: LaTeX 到 PDF 转换 API | C++ 解决方案
+description: LaTeX 到 PDF 的转换功能。Aspose.TEX API。将此本地 C++ 库集成到您的项目中，或使用跨平台应用程序将 LaTeX 转换为 PDF。
 keywords: latex to pdf api cpp, latex2pdf 集成 c++
 url: /cpp/conversion/latex-to-pdf/
 family: tex

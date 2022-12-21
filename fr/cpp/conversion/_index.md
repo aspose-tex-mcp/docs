@@ -4,7 +4,7 @@ template: /_templates/_conversion-cpp.md
 title: Conversion de fichiers TeX (LaTeX) | C++
 url: /cpp/conversion/
 keywords: convertisseur tex cpp api, convertisseur tex c++ api
-description: Solution d'API C++ de conversion TeX (LaTeX). Convertissez des fichiers LaTeX en PDF, XPS et images, y compris PNG, JPEG, TIFF, BMP avec quelques lignes de code C++.
+description: API C++ de conversion TeX (LaTeX). Convertissez des fichiers LaTeX en PDF, XPS et images, y compris PNG, JPEG, TIFF, BMP avec quelques lignes de code C++.
 family: tex
 platformtag: cpp
 feature: conversion

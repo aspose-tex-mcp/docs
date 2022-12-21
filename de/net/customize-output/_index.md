@@ -3,7 +3,7 @@ translation: true
 template: /_templates/_customize-output-net.md
 title: Benutzerdefinierte Ausgabe erstellen TeX | .NET-API
 url: /net/customize-output/
-description: ".NET-API-Lösung für die Arbeit mit TeX. Lesen Sie das Beispiel, wie Sie mit ein paar Zeilen C#-Code eine benutzerdefinierte Ausgabe für eine TeX-Datei erstellen."
+description: ".NET-API für die Arbeit mit TeX. Lesen Sie das Beispiel, wie Sie mit ein paar Zeilen C#-Code eine benutzerdefinierte Ausgabe für eine TeX-Datei erstellen."
 informat: TEX
 family: tex
 platformtag: net

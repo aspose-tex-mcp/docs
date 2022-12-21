@@ -3,7 +3,7 @@ translation: true
 template: /_templates/_customize-input-net.md
 title: Utwórz niestandardowe wejście TeX | API .NET
 url: /net/customize-input/
-description: "Rozwiązanie .NET API do pracy z TeX-em. Dowiedz się na przykładzie, jak utworzyć niestandardowe dane wejściowe dla pliku TeX za pomocą kilku linijek kodu C#."
+description: ".NET API do pracy z TeX-em. Dowiedz się na przykładzie, jak utworzyć niestandardowe dane wejściowe dla pliku TeX za pomocą kilku linijek kodu C#."
 keywords: niestandardowe wejście tex net api, C# api, aby dostosować tex
 informat: TEX
 family: tex

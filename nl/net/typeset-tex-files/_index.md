@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /_templates/_typeset-tex-files-net.md
-title: TeX-zetfunctie | .NET-API
+title: TeX-zetfunctie | .NET-API-oplossing
 url: /net/typeset-tex-files/
 description: ".NET API Oplossing om met TeX te werken. Leer in het voorbeeld hoe u TeX-typesets maakt met een paar regels C#-code."
 informat: TEX

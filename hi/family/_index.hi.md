@@ -2,7 +2,7 @@
 title: जावा, .NET और C++ के लिए टीएक्स एपीआई समाधान
 weight: 10
 url: /hi/family
-description: .NET, Java और C++ के लिए TeX नेटिव एपीआई। यह किसी भी प्लेटफॉर्म पर टीएक्स और लाTEX फाइलों को टाइपसेट, प्रोसेस और कन्वर्ट करने के लिए उपयोग में आसान और एकीकृत समाधान है।
+description:.NET, Java और C++ के लिए TeX नेटिव API। यह TeX और LaTeX फ़ाइलों को टाइपसेट, प्रोसेस और कन्वर्ट करने का एक समाधान है।
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}

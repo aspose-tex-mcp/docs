@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /_templates/_conversion-net.md
-title: TeX (LaTeX) 文件转换 | .NET
+title: TeX (LaTeX) 文件转换 | .NET API 解决方案 | Aspose
 url: /net/conversion/
 description: TeX 和 LaTeX 转换功能。使用此 .NET API 解决方案将 TeX / LaTeX 文件转换为 PDF、SVG、XPS 和图像格式，包括 PNG、JPEG、TIFF 和 BMP。
 keywords: tex 转换 api c#, tex 转换器 c# 集成

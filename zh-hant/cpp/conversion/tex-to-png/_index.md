@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /_templates/_conversion-child-cpp.md
-title: TEX 到 PNG 轉換 API | C++
+title: TEX 到 PNG轉換 API | C++ | Aspose
 description: TeX 到 PNG 的轉換功能。將此本地 C++ 庫集成到您的項目中，或使用跨平台應用程序將 TeX 轉換為 PNG。
 keywords: tex to png api cpp, tex2png 集成 c++
 url: /cpp/conversion/tex-to-png/

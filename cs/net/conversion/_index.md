@@ -3,7 +3,7 @@ translation: true
 template: /_templates/_conversion-net.md
 title: Konverze souborů TeX (LaTeX) | .NET"
 url: /net/conversion/
-description: Funkce konverze TeX a LaTeX. Převádějte soubory TeX / LaTeX do PDF, SVG, XPS a obrazových formátů včetně PNG, JPEG, TIFF a BMP pomocí tohoto řešení .NET API.
+description: Konverze TeX a LaTeX. Převádějte soubory TeX / LaTeX do PDF, SVG, XPS a obrazových formátů včetně PNG, JPEG, TIFF a BMP pomocí tohoto řešení .NET API.
 keywords: tex conversion api c#, tex converter c# integrate
 family: tex
 platformtag: net

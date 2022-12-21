@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /_templates/_conversion-child-cpp.md
-title: TEX to PNG Conversion API| C++
+title: TEX to PNG Konvertor API | C++
 description: Funkce konverze TeX do PNG. Integrujte tuto místní knihovnu C++ do svého projektu nebo použijte multiplatformní aplikace pro převod TeXu na PNG.
 keywords: tex to png api cpp, tex2png integrovat c++
 url: /cpp/conversion/tex-to-png/

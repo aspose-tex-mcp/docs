@@ -2,7 +2,7 @@
 title: API di integrazione ed elaborazione C++ TeX - Aspose 
 weight: 50
 url: /it/cpp/ 
-description: Libreria C++ TeX per elaborare file TeX all'interno di applicazioni C++. Offre funzionalità di composizione insieme alla conversione da TeX a PDf, SVG, XPS e altri formati.
+description: Libreria C++ TeX per elaborare file TeX all'interno di applicazioni C++. Funzionalità di composizione insieme alla conversione da TeX a PDf, SVG, XPS.
 keywords: tex conversione api cpp, tex converter c++ integra
 ---
 

@@ -2,7 +2,7 @@
 translation: true
 template: /_templates/_conversion-child-net.md
 title: "लाटेक्स से JPEG कन्वर्जन एपीआई | .NET"
-description: "LaTeX से JPEG रूपांतरण कार्यक्षमता। इस ऑन-प्रिमाइसेस .NET लाइब्रेरी को अपने प्रोजेक्ट में एकीकृत करें या LaTeX को JPEG में बदलने के लिए क्रॉस-प्लेटफ़ॉर्म एप्लिकेशन का उपयोग करें।"
+description: "LaTeX से JPEG। इस .NET लाइब्रेरी को अपने प्रोजेक्ट में एकीकृत करें या LaTeX को JPEG में बदलने के लिए क्रॉस-प्लेटफ़ॉर्म एप्लिकेशन का उपयोग करें।"
 keywords: "लेटेक्स से JPEG एपीआई नेट, लेटेक्स 2 JPEG एकीकृत C#"
 url: /net/conversion/latex-to-jpeg/
 family: tex

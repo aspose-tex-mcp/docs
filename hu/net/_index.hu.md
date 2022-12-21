@@ -1,5 +1,5 @@
 ---
-title: .NET API-k és alkalmazások a TeX dokumentumok feldolgozásához 
+title: .NET és alkalmazások a TeX dokumentumok feldolgozásához 
 weight: 20
 url: /hu/net/ 
 description: C# ASP.NET VB.NET könyvtár a TeX dokumentumok szedéséhez. A megoldás számos kimeneti fájlformátumot támogat, például XPS, PDF, SVG, PNG, JPEG, TIFF, BMP.

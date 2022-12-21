@@ -2,7 +2,7 @@
 translation: true
 template: /_templates/_conversion-child-cpp.md
 title: API de conversão de LaTeX para BMP | C++
-description: Funcionalidade de conversão de LaTeX para BMP. Integre esta biblioteca C++ local em seu projeto ou use aplicativos multiplataforma para converter LaTeX em BMP.
+description: Conversão de LaTeX para BMP. Integre esta biblioteca C++ local em seu projeto ou use aplicativos multiplataforma para converter LaTeX em BMP.
 keywords: latex para bmp api cpp, latex2bmp integrar c++
 url: /cpp/conversion/latex-to-bmp/
 family: tex

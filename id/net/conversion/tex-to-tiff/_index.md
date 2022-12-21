@@ -2,7 +2,7 @@
 translation: true
 template: /_templates/_conversion-child-net.md
 title: API Konversi TeX ke TIFF | .BERSIH
-description: Fungsi konversi TeX ke TIFF. Integrasikan pustaka .NET lokal ini ke dalam proyek Anda atau gunakan aplikasi lintas platform untuk mengonversi TeX ke TIFF.
+description: Konversi TeX ke TIFF. Integrasikan pustaka .NET lokal ini ke dalam proyek Anda atau gunakan aplikasi lintas platform untuk mengonversi TeX ke TIFF.
 keywords: tex ke tiff api net, tex2tiff mengintegrasikan c#
 url: /net/conversion/tex-to-tiff/
 family: tex

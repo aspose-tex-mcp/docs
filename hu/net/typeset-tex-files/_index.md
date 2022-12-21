@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /_templates/_typeset-tex-files-net.md
-title: TeX szedés funkció | .NET API
+title: TeX szedés funkció C# | .NET API
 url: /net/typeset-tex-files/
 description: ".NET API megoldás a TeX-szel való együttműködéshez. Ismerje meg a példát, hogyan hozhat létre TeX-típuskészleteket néhány soros C# kóddal."
 informat: TEX

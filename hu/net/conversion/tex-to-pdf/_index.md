@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /_templates/_conversion-child-net.md
-title: TeX to PDF Conversion API| .NET
-description: TeX PDF konvertálási funkció. Integrálja ezt a helyszíni .NET-könyvtárat a projektjébe, vagy használjon többplatformos alkalmazásokat a TeX PDF-be konvertálásához.
+title: TeX to PDF Átalakító API| .NET
+description: TeX PDF konvertálási. Integrálja .NET-könyvtárat a projektjébe, vagy használjon többplatformos alkalmazásokat a TeX PDF-be konvertálásához.
 keywords: tex pdf-be api net, tex2pdf integráció c#
 url: /net/conversion/tex-to-pdf/
 family: tex

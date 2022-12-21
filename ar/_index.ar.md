@@ -1,5 +1,5 @@
 ---
-title: TeX و LaTeX API وحلول الويب
+title: TeX و LaTeX API المحلول وحلول الويب
 weight: 30
 url: /ar/
 description: واجهات برمجة تطبيقات وتطبيقات TeX High Code لتنضيد مستندات TeX ومعالجتها وتحويلها. يدعم هذا الحل أيضًا PDF و EPS و SVG ومعظم تنسيقات الصور كتنسيقات إخراج.

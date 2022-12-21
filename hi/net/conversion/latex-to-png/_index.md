@@ -2,7 +2,7 @@
 translation: true
 template: /_templates/_conversion-child-net.md
 title: "लाटेक्स से PNG कन्वर्जन एपीआई | .NET"
-description: "लाटेक्स से PNG रूपांतरण कार्यक्षमता। इस ऑन-प्रिमाइसेस .NET लाइब्रेरी को अपने प्रोजेक्ट में एकीकृत करें या LaTeX को PNG में बदलने के लिए क्रॉस-प्लेटफ़ॉर्म एप्लिकेशन का उपयोग करें।"
+description: "लाटेक्स से PNG। इस .NET लाइब्रेरी को अपने प्रोजेक्ट में एकीकृत करें या LaTeX को PNG में बदलने के लिए क्रॉस-प्लेटफ़ॉर्म एप्लिकेशन का उपयोग करें।"
 keywords: "लेटेक्स से PNG एपीआई नेट, लेटेक्स 2 PNG C# को एकीकृत करता है"
 url: /net/conversion/latex-to-png/
 family: tex

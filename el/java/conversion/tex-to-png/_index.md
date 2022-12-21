@@ -2,7 +2,7 @@
 translation: true
 template: /_templates/_conversion-child-java.md
 title: API μετατροπής TeX σε PNG | Java
-description: Λειτουργία μετατροπής TeX σε PNG. Ενσωματώστε αυτήν την εσωτερική βιβλιοθήκη Java στο έργο σας ή χρησιμοποιήστε εφαρμογές πολλαπλών πλατφορμών για να μετατρέψετε το TeX σε PNG.
+description: TeX σε PNG. Ενσωματώστε αυτήν την βιβλιοθήκη Java στο έργο σας ή χρησιμοποιήστε εφαρμογές πολλαπλών πλατφορμών για να μετατρέψετε το TeX σε PNG.
 keywords: tex σε png api java, tex2png ενσωμάτωση
 url: /java/conversion/tex-to-png/
 family: tex

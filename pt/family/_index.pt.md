@@ -2,7 +2,7 @@
 title: Solução de API TeX para Java, .NET e C++
 weight: 10
 url: /pt/family
-description: APIs nativas do TeX para .NET, Java e C++. Esta é uma solução fácil de usar e integrada para compor, processar e converter arquivos TeX e LaTeX em qualquer plataforma.
+description: APIs nativas do TeX para .NET, Java e C++. Esta é uma solução para compor, processar e converter arquivos TeX e LaTeX em qualquer plataforma.
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}

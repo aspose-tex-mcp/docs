@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /_templates/_conversion-child-net.md
-title: LaTeX 到 PNG 转换 API | .NET
-description: LaTeX 到 PNG 的转换功能。将此本地 .NET 库集成到您的项目中，或使用跨平台应用程序将 LaTeX 转换为 PNG。
+title: LaTeX 到 PNG 转换 API | .NET 解决方案
+description: LaTeX 到 PNG 的转换功能。Aspose.TEX API。将此本地 .NET 库集成到您的项目中，或使用跨平台应用程序将 LaTeX 转换为 PNG。
 keywords: latex to png api net，latex2png 集成 c#
 url: /net/conversion/latex-to-png/
 family: tex

@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /_templates/_output-to-zip-net.md
-title: TeX에서 ZIP으로 | .NET API 솔루션
+title: TeX에서 ZIP으로 | .NET API 해결책
 url: /net/output-to-zip/
 description: "TeX와 함께 작동하는 .NET API 솔루션. TeX에서 ZIP으로의 변환 기능을 사용하면 TeX 파일을 가장 인기 있는 아카이브로 저장할 수 있습니다. 이 기능의 C# 예제입니다."
 informat: TEX

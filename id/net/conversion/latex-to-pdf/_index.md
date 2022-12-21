@@ -2,7 +2,7 @@
 translation: true
 template: /_templates/_conversion-child-net.md
 title: API Konversi LaTeX ke PDF | .BERSIH
-description: Fungsi konversi LaTeX ke PDF. Integrasikan pustaka .NET lokal ini ke dalam proyek Anda atau gunakan aplikasi lintas platform untuk mengonversi LaTeX ke PDF.
+description: Konversi LaTeX ke PDF. Integrasikan pustaka .NET lokal ini ke dalam proyek Anda atau gunakan aplikasi lintas platform untuk mengonversi LaTeX ke PDF.
 keywords: 'lateks ke pdf api net, latex2pdf mengintegrasikan C#'
 url: /net/conversion/latex-to-pdf/
 family: tex

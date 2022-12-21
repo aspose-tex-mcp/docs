@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /_templates/_create-custom-tex-net.md
-title: 定制的 TeX 文件 | .NET API 解決方案
+title: 定制的 TeX 文件 | .NET API 解決方案 | Aspose
 url: /net/create-custom-tex/
 description: ".NET API 解決方案與 TeX 一起工作。包括創建自定義 TeX 格式的功能。自定義 TeX 的功能的 C# 示例。"
 informat: TEX

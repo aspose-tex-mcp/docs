@@ -2,7 +2,7 @@
 title: TeX dan LaTeX API dan solusi web
 weight: 30
 url: /id/
-description: API dan Aplikasi Kode Tinggi TeX untuk mengeset, memproses, dan mengonversi dokumen TeX. Solusi ini juga mendukung PDF, EPS, SVG dan sebagian besar format gambar sebagai format output.
+description: API dan Aplikasi TeX untuk mengeset, memproses, dan mengonversi dokumen TeX. Solusi ini juga mendukung PDF, EPS, SVG dan sebagai format output.
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}

@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /_templates/_conversion-child-net.md
-title: TeX から PDF への変換 API | .NET
+title: TeX から PDF への変換 API | .NET  解決
 description: TeX から PDF への変換機能。このオンプレミス .NET ライブラリをプロジェクトに統合するか、クロスプラットフォーム アプリケーションを使用して TeX を PDF に変換します。
 keywords: texからpdf apiネットへ、tex2pdfはc#を統合します
 url: /net/conversion/tex-to-pdf/

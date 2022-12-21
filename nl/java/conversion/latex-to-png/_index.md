@@ -2,7 +2,7 @@
 translation: true
 template: /_templates/_conversion-child-java.md
 title: LaTeX naar PNG conversie API | Java
-description: LaTeX naar PNG-conversiefunctionaliteit. Integreer deze on-premise Java-bibliotheek in uw project of gebruik platformonafhankelijke applicaties om LaTeX naar PNG te converteren.
+description: LaTeX naar PNG-conversie. Integreer deze  Java-bibliotheek in uw project of gebruik platformonafhankelijke applicaties om LaTeX naar PNG te converteren.
 keywords: latex naar png api java, latex2png integreren
 url: /java/conversion/latex-to-png/
 family: tex

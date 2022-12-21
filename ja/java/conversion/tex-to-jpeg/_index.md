@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /_templates/_conversion-child-java.md
-title: TeX から JPEG への変換 API | Java
+title: TeX から JPEG への変換 API | Java  解決
 description: TeX から JPEG への変換機能。このオンプレミス Java ライブラリをプロジェクトに統合するか、クロスプラットフォーム アプリケーションを使用して TeX を JPEG に変換します。
 keywords: tex から jpeg への api jpeg、tex2jpeg の統合
 url: /java/conversion/tex-to-jpeg/

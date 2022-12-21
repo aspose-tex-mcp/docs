@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /_templates/_conversion-child-java.md
-title: TeX 到 JPEG 转换 API | Java
-description: TeX 到 JPEG 的转换功能。将此本地 Java 库集成到您的项目中，或使用跨平台应用程序将 TeX 转换为 JPEG。
+title: TeX 到 JPEG 转换 API | Java 解决方案
+description: TeX 到 JPEG 的转换功能。Aspose.TEX API。将此本地 Java 库集成到您的项目中，或使用跨平台应用程序将 TeX 转换为 JPEG。
 keywords: tex 到 Jpeg api jpeg，tex2jpeg 集成
 url: /java/conversion/tex-to-jpeg/
 family: tex

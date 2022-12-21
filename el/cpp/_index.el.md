@@ -1,8 +1,8 @@
 ---
-title: C++ TeX Integration and Processing API - Aspose 
+title: C++ TeX(LaTeX) γραμματοσειρώνAPI - Aspose 
 weight: 50
 url: /el/cpp/ 
-description: Βιβλιοθήκη C++ TeX για επεξεργασία αρχείων TeX εντός εφαρμογών C++. Προσφέρει λειτουργικότητα στοιχειοθεσίας μαζί με μετατροπή TeX σε PDf, SVG, XPS και άλλες μορφές.
+description: Βιβλιοθήκη C++ TeX για επεξεργασία αρχείων TeX εντός εφαρμογών C++. Προσφέρει λειτουργικότητα στοιχειοθεσίας μαζί με μετατροπή TeX σε PDf, SVG, XPS.
 keywords: tex conversion api cpp, tex converter c++ integrate
 ---
 

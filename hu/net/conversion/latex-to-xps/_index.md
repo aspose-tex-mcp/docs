@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /_templates/_conversion-child-net.md
-title: LaTeX to XPS Conversion API| .NET
-description: LaTeX-ről XPS-re konvertáló funkció. Integrálja ezt a helyszíni .NET-könyvtárat a projektjébe, vagy használjon többplatformos alkalmazásokat a LaTeX XPS-re konvertálásához.
+title: LaTeX to XPS Átalakító API| .NET
+description: LaTeX-ről XPS-re konvertálási. Integrálja .NET-könyvtárat a projektjébe, vagy használjon többplatformos alkalmazásokat a LaTeX XPS-re konvertálásához.
 keywords: latex xps api nethez, latex2xps integráció c#
 url: /net/conversion/latex-to-xps/
 family: tex

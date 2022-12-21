@@ -2,7 +2,7 @@
 translation: true
 template: /_templates/_conversion-child-net.md
 title: API chuyển đổi từ LaTeX sang PDF | .NET
-description: Chức năng chuyển đổi LaTeX sang PDF. Tích hợp thư viện .NET tại chỗ này vào dự án của bạn hoặc sử dụng các ứng dụng đa nền tảng để chuyển đổi LaTeX sang PDF.
+description: LaTeX sang PDF. Tích hợp thư viện .NET tại chỗ này vào dự án của bạn hoặc sử dụng các ứng dụng đa nền tảng để chuyển đổi LaTeX sang PDF.
 keywords: 'latex sang pdf api net, latex2pdf tích hợp C#'
 url: /net/conversion/latex-to-pdf/
 family: tex

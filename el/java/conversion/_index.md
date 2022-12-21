@@ -3,7 +3,7 @@ translation: true
 template: /_templates/_conversion-java.md
 title: Μετατροπή αρχείων TeX (LaTeX) | Java
 url: /java/conversion/
-description: Λύση Java API μετατροπής TeX(LaTeX). Μετατρέψτε αρχεία LaTeX σε PDF, XPS και Εικόνες, συμπεριλαμβανομένων των PNG, JPEG, TIFF, BMP με λίγες γραμμές κώδικα Java.
+description: Λύση Java API μετατροπής TeX. Μετατρέψτε αρχεία LaTeX σε PDF, XPS και Εικόνες, συμπεριλαμβανομένων των PNG, JPEG, TIFF, BMP με λίγες γραμμές κώδικα Java.
 keywords: μετατροπή tex api java, tex μετατροπέας java ενσωμάτωση
 family: tex
 platformtag: cpp

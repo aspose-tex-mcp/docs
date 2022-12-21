@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /_templates/_conversion-child-cpp.md
-title: LaTeX から BMP への変換 API | C++
+title: LaTeX から BMP への変換 API | C++  解決
 description: LaTeX から BMP への変換機能。このオンプレミス C++ ライブラリをプロジェクトに統合するか、クロスプラットフォーム アプリケーションを使用して LaTeX を BMP に変換します。
 keywords: latex から bmp api cpp、latex2bmp への c++ の統合
 url: /cpp/conversion/latex-to-bmp/

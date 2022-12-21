@@ -3,7 +3,7 @@ translation: true
 template: /_templates/_conversion-net.md
 title: Chuyển đổi tệp TeX (LaTeX) | .NET
 url: /net/conversion/
-description: Chức năng chuyển đổi TeX và LaTeX. Chuyển đổi tệp TeX / LaTeX sang định dạng PDF, SVG, XPS và hình ảnh bao gồm PNG, JPEG, TIFF và BMP bằng giải pháp .NET API này.
+description: TeX và LaTeX. Chuyển đổi tệp TeX / LaTeX sang định dạng PDF, SVG, XPS và hình ảnh bao gồm PNG, JPEG, TIFF và BMP bằng giải pháp .NET API này.
 keywords: 'chuyển đổi tex api C#, công cụ chuyển đổi tex C# tích hợp'
 family: tex
 platformtag: net

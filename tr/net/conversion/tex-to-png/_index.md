@@ -2,7 +2,7 @@
 translation: true
 template: /_templates/_conversion-child-net.md
 title: TeX'ten PNG'ye Dönüştürme API'sı | .NET
-description: TeX'ten PNG'ye dönüştürme işlevi. Bu şirket içi .NET kitaplığını projenize entegre edin veya TeX'i PNG'ye dönüştürmek için platformlar arası uygulamaları kullanın.
+description: TeX'ten PNG'ye. Bu şirket içi .NET kitaplığını projenize entegre edin veya TeX'i PNG'ye dönüştürmek için platformlar arası uygulamaları kullanın.
 keywords: tex'ten png'ye api net, tex2png entegre c#
 url: /net/conversion/tex-to-png/
 family: tex

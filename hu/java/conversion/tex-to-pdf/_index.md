@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /_templates/_conversion-child-java.md
-title: TeX to PDF Conversion API| Java
-description: TeX PDF konvertálási funkció. Integrálja ezt a helyszíni Java-könyvtárat a projektjébe, vagy használjon többplatformos alkalmazásokat a TeX PDF-be konvertálásához.
+title: TeX to PDF Átalakító API| Java
+description: TeX PDF konvertálási. Integrálja Java-könyvtárat a projektjébe, vagy használjon többplatformos alkalmazásokat a TeX PDF-be konvertálásához.
 keywords: tex pdf-be api jpeg, tex2pdf integráció
 url: /java/conversion/tex-to-pdf/
 family: tex

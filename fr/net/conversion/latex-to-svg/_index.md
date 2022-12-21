@@ -2,7 +2,7 @@
 translation: true
 template: /_templates/_conversion-child-net.md
 title: API de conversion LaTeX vers SVG | .NET
-description: Fonctionnalité de conversion LaTeX vers SVG. Intégrez cette bibliothèque .NET sur site dans votre projet ou utilisez des applications multiplateformes pour convertir LaTeX en SVG.
+description: Conversion LaTeX vers SVG. Intégrez bibliothèque .NET sur site dans votre projet ou utilisez des applications multiplateformes pour convertir LaTeX en SVG.
 keywords: latex vers svg api net, latex2svg intègre c#
 url: /net/conversion/latex-to-svg/
 family: tex

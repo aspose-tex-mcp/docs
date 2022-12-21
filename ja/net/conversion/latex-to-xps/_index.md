@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /_templates/_conversion-child-net.md
-title: LaTeX から XPS への変換 API | .NET
+title: LaTeX から XPS への変換 API | .NET  解決
 description: LaTeX から XPS への変換機能。このオンプレミス .NET ライブラリをプロジェクトに統合するか、クロスプラットフォーム アプリケーションを使用して LaTeX を XPS に変換します。
 keywords: latexからxps api netへ、latex2xpsはc#を統合
 url: /net/conversion/latex-to-xps/

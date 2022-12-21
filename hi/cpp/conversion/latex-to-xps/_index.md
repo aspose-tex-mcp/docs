@@ -2,7 +2,7 @@
 translation: true
 template: /_templates/_conversion-child-cpp.md
 title: "लाTEX से XPS कन्वर्जन एपीआई | C++"
-description: "TEX से XPS रूपांतरण कार्यक्षमता। इस ऑन-प्रिमाइसेस C++ लाइब्रेरी को अपने प्रोजेक्ट में एकीकृत करें या LaTeX को XPS में बदलने के लिए क्रॉस-प्लेटफ़ॉर्म एप्लिकेशन का उपयोग करें।"
+description: "TEX से XPS। इस C++ लाइब्रेरी को अपने प्रोजेक्ट में एकीकृत करें या LaTeX को XPS में बदलने के लिए क्रॉस-प्लेटफ़ॉर्म एप्लिकेशन का उपयोग करें।"
 keywords: "लेTEX से XPS एपीआई सीपीपी, लेTEX 2 XPS C++ को एकीकृत करता है"
 url: /cpp/conversion/latex-to-xps/
 family: tex

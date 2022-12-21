@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /_templates/_conversion-child-cpp.md
-title: TEX to TIFF Conversion API| C++
-description: TeX-TIFF konvertálási funkció. Integrálja ezt a helyszíni C++ könyvtárat a projektjébe, vagy használjon többplatformos alkalmazásokat a TeX TIFF formátumba konvertálásához.
+title: TEX to TIFF Átalakító API| C++
+description: TeX-TIFF konvertálási. Integrálja C++ könyvtárat a projektjébe, vagy használjon többplatformos alkalmazásokat a TeX TIFF formátumba konvertálásához.
 keywords: tex to tiff api cpp, tex2tiff integráció c++
 url: /cpp/conversion/tex-to-tiff/
 family: tex

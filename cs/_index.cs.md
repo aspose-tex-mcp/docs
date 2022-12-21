@@ -2,7 +2,7 @@
 title: TeX a LaTeX API a webová řešení
 weight: 30
 url: /cs/
-description: TeX High Code API a aplikace pro sazbu, zpracování a konverzi TeXových dokumentů. Toto řešení také podporuje PDF, EPS, SVG a většinu obrazových formátů jako výstupní formáty.
+description: TeX API a aplikace pro sazbu, zpracování a konverzi TeXových dokumentů. Toto řešení také podporuje PDF, EPS, SVG a většinu obrazových formátů jako výstup.
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}

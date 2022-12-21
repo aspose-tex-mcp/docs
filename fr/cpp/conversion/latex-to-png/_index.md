@@ -2,7 +2,7 @@
 translation: true
 template: /_templates/_conversion-child-cpp.md
 title: API de conversion LaTeX vers PNG | C++
-description: Fonctionnalité de conversion LaTeX vers PNG. Intégrez cette bibliothèque C++ sur site dans votre projet ou utilisez des applications multiplateformes pour convertir LaTeX en PNG.
+description: Conversion LaTeX vers PNG. Intégrez bibliothèque C++ sur site dans votre projet ou utilisez des applications multiplateformes pour convertir LaTeX en PNG.
 keywords: latex vers png api cpp, latex2png intègre c++
 url: /cpp/conversion/latex-to-png/
 family: tex

@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /_templates/_conversion-child-net.md
-title: TeX to BMP Conversion API| .NET
+title: TeX to BMP Konvertor API | .NET
 description: Funkce konverze TeX do BMP. Integrujte tuto on-premise .NET knihovnu do svého projektu nebo použijte multiplatformní aplikace pro převod TeXu na BMP.
 keywords: tex to bmp api net, tex2bmp integrovat c#
 url: /net/conversion/tex-to-bmp/

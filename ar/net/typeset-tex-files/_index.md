@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /_templates/_typeset-tex-files-net.md
-title: وظيفة تنضيد TeX | NET API
+title: وظيفة تنضيد TeX | .NET API المحلول 
 url: /net/typeset-tex-files/
 description: "NET API Solution للعمل مع TeX. تعلم من المثال كيفية إنشاء مجموعات طباعية TeX ببضعة أسطر من كود C#."
 informat: TEX

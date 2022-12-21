@@ -2,7 +2,7 @@
 title: TeX i LaTeX API i rozwiązania internetowe
 weight: 30
 url: /pl/
-description: Interfejsy API i aplikacje TeX High Code do składania, przetwarzania i konwertowania dokumentów TeX. To rozwiązanie obsługuje również PDF, EPS, SVG i większość formatów graficznych jako formaty wyjściowe.
+description: Interfejsy API i aplikacje TeX do składania, przetwarzania i konwertowania TeX. To rozwiązanie obsługuje również PDF, EPS, SVG jako formaty wyjściowe.
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}

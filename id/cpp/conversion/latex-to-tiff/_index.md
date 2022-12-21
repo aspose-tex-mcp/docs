@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /_templates/_conversion-child-cpp.md
-title: API Konversi LaTeX ke TIFF | C++
-description: Fungsi konversi LaTeX ke TIFF. Integrasikan pustaka C++ lokal ini ke dalam proyek Anda atau gunakan aplikasi lintas platform untuk mengonversi LaTeX ke TIFF.
+title: API Konversi LaTeX ke TIFF | C++ Solusi
+description: Konversi LaTeX ke TIFF. Integrasikan pustaka C++ lokal ini ke dalam proyek Anda atau gunakan aplikasi lintas platform untuk mengonversi LaTeX ke TIFF.
 keywords: lateks ke tiff api cpp, latex2tiff mengintegrasikan c++
 url: /cpp/conversion/latex-to-tiff/
 family: tex

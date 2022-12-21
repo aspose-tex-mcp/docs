@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /_templates/_conversion-cpp.md
-title: Konversi File TeX (LaTeX) | C++
+title: Konversi File TeX (LaTeX) | C++ Solusi
 url: /cpp/conversion/
 keywords: tex converter cpp api, tex converter c++ api
 description: Solusi konversi C++ API TeX(LaTeX). Konversi file LaTeX ke PDF, XPS dan Gambar termasuk PNG, JPEG, TIFF, BMP dengan beberapa baris kode C++.

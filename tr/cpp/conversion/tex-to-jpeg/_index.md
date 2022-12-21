@@ -2,7 +2,7 @@
 translation: true
 template: /_templates/_conversion-child-cpp.md
 title: TEX'den JPEG'e Dönüştürme API'sı | C++
-description: TeX'ten JPEG'e dönüştürme işlevi. Bu şirket içi C++ kitaplığını projenize entegre edin veya TeX'i JPEG'e dönüştürmek için platformlar arası uygulamaları kullanın.
+description: TeX'ten JPEG'e. Bu şirket içi C++ kitaplığını projenize entegre edin veya TeX'i JPEG'e dönüştürmek için platformlar arası uygulamaları kullanın.
 keywords: tex'ten jpeg'e api cpp, tex2jpeg c++'ı entegre eder
 url: /cpp/conversion/tex-to-jpeg/
 family: tex

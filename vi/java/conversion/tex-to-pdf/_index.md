@@ -2,7 +2,7 @@
 translation: true
 template: /_templates/_conversion-child-java.md
 title: API chuyển đổi TeX sang PDF | Java
-description: Chức năng chuyển đổi TeX sang PDF. Tích hợp thư viện Java tại chỗ này vào dự án của bạn hoặc sử dụng các ứng dụng đa nền tảng để chuyển đổi TeX sang PDF.
+description: TeX sang PDF. Tích hợp thư viện Java tại chỗ này vào dự án của bạn hoặc sử dụng các ứng dụng đa nền tảng để chuyển đổi TeX sang PDF.
 keywords: tex sang pdf api jpeg, tex2pdf tích hợp
 url: /java/conversion/tex-to-pdf/
 family: tex

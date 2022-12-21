@@ -2,7 +2,7 @@
 translation: true
 template: /_templates/_conversion-child-net.md
 title: API Konversi LaTeX ke BMP | .BERSIH
-description: Fungsi konversi LaTeX ke BMP. Integrasikan pustaka .NET lokal ini ke dalam proyek Anda atau gunakan aplikasi lintas platform untuk mengonversi LaTeX ke BMP.
+description: Konversi LaTeX ke BMP. Integrasikan pustaka .NET lokal ini ke dalam proyek Anda atau gunakan aplikasi lintas platform untuk mengonversi LaTeX ke BMP.
 keywords: lateks ke bmp api net, latex2bmp mengintegrasikan c#
 url: /net/conversion/latex-to-bmp/
 family: tex

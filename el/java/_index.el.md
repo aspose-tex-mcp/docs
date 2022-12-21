@@ -2,7 +2,7 @@
 title: Java API για την επεξεργασία εγγράφων TeX και LaTeX
 weight: 40
 url: /el/java/ 
-description: Βιβλιοθήκη Java TeX για επεξεργασία αρχείων TeX εντός εφαρμογών Java. Προσφέρει λειτουργικότητα στοιχειοθεσίας και μετατροπή TeX σε PDf, SVG, XPS και άλλες μορφές.
+description: Βιβλιοθήκη Java TeX για επεξεργασία αρχείων TeX εντός εφαρμογών Java. Προσφέρει λειτουργικότητα στοιχειοθεσίας και μετατροπή TeX σε PDf, SVG, XPS.
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}

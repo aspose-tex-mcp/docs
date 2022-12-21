@@ -3,7 +3,7 @@ translation: true
 template: /_templates/_conversion-net.md
 title: "टीएक्स (लाटेक्स) फ़ाइलें रूपांतरण | .NET"
 url: /net/conversion/
-description: "टीएक्स और लाटेक्स रूपांतरण कार्यक्षमता। इस .NET API समाधान का उपयोग करके TeX / LaTeX फ़ाइलों को PDF, SVG, XPS, और PNG, JPEG, TIFF और BMP सहित छवि स्वरूपों में कनवर्ट करें।"
+description: "टीएक्स और लाटेक्स। इस .NET API समाधान का उपयोग करके TeX / LaTeX फ़ाइलों को PDF, SVG, XPS, और PNG, JPEG, TIFF और BMP सहित छवि स्वरूपों में कनवर्ट करें।"
 keywords: "टेक्स रूपांतरण एपीआई C#, टेक्स कनवर्टर C# एकीकृत"
 family: tex
 platformtag: net

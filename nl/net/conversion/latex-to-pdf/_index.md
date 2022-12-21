@@ -2,7 +2,7 @@
 translation: true
 template: /_templates/_conversion-child-net.md
 title: LaTeX naar PDF conversie API | .NET
-description: LaTeX naar PDF-conversiefunctionaliteit. Integreer deze on-premise .NET-bibliotheek in uw project of gebruik platformonafhankelijke applicaties om LaTeX naar PDF te converteren.
+description: LaTeX naar PDF-conversie. Integreer deze  .NET-bibliotheek in uw project of gebruik platformonafhankelijke applicaties om LaTeX naar PDF te converteren.
 keywords: latex naar pdf api net, latex2pdf integreer c#
 url: /net/conversion/latex-to-pdf/
 family: tex

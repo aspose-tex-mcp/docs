@@ -1,5 +1,5 @@
 ---
-title: TeXおよびLaTeXAPIとWebソリューション
+title: TeXおよびLaTeXAPIとWeb解決ソリューション
 weight: 30
 url: /ja/
 description: TeXドキュメントをタイプセット、処理、変換するためのTeX HighCodeAPIとアプリ。このソリューションは、PDF、EPS、SVG、およびほとんどの画像形式を出力形式としてサポートします。

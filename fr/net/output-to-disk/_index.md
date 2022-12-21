@@ -3,7 +3,7 @@ translation: true
 template: /_templates/_output-to-disk-net.md
 title: Écrire la sortie TeX sur le disque | API .NET
 url: /net/output-to-disk/
-description: "Solution API .NET pour travailler avec TeX. Apprenez sur l'exemple comment créer une sortie personnalisée pour le fichier TeX avec quelques lignes de code C#."
+description: "API .NET pour travailler avec TeX. Apprenez sur l'exemple comment créer une sortie personnalisée pour le fichier TeX avec quelques lignes de code C#."
 informat: TEX
 family: tex
 platformtag: net

@@ -2,7 +2,7 @@
 translation: true
 template: /_templates/_conversion-child-cpp.md
 title: API chuyển đổi TEX sang PDF | C ++
-description: Chức năng chuyển đổi TeX sang PDF. Tích hợp thư viện C ++ tại chỗ này vào dự án của bạn hoặc sử dụng các ứng dụng đa nền tảng để chuyển đổi TeX sang PDF.
+description: TeX sang PDF. Tích hợp thư viện C ++ tại chỗ này vào dự án của bạn hoặc sử dụng các ứng dụng đa nền tảng để chuyển đổi TeX sang PDF.
 keywords: tex sang pdf api cpp, tex2pdf tích hợp c ++
 url: /cpp/conversion/tex-to-pdf/
 family: tex

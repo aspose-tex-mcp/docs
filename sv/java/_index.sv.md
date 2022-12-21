@@ -2,7 +2,7 @@
 title: Java API för att bearbeta TeX och LaTeX Docs
 weight: 40
 url: /sv/java/ 
-description: Java TeX-bibliotek för att bearbeta TeX-filer i Java-applikationer. Den erbjuder typsättningsfunktionalitet och konvertering av TeX till PDf, SVG, XPS och andra format.
+description: Java TeX-bibliotek för att bearbeta TeX i Java-applikationer. Den erbjuder typsättningsfunktionalitet och konvertering av TeX till PDf, SVG, och andra format.
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}

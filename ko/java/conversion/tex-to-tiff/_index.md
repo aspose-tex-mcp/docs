@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /_templates/_conversion-child-java.md
-title: TeX에서 TIFF로의 변환 API | Java
+title: TeX에서 TIFF로의 변환 API | Java  해결책
 description: TeX에서 TIFF로의 변환 기능. 이 사내 Java 라이브러리를 프로젝트에 통합하거나 크로스 플랫폼 애플리케이션을 사용하여 TeX를 TIFF로 변환하십시오.
 keywords: tex에서 tiff API 자바, tex2tiff 통합
 url: /java/conversion/tex-to-tiff/

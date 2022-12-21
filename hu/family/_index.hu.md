@@ -2,7 +2,7 @@
 title: TeX API megoldás Java, .NET és C++ számára
 weight: 10
 url: /hu/family
-description: TeX natív API-k .NET, Java és C++ számára. Ez egy könnyen használható és integrálható megoldás a TeX és LaTeX fájlok szedésére, feldolgozására és konvertálására bármilyen platformon.
+description: TeX API .NET, Java, C++ számára. Ez egy könnyen használható és integrálható megoldás a TeX szedésére, feldolgozására és konvertálására bármilyen platformon
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}

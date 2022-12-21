@@ -2,7 +2,7 @@
 translation: true
 template: /_templates/_conversion-child-cpp.md
 title: TEX-zu-TIFF-Konvertierungs-API | C++
-description: TeX-zu-TIFF-Konvertierungsfunktion. Integrieren Sie diese lokale C++-Bibliothek in Ihr Projekt oder verwenden Sie plattformübergreifende Anwendungen, um TeX in TIFF zu konvertieren.
+description: TeX-zu-TIFF-Konvertierung. Integriert diese C++-Bibliothek in Ihr Projekt oder verwendt  plattformübergreifende Anwendungen, um TeX in TIFF zu konvertieren.
 keywords: tex zu tiff api cpp, tex2tiff integrieren c++
 url: /cpp/conversion/tex-to-tiff/
 family: tex

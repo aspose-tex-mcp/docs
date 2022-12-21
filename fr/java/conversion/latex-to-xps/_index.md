@@ -2,7 +2,7 @@
 translation: true
 template: /_templates/_conversion-child-java.md
 title: API de conversion LaTeX vers XPS | Java
-description: Fonctionnalité de conversion LaTeX vers XPS. Intégrez cette bibliothèque Java sur site dans votre projet ou utilisez des applications multiplateformes pour convertir LaTeX en XPS.
+description: Conversion LaTeX vers XPS. Intégrez bibliothèque Java sur site dans votre projet ou utilisez des applications multiplateformes pour convertir LaTeX en XPS.
 keywords: latex vers xps api java, latex2xps intégré
 url: /java/conversion/latex-to-xps/
 family: tex

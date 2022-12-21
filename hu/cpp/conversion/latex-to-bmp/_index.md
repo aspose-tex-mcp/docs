@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /_templates/_conversion-child-cpp.md
-title: LaTeX to BMP Convesion API | C++
-description: LaTeX BMP konvertálási funkció. Integrálja ezt a helyszíni C++ könyvtárat a projektjébe, vagy használjon többplatformos alkalmazásokat a LaTeX BMP-vé konvertálásához.
+title: LaTeX to BMP Átalakító API | C++
+description: LaTeX BMP konvertálási. Integrálja C++ könyvtárat a projektjébe, vagy használjon többplatformos alkalmazásokat a LaTeX BMP-vé konvertálásához.
 keywords: latex a bmp api cpp-hez, latex2bmp integrálja a c++-t
 url: /cpp/conversion/latex-to-bmp/
 family: tex

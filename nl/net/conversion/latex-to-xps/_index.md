@@ -2,7 +2,7 @@
 translation: true
 template: /_templates/_conversion-child-net.md
 title: LaTeX naar XPS Conversion API| .NET
-description: LaTeX naar XPS conversie functionaliteit. Integreer deze on-premise .NET-bibliotheek in uw project of gebruik platformonafhankelijke applicaties om LaTeX naar XPS te converteren.
+description: LaTeX naar XPS conversie. Integreer deze  .NET-bibliotheek in uw project of gebruik platformonafhankelijke applicaties om LaTeX naar XPS te converteren.
 keywords: latex naar xps api-net, latex2xps integreert c#
 url: /net/conversion/latex-to-xps/
 family: tex

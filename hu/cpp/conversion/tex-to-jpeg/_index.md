@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /_templates/_conversion-child-cpp.md
-title: TEX to JPEG Conversion API| C++
-description: TeX-JPEG konvertálási funkció. Integrálja ezt a helyszíni C++ könyvtárat a projektjébe, vagy használjon többplatformos alkalmazásokat a TeX JPEG formátumba konvertálásához.
+title: TEX to JPEG Átalakító API| C++
+description: TeX-JPEG konvertálási. Integrálja C++ könyvtárat a projektjébe, vagy használjon többplatformos alkalmazásokat a TeX JPEG formátumba konvertálásához.
 keywords: tex jpeg api cpp, tex2jpeg integráció c++
 url: /cpp/conversion/tex-to-jpeg/
 family: tex

@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /_templates/_conversion-child-cpp.md
-title: LaTeX na XPS Conversion API| C++
+title: LaTeX na XPS Konvertor API | C++
 description: Funkce převodu LaTeX na XPS. Integrujte tuto místní knihovnu C++ do svého projektu nebo použijte multiplatformní aplikace pro převod LaTeXu na XPS.
 keywords: latex do xps api cpp, latex2xps integruje c++
 url: /cpp/conversion/latex-to-xps/
@@ -22,7 +22,7 @@ h2: Převeďte LaTeX na XPS pomocí řešení API pro C++.
 {{<section overview>}}
 ---
 title: "Jak převést LaTeX na XPS pomocí C++"
-p1: "Aspose.TeX for LaTeX to XPS converter transformuje LaTeX soubor na obraz XPS s použitím libovolného jazyka podporovaného C++."
+p1: "Aspose.TeX for LaTeX na XPS converter transformuje LaTeX soubor na obraz XPS s použitím libovolného jazyka podporovaného C++."
 p2: "Rozhraní API, které zde vidíte, lze použít k vytvoření vlastní aplikace pro více platforem nebo k integraci do vašeho projektu C++."
 p3: "Chcete-li převést LaTeX na XPS:"
 p4: "Aspose.TeX for C++ API, což je funkčně bohaté, výkonné a snadno použitelné API pro manipulaci a konverzi dokumentů pro platformu C++."

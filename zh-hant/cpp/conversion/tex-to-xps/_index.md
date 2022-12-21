@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /_templates/_conversion-child-cpp.md
-title: TEX 到 XPS 轉換 API | C++
+title: TEX 到 XPS轉換 API | C++ | Aspose
 description: TeX 到 XPS 的轉換功能。將此本地 C++ 庫集成到您的項目中，或使用跨平台應用程序將 TeX 轉換為 XPS。
 keywords: tex to xps api cpp, tex2xps 集成 c++
 url: /cpp/conversion/tex-to-xps/

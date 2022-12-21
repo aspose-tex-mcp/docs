@@ -2,7 +2,7 @@
 translation: true
 template: /_templates/_conversion-child-cpp.md
 title: API μετατροπής TEX σε TIFF | C++
-description: Λειτουργία μετατροπής TeX σε TIFF. Ενσωματώστε αυτήν την εσωτερική βιβλιοθήκη C++ στο έργο σας ή χρησιμοποιήστε εφαρμογές πολλαπλών πλατφορμών για να μετατρέψετε το TeX σε TIFF.
+description: TeX σε TIFF. Ενσωματώστε αυτήν την βιβλιοθήκη C++ στο έργο σας ή χρησιμοποιήστε εφαρμογές πολλαπλών πλατφορμών για να μετατρέψετε το TeX σε TIFF.
 keywords: tex to tiff api cpp, tex2tiff ενσωμάτωση c++
 url: /cpp/conversion/tex-to-tiff/
 family: tex

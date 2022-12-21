@@ -2,7 +2,7 @@
 translation: true
 template: /_templates/_conversion-child-net.md
 title: API Konversi LaTeX ke TIFF | .BERSIH
-description: Fungsi konversi LaTeX ke TIFF. Integrasikan pustaka .NET lokal ini ke dalam proyek Anda atau gunakan aplikasi lintas platform untuk mengonversi LaTeX ke TIFF.
+description: Konversi LaTeX ke TIFF. Integrasikan pustaka .NET lokal ini ke dalam proyek Anda atau gunakan aplikasi lintas platform untuk mengonversi LaTeX ke TIFF.
 keywords: 'latex ke tiff api net, latex2tiff mengintegrasikan C#'
 url: /net/conversion/latex-to-tiff/
 family: tex

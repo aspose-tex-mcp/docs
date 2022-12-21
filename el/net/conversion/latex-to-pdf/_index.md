@@ -2,7 +2,7 @@
 translation: true
 template: /_templates/_conversion-child-net.md
 title: API μετατροπής LaTeX σε PDF | .NET
-description: Λειτουργία μετατροπής LaTeX σε PDF. Ενσωματώστε αυτήν την εσωτερική βιβλιοθήκη .NET στο έργο σας ή χρησιμοποιήστε εφαρμογές πολλαπλών πλατφορμών για να μετατρέψετε το LaTeX σε PDF.
+description: LaTeX σε PDF. Ενσωματώστε αυτήν την βιβλιοθήκη .NET στο έργο σας ή χρησιμοποιήστε εφαρμογές πολλαπλών πλατφορμών για να μετατρέψετε το LaTeX σε PDF.
 keywords: latex σε pdf api net, latex2pdf ενσωμάτωση c#
 url: /net/conversion/latex-to-pdf/
 family: tex

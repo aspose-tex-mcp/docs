@@ -3,7 +3,7 @@ translation: true
 template: /_templates/_conversion-net.md
 title: Преобразование файлов TeX (LaTeX) | .NET
 url: /net/conversion/
-description: Функциональность преобразования TeX и LaTeX. Преобразуйте файлы TeX/LaTeX в форматы PDF, SVG, XPS и изображения, включая PNG, JPEG, TIFF и BMP, используя это решение .NET API.
+description: Конверсия TeX и LaTeX. Преобразуйте TeX/LaTeX в форматы PDF, SVG, XPS и изображения, включая PNG, JPEG, TIFF и BMP, используя это решение .NET API.
 keywords: tex преобразование API С#, tex конвертер С# интегрировать
 family: tex
 platformtag: net

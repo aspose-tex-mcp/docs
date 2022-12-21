@@ -3,7 +3,7 @@ translation: true
 template: /_templates/_output-to-zip-net.md
 title: TeX-ből ZIP-be | .NET API megoldás
 url: /net/output-to-zip/
-description: ".NET API megoldás a TeX-szel való együttműködéshez. A TeX-ből ZIP-be konvertáló funkció lehetővé teszi a TeX-fájl elmentését a legnépszerűbb archívumként. C# példák erre a funkcióra."
+description: ".NET API a TeX-szel való együttműködéshez. A TeX-ből ZIP-be konvertáló lehetővé teszi a TeX-fájl elmentését a legnépszerűbb archívumként. C# példák."
 informat: TEX
 family: tex
 platformtag: net

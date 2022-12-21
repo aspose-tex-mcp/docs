@@ -2,7 +2,7 @@
 translation: true
 template: /_templates/_conversion-child-net.md
 title: TeX'ten PDF'ye Dönüştürme API'sı | .NET
-description: TeX'ten PDF'ye dönüştürme işlevi. Bu şirket içi .NET kitaplığını projenize entegre edin veya TeX'i PDF'ye dönüştürmek için platformlar arası uygulamaları kullanın.
+description: TeX'ten PDF'ye. Bu şirket içi .NET kitaplığını projenize entegre edin veya TeX'i PDF'ye dönüştürmek için platformlar arası uygulamaları kullanın.
 keywords: tex'ten pdf'ye api net, tex2pdf entegre c#
 url: /net/conversion/tex-to-pdf/
 family: tex

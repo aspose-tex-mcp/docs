@@ -2,7 +2,7 @@
 translation: true
 template: /_templates/_conversion-child-java.md
 title: API μετατροπής TeX σε TIFF | Java
-description: Λειτουργία μετατροπής TeX σε TIFF. Ενσωματώστε αυτήν την εσωτερική βιβλιοθήκη Java στο έργο σας ή χρησιμοποιήστε εφαρμογές πολλαπλών πλατφορμών για να μετατρέψετε το TeX σε TIFF.
+description: TeX σε TIFF. Ενσωματώστε αυτήν την βιβλιοθήκη Java στο έργο σας ή χρησιμοποιήστε εφαρμογές πολλαπλών πλατφορμών για να μετατρέψετε το TeX σε TIFF.
 keywords: tex to tiff api java, tex2tiff integrate
 url: /java/conversion/tex-to-tiff/
 family: tex

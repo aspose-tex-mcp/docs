@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /_templates/_conversion-child-cpp.md
-title: TEX에서 JPEG로의 변환 API | C++
+title: TEX에서 JPEG로의 변환 API | C++  해결책
 description: TeX에서 JPEG로의 변환 기능. 이 온프레미스 C++ 라이브러리를 프로젝트에 통합하거나 크로스 플랫폼 애플리케이션을 사용하여 TeX를 JPEG로 변환하세요.
 keywords: tex에서 jpeg api cpp로, tex2jpeg에서 C++ 통합
 url: /cpp/conversion/tex-to-jpeg/

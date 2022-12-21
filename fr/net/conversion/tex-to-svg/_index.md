@@ -2,7 +2,7 @@
 translation: true
 template: /_templates/_conversion-child-net.md
 title: API de conversion TeX vers SVG | .NET
-description: Fonctionnalité de conversion TeX vers SVG. Intégrez cette bibliothèque .NET sur site dans votre projet ou utilisez des applications multiplateformes pour convertir TeX en SVG.
+description: Conversion TeX vers SVG. Intégrez bibliothèque .NET sur site dans votre projet ou utilisez des applications multiplateformes pour convertir TeX en SVG.
 keywords: tex vers svg api net, tex2svg intègre c#
 url: /net/conversion/tex-to-svg/
 family: tex

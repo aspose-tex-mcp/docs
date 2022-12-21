@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /_templates/_conversion-cpp.md
-title: تحويل ملفات TeX (LaTeX) | C++
+title: تحويل ملفات TeX (LaTeX) | المحلول C++
 url: /cpp/conversion/
 keywords: tex converter cpp api و tex converter C++ api
 description: حل واجهة برمجة تطبيقات تحويل TeX (LaTeX) C++. قم بتحويل ملفات LaTeX إلى PDF و XPS وصور بما في ذلك PNG و JPEG و TIFF و BMP مع بضعة أسطر من كود C++.

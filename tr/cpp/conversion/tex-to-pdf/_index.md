@@ -2,7 +2,7 @@
 translation: true
 template: /_templates/_conversion-child-cpp.md
 title: TEX'den PDF'ye Dönüştürme API'sı | C++
-description: TeX'ten PDF'ye dönüştürme işlevi. Bu şirket içi C++ kitaplığını projenize entegre edin veya TeX'i PDF'ye dönüştürmek için platformlar arası uygulamaları kullanın.
+description: TeX'ten PDF'ye. Bu şirket içi C++ kitaplığını projenize entegre edin veya TeX'i PDF'ye dönüştürmek için platformlar arası uygulamaları kullanın.
 keywords: tex'ten pdf'ye api cpp, tex2pdf c++'ı entegre eder
 url: /cpp/conversion/tex-to-pdf/
 family: tex

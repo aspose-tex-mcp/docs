@@ -2,7 +2,7 @@
 title: TeX API-oplossing voor Java, .NET en C++
 weight: 10
 url: /nl/family
-description: TeX Native API's voor .NET, Java en C++. Dit is een gebruiksvriendelijke en geïntegreerde oplossing voor het zetten, verwerken en converteren van TeX- en LaTeX-bestanden op elk platform.
+description: TeX API's voor .NET, Java, C++. Oplossing voor het zetten, verwerken en converteren van TeX- en LaTeX-bestanden op elk platform.
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}

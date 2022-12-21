@@ -2,7 +2,7 @@
 title: API TeX et LaTeX et solutions Web
 weight: 30
 url: /fr/
-description: API et applications TeX High Code pour composer, traiter et convertir des documents TeX. Cette solution prend également en charge les formats PDF, EPS, SVG et la plupart des formats d'image comme formats de sortie.
+description: API et applications TeX pour composer, traiter et convertir des TeX. Cette solution prend également en charge les formats PDF, EPS, SVG comme formats de sortie.
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}

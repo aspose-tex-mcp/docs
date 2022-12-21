@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /_templates/_conversion-child-cpp.md
-title: TEX から BMP への変換 API | C++
+title: TEX から BMP への変換 API | C++  解決
 description: TEX から BMP への変換機能。このオンプレミス C++ ライブラリをプロジェクトに統合するか、クロスプラットフォーム アプリケーションを使用して TeX を BMP に変換します。
 keywords: texからbmp apiへのcpp、tex2bmpはc ++を統合します
 url: /cpp/conversion/tex-to-bmp/

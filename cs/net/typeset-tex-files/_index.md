@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /_templates/_typeset-tex-files-net.md
-title: Funkce sazby TeX | .NET API
+title: Funkce sazby TeX C# | .NET API
 url: /net/typeset-tex-files/
 description: ".NET API Řešení pro práci s TeXem. Naučte se na příkladu, jak vytvořit sazbu TeX pomocí několika řádků kódu C#."
 informat: TEX

@@ -3,7 +3,7 @@ translation: true
 template: /_templates/_customize-input-net.md
 title: Erstell eine benutzerdefinierte TeXTEingabe
 url: /net/customize-input/
-description: ".NET-API-Lösung für die Arbeit mit TeX. Erfahren Sie anhand des Beispiels, wie Sie mit ein paar Zeilen C#-Code eine benutzerdefinierte Eingabe für eine TeX-Datei erstellen."
+description: ".NET-API für die Arbeit mit TeX. Erfahren Sie anhand des Beispiels, wie Sie mit C#-Code eine benutzerdefinierte Eingabe für eine TeX erstellen."
 keywords: benutzerdefinierte Eingabe-Tex-Net-API, C#-API zum Anpassen von Tex
 informat: TEX
 family: tex

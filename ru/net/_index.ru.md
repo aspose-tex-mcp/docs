@@ -2,7 +2,7 @@
 title: .NET API и приложения для обработки документов TeX 
 weight: 20
 url: /ru/net/ 
-description: Библиотека C# ASP.NET VB.NET для верстки документов TeX. Решение поддерживает множество форматов выходных файлов, таких как XPS, PDF, SVG, PNG, JPEG, TIFF, BMP.
+description: Библиотека C# ASP.NET VB.NET для верстки документов TeX. Поддерживает множество форматов выходных файлов, таких как XPS, PDF, SVG, PNG, JPEG, TIFF, BMP.
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}

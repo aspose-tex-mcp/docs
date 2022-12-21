@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /_templates/_conversion-child-net.md
-title: TeX 到 BMP 轉換 API |  .NET
+title: TeX 到 BMP 轉換 API | .NET | Aspose
 description: TeX 到 BMP 的轉換功能。將此本地 .NET 庫集成到您的項目中，或使用跨平台應用程序將 TeX 轉換為 BMP。
 keywords: tex to bmp api net, tex2bmp 集成 c#
 url: /net/conversion/tex-to-bmp/

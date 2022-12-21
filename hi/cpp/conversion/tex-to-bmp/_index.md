@@ -2,7 +2,7 @@
 translation: true
 template: /_templates/_conversion-child-cpp.md
 title: "TEX टू BMP कन्वर्जन एपीआई | C++"
-description: "TeX से BMP रूपांतरण कार्यक्षमता। इस ऑन-प्रिमाइसेस C++ लाइब्रेरी को अपने प्रोजेक्ट में एकीकृत करें या TeX को BMP में बदलने के लिए क्रॉस-प्लेटफ़ॉर्म एप्लिकेशन का उपयोग करें।"
+description: "TeX से BMP। इस C++ लाइब्रेरी को अपने प्रोजेक्ट में एकीकृत करें या TeX को BMP में बदलने के लिए क्रॉस-प्लेटफ़ॉर्म एप्लिकेशन का उपयोग करें।"
 keywords: "TEX टू BMP एपीआई सीपीपी, TEX2BMP इंटीग्रेटेड C++"
 url: /cpp/conversion/tex-to-bmp/
 family: tex

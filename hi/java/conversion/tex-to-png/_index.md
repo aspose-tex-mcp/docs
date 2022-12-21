@@ -2,7 +2,7 @@
 translation: true
 template: /_templates/_conversion-child-java.md
 title: "टीएक्स टू PNG कन्वर्जन एपीआई | Java"
-description: "टीएक्स से PNG रूपांतरण कार्यक्षमता। इस ऑन-प्रिमाइसेस जावा लाइब्रेरी को अपने प्रोजेक्ट में एकीकृत करें या टीएक्स को PNG में बदलने के लिए क्रॉस-प्लेटफ़ॉर्म एप्लिकेशन का उपयोग करें।"
+description: "टीएक्स से PNG। इस जावा लाइब्रेरी को अपने प्रोजेक्ट में एकीकृत करें या टीएक्स को PNG में बदलने के लिए क्रॉस-प्लेटफ़ॉर्म एप्लिकेशन का उपयोग करें।"
 keywords: TEX टू PNG एपीआई जावा, TEX2PNG इंटीग्रेट
 url: /java/conversion/tex-to-png/
 family: tex

@@ -2,7 +2,7 @@
 translation: true
 template: /_templates/_conversion-child-net.md
 title: API Konversi TeX ke BMP | .BERSIH
-description: Fungsi konversi TeX ke BMP. Integrasikan pustaka .NET lokal ini ke dalam proyek Anda atau gunakan aplikasi lintas platform untuk mengonversi TeX ke BMP.
+description: Konversi TeX ke BMP. Integrasikan pustaka .NET lokal ini ke dalam proyek Anda atau gunakan aplikasi lintas platform untuk mengonversi TeX ke BMP.
 keywords: tex ke bmp api net, tex2bmp mengintegrasikan c#
 url: /net/conversion/tex-to-bmp/
 family: tex

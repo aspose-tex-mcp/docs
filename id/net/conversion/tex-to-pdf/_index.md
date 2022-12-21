@@ -2,7 +2,7 @@
 translation: true
 template: /_templates/_conversion-child-net.md
 title: API Konversi TeX ke PDF | .BERSIH
-description: Fungsi konversi TeX ke PDF. Integrasikan pustaka .NET lokal ini ke dalam proyek Anda atau gunakan aplikasi lintas platform untuk mengonversi TeX ke PDF.
+description: Konversi TeX ke PDF. Integrasikan pustaka .NET lokal ini ke dalam proyek Anda atau gunakan aplikasi lintas platform untuk mengonversi TeX ke PDF.
 keywords: 'tex ke pdf api net, tex2pdf mengintegrasikan C#'
 url: /net/conversion/tex-to-pdf/
 family: tex

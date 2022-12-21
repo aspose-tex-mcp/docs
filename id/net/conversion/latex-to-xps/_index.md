@@ -2,7 +2,7 @@
 translation: true
 template: /_templates/_conversion-child-net.md
 title: API Konversi LaTeX ke XPS | .BERSIH
-description: Fungsi konversi LaTeX ke XPS. Integrasikan pustaka .NET lokal ini ke dalam proyek Anda atau gunakan aplikasi lintas platform untuk mengonversi LaTeX ke XPS.
+description: Konversi LaTeX ke XPS. Integrasikan pustaka .NET lokal ini ke dalam proyek Anda atau gunakan aplikasi lintas platform untuk mengonversi LaTeX ke XPS.
 keywords: 'lateks ke xps api net, latex2xps mengintegrasikan C#'
 url: /net/conversion/latex-to-xps/
 family: tex

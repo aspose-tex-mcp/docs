@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /_templates/_conversion-child-java.md
-title: LaTeX 到 PNG 转换 API | Java
-description: LaTeX 到 PNG 的转换功能。将此本地 Java 库集成到您的项目中，或使用跨平台应用程序将 LaTeX 转换为 PNG。
+title: LaTeX 到 PNG 转换 API | Java 解决方案
+description: LaTeX 到 PNG 的转换功能。Aspose.TEX API。将此本地 Java 库集成到您的项目中，或使用跨平台应用程序将 LaTeX 转换为 PNG。
 keywords: 乳胶到png api java，latex2png 集成
 url: /java/conversion/latex-to-png/
 family: tex

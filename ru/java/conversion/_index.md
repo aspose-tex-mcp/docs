@@ -3,7 +3,7 @@ translation: true
 template: /_templates/_conversion-java.md
 title: Преобразование файлов TeX (LaTeX) | Java
 url: /java/conversion/
-description: Решение Java API преобразования TeX (LaTeX). Преобразование файлов LaTeX в PDF, XPS и изображения, включая PNG, JPEG, TIFF, BMP, с помощью нескольких строк кода Java.
+description: Решение Java API для конвертации TeX (LaTeX). Преобразование файлов LaTeX в PDF, XPS и изображения, включая PNG, JPEG, TIFF, BMP, с помощью кода Java.
 keywords: tex convert api java, tex convert java интеграции
 family: tex
 platformtag: cpp

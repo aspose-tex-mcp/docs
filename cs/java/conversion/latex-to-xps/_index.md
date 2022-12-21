@@ -1,9 +1,9 @@
 ﻿---
 translation: true
 template: /_templates/_conversion-child-java.md
-title: LaTeX na XPS Conversion API| Java
+title: LaTeX na XPS Konvertor API | Java
 description: Funkce převodu LaTeX na XPS. Integrujte tuto místní knihovnu Java do svého projektu nebo použijte multiplatformní aplikace pro převod LaTeXu na XPS.
-keywords: latex to xps api java, latex2xps integrovat
+keywords: LaTeX na xps api java, latex2xps integrovat
 url: /java/conversion/latex-to-xps/
 family: tex
 platformtag: java
@@ -22,7 +22,7 @@ h2: Převeďte LaTeX na XPS pomocí API řešení pro Javu
 {{<section overview>}}
 ---
 title: "Jak převést LaTeX na XPS pomocí Javy"
-p1: "Aspose.TeX for LaTeX to XPS converter transformuje LaTeX soubor na obraz XPS s použitím libovolného jazyka podporovaného Javou."
+p1: "Aspose.TeX for LaTeX na XPS converter transformuje LaTeX soubor na obraz XPS s použitím libovolného jazyka podporovaného Javou."
 p2: "Rozhraní API, které zde vidíte, lze také použít k vytvoření vlastní aplikace pro více platforem nebo k integraci do vašeho projektu Java."
 p3: "Chcete-li převést LaTeX na XPS:"
 p4: "Použijte [Aspose.TeX for Java](https://products.aspose.com/tex/java) API, což je funkčně bohaté, výkonné a snadno použitelné konverzní API pro platformu Java."

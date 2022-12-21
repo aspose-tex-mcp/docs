@@ -2,7 +2,7 @@
 translation: true
 template: /_templates/_conversion-child-java.md
 title: "टीएक्स से BMP कन्वर्जन एपीआई | Java"
-description: "टीएक्स से BMP रूपांतरण कार्यक्षमता। इस ऑन-प्रिमाइसेस जावा लाइब्रेरी को अपने प्रोजेक्ट में एकीकृत करें या टीएक्स को BMP में बदलने के लिए क्रॉस-प्लेटफ़ॉर्म एप्लिकेशन का उपयोग करें।"
+description: "टीएक्स से BMP। इस जावा लाइब्रेरी को अपने प्रोजेक्ट में एकीकृत करें या टीएक्स को BMP में बदलने के लिए क्रॉस-प्लेटफ़ॉर्म एप्लिकेशन का उपयोग करें।"
 keywords: TEX टू BMP एपीआई जावा, TEX2BMP इंटीग्रेट
 url: /java/conversion/tex-to-bmp/
 family: tex

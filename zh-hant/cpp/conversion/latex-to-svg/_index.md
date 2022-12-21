@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /_templates/_conversion-child-cpp.md
-title: LaTeX 到 SVG 轉換 API | C++
+title: LaTeX 到 SVG轉換 API | C++ | Aspose
 description: LaTeX 到 SVG 的轉換功能。將此本地 C++ 庫集成到您的項目中，或使用跨平台應用程序將 LaTeX 轉換為 SVG。
 keywords: 乳膠到svg api cpp，latex2svg集成c ++
 url: /cpp/conversion/latex-to-svg/

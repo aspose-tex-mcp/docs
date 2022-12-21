@@ -2,7 +2,7 @@
 translation: true
 template: /_templates/_conversion-child-net.md
 title: TeX naar PDF conversie API | .NET
-description: TeX naar PDF conversie functionaliteit. Integreer deze on-premise .NET-bibliotheek in uw project of gebruik platformonafhankelijke applicaties om TeX naar PDF te converteren.
+description: TeX naar PDF conversie. Integreer deze  .NET-bibliotheek in uw project of gebruik platformonafhankelijke applicaties om TeX naar PDF te converteren.
 keywords: tex naar pdf api net, tex2pdf integratie c#
 url: /net/conversion/tex-to-pdf/
 family: tex

@@ -2,7 +2,7 @@
 translation: true
 template: /_templates/_conversion-child-cpp.md
 title: API chuyển đổi từ LaTeX sang PDF | C ++
-description: Chức năng chuyển đổi LaTeX sang PDF. Tích hợp thư viện C ++ tại chỗ này vào dự án của bạn hoặc sử dụng các ứng dụng đa nền tảng để chuyển đổi LaTeX sang PDF.
+description: LaTeX sang PDF. Tích hợp thư viện C ++ tại chỗ này vào dự án của bạn hoặc sử dụng các ứng dụng đa nền tảng để chuyển đổi LaTeX sang PDF.
 keywords: latex sang pdf api cpp, latex2pdf tích hợp c ++
 url: /cpp/conversion/latex-to-pdf/
 family: tex

@@ -7,7 +7,7 @@ deploy: false
 ---
 h2: FAQ
 Q1: "Co je šablona LaTeX?"
-A1: "Šablona je uložená sada vlastností, nastavení nebo struktury, kterou lze použít na nově vytvořený dokument a ušetřit tak čas. Pro LaTeX to může být soubor, který obsahuje informace o formátu stránky, fontech, třídě dokumentu, obsažených balíčcích atd."
+A1: "Šablona je uložená sada vlastností, nastavení nebo struktury, kterou lze použít na nově vytvořený dokument a ušetřit tak čas. Pro LaTeX na může být soubor, který obsahuje informace o formátu stránky, fontech, třídě dokumentu, obsažených balíčcích atd."
 Q2: "Jak mohu používat šablony LaTeX?"
 A2: "Pokud nepoužíváte žádný další software a šablona je pouze soubor .tex, stačí ji otevřít a začít pracovat. Mějte na paměti, že změny neukládáte přímo do tohoto dokumentu, ale použijete možnost Uložit jako."
 Q3: "Jak nastavit typ dokumentu LaTeX?"

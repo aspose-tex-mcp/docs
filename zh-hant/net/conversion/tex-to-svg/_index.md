@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /_templates/_conversion-child-net.md
-title: TeX 到 SVG 轉換 API |  .NET
+title: TeX 到 SVG 轉換 API | .NET | Aspose
 description: TeX 到 SVG 的轉換功能。將此本地 .NET 庫集成到您的項目中，或使用跨平台應用程序將 TeX 轉換為 SVG。
 keywords: tex to svg api net, tex2svg 集成 c#
 url: /net/conversion/tex-to-svg/

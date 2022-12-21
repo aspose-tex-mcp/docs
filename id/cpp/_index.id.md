@@ -2,7 +2,7 @@
 title: Integrasi dan Pemrosesan API C++ TeX - Aspose 
 weight: 50
 url: /id/cpp/ 
-description: Pustaka C++ TeX untuk memproses file TeX dalam aplikasi C++. Ini menawarkan fungsionalitas pengaturan huruf bersama dengan konversi TeX ke PDf, SVG, XPS, dan format lainnya.
+description: Pustaka C++ TeX untuk memproses file TeX dalam aplikasi C++. Fungsionalitas pengaturan huruf bersama dengan konversi TeX ke PDf, SVG, dan format lainnya.
 keywords: konversi tex api cpp, tex converter c++ mengintegrasikan
 ---
 

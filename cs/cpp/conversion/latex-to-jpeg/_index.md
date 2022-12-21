@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /_templates/_conversion-child-cpp.md
-title: LaTeX to JPEG Conversion API| C++
+title: LaTeX na JPEG Konvertor API | C++
 description: Funkce převodu LaTeX na JPEG. Integrujte tuto místní knihovnu C++ do svého projektu nebo použijte multiplatformní aplikace pro převod LaTeXu na JPEG.
 keywords: latex do jpeg api cpp, latex2jpeg integruje c++
 url: /cpp/conversion/latex-to-jpeg/
@@ -22,7 +22,7 @@ h2: Převeďte LaTeX na JPEG pomocí řešení API pro C++.
 {{<section overview>}}
 ---
 title: "Jak převést LaTeX do JPEG pomocí C++"
-p1: "Aspose.TeX for LaTeX to JPEG converter transformuje LaTeX soubor na obrázek JPEG s použitím libovolného jazyka podporovaného C++."
+p1: "Aspose.TeX for LaTeX na JPEG converter transformuje LaTeX soubor na obrázek JPEG s použitím libovolného jazyka podporovaného C++."
 p2: "Rozhraní API, které zde vidíte, lze použít k vytvoření vlastní aplikace pro více platforem nebo k integraci do vašeho projektu C++."
 p3: "Chcete-li převést LaTeX na JPEG:"
 p4: "Aspose.TeX for C++ API, což je funkčně bohaté, výkonné a snadno použitelné API pro manipulaci a konverzi dokumentů pro platformu C++."

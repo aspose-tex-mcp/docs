@@ -1,8 +1,8 @@
 ---
-title: TeX и LaTeX API и веб-решения
+title: TeX и LaTeX API и веб-решения | Aspose
 weight: 30
 url: /ru/
-description: API и приложения TeX High Code для верстки, обработки и преобразования документов TeX. Это решение также поддерживает PDF, EPS, SVG и большинство форматов изображений в качестве выходных форматов.
+description: API и приложения TeX для верстки, обработки и конверсии TeX. Это решение поддерживает PDF, EPS, SVG и др. форматы изображений в качестве выходных форматов.
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}

@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /_templates/_conversion-child-cpp.md
-title: TEX から XPS への変換 API | C++
+title: TEX から XPS への変換 API | C++  解決
 description: TeX から XPS への変換機能。このオンプレミス C++ ライブラリをプロジェクトに統合するか、クロスプラットフォーム アプリケーションを使用して TeX を XPS に変換します。
 keywords: tex から xps api cpp、tex2xps への c++ の統合
 url: /cpp/conversion/tex-to-xps/

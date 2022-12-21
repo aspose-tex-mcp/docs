@@ -2,7 +2,7 @@
 translation: true
 template: /_templates/_conversion-child-net.md
 title: "टीएक्स से XPS कन्वर्जन एपीआई | .NET"
-description: "टीएक्स से XPS रूपांतरण कार्यक्षमता। इस ऑन-प्रिमाइसेस .NET लाइब्रेरी को अपने प्रोजेक्ट में एकीकृत करें या TeX को XPS में बदलने के लिए क्रॉस-प्लेटफ़ॉर्म एप्लिकेशन का उपयोग करें।"
+description: "टीएक्स से XPS। इस .NET लाइब्रेरी को अपने प्रोजेक्ट में एकीकृत करें या TeX को XPS में बदलने के लिए क्रॉस-प्लेटफ़ॉर्म एप्लिकेशन का उपयोग करें।"
 keywords: "टेक्स टू XPS एपीआई नेट, टेक्स2XPS इंटीग्रेटेड C#"
 url: /net/conversion/tex-to-xps/
 family: tex

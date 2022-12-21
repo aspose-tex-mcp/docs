@@ -3,7 +3,7 @@ translation: true
 template: /_templates/_customize-input-net.md
 title: Créer une entrée personnalisée TeX | API .NET
 url: /net/customize-input/
-description: "Solution API .NET pour travailler avec TeX. Apprenez sur l'exemple comment créer une entrée personnalisée pour le fichier TeX avec quelques lignes de code C#."
+description: "API .NET pour travailler avec TeX. Apprenez sur l'exemple comment créer une entrée personnalisée pour le fichier TeX avec quelques lignes de code C#."
 keywords: entrée personnalisée tex net api, C# api pour personnaliser tex
 informat: TEX
 family: tex

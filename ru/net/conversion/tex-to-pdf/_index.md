@@ -2,7 +2,7 @@
 translation: true
 template: /_templates/_conversion-child-net.md
 title: API преобразования TeX в PDF | .NET
-description: Функциональность преобразования TeX в PDF. Интегрируйте эту локальную библиотеку .NET в свой проект или используйте кроссплатформенные приложения для преобразования TeX в PDF.
+description: Конверсия TeX в PDF. Интегрируйте эту локальную библиотеку .NET в свой проект или используйте кроссплатформенные приложения для преобразования TeX в PDF.
 keywords: tex в pdf api net, tex2pdf интегрировать c#
 url: /net/conversion/tex-to-pdf/
 family: tex

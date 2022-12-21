@@ -2,7 +2,7 @@
 title: Java API a TeX és LaTeX dokumentumok feldolgozásához
 weight: 40
 url: /hu/java/ 
-description: Java TeX könyvtár a TeX fájlok Java alkalmazásokon belüli feldolgozásához. Szedési funkcionalitást és TeX konvertálást kínál PDf, SVG, XPS és más formátumokká.
+description: Java TeX könyvtár a TeX fájlok Java alkalmazásokon belüli feldolgozásához. Szedési TeX konvertálást kínál PDf, SVG, XPS és más formátumokká.
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}

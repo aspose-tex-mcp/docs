@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /_templates/_conversion-child-java.md
-title: TeX 到 PNG 轉換 API | Java
+title: TeX 到 PNG轉換 API | Java | Aspose
 description: TeX 到 PNG 的轉換功能。將此本地 Java 庫集成到您的項目中，或使用跨平台應用程序將 TeX 轉換為 PNG。
 keywords: tex to png api java, tex2png 集成
 url: /java/conversion/tex-to-png/

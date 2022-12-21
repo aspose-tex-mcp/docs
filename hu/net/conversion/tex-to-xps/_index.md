@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /_templates/_conversion-child-net.md
-title: TeX to XPS Conversion API| .NET
-description: TeX-XPS konvertálási funkció. Integrálja ezt a helyszíni .NET-könyvtárat a projektjébe, vagy használjon többplatformos alkalmazásokat a TeX XPS-re konvertálásához.
+title: TeX to XPS Átalakító API| .NET
+description: TeX-XPS konvertálási. Integrálja .NET-könyvtárat a projektjébe, vagy használjon többplatformos alkalmazásokat a TeX XPS-re konvertálásához.
 keywords: tex xps api net, tex2xps integráció c#
 url: /net/conversion/tex-to-xps/
 family: tex

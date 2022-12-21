@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /_templates/_conversion-child-cpp.md
-title: API Konversi TEX ke XPS | C++
-description: Fungsi konversi TeX ke XPS. Integrasikan pustaka C++ lokal ini ke dalam proyek Anda atau gunakan aplikasi lintas platform untuk mengonversi TeX ke XPS.
+title: API Konversi TEX ke XPS | C++ Solusi
+description: Konversi TeX ke XPS. Integrasikan pustaka C++ lokal ini ke dalam proyek Anda atau gunakan aplikasi lintas platform untuk mengonversi TeX ke XPS.
 keywords: tex ke xps api cpp, tex2xps mengintegrasikan c++
 url: /cpp/conversion/tex-to-xps/
 family: tex

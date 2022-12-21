@@ -1,9 +1,9 @@
 ﻿---
 translation: true
 template: /_templates/_conversion-child-net.md
-title: LaTeX to PDF Conversion API| .NET
+title: LaTeX na PDF Konvertor API | .NET
 description: Funkce převodu LaTeX do PDF. Integrujte tuto místní knihovnu .NET do svého projektu nebo použijte aplikace pro různé platformy pro převod LaTeXu do PDF.
-keywords: latex to pdf api net, latex2pdf integrovat c#
+keywords: LaTeX na pdf api net, latex2pdf integrovat c#
 url: /net/conversion/latex-to-pdf/
 family: tex
 platformtag: net
@@ -22,7 +22,7 @@ h2: "Převeďte LaTeX do PDF pomocí řešení API pro C# .NET."
 {{<section overview>}}
 ---
 title: "Jak převést LaTeX do PDF pomocí C# .NET"
-p1: "Aspose.TeX for LaTeX to PDF converter transformuje LaTeX soubor na PDF obrázek s použitím libovolného jazyka podporovaného C#."
+p1: "Aspose.TeX for LaTeX na PDF converter transformuje LaTeX soubor na PDF obrázek s použitím libovolného jazyka podporovaného C#."
 p2: "Rozhraní API, které zde vidíte, lze použít k vytvoření vlastní aplikace pro více platforem nebo k integraci do vašeho projektu .NET."
 p3: "Chcete-li převést LaTeX do PDF:"
 p4: "Použijte Aspose.TeX for .NET API, což je funkčně bohaté, výkonné a snadno použitelné API pro manipulaci a konverzi dokumentů pro C#."

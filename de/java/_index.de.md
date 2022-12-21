@@ -2,7 +2,7 @@
 title: Java-API zum Verarbeiten von TeX- und LaTeX-Dokumenten
 weight: 40
 url: /de/java/ 
-description: Java-TeX-Bibliothek zur Verarbeitung von TeX-Dateien in Java-Anwendungen. Es bietet Satzfunktionen und die Konvertierung von TeX in PDF, SVG, XPS und andere Formate.
+description: Java-TeX-Bibliothek zur Verarbeitung von TeX in Java-Anwendungen. Es bietet Satzfunktionen und die Konvertierung von TeX in PDF, SVG, XPS und andere.
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}

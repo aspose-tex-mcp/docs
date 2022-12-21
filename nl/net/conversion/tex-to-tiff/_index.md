@@ -2,7 +2,7 @@
 translation: true
 template: /_templates/_conversion-child-net.md
 title: TeX naar TIFF conversie API | .NET
-description: TeX naar TIFF conversie functionaliteit. Integreer deze on-premise .NET-bibliotheek in uw project of gebruik platformonafhankelijke applicaties om TeX naar TIFF te converteren.
+description: TeX naar TIFF conversie. Integreer deze  .NET-bibliotheek in uw project of gebruik platformonafhankelijke applicaties om TeX naar TIFF te converteren.
 keywords: tex naar tiff api net, tex2tiff integratie c#
 url: /net/conversion/tex-to-tiff/
 family: tex

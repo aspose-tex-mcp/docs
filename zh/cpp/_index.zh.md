@@ -1,5 +1,5 @@
 ---
-title: C++ TeX 集成和处理 API - Aspose 
+title: C++ TeX(LaTeX) 集成和处理 API - Aspose 
 weight: 50
 url: /zh/cpp/ 
 description: C++ TeX 库，用于处理 C++ 应用程序中的 TeX 文件。它提供排版功能以及将 TeX 转换为 PDf、SVG、XPS 和其他格式的功能。

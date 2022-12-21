@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /_templates/_conversion-child-cpp.md
-title: TEX から PDF への変換 API | C++
+title: TEX から PDF への変換 API | C++  解決
 description: TeX から PDF への変換機能。このオンプレミス C++ ライブラリをプロジェクトに統合するか、クロスプラットフォーム アプリケーションを使用して TeX を PDF に変換します。
 keywords: texからpdf apiへのcpp、tex2pdfはc ++を統合します
 url: /cpp/conversion/tex-to-pdf/

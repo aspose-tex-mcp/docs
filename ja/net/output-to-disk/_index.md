@@ -3,7 +3,7 @@ translation: true
 template: /_templates/_output-to-disk-net.md
 title: TeX 出力をディスクに書き込む | .NET API ソリューション
 url: /net/output-to-disk/
-description: "TeX で動作する .NET API ソリューション。数行の C# コードで TeX ファイルのカスタム出力を作成する方法を例で学びます。"
+description: "TeX で動作する .NET API ソリューション。数行の C# コードで TeX ファイルのカスタム出力を作成する方法を例で学びます。Aspose"
 informat: TEX
 family: tex
 platformtag: net

@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /_templates/_output-to-zip-net.md
-title: TeX do ZIP | Řešení .NET API
+title: TeX do ZIP C# | Řešení .NET API
 url: /net/output-to-zip/
 description: ".NET API Řešení pro práci s TeXem. Funkce konverze TeX do ZIP vám umožňuje uložit soubor TeX jako nejoblíbenější archiv. C# příklady této funkce."
 informat: TEX

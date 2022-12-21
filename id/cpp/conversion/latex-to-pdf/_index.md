@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /_templates/_conversion-child-cpp.md
-title: API Konversi LaTeX ke PDF | C++
-description: Fungsi konversi LaTeX ke PDF. Integrasikan pustaka C++ lokal ini ke dalam proyek Anda atau gunakan aplikasi lintas platform untuk mengonversi LaTeX ke PDF.
+title: API Konversi LaTeX ke PDF | C++ Solusi
+description: Konversi LaTeX ke PDF. Integrasikan pustaka C++ lokal ini ke dalam proyek Anda atau gunakan aplikasi lintas platform untuk mengonversi LaTeX ke PDF.
 keywords: lateks ke pdf api cpp, latex2pdf mengintegrasikan c++
 url: /cpp/conversion/latex-to-pdf/
 family: tex

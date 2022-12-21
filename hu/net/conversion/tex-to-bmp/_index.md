@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /_templates/_conversion-child-net.md
-title: TeX to BMP Conversion API| .NET
-description: TeX-BMP konvertálási funkció. Integrálja ezt a helyszíni .NET-könyvtárat a projektjébe, vagy használjon többplatformos alkalmazásokat a TeX BMP-vé konvertálásához.
+title: TeX to BMP Átalakító API| .NET
+description: TeX-BMP konvertálási. Integrálja .NET-könyvtárat a projektjébe, vagy használjon többplatformos alkalmazásokat a TeX BMP-vé konvertálásához.
 keywords: tex to bmp api net, tex2bmp integráció c#
 url: /net/conversion/tex-to-bmp/
 family: tex

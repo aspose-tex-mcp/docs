@@ -2,7 +2,7 @@
 translation: true
 template: /_templates/_conversion-child-net.md
 title: TeX'ten BMP'ye Dönüştürme API'si | .NET
-description: TeX'ten BMP'ye dönüştürme işlevi. Bu şirket içi .NET kitaplığını projenize entegre edin veya TeX'i BMP'ye dönüştürmek için platformlar arası uygulamaları kullanın.
+description: TeX'ten BMP'ye. Bu şirket içi .NET kitaplığını projenize entegre edin veya TeX'i BMP'ye dönüştürmek için platformlar arası uygulamaları kullanın.
 keywords: tex'ten bmp'ye api net, tex2bmp c#'ı entegre ediyor
 url: /net/conversion/tex-to-bmp/
 family: tex

@@ -2,7 +2,7 @@
 translation: true
 template: /_templates/_conversion-child-net.md
 title: API Konversi TeX ke XPS | .BERSIH
-description: Fungsi konversi TeX ke XPS. Integrasikan pustaka .NET lokal ini ke dalam proyek Anda atau gunakan aplikasi lintas platform untuk mengonversi TeX ke XPS.
+description: Konversi TeX ke XPS. Integrasikan pustaka .NET lokal ini ke dalam proyek Anda atau gunakan aplikasi lintas platform untuk mengonversi TeX ke XPS.
 keywords: 'tex ke xps api net, tex2xps mengintegrasikan C#'
 url: /net/conversion/tex-to-xps/
 family: tex

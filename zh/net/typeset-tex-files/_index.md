@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /_templates/_typeset-tex-files-net.md
-title: TeX 排版功能 | .NET API
+title: TeX 排版功能 | .NET API | Aspose 解决方案 API
 url: /net/typeset-tex-files/
 description: ".NET API 解决方案与 TeX 一起工作。通过示例了解如何使用几行 C# 代码创建 TeX 排版。"
 informat: TEX

@@ -1,8 +1,8 @@
 ---
-title: Interfejsy API .NET i aplikacje do przetwarzania dokumentów TeX 
+title: Interfejsy .NET i aplikacje do przetwarzania dokumentów TeX 
 weight: 20
 url: /pl/net/ 
-description: Biblioteka C# ASP.NET VB.NET do składania dokumentów TeX. Rozwiązanie obsługuje wiele formatów plików wyjściowych, takich jak XPS, PDF, SVG, PNG, JPEG, TIFF, BMP.
+description: Biblioteka C# ASP.NET VB.NET do składania TeX. Rozwiązanie obsługuje wiele formatów plików wyjściowych, takich jak XPS, PDF, SVG, PNG, JPEG, TIFF, BMP.
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}

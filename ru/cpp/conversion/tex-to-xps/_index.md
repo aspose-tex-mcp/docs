@@ -2,7 +2,7 @@
 translation: true
 template: /_templates/_conversion-child-cpp.md
 title: API преобразования TEX в XPS | С++
-description: Функциональность преобразования TeX в XPS. Интегрируйте эту локальную библиотеку C++ в свой проект или используйте кроссплатформенные приложения для преобразования TeX в XPS.
+description: Конверсия TeX в XPS. Интегрируйте эту локальную библиотеку C++ в свой проект или используйте кроссплатформенные приложения для преобразования TeX в XPS.
 keywords: tex в xps api cpp, tex2xps интегрирует c++
 url: /cpp/conversion/tex-to-xps/
 family: tex

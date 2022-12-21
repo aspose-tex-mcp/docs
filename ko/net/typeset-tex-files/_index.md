@@ -1,9 +1,9 @@
 ﻿---
 translation: true
 template: /_templates/_typeset-tex-files-net.md
-title: TeX 조판 기능 | .NET API
+title: TeX 조판 기능 | .NET API 해결책
 url: /net/typeset-tex-files/
-description: "TeX와 함께 작동하는 .NET API 솔루션. 몇 줄의 C# 코드로 TeX 조판을 만드는 방법을 예제에서 배우십시오."
+description: "TeX와 함께 작동하는 .NET API 솔루션. 몇 줄의 C# 코드로 TeX 조판을 만드는 방법을 예제에서 배우십시오. Aspose"
 informat: TEX
 family: tex
 platformtag: net

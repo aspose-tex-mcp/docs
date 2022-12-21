@@ -2,7 +2,7 @@
 translation: true
 template: /_templates/_conversion-child-java.md
 title: LaTeX'ten PDF'ye Dönüştürme API'sı | Java
-description: LaTeX'ten PDF'ye dönüştürme işlevi. Bu şirket içi Java kitaplığını projenize entegre edin veya LaTeX'i PDF'ye dönüştürmek için platformlar arası uygulamaları kullanın.
+description: LaTeX'ten PDF'ye. Bu şirket içi Java kitaplığını projenize entegre edin veya LaTeX'i PDF'ye dönüştürmek için platformlar arası uygulamaları kullanın.
 keywords: pdf api java lateks, latex2pdf entegre
 url: /java/conversion/latex-to-pdf/
 family: tex

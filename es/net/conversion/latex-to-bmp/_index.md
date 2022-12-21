@@ -2,7 +2,7 @@
 translation: true
 template: /_templates/_conversion-child-net.md
 title: API de conversión de LaTeX a BMP | .NET
-description: Funcionalidad de conversión de LaTeX a BMP. Integre esta biblioteca .NET local en su proyecto o use aplicaciones multiplataforma para convertir LaTeX a BMP.
+description: Conversión de LaTeX a BMP. Integre esta biblioteca .NET local en su proyecto o use aplicaciones multiplataforma para convertir LaTeX a BMP.
 keywords: latex a bmp api net, latex2bmp integra c#
 url: /net/conversion/latex-to-bmp/
 family: tex

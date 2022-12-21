@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /_templates/_conversion-child-net.md
-title: TeX에서 XPS로 변환 API | .NET
+title: TeX에서 XPS로 변환 API | .NET 해결책
 description: TeX에서 XPS로의 변환 기능. 이 온프레미스 .NET 라이브러리를 프로젝트에 통합하거나 크로스 플랫폼 애플리케이션을 사용하여 TeX를 XPS로 변환하십시오.
 keywords: tex에서 xps api net으로, tex2xps는 C#을 통합합니다.
 url: /net/conversion/tex-to-xps/

@@ -1,9 +1,9 @@
 ﻿---
 translation: true
 template: /_templates/_typeset-tex-files-net.md
-title: TeX 組版機能 | .NET API
+title: TeX 組版機能 | .NET API 解決
 url: /net/typeset-tex-files/
-description: "TeX で動作する .NET API ソリューション。数行の C# コードで TeX タイプセットを作成する方法を例で学びます。"
+description: "TeX (LaTeX)で動作する .NET API ソリューション。数行の C# コードで TeX タイプセットを作成する方法を例で学びます。Aspose"
 informat: TEX
 family: tex
 platformtag: net

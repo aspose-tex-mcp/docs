@@ -2,7 +2,7 @@
 translation: true
 template: /_templates/_conversion-child-java.md
 title: TeX'ten SVG'ye Dönüştürme API'si | Java
-description: TeX'ten SVG'ye dönüştürme işlevi. Bu şirket içi Java kitaplığını projenize entegre edin veya TeX'i SVG'ye dönüştürmek için platformlar arası uygulamaları kullanın.
+description: TeX'ten SVG'ye. Bu şirket içi Java kitaplığını projenize entegre edin veya TeX'i SVG'ye dönüştürmek için platformlar arası uygulamaları kullanın.
 keywords: tex'ten svg'ye api java, tex2svg entegrasyonu
 url: /java/conversion/tex-to-svg/
 family: tex

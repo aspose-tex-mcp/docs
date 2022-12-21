@@ -3,7 +3,7 @@ translation: true
 template: /_templates/_conversion-net.md
 title: Μετατροπή αρχείων TeX (LaTeX) | .NET"
 url: /net/conversion/
-description: Λειτουργικότητα μετατροπής TeX και LaTeX. Μετατρέψτε αρχεία TeX / LaTeX σε PDF, SVG, XPS και μορφές εικόνας, όπως PNG, JPEG, TIFF και BMP χρησιμοποιώντας αυτήν τη λύση API .NET.
+description: TeX και LaTeX. Μετατρέψτε αρχεία TeX / LaTeX σε PDF, SVG, XPS και μορφές εικόνας, όπως PNG, JPEG, TIFF και BMP χρησιμοποιώντας αυτήν τη λύση API .NET.
 keywords: μετατροπή tex api c#, μετατροπέας tex c# ενσωμάτωση
 family: tex
 platformtag: net

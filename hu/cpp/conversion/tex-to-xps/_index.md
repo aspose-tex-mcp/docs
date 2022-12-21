@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /_templates/_conversion-child-cpp.md
-title: TEX to XPS Conversion API| C++
-description: TeX-XPS konvertálási funkció. Integrálja ezt a helyszíni C++ könyvtárat a projektjébe, vagy használjon többplatformos alkalmazásokat a TeX XPS-re konvertálásához.
+title: TEX to XPS Átalakító API| C++
+description: TeX-XPS konvertálási. Integrálja C++ könyvtárat a projektjébe, vagy használjon többplatformos alkalmazásokat a TeX XPS-re konvertálásához.
 keywords: tex to xps api cpp, tex2xps integrál c++
 url: /cpp/conversion/tex-to-xps/
 family: tex

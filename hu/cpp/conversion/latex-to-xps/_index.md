@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /_templates/_conversion-child-cpp.md
-title: LaTeX to XPS Conversion API| C++
-description: LaTeX-ről XPS-re konvertáló funkció. Integrálja ezt a helyszíni C++ könyvtárat a projektjébe, vagy használjon többplatformos alkalmazásokat a LaTeX XPS-re konvertálásához.
+title: LaTeX to XPS Átalakító API| C++
+description: LaTeX-ről XPS-re konvertálási. Integrálja C++ könyvtárat a projektjébe, vagy használjon többplatformos alkalmazásokat a LaTeX XPS-re konvertálásához.
 keywords: latex az xps api cpp-hez, a latex2xps integrálja a c++-t
 url: /cpp/conversion/latex-to-xps/
 family: tex

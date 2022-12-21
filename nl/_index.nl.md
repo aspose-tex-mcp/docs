@@ -2,7 +2,7 @@
 title: TeX en LaTeX API en weboplossingen
 weight: 30
 url: /nl/
-description: TeX High Code API's en apps voor het zetten, verwerken en converteren van TeX-documenten. Deze oplossing ondersteunt ook PDF, EPS, SVG en de meeste afbeeldingsformaten als uitvoerformaten.
+description: TeX API's en apps voor het zetten, verwerken en converteren van TeX-documenten. Deze oplossing ondersteunt ook PDF, EPS, SVG en de als uitvoerformaten.
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}

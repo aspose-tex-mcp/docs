@@ -2,7 +2,7 @@
 title: TeX दस्तावेज़ों को संसाधित करने के लिए .NET API और ऐप्स 
 weight: 20
 url: /hi/net/ 
-description: C# एएसपी.नेट वीबीएनईटी पुस्तकालय टीएक्स दस्तावेजों को टाइप करने के लिए। समाधान XPS, PDF, SVG, PNG, JPEG, TIFF, BMP जैसे कई आउटपुट फ़ाइल स्वरूपों का समर्थन करता है।
+description: टाइपसेटिंग TeX के लिए C# ASP.NET VB.NET लाइब्रेरी। समाधान आउटपुट फ़ाइल स्वरूपों जैसे XPS, PDF, SVG, PNG, JPEG, TIFF, BMP का समर्थन करता है।
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}

@@ -2,7 +2,7 @@
 translation: true
 template: /_templates/_conversion-child-net.md
 title: "लाटेक्स टू TIFF कन्वर्जन एपीआई | .NET"
-description: "लाटेक्स से TIFF रूपांतरण कार्यक्षमता। इस ऑन-प्रिमाइसेस .NET लाइब्रेरी को अपने प्रोजेक्ट में एकीकृत करें या LaTeX को TIFF में बदलने के लिए क्रॉस-प्लेटफ़ॉर्म एप्लिकेशन का उपयोग करें।"
+description: "लाटेक्स से TIFF। इस .NET लाइब्रेरी को अपने प्रोजेक्ट में एकीकृत करें या LaTeX को TIFF में बदलने के लिए क्रॉस-प्लेटफ़ॉर्म एप्लिकेशन का उपयोग करें।"
 keywords: "लेटेक्स टू टिफ एपीआई नेट, लेटेक्स 2 टीआईएफ C# को एकीकृत करता है"
 url: /net/conversion/latex-to-tiff/
 family: tex

@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /_templates/_conversion-java.md
-title: TeX (LaTeX) 파일 변환 | Java
+title: TeX (LaTeX) 파일 변환 | Java 해결책
 url: /java/conversion/
 description: TeX(LaTeX) 변환 Java API 솔루션입니다. 몇 줄의 Java 코드로 LaTeX 파일을 PNG, JPEG, TIFF, BMP를 포함한 PDF, XPS 및 이미지로 변환합니다.
 keywords: tex 변환 API 자바, tex 변환기 자바 통합

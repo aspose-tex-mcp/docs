@@ -1,5 +1,5 @@
 ---
-title: 用于处理 TeX 文档的 .NET API 和应用程序 
+title: 用于处理 TeX 文档的 .NET API 和应用程序 | Aspose 
 weight: 20
 url: /zh/net/ 
 description: 用于排版 TeX 文档的 C# ASP.NET VB.NET 库。该解决方案支持多种输出文件格式，如 XPS、PDF、SVG、PNG、JPEG、TIFF、BMP。

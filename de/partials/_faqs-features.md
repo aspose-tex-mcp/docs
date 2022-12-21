@@ -61,7 +61,7 @@ h2: FAQ
 Q1: "Welche Klassen werden verwendet, um eine TeX-Datei aus ZIP zu laden?"
 A1: "Um die Ausgabe/Eingabe von aus ZIP geladenen TeX-Dateien zu manipulieren, verwenden Sie die ZipDirectory-Klassen von [*Aspose.TeX.IO*](https://reference.aspose.com/tex/net/aspose.tex.io/) Namensraum."
 Q2: "Wie installiere ich das TeX-Paket?"
-A2: "Öffnen Sie dazu den NuGet-Paket-Manager, suchen Sie nach Aspose.TeX und installieren oder verwenden Sie den folgenden Befehl von der Paket-Manager-Konsole."
+A2: "Öffnen Sie dazu den NuGet-Paket-Manager, suchen Sie nach Aspose.TeX und installieren oder verwendt  den folgenden Befehl von der Paket-Manager-Konsole."
 Q3: "Wie lade ich eine TeX-Datei aus ZIP?"
 A3: "Öffnen Sie den Stream im ZIP-Archiv für die Ein- und Ausgabe. Erstellen Sie dann Konvertierungsoptionen mit *ConsoleAppOptions()*. Geben Sie als Nächstes ein ZIP-Archiv-Arbeitsverzeichnis für die Ein- und Ausgabe an. Geben Sie die Konsole als Ausgabeterminal an, definieren Sie die Speicheroptionen und führen Sie den Job aus."
 ---

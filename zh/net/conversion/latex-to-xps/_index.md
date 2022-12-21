@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /_templates/_conversion-child-net.md
-title: LaTeX 到 XPS 转换 API | .NET
-description: LaTeX 到 XPS 的转换功能。将此本地 .NET 库集成到您的项目中，或使用跨平台应用程序将 LaTeX 转换为 XPS。
+title: LaTeX 到 XPS 转换 API | .NET 解决方案
+description: LaTeX 到 XPS 的转换功能。Aspose.TEX API。将此本地 .NET 库集成到您的项目中，或使用跨平台应用程序将 LaTeX 转换为 XPS。
 keywords: latex to xps api net，latex2xps 集成 c#
 url: /net/conversion/latex-to-xps/
 family: tex

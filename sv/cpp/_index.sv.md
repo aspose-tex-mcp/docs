@@ -1,8 +1,8 @@
 ---
-title: C++ TeX Integration and Processing API - Aspose 
+title: C++ TeX(LaTeX) integration och bearbetning API
 weight: 50
 url: /sv/cpp/ 
-description: C++ TeX-bibliotek för att bearbeta TeX-filer i C++-applikationer. Den erbjuder typsättningsfunktionalitet tillsammans med konvertering av TeX till PDf, SVG, XPS och andra format.
+description: C++ TeX-bibliotek för att bearbeta TeX i C++-applikationer. Erbjuder typsättningsfunktionalitet tillsammans med konvertering av TeX till PDf, SVG, XPS.
 keywords: tex konvertering api cpp, tex converter c++ integrera
 ---
 

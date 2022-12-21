@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /_templates/_conversion-child-cpp.md
-title: LaTeX에서 PNG로 변환 API | C++
+title: LaTeX에서 PNG로 변환 API | C++  해결책
 description: LaTeX에서 PNG로의 변환 기능. 이 온프레미스 C++ 라이브러리를 프로젝트에 통합하거나 크로스 플랫폼 애플리케이션을 사용하여 LaTeX를 PNG로 변환하십시오.
 keywords: 라텍스를 png api cpp로, latex2png는 C++를 통합합니다.
 url: /cpp/conversion/latex-to-png/

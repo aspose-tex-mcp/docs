@@ -2,7 +2,7 @@
 translation: true
 template: /_templates/_conversion-child-java.md
 title: LaTeX-zu-TIFF-Konvertierungs-API | Java
-description: LaTeX-zu-TIFF-Konvertierungsfunktion. Integrieren Sie diese lokale Java-Bibliothek in Ihr Projekt oder verwenden Sie plattformübergreifende Anwendungen, um LaTeX in TIFF zu konvertieren.
+description: LaTeX-zu-TIFF-Konvertierung. Integriert diese Java-Bibliothek in Ihr Projekt oder verwendt  plattformübergreifende Anwendungen, um LaTeX in TIFF zu konvertieren.
 keywords: Latex zu TIFF API Java, Latex2TIFF integrieren
 url: /java/conversion/latex-to-tiff/
 family: tex

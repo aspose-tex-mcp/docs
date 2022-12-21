@@ -3,7 +3,7 @@ translation: true
 template: /_templates/_output-to-zip-net.md
 title: टीएक्स टू जिप | .NET एपीआई समाधान
 url: /net/output-to-zip/
-description: ".NET API समाधान TeX के साथ काम करने के लिए। TeX से ZIP रूपांतरण कार्यक्षमता आपको अपनी TeX फ़ाइल को सबसे लोकप्रिय संग्रह के रूप में सहेजने देती है। C# इस कार्यक्षमता के उदाहरण।"
+description: ".NET API समाधान TeX के साथ काम करने के लिए। TeX से ZIP  कार्यक्षमता आपको अपनी TeX फ़ाइल को सबसे लोकप्रिय संग्रह के रूप में सहेजने देती है। C# उदाहरण।"
 informat: TEX
 family: tex
 platformtag: net

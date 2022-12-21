@@ -20,7 +20,7 @@ h2: FAQ
 Q1: "Tôi có thể chuyển đổi TeX bằng giải pháp API này không?"
 A1: "Aspose.TeX có chức năng cho phép bạn chuyển đổi các tệp TeX và LaTeX sang các định dạng khác trực tuyến hoặc theo chương trình. Nếu bạn cần chuyển đổi tệp của mình ngay lập tức trực tuyến, bạn có thể muốn sử dụng ứng dụng đa nền tảng [TeX Converter](https://products.aspose.app/tex/conversion/)."
 Q2: "Chuyển đổi nào được hỗ trợ?"
-A2: "Chức năng chuyển đổi này hỗ trợ JPEG, BMP, PNG, TIFF, SVG, PDF và XPS dưới dạng định dạng đầu ra."
+A2: "này hỗ trợ JPEG, BMP, PNG, TIFF, SVG, PDF và XPS dưới dạng định dạng đầu ra."
 Q3: "Chức năng này có miễn phí không?"
 A3: "[Trình chuyển đổi đa nền tảng](https://products.aspose.app/tex/conversion) là miễn phí, khi sử dụng giải pháp API, bạn có thể nhận Bản dùng thử miễn phí và sau đó mua sản phẩm nếu cần."
 ---

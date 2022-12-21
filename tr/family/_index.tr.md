@@ -2,7 +2,7 @@
 title: Java, .NET ve C++ için TeX API çözümü
 weight: 10
 url: /tr/family
-description: .NET, Java ve C++ için TeX Yerel API'leri. Bu, TeX ve LaTeX dosyalarını herhangi bir platformda dizmek, işlemek ve dönüştürmek için kullanımı kolay ve entegre bir çözümdür.
+description: .NET, Java ve C++ için TeX API'leri. Bu, herhangi bir platformda TeX ve LaTeX dosyalarını dizmek, işlemek ve dönüştürmek için kullanımı kolay bir çözümdür
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}

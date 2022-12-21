@@ -2,7 +2,7 @@
 translation: true
 template: /_templates/_conversion-child-net.md
 title: "टीएक्स से SVG कन्वर्जन एपीआई | .NET"
-description: "टीएक्स से SVG रूपांतरण कार्यक्षमता। इस ऑन-प्रिमाइसेस .NET लाइब्रेरी को अपने प्रोजेक्ट में एकीकृत करें या टीएक्स को SVG में बदलने के लिए क्रॉस-प्लेटफ़ॉर्म एप्लिकेशन का उपयोग करें।"
+description: "टीएक्स से SVG। इस .NET लाइब्रेरी को अपने प्रोजेक्ट में एकीकृत करें या टीएक्स को SVG में बदलने के लिए क्रॉस-प्लेटफ़ॉर्म एप्लिकेशन का उपयोग करें।"
 keywords: "SVG एपीआई नेट के लिए टेक्स, टेक्स 2 SVG एकीकृत C#"
 url: /net/conversion/tex-to-svg/
 family: tex

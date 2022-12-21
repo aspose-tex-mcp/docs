@@ -2,7 +2,7 @@
 translation: true
 template: /_templates/_conversion-child-cpp.md
 title: API de conversion LaTeX vers JPEG | C++
-description: Fonctionnalité de conversion LaTeX vers JPEG. Intégrez cette bibliothèque C++ sur site dans votre projet ou utilisez des applications multiplateformes pour convertir LaTeX en JPEG .
+description: Conversion LaTeX vers JPEG. Intégrez bibliothèque C++ sur site dans votre projet ou utilisez des applications multiplateformes pour convertir LaTeX en JPEG .
 keywords: latex vers jpeg api cpp, latex2jpeg intègre c++
 url: /cpp/conversion/latex-to-jpeg/
 family: tex

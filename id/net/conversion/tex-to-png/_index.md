@@ -2,7 +2,7 @@
 translation: true
 template: /_templates/_conversion-child-net.md
 title: API Konversi TeX ke PNG | .BERSIH
-description: Fungsi konversi TeX ke PNG. Integrasikan pustaka .NET lokal ini ke dalam proyek Anda atau gunakan aplikasi lintas platform untuk mengonversi TeX ke PNG.
+description: Konversi TeX ke PNG. Integrasikan pustaka .NET lokal ini ke dalam proyek Anda atau gunakan aplikasi lintas platform untuk mengonversi TeX ke PNG.
 keywords: tex ke png api net, tex2png mengintegrasikan c#
 url: /net/conversion/tex-to-png/
 family: tex

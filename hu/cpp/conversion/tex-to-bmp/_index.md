@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /_templates/_conversion-child-cpp.md
-title: TEX to BMP Conversion API| C++
-description: TEX-ből BMP konvertálási funkció. Integrálja ezt a helyszíni C++ könyvtárat a projektjébe, vagy használjon többplatformos alkalmazásokat a TeX BMP-vé konvertálásához.
+title: TEX to BMP Átalakító API| C++
+description: TEX-ből BMP konvertálási. Integrálja C++ könyvtárat a projektjébe, vagy használjon többplatformos alkalmazásokat a TeX BMP-vé konvertálásához.
 keywords: tex to bmp api cpp, tex2bmp integrál c++
 url: /cpp/conversion/tex-to-bmp/
 family: tex

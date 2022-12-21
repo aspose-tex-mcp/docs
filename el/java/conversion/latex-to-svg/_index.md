@@ -2,7 +2,7 @@
 translation: true
 template: /_templates/_conversion-child-java.md
 title: API μετατροπής LaTeX σε SVG | Java
-description: Λειτουργία μετατροπής LaTeX σε SVG. Ενσωματώστε αυτήν τη βιβλιοθήκη Java εσωτερικής εγκατάστασης στο έργο σας ή χρησιμοποιήστε εφαρμογές πολλαπλών πλατφορμών για να μετατρέψετε το LaTeX σε SVG.
+description: LaTeX σε SVG. Ενσωματώστε τη βιβλιοθήκη Java εσωτερικής εγκατάστασης στο έργο σας ή χρησιμοποιήστε εφαρμογές πολλαπλών πλατφορμών για να μετατρέψετε το LaTeX σε SVG.
 keywords: latex σε svg api java, latex2svg ενσωμάτωση
 url: /java/conversion/latex-to-svg/
 family: tex

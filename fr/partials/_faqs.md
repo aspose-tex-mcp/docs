@@ -20,7 +20,7 @@ h2: FAQ
 Q1: "Puis-je convertir TeX avec cette solution API ?"
 A1: "Aspose.TeX a une fonctionnalité qui vous permet de convertir des fichiers TeX et LaTeX vers d'autres formats en ligne ou par programme. Si vous avez besoin de transformer vos fichiers instantanément en ligne, vous pouvez utiliser l'application multiplateforme [TeX Converter](https://products.aspose.app/tex/conversion/)."
 Q2: "Quelles conversions sont prises en charge ?"
-A2: "Cette fonctionnalité de conversion prend en charge les formats de sortie JPEG, BMP, PNG, TIFF, SVG, PDF et XPS."
+A2: "Cette Conversion prend en charge les formats de sortie JPEG, BMP, PNG, TIFF, SVG, PDF et XPS."
 Q3: "La fonctionnalité est-elle gratuite ?"
 A3: "Les [convertisseurs multiplateformes](https://products.aspose.app/tex/conversion) sont gratuits, alors que pour la solution API, vous pouvez obtenir un essai gratuit, puis acheter le produit si nécessaire."
 ---

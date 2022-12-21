@@ -3,7 +3,7 @@ translation: true
 template: /_templates/_create-custom-tex-net.md
 title: Fichiers TeX personnalisés | API .NET
 url: /net/create-custom-tex/
-description: "Solution API .NET pour travailler avec TeX. Inclut la fonctionnalité pour créer des formats TeX personnalisés. Exemples C# de fonctionnalités pour personnaliser TeX."
+description: "API .NET pour travailler avec TeX. Inclut la fonctionnalité pour créer des formats TeX personnalisés. Exemples C# de fonctionnalités pour personnaliser TeX"
 informat: TEX
 family: tex
 platformtag: net

@@ -2,7 +2,7 @@
 translation: true
 template: /_templates/_conversion-child-cpp.md
 title: API преобразования TEX в PDF | С++
-description: Функциональность преобразования TeX в PDF. Интегрируйте эту локальную библиотеку C++ в свой проект или используйте кроссплатформенные приложения для преобразования TeX в PDF.
+description: Конверсия TeX в PDF. Интегрируйте эту локальную библиотеку C++ в свой проект или используйте кроссплатформенные приложения для преобразования TeX в PDF.
 keywords: tex в pdf api cpp, tex2pdf интегрировать c++
 url: /cpp/conversion/tex-to-pdf/
 family: tex

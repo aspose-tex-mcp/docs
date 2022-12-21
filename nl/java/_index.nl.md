@@ -2,7 +2,7 @@
 title: Java API om TeX- en LaTeX-documenten te verwerken
 weight: 40
 url: /nl/java/ 
-description: Java TeX-bibliotheek om TeX-bestanden in Java-applicaties te verwerken. Het biedt zetwerkfunctionaliteit en conversie van TeX naar pdf, SVG, XPS en andere formaten.
+description: Java TeX-bibliotheek om TeX-bestanden in Java-applicaties te verwerken. Het biedt zetwerkfunctionaliteit en conversie van TeX naar PDF, SVG, XPS en andere
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}

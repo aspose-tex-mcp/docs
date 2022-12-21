@@ -2,7 +2,7 @@
 translation: true
 template: /_templates/_conversion-child-java.md
 title: लाTEX से JPEG कन्वर्जन एपीआई | Java
-description: "LaTeX से JPEG रूपांतरण कार्यक्षमता। इस ऑन-प्रिमाइसेस जावा लाइब्रेरी को अपने प्रोजेक्ट में एकीकृत करें या LaTeX को JPEG में बदलने के लिए क्रॉस-प्लेटफ़ॉर्म एप्लिकेशन का उपयोग करें।"
+description: "LaTeX से JPEG। इस जावा लाइब्रेरी को अपने प्रोजेक्ट में एकीकृत करें या LaTeX को JPEG में बदलने के लिए क्रॉस-प्लेटफ़ॉर्म एप्लिकेशन का उपयोग करें।"
 keywords: "लेTEX से JPEG एपीआई जावा, लेTEX 2 JPEG एकीकृत;"
 url: /java/conversion/latex-to-jpeg/
 family: tex
