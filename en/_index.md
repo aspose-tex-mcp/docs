@@ -1,100 +1,74 @@
 ---
-translation: true
-template: /templates/_template-html.md
-title: On Premise API, Cloud APIs & Free Apps for HTML files manipulation
-weight: 30
+title: Aspose.TeX Product Family | Documentation
+type: docs
 url: /
-description: Parse HTML, XHTML, EPUB, MHTML or SVG files from .NET or Java using the relevant On-Premise or Cloud library. Use our collection of HTML Web Apps.
+keywords: "TeX, Aspose.TeX Features, documentation"
+description: "Aspose.TeX for .NET is a high-performance library for TeX files typesetting applications in .NET."
+weight: 10
 ---
 
-{{<section banner>}}
----
-h1: Hyper Text Markup Language Solution
-h2: A set of advanced manipulation APIs & cross-platform apps for HTML, XHTML, MHTML, Markdown, SVG and EPUB formats.
----
+{{% alert color="primary" %}}
 
-{{<section include>}}
----
-title: Aspose.HTML High Code APIs Include
----
+![Aspose.TeX for .NET logo](home-net.png)
 
-{{<section net>}}
+**Welcome to Aspose.TeX for .NET**
 
-High Code APIs to target .NET Framework, .NET Core & Xamarin platforms to develop HTML manipulation applications.
+Aspose.TeX is a .NET library for TeX files typesetting. It can present TeX input in various graphic formats like XPS, PDF, PNG, JPEG, TIFF and BMP. It also outputs tracing info like any other TeX engine does. The API provides various ways of passing TeX input and obtaining output. And, as an advanced feature, it lets you create your own TeX format if you wish to typeset a number of documents designed uniformly.
 
-{{<section java>}}
+{{% /alert %}}
 
-Java APIs to create, manipulate, convert HTML files in any application based on Java SE or EE.
+## **Aspose.TeX for .NET Resources**
 
+Following are the links to some useful resources you may need to accomplish your tasks.
+- [Aspose.TeX for .NET Online Documentation](net)
+- [Aspose.TeX for .NET Features](net/feature-list)
+- [Aspose.TeX for .NET Release Notes](net/release-notes)
+- [Aspose.TeX for .NET Product Page](https://products.aspose.com/tex/net)
+- [Install Aspose.TeX for .NET NuGet Package](https://www.nuget.org/packages/Aspose.TeX/)
+- [Aspose.TeX for .NET API Reference Guide](https://reference.aspose.com/tex/net/)
+- [Aspose.TeX for .NET Free Support Forum](https://forum.aspose.com/c/tex)
+- [Aspose.TeX for .NET Paid Support Helpdesk](https://helpdesk.aspose.com/)
 
-{{<section button1>}}
----
-innerText: View All High Code APIs
----
+{{% alert color="primary" %}}
 
-{{<section cloud>}}
----
-title: Aspose.HTML Low Code APIs Include
----
+![Aspose.TeX for Java logo](home-java.png)
 
-{{<section curl>}}
+**Welcome to Aspose.TeX for Java**
 
-Just send a REST API call to process HTML files from any type of device capable of executing cURL commands.
+Aspose.TeX is a Java library for TeX files typesetting. It can present TeX input in various graphic formats like XPS, PDF, PNG, JPEG, TIFF and BMP. It also outputs tracing info like any other TeX engine does. The API provides various ways of passing TeX input and obtaining output. And, as an advanced feature, it lets you create your own TeX format if you wish to typeset a number of documents designed uniformly.
 
-{{<section sdk-net>}}
+{{% /alert %}}
 
-SDK specifically designed to facilitate .NET programmers to use Aspose.HTML RESTFul APIs with ease.
+## **Aspose.TeX for Java Resources**
 
-{{<section sdk-java>}}
+Following are the links to some useful resources you may need to accomplish your tasks.
+- [Aspose.TeX for Java Online Documentation](/tex/java/)
+- [Aspose.TeX for Java Features](/tex/java/feature-list/)
+- [Aspose.TeX for Java Release Notes](/tex/java/release-notes/)
+- [Aspose.TeX for Java Product Page](https://products.aspose.com/tex/java)
+- [Aspose.TeX for Java API Reference Guide](https://reference.aspose.com/tex/java)
+- [Aspose.TeX for Java Free Support Forum](https://forum.aspose.com/c/tex)
+- [Aspose.TeX for Java Paid Support Helpdesk](https://helpdesk.aspose.com/)
 
-Easy to use Java SDK to communicate with Aspose.HTML Cloud APIs for HTML file creation, conversion & manipulation.
+{{% alert color="primary" %}}
 
-{{<section button2>}}
----
-innerText: View All Low Code APIs
----
+![Aspose.TeX for C++ logo](home-cpp.png)
 
-{{<section apps>}}
----
-title: Aspose.HTML No Code Apps Include
----
+**Welcome to Aspose.TeX for C++**
 
-{{<section converters>}}
----
-title: Converters
----
+Aspose.TeX is a C++ library for TeX files typesetting. It can present TeX input in various graphic formats like XPS, PDF, PNG, JPEG, TIFF and BMP. It also outputs tracing info like any other TeX engine does. The API provides various ways of passing TeX input and obtaining output. And, as an advanced feature, it lets you create your own TeX format if you wish to typeset a number of documents designed uniformly.
 
-Easily convert HTML to PDF, HTML to Markdown, HTML to MHTML and many other popular file formats without leaving your favorite browser.
+{{% /alert %}}
 
-{{<section generators>}}
----
-title: HTML Generators
----
+## **Aspose.TeX for C++ Resources**
 
-Create HTML tables, iframes, generate random colors and color palettes for your website.
+Following are the links to some useful resources you may need to accomplish your tasks.
+- [Aspose.TeX for C++ Online Documentation](cpp)
+- [Aspose.TeX for C++ Features](cpp/feature-list)
+- [Aspose.TeX for C++ Release Notes](cpp/release-notes)
+- [Aspose.TeX for C++ Product Page](https://products.aspose.com/tex/cpp)
+- [Install Aspose.TeX for C++ NuGet Package](https://www.nuget.org/packages/Aspose.TeX.Cpp/)
+- [Aspose.TeX for C++ API Reference Guide](https://reference.aspose.com/tex/cpp)
+- [Aspose.TeX for C++ Free Support Forum](https://forum.aspose.com/c/tex)
+- [Aspose.TeX for C++ Paid Support Helpdesk](https://helpdesk.aspose.com/)
 
-{{<section data>}}
----
-title: Data Scrapers
----
-
-Free online Apps to extract data from web pages automatically in seconds. Make a few clicks to extract images, keywords, and more.
-
-{{<section button3>}}
----
-innerText: View All No Code Apps
----
-
-{{<section people>}}
----
-title: What People Are Saying
-subTitle: Don't just take our word for it. See what users have to say about Aspose.
----
-
-{{<section first>}}
-
-Our overall experience with Aspose’s product has been very impressive. Aspose integration into our product suite reduced our internal product development overhead and ensured accurate and reliable generation of files in a seamless and secure manner.
-
-{{<section second>}}
-
-We think that the .net business world wouldn’t have been the same without Aspose.Total.net. We have worked on a lot of business projects and few of them didn’t include Aspose. We like the fact that Aspose.Total is a complete offer, so we do not need to have multiple libraries to achieve our client’s objectives.
