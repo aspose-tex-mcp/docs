@@ -1,10 +1,16 @@
 ---
+translation: true
+template: /templates/_template-default.md
+linktitle: Aspose.TeX Product Family
 title: Aspose.TeX Product Family | Documentation
-type: docs
-url: /
 keywords: "TeX, Aspose.TeX Features, documentation"
 description: "Aspose.TeX for .NET is a high-performance library for TeX files typesetting applications in .NET."
+lastmod: "2023-04-20"
+sitemap.changefreq: "weekly"
+sitemap.priority: 0.5
+type: docs
 weight: 10
+url: /
 ---
 
 {{% alert color="primary" %}}
