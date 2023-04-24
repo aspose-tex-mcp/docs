@@ -3,7 +3,6 @@ translation: true
 template: /templates/_template-default.md
 linktitle: Aspose.TeX Product Family
 title: Aspose.TeX Product Family | Documentation
-keywords: "TeX, Aspose.TeX Features, documentation"
 description: "Aspose.TeX for .NET is a high-performance library for TeX files typesetting applications in .NET."
 lastmod: "2023-04-20"
 sitemap.changefreq: "weekly"
@@ -12,6 +11,8 @@ type: docs
 weight: 10
 url: /
 ---
+
+{{<section welcome-net>}}
 
 {{% alert color="primary" %}}
 
@@ -23,7 +24,7 @@ Aspose.TeX is a .NET library for TeX files typesetting. It can present TeX input
 
 {{% /alert %}}
 
-## **Aspose.TeX for .NET Resources**
+## Aspose.TeX for .NET Resources
 
 Following are the links to some useful resources you may need to accomplish your tasks.
 - [Aspose.TeX for .NET Online Documentation](net)
@@ -35,6 +36,8 @@ Following are the links to some useful resources you may need to accomplish your
 - [Aspose.TeX for .NET Free Support Forum](https://forum.aspose.com/c/tex)
 - [Aspose.TeX for .NET Paid Support Helpdesk](https://helpdesk.aspose.com/)
 
+{{<section welcome-java>}}
+
 {{% alert color="primary" %}}
 
 ![Aspose.TeX for Java logo](home-java.png)
@@ -45,7 +48,7 @@ Aspose.TeX is a Java library for TeX files typesetting. It can present TeX input
 
 {{% /alert %}}
 
-## **Aspose.TeX for Java Resources**
+## Aspose.TeX for Java Resources
 
 Following are the links to some useful resources you may need to accomplish your tasks.
 - [Aspose.TeX for Java Online Documentation](/tex/java/)
@@ -55,6 +58,8 @@ Following are the links to some useful resources you may need to accomplish your
 - [Aspose.TeX for Java API Reference Guide](https://reference.aspose.com/tex/java)
 - [Aspose.TeX for Java Free Support Forum](https://forum.aspose.com/c/tex)
 - [Aspose.TeX for Java Paid Support Helpdesk](https://helpdesk.aspose.com/)
+
+{{<section welcome-c>}}
 
 {{% alert color="primary" %}}
 
@@ -66,7 +71,7 @@ Aspose.TeX is a C++ library for TeX files typesetting. It can present TeX input 
 
 {{% /alert %}}
 
-## **Aspose.TeX for C++ Resources**
+## Aspose.TeX for C++ Resources
 
 Following are the links to some useful resources you may need to accomplish your tasks.
 - [Aspose.TeX for C++ Online Documentation](cpp)
