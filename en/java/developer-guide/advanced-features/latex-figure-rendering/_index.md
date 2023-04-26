@@ -44,7 +44,7 @@ The last lines of the example print two artifacts of figure rendering - the size
 
 Here is the result of rendering.
 
-[<img src="/tex/java/latex-figure-rendering/text-and-formula.png" title="LaTeX Figure rendering to PNG">](text-and-formula.png)
+<a href="/tex/java/latex-figure-rendering/text-and-formula.png">![LaTeX Figure rendering to PNG](text-and-formula.png)</a>
 
 This is the most general use case for the **LaTeX figure rendering** feature.
 
@@ -61,4 +61,4 @@ The differences are:
  
 Here is the result:
 
-[<img src="/tex/java/latex-figure-rendering/text-and-formula.svg" title="LaTeX Figure rendering to SVG">](text-and-formula.svg)
+<a href="/tex/java/latex-figure-rendering/text-and-formula.svg">![LaTeX Figure rendering to SVG](text-and-formula.svg)</a>
