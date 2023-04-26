@@ -44,7 +44,7 @@ The last lines of the example print two artifacts of figure rendering - the size
 
 Here is the result of rendering.
 
-<a href="/tex/net/latex-figure-rendering/text-and-formula.png">![LaTeX Figure rendering to PNG](text-and-formula.png)</a>
+<a href="/tex/net/latex-figure-rendering/text-and-formula.png">![LaTeX Figure rendering to PNG](/tex/net/latex-figure-rendering/text-and-formula.png)</a>
 
 This is the most general use case for the **LaTeX figure rendering** feature.
 
@@ -61,4 +61,4 @@ The differences are:
  
 Here is the result:
 
-<a href="/tex/net/latex-figure-rendering/text-and-formula.svg">![LaTeX Figure rendering to SVG](text-and-formula.svg)</a>
+<a href="/tex/net/latex-figure-rendering/text-and-formula.svg">![LaTeX Figure rendering to SVG](/tex/net/latex-figure-rendering/text-and-formula.svg)</a>

@@ -45,7 +45,7 @@ The last lines of the example print two artifacts of math formula rendering - th
 
 Here is the result of rendering.
 
-<a href="/tex/net/latex-math-formula-rendering/math-formula.png">![LaTeX Math Formula rendering to PNG](math-formula.png)</a>
+<a href="/tex/net/latex-math-formula-rendering/math-formula.png">![LaTeX Math Formula rendering to PNG](/tex/net/latex-math-formula-rendering/math-formula.png)</a>
 
 This is the most general use case for the **LaTeX math formula rendering** feature.
 
@@ -64,6 +64,6 @@ The differences are:
  
 Here is the result:
 
-<a href="/tex/net/latex-math-formula-rendering/math-formula.svg">![LaTeX Math Formula rendering to SVG](math-formula.svg)</a>
+<a href="/tex/net/latex-math-formula-rendering/math-formula.svg">![LaTeX Math Formula rendering to SVG](/tex/net/latex-math-formula-rendering/math-formula.svg)</a>
 
 **You may also check out the free [web app](https://products.aspose.app/tex/equation-editor/svg) built based on the feature implemented within [Aspose.TeX for .NET API](https://products.aspose.com/tex/net/).**
