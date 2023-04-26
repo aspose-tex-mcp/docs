@@ -44,7 +44,7 @@ The last lines of the example print two artifacts of figure rendering - the size
 
 Here is the result of rendering.
 
-[<img src="text-and-formula.png" title="LaTeX Figure rendering to PNG">](text-and-formula.png)
+[<img src="/tex/net/latex-figure-rendering/text-and-formula.png" title="LaTeX Figure rendering to PNG">](text-and-formula.png)
 
 This is the most general use case for the **LaTeX figure rendering** feature.
 
@@ -61,4 +61,4 @@ The differences are:
  
 Here is the result:
 
-[<img src="text-and-formula.svg" title="LaTeX Figure rendering to SVG">](text-and-formula.svg)
+[<img src="/tex/net/latex-figure-rendering/text-and-formula.svg" title="LaTeX Figure rendering to SVG">](text-and-formula.svg)
