@@ -9,10 +9,10 @@ description: Conversion functionality of Aspose.TeX API solution for .NET with T
 
 Please, refer to **Aspose.TeX for .NET** [API reference](https://reference.aspose.com/tex/net/aspose.tex.io/) for formal definitions of I/O implementation.
 
-## **The concept of the input directory**
+## The concept of the input directory
 Since I/O primitives of the TeX language can only deal with file names, **Aspose.TeX for .NET** defines a directory as a mapping between names and bulks of data. The bulks of data are supposed to be files, or streams, or arrays, or whatever else. The API allows us to specify the input and output working directories separately. It provides the general [IInputWorkingDirectory](https://reference.aspose.com/tex/net/aspose.tex.io/iinputworkingdirectory/) interface, which the user can implement for their own purposes. It also provides its own implementations, which will be discussed below. The interface defines the [GetFile()](https://reference.aspose.com/tex/net/aspose.tex.io/iinputworkingdirectory/getfile/) method, which returns the data stream and determines the full name of the file, while taking some, hypothetically different, name as the first agrument, which, in fact, is the mapping key.
 
-### **Getting file input from the disk file system**
+### Getting file input from the disk file system
 
 Here's how we would do it:
 
@@ -20,7 +20,7 @@ Here's how we would do it:
 
 This use case is quite simple, so there's no need to focus on it anymore.
 
-### **Getting file input from a ZIP archive**
+### Getting file input from a ZIP archive
 
 We can also put the input files in a ZIP archive and consider it an input directory. In this case, we should proceed as follows:
 
@@ -28,11 +28,11 @@ We can also put the input files in a ZIP archive and consider it an input direct
 
 First, we create the stream containing the ZIP file. Then, after creating the conversion options, we set the [InputWorkingDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/inputworkingdirectory/) option to be an instance of the [InputZipDirectory](https://reference.aspose.com/tex/net/aspose.tex.io/inputzipdirectory/) class. The second argument of the constructor is the base path inside the archive. If we want the entire archive to be an input directory, we should pass the empty string. 
 
-## **The concept of the input terminal**
+## The concept of the input terminal
 
 Now it's time to remember that there is also the terminal input. As for this one, **Aspose.TeX for .NET** defines the general [IInputTerminal](https://reference.aspose.com/tex/net/aspose.tex.io/iinputterminal/) interface having only one property that returns a  [TextReader](https://docs.microsoft.com/en-us/dotnet/api/system.io.textreader) implementation instance. Provided implementations are dicussed below.
 
-### **Getting terminal input from the console**
+### Getting terminal input from the console
 
 To do this, we need to set the [TerminalIn](https://reference.aspose.com/tex/net/aspose.tex/texoptions/terminalin/) option to be an instance of the [InputConsoleTerminal](https://reference.aspose.com/tex/net/aspose.tex.io/inputconsoleterminal/) class.
 

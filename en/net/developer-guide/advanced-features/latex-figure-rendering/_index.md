@@ -13,7 +13,7 @@ sitemap:
 
 Sometimes you may want to extract some content from a LaTeX file as a separately rendered piece, or a *"figure"*, without any connection to the page layout. It can be an illustration for your publication on the Internet, for example. You can do it with our API. As for the target formats, there are two options - PNG and SVG. As is in the case with the LaTeX math formula rendering feature. It's also worth noting that **LaTeX figure rendering** is a generalization of [LaTeX math formula rendering](/tex/net/latex-math-formula-rendering).
 
-## **How to render a LaTeX figure to PNG**
+## How to render a LaTeX figure to PNG
 
 The API reference section related to this topic is [here](https://reference.aspose.com/tex/net/aspose.tex.features/). And as with formula rendering, we will start with an example. Here it is:
 
@@ -48,7 +48,7 @@ Here is the result of rendering.
 
 This is the most general use case for the **LaTeX figure rendering** feature.
 
-## **How to render a LaTeX figure to SVG**
+## How to render a LaTeX figure to SVG
 
 In much the same way, we can render a LaTeX figure in SVG format.
 

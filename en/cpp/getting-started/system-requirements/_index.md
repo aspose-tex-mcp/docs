@@ -7,7 +7,7 @@ url: /cpp/system-requirements/
 description: Aspose.TeX solution for C++ can be used in any development environment that support C++, but there are some environments are explicitly supported.
 ---
 
-## **Operating Systems**
+## Operating Systems
 Supported Operating Systems include:
 
  * Microsoft Windows desktop (7, 8, 10)
@@ -20,7 +20,7 @@ Operating Systems which are not supported:
 
  * Old versions of OS (XP, Vista and Server 2003)
 
-## **Development Environments**
+## Development Environments
 You can use Aspose.TeX for C++ to develop applications in any development environment that support C++, but the following environments are explicitly supported:
 
  * Microsoft Visual Studio 2015 or later

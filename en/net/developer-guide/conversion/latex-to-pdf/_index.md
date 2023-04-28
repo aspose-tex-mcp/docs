@@ -12,7 +12,7 @@ sitemap:
     priority: 0.8
 ---
 
-## **How to convert LaTeX to PDF**
+## How to convert LaTeX to PDF
 
 Let's take a detailed look at the code in C# providing the simplest way to convert LaTeX to PDF format.
 
@@ -48,7 +48,7 @@ Transcript written on hello-world.log.
 
 We will find other "fruits" of the engine's labor in the folder that we specified as the output directory. Those will be the transcript file and, **here it is!**, the main output PDF file.
 
-## **An alternative way to write main output PDF file**
+## An alternative way to write main output PDF file
 
 There's another constructor of the [PdfDevice](https://reference.aspose.com/tex/net/aspose.tex.presentation.pdf/pdfdevice/pdfdevice/) class, which lets us get the resulting PDF file in an alternative way.
 
@@ -56,7 +56,7 @@ There's another constructor of the [PdfDevice](https://reference.aspose.com/tex/
 
 The *any-name.pdf* file in the specified directory will be our main output PDF file. At the same time, unlike [image output](/tex/net/latex-to-png/#an-alternative-way-to-write-main-output-png-files), we will not find any PDF files in the output directory defined by the conversion options. Exception: *any-name.pdf* is located (by its path) in the same file system directory that is assigned to [OutputWorkingDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/outputworkingdirectory/) option using [OutputFileSystemDirectory](https://reference.aspose.com/tex/net/aspose.tex.io/outputfilesystemdirectory/).
 
-## **About input options**
+## About input options
 
 In case our main input file requires dependencies, for example, packages, that are not included in the basic LaTeX system and supported packages, we MUST set the [RequiredInputDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/requiredinputdirectory/) option the similar way we set the [OutputWorkingDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/outputworkingdirectory/) option and put the dependencies in that directory. Dependecies may be arbitrarily organized in subdirectories. In case we have our own files to include along the typesetting process, say external graphics files, we MUST also set the [InputWorkingDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/inputworkingdirectory/) using the path to the location where those files are collected. We may also place the main input file somewhere inside the input directory and specify the relative path in the `run()` method (or specify no path at all if the main input file is in the root). [Here](/tex/net/aspose-tex-input/) are the details about the input directory concept in **Aspose.TeX for .NET** and provided implementations.
 

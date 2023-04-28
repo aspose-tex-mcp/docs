@@ -11,11 +11,11 @@ sitemap:
     priority: 0.8
 ---
 
-## **External LaTeX packages**
+## External LaTeX packages
 
 The **Aspose.TeX** library includes a number of [common LaTeX packages](/tex/net/embedded-packages/). So you don't have to worry about how to provide these packages to the library's TeX engine. But sometimes (or quite often) your LaTeX file may require a package beyond the "natively" supported "bundle" of packages. If this is the case, you can try to provide the required input, i.e. required package's source files, via the [RequiredInputDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/requiredinputdirectory/) option of the [TeXOptions](https://reference.aspose.com/tex/net/aspose.tex/texoptions/) class instance. We will see how this works with two examples.
 
-### **Unpacked required input (`fancybox` package)**
+### Unpacked required input (`fancybox` package)
 
 Let's say we have the following simple LaTeX file, which is `required-input-fs.tex` from our [example solution](https://github.com/aspose-tex/Aspose.TeX-for-.NET):
 
@@ -56,7 +56,7 @@ Here is the complete source code for the example:
 
 {{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-RequiredInput-FileSystem.cs" >}}
 
-### **Archived required input (`pgfplots` package)**
+### Archived required input (`pgfplots` package)
 
 Let's now say that we have the following also quite simple LaTeX file, which is `required-input-zip.tex` from our example solution:
 ```tex
@@ -116,7 +116,7 @@ Here is the complete source code for the example:
 
 > **_NOTE:_** The result was verified using the `pgfplots` package version 1.18.1. While the version of the `pfg` package included in the **Aspose.TeX** library is 3.1.9a.
 
-### **Restrictions**
+### Restrictions
 
 It may happen that a package required by your LaTeX file is developed under the `LaTeX3e` kernel. Such a package will most likely not work with the **Aspose.TeX** library since the latter is based on the `LaTeX2e` kernel.
 

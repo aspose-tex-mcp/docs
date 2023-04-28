@@ -11,11 +11,11 @@ sitemap:
     priority: 0.8
 ---
 
-## **External LaTeX packages**
+## External LaTeX packages
 
 There is a number of [common LaTeX packages](/tex/net/embedded-packages/) included in the **Aspose.TeX** library for Java. So you don't have to take care about how to provide these packages to the library's TeX engine. But sometimes (maybe often) your LaTeX file may require a package beyond the "natively" supported "bundle" of packages. In this case, you can try to provide the required input, i.e. required package's source files, using the [setRequiredInputDirectory()](https://reference.aspose.com/tex/java/com.aspose.tex/texoptions/#setRequiredInputDirectory-com.aspose.tex.IInputWorkingDirectory-) method of the [TeXOptions](https://reference.aspose.com/tex/java/com.aspose.tex/texoptions/) class instance. We will see how this works with two examples.
 
-### **Unpacked required input (`fancybox` package)**
+### Unpacked required input (`fancybox` package)
 
 Let's say we have the following simple LaTeX file, which is `required-input-fs.tex` from our [example solution](https://github.com/aspose-tex/Aspose.TeX-for-Java):
 
@@ -56,7 +56,7 @@ Here is the complete source code for the example:
 
 {{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Conversion-RequiredInput-FileSystem.java" >}}
 
-### **Archived required input (`pgfplots` package)**
+### Archived required input (`pgfplots` package)
 
 Let's now assume that we have the following also quite simple LaTeX file, which is `required-input-zip.tex` from our example solution:
 ```tex
@@ -119,7 +119,7 @@ Here is the complete source code for the example:
 
 > **_NOTE:_** The result was verified using the `pgfplots` package version 1.18.1. While the version of the `pfg` package included in the **Aspose.TeX** library is 3.1.9a.
 
-### **Restrictions**
+### Restrictions
 
 A package required by your LaTeX file may be developed under the `LaTeX3e` kernel. Such a package will most likely not work with the **Aspose.TeX** library since the latter is based on the `LaTeX2e` kernel.
 

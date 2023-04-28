@@ -17,7 +17,7 @@ And yet another supported target format is [**SVG**](https://ru.wikipedia.org/wi
 
 There is the [**Aspose.SVG**](https://products.aspose.com/svg/) library that provides various features related to **SVG**. These include creating, loading, editing and converting **SVG** documents.
 
-## **How to convert LaTeX to SVG**
+## How to convert LaTeX to SVG
 
 The LaTeX to SVG conversion is also as simple as the [conversion to raster image formats](/tex/net/latex-to-image/), except that the [SaveOptions](https://reference.aspose.com/tex/net/aspose.tex/texoptions/saveoptions/) MUST be set to an [SvgSaveOptions](https://reference.aspose.com/tex/net/aspose.tex.presentation.svg/svgsaveoptions/) class instance, and the device MUST be changed to an instance of the [SvgDevice](https://reference.aspose.com/tex/net/aspose.tex.presentation.svg/svgdevice/) class.
 

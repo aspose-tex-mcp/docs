@@ -17,7 +17,7 @@ Aspose.TeX is a C++ library for TeX files typesetting. It can present TeX input 
 
 {{% /alert %}}
 
-## **Aspose.TeX for C++ Resources**
+## Aspose.TeX for C++ Resources
 
 Following are the links to some useful resources you may need to accomplish your tasks.
 - [Aspose.TeX for C++ Online Documentation](/tex/cpp/)

@@ -17,7 +17,7 @@ Aspose.TeX is a .NET library for typesetting of TeX files. It can present TeX fi
 
 {{% /alert %}}
 
-## **Technical Support**
+## Technical Support
 Aspose provides unlimited free technical support for all its products. The support is available to all users, including evaluation.
 
 If you need help with Aspose.TeX for .NET, [**visit the Aspose.Forums**](https://forum.aspose.com/). Post your question in the Aspose.TeX for .NET forum and it will be answered within a few hours. The questions are answered directly by the Aspose.TeX for .NET support team.
@@ -30,7 +30,7 @@ If you have an issue with Aspose.TeX for .NET, follow these simple steps to make
 - Have a look through the forums, this documentation Wiki and the [API Reference](https://reference.aspose.com/tex/net/) for solutions before reporting the issue. Your question might already have an answer.
 - When reporting an issue, please include the original document and possibly a fragment of the code that causes the problem. If you need to attach multiple files, zip them into one. It is safe to attach your documents in Aspose.Forums since only you and Aspose developers will have access to the attached files.
 - Please try to report one issue per thread. If you have another issue, report it in a separate thread.
-## **Resources**
+## Resources
 This table lists important Aspose.TeX for .NET technical resources.
 
 |**Resource**|**Description**|

@@ -7,11 +7,11 @@ url: /net/tex-io/
 description: Fundamentals of working with TeX as an output or input format within Aspose.TeX API. TeX job runs on an explicitly specified file. 
 ---
 
-## **TeX file**
+## TeX file
 
 Technically, any file can be a TeX file. It doesn't even need to have the *.tex* extension. A TeX engine reads the input byte by byte trying to recognize commands known to it (i.e., those that are in its internal state). It simply reports errors about unrecognized commands and/or requests corrections on the terminal (if it's running in an [interactive mode](/tex/net/tex-io/#tex-interaction-modes)). But if you expect to see something like a nicely typeset document, the input should follow TeX syntax and, ideally, contain only commands known to the engine.
 
-## **TeX input**
+## TeX input
 
 A TeX job runs on an explicitly specified TeX file. So, we include this file in the input of a certain TeX job. In addition, TeX has four primitives related to auxiliary input:
  * `\input<file name>` requires a file name and starts processing that file as soon as processing of the containing file reaches the `\input` command. Once the end of the auxiliary file is reached, processing returns to the file containing the `\input` command.
@@ -25,7 +25,7 @@ The four commands may occur either in the main input file or in an auxiliary inp
 
 When running in an [interactive mode](/tex/net/tex-io/#tex-interaction-modes), in case of any error, the TeX engine requests a correction on the terminal. At this point, you may want to replace the erroneous command with a new one. And this will be another and the last way to provide input to TeX that we will call the *terminal input*.
 
-## **TeX output**
+## TeX output
 
 As we mentioned [above](/tex/net/tex-io/#tex-input), a TeX job runs on an explicitly specified file. The file may not contain any data to typeset. There may be only control sequences that produce no characters to type. But normally it WILL contain such data, so that we will get a file in the target format which should contain our typeset text (or whatever else allowed by the engine and format, if they are extended to fit extra features of a certain target format). The file will have the same name as the file specified as the input. We will call this file the *main output* file. As we mentioned [above](/tex/net/aspose-tex-and-object-tex/#object-tex), for the original TeX, this will be a file in DVI format. We will call the name of both input and output files without extension the *job name*.
 
@@ -40,7 +40,7 @@ As the TeX engine runs through the input, it may output some debug information t
 
 Simultaneously with writing to the log file, the TeX engine may output less detailed information to the terminal. And this is the last way the TeX engine writes the output that we will call the *terminal output*.
 
-## **TeX interaction modes**
+## TeX interaction modes
 
 A TeX job may be running in one of four interaction modes at any given time. These modes are switched by the following TeX primitives:
  * `\batchmode`. The engine omits all stops and omits terminal output, and thus doesn't require the terminal for either input or output.
