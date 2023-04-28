@@ -8,7 +8,7 @@ description: Add the TeX files manipulation functionality to your own solution. 
 ---
 
 
-## **Rich Features**
+## Rich Features
 **Supported Operations**
 - TeX input typesetting
 - Custom TeX format creation

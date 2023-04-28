@@ -11,7 +11,7 @@ sitemap:
     priority: 0.8
 ---
 
-## **How to render a LaTeX math formula to PNG**
+## How to render a LaTeX math formula to PNG
 
 In fact, the easiest way to demonstrate the **LaTeX math formula** rendering feature is to start with the example. Here it is:
 
@@ -51,7 +51,7 @@ This is the most general use case for **LaTeX math formula** rendering.
 
 **You may also check out the free [web app](https://products.aspose.app/tex/equation-editor/png) built based on the feature implemented within [Aspose.TeX for .NET](https://products.aspose.com/tex/net/) API. [Here](https://products.aspose.com/tex/java/) is the Java version page.**
 
-## **How to render a LaTeX math formula to SVG**
+## How to render a LaTeX math formula to SVG
 
 In much the same way, we can render a LaTeX math formula to SVG format.
 

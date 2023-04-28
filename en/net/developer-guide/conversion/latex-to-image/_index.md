@@ -15,7 +15,7 @@ sitemap:
 
 **Aspose.TeX for .NET** allows us to convert LaTeX files to a number of raster image formats.
 
-## **How to convert LaTeX to PNG**
+## How to convert LaTeX to PNG
 
 Let's take a detailed look at the code in C# providing the simplest way to convert LaTeX to PNG format.
 
@@ -51,7 +51,7 @@ Transcript written on hello-world.log.
 
 We will find other "fruits" of the engine's labor in the folder that we specified as the output directory. Those will be the transcript file and, **here it is!**, the main output PNG image file(s).
 
-## **An alternative way to write main output PNG file(s)**
+## An alternative way to write main output PNG file(s)
 
 There is another way to get image data as an array of byte arrays, each array in the second dimension represents image data for a separate page.
 
@@ -59,7 +59,7 @@ There is another way to get image data as an array of byte arrays, each array in
 
 The *"page-n.png"* file(s) will be written to any path we specify. Unlike [PDF output](/tex/net/latex-to-pdf/#an-alternative-way-to-write-main-output-pdf-file), they will duplicate the output PNG files written to the output directory.
 
-## **About input options**
+## About input options
 
 In case our main input file requires dependencies, for example, packages, that are not included in the basic LaTeX system and supported packages, we MUST set the [RequiredInputDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/requiredinputdirectory/) option the similar way we set the [OutputWorkingDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/outputworkingdirectory/) option and put the dependencies in that directory. Dependecies may be arbitrarily organized in subdirectories. In case we have our own files to include along the typesetting process, say external graphics files, we MUST also set the [InputWorkingDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/inputworkingdirectory/) using the path to the location where those files are collected. We can also place the main input file somewhere inside the input directory and specify the relative path in the `run()` method (or specify no path at all if the main input file is in the root). [Here](/tex/net/aspose-tex-input/) are the details about the input directory concept in **Aspose.TeX for .NET** and provided implementations.
 
@@ -69,19 +69,19 @@ Other TeX job options are discussed [here](/tex/net/other-options/).
 
 Below, we discuss the LaTeX conversion to other supported raster image formats without sinking deep into details as there are actually no details. The only difference is in the type of the [SaveOptions](https://reference.aspose.com/tex/net/aspose.tex/texoptions/saveoptions/) property in the conversion options.
 
-## **How to convert LaTeX to JPG**
+## How to convert LaTeX to JPG
 
 {{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-LaTeXToJpeg.cs" >}}
 
 **You may also check out the free LaTeX-to-JPG conversion [web app](https://products.aspose.app/tex/conversion/latex-to-jpg) built based on [Aspose.TeX for .NET API](https://products.aspose.com/tex/net/).**
 
-## **How to convert LaTeX to TIFF**
+## How to convert LaTeX to TIFF
 
 {{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-LaTeXToTiff.cs" >}}
 
 **You may also check out the free LaTeX-to-TIFF conversion [web app](https://products.aspose.app/tex/conversion/latex-to-tiff) built based on [Aspose.TeX for .NET API](https://products.aspose.com/tex/net/).**
 
-## **How to convert LaTeX to BMP**
+## How to convert LaTeX to BMP
 
 {{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-LaTeXToBmp.cs" >}}
 

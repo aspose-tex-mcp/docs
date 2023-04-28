@@ -19,7 +19,7 @@ Aspose.TeX is a .NET library for TeX files typesetting. It can present TeX input
 
 {{% /alert %}}
 
-## **Aspose.TeX for .NET Resources**
+## Aspose.TeX for .NET Resources
 
 Following are the links to some useful resources you may need to accomplish your tasks.
 - [Aspose.TeX for .NET Online Documentation](/tex/net/)

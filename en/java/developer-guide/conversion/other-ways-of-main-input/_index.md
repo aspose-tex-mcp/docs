@@ -11,7 +11,7 @@ sitemap:
     priority: 0.8
 ---
 
-## **Providing the main input file to the TeX engine as a stream**
+## Providing the main input file to the TeX engine as a stream
 
 Up to this point, we only knew how to pass the [main input file](/tex/net/tex-io/#tex-input) to the TeX engine as a file name, whether fully specified or in short form, whether with an extension or without it. But there's another [constructor](https://reference.aspose.com/tex/java/com.aspose.tex/TeXJob#TeXJob-java.io.InputStream-com.aspose.tex.rendering.Device-com.aspose.tex.TeXOptions-) of the `TeXJob` class, which accepts a stream as the first argument. This is convenient if for some reason we have the main input file in a form other than a file on the disk file system. Here's how we can deal with it:
 
@@ -19,7 +19,7 @@ Up to this point, we only knew how to pass the [main input file](/tex/net/tex-io
 
 Note that all output files will have the name *texput*. That's because the engine can't get any other name anywhere. *texput* is the default job name. See [here](/tex/net/tex-io/#tex-output) and [here](/tex/java/other-options/#how-to-set-the-job-name) for details about job names.
 
-## **Entering the main TeX input file from the terminal**
+## Entering the main TeX input file from the terminal
 
 There's yet another [constructor](https://reference.aspose.com/tex/java/com.aspose.tex/TeXJob#TeXJob-com.aspose.tex.rendering.Device-com.aspose.tex.TeXOptions-) of the `TeXJob` class, which doesn't allow us to specify the input at all. So what is such TeX job going to process, you may wonder? This time we will need an input terminal. The TeX engine will ask us to enter the file name from the terminal.
 

@@ -11,7 +11,7 @@ sitemap:
     priority: 0.8
 ---
 
-## **Introduction**
+## Introduction
 
 While working on your academic and scientific documents, such as research papers, conference proceedings, and academic presentations, you may occasionally want to include graphic figures.
 
@@ -21,11 +21,11 @@ On the other hand, you may have raster images that you also want to include in y
 
 This article covers including raster images in LaTeX files using the `\includegraphics` macro from the `graphics` (and the accompanying `graphicx`) package.
 
-## **Which package to choose, `graphics` or `graphicx`?**
+## Which package to choose, `graphics` or `graphicx`?
 
 Both packages, `graphics` and `graphicx`, are very similar. The main difference is in the syntax. While the `graphics` package uses a set of separate macros to apply transformations to an image, the `graphicx` package uses the `key=value` notation for the parameters of the `\includegraphics` macro to specify these transformations. We will give examples of each use case for both packages at once to make the difference more clear.
 
-## **Including the chosen package**
+## Including the chosen package
 
 This is done with the `\usepackage` command the same way as for any other LaTeX package:
 ```tex
@@ -33,7 +33,7 @@ This is done with the `\usepackage` command the same way as for any other LaTeX 
 \usepackage{graphicx} % to use the graphicx package
 ```
 
-### **Specifying a driver**
+### Specifying a driver
 
 If your typesetting system is not configured to use, say, `pdfTeX` by default, you should specify the appropriate option that will force the package to use the required `driver`:
 ```tex
@@ -43,7 +43,7 @@ If your typesetting system is not configured to use, say, `pdfTeX` by default, y
 
 A `driver` is a part of a package that implements the interface between package commands and format-dependent low-level TeX extension primitives. **Aspose.TeX**'s LaTeX graphics support is configured to use its own driver, so you don't need to specify the driver option.
 
-## **LaTeX `\includegraphics` macro**
+## LaTeX `\includegraphics` macro
 
 Now let's proceed with the simplest example. This is of course a case of including an image without any transformation at all. Expectedly, the LaTeX code using both packages is the same:
 ```tex
@@ -62,7 +62,7 @@ Another way to specify the graphics files location(s) is to define a list of alt
 \graphicspath{{d:/img}{c:/img}{d:/work/img}}
 ```
 
-## **LaTeX graphics transformations**
+## LaTeX graphics transformations
 
 LaTeX `graphics` and `graphicx` packages provide a number of ways for manipulating the content.
 
@@ -119,13 +119,13 @@ As for the `graphicx` package, transformations can be combined, but the order is
 To learn more about the `graphics` package bundle features, refer to the [package page on CTAN](https://ctan.org/pkg/graphics) and
 the [package documentation](http://mirrors.ctan.org/macros/latex/required/graphics/graphics.pdf).
 
-### **LaTeX Include Graphics free web app**
+### LaTeX Include Graphics free web app
 
 You may also check out the free [LaTeX Include Graphics](https://products.aspose.app/tex/includegraphics/) web app built based on [Aspose.TeX for .NET API](https://products.aspose.com/tex/net/). 
 
 The app allows you to select multiple images and visually adjust transformations for them. It also generates LaTeX source code using the `graphicx` package and renders it displaying the result on the page.
 
-### **LaTeX Figure Rendering feature in the Aspose.TeX library**
+### LaTeX Figure Rendering feature in the Aspose.TeX library
 
 The **Aspose.TeX** library provides a way to create raster and SVG figures that you can use in your publications outside of the TeX/LaTeX context. For example, on a web page. This is called the **LaTeX Figure Rendering**. Briefly, this part of the API allows you to render a fragment of LaTeX source code regardless of the page layout. For more details, refer to this [article](/tex/java/latex-figure-rendering/).
 
