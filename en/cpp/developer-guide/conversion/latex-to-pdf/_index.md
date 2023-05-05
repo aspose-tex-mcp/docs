@@ -17,7 +17,7 @@ sitemap:
 Let's take a detailed look at the code in C++ providing the simplest way to convert LaTeX to PDF format.
 
 {{< blocks/products/pf/agp/feature-section >}}
-{{< app/tex/converter "C++ code example LaTeX to PNG conversion" TEX PDF>}}
+{{< app/converter "C++ code example LaTeX to PDF conversion" TEX PDF>}}
     System::SharedPtr<TeXOptions> options = TeXOptions::ConsoleAppOptions(TeXConfig::ObjectLaTeX());
 
     options->set_OutputWorkingDirectory(System::MakeObject<OutputFileSystemDirectory>(RunExamples::OutputDirectory));
@@ -25,7 +25,7 @@ Let's take a detailed look at the code in C++ providing the simplest way to conv
     options->set_SaveOptions(System::MakeObject<{{output camel}}SaveOptions>());
 
     System::MakeObject<Aspose::TeX::TeXJob>(u"{{inputFile}}", System::MakeObject<PdfDevice>(), options)->Run();
-{{< /app/tex/converter >}}
+{{< /app/converter >}}
 {{< /blocks/products/pf/agp/feature-section>}}
 
 So, the first thing we need to do (well, sometimes not the very first) is to create an instance of the [TeXOptions](https://reference.aspose.com/tex/cpp/class/aspose.te_x.te_x_options) class. The only static method that does this is [ConsoleAppOptions()](https://reference.aspose.com/tex/cpp/class/aspose.te_x.te_x_options#ad8aec9c3ff198c9b1e0f36927c44179d), so let's not be puzzled by the meaning of its name. The method takes an [instance](https://reference.aspose.com/tex/cpp/class/aspose.te_x.te_x_config#a8ee52115ae06cd6e97151a456a4dd5ea) of the [TeXConfig](https://reference.aspose.com/tex/cpp/class/aspose.te_x.te_x_config/) class, which is exactly suitable for converting a [LaTeX file](/tex/net/latex-io/#latex-file). This configuration tells the Object TeX engine to load the Object LaTeX format and to be ready to accept the LaTeX file. Object LaTeX format is actually just the [LaTeX](/tex/net/what-is-latex/) format, except that it uses [Object TeX](/tex/net/aspose-tex-and-object-tex/#object-tex) specific primitives to set up the page metrics.
