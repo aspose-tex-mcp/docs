@@ -64,13 +64,13 @@ You can remove the comment char (`%`) before `\displaystyle` and see how some of
 
 It shows how to explicitly specify the style to be used in each part.
 
-## 2. Sub-formulas
+## 7.2. Sub-formulas
 
 In text, a pair of braces indicates a group, or a scope, within which some declaration is in effect. Within a math formula, they, in addition, delimit a sub-formula, which is always typeset as a separate entity that is added to the outer formula. As a consequence, sub-formulas are always typeset at their natural width and do not stretch or shrink horizontally when TeX builds a paragraph trying to fit the formula in a line. We have already shown that the sub-formula from a simple brace group is processed as if it was a single symbol. This means that an empty group produces an invisible symbol that can change the spacing.
 
 The contents of subscripts/superscripts and the arguments of many (but not all) commands, such as `\frac` and `\mathrel`, are also sub-formulas. Thus, they get the same special treatment. The argument of `\bm`, for example, is not necessarily set as a sub-formula, and this is one of important exceptions. In a math formula, if you need only to limit the scope of a declaration, define a group using `\begingroup` and `\endgroup`. Remember that specialized math declarations, such as style changes, apply until the end of the current sub-formula, whether or not any other groups are present.
 
-## 3. Big delimiters
+## 7.3. Big delimiters
 
 LaTeX defines four commands - `\big`, `\Big`, `\bigg`, and `Bigg` - to provide direct control of the sizes of extensible delimiters. They take a single argument, which must be an extensible delimiter, and produce larger versions of the delimiter, from 1.2 to 3 times the base size.
 
@@ -90,7 +90,7 @@ The sizes of these delimiters are fixed in standard LaTeX. However, with the `am
 
 ![Delimiters adapting to the current font size and math style](latex-ams-math-7-3.png)
 
-## 4. Adjusting the index on a radical
+## 7.4. Adjusting the index on a radical
 
 The placement of the index on a radical sign is not always good in standard LaTeX. However, you can use the commands `\leftroot` and `\uproot` defined in the `amsmath` package to adjust the positioning of this index. Positive integer arguments to these commands move the index to the left and up, respectively, while negative arguments move it right and down. These arguments are given in math units, which are quite small, so these commands are suitable for fine-tuning.
 
@@ -106,7 +106,7 @@ The placement of the index on a radical sign is not always good in standard LaTe
 
 ![Adjusting the index of a radical sign](latex-ams-math-7-4.png)
 
-## 5. Fine-tuning with struts and phantoms
+## 7.5. Fine-tuning with struts and phantoms
 
 Whenever you want to "perfectly" typeset math spacing and alignment, it is usually best to turn to unique and advanced abilities of primitive TeX. Access to these features is provided by a number of commands related to `\phantom` and `\smash`. Those commands can be used either in math formulas or in running text.
 
@@ -190,7 +190,7 @@ To see this, let's look at the following example:
 
 To reduce the depth of the radical, a `\smash` was added in the second radical, but this had no effect. In the third radical, it worked with an empty brace group.  But in the fourth radical, no empty brace group was needed. To summarize, whenever you find the `\smash` does not work, try adding an empty math sub-formula (`{}`) before the lonely box, to get it treated right.
 
-## 6. Horizontal spacing
+## 7.6. Horizontal spacing
 
 Finer, and more difficult, tuning requires the explicit spacing commands shown in the following table:
 
