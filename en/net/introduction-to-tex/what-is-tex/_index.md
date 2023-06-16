@@ -11,10 +11,13 @@ sitemap:
     changefreq: "weekly"
     priority: 0.8
 ---
+
 ## What TeX is NOT
+
 TeX is definitely not a format at all.
 
 ## What IS TeX?
+
 So what IS TeX? Well, that is the question, as Hamlet[^1] said. Let's try to answer it as simply as possible.
 Imagine that we have a programming language consisting of two elementary commands (called *control sequences*), or *primitives*, `\a` and `\b`. And in this language we can write programs for documents (books, articles, etc.) typesetting. Let's call this language **(L1)**. In order for these programs to be executed in a certain way, we have a certain engine that interprets the commands of this language.
 

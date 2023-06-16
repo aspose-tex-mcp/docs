@@ -11,6 +11,7 @@ description: Java API Solution for developers to manipulate and process TeX and 
 We are pleased to announce the launch of Aspose.TeX for Java - a Java library for TeX files typesetting. The API provides functionality to typeset TeX files and create custom TeX formats. 
 
 ### Supported File Types
+
 Aspose.TeX for Java supports the following file types.
 
 Input:
@@ -25,6 +26,7 @@ Output:
  * BMP
  
 ## Public API
+
  * Type com.aspose.tex.FormatProvider
  * Method com.aspose.tex.FormatProvider.#ctor(com.aspose.tex.IInputWorkingDirectory,java.lang.String)
  * Method com.aspose.tex.FormatProvider.close
@@ -271,4 +273,5 @@ Output:
  * Method com.aspose.tex.rendering.XpsSaveOptions.#ctor
  
 ## Got Queries?
+
 If you have any query related to Aspose.TeX for Java API, please feel free to write to reach us on [Aspose.TeX forum](https://forum.aspose.com/c/tex/). We'll be glad to assist you with your inquiries.

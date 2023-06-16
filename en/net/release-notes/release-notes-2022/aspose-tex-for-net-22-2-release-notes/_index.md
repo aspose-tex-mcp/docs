@@ -18,7 +18,9 @@ Support for `eurosym` package has been implemented.
 | TEXNET-175 | Implement formula rasterization mode | Enhancement |
  
 ## Public API
+
 ### Added APIs
+
  * Property Aspose.TeX.TeXOptions.DateTime
  * Property Aspose.TeX.TeXOptions.NoLigatures
  * Property Aspose.TeX.Presentation.SaveOptions.RasterizeFormulas
@@ -40,4 +42,5 @@ Support for `eurosym` package has been implemented.
 ### Removed APIs
  
 ## Got Queries?
+
 If you have any query related to Aspose.TeX for .NET API, please feel free to write to reach us on [Aspose.TeX forum](https://forum.aspose.com/c/tex/). We'll be glad to assist you with your inquiries.

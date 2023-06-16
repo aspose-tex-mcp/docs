@@ -21,7 +21,9 @@ description: C# .NET API Solution for developers to manipulate and process TeX a
 | TEXNET-197 | Adapt `tikz` package | Feature |
  
 ## Public API
+
 ### Added APIs
+
 * Type Aspose.TeX.Features.MathRenderer`3
  * Method Aspose.TeX.Features.MathRenderer`3.#ctor
  * Method Aspose.TeX.Features.MathRenderer`3.Render(System.String,System.IO.Stream,`0,System.Drawing.SizeF@)
@@ -85,8 +87,10 @@ description: C# .NET API Solution for developers to manipulate and process TeX a
 ### Modified APIs
 
 ### Removed APIs
+
  * Type Aspose.TeX.Features.MathRenderer
  * Method Aspose.TeX.Features.MathRenderer.Render(System.String,System.IO.Stream,Aspose.TeX.Features.MathRendererOptions,System.Drawing.SizeF@)
  
 ## Got Queries?
+
 If you have any query related to Aspose.TeX for .NET API, please feel free to write to reach us on [Aspose.TeX forum](https://forum.aspose.com/c/tex/). We'll be glad to assist you with your inquiries.

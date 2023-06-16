@@ -25,7 +25,9 @@ Object TeX graphics support has been implemented. LaTeX support has been impleme
 | TEXAPP-23 | Implement error reporting feature in Math Renderer | Enhancement |
  
 ## Public API
+
 ### Added APIs
+
  * Type com.aspose.tex.Interaction
  * Field com.aspose.tex.Interaction.BatchMode
  * Field com.aspose.tex.Interaction.NonstopMode
@@ -130,6 +132,7 @@ Object TeX graphics support has been implemented. LaTeX support has been impleme
  * Method com.aspose.tex.FormatProvider.objectLaTeX
 
 ### Renamed APIs
+
  * Method com.aspose.tex.OutputFileSystemDirectory.getFile(java.lang.String,java.lang.String[]) -> com.aspose.tex.OutputFileSystemDirectory.getOutputFile(java.lang.String,java.lang.String[])
  * Method com.aspose.tex.rendering.Device.startGroup(java.awt.geom.AffineTransform) -> com.aspose.tex.rendering.Device.setTransform(java.awt.geom.AffineTransform)
  * Method com.aspose.tex.rendering.Device.getColor -> com.aspose.tex.rendering.Device.getFill
@@ -139,6 +142,7 @@ Object TeX graphics support has been implemented. LaTeX support has been impleme
  * Method com.aspose.tex.rendering.XpsDevice.startGroup(java.awt.geom.AffineTransform) -> com.aspose.tex.rendering.XpsDevice.setTransform(java.awt.geom.AffineTransform)
 
 ### Removed APIs
+
  * Method com.aspose.tex.IOutputWorkingDirectory.close
  * Method com.aspose.tex.IOutputWorkingDirectory.getFile(java.lang.String,java.lang.String[])
  * Method com.aspose.tex.rendering.Device.startGroup
@@ -153,4 +157,5 @@ Object TeX graphics support has been implemented. LaTeX support has been impleme
  * Method com.aspose.tex.TeX.typeset(java.lang.String,com.aspose.tex.rendering.Device,com.aspose.tex.TeXOptions)
  
 ## Got Queries?
+
 If you have any query related to Aspose.TeX for Java API, please feel free to write to reach us on [Aspose.TeX forum](https://forum.aspose.com/c/tex/). We'll be glad to assist you with your inquiries.

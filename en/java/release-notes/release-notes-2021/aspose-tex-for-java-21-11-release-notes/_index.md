@@ -15,7 +15,9 @@ Support for `hyperref` package has been implemented.
 | TEXNET-157 | Adapt `hyperref` package | Enhancement |
  
 ## Public API
+
 ### Added APIs
+
  * Method com.aspose.tex.TeXOptions.ignoreMissingPackages
  * Method com.aspose.tex.TeXOptions.ignoreMissingPackages(boolean)
  * Method com.aspose.tex.rendering.Device.addBookmark(java.lang.String,java.awt.geom.Point2D)
@@ -34,4 +36,5 @@ Support for `hyperref` package has been implemented.
 ### Removed APIs
  
 ## Got Queries?
+
 If you have any query related to Aspose.TeX for Java API, please feel free to write to reach us on [Aspose.TeX forum](https://forum.aspose.com/c/tex/). We'll be glad to assist you with your inquiries.

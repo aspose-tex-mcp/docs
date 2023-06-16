@@ -17,7 +17,9 @@ description: C# .NET API Solution for developers to manipulate and process TeX a
 | TEXNET-238 | Implement a generic LaTeX code fragment renderer | Feature |
  
 ## Public API
+
 ### Added APIs
+
  * Type Aspose.TeX.Features.IRasterRendererOptions
  * Property Aspose.TeX.Features.IRasterRendererOptions.Resolution
  * Type Aspose.TeX.Features.FigureRenderer
@@ -47,6 +49,7 @@ description: C# .NET API Solution for developers to manipulate and process TeX a
 ### Modified APIs
 
 ### Removed APIs
+
  * Property Aspose.TeX.Features.MathRendererOptions.BackgroundColor
  * Property Aspose.TeX.Features.MathRendererOptions.ErrorReport
  * Property Aspose.TeX.Features.MathRendererOptions.LogStream
@@ -55,4 +58,5 @@ description: C# .NET API Solution for developers to manipulate and process TeX a
  * Property Aspose.TeX.Features.MathRendererOptions.ShowTerminal
 
 ## Got Queries?
+
 If you have any query related to Aspose.TeX for .NET API, please feel free to write to reach us on [Aspose.TeX forum](https://forum.aspose.com/c/tex/). We'll be glad to assist you with your inquiries.

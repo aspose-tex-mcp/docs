@@ -15,7 +15,9 @@ Support for `hyperref` package has been implemented.
 | TEXNET-157 | Adapt `hyperref` package | Enhancement |
  
 ## Public API
+
 ### Added APIs
+
  * Property Aspose.TeX.TeXOptions.IgnoreMissingPackages
  * Method Aspose.TeX.Presentation.Device.AddBookmark(System.String,System.Drawing.PointF)
  * Method Aspose.TeX.Presentation.Device.AddHyperlink(System.Drawing.RectangleF,System.Drawing.Pen,System.String)
@@ -33,4 +35,5 @@ Support for `hyperref` package has been implemented.
 ### Removed APIs
  
 ## Got Queries?
+
 If you have any query related to Aspose.TeX for .NET API, please feel free to write to reach us on [Aspose.TeX forum](https://forum.aspose.com/c/tex/). We'll be glad to assist you with your inquiries.

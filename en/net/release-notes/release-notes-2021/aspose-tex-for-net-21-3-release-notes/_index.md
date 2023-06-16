@@ -11,6 +11,7 @@ description: C# .NET API Solution for developers to manipulate and process TeX a
 We are pleased to announce the launch of Aspose.TeX for .NET - a .NET library for TeX files typesetting. The API provides functionality to typeset TeX files and create custom TeX formats. 
 
 ### Supported File Types
+
 Aspose.TeX for .NET supports the following file types.
 
 Input:
@@ -25,6 +26,7 @@ Output:
  * BMP
  
 ## Public API
+
  * Type Aspose.TeX.BuildVersionInfo
  * Method Aspose.TeX.BuildVersionInfo.#ctor
  * Field Aspose.TeX.BuildVersionInfo.AssemblyVersion
@@ -213,4 +215,5 @@ Output:
  * Method Aspose.TeX.TeX.CreateFormat(System.String,Aspose.TeX.TeXOptions)
  
 ## Got Queries?
+
 If you have any query related to Aspose.TeX for .NET API, please feel free to write to reach us on [Aspose.TeX forum](https://forum.aspose.com/c/tex/). We'll be glad to assist you with your inquiries.

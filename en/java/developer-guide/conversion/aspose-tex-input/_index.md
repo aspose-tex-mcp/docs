@@ -10,6 +10,7 @@ description: Conversion functionality of Aspose.TeX API solution for Java with T
 Please, refer to **Aspose.TeX for Java** [API reference](https://reference.aspose.com/tex/java/com.aspose.tex/package-frame) for formal definitions of I/O implementation.
 
 ## The concept of the input directory
+
 Since I/O primitives of the TeX language can only deal with file names, **Aspose.TeX for Java** defines a directory as a mapping between names and bulks of data. The bulks of data are supposed to be files, or streams, or arrays, or whatever else. The API allows us to specify the input and output working directories separately. It provides the general [IInputWorkingDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/IInputWorkingDirectory) interface, which the user can implement for their own purposes. It also provides its own implementations, which will be discussed below. The interface defines the [getFile()](https://reference.aspose.com/tex/java/com.aspose.tex/IInputWorkingDirectory#getFile-java.lang.String-java.lang.String:A-boolean-) method, which returns the data stream and determines the full name of the file, while taking some, hypothetically different, name as the first agrument, which, in fact, is the mapping key.
 
 ### Getting file input from the disk file system
@@ -38,6 +39,6 @@ To do this, we need to set the [TerminalIn](https://reference.aspose.com/tex/jav
 
 {{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Conversion-InputConsoleTerminal.java" >}}
 
-But, to tell you the truth, this is the default value of the option, so there's no real need to specify it. :-) Due to this fact, and as long as there are no other implementations, this section serves only demonstration purposes.
+But, to tell you the truth, this is the default value of the option, so there's no real need to specify it. Due to this fact, and as long as there are no other implementations, this section serves only demonstration purposes.
 
 Theoretically, if we have an interactive TeX file (or script) with predictable behavior, we may want to implement a version of the input terminal which would contain a complementary script for responding to the TeX engine's requests. Try your hand when you have time!

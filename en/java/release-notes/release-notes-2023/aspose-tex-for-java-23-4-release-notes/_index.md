@@ -16,6 +16,7 @@ description: Java API Solution for developers to manipulate and process TeX and 
 | TEXNET-244 | Fix the *longtable* package issue reported on Free Support Forum | Bug |
  
 ## Public API
+
 ### Added APIs
 
 ### Renamed APIs
@@ -25,4 +26,5 @@ description: Java API Solution for developers to manipulate and process TeX and 
 ### Removed APIs
  
 ## Got Queries?
+
 If you have any query related to Aspose.TeX for Java API, please feel free to write to reach us on [Aspose.TeX forum](https://forum.aspose.com/c/tex/). We'll be glad to assist you with your inquiries.

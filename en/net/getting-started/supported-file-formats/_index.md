@@ -8,6 +8,7 @@ description: This TeX manipulation solution for .NET supports TeX files for inpu
 ---
 
 ## Supported File Formats
+
 The following table indicates the file formats that Aspose.TeX for .NET can load and save.
 
 |**Format**|**Description**|**Input**|**Output**|**Remarks**|

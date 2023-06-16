@@ -16,7 +16,9 @@ description: Java API Solution for developers to manipulate and process TeX and 
 | TEXNET-175 | Implement formula rasterization mode | Enhancement |
  
 ## Public API
+
 ### Added APIs
+
  * Method com.aspose.tex.TeXOptions.getDateTime
  * Method com.aspose.tex.TeXOptions.setDateTime(java.util.Date)
  * Method Aspose.TeX.TeXOptions.noLigatures
@@ -40,8 +42,10 @@ description: Java API Solution for developers to manipulate and process TeX and 
 ### Modified APIs
  
 ### Removed APIs
+
  * Method com.aspose.tex.rendering.Device.addBookmark(java.lang.String,java.awt.geom.Point2D)
  * Method com.aspose.tex.rendering.ImageDevice.addBookmark(java.lang.String,java.awt.geom.Point2D)
  
 ## Got Queries?
+
 If you have any query related to Aspose.TeX for Java API, please feel free to write to reach us on [Aspose.TeX forum](https://forum.aspose.com/c/tex/). We'll be glad to assist you with your inquiries.

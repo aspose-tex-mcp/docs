@@ -19,12 +19,15 @@ Object TeX support for line stroke properties manipulation. Support for pict2e p
 | TEXNET-146 | Fix the closed stream write attempt error | Bug |
  
 ## Public API
+
 ### Added APIs
+
  * Property Aspose.TeX.TeXOptions.RequiredInputDirectory
 
 ### Renamed APIs
 
 ### Modified APIs
+
  * Method Aspose.TeX.IO.IInputWorkingDirectory.GetFile(System.String,System.String@,System.Boolean)
  * Method Aspose.TeX.IO.InputFileSystemDirectory.GetFile(System.String,System.String@,System.Boolean)
  * Method Aspose.TeX.IO.InputZipDirectory.GetFile(System.String,System.String@,System.Boolean)
@@ -33,4 +36,5 @@ Object TeX support for line stroke properties manipulation. Support for pict2e p
 ### Removed APIs
  
 ## Got Queries?
+
 If you have any query related to Aspose.TeX for .NET API, please feel free to write to reach us on [Aspose.TeX forum](https://forum.aspose.com/c/tex/). We'll be glad to assist you with your inquiries.
