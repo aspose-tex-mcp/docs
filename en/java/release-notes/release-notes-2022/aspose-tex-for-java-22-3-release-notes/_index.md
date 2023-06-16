@@ -21,7 +21,9 @@ description: Java API Solution for developers to manipulate and process TeX and 
 | TEXNET-197 | Adapt `tikz` package | Feature |
  
 ## Public API
+
 ### Added APIs
+
  * Method com.aspose.tex.MathRenderer.#ctor
  * Type com.aspose.tex.PngMathRenderer
  * Method com.aspose.tex.PngMathRenderer.#ctor
@@ -107,4 +109,5 @@ description: Java API Solution for developers to manipulate and process TeX and 
 ### Removed APIs
  
 ## Got Queries?
+
 If you have any query related to Aspose.TeX for Java API, please feel free to write to reach us on [Aspose.TeX forum](https://forum.aspose.com/c/tex/). We'll be glad to assist you with your inquiries.

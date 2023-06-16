@@ -8,6 +8,7 @@ description: This page briefly describes the peculiarities of working with LaTeX
 ---
 
 ## LaTeX file
+
 If we have a [TeX file](/tex/net/tex-io/#tex-file) that have the following structure, then we will call this file a *LaTeX file*:
 
 ```tex
@@ -26,6 +27,7 @@ To be honest, you can insert primitive control sequences before `\documentclass{
 There are a few thing worth noting about TeX [input](/tex/net/tex-io/#tex-input) and [output](/tex/net/tex-io/#tex-output) in the context of working with LaTeX files.
 
 ## LaTeX output
+
 A typical LaTeX job creates an auxiliary output file with the [job name](/tex/net/tex-io/#tex-output) as its name and extension *.aux*. This file usually contains reference data that the engine collects along the job run, if you, say, set labels for math formulas (equations) and then refer to them somewhere in the text. In case you don't use anything of this kind, this file contains only the `\relax` control sequence (which is one of the TeX primitives). So don't be surprised.
 
 Although `\openout`, `\write` and `\closeout` primitives are not forbidden, packages are the most suitable place for them. Therefore you should better use them in your own custom packages if you're developing them.
@@ -33,6 +35,7 @@ Although `\openout`, `\write` and `\closeout` primitives are not forbidden, pack
 Other parts of the output are arbitrary, also follow the general [TeX output](/tex/net/tex-io/#tex-output) concept and depend on what exactly your TeX file (program) is supposed to do, what packages (see below) you are using, etc.
 
 ## LaTeX input
+
 The aforementioned *.aux* file is a mandatory part of LaTeX input at the same time. Algorithmically, LaTeX can't accomplish those reference-related tasks within a single run, so the same job needs to be run twice --- the first time to collect data, the second time to use those data. Many LaTeX-based software systems run LaTeX jobs twice automatically. Spoiler: There is an [option](/tex/net/other-options/#how-to-repeat-the-job) in Aspose.TeX API that lets us control this behavior.
 
 Another mandatory part is a [document class](/tex/net/latex-io/#latex-file). The document class file, in turn, may implicitly depend on other files, which are thus included in the LaTeX input as well.

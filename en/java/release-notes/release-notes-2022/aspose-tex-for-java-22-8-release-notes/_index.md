@@ -15,7 +15,9 @@ description: Java API Solution for developers to manipulate and process TeX and 
 | TEXJAVA-38 | Integrate support for metered licensing | Enhancement |
  
 ## Public API
+
 ### Added APIs
+
  * Type com.aspose.tex.Metered
  * Method com.aspose.tex.Metered.#ctor
  * Method com.aspose.tex.Metered.getConsumptionCredit
@@ -61,6 +63,6 @@ description: Java API Solution for developers to manipulate and process TeX and 
  
 ### Removed APIs
 
- 
 ## Got Queries?
+
 If you have any query related to Aspose.TeX for Java API, please feel free to write to reach us on [Aspose.TeX forum](https://forum.aspose.com/c/tex/). We'll be glad to assist you with your inquiries.

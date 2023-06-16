@@ -10,6 +10,7 @@ description: The list of packages embedded into the Aspose.TeX library
 There is a number of LaTeX packages embedded into the Aspose.TeX library. Here they are:
 
 ## The list of embedded LaTeX packages
+
 ### `eurosym`
 v1.1.
 

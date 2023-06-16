@@ -17,6 +17,7 @@ description: Java API Solution for developers to manipulate and process TeX and 
 | TEXNET-202 | Refactor PS/EPS and XPS files inclusion | Bug |
  
 ## Public API
+
 ### Added APIs
 
 ### Renamed APIs
@@ -24,6 +25,7 @@ description: Java API Solution for developers to manipulate and process TeX and 
 ### Modified APIs
  
 ### Removed APIs
+
  * Method com.aspose.tex.rendering.Device.showEps(java.awt.geom.Point2D,java.awt.geom.Dimension2D,java.io.InputStream,int)
  * Method com.aspose.tex.rendering.Device.showXps(java.awt.geom.Point2D,java.awt.geom.Dimension2D,java.io.InputStream,int)
  * Method com.aspose.tex.rendering.ImageDevice.showEps(java.awt.geom.Point2D,java.awt.geom.Dimension2D,java.io.InputStream,int)
@@ -36,4 +38,5 @@ description: Java API Solution for developers to manipulate and process TeX and 
  * com.aspose.tex.rendering.XpsDevice.showXps(java.awt.geom.Point2D,java.awt.geom.Dimension2D,java.io.InputStream,int) 
  
 ## Got Queries?
+
 If you have any query related to Aspose.TeX for Java API, please feel free to write to reach us on [Aspose.TeX forum](https://forum.aspose.com/c/tex/). We'll be glad to assist you with your inquiries.

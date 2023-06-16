@@ -15,7 +15,9 @@ description: Java API Solution for developers to manipulate and process TeX and 
 | TEXNET-238 | Implement a generic LaTeX code fragment renderer | Feature |
  
 ## Public API
+
 ### Added APIs
+
  * Type com.aspose.tex.FigureRenderer
  * Method com.aspose.tex.FigureRenderer.#ctor
  * Method com.aspose.tex.FigureRenderer.render(java.lang.String,java.io.OutputStream,com.aspose.tex.FigureRendererOptions,com.aspose.tex.Size2D)
@@ -53,6 +55,7 @@ description: Java API Solution for developers to manipulate and process TeX and 
 ### Modified APIs
  
 ### Removed APIs
+
  * Method com.aspose.tex.MathRendererOptions.getBackgroundColor
  * Method com.aspose.tex.MathRendererOptions.getErrorReport
  * Method com.aspose.tex.MathRendererOptions.getLogStream
@@ -66,4 +69,5 @@ description: Java API Solution for developers to manipulate and process TeX and 
  * Method com.aspose.tex.MathRendererOptions.showTerminal(boolean)
  
 ## Got Queries?
+
 If you have any query related to Aspose.TeX for Java API, please feel free to write to reach us on [Aspose.TeX forum](https://forum.aspose.com/c/tex/). We'll be glad to assist you with your inquiries.

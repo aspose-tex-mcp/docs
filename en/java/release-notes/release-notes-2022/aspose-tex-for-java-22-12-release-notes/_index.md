@@ -16,6 +16,7 @@ description: Java API Solution for developers to manipulate and process TeX and 
 | TEXNET-224 | Investigate the issue with loading the pgfplots package | Enhancement |
  
 ## Public API
+
 ### Added APIs
 
 ### Renamed APIs
@@ -24,6 +25,6 @@ description: Java API Solution for developers to manipulate and process TeX and 
  
 ### Removed APIs
 
- 
 ## Got Queries?
+
 If you have any query related to Aspose.TeX for Java API, please feel free to write to reach us on [Aspose.TeX forum](https://forum.aspose.com/c/tex/). We'll be glad to assist you with your inquiries.

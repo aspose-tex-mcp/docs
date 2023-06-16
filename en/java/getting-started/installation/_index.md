@@ -21,6 +21,7 @@ First you need to specify Aspose Repository configuration / location in your Mav
      </repository>
 </repositories>
 ```
+
 ## Define Aspose.TeX for Java API Dependency
 Then define Aspose.TeX for Java API dependency in your pom.xml as follows:
 ```

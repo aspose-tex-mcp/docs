@@ -15,7 +15,9 @@ description: C# .NET API Solution for developers to manipulate and process TeX a
 | TEXNET-217 | Integrate support for metered licensing | Enhancement |
  
 ## Public API
+
 ### Added APIs
+
  * Type Aspose.TeX.IO.NondisposableMemoryStream
  * Method Aspose.TeX.IO.NondisposableMemoryStream.#ctor
  * Method Aspose.TeX.IO.NondisposableMemoryStream.#ctor(System.IO.Stream)
@@ -33,6 +35,6 @@ description: C# .NET API Solution for developers to manipulate and process TeX a
 
 ### Removed APIs
 
-
 ## Got Queries?
+
 If you have any query related to Aspose.TeX for .NET API, please feel free to write to reach us on [Aspose.TeX forum](https://forum.aspose.com/c/tex/). We'll be glad to assist you with your inquiries.

@@ -19,7 +19,9 @@ Object TeX support for line stroke properties manipulation. Support for pict2e p
 | TEXNET-146 | Fix the closed stream write attempt error | Bug |
  
 ## Public API
+
 ### Added APIs
+
  * Method com.aspose.tex.TeXOptions.getRequiredInputDirectory
  * Method com.aspose.tex.TeXOptions.setRequiredInputDirectory(com.aspose.tex.IInputWorkingDirectory)
  * Method com.aspose.tex.rendering.ColoredStroke.#ctor(java.awt.Color)
@@ -38,14 +40,17 @@ Object TeX support for line stroke properties manipulation. Support for pict2e p
 ### Renamed APIs
 
 ### Modified APIs
+
  * Method com.aspose.tex.IInputWorkingDirectory.getFile(java.lang.String,java.lang.String[],boolean)
  * Method com.aspose.tex.InputFileSystemDirectory.getFile(java.lang.String,java.lang.String[],boolean)
  * Method com.aspose.tex.InputZipDirectory.getFile(java.lang.String,java.lang.String[],boolean)
  * Method com.aspose.tex.OutputZipDirectory.getFile(java.lang.String,java.lang.String[],boolean)
  
 ### Removed APIs
+
  * Method com.aspose.tex.rendering.ColoredStroke.#ctor(java.awt.Color,java.awt.Stroke)
  * Method com.aspose.tex.rendering.ColoredStroke.getStroke
  
 ## Got Queries?
+
 If you have any query related to Aspose.TeX for Java API, please feel free to write to reach us on [Aspose.TeX forum](https://forum.aspose.com/c/tex/). We'll be glad to assist you with your inquiries.

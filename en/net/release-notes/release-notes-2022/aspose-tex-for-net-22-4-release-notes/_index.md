@@ -17,7 +17,9 @@ description: C# .NET API Solution for developers to manipulate and process TeX a
 | TEXNET-202 | Refactor PS/EPS and XPS files inclusion | Bug |
  
 ## Public API
+
 ### Added APIs
+
  * Type Aspose.TeX.Features.MathRenderer
  * Method Aspose.TeX.Features.MathRenderer.#ctor
  * Method Aspose.TeX.Features.MathRenderer.Render(System.String,System.IO.Stream,Aspose.TeX.Features.MathRendererOptions,System.Drawing.SizeF@)

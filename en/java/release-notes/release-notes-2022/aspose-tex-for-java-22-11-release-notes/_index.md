@@ -15,6 +15,7 @@ description: Java API Solution for developers to manipulate and process TeX and 
 | TEXNET-221 | Adapt the *multirow* package | Enhancement |
  
 ## Public API
+
 ### Added APIs
 
 ### Renamed APIs
@@ -22,7 +23,7 @@ description: Java API Solution for developers to manipulate and process TeX and 
 ### Modified APIs
  
 ### Removed APIs
-
  
 ## Got Queries?
+
 If you have any query related to Aspose.TeX for Java API, please feel free to write to reach us on [Aspose.TeX forum](https://forum.aspose.com/c/tex/). We'll be glad to assist you with your inquiries.

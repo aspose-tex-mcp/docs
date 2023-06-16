@@ -25,7 +25,9 @@ Object TeX graphics support has been implemented. LaTeX support has been impleme
 | TEXAPP-23 | Implement error reporting feature in Math Renderer | Enhancement |
  
 ## Public API
+
 ### Added APIs
+
  * Type Aspose.TeX.Interaction
  * Field Aspose.TeX.Interaction.BatchMode
  * Field Aspose.TeX.Interaction.NonstopMode
@@ -95,6 +97,7 @@ Object TeX graphics support has been implemented. LaTeX support has been impleme
  * Property Aspose.TeX.ResourceProviders.FormatProvider.ObjectLaTeX
 
 ### Renamed APIs
+
  * Type Aspose.TeX.IO.IWorkingDirectory -> Aspose.TeX.IO.IInputWorkingDirectory
  * Method Aspose.TeX.IO.OutputFileSystemDirectory.GetFile(System.String,System.String@) -> Aspose.TeX.IO.OutputFileSystemDirectory.GetOutputFile(System.String,System.String@)
  * Method Aspose.TeX.Presentation.Device.StartGroup(System.Drawing.Drawing2D.Matrix) -> Aspose.TeX.Presentation.Device.SetTransform(System.Drawing.Drawing2D.Matrix)
@@ -104,10 +107,12 @@ Object TeX graphics support has been implemented. LaTeX support has been impleme
  * Method Aspose.TeX.Presentation.Xps.XpsDevice.StartGroup(System.Drawing.Drawing2D.Matrix) -> Aspose.TeX.Presentation.Xps.XpsDevice.SetTransform(System.Drawing.Drawing2D.Matrix)
 
 ### Modified APIs
+
  * Method Aspose.TeX.IO.OutputFileTerminal.#ctor(Aspose.TeX.IO.IOutputWorkingDirectory)
  * Method Aspose.TeX.ResourceProviders.FormatProvider.#ctor(Aspose.TeX.IO.IInputWorkingDirectory,System.String)
 
 ### Removed APIs
+
  * Method Aspose.TeX.Presentation.Device.EndGroup
  * Method Aspose.TeX.Presentation.Pdf.PdfDevice.EndGroup
  * Method Aspose.TeX.Presentation.Image.ImageDevice.#ctor
@@ -120,4 +125,5 @@ Object TeX graphics support has been implemented. LaTeX support has been impleme
  * Method Aspose.TeX.TeX.CreateFormat(System.String,Aspose.TeX.TeXOptions)
  
 ## Got Queries?
+
 If you have any query related to Aspose.TeX for .NET API, please feel free to write to reach us on [Aspose.TeX forum](https://forum.aspose.com/c/tex/). We'll be glad to assist you with your inquiries.
