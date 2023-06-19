@@ -10,7 +10,7 @@ description: When you stopped on the licensed version of the Aspose.TeX API solu
 
 Evaluation version of Aspose.TeX (without a license specified) provides full product functionality except that only up to four first pages can be obtained in output document. Also, those pages will be stamped with evaluation mode watermark.
 
-If you want to try Aspose.TeX out without evaluation limitations, request a 30-day temporary license. Please refer to [How to get a Temporary License?](https://purchase.aspose.com/temporary-license) for more information.
+If you want to try Aspose.TeX out without evaluation limitations, request a 30-day temporary license. Please refer to [How to get a Temporary License?](https://purchase.aspose.com/temporary-license/) for more information.
 
 ### Apply License using File or Stream Object
 
