@@ -1,7 +1,7 @@
 ---
 title: Building maths with AMS's LaTeX packages
 type: docs
-weight: 30
+weight: 40
 url: /java/what-is-ams-latex/
 keywords: ams-latex, ams latex, latex math, latex formula, latex ams, latex equation, latex math expression
 description: This article sheds some light on what AMS-LATEX is and briefly explains when to use the packages provided by AMS.
