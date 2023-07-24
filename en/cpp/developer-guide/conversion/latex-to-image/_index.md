@@ -26,7 +26,7 @@ Let's take a detailed look at the code in C++ providing the simplest way to conv
 {{<app/converter 
   input="{{<import path="/includes/code-snippets/conversion-cpp.md" section="converter-latex-images.input">}}"  
   formats="{{<import path="/includes/code-snippets/conversion-cpp.md" section="converter-latex-images.output">}}"
-  title="{{<import path="/includes/code-snippets/conversion-dotnet.md" section="converter-latex-images.title">}}"
+  title="{{<import path="/includes/code-snippets/conversion-cpp.md" section="converter-latex-images.title">}}"
 >}}
 {{<import path="/includes/code-snippets/conversion-cpp.md" section="converter-latex-images">}}
 {{</app/converter>}}
