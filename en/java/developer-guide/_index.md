@@ -1,5 +1,5 @@
 ---
-title: Developer Guide | Java
+title: Developer Guide | Aspose.TeX for Java
 linktitle: Developer Guide
 type: docs
 weight: 20

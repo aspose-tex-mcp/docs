@@ -1,5 +1,5 @@
 ---
-title: Supported File Formats | .NET
+title: Supported File Formats | Aspose.TeX .NET
 linktitle: Supported File Formats
 type: docs
 weight: 20

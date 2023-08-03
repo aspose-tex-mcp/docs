@@ -1,5 +1,5 @@
 ---
-title: LaTeX to PDF | Java
+title: LaTeX to PDF | Aspose.TeX for Java
 linktitle: LaTeX to PDF
 type: docs
 weight: 11

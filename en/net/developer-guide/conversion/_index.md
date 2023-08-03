@@ -1,5 +1,5 @@
 ---
-title: Conversion | .NET
+title: Conversion functionality | Aspose.TeX for .NET
 linktitle: Conversion
 type: docs
 weight: 10

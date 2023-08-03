@@ -1,10 +1,10 @@
 ---
-title: 8. Fine-tuning mathematical formulas
+title: 8. Fine-tuning mathematical formulas | LaTeX manual
 type: docs
 weight: 80
 url: /java/latex-math-fine-points/
 keywords: latex, latex math formulas, latex math, latex math fine-tuning, latex math punctuation, latex math operators, latex math font styles, latex math spacinf, latex math line breaking, latex math matrices
-description: This article discusses the fine points of mathematics typing. It provides a plenty of examples that involve various objects that you may find in mathematical formulas.
+description: Learn about the fine points of mathematics typing, explained with examples that involve various objects that you may find in mathematical formulas.
 lastmod: "2023-07-04"
 sitemap:
     changefreq: "weekly"

@@ -1,5 +1,5 @@
 ---
-title: LaTeX to XPS | C++
+title: LaTeX to XPS | Aspose.TeX for C++
 linktitle: LaTeX to XPS
 type: docs
 weight: 12

@@ -1,5 +1,5 @@
 ---
-title: LaTeX to image | .NET
+title: LaTeX to image | Aspose.TeX for .NET
 linktitle: LaTeX to image
 type: docs
 weight: 10

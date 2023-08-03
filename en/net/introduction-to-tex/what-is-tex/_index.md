@@ -1,5 +1,5 @@
 ---
-title: What is TeX? | .NET
+title: What is TeX? | Aspose.TeX .NET
 linktitle: What is TeX?
 type: docs
 weight: 10

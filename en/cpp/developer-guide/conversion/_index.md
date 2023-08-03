@@ -1,5 +1,5 @@
 ---
-title: Conversion | C++
+title: Conversion functionality | Aspose.TeX for C++
 linktitle: Conversion
 type: docs
 weight: 10

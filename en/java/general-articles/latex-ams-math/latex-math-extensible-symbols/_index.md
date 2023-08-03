@@ -1,5 +1,5 @@
 ---
-title: 5. Extensible and adjustable symbols
+title: 5. Extensible and adjustable symbols  | LaTeX manual
 type: docs
 weight: 50
 url: /java/latex-math-extensible-symbols/

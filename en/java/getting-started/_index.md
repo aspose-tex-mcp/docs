@@ -1,5 +1,5 @@
 ---
-title: Getting Started | Java
+title: Getting Started | Aspose.TeX for Java
 linktitle: Getting Started
 type: docs
 weight: 10

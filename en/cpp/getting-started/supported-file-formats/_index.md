@@ -1,5 +1,5 @@
 ---
-title: Supported File Formats | C++
+title: Supported File Formats | Aspose.TeX for C++
 linktitle: Supported File Formats
 type: docs
 weight: 20

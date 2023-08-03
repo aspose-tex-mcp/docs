@@ -1,5 +1,5 @@
 ---
-title: Introduction to TeXs
+title: Introduction to TeXs | Aspose.TeX 
 type: docs
 weight: 10
 url: /net/introduction-to-tex/

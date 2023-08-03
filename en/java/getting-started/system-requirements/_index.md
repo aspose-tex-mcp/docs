@@ -1,5 +1,5 @@
 ---
-title: System Requirements | Java
+title: System Requirements | Aspose.TeX for Java
 linktitle: System Requirements
 type: docs
 weight: 50

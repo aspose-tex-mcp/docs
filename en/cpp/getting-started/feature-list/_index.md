@@ -1,5 +1,5 @@
 ---
-title: Feature List | C++
+title: Feature List | Aspose.TeX for C++
 linktitle: Feature List
 type: docs
 weight: 30

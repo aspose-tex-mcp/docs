@@ -1,5 +1,5 @@
 ---
-title: Developer Guide | C++
+title: Developer Guide | Aspose.TeX for C++
 linktitle: Developer Guide
 type: docs
 weight: 20

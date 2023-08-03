@@ -1,5 +1,5 @@
 ---
-title: Supported File Formats | Java
+title: Supported File Formats | Aspose.TeX for Java
 linktitle: Supported File Formats
 type: docs
 weight: 20

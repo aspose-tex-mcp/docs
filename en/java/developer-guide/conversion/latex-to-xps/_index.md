@@ -1,5 +1,5 @@
 ---
-title: LaTeX to XPS | Java
+title: LaTeX to XPS | Aspose.TeX for Java
 linktitle: LaTeX to XPS
 type: docs
 weight: 12

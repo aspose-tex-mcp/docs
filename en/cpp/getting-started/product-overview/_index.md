@@ -1,5 +1,5 @@
 ---
-title: Product Overview | C++
+title: Product Overview | Aspose.TeX for C++
 linktitle: Product Overview
 type: docs
 weight: 10

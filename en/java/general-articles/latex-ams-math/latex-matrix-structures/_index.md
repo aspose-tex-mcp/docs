@@ -1,5 +1,5 @@
 ---
-title: 3. Matrix and similar environments
+title: 3. Matrix and similar environments | LaTeX manual
 type: docs
 weight: 30
 url: /java/latex-ams-matrix/

@@ -1,5 +1,5 @@
 ---
-title: Aspose.TeX for Java
+title: Aspose.TeX for Java API Solution
 type: docs
 weight: 20
 url: /java/

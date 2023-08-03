@@ -1,5 +1,5 @@
 ---
-title: System Requirements | C++
+title: System Requirements | Aspose.TeX for C++
 linktitle: System Requirements
 type: docs
 weight: 50

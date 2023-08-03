@@ -1,5 +1,5 @@
 ---
-title: LaTeX to PDF | .NET
+title: LaTeX to PDF | Aspose.TeX for .NET
 linktitle: LaTeX to PDF
 type: docs
 weight: 11

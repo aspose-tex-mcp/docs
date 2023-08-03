@@ -1,10 +1,10 @@
 ---
-title: 9. Displayed equations
+title: 9. Displayed equations | LaTeX manual
 type: docs
 weight: 90
 url: /java/latex-math-displayed-equations/
 keywords: latex, latex math formulas, latex math, latex math displayed formula, latex math displayed equation, latex math equation array, latex math displayed alignment
-description: This article discusses another way to compose math formulas that involves macro commands provided by LaTeX.
+description: Learn about the way to display math formulas of a large size or a big amount of formulas using commands provided by LaTeX.
 lastmod: "2023-07-04"
 sitemap:
     changefreq: "weekly"

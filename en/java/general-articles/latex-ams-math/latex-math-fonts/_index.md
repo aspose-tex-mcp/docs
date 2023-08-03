@@ -1,5 +1,5 @@
 ---
-title: 8. Fonts in math formulas
+title: 8. Fonts in math formulas | LaTeX manual
 type: docs
 weight: 80
 url: /java/latex-math-fonts/

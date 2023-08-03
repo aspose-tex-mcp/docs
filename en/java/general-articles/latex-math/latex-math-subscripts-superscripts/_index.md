@@ -1,5 +1,5 @@
 ---
-title: 2. Subscripts and superscripts
+title: 2. Subscripts and superscripts | LaTeX manual
 type: docs
 weight: 20
 url: /java/latex-math-subscripts-superscripts/

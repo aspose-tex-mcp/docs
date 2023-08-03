@@ -1,5 +1,5 @@
 ---
-title: Advanced Features | Java
+title: Advanced Features | Aspose.TeX for Java
 linktitle: Advanced Features
 type: docs
 weight: 20

@@ -1,5 +1,5 @@
 ---
-title: System Requirements | .NET
+title: System Requirements | Aspose.TeX .NET
 linktitle: System Requirements
 type: docs
 weight: 50

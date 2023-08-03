@@ -1,10 +1,11 @@
 ---
-title: LaTeX Figure rendering | .NET
-linktitle: LaTeX figure rendering
+title: LaTeX Figure rendering | Aspose.TeX for .NET
+linktitle: LaTeX include figure
 type: docs
 weight: 20
 url: /net/latex-figure-rendering/
 description: Aspose.TeX API solution for .NET LaTeX fragment (figure) rendering is described in this article. Learn the code examples on how to use the functionality.
+keywords: latex figure, figure size latex, latex picture, latex image, latex include figure, latex pic, latex figure options
 lastmod: "2023-02-28"
 sitemap:
     changefreq: "weekly"
@@ -19,7 +20,7 @@ The API reference section related to this topic is [here](https://reference.aspo
 
 {{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Features-PngLaTeXFigureRendering.cs" >}}
 
-First of all, we create a [rendering options](https://reference.aspose.com/tex/net/aspose.tex.features/figurerendereroptions/) instance. We do it here simultaneously specifying the output image resolution.
+First of all, we create a [LaTeX figure options](https://reference.aspose.com/tex/net/aspose.tex.features/figurerendereroptions/) instance. We do it here simultaneously specifying the output image resolution.
 
 Next, we specify the preamble. There's no default preamble for LaTeX figure rendering, so if you are, for instance, going to render some graphics plotted using the `pict2e` LaTeX package, you need to specify it in the preamble:
 ```tex

@@ -1,10 +1,10 @@
 ---
-title: LaTeX includegraphics
+title: LaTeX includegraphics | Aspose.TeX for Java
 type: docs
 weight: 10
 url: /java/latex-includegraphics/
-keywords: includegraphics latex, LaTeX includegraphics, insert images latex, latex graphicx, latex insert image, tex figures, draw io latex, latex wrap figure, figure position latex, figure scale latex
-description: This article is about LaTeX includegraphics macro that is used to include graphics in LaTeX files. It also covers image transformations, viewport and clipping, as wel as the difference between graphics and graphicx packages.
+keywords: includegraphics latex, latex includegraphic, insert images latex, latex graphicx, latex insert image, includegraphics latex package, draw io latex, latex includegraphics width, includegraphics width, figure scale latex
+description: Learn about LaTeX includegraphics macro, along with image transformations, viewport, clipping, and the difference between graphics and graphicx packages.
 lastmod: "2023-03-21"
 sitemap:
     changefreq: "weekly"
@@ -121,7 +121,7 @@ the [package documentation](http://mirrors.ctan.org/macros/latex/required/graphi
 
 ### LaTeX Include Graphics free web app
 
-You may also check out the free [LaTeX Include Graphics](https://products.aspose.app/tex/includegraphics/) web app built based on [Aspose.TeX for .NET API](https://products.aspose.com/tex/net/). 
+If you do not want to work with includegraphics latex package programmatically you may also check out the free [LaTeX Include Graphics](https://products.aspose.app/tex/includegraphics/) web app built based on [Aspose.TeX for .NET API](https://products.aspose.com/tex/net/). 
 
 The app allows you to select multiple images and visually adjust transformations for them. It also generates LaTeX source code using the `graphicx` package and renders it displaying the result on the page.
 
