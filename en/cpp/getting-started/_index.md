@@ -1,5 +1,5 @@
 ---
-title: Getting Started | C++
+title: Getting Started | Aspose.TeX for C++
 linktitle: Getting Started
 type: docs
 weight: 10

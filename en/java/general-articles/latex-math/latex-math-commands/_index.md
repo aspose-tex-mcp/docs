@@ -1,5 +1,5 @@
 ---
-title: 3. LaTeX commands
+title: 3. LaTeX commands | LaTeX manual
 type: docs
 weight: 30
 url: /java/latex-math-commands/

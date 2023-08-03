@@ -1,5 +1,5 @@
 ---
-title: Advanced Features | C++
+title: Advanced Features | Aspose.TeX for C++
 linktitle: Advanced Features 
 type: docs
 weight: 20

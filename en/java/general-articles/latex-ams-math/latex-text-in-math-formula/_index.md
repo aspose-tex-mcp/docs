@@ -1,5 +1,5 @@
 ---
-title: 6. Text in math formulas
+title: 6. Text in math formulas | LaTeX manual
 type: docs
 weight: 60
 url: /java/latex-text-in-math-formula/

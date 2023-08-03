@@ -1,5 +1,5 @@
 ---
-title: 4. Decorated symbols and compound structures
+title: 4. Decorated symbols and compound structures | LaTeX manual
 type: docs
 weight: 40
 url: /java/latex-math-decorations/

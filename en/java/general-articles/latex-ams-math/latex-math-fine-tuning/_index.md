@@ -1,5 +1,5 @@
 ---
-title: 7. Presize adjustments to the layout
+title: 7. Presize adjustments to the layout | LaTeX manual
 type: docs
 weight: 70
 url: /java/latex-math-fine-tuning/

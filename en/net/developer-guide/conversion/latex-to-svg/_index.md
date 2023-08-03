@@ -1,5 +1,5 @@
 ---
-title: LaTeX to SVG | .NET
+title: LaTeX to SVG | Aspose.TeX for .NET
 linktitle: LaTeX to SVG
 type: docs
 weight: 13

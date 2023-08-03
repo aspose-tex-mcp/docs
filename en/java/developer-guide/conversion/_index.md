@@ -1,5 +1,5 @@
 ---
-title: Conversion | Java
+title: Conversion functionality | Aspose.TeX for Java
 linktitle: Conversion
 type: docs
 weight: 10

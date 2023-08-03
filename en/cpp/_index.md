@@ -1,5 +1,5 @@
 ---
-title: Aspose.TeX for C++
+title: Aspose.TeX for C++ API Solution
 type: docs
 weight: 30
 url: /cpp/

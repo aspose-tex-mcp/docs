@@ -1,5 +1,5 @@
 ---
-title: LaTeX to SVG | Java
+title: LaTeX to SVG | Aspose.TeX for Java
 linktitle: LaTeX to SVG
 type: docs
 weight: 13

@@ -1,5 +1,5 @@
 ---
-title: LaTeX to XPS | .NET
+title: LaTeX to XPS | Aspose.TeX for .NET
 linktitle: LaTeX to XPS
 type: docs
 weight: 12

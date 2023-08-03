@@ -1,10 +1,10 @@
 ---
-title: Appendix. Math symbols and commands
+title: Appendix. Math symbols and commands | LaTeX manual
 type: docs
 weight: 100
 url: /java/latex-math-symbols-commands/
 keywords: latex, latex math formulas, latex math, latex math symbols, latex greek letters, latex large operators, latex math relations, latex binary operations, latex math arrows
-description: This article discusses the division of TeX math symbols into classes and the meaning of these classes in mathematics.
+description: This article discusses different LaTeX math symbols and commands and their meaning. Learn how to insert operators, greek letters, etc. within LaTeX.
 lastmod: "2023-07-04"
 sitemap:
     changefreq: "weekly"

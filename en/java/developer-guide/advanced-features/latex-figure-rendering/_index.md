@@ -1,5 +1,5 @@
 ---
-title: LaTeX Figure rendering | Java
+title: LaTeX Figure rendering | Aspose.TeX for Java
 linktitle: LaTeX figure rendering
 type: docs
 weight: 20

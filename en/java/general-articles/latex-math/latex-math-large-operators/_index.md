@@ -1,5 +1,5 @@
 ---
-title: 6. Large operators
+title: 6. Large operators | LaTeX manual
 type: docs
 weight: 60
 url: /java/latex-math-large-operators/

@@ -1,9 +1,9 @@
 ---
-title: General articles on LaTeX
+title: General articles on LaTeX | Aspose.TeX for .NET
 type: docs
 weight: 10
 url: /net/general-articles-latex/
-description: This section contains general articles about LaTeX.
+description: Learn the basic information about LaTeX including information on use cases, how to work with fonts, images, math formulas, and different LaTeX packages.
 ---
 
 [//]: # (This brief introduction is supposed to discuss some basic uses for LaTeX.)

@@ -1,5 +1,5 @@
 ---
-title: Aspose.TeX for .NET
+title: Aspose.TeX for .NET API Solution
 type: docs
 weight: 10
 url: /net/

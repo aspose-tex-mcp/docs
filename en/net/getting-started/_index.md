@@ -1,5 +1,5 @@
 ---
-title: Getting Started | .NET
+title: Getting Started | Aspose.TeX for .NET
 linktitle: Getting Started
 type: docs
 weight: 20

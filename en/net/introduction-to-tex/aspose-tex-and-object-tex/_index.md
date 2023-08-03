@@ -1,5 +1,5 @@
 ---
-title: Aspose.TeX and Object TeX
+title: Aspose.TeX and Object TeX | Aspose.TeX for .NET
 type: docs
 weight: 11
 url: /net/aspose-tex-and-object-tex/

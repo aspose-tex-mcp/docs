@@ -1,9 +1,9 @@
 ---
-title: LaTeX document classes
+title: LaTeX document classes | Aspose.TeX for Java
 type: docs
 weight: 20
 url: /java/latex-document-classes/
-keywords: latex documant class, latex documentclass, latex document template, latex article, latex book, latex slides, latex report, latex letter
+keywords: latex article class, latex documentclass, latex document template, latex article, latex book, latex slides, latex report, latex letter, documentclass latex options
 description: This article is a concise digest of the LaTeX document classes and their options. It also provides some examples.
 lastmod: "2023-04-14"
 sitemap:
@@ -23,8 +23,8 @@ The standard LaTeX contains the following document classes:
 
 | <div style="text-align:center;">LaTeX<br>document<br>class</div> | <div style="text-align:center;">Usage</div> |
 |---|---|
-| **article** | This document is used to create articles for scientific journals, short reports, program documentation, and in general any short document that doesn't need a complex division into chapters and parts. |
-| **report** | This one is used for long articles that can contain several chapters (something like small books and thesis). |
+| **article** | LaTeX article class is used to create articles for scientific journals, short reports, program documentation, and in general any short document that doesn't need a complex division into chapters and parts. |
+| **report** | LaTeX report class is used for long articles that can contain several chapters (something like small books and thesis). |
 | **book** | This is used to typeset real books. It includes all kinds of typesetting standards suitable for printed books: chapters and parts, two kinds of pages, front matter, back matter, etc.|
 | **slides** | It may be used to produce slides, although there is the external package [beamer](https://ctan.org/pkg/beamer) that is much more powerful for this purpose. |
 | **letter** | This document class is used for writing letters. |
@@ -47,7 +47,7 @@ The main matter is what includes the body of the book, starting with the first c
 
 > The `\chapter` command doesn't produce a chapter number in the front and back matters, although it does create an entry in the table of contents. This is typically used to create a preface or acknowledgements section. Within such chapters, only the starred versions of other sectioning commands (like, `\section*` and `\subsection`) should be used.
 
-## An example of using the book document class
+## An example of using the LaTeX book class
 
 ```tex
 % Book document class

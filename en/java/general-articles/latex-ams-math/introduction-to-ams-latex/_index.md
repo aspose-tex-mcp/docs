@@ -1,5 +1,5 @@
 ---
-title: 1. Introduction to AMS-LATEX
+title: 1. Introduction to AMS-LATEX | LaTeX manual
 type: docs
 weight: 10
 url: /java/introduction-to-ams-latex/

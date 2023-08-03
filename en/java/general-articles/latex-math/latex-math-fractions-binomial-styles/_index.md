@@ -4,7 +4,7 @@ type: docs
 weight: 50
 url: /java/latex-math-fractions-binomial-styles/
 keywords: latex, latex math formulas, latex math, latex math fractions, latex math binomial coefficients, latex math styles
-description: This article discusses typesetting of such math constructions as fractions, binomial coefficients, etc. It also covers the math styles in which TeX typesets formulas.
+description: Learn about typesetting of such math constructions as fractions, binomial coefficients, etc., and the math styles in which TeX typesets formulas.
 lastmod: "2023-07-04"
 sitemap:
     changefreq: "weekly"

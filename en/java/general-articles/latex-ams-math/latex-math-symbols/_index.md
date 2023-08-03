@@ -1,10 +1,10 @@
 ---
-title: 9. Symbols in math formulas
+title: 9. Symbols in math formulas | LaTeX manual
 type: docs
 weight: 90
 url: /java/latex-math-symbols/
 keywords: ams-latex, amsmath, amsfonts, amssymb, latex math sybol classes, stmaryrd package, st mary road font
-description: This article discusses the classification of math symbols in TeX, as well as access to symbols of various classes using commands of standard TeX(LaTeX) and the amssymb package.
+description: Learn the classification of math symbols in TeX, and access to symbols of various classes using commands of standard TeX(LaTeX) and the amssymb package.
 lastmod: "2023-06-06"
 sitemap:
     changefreq: "weekly"
@@ -187,7 +187,7 @@ $ u \not< v$ or $a \not\in \mathbf{A} $
 
 This generic method of negating a *Relation* symbol doesn't always give good results, especially with larger symbols, because the slash will always be of the same size, position, and slope. Due to this fact, some specially designed "negated symbols" are also available. See the list in the next table.
 
-![Symbols of class \mathrel (equality and order—negated)](latex-ams-math-9-17.png)
+![Symbols of class \mathrel (equality and orderï¿½negated)](latex-ams-math-9-17.png)
 
 > Symbols in blue require the `amssymb` package.
 

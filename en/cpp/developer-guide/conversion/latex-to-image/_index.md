@@ -1,7 +1,7 @@
 ---
 translation: true
 template: /templates/_template-conversion.md
-title: LaTeX to image | C++
+title: LaTeX to image | Aspose.TeX for C++
 linktitle: LaTeX to image
 type: docs
 weight: 10

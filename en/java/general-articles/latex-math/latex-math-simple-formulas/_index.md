@@ -1,5 +1,5 @@
 ---
-title: 1. Simple formulas
+title: 1. Simple formulas | LaTeX manual
 type: docs
 weight: 10
 url: /java/latex-math-simple-formulas/

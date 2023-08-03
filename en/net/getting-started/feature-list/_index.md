@@ -1,5 +1,5 @@
 ---
-title: Feature List | .NET
+title: Feature List | Aspose.TeX for .NET
 linktitle: Feature List
 type: docs
 weight: 30

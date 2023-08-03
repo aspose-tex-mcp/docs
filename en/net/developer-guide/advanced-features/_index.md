@@ -1,5 +1,5 @@
 ---
-title: Advanced Features | .NET
+title: Advanced Features | Aspose.TeX for .NET
 linktitle: Advanced Features 
 type: docs
 weight: 20

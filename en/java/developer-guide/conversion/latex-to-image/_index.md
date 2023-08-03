@@ -1,5 +1,5 @@
 ---
-title: LaTeX to image | Java
+title: LaTeX to image | Aspose.TeX for Java
 linktitle: LaTeX to image
 type: docs
 weight: 10

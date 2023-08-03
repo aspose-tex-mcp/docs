@@ -1,5 +1,5 @@
 ---
-title: Product Overview | .NET
+title: Product Overview | Aspose.TeX for .NET
 linktitle: Product Overview
 type: docs
 weight: 10

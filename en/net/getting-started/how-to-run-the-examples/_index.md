@@ -1,5 +1,5 @@
 ---
-title: How to Run the Examples in C#
+title: How to Run the Examples in C# | Aspose.TeX for .NET
 type: docs
 weight: 80
 url: /net/how-to-run-the-examples/

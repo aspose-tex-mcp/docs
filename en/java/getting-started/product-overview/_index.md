@@ -1,5 +1,5 @@
 ---
-title: Product Overview | Java
+title: Product Overview | Aspose.TeX for Java
 linktitle: Product Overview
 type: docs
 weight: 10

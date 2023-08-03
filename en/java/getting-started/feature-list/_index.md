@@ -1,5 +1,5 @@
 ---
-title: Feature List | Java
+title: Feature List | Aspose.TeX for Java
 linktitle: Feature List
 type: docs
 weight: 30
