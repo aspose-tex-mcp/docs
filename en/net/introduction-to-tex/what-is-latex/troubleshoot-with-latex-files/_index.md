@@ -64,7 +64,7 @@ It is worth mentioning that most of the cons of LaTeX are already solved with a 
 
 Working with LaTeX can sometimes lead to various challenges and problems. Let's take a look at some common issues that users might encounter:
 
-### Compilation Errors  ###
+### Compilation errors  ###
 
 #### Reasons for LaTeX compilation errors  ####
 
@@ -96,7 +96,7 @@ LaTeX documents must be compiled to produce the final output. Compilation errors
 - If the issues are complex, try compiling a simple LaTeX document to verify that the problem is not due to the LaTeX installation.
 - Use real-time tools to spot and correct errors.
 
-### Missing Packages  ###
+### Missing packages  ###
 
 LaTeX documents often rely on packages to provide additional features and formatting options. If these packages are not properly imported or installed, it may lead to failure.
 
@@ -166,7 +166,7 @@ For example:
 6. To adjust placement manually recognize content or break up large figures/tables into smaller ones.
 7. Use online editors where you will be able to drag and drop figures and tables to see how they fit on the page.
 
-### Spacing and Line Breaks ###
+### Spacing and line breaks ###
 
 LaTeX's automatic spacing and line-breaking rules might not always produce the desired results. This may cause awkwardly formatted text or large gaps between words.
 
@@ -212,9 +212,9 @@ To edit spacing and line breaks in LaTeX you will need to use a combination of c
 - `flushright` - right-aligns the content.
 
 
-### Cross-referencing Issues ###
+### Cross-referencing issues ###
 
-#### How to deal with cross-referencing Issues in LaTeX? ####
+#### How to deal with cross-referencing issues in LaTeX? ####
 
 Cross-referencing allows you to refer to sections, figures, tables, equations, and other elements within your document. Incorrect or missing references can occur if you don't update them after making changes to your document's structure. To deal with it in LaTeX you need to understand how to set up and use labels, references, and citations correctly. Here's a guide to help you manage cross-referencing in LaTeX:
 
@@ -260,7 +260,7 @@ As shown in Equation \eqref{eq:einstein}...
 
 ### Font and formatting consistency ###
 
-#### How to maintain Font and formatting consistency in LaTeX? ####
+#### How to maintain font and formatting consistency in LaTeX? ####
 
 Achieving consistent font sizes, styles, and formatting across different sections of the document may sometimes be a challenging task. It can be done with various LaTeX commands, packages, and settings to achieve this. 
 1. Choose a document class that aligns with your desired formatting style, such as `article`, `report`, `book`, or specific journal templates. Additionally, use the next packages to customize the formatting:
@@ -358,7 +358,7 @@ Remember that when you manipulate the  page layout you should take into account 
 
 ### Nested environments ###
 
-#### How to deal with problems caused by Nested environments in LaTeX? ####
+#### How to deal with problems caused by nested environments in LaTeX? ####
 
 It can sometimes be challenging to manage nested environments (like lists within lists), especially their formatting and indentation. Here are some tips to deal with problems caused by nested environments:
 1. Check for compatibility because not all environments are compatible when nested. For example, avoid nesting list environments (itemize, enumerate, description) inside each other without proper control over indentation and formatting.
