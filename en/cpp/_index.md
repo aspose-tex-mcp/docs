@@ -9,7 +9,7 @@ is_root: true
 
 {{% alert color="primary" %}}
 
-![Aspose.TeX for C++ logo](home-cpp.png)
+![Aspose.TeX for C++ logo](/tex/icons/aspose_tex-for-cpp.png)
 
 **Welcome to Aspose.TeX for C++**
 
