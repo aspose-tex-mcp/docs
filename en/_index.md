@@ -16,7 +16,7 @@ url: /
 
 {{% alert color="primary" %}}
 
-![Aspose.TeX for .NET logo](home-net.png)
+![Aspose.TeX for .NET logo](/tex/icons/aspose_tex-for-net.png)
 
 **Welcome to Aspose.TeX for .NET**
 
@@ -40,7 +40,7 @@ Following are the links to some useful resources you may need to accomplish your
 
 {{% alert color="primary" %}}
 
-![Aspose.TeX for Java logo](home-java.png)
+![Aspose.TeX for Java logo](/tex/icons/aspose_tex-for-java.png)
 
 **Welcome to Aspose.TeX for Java**
 
@@ -65,7 +65,7 @@ Following are the links to some useful resources you may need to accomplish your
 
 {{% alert color="primary" %}}
 
-![Aspose.TeX for C++ logo](home-cpp.png)
+![Aspose.TeX for C++ logo](/tex/icons/aspose_tex-for-cpp.png)
 
 **Welcome to Aspose.TeX for C++**
 

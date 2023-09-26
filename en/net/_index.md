@@ -11,7 +11,7 @@ is_root: true
 
 {{% alert color="primary" %}}
 
-![Aspose.TeX for .NET logo](home-net.png)
+![Aspose.TeX for .NET logo](/tex/icons/aspose_tex-for-net.png)
 
 **Welcome to Aspose.TeX for .NET**
 

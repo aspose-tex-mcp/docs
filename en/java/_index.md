@@ -9,7 +9,7 @@ is_root: true
 
 {{% alert color="primary" %}}
 
-![Aspose.TeX for Java logo](home-java.png)
+![Aspose.TeX for Java logo](/tex/icons/aspose_tex-for-java.png)
 
 **Welcome to Aspose.TeX for Java**
 
