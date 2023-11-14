@@ -2,9 +2,9 @@
     "logoImageSrc": "/tex/icons/aspose_tex-for-java.png",
     "appsText": "Live Demos",
     "appsLink": "https://products.aspose.app/tex/applications",
-    "landingsText": "Products",
-    "landingsLink": "https://products.aspose.com/tex/java",
-    "codeText": "Source code",
+    "landingsText": "",
+    "landingsLink": "",
+    "codeText": "Source Code",
     "codeLink": "https://github.com/aspose-tex/Aspose.TeX-for-Java",
     "apiReferenceText": "API Reference",
     "apiReferenceLink": "https://reference.aspose.com/tex/java/",
@@ -14,5 +14,5 @@
     "pricingLink": "https://purchase.aspose.com/pricing/tex/java",
     "buyText": "Buy",
     "buyLink": "https://purchase.aspose.com/buy/cart?ppId=99433",
-    "dropdownButtonText": "Aspose.TeX Links"
+    "dropdownButtonText": ""
 }

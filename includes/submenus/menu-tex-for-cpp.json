@@ -2,9 +2,9 @@
     "logoImageSrc": "/tex/icons/aspose_tex-for-cpp.png",
     "appsText": "Live Demos",
     "appsLink": "https://products.aspose.app/tex/applications",
-    "landingsText": "Products",
-    "landingsLink": "https://products.aspose.com/tex/cpp",
-    "codeText": "Source code",
+    "landingsText": "",
+    "landingsLink": "",
+    "codeText": "Source Code",
     "codeLink": "https://github.com/aspose-tex/Aspose.TeX-for-C",
     "apiReferenceText": "API Reference",
     "apiReferenceLink": "https://reference.aspose.com/tex/cpp/",
@@ -14,5 +14,5 @@
     "pricingLink": "https://purchase.aspose.com/pricing/tex/cpp",
     "buyText": "Buy",
     "buyLink": "https://purchase.aspose.com/buy/cart?ppId=99415",
-    "dropdownButtonText": "Aspose.TeX Links"
+    "dropdownButtonText": ""
 }
