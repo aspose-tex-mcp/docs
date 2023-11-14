@@ -5,6 +5,7 @@ type: docs
 weight: 20
 url: /net/embedded-packages/
 description: Here is a list of packages embedded into the Aspose.TeX library along with their descriptions and versions used.
+submenu: menu-tex-for-net
 ---
 
 There is a number of LaTeX packages embedded into the Aspose.TeX library. Here they are:

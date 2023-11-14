@@ -5,6 +5,7 @@ type: docs
 weight: 16
 url: /cpp/aspose-tex-output/
 description: Conversion functionality of Aspose.TeX API solution for C++ with TeX, as an output format is explained here with the code examples.
+submenu: menu-tex-for-cpp
 ---
 
 Please, refer to **Aspose.TeX for C++** [API reference](https://reference.aspose.com/tex/cpp/namespace/aspose.te_x.i_o) for formal definitions of I/O implementation.

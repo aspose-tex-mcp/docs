@@ -4,6 +4,7 @@ type: docs
 weight: 60
 url: /java/installation/
 description: Aspose.TeX API Documentation for Java can be found in the downloaded ZIP package or gotten from Maven Projects with simple configurations.
+submenu: menu-tex-for-java
 ---
 
 ## Installing Aspose.TeX for Java from Aspose Repository

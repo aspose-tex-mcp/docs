@@ -5,6 +5,7 @@ type: docs
 weight: 50
 url: /net/system-requirements/
 description: Aspose.TeX solution for .NET can be used in any development environment that support .NET, but there are some environments are explicitly supported.
+submenu: menu-tex-for-net
 ---
 
 ## Supported Operating Systems

@@ -5,6 +5,7 @@ type: docs
 weight: 15
 url: /cpp/aspose-tex-input/
 description: Conversion functionality of Aspose.TeX API solution for C++ with TeX, as an input format is explained here with the code examples.
+submenu: menu-tex-for-cpp
 ---
 
 Please, refer to **Aspose.TeX for C++** [API reference](https://reference.aspose.com/tex/cpp/namespace/aspose.te_x.i_o) for formal definitions of I/O implementation.

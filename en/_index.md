@@ -10,6 +10,7 @@ sitemap.priority: 0.5
 type: docs
 weight: 10
 url: /
+submenu: menu-tex
 ---
 
 {{<section welcome-net>}}

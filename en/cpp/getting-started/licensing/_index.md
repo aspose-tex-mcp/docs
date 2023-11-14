@@ -4,6 +4,7 @@ type: docs
 weight: 70
 url: /cpp/licensing/
 description: When you stopped on the licensed version of the Aspose.TeX API solution for C++ here you find out how to apply the license.
+submenu: menu-tex-for-cpp
 ---
 
 ## Evaluate Aspose.TeX

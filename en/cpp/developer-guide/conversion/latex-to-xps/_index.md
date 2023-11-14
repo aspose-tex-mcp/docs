@@ -9,6 +9,7 @@ lastmod: "2023-03-23"
 sitemap:
     changefreq: "weekly"
     priority: 0.8
+submenu: menu-tex-for-cpp
 ---
 
 Another target format supported by **Aspose.TeX** is [**XPS**](https://en.wikipedia.org/wiki/Open_XML_Paper_Specification). An **XPS** file is actually a ZIP package that contains paginated content of a document, together with the metadata required for proper display by specific viewers (such as Windows XPS Viewer) and printing. All data in a package is represented by files. Some of them are binary and contain resources such as images, fonts, and ICC profiles. Others are XML files in various specific schemas. The latter include files that contain the document data itself. Document data consists of a set of files - each file contains data for an individual page of the document. Such files consist of a single page element and a tree of child elements - *Canvas*, *Path* and *Glyphs*. *Canvas* is a grouping element that can contain other *Canvases*, *Paths* and *Glyphs*. Its mission is to control the appearance of all child elements as a group. *Path* elements are used to define vector graphics paths. And *Glyphs* elements are used to define textual content. All three elements have properties to define various aspects of appearance.

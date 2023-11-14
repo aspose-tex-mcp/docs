@@ -9,6 +9,7 @@ lastmod: "2023-04-14"
 sitemap:
     changefreq: "weekly"
     priority: 0.8
+submenu: menu-tex-for-java
 ---
 
 In LaTeX, there are certain features which allow producing structures that can grow to any required size. Mathematical typesetting is in dire need of such variability. We will discuss some aspects of it in this article. All commands covered in this section (unless otherwise noted) are provided by standard LaTeX.

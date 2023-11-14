@@ -9,6 +9,7 @@ lastmod: "2023-04-14"
 sitemap:
     changefreq: "weekly"
     priority: 0.8
+submenu: menu-tex-for-java
 ---
 
 There are a number of environments for typesetting matrix-like structures defined in the `amsmath` package. They are all similar to the standard LaTeX `array` environment in syntax and layout. In general, a wide variety of two-dimensional mathematical structures and tabular layouts can be described as arrays.

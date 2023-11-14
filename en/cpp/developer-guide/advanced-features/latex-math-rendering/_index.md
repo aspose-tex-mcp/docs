@@ -9,6 +9,7 @@ lastmod: "2021-10-14"
 sitemap:
     changefreq: "weekly"
     priority: 0.8
+submenu: menu-tex-for-cpp
 ---
 
 The API reference section related to this topic is [here](https://reference.aspose.com/tex/cpp/namespace/aspose.te_x.features). In fact, the easiest way to demonstrate the LaTeX math formula rendering feature is to start with the example. Here it is:

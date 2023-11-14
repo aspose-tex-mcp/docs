@@ -9,6 +9,7 @@ lastmod: "2023-03-23"
 sitemap:
     changefreq: "weekly"
     priority: 0.8
+submenu: menu-tex-for-net
 ---
 
 And yet another supported target format is [**SVG**](https://ru.wikipedia.org/wiki/SVG). **Scalable Vector Graphics (SVG)** is an XML-based vector image format for defining two-dimensional graphics, having support for interactivity and animation.

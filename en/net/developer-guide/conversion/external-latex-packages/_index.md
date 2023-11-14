@@ -9,6 +9,7 @@ lastmod: "2023-03-23"
 sitemap:
     changefreq: "weekly"
     priority: 0.8
+submenu: menu-tex-for-net
 ---
 
 ## External LaTeX packages

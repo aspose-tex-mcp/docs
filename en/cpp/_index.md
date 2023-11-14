@@ -5,6 +5,7 @@ weight: 30
 url: /cpp/
 description: Managing TeX files API solution for C++. The Library provides ways to pass TeX input and obtain output and features like creating your own TeX format.
 is_root: true
+submenu: menu-tex-for-cpp
 ---
 
 {{% alert color="primary" %}}

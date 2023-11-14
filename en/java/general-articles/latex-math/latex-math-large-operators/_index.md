@@ -9,6 +9,7 @@ lastmod: "2023-07-04"
 sitemap:
     changefreq: "weekly"
     priority: 0.8
+submenu: menu-tex-for-java
 ---
 
 In mathematics, there are symbols that denote, for example, the "summation" or "integration" operations. They are called "large operators", and you type them just as you type ordinary symbols and letters. The difference is that TeX will choose a larger symbol for the large operator in display style than it will in text style.

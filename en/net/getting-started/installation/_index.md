@@ -4,6 +4,7 @@ type: docs
 weight: 60
 url: /net/installation/
 description: Aspose.TeX API Documentation for .NET can be found in the downloaded ZIP package or gotten from NuGet Gallery, by clicking the “Download package”.
+submenu: menu-tex-for-net
 ---
 
 ## Installing Aspose.TeX for .NET through NuGet

@@ -9,6 +9,7 @@ lastmod: "2023-06-01"
 sitemap:
     changefreq: "weekly"
     priority: 0.8
+submenu: menu-tex-for-java
 ---
 
 Unlike in floating text, you would not generally need automatic changes in font shapes. Different shapes have specific meanings in maths. For example, bold upright letters may be used for vectors. If the characters in a formula were to change due to surrounding conditions, the result would be incorrect. That is why handling of fonts in math formulas differs from that in text.

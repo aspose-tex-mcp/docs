@@ -6,6 +6,7 @@ weight: 17
 url: /net/latex-io/
 description: This page briefly describes the peculiarities of working with LaTeX as an output or input format and the  *.aux* file as a mandatory part of LaTeX.
 keywords: latex io, latex i, latex o, latex input file, input in latex
+submenu: menu-tex-for-net
 ---
 
 ## LaTeX file

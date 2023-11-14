@@ -9,6 +9,7 @@ lastmod: "2023-07-04"
 sitemap:
     changefreq: "weekly"
     priority: 0.8
+submenu: menu-tex-for-java
 ---
 
 Whatever large a math formula may get, TeX knows a way of making some symbols large enough to have proper appearance. For example, the result of typing

@@ -9,6 +9,7 @@ lastmod: "2023-04-14"
 sitemap:
     changefreq: "weekly"
     priority: 0.8
+submenu: menu-tex-for-java
 ---
 
 Usually, LaTeX does a great job of laying out math formulas. But sometimes a finer adjustment of the positioning is needed. This article discusses some techniques for fine-tuning the layout to make math formulas a little better.

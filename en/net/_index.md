@@ -7,6 +7,7 @@ description: Manage TeX files within API solution for C# .NET. The Library provi
 aliases:
   - /display/texnet
 is_root: true
+submenu: menu-tex-for-net
 ---
 
 {{% alert color="primary" %}}

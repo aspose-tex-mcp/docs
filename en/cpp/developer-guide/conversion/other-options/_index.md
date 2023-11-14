@@ -5,6 +5,7 @@ type: docs
 weight: 17
 url: /cpp/other-options/
 description: Conversion functionality of Aspose.TeX API solution for C++ lets set the initial interaction mode in which the engine starts. Here are some code examples.
+submenu: menu-tex-for-cpp
 ---
 
 ## How to set the interaction mode

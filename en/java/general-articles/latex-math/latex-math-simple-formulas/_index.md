@@ -9,6 +9,7 @@ lastmod: "2023-07-04"
 sitemap:
     changefreq: "weekly"
     priority: 0.8
+submenu: menu-tex-for-java
 ---
 
 The simplest formula is a single letter '*x*' or a single digit '4'. To insert such a formula into a LaTeX text, you type `$x$` or `$4$`, respectively. All math formulas are enclosed in special math brackets (`$`).

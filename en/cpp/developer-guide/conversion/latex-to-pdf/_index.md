@@ -1,6 +1,6 @@
 ---
 translation: true
-template: /templates/_template-conversion.md
+template: /templates/_template-conversion-cpp.md
 title: LaTeX to PDF | C++
 linktitle: LaTeX to PDF
 type: docs
@@ -9,9 +9,6 @@ url: /cpp/latex-to-pdf/
 keywords: latex to pdf, latex pdf, convert latex to pdf
 description: To convert TeX to PDF using Aspose.TeX API solution for C++ learn this article to see that describes how to do this and the code examples.
 lastmod: "2021-10-14"
-sitemap:
-    changefreq: "weekly"
-    priority: 0.8
 ---
 
 {{<section overview>}}
@@ -23,7 +20,7 @@ Let's take a detailed look at the code in C++ providing the simplest way to conv
 {{<app/converter
   input="{{<import path="/includes/code-snippets/conversion-cpp.md" section="converter-latex-pdf.input">}}"  
   formats="{{<import path="/includes/code-snippets/conversion-cpp.md" section="converter-latex-pdf.output">}}"
-  title="{{<import path="/includes/code-snippets/conversion-dotnet.md" section="converter-latex-pdf.title">}}"
+  title="{{<import path="/includes/code-snippets/conversion-cpp.md" section="converter-latex-pdf.title">}}"
 >}}
 {{<import path="/includes/code-snippets/conversion-cpp.md" section="converter-latex-pdf">}}
 {{</app/converter>}}

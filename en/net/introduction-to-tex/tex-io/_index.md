@@ -5,6 +5,7 @@ type: docs
 weight: 12
 url: /net/tex-io/
 description: Fundamentals of working with TeX as an output or input format within Aspose.TeX API. TeX job runs on an explicitly specified file. 
+submenu: menu-tex-for-net
 ---
 
 ## TeX file

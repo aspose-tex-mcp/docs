@@ -1,6 +1,6 @@
 ---
 translation: true
-template: /templates/_template-conversion.md
+template: /templates/_template-conversion-cpp.md
 title: LaTeX to image | Aspose.TeX for C++
 linktitle: LaTeX to image
 type: docs
@@ -10,9 +10,6 @@ aliases: /cpp/latex-to-png/
 keywords: latex to png, latex png, latex to image, latex image, latex to jpg, latex jpg, latex to jpeg, latex jpeg, latex to tiff, latex tiff, latex to bmp, latex bmp
 description: To convert TeX to image formats using Aspose.TeX API solution for C++ learn this article that describes how to do this and the code examples.
 lastmod: "2023-03-23"
-sitemap:
-    changefreq: "weekly"
-    priority: 0.8
 ---
 
 {{<section overview>}}

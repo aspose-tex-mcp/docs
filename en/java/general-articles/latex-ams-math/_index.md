@@ -9,6 +9,7 @@ lastmod: "2023-04-14"
 sitemap:
     changefreq: "weekly"
     priority: 0.8
+submenu: menu-tex-for-java
 ---
 
 ## What is *AMS*-LATEX

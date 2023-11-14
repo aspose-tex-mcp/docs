@@ -5,6 +5,7 @@ weight: 20
 url: /java/
 description: Manage TeX files within API solution for Java. The Library provides ways to pass TeX input and obtain output and features like creating your own TeX format
 is_root: true
+submenu: menu-tex-for-java
 ---
 
 {{% alert color="primary" %}}

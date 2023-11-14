@@ -9,6 +9,7 @@ lastmod: "2023-07-04"
 sitemap:
     changefreq: "weekly"
     priority: 0.8
+submenu: menu-tex-for-java
 ---
 
 The 52 letters (`A` to `Z` and `a` to `z`) denote italic symbols, which a mathematician would call "variables". TeX calls them just "ordinary symbols", because they make up the bulk of math formulas. LaTeX also treats the following 18 characters

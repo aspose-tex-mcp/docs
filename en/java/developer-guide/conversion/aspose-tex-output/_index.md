@@ -5,6 +5,7 @@ type: docs
 weight: 16
 url: /java/aspose-tex-output/
 description: Conversion functionality of Aspose.TeX API solution for Java with TeX, as an output format is explained here with the code examples.
+submenu: menu-tex-for-java
 ---
 
 Please, refer to **Aspose.TeX for Java** [API reference](https://reference.aspose.com/tex/java/com.aspose.tex/package-frame) for formal definitions of I/O implementation.

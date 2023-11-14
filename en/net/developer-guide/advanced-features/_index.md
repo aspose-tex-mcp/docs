@@ -5,6 +5,7 @@ type: docs
 weight: 20
 url: /net/advanced-features/
 description: Aspose.TeX API solution features for .NET built on the basis of Object TeX/LaTeX implementation are gathered in this chapter.
+submenu: menu-tex-for-net
 ---
 
 This part discusses Aspose.TeX's features built on the basis of Object TeX/LaTeX implementation.

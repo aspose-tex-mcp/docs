@@ -9,6 +9,7 @@ lastmod: "2023-07-04"
 sitemap:
     changefreq: "weekly"
     priority: 0.8
+submenu: menu-tex-for-java
 ---
 
 ### 1. Lowercase Greek letters

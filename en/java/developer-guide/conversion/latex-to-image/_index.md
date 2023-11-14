@@ -11,6 +11,7 @@ lastmod: "2023-03-23"
 sitemap:
     changefreq: "weekly"
     priority: 0.8
+submenu: menu-tex-for-java
 ---
 
 **Aspose.TeX for Java** provides features for converting LaTeX files to a number of raster image formats.

@@ -4,6 +4,7 @@ type: docs
 weight: 70
 url: /net/licensing/
 description: When you stopped on the licensed version of the Aspose.TeX API solution for .NET here you find out how to apply the license.
+submenu: menu-tex-for-net
 ---
 
 ## Evaluate Aspose.TeX

@@ -9,6 +9,7 @@ lastmod: "2023-07-04"
 sitemap:
     changefreq: "weekly"
     priority: 0.8
+submenu: menu-tex-for-java
 ---
 
 Another common thing you may find in math formulas is fractions and other constructions where something like a numerator is placed on top of something like a denominator. An example of the latter is binomial coefficients.

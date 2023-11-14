@@ -4,6 +4,7 @@ type: docs
 weight: 80
 url: /java/how-to-run-the-examples/
 description: On this page, you will find all the requirements and steps that should be taken to run the examples of Aspose.TeX solution for Java.
+submenu: menu-tex-for-java
 ---
 
 ## Download from GitHub

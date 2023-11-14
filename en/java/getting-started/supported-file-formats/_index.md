@@ -5,6 +5,7 @@ type: docs
 weight: 20
 url: /java/supported-file-formats/
 description: This TeX manipulation solution for Java supports TeX files for input and a variety of output formats like TeX, XPS, PDF, PNG, JPEG, TIFF and PNG.
+submenu: menu-tex-for-java
 ---
 
 ## Supported File Formats

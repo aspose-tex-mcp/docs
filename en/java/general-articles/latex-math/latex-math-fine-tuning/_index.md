@@ -9,6 +9,7 @@ lastmod: "2023-07-04"
 sitemap:
     changefreq: "weekly"
     priority: 0.8
+submenu: menu-tex-for-java
 ---
 
 We have already discussed most of the facilities needed to construct math formulas. But there are still some fine points that will let you produce really beautiful formulas, the formulas that will improve the overall appearance and readability of the books and papers that you would type.

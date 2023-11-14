@@ -9,6 +9,7 @@ lastmod: "2023-06-06"
 sitemap:
     changefreq: "weekly"
     priority: 0.8
+submenu: menu-tex-for-java
 ---
 
 The tables in this article list the large range of math symbols provided by the AMS-LATEX packages, including commands to access each symbol. They also include the supplementary symbols from the **St Mary Road** font designed by Allan Jeffrey and Jeremy Gibbons. This package extends **Computer Modern** and AMS symbol font collections and should normally be loaded in addition to `amssymb`, but always after it. It provides extra symbols for fields such as functional programming, process algebra, domain theory, linear logic and many more.

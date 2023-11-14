@@ -9,6 +9,7 @@ lastmod: "2023-07-04"
 sitemap:
     changefreq: "weekly"
     priority: 0.8
+submenu: menu-tex-for-java
 ---
 
 By now we have discussed how to deal with individual formulas; but displays often involve a whole bunch of different formulas, or different pieces of a huge formula, and it may be a challenge to lay them out so that they line up properly with each other. Luckily, large displays generally fall into a few simple patterns.

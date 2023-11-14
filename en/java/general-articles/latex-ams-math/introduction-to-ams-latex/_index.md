@@ -9,6 +9,7 @@ lastmod: "2023-04-14"
 sitemap:
     changefreq: "weekly"
     priority: 0.8
+submenu: menu-tex-for-java
 ---
 
 *AMS*-LATEX version 1.0 was released in 1990 and presented the original conversion to LaTeX of the math capabilities in Michael Spivak's *AMS*-TEX by Frank Mittelbach and Rainer Schopf, who worked as consultants to the *AMS*, with assistance from Michael Downes of the *AMS* tech staff. In 1994, the further work was done with David M. Jones.

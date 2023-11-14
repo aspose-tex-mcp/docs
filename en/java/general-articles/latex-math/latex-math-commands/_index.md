@@ -9,6 +9,7 @@ lastmod: "2023-07-04"
 sitemap:
     changefreq: "weekly"
     priority: 0.8
+submenu: menu-tex-for-java
 ---
 
 Another way to build complex formulas from simple ones is to use the commands `\sqrt`, `\underline`, or `\overline`. They also apply to the character or subformula that follows them:

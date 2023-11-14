@@ -9,6 +9,7 @@ lastmod: "2023-04-14"
 sitemap:
     changefreq: "weekly"
     priority: 0.8
+submenu: menu-tex-for-java
 ---
 
 The `amsmath` package provides some commands to produce structures such as fraction-like objects and decorated symbols. This discusses covers some of them.

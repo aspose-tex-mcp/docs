@@ -9,6 +9,7 @@ lastmod: "2023-07-04"
 sitemap:
     changefreq: "weekly"
     priority: 0.8
+submenu: menu-tex-for-java
 ---
 
 Now let's try to build more complex formulas from simple ones. First, you can get superscripts and subscripts by using `^` and `_`, as shown in the following example:

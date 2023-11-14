@@ -9,6 +9,7 @@ lastmod: "2021-10-14"
 sitemap:
     changefreq: "weekly"
     priority: 0.8
+submenu: menu-tex-for-java
 ---
 
 ## How to render a LaTeX math formula to PNG
