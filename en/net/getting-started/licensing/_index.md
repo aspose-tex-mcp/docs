@@ -55,7 +55,7 @@ These code snippets initialize the license from stream.
 
 ### Metered License
 
-Aspose.TeX has an alternative licensing mechanism. Those customers who wish to be billed based on the usage of the API features can use *Metered Licensing*. Applying a *Metered License* is actually as simple as applying a couple of cryptographic keys. For more details, please refer to [Metered Licensing FAQ section](https://purchase.aspose.com/faqs/licensing/metered/).
+Aspose.TeX has an alternative licensing mechanism. Those customers who wish to be billed based on the usage of the API features can use *Metered Licensing*. Applying a *Metered License* is actually as simple as applying a pair of cryptographic keys. For more details, please refer to [Metered Licensing FAQ section](https://purchase.aspose.com/faqs/licensing/metered/).
 
 The public and private keys of a metered license are set using an instance of the [*Metered*](https://reference.aspose.com/tex/net/aspose.tex/metered/) class, as shown in the following example: 
 
