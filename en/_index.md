@@ -17,7 +17,7 @@ submenu: menu-tex
 
 {{% alert color="primary" %}}
 
-![Aspose.TeX for .NET logo](/tex/icons/aspose_tex-for-net.png)
+<p><img src="/tex/icons/aspose_tex-for-net.png" alt="Aspose.TeX for .NET logo" width="128" height="128"></p>
 
 **Welcome to Aspose.TeX for .NET**
 
@@ -41,7 +41,7 @@ Following are the links to some useful resources you may need to accomplish your
 
 {{% alert color="primary" %}}
 
-![Aspose.TeX for Java logo](/tex/icons/aspose_tex-for-java.png)
+<p><img src="/tex/icons/aspose_tex-for-java.png" alt="Aspose.TeX for Java logo" width="128" height="128"></p>
 
 **Welcome to Aspose.TeX for Java**
 
@@ -66,7 +66,8 @@ Following are the links to some useful resources you may need to accomplish your
 
 {{% alert color="primary" %}}
 
-![Aspose.TeX for C++ logo](/tex/icons/aspose_tex-for-cpp.png)
+<p><img src="/tex/icons/aspose_tex-for-cpp.png" alt="Aspose.TeX for C++ logo" width="128" height="128"></p>
+
 
 **Welcome to Aspose.TeX for C++**
 

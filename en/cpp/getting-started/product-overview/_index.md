@@ -10,7 +10,7 @@ submenu: menu-tex-for-cpp
 
 {{% alert color="primary" %}}
 
-![Aspose.TeX for C++](product-overview_1.png)
+<p><img src="/tex/cpp/product-overview/product-overview_1.png" alt="Aspose.TeX for C++" width="128" height="128"></p>
 
 **Welcome to Aspose.TeX for C++**
 

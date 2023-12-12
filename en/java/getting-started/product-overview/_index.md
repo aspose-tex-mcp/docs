@@ -10,7 +10,7 @@ submenu: menu-tex-for-java
 
 {{% alert color="primary" %}}
 
-![Aspose.TeX for Jave](product-overview_1.png)
+<p><img src="/tex/icons/aspose_tex-for-java.png" alt="Aspose.TeX for Java logo" width="128" height="128"></p>
 
 **Welcome to Aspose.TeX for Java**
 
