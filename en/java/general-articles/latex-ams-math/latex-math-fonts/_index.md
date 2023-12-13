@@ -32,13 +32,13 @@ LaTeX already has a few built-in alphabet identifiers. They are shown in the tab
 
 | *Command* | *Example code* | *Result* |
 |---|---|---|
-| `\mathcal` | `$\mathcal{A}=a$` | ![](latex-ams-math-8-1.png) |
-| `\mathrm` | `$\mathrm{max}_i$`| ![](latex-ams-math-8-2.png) |
-| `\mathbf` | `$\sum x = \mathbf{v}$`| ![](latex-ams-math-8-3.png) |
-| `\mathsf` | `$\mathsf{G}_1^2$`| ![](latex-ams-math-8-4.png) |
-| `\mathtt` | `$\mathtt{W}(a)$`| ![](latex-ams-math-8-5.png) |
-| `\mathnormal` | `$\mathnormal{abc}=abc$`| ![](latex-ams-math-8-6.png) |
-| `\mathit` | `$differ\neq\mathit{differ}$`| ![](latex-ams-math-8-7.png) |
+| `\mathcal` | `$\mathcal{A}=a$` | !["Calligraphic A Equals a"](latex-ams-math-8-1.png) |
+| `\mathrm` | `$\mathrm{max}_i$`| !["Roman Max Subscript i"](latex-ams-math-8-2.png) |
+| `\mathbf` | `$\sum x = \mathbf{v}$`| !["Bold Sum x Equals v"](latex-ams-math-8-3.png) |
+| `\mathsf` | `$\mathsf{G}_1^2$`| !["Sans-serif G Subscript 1 Superscript 2"](latex-ams-math-8-4.png) |
+| `\mathtt` | `$\mathtt{W}(a)$`| !["Typewriter W of a"](latex-ams-math-8-5.png) |
+| `\mathnormal` | `$\mathnormal{abc}=abc$`| !["Normal abc Equals abc"](latex-ams-math-8-6.png) |
+| `\mathit` | `$differ\neq\mathit{differ}$`| !["Italic Differ Not Equal to Differ"](latex-ams-math-8-7.png) |
 
 In LaTeX2e, math alphabet identifiers are commands with one argument, a single letter or a single word to be typeset in a special font.
 

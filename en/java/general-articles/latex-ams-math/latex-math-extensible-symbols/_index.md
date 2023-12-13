@@ -85,16 +85,17 @@ The vertical extensibility is much wider. The following table lists all the symb
 
 |||||||
 |:---:|---|:---:|---|:---:|---|
-| ![](latex-ams-math-delim-5-1.png) | `(` `)` | ![](latex-ams-math-delim-5-11.png) | `\{` `\}` | ![](latex-ams-math-delim-5-18.png) | *`\lVert` `\rVert`* |
-| ![](latex-ams-math-delim-5-2.png) | `\langle` `\rangle` | ![](latex-ams-math-delim-5-11.png) | `\lbrace` `\rbrace` | ![](latex-ams-math-delim-5-19.png) | *`\lvert` `\rvert`* |
-| ![](latex-ams-math-delim-5-3.png) | `\lgroup` `\rgroup` | ![](latex-ams-math-delim-5-12.png) | `[` `]` | ![](latex-ams-math-delim-5-20.png) | `|` |
-| ![](latex-ams-math-delim-5-4.png) | `\lmoustache` `\rmoustache` | ![](latex-ams-math-delim-5-12.png) | `\lbrack` `\rbrack` | ![](latex-ams-math-delim-5-20.png) | `\vert` |
-| ![](latex-ams-math-delim-5-5.png) | `\Downarrow`| ![](latex-ams-math-delim-5-13.png) | `\lceil` `\rceil` | ![](latex-ams-math-delim-5-20.png) | `\arrowvert` |
-| ![](latex-ams-math-delim-5-6.png) | `\Uparrow` | ![](latex-ams-math-delim-5-14.png) | `\lfloor` `\rfloor` | ![](latex-ams-math-delim-5-21.png) | `\bracevert` |
-| ![](latex-ams-math-delim-5-7.png) | `\Updownarrow` | ![](latex-ams-math-delim-5-15.png) | ***`\llbracket` `\rrbracket`*** | ![](latex-ams-math-delim-5-22.png) | `\Arrowvert` |
-| ![](latex-ams-math-delim-5-8.png) | `\downarrow` | ![](latex-ams-math-delim-5-16.png) | `/` | ![](latex-ams-math-delim-5-22.png) | `\|` |
-| ![](latex-ams-math-delim-5-9.png) | `\uparrow` | ![](latex-ams-math-delim-5-17.png) | `\backslash` | ![](latex-ams-math-delim-5-22.png) | `\Vert` |
-| ![](latex-ams-math-delim-5-10.png) | `\updownarrow` |  | `.` | ![](latex-ams-math-delim-5-23.png) | `\sqrtsign` |
+| !["Parentheses"](latex-ams-math-delim-5-1.png) | `(` `)` | !["Curly Braces Open"](latex-ams-math-delim-5-11.png) | `\{` `\}` | !["Double Vertical Bars"](latex-ams-math-delim-5-18.png) | *`\lVert` `\rVert`* |
+| !["Angle Brackets"](latex-ams-math-delim-5-2.png) | `\langle` `\rangle` | !["Curly Braces Close"](latex-ams-math-delim-5-11.png) | `\lbrace` `\rbrace` | !["Single Vertical Bars"](latex-ams-math-delim-5-19.png) | *`\lvert` `\rvert`* |
+| !["Lgroup and Rgroup"](latex-ams-math-delim-5-3.png) | `\lgroup` `\rgroup` | !["Square Brackets Open"](latex-ams-math-delim-5-12.png) | `[` `]` | !["Vertical Bar"](latex-ams-math-delim-5-20.png) | `|` |
+| !["Moustaches"](latex-ams-math-delim-5-4.png) | `\lmoustache` `\rmoustache` | !["Square Brackets Close"](latex-ams-math-delim-5-12.png) | `\lbrack` `\rbrack` | !["Vertical Bar"](latex-ams-math-delim-5-20.png) | `\vert` |
+| !["Down Arrow"](latex-ams-math-delim-5-5.png) | `\Downarrow` | !["Ceiling Brackets Open"](latex-ams-math-delim-5-13.png) | `\lceil` `\rceil` | !["Arrow Vertical Bar"](latex-ams-math-delim-5-20.png) | `\arrowvert` |
+| !["Up Arrow"](latex-ams-math-delim-5-6.png) | `\Uparrow` | !["Floor Brackets Close"](latex-ams-math-delim-5-14.png) | `\lfloor` `\rfloor` | !["Brace Vertical Bar"](latex-ams-math-delim-5-21.png) | `\bracevert` |
+| !["Up Down Arrow"](latex-ams-math-delim-5-7.png) | `\Updownarrow` | !["Double Brackets Open"](latex-ams-math-delim-5-15.png) | ***`\llbracket` `\rrbracket`*** | !["Double Arrow Vertical Bar"](latex-ams-math-delim-5-22.png) | `\Arrowvert` |
+| !["Single Down Arrow"](latex-ams-math-delim-5-8.png) | `\downarrow` | !["Slash"](latex-ams-math-delim-5-16.png) | `/` | !["Double Vertical Line"](latex-ams-math-delim-5-22.png) | `\|` |
+| !["Single Up Arrow"](latex-ams-math-delim-5-9.png) | `\uparrow` | !["Back Slash"](latex-ams-math-delim-5-17.png) | `\backslash` | !["Double Vertical Line"](latex-ams-math-delim-5-22.png) | `\Vert` |
+| !["Single Up Down Arrow"](latex-ams-math-delim-5-10.png) | `\updownarrow` | | `.` | !["Square Root Sign"](latex-ams-math-delim-5-23.png) | `\sqrtsign` |
+
 
 > *Symbols in italics require either the `amsmath` package or, if additionally typed in bold, the `stmaryrd` package. A period (.) is not itself an extensible symbol, but it can be used to produce an "invisible" delimiter. The `\sqrtsign` symbol cannot be used with `\left`, `\right`, or `\middle`.*
 

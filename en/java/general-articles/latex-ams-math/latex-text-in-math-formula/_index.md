@@ -34,19 +34,19 @@ The names of common math functions (e.g., *sin* and *log*) and operators (e.g., 
 
 |||||||
 |:---:|---|:---:|---|:---:|---|
-| ![](latex-ams-math-foper-6-1.png) | `\arccos` | ![](latex-ams-math-foper-6-14.png) | `\arcsin` | ![](latex-ams-math-foper-6-27.png) | `\arctan` |
-| ![](latex-ams-math-foper-6-2.png) | `\arg` | ![](latex-ams-math-foper-6-15.png) | `\cos` | ![](latex-ams-math-foper-6-28.png) | `\cosh` |
-| ![](latex-ams-math-foper-6-3.png) | `\cot` | ![](latex-ams-math-foper-6-16.png) | `\coth` | ![](latex-ams-math-foper-6-29.png) | `\csc` |
-| ![](latex-ams-math-foper-6-4.png) | `\deg` | ![](latex-ams-math-foper-6-17.png) | *`\det`* | ![](latex-ams-math-foper-6-30.png) | `\dim` |
-| ![](latex-ams-math-foper-6-5.png) | `\exp` | ![](latex-ams-math-foper-6-18.png) | *`\gcd`* | ![](latex-ams-math-foper-6-31.png) | `\hom` |
-| ![](latex-ams-math-foper-6-6.png) | *`\inf`* | ![](latex-ams-math-foper-6-19.png) | ***`\injlim`*** | ![](latex-ams-math-foper-6-32.png) | `\ker` |
-| ![](latex-ams-math-foper-6-7.png) | `\lg` | ![](latex-ams-math-foper-6-20.png) | *`\lim`* | ![](latex-ams-math-foper-6-33.png) | *`\liminf`* |
-| ![](latex-ams-math-foper-6-8.png) | *`\limsup`* | ![](latex-ams-math-foper-6-21.png) | `\ln` | ![](latex-ams-math-foper-6-34.png) | `\log` |
-| ![](latex-ams-math-foper-6-9.png) | *`\max`* | ![](latex-ams-math-foper-6-22.png) | *`\min`* | ![](latex-ams-math-foper-6-35.png) | *`\Pr`* |
-| ![](latex-ams-math-foper-6-10.png) | ***`\projlim`*** | ![](latex-ams-math-foper-6-23.png) | `\sec` | ![](latex-ams-math-foper-6-36.png) | `\sin` |
-| ![](latex-ams-math-foper-6-11.png) | `\sinh` | ![](latex-ams-math-foper-6-24.png) | *`\sup`* | ![](latex-ams-math-foper-6-37.png) | `\tan` |
-| ![](latex-ams-math-foper-6-12.png) | `\tanh` | ![](latex-ams-math-foper-6-25.png) | ***`\varinjlim`*** | ![](latex-ams-math-foper-6-38.png) | ***`\varliminf`*** |
-| ![](latex-ams-math-foper-6-13.png) | ***`\varlimsup`*** | ![](latex-ams-math-foper-6-26.png) | ***`\varprojlim`*** |  |  |
+| !["Arccos"](latex-ams-math-foper-6-1.png) | `\arccos` | !["Arcsin"](latex-ams-math-foper-6-14.png) | `\arcsin` | !["Arctan"](latex-ams-math-foper-6-27.png) | `\arctan` |
+| !["Arg"](latex-ams-math-foper-6-2.png) | `\arg` | !["Cos"](latex-ams-math-foper-6-15.png) | `\cos` | !["Cosh"](latex-ams-math-foper-6-28.png) | `\cosh` |
+| !["Cot"](latex-ams-math-foper-6-3.png) | `\cot` | !["Coth"](latex-ams-math-foper-6-16.png) | `\coth` | !["Csc"](latex-ams-math-foper-6-29.png) | `\csc` |
+| !["Deg"](latex-ams-math-foper-6-4.png) | `\deg` | !["Det"](latex-ams-math-foper-6-17.png) | *`\det`* | !["Dim"](latex-ams-math-foper-6-30.png) | `\dim` |
+| !["Exp"](latex-ams-math-foper-6-5.png) | `\exp` | !["Gcd"](latex-ams-math-foper-6-18.png) | *`\gcd`* | !["Hom"](latex-ams-math-foper-6-31.png) | `\hom` |
+| !["Inf"](latex-ams-math-foper-6-6.png) | *`\inf`* | !["Injlim"](latex-ams-math-foper-6-19.png) | ***`\injlim`*** | !["Ker"](latex-ams-math-foper-6-32.png) | `\ker` |
+| !["Lg"](latex-ams-math-foper-6-7.png) | `\lg` | !["Lim"](latex-ams-math-foper-6-20.png) | *`\lim`* | !["Liminf"](latex-ams-math-foper-6-33.png) | *`\liminf`* |
+| !["Limsup"](latex-ams-math-foper-6-8.png) | *`\limsup`* | !["Ln"](latex-ams-math-foper-6-21.png) | `\ln` | !["Log"](latex-ams-math-foper-6-34.png) | `\log` |
+| !["Max"](latex-ams-math-foper-6-9.png) | *`\max`* | !["Min"](latex-ams-math-foper-6-22.png) | *`\min`* | !["Pr"](latex-ams-math-foper-6-35.png) | *`\Pr`* |
+| !["Projlim"](latex-ams-math-foper-6-10.png) | ***`\projlim`*** | !["Sec"](latex-ams-math-foper-6-23.png) | `\sec` | !["Sin"](latex-ams-math-foper-6-36.png) | `\sin` |
+| !["Sinh"](latex-ams-math-foper-6-11.png) | `\sinh` | !["Sup"](latex-ams-math-foper-6-24.png) | *`\sup`* | !["Tan"](latex-ams-math-foper-6-37.png) | `\tan` |
+| !["Tanh"](latex-ams-math-foper-6-12.png) | `\tanh` | !["Varinjlim"](latex-ams-math-foper-6-25.png) | ***`\varinjlim`*** | !["Varliminf"](latex-ams-math-foper-6-38.png) | ***`\varliminf`*** |
+| !["Varlimsup"](latex-ams-math-foper-6-13.png) | ***`\varlimsup`*** | !["Varprojlim"](latex-ams-math-foper-6-26.png) | ***`\varprojlim`*** |  |  |
 
 ```tex
 \usepackage[fleqn]{amsmath}

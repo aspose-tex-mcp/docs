@@ -169,10 +169,10 @@ To show the resulting vertical space we added rules:
 
 | *Appearance* | `Code` | *Comment* |
 |:---:|:---:|---|
-| ![](latex-ams-math-smashing-7-1.png) | `\left( {\Hmjd } \right)` | *Outer brackets too large* |
-| ![](latex-ams-math-smashing-7-2.png) | `\left( \smash{\Hmjd } \right)` | *Outer brackets too small and rules too close* |
-| ![](latex-ams-math-smashing-7-3.png) | `\left( \smash[t]{\Hmjd } \right) \vphantom{\Hmjd}` | *Just right!* |
-| ![](latex-ams-math-smashing-7-4.png) | `\left( \smash[t]{\Hmjd } \right)` | *Both `\vphantom` and partial smash are needed* |
+| !["Outer Brackets Too Large"](latex-ams-math-smashing-7-1.png) | `\left( {\Hmjd } \right)` | *Outer brackets too large* |
+| !["Outer Brackets Too Small and Rules Too Close"](latex-ams-math-smashing-7-2.png) | `\left( \smash{\Hmjd } \right)` | *Outer brackets too small and rules too close* |
+| !["Just Right"](latex-ams-math-smashing-7-3.png) | `\left( \smash[t]{\Hmjd } \right) \vphantom{\Hmjd}` | *Just right!* |
+| !["Both Vphantom and Partial Smash Needed"](latex-ams-math-smashing-7-4.png) | `\left( \smash[t]{\Hmjd } \right)` | *Both `\vphantom` and partial smash are needed* |
 
 > In a few places, deficiencies in the low-level TeX processing may lead to errors in the fine details of typesetting. This may happen in particular layouts where (a) a sub-formula (numerator/denominator of a fraction or subscript/superscript) consist of exactly one LR-box, or a similarly constructed math box, and also (b) that box doesn't have its natural size, as with the more complex forms of `\makebox`, smashes, and some phantoms.
 
