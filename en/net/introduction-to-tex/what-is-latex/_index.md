@@ -130,8 +130,9 @@ left justified & center & right justified \\ \hline
 
 And here are two pages of output:
 
-<a href="/tex/net/what-is-latex/example-page-1.png" style="display:inline-block;width:49%;">![](example-page-1.png)</a>
-<a href="/tex/net/what-is-latex/example-page-2.png" style="display:inline-block;width:49%;">![](example-page-2.png)</a>
+<a href="/tex/net/what-is-latex/example-page-1.png" style="display:inline-block;width:49%;" aria-label="Example Page 1">![Example Page 1](example-page-1.png)</a>
+<a href="/tex/net/what-is-latex/example-page-2.png" style="display:inline-block;width:49%;" aria-label="Example Page 2">![Example Page 2](example-page-2.png)</a>
+
 
 Naturally, we do not pretend to have any complete answer to the question "What is LaTeX?", since this is quite a large amount of information. Since writing a LaTeX file is still programming, you will have to spend some time if you want to get better acquainted with it. Do you want it or not.
 
