@@ -48,7 +48,7 @@ System::MakeObject<Aspose::TeX::TeXJob>(System::MakeObject<XpsDevice>(), options
 As soon as it's run, the engine sticks, waiting for us to enter the file name (with or without a path, with or without an extension):
 
 
-![](Conversion-MainInputTerminal.png)
+![Terminal window](Conversion-MainInputTerminal.png)
 
 And this is how it would look on the output terminal which is the console:
 

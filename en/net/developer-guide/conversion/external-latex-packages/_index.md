@@ -51,7 +51,7 @@ options.RequiredInputDirectory = new InputFileSystemDirectory("path-to-directory
 
 After running a TeX job with this option (don't forget to adjust the other options as needed), we get the output document (i.e., a PNG image).
 
-![](Conversion-RequiredInputFs.png)
+![Output Document](Conversion-RequiredInputFs.png)
 
 Here is the complete source code for the example:
 
@@ -93,7 +93,7 @@ First example is 2D and 3D math expressions plotted side-by-side.
 
 On the 3rd line, we can see that the file requires the `pgfplots` package, which is also not "natively" supported. Again, we assume that we have the `pgfplots` package source files. It's quite a large number of files that are divided between two locations if you find them in the installation directory of any LaTeX typesetting application. You can find `pgfplots` folder at both `\tex\generic` and `\tex\latex` folders. And the contents of both these folders must be provided as required input to the Aspose.TeX library. We want these source file to be packaged in a ZIP archive, so here is the archive's layout:
 
-![](pgfplots-zip-layout.png)
+![Archive’s Layout](pgfplots-zip-layout.png)
 
 And this is how we specify the access to these source files:
 
@@ -109,7 +109,7 @@ using (Stream zipStream = File.Open("path-to-zip-with-pgfplots-sources"), FileMo
 
 After running a TeX job with this option, we get the output document:
 
-![](Conversion-RequiredInputZip.png)
+![Output Document](Conversion-RequiredInputZip.png)
 
 Here is the complete source code for the example:
 
