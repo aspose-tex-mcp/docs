@@ -117,8 +117,18 @@ Here is the complete source code for the example:
 
 > **_NOTE:_** The result was verified using the `pgfplots` package version 1.18.1. While the version of the `pfg` package included in the **Aspose.TeX** library is 3.1.9a.
 
+### Employing external font packages
+
+As a rule, LaTeX distributions provide a set of default fonts available for typesetting. Except these fonts, **Aspose.TeX** includes a number of non-standard font packages. For example, `amsfonts`, `eurosym`, and `wasysym`. As we saw above, Aspose.TeX also allows to employ external packages. But mostly we were talking about packages that don't contain fonts.
+
+The **Aspose.TeX**'s *Object TeX* engine extension needs font maps (which are text files in a certain format with the `.map` extension by convention) to determine which physical fonts correspond to each TeX's internal font name. These font maps must be loaded into TeX's memory during the initialization phase. And, of course, they must be present among the files of the package you are plugging in. Since the engine doesn't know the names of all font maps, it looks for all files with the `.map` extension. Therefore, an implementation of the [IInputWorkingDirectory](https://reference.aspose.com/tex/net/aspose.tex.io/iinputworkingdirectory/) interface that is used as a value of the [RequiredInputDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/requiredinputdirectory/) option must provide a way to access collections of file names by extension. More specifically, this implementation must also implement the [IFileCollector](https://reference.aspose.com/tex/net/aspose.tex.io/ifilecollector/) interface. The standard implementations - [InputFileSystemDirectory](https://reference.aspose.com/tex/net/aspose.tex.io/inputfilesystemdirectory/) and [InputZipDirectory](https://reference.aspose.com/tex/net/aspose.tex.io/inputzipdirectory/) - already do it.
+
+Below, we provide an illustrative example of a custom required input directory that also implements the [IFileCollector](https://reference.aspose.com/tex/net/aspose.tex.io/ifilecollector/) interface. While focusing on collecting file names by extension, we intentionally omit the details of file storage and retrieval.
+
+{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-RequiredInputDirectory.cs" >}}
+
 ### Restrictions
 
-It may happen that a package required by your LaTeX file is developed under the `LaTeX3e` kernel. Such a package will most likely not work with the **Aspose.TeX** library since the latter is based on the `LaTeX2e` kernel.
+It may happen that a package required by your LaTeX file is developed under the *LaTeX3e* kernel. Such a package will most likely not work with the **Aspose.TeX** library since the latter is based on the *LaTeX2e* kernel.
 
-It may also happen that a package required by your LaTeX file directly calls device-dependent primitive commands that are not supported by the **Aspose.TeX** library's `Object TeX` engine. Such a package, unfortunately, will not work for sure.
+It may also happen that a package required by your LaTeX file directly calls device-dependent primitive commands that are not supported by the **Aspose.TeX** library's *Object TeX* engine. Such a package, unfortunately, will not work for sure.
