@@ -26,7 +26,7 @@ Following are the links to some useful resources you may need to accomplish your
 - [Aspose.TeX for Java Release Notes](https://releases.aspose.com/tex/java/release-notes/)
 - [Download Aspose.TeX for Java](https://releases.aspose.com/tex/java/)
 - [Aspose.TeX for Java Maven Repository](https://releases.aspose.com/java/repo/com/aspose/aspose-tex/)
-- [Aspose.TeX for Java Product Page](https://products.aspose.com/tex/java)
+- [Aspose.TeX for Java Product Page](https://products.aspose.com/tex/java/)
 - [Aspose.TeX for Java API Reference Guide](https://reference.aspose.com/tex/java)
 - [Aspose.TeX for Java Free Support Forum](https://forum.aspose.com/c/tex)
 - [Aspose.TeX for Java Paid Support Helpdesk](https://helpdesk.aspose.com/)

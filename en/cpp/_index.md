@@ -24,7 +24,7 @@ Following are the links to some useful resources you may need to accomplish your
 - [Aspose.TeX for C++ Online Documentation](/tex/cpp/)
 - [Aspose.TeX for C++ Features](/tex/cpp/feature-list/)
 - [Aspose.TeX for C++ Release Notes](https://releases.aspose.com/tex/cpp/release-notes/)
-- [Aspose.TeX for C++ Product Page](https://products.aspose.com/tex/cpp)
+- [Aspose.TeX for C++ Product Page](https://products.aspose.com/tex/cpp/)
 - [Install Aspose.TeX for C++ NuGet Package](https://www.nuget.org/packages/Aspose.TeX/)
 - [Aspose.TeX for C++ API Reference Guide](https://reference.aspose.com/tex/cpp)
 - [Aspose.TeX for C++ Free Support Forum](https://forum.aspose.com/c/tex)
