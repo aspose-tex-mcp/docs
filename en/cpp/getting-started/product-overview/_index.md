@@ -39,8 +39,8 @@ This table lists important Aspose.TeX for C++ technical resources.
 
 |**Resource**|**Description**|
 | :- | :- |
-|[Aspose.TeX for C++ home page](https://products.aspose.com/tex/cpp)|Product home page.|
+|[Aspose.TeX for C++ home page](https://products.aspose.com/tex/cpp/)|Product home page.|
 |[Aspose.TeX blog](https://blog.aspose.com/category/tex/)|Check this often for information about new releases and useful tips about Aspose.TeX for C++.|
 |[Aspose.TeX for C++ download](https://www.nuget.org/packages/aspose.tex.cpp/)|Download the latest version of Aspose.TeX for C++ from here. We release often.|
-|[Aspose.TeX for C++ support forum](https://forum.aspose.com/tex)|Post your questions and issues here for a speedy resolution.|
-|[Aspose.TeX for C++ product documentation](/tex/cpp)|Full online documentation that includes this documentation as well as Aspose.TeX for C++ API Reference.|
+|[Aspose.TeX for C++ support forum](https://forum.aspose.com/c/tex)|Post your questions and issues here for a speedy resolution.|
+|[Aspose.TeX for C++ product documentation](/tex/cpp/)|Full online documentation that includes this documentation as well as Aspose.TeX for C++ API Reference.|
