@@ -32,7 +32,7 @@ Now that we have our own TeX format, we want to typeset a TeX file written in th
 
 {{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-TypesetWithCustomTeXFormat.java" >}}
 
-Obviously, we have to specify the format somehow. First of all, we need to create an instance of the [FormatProvider](https://reference.aspose.com/tex/java/com.aspose.tex/FormatProvider) class. Then, in options constructor, we use the [TeXConfig.objectTeX()](https://reference.aspose.com/tex/java/com.aspose.tex/TeXConfig#objectTeX--) configuration, which takes our format provider as an argument and loads the format on top of the "virgin" state of the engine.
+Obviously, we have to specify the format somehow. First of all, we need to create an instance of the [FormatProvider](https://reference.aspose.com/tex/java/com.aspose.tex/FormatProvider) class. Then, in the options constructor, we use the [TeXConfig.objectTeX()](https://reference.aspose.com/tex/java/com.aspose.tex/TeXConfig#objectTeX--) configuration, which takes our format provider as an argument and loads the format on top of the "virgin" state of the engine.
 
 The rest of the code should be familiar to you. It uses the features discussed earlier in this [guide](/tex/java/conversion/).
 

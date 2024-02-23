@@ -21,7 +21,7 @@ options->set_Interaction(Interaction::NonstopMode);
 
 ## How to set the job name
 
-When we pass the main input file as a file name, we get output files with the same name, although with another extensions. The TeX engine calls the input file's name the *job name* and uses it for output files, except in cases when auxilliary files with explicitly specified other names are written. When we pass the main input file as a [stream](/tex/cpp/other-ways-of-main-input/#providing-the-main-input-file-as-a-stream), the TeX engine uses the default job name, which is *texput*.
+When we pass the main input file as a file name, we get output files with the same name, although with other extensions. The TeX engine calls the input file's name the *job name* and uses it for output files, except in cases when auxiliary files with explicitly specified other names are written. When we pass the main input file as a [stream](/tex/cpp/other-ways-of-main-input/#providing-the-main-input-file-as-a-stream), the TeX engine uses the default job name, which is *texput*.
 In both cases, we can override the job name by assigning the appropriate conversion option.
 
 ```C++

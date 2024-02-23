@@ -2,7 +2,7 @@
 title: External LaTeX packages | .NET
 linktitle: External LaTeX packages
 type: docs
-weight: 19
+weight: 20
 url: /net/external-latex-packages/
 description: Aspose.TeX API for .NET allows using external packages, i.e. the ones not included in the library itself like fancybox and pgfplots packages.
 lastmod: "2023-03-23"
@@ -18,7 +18,7 @@ The **Aspose.TeX** library includes a number of [common LaTeX packages](/tex/net
 
 ### Unpacked required input (`fancybox` package)
 
-Let's say we have the following simple LaTeX file, which is `required-input-fs.tex` from our [example solution](https://github.com/aspose-tex/Aspose.TeX-for-.NET):
+Let's say we have the following simple LaTeX file, which is `required-input-fs.tex` from our [example solution](https://GitHub.com/aspose-tex/Aspose.TeX-for-.NET):
 
 ```tex
 \documentclass{article}

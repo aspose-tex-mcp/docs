@@ -23,7 +23,7 @@ The LaTeX to XPS conversion is just as simple as the [conversion to raster image
 
 {{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-LaTeXToXps-Simplest.cs" >}}
 
-### An alternative way to write main output XPS file
+### An alternative way to write the main output XPS file
 
 There's another constructor of the [XpsDevice](https://reference.aspose.com/tex/net/aspose.tex.presentation.xps/xpsdevice/xpsdevice/) class, which lets us get the resulting XPS file in an alternative way.
 

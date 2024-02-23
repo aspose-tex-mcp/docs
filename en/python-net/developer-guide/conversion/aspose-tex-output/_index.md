@@ -45,7 +45,7 @@ To achieve this, we need to set the [terminal_out](https://reference.aspose.com/
 
 Once again, this is the default value of the option, so there is no real need to specify it. Therefore, this section is provided solely for demonstration purposes.
 
-### Writing terminal output to file
+### Writing terminal output to a file
 
 In contrast to the input terminal, **Aspose.TeX for Python** includes an implementation of the *IOutputTerminal* interface that enables us to write the terminal output to a file within a specified output directory.
 

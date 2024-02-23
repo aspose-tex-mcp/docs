@@ -32,7 +32,7 @@ Now that we have our own TeX format, we want to typeset a TeX file written in th
 
 {{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-TypesetWithCustomTeXFormat.cs" >}}
 
-Obviously, we have to specify the format somehow. First of all, we need to create an instance of the [FormatProvider](https://reference.aspose.com/tex/net/aspose.tex.resourceproviders/formatprovider/) class. Then, in options constructor, we use the [TeXConfig.ObjectTeX()](https://reference.aspose.com/tex/net/aspose.tex/texconfig/objecttex/) configuration, which takes our format provider as an argument and loads the format on top of the "virgin" state of the engine.
+Obviously, we have to specify the format somehow. First of all, we need to create an instance of the [FormatProvider](https://reference.aspose.com/tex/net/aspose.tex.resourceproviders/formatprovider/) class. Then, in the options constructor, we use the [TeXConfig.ObjectTeX()](https://reference.aspose.com/tex/net/aspose.tex/texconfig/objecttex/) configuration, which takes our format provider as an argument and loads the format on top of the "virgin" state of the engine.
 
 The rest of the code should be familiar to you. It uses the features discussed earlier in this [guide](/tex/net/conversion/).
 

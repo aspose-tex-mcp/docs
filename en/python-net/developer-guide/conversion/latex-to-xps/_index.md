@@ -23,7 +23,7 @@ The process of converting LaTeX to XPS is equally straightforward, similar to th
 
 {{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Conversion-LaTeXToXps-Simplest.py" >}}
 
-### An alternative way to write main output XPS file
+### An alternative way to write the main output XPS file
 
 There is an alternative constructor available for the *XpsDevice* class, which allows for obtaining the resulting XPS file in a different manner.
 

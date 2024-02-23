@@ -4,7 +4,9 @@ linktitle: LaTeX to image
 type: docs
 weight: 10
 url: /python-net/latex-to-image/
-aliases: /python-net/latex-to-png/
+aliases: 
+- /python-net/latex-to-png/
+- /python-net/latex-to-svg/
 keywords: latex to png, latex png, latex to image, latex image, latex to jpg, latex jpg, latex to jpeg, latex jpeg, latex to tiff, latex tiff, latex to bmp, latex bmp
 description: To convert TeX to image formats using Aspose.TeX API solution for Python learn this article to see that describes how to do this and the code examples.
 lastmod: "2023-03-23"
@@ -86,3 +88,18 @@ Below, we will briefly explain the conversion of LaTeX to other supported raster
 {{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Conversion-LaTeXToBmp.py" >}}
 
 **You can also explore the free [web app for LaTeX-to-BMP conversion](https://products.aspose.app/tex/conversion/latex-to-bmp), which is developed using the [Aspose.TeX for .NET API](https://products.aspose.com/tex/net/).**
+
+
+## Converting LaTeX to SVG
+
+Another supported target format is [**SVG**](https://en.wikipedia.org/wiki/SVG). **Scalable Vector Graphics (SVG)** is an XML-based vector image format that is used to define two-dimensional graphics. It supports interactivity and animation.
+
+**SVG** images are stored in XML text files and defined in a vector graphics format. This means that **SVG** images can be scaled in size without losing quality, and **SVG** files themselves can be searched, indexed, scripted, and compressed. The XML text files can be created and edited using text editors or vector graphics editors, and they can be rendered by the most commonly used web browsers.
+
+The [**Aspose.SVG**](https://products.aspose.com/svg/) API offers a range of features for working with **SVG**, such as creating, loading, editing, and converting **SVG** documents.
+
+Converting LaTeX to SVG is just as straightforward as [converting to raster image formats](/tex/python-net/latex-to-image/), with the only difference being that the [save_options](https://reference.aspose.com/tex/python-net/aspose.tex/texoptions/save_options/) must be set to an instance of the [SvgSaveOptions](https://reference.aspose.com/tex/python-net/aspose.tex.presentation.svg/svgsaveoptions/) class and the device must be changed to an instance of the [SvgDevice](https://reference.aspose.com/tex/python-net/aspose.tex.presentation.svg/svgdevice/) class.
+
+{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Conversion-LaTeXToSvg-Simplest.py" >}}
+
+**You can also explore the free [web app for LaTeX-to-SVG conversion](https://products.aspose.app/tex/conversion/latex-to-svg), which is developed using the [Aspose.TeX for .NET API](https://products.aspose.com/tex/net/).**

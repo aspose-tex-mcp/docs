@@ -13,7 +13,7 @@ Before proceeding, please ensure that the `Aspose.TeX-...` folder appears in the
 
 ## Download from GitHub
 
-All examples of Aspose.TeX for Python are available on [GitHub](https://github.com/aspose-TeX/Aspose.TeX-for-Python-.NET). You have two options to access the examples: you can either clone the repository using your preferred GitHub client, or you can download the ZIP file from [here](https://github.com/aspose-TeX/Aspose.TeX-for-Python-.NET/archive/master.zip). Extract the contents of the ZIP file to any folder on your computer. You will find all the examples located in the `Aspose.TeX.Examples` folder. Below, we will demonstrate how to build and run the examples using popular IDEs.
+All examples of Aspose.TeX for Python are available on [GitHub](https://GitHub.com/aspose-TeX/Aspose.TeX-for-Python-.NET). You have two options to access the examples: you can either clone the repository using your preferred GitHub client, or you can download the ZIP file from [here](https://GitHub.com/aspose-TeX/Aspose.TeX-for-Python-.NET/archive/master.zip). Extract the contents of the ZIP file to any folder on your computer. You will find all the examples located in the `Aspose.TeX.Examples` folder. Below, we will demonstrate how to build and run the examples using popular IDEs.
 
 If you encounter any issues while setting up or running the examples, please feel free to reach out to us through our Forums.
 

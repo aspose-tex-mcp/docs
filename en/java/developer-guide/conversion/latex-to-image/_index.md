@@ -4,7 +4,9 @@ linktitle: LaTeX to image
 type: docs
 weight: 10
 url: /java/latex-to-image/
-aliases: /java/latex-to-png/
+aliases: 
+- /java/latex-to-png/
+- /java/latex-to-svg/
 keywords: latex to png, latex png, latex to image, latex image, latex to jpg, latex jpg, latex to jpeg, latex jpeg, latex to tiff, latex tiff, latex to bmp, latex bmp
 description: To convert TeX to image formats using Aspose.TeX API solution for Java learn this article that describes how to do this and the code examples.
 lastmod: "2023-03-23"
@@ -24,7 +26,7 @@ Let's take a closer look at the Java code providing the simplest way to convert 
 
 So, the first thing we need to do (sometimes not the very first, as we will find out later) is to create an instance of the [TeXOptions](https://reference.aspose.com/tex/java/com.aspose.tex/TeXOptions) class. The only static method that does this is [consoleAppOptions()](https://reference.aspose.com/tex/java/com.aspose.tex/TeXOptions#consoleAppOptions-com.aspose.tex.TeXConfig-), so let's not bother with the meaning of its name. The method takes the [objectLaTeX() instance](https://reference.aspose.com/tex/java/com.aspose.tex/TeXConfig#objectLaTeX--) of the [TeXConfig](https://reference.aspose.com/tex/java/com.aspose.tex/TeXConfig) class, which is exactly suitable for converting a [LaTeX file](/tex/net/latex-io/#latex-file). This configuration instructs the Object TeX engine to load the Object LaTeX format and to be ready to accept the LaTeX file. Object LaTeX format is actually just the [LaTeX](/tex/net/what-is-latex/) format, except that it uses [Object TeX](/tex/net/aspose-tex-and-object-tex/#object-tex) specific primitives to set up the page metrics.
 
-The first of the required options is [OutputWorkingDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/TeXOptions#getOutputWorkingDirectory--) which defines the space, or area, where the TeX output will be written. [Here](/tex/java/aspose-tex-output/) are the details about the output directory concept in **Aspose.TeX for Java**. In this example we use the [OutputFileSystemDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/OutputFileSystemDirectory) class, which allows us to write the output to the specified directory, or folder.
+The first of the required options is [OutputWorkingDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/TeXOptions#getOutputWorkingDirectory--) which defines the space, or area, where the TeX output will be written. [Here](/tex/java/aspose-tex-output/) are the details about the output directory concept in **Aspose.TeX for Java**. In this example, we use the [OutputFileSystemDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/OutputFileSystemDirectory) class, which allows us to write the output to the specified directory, or folder.
 
 The second option is a [SaveOptions](https://reference.aspose.com/tex/java/com.aspose.tex.rendering/SaveOptions) class instance which will control the transformation of the [object model](/tex/net/aspose-tex-and-object-tex/#why-the-new-tex-is-object) to the target format. Since we are converting LaTeX to PNG, it's the [PngSaveOptions](https://reference.aspose.com/tex/java/com.aspose.tex.rendering/PngSaveOptions) class instance, which allows us to specify the resolution of the output images.
 
@@ -52,7 +54,7 @@ Transcript written on hello-world.log.
 
 We will find other products of the engine's run in the folder that we specified as the output directory. Those will be the transcript (.log) file and, **Voila!**, the main output PNG image file(s).
 
-## An alternative way to write main output PNG file(s)
+## An alternative way to write the main output PNG file(s)
 
 There is another way to get image data as an array of byte arrays, each array in the second dimension represents image data for a separate page.
 
@@ -62,7 +64,7 @@ The *"page-n.png"* file(s) will be written to any path we specify. Unlike [PDF o
 
 ## About input options
 
-In case our main input file requires dependencies, for example, packages, that are not included in the basic LaTeX system and supported packages, we MUST set the [RequiredInputDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/TeXOptions#getRequiredInputDirectory--) option the similar way we set the [OutputWorkingDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/TeXOptions#getOutputWorkingDirectory--) option and put the dependencies in that directory. Dependecies may be arbitrarily organized in subdirectories. In case we have our own files to include along the typesetting process, say external graphics files, we MUST also set the [InputWorkingDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/TeXOptions#getInputWorkingDirectory--) using the path to the location where those files are collected. We may also place the main input file somewhere inside the input directory and specify the relative path in the `run()` method (or specify no path at all if the main input file is in the root). [Here](/tex/java/aspose-tex-input/) are the details about the input directory concept in **Aspose.TeX for Java** and provided implementations.
+In case our main input file requires dependencies, for example, packages, that are not included in the basic LaTeX system and supported packages, we MUST set the [RequiredInputDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/TeXOptions#getRequiredInputDirectory--) option the similar way we set the [OutputWorkingDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/TeXOptions#getOutputWorkingDirectory--) option and put the dependencies in that directory. Dependencies may be arbitrarily organized in subdirectories. In case we have our own files to include along the typesetting process, say external graphics files, we MUST also set the [InputWorkingDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/TeXOptions#getInputWorkingDirectory--) using the path to the location where those files are collected. We may also place the main input file somewhere inside the input directory and specify the relative path in the `run()` method (or specify no path at all if the main input file is in the root). [Here](/tex/java/aspose-tex-input/) are the details about the input directory concept in **Aspose.TeX for Java** and provided implementations.
 
 Other TeX job options are discussed [here](/tex/java/other-options/).
 
@@ -87,3 +89,18 @@ Below, we discuss the LaTeX conversion to other supported raster image formats. 
 {{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-LaTeXToBmp.cs" >}}
 
 **You may also check out the free LaTeX-to-BMP conversion [web app](https://products.aspose.app/tex/conversion/latex-to-bmp) built based on [Aspose.TeX for .NET](https://products.aspose.com/tex/net/) API. [Here](https://products.aspose.com/tex/java/) is the Java version page.**
+
+
+## How to convert LaTeX to SVG
+
+And yet another supported target format is [**SVG**](https://en.wikipedia.org/wiki/SVG). **Scalable Vector Graphics (SVG)** is an XML-based vector image format for defining two-dimensional graphics, having support for interactivity and animation.
+
+**SVG** images are defined in a vector graphics format and stored in XML text files. This means that **SVG** images can be scaled in size without loss of quality, and **SVG** files can be searched, indexed, scripted, and compressed. The XML text files can be created and edited with text editors or vector graphics editors. Thay are rendered by the most-used web browsers.
+
+Also, there is the [**Aspose.SVG**](https://products.aspose.com/svg/) library that has various features based on the **SVG** format. These include creating, loading, editing and converting **SVG** documents.
+
+The conversion to SVG is just as simple as the [conversion to raster image formats](/tex/java/latex-to-image/), except that in addition to the [SaveOptions](https://reference.aspose.com/tex/java/com.aspose.tex/TeXOptions#getSaveOptions--), we have to change the device to an instance of the [SvgDevice](https://reference.aspose.com/tex/java/com.aspose.tex.rendering/SvgDevice) class.
+
+{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Conversion-LaTeXToSvg-Simplest.java" >}}
+
+**You may also check out the free LaTeX-to-SVG conversion [web app](https://products.aspose.app/tex/conversion/latex-to-svg) built based on [Aspose.TeX for .NET ](https://products.aspose.com/tex/net/). [Here](https://products.aspose.com/tex/java/) is the Java version page.**
