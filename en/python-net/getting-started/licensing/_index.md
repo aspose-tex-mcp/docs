@@ -13,7 +13,7 @@ To evaluate Aspose.TeX for Python, you can easily download the product from the 
 
 ### Evaluation Version Limitations
 
-The evaluation version of Aspose.TeX provides full product functionality, with the exception that only the first four pages can be obtained in the output document. Additionally, these pages will be stamped with an evaluation mode watermark.
+The The evaluation version of Aspose.TeX provides full product functionality, with the exception that only the first four pages can be obtained in the output document. Additionally, these pages will be stamped with an evaluation mode watermark.
 
 If you would like to try Aspose.TeX without these evaluation limitations, you can [request a 30-day temporary license](https://purchase.aspose.com/temporary-license/) which will you test every aspect of a product before buying it.
 

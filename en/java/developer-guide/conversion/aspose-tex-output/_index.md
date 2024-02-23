@@ -12,7 +12,7 @@ Please, refer to **Aspose.TeX for Java** [API reference](https://reference.aspos
 
 ## The concept of the output directory
 
-Since I/O primitives of the TeX language can only deal with file names, Aspose.TeX defines a directory as a mapping between names and bulks of data. The bulks of data are supposed to be files, or streams, or arrays, or whatever else. The API allows us to specify the input and output working directories separately. It provides the general [IOutputWorkingDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/IOutputWorkingDirectory) interface for the output, which the user can implement for their own purposes. It also provides it's own implementations, which will be discussed below. The interface extends [IInputWorkingDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/IInputWorkingDirectory), since the engine may first create and write a file, and then read it back. The interface's own method [getOuputFile()](https://reference.aspose.com/tex/java/com.aspose.tex/IOutputWorkingDirectory#getOutputFile-java.lang.String-java.lang.String:A-) returns the stream to write to, as opposed to the stream to read returned by [getFile()](https://reference.aspose.com/tex/java/com.aspose.tex/IInputWorkingDirectory#getFile-java.lang.String-java.lang.String:A-boolean-).
+Since I/O primitives of the TeX language can only deal with file names, Aspose.TeX defines a directory as a mapping between names and bulks of data. The bulks of data are supposed to be files, streams, arrays, or whatever else.The API allows us to specify the input and output working directories separately. It provides the general [IOutputWorkingDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/IOutputWorkingDirectory) interface for the output, which the user can implement for their own purposes. It also provides its own implementations, which will be discussed below. The interface extends [IInputWorkingDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/IInputWorkingDirectory), since the engine may first create and write a file, and then read it back. The interface's own method [getOuputFile()](https://reference.aspose.com/tex/java/com.aspose.tex/IOutputWorkingDirectory#getOutputFile-java.lang.String-java.lang.String:A-) returns the stream to write to, as opposed to the stream to read returned by [getFile()](https://reference.aspose.com/tex/java/com.aspose.tex/IInputWorkingDirectory#getFile-java.lang.String-java.lang.String:A-boolean-).
 
 ### Writing file output to the disk file system
 
@@ -34,7 +34,7 @@ First, we create an output stream for the ZIP file. Then, after creating the con
 
 ## The concept of the output terminal
 
-There's another important part of the output --- the terminal output. As for this one, **Aspose.TeX for Java** defines the general [IOutputTerminal](https://reference.aspose.com/tex/java/com.aspose.tex/IOutputTerminal) interface having two methods. One of them returns a [BufferedWriter](https://docs.oracle.com/javase/6/docs/api/java/io/BufferedWriter.html) instance. Another one returns an [OutputStream](https://docs.oracle.com/javase/6/docs/api/java/io/OutputStream.html) instance as the underlying stream. Provided implementations of the interface are dicussed below.
+There's another important part of the output --- the terminal output. As for this one, **Aspose.TeX for Java** defines the general [IOutputTerminal](https://reference.aspose.com/tex/java/com.aspose.tex/IOutputTerminal) interface as having two methods. One of them returns a [BufferedWriter](https://docs.oracle.com/javase/6/docs/api/java/io/BufferedWriter.html) instance. Another one returns an [OutputStream](https://docs.oracle.com/javase/6/docs/api/java/io/OutputStream.html) instance as the underlying stream. Provided implementations of the interface are discussed below.
 
 ### Writing terminal output to the console
 
@@ -44,10 +44,10 @@ To do this, we need to set the [TerminalOut](https://reference.aspose.com/tex/ja
 
 Again, this is the default value of the option, so there's no real need to specify it. Due to this, this section serves only demonstration purposes.
 
-### Writing terminal output to file
+### Writing terminal output to a file
 
 Unlike the input terminal, **Aspose.TeX for Java** provides an implementation of the [IOutputTerminal](https://reference.aspose.com/tex/java/com.aspose.tex/IOutputTerminal), which allows us to write the terminal output to a file in some output directory.
 
 {{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Conversion-OutputFileTerminal.java" >}} 
 
-Here we ask the TeX engine to write the terminal output to the file with the name [<job_name>](/tex/net/tex-io/#tex-output).trm, which will be stored in the same output directory that we specified for rest of the output. But this is not necessary. We might as well pass any other instance of any implementation of [IOutputTerminal](https://reference.aspose.com/tex/java/com.aspose.tex/IOutputTerminal) to the constructor.
+Here we ask the TeX engine to write the terminal output to the file with the name [<job_name>](/tex/net/tex-io/#tex-output).trm, which will be stored in the same output directory that we specified for the rest of the output. But this is not necessary. We might as well pass any other instance of any implementation of [IOutputTerminal](https://reference.aspose.com/tex/java/com.aspose.tex/IOutputTerminal) to the constructor.

@@ -2,7 +2,7 @@
 title: External LaTeX packages | Java
 linktitle: External LaTeX packages
 type: docs
-weight: 19
+weight: 30
 url: /java/external-latex-packages/
 description: Aspose.TeX API for Java allows the use of external packages, i.e. the ones that aren't included in the library itself like fancybox or pgfplots packages.
 lastmod: "2023-03-23"
@@ -18,7 +18,7 @@ There is a number of [common LaTeX packages](/tex/net/embedded-packages/) includ
 
 ### Unpacked required input (`fancybox` package)
 
-Let's say we have the following simple LaTeX file, which is `required-input-fs.tex` from our [example solution](https://github.com/aspose-tex/Aspose.TeX-for-Java):
+Let's say we have the following simple LaTeX file, which is `required-input-fs.tex` from our [example solution](https://GitHub.com/aspose-tex/Aspose.TeX-for-Java):
 
 ```tex
 \documentclass{article}

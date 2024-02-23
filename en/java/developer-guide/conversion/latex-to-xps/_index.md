@@ -22,7 +22,7 @@ The conversion to XPS is just as simple as the [conversion to raster image forma
 
 {{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Conversion-LaTeXToXps-Simplest.java" >}}
 
-### An alternative way to write main output XPS file
+### An alternative way to write the main output XPS file
 
 There's another constructor of the [XpsDevice](https://reference.aspose.com/tex/java/com.aspose.tex.rendering/XpsDevice#XpsDevice-java.io.OutputStream-) class, which allows us to get the resulting XPS file in an alternative way.
 

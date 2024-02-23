@@ -11,7 +11,7 @@ submenu: menu-tex-for-java
 Aspose hosts all Java APIs on Aspose Repository. You can easily use Aspose.TeX for Java API directly in your Maven Projects with simple configurations.
 
 ## Specify Aspose Repository Configuration
-First you need to specify Aspose Repository configuration / location in your Maven pom.xml as follows:
+First, you need to specify the Aspose Repository  configuration / location in your Maven pom.xml as follows:
 
 ```
 <repositories>

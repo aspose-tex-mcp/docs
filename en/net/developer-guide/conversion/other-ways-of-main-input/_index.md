@@ -18,7 +18,7 @@ Note that all output files will have the name *texput*. That's because the engin
 
 ## Entering the main TeX input file from the terminal
 
-There's yet another [constructor](https://reference.aspose.com/tex/net/aspose.tex/texjob/texjob/) of the `TeXJob` class, which doesn't let us specify the input at all. So what is such TeX job going to process, you may wonder? This time we will need an input terminal. The TeX engine will ask us to enter the file name from the terminal.
+There's yet another [constructor](https://reference.aspose.com/tex/net/aspose.tex/texjob/texjob/) of the `TeXJob` class, which doesn't let us specify the input at all. So what is such a TeX job going to process, you may wonder? This time we will need an input terminal. The TeX engine will ask us to enter the file name from the terminal.
 
 Here is the code:
 

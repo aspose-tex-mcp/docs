@@ -4,7 +4,9 @@ linktitle: LaTeX to image
 type: docs
 weight: 10
 url: /net/latex-to-image/
-aliases: /net/latex-to-png/
+aliases: 
+- /net/latex-to-png/
+- /net/latex-to-svg/
 keywords: latex to png, latex png, latex to image, latex image, latex to jpg, latex jpg, latex to jpeg, latex jpeg, latex to tiff, latex tiff, latex to bmp, latex bmp
 description: To convert TeX to image formats using Aspose.TeX API solution for .NET learn this article to see that describes how to do this and the code examples.
 lastmod: "2023-03-23"
@@ -24,7 +26,7 @@ Let's take a detailed look at the code in C# providing the simplest way to conve
 
 So, the first thing we need to do (well, sometimes not the very first) is to create an instance of the [TeXOptions](https://reference.aspose.com/tex/net/aspose.tex/texoptions/) class. The only static method that does this is [ConsoleAppOptions()](https://reference.aspose.com/tex/net/aspose.tex/texoptions/consoleappoptions/), so let's not be puzzled by the meaning of its name. The method takes the [ObjectLaTeX instance](https://reference.aspose.com/tex/net/aspose.tex/texconfig/objectlatex/) of the [TeXConfig](https://reference.aspose.com/tex/net/aspose.tex/texconfig/) class, which is exactly suitable for converting a [LaTeX file](/tex/net/latex-io/#latex-file). This configuration tells the Object TeX engine to load the Object LaTeX format and to be ready to accept the LaTeX file. Object LaTeX format is actually just the [LaTeX](/tex/net/what-is-latex/) format, except that it uses [Object TeX](/tex/net/aspose-tex-and-object-tex/#object-tex) specific primitives to set up the page metrics.
 
-The first of the required options is [OutputWorkingDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/outputworkingdirectory/) which defines the space, or area, where the TeX output will be written. [Here](/tex/net/aspose-tex-output/) are the details about the output directory concept in **Aspose.TeX for .NET**. In this example we use the [OutputFileSystemDirectory](https://reference.aspose.com/tex/net/aspose.tex.io/outputfilesystemdirectory/) class, which lets us write the output to the specified directory, or folder.
+The first of the required options is [OutputWorkingDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/outputworkingdirectory/) which defines the space, or area, where the TeX output will be written. [Here](/tex/net/aspose-tex-output/) are the details about the output directory concept in **Aspose.TeX for .NET**. In this example, we use the [OutputFileSystemDirectory](https://reference.aspose.com/tex/net/aspose.tex.io/outputfilesystemdirectory/) class, which lets us write the output to the specified directory, or folder.
 
 The second option is a [SaveOptions](https://reference.aspose.com/tex/net/aspose.tex.presentation/saveoptions/) class instance which will control the transformation of the [object model](/tex/net/aspose-tex-and-object-tex/#why-the-new-tex-is-object) to the target format. Since we are converting LaTeX to PNG, it's the [PngSaveOptions](https://reference.aspose.com/tex/net/aspose.tex.presentation.image/pngsaveoptions/) class instance, which lets us specify the resolution of the output images.
 
@@ -52,7 +54,7 @@ Transcript written on hello-world.log.
 
 We will find other "fruits" of the engine's labor in the folder that we specified as the output directory. Those will be the transcript file and, **here it is!**, the main output PNG image file(s).
 
-## An alternative way to write main output PNG file(s)
+## An alternative way to write the main output PNG file(s)
 
 There is another way to get image data as an array of byte arrays, each array in the second dimension represents image data for a separate page.
 
@@ -62,7 +64,7 @@ The *"page-n.png"* file(s) will be written to any path we specify. Unlike [PDF o
 
 ## About input options
 
-In case our main input file requires dependencies, for example, packages, that are not included in the basic LaTeX system and supported packages, we MUST set the [RequiredInputDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/requiredinputdirectory/) option the similar way we set the [OutputWorkingDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/outputworkingdirectory/) option and put the dependencies in that directory. Dependecies may be arbitrarily organized in subdirectories. In case we have our own files to include along the typesetting process, say external graphics files, we MUST also set the [InputWorkingDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/inputworkingdirectory/) using the path to the location where those files are collected. We can also place the main input file somewhere inside the input directory and specify the relative path in the `run()` method (or specify no path at all if the main input file is in the root). [Here](/tex/net/aspose-tex-input/) are the details about the input directory concept in **Aspose.TeX for .NET** and provided implementations.
+In case our main input file requires dependencies, for example, packages, that are not included in the basic LaTeX system and supported packages, we MUST set the [RequiredInputDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/requiredinputdirectory/) option the similar way we set the [OutputWorkingDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/outputworkingdirectory/) option and put the dependencies in that directory. Dependencies may be arbitrarily organized in subdirectories. In case we have our own files to include along the typesetting process, say external graphics files, we MUST also set the [InputWorkingDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/inputworkingdirectory/) using the path to the location where those files are collected. We can also place the main input file somewhere inside the input directory and specify the relative path in the `run()` method (or specify no path at all if the main input file is in the root). [Here](/tex/net/aspose-tex-input/) are the details about the input directory concept in **Aspose.TeX for .NET** and provided implementations.
 
 Other TeX job options are discussed [here](/tex/net/other-options/).
 
@@ -87,3 +89,17 @@ Below, we discuss the LaTeX conversion to other supported raster image formats w
 {{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-LaTeXToBmp.cs" >}}
 
 **You may also check out the free LaTeX-to-BMP conversion [web app](https://products.aspose.app/tex/conversion/latex-to-bmp) built based on [Aspose.TeX for .NET API](https://products.aspose.com/tex/net/).**
+
+## How to convert LaTeX to SVG
+
+And yet another supported target format is [**SVG**](https://en.wikipedia.org/wiki/SVG). **Scalable Vector Graphics (SVG)** is an XML-based vector image format for defining two-dimensional graphics, having support for interactivity and animation.
+
+**SVG** images are defined in a vector graphics format and stored in XML text files. **SVG** images can thus be scaled in size without loss of quality, and **SVG** files can be searched, indexed, scripted, and compressed. The XML text files can be created and edited with text editors or vector graphics editors, and are rendered by the most-used web browsers.
+
+There is the [**Aspose.SVG**](https://products.aspose.com/svg/) library that provides various features related to **SVG**. These include creating, loading, editing and converting **SVG** documents.
+
+The LaTeX to SVG conversion is also as simple as the [conversion to raster image formats](/tex/net/latex-to-image/), except that the [SaveOptions](https://reference.aspose.com/tex/net/aspose.tex/texoptions/saveoptions/) MUST be set to an [SvgSaveOptions](https://reference.aspose.com/tex/net/aspose.tex.presentation.svg/svgsaveoptions/) class instance, and the device MUST be changed to an instance of the [SvgDevice](https://reference.aspose.com/tex/net/aspose.tex.presentation.svg/svgdevice/) class.
+
+{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-LaTeXToSvg-Simplest.cs" >}}
+
+**You may also check out the free LaTeX-to-SVG conversion [web app](https://products.aspose.app/tex/conversion/latex-to-svg) built based on [Aspose.TeX for .NET API](https://products.aspose.com/tex/net/).**

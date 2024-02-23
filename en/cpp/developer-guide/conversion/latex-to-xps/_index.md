@@ -28,7 +28,7 @@ options->set_SaveOptions(System::MakeObject<XpsSaveOptions>());
 System::MakeObject<Aspose::TeX::TeXJob>(u"hello-world.ltx", System::MakeObject<XpsDevice>(), options)->Run();
 ```
 
-### An alternative way to write main output XPS file
+### An alternative way to write the main output XPS file
 
 There's another constructor of the [XpsDevice](https://reference.aspose.com/tex/cpp/class/aspose.te_x.presentation.xps.xps_device#aa24d2c38c5d134d90782b27ba090116a) class, which lets us get the resulting XPS file in an alternative way.
 

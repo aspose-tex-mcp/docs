@@ -12,7 +12,7 @@ Please, refer to **Aspose.TeX for Java** [API reference](https://reference.aspos
 
 ## The concept of the input directory
 
-Since I/O primitives of the TeX language can only deal with file names, **Aspose.TeX for Java** defines a directory as a mapping between names and bulks of data. The bulks of data are supposed to be files, or streams, or arrays, or whatever else. The API allows us to specify the input and output working directories separately. It provides the general [IInputWorkingDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/IInputWorkingDirectory) interface, which the user can implement for their own purposes. It also provides its own implementations, which will be discussed below. The interface defines the [getFile()](https://reference.aspose.com/tex/java/com.aspose.tex/IInputWorkingDirectory#getFile-java.lang.String-java.lang.String:A-boolean-) method, which returns the data stream and determines the full name of the file, while taking some, hypothetically different, name as the first agrument, which, in fact, is the mapping key.
+Since I/O primitives of the TeX language can only deal with file names, **Aspose.TeX for Java** defines a directory as a mapping between names and bulks of data. The bulks of data are supposed to be files, streams, arrays, or whatever else.The API allows us to specify the input and output working directories separately. It provides the general [IInputWorkingDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/IInputWorkingDirectory) interface, which the user can implement for their own purposes. It also provides its own implementations, which will be discussed below. The interface defines the [getFile()](https://reference.aspose.com/tex/java/com.aspose.tex/IInputWorkingDirectory#getFile-java.lang.String-java.lang.String:A-boolean-) method, which returns the data stream and determines the full name of the file, while taking some, hypothetically different, name as the first argument, which, in fact, is the mapping key.
 
 ### Getting file input from the disk file system
 
@@ -32,7 +32,7 @@ First, we create the stream containing the ZIP file. Then, after creating the co
 
 ## The concept of the input terminal
 
-Now let's remember that there is also the terminal input. As for this one, **Aspose.TeX for Java** defines the general [IInputTerminal](https://reference.aspose.com/tex/java/com.aspose.tex/IInputTerminal) interface having two methods. One of them returns a  [BufferedReader](https://docs.oracle.com/javase/6/docs/api/java/io/BufferedReader.html) instance. Another method returns an [InputStream](https://docs.oracle.com/javase/6/docs/api/java/io/InputStream.html) as the underlying stream. Provided implementations of the interface are dicussed below.
+Now let's remember that there is also the terminal input. As for this one, **Aspose.TeX for Java** defines the general [IInputTerminal](https://reference.aspose.com/tex/java/com.aspose.tex/IInputTerminal) interface as having two methods. One of them returns a  [BufferedReader](https://docs.oracle.com/javase/6/docs/api/java/io/BufferedReader.html) instance. Another method returns an [InputStream](https://docs.oracle.com/javase/6/docs/api/java/io/InputStream.html) as the underlying stream. Provided implementations of the interface are discussed below.
 
 ### Getting terminal input from the console
 
@@ -42,4 +42,4 @@ To do this, we need to set the [TerminalIn](https://reference.aspose.com/tex/jav
 
 But, to tell you the truth, this is the default value of the option, so there's no real need to specify it. Due to this fact, and as long as there are no other implementations, this section serves only demonstration purposes.
 
-Theoretically, if we have an interactive TeX file (or script) with predictable behavior, we may want to implement a version of the input terminal which would contain a complementary script for responding to the TeX engine's requests. Try your hand when you have time!
+Theoretically, if we have an interactive TeX file (or script) with predictable behavior, we may want to implement a version of the input terminal that would contain a complementary script for responding to the TeX engine's requests. Try your hand when you have time!

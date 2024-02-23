@@ -57,7 +57,7 @@ System::MakeObject<Aspose::TeX::TeXJob>(System::MakeObject<System::IO::MemoryStr
 // For further output to look write.
 options->get_TerminalOut()->get_Writer()->WriteLine();
 ```
-Obviously, we have to specify the format somehow. First of all, we need to create an instance of the [FormatProvider](https://reference.aspose.com/tex/cpp/class/aspose.te_x.resource_providers.format_provider) class. Then, in options constructor, we use the [TeXConfig.ObjectTeX()](https://reference.aspose.com/tex/cpp/class/aspose.te_x.te_x_config#aefa7bbdf2ed28d6499f2dc5d5ad2ca3e) configuration, which takes our format provider as an argument and loads the format on top of the "virgin" state of the engine.
+Obviously, we have to specify the format somehow. First of all, we need to create an instance of the [FormatProvider](https://reference.aspose.com/tex/cpp/class/aspose.te_x.resource_providers.format_provider) class. Then, in the options constructor, we use the [TeXConfig.ObjectTeX()](https://reference.aspose.com/tex/cpp/class/aspose.te_x.te_x_config#aefa7bbdf2ed28d6499f2dc5d5ad2ca3e) configuration, which takes our format provider as an argument and loads the format on top of the "virgin" state of the engine.
 
 The rest of the code should be familiar to you. It uses the features discussed earlier in this [guide](/tex/cpp/conversion/).
 

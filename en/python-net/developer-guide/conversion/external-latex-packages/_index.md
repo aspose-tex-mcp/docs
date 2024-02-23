@@ -18,7 +18,7 @@ The **Aspose.TeX** library comes with a variety of [common LaTeX packages](/tex/
 
 ### Required input provided in an unpacked form (the `fancybox` package).
 
-Suppose we have the following basic LaTeX file named `required-input-fs.tex`, which is part of our [example solution](https://github.com/aspose-tex/Aspose.TeX-for-Python-.NET):
+Suppose we have the following basic LaTeX file named `required-input-fs.tex`, which is part of our [example solution](https://GitHub.com/aspose-tex/Aspose.TeX-for-Python-.NET):
 
 ```tex
 \documentclass{article}

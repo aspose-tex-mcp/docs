@@ -15,10 +15,10 @@ Please make sure you meet the following requirements before downloading and runn
 
 ## Download from GitHub
 
-All examples of Aspose.TeX for C++ are hosted on [GitHub](https://github.com/aspose-TeX/Aspose.TeX-for-CPP).
+All examples of Aspose.TeX for C++ are hosted on [GitHub](https://GitHub.com/aspose-TeX/Aspose.TeX-for-CPP).
 
-- You can either clone the repository using your favorite GitHub client or download the ZIP file from [here](https://github.com/aspose-TeX/Aspose.TeX-for-CPP/archive/master.zip).
-- Extract the contents of ZIP file to any folder on your computer. All the examples are located in the **Examples** folder.
+- You can either clone the repository using your favorite GitHub client or download the ZIP file from [here](https://GitHub.com/aspose-TeX/Aspose.TeX-for-CPP/archive/master.zip).
+- Extract the contents of the ZIP file to any folder on your computer. All the examples are located in the **Examples** folder.
 - There is one Visual Studio solution file for C++ in **example** folder.
 - Open the solution file in Visual Studio and build the project.
 - Install library package for solution. [How to install.](/tex/cpp/installation) Dependent CodePorting library will be installed automatically.
@@ -32,6 +32,6 @@ Please feel free to reach out using our Forums if you have any issues setting up
 
 ## Contribute
 
-If you like to add or improve an example, we encourage you to contribute to the project. All examples and showcase projects in this repository are open source and can be freely used in your own applications.
+If you like to add or improve an example, we encourage you to contribute to the project. All examples and showcase projects in this repository are open-source and can be freely used in your own applications.
 
-To contribute, you can fork the repository, edit the source code and create a pull request. We will review the changes and include it in the repository if found helpful.
+To contribute, you can fork the repository, edit the source code, and create a pull request. We will review the changes and include them in the repository if found helpful.

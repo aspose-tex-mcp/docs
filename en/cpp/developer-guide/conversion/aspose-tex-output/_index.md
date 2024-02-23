@@ -11,7 +11,7 @@ submenu: menu-tex-for-cpp
 Please, refer to **Aspose.TeX for C++** [API reference](https://reference.aspose.com/tex/cpp/namespace/aspose.te_x.i_o) for formal definitions of I/O implementation.
 
 ## The concept of the output directory
-Since I/O primitives of the TeX language can only deal with file names, Aspose.TeX defines a directory as a mapping between names and bulks of data. The bulks of data are supposed to be files, or streams, or arrays, or whatever else. The API allows us to specify the input and output working directories separately. It provides the general [IOutputWorkingDirectory](https://reference.aspose.com/tex/cpp/class/aspose.te_x.i_o.i_output_working_directory) interface for the output, which the user can implement for their own purposes. It also provides it's own implementations, which will be discussed below. The interface extends [IInputWorkingDirectory](https://reference.aspose.com/tex/cpp/class/aspose.te_x.i_o.i_input_working_directory), since the engine may first create and write a file, and then read it back. The interface's own method [GetOutputFile()](https://reference.aspose.com/tex/cpp/class/aspose.te_x.i_o.i_output_working_directory#a53f4d029e1d19f0ecf87ae82b39b6697) returns the stream to write to, as opposed to the stream to read returned by [GetFile()](https://reference.aspose.com/tex/cpp/class/aspose.te_x.i_o.i_input_working_directory#adc0d6f35f9a0c426ba010779d90b5cd6).
+Since I/O primitives of the TeX language can only deal with file names, Aspose.TeX defines a directory as a mapping between names and bulks of data. The bulks of data are supposed to be files, streams, arrays, or whatever else.The API allows us to specify the input and output working directories separately. It provides the general [IOutputWorkingDirectory](https://reference.aspose.com/tex/cpp/class/aspose.te_x.i_o.i_output_working_directory) interface for the output, which the user can implement for their own purposes. It also provides its own implementations, which will be discussed below. The interface extends [IInputWorkingDirectory](https://reference.aspose.com/tex/cpp/class/aspose.te_x.i_o.i_input_working_directory), since the engine may first create and write a file, and then read it back. The interface's own method [GetOutputFile()](https://reference.aspose.com/tex/cpp/class/aspose.te_x.i_o.i_output_working_directory#a53f4d029e1d19f0ecf87ae82b39b6697) returns the stream to write to, as opposed to the stream to read returned by [GetFile()](https://reference.aspose.com/tex/cpp/class/aspose.te_x.i_o.i_input_working_directory#adc0d6f35f9a0c426ba010779d90b5cd6).
 
 ### Writing file output to the disk file system
 
@@ -46,7 +46,7 @@ First, we create an output stream for the ZIP file. Then, after creating the con
 
 ## The concept of the output terminal
 
-There's another important part of the output --- the terminal output. As for this one, **Aspose.TeX for C++** defines the general [IOutputTerminal](https://reference.aspose.com/tex/cpp/class/aspose.te_x.i_o.i_output_terminal) interface having only one property that returns a [TextWriter](https://reference.aspose.com/tex/cpp/class/system.i_o.text_writer) implementation instance. Provided implementations are dicussed below.
+There's another important part of the output --- the terminal output. As for this one, **Aspose.TeX for C++** defines the general [IOutputTerminal](https://reference.aspose.com/tex/cpp/class/aspose.te_x.i_o.i_output_terminal) interface having only one property that returns a [TextWriter](https://reference.aspose.com/tex/cpp/class/system.i_o.text_writer) implementation instance. Provided implementations are discussed below.
 
 ### Writing terminal output to the console
 
@@ -62,7 +62,7 @@ options->set_TerminalOut(System::MakeObject<OutputConsoleTerminal>()); // Defaul
 
 Again, this is the default value of the option, so there's no real need to specify it. Due to this, this section serves only demonstration purposes.
 
-### Writing terminal output to file
+### Writing terminal output to a file
 
 Unlike the input terminal, **Aspose.TeX for C++** provides an implementation of the [IOutputTerminal](https://reference.aspose.com/tex/cpp/class/aspose.te_x.i_o.i_output_terminal), which allows us to write the terminal output to a file in some output directory.
 
@@ -74,4 +74,4 @@ Unlike the input terminal, **Aspose.TeX for C++** provides an implementation of 
 options->set_TerminalOut(System::MakeObject<OutputFileTerminal>(options->get_OutputWorkingDirectory()));
 
 ```
-Here we ask the TeX engine to write the terminal output to the file with the name [<job_name>](/tex/net/tex-io/#tex-output).trm, which will be stored in the same output directory that we specified for rest of the output. But this is not necessary. We might as well pass any other instance of any implementation of [IOutputTerminal](https://reference.aspose.com/tex/cpp/class/aspose.te_x.i_o.i_output_terminal) to the constructor.
+Here we ask the TeX engine to write the terminal output to the file with the name [<job_name>](/tex/net/tex-io/#tex-output).trm, which will be stored in the same output directory that we specified for the rest of the output. But this is not necessary. We might as well pass any other instance of any implementation of [IOutputTerminal](https://reference.aspose.com/tex/cpp/class/aspose.te_x.i_o.i_output_terminal) to the constructor.

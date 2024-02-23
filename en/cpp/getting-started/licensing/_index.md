@@ -13,7 +13,7 @@ You can easily download Aspose.TeX for C++ product for evaluation purposes. Plea
 
 ### Evaluation Version Limitations
 
-Evaluation version of Aspose.TeX (without a license specified) provides full product functionality except that only up to four first pages can be obtained in output document. Also, those pages will be stamped with evaluation mode watermark.
+The evaluation version of Aspose.TeX (without a license specified) provides full product functionality except that only up to four first pages can be obtained in the output document. Also, those pages will be stamped with an evaluation mode watermark.
 
 If you want to try Aspose.TeX out without evaluation limitations, request a 30-day temporary license. Please refer to [How to get a Temporary License?](https://purchase.aspose.com/temporary-license/) for more information.
 
@@ -35,9 +35,9 @@ Follow these simple rules:
 - If you are developing an application, call SetLicense in the startup code, before using Aspose::TeX classes.
 - If you are developing a class library, you can call SetLicense from a static constructor of the class that uses Aspose::TeX. The static constructor executes before an instance of your class is created making sure Aspose::TeX license is properly set.
 
-### Apply License using File or Stream Object
+### Apply the License using File or Stream Object
 
-Use the [License::SetLicense](https://reference.aspose.com/tex/cpp/class/aspose.te_x.license) method to license the component. The easiest way to set a license is to put the license file in the same folder as the Aspose.TeX.dll and specify the filename, without a path, as shown below.
+Use the [License::SetLicense](https://reference.aspose.com/tex/cpp/class/aspose.te_x.license) method to licensing the component. The easiest way to set a license is to put the license file in the same folder as the Aspose.TeX.dll and specify the filename, without a path, as shown below.
 
 #### Loading a License from File
 
@@ -47,6 +47,6 @@ This code snippet initializes a license stored in a file or in an embedded resou
 
 #### Loading a License from a Stream Object
 
-These code snippets initialize the license from stream.
+These code snippets initialize the license from the stream.
 
 {{< gist "aspose-com-gists" "d3eef38ac5b929503e8edee25e0873ce" "Aspose.TeX.Examples-LoadLicenseFromStream.cpp" >}}
