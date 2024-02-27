@@ -32,8 +32,6 @@ The API reference section related to this topic is [here](https://reference.aspo
     // Specify whether to show the terminal output on the console or not.
     options->set_ShowTerminal(true);
     
-    // The variable in which the dimensions of the resulting image will be written.
-    System::Drawing::SizeF size;
     // Create the output stream for the formula image.
     {
         System::SharedPtr<System::IO::Stream> stream = System::IO::File::Open(System::IO::Path::Combine(RunExamples::OutputDirectory, u"math-formula.png"), System::IO::FileMode::Create);
@@ -42,18 +40,18 @@ The API reference section related to this topic is [here](https://reference.aspo
         // ------------------------------------------
         try
         {
-            System::MakeObject<Features::PngMathRenderer>()->Render(u"\\begin{equation*}\r\ne^x = x^{\\color{red}0} + x^{\\color{red}1} + \\frac{x^{\\color{red}2}}{2} + \\frac{x^{\\color{red}3}}{6} + \\cdots = \\sum_{n\\geq 0} \\frac{x^{\\color{red}n}}{n!}\r\n\\end{equation*}", stream, options, size);
+            System::Drawing::SizeF size = System::MakeObject<Features::PngMathRenderer>()->Render(u"\\begin{equation*}\r\ne^x = x^{\\color{red}0} + x^{\\color{red}1} + \\frac{x^{\\color{red}2}}{2} + \\frac{x^{\\color{red}3}}{6} + \\cdots = \\sum_{n\\geq 0} \\frac{x^{\\color{red}n}}{n!}\r\n\\end{equation*}", stream, options, size);
+            
+            // Show other results.
+            System::Console::get_Out()->WriteLine(options->get_ErrorReport());
+            System::Console::get_Out()->WriteLine();
+            System::Console::get_Out()->WriteLine(System::String(u"Size: ") + size);
         }
         catch(...)
         {
             __dispose_guard_0.SetCurrentException(std::current_exception());
         }
     }
-    
-    // Show other results.
-    System::Console::get_Out()->WriteLine(options->get_ErrorReport());
-    System::Console::get_Out()->WriteLine();
-    System::Console::get_Out()->WriteLine(System::String(u"Size: ") + size);
 
 ```
 
@@ -75,7 +73,7 @@ The next line of the example doesn't make much sense. It just demonstrates that 
 
 And the last option `ShowTerminal` allows you to toggle writing the terminal output to the console.
 
-The method that actually performs the rendering is [MathRenderer.Render()](https://reference.aspose.com/tex/cpp/class/aspose.te_x.features.math_renderer#aed31aae98b36b5367b680389b9c36acc). It returns the size of the formula in points as an output argument. To use this size later we declare the variable in the next line.
+The method that actually performs the rendering is [MathRenderer.Render()](https://reference.aspose.com/tex/cpp/class/aspose.te_x.features.math_renderer#a9b578fe58378d4d6937bd48c9e68dccb). It returns the size of the formula in points.
 
 The stream where the image is to be written is taken by the method as the second argument. We create the stream next.
 

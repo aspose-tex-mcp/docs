@@ -36,7 +36,7 @@ The next line of the example doesn't make much sense. It just demonstrates that 
 
 And the last option `ShowTerminal` allows you to toggle writing the terminal output to the console.
 
-The method that actually performs the rendering is [MathRenderer.render()](https://reference.aspose.com/tex/java/com.aspose.tex/MathRenderer#render-java.lang.String-java.io.OutputStream-com.aspose.tex.MathRendererOptions-com.aspose.tex.Size2D-). It returns the size of the formula in points as an output argument. To use this size later we declare the variable in the next line.
+The method that actually performs the rendering is [MathRenderer.render()](https://reference.aspose.com/tex/java/com.aspose.tex/mathrenderer/#render-java.lang.String-java.io.OutputStream-com.aspose.tex.MathRendererOptions-). It returns the size of the formula in points.
 
 The stream where the image is to be written is accepted by the method as the second argument. We create the stream next.
 
