@@ -13,10 +13,10 @@ submenu: menu-tex-for-python-net
 
 ### Referencing Aspose.TeX for Python
 
-Taking advantage of this repository, we have bundled [Aspose.TeX for Python](https://pypi.org/project/Aspose.TeX/) library into a Wheel package and uploaded it to **PyPI**. To reference the package in your project, you can download it from the just mentioned page and then install it locally by typing the following command in your Python terminal.
+Taking advantage of this repository, we have bundled [Aspose.TeX for Python](https://pypi.org/project/aspose-tex-net/) library into a Wheel package and uploaded it to **PyPI**. To reference the package in your project, you can download it from the just mentioned page and then install it locally by typing the following command in your Python terminal.
 
 ```
-pip install <path to package>\Aspose.TeX-<version>-py3-none-<platform>.whl
+pip install <path to package>\aspose-tex-net-<version>-py3-none-<platform>.whl
 ```
 
 Or, you can install it direcly from **PyPI** using the command bellow.

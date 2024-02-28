@@ -9,7 +9,7 @@ submenu: menu-tex-for-python-net
 
 ## Evaluate Aspose.TeX
 
-To evaluate Aspose.TeX for Python, you can easily download the product from the [Aspose.TeX for Python download page](https://pypi.org/project/Aspose.TeX/). The evaluation version is the same as the purchased version. By adding a few lines of code to apply the license, the evaluation version becomes licensed. Please refer to the download page for the latest version.
+To evaluate Aspose.TeX for Python, you can easily download the product from the [Aspose.TeX for Python download page](https://pypi.org/project/aspose-tex-net/). The evaluation version is the same as the purchased version. By adding a few lines of code to apply the license, the evaluation version becomes licensed. Please refer to the download page for the latest version.
 
 ### Evaluation Version Limitations
 

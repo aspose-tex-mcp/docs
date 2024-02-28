@@ -27,7 +27,7 @@ Here are the links to some useful resources you may need to accomplish your task
 - [Aspose.TeX for Python Features](/tex/python-net/feature-list/)
 - [Aspose.TeX for Python Release Notes](https://releases.aspose.com/tex/python-net/release-notes/)
 - [Aspose.TeX for Python Product Page](https://products.aspose.com/tex/python-net/)
-- [Install Aspose.TeX for Python Wheel Packages](https://pypi.org/project/Aspose.TeX/)
+- [Install Aspose.TeX for Python Wheel Packages](https://pypi.org/project/aspose-tex-net/)
 - [Aspose.TeX for Python API Reference Guide](https://reference.aspose.com/tex/python-net/)
 - [Aspose.TeX for Python Free Support Forum](https://forum.aspose.com/c/tex/)
 - [Aspose.TeX for Python Paid Support Helpdesk](https://helpdesk.aspose.com/)
