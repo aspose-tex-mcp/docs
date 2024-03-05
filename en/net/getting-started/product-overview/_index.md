@@ -10,7 +10,7 @@ submenu: menu-tex-for-net
 
 {{% alert color="primary" %}}
 
-![Aspose.TeX for .NET](product-overview_1.png)
+<p><img src="/tex/icons/aspose_tex-for-net.png" alt="Aspose.TeX for .NET logo" width="128" height="128"></p>
 
 **Welcome to Aspose.TeX for .NET**
 

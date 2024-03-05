@@ -10,7 +10,7 @@ submenu: menu-tex-for-python-net
 
 {{% alert color="primary" %}}
 
-![Aspose.TeX for Python](product-overview_1.png)
+<p><img src="/tex/icons/aspose_tex-for-python-net.png" alt="Aspose.TeX for Python via .NET logo" width="128" height="128"></p>
 
 **Welcome to Aspose.TeX for Python**
 
