@@ -22,7 +22,7 @@ pip install <path to package>\aspose-tex-net-<version>-py3-none-<platform>.whl
 Or, you can install it direcly from **PyPI** using the command bellow.
 
 ```
-pip install aspose-tex
+pip install aspose-tex-net
 ```
 
 To upgrade to the latest version, use the `--upgrade` key.
