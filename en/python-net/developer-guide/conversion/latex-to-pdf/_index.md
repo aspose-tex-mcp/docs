@@ -5,7 +5,7 @@ type: docs
 weight: 11
 url: /python-net/latex-to-pdf/
 keywords: latex to pdf, latex pdf, convert latex to pdf
-description: To learn how to convert TeX to PDF using the Aspose.TeX API solution for Python, you can refer to this article, which provides a detailed explanation and code examples.
+description: Learn how to convert TeX to PDF using the Aspose.TeX API solution for Python with this article, which provides a detailed explanation and code examples.
 lastmod: "2021-10-14"
 sitemap:
     changefreq: "weekly"

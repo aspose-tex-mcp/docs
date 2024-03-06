@@ -4,7 +4,7 @@ linktitle: Aspose.TeX's output interface
 type: docs
 weight: 16
 url: /python-net/aspose-tex-output/
-description: Here is an explanation of the conversion functionality of the Aspose.TeX API solution for Python, with TeX as the output format, along with some code examples.
+description: Here is an explanation of the conversion functionality of the Aspose.TeX API solution for Python, with TeX as the output format, with code examples.
 submenu: menu-tex-for-python-net
 ---
 

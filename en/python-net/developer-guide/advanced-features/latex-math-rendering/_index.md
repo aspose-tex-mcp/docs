@@ -4,7 +4,7 @@ linktitle: LaTeX math formulas rendering
 type: docs
 weight: 10
 url: /python-net/latex-math-formula-rendering/
-description: This article provides an overview of the Aspose.TeX API solution for Python and its functionality for rendering LaTeX math formulas. It includes code examples to demonstrate how to use this feature.
+description: The article provides an overview of the Aspose.TeX API solution for Python and its functionality for rendering LaTeX math formulas. Learn the code examples
 lastmod: "2021-10-14"
 sitemap:
     changefreq: "weekly"

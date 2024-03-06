@@ -4,7 +4,7 @@ linktitle: LaTeX include figure
 type: docs
 weight: 20
 url: /python-net/latex-figure-rendering/
-description: This article provides an overview of Aspose.TeX API solution for Python and its functionality for rendering LaTeX fragments (figures). It also includes code examples to demonstrate how to use this feature.
+description: The article gives an overview of Aspose.TeX API solution for Python and its functionality for rendering LaTeX fragments (figures). Learn the code examples.
 keywords: latex figure, figure size latex, latex picture, latex image, latex include figure, latex pic, latex figure options
 lastmod: "2023-02-28"
 sitemap:

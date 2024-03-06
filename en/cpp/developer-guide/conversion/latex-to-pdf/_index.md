@@ -1,7 +1,7 @@
 ---
 translation: true
 template: /templates/_template-conversion-cpp.md
-title: LaTeX to PDF | C++
+title: LaTeX to PDF | Aspose.TeX API Solution for C++
 linktitle: LaTeX to PDF
 type: docs
 weight: 11

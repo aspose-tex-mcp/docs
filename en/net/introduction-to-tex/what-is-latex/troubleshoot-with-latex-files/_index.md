@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /net/troubleshoot-with-latex-files/
 keywords:  issues with LaTeX files, corrupted LaTeX documents, corrupted LaTeX files, broken LaTeX file, problems with LaTeX files, errors in LaTeX
-description: Discover practical tips to troubleshoot LaTeX files, resolving errors, compilation problems, package conflicts, and formatting glitches for seamless document creation.
+description: Practical tips to troubleshoot LaTeX files, resolving errors, compilation problems, package conflicts, and formatting bugs for seamless document creation.
 submenu: menu-tex-for-net
 ---
 

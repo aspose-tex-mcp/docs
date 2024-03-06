@@ -1,10 +1,11 @@
 ---
-title: 2. Display and alignment structures for LaTeX equations
+title: 2. Display and alignment for LaTeX equations | LaTeX align
+linktitle: 2. Display and alignment structures for LaTeX equations
 type: docs
 weight: 10
 url: /java/latex-structures-for-equations/
-keywords: ams-latex, amsmath, amsmath options, latex equations, latex equation alignment, leqno, eqno, fleqn, latex equation tag, latex equation label
-description: This article is an introduction into typesetting LaTeX equations using the AMS-LATEX packages and provides some examples as well as their explanations.
+keywords: ams-latex, amsmath, amsmath options, latex equation alignment, leqno, eqno, fleqn, latex equation tag, latex equation label, latex align equations
+description: This is an introduction into typesetting LaTeX equations with AMS-LATEX packages and provides some examples and their explanations. LaTeX align equations.
 lastmod: "2023-04-14"
 sitemap:
     changefreq: "weekly"

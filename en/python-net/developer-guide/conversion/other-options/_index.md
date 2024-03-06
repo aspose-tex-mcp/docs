@@ -4,7 +4,7 @@ linktitle: Other options
 type: docs
 weight: 17
 url: /python-net/other-options/
-description: The Aspose.TeX API solution for Python includes conversion functionality that allows you to set the initial interaction mode in which the engine starts. Here are a few code examples.
+description: Aspose.TeX API solution for Python includes conversion functionality that allows you to set the initial interaction mode in which the engine starts.
 submenu: menu-tex-for-python-net
 ---
 

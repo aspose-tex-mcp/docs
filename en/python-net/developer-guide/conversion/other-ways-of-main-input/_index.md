@@ -1,10 +1,10 @@
 ---
-title: Alternative methods for supplying the main TeX input file | Python
+title: Alternative methods to supply main TeX input file | Python
 linktitle: Other ways to provide the main TeX input file
 type: docs
 weight: 14
 url: /python-net/other-ways-of-main-input/
-description: The Aspose.TeX API solution for Python includes a Constructor that accepts a stream as the first argument, providing conversion functionality. Here are a few code examples.
+description: Aspose.TeX API solution for Python includes a Constructor that accepts a stream as the first argument, providing conversion functionality.
 submenu: menu-tex-for-python-net
 ---
 

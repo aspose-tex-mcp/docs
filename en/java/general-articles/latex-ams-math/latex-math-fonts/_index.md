@@ -1,9 +1,9 @@
 ---
-title: 8. Fonts in math formulas | LaTeX manual
+title: 8. Fonts in math formulas | LaTeX font math
 type: docs
 weight: 80
 url: /java/latex-math-fonts/
-keywords: ams-latex, amsmath, amsfonts, amssymb, latex math fonts, latex math alphabets, latex bm package
+keywords: ams-latex, amsmath, amsfonts, amssymb, latex math fonts, latex math alphabets, latex bm package, latex fonts, latex fonts math
 description: This article discusses handling math fonts by means of standard LaTeX, as well as using the amsmath and bm packages.
 lastmod: "2023-06-01"
 sitemap:
@@ -11,6 +11,8 @@ sitemap:
     priority: 0.8
 submenu: menu-tex-for-java
 ---
+
+## Introduction to LaTeX fonts
 
 Unlike in floating text, you would not generally need automatic changes in font shapes. Different shapes have specific meanings in maths. For example, bold upright letters may be used for vectors. If the characters in a formula were to change due to surrounding conditions, the result would be incorrect. That is why handling of fonts in math formulas differs from that in text.
 
@@ -69,6 +71,9 @@ x &=& 12345 \\
 
 Here you can see that `\mathrm` doesn't change the digits and `\mathnormal` doesn't change the letters, so the default for digits in the normal set-up is the math alphabet associated with `\mathrm` and the default for letters is the one associated with `\mathnormal`. This behavior can be controlled with the `\DeclareMathSymbol` command.
 
+### What font does LaTeX use for math?
+
+In LaTeX, the default font used for math mode is typically *Computer Modern*. However, you can also use different fonts by specifying them in your LaTeX document preamble using packages.
 
 ### Custom alphabet identifiers
 
@@ -104,6 +109,21 @@ You can also redefine an existing math alphabet identifier in a package file or 
 will override the default settings for the `\mathsf` alphabet identifier. It will switch to **Adobe Avant Garde** in your formulas.
 
 > Note that if the math alphabet in question is part of a symbol font that is already loaded by LaTeX for other reasons (e.g., `\mathcal`), it is better to use `\DeclareSymbolFontAlphabet` as it makes better use of TeX's somewhat limited resources for math.
+
+## Best math fonts
+
+Apart from default *Computer Modern* font, LaTeX offers seven built-in fonts for typesetting mathematical alphabets, so users can customize their math expressions without requiring additional packages in the preamble. And the best option for you is to use one of these 8 fonts.
+
+| **Font** | **Usage** | **Command** |
+|---|---|---|
+|Upright Roman | Standard Upright font|`\mathrm{}`|
+|Calligraphic | Used for typesetting regular mathematics letters.|`\mathnormal{}`|
+|Calligraphic | Used to typeset capital letters with a special Calligraphic font.|`\mathcal{}`|
+|Italic letters| Make the text in italic letters|`\mathit{}`|
+|Upright [Sans Serif](/font/net/what-is-font/sans-serif-fonts/)| Sets upright Sans Serif letters|`\mathsf{}`|
+|Upright Roman boldface| Used for typesetting upright Roman boldface letters|`\mathbf{}`|
+|Typewriter type|Used for for typesetting upright typewriter type letters.|`\mathtt{}`|
+
 
 ## 8.2. Text font commands in math
 
@@ -173,7 +193,7 @@ $ \forall n \in \mathbb{N} : \mathfrak{M}_n \leq \mathfrak{A} $
 
 ![amsfonts math alphabet identifiers](latex-ams-math-8-14.png)
 
-## 5. Bold type face in formulas. The `bm` package
+## 5. Bold math font style. The `bm` package
 
 For Latin letters only, you can use the `\mathbf` command. For everything else, there is the `bm` package. Just load it and use `\bm` to make any formula as bold and beautiful as the available fonts allow.
 
