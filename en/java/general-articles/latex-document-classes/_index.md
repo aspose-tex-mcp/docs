@@ -3,7 +3,7 @@ title: LaTeX document classes | Aspose.TeX for Java
 type: docs
 weight: 20
 url: /java/latex-document-classes/
-keywords: latex article class, latex documentclass, latex document template, latex article, latex book, latex slides, latex report, latex letter, documentclass latex options
+keywords: latex article class, latex documentclass, latex document template, latex article, latex book, latex slides, latex report, latex letter, documentclass in latex
 description: This article is a concise digest of the LaTeX document classes and their options. It also provides some examples.
 lastmod: "2023-04-14"
 sitemap:
@@ -12,7 +12,7 @@ sitemap:
 submenu: menu-tex-for-java
 ---
 
-## What is a LaTeX document class?
+## What is a documentclass in LaTeX?
 
 LaTeX defines some rules which every document author must follow. It also defines the structure of the source file, which is essentially a typesetting program. According to this structure, the document source code must contain a part responsible for the document content itself - *body* - which is enclosed in a pair of commands: `\begin{document}` and `\end{document}`. LaTeX ignores anything that follows the end of the body. The part of the source code prior to `\begin{document}` is called the *preamble*.
 

@@ -4,7 +4,7 @@ linktitle: Other TeX formats
 type: docs
 weight: 18
 url: /python-net/other-tex-formats/
-description: The Aspose.TeX API solution for Python provides conversion functionality that allows for converting LaTeX files as well as custom TeX files. Here are a few code examples.
+description: The Aspose.TeX API solution for Python provides functionality that allows you convert LaTeX files and custom TeX files. Here are a few code examples.
 submenu: menu-tex-for-python-net
 ---
 

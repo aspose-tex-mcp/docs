@@ -1,5 +1,5 @@
 ---
-title: 7. Delimiters | LaTeX manual
+title: 7. Delimiters | LaTeX manual | Aspose.TeX
 type: docs
 weight: 70
 url: /java/latex-math-delimiters/

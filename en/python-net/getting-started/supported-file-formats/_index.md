@@ -4,7 +4,7 @@ linktitle: Supported File Formats
 type: docs
 weight: 20
 url: /python-net/supported-file-formats/
-description: This Python solution for manipulating TeX files supports TeX files as input and provides various output formats, including TeX, XPS, PDF, PNG, JPEG, TIFF, and BMP.
+description: This Python solution for manipulating TeX files supports TeX files as input and various output formats, including TeX, XPS, PDF, PNG, JPEG, TIFF, and BMP.
 submenu: menu-tex-for-python-net
 ---
 

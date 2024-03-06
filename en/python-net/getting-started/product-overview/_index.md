@@ -4,7 +4,7 @@ linktitle: Product Overview
 type: docs
 weight: 10
 url: /python-net/product-overview/
-description: Aspose.TeX is a Python library that allows for typesetting of TeX files. It offers a wide range of features, including conversion capabilities and the ability to create custom TeX formats.
+description: Aspose.TeX is a Python library that allows typesetting TeX files. It also offers features like conversion capabilities and the custom TeX formats creation.
 submenu: menu-tex-for-python-net
 ---
 

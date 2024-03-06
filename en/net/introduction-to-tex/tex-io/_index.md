@@ -1,5 +1,5 @@
 ---
-title: TeX I/O | Aspose.TeX for .NET
+title: TeX I/O | Aspose.TeX API Solution for .NET
 linktitle: TeX I/O
 type: docs
 weight: 12
