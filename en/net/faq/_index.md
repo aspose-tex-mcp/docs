@@ -12,7 +12,7 @@ submenu: menu-tex-for-net
 
 **Q: What is the primary functionality of Aspose.TeX API Solution?**
 
-**A:** Aspose.TeX is a comprehensive API solution for typesetting TeX and Latex that lets you create LaTeX equations, and create and convert TeX files. It is an efficient TeX document management and formula creation within your Java environment.
+**A:** Aspose.TeX is a comprehensive API solution for typesetting TeX and Latex that lets you create LaTeX equations, and create and convert TeX files. It is an efficient TeX document management and formula creation.
 <br><br>
 
 **Q: What formats does Aspose.TeX support?**
@@ -69,7 +69,6 @@ For more examples, please visit [Convertion](/tex/net/conversion/) guides.
 {{< highlight csharp>}}
     PM> Install-Package Aspose.TeX
 {{< /highlight >}}
-<br><br>
 
 **Q: How to render LaTeX formulas using Aspose.TeX?**
 
