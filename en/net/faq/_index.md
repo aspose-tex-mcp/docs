@@ -56,7 +56,7 @@ For more examples, please visit [Convertion](/tex/net/conversion/) guides.
 
 **Q: How to typeset TeX files?**
 
-**A:** **A:** It is very simple. You need to take only a few steps! 
+**A:** It is very simple. You need to take only a few steps! 
 
 1. Create conversion settings tailored to either the Object TeX or Object LaTeX format.
 2. Designate a directory within the file system for the resulting output.
