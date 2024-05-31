@@ -21,7 +21,7 @@ All examples of Aspose.TeX for C++ are hosted on [GitHub](https://GitHub.com/asp
 - Extract the contents of the ZIP file to any folder on your computer. All the examples are located in the **Examples** folder.
 - There is one Visual Studio solution file for C++ in **example** folder.
 - Open the solution file in Visual Studio and build the project.
-- Install library package for solution. [How to install.](/tex/cpp/installation) Dependent CodePorting library will be installed automatically.
+- Install library package for solution. [How to install.](/tex/cpp/installation/) Dependent CodePorting library will be installed automatically.
 - Check **Windows SDK Version** on project properties to accorded installed windows SDK verions.
 - **example/input** contains input files which examples use.
 - **example/output** folder should present. It's using by examples.

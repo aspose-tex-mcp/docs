@@ -12,7 +12,7 @@ sitemap:
 submenu: menu-tex-for-java
 ---
 
-It may happen that you want to extract some content (a drawing, a writing, a plot, etc.) from a LaTeX file as a separately rendered piece, or a *"figure"*, regardless of its place on an output document page. An illustration for your publication on the Internet, for example, is the case. Our API can help you with the task. There are two available target formats - PNG and SVG. Just like in LaTeX math formula rendering. We must also note that **LaTeX figure rendering** is a generalization of [LaTeX math formula rendering](/tex/java/latex-math-formula-rendering).
+It may happen that you want to extract some content (a drawing, a writing, a plot, etc.) from a LaTeX file as a separately rendered piece, or a *"figure"*, regardless of its place on an output document page. An illustration for your publication on the Internet, for example, is the case. Our API can help you with the task. There are two available target formats - PNG and SVG. Just like in LaTeX math formula rendering. We must also note that **LaTeX figure rendering** is a generalization of [LaTeX math formula rendering](/tex/java/latex-math-formula-rendering/).
 
 ## How to render a LaTeX figure to PNG
 
