@@ -13,7 +13,7 @@ sitemap:
 submenu: menu-tex-for-net
 ---
 
-Sometimes you may want to extract some content from a LaTeX file as a separately rendered piece, or a *"figure"*, without any connection to the page layout. It can be an illustration for your publication on the Internet, for example. You can do it with our API. As for the target formats, there are two options - PNG and SVG. As is in the case with the LaTeX math formula rendering feature. It's also worth noting that **LaTeX figure rendering** is a generalization of [LaTeX math formula rendering](/tex/net/latex-math-formula-rendering).
+Sometimes you may want to extract some content from a LaTeX file as a separately rendered piece, or a *"figure"*, without any connection to the page layout. It can be an illustration for your publication on the Internet, for example. You can do it with our API. As for the target formats, there are two options - PNG and SVG. As is in the case with the LaTeX math formula rendering feature. It's also worth noting that **LaTeX figure rendering** is a generalization of [LaTeX math formula rendering](/tex/net/latex-math-formula-rendering/).
 
 ## How to render a LaTeX figure to PNG
 

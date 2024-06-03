@@ -13,7 +13,7 @@ sitemap:
 submenu: menu-tex-for-python-net
 ---
 
-In certain situations, you may need to extract specific content from a LaTeX file as a standalone rendered piece, commonly referred to as a *figure*, without any connection to the page layout. This could be useful, for example, when creating illustrations for an online publication. Our API allows you to accomplish this. The target formats for rendering figures are PNG and SVG, just like with the LaTeX math formula rendering feature. It is worth noting that **LaTeX figure rendering** is a more general feature compared to [LaTeX math formula rendering](/tex/python-net/latex-math-formula-rendering).
+In certain situations, you may need to extract specific content from a LaTeX file as a standalone rendered piece, commonly referred to as a *figure*, without any connection to the page layout. This could be useful, for example, when creating illustrations for an online publication. Our API allows you to accomplish this. The target formats for rendering figures are PNG and SVG, just like with the LaTeX math formula rendering feature. It is worth noting that **LaTeX figure rendering** is a more general feature compared to [LaTeX math formula rendering](/tex/python-net/latex-math-formula-rendering/).
 
 ## Rendering a LaTeX figure to PNG
 
