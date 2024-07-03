@@ -12,17 +12,23 @@ There is a number of LaTeX packages embedded into the Aspose.TeX library. Here t
 
 ## The list of embedded LaTeX packages
 
+### `amsmath`
+v2.17j 2021/04/20.
+
 ### `eurosym`
-v1.1.
+v1.1 1998/08/06.
 
 ### `geometry`
-Adapted version equivalent to v5.6 2010/09/12.
+Adapted version equivalent to v5.9 2020/01/02.
 
 ### `graphics`
-Adapted version equivalent to v1.0o 2009/02/05 (graphicx v1.0f 1995/12/01, color v1.0j 2005/11/14).
+Adapted version equivalent to v1.4d 2021/03/04 (graphicx v1.2c 2020/12/05, color v1.0j 2005/11/14).
 
 ### `hyperref`
 Adapted version equivalent to v6.83m 2012/11/06.
+
+### `lipsum`
+v2.7 2021/09/20.
 
 ### `multirow`
 v2.8 2021/03/15.
@@ -31,10 +37,10 @@ v2.8 2021/03/15.
 v3.1.9a 2021/02/15.
 
 ### `pict2e`
-Adapted version equivalent to v0.2z 2014/01/12.
+Adapted version equivalent to v0.4b 2020/09/30.
 
 ### `setspace`
-v6.7a 2011/12/19.
+v6.7b 2022/12/04.
 
 ### `latex-tools` bundle:
 `afterpage`, `array`, `bm`, `calc`, `dcolumn`, `delarray`, `enumerate`, `fileerr`, `fontsmpl`, `ftnright`, `hhline`, `indentfirst`, `layout`, `longtable`, `multicol`, `rawfonts`, `showkeys`, `somedefs`, `tabularx`, `theorem`, `trace`, `varioref`, `verbatim`, `xr`, and `xspace`.
