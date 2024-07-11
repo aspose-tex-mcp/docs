@@ -72,7 +72,7 @@ If there is a package that is not included in the list you can also [use such Ex
 **A:** Yes, you can [write LaTeX figures to PNG or SVG](/tex/java/latex-figure-rendering/) using this Library.
 <br><br>
 
-**Q: How to install Aspose.TeX for C++ Package from Maven?**
+**Q: How to install Aspose.TeX for Java Package from Maven?**
 
 **A:** You can download its latest version directly from Aspose Maven Repository and install it within your Maven-based project by adding the following configurations to the pom.xml:
 
