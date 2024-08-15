@@ -15,6 +15,9 @@ There is a number of LaTeX packages embedded into the Aspose.TeX library. Here t
 ### `amsmath`
 v2.17j 2021/04/20.
 
+### `colortbl`
+v1.0f 2022/06/20.
+
 ### `eurosym`
 v1.1 1998/08/06.
 
@@ -34,7 +37,7 @@ v2.7 2021/09/20.
 v2.8 2021/03/15.
 
 ### `pgf`
-v3.1.9a 2021/02/15.
+v3.1.9a 2021/05/15.
 
 ### `pict2e`
 Adapted version equivalent to v0.4b 2020/09/30.
