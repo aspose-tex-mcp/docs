@@ -76,7 +76,7 @@ Using scaled fonts instead of fonts designed for a specific size often gives les
  
 The glyphs in handcrafted fonts of larger sizes are usually narrower than fonts magnified from a smaller size of the same family. One should use fonts designed for the desired size whenever possible, although it is acceptable to scale fonts within a small size range if necessary.
 
-### 2.4. Font encodings
+## 2.4. Font encodings
 
 As we mentioned in the introduction, TeX refers to the glyphs of a font by addressing them via codes. Such a mapping is called a *font encoding*. In LaTeX, two fonts having the same font encoding are supposed to be interchangeable in the sense that given the same input, they produce the "same" glyphs on the printed page.
 
