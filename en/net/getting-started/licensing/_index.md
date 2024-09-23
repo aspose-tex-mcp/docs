@@ -1,12 +1,16 @@
 ---
+translation: true
+template: /templates/_template-net.md
+linktitle: Licensing
 title: Licensing - Aspose.TeX for .NET
-type: docs
 weight: 70
 url: /net/licensing/
 description: When you stopped on the licensed version of the Aspose.TeX API solution for .NET here you find out how to apply the license.
-submenu: menu-tex-for-net
 aliases: /net/licensing
+lastmod: "2024-09-20"
 ---
+
+{{<section overview>}}
 
 ## Evaluate Aspose.TeX
 

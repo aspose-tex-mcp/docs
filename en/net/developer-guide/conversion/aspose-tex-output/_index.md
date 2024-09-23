@@ -1,12 +1,15 @@
 ---
+translation: true
+template: /templates/_template-net.md
 title: Aspose.TeX's output interface | .NET
 linktitle: Aspose.TeX's output interface
-type: docs
 weight: 16
 url: /net/aspose-tex-output/
 description: Conversion functionality of Aspose.TeX API solution for .NET with TeX, as an output format is explained here with the code examples.
-submenu: menu-tex-for-net
+lastmod: "2024-09-20"
 ---
+
+{{<section overview>}}
 
 Please, refer to **Aspose.TeX for .NET** [API reference](https://reference.aspose.com/tex/net/aspose.tex.io/) for formal definitions of I/O implementation.
 
@@ -16,7 +19,7 @@ Since I/O primitives of the TeX language can only deal with file names, Aspose.T
 
 ### Writing file output to the disk file system
 
-As we mentioned [above](/tex/net/latex-to-png/), the most common value for the [OutputDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/outputworkingdirectory/) would likely be an instance of the [OutputFileSystemDirectory](https://reference.aspose.com/tex/net/aspose.tex.io/outputfilesystemdirectory/) class.
+As we mentioned [above](/tex/{{lang.url-fragment}}net/latex-to-png/), the most common value for the [OutputDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/outputworkingdirectory/) would likely be an instance of the [OutputFileSystemDirectory](https://reference.aspose.com/tex/net/aspose.tex.io/outputfilesystemdirectory/) class.
 
 Here's how we would set it:
 
@@ -50,4 +53,4 @@ Unlike the input terminal, **Aspose.TeX for .NET** provides an implementation of
 
 {{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-OutputFileTerminal.cs" >}} 
 
-Here we ask the TeX engine to write the terminal output to the file with the name [<job_name>](/tex/net/tex-io/#tex-output).trm, which will be stored in the same output directory that we specified for the rest of the output. But this is not necessary. We might as well pass any other instance of any implementation of [IOutputTerminal](https://reference.aspose.com/tex/net/aspose.tex.io/ioutputterminal/) to the constructor.
+Here we ask the TeX engine to write the terminal output to the file with the name [<job_name>](/tex/{{lang.url-fragment}}net/tex-io/#tex-output).trm, which will be stored in the same output directory that we specified for the rest of the output. But this is not necessary. We might as well pass any other instance of any implementation of [IOutputTerminal](https://reference.aspose.com/tex/net/aspose.tex.io/ioutputterminal/) to the constructor.

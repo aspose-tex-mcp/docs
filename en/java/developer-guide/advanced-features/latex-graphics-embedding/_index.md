@@ -1,17 +1,16 @@
 ---
+translation: true
+template: /templates/_template-java.md
 title: LaTeX embedded graphics | Include graphics in the LaTeX code
 linktitle: LaTeX embedded graphics
-type: docs
 weight: 18	
 url: /java/latex-graphics-embedding/
 keywords: includegraphics latex, latex embed base64 graphics, latex base64 encoded graphics, write18, shell-escape, latex shell command
 description: In this article, you will explore how to inject Base64-encoded images in the LaTeX source code and learn the \write18 feature that makes this possible.
-lastmod: "2024-08-19"
-sitemap:
-    changefreq: "weekly"
-    priority: 0.8
-submenu: menu-tex-for-java
+lastmod: "2024-09-20"
 ---
+
+{{<section overview>}}
 
 ## An alternative way to include images
 
@@ -73,6 +72,7 @@ In **Aspose.TeX**, there is a TeX job option called `ShellMode`, which can take 
 
 To decode the contents of a file that is expected to contain Base64-encoded data, we normally would use the following command line:
 
+
 ```
 base64 -d  FILE1 > FILE2
 ```
@@ -80,6 +80,7 @@ base64 -d  FILE1 > FILE2
 where FILE1 is the "encoded" file and `> FILE2` redirects the output to the file `FILE2`.
 
 Therefore, we should include the following line in the body of our LaTeX file:
+
 
 ```tex
 \immediate\write18{base64 -d  sample-image.64 > sample-image.png}
@@ -93,11 +94,13 @@ If we run the typesetting of the file now, we will find that the image file `sam
 
 As we noted at the beginning of the article, to include the decoded image, we use the well-known LaTeX command `\includegraphics`:
 
+
 ```tex
 \includegraphics[options]{sample-image.png}
 ```
 
 So, the complete (nearly) LaTeX file might appear as follows:
+
 
 ```tex
 \documentclass{article}

@@ -1,16 +1,15 @@
 ---
+translation: true
+template: /templates/_template-cpp.md
 title: LaTeX math formulas rendering | C++
 linktitle: LaTeX math formulas rendering
-type: docs
 weight: 10
 url: /cpp/latex-math-formula-rendering/
 description: Aspose.TeX API solution for C++ LaTeX math formulas rendering is described in this article. Here you will find code examples of the functionality.
-lastmod: "2021-10-14"
-sitemap:
-    changefreq: "weekly"
-    priority: 0.8
-submenu: menu-tex-for-cpp
+lastmod: "2024-09-20"
 ---
+
+{{<section overview>}}
 
 The API reference section related to this topic is [here](https://reference.aspose.com/tex/cpp/namespace/aspose.te_x.features). In fact, the easiest way to demonstrate the LaTeX math formula rendering feature is to start with the example. Here it is:
 
@@ -58,6 +57,8 @@ The API reference section related to this topic is [here](https://reference.aspo
 Let's get to the details. First of all, we create a [rendering options](https://reference.aspose.com/tex/cpp/class/aspose.te_x.features.math_renderer_options) instance, similar to the TeX/LaTeX typesetting. We do it here simultaneously specifying the output image resolution.
 
 Next, we specify the preamble. The default preamble is:
+
+
 ```tex
 \usepackage{amsmath}
 \usepackage{amsfonts}

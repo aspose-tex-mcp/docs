@@ -1,12 +1,16 @@
 ---
+translation: true
+template: /templates/_template-java.md
 title: Product Overview | Aspose.TeX for Java
 linktitle: Product Overview
-type: docs
 weight: 10
 url: /java/product-overview/
 description: Aspose.TeX is a Java library for typesetting of TeX files. It provides you with the rich functionality like conversion or creating your own TeX format.
-submenu: menu-tex-for-java
+lastmod: "2024-09-20"
 ---
+
+{{<section overview>}}
+
 
 {{% alert color="primary" %}}
 
@@ -43,4 +47,4 @@ This table lists important Aspose.TeX for Java technical resources.
 |[Aspose.TeX blog](https://blog.aspose.com/category/tex/)|Check this often for information about new releases and useful tips about Aspose.TeX for Java.|
 |[Aspose.TeX for Java download](https://releases.aspose.com/tex/java)|Download the latest version of Aspose.TeX for Java from here. We release often.|
 |[Aspose.TeX for Java support forum](https://forum.aspose.com/c/tex)|Post your questions and issues here for a speedy resolution.|
-|[Aspose.TeX for Java product documentation](/tex/java/)|Full online documentation that includes this documentation as well as Aspose.TeX for Java API Reference.|
+|[Aspose.TeX for Java product documentation](/tex/{{lang.url-fragment}}java/)|Full online documentation that includes this documentation as well as Aspose.TeX for Java API Reference.|

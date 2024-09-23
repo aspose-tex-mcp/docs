@@ -1,16 +1,16 @@
 ---
+translation: true
+template: /templates/_template-java.md
+linktitle: LaTeX math symbols and their companions
 title: 10. Most popular LaTeX math symbols and their companions
-type: docs
 weight: 100
 url: /java/popular-latex-math-symbols/
 keywords: latex summation, latex sum, latex limit, latex limits, latex large, latex big sum
 description: Learn how to obtain LaTeX summation and LaTeX limit symbols. The article also covers adjusting the size of operators and positioning of operator limits.
-lastmod: "2024-03-14"
-sitemap:
-    changefreq: "weekly"
-    priority: 0.8
-submenu: menu-tex-for-java
+lastmod: "2024-09-20"
 ---
+
+{{<section overview>}}
 
 # Most popular LaTeX math symbols
 
@@ -24,6 +24,7 @@ The summation symbol, denoted by the Greek letter **Sigma**, is used to represen
 
 To use the summation symbol in LaTeX, the command `\sum` is used. The general syntax is as follows:
 
+
 ```tex
 \sum_{i=lower}^{upper} expression
 ```
@@ -32,13 +33,14 @@ Here, the variable *i* represents the index of summation. The lower and upper li
 
 For example, to represent the sum of numbers from 1 to 5, the LaTeX code would be:
 
+
 ```tex
 $\sum_{i=1}^{5} i$
 ```
 
 which will result in the following output:
 
-![A simple summation symbol example](latex-ams-math-10-1.png)
+![A simple summation symbol example](/tex/images/java/tutorial/latex-ams-math-10-1.png)
 
 ## The LaTeX Limit Symbol
 
@@ -49,12 +51,15 @@ The LaTeX limit symbol, often denoted as **lim**, is a fundamental mathematical 
 ## Using the LaTeX Limit Symbol
 
 To generate the limit symbol in LaTeX, simply use the command `\lim` followed by any additional specifications required. For example, typing 
+
+
 ```tex
 $\lim_{x \to \infty}f(x)$
 ```
+
 will produce the limit symbol with the variable `x` approaching infinity as follows:
 
-![A simple limit example](latex-ams-math-10-2.png)
+![A simple limit example](/tex/images/java/tutorial/latex-ams-math-10-2.png)
 
 This notation effectively communicates that the function's behavior is being observed as the input variable approaches an infinitely large value.
 
@@ -78,11 +83,13 @@ will position the lower index as `i=1` and the upper index as `n`. This notation
 
 In addition to the default positioning, LaTeX also allows users to customize the placement of limits. By using the command `\limits`, users can position limits above and below the summation symbol. For instance, typing
 
+
 ```tex
 $\sum\limits_{i=1}^n$
 ```
 
 will position the limits above and below the summation symbol, providing a clearer representation. This is also the default behavior in display mode. Thus
+
 
 ```tex
 $$\sum{i=1}^n$$
@@ -92,13 +99,14 @@ doesn't require `\limits`. But to switch back to the limits in index positions, 
 
 Compare the variants in the table below:
 
-![Symbol limits in different positions and modes](latex-ams-math-10-3.png)
+![Symbol limits in different positions and modes](/tex/images/java/tutorial/latex-ams-math-10-3.png)
 
 ## LaTeX Big Sum Symbol
 
 In this section, we will explore how to obtain a larger summation symbol in LaTeX using the `relsize` package. With the `relsize` package, users can easily adjust the size of mathematical symbols, including the summation symbol, to suit their specific needs.
 
 To begin, users need to include the `relsize` package in their LaTeX document by adding the following line to the preamble:
+
 
 ```tex
 \usepackage{relsize}
@@ -116,6 +124,6 @@ Consider the following example:
 
 which results in the output below:
 
-![Big summation symbol](latex-ams-math-10-4.png)
+![Big summation symbol](/tex/images/java/tutorial/latex-ams-math-10-4.png)
 
 As we can see, the `relsize` package in LaTeX provides a convenient way to obtain a larger summation symbol. By including the package in the document's preamble and utilizing the `\mathlarger{}` command, users can adjust the size of the summation symbol to suit their specific needs.

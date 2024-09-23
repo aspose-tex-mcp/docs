@@ -1,12 +1,15 @@
 ---
+translation: true
+template: /templates/_template-java.md
 title: Aspose.TeX's output interface | Java
 linktitle: Aspose.TeX's output interface
-type: docs
 weight: 16
 url: /java/aspose-tex-output/
 description: Conversion functionality of Aspose.TeX API solution for Java with TeX, as an output format is explained here with the code examples.
-submenu: menu-tex-for-java
+lastmod: "2024-09-20"
 ---
+
+{{<section overview>}}
 
 Please, refer to **Aspose.TeX for Java** [API reference](https://reference.aspose.com/tex/java/com.aspose.tex/package-frame) for formal definitions of I/O implementation.
 
@@ -16,7 +19,7 @@ Since I/O primitives of the TeX language can only deal with file names, Aspose.T
 
 ### Writing file output to the disk file system
 
-As we mentioned [above](/tex/java/latex-to-png/), the most common value for the [OutputWorkingDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/TeXOptions#getOutputWorkingDirectory--) would likely be an instance of the [OutputFileSystemDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/OutputFileSystemDirectory) class.
+As we mentioned [above](/tex/{{lang.url-fragment}}java/latex-to-png/), the most common value for the [OutputWorkingDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/TeXOptions#getOutputWorkingDirectory--) would likely be an instance of the [OutputFileSystemDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/OutputFileSystemDirectory) class.
 
 Here's how we would set it:
 
@@ -50,4 +53,4 @@ Unlike the input terminal, **Aspose.TeX for Java** provides an implementation of
 
 {{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Conversion-OutputFileTerminal.java" >}} 
 
-Here we ask the TeX engine to write the terminal output to the file with the name [<job_name>](/tex/net/tex-io/#tex-output).trm, which will be stored in the same output directory that we specified for the rest of the output. But this is not necessary. We might as well pass any other instance of any implementation of [IOutputTerminal](https://reference.aspose.com/tex/java/com.aspose.tex/IOutputTerminal) to the constructor.
+Here we ask the TeX engine to write the terminal output to the file with the name [<job_name>](/tex/{{lang.url-fragment}}net/tex-io/#tex-output).trm, which will be stored in the same output directory that we specified for the rest of the output. But this is not necessary. We might as well pass any other instance of any implementation of [IOutputTerminal](https://reference.aspose.com/tex/java/com.aspose.tex/IOutputTerminal) to the constructor.

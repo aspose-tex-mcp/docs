@@ -1,11 +1,15 @@
 ---
+translation: true
+template: /templates/_template-python-net.md
+linktitle: How to Run the Examples 
 title: How to Run the Examples | Aspose.TeX for Python
-type: docs
 weight: 80
 url: /python-net/how-to-run-the-examples/
 description: This page provides all the necessary requirements and steps to run the examples of the Aspose.TeX solution for Python.
-submenu: menu-tex-for-python-net
+lastmod: "2024-09-20"
 ---
+
+{{<section overview>}}
 
 ## Prerequisites
 

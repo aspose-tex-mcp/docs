@@ -1,16 +1,16 @@
 ---
+translation: true
+template: /templates/_template-java.md
+linktitle: LaTeX tables
 title: LaTeX tables | Aspose.TeX for Java
-type: docs
 weight: 50
 url: /java/latex-tables/
-keywords: LaTeX tables, tabular environment, LaTeX table design, table formatting in LaTeX, typesetting tables in LaTeX, LaTeX table layout, LaTeX table spacing, customizing LaTeX tables, LaTeX table alignment, multirow and multicolumn in LaTeX tables, LaTeX table packages, advanced LaTeX table features, LaTeX table best practices, creating tables in LaTeX, LaTeX table examples, LaTeX table captions and labels, data presentation in LaTeX, LaTeX table aesthetics, professional LaTeX tables
+keywords: LaTeX tables, tabular environment, LaTeX table design, table formatting in LaTeX, typesetting tables in LaTeX, LaTeX table layout, LaTeX table spacing, customizing LaTeX tables, LaTeX table alignment, multirow and multicolumn in LaTeX tables
 description: This article is a quick guide to creating functional, reader-friendly, visually apealing and professional tables in LaTeX.
-lastmod: "2023-04-14"
-sitemap:
-    changefreq: "weekly"
-    priority: 0.8
-submenu: menu-tex-for-java
+lastmod: "2024-09-20"
 ---
+
+{{<section overview>}}
 
 ## 1. Introduction
 
@@ -78,7 +78,7 @@ Here's a basic example of a LaTeX table:
 
 In this example, the `tabular` environment is used to create a table with three columns, each centered (`c`). The result of typesetting is shown below:
 
-<a href="/tex/java/latex-tables/latex-tables-1.jpg" style="display:inline-block;width:100%;">![Example output](latex-tables-1.jpg)</a>
+<a href="/tex/images/java/tutorial/latex-tables-1.jpg" style="display:inline-block;width:100%;">![Example output](/tex/images/java/tutorial/latex-tables-1.jpg)</a>
 
 The following example shows how to create a table with left and right aligned columns.
 
@@ -95,7 +95,7 @@ The following example shows how to create a table with left and right aligned co
 
 The right outer border is made double, the header is also separated from the table by a double line, there is no vertical line separating the columns.
 
-<a href="/tex/java/latex-tables/latex-tables-2.jpg" style="display:inline-block;width:100%;">![Example output](latex-tables-2.jpg)</a>
+<a href="/tex/images/java/tutorial/latex-tables-2.jpg" style="display:inline-block;width:100%;">![Example output](/tex/images/java/tutorial/latex-tables-2.jpg)</a>
 
 You can also draw horizontal lines that don't span the entire table from left to right.
 
@@ -123,7 +123,7 @@ Columns in a table may have a fixed width, in which case they are called *paragr
 
 Note the use of the `\newline` command.
 
-<a href="/tex/java/latex-tables/latex-tables-4.jpg" style="display:inline-block;width:100%;">![Example output](latex-tables-4.jpg)</a>
+<a href="/tex/java/latex-tables/latex-tables-4.jpg" style="display:inline-block;width:100%;">![Example output](/tex/images/java/tutorial/latex-tables-4.jpg)</a>
 
 With the `array` package included, two more options are available for fixed-width columns: `m{width}` - same as `p{width}`, but vertically aligns the cell content in the middle;
 `b{width}` - same as `p{width}`, but vertically aligns the cell content at the bottom.
@@ -143,7 +143,7 @@ that include a table.
 
 Here we tell LaTeX that the baseline should align to the bottom of the table.
 
-<a href="/tex/java/latex-tables/latex-tables-5.jpg" style="display:inline-block;width:100%;">![Example output](latex-tables-5.jpg)</a>
+<a href="/tex/java/latex-tables/latex-tables-5.jpg" style="display:inline-block;width:100%;">![Example output](/tex/images/java/tutorial/latex-tables-5.jpg)</a>
 
 ### Defining multiple columns
 
@@ -159,7 +159,7 @@ When your table contains identically aligned columns, you may define them all at
 \end{tabular}
 ```
 
-<a href="/tex/java/latex-tables/latex-tables-6.jpg" style="display:inline-block;width:100%;">![Example output](latex-tables-6.jpg)</a>
+<a href="/tex/java/latex-tables/latex-tables-6.jpg" style="display:inline-block;width:100%;">![Example output](/tex/images/java/tutorial/latex-tables-6.jpg)</a>
 
 ### Column specification using `>{\commmand}` and `<{\command}`
 
@@ -177,7 +177,7 @@ Another way to specify columns is to use `>{\command}` for commands executed rig
 \end{tabular}
 ```
 
-<a href="/tex/java/latex-tables/latex-tables-7.jpg" style="display:inline-block;width:100%;">![Example output](latex-tables-7.jpg)</a>
+<a href="/tex/java/latex-tables/latex-tables-7.jpg" style="display:inline-block;width:100%;">![Example output](/tex/images/java/tutorial/latex-tables-7.jpg)</a>
 
 ## 3. Customizing Table Layout
 
@@ -202,7 +202,7 @@ You may also specify the skip after a line explicitly using glue after the line 
 \end{tabular}
 ```
 
-<a href="/tex/java/latex-tables/latex-tables-8.jpg" style="display:inline-block;width:100%;">![Example output](latex-tables-8.jpg)</a>
+<a href="/tex/java/latex-tables/latex-tables-8.jpg" style="display:inline-block;width:100%;">![Example output](/tex/images/java/tutorial/latex-tables-8.jpg)</a>
 
 ### Using `@` and `!` expressions
 
@@ -223,11 +223,11 @@ Let's take a basic table specified by the following code:
 
 By varying the column description, we get the following results:
 
-<a href="/tex/java/latex-tables/latex-tables-9.jpg" style="display:inline-block;width:100%;">![Example output](latex-tables-9.jpg)</a>
+<a href="/tex/java/latex-tables/latex-tables-9.jpg" style="display:inline-block;width:100%;">![Example output](/tex/images/java/tutorial/latex-tables-9.jpg)</a>
 
 To preserve the initial spacing, you may use `!{...}`.
 
-<a href="/tex/java/latex-tables/latex-tables-10.jpg" style="display:inline-block;width:100%;">![Example output](latex-tables-10.jpg)</a>
+<a href="/tex/java/latex-tables/latex-tables-10.jpg" style="display:inline-block;width:100%;">![Example output](/tex/images/java/tutorial/latex-tables-10.jpg)</a>
 
 And here is an example of a column of floating point numbers aligned to the decimal point:
 
@@ -240,7 +240,7 @@ And here is an example of a column of floating point numbers aligned to the deci
 
 ```
 
-<a href="/tex/java/latex-tables/latex-tables-11.jpg" style="display:inline-block;width:100%;">![Example output](latex-tables-11.jpg)</a>
+<a href="/tex/java/latex-tables/latex-tables-11.jpg" style="display:inline-block;width:100%;">![Example output](/tex/images/java/tutorial/latex-tables-11.jpg)</a>
 
 ### Using the `dcolumn` package
 
@@ -258,7 +258,7 @@ It is possible to center a column on the decimal separator using the `dcolumn` p
 \end{tabular}
 ```
 
-<a href="/tex/java/latex-tables/latex-tables-12.jpg" style="display:inline-block;width:100%;">![Example output](latex-tables-12.jpg)</a>
+<a href="/tex/java/latex-tables/latex-tables-12.jpg" style="display:inline-block;width:100%;">![Example output](/tex/images/java/tutorial/latex-tables-12.jpg)</a>
 
 Note that a decimal-aligned column is typeset in math mode, hence the use of `\mathrm` for the column heading in the example above. Also, text in a decimal-aligned column (for example, the header) will be right-aligned before the decimal separator (assuming there's no decimal separator in the text). While this may be fine for very short text, or numeric column headings, it looks cumbersome in the example above. A solution to this is to use the `\multicolumn` command described below, specifying a single column and its alignment. For example, to center the header *Decimal* over its column in the above example, the first line of the table itself would be `Left&Right&Center&\multicolumn{1}{c}{Decimal}\\`.
 
@@ -287,7 +287,7 @@ Here is the simple example:
 \end{tabular}
 ```
 
-<a href="/tex/java/latex-tables/latex-tables-13.jpg" style="display:inline-block;width:100%;">![Example output](latex-tables-13.jpg)</a>
+<a href="/tex/java/latex-tables/latex-tables-13.jpg" style="display:inline-block;width:100%;">![Example output](/tex/images/java/tutorial/latex-tables-13.jpg)</a>
 
 ### Cells spanning multiple rows
 
@@ -314,7 +314,7 @@ Here, `num_rows` is the number of rows to merge; `width` is the cell width (`*` 
 \end{tabular}
 ```
 
-<a href="/tex/java/latex-tables/latex-tables-14.jpg" style="display:inline-block;width:100%;">![Example output](latex-tables-14.jpg)</a>
+<a href="/tex/java/latex-tables/latex-tables-14.jpg" style="display:inline-block;width:100%;">![Example output](/tex/images/java/tutorial/latex-tables-14.jpg)</a>
 
 You need to remember that when using the `\multirow` command, you must insert a blank entry for each appropriate cell in each subsequent row to be spanned.
 
@@ -340,7 +340,7 @@ The following example demonstrates how to span cells in both directions simultan
 
 The command `\multicolumn{1}{` is used to draw both vertical left and right borders. Although it is combined with `\multirow{2}{*}{...}`, it still draws vertical borders that only span the first row. To compensate for that, we add `\multicolumn{1}{` in the following rows spanned by the `mutltirow`.
 
-<a href="/tex/java/latex-tables/latex-tables-15.jpg" style="display:inline-block;width:100%;">![Example output](latex-tables-15.jpg)</a>
+<a href="/tex/java/latex-tables/latex-tables-15.jpg" style="display:inline-block;width:100%;">![Example output](/tex/images/java/tutorial/latex-tables-15.jpg)</a>
 
 ## 5. Table Size
 
@@ -356,7 +356,7 @@ The `graphicx` package provides the command `\resizebox{width}{height}{object}` 
 }
 ```
 
-<a href="/tex/java/latex-tables/latex-tables-16.jpg" style="display:inline-block;width:100%;">![Example output](latex-tables-16.jpg)</a>
+<a href="/tex/java/latex-tables/latex-tables-16.jpg" style="display:inline-block;width:100%;">![Example output](/tex/images/java/tutorial/latex-tables-16.jpg)</a>
 
 You can also use `\scalebox{ratio}{object}` in the same way, but with ratios instead of fixed size:
 
@@ -417,7 +417,7 @@ Table \ref{table:1} is an example of a referenced \LaTeX{} element.
 
 Here, the reference in the first line will be automatically replaced with the number set by the `\label` command.
 
-<a href="/tex/java/latex-tables/latex-tables-17.jpg" style="display:inline-block;width:100%;">![Example output](latex-tables-17.jpg)</a>
+<a href="/tex/java/latex-tables/latex-tables-17.jpg" style="display:inline-block;width:100%;">![Example output](/tex/images/java/tutorial/latex-tables-17.jpg)</a>
 
 ## 8. Coloring Tables
 
@@ -443,7 +443,7 @@ The command `\rowcolors{starting_row}{odd_color}{even_color}` must occur before 
 
 The command `\hiderowcolors`, provided by the `xcolor` package, deactivates highlighting starting from the row it occurs on to the end of the table. To reactivate highlighting, use the `\showrowcolors` command.
 
-<a href="/tex/java/latex-tables/latex-tables-18.jpg" style="display:inline-block;width:100%;">![Example output](latex-tables-18.jpg)</a>
+<a href="/tex/java/latex-tables/latex-tables-18.jpg" style="display:inline-block;width:100%;">![Example output](/tex/images/java/tutorial/latex-tables-18.jpg)</a>
 
 ### Coloring individual cells
 
@@ -462,7 +462,7 @@ With `xcolor` package, you can also specify the color of a particular cell.
 \end{tabular}
 ```
 
-<a href="/tex/java/latex-tables/latex-tables-19.jpg" style="display:inline-block;width:100%;">![Example output](latex-tables-19.jpg)</a>
+<a href="/tex/java/latex-tables/latex-tables-19.jpg" style="display:inline-block;width:100%;">![Example output](/tex/images/java/tutorial/latex-tables-19.jpg)</a>
 
 ### Using the `colortbl` package
 
@@ -475,7 +475,7 @@ The `colortbl` package provides the `\columncolor` command to specify the column
 \end{tabular}
 ```
 
-<a href="/tex/java/latex-tables/latex-tables-20.jpg" style="display:inline-block;width:100%;">![Example output](latex-tables-20.jpg)</a>
+<a href="/tex/java/latex-tables/latex-tables-20.jpg" style="display:inline-block;width:100%;">![Example output](/tex/images/java/tutorial/latex-tables-20.jpg)</a>
 
 The `\rowcolor` command can be used to specify the row colors. It must be used at the start of the row. The command has the same syntax as `\columncolor`.
 
@@ -486,7 +486,7 @@ The `\rowcolor` command can be used to specify the row colors. It must be used a
 \end{tabular}
 ```
 
-<a href="/tex/java/latex-tables/latex-tables-21.jpg" style="display:inline-block;width:100%;">![Example output](latex-tables-21.jpg)</a>
+<a href="/tex/java/latex-tables/latex-tables-21.jpg" style="display:inline-block;width:100%;">![Example output](/tex/images/java/tutorial/latex-tables-21.jpg)</a>
 
 You can also color vertical rules. For example, 
 
@@ -503,7 +503,7 @@ You can also color vertical rules. For example,
 
 will result in
 
-<a href="/tex/java/latex-tables/latex-tables-22.jpg" style="display:inline-block;width:100%;">![Example output](latex-tables-22.jpg)</a>
+<a href="/tex/java/latex-tables/latex-tables-22.jpg" style="display:inline-block;width:100%;">![Example output](/tex/images/java/tutorial/latex-tables-22.jpg)</a>
 
 Note the use of `\setlength{\arrayrulewidth}{2pt}` for changing the rule thickness.
 
@@ -526,7 +526,7 @@ However, coloring `\hline` and `\cline` is a bit trickier and is available with 
 
 will result in
 
-<a href="/tex/java/latex-tables/latex-tables-23.jpg" style="display:inline-block;width:100%;">![Example output](latex-tables-23.jpg)</a>
+<a href="/tex/java/latex-tables/latex-tables-23.jpg" style="display:inline-block;width:100%;">![Example output](/tex/images/java/tutorial/latex-tables-23.jpg)</a>
 
 ## 9. Building Long Tables
 
@@ -627,8 +627,8 @@ We will demonstrate most of the `longtable`'s features in the following example,
 
 This will result in two pages:
 
-<a href="/tex/java/latex-tables/latex-tables-24.jpg" style="display:inline-block;width:49%;">![Example output](latex-tables-24.jpg)</a>
-<a href="/tex/java/latex-tables/latex-tables-25.jpg" style="display:inline-block;width:49%;">![Example output](latex-tables-25.jpg)</a>
+<a href="/tex/java/latex-tables/latex-tables-24.jpg" style="display:inline-block;width:49%;">![Example output](/tex/images/java/tutorial/latex-tables-24.jpg)</a>
+<a href="/tex/java/latex-tables/latex-tables-25.jpg" style="display:inline-block;width:49%;">![Example output](/tex/images/java/tutorial/latex-tables-25.jpg)</a>
 
 Don't be confused if you don't get the same result after the first run of TeX. Due to the technical limitations of TeX, it may take a few runs to get the table you see in the images.
 
@@ -701,8 +701,8 @@ Before the `longtable` environment, we define column types with the `\newcolumnt
 
 The result of all efforts is below:
 
-<a href="/tex/java/latex-tables/latex-tables-26.jpg" style="display:inline-block;width:49%;">![Example output](latex-tables-26.jpg)</a>
-<a href="/tex/java/latex-tables/latex-tables-27.jpg" style="display:inline-block;width:49%;">![Example output](latex-tables-27.jpg)</a>
+<a href="/tex/java/latex-tables/latex-tables-26.jpg" style="display:inline-block;width:49%;">![Example output](/tex/images/java/tutorial/latex-tables-26.jpg)</a>
+<a href="/tex/java/latex-tables/latex-tables-27.jpg" style="display:inline-block;width:49%;">![Example output](/tex/images/java/tutorial/latex-tables-27.jpg)</a>
 
 ## 11. Best Practices and Tips
 

@@ -1,21 +1,25 @@
 ---
+translation: true
+template: /templates/_template-net.md
 title: Common issues with LaTeX files and how to solve them
 linktitle: Troubleshooting with LaTeX files
-type: docs
 weight: 10
 url: /net/troubleshoot-with-latex-files/
 keywords:  issues with LaTeX files, corrupted LaTeX documents, corrupted LaTeX files, broken LaTeX file, problems with LaTeX files, errors in LaTeX
 description: Practical tips to troubleshoot LaTeX files, resolving errors, compilation problems, package conflicts, and formatting bugs for seamless document creation.
-submenu: menu-tex-for-net
+lastmod: "2024-09-20"
 ---
+
+{{<section overview>}}
 
 ## Introduction ##
 
-[LaTeX](/tex/net/what-is-latex/) (pronounced "lay-tech" or "lah-tech") is a document preparation system used for creating documents with complex formatting, such as academic papers, research articles, theses, books, and more. LaTeX is popular because of its ability to produce professional-looking documents with consistent and high-quality typesetting.
+[LaTeX](/tex/{{lang.url-fragment}}net/what-is-latex/) (pronounced "lay-tech" or "lah-tech") is a document preparation system used for creating documents with complex formatting, such as academic papers, research articles, theses, books, and more. LaTeX is popular because of its ability to produce professional-looking documents with consistent and high-quality typesetting.
 
 A LaTeX file is a plain text file that contains a combination of text content and LaTeX commands. These commands are used to define the structure, formatting, and layout of the document. When you compile a LaTeX file using a LaTeX compiler, it processes the commands and produces a formatted output document, typically in PDF format.
 
 Here's a basic example of what a simple LaTeX file might look like:
+
 
 ```tex
 \documentclass{article} % Specifies the type of document (article, book, etc.)
@@ -37,7 +41,6 @@ LaTeX is a typesetting system commonly used for documents with complex formattin
 \end{itemize}
 
 \end{document}
-
 ```
 
 In this example, the \documentclass command specifies the type of document, and the content of the document is defined within further the document environment. 
@@ -70,6 +73,7 @@ Working with LaTeX can sometimes lead to various challenges and problems. Let's 
 #### Reasons for LaTeX compilation errors  ####
 
 LaTeX documents must be compiled to produce the final output. Compilation errors can occur for various reasons, from simple syntax mistakes to more complex issues related to package conflicts or document structure .Here  are some common reasons for LaTeX compilation errors:
+
 - Syntax errors like incorrect use of LaTeX commands, missing backslashes `()`, or mismatched braces `({})`.
 - Missing or improperly imported or installed packages.
 - Unclosed environments (like `\begin{...}` without a corresponding `\end{...}`).
@@ -107,9 +111,12 @@ LaTeX documents often rely on packages to provide additional features and format
 2. Check the documentation of the missing package to understand its purpose and how to use it. You can usually find package documentation on [CTAN](https://ctan.org/?lang=en) or using search engines.
 3. To import the missing package write in your LaTeX document's preamble (the area between `\documentclass` and `\begin{document}`), and add the `\usepackage` command. 
 For example:
+
+
 ```tex
 \usepackage{missing-package-name}
 ```
+
 4. Use the package manager that comes with your distribution to make sure your TeX distribution (e.g., TeX Live, MiKTeX) is up to date.
 5. If you face conflicts between packages, try finding alternative packages or adjusting your document's requirements.
 6. Ensure that the package name is written correctly. Note that LaTeX package names are case-sensitive.
@@ -124,6 +131,7 @@ For example:
 Working with LaTeX you may face that it sometimes moves figures and tables to optimize page layouts, which might not align with your intentions. To place figures and tables in LaTeX documents can be done using various positioning options and commands. LaTeX provides different placement specifiers that you can use to guide the positioning of your figures and tables.
 
 1. Placement Specifiers:
+
 - `[h]`: Place the figure/table "here" (approximately at the current location).
 - `[t]`: Place the figure/table at the "top" of a page.
 - `[b]`: Place the figure/table at the "bottom" of a page.
@@ -136,17 +144,23 @@ For example:
     % figure content here 
 \end{figure}
 ```
+
 2. To change the number of floats on a page use `\setcounter{totalnumber}` and `\setcounter{topnumber}` commands. For example, to allow more floats at the top of a page: 
+
 ```tex
 \setcounter{totalnumber}{4} % Total number of floats on a page 
 \setcounter{topnumber}{3} % Number of floats at the top of a page
 ```
+
 3. To modify the default float placement options globally in your document's preamble use the `\floatplacement` command. For example:
+
 ```tex
 \floatplacement{figure}{htbp} 
 \floatplacement{table}{htbp}
 ```
+
 4. Using the float Package provides additional control over float placement. It introduces the H specifier that places the float exactly where it appears in the code. This can be useful when you want strict control over placement.
+
 ```tex
 \usepackage{float} 
 % ... 
@@ -154,7 +168,9 @@ For example:
     % figure content here 
 \end{figure}
 ```
+
 5. If you don't want the object to float and want to place it exactly where it's defined, use the caption package's `\captionof` command.
+
 ```tex
 \usepackage{caption} 
 % ... 
@@ -164,6 +180,7 @@ For example:
     \captionof{figure}{This is a caption} 
 \end{minipage}
 ```
+
 6. To adjust placement manually recognize content or break up large figures/tables into smaller ones.
 7. Use online editors where you will be able to drag and drop figures and tables to see how they fit on the page.
 
@@ -176,6 +193,7 @@ LaTeX's automatic spacing and line-breaking rules might not always produce the d
 To edit spacing and line breaks in LaTeX you will need to use a combination of commands and environments to control the formatting of your document. These commands and techniques can be useful for fine-tuning your document's appearance when necessary:
 
 1. LaTeX handles spacing between words automatically, but in some cases, you need to adjust the spacing manually.
+
 - `\` - indicates a space that should not be stretched between words.
 - `~` - creates a non-breaking space and prevents line breaks between the words.
 - `\hspace{length}` - inserts horizontal space of a specified length.
@@ -183,31 +201,38 @@ To edit spacing and line breaks in LaTeX you will need to use a combination of c
 2. To insert vertical space of a specified length use the - `\vspace{length}` command.
 
 3. Use the next commands to manually adjust line breaks:
+
 - `\\` -  to create a line break in a paragraph.
 - `\newline` -  for a line break similar to `\\`.
 - `\linebreak` - makes a line break but tries to avoid excessive stretching of interword spaces.
 - `\newline` and `\linebreak` are similar, but the latter is preferable when you want to avoid large gaps.
 
 4. Use the next commands to manually adjust the paragraph spacing:
+
 - `\par` - inserts a new paragraph.
 - Blank lines: Leave a blank line between paragraphs in your source code to create a new paragraph in the output.
 
 5. Use the next commands to manually control vertical space:
+
 `\smallskip`, `\medskip`, `\bigskip` - Insert small, medium, or large vertical spaces respectively.
 
 6. Use the `setspace` package to manually adjust the line spacing:
+
 ```tex
 \usepackage{setspace} 
 \singlespacing % Single spacing 
 \onehalfspacing % 1.5x spacing 
 \doublespacing % Double spacing
 ```
+
 7. Use the next commands to manually control page breaks:
+
 - `\pagebreak` - inserts a page break.
 - `\newpage` - starts a new page.
 - `\clearpage` - ends the current page and flushes all pending floats, starting a new page.
 
 8. Use the next commands to manage horizontal alignment:
+
 - `center` - centers the content.
 - `flushleft`- left-aligns the content.
 - `flushright` - right-aligns the content.
@@ -220,6 +245,8 @@ To edit spacing and line breaks in LaTeX you will need to use a combination of c
 Cross-referencing allows you to refer to sections, figures, tables, equations, and other elements within your document. Incorrect or missing references can occur if you don't update them after making changes to your document's structure. To deal with it in LaTeX you need to understand how to set up and use labels, references, and citations correctly. Here's a guide to help you manage cross-referencing in LaTeX:
 
 1. To set labels you need to assign a label to that element using the `\label{label_name}` command. For example:
+
+
 ```tex
 \section{Introduction} 
 \label{sec:intro}
@@ -230,16 +257,25 @@ Cross-referencing allows you to refer to sections, figures, tables, equations, a
     \label{fig:sample} 
 \end{figure}
 ```
+
 2. To refer to labeled elements use the `\ref{label_name}` command. For instance:
+
+
 ```tex
 In Section \ref{sec:intro}, we discuss... 
 Figure \ref{fig:sample} shows...
 ```
+
 3. To refer to the page number references, use the `\pageref{label_name}` command:
+
+
 ```tex
 The details are provided in Section \ref{sec:intro} on page \pageref{sec:intro}.
 ```
+
 4. To cross-reference equations, use the `amsmath` package and label equations using `\label{eq:label_name}`. Reference equations with `\eqref{eq:label_name}` to include parentheses around the equation number:
+
+
 ```tex
 \begin{equation} 
     E = mc^2 
@@ -248,12 +284,15 @@ The details are provided in Section \ref{sec:intro} on page \pageref{sec:intro}.
  
 As shown in Equation \eqref{eq:einstein}...
 ```
+
 5. To manage citations and cross-references to bibliography entries, use BibTeX or BibLaTeX. You'll need to:
+
 - Add bibliography entries to a .bib file.
 - Use the `\cite{key}` command to cite references.
 - Include `\bibliography{filename}` or `\addbibresource{filename.bib}` to add the bibliography to your document.
 6. Sometimes, when you add or change references, you might need to compile your document multiple times (usually two or more times) to ensure the references are resolved correctly. This is because LaTeX uses auxiliary files to store information about labels and references.
 7. Use the `cleveref` package that provides enhanced cross-referencing capabilities, automatically determining the type of the reference and adding context (e.g., "Section" or "Figure") as needed. The `hyperref` package enhances cross-referencing and also makes references to clickable links in the generated PDF.
+
 ```tex
 \usepackage{cleveref} % Better cross-referencing 
 \usepackage{hyperref} % Hyperlinked references
@@ -264,6 +303,7 @@ As shown in Equation \eqref{eq:einstein}...
 #### How to maintain font and formatting consistency in LaTeX? ####
 
 Achieving consistent font sizes, styles, and formatting across different sections of the document may sometimes be a challenging task. It can be done with various LaTeX commands, packages, and settings to achieve this. 
+
 1. Choose a document class that aligns with your desired formatting style, such as `article`, `report`, `book`, or specific journal templates. Additionally, use the next packages to customize the formatting:
 - `\usepackage[margin=1in]{geometry}`  - adjusts margins.
 - `\usepackage{fontspec}` - for custom fonts (XeLaTeX or LuaLaTeX).
@@ -272,25 +312,34 @@ Achieving consistent font sizes, styles, and formatting across different section
 - `\usepackage{enumitem}` - customizes lists.
 
 2. Use the `fontspec` package with XeLaTeX or LuaLaTeX to select custom fonts
+
 ```tex
 \usepackage{fontspec} 
 \setmainfont{Times New Roman} % Replace with your desired font
 ```
+
 If using PDFLaTeX, you can use packages like `mathptmx` (Times), `helvet` (Helvetica), or `palatino` (Palatino) for font selection.
 
 3. To adjust line spacing use the `setspace` package:
+
+
 ```tex
 \usepackage{setspace} 
 \onehalfspacing % or \doublespacing
 ```
 
 4. To customize lists use the `enumitem` or `titlesec` package:
+
+
 ```tex
 \usepackage{titlesec} 
 \titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{1em}{} 
 \titleformat{\subsection}{\normalfont\large\bfseries}{\thesubsection}{1em}{}
 ```
+
 5. To customize captions for tables and figures:
+
+
 ```tex
 \usepackage{caption} 
 \captionsetup[table]{font=small, labelfont=bf} 
@@ -298,11 +347,15 @@ If using PDFLaTeX, you can use packages like `mathptmx` (Times), `helvet` (Helve
 ```
 
 6. Use the `parskip` package to control paragraph spacing without indentation. Use `setlength` to adjust paragraph indentation:
+
+
 ```tex
 \setlength{\parindent}{0pt} % No indentation
 ```
 
 7. To customize headers and footers use the `fancyhdr` package:
+
+
 ```tex
 \usepackage{fancyhdr} 
 \pagestyle{fancy} 
@@ -311,21 +364,26 @@ If using PDFLaTeX, you can use packages like `mathptmx` (Times), `helvet` (Helve
 \fancyhead[R]{\thepage} % Page number on the right
 ```
 
-8.To control page numbering style and position use the `fancyhdr` package or the `pagestyle` commands.
+8. To control page numbering style and position use the `fancyhdr` package or the `pagestyle` commands.
 
 ### Math equation alignment  ###
 
-It is not always an easy task to align formulas correctly, especially when there are a lot of them or complex alignments. In LaTeX, you can align equations using various environments and commands provided by the [`amsmath` package](/tex/java/what-is-ams-latex/). All the needed information about typesetting LaTeX formulas is described in the articles of the [Typesetting math formulas with standard LaTeX](/tex/java/latex-math/) chapter.
+It is not always an easy task to align formulas correctly, especially when there are a lot of them or complex alignments. In LaTeX, you can align equations using various environments and commands provided by the [`amsmath` package](/tex/{{lang.url-fragment}}java/what-is-ams-latex/). All the needed information about typesetting LaTeX formulas is described in the articles of the [Typesetting math formulas with standard LaTeX](/tex/{{lang.url-fragment}}java/latex-math/) chapter.
 
 #### Setting margin and page layout ####
 
 To manage margins and page layout use the `geometry` package that allows you to control various aspects, such as margins, page size, headers, and footers. 
+
 1. To adjust the margins of your document specify the desired margin dimensions using options like `left`, `right`, `top`, and `bottom`. Here's an example:
+
+
 ```tex
 \usepackage[left=1.5in, right=1.5in, top=1in, bottom=1in]{geometry}
 ```
 
 2. To change the paper size, use the `paper` option along with predefined paper sizes like `a4paper`, `letterpaper`, etc. For example:
+
+
 ```tex
 \usepackage[a4paper, margin=1in]{geometry}
 ```
@@ -333,6 +391,8 @@ To manage margins and page layout use the `geometry` package that allows you to 
 3. To customize headers and footers use options like `headheight`, `headsep`, `footskip` to control these dimensions. 
 
 4. To create a document with multiple columns, use the `multicol` package:
+
+
 ```tex
 \usepackage{multicol} 
 \begin{document} 
@@ -345,12 +405,15 @@ To manage margins and page layout use the `geometry` package that allows you to 
 ```
 
 5. Use the `setspace` package to adjust line spacing:
+
+
 ```tex
 \usepackage{setspace} 
 \onehalfspacing % 1.5x spacing
 ```
 
 6. If you want different layouts for odd and even pages, try to use the `twoside` option with the geometry package. This is common for documents with double-sided printing.
+
 ```tex
 \usepackage[twoside, inner=1in, outer=1.5in]{geometry}
 ```
@@ -362,6 +425,7 @@ Remember that when you manipulate the  page layout you should take into account 
 #### How to deal with problems caused by nested environments in LaTeX? ####
 
 It can sometimes be challenging to manage nested environments (like lists within lists), especially their formatting and indentation. Here are some tips to deal with problems caused by nested environments:
+
 1. Check for compatibility because not all environments are compatible when nested. For example, avoid nesting list environments (itemize, enumerate, description) inside each other without proper control over indentation and formatting.
 2. When dealing with nested environments, use braces `{}` or groups to limit the scope of certain commands. This helps prevent unintended effects on the outer environment. 
 3. If you need to include a short mathematical formula within the text, use inline math mode `($...$)` instead of entering a full equation environment. to reduce the complexity.
@@ -378,23 +442,31 @@ Using such characters (e.g., accented letters) in your document might create iss
 #### How to deal with non-ASCII characters? ####
 
 In LaTeX, handling non-ASCII characters requires attention to encoding, font selection, and input methods. Here's how to work with non-ASCII characters in LaTeX:
+
 1. LaTeX documents typically use the UTF-8 encoding to support a wide range of characters. To ensure that non-ASCII characters are handled correctly, specify the UTF-8 encoding in the document preamble:
+
+
 ```tex
 \usepackage[utf8]{inputenc}
 ```
 
 2. Some fonts included in LaTeX support a broad range of characters, including non-ASCII characters. If you're working with languages other than English, try to pick fonts that are designed to handle those characters. For example, for Latin scripts with accents, you can use the `fontenc` package and the T1 font encoding:
+
 ```tex
 \usepackage[T1]{fontenc}
 ```
+
 For more complex scripts like Cyrillic, Greek, or Devanagari, consider using XeLaTeX or LuaLaTeX along with appropriate system fonts.
 
 3. In LaTeX, you can input accented characters using escape sequences:
+
+
 ```tex
 \'e % é 
 \"o % ö 
 \^a % â
 ```
+
 Alternatively, you can use the `inputenc` package to directly input accented characters:
 
 ```tex
@@ -404,6 +476,8 @@ café % café
 ```
 
 4. Some characters have special meanings in LaTeX (e.g., $, %, _, &). To include them as regular text, use backslashes to escape them:
+
+
 ```tex
 \$ % $ 
 \% % % 
@@ -421,6 +495,7 @@ café % café
 
 LaTeX can sometimes struggle with handling large documents. It is usually noted by longer compilation times or memory issues. Here are several tips to make your LaTeX file smaller
 :
+
 1. Remove unnecessary packages because they can contribute to unnecessary overhead.
 2. Use minimal document classes if it suits your needs. Some classes, like `article`, have less overhead in comparison to more complex classes like `book` or `report`.
 3. Avoid excessive use of `\input` or `\include` commands for external files.
@@ -444,6 +519,7 @@ Some packages might conflict with each other, causing unexpected behavior or err
 #### How to spot incompatible LaTeX packages? ####
 
 This task can sometimes be challenging, especially when you have a complex document with multiple packages interacting. Here are some strategies to identify and resolve incompatible LaTeX packages:
+
 1. Compile your document and carefully review the error messages and warnings in the log file to find hints about which packages are conflicting. 
 2. Comment out packages one by one to identify which one might be causing the conflict. After each step, recompile and see if the issue persists. 
 3. Create a minimal working example(MWE) that replicates the problem you're facing. By gradually adding packages and content from your original document, you can isolate the source of the issue more effectively.
@@ -480,6 +556,7 @@ To deal with unsupported or incompatible file types use [conversion tools](https
 ## Conclusion ##
 
 To draw a conclusion let's summarize the main rules that let you work with LaTeX files easily:
+
 - Learn LaTeX's syntax and common commands to reduce syntax errors and improve troubleshooting.
 - Address LaTeX documentation, tutorials, and forums to find solutions to specific problems.
 - Compile the document step by step (commenting out sections) to locate the source of errors.

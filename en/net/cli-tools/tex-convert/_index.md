@@ -1,13 +1,16 @@
 ---
+translation: true
+template: /templates/_template-net.md
 title: TeX Command Line Converter | Aspose.TeX CLI Tools
 linktitle: Aspose.TeX Convert
-type: docs
 weight: 80
 url: /net/cli-tools/tex-convert/
 description: Powerful Command-Line Converter tool from Aspose.TeX to convert TeX/LaTeX documents easily and efficiently. Aspose CLI TeX converter.
 keywords: tex to pdf cli converter, latex to pdf cli converter, cli tex converter
-submenu: menu-tex-for-net
+lastmod: "2024-09-20"
 ---
+
+{{<section overview>}}
 
 ## Overview
 
@@ -22,13 +25,14 @@ The [Aspose.TeX Convert](https://www.nuget.org/packages/Aspose.TeX.Convert) tool
 ## Benefits
 
 Using the Aspose.TeX Convert tool provides several advantages:
+
 - **Efficiency**: Quickly convert TeX/LaTeX documents to multiple formats without the need for complex software.
 - **Automation**: Integrate document conversion into your automated workflows and scripts.
 - **Flexibility**: Handle various document formats to ensure compatibility with different systems and applications.
 
 ## Licensing
 
-While the Aspose.TeX Convert application itself is free to use, converting documents requires a valid Aspose.TeX [license](/tex/net/licensing/). You can purchase a license or use Aspose.TeX in trial mode for evaluation purposes.
+While the Aspose.TeX Convert application itself is free to use, converting documents requires a valid Aspose.TeX [license](/tex/{{lang.url-fragment}}net/licensing/). You can purchase a license or use Aspose.TeX in trial mode for evaluation purposes.
 
 ## How to install TeX Command-Line Converter?
 
@@ -37,6 +41,7 @@ The Aspose.TeX Convert tool can be installed either globally or locally, dependi
 ### Global Installation
 
 To install Aspose.TeX Convert globally on your machine, use the following command:
+
 
 ```bash
 dotnet tool install --global Aspose.TeX.Convert
@@ -48,12 +53,15 @@ Specify the `--version` option if you need a specific version of the tool.
 
 For local installation within a specific project, first, navigate to your project's root directory. Then, execute the following commands:
 
+
 1. Create a tool-manifest if not already present:
+
    ```bash
    dotnet new tool-manifest
    ```
 
 2. Install Aspose.TeX Convert locally:
+
    ```bash
    dotnet tool install Aspose.TeX.Convert --local
    ```
@@ -74,6 +82,7 @@ If you need to uninstall the tool, use the `dotnet tool uninstall` command with 
 
 Convert your documents using command-line arguments. Here are the available parameters:
 
+
 - `-i, --input [Required]`: Path to the input TeX or LaTeX document.
   - Example: `--input input.tex`
 - `-o, --output [Required]`: Path for the converted document.
@@ -88,6 +97,7 @@ Convert your documents using command-line arguments. Here are the available para
 
 Example command-line usage:
 
+
 ```bash
 Aspose.TeX.Convert --input input.tex --output output.pdf --format pdf
 ```
@@ -100,6 +110,7 @@ The Aspose.TeX Convert application can also be integrated directly into your .NE
 
 To add the Aspose.TeX Convert tool to your Visual Studio project, go to your project's root directory, and execute the following command:
 
+
 ```bash
 dotnet Aspose.TeX.Convert add
 ```
@@ -109,6 +120,7 @@ This command adds the Aspose.TeX Convert functionality directly into your projec
 ### Use from Code
 
 Here is an example of using the Aspose.TeX CLI tools programmatically in your C# code:
+
 
 ```csharp
 using Aspose.TeX.MicroApps.Convert;
@@ -143,4 +155,4 @@ class Program
 }
 ```
 
-For more information and usage examples, please visit the [Aspose.TeX for .NET documentation](/tex/net/).
+For more information and usage examples, please visit the [Aspose.TeX for .NET documentation](/tex/{{lang.url-fragment}}net/).

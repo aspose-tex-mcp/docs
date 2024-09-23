@@ -1,19 +1,19 @@
 ---
+translation: true
+template: /templates/_template-net.md
 title: LaTeX Figure rendering | Aspose.TeX for .NET
 linktitle: LaTeX include figure
-type: docs
 weight: 20
 url: /net/latex-figure-rendering/
 description: Aspose.TeX API solution for .NET LaTeX fragment (figure) rendering is described in this article. Learn the code examples on how to use the functionality.
 keywords: latex figure, figure size latex, latex picture, latex image, latex include figure, latex pic, latex figure options
-lastmod: "2023-02-28"
-sitemap:
-    changefreq: "weekly"
-    priority: 0.8
-submenu: menu-tex-for-net
+lastmod: "2024-09-20"
 ---
 
-Sometimes you may want to extract some content from a LaTeX file as a separately rendered piece, or a *"figure"*, without any connection to the page layout. It can be an illustration for your publication on the Internet, for example. You can do it with our API. As for the target formats, there are two options - PNG and SVG. As is in the case with the LaTeX math formula rendering feature. It's also worth noting that **LaTeX figure rendering** is a generalization of [LaTeX math formula rendering](/tex/net/latex-math-formula-rendering/).
+{{<section overview>}}
+
+
+Sometimes you may want to extract some content from a LaTeX file as a separately rendered piece, or a *"figure"*, without any connection to the page layout. It can be an illustration for your publication on the Internet, for example. You can do it with our API. As for the target formats, there are two options - PNG and SVG. As is in the case with the LaTeX math formula rendering feature. It's also worth noting that **LaTeX figure rendering** is a generalization of [LaTeX math formula rendering](/tex/{{lang.url-fragment}}net/latex-math-formula-rendering/).
 
 ## How to render a LaTeX figure to PNG
 
@@ -24,6 +24,8 @@ The API reference section related to this topic is [here](https://reference.aspo
 First of all, we create a [LaTeX figure options](https://reference.aspose.com/tex/net/aspose.tex.features/figurerendereroptions/) instance. We do it here simultaneously specifying the output image resolution.
 
 Next, we specify the preamble. There's no default preamble for LaTeX figure rendering, so if you are, for instance, going to render some graphics plotted using the `pict2e` LaTeX package, you need to specify it in the preamble:
+
+
 ```tex
 \usepackage{pict2e}
 ```
@@ -46,7 +48,7 @@ The last lines of the example print two artifacts of figure rendering - the size
 
 Here is the result of rendering.
 
-<a href="/tex/net/latex-figure-rendering/text-and-formula.png">![LaTeX Figure rendering to PNG](/tex/net/latex-figure-rendering/text-and-formula.png)</a>
+<a href="/tex/net/latex-figure-rendering/text-and-formula.png">![LaTeX Figure rendering to PNG](/tex/images/net/text-and-formula.png)</a>
 
 This is the most general use case for the **LaTeX figure rendering** feature.
 
@@ -57,10 +59,11 @@ In much the same way, we can render a LaTeX figure in SVG format.
 {{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Features-SvgLaTeXFigureRendering.cs" >}}
 
 The differences are:
- * We use [SvgFigureRendererOptions](https://reference.aspose.com/tex/net/aspose.tex.features/svgfigurerendereroptions/) class instead of [PngFigureRendererOptions](https://reference.aspose.com/tex/net/aspose.tex.features/pngfigurerendereroptions/).
- * We don't specify the resolution.
- * We use [SvgFigureRenderer](https://reference.aspose.com/tex/net/aspose.tex.features/svgfigurerenderer/) class instead of [PngFigureRenderer](https://reference.aspose.com/tex/net/aspose.tex.features/pngfigurerenderer/).
+
+* We use [SvgFigureRendererOptions](https://reference.aspose.com/tex/net/aspose.tex.features/svgfigurerendereroptions/) class instead of [PngFigureRendererOptions](https://reference.aspose.com/tex/net/aspose.tex.features/pngfigurerendereroptions/).
+* We don't specify the resolution.
+* We use [SvgFigureRenderer](https://reference.aspose.com/tex/net/aspose.tex.features/svgfigurerenderer/) class instead of [PngFigureRenderer](https://reference.aspose.com/tex/net/aspose.tex.features/pngfigurerenderer/).
  
 Here is the result:
 
-<a href="/tex/net/latex-figure-rendering/text-and-formula.svg">![LaTeX Figure rendering to SVG](/tex/net/latex-figure-rendering/text-and-formula.svg)</a>
+<a href="/tex/net/latex-figure-rendering/text-and-formula.svg">![LaTeX Figure rendering to SVG](/tex/images/net/text-and-formula.svg)</a>

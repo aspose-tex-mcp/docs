@@ -1,16 +1,16 @@
 ---
+translation: true
+template: /templates/_template-java.md
+linktitle: Fonts in math formulas 
 title: 8. Fonts in math formulas | LaTeX font math
-type: docs
 weight: 80
 url: /java/latex-math-fonts/
 keywords: ams-latex, amsmath, amsfonts, amssymb, latex math fonts, latex math alphabets, latex bm package, latex fonts, latex fonts math
 description: This article discusses handling math fonts by means of standard LaTeX, as well as using the amsmath and bm packages.
-lastmod: "2023-06-01"
-sitemap:
-    changefreq: "weekly"
-    priority: 0.8
-submenu: menu-tex-for-java
+lastmod: "2024-09-20"
 ---
+
+{{<section overview>}}
 
 ## Introduction to LaTeX fonts
 
@@ -26,7 +26,7 @@ Symbols and alphabet characters have one difference that is most important for u
 
 ## 8.1. Math alphabet identifiers
 
-One alphabet and a huge number of symbols are not enough for scientists. They try to use every available typeface to denote special concepts. In addition to foreign alphabets such as Greek letters, which usually are accessed as symbols - `\alpha`, `\beta`, etc. - we can find sans serif letters for matrices, bold serif letters for vectors, Fraktur fonts for groups, ideals, or fields. Others use calligraphic shapes to denote sets. The number of conventions is infinite, and they differ from one discipline to another. And LaTeX accommodates this making it possible to declare new math alphabet identifiers and associate them with any desired font shape group instead of relying only on a predefined set that cannot be extended. These identifiers are special commands for use in a formula that typeset any alphabet character in their argument in a specific typeface. These identifiers may use different typefaces in different formulas, as we will see [later](/tex/java/latex-math-fonts/#3-math-formula-versions), but within one formula they always select the same typeface regardless of the surrounding conditions.
+One alphabet and a huge number of symbols are not enough for scientists. They try to use every available typeface to denote special concepts. In addition to foreign alphabets such as Greek letters, which usually are accessed as symbols - `\alpha`, `\beta`, etc. - we can find sans serif letters for matrices, bold serif letters for vectors, Fraktur fonts for groups, ideals, or fields. Others use calligraphic shapes to denote sets. The number of conventions is infinite, and they differ from one discipline to another. And LaTeX accommodates this making it possible to declare new math alphabet identifiers and associate them with any desired font shape group instead of relying only on a predefined set that cannot be extended. These identifiers are special commands for use in a formula that typeset any alphabet character in their argument in a specific typeface. These identifiers may use different typefaces in different formulas, as we will see [later](/tex/{{lang.url-fragment}}java/latex-math-fonts/#3-math-formula-versions), but within one formula they always select the same typeface regardless of the surrounding conditions.
 
 ### Predefined alphabet identifiers
 
@@ -34,13 +34,13 @@ LaTeX already has a few built-in alphabet identifiers. They are shown in the tab
 
 | *Command* | *Example code* | *Result* |
 |---|---|---|
-| `\mathcal` | `$\mathcal{A}=a$` | !["Calligraphic A Equals a"](latex-ams-math-8-1.png) |
-| `\mathrm` | `$\mathrm{max}_i$`| !["Roman Max Subscript i"](latex-ams-math-8-2.png) |
-| `\mathbf` | `$\sum x = \mathbf{v}$`| !["Bold Sum x Equals v"](latex-ams-math-8-3.png) |
-| `\mathsf` | `$\mathsf{G}_1^2$`| !["Sans-serif G Subscript 1 Superscript 2"](latex-ams-math-8-4.png) |
-| `\mathtt` | `$\mathtt{W}(a)$`| !["Typewriter W of a"](latex-ams-math-8-5.png) |
-| `\mathnormal` | `$\mathnormal{abc}=abc$`| !["Normal abc Equals abc"](latex-ams-math-8-6.png) |
-| `\mathit` | `$differ\neq\mathit{differ}$`| !["Italic Differ Not Equal to Differ"](latex-ams-math-8-7.png) |
+| `\mathcal` | `$\mathcal{A}=a$` | !["Calligraphic A Equals a"](/tex/images/java/tutorial/latex-ams-math-8-1.png) |
+| `\mathrm` | `$\mathrm{max}_i$`| !["Roman Max Subscript i"](/tex/images/java/tutorial/latex-ams-math-8-2.png) |
+| `\mathbf` | `$\sum x = \mathbf{v}$`| !["Bold Sum x Equals v"](/tex/images/java/tutorial/latex-ams-math-8-3.png) |
+| `\mathsf` | `$\mathsf{G}_1^2$`| !["Sans-serif G Subscript 1 Superscript 2"](/tex/images/java/tutorial/latex-ams-math-8-4.png) |
+| `\mathtt` | `$\mathtt{W}(a)$`| !["Typewriter W of a"](/tex/images/java/tutorial/latex-ams-math-8-5.png) |
+| `\mathnormal` | `$\mathnormal{abc}=abc$`| !["Normal abc Equals abc"](/tex/images/java/tutorial/latex-ams-math-8-6.png) |
+| `\mathit` | `$differ\neq\mathit{differ}$`| !["Italic Differ Not Equal to Differ"](/tex/images/java/tutorial/latex-ams-math-8-7.png) |
 
 In LaTeX2e, math alphabet identifiers are commands with one argument, a single letter or a single word to be typeset in a special font.
 
@@ -53,7 +53,7 @@ Therefore, $\mathsf{G}$ can be computed as
 \end{equation}
 ```
 
-![Predefined math alphabet identifiers](latex-ams-math-8-8.png)
+![Predefined math alphabet identifiers](/tex/images/java/tutorial/latex-ams-math-8-8.png)
 
 ***Default math alphabet***
 
@@ -67,7 +67,7 @@ x &=& 12345 \\
 \end{eqnarray}
 ```
 
-![No default math alphabet](latex-ams-math-8-9.png)
+![No default math alphabet](/tex/images/java/tutorial/latex-ams-math-8-9.png)
 
 Here you can see that `\mathrm` doesn't change the digits and `\mathnormal` doesn't change the letters, so the default for digits in the normal set-up is the math alphabet associated with `\mathrm` and the default for letters is the one associated with `\mathnormal`. This behavior can be controlled with the `\DeclareMathSymbol` command.
 
@@ -79,7 +79,7 @@ In LaTeX, the default font used for math mode is typically *Computer Modern*. Ho
 
 You can use the `\DeclareMathAlphabet` command to define a new math alphabet identifier. Let's say that you want to make a slanted sans serif typeface available as a math alphabet. First you decide on a new command name, such as `\msfsl`, to be used as the alphabet identifier. Then you refer to the font classification table below to find a suitable font shape group to assign to this alphabet identifier.
 
-![Classification of the Computer Modern font families](latex-ams-math-8-10.png)
+![Classification of the Computer Modern font families](/tex/images/java/tutorial/latex-ams-math-8-10.png)
 
 You will find that the **Computer Modern Sans** family, for example, consists of a medium series with upright and slanted shapes. If you decide to use the slanted shape of this family, you tell LaTeX using `\DeclareMathAlphabet`.
 
@@ -98,7 +98,7 @@ We demonstrate this with the formula
 \end{equation}
 ```
 
-![Declaring a custom math alphabet identifier](latex-ams-math-8-11.png)
+![Declaring a custom math alphabet identifier](/tex/images/java/tutorial/latex-ams-math-8-11.png)
 
 You can also redefine an existing math alphabet identifier in a package file or in the preamble of your document. For example,
 
@@ -134,9 +134,9 @@ Although text font declarations like `\rmfamily` cannot be used in math, the fon
 \[ x = 10 \textbf{ and thus } y = 12 \]
 ```
 
-![Text font commands in math](latex-ams-math-8-12.png)
+![Text font commands in math](/tex/images/java/tutorial/latex-ams-math-8-12.png)
 
-Here we can see that the **Sans** family was retained and the series was changed to bold. The [`\text`](/tex/java/latex-text-in-math-formula/#61-the-text-command) command provided by the `amstext` package (which is also loaded by `amsmath`) may turn out to be more useful. It picks up the current encoding, family, series, and shape values without changing any of them.
+Here we can see that the **Sans** family was retained and the series was changed to bold. The [`\text`](/tex/{{lang.url-fragment}}java/latex-text-in-math-formula/#61-the-text-command) command provided by the `amstext` package (which is also loaded by `amsmath`) may turn out to be more useful. It picks up the current encoding, family, series, and shape values without changing any of them.
 
 ## 8.3. Math formula versions
 
@@ -156,13 +156,13 @@ Obviously, the default math version is `\mathversion{normal}`. The bold version,
 \end{equation}
 ```
 
-![Math versions](latex-ams-math-8-13.png)
+![Math versions](/tex/images/java/tutorial/latex-ams-math-8-13.png)
 
-Using `\mathversion` may be suitable in certain situations, such as in headings, but you have to keep in mind that changing the version means changing the appearance and possibly the meaning of the entire formula. If you want to darken only some symbols or characters within one formula, you should use the `\mathbf` alphabet identifier for characters and/or use the `\bm` command provided by the [`bm`](/tex/java/latex-math-fonts/#5-bold-face-in-formulas-the-bm-package) package rather than change the `\mathversion`.
+Using `\mathversion` may be suitable in certain situations, such as in headings, but you have to keep in mind that changing the version means changing the appearance and possibly the meaning of the entire formula. If you want to darken only some symbols or characters within one formula, you should use the `\mathbf` alphabet identifier for characters and/or use the `\bm` command provided by the [`bm`](/tex/{{lang.url-fragment}}java/latex-math-fonts/#5-bold-face-in-formulas-the-bm-package) package rather than change the `\mathversion`.
 
 When you change the math version, LaTeX looks in its internal tables to find where all the symbols for this new math version are located. It may also change all or some of the math alphabet identifiers and associate them with other font shapes in this version.
 
-But what happens to custom alphabet identifiers like `\msfsl` which we defined in the [example](/tex/java/latex-math-fonts/#custom-alphabet-identifiers)? As long as you declared them using `\DeclareMathAlphabet`, they will remain the same in all math versions.
+But what happens to custom alphabet identifiers like `\msfsl` which we defined in the [example](/tex/{{lang.url-fragment}}java/latex-math-fonts/#custom-alphabet-identifiers)? As long as you declared them using `\DeclareMathAlphabet`, they will remain the same in all math versions.
 
 If the math alphabet identifier is to produce a different font in a special math version, you must tell LaTeX about it by using the `\SetMathAlphabet` command. For example, in the default set-up the `\mathsf` alphabet identifier is defined as follows:
 
@@ -191,7 +191,7 @@ The *amsfonts* (and *amssymb*) package defines two math alphabets: the Euler Fra
 $ \forall n \in \mathbb{N} : \mathfrak{M}_n \leq \mathfrak{A} $
 ```
 
-![amsfonts math alphabet identifiers](latex-ams-math-8-14.png)
+![amsfonts math alphabet identifiers](/tex/images/java/tutorial/latex-ams-math-8-14.png)
 
 ## 5. Bold math font style. The `bm` package
 
@@ -215,7 +215,7 @@ The following example shows many ways to use `\bm` and `\mathbf` commands. It al
 \end{gather}
 ```
 
-![Using the bm package](latex-ams-math-8-15.png)
+![Using the bm package](/tex/images/java/tutorial/latex-ams-math-8-15.png)
 
 In this example `bm` tries its best to fulfill the requests for bold versions of individual symbols and letters. But if you look closely, you will see that the results are not always optimal. For example, the sum and product operators are made with a technique known as *poor man's bold*, in which the symbol is overprinted three times with slight offsets. Also, the curly brackets are not made bold at all. Such drawbacks cannot be avoided because for some symbols there is simply no bold variant when using the **Computer Modern** math fonts.
 
@@ -234,7 +234,7 @@ $\bm{\Biggl\lbrace\biggl\lbrace\Bigl\lbrace\bigl \lbrace \lbrace
 \Biggr\rangle}$
 ```
 
-![Delimiters made (and not made) bold by the \bm command](latex-ams-math-8-16.png)
+![Delimiters made (and not made) bold by the \bm command](/tex/images/java/tutorial/latex-ams-math-8-16.png)
 
 Normally, if a command that itself takes arguments is within the `\bm`'s argument, then that command must be fully included in the argument of `\bm`. As a result, all parts of the typeset material will be in bold. If you need the output of a command with arguments to be only partially bold, then you should do the following. You should put the symbol(s) that you don't want to be bold in an `\mbox` and explicitly reset the math version within the box contents using `\unboldmath`. TeX considers an `\mbox` to be a symbol of class *Ordinary*. Thus, to get the spacing right, you may have to surround it by a `\mathbin`, `\mathrel`, or `\mathop`.
 
@@ -247,7 +247,7 @@ or the similar
 $ \bm{\sqrtsign}{\bm{x} \times \bm{\alpha}} $
 ```
 
-![\bm with commands that take arguments](latex-ams-math-8-17.png)
+![\bm with commands that take arguments](/tex/images/java/tutorial/latex-ams-math-8-17.png)
 
 Fortunately, such complex operations are rarely required. In most cases involving commands with arguments, only parts of the argument need to be made bold. And this can be achieved by using the `\bm` command inside those arguments. As with `\sqrtsign` in the previous example, for the common case of bold accents, `\bm` is specially programmed to allow the accent's argument to be outside its own argument. However, if you need such accents regularly, it is best to define your own abbreviations, as in the example below.
 
@@ -262,6 +262,6 @@ Although `\bmdefine\bpi{\pi}` appears to be simply shorthand for `\newcommand\bp
 $\hat a \neq \bm{\hat a} \neq \bm\hat a = \bhat a\neq \bm\widehat a$
 ```
 
-![Optimized making accents bold with the \bm command](latex-ams-math-8-18.png)
+![Optimized making accents bold with the \bm command](/tex/images/java/tutorial/latex-ams-math-8-18.png)
 
 This example also shows that the variable-width accents (e.g., `\widehat`) share a deficiency with the delimiters: in the **Computer Modern** math set-up they come from a font for which no bold variant is available.

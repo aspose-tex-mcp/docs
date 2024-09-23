@@ -1,12 +1,16 @@
 ---
+translation: true
+template: /templates/_template-java.md
 title: Supported File Formats | Aspose.TeX for Java
 linktitle: Supported File Formats
-type: docs
 weight: 20
 url: /java/supported-file-formats/
 description: This TeX manipulation solution for Java supports TeX files for input and a variety of output formats like TeX, XPS, PDF, PNG, JPEG, TIFF and PNG.
-submenu: menu-tex-for-java
+lastmod: "2024-09-20"
 ---
+
+{{<section overview>}}
+
 
 ## Supported File Formats
 

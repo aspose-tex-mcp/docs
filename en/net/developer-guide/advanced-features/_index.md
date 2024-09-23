@@ -1,11 +1,14 @@
 ---
+translation: true
+template: /templates/_template-net.md
 title: Advanced Features | Aspose.TeX for .NET
 linktitle: Advanced Features 
-type: docs
 weight: 20
 url: /net/advanced-features/
 description: Aspose.TeX API solution features for .NET built on the basis of Object TeX/LaTeX implementation are gathered in this chapter.
-submenu: menu-tex-for-net
+lastmod: "2024-09-20"
 ---
+
+{{<section overview>}}
 
 This part discusses Aspose.TeX's features built on the basis of Object TeX/LaTeX implementation.

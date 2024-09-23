@@ -1,16 +1,16 @@
 ---
-title: 6. How to set up new fonts
-type: docs
+translation: true
+template: /templates/_template-java.md
+title: How to set up new fonts
+linktitle: 6. How to set up new fonts
 weight: 60
 url: /java/latex-fonts-setup/
 keywords: latex, latex fonts, latex font substitution, latex font setup
 description: This article covers setting up new fonts for use with LaTeX and also includes an example of a font definition.
-lastmod: "2024-04-19"
-sitemap:
-    changefreq: "weekly"
-    priority: 0.8
-submenu: menu-tex-for-java
+lastmod: "2024-09-20"
 ---
+
+{{<section overview>}}
 
 To set up new fonts for use with LaTeX, you basically need to fill the internal font selection tables with information necessary for later associating a font request in a document with the external `.tfm` file containing character information used by LaTeX. Therefore, the tables are responsible for associating the external file `cmdunh10.tfm` with the following request:
 
@@ -33,11 +33,11 @@ The answers to these questions will provide the information necessary to classif
 
 A de facto standard font naming scheme in the TeX world classifies all font file names using eight alphanumeric characters, where case is not significant. This eight-character limit guarantees that the same file names can be used across all computer platforms. The principle of the scheme is described in the table below, where the parts in brackets can be omitted if they correspond to a default. For example, a design size is given only if the font is not linearly scaled.
 
-![The naming convention for external fonts](latex-font-selection-6-1.png)
+![The naming convention for external fonts](/tex/images/java/tutorial/latex-font-selection-6-1.png)
 
 Below is the classification of the 35 "basic" PostScript fonts according to LaTeX's font interface. For each font, the full Adobe name and the corresponding short file name (in the classification currently being discussed) is given. For `OT1`, `T1`, or `TS1`, one would need to append `7t`, `8t`, or `8c`, respectively, to obtain the full file name. For example, `putr8t` for Utopia Regular in `T1` encoding.  This will be useful in further discussion.
 
-![PostScript fonts classification](latex-font-selection-6-2.png)
+![PostScript fonts classification](/tex/images/java/tutorial/latex-font-selection-6-2.png)
 
 The naming convention covers internal TeX names for fonts (i.e., those used in `\DeclareFontShape` declarations as described in the next section), names for virtual fonts and their components (e.g., particular reencodings of physical fonts), and the names of physical fonts. In the case of PostScript fonts, the physical font names are often different from those used internally by TeX.
 In the latter case, internal font names have to be mapped to corresponding external fonts when the result of a LaTeX run is viewed or printed. For example, the PostScript driver `dvips` uses mapping files (default extension `.map`) that contain lines such as
@@ -282,7 +282,7 @@ If a nonstandard font shape declaration is needed for a particular document, thi
 
 Font changes that involve alterations in the encoding scheme require certain precautions. In the `T1` encoding, for example, most accented letters have their own glyphs, whereas in the traditional TeX text encoding (`OT1`), accented letters must be generated from letters and accents using the `\accent` primitive. If the two approaches have to be mixed, perhaps because a font is available only in one of the encodings, the definition of a command such as `\"` must behave differently depending on the current font encoding.
 
-This is why each font encoding has to be formally introduced to LaTeX with a `\DeclareFontEcnoding` command, which takes three arguments. The first argument is the name of the encoding, which will later be used to access the encoding with the `\fontencoding` command. The list of [standard encoding schemes](/tex/java/latex-fonts-low-level/#choosing-the-encoding) and their internal names is provided in the table in section 5.1.
+This is why each font encoding has to be formally introduced to LaTeX with a `\DeclareFontEcnoding` command, which takes three arguments. The first argument is the name of the encoding, which will later be used to access the encoding with the `\fontencoding` command. The list of [standard encoding schemes](/tex/{{lang.url-fragment}}java/latex-fonts-low-level/#choosing-the-encoding) and their internal names is provided in the table in section 5.1.
 
 The second argument contains any code (such as definitions) to be executed whenever LaTeX switches from one encoding to another using the `\fontencoding` command. The last argument contains code to be used every time the font is accessed as a mathematical alphabet. Thus, these three arguments can be used to redefine commands that depend on the positions of characters in the encoding.
 
@@ -330,7 +330,7 @@ New encoding schemes cannot be introduced via the `.fd` mechanism. NFSS will rej
 
 ### How to specify font sizes
 
-For every text size, NFSS maintains [three sizes that are used to typeset math formulas](/tex/java/latex-math-fractions-binomial-styles/): the size in which to typeset most of the symbols (selected by `\textstyle` or `\displaystyle`); the size for first-order subscripts and superscripts (`\scriptstyle`); and the size for higher-order subscripts and superscripts (`\scriptscriptstyle`). If you switch to a new text size for which the corresponding math sizes are not yet known, NFSS tries to calculate them as fractions of the text size. If you do not want NFSS to calculate these sizes, you may specify the correct values yourself via `\DeclareMathSizes`. This declaration takes four arguments: the outer text size and the three math sizes for this text size. For example, the following declaration defines the math sizes for the 14pt (heading) size to be 14pt, 10pt, and 7pt, respectively:
+For every text size, NFSS maintains [three sizes that are used to typeset math formulas](/tex/{{lang.url-fragment}}java/latex-math-fractions-binomial-styles/): the size in which to typeset most of the symbols (selected by `\textstyle` or `\displaystyle`); the size for first-order subscripts and superscripts (`\scriptstyle`); and the size for higher-order subscripts and superscripts (`\scriptscriptstyle`). If you switch to a new text size for which the corresponding math sizes are not yet known, NFSS tries to calculate them as fractions of the text size. If you do not want NFSS to calculate these sizes, you may specify the correct values yourself via `\DeclareMathSizes`. This declaration takes four arguments: the outer text size and the three math sizes for this text size. For example, the following declaration defines the math sizes for the 14pt (heading) size to be 14pt, 10pt, and 7pt, respectively:
 
 ```tex
 \DeclareMathSizes{14}{14}{10}{7}
@@ -344,13 +344,13 @@ Another declaration below (for headings of a higher level) informs NFSS that no 
 
 ### How to add new symbols
 
-We have already discussed how to use [math alphabet commands](/tex/java/latex-math-fonts/#81-math-alphabet-identifiers) to produce letters with special shapes in a formula. Here, we will show how to add fonts containing special symbols, called *symbol fonts*, and how to make such symbols accessible in formulas.
+We have already discussed how to use [math alphabet commands](/tex/{{lang.url-fragment}}java/latex-math-fonts/#81-math-alphabet-identifiers) to produce letters with special shapes in a formula. Here, we will show how to add fonts containing special symbols, called *symbol fonts*, and how to make such symbols accessible in formulas.
 
 Adding new symbol fonts is similar to the declaration of a new math alphabet identifier: `\DeclareSymbolFont` defines the defaults for all math versions, `\SetSymbolFont` overrides the defaults for a particular version.
 
 The math symbol fonts are accessible via a symbolic name. For example, if you want to install the AMS font `msbm10` (see the glyph chart below), you first have to make the typeface known to NFSS using the declarations described in the previous sections.
 
-![msbm10 glyph chart](latex-font-selection-6-3.png)
+![msbm10 glyph chart](/tex/images/java/tutorial/latex-font-selection-6-3.png)
 
 These instructions would look like
 
@@ -380,7 +380,7 @@ After taking care of the font declarations, you can use this symbol font in math
 
 The first argument is the command name that you choose. The second argument is one of the commands shown in the table below and determines the nature of the symbol, which, in turn, determines the amount of space that LaTeX puts around the symbol when it occurs in a formula.
 
-![Math object types](latex-font-selection-6-4.png)
+![Math object types](/tex/images/java/tutorial/latex-font-selection-6-4.png)
 
 Incidentally, except for `\mathalpha`, these commands can be used in math formulas as functions with one argument, in which case they space their (possible complex) argument as if it was of the corresponding type.
 
@@ -414,9 +414,9 @@ As a brief summary: to introduce new symbol fonts, you need to issue a small num
 
 ### How to introduce new math versions
 
-We have already [mentioned](/tex/java/latex-math-fonts/#83-math-formula-versions) that the standard set-up automatically declares two math versions: normal and bold. To introduce additional versions, you can use the `\DeclareMathVersion` declaration, which takes one argument - the name of the new math version. All symbol fonts and all math alphabets previously declared are automatically available in this math version; the default fonts are assigned to them - that is, the fonts you have specified with `\DeclareMathAlphabet` or `\DeclareSymbolFont`.
+We have already [mentioned](/tex/{{lang.url-fragment}}java/latex-math-fonts/#83-math-formula-versions) that the standard set-up automatically declares two math versions: normal and bold. To introduce additional versions, you can use the `\DeclareMathVersion` declaration, which takes one argument - the name of the new math version. All symbol fonts and all math alphabets previously declared are automatically available in this math version; the default fonts are assigned to them - that is, the fonts you have specified with `\DeclareMathAlphabet` or `\DeclareSymbolFont`.
 
-You can then change the set-up for your new version by issuing appropriate `\SetMathAlphabet` and `\SetSymbolFont` commands for the bold math version, as shown earlier in this section and in the article on [fonts in math](/tex/java/latex-math-fonts/). Again, the introduction of a new math version is normally done in a package file.
+You can then change the set-up for your new version by issuing appropriate `\SetMathAlphabet` and `\SetSymbolFont` commands for the bold math version, as shown earlier in this section and in the article on [fonts in math](/tex/{{lang.url-fragment}}java/latex-math-fonts/). Again, the introduction of a new math version is normally done in a package file.
 
 
 ### How to change the symbol font set-up

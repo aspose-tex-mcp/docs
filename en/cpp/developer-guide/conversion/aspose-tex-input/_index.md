@@ -1,12 +1,15 @@
 ---
+translation: true
+template: /templates/_template-cpp.md
 title: Aspose.TeX's input interface | C++
 linktitle: Aspose.TeX's input interface
-type: docs
 weight: 15
 url: /cpp/aspose-tex-input/
 description: Conversion functionality of Aspose.TeX API solution for C++ with TeX, as an input format is explained here with the code examples.
-submenu: menu-tex-for-cpp
+lastmod: "2024-09-20"
 ---
+
+{{<section overview>}}
 
 Please, refer to **Aspose.TeX for C++** [API reference](https://reference.aspose.com/tex/cpp/namespace/aspose.te_x.i_o) for formal definitions of I/O implementation.
 

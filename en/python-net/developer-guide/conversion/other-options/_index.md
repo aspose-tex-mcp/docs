@@ -1,22 +1,25 @@
 ---
+translation: true
+template: /templates/_template-python-net.md
 title: Other managing TeX options | Python
 linktitle: Other options
-type: docs
 weight: 17
 url: /python-net/other-options/
 description: Aspose.TeX API solution for Python includes conversion functionality that allows you to set the initial interaction mode in which the engine starts.
-submenu: menu-tex-for-python-net
+lastmod: "2024-09-20"
 ---
+
+{{<section overview>}}
 
 ## Setting the interaction mode
 
-As mentioned [in TeX interaction parapraph](/tex/net/tex-io/#tex-interaction-modes), **Aspose.TeX for Python** provides the capability to set the initial interaction mode in which the engine starts. Here is an example of how it can be done:
+As mentioned [in TeX interaction parapraph](/tex/{{lang.url-fragment}}net/tex-io/#tex-interaction-modes), **Aspose.TeX for Python** provides the capability to set the initial interaction mode in which the engine starts. Here is an example of how it can be done:
 
 {{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Conversion-InteractionMode.py" >}}
 
 ## Setting the job name
 
-When the main input file is provided as a file name, the resulting output files will have the same name but with different extensions. The TeX engine refers to the input file's name as the *job name* and uses it for the output files. The exception is auxiliary files with explicitly specified file names. However, when the main input file is passed as a [stream](/tex/python-net/other-ways-of-main-input/#supplying-the-main-input-file-as-a-stream), the TeX engine uses the default job name, which is *texput*. In both scenarios, overriding the job name by assigning the appropriate conversion option is possible.
+When the main input file is provided as a file name, the resulting output files will have the same name but with different extensions. The TeX engine refers to the input file's name as the *job name* and uses it for the output files. The exception is auxiliary files with explicitly specified file names. However, when the main input file is passed as a [stream](/tex/{{lang.url-fragment}}python-net/other-ways-of-main-input/#supplying-the-main-input-file-as-a-stream), the TeX engine uses the default job name, which is *texput*. In both scenarios, overriding the job name by assigning the appropriate conversion option is possible.
 
 {{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Conversion-JobName.py" >}}
 
@@ -40,7 +43,7 @@ By default, the TeX engine constructs ligatures for specific character pairs if 
 
 ## Repeating the job
 
-As mentioned [in LaTeX input file paragraph](/tex/net/latex-io/#latex-input-file), labels and references, there are situations where we may need to run the same job twice. Here is a method to accomplish that:
+As mentioned [in LaTeX input file paragraph](/tex/{{lang.url-fragment}}net/latex-io/#latex-input-file), labels and references, there are situations where we may need to run the same job twice. Here is a method to accomplish that:
 
 {{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Conversion-Repeat.py" >}}
 

@@ -1,19 +1,18 @@
 ---
+translation: true
+template: /templates/_template-python-net.md
 title: LaTeX Figure rendering | Aspose.TeX for Python
 linktitle: LaTeX include figure
-type: docs
 weight: 20
 url: /python-net/latex-figure-rendering/
 description: The article gives an overview of Aspose.TeX API solution for Python and its functionality for rendering LaTeX fragments (figures). Learn the code examples.
 keywords: latex figure, figure size latex, latex picture, latex image, latex include figure, latex pic, latex figure options
-lastmod: "2023-02-28"
-sitemap:
-    changefreq: "weekly"
-    priority: 0.8
-submenu: menu-tex-for-python-net
+lastmod: "2024-09-20"
 ---
 
-In certain situations, you may need to extract specific content from a LaTeX file as a standalone rendered piece, commonly referred to as a *figure*, without any connection to the page layout. This could be useful, for example, when creating illustrations for an online publication. Our API allows you to accomplish this. The target formats for rendering figures are PNG and SVG, just like with the LaTeX math formula rendering feature. It is worth noting that **LaTeX figure rendering** is a more general feature compared to [LaTeX math formula rendering](/tex/python-net/latex-math-formula-rendering/).
+{{<section overview>}}
+
+In certain situations, you may need to extract specific content from a LaTeX file as a standalone rendered piece, commonly referred to as a *figure*, without any connection to the page layout. This could be useful, for example, when creating illustrations for an online publication. Our API allows you to accomplish this. The target formats for rendering figures are PNG and SVG, just like with the LaTeX math formula rendering feature. It is worth noting that **LaTeX figure rendering** is a more general feature compared to [LaTeX math formula rendering](/tex/{{lang.url-fragment}}python-net/latex-math-formula-rendering/).
 
 ## Rendering a LaTeX figure to PNG
 
@@ -47,7 +46,7 @@ The last few lines of the example display two pieces of information related to f
 
 Here is the result of rendering.
 
-<a href="/tex/python-net/latex-figure-rendering/text-and-formula.png">![LaTeX Figure rendering to PNG](/tex/python-net/latex-figure-rendering/text-and-formula.png)</a>
+<a href="/tex/python-net/latex-figure-rendering/text-and-formula.png">![LaTeX Figure rendering to PNG](/tex/images/python-net/text-and-formula.png)</a>
 
 This represents the most general use case for the **LaTeX figure rendering** feature.
 
@@ -58,10 +57,11 @@ Similarly, we can also render a LaTeX figure in SVG format.
 {{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Features-SvgLaTeXFigureRendering.py" >}}
 
 The differences are:
- * Instead of using the [PngFigureRendererOptions](https://reference.aspose.com/tex/python-net/aspose.tex.features/pngfigurerendereroptions/) class, we utilize the [SvgFigureRendererOptions](https://reference.aspose.com/tex/python-net/aspose.tex.features/svgfigurerendereroptions/) class.
- * We do not need to specify the resolution.
- * Instead of using the [PngFigureRenderer](https://reference.aspose.com/tex/python-net/aspose.tex.features/pngfigurerenderer/) class, we utilize the [SvgFigureRenderer](https://reference.aspose.com/tex/python-net/aspose.tex.features/svgfigurerenderer/) class.
+
+* Instead of using the [PngFigureRendererOptions](https://reference.aspose.com/tex/python-net/aspose.tex.features/pngfigurerendereroptions/) class, we utilize the [SvgFigureRendererOptions](https://reference.aspose.com/tex/python-net/aspose.tex.features/svgfigurerendereroptions/) class.
+* We do not need to specify the resolution.
+* Instead of using the [PngFigureRenderer](https://reference.aspose.com/tex/python-net/aspose.tex.features/pngfigurerenderer/) class, we utilize the [SvgFigureRenderer](https://reference.aspose.com/tex/python-net/aspose.tex.features/svgfigurerenderer/) class.
  
 Here is the result:
 
-<a href="/tex/python-net/latex-figure-rendering/text-and-formula.svg">![LaTeX Figure rendering to SVG](/tex/python-net/latex-figure-rendering/text-and-formula.svg)</a>
+<a href="/tex/python-net/latex-figure-rendering/text-and-formula.svg">![LaTeX Figure rendering to SVG](/tex/images/python-net/text-and-formula.svg)</a>

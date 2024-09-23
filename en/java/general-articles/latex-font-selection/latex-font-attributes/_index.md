@@ -1,16 +1,16 @@
 ---
-title: 2. Font characteristics
-type: docs
+translation: true
+template: /templates/_template-java.md
+linktitle: 2. Font characteristics
+title: Font characteristics
 weight: 20
 url: /java/latex-font-attributes/
 keywords: latex, latex fonts, latex font encodings, nfss
 description: This article covers LaTeX font classifications with respect to various font characteristics. It also mentions the concept of LaTeX font encodings.
-lastmod: "2024-04-19"
-sitemap:
-    changefreq: "weekly"
-    priority: 0.8
-submenu: menu-tex-for-java
+lastmod: "2024-09-20"
 ---
+
+{{<section overview>}}
 
 Fonts can be divided into individual overlapping classes based on various characteristics. It often proves useful to know these characteristics when we need to decide which font family to use in a specific context. See also [Aspose.Font](https://products.aspose.com/font/)'s documentation article on [different types of fonts](/font/net/what-is-font/font-types/).
 
@@ -18,7 +18,7 @@ Fonts can be divided into individual overlapping classes based on various charac
 
 Fonts can be either proportional or monospaced. In a proportional font, glyphs have different widths depending on their shape.  At the same time, in a monospaced font, all glyphs are of the same width. The extra spaces around glyphs of monospaced fonts make it more difficult to recognize word boundaries and thus make text typed in such fonts less readable. In contrast, proportional (or *typographic*) fonts usually allow more words to be placed on a page and are more readable than monospaced fonts. See the figure below:
 
-![Proportional and monospaced fonts](latex-font-selection-2-1.png)
+![Proportional and monospaced fonts](/tex/images/java/tutorial/latex-font-selection-2-1.png)
  
 Although monospaced fonts appear less readable, they still have their use. One example is tables or program listings where proper alignment of the content is important. You will always find computer programs displayed in a monospaced font in any computer since book. This easily distinguishes programs from surrounding text.
 
@@ -28,7 +28,7 @@ You can even choose a monospaced font as the base font for a complete document b
 
 In some fonts, glyphs have *serifs*, while in others, they do not. This fact leads us to another useful classification. Serifs are tiny horizontal strokes at the extremities of glyphs. Originally, they were produced by the chisel when Roman capitals were engraved into stone. That is why serifed fonts are often called *Roman* fonts.
 
-![Serifed and sans serif fonts](latex-font-selection-2-2.png)
+![Serifed and sans serif fonts](/tex/images/java/tutorial/latex-font-selection-2-2.png)
  
 Serifed fonts were long thought of as more readable since they give the eye more clues for identification. But dedicated researches have shown that reading speed is not substantially affected by the absence of serifs.
 
@@ -42,11 +42,11 @@ Almost every font family has one shape called the *upright* shape. The font that
 
 Another important shape included in most families is the *italic* shape, which looks
 
-![Text in italics](latex-font-selection-2-3.png)
+![Text in italics](/tex/images/java/tutorial/latex-font-selection-2-3.png)
  
 Italic glyphs are slanted to the right, and letters are drawn differently from their upright counterparts, as shown in the figure below:
 
-![Upright, italic upright, and italic shapes comparison](latex-font-selection-2-4.png)
+![Upright, italic upright, and italic shapes comparison](/tex/images/java/tutorial/latex-font-selection-2-4.png)
  
 The first line shows letters from the Computer Modern Serif family in upright shape, and the third line shows the same letters in italic shape. To make the difference in drawing more apparent, the second line gives the italic letters without the usual slant. In other words, those are italic letters in an upright position.
 
@@ -54,7 +54,7 @@ San serif font families often lack a proper italic shape; instead, they have a *
 
 Another common font shape is the *small caps* shape, in which the lowercase letters are represented as capitals with a reduced height. If the small caps shape is not available for a specific font, typographers sometimes use upright capitals from smaller sizes, but this does not produce the same quality as a well-designed small caps font. True small caps have different widths and weight than capital letters from the same font that have been reduced to the height of designed small caps. You can see in the figure below that the strokes in the faked capitals are much too thin.
 
-![True and faked small caps comparison](latex-font-selection-2-5.png) 
+![True and faked small caps comparison](/tex/images/java/tutorial/latex-font-selection-2-5.png) 
 
 ### Weight and width
 
@@ -72,7 +72,7 @@ In the LaTeX world, fonts are often available in sizes that are powers of 1.2, w
 
 Using scaled fonts instead of fonts designed for a specific size often gives less satisfactory results. This is due to the fact that fonts do not scale in a linear fashion to the human eye. You can see the difference in the figure below:
 
-![A true 10pt and a magnified 5pt fonts](latex-font-selection-2-6.png)
+![A true 10pt and a magnified 5pt fonts](/tex/images/java/tutorial/latex-font-selection-2-6.png)
  
 The glyphs in handcrafted fonts of larger sizes are usually narrower than fonts magnified from a smaller size of the same family. One should use fonts designed for the desired size whenever possible, although it is acceptable to scale fonts within a small size range if necessary.
 

@@ -1,16 +1,16 @@
 ---
-title: 1. Input and output encodings
-type: docs
+translation: true
+template: /templates/_template-java.md
+linktitle: 1. Input and output
+title: Input and output encodings
 weight: 10
 url: /java/latex-font-encodings/
 keywords: latex, latex fonts, latex font encodings, nfss
 description: This article briefly explains the concepts of input and output encodings in LaTeX. It also mentions the New Font Selection Scheme (NFSS).
-lastmod: "2024-04-19"
-sitemap:
-    changefreq: "weekly"
-    priority: 0.8
-submenu: menu-tex-for-java
+lastmod: "2024-09-20"
 ---
+
+{{<section overview>}}
 
 If we press a key on a keyboard, some numeric code will be generated representing a certain character. An input encoding maps a character to its corresponding code. For example, on a German keyboard, accented characters (such as 'a-umlaut' character) may be mapped to different codes under different operating systems.
 

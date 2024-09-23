@@ -1,16 +1,17 @@
 ---
+translation: true
+template: /templates/_template-java.md
+linktitle: AMS-LATEX
 title: 1. Introduction to AMS-LATEX | LaTeX manual
-type: docs
 weight: 10
 url: /java/introduction-to-ams-latex/
 keywords: ams-latex, amsmath, amsmath options, amsopn, amstext, amscd, amsthm, amsxtra, upref
 description: This article is a brief introduction into amsmath package and briefly covers its options as well as available subpackages and extensions.
-lastmod: "2023-04-14"
-sitemap:
-    changefreq: "weekly"
-    priority: 0.8
-submenu: menu-tex-for-java
+lastmod: "2024-09-20"
 ---
+
+{{<section overview>}}
+
 
 *AMS*-LATEX version 1.0 was released in 1990 and presented the original conversion to LaTeX of the math capabilities in Michael Spivak's *AMS*-TEX by Frank Mittelbach and Rainer Schopf, who worked as consultants to the *AMS*, with assistance from Michael Downes of the *AMS* tech staff. In 1994, the further work was done with David M. Jones.
 

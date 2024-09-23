@@ -1,16 +1,17 @@
 ---
+translation: true
+template: /templates/_template-java.md
+linktitle: Font selection scheme
 title: LaTeX font selection scheme
-type: docs
 weight: 60
 url: /java/latex-font-selection/
 keywords: latex, latex fonts, latex font selection, nfss
 description: This article briefly describes the use of LaTeX fonts in processing documents. It also mentions TeX font metrics and character shapes.
-lastmod: "2024-04-19"
-sitemap:
-    changefreq: "weekly"
-    priority: 0.8
-submenu: menu-tex-for-java
+lastmod: "2024-09-20"
 ---
+
+{{<section overview>}}
+
 
 While processing the source document, the LaTeX typesetting system doesn't have much knowledge about the font it is using. It just calculates the positions of the characters, without needing to know shapes. The most crucial information it requires are the characters' *black boxes*, which are defined by their widths, heights, and depths. These dimensions are stored in a separate external file known as a TeX font metric (`.tfm`) file for each font.
 

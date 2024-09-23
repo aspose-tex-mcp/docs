@@ -1,16 +1,16 @@
 ---
-title: 5.	The low-level interface
-type: docs
+translation: true
+template: /templates/_template-java.md
+linktitle: 5. Low-level interface
+title: The low-level interface
 weight: 50
 url: /java/latex-fonts-low-level/
 keywords: latex, latex fonts, latex font substitution, latex font families, latex font series, latex font shapes
 description: This article covers the LaTeX low-level font interface that is mostly used in command definitions.
-lastmod: "2024-04-19"
-sitemap:
-    changefreq: "weekly"
-    priority: 0.8
-submenu: menu-tex-for-java
+lastmod: "2024-09-20"
 ---
+
+{{<section overview>}}
 
 In contrast to the high-level font commands, which are intended for use in a document, the low-level commands are mainly for defining new commands in packages or in the document preamble. To make the best use of such commands, it is helpful to understand the internal organization of fonts in LaTeX's font selection scheme (NFSS).
 
@@ -33,12 +33,13 @@ There is one command for every font attribute to change its current value. All t
 
 If you want to select a specific font using this interface - for example, Computer Modern Dunhill bold condensed italic 14pt - a knowledge of the interface conventions alone is not enough since no external font exists for every combination of attribute values. You could try to specify something like the following:
 
+
 ```tex
 \fontencoding{OT1}\fontfamily{cmdh}\fontseries{bc}\fontshape{it}%
 \fontsize{14}{16pt}\selectfont
 ```
 
-This code would be correct according to the naming conventions, as we will see below. However, due to the fact that this attribute combination does not correspond to a real font, LaTeX would have to substitute a different font. The substitution mechanism may choose a font that is quite different from the one desired, so you should consult the font tables to check whether the desired combination is available. Here are more details on the [font substitution process](/tex/java/latex-fonts-low-level/#53-automatic-substitution-of-fonts).
+This code would be correct according to the naming conventions, as we will see below. However, due to the fact that this attribute combination does not correspond to a real font, LaTeX would have to substitute a different font. The substitution mechanism may choose a font that is quite different from the one desired, so you should consult the font tables to check whether the desired combination is available. Here are more details on the [font substitution process](/tex/{{lang.url-fragment}}java/latex-fonts-low-level/#53-automatic-substitution-of-fonts).
 
 ### Choosing the font family
 
@@ -50,17 +51,18 @@ The `\fontseries` command changes the series attribute. The series combines a we
 
 The names for both the weight and the width are abbreviated in the series names, so that each combination is unique. These naming conventions are shown in the table below. Any instance of `m` (standing for medium in weight or width) is omitted, except when both weight and width are medium, in which case a single `m` is used. For example, bold expanded would be `bx`, whereas medium expanded would be `x` and bold medium would be `b`.
 
-![Font series naming conventions](latex-font-selection-5-1.png)
+![Font series naming conventions](/tex/images/java/tutorial/latex-font-selection-5-1.png)
 
 ### Choosing the font shape
 
 The `\fontshape` command changes the shape attribute. For standard shapes, one- and two-letter abbreviations are used. These shapes are listed in the table below:
 
-![Font shapes naming conventions](latex-font-selection-5-2.png)
+![Font shapes naming conventions](/tex/images/java/tutorial/latex-font-selection-5-2.png)
 
 ### Choosing the font size
 
 The command `\fontsize{<size>}{<skip>}` changes the font size. It takes two arguments: the `<size>` to switch to and the baseline `<skip>` (the distance between baselines for this size). Font sizes are normally measured in points, so by convention, the unit is omitted. The same is true for the second argument. However, if the baseline skip should be a rubber length, you have to specify a unit. Therefore, a valid size change could be requested by
+
 
 ```tex
 \fontsize{14.4}{17}\selectfont
@@ -70,25 +72,27 @@ Even if such a request is valid, there may be no corresponding external font in 
 
 If you use fonts existing in arbitrary sizes, you can select any size you want, of course:
 
+
 ```tex
 \fontsize{1in}{1.2in}\selectfont A text in an arbitrary font size
 ```
 
 ### Choosing the encoding
 
-The `\fontencoding` command is used to change the encoding. The argument is the internal name for the desired encoding. This name must be known to LaTeX, either as one of the predefined encodings (loaded by kernel) or as declared with the `\DeclareFontEncoding` command. Here is more information about [declaring font encodings](/tex/java/latex-fonts-setup/#64-how-to-declare-a-new-font-encoding-scheme). Standard font encoding names are listed in the table below:
+The `\fontencoding` command is used to change the encoding. The argument is the internal name for the desired encoding. This name must be known to LaTeX, either as one of the predefined encodings (loaded by kernel) or as declared with the `\DeclareFontEncoding` command. Here is more information about [declaring font encodings](/tex/{{lang.url-fragment}}java/latex-fonts-setup/#64-how-to-declare-a-new-font-encoding-scheme). Standard font encoding names are listed in the table below:
 
-![Standard font encoding names](latex-font-selection-5-3.png)
+![Standard font encoding names](/tex/images/java/tutorial/latex-font-selection-5-3.png)
 
 NFSS is based on the assumption that most (or better, all) fonts for the text are available in the same encoding as long as they are used to typeset in the same language. In other words, encoding changes should be necessary only if you are switching from one language to another. In this case, the language support packages (e.g., from the `babel` system) are normally supposed to take care of encodings behind the scenes.
 
 In the following example, we change the encoding manually by defining an environment `Cyr` for typesetting in Cyrillic. In this environment, both the font encoding and the input encoding are locally changed. Of course, for proper language support, additional work would be required, such as changing the hyphenation rules. The encodings are declared to LaTeX by loading them with the `fontenc` package. `T2A` specifies one of the standard Cyrillic encodings. `T1` becomes the default encoding since it is loaded last.
 
-![Encondings exmple source code](latex-font-selection-5-4.png)
+![Encondings exmple source code](/tex/images/java/tutorial/latex-font-selection-5-4.png)
 
-![Encondings exmple output](latex-font-selection-5-5.png)
+![Encondings exmple output](/tex/images/java/tutorial/latex-font-selection-5-5.png)
 
 Unfortunately, `T1` cannot be fully implemented for most PostScript fonts. Five characters in the following example are likely to be displayed as blobs of ink, indicating missing glyphs in the font. Note that the 'per thousand' and 'per ten thousand' symbols are actually formed by joining a percent sign and one or two additional small zeros; only the latter glyph is missing.
+
 
 ```tex
 \usepackage[T1]{fontenc}
@@ -100,11 +104,12 @@ Unfortunately, `T1` cannot be fully implemented for most PostScript fonts. Five 
 
 ```
 
-![T1 for PostScript fonts](latex-font-selection-5-5.png)
+![T1 for PostScript fonts](/tex/images/java/tutorial/latex-font-selection-5-5.png)
 
 ## 5.2. Setting multiple font attributes
 
 While designing page styles or layout-oriented commands, you often want to select a particular font - that is, you need to specify values for all attributes. For this, LaTeX provides the command `\usefont`, which takes four arguments: the encoding, family, series, and shape. The command updates those attributes and then calls `\selectfont`. If you want to specify the size and baseline skip as well, place a `\fontsize` command before `\usefont`. For example,
+
 
 ```tex
 \fontsize{14}{16pt}\usefont{OT1}{cmdh}{bc}{it}
@@ -112,12 +117,14 @@ While designing page styles or layout-oriented commands, you often want to selec
 
 would produce the same result as the following commands:
 
+
 ```tex
 \fontencoding{OT1}\fontfamily{cmdh}\fontseries{bc}\fontshape{it}%
 \fontsize{14}{16pt}\selectfont
 ```
 
 LaTeX also provides the `\DeclareFixedFont` declaration, which can be used to define new commands that switch to a completely fixed font. Such commands are very fast because they do not have to look up any internal tables. Therefore, they are very useful in command definitions that have to switch back and forth between fonts. For example, if we want to declare a command for typesetting certain text in script size, we can do so as follows:
+
 
 ```tex
 \DeclareFixedFont\ScriptSizeFont{\encodingdefault}{\familydefault}
@@ -129,7 +136,7 @@ You can see that `\DeclareFixedFont` has six arguments. The name of the command 
 
 ## 5.3. Automatic substitution of fonts
 
-When a font change request cannot be carried out because the combination is not known to LaTeX, it tries to recover by using a font with similar attributes. Here is what happens in detail: if the combination of encoding scheme, family, series, and shape is not declared, LaTeX tries to find a known combination by first changing the shape attribute to a default. If the resulting combination is still unknown, it tries changing the series to a default. As a last resort, it changes the family to a default value. Finally, it looks up the internal table entry to find the requested size. For example, if you ask for `\ttfamily\bfseries\itshape` - a typewriter font in a bold series and italic shape (which usually does not exist) - then you will get a typewriter font in medium series and upright shape because LaTeX first resets the shape before resetting the series. In such a case, if you prefer a typewriter font with italic shape, you have to announce your preferences to LaTeX using the `sub` function, which is explained in the [How to set up new fonts](/tex/java/latex-fonts-setup/) article.
+When a font change request cannot be carried out because the combination is not known to LaTeX, it tries to recover by using a font with similar attributes. Here is what happens in detail: if the combination of encoding scheme, family, series, and shape is not declared, LaTeX tries to find a known combination by first changing the shape attribute to a default. If the resulting combination is still unknown, it tries changing the series to a default. As a last resort, it changes the family to a default value. Finally, it looks up the internal table entry to find the requested size. For example, if you ask for `\ttfamily\bfseries\itshape` - a typewriter font in a bold series and italic shape (which usually does not exist) - then you will get a typewriter font in medium series and upright shape because LaTeX first resets the shape before resetting the series. In such a case, if you prefer a typewriter font with italic shape, you have to announce your preferences to LaTeX using the `sub` function, which is explained in the [How to set up new fonts](/tex/{{lang.url-fragment}}java/latex-fonts-setup/) article.
 
 The substitution process never changes the encoding scheme because any alteration can produce incorrect characters in the output. As you might recall, the encoding scheme defines how to interpret the input characters, while the other attributes define how the output should look. Therefore, it would not be appropriate if, for example, a pound sign was replaced with a dollar sign in a contract just because the software tried to be clever.
 

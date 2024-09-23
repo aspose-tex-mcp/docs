@@ -1,11 +1,16 @@
 ---
+translation: true
+template: /templates/_template-java.md
+linktitle: Licensing
 title: Licensing - Aspose.TeX for Java
-type: docs
 weight: 70
 url: /java/licensing/
 description: When you stopped on the licensed version of the Aspose.TeX API solution for Java here you find out how to apply the license.
-submenu: menu-tex-for-java
+lastmod: "2024-09-20"
 ---
+
+{{<section overview>}}
+
 
 ### Evaluation Version Limitations
 

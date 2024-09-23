@@ -1,12 +1,15 @@
 ---
+translation: true
+template: /templates/_template-python-net.md
 title: Supported File Formats | Aspose.TeX for Python
 linktitle: Supported File Formats
-type: docs
 weight: 20
 url: /python-net/supported-file-formats/
 description: This Python solution for manipulating TeX files supports TeX files as input and various output formats, including TeX, XPS, PDF, PNG, JPEG, TIFF, and BMP.
-submenu: menu-tex-for-python-net
+lastmod: "2024-09-20"
 ---
+
+{{<section overview>}}
 
 ## Supported File Formats
 

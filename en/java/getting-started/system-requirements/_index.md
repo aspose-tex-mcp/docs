@@ -1,12 +1,16 @@
 ---
+translation: true
+template: /templates/_template-java.md
 title: System Requirements | Aspose.TeX for Java
 linktitle: System Requirements
-type: docs
 weight: 50
 url: /java/system-requirements/
 description: Aspose.TeX solution for Java can be used in any development environment that support Java, but there are some environments are explicitly supported.
-submenu: menu-tex-for-java
+lastmod: "2024-09-20"
 ---
+
+{{<section overview>}}
+
 
 ## Supported Operating Systems
 

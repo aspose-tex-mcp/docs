@@ -7,7 +7,6 @@ description: "Aspose.TeX for .NET is a high-performance library for TeX files ty
 lastmod: "2023-04-20"
 sitemap.changefreq: "weekly"
 sitemap.priority: 0.5
-type: docs
 weight: 10
 url: /
 submenu: menu-tex
@@ -28,8 +27,9 @@ Aspose.TeX is a .NET library for TeX files typesetting. It can present TeX input
 ## Aspose.TeX for .NET Resources
 
 Following are the links to some useful resources you may need to accomplish your tasks.
-- [Aspose.TeX for .NET Online Documentation](net/)
-- [Aspose.TeX for .NET Features](net/feature-list/)
+
+- [Aspose.TeX for .NET Online Documentation](/tex/{{lang.url-fragment}}net/)
+- [Aspose.TeX for .NET Features](/tex/{{lang.url-fragment}}net/feature-list/)
 - [Aspose.TeX for .NET Release Notes](https://releases.aspose.com/tex/net/release-notes/)
 - [Aspose.TeX for .NET Product Page](https://products.aspose.com/tex/net/)
 - [Install Aspose.TeX for .NET NuGet Package](https://www.nuget.org/packages/Aspose.TeX/)
@@ -52,8 +52,9 @@ Aspose.TeX is a Java library designed to manage TeX files. It includes such func
 ## Aspose.TeX for Java Resources
 
 Following are the links to some useful resources you may need to accomplish your tasks.
-- [Aspose.TeX for Java Online Documentation](/tex/java/)
-- [Aspose.TeX for Java Features](/tex/java/feature-list/)
+
+- [Aspose.TeX for Java Online Documentation](/tex/{{lang.url-fragment}}java/)
+- [Aspose.TeX for Java Features](/tex/{{lang.url-fragment}}java/feature-list/)
 - [Aspose.TeX for Java Release Notes](https://releases.aspose.com/tex/java/release-notes/)
 - [Aspose.TeX for Java Product Page](https://products.aspose.com/tex/java/)
 - [Download Aspose.TeX for Java](https://releases.aspose.com/tex/java/)
@@ -80,8 +81,9 @@ Unlock endless possibilities with Aspose.TeX's intuitive API, offering seamless 
 ## Aspose.TeX for C++ Resources
 
 Following are the links to some useful resources you may need to accomplish your tasks.
-- [Aspose.TeX for C++ Online Documentation](cpp/)
-- [Aspose.TeX for C++ Features](cpp/feature-list/)
+
+- [Aspose.TeX for C++ Online Documentation](/tex/{{lang.url-fragment}}cpp/)
+- [Aspose.TeX for C++ Features](/tex/{{lang.url-fragment}}cpp/feature-list/)
 - [Aspose.TeX for C++ Release Notes](https://releases.aspose.com/tex/cpp/release-notes/)
 - [Aspose.TeX for C++ Product Page](https://products.aspose.com/tex/cpp/)
 - [Install Aspose.TeX for C++ NuGet Package](https://www.nuget.org/packages/Aspose.TeX.Cpp/)
@@ -106,8 +108,9 @@ Experience the power and flexibility of Aspose.TeX in your Python projects and e
 ## Aspose.TeX for Python Resources
 
 Following are the links to some useful resources you may need to accomplish your tasks.
-- [Aspose.TeX for Python Online Documentation](python-net/)
-- [Aspose.TeX for Python Features](python-net/feature-list/)
+
+- [Aspose.TeX for Python Online Documentation](/tex/{{lang.url-fragment}}python-net/)
+- [Aspose.TeX for Python Features](/tex/{{lang.url-fragment}}python-net/feature-list/)
 - [Aspose.TeX for Python Release Notes](https://releases.aspose.com/tex/python-net/release-notes/)
 - [Aspose.TeX for Python Product Page](https://products.aspose.com/tex/python-net/)
 - [Install Aspose.TeX for Python Wheel Packages](https://pypi.org/project/aspose-tex-net/)

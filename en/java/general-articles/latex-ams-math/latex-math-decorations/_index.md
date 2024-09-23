@@ -1,16 +1,16 @@
 ---
+translation: true
+template: /templates/_template-java.md
+linktitle: Decorated symbols and compound structures 
 title: 4. Decorated symbols and compound structures | LaTeX manual
-type: docs
 weight: 40
 url: /java/latex-math-decorations/
 keywords: ams-latex, amsmath, amsxtra, latex integrals, latex fractions, latex decorations, latex arrows, latex limits, latex modular relations
 description: This article discusses a number of commands that produce various medium-sized math structures using the amsmath package.
-lastmod: "2023-04-14"
-sitemap:
-    changefreq: "weekly"
-    priority: 0.8
-submenu: menu-tex-for-java
+lastmod: "2024-09-20"
 ---
+
+{{<section overview>}}
 
 The `amsmath` package provides some commands to produce structures such as fraction-like objects and decorated symbols. This discusses covers some of them.
 
@@ -44,6 +44,7 @@ Having the `\genfrac` command, the `amsmath` package also defines three commands
 \newcommand\dfrac[2]{\genfrac{}{}{}{0}{#1}{#2}}
 \newcommand\tfrac[2]{\genfrac{}{}{}{1}{#1}{#2}}
 ```
+
 The example below demonstrates the use of these commands:
 
 ```tex
@@ -58,13 +59,14 @@ Text: $ \sqrt{ \frac{1}{k} \log_2 c(f) } \quad
 
 ```
 
-![\frac, \dfrac, and \tfrac](latex-ams-math-4-1.png)
+![\frac, \dfrac, and \tfrac](/tex/images/java/tutorial/latex-ams-math-4-1.png)
 
 ### 4.1.2. Binomial coefficients
 
 Another fraction-like structure is binomial coefficients. To help you typeset them, the `amsmath` package provides similar commands `\binom`, `\dbinom`, and `\tbinom`.
 
 This is how they abbreviate the `\genfrac` command:
+
 
 ```tex
 \newcommand\binom[2]{\genfrac{(}{)}{0pt}{}{#1}{#2}}
@@ -83,7 +85,7 @@ And here's the example:
 Text: $ \binom{k}{2} 2^{k - 1} + \dbinom{k - 1}{2} 2^{k - 2} $.
 ```
 
-![\binom, \dbinom, and \tbinom](latex-ams-math-4-2.png)
+![\binom, \dbinom, and \tbinom](/tex/images/java/tutorial/latex-ams-math-4-2.png)
 
 ### 4.1.3. Continued fractions
 
@@ -102,7 +104,7 @@ If you need to typeset a fraction array, which is essentially an infinite fracti
 \end{equation*}
 ```
 
-![A continued fraction](latex-ams-math-4-3.png)
+![A continued fraction](/tex/images/java/tutorial/latex-ams-math-4-3.png)
 
 ## 4.2. Boxed mathematics
 
@@ -116,7 +118,7 @@ The `amsmath` package provides the `\boxed` command similar to `\fbox` to put th
 \end{equation}
 ```
 
-![A boxed formula](latex-ams-math-4-4.png)
+![A boxed formula](/tex/images/java/tutorial/latex-ams-math-4-4.png)
 
 ## 4.3. Positioning the limits
 
@@ -129,7 +131,7 @@ Subscripts and superscripts on integrals, sums, products, or other operators can
 Text: $\sum_{n=1}^N$, $\int_{-\infty}^\infty$, $\lim_{x \to x_0}$.
 ```
 
-![The default placement of the subscripts/superscripts in LaTeX](latex-ams-math-4-5.png)
+![The default placement of the subscripts/superscripts in LaTeX](/tex/images/java/tutorial/latex-ams-math-4-5.png)
 
 The `amsmath` package offers options for controlling the positioning. They are listed below, where *default* marks the behavior in case the `amsmath` package is used with a standard LaTeX document class but without any of these options.
 
@@ -150,7 +152,7 @@ Compare the following example to the previous one.
 Text: $\sum\nolimits_{n=1}^N$, $\int\limits_{-\infty}^\infty$, $\lim\displaylimits_{x \to x_0}$.
 ```
 
-![Controlling the placement of the subscripts/superscripts with TeX primitives](latex-ams-math-4-6.png)
+![Controlling the placement of the subscripts/superscripts with TeX primitives](/tex/images/java/tutorial/latex-ams-math-4-6.png)
 
 ## 4.3. Multiple integrals
 
@@ -167,7 +169,7 @@ To typeset multiple integral signs with well-adjusted spaces between them in bot
 \end{gather*}
 ```
 
-![Multiple integrals](latex-ams-math-4-7.png)
+![Multiple integrals](/tex/images/java/tutorial/latex-ams-math-4-7.png)
 
 ## 4.4. Modular relations
 
@@ -189,7 +191,7 @@ x \equiv y \mod c \, ; \quad x \equiv y \pod d\, .
 \end{gather*}
 ```
 
-![Modular relation](latex-ams-math-4-8.png)
+![Modular relation](/tex/images/java/tutorial/latex-ams-math-4-8.png)
 
 > With `amsmath`, the spacing of `\pmod` is decreased within a non-displayed formula.
 
@@ -203,7 +205,7 @@ In addition to the `\dot` and `\ddot` math accents, the `amsmath` package provid
 $ \dot{A} \quad \ddot{B} \quad \dddot{C} \quad \ddddot{D} $
 ```
 
-![Dot accents](latex-ams-math-4-9.png)
+![Dot accents](/tex/images/java/tutorial/latex-ams-math-4-9.png)
 
 ## 4.6. Making superscripts from accents: the `amsxtra` package
 
@@ -217,7 +219,7 @@ $(abc)\spbreve$ \quad $(abc)\spcheck$ \\
 $(abc)\sphat$ \quad $(abc)\sptilde$
 ```
 
-![Accents as superscripts](latex-ams-math-4-10.png)
+![Accents as superscripts](/tex/images/java/tutorial/latex-ams-math-4-10.png)
 
 ## 4.7. Other decorations
 
@@ -231,4 +233,4 @@ The `\sideset` command adds decorations to any *Operator* symbol (sum, product, 
 \overset{a}{\underset{b}{X}} = X \]
 ```
 
-![More decoration](latex-ams-math-4-11.png)
+![More decoration](/tex/images/java/tutorial/latex-ams-math-4-11.png)

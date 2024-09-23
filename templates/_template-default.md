@@ -8,6 +8,7 @@ weight: {{i18n.weight}}
 linktitle: {{i18n.linktitle}}
 aliases: {{aliases}}
 submenu: {{i18n.submenu}}
+type: docs
 ---
 
 {{i18n.sections}}

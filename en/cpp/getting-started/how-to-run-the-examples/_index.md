@@ -1,17 +1,21 @@
 ---
+translation: true
+template: /templates/_template-cpp.md
 title: How to Run the Examples in C++
-type: docs
+linktitle: How to Run the Examples
 weight: 80
 url: /cpp/how-to-run-the-examples/
 description: On this page, you will find all the requirements and steps that should be taken to run the examples of Aspose.TeX solution for C++.
-submenu: menu-tex-for-cpp
+lastmod: "2024-09-20"
 ---
+
+{{<section overview>}}
 
 ## Software Requirements
 
 Please make sure you meet the following requirements before downloading and running the examples.
 
- 1. Visual Studio 2015 or higher
+1. Visual Studio 2015 or higher
 
 ## Download from GitHub
 
@@ -21,7 +25,7 @@ All examples of Aspose.TeX for C++ are hosted on [GitHub](https://GitHub.com/asp
 - Extract the contents of the ZIP file to any folder on your computer. All the examples are located in the **Examples** folder.
 - There is one Visual Studio solution file for C++ in **example** folder.
 - Open the solution file in Visual Studio and build the project.
-- Install library package for solution. [How to install.](/tex/cpp/installation/) Dependent CodePorting library will be installed automatically.
+- Install library package for solution. [How to install.](/tex/{{lang.url-fragment}}cpp/installation/) Dependent CodePorting library will be installed automatically.
 - Check **Windows SDK Version** on project properties to accorded installed windows SDK verions.
 - **example/input** contains input files which examples use.
 - **example/output** folder should present. It's using by examples.

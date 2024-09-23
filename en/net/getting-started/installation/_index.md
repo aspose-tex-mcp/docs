@@ -1,11 +1,15 @@
 ---
+translation: true
+template: /templates/_template-net.md
+linktitle: Installation
 title: Installation - Aspose.TeX for .NET
-type: docs
 weight: 60
 url: /net/installation/
 description: Aspose.TeX API Documentation for .NET can be found in the downloaded ZIP package or gotten from NuGet Gallery, by clicking the “Download package”.
-submenu: menu-tex-for-net
+lastmod: "2024-09-20"
 ---
+
+{{<section overview>}}
 
 ## Installing Aspose.TeX for .NET through NuGet
 
@@ -18,12 +22,14 @@ Taking benefit of this wonderful feature, we have bundled [Aspose.TeX for .NET](
 To get started:
 
 1. Open your solution or project in Visual Studio.
-1. Add NuGet Package Manager as a Visual Studio extension:
+2. Add NuGet Package Manager as a Visual Studio extension:
+
    1. Select the **Tools** menu followed by **Extension Manager**.
-   1. Select **Online Gallery** to get a complete list of packages available online.
-   1. Select **NuGet Package Manager**.
-   1. Click **Download**.
-   1. Once the package Manager is installed, restart Visual Studio to bring the changes into effect. 
+   2. Select **Online Gallery** to get a complete list of packages available online.
+   3. Select **NuGet Package Manager**.
+   4. Click **Download**.
+   5. Once the package Manager is installed, restart Visual Studio to bring the changes into effect. 
+   
       When NuGet Package Manager is installed, you can find, install, remove, and update packages from the **Manage NuGet Packages** window, or by using PowerShell command-line commands in the **Package Manager Console** dedicated Visual Studio window. You can find both options if you select the **Tools** followed by **Library Package Manager**.
 
 ### Install Package using Package Manager Console
@@ -31,28 +37,30 @@ To get started:
 To reference the component using the package manager console:
 
 1. Open your .NET application in Visual Studio.
-1. On the **Tools** menu, select **Library Package Manager** and then **Package Manager Console**.
-1. Type the command “Install-Package Aspose.TeX” to install the latest full release, or type the command “Install-Package Aspose.TeX -prerelease” to install the latest release including hot fixes.
-1. Press **Enter**.
+2. On the **Tools** menu, select **Library Package Manager** and then **Package Manager Console**.
+3. Type the command “Install-Package Aspose.TeX” to install the latest full release, or type the command “Install-Package Aspose.TeX -prerelease” to install the latest release including hot fixes.
+4. Press **Enter**.
 
 ### Update package using Package Manager Console
 
 If you have already referenced the component through NuGet, follow these steps to update the reference to the latest version:
 
 1. Open you .NET application in Visual Studio.
-1. From the **Tools** menu, select **Library Package Manager**, followed by **Package Manager Console** to open the Package Manager console.
-1. Type the command “Update-Package Aspose.TeX” to reference the latest full release, or type the command “Update-Package Aspose.TeX -prerelease” to install latest release including hot fixes.
-1. Press **Enter**.
+2. From the **Tools** menu, select **Library Package Manager**, followed by **Package Manager Console** to open the Package Manager console.
+3. Type the command “Update-Package Aspose.TeX” to reference the latest full release, or type the command “Update-Package Aspose.TeX -prerelease” to install latest release including hot fixes.
+4. Press **Enter**.
 
 ### Install Package using the Package Manager GUI
 
 Follow these steps to reference the component using the package manager GUI:
 
 1. Open you .NET application in Visual Studio.
-1. From the **Tools** menu, select **Library Package Manager** and **Manage NuGet Packages** from the **Solution** option. 
+2. From the **Tools** menu, select **Library Package Manager** and **Manage NuGet Packages** from the **Solution** option. 
+
    You can also get a similar option from the Solution Explorer:
    1. Right-click the project name.
-   1. Select **Manage NuGet Packages**.
-1. Select **online** from the left menu.
-1. Type **Aspose.TeX** into the search box to find Aspose.TeX for .NET.
-1. Click **Install/Update** next to the latest version of Aspose.TeX for .NET
+   2. Select **Manage NuGet Packages**.
+
+3. Select **online** from the left menu.
+4. Type **Aspose.TeX** into the search box to find Aspose.TeX for .NET.
+5. Click **Install/Update** next to the latest version of Aspose.TeX for .NET

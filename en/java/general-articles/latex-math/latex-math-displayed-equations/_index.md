@@ -1,30 +1,31 @@
 ---
-title: 9. Displayed equations | LaTeX manual
-type: docs
+translation: true
+template: /templates/_template-java.md
+linktitle: 9. Displayed equations
+title: Displayed equations | LaTeX manual
 weight: 90
 url: /java/latex-math-displayed-equations/
 keywords: latex, latex math formulas, latex math, latex math displayed formula, latex math displayed equation, latex math equation array, latex math displayed alignment
 description: Learn about the way to display math formulas of a large size or a big amount of formulas using commands provided by LaTeX.
-lastmod: "2023-07-04"
-sitemap:
-    changefreq: "weekly"
-    priority: 0.8
-submenu: menu-tex-for-java
+lastmod: "2024-09-20"
 ---
+
+{{<section overview>}}
 
 By now we have discussed how to deal with individual formulas; but displays often involve a whole bunch of different formulas, or different pieces of a huge formula, and it may be a challenge to lay them out so that they line up properly with each other. Luckily, large displays generally fall into a few simple patterns.
 
 ### 9.1. One-line displays
 
-Displayed equations often contain ordinary text. We have already [discussed](/tex/java/latex-math-fine-points/#82-non-italic-letters) how to get Roman type into formulas without leaving math mode, but the best way to get text into a display is to put it into an `\hbox`. There actually needn't even be any math at all. To type set
+Displayed equations often contain ordinary text. We have already [discussed](/tex/{{lang.url-fragment}}java/latex-math-fine-points/#82-non-italic-letters) how to get Roman type into formulas without leaving math mode, but the best way to get text into a display is to put it into an `\hbox`. There actually needn't even be any math at all. To type set
 
-![Displayed text with no math at all](latex-math-9-1.png)
+![Displayed text with no math at all](/tex/images/java/tutorial/latex-math-9-1.png)
 
 you can say `$$\hbox{Displayed text}$$`. But here's a more interesting example:
 
-![Text in a math display](latex-math-9-2.png)
+![Text in a math display](/tex/images/java/tutorial/latex-math-9-2.png)
 
 In this case, formulas and text were combined as follows:
+
 
 ```tex
 $$\X_n=X_k \qquad\hbox{if and only if}\qquad
@@ -35,9 +36,10 @@ As you can see, `\qquad` appears around "if and only if", but a single `\quad` s
 
 Let's look at the following display:
 
-![Text in a math display](latex-math-9-3.png)
+![Text in a math display](/tex/images/java/tutorial/latex-math-9-3.png)
 
 One way it can be specified is
+
 
 ```tex
 $$Y_n=X_n\bmod p \quad\hbox{and}\quad z_n=X_n\bmod q
@@ -45,6 +47,7 @@ $$Y_n=X_n\bmod p \quad\hbox{and}\quad z_n=X_n\bmod q
 ```
 
 But the better way would be (see the second line)
+
 
 ```tex
 $$Y_n=X_n\bmod p \quad\hbox{and}\quad z_n=X_n\bmod q
@@ -55,11 +58,13 @@ Yes, that's math mode inside of horizontal mode inside of display math mode, but
 
 Now let's turn to equation numbers, those little labels that appear off to the side of displays. If you type
 
+
 ```tex
 $$<formula>\eqno<formula>$$
 ```
 
 TeX will display the first formula and it will also put an equation number (the second formula) at the right-hand margin. For example,
+
 
 ```tex
 $$x^2-y^2 = (x+y)(x-y).\eqno(15)$$
@@ -67,7 +72,7 @@ $$x^2-y^2 = (x+y)(x-y).\eqno(15)$$
 
 will produce
 
-![Equation numbers at the right](latex-math-9-4.png)
+![Equation numbers at the right](/tex/images/java/tutorial/latex-math-9-4.png)
 
 You can also get equation numbers at the left-hand margin by using `\leqno`. For example,
 
@@ -77,7 +82,7 @@ $$x^2-y^2 = (x+y)(x-y).\leqno(15)$$
 
 will produce
 
-![Equation numbers at the left](latex-math-9-5.png)
+![Equation numbers at the left](/tex/images/java/tutorial/latex-math-9-5.png)
 
 Notice that you always give the equation number second, even when it is going to appear at the left.
 
@@ -93,7 +98,7 @@ LaTeX also provides the equation environment to automatically number your equati
 
 results in
 
-![The use of the equation environment](latex-math-9-6.png)
+![The use of the equation environment](/tex/images/java/tutorial/latex-math-9-6.png)
 
 It's also possible to label and reference equations using `\label` and `\ref`. For example,
 
@@ -106,7 +111,7 @@ this references equation \ref{eq:someequation}.
 
 results in
 
-![The use of the equation environment with a label and a reference](latex-math-9-7.png)
+![The use of the equation environment with a label and a reference](/tex/images/java/tutorial/latex-math-9-7.png)
 
 ### 9.2. Multi-line displays
 
@@ -114,7 +119,7 @@ Sometimes a display may not fit the simple pattern of a one-line formula with or
 
 Multi-line displays usually include several equations that should be lined up by their '=' signs, as in
 
-![A multi-line equation typeset with the array environment](latex-math-9-8.png)
+![A multi-line equation typeset with the array environment](/tex/images/java/tutorial/latex-math-9-8.png)
 
 The recommended method for such a display is to use the `array` environment provided by LaTeX: 
 
@@ -138,7 +143,7 @@ LaTeX also provides the `eqnarray*` environment that works similarly, but to hav
 
 produces the following output:
 
-![A multi-line equation typeset with the eqnarray* environment](latex-math-9-9.png)
+![A multi-line equation typeset with the eqnarray* environment](/tex/images/java/tutorial/latex-math-9-9.png)
 
 LaTeX's `eqnarray` environment produces the same result except that it automatically numbers the equations.
 
@@ -157,7 +162,7 @@ where each `<right-hand side>` starts with the symbol on which you want alignmen
 
 The result of the `array` environment is a vertically centered box. This makes it easy to get a formula like
 
-![Two groups of equations in one display](latex-math-9-10.png)
+![Two groups of equations in one display](/tex/images/java/tutorial/latex-math-9-10.png)
 
 You simply use the `array` environment twice in the line:
 
@@ -175,7 +180,7 @@ $$\left\{
 
 The next level of complexity occurs when you have several aligned equations with several equation numbers. Or some of the lines may be numbered and others not:
 
-![Arbitrarily numbered array of equations with tags at the right](latex-math-9-11.png)
+![Arbitrarily numbered array of equations with tags at the right](/tex/images/java/tutorial/latex-math-9-11.png)
 
 Unfortunately, even with the `eqnarray*` environment (with its improper spacing) there is no way to manually specify equation numbers in a multi-line display. Only the `amsmath` package can 
 help. So, the recommended way to obtain the above result is to type:
@@ -207,15 +212,15 @@ If you load the `amsmath` package with the `leqno` option, the equation numbers 
 ```
 produces
 
-![Arbitrarily numbered array of equations with tags at the left](latex-math-9-12.png)
+![Arbitrarily numbered array of equations with tags at the left](/tex/images/java/tutorial/latex-math-9-12.png)
 
-To learn more about typesetting math formulas using features of the `amsmath` package, see these [articles](/tex/java/what-is-ams-latex/).
+To learn more about typesetting math formulas using features of the `amsmath` package, see these [articles](/tex/{{lang.url-fragment}}java/what-is-ams-latex/).
 
 ### 9.3. Long formulas
 
 Now let's discuss what should be done when a formula is so long that it doesn't fit on a single line. For example, suppose you encounter the equation
 
-![Shrunk long formula that makes the line overfull](latex-math-9-13.png)
+![Shrunk long formula that makes the line overfull](/tex/images/java/tutorial/latex-math-9-13.png)
 
 You'll have to break it up somehow; TeX has done its best to squeeze everything down together by shrinking the spaces next to '+' and '-' signs to zero, but still the line has come out overfull.
 
@@ -242,7 +247,7 @@ So, it's best to resort to the `amsmath` package again. But this time you should
 
 This yields
 
-![Long formula broken up using the align* environment](latex-math-9-14.png)
+![Long formula broken up using the align* environment](/tex/images/java/tutorial/latex-math-9-14.png)
 
 The idea is to treat a long one-line formula as a two-line formula, using `\qquad` on the second line so that the second part of the formula appears well to the right of the '=' sign on the first line.
 
@@ -276,7 +281,7 @@ if `\bigg` delimiters are best. Notice that the `&` markers don't occur at `=` s
 
 There's another way to break long formulas, sometimes called the *two-line* form. The idea is to put the first part of the formula almost flush left, and to put the second part almost flush right, where "almost flush" means "one quad away". Thus, the two-line form of a long sigma equation considered earlier is
 
-![Two-line form of an equation](latex-math-9-15.png)
+![Two-line form of an equation](/tex/images/java/tutorial/latex-math-9-15.png)
 
 To get this two-line effect, just type:
 

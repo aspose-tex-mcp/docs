@@ -1,17 +1,16 @@
 ---
+translation: true
+template: /templates/_template-net.md
 title: What is TeX? | Aspose.TeX .NET
 linktitle: What is TeX?
-type: docs
 weight: 10
 url: /net/what-is-tex/
 keywords: what is tex
 description: This page briefly answers the question "What is TeX?" Is it one of the programming languages or it is considered to be a document format?
-lastmod: "2021-10-14"
-sitemap:
-    changefreq: "weekly"
-    priority: 0.8
-submenu: menu-tex-for-net
+lastmod: "2024-09-20"
 ---
+
+{{<section overview>}}
 
 ## What TeX is NOT
 
@@ -20,6 +19,7 @@ TeX is definitely not a format at all.
 ## What IS TeX?
 
 So what IS TeX? Well, that is the question, as Hamlet[^1] said. Let's try to answer it as simply as possible.
+
 Imagine that we have a programming language consisting of two elementary commands (called *control sequences*), or *primitives*, `\a` and `\b`. And in this language we can write programs for documents (books, articles, etc.) typesetting. Let's call this language **(L1)**. In order for these programs to be executed in a certain way, we have a certain engine that interprets the commands of this language.
 
 Now let's assume that when writing a typesetting program for some document, we found that the subsequence `\a \b \a` occurs quite frequently. And also assume that in our language there is another primitive `\def`, which allows us to define subroutines, or macros. Let's call this language **(L2)**. Under these circumstances, we can define the macro `\def\c{\a \b \a}` at the beginning of the program and replace each occurrence of the subsequence with `\c` both for better readability and reduction.

@@ -1,11 +1,15 @@
 ---
+translation: true
+template: /templates/_template-python-net.md
+linktitle: Licensing
 title: Licensing - Aspose.TeX for Python
-type: docs
 weight: 70
 url: /python-net/licensing/
 description: If you are using the licensed version of the Aspose.TeX API solution for Python, you can learn here how to apply the license.
-submenu: menu-tex-for-python-net
+lastmod: "2024-09-20"
 ---
+
+{{<section overview>}}
 
 ## Evaluate Aspose.TeX
 

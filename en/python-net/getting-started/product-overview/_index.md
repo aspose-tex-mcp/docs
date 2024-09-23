@@ -1,12 +1,15 @@
 ---
+translation: true
+template: /templates/_template-python-net.md
 title: Product Overview | Aspose.TeX for Python
 linktitle: Product Overview
-type: docs
 weight: 10
 url: /python-net/product-overview/
 description: Aspose.TeX is a Python library that allows typesetting TeX files. It also offers features like conversion capabilities and the custom TeX formats creation.
-submenu: menu-tex-for-python-net
+lastmod: "2024-09-20"
 ---
+
+{{<section overview>}}
 
 {{% alert color="primary" %}}
 
@@ -43,4 +46,4 @@ This table below lists important Aspose.TeX for Python technical resources.
 |[Aspose.TeX blog](https://blog.aspose.com/category/tex/)|Check this often for information about new releases and useful tips about Aspose.TeX for Python.|
 |[Aspose.TeX for Python download](https://pypi.org/project/aspose-tex-net/)|Download the latest version of Aspose.TeX for Python from here. We release often.|
 |[Aspose.TeX for Python support forum](https://forum.aspose.com/c/tex)|Post your questions and issues here for a speedy resolution.|
-|[Aspose.TeX for Python product documentation](/tex/python-net/)|Full online documentation that includes this documentation as well as Aspose.TeX for Python API Reference.|
+|[Aspose.TeX for Python product documentation](/tex/{{lang.url-fragment}}python-net/)|Full online documentation that includes this documentation as well as Aspose.TeX for Python API Reference.|

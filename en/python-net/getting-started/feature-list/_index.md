@@ -1,12 +1,15 @@
 ---
+translation: true
+template: /templates/_template-python-net.md
 title: Feature List | Aspose.TeX for Python
 linktitle: Feature List
-type: docs
 weight: 30
 url: /python-net/feature-list/
 description: Enhance your own solution by incorporating the capability to manipulate TeX files. Learn the features Aspose.TeX API solution for Python offers to you.
-submenu: menu-tex-for-python-net
+lastmod: "2024-09-20"
 ---
+
+{{<section overview>}}
 
 
 ## Rich Features

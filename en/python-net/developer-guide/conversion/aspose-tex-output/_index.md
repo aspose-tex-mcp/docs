@@ -1,12 +1,15 @@
 ---
+translation: true
+template: /templates/_template-python-net.md
 title: Aspose.TeX's output interface | Python
 linktitle: Aspose.TeX's output interface
-type: docs
 weight: 16
 url: /python-net/aspose-tex-output/
 description: Here is an explanation of the conversion functionality of the Aspose.TeX API solution for Python, with TeX as the output format, with code examples.
-submenu: menu-tex-for-python-net
+lastmod: "2024-09-20"
 ---
+
+{{<section overview>}}
 
 
 > For formal definitions of I/O implementation, please refer to the [API reference](https://reference.aspose.com/tex/python-net/aspose.tex.io/) of **Aspose.TeX for Python**.
@@ -17,7 +20,7 @@ Aspose.TeX defines a directory as a mapping between names and bulks of data, whe
 
 ### Saving the output as a file in the disk file system
 
-As mentioned [above](/tex/net/latex-to-png/), the [output_working_directory](https://reference.aspose.com/tex/python-net/aspose.tex/texoptions/output_working_directory/) is commonly set as an instance of the [OutputFileSystemDirectory](https://reference.aspose.com/tex/python-net/aspose.tex.io/outputfilesystemdirectory/) class.
+As mentioned [above](/tex/{{lang.url-fragment}}net/latex-to-png/), the [output_working_directory](https://reference.aspose.com/tex/python-net/aspose.tex/texoptions/output_working_directory/) is commonly set as an instance of the [OutputFileSystemDirectory](https://reference.aspose.com/tex/python-net/aspose.tex.io/outputfilesystemdirectory/) class.
 
 Here's how we would set it:
 
@@ -51,4 +54,4 @@ In contrast to the input terminal, **Aspose.TeX for Python** includes an impleme
 
 {{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Conversion-OutputFileTerminal.py" >}} 
 
-In this case, we instruct the TeX engine to write the terminal output to a file named [<job_name>](/tex/net/tex-io/#tex-output).trm, which will be located in the same output directory as the rest of the output. However, this is not mandatory. We can also provide any other instance of an implementation of *IOutputTerminal* to the constructor.
+In this case, we instruct the TeX engine to write the terminal output to a file named [<job_name>](/tex/{{lang.url-fragment}}net/tex-io/#tex-output).trm, which will be located in the same output directory as the rest of the output. However, this is not mandatory. We can also provide any other instance of an implementation of *IOutputTerminal* to the constructor.

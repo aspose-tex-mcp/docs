@@ -1,14 +1,18 @@
 ---
+translation: true
+template: /templates/_template-cpp.md
 title: Supported File Formats | Aspose.TeX for C++
 linktitle: Supported File Formats
-type: docs
 weight: 20
 url: /cpp/supported-file-formats/
 description: This TeX manipulation solution for C++ supports TeX files for input and a variety of output formats like TeX, XPS, PDF, PNG, JPEG, TIFF and PNG.
-submenu: menu-tex-for-cpp
+lastmod: "2024-09-20"
 ---
 
+{{<section overview>}}
+
 ## Supported File Formats
+
 The following table indicates the file formats that Aspose.TeX for C++ can load and save.
 
 |**Format**|**Description**|**Input**|**Output**|**Remarks**|

@@ -1,12 +1,15 @@
 ---
+translation: true
+template: /templates/_template-python-net.md
 title: Aspose.TeX's input interface | Python
 linktitle: Aspose.TeX's input interface
-type: docs
 weight: 15
 url: /python-net/aspose-tex-input/
 description: Conversion functionality of Aspose.TeX API solution for Python with TeX, as an input format is explained here with the code examples.
-submenu: menu-tex-for-python-net
+lastmod: "2024-09-20"
 ---
+
+{{<section overview>}}
 
 > For formal definitions of the I/O implementation in **Aspose.TeX for Python**, please consult the [API reference](https://reference.aspose.com/tex/python-net/aspose.tex.io/).
 

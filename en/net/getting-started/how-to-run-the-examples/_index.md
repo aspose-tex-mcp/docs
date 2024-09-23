@@ -1,17 +1,21 @@
 ---
+translation: true
+template: /templates/_template-net.md
+linktitle: How to Run the Examples
 title: How to Run the Examples in C# | Aspose.TeX for .NET
-type: docs
 weight: 80
 url: /net/how-to-run-the-examples/
 description: On this page, you will find all the requirements and steps that should be taken to run the examples of Aspose.TeX solution for .NET.
-submenu: menu-tex-for-net
+lastmod: "2024-09-20"
 ---
+
+{{<section overview>}}
 
 ## Software Requirements
 
 Please make sure you meet the following requirements before downloading and running the examples.
 
- 1. Visual Studio 2010 or higher
+1. Visual Studio 2010 or higher
 
 ## Download from GitHub
 

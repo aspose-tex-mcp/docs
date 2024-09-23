@@ -1,12 +1,15 @@
 ---
+translation: true
+template: /templates/_template-java.md
 title: Frequently Asked Questions | Aspose.TeX for С++
 linktitle: FAQ
-type: docs
 weight: 80
 url: /java/faq/
 description:  Get answers to all the most frequent questions about Aspose.TeX for Java, which is a comprehensive API for typesetting and manipulation TeX and LaTeX.
-submenu: menu-tex-for-java
+lastmod: "2024-09-20"
 ---
+
+{{<section overview>}}
 
 <br><br>
 
@@ -40,17 +43,18 @@ options.setSaveOptions(new PdfSaveOptions());
 new TeXJob(Utils.getInputDirectory() + "hello-world.tex", new PdfDevice(), options).run();
 ```
 
-For more examples, please visit [Convertion](/tex/java/conversion/) guides.
+For more examples, please visit [Convertion](/tex/{{lang.url-fragment}}java/conversion/) guides.
 <br><br>
 
 **Q: Can I create a custom format using Aspose.TeX for Java?**
 
-**A:** Yes, the Library has such functionality. It is briefly described in the [Other TeX conversion output formats ](/tex/java/other-tex-formats/#creating-a-custom-format) article.
+**A:** Yes, the Library has such functionality. It is briefly described in the [Other TeX conversion output formats ](/tex/{{lang.url-fragment}}java/other-tex-formats/#creating-a-custom-format) article.
 <br><br>
 
 **Q: What packages are embedded into Aspose.TeX API Solution?**
 
-**A:** By now there are [Aspose.TeX embedded LaTeX packages](/tex/net/embedded-packages/) included: 
+**A:** By now there are [Aspose.TeX embedded LaTeX packages](/tex/{{lang.url-fragment}}net/embedded-packages/) included: 
+
 - eurosym
 - geometry
 - graphics
@@ -64,12 +68,12 @@ For more examples, please visit [Convertion](/tex/java/conversion/) guides.
 - wasysym
 - xcolor 
 
-If there is a package that is not included in the list you can also [use such External LaTeX packages](/tex/java/external-latex-packages/).
+If there is a package that is not included in the list you can also [use such External LaTeX packages](/tex/{{lang.url-fragment}}java/external-latex-packages/).
 <br><br>
 
 **Q: Does Aspose.TeX for Java have functionality for geometric figure rendering?**
 
-**A:** Yes, you can [write LaTeX figures to PNG or SVG](/tex/java/latex-figure-rendering/) using this Library.
+**A:** Yes, you can [write LaTeX figures to PNG or SVG](/tex/{{lang.url-fragment}}java/latex-figure-rendering/) using this Library.
 <br><br>
 
 **Q: How to install Aspose.TeX for Java Package from Maven?**
@@ -95,28 +99,29 @@ If there is a package that is not included in the list you can also [use such Ex
 **Q: Can render LaTeX formulas using Aspose.TeX for Java?**
 
 **A:** Yes, Aspose.TeX math rendering library lets you create an SVG or PNG image with a math formula. 
+
 1. Instantiate the SvgMathRendererOptions class.
 2. Specify the background color, preamble, resolution, foreground color, and scaling factor.
 3. Specify the output stream for the log file.
 4. Create a file stream to save the output image.
 5. Create an object of the *(file format)MathRenderer* class and run rendering the formula by calling the *Render()* method. The resulting image will be written to the specified output stream.
 
-For more examples, please visit [LaTeX math formulas rendering](/tex/java/latex-math-formula-rendering/) guides.
+For more examples, please visit [LaTeX math formulas rendering](/tex/{{lang.url-fragment}}java/latex-math-formula-rendering/) guides.
 <br><br>
 
 **Q: Where can I learn more about TeX?**
 
-**A:** Take a look at the [General articles on LaTeX](/tex/java/general-articles-latex/) where you can learn the rules that every document author must follow. It also defines the structure of the source file, which is essentially a typesetting program.
+**A:** Take a look at the [General articles on LaTeX](/tex/{{lang.url-fragment}}java/general-articles-latex/) where you can learn the rules that every document author must follow. It also defines the structure of the source file, which is essentially a typesetting program.
 <br><br>
 
 **Q: What are the system requirements of Aspose.TeX for Java?**
 
-**A:** Go to the [System Requirements](/tex/java/system-requirements/) page to get the actual information about operating systems and development environments needed to deal Aspose.TeX for Java.
+**A:** Go to the [System Requirements](/tex/{{lang.url-fragment}}java/system-requirements/) page to get the actual information about operating systems and development environments needed to deal Aspose.TeX for Java.
 <br><br>
 
 **Q: Can I try the Solution before purchasing it?**
 
-**A:** Yes, you can easily download Aspose.TeX for Java products for evaluation purposes. The evaluation version of Aspose.TeX (without a license specified) provides full product functionality except for some [evaluation limitations](/tex/java/licensing/#evaluation-version-limitations).
+**A:** Yes, you can easily download Aspose.TeX for Java products for evaluation purposes. The evaluation version of Aspose.TeX (without a license specified) provides full product functionality except for some [evaluation limitations](/tex/{{lang.url-fragment}}java/licensing/#evaluation-version-limitations).
 
 If you want to try out Aspose.TeX without evaluation limitations, request a 30-day [temporary license](https://purchase.aspose.com/temporary-license/).
 <br><br>
@@ -128,7 +133,7 @@ If you want to try out Aspose.TeX without evaluation limitations, request a 30-d
 
 **Q: How can I get a license for Aspose.TeX for Java?**
 
-**A:** Use the `License.setLicense` method to license the component. The easiest way to [set a license](/tex/java/licensing/) is to put the license file in the same folder as the aspose.tex.jar and specify the filename, without a path.
+**A:** Use the `License.setLicense` method to license the component. The easiest way to [set a license](/tex/{{lang.url-fragment}}java/licensing/) is to put the license file in the same folder as the aspose.tex.jar and specify the filename, without a path.
 <br><br>
 
 **Q: Can I see the functionality of this API Solution implemented in web applications?**

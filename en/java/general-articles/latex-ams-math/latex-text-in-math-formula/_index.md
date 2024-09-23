@@ -1,20 +1,21 @@
 ---
+translation: true
+template: /templates/_template-java.md
+linktitle: Text in math formulas
 title: 6. Text in math formulas | LaTeX manual
-type: docs
 weight: 60
 url: /java/latex-text-in-math-formula/
 keywords: ams-latex, amsmath, latex math operators, latex math functions, latex math text
 description: This article discusses inserting text into LaTeX math formulas. It also describes math functions and operators, as well as the method for defining them.
-lastmod: "2023-04-14"
-sitemap:
-    changefreq: "weekly"
-    priority: 0.8
-submenu: menu-tex-for-java
+lastmod: "2024-09-20"
 ---
+
+{{<section overview>}}
 
 ## 6.1. The `\text` command
 
 To put normal text inside mathematics, it's better to use `\text` command rather than commands like `\mathrm`. The `\text` command ensures that the text is set using the correct font size. The font will be the text font in use outside the current math material.
+
 
 ```tex
 \usepackage{amsmath}
@@ -26,7 +27,7 @@ To put normal text inside mathematics, it's better to use `\text` command rather
 \end{gather}
 ```
 
-![Text inside mathematics](latex-ams-math-6-1.png)
+![Text inside mathematics](/tex/images/java/tutorial/latex-ams-math-6-1.png)
 
 ## 6.2. Operator names
 
@@ -34,19 +35,20 @@ The names of common math functions (e.g., *sin* and *log*) and operators (e.g., 
 
 |||||||
 |:---:|---|:---:|---|:---:|---|
-| !["Arccos"](latex-ams-math-foper-6-1.png) | `\arccos` | !["Arcsin"](latex-ams-math-foper-6-14.png) | `\arcsin` | !["Arctan"](latex-ams-math-foper-6-27.png) | `\arctan` |
-| !["Arg"](latex-ams-math-foper-6-2.png) | `\arg` | !["Cos"](latex-ams-math-foper-6-15.png) | `\cos` | !["Cosh"](latex-ams-math-foper-6-28.png) | `\cosh` |
-| !["Cot"](latex-ams-math-foper-6-3.png) | `\cot` | !["Coth"](latex-ams-math-foper-6-16.png) | `\coth` | !["Csc"](latex-ams-math-foper-6-29.png) | `\csc` |
-| !["Deg"](latex-ams-math-foper-6-4.png) | `\deg` | !["Det"](latex-ams-math-foper-6-17.png) | *`\det`* | !["Dim"](latex-ams-math-foper-6-30.png) | `\dim` |
-| !["Exp"](latex-ams-math-foper-6-5.png) | `\exp` | !["Gcd"](latex-ams-math-foper-6-18.png) | *`\gcd`* | !["Hom"](latex-ams-math-foper-6-31.png) | `\hom` |
-| !["Inf"](latex-ams-math-foper-6-6.png) | *`\inf`* | !["Injlim"](latex-ams-math-foper-6-19.png) | ***`\injlim`*** | !["Ker"](latex-ams-math-foper-6-32.png) | `\ker` |
-| !["Lg"](latex-ams-math-foper-6-7.png) | `\lg` | !["Lim"](latex-ams-math-foper-6-20.png) | *`\lim`* | !["Liminf"](latex-ams-math-foper-6-33.png) | *`\liminf`* |
-| !["Limsup"](latex-ams-math-foper-6-8.png) | *`\limsup`* | !["Ln"](latex-ams-math-foper-6-21.png) | `\ln` | !["Log"](latex-ams-math-foper-6-34.png) | `\log` |
-| !["Max"](latex-ams-math-foper-6-9.png) | *`\max`* | !["Min"](latex-ams-math-foper-6-22.png) | *`\min`* | !["Pr"](latex-ams-math-foper-6-35.png) | *`\Pr`* |
-| !["Projlim"](latex-ams-math-foper-6-10.png) | ***`\projlim`*** | !["Sec"](latex-ams-math-foper-6-23.png) | `\sec` | !["Sin"](latex-ams-math-foper-6-36.png) | `\sin` |
-| !["Sinh"](latex-ams-math-foper-6-11.png) | `\sinh` | !["Sup"](latex-ams-math-foper-6-24.png) | *`\sup`* | !["Tan"](latex-ams-math-foper-6-37.png) | `\tan` |
-| !["Tanh"](latex-ams-math-foper-6-12.png) | `\tanh` | !["Varinjlim"](latex-ams-math-foper-6-25.png) | ***`\varinjlim`*** | !["Varliminf"](latex-ams-math-foper-6-38.png) | ***`\varliminf`*** |
-| !["Varlimsup"](latex-ams-math-foper-6-13.png) | ***`\varlimsup`*** | !["Varprojlim"](latex-ams-math-foper-6-26.png) | ***`\varprojlim`*** |  |  |
+| !["Arccos"](/tex/images/java/tutorial/latex-ams-math-foper-6-1.png) | `\arccos` | !["Arcsin"](/tex/images/java/tutorial/latex-ams-math-foper-6-14.png) | `\arcsin` | !["Arctan"](/tex/images/java/tutorial/latex-ams-math-foper-6-27.png) | `\arctan` |
+| !["Arg"](/tex/images/java/tutorial/latex-ams-math-foper-6-2.png) | `\arg` | !["Cos"](/tex/images/java/tutorial/latex-ams-math-foper-6-15.png) | `\cos` | !["Cosh"](/tex/images/java/tutorial/latex-ams-math-foper-6-28.png) | `\cosh` |
+| !["Cot"](/tex/images/java/tutorial/latex-ams-math-foper-6-3.png) | `\cot` | !["Coth"](/tex/images/java/tutorial/latex-ams-math-foper-6-16.png) | `\coth` | !["Csc"](/tex/images/java/tutorial/latex-ams-math-foper-6-29.png) | `\csc` |
+| !["Deg"](/tex/images/java/tutorial/latex-ams-math-foper-6-4.png) | `\deg` | !["Det"](/tex/images/java/tutorial/latex-ams-math-foper-6-17.png) | *`\det`* | !["Dim"](/tex/images/java/tutorial/latex-ams-math-foper-6-30.png) | `\dim` |
+| !["Exp"](/tex/images/java/tutorial/latex-ams-math-foper-6-5.png) | `\exp` | !["Gcd"](/tex/images/java/tutorial/latex-ams-math-foper-6-18.png) | *`\gcd`* | !["Hom"](/tex/images/java/tutorial/latex-ams-math-foper-6-31.png) | `\hom` |
+| !["Inf"](/tex/images/java/tutorial/latex-ams-math-foper-6-6.png) | *`\inf`* | !["Injlim"](/tex/images/java/tutorial/latex-ams-math-foper-6-19.png) | ***`\injlim`*** | !["Ker"](/tex/images/java/tutorial/latex-ams-math-foper-6-32.png) | `\ker` |
+| !["Lg"](/tex/images/java/tutorial/latex-ams-math-foper-6-7.png) | `\lg` | !["Lim"](/tex/images/java/tutorial/latex-ams-math-foper-6-20.png) | *`\lim`* | !["Liminf"](/tex/images/java/tutorial/latex-ams-math-foper-6-33.png) | *`\liminf`* |
+| !["Limsup"](/tex/images/java/tutorial/latex-ams-math-foper-6-8.png) | *`\limsup`* | !["Ln"](/tex/images/java/tutorial/latex-ams-math-foper-6-21.png) | `\ln` | !["Log"](/tex/images/java/tutorial/latex-ams-math-foper-6-34.png) | `\log` |
+| !["Max"](/tex/images/java/tutorial/latex-ams-math-foper-6-9.png) | *`\max`* | !["Min"](/tex/images/java/tutorial/latex-ams-math-foper-6-22.png) | *`\min`* | !["Pr"](latex-ams-math-foper-6-35.png) | *`\Pr`* |
+| !["Projlim"](/tex/images/java/tutorial/latex-ams-math-foper-6-10.png) | ***`\projlim`*** | !["Sec"](/tex/images/java/tutorial/latex-ams-math-foper-6-23.png) | `\sec` | !["Sin"](/tex/images/java/tutorial/latex-ams-math-foper-6-36.png) | `\sin` |
+| !["Sinh"](/tex/images/java/tutorial/latex-ams-math-foper-6-11.png) | `\sinh` | !["Sup"](/tex/images/java/tutorial/latex-ams-math-foper-6-24.png) | *`\sup`* | !["Tan"](/tex/images/java/tutorial/latex-ams-math-foper-6-37.png) | `\tan` |
+| !["Tanh"](/tex/images/java/tutorial/latex-ams-math-foper-6-12.png) | `\tanh` | !["Varinjlim"](/tex/images/java/tutorial/latex-ams-math-foper-6-25.png) | ***`\varinjlim`*** | !["Varliminf"](/tex/images/java/tutorial/latex-ams-math-foper-6-38.png) | ***`\varliminf`*** |
+| !["Varlimsup"](latex-ams-math-foper-6-13.png) | ***`\varlimsup`*** | !["Varprojlim"](/tex/images/java/tutorial/latex-ams-math-foper-6-26.png) | ***`\varprojlim`*** |  |  |
+
 
 ```tex
 \usepackage[fleqn]{amsmath}
@@ -62,9 +64,10 @@ The names of common math functions (e.g., *sin* and *log*) and operators (e.g., 
 \end{gather*}
 ```
 
-![Functions and operators](latex-ams-math-6-2.png)
+![Functions and operators](/tex/images/java/tutorial/latex-ams-math-6-2.png)
 
 It often turns out that this list is not enough. The `amsmath` package defines a general method to define new "operator names".
+
 
 ```tex
 \DeclareMathOperator*{cmd}{text}
@@ -77,6 +80,7 @@ The `\DeclareMathOperator` command defines `cmd` to produce `text` in the approp
  - Otherwise, the text is processed in math mode so that spaces are ignored and you can use subscripts, superscripts and other elements.
 
 The following example shows how to provide the command `\meas` for the new function name "meas" (measure) and the operator functions `\esssup` and `\supminus` (both may have subscripts/superscripts in the limit position).
+
 
 ```tex
 \usepackage[fleqn]{amsmath}
@@ -95,9 +99,10 @@ The following example shows how to provide the command `\meas` for the new funct
 \end{gather*}
 ```
 
-![New function names and operator names](latex-ams-math-6-3.png)
+![New function names and operator names](/tex/images/java/tutorial/latex-ams-math-6-3.png)
 
 Such declarations must appear in the preamble, and it's impossible to change them temporarily. Strictly speaking, `\DeclareMathOperator` can be used only for command names that haven't previously been used. To replace an existing command, you must first remove the previous definition before redeclaring it.
+
 
 ```tex
 \usepackage{amsmath}
@@ -112,4 +117,4 @@ Such declarations must appear in the preamble, and it's impossible to change the
 \]
 ```
 
-![Redefining a function name](latex-ams-math-6-4.png)
+![Redefining a function name](/tex/images/java/tutorial/latex-ams-math-6-4.png)

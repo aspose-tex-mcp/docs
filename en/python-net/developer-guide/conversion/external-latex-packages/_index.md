@@ -1,20 +1,19 @@
 ---
+translation: true
+template: /templates/_template-python-net.md
 title: External LaTeX packages | Python
 linktitle: External LaTeX packages
-type: docs
 weight: 19
 url: /python-net/external-latex-packages/
 description: Aspose.TeX API for Python supports the use of external packages that are not included in the library itself, such as the fancybox and pgfplots packages
-lastmod: "2023-03-23"
-sitemap:
-    changefreq: "weekly"
-    priority: 0.8
-submenu: menu-tex-for-python-net
+lastmod: "2024-09-20"
 ---
+
+{{<section overview>}}
 
 ## External LaTeX packages
 
-The **Aspose.TeX** library comes with a variety of [common LaTeX packages](/tex/net/embedded-packages/), so there is no need to manually provide these packages to the TeX engine. However, there may be situations where your LaTeX file requires a package that is not included in the library's "bundle" of packages. In such cases, you can try providing the necessary input, such as the source files of the required package, through the [required_input_directory](https://reference.aspose.com/tex/python-net/aspose.tex/texoptions/required_input_directory/) option of the [TeXOptions](https://reference.aspose.com/tex/python-net/aspose.tex/texoptions/) class instance. We will explore how this works with two examples.
+The **Aspose.TeX** library comes with a variety of [common LaTeX packages](/tex/{{lang.url-fragment}}net/embedded-packages/), so there is no need to manually provide these packages to the TeX engine. However, there may be situations where your LaTeX file requires a package that is not included in the library's "bundle" of packages. In such cases, you can try providing the necessary input, such as the source files of the required package, through the [required_input_directory](https://reference.aspose.com/tex/python-net/aspose.tex/texoptions/required_input_directory/) option of the [TeXOptions](https://reference.aspose.com/tex/python-net/aspose.tex/texoptions/) class instance. We will explore how this works with two examples.
 
 ### Required input provided in an unpacked form (the `fancybox` package).
 
@@ -45,13 +44,14 @@ Test: \fbox{
 
 The 3rd line of the file indicates that it requires the `fancybox` package, which is not included in the "native" support. Let's assume we have the source file for the `fancybox` package. Since it is a simple package consisting of a single file, we can place this file anywhere in our file system and specify the directory path as follows:
 
+
 ```Python
 options.required_input_directory = InputFileSystemDirectory('path-to-directory-where-fancybox.sty-located')
 ```
 
 Once we run a TeX job with this option (remember to adjust the other options as necessary), we will obtain the output document, which in this case is a PNG image.
 
-![Output Document](Conversion-RequiredInputFs.png)
+![Output Document](/tex/images/python-net/Conversion-RequiredInputFs.png)
 
 Here is the complete source code for the example:
 
@@ -60,6 +60,8 @@ Here is the complete source code for the example:
 ### Providing required input in an archived form (the `pgfplots` package)
 
 Now, suppose we have the following LaTeX file named `required-input-zip.tex`, which is also a simple file from our example solution:
+
+
 ```tex
 \documentclass{article}
 \usepackage[margin=0.25in]{geometry}
@@ -93,7 +95,7 @@ First example is 2D and 3D math expressions plotted side-by-side.
 
 On the third line, it can be observed that the file necessitates the `pgfplots` package, which is not "natively" supported. Once again, assuming that we possess the source files for the `pgfplots` package, these files are quite numerous and are located in two different directories within the installation directory of any LaTeX typesetting application. The `pgfplots` folder can be found in both the `\tex\generic` and `\tex\latex` directories. For the Aspose.TeX library to function correctly, it is necessary to provide the contents of both these folders as input. To achieve this, we desire to package these source files into a ZIP archive. Below is the desired layout of the archive:
 
-![Archive’s Layout](pgfplots-zip-layout.png)
+![Archive’s Layout](/tex/images/python-net/pgfplots-zip-layout.png)
 
 And here is the method by which we define the accessibility to these source files:
 
@@ -102,12 +104,11 @@ with open("path-to-zip-with-pgfplots-sources") as zipStream:
     ...
     options.required_input_directory = InputZipDirectory(zipStream)
     ...
-
 ```
 
 After running a TeX job with this option, we get the output document:
 
-![Output Document](Conversion-RequiredInputZip.png)
+![Output Document](/tex/images/python-net/Conversion-RequiredInputZip.png)
 
 Here is the complete source code for the example:
 
