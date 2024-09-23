@@ -1,16 +1,16 @@
 ---
+translation: true
+template: /templates/_template-java.md
+linktitle: Extensible and adjustable symbols
 title: 5. Extensible and adjustable symbols  | LaTeX manual
-type: docs
 weight: 50
 url: /java/latex-math-extensible-symbols/
 keywords: ams-latex, amsmath, amsxtra, latex math operators, latex math delimiters, latex math brackets, latex math braces, latex math accents
 description: This article discusses LaTeX features related to working with extensible and adjustable mathematical symbols.
-lastmod: "2023-04-14"
-sitemap:
-    changefreq: "weekly"
-    priority: 0.8
-submenu: menu-tex-for-java
+lastmod: "2024-09-20"
 ---
+
+{{<section overview>}}
 
 In LaTeX, there are certain features which allow producing structures that can grow to any required size. Mathematical typesetting is in dire need of such variability. We will discuss some aspects of it in this article. All commands covered in this section (unless otherwise noted) are provided by standard LaTeX.
 
@@ -18,6 +18,7 @@ In LaTeX, there are certain features which allow producing structures that can g
 ## 5.1. Ellipsis...
 
 The `amsmath` package replaces (in almost all cases) all those `\ldots`, `cdots`, etc. from standard LaTeX with the single `\dots` command. Both the vertical position of the ellipsis and the space around it are automatically selected depending on the type of the symbol following `\dots`. If the next symbol is, say, a plus sign, the dots will come out centered; if it is a comma, they will fall on the baseline. It's always three dots but the spacing is variable.
+
 
 ```tex
 \usepackage{amsmath}
@@ -27,7 +28,7 @@ $H_1 + H_2 + \dots + H_n$, an orthogonal product
 $H_1 \times H_2 \times \dots \times H_n$.
 ```
 
-![Ellipsis with automatically determined spacing](latex-ams-math-5-1.png)
+![Ellipsis with automatically determined spacing](/tex/images/java/tutorial/latex-ams-math-5-1.png)
 
 However, when the dots happen to appear at the end of a formula, the next object will be something like `\end` or `\)` or `$`, and it gives LaTeX no clue about the positioning of the dots. In such a case, you must help by using `\dotsc` for dots followed by commas, `\dotsb` for dots followed by *Binary operator* or *Relation symbol*, `\dotsm` for dots followed by multiplication dots, `\dotsi` for dots followed by integrals, or `\dotso` in any other case.
 
@@ -41,7 +42,7 @@ integral: \[ \int_{H_1} \int_{H_2} \dotsi \;
 {-\Gamma}\, d\Theta \]
 ```
 
-![Ellipsis at the end of a formula](latex-ams-math-5-2.png)
+![Ellipsis at the end of a formula](/tex/images/java/tutorial/latex-ams-math-5-2.png)
 
 ## 5.2. Symbols that are horizontally extensible
 
@@ -73,7 +74,7 @@ In the next example, we demonstrate the use of a few commands that produce const
 \end{align*}
 ```
 
-![Extensible accents](latex-ams-math-5-3.png)
+![Extensible accents](/tex/images/java/tutorial/latex-ams-math-5-3.png)
 
 Here, "change style" means that the symbol employed is affected by the math style in use so that it will look right when used, for example, in fractions or subscript/superscript. Those that don't change style will come out right only at the top level of displayed formulas.
 
@@ -85,16 +86,16 @@ The vertical extensibility is much wider. The following table lists all the symb
 
 |||||||
 |:---:|---|:---:|---|:---:|---|
-| !["Parentheses"](latex-ams-math-delim-5-1.png) | `(` `)` | !["Curly Braces Open"](latex-ams-math-delim-5-11.png) | `\{` `\}` | !["Double Vertical Bars"](latex-ams-math-delim-5-18.png) | *`\lVert` `\rVert`* |
-| !["Angle Brackets"](latex-ams-math-delim-5-2.png) | `\langle` `\rangle` | !["Curly Braces Close"](latex-ams-math-delim-5-11.png) | `\lbrace` `\rbrace` | !["Single Vertical Bars"](latex-ams-math-delim-5-19.png) | *`\lvert` `\rvert`* |
-| !["Lgroup and Rgroup"](latex-ams-math-delim-5-3.png) | `\lgroup` `\rgroup` | !["Square Brackets Open"](latex-ams-math-delim-5-12.png) | `[` `]` | !["Vertical Bar"](latex-ams-math-delim-5-20.png) | `|` |
-| !["Moustaches"](latex-ams-math-delim-5-4.png) | `\lmoustache` `\rmoustache` | !["Square Brackets Close"](latex-ams-math-delim-5-12.png) | `\lbrack` `\rbrack` | !["Vertical Bar"](latex-ams-math-delim-5-20.png) | `\vert` |
-| !["Down Arrow"](latex-ams-math-delim-5-5.png) | `\Downarrow` | !["Ceiling Brackets Open"](latex-ams-math-delim-5-13.png) | `\lceil` `\rceil` | !["Arrow Vertical Bar"](latex-ams-math-delim-5-20.png) | `\arrowvert` |
-| !["Up Arrow"](latex-ams-math-delim-5-6.png) | `\Uparrow` | !["Floor Brackets Close"](latex-ams-math-delim-5-14.png) | `\lfloor` `\rfloor` | !["Brace Vertical Bar"](latex-ams-math-delim-5-21.png) | `\bracevert` |
-| !["Up Down Arrow"](latex-ams-math-delim-5-7.png) | `\Updownarrow` | !["Double Brackets Open"](latex-ams-math-delim-5-15.png) | ***`\llbracket` `\rrbracket`*** | !["Double Arrow Vertical Bar"](latex-ams-math-delim-5-22.png) | `\Arrowvert` |
-| !["Single Down Arrow"](latex-ams-math-delim-5-8.png) | `\downarrow` | !["Slash"](latex-ams-math-delim-5-16.png) | `/` | !["Double Vertical Line"](latex-ams-math-delim-5-22.png) | `\|` |
-| !["Single Up Arrow"](latex-ams-math-delim-5-9.png) | `\uparrow` | !["Back Slash"](latex-ams-math-delim-5-17.png) | `\backslash` | !["Double Vertical Line"](latex-ams-math-delim-5-22.png) | `\Vert` |
-| !["Single Up Down Arrow"](latex-ams-math-delim-5-10.png) | `\updownarrow` | | `.` | !["Square Root Sign"](latex-ams-math-delim-5-23.png) | `\sqrtsign` |
+| !["Parentheses"](/tex/images/java/tutorial/latex-ams-math-delim-5-1.png) | `(` `)` | !["Curly Braces Open"](/tex/images/java/tutorial/latex-ams-math-delim-5-11.png) | `\{` `\}` | !["Double Vertical Bars"](/tex/images/java/tutorial/latex-ams-math-delim-5-18.png) | *`\lVert` `\rVert`* |
+| !["Angle Brackets"](/tex/images/java/tutorial/latex-ams-math-delim-5-2.png) | `\langle` `\rangle` | !["Curly Braces Close"](/tex/images/java/tutorial/latex-ams-math-delim-5-11.png) | `\lbrace` `\rbrace` | !["Single Vertical Bars"](/tex/images/java/tutorial/latex-ams-math-delim-5-19.png) | *`\lvert` `\rvert`* |
+| !["Lgroup and Rgroup"](/tex/images/java/tutorial/latex-ams-math-delim-5-3.png) | `\lgroup` `\rgroup` | !["Square Brackets Open"](/tex/images/java/tutorial/latex-ams-math-delim-5-12.png) | `[` `]` | !["Vertical Bar"](/tex/images/java/tutorial/latex-ams-math-delim-5-20.png) | `|` |
+| !["Moustaches"](/tex/images/java/tutorial/latex-ams-math-delim-5-4.png) | `\lmoustache` `\rmoustache` | !["Square Brackets Close"](/tex/images/java/tutorial/latex-ams-math-delim-5-12.png) | `\lbrack` `\rbrack` | !["Vertical Bar"](/tex/images/java/tutorial/latex-ams-math-delim-5-20.png) | `\vert` |
+| !["Down Arrow"](/tex/images/java/tutorial/latex-ams-math-delim-5-5.png) | `\Downarrow` | !["Ceiling Brackets Open"](/tex/images/java/tutorial/latex-ams-math-delim-5-13.png) | `\lceil` `\rceil` | !["Arrow Vertical Bar"](/tex/images/java/tutorial/latex-ams-math-delim-5-20.png) | `\arrowvert` |
+| !["Up Arrow"](/tex/images/java/tutorial/latex-ams-math-delim-5-6.png) | `\Uparrow` | !["Floor Brackets Close"](/tex/images/java/tutorial/latex-ams-math-delim-5-14.png) | `\lfloor` `\rfloor` | !["Brace Vertical Bar"](/tex/images/java/tutorial/latex-ams-math-delim-5-21.png) | `\bracevert` |
+| !["Up Down Arrow"](/tex/images/java/tutorial/latex-ams-math-delim-5-7.png) | `\Updownarrow` | !["Double Brackets Open"](/tex/images/java/tutorial/latex-ams-math-delim-5-15.png) | ***`\llbracket` `\rrbracket`*** | !["Double Arrow Vertical Bar"](/tex/images/java/tutorial/latex-ams-math-delim-5-22.png) | `\Arrowvert` |
+| !["Single Down Arrow"](/tex/images/java/tutorial/latex-ams-math-delim-5-8.png) | `\downarrow` | !["Slash"](/tex/images/java/tutorial/latex-ams-math-delim-5-16.png) | `/` | !["Double Vertical Line"](/tex/images/java/tutorial/latex-ams-math-delim-5-22.png) | `\|` |
+| !["Single Up Arrow"](/tex/images/java/tutorial/latex-ams-math-delim-5-9.png) | `\uparrow` | !["Back Slash"](/tex/images/java/tutorial/latex-ams-math-delim-5-17.png) | `\backslash` | !["Double Vertical Line"](/tex/images/java/tutorial/latex-ams-math-delim-5-22.png) | `\Vert` |
+| !["Single Up Down Arrow"](/tex/images/java/tutorial/latex-ams-math-delim-5-10.png) | `\updownarrow` | | `.` | !["Square Root Sign"](/tex/images/java/tutorial/latex-ams-math-delim-5-23.png) | `\sqrtsign` |
 
 
 > *Symbols in italics require either the `amsmath` package or, if additionally typed in bold, the `stmaryrd` package. A period (.) is not itself an extensible symbol, but it can be used to produce an "invisible" delimiter. The `\sqrtsign` symbol cannot be used with `\left`, `\right`, or `\middle`.*
@@ -113,6 +114,7 @@ Here `<ext-Open>` and `<ext-Close>` can be any of the symbols (except `\sqrtsign
 
 The radical symbol `\sqrtsign` grows both vertically and horizontally to fit the size of its argument. In LaTeX, you would rather use the `\sqrt` command to get this symbol.
 
+
 ```tex
 \[
   \sqrtsign{1 + \sqrtsign{1 + \sqrtsign{1 +
@@ -120,4 +122,4 @@ The radical symbol `\sqrtsign` grows both vertically and horizontally to fit the
 \]
 ```
 
-![Extending radicals](latex-ams-math-5-24.png)
+![Extending radicals](/tex/images/java/tutorial/latex-ams-math-5-24.png)

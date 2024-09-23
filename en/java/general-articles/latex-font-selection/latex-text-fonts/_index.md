@@ -1,16 +1,16 @@
 ---
-title: 3.	How to use LaTeX fonts in text
-type: docs
+translation: true
+template: /templates/_template-java.md
+linktitle: 3. How to use LaTeX fonts in text
+title:	How to use LaTeX fonts in text
 weight: 30
 url: /java/latex-text-fonts/
 keywords: latex, latex fonts, latex text font commands, latex large, latex font size
 description: This article covers LaTeX font commands that independently change different font attributes for use in normal text.
-lastmod: "2024-04-19"
-sitemap:
-    changefreq: "weekly"
-    priority: 0.8
-submenu: menu-tex-for-java
+lastmod: "2024-09-20"
 ---
+
+{{<section overview>}}
 
 When you are writing a LaTeX document, the markup tags used to structure the document automatically choose appropriate fonts. For example, for a section heading, such font attributes as large size and bold weight are defined by the document class and applied when a `\section` command is used. Therefore, you rarely need to specify font attributes directly.
 
@@ -34,7 +34,7 @@ Some words in this sentence are \begin{bfseries}typeset in bold letters.
 The bold typeface\end{bfseries} continues here. 
 ```
 
-![The environment form of \bfseries](latex-font-selection-3-1.png)
+![The environment form of \bfseries](/tex/images/java/tutorial/latex-font-selection-3-1.png)
 
 The declarative forms themselves are often better in the definition of new environments or commands.
 
@@ -78,7 +78,7 @@ When switching back from {\itshape italic\/} or {\slshape slanted\/} shapes to a
 should add the {\itshape italic correction}, except when a small punctuation character follows.
 ```
 
-![The italic correction](latex-font-selection-3-2.png)
+![The italic correction](/tex/images/java/tutorial/latex-font-selection-3-2.png)
 
 Small caps are sometimes used in headings or to format names. For the latter case, you can, for example, define the command `\name` as follows:
 
@@ -102,13 +102,13 @@ on both ends of the emphasized text}. It is therefore better to use the \verb=\e
 which \emph{automatically} takes care of the italic correction on both sides.
 ```
 
-![Emphasizing text fragments](latex-font-selection-3-3.png)
+![Emphasizing text fragments](/tex/images/java/tutorial/latex-font-selection-3-3.png)
 
 ### Standard font sizes
 
 There are 10 size-changing commands in LaTeX. These commands have no corresponding command forms with one argument since font size changes are normally used only in the definitions of commands.
 
-![Standard font sizes](latex-font-selection-3-4.png)
+![Standard font sizes](/tex/images/java/tutorial/latex-font-selection-3-4.png)
 
 The size selected by these commands depends on the settings in the document class and possibly on options (e.g., `11pt`) specified with it. In general, `\normalsize` corresponds to the main size of the document, and the size-changing commands form an ordered sequence starting with `\tiny` as the smallest and going up to `\Huge` as the largest size. It can happen that more than one command refers to the same size. For example, when a large `\normalsize` is chosen, `\Huge` can be the same as `\huge`. But the order is always honored though.
 
@@ -124,15 +124,15 @@ bold typeface} but note the unchanged leading! \LaTeX{} uses the value
 in force at the \emph{end} of the paragraph!
 ```
 
-![LaTeX font commands combinations](latex-font-selection-3-5.png)
+![LaTeX font commands combinations](/tex/images/java/tutorial/latex-font-selection-3-5.png)
 
-Internally, the `\sffamily` command switches to the sans serif default family, then `\bfseries` switches to the default bold series in this family, and finally `\large` selects a large size but leaves all other attributes unchanged. The leading appears to be unchanged because the scope of `\large` ends before the end of the paragraph. Font metric files are loaded for all intermediate typefaces, even if these fonts are never used. In the example above, they would be "sans serif medium 10pt" after the `\sffamily`, then "sans serif bold extended 10pt" after the `\bfseries`, and, finally, "sans serif bold extended 14pt", which is the font that is actually used. Therefore, such high-level commands can force LaTeX's font selection to unnecessarily load fonts that are never used. There is only a small loss of processing speed when a given combination is used for the first time. But if you have many different combinations of this type, you should better consider defining them in terms of [primitive font-changing declarations](/tex/java/latex-fonts-low-level/).
+Internally, the `\sffamily` command switches to the sans serif default family, then `\bfseries` switches to the default bold series in this family, and finally `\large` selects a large size but leaves all other attributes unchanged. The leading appears to be unchanged because the scope of `\large` ends before the end of the paragraph. Font metric files are loaded for all intermediate typefaces, even if these fonts are never used. In the example above, they would be "sans serif medium 10pt" after the `\sffamily`, then "sans serif bold extended 10pt" after the `\bfseries`, and, finally, "sans serif bold extended 14pt", which is the font that is actually used. Therefore, such high-level commands can force LaTeX's font selection to unnecessarily load fonts that are never used. There is only a small loss of processing speed when a given combination is used for the first time. But if you have many different combinations of this type, you should better consider defining them in terms of [primitive font-changing declarations](/tex/{{lang.url-fragment}}java/latex-fonts-low-level/).
 
 ## 3.3. Font commands and declarations comparison
 
 The font changing commands with arguments all start with `\text...` (except `\emph`) to emphasize that they are intended for use in normal text. Using such commands instead of the declarative forms has the advantage of maintaining consistency with other LaTeX constructs. They are intended for typesetting short pieces of text in a specific family, series, or shape. The following table shows the effect of these commands.
 
-![Commands and declarations](latex-font-selection-3-6.png)
+![Commands and declarations](/tex/images/java/tutorial/latex-font-selection-3-6.png)
 
 Another advantage of these commands is that they automatically insert any necessary italic correction on either side of their argument. Thus, you do not have to worry about missing italic corrections when changing fonts.
 
@@ -150,7 +150,7 @@ italic corrections is automatically taken care of}. Only \emph{sometimes} one ha
 to help \LaTeX{} by adding a \verb=\nocorr= command.
 ```
 
-![The italic correction](latex-font-selection-3-7.png)
+![The italic correction](/tex/images/java/tutorial/latex-font-selection-3-7.png)
 
 In contrast, the declaration forms are often more suitable for defining your own commands or environments.
 
@@ -166,7 +166,7 @@ In contrast, the declaration forms are often more suitable for defining your own
 \end{bfitemize}
 ```
 
-![The list with boldface items](latex-font-selection-3-8.png)
+![The list with boldface items](/tex/images/java/tutorial/latex-font-selection-3-8.png)
 
 ## 3.4. How to access all characters of a font
 
@@ -182,13 +182,13 @@ symbol{'237}, and \symbol{32} are included and can be accessed with
 the \verb=\symbol= command.
 ```
 
-![The \symbol command](latex-font-selection-3-9.png)
+![The \symbol command](/tex/images/java/tutorial/latex-font-selection-3-9.png)
 
 ## 3.5. How to change the default text fonts
 
 If you want to easily modify the overall appearance of a document, you can use LaTeX's built-in hooks that modify the behavior of the high-level font-changing commands discussed earlier. The values of these hooks can be set in package files or in the preamble of a document by using `\renewcommand`. Here is the list of the hooks:
 
-![The hooks for high-level font changing](latex-font-selection-3-10.png)
+![The hooks for high-level font changing](/tex/images/java/tutorial/latex-font-selection-3-10.png)
 
 For example, if you write in the preamble
 

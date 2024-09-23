@@ -1,11 +1,16 @@
 ---
+translation: true
+template: /templates/_template-python-net.md
+linktitle: Installation
 title: Installation - Aspose.TeX for Python
-type: docs
 weight: 60
 url: /python-net/installation/
 description: The Python Library for the developers to process TeX(LaTeX) files. Learn how to install Aspose.TeX API solution for Python.
-submenu: menu-tex-for-python-net
+lastmod: "2024-09-20"
 ---
+
+{{<section overview>}}
+
 
 ## Installing Aspose.TeX for Python from PyPi
 
@@ -15,11 +20,13 @@ submenu: menu-tex-for-python-net
 
 Taking advantage of this repository, we have bundled [Aspose.TeX for Python](https://pypi.org/project/aspose-tex-net/) library into a Wheel package and uploaded it to **PyPI**. To reference the package in your project, you can download it from the just mentioned page and then install it locally by typing the following command in your Python terminal.
 
+
 ```
 pip install <path to package>\aspose-tex-net-<version>-py3-none-<platform>.whl
 ```
 
 Or, you can install it direcly from **PyPI** using the command bellow.
+
 
 ```
 pip install aspose-tex-net

@@ -1,20 +1,19 @@
 ---
+translation: true
+template: /templates/_template-java.md
 title: External LaTeX packages | Java
 linktitle: External LaTeX packages
-type: docs
 weight: 30
 url: /java/external-latex-packages/
 description: Aspose.TeX API for Java allows the use of external packages, i.e. the ones that aren't included in the library itself like fancybox or pgfplots packages.
-lastmod: "2023-03-23"
-sitemap:
-    changefreq: "weekly"
-    priority: 0.8
-submenu: menu-tex-for-java
+lastmod: "2024-09-20"
 ---
+
+{{<section overview>}}
 
 ## External LaTeX packages
 
-There is a number of [common LaTeX packages](/tex/net/embedded-packages/) included in the **Aspose.TeX** library for Java. So you don't have to take care about how to provide these packages to the library's TeX engine. But sometimes (maybe often) your LaTeX file may require a package beyond the "natively" supported "bundle" of packages. In this case, you can try to provide the required input, i.e. required package's source files, using the [setRequiredInputDirectory()](https://reference.aspose.com/tex/java/com.aspose.tex/texoptions/#setRequiredInputDirectory-com.aspose.tex.IInputWorkingDirectory-) method of the [TeXOptions](https://reference.aspose.com/tex/java/com.aspose.tex/texoptions/) class instance. We will see how this works with two examples.
+There is a number of [common LaTeX packages](/tex/{{lang.url-fragment}}net/embedded-packages/) included in the **Aspose.TeX** library for Java. So you don't have to take care about how to provide these packages to the library's TeX engine. But sometimes (maybe often) your LaTeX file may require a package beyond the "natively" supported "bundle" of packages. In this case, you can try to provide the required input, i.e. required package's source files, using the [setRequiredInputDirectory()](https://reference.aspose.com/tex/java/com.aspose.tex/texoptions/#setRequiredInputDirectory-com.aspose.tex.IInputWorkingDirectory-) method of the [TeXOptions](https://reference.aspose.com/tex/java/com.aspose.tex/texoptions/) class instance. We will see how this works with two examples.
 
 ### Unpacked required input (`fancybox` package)
 
@@ -51,7 +50,7 @@ options.setRequiredInputDirectory(new InputFileSystemDirectory("path-to-director
 
 After running a TeX job with this option (don't forget to adjust the other options as needed), we get the output document (i.e., a PNG image).
 
-![Output Document](Conversion-RequiredInputFs.png)
+![Output Document](/tex/images/java/Conversion-RequiredInputFs.png)
 
 Here is the complete source code for the example:
 
@@ -60,6 +59,8 @@ Here is the complete source code for the example:
 ### Archived required input (`pgfplots` package)
 
 Let's now assume that we have the following also quite simple LaTeX file, which is `required-input-zip.tex` from our example solution:
+
+
 ```tex
 \documentclass{article}
 \usepackage[margin=0.25in]{geometry}
@@ -93,7 +94,7 @@ First example is 2D and 3D math expressions plotted side-by-side.
 
 On the 3rd line, we see that the file requires the `pgfplots` package, which is also not "natively" supported. Again, we assume that we have the `pgfplots` package source files. It's quite a large set of files that are divided between two locations if you find them in the installation directory of any LaTeX typesetting application. You can find `pgfplots` folder at both `\tex\generic` and `\tex\latex` folders. And the contents of both these folders must be provided as required input to the Aspose.TeX library. We want these source file to be packaged in a ZIP archive, so here is the archive's layout:
 
-![archive’s layout](pgfplots-zip-layout.png)
+![archive’s layout](/tex/images/java/pgfplots-zip-layout.png)
 
 And here is how we specify the access to these source files:
 
@@ -112,7 +113,7 @@ try {
 
 After running a TeX job with this option, we get the output document:
 
-![Output document](Conversion-RequiredInputZip.png)
+![Output document](/tex/images/java/Conversion-RequiredInputZip.png)
 
 Here is the complete source code for the example:
 

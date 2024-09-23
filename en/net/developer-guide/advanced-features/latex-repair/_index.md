@@ -1,16 +1,15 @@
 ---
+translation: true
+template: /templates/_template-net.md
 title: LaTeX file repair | .NET
 linktitle: LaTeX file repair
-type: docs
 weight: 30
 url: /net/latex-repair/
 description: Aspose.TeX API solution for .NET LaTeX repair is described in this article. Learn the code examples on how to use the functionality.
-lastmod: "2024-05-31"
-sitemap:
-    changefreq: "weekly"
-    priority: 0.8
-submenu: menu-tex-for-net
+lastmod: "2024-09-20"
 ---
+
+{{<section overview>}}
 
 ## How to check and repair a LaTeX file
 
@@ -30,11 +29,13 @@ So, what is the checking and repairing process like? Firstly, the API searches t
 
 Then, it starts scanning the adjusted input file from the very beginning. The TeX engine charged with the LaTeX format may throw an error at some point, signaling that no `\begin{document}` has been found so far, although it should have already occurred. Thus, the position at which `\begin{document}` must be inserted is defined and reflected in the report.
 
-As the engine scans the file further, it may find undefined commands or environments. The API can make assumptions on [embedded required packages](/tex/net/embedded-packages/) (those that define the commands and environments that are not defined until these packages are included) for some of the most common commands and environments. However, there is a way to make such assumptions externally by implementing the [IGuessPackageCallback](https://reference.aspose.com/tex/net/aspose.tex.features/iguesspackagecallback/) interface. An instance of such a class should be assigned to the `GuessPackageCallback` option.
+As the engine scans the file further, it may find undefined commands or environments. The API can make assumptions on [embedded required packages](/tex/{{lang.url-fragment}}net/embedded-packages/) (those that define the commands and environments that are not defined until these packages are included) for some of the most common commands and environments. However, there is a way to make such assumptions externally by implementing the [IGuessPackageCallback](https://reference.aspose.com/tex/net/aspose.tex.features/iguesspackagecallback/) interface. An instance of such a class should be assigned to the `GuessPackageCallback` option.
 
 Here is a very simple example that just maps the `\head` command to the `fancyhdr` package:
 
+
 {{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Features-LaTeXRepairer-PackageGuessingCallback.cs" >}}
+
 
 As for the sample file, the engine first encounters the `\chapter` command, which is not defined in the `article` document class but is defined in the `book` document class. The API adjusts the document class so that the final version of the fixed file will start with `\documentclass{book}`. Then, the engine finds the aforementioned `\lhead` command and decides that `\usepackage{fancyhdr}` must be inserted in the preamble. The `\href` and `\includegraphics` commands that occur later on make the Repairer insert `\usepackage{hyperref}` and `\usepackage{graphics}` in the preamble, respectively. These decisions are based on the API's internal mappings. Again, all such fixes are logged in the report file.
 
@@ -43,6 +44,7 @@ Finally, the engine abnormally terminates since the normal ending of a LaTeX doc
 Once the fixed version of the original file is built, the Repairer runs the TeX job on it for the final check. In our example, this run does not find any critical errors, so the fixed version may be typeset more or less as expected.
 
 Here is the full report:
+
 
 ```
 Trying to repair the original file...

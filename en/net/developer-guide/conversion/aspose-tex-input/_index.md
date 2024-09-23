@@ -1,12 +1,15 @@
 ---
+translation: true
+template: /templates/_template-net.md
 title: Aspose.TeX's input interface | .NET
 linktitle: Aspose.TeX's input interface
-type: docs
 weight: 15
 url: /net/aspose-tex-input/
 description: Conversion functionality of Aspose.TeX API solution for .NET with TeX, as an input format is explained here with the code examples.
-submenu: menu-tex-for-net
+lastmod: "2024-09-20"
 ---
+
+{{<section overview>}}
 
 Please, refer to **Aspose.TeX for .NET** [API reference](https://reference.aspose.com/tex/net/aspose.tex.io/) for formal definitions of I/O implementation.
 

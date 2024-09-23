@@ -1,16 +1,17 @@
 ---
+translation: true
+template: /templates/_template-java.md
+linktitle: AMS's LaTeX packages
 title: Building maths with AMS's LaTeX packages
-type: docs
 weight: 40
 url: /java/what-is-ams-latex/
 keywords: ams-latex, ams latex, latex math, latex formula, latex ams, latex equation, latex math expression
 description: This article sheds some light on what AMS-LATEX is and briefly explains when to use the packages provided by AMS.
-lastmod: "2023-04-14"
-sitemap:
-    changefreq: "weekly"
-    priority: 0.8
-submenu: menu-tex-for-java
+lastmod: "2024-09-20"
 ---
+
+{{<section overview>}}
+
 
 ## What is *AMS*-LATEX
 

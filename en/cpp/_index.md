@@ -1,12 +1,16 @@
 ---
+translation: true
+template: /templates/_template-cpp.md
 title: Aspose.TeX for C++ API Solution
-type: docs
+linktitle: Aspose.TeX for C++ Documentation
 weight: 30
 url: /cpp/
 description: Managing TeX files API solution for C++. The Library provides ways to pass TeX input and obtain output and features like creating your own TeX format.
 is_root: true
-submenu: menu-tex-for-cpp
+lastmod: "2024-09-20"
 ---
+
+{{<section overview>}}
 
 {{% alert color="primary" %}}
 
@@ -21,8 +25,8 @@ Aspose.TeX is a C++ library for TeX files typesetting. It can present TeX input 
 ## Aspose.TeX for C++ Resources
 
 Following are the links to some useful resources you may need to accomplish your tasks.
-- [Aspose.TeX for C++ Online Documentation](/tex/cpp/)
-- [Aspose.TeX for C++ Features](/tex/cpp/feature-list/)
+- [Aspose.TeX for C++ Online Documentation](/tex/{{lang.url-fragment}}cpp/)
+- [Aspose.TeX for C++ Features](/tex/{{lang.url-fragment}}cpp/feature-list/)
 - [Aspose.TeX for C++ Release Notes](https://releases.aspose.com/tex/cpp/release-notes/)
 - [Aspose.TeX for C++ Product Page](https://products.aspose.com/tex/cpp/)
 - [Install Aspose.TeX for C++ NuGet Package](https://www.nuget.org/packages/Aspose.TeX/)

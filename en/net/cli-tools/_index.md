@@ -1,13 +1,16 @@
 ---
+translation: true
+template: /templates/_template-net.md
 title: LaTeX Command Line Tools | Aspose.TeX for .NET
 linktitle: CLI Tools to manipulate TeX/LaTeX files
-type: docs
 weight: 70
 url: /net/cli-tools/
 description: Discover the command-line interface (CLI) tools from Aspose.TeX for .NET, which allow easy TeX and LaTeX document processing and manipulation through simple commands.
 keywords: c# cli for tex documents, c# cli tex management, c# cli tex coding, tex documents c# cli
-submenu: menu-tex-for-net
+lastmod: "2024-09-20"
 ---
+
+{{<section overview>}}
 
 # CLI APPS for Aspose.TeX
 
@@ -21,7 +24,7 @@ Aspose.TeX for .NET offers a handy command-line tool. This lets you convert comp
 
 ### Available CLI Tools
 
-- [Aspose.TeX Convert](/tex/net/cli-tools/tex-convert/)
+- [Aspose.TeX Convert](/tex/{{lang.url-fragment}}net/cli-tools/tex-convert/)
 
 ### Benefits of Using Command Line Programs
 

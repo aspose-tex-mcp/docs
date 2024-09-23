@@ -1,20 +1,18 @@
 ---
+translation: true
+template: /templates/_template-java.md
 title: LaTeX graphics | \includegraphics command
 linktitle: LaTeX graphics
-type: docs
 weight: 18	
 url: /net/latex-graphics/
 description: The inclusion of graphics in TeX is a matter worth mentioning. When talking about it, the first thing that comes to mind is the `\includegraphics` command.
-lastmod: "2021-10-14"
-sitemap:
-    changefreq: "weekly"
-    priority: 0.8
-submenu: menu-tex-for-net
+lastmod: "2024-09-20"
 ---
 
-## LaTeX graphics
+{{<section overview>}}
 
 Actually, there are two aspects of LaTeX graphics that are worth mentioning:
+
  * vector graphics described directly by means of LaTeX/TeX commands and,
  * inclusion of external graphics described by means of external formats, like EPS, PDF or raster PNG and PDF.
 
@@ -28,18 +26,24 @@ When talking about LaTeX graphics inclusion, the first thing that comes to mind 
 ```
 
 If your typesetting system is not configured to use, say, pdfTeX by default, you should specify the appropriate option that will force the package to use the required `driver` file:
+
+
 ```tex
 \usepackage[pdftex]{graphics}
 ```
 A `driver` file is a part of a package that implements the interface between package commands and format-dependent low-level TeX extension primitives. Aspose.TeX's LaTeX graphics support is configured to use its own driver, so you don't need to specify the driver option.
 
 Now, the simplest way to include, say, a PNG image is to type:
+
+
 ```tex
 \includegraphics{sample-image.png}
 ```
 where `sample-image.png` is the name of the file you want to include. You may even ommit the extension. The `graphics` package contains the list of definitions of supported formats. When looking for a file, it traverses that list and includes the first matching file found.
 
 You can also specify the full file name using an absolute or relative path:
+
+
 ```tex
 \includegraphics{d:/sample-image.png} % absolute path
 \includegraphics{./sample-image.png} % relative to the current directory
@@ -47,6 +51,8 @@ You can also specify the full file name using an absolute or relative path:
 ```
 
 Another way to specify the graphics files location(s) is to define a list of alternative paths using `\graphicspath` command before calling `\includegraphics`:
+
+
 ```tex
 \graphicspath{{d:/img}{c:/img}{d:/work/img}}
 ```
@@ -54,6 +60,8 @@ Another way to specify the graphics files location(s) is to define a list of alt
 ### Scaling the graphics
 
 LaTeX `graphics` package provides commands for manipulating the content. So you can scale the included graphics (in fact, anything described by TeX/LaTeX code) as follows:
+
+
 ```tex
 \scalebox{.5}{\includegraphics{sample-image.png}} % scales both width and height by 0.5
 \scalebox{.5}[1.5]{\includegraphics{sample-image.png}} % scales the width and height by 0.5 and 1.5 respectively
@@ -62,6 +70,8 @@ LaTeX `graphics` package provides commands for manipulating the content. So you 
 ### Resizing the graphics
 
 It's similar to scaling, but you specify the required size instead of a scaling factor(s):
+
+
 ```tex
 \resizebox{10mm}{!}{\includegraphics{sample-image.png}} % changes the width to 10mm preserving the proprtions
 \resizebox{20mm}{10mm}{\includegraphics{sample-image.png}} % changes both width and height independently
@@ -76,6 +86,8 @@ It's similar to scaling, but you specify the required size instead of a scaling 
 ## The LaTeX `graphicx` package
 
 The LaTeX `graphicx` package provides the `key=value` interface to content transformations. To enable its features, you should mention it in the preamble:
+
+
 ```tex
 \usepackage{graphicx}
 \usepackage[pdftex]{graphicx} % with the driver option

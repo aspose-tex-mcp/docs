@@ -1,16 +1,16 @@
 ---
+translation: true
+template: /templates/_template-net.md
 title: LaTeX math formulas rendering | .NET
 linktitle: LaTeX math formulas rendering
-type: docs
 weight: 10
 url: /net/latex-math-formula-rendering/
 description: Aspose.TeX API solution for .NET LaTeX math formulas rendering is described in this article. Learn the code examples on how to use the functionality.
-lastmod: "2021-10-14"
-sitemap:
-    changefreq: "weekly"
-    priority: 0.8
-submenu: menu-tex-for-net
+lastmod: "2024-09-20"
 ---
+
+{{<section overview>}}
+
 
 ## How to render a LaTeX math formula to PNG
 
@@ -21,11 +21,14 @@ The API reference section related to this topic is [here](https://reference.aspo
 Let's get to the details. First of all, we create a [rendering options](https://reference.aspose.com/tex/net/aspose.tex.features/mathrendereroptions/) instance, similar to the TeX/LaTeX typesetting. We do it here simultaneously specifying the output image resolution.
 
 Next, we specify the preamble. The default preamble is:
+
+
 ```tex
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
 ```
+
 which provides slightly more advanced math formula support than basic LaTeX. You can, for example, add the `color` package if you want to use your own highlighting in the formula, as we showed in the code example.
 
 Then we instruct the renderer to scale the output by 300%.
@@ -46,7 +49,7 @@ The last lines of the example print two artifacts of math formula rendering - th
 
 Here is the result of rendering.
 
-<a href="/tex/net/latex-math-formula-rendering/math-formula.png">![LaTeX Math Formula rendering to PNG](/tex/net/latex-math-formula-rendering/math-formula.png)</a>
+<a href="/tex/net/latex-math-formula-rendering/math-formula.png">![LaTeX Math Formula rendering to PNG](/tex/images/net/math-formula.png)</a>
 
 This is the most general use case for the **LaTeX math formula rendering** feature.
 
@@ -59,12 +62,14 @@ In much the same way, we can render a LaTeX math formula to SVG format.
 {{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Features-SvgLaTeXMathRendering.cs" >}}
 
 The differences are:
- * We use [SvgMathRendererOptions](https://reference.aspose.com/tex/net/aspose.tex.features/svgmathrendereroptions/) class instead of [PngMathRendererOptions](https://reference.aspose.com/tex/net/aspose.tex.features/pngmathrendereroptions/).
- * We don't specify resolution.
- * We use [SvgMathRenderer](https://reference.aspose.com/tex/net/aspose.tex.features/svgmathrenderer/) class instead of [PngMathRenderer](https://reference.aspose.com/tex/net/aspose.tex.features/pngmathrenderer/).
+
+* We use [SvgMathRendererOptions](https://reference.aspose.com/tex/net/aspose.tex.features/svgmathrendereroptions/) class instead of [PngMathRendererOptions](https://reference.aspose.com/tex/net/aspose.tex.features/pngmathrendereroptions/).
+* We don't specify resolution.
+* We use [SvgMathRenderer](https://reference.aspose.com/tex/net/aspose.tex.features/svgmathrenderer/) class instead of [PngMathRenderer](https://reference.aspose.com/tex/net/aspose.tex.features/pngmathrenderer/).
  
 Here is the result:
 
-<a href="/tex/net/latex-math-formula-rendering/math-formula.svg">![LaTeX Math Formula rendering to SVG](/tex/net/latex-math-formula-rendering/math-formula.svg)</a>
+<a href="/tex/net/latex-math-formula-rendering/math-formula.svg">![LaTeX Math Formula rendering to SVG](/tex/images/net/math-formula.svg)</a>
+
 
 **You may also check out the free [web app](https://products.aspose.app/tex/equation-editor/svg) built based on the feature implemented within [Aspose.TeX for .NET API](https://products.aspose.com/tex/net/).**

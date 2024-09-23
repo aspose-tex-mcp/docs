@@ -1,12 +1,15 @@
 ---
+translation: true
+template: /templates/_template-python-net.md
 title: System Requirements | Aspose.TeX Python
 linktitle: System Requirements
-type: docs
 weight: 50
 url: /python-net/system-requirements/
 description: Python Library for the developers to process TeX(LaTeX) files. Learn system requirements to start using Aspose.TeX API solution for Python.
-submenu: menu-tex-for-python-net
+lastmod: "2024-09-20"
 ---
+
+{{<section overview>}}
 
 ## Overview
 
@@ -18,12 +21,12 @@ Aspose.TeX for Python supports any 32-bit or 64-bit operating system that runs t
 
 ### Windows
 
- * Microsoft Windows 2003 Server
- * Microsoft Windows 2008 Server
- * Microsoft Windows 2012 Server
- * Microsoft Windows XP
- * Microsoft Windows Vista
- * Microsoft Windows 7
- * Microsoft Windows 8, 8.1
- * Microsoft Windows 10
- * Microsoft Windows 11
+* Microsoft Windows 2003 Server
+* Microsoft Windows 2008 Server
+* Microsoft Windows 2012 Server
+* Microsoft Windows XP
+* Microsoft Windows Vista
+* Microsoft Windows 7
+* Microsoft Windows 8, 8.1
+* Microsoft Windows 10
+* Microsoft Windows 11

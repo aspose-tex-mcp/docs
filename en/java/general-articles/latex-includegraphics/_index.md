@@ -1,16 +1,16 @@
 ---
+translation: true
+template: /templates/_template-java.md
+linktitle: Includegraphics
 title: LaTeX includegraphics | Aspose.TeX for Java
-type: docs
 weight: 10
 url: /java/latex-includegraphics/
 keywords: includegraphics latex, latex includegraphic, insert images latex, latex graphicx, latex insert image, includegraphics latex package, draw io latex, latex includegraphics width, includegraphics width, figure scale latex
 description: Learn about LaTeX includegraphics macro, along with image transformations, viewport, clipping, and the difference between graphics and graphicx packages.
-lastmod: "2023-03-21"
-sitemap:
-    changefreq: "weekly"
-    priority: 0.8
-submenu: menu-tex-for-java
+lastmod: "2024-09-20"
 ---
+
+{{<section overview>}}
 
 ## Introduction
 
@@ -29,6 +29,8 @@ Both packages, `graphics` and `graphicx`, are very similar. The main difference 
 ## Including the chosen package
 
 This is done with the `\usepackage` command the same way as for any other LaTeX package:
+
+
 ```tex
 \usepackage{graphics} % to use the graphics package
 \usepackage{graphicx} % to use the graphicx package
@@ -37,6 +39,8 @@ This is done with the `\usepackage` command the same way as for any other LaTeX 
 ### Specifying a driver
 
 If your typesetting system is not configured to use, say, `pdfTeX` by default, you should specify the appropriate option that will force the package to use the required `driver`:
+
+
 ```tex
 \usepackage[pdftex]{graphics} % graphics
 \usepackage[pdftex]{graphicx} % graphicx
@@ -47,11 +51,15 @@ A `driver` is a part of a package that implements the interface between package 
 ## LaTeX `\includegraphics` macro
 
 Now let's proceed with the simplest example. This is of course a case of including an image without any transformation at all. Expectedly, the LaTeX code using both packages is the same:
+
+
 ```tex
 \includegraphics{sample-image.png}
 ```
 
 This example assumes that your image file is located in the same directory as the LaTeX file. But there are several ways to specify a different location. The LaTeX code will again be the same for both packages:
+
+
 ```tex
 \includegraphics{d:/sample-image.png} % absolute path
 \includegraphics{./sample-image.png} % relative to the current directory
@@ -59,6 +67,8 @@ This example assumes that your image file is located in the same directory as th
 ```
 
 Another way to specify the graphics files location(s) is to define a list of alternative paths using `\graphicspath` command before calling `\includegraphics`:
+
+
 ```tex
 \graphicspath{{d:/img}{c:/img}{d:/work/img}}
 ```
@@ -70,6 +80,8 @@ LaTeX `graphics` and `graphicx` packages provide a number of ways for manipulati
 ### Scale figure LaTeX
 
 So you can scale the included graphics (in fact, anything described by TeX/LaTeX code) as follows:
+
+
 ```tex
 % graphics examples
 \scalebox{.5}{\includegraphics{sample-image.png}} % scales both width and height by 0.5
@@ -83,6 +95,8 @@ So you can scale the included graphics (in fact, anything described by TeX/LaTeX
 ### Resize figure LaTeX
 
 It's similar to scaling, but you specify the required size instead of a scaling factor(s):
+
+
 ```tex
 % graphics examples
 \resizebox{10mm}{!}{\includegraphics{sample-image.png}} % changes the width to 10mm preserving the proprtions
@@ -128,6 +142,6 @@ The app allows you to select multiple images and visually adjust transformations
 
 ### LaTeX Figure Rendering feature in the Aspose.TeX library
 
-The **Aspose.TeX** library provides a way to create raster and SVG figures that you can use in your publications outside of the TeX/LaTeX context. For example, on a web page. This is called the **LaTeX Figure Rendering**. Briefly, this part of the API allows you to render a fragment of LaTeX source code regardless of the page layout. For more details, refer to this [article](/tex/java/latex-figure-rendering/).
+The **Aspose.TeX** library provides a way to create raster and SVG figures that you can use in your publications outside of the TeX/LaTeX context. For example, on a web page. This is called the **LaTeX Figure Rendering**. Briefly, this part of the API allows you to render a fragment of LaTeX source code regardless of the page layout. For more details, refer to this [article](/tex/{{lang.url-fragment}}java/latex-figure-rendering/).
 
-The article on [including external LaTeX packages](/tex/java/external-latex-packages/) can also give you a clue on how to create figures out of LaTeX plots.
+The article on [including external LaTeX packages](/tex/{{lang.url-fragment}}java/external-latex-packages/) can also give you a clue on how to create figures out of LaTeX plots.

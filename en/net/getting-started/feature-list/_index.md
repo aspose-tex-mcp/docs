@@ -1,20 +1,25 @@
 ---
+translation: true
+template: /templates/_template-net.md
 title: Feature List | Aspose.TeX for .NET
 linktitle: Feature List
-type: docs
 weight: 30
 url: /net/feature-list/
 description: Add the TeX files manipulation functionality to your own solution. Learn the features Aspose.TeX API solution for .NET offers to you.
-submenu: menu-tex-for-net
+lastmod: "2024-09-20"
 ---
 
+{{<section overview>}}
 
 ## Rich Features
+
 **Supported Operations**
+
 - TeX input typesetting
 - Custom TeX format creation
 
 **Support for Various Output File Formats**
+
 - XPS
 - PDF
 - PNG
@@ -23,6 +28,7 @@ submenu: menu-tex-for-net
 - BMP
 
 **Supported ways of reading input and writing output**
+
 - File system directory
 - ZIP archive
 - Main TeX file can also be passed through a stream

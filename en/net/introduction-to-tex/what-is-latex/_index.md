@@ -1,21 +1,20 @@
 ---
+translation: true
+template: /templates/_template-net.md
 title: What is LaTeX? | Aspose.TeX .NET
 linktitle: What is LaTeX?
-type: docs
 weight: 16
 url: /net/what-is-latex/
 keywords: what is latex, latex what is it
 description: To answer the question  "What is LaTeX?" it is worth mentioning that one of its most impressive features is the New Font Selection Scheme (NFSS).
-lastmod: "2021-10-14"
-sitemap:
-    changefreq: "weekly"
-    priority: 0.8
-submenu: menu-tex-for-net
+lastmod: "2024-09-20"
 ---
+
+{{<section overview>}}
 
 So, What is LaTeX?
 
-LaTeX is the [TeX](/tex/net/what-is-tex/) format, in short.
+LaTeX is the [TeX](/tex/{{lang.url-fragment}}net/what-is-tex/) format, in short.
 
 LaTeX (*LAH-tekh or LAY-tekh*, often stylized as LATEX) is a software system for document preparation that was originally written in the early 1980s by <a href="https://en.wikipedia.org/wiki/Leslie_Lamport" target=_blank rel="nofollow">Leslie Lamport</a> at <a href="https://en.wikipedia.org/wiki/SRI_International" target=_blank rel="nofollow">SRI International</a>. This is what <a href="https://en.wikipedia.org/wiki/LaTeX" target=_blank rel="nofollow">Wikipedia</a> tells.
 
@@ -28,6 +27,7 @@ Another feature is a number of so-called document classes. These are auxiliary i
 LaTeX also includes support for various features that may be convenient for a document author. These features are usually collected in auxiliary input files called packages. In the packages you can find advanced tools for math typesetting, drawing graphics, support for fonts that are not part of the LaTeX distribution, etc. Even for drawing 2D chemical formulas.
 
 Here is relatively small example:
+
 
 ```tex
 \documentclass[]{article}
@@ -130,8 +130,8 @@ left justified & center & right justified \\ \hline
 
 And here are two pages of output:
 
-<a href="/tex/net/what-is-latex/example-page-1.png" style="display:inline-block;width:49%;" aria-label="Example Page 1">![Example Page 1](example-page-1.png)</a>
-<a href="/tex/net/what-is-latex/example-page-2.png" style="display:inline-block;width:49%;" aria-label="Example Page 2">![Example Page 2](example-page-2.png)</a>
+<a href="/tex/net/what-is-latex/example-page-1.png" style="display:inline-block;width:49%;" aria-label="Example Page 1">![Example Page 1](/tex/images/net/tutorial/example-page-1.png)</a>
+<a href="/tex/net/what-is-latex/example-page-2.png" style="display:inline-block;width:49%;" aria-label="Example Page 2">![Example Page 2](/tex/images/net/tutorial/example-page-2.png)</a>
 
 
 Naturally, we do not pretend to have any complete answer to the question "What is LaTeX?", since this is quite a large amount of information. Since writing a LaTeX file is still programming, you will have to spend some time if you want to get better acquainted with it. Do you want it or not.

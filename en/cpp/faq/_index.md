@@ -1,12 +1,15 @@
 ---
+translation: true
+template: /templates/_template-cpp.md
 title: Frequently Asked Questions | Aspose.TeX for С++
 linktitle: FAQ
-type: docs
 weight: 80
 url: /cpp/faq/
 description:  Get answers to all the most frequent questions about Aspose.TeX for C++, which is a comprehensive API for typesetting and manipulation TeX and LaTeX.
-submenu: menu-tex-for-cpp
+lastmod: "2024-09-20"
 ---
+
+{{<section overview>}}
 
 <br><br>
 
@@ -29,7 +32,7 @@ submenu: menu-tex-for-cpp
 3. Initialize save options for the output format, and instantiate the TeXJob class.
 4. Run the conversion.
 
-For more examples, please visit [Convertion](/tex/cpp/conversion/) guides.
+For more examples, please visit [Convertion](/tex/{{lang.url-fragment}}cpp/conversion/) guides.
 <br><br>
 
 **Q: Can I create a custom format using Aspose.TeX for C++?**
@@ -39,7 +42,7 @@ For more examples, please visit [Convertion](/tex/cpp/conversion/) guides.
 
 **Q: What packages are embedded into Aspose.TeX API Solution?**
 
-**A:** By now there are [Aspose.TeX embedded LaTeX packages](/tex/net/embedded-packages/) included: 
+**A:** By now there are [Aspose.TeX embedded LaTeX packages](/tex/{{lang.url-fragment}}net/embedded-packages/) included: 
 - eurosym
 - geometry
 - graphics
@@ -86,12 +89,12 @@ For more examples, please visit [Convertion](/tex/cpp/conversion/) guides.
 4. Create a file stream to save the output image.
 5. Create an object of the *(file format)MathRenderer* class and run rendering the formula by calling the *Render()* method. 
 
-For more examples, please visit [LaTeX math formulas rendering](/tex/cpp/latex-math-formula-rendering/) guides.
+For more examples, please visit [LaTeX math formulas rendering](/tex/{{lang.url-fragment}}cpp/latex-math-formula-rendering/) guides.
 <br><br>
 
 **Q: Where can I learn more about TeX?**
 
-**A:** There is a [knowledge base for TeX and LaTeX](/tex/net/introduction-to-tex/) so you can understand the subject deeper. Also, take a look at the [General articles on LaTeX](/tex/java/general-articles-latex/) that will teach you rules that every document author must follow. It also defines the structure of the source file, which is essentially a typesetting program.
+**A:** There is a [knowledge base for TeX and LaTeX](/tex/{{lang.url-fragment}}net/introduction-to-tex/) so you can understand the subject deeper. Also, take a look at the [General articles on LaTeX](/tex/{{lang.url-fragment}}java/general-articles-latex/) that will teach you rules that every document author must follow. It also defines the structure of the source file, which is essentially a typesetting program.
 <br><br>
 
 **Q: Can Aspose.TeX for C++ work with archives, using them as output without previously unpacking the files or saving the result right to the archive?**
@@ -101,7 +104,7 @@ For more examples, please visit [LaTeX math formulas rendering](/tex/cpp/latex-m
 
 **Q: Can I try the Solution before purchasing it?**
 
-**A:** Yes, you can easily download Aspose.TeX for C++ products for evaluation purposes. The evaluation version of Aspose.TeX (without a license specified) provides full product functionality except for some [evaluation limitations](/tex/cpp/licensing/#evaluation-version-limitations).
+**A:** Yes, you can easily download Aspose.TeX for C++ products for evaluation purposes. The evaluation version of Aspose.TeX (without a license specified) provides full product functionality except for some [evaluation limitations](/tex/{{lang.url-fragment}}cpp/licensing/#evaluation-version-limitations).
 
 If you want to try Aspose.TeX out without evaluation limitations, request a 30-day [temporary license](https://purchase.aspose.com/temporary-license/).
 <br><br>
@@ -113,7 +116,7 @@ If you want to try Aspose.TeX out without evaluation limitations, request a 30-d
 
 **Q: How can I apply for a license for Aspose.TeX for C++?**
 
-**A:** Use the `License::SetLicense` method to license the component. The easiest way to [set a license](/tex/cpp/licensing/) is to put the license file in the same folder as the Aspose.TeX.dll and specify the filename, without a path.
+**A:** Use the `License::SetLicense` method to license the component. The easiest way to [set a license](/tex/{{lang.url-fragment}}cpp/licensing/) is to put the license file in the same folder as the Aspose.TeX.dll and specify the filename, without a path.
 <br><br>
 
 **Q: Can I see the functionality of this API Solution implemented in web applications?**

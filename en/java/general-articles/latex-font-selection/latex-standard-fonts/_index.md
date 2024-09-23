@@ -1,16 +1,16 @@
 ---
-title: 4.	Standard LaTeX fonts
-type: docs
+translation: true
+template: /templates/_template-java.md
+linktitle: 4.	Standard LaTeX fonts
+title:	Standard LaTeX fonts
 weight: 40
 url: /java/latex-standard-fonts/
 keywords: latex, latex fonts, latex standard fonts, latex font encoding, tracefnt, nfssfont.tex
 description: This article is a brief introduction to the standard text fonts distributed together with LaTeX.
-lastmod: "2024-04-19"
-sitemap:
-    changefreq: "weekly"
-    priority: 0.8
-submenu: menu-tex-for-java
+lastmod: "2024-09-20"
 ---
+
+{{<section overview>}}
 
 This article contains a brief introduction to the standard text fonts distributed together with LaTeX. Then it covers LaTeX's standard support for input and font encodings. The article concludes with a description of a package for tracing LaTeX's font processing and another package for displaying glyph charts.
 
@@ -18,7 +18,7 @@ This article contains a brief introduction to the standard text fonts distribute
 
 A family of fonts called *Computer Modern* was developed by Donald Knuth along with TeX. Until the early 1990s, only these fonts were mostly usable with TeX and, consequently, with LaTeX. Each of these fonts contains only 128 glyphs, so they cannot include accented characters as individual glyphs. Therefore, using these fonts means that accented characters have to be produced with TeX's `\accent` primitive, which, in turn, means that automatic hyphenation of words with accented characters is impossible. Although this restriction is acceptable with English documents, it is an obvious disadvantage for other languages.
 
-![Computer Modern font families](latex-font-selection-4-1.png)
+![Computer Modern font families](/tex/images/java/tutorial/latex-font-selection-4-1.png)
 
 These deficiencies were of great concern to the TeX users in Europe and eventually led to a reimplementation of TeX in 1989 to support 8-bit characters internally and externally. A standard 8-bit encoding for text fonts (`T1`) was developed in 1990. It contains many diacritical characters and allows typesetting in more than 30 languages based on the Latin alphabet. Then, the Computer Modern font families were reimplemented, and additional characters were designed so that the resulting fonts completely conform to this encoding scheme.
 
@@ -26,7 +26,7 @@ These deficiencies were of great concern to the TeX users in Europe and eventual
 
 If you can type accented characters either via single keystrokes or by some other input method (e.g., by pressing ``` ` ``` and then `a` to get 'a-grave'), and your computer displays them correctly in the editor...
 
-![French text properly displayed in the text editor](latex-font-selection-4-2.png)
+![French text properly displayed in the text editor](/tex/images/java/tutorial/latex-font-selection-4-2.png)
 
 ... then ideally you would use such a text directly with LaTeX instead of having to type ```\`a```, `\^e`, etc.
 
@@ -39,7 +39,7 @@ With languages such as French and German, the latter approach is feasible. Howev
 
 It is unlikely that someone would want to type such things on a regular basis. Nevertheless, it has the advantage of being universally portable, so that it can be correctly interpreted on any LaTeX installation. On the other hand, typing
 
-!["On the next page" in Russian](latex-font-selection-4-3.png)
+!["On the next page" in Russian](/tex/images/java/tutorial/latex-font-selection-4-3.png)
 
 on an appropriate keyboard is clearly preferable, if it is possible to make LaTeX understand this input. The problem is that what is stored in a file is not the characters we see in the above sequence, but rather octets that represent the characters. In different circumstances (using different encodings), the same octets might represent different characters.
 
@@ -55,9 +55,9 @@ From that point onward, LaTeX knows how to interpret the octets in the remainder
 
 A typical example is shown below. It is a short text written in the `koi8-r` encoding, which is popular in Russia. The source code shows what the text looks like on a computer using a Latin 1 encoding (e.g., in Germany). The output demonstrates that LaTeX was still able to interpret the text correctly because it was told which input encoding was being used.
 
-![Russian text in German encoding: the source code](latex-font-selection-4-4.png)
+![Russian text in German encoding: the source code](/tex/images/java/tutorial/latex-font-selection-4-4.png)
 
-![Russian text in German encoding: the output](latex-font-selection-4-5.png)
+![Russian text in German encoding: the output](/tex/images/java/tutorial/latex-font-selection-4-5.png)
 
 The list of encodings currently supported by `inputenc` is provided below. The interface is well-documented, and support for new encodings can easily be added. Therefore, it is worth consulting the `inputenc` package documentation if the encoding used by your computer is not listed here. You can also search the Internet for encoding files for `inputenc` created by other authors. For example, encodings related to Cyrillic languages are distributed along with other font support packages for Cyrillic languages.
 
@@ -103,7 +103,7 @@ German umlauts in UTF-8: ^^c3^^a4^^c3^^b6^^c3^^bc
 But interpreted as Latin 1: ^^c3^^a4^^c3^^b6^^c3^^bc
 ```
 
-![UTF8 supported by the inputenc package](latex-font-selection-4-6.png)
+![UTF8 supported by the inputenc package](/tex/images/java/tutorial/latex-font-selection-4-6.png)
 
 In UTF8, ASCII characters represent themselves, and most Latin characters are represented by two bytes. In the source code of the example, the two-byte representations of the German umlauts in UTF8 are shown in TeX's hexadecimal notation, that is with each octet preceded by `^^`. In an editor that does not understand UTF8, on would probably see them as similar to the output that is produced when they are interpreted as Latin 1 characters.
 
@@ -186,8 +186,8 @@ Font size [10pt]:
 
 ```
 
-![The font chart for cmr10](latex-font-selection-4-7.png)
+![The font chart for cmr10](/tex/images/java/tutorial/latex-font-selection-4-7.png)
 
-![The text sample for OT1/cmdh/m/n/10](latex-font-selection-4-8.png)
+![The text sample for OT1/cmdh/m/n/10](/tex/images/java/tutorial/latex-font-selection-4-8.png)
 
 > There are two points to be aware of. First, the `nfssfont.tex` program issues an implicit `\init` command, so the first line of input should either contain a font name or be completely empty to indicate that an NFSS classification follows. Second, the input to `\init` must appear on individual lines with nothing else (not even a comment) because the line ending indicates the end of the response to a prompt like `Font encoding[T1]: \encoding=` that you will get.

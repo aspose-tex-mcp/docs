@@ -1,12 +1,15 @@
 ---
+translation: true
+template: /templates/_template-cpp.md
 title: Aspose.TeX's output interface | C++
 linktitle: Aspose.TeX's output interface
-type: docs
 weight: 16
 url: /cpp/aspose-tex-output/
 description: Conversion functionality of Aspose.TeX API solution for C++ with TeX, as an output format is explained here with the code examples.
-submenu: menu-tex-for-cpp
+lastmod: "2024-09-20"
 ---
+
+{{<section overview>}}
 
 Please, refer to **Aspose.TeX for C++** [API reference](https://reference.aspose.com/tex/cpp/namespace/aspose.te_x.i_o) for formal definitions of I/O implementation.
 
@@ -15,7 +18,7 @@ Since I/O primitives of the TeX language can only deal with file names, Aspose.T
 
 ### Writing file output to the disk file system
 
-As we mentioned [above](/tex/cpp/latex-to-png/), the most common value for the [OutputDirectory](https://reference.aspose.com/tex/cpp/class/aspose.te_x.te_x_options#aa4f4ea6dab7db5ba1b40800495f16f63) would likely be an instance of the [OutputFileSystemDirectory](https://reference.aspose.com/tex/cpp/class/aspose.te_x.i_o.output_file_system_directory) class.
+As we mentioned [above](/tex/{{lang.url-fragment}}cpp/latex-to-png/), the most common value for the [OutputDirectory](https://reference.aspose.com/tex/cpp/class/aspose.te_x.te_x_options#aa4f4ea6dab7db5ba1b40800495f16f63) would likely be an instance of the [OutputFileSystemDirectory](https://reference.aspose.com/tex/cpp/class/aspose.te_x.i_o.output_file_system_directory) class.
 
 Here's how we would set it:
 
@@ -74,4 +77,4 @@ Unlike the input terminal, **Aspose.TeX for C++** provides an implementation of 
 options->set_TerminalOut(System::MakeObject<OutputFileTerminal>(options->get_OutputWorkingDirectory()));
 
 ```
-Here we ask the TeX engine to write the terminal output to the file with the name [<job_name>](/tex/net/tex-io/#tex-output).trm, which will be stored in the same output directory that we specified for the rest of the output. But this is not necessary. We might as well pass any other instance of any implementation of [IOutputTerminal](https://reference.aspose.com/tex/cpp/class/aspose.te_x.i_o.i_output_terminal) to the constructor.
+Here we ask the TeX engine to write the terminal output to the file with the name [<job_name>](/tex/{{lang.url-fragment}}net/tex-io/#tex-output).trm, which will be stored in the same output directory that we specified for the rest of the output. But this is not necessary. We might as well pass any other instance of any implementation of [IOutputTerminal](https://reference.aspose.com/tex/cpp/class/aspose.te_x.i_o.i_output_terminal) to the constructor.

@@ -1,16 +1,15 @@
 ---
+translation: true
+template: /templates/_template-java.md
 title: LaTeX file repair | Java
 linktitle: LaTeX file repair
-type: docs
 weight: 30
 url: /java/latex-repair/
 description: LaTeX file repairer feature within Aspose.TeX API for Java is described in this article. Learn the code examples of how to use the functionality.
-lastmod: "2024-05-31"
-sitemap:
-    changefreq: "weekly"
-    priority: 0.8
-submenu: menu-tex-for-java
+lastmod: "2024-09-20"
 ---
+
+{{<section overview>}}
 
 ## How to check and repair a LaTeX file
 
@@ -30,7 +29,7 @@ So, what is the checking and repairing process like? It begins with the API sear
 
 Next, the process begins scanning the adjusted input file from the beginning. The TeX engine equipped with the LaTeX format may, at some point, throw an error indicating that `\begin{document}` has not yet been found when it should have already. This way, the position at which `\begin{document}` must be inserted is defined and reflected in the report.
 
-While further scanning the file, the engine may come across undefined commands or environments. In such cases, the API can make assumptions on [embedded required packages](/tex/net/embedded-packages/) (those that define the commands and environments that are not defined until these packages are included) for some of the most common commands and environments. However, it is possible to make such assumptions externally by a class that implements the [IGuessPackageCallback](https://reference.aspose.com/tex/java/com.aspose.tex.features/iguesspackagecallback/) interface. Once you have developed such a class, an instance of it should be passed to the process by calling the `setGuessPackageCallback()` method.
+While further scanning the file, the engine may come across undefined commands or environments. In such cases, the API can make assumptions on [embedded required packages](/tex/{{lang.url-fragment}}net/embedded-packages/) (those that define the commands and environments that are not defined until these packages are included) for some of the most common commands and environments. However, it is possible to make such assumptions externally by a class that implements the [IGuessPackageCallback](https://reference.aspose.com/tex/java/com.aspose.tex.features/iguesspackagecallback/) interface. Once you have developed such a class, an instance of it should be passed to the process by calling the `setGuessPackageCallback()` method.
 
 Here is a basic example that simply maps the `\head` command to the `fancyhdr` package:
 

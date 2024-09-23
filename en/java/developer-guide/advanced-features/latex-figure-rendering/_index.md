@@ -1,18 +1,17 @@
 ---
+translation: true
+template: /templates/_template-java.md
 title: LaTeX Figure rendering | Aspose.TeX for Java
 linktitle: LaTeX figure rendering
-type: docs
 weight: 20
 url: /java/latex-figure-rendering/
 description: Aspose.TeX API solution for Java LaTeX fragment (figure) rendering is described in this article. Learn the code examples on how to use the functionality.
-lastmod: "2023-02-28"
-sitemap:
-    changefreq: "weekly"
-    priority: 0.8
-submenu: menu-tex-for-java
+lastmod: "2024-09-20"
 ---
 
-It may happen that you want to extract some content (a drawing, a writing, a plot, etc.) from a LaTeX file as a separately rendered piece, or a *"figure"*, regardless of its place on an output document page. An illustration for your publication on the Internet, for example, is the case. Our API can help you with the task. There are two available target formats - PNG and SVG. Just like in LaTeX math formula rendering. We must also note that **LaTeX figure rendering** is a generalization of [LaTeX math formula rendering](/tex/java/latex-math-formula-rendering/).
+{{<section overview>}}
+
+It may happen that you want to extract some content (a drawing, a writing, a plot, etc.) from a LaTeX file as a separately rendered piece, or a *"figure"*, regardless of its place on an output document page. An illustration for your publication on the Internet, for example, is the case. Our API can help you with the task. There are two available target formats - PNG and SVG. Just like in LaTeX math formula rendering. We must also note that **LaTeX figure rendering** is a generalization of [LaTeX math formula rendering](/tex/{{lang.url-fragment}}java/latex-math-formula-rendering/).
 
 ## How to render a LaTeX figure to PNG
 
@@ -23,6 +22,7 @@ And as with formula rendering, we will start with an example. Here it is:
 First of all, we create a [rendering options](https://reference.aspose.com/tex/java/com.aspose.tex/PngFigureRendererOptions) instance. We do it here along with specifying the output image resolution.
 
 Next, we specify the preamble. There's no default preamble for LaTeX figure rendering, so if you want, for instance, to render some graphics plotted using the `pict2e` LaTeX package, you need to specify it in the preamble:
+
 ```tex
 \usepackage{pict2e}
 ```
@@ -45,7 +45,7 @@ The last lines of the example print two artifacts of figure rendering - the size
 
 Here is the result of rendering.
 
-<a href="/tex/java/latex-figure-rendering/text-and-formula.png">![LaTeX Figure rendering to PNG](/tex/java/latex-figure-rendering/text-and-formula.png)</a>
+![LaTeX Figure rendering to PNG](/tex/images/java/text-and-formula.png)
 
 This is the most general use case for the **LaTeX figure rendering** feature.
 
@@ -56,10 +56,11 @@ In much the same way, we can render a LaTeX figure to SVG format.
 {{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Features-SvgLaTeXFigureRendering.java" >}}
 
 The differences are:
+
  * We use [SvgFigureRendererOptions](https://reference.aspose.com/tex/java/com.aspose.tex/SvgFigureRendererOptions) class instead of [PngFigureRendererOptions](https://reference.aspose.com/tex/java/com.aspose.tex/PngFigureRendererOptions).
  * We don't specify the resolution.
  * We use [SvgFigureRenderer](https://reference.aspose.com/tex/java/com.aspose.tex/SvgFigureRenderer) class instead of [PngFigureRenderer](https://reference.aspose.com/tex/java/com.aspose.tex/PngFigureRenderer).
  
 Here is the result:
 
-<a href="/tex/java/latex-figure-rendering/text-and-formula.svg">![LaTeX Figure rendering to SVG](/tex/java/latex-figure-rendering/text-and-formula.svg)</a>
+<a href="/tex/images/java/text-and-formula.svg">![LaTeX Figure rendering to SVG](/tex/images/java/text-and-formula.svg)</a>

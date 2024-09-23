@@ -1,17 +1,16 @@
 ---
+translation: true
+template: /templates/_template-net.md
 title: LaTeX embedded graphics | Include graphics in the LaTeX code
 linktitle: LaTeX embedded graphics
-type: docs
 weight: 18	
 url: /net/latex-embedded-graphics/
 keywords: includegraphics latex, latex embed base64 graphics, latex base64 encoded graphics, write18, shell-escape, latex shell command
 description: This article covers how to include base64-encoded images in the LaTeX source code, as well as the \write18 feature that makes this possible.
-lastmod: "2024-08-19"
-sitemap:
-    changefreq: "weekly"
-    priority: 0.8
-submenu: menu-tex-for-net
+lastmod: "2024-09-20"
 ---
+
+{{<section overview>}}
 
 ## Another way to include images
 
@@ -40,6 +39,7 @@ We can see from this short explanation that **Base64** is what we need. To encod
 ## Placing the encoded image into the LaTeX file
 
 The string of characters that you obtain as a result of encoding must be placed in the standard LaTeX `filecontents*` environment in the preamble of a LaTeX file as follows:
+
 
 ```tex
 \documentclass{article}
@@ -73,6 +73,7 @@ In **Aspose.TeX**, there is a TeX job option called `ShellMode`, but there are o
 
 To decode the contents of a file that is supposed to be some Base64-encoded data, we normally would use the following command line:
 
+
 ```
 base64 -d  FILE1 > FILE2
 ```
@@ -80,6 +81,7 @@ base64 -d  FILE1 > FILE2
 where FILE1 is the "encoded" file and `> FILE2` means that the output must be redirected to the file `FILE2`.
 
 Thus, in the body of our LaTeX file, we should add the following line:
+
 
 ```tex
 \immediate\write18{base64 -d  sample-image.64 > sample-image.png}
@@ -93,11 +95,13 @@ If we run the typesetting of the file now, we will see that the image file `samp
 
 As we mentioned at the beginning of the article, to include the decoded image, we use the well-known LaTeX command `\includegraphics`:
 
+
 ```tex
 \includegraphics[options]{sample-image.png}
 ```
 
 So, the complete (nearly) LaTeX file might look as follows:
+
 
 ```tex
 \documentclass{article}

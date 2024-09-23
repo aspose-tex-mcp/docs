@@ -1,16 +1,16 @@
 ---
-title: 8. Fine-tuning mathematical formulas | LaTeX manual
-type: docs
+translation: true
+template: /templates/_template-java.md
+linktitle: 8. Fine-tuning mathematical formulas
+title: Fine-tuning mathematical formulas | LaTeX manual
 weight: 80
 url: /java/latex-math-fine-points/
 keywords: latex, latex math formulas, latex math, latex math fine-tuning, latex math punctuation, latex math operators, latex math font styles, latex math spacinf, latex math line breaking, latex math matrices
 description: Learn about the fine points of mathematics typing, explained with examples that involve various objects that you may find in mathematical formulas.
-lastmod: "2023-07-04"
-sitemap:
-    changefreq: "weekly"
-    priority: 0.8
-submenu: menu-tex-for-java
+lastmod: "2024-09-20"
 ---
+
+{{<section overview>}}
 
 We have already discussed most of the facilities needed to construct math formulas. But there are still some fine points that will let you produce really beautiful formulas, the formulas that will improve the overall appearance and readability of the books and papers that you would type.
 
@@ -42,11 +42,11 @@ It's also important that TeX will never break a line of a paragraph at the space
 
 Common math functions like "log" are always set in Roman type. The best way to include such objects in a formula is to make use of the following commands:
 
-![Math function and named operator commands](latex-math-8-1.png)
+![Math function and named operator commands](/tex/images/java/tutorial/latex-math-8-1.png)
 
 In the following examples some of these commands are used:
 
-![Using math function and named operator commands](latex-math-8-2.png)
+![Using math function and named operator commands](/tex/images/java/tutorial/latex-math-8-2.png)
 
 The last two displayed formulas show that some of the commands are treated by TeX as large operators with limits like the summation sign. And the subscript on `\max` is not treated like the subscript on `\log`. Subscripts and superscripts will become limits when they are attached to `\det`, `\gcd`, `\inf`, `\lim`, `\liminf`, `\limsup`, `\max`, `\min`, `\Pr`, and `\sup`, in display style.
 
@@ -56,7 +56,7 @@ If you need Roman type for a frequently used function or operator that is not li
 \def\oper{\mathop{\rm oper}}
 ```
 
-![Using a custom operator commands](latex-math-8-3.png)
+![Using a custom operator commands](/tex/images/java/tutorial/latex-math-8-3.png)
 
 In case your operator isn't supposed to have limits, use a definition like the following:
 
@@ -66,41 +66,41 @@ In case your operator isn't supposed to have limits, use a definition like the f
 
 If you need Roman type just for a single use, it's easier to switch to `\rm` type as follows:
 
-![Switching to Roman type with \rm command](latex-math-8-4.png)
+![Switching to Roman type with \rm command](/tex/images/java/tutorial/latex-math-8-4.png)
 
 Notice the uses of '\ ' in the last case. Without them, ordinary blank spaces would have been ignored and `lower order terms` would have been typeset as "lowerorderterms".
 
 The word "mod", which is also generally set in Roman type in formulas, needs more care, because it is used in two different ways. LaTeX provides the `\bmod` command to be used when "mod" is a binary operation and the `\pmod` command to be used when "mod" occurs in parentheses at the end of a formula.
 
-![Using \pmod and \bmod](latex-math-8-5.png)
+![Using \pmod and \bmod](/tex/images/java/tutorial/latex-math-8-5.png)
 
 Notice that `\pmod` inserts its own parentheses; the quantity that appears after "mod" in that parentheses should be enclosed in braces unless it is a single symbol.
 
 You can also get other styles of type the same way you get Roman type by using `\rm`. For example, `\bf` gives boldface:
 
-![Switching to boldface with \bf](latex-math-8-6.png)
+![Switching to boldface with \bf](/tex/images/java/tutorial/latex-math-8-6.png)
 
 You can notice that the '+' and '=' are still in Roman type. LaTeX sets things up so that commands like `\rm` and `\bf` affect only the uppercase letters `A` to `Z`, the lowercase letters `a` to `z`, the digits `0` to `9`, the uppercase Greek letters `\Gamma` to `\Omega`, and math accents like `\hat` and `\tilde`. Incidentally, no braces were used in this example, since `$`'s have the effect of grouping; `\bf` changes the current font, but the change is local, so it doesn't affect the font that was current outside the formula.
 
 You can also say `\cal` in formulas to get uppercase letters in a "calligraphic" style.
 
-![Switching to the calligrafic style with \cal](latex-math-8-7.png)
+![Switching to the calligrafic style with \cal](/tex/images/java/tutorial/latex-math-8-7.png)
 
 > This works only with the letters `A` to `Z`; you'll get weird results if you apply `\cal` to lowercase or Greek letters.
 
 There's also `\mit`, which stands for "math italic". This affects uppercase Greek.
 
-![Italic Greek capitals](latex-math-8-8.png)
+![Italic Greek capitals](/tex/images/java/tutorial/latex-math-8-8.png)
 
 When `\mit` is in effect, the ordinary letters `A` to `Z` and `a` to `z` are not changed; they are set in italics as usual, because they ordinarily come from the math italic font. Conversely, uppercase Greek letters and math accents are not affected by `\rm`, since they ordinarily come from the Roman font.
 
 With LaTeX, you can also type `\it` or `\tt` to get text italic or typewriter letters in your formula. You probably wonder why both `\mit` and `\it` are provided. The answer is that `\mit` is "math italic" (which is usually best for formulas), and `\it` is "text italic" (which is usually best for running text).
 
-![Math italic and text italic](latex-math-8-9.png)
+![Math italic and text italic](/tex/images/java/tutorial/latex-math-8-9.png)
 
 The math italic letters are wider, and the spacing is different. This works better in most formulas, but the appearance suffers when you try to type certain italic words like "*different*" in math mode. A wide italic '*f*' is usually desirable in formulas, but not in text. Therefore, it's best to use `\it` in a formula that is supposed to contain an actual italic word. This is usually not a case of classical mathematics, but it is a common case when computer programs are being typeset:
 
-![Text italic in typesetting programs](latex-math-8-10.png)
+![Text italic in typesetting programs](/tex/images/java/tutorial/latex-math-8-10.png)
 
 The second example shows the use of short underlines to break up identifier names.
 
@@ -108,7 +108,7 @@ The second example shows the use of short underlines to break up identifier name
 
 It is a common case when a display contains more than one formula; for example, an equation may be accompanied by a side condition:
 
-![A equation accompanied by a side condition](latex-math-8-11.png)
+![A equation accompanied by a side condition](/tex/images/java/tutorial/latex-math-8-11.png)
 
 In such cases you need to tell TeX how much space to put after the comma, because normal conventions would bunch things together. To get this, you can type
 
@@ -134,7 +134,7 @@ The Fibonacci numbers satisfy $F_{n}=F_{n-1}+F_{n-2}$, \ $n\ge2$.
 
 which give
 
-![Setting the right spacing between formulas](latex-math-8-12.png)
+![Setting the right spacing between formulas](/tex/images/java/tutorial/latex-math-8-12.png)
 
 The '\ ' here gives a visual separation that partly compensates for the bad style.
 
@@ -144,29 +144,29 @@ We have already seen that TeX does automatic spacing of math formulas which make
 
 The basic elements of space that TeX puts into formulas are called *thin spaces*, *medium spaces*, and *thick spaces*. TeX inserts them into formulas automatically, but you can add your own spacing whenever you want to, by using the commands
 
-![Basic elements of space](latex-math-8-13.png)
+![Basic elements of space](/tex/images/java/tutorial/latex-math-8-13.png)
 
 Formulas involving calculus look best when an extra thin space is inserted before *dx* or *dy* or *d* whatever; but TeX doesn't do this automatically. The following examples show how to tell TeX about these needs:
 
-![The examples of proper spacing within formulas involving calculus](latex-math-8-14.png)
+![The examples of proper spacing within formulas involving calculus](/tex/images/java/tutorial/latex-math-8-14.png)
 
 Notice that no `\,` was needed after the '/' in the second last formula. There is also no need for `\,` in the last example, since the *dt* appears all by itself in the numerator of a fraction; this detaches it visually from the rest of the formula.
 
 Physical units, when they appear in a formula, should be set in Roman type and separated from the preceding material by a thin space:
 
-![The examples of proper spacing within formulas with physical units](latex-math-8-15.png)
+![The examples of proper spacing within formulas with physical units](/tex/images/java/tutorial/latex-math-8-15.png)
 
 Thin spaces should also be inserted after exclamation points (factorial operation), if the next character is a letter or a digit or an opening delimiter:
 
-![The examples of proper spacing within formulas with factorial operation](latex-math-8-16.png)
+![The examples of proper spacing within formulas with factorial operation](/tex/images/java/tutorial/latex-math-8-16.png)
 
 Besides these cases, you will occasionally encounter formulas in which the symbols are bunched up too tightly, or where too much white space appears, because of certain unlucky combinations of shapes. A tastefully applied `\,` or `\!` will open things up or close things together so that the reader will not be distracted from the mathematical significance of the formula. Radicals and multiple integrals are often candidates for such fine tuning. Here are some examples of situations to look out for:
 
-![The examples of proper spacing in cases of certain shape combinations](latex-math-8-17.png)
+![The examples of proper spacing in cases of certain shape combinations](/tex/images/java/tutorial/latex-math-8-17.png)
 
 TeX's spacing rules sometimes fail when '|' and '\\|' appear in a formula, because these symbols are treated as ordinary symbols instead of as delimiters. Consider the formulas
 
-![The examples of proper spacing in formulas with vertical bars](latex-math-8-18.png)
+![The examples of proper spacing in formulas with vertical bars](/tex/images/java/tutorial/latex-math-8-18.png)
 
 In the first case the spacing is wrong because TeX thinks that the plus sign is computing the sum of '|' and '*x*'. The use of `\left` and `\right` in the second example puts TeX on the right track. The third example shows that no such corrections are needed with other delimiters, because TeX knows whether they are openings or closings.
 
@@ -174,19 +174,19 @@ In the first case the spacing is wrong because TeX thinks that the plus sign is 
 
 An ellipsis can be indicated by two different kinds of dots, one higher than the other. The best traditions distinguish between these two possibilities. It is generally correct to produce formulas like
 
-![Properly set ellipses](latex-math-8-19.png)
+![Properly set ellipses](/tex/images/java/tutorial/latex-math-8-19.png)
 
 but wrong to produce formulas like
 
-![Improperly set ellipses](latex-math-8-20.png)
+![Improperly set ellipses](/tex/images/java/tutorial/latex-math-8-20.png)
 
 The idea is to type `\ldots` when you want three low dots, and `\cdots` when you want three vertically centered dots. In general, it's best to use `\cdots` between `+` and `-` and multiplication signs, and also between `=` signs or "less-than-or-equals" signs or subset signs or other similar relations. Low dots are used between commas, and when things are juxtaposed with no signs between them at all:
 
-![Uses of ellipses](latex-math-8-21.png)
+![Uses of ellipses](/tex/images/java/tutorial/latex-math-8-21.png)
 
 But there's a special case in which `\ldots` and `\cdots` don't produce the right spacing. This happens when they appear at the very end of a formula or just before a closing delimiter. In such situations an extra thin space is needed. For example, consider the following sentences:
 
-![Setting proper spaces after ellipses at the end of a formula](latex-math-8-22.png)
+![Setting proper spaces after ellipses at the end of a formula](/tex/images/java/tutorial/latex-math-8-22.png)
 
 The first sentence is produced by typing 
 
@@ -234,30 +234,30 @@ $(x_1,\ldots,x_m,\allowbreak y_1,\ldots,y_n)$
 
 appears in the text of a paragraph, TeX will allow it to be broken into two pieces
 
-![A formula broken at the \allowbreak](latex-math-8-23.png)
+![A formula broken at the \allowbreak](/tex/images/java/tutorial/latex-math-8-23.png)
 
 ### 8.7. Braces
 
 The symbols '{' and '}' are used in a number of different notations, and LaTeX provides some commands to help you cope with formulas involving such things.
 The simplest case is when braces are used to indicate a set of elements. For example, "{*a*, *b*, *c*}" stands for the set of three elements *a*, *b*, and *c*:
 
-![A set of three elements](latex-math-8-24.png)
+![A set of three elements](/tex/images/java/tutorial/latex-math-8-24.png)
 
 A set may also be indicated by giving a generic element followed by a specific condition. For example, the set of all objects *x* that are greater than 5 can be written as follows:
 
-![Another notation for sets](latex-math-8-25.png)
+![Another notation for sets](/tex/images/java/tutorial/latex-math-8-25.png)
 
 These are two variants to indicate the same set. The first one requires using `\mid` to get the vertical bar, while the second one doesn't require anything except the colon, which is treated as a binary operation.
 
 When the delimiters get larger, they should be called `\bigl`, `\bigm`, and `\bigr`:
 
-![Using larger delimiters in indication of a set](latex-math-8-26.png)
+![Using larger delimiters in indication of a set](/tex/images/java/tutorial/latex-math-8-26.png)
 
 Formulas with even larger delimiters would use `\Big` or `\bigg` or even `\Bigg` commands.
 
 You may also find another use of braces in displayed formulas. It's actually one left brace that indicates a choice between a number of alternatives:
 
-![\cases construction](latex-math-8-27.png)
+![\cases construction](/tex/images/java/tutorial/latex-math-8-27.png)
 
 This construction can be typed using the command `\case`:
 
@@ -270,7 +270,7 @@ Each of the cases has two parts separated by the `&` symbol, which plays a speci
 
 Horizontal braces will be set over or under parts of a displayed formula if you use the commands `\overbrace` or `\underbrace`. Such things are considered to be large operators like `\sum`, so you can put limits above or below them by specifying superscripts or subscripts:
 
-![\overbrace and \underbrace](latex-math-8-28.png)
+![\overbrace and \underbrace](/tex/images/java/tutorial/latex-math-8-28.png)
 
 ### 8.8. Matrices
 
@@ -278,7 +278,7 @@ Matrices are fairly common objects in math formulas; they are just rectangular a
 
 For example, suppose that you want to specify the display
 
-![An example of a matrix](latex-math-8-29.png)
+![An example of a matrix](/tex/images/java/tutorial/latex-math-8-29.png)
 
 All you do is type
 
@@ -300,7 +300,7 @@ Each entry of a matrix is processed separately from the others, and it is typese
 
 Matrices often appear as generic patterns that use ellipses to indicate rows or columns that are left out. You can typeset such matrices by putting the ellipses into their own rows and/or columns. In addition to `\ldots`, LaTeX provides `\vdots` (vertical dots) and `\ddots` (diagonal dots) for such constructions. Consider the following matrix
 
-![A matrix as a general pattern with ellipses](latex-math-8-30.png)
+![A matrix as a general pattern with ellipses](/tex/images/java/tutorial/latex-math-8-30.png)
 
 that is specified as:
 
@@ -313,7 +313,7 @@ $$A=\pmatrix{a_{11}&a_{12}&\ldots&a_{1n}\cr
 
 Sometimes a matrix is bordered at the top and left by formulas that give labels to the rows and columns. For this situation, a special macro called `\bordermatrix` is defined in LaTeX. For example, the display
 
-![A bordered matrix](latex-math-8-31.png)
+![A bordered matrix](/tex/images/java/tutorial/latex-math-8-31.png)
 
 is obtained when you type
 
@@ -328,6 +328,6 @@ The first row gives the upper labels, which appear above the big left and right 
 
 Putting matrices into the text of a paragraph is usually inadvisable. The reason is that they are so big that they are better displayed. But still, you may occasionally want to neglect this. In this case, you can use `\choose` or `\atop`:
 
-![Examples of setting small matrices for use in text](latex-math-8-32.png)
+![Examples of setting small matrices for use in text](/tex/images/java/tutorial/latex-math-8-32.png)
 
 The `\matrix` macro doesn't produce small arrays like this.

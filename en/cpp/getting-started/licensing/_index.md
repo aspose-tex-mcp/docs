@@ -1,12 +1,16 @@
 ---
+translation: true
+template: /templates/_template-cpp.md
 title: Licensing - Aspose.TeX for C++
-type: docs
+linktitle: Licensing
 weight: 70
 url: /cpp/licensing/
 description: When you stopped on the licensed version of the Aspose.TeX API solution for C++ here you find out how to apply the license.
-submenu: menu-tex-for-cpp
 aliases: /cpp/licensing
+lastmod: "2024-09-20"
 ---
+
+{{<section overview>}}
 
 ## Evaluate Aspose.TeX
 

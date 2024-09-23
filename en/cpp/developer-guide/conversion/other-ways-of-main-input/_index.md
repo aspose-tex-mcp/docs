@@ -1,20 +1,19 @@
 ---
+translation: true
+template: /templates/_template-cpp.md
 title: Other ways to provide main TeX input file | C++
 linktitle: Other ways to provide the main TeX input file
-type: docs
 weight: 14
 url: /cpp/other-ways-of-main-input/
 description: Conversion functionality of Aspose.TeX API solution for C++ has a Constructor which accepts a stream as the first argument. Here are some code examples.
-lastmod: "2023-03-23"
-sitemap:
-    changefreq: "weekly"
-    priority: 0.8
-submenu: menu-tex-for-cpp
+lastmod: "2024-09-20"
 ---
+
+{{<section overview>}}
 
 ## Providing the main input file to the TeX engine as a stream
 
-Up to this point, we only knew how to pass the [main input file](/tex/net/tex-io/#tex-input) to the TeX engine as a file name, whether fully specified or in short form, whether with an extension or without it. But there's another [constructor](https://reference.aspose.com/tex/cpp/class/aspose.te_x.te_x_job) of the `TeXJob` class, which takes a stream as the first argument. This is convenient if for some reason we have the main input file in a form other than a file on the disk file system. Here's how it can be implemented:
+Up to this point, we only knew how to pass the [main input file](/tex/{{lang.url-fragment}}net/tex-io/#tex-input) to the TeX engine as a file name, whether fully specified or in short form, whether with an extension or without it. But there's another [constructor](https://reference.aspose.com/tex/cpp/class/aspose.te_x.te_x_job) of the `TeXJob` class, which takes a stream as the first argument. This is convenient if for some reason we have the main input file in a form other than a file on the disk file system. Here's how it can be implemented:
 
 ```C++
 // Create conversion options instance.
@@ -28,7 +27,7 @@ System::MakeObject<Aspose::TeX::TeXJob>(System::MakeObject<System::IO::MemoryStr
 
 ```
 
-Note that all output files will have the name *texput*. That's because the engine can't get any other name anywhere. *texput* is the default job name. [Here](/tex/net/tex-io/#tex-output) and [here](/tex/cpp/other-options/#how-to-set-the-job-name) are details about job names.
+Note that all output files will have the name *texput*. That's because the engine can't get any other name anywhere. *texput* is the default job name. [Here](/tex/{{lang.url-fragment}}net/tex-io/#tex-output) and [here](/tex/{{lang.url-fragment}}cpp/other-options/#how-to-set-the-job-name) are details about job names.
 
 ## Entering the main TeX input file from the terminal
 
@@ -48,7 +47,7 @@ System::MakeObject<Aspose::TeX::TeXJob>(System::MakeObject<XpsDevice>(), options
 As soon as it's run, the engine sticks, waiting for us to enter the file name (with or without a path, with or without an extension):
 
 
-![Terminal window](Conversion-MainInputTerminal.png)
+![Terminal window](/tex/images/cpp/Conversion-MainInputTerminal.png)
 
 And this is how it would look on the output terminal which is the console:
 

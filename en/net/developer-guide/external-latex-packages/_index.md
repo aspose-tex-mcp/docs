@@ -1,24 +1,24 @@
 ---
+translation: true
+template: /templates/_template-net.md
 title: External LaTeX packages | .NET
 linktitle: External LaTeX packages
-type: docs
 weight: 20
 url: /net/external-latex-packages/
 description: Aspose.TeX API for .NET allows using external packages, i.e. the ones not included in the library itself like fancybox and pgfplots packages.
-lastmod: "2023-03-23"
-sitemap:
-    changefreq: "weekly"
-    priority: 0.8
-submenu: menu-tex-for-net
+lastmod: "2024-09-20"
 ---
+
+{{<section overview>}}
 
 ## External LaTeX packages
 
-The **Aspose.TeX** library includes a number of [common LaTeX packages](/tex/net/embedded-packages/). So you don't have to worry about how to provide these packages to the library's TeX engine. But sometimes (or quite often) your LaTeX file may require a package beyond the "natively" supported "bundle" of packages. If this is the case, you can try to provide the required input, i.e. required package's source files, via the [RequiredInputDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/requiredinputdirectory/) option of the [TeXOptions](https://reference.aspose.com/tex/net/aspose.tex/texoptions/) class instance. We will see how this works with two examples.
+The **Aspose.TeX** library includes a number of [common LaTeX packages](/tex/{{lang.url-fragment}}net/embedded-packages/). So you don't have to worry about how to provide these packages to the library's TeX engine. But sometimes (or quite often) your LaTeX file may require a package beyond the "natively" supported "bundle" of packages. If this is the case, you can try to provide the required input, i.e. required package's source files, via the [RequiredInputDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/requiredinputdirectory/) option of the [TeXOptions](https://reference.aspose.com/tex/net/aspose.tex/texoptions/) class instance. We will see how this works with two examples.
 
 ### Unpacked required input (`fancybox` package)
 
 Let's say we have the following simple LaTeX file, which is `required-input-fs.tex` from our [example solution](https://GitHub.com/aspose-tex/Aspose.TeX-for-.NET):
+
 
 ```tex
 \documentclass{article}
@@ -45,13 +45,14 @@ Test: \fbox{
 
 On the 3rd line, we can see that the file requires the `fancybox` package, which is not "natively" supported. Let's also assume that we have the `fancybox` package source file. It is a simple package, so it really consists of a single file. We can place this file anywhere in our file system and specify the directory path as simply as shown below:
 
+
 ```C#
 options.RequiredInputDirectory = new InputFileSystemDirectory("path-to-directory-where-fancybox.sty-located");
 ```
 
 After running a TeX job with this option (don't forget to adjust the other options as needed), we get the output document (i.e., a PNG image).
 
-![Output Document](Conversion-RequiredInputFs.png)
+![Output Document](/tex/images/net/Conversion-RequiredInputFs.png)
 
 Here is the complete source code for the example:
 
@@ -60,6 +61,8 @@ Here is the complete source code for the example:
 ### Archived required input (`pgfplots` package)
 
 Let's now say that we have the following also quite simple LaTeX file, which is `required-input-zip.tex` from our example solution:
+
+
 ```tex
 \documentclass{article}
 \usepackage[margin=0.25in]{geometry}
@@ -91,11 +94,13 @@ First example is 2D and 3D math expressions plotted side-by-side.
 \end{document}
 ```
 
+
 On the 3rd line, we can see that the file requires the `pgfplots` package, which is also not "natively" supported. Again, we assume that we have the `pgfplots` package source files. It's quite a large number of files that are divided between two locations if you find them in the installation directory of any LaTeX typesetting application. You can find `pgfplots` folder at both `\tex\generic` and `\tex\latex` folders. And the contents of both these folders must be provided as required input to the Aspose.TeX library. We want these source file to be packaged in a ZIP archive, so here is the archive's layout:
 
-![Archive’s Layout](pgfplots-zip-layout.png)
+![Archive’s Layout](/tex/images/net/pgfplots-zip-layout.png)
 
 And this is how we specify the access to these source files:
+
 
 ```C#
 using (Stream zipStream = File.Open("path-to-zip-with-pgfplots-sources"), FileMode.Open))
@@ -104,12 +109,11 @@ using (Stream zipStream = File.Open("path-to-zip-with-pgfplots-sources"), FileMo
     options.RequiredInputDirectory = new InputZipDirectory(zipStream);
     ...
 }
-
 ```
 
 After running a TeX job with this option, we get the output document:
 
-![Output Document](Conversion-RequiredInputZip.png)
+![Output Document](/tex/images/net/Conversion-RequiredInputZip.png)
 
 Here is the complete source code for the example:
 

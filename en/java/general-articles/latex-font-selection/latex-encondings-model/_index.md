@@ -1,16 +1,17 @@
 ---
-title: 7. LaTeX's model for character encodings
-type: docs
+translation: true
+template: /templates/_template-java.md
+linktitle: 7. Model for character encodings
+title: LaTeX's model for character encodings
 weight: 70
 url: /java/latex-encodings-model/
 keywords: latex, latex fonts, latex font encodings, latex input encodings, latex output encodings, licr object, latex internal character representation
 description: This article covers internals of input and output encodings in LaTeX, as well as LaTeX internal character representation.
-lastmod: "2024-04-19"
-sitemap:
-    changefreq: "weekly"
-    priority: 0.8
-submenu: menu-tex-for-java
+lastmod: "2024-09-20"
 ---
+
+{{<section overview>}}
+
 
 This article covers LaTeX encodings in detail. It starts with a discussion of the character data flow within the LaTeX system. Next, we take a closer look at the internal representation model for character data within LaTeX, followed by a discussion of the mechanisms used to map incoming data via input encodings into that internal representation. Finally, we explain how the internal representation is translated, via the output encodings, into the form required for typesetting.
 
@@ -21,7 +22,7 @@ Processing a document with LaTeX starts by interpreting data present in one or m
 With an incorrect mapping, all further processing will be more or less erroneous unless the file contains only characters of a subset common in both correct and incorrect encodings.
 LaTeX makes a fundamental assumption at this point: almost all visible ASCII characters (decimal 32-126) are represented by the number that they have in the ASCII code table.
 
-![Visible ASCII characters](latex-font-selection-7-1.png)
+![Visible ASCII characters](/tex/images/java/tutorial/latex-font-selection-7-1.png)
 
 One reason for this assumption is that most 8-bit encodings in use today share a common 7-bit plane. Another reason is that, to effectively use TeX, the majority of the visible portion of ASCII needs to be processed as characters of category *letter* - since only characters with this category can be used in multiple-character command names in TEX - or category *other* - since TEX will not, for example, recognize the decimal digits as being part of a number if they do not have this category code.
 
@@ -163,7 +164,7 @@ Nevertheless, the biggest part of the internal character representation consists
 
 So, an encoding `XYZ` is defined by a bunch of declarations, all having the name `XYZ` as their second argument. Then, of course, some fonts must be encoded in that encoding. In fact, the development of font encodings is normally done reversely - someone starts with an existing font and then provides appropriate declarations for using it. This collection of declarations is then given a suitable name, such as `OT1`. Below, we will take the font `ecrm1000` (see the glyph chart), whose font encoding is called `T1` in LaTeX, and build appropriate declarations to access glyphs from a font encoded in this way. The blue characters in the glyph chart are those that should be present in the same position in every text encoding, as they are transparently passed through LaTeX.
 
-![ecrm1000 font's glyph chart](latex-font-selection-7-2.png)
+![ecrm1000 font's glyph chart](/tex/images/java/tutorial/latex-font-selection-7-2.png)
 
 ### Output encoding files
 
@@ -177,7 +178,7 @@ Again, an output encoding file starts with an identification line describing the
 \ProvidesFile{t1enc.def}[2001/06/05 v1.94 Standard LaTeX file]
 ```
 
-Before we declare any encoding-specific commands for a particular encoding, we first have to make this encoding known to LaTeX. This is done via the `\DeclareFontEncoding` command. At this point, it is also useful to declare the default substitution rules for the encoding. We can do so by using the command `\DeclareFontSubstitution`. Both declarations are discussed in detail in [How to set up new fonts](/tex/java/latex-fonts-setup/).
+Before we declare any encoding-specific commands for a particular encoding, we first have to make this encoding known to LaTeX. This is done via the `\DeclareFontEncoding` command. At this point, it is also useful to declare the default substitution rules for the encoding. We can do so by using the command `\DeclareFontSubstitution`. Both declarations are discussed in detail in [How to set up new fonts](/tex/{{lang.url-fragment}}java/latex-fonts-setup/).
 
 ```tex
 \DeclareFontEncoding{T1}{}{}
@@ -364,32 +365,32 @@ Columns four through seven show whether an object is available in the given enco
 
 #### LICR objects. Part 1
 
-![LICR objects list. Part 1](latex-font-selection-7-3.png)
+![LICR objects list. Part 1](/tex/images/java/tutorial/latex-font-selection-7-3.png)
 
 #### LICR objects. Part 2
 
-![LICR objects list. Part 2](latex-font-selection-7-4.png)
+![LICR objects list. Part 2](/tex/images/java/tutorial/latex-font-selection-7-4.png)
 
 #### LICR objects. Part 3
 
-![LICR objects list. Part 3](latex-font-selection-7-5.png)
+![LICR objects list. Part 3](/tex/images/java/tutorial/latex-font-selection-7-5.png)
 
 #### LICR objects. Part 4
 
-![LICR objects list. Part 4](latex-font-selection-7-6.png)
+![LICR objects list. Part 4](/tex/images/java/tutorial/latex-font-selection-7-6.png)
 
 #### LICR objects. Part 5
 
-![LICR objects list. Part 5](latex-font-selection-7-7.png)
+![LICR objects list. Part 5](/tex/images/java/tutorial/latex-font-selection-7-7.png)
 
 #### LICR objects. Part 6
 
-![LICR objects list. Part 6](latex-font-selection-7-8.png)
+![LICR objects list. Part 6](/tex/images/java/tutorial/latex-font-selection-7-8.png)
 
 #### LICR objects. Part 7
 
-![LICR objects list. Part 7](latex-font-selection-7-9.png)
+![LICR objects list. Part 7](/tex/images/java/tutorial/latex-font-selection-7-9.png)
 
 #### LICR objects. Part 8
 
-![LICR objects list. Part 8](latex-font-selection-7-10.png)
+![LICR objects list. Part 8](/tex/images/java/tutorial/latex-font-selection-7-10.png)

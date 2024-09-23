@@ -1,12 +1,16 @@
 ---
+translation: true
+template: /templates/_template-java.md
 title: Aspose.TeX for Java API Solution
-type: docs
+linktitle: Aspose.TeX for Java Documentation
 weight: 20
 url: /java/
 description: Manage TeX files within API solution for Java. The Library provides ways to pass TeX input and obtain output and features like creating your own TeX format
 is_root: true
-submenu: menu-tex-for-java
+lastmod: "2024-09-20"
 ---
+
+{{<section overview>}}
 
 {{% alert color="primary" %}}
 
@@ -21,8 +25,8 @@ Aspose.TeX is a Java library for TeX files typesetting. It can present TeX input
 ## Aspose.TeX for Java Resources
 
 Following are the links to some useful resources you may need to accomplish your tasks.
-- [Aspose.TeX for Java Online Documentation](/tex/java/)
-- [Aspose.TeX for Java Features](/tex/java/feature-list/)
+- [Aspose.TeX for Java Online Documentation](/tex/{{lang.url-fragment}}java/)
+- [Aspose.TeX for Java Features](/tex/{{lang.url-fragment}}java/feature-list/)
 - [Aspose.TeX for Java Release Notes](https://releases.aspose.com/tex/java/release-notes/)
 - [Download Aspose.TeX for Java](https://releases.aspose.com/tex/java/)
 - [Aspose.TeX for Java Maven Repository](https://releases.aspose.com/java/repo/com/aspose/aspose-tex/)

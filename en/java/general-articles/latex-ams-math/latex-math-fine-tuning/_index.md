@@ -1,16 +1,16 @@
 ---
+translation: true
+template: /templates/_template-java.md
+linktitle: Presize adjustments to the layout
 title: 7. Presize adjustments to the layout | LaTeX manual
-type: docs
 weight: 70
 url: /java/latex-math-fine-tuning/
 keywords: ams-latex, amsmath, latex math spacing, latex math styles, latex math delimiters, latex math parentheses, latex math alignment
 description: This article discusses fine-tuning the math layout - automatic sizing and spacing, big delimiters, precise alignment.
-lastmod: "2023-04-14"
-sitemap:
-    changefreq: "weekly"
-    priority: 0.8
-submenu: menu-tex-for-java
+lastmod: "2024-09-20"
 ---
+
+{{<section overview>}}
 
 Usually, LaTeX does a great job of laying out math formulas. But sometimes a finer adjustment of the positioning is needed. This article discusses some techniques for fine-tuning the layout to make math formulas a little better.
 
@@ -57,11 +57,11 @@ The next example illustrates the various styles:
 \]
 ```
 
-![Various math styles](latex-ams-math-7-1.png)
+![Various math styles](/tex/images/java/tutorial/latex-ams-math-7-1.png)
 
 You can remove the comment char (`%`) before `\displaystyle` and see how some of the styles have changed to those in brackets:
 
-![Explicitly changed math styles](latex-ams-math-7-2.png)
+![Explicitly changed math styles](/tex/images/java/tutorial/latex-ams-math-7-2.png)
 
 It shows how to explicitly specify the style to be used in each part.
 
@@ -75,7 +75,7 @@ The contents of subscripts/superscripts and the arguments of many (but not all) 
 
 LaTeX defines four commands - `\big`, `\Big`, `\bigg`, and `Bigg` - to provide direct control of the sizes of extensible delimiters. They take a single argument, which must be an extensible delimiter, and produce larger versions of the delimiter, from 1.2 to 3 times the base size.
 
-There are also three variants for each of the four commands, giving four sizes of *Opening symbol* (`\bigl`, `\Bigl`, `\biggl`, and `\Biggl`); four sizes of *Relation symbol* (`\bigm`, `\Bigm`, `\biggm`, and `\Biggm`); and four sizes of *Closing symbol* (`\bigr`, `\Bigr`, `\biggr`, and `\Biggr`). All 16 of these commands must be used with any symbol that can come after either `\left`, `\right`, or (with eTeX) `\middle` (see this [table](/tex/java/latex-math-extensible-symbols#53-symbols-that-are-vertically-extensible)). 
+There are also three variants for each of the four commands, giving four sizes of *Opening symbol* (`\bigl`, `\Bigl`, `\biggl`, and `\Biggl`); four sizes of *Relation symbol* (`\bigm`, `\Bigm`, `\biggm`, and `\Biggm`); and four sizes of *Closing symbol* (`\bigr`, `\Bigr`, `\biggr`, and `\Biggr`). All 16 of these commands must be used with any symbol that can come after either `\left`, `\right`, or (with eTeX) `\middle` (see this [table](/tex/{{lang.url-fragment}}java/latex-math-extensible-symbols#53-symbols-that-are-vertically-extensible)). 
 
 The sizes of these delimiters are fixed in standard LaTeX. However, with the `amsmath` package, the sizes adapt to the size of the surrounding material, according to the font size and math style in use. This is shown in the example below.
 
@@ -89,7 +89,7 @@ The sizes of these delimiters are fixed in standard LaTeX. However, with the `am
    L_{x, y^x(s)} \varphi(x)\, ds \biggr) \]
 ```
 
-![Delimiters adapting to the current font size and math style](latex-ams-math-7-3.png)
+![Delimiters adapting to the current font size and math style](/tex/images/java/tutorial/latex-ams-math-7-3.png)
 
 ## 7.4. Adjusting the index on a radical
 
@@ -105,7 +105,7 @@ The placement of the index on a radical sign is not always good in standard LaTe
 \]
 ```
 
-![Adjusting the index of a radical sign](latex-ams-math-7-4.png)
+![Adjusting the index of a radical sign](/tex/images/java/tutorial/latex-ams-math-7-4.png)
 
 ## 7.5. Fine-tuning with struts and phantoms
 
@@ -136,7 +136,7 @@ Let's take a look at the following example:
 \end{split} \end{equation}
 ```
 
-![The phantoms of the formula](latex-ams-math-7-5.png)
+![The phantoms of the formula](/tex/images/java/tutorial/latex-ams-math-7-5.png)
 
 Here, the `\phantom` command gets the horizontal positioning adjusted. In the preamble, it is used to define an invisible relation symbol equal in width to its argument (`=` in this example). Within the math environments, it is used to align certain lines by starting them with a "phantom", or invisible, sub-formula. The empty pair of braces `{}` is the same as `\mathord{}`, which produces an invisible zero-width symbol needed to get the correct spacing of "+ *h*" (without `{}`, the plus sign will produce unary plus with an inappropriate spacing before *h*).
 
@@ -145,6 +145,7 @@ As opposed to `\phantom`, the command `\smash` typesets its contents (in an LR-b
 The `\vphantom` command is similar, but it makes the width of the phantom zero preserving its total height plus depth. The command `\mathstrut` is defined as `\vphantom(`, and produces a zero-width box of height and depth equal to that of a parenthesis.
 
 With the `amsmath` package, the `\smash` command can take an optional argument, so that `\smash[t]{...}` ignores the height of the box's contents, keeping the depth, while `\smash[b]{...}` ignores the depth, retaining the height.
+
 
 ```tex
 \usepackage{amsmath}
@@ -155,11 +156,12 @@ $\sqrt{x} + \sqrt{\smash{y}} + \sqrt{z}$ \\
 $\sqrt{x} + \sqrt{\smash[b]{y}} + \sqrt{z}$
 ```
 
-![Smashing the radical expression](latex-ams-math-7-6.png)
+![Smashing the radical expression](/tex/images/java/tutorial/latex-ams-math-7-6.png)
 
 It seems that giving the *y* some extra height with a strut will make the radicals look similar. But, instead, it only makes them look more different, and uglier in whole. It turns out that smashing the bottom of the *y* is the best way.
 
 The following example shows a very common use of smashing. The `\smash` command is used there to provide fine control over the height of surrounding delimiters. It also shows that smashing can cause problems as the real height of the line needs to be known. This is repaired by `\vphantom`. `\Hmjd` is the compound symbol defined as:
+
 
 ```tex
 \newcommand\Hmjd{\widetilde{\mathcal{H}^2}_{MJD}(\chi)}
@@ -169,14 +171,15 @@ To show the resulting vertical space we added rules:
 
 | *Appearance* | `Code` | *Comment* |
 |:---:|:---:|---|
-| !["Outer Brackets Too Large"](latex-ams-math-smashing-7-1.png) | `\left( {\Hmjd } \right)` | *Outer brackets too large* |
-| !["Outer Brackets Too Small and Rules Too Close"](latex-ams-math-smashing-7-2.png) | `\left( \smash{\Hmjd } \right)` | *Outer brackets too small and rules too close* |
-| !["Just Right"](latex-ams-math-smashing-7-3.png) | `\left( \smash[t]{\Hmjd } \right) \vphantom{\Hmjd}` | *Just right!* |
-| !["Both Vphantom and Partial Smash Needed"](latex-ams-math-smashing-7-4.png) | `\left( \smash[t]{\Hmjd } \right)` | *Both `\vphantom` and partial smash are needed* |
+| !["Outer Brackets Too Large"](/tex/images/java/tutorial/latex-ams-math-smashing-7-1.png) | `\left( {\Hmjd } \right)` | *Outer brackets too large* |
+| !["Outer Brackets Too Small and Rules Too Close"](/tex/images/java/tutorial/latex-ams-math-smashing-7-2.png) | `\left( \smash{\Hmjd } \right)` | *Outer brackets too small and rules too close* |
+| !["Just Right"](/tex/images/java/tutorial/latex-ams-math-smashing-7-3.png) | `\left( \smash[t]{\Hmjd } \right) \vphantom{\Hmjd}` | *Just right!* |
+| !["Both Vphantom and Partial Smash Needed"](/tex/images/java/tutorial/latex-ams-math-smashing-7-4.png) | `\left( \smash[t]{\Hmjd } \right)` | *Both `\vphantom` and partial smash are needed* |
 
 > In a few places, deficiencies in the low-level TeX processing may lead to errors in the fine details of typesetting. This may happen in particular layouts where (a) a sub-formula (numerator/denominator of a fraction or subscript/superscript) consist of exactly one LR-box, or a similarly constructed math box, and also (b) that box doesn't have its natural size, as with the more complex forms of `\makebox`, smashes, and some phantoms.
 
 To see this, let's look at the following example:
+
 
 ```tex
 \[
@@ -187,7 +190,7 @@ To see this, let's look at the following example:
 \]
 ```
 
-![Problems caused by smashes](latex-ams-math-7-7.png)
+![Problems caused by smashes](/tex/images/java/tutorial/latex-ams-math-7-7.png)
 
 To reduce the depth of the radical, a `\smash` was added in the second radical, but this had no effect. In the third radical, it worked with an empty brace group.  But in the fourth radical, no empty brace group was needed. To summarize, whenever you find the `\smash` does not work, try adding an empty math sub-formula (`{}`) before the lonely box, to get it treated right.
 
@@ -195,13 +198,13 @@ To reduce the depth of the radical, a `\smash` was added in the second radical, 
 
 Finer, and more difficult, tuning requires the explicit spacing commands shown in the following table:
 
-![Horizontal spacing commands](latex-ams-math-7-8.png)
+![Horizontal spacing commands](/tex/images/java/tutorial/latex-ams-math-7-8.png)
 
 Both full and short forms of these commands are robust, and they can also be used outside of math formulas in normal text. They are related to thin, medium, and thick spaces available on the machines used to typeset mathematics in the mid-20th century.
 
 The current values of the three TeX parameters `\thinmuskip`, `\medmuskip`, and `\thickmuskip` define the amount of space added by these `\..space` commands. Their default values with `amsmath` are listed in the table. These low-level parameters require values in math units (*mu*). Therefore, they can only be set via low-level TeX assignments, not by `\setlength` or similar. Moreover, normally their values shouldn't be modified since they are used internally by TeX's math typesetting (see the following table).
 
-![Spacing between symbols](latex-ams-math-7-9.png)
+![Spacing between symbols](/tex/images/java/tutorial/latex-ams-math-7-9.png)
 
 > In the table, 0 means "no space", 1 means `\thinmuspace`, 2 means `\medmuskip`, 3 means `\thickmuskip`, * means "impossible". Entries set in bold mean that the corresponding spacing is not added in mathematical script styles.
 
