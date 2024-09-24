@@ -17,7 +17,7 @@ There is the [**Aspose.Page**](https://products.aspose.com/page/) library that p
 
 ## How to convert LaTeX to XPS
 
-The conversion to XPS is just as simple as the [conversion to raster image formats](/tex/{{lang.url-fragment}}cpp/latex-to-image/), except that in addition to the [SaveOptions](https://reference.aspose.com/tex/cpp/class/aspose.te_x.te_x_options#ad9ff9be81f8d554a507dd48ec1c583f7), we have to change the device to an instance of the [XpsDevice](https://reference.aspose.com/tex/cpp/class/aspose.te_x.presentation.xps.xps_device) class.
+The conversion to XPS is just as simple as the [conversion to raster image formats](/tex/{{lang.url-fragment}}cpp/latex-to-image/), except that in addition to the [SaveOptions](https://reference.aspose.com/tex/cpp/aspose.tex/texoptions/set_saveoptions), we have to change the device to an instance of the [XpsDevice](https://reference.aspose.com/tex/cpp/class/aspose.te_x.presentation.xps.xps_device) class.
 
 ```C++
 ...
