@@ -54,7 +54,7 @@ The API reference section related to this topic is [here](https://reference.aspo
 
 ```
 
-Let's get to the details. First of all, we create a [rendering options](https://reference.aspose.com/tex/cpp/class/aspose.te_x.features.math_renderer_options) instance, similar to the TeX/LaTeX typesetting. We do it here simultaneously specifying the output image resolution.
+Let's get to the details. First of all, we create a [rendering options](https://reference.aspose.com/tex/cpp/aspose.tex.features/mathrendereroptions) instance, similar to the TeX/LaTeX typesetting. We do it here simultaneously specifying the output image resolution.
 
 Next, we specify the preamble. The default preamble is:
 
@@ -74,7 +74,7 @@ The next line of the example doesn't make much sense. It just demonstrates that 
 
 And the last option `ShowTerminal` allows you to toggle writing the terminal output to the console.
 
-The method that actually performs the rendering is [MathRenderer.Render()](https://reference.aspose.com/tex/cpp/class/aspose.te_x.features.math_renderer#a9b578fe58378d4d6937bd48c9e68dccb). It returns the size of the formula in points.
+The method that actually performs the rendering is [MathRenderer.Render()](https://reference.aspose.com/tex/cpp/aspose.tex.features/mathrenderer/render). It returns the size of the formula in points.
 
 The stream where the image is to be written is taken by the method as the second argument. We create the stream next.
 

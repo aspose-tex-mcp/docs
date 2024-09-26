@@ -13,7 +13,7 @@ lastmod: "2024-09-20"
 
 ## Providing the main input file to the TeX engine as a stream
 
-Up to this point, we only knew how to pass the [main input file](/tex/{{lang.url-fragment}}net/tex-io/#tex-input) to the TeX engine as a file name, whether fully specified or in short form, whether with an extension or without it. But there's another [constructor](https://reference.aspose.com/tex/cpp/class/aspose.te_x.te_x_job) of the `TeXJob` class, which takes a stream as the first argument. This is convenient if for some reason we have the main input file in a form other than a file on the disk file system. Here's how it can be implemented:
+Up to this point, we only knew how to pass the [main input file](/tex/{{lang.url-fragment}}net/tex-io/#tex-input) to the TeX engine as a file name, whether fully specified or in short form, whether with an extension or without it. But there's another [constructor](https://reference.aspose.com/tex/cpp/aspose.tex/texjob/) of the `TeXJob` class, which takes a stream as the first argument. This is convenient if for some reason we have the main input file in a form other than a file on the disk file system. Here's how it can be implemented:
 
 ```C++
 // Create conversion options instance.
