@@ -25,6 +25,7 @@ Aspose.TeX is a Java library for TeX files typesetting. It can present TeX input
 ## Aspose.TeX for Java Resources
 
 Following are the links to some useful resources you may need to accomplish your tasks.
+
 - [Aspose.TeX for Java Online Documentation](/tex/{{lang.url-fragment}}java/)
 - [Aspose.TeX for Java Features](/tex/{{lang.url-fragment}}java/feature-list/)
 - [Aspose.TeX for Java Release Notes](https://releases.aspose.com/tex/java/release-notes/)

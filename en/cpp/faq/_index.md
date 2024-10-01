@@ -43,6 +43,7 @@ For more examples, please visit [Convertion](/tex/{{lang.url-fragment}}cpp/conve
 **Q: What packages are embedded into Aspose.TeX API Solution?**
 
 **A:** By now there are [Aspose.TeX embedded LaTeX packages](/tex/{{lang.url-fragment}}net/embedded-packages/) included: 
+
 - eurosym
 - geometry
 - graphics

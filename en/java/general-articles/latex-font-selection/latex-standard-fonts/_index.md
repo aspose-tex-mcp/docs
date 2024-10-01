@@ -159,8 +159,6 @@ Input external font name, e.g., cmr10
 (or <enter> for NFSS classification of font):
 
 \currfontname=
-
-
 *** NFSS classification ***
 
 Font encoding [T1]:

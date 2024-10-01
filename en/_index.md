@@ -68,8 +68,6 @@ Following are the links to some useful resources you may need to accomplish your
 {{% alert color="primary" %}}
 
 <p><img src="/tex/icons/aspose_tex-for-cpp.png" alt="Aspose.TeX for C++ logo" width="128" height="128"></p>
-
-
 **Welcome to Aspose.TeX for C++**
 
 Experience the power of Aspose.TeX, the premier C++ library for typesetting TeX files. With Aspose.TeX, you can effortlessly transform TeX input into stunning graphical formats like XPS, PDF, PNG, JPEG, TIFF, and BMP. Our advanced library not only provides exceptional rendering capabilities but also delivers comprehensive tracing information, ensuring optimal performance.

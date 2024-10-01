@@ -305,6 +305,7 @@ As shown in Equation \eqref{eq:einstein}...
 Achieving consistent font sizes, styles, and formatting across different sections of the document may sometimes be a challenging task. It can be done with various LaTeX commands, packages, and settings to achieve this. 
 
 1. Choose a document class that aligns with your desired formatting style, such as `article`, `report`, `book`, or specific journal templates. Additionally, use the next packages to customize the formatting:
+
 - `\usepackage[margin=1in]{geometry}`  - adjusts margins.
 - `\usepackage{fontspec}` - for custom fonts (XeLaTeX or LuaLaTeX).
 - `\usepackage{setspace}` - adjusts line spacing.

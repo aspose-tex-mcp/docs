@@ -1,0 +1,79 @@
+﻿---
+translation: true
+template: /templates/_template-cpp.md
+title: Interfaz de salida de Aspose.TeX | C++
+linktitle: Interfaz de salida de Aspose.TeX
+weight: 16
+url: /cpp/aspose-tex-output/
+description: La funcionalidad de conversión de la solución API Aspose.TeX para C++ con TeX, como formato de salida, se explica aquí con los ejemplos de código.
+lastmod: "2024-10-30"
+---
+
+{{<section overview>}}
+
+Consulte **Aspose.TeX para C++** [referencia de API](https://reference.aspose.com/tex/cpp/namespace/aspose.te_x.i_o) para obtener definiciones formales de implementación de E/S.
+
+## El concepto del directorio de salida.
+Dado que las primitivas de E/S del lenguaje TeX sólo pueden tratar con nombres de archivos, Aspose.TeX define un directorio como un mapeo entre nombres y grandes cantidades de datos. Se supone que la gran cantidad de datos son archivos, secuencias, matrices o cualquier otra cosa. La API nos permite especificar los directorios de trabajo de entrada y salida por separado. Proporciona la interfaz general [IOutputWorkingDirectory](https://reference.aspose.com/tex/cpp/aspose.tex.io/ioutputworkingdirectory) para la salida, que el usuario puede implementar para sus propios fines. También proporciona sus propias implementaciones, que se analizarán a continuación. La interfaz extiende [IInputWorkingDirectory](https://reference.aspose.com/tex/cpp/aspose.tex.io/iinputworkingdirectory), ya que el motor puede primero crear y escribir un archivo y luego volver a leerlo. El método propio de la interfaz [GetOutputFile()](https://reference.aspose.com/tex/cpp/aspose.tex.io/ioutputworkingdirectory/getoutputfile) devuelve la secuencia para escribir, a diferencia de la secuencia para leer devuelta por [GetFile()](https://reference.aspose.com/tex/cpp/aspose.tex.io/iinputworkingdirectory#adc0d6f35f9a0c426ba010779d90b5cd6).
+
+### Escribir la salida del archivo en el sistema de archivos del disco
+
+Como mencionamos [arriba](/tex/{{lang.url-fragment}}cpp/latex-to-png/), el valor más común para [OutputDirectory](https://reference.aspose.com/tex/cpp/aspose.tex/texoptions/set_outputworkingdirectory) probablemente sería una instancia de la clase [OutputFileSystemDirectory](https://reference.aspose.com/tex/cpp/aspose.tex.io/outputfilesystemdirectory).
+
+Así es como lo configuraríamos:
+
+```C++
+// Create conversion options instance.
+...
+// Specify a file system working directory for the output.
+options->set_OutputWorkingDirectory(System::MakeObject<OutputFileSystemDirectory>(RunExamples::OutputDirectory));
+```
+
+Este caso de uso es bastante simple, por lo que ya no es necesario centrarse en él.
+
+### Escribir la salida del archivo en un archivo ZIP
+
+También podemos crear un archivo (o secuencia) y dejar que el motor TeX lo use como un archivo ZIP para almacenar los archivos de salida. Aquí lo tienes:
+
+```C++
+    // Open the stream for the ZIP archive that will serve as the output working directory.
+    System::SharedPtr<System::IO::Stream> outZipStream = System::IO::File::Open(System::IO::Path::Combine(RunExamples::OutputDirectory, u"zip-pdf-out.zip"), System::IO::FileMode::Create);
+
+    // Create conversion options instance.
+    ...
+    // Specify a ZIP archive working directory for the output.
+    options->set_OutputWorkingDirectory(System::MakeObject<OutputZipDirectory>(outZipStream));
+```
+
+Primero, creamos un flujo de salida para el archivo ZIP. Luego, después de crear las opciones de conversión, configuramos la opción [OutputWorkingDirectory](https://reference.aspose.com/tex/cpp/aspose.tex/texoptions/set_outputworkingdirectory) para que sea una instancia de la clase [OutputZipDirectory](https://reference.aspose.com/tex/cpp/aspose.tex.io/outputzipdirectory).
+
+## El concepto de terminal de salida.
+
+Hay otra parte importante de la salida: la salida del terminal. En cuanto a este, **Aspose.TeX para C++** define la interfaz general [IOutputTerminal](https://reference.aspose.com/tex/cpp/aspose.tex.io/ioutputterminal) que tiene solo una propiedad que devuelve una instancia de implementación [TextWriter](https://reference.aspose.com/tex/cpp/system.io/textwriter). Las implementaciones proporcionadas se analizan a continuación.
+
+### Escribir la salida del terminal en la consola
+
+Para hacer esto, necesitamos configurar la opción [TerminalOut](https://reference.aspose.com/tex/cpp/aspose.tex/texoptions/set_terminalout) para que sea una instancia de la clase [OutputConsoleTerminal](https://reference.aspose.com/tex/cpp/aspose.tex.io/outputconsoleterminal).
+
+```C++
+// Create conversion options instance.
+...
+// Specify the console as the output terminal.
+options->set_TerminalOut(System::MakeObject<OutputConsoleTerminal>()); // Default. No need to specify.
+```
+
+Nuevamente, este es el valor predeterminado de la opción, por lo que no es necesario especificarlo. Debido a esto, esta sección tiene únicamente fines de demostración.
+
+### Escribir la salida del terminal en un archivo
+
+A diferencia del terminal de entrada, **Aspose.TeX para C++** proporciona una implementación de [IOutputTerminal](https://reference.aspose.com/tex/cpp/aspose.tex.io/ioutputterminal), que nos permite escribir la salida del terminal en un archivo en algún directorio de salida.
+
+```C++
+// Create conversion options instance.
+...
+// Specify that the terminal output must be written to a file in the output working directory.
+// The file name is <job_name>.trm.
+options->set_TerminalOut(System::MakeObject<OutputFileTerminal>(options->get_OutputWorkingDirectory()));
+```
+
+Aquí le pedimos al motor TeX que escriba la salida del terminal en el archivo con el nombre [<job_name>](/tex/{{lang.url-fragment}}net/tex-io/#tex-output).trm, que se almacenará en el mismo directorio de salida que especificamos para el resto de la salida. Pero esto no es necesario. También podríamos pasar cualquier otra instancia de cualquier implementación de [IOutputTerminal](https://reference.aspose.com/tex/cpp/aspose.tex.io/ioutputterminal) al constructor.

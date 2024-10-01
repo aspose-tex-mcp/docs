@@ -1,0 +1,36 @@
+﻿---
+translation: true
+template: /templates/_template-cpp.md
+title: Aspose.TeX für C++ API-Lösung
+linktitle: Aspose.TeX für C++-Dokumentation
+weight: 30
+url: /cpp/
+description: API-Lösung für die Verwaltung von TeX-Dateien für C++. Die Bibliothek bietet Möglichkeiten, TeX-Eingaben zu übergeben und Ausgaben zu erhalten, sowie Funktionen wie die Erstellung Ihres eigenen TeX-Formats.
+is_root: true
+lastmod: "2024-09-26"
+---
+
+{{<section overview>}}
+{{% alert color="primary" %}}
+
+<p><img src="/tex/icons/aspose_tex-for-cpp.png" alt="Aspose.TeX for C++ logo" width="128" height="128"></p>
+
+**Willkommen bei Aspose.TeX für C++**
+
+Aspose.TeX ist eine C++-Bibliothek für die Schriftsetzung von TeX-Dateien. Es kann TeX-Eingaben in verschiedenen Grafikformaten wie XPS, PDF, PNG, JPEG, TIFF und BMP darstellen. Es gibt auch Ablaufverfolgungsinformationen aus, wie es jede andere TeX-Engine tut. Die API bietet verschiedene Möglichkeiten, TeX-Eingaben zu übergeben und Ausgaben zu erhalten. Und als erweiterte Funktion können Sie damit Ihr eigenes TeX-Format erstellen, wenn Sie mehrere einheitlich gestaltete Dokumente setzen möchten.
+
+{{% /alert %}}
+
+## Aspose.TeX für C++-Ressourcen
+
+Im Folgenden finden Sie Links zu einigen nützlichen Ressourcen, die Sie möglicherweise zur Erfüllung Ihrer Aufgaben benötigen.
+
+- [Aspose.TeX für C++ Online-Dokumentation](/tex/{{lang.url-fragment}}cpp/)
+- [Aspose.TeX für C++-Funktionen](/tex/{{lang.url-fragment}}cpp/feature-list/)
+- [Aspose.TeX für C++ Versionshinweise](https://releases.aspose.com/tex/cpp/release-notes/)
+- [Aspose.TeX für C++-Produktseite](https://products.aspose.com/tex/cpp/)
+- [Aspose.TeX für C++ NuGet-Paket installieren](https://www.nuget.org/packages/Aspose.TeX/)
+- [Aspose.TeX für C++ API-Referenzhandbuch](https://reference.aspose.com/tex/cpp)
+- [Kostenloses Support-Forum für Aspose.TeX für C++](https://forum.aspose.com/c/tex)
+- [Kostenpflichtiger Support-Helpdesk für Aspose.TeX für C++](https://helpdesk.aspose.com/)
+

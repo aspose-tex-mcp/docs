@@ -1,0 +1,26 @@
+﻿---
+translation: true
+template: /templates/_template-cpp.md
+title: Formats de fichiers pris en charge | Aspose.TeX pour C++
+linktitle: Formats de fichiers pris en charge
+weight: 20
+url: /cpp/supported-file-formats/
+description: Cette solution de manipulation TeX pour C++ prend en charge les fichiers TeX pour l'entrée et une variété de formats de sortie tels que TeX, XPS, PDF, PNG, JPEG, TIFF et PNG.
+lastmod: "2024-09-27"
+---
+
+{{<section overview>}}
+
+## Formats de fichiers pris en charge
+
+Le tableau suivant indique les formats de fichiers qu'Aspose.TeX pour C++ peut charger et enregistrer.
+
+|**Format**|**Description**|**Entrée**|**Sortie**|**Remarques**|
+| :- | :- | :- | :- | :- |
+|Texte brut|Fichier TeX|{{< emoticons/tick >}}|{{< emoticons/tick >}}| Uniquement pour la sortie des messages de traçage.|
+|XPS|Document XPS typographique| |{{< emoticons/tick >}}| |
+|PDF|Document PDF typographique| |{{< emoticons/tick >}}| |
+|PNG|Images PNG du document typographique| |{{< emoticons/tick >}}| |
+|JPEG|Images JPEG du document typographique| |{{< emoticons/tick >}}| |
+|TIFF|Images TIFF du document typographique| |{{< emoticons/tick >}}| |
+|BMP|Images BMP du document typographique| |{{< emoticons/tick >}}| |
