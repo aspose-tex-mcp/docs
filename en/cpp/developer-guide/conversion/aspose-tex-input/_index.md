@@ -14,6 +14,7 @@ lastmod: "2024-09-20"
 Please, refer to **Aspose.TeX for C++** [API reference](https://reference.aspose.com/tex/cpp/namespace/aspose.te_x.i_o) for formal definitions of I/O implementation.
 
 ## The concept of the input directory
+
 Since I/O primitives of the TeX language can only deal with file names, **Aspose.TeX for C++** defines a directory as a mapping between names and bulks of data. The bulks of data are supposed to be files, streams, arrays, or whatever else.The API allows us to specify the input and output working directories separately. It provides the general [IInputWorkingDirectory](https://reference.aspose.com/tex/cpp/aspose.tex.io/iinputworkingdirectory) interface, which the user can implement for their own purposes. It also provides its own implementations, which will be discussed below. The interface defines the [GetFile()](https://reference.aspose.com/tex/cpp/aspose.tex.io/iinputworkingdirectory/getfile) method, which returns the data stream and determines the full name of the file, while taking some, hypothetically different, name as the first argument, which, in fact, is the mapping key.
 
 ### Getting file input from the disk file system

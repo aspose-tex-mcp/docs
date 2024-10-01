@@ -52,7 +52,7 @@ For more examples, please visit [Convertion](/tex/{{lang.url-fragment}}net/conve
 - pgf
 - pict2e
 - setspace
-- latex-tools bundle:afterpage, array, bm, calc, dcolumn, delarray, enumerate, fileerr, fontsmpl, ftnright, hhline, indentfirst, layout, longtable, multicol, rawfonts, showkeys, somedefs, tabularx, theorem, trace, varioref, verbatim, xr, and xspace.
+- latex-tools bundle: afterpage, array, bm, calc, dcolumn, delarray, enumerate, fileerr, fontsmpl, ftnright, hhline, indentfirst, layout, longtable, multicol, rawfonts, showkeys, somedefs, tabularx, theorem, trace, varioref, verbatim, xr, and xspace.
 - url
 - wasysym
 - xcolor 

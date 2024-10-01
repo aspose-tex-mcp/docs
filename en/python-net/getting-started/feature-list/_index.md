@@ -22,8 +22,6 @@ lastmod: "2024-09-20"
 - Render math formulas and equations
 - Subset fonts
 - Freeze math formulas and graphics
-
-
 **Support for Various Output File Formats**
 
 - XPS
