@@ -5,7 +5,7 @@ title: Preguntas frecuentes | Aspose.TeX para С++
 linktitle: Preguntas frecuentes
 weight: 80
 url: /cpp/faq/
-description: Obtenga respuestas a todas las preguntas más frecuentes sobre Aspose.TeX para C++, que es una API integral para composición tipográfica y manipulación de TeX y LaTeX.
+description: Obtenga respuestas a todas las preguntas más frecuentes sobre Aspose.TeX para C++, que es una API integral para tipográfica y manipulación de TeX y LaTeX.
 lastmod: "2024-10-30"
 ---
 

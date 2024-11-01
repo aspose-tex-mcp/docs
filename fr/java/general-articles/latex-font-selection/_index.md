@@ -6,7 +6,7 @@ title: Schéma de sélection des polices LaTeX
 weight: 60
 url: /java/latex-font-selection/
 keywords: latex, polices latex, sélection de polices latex, nfss
-description: Cet article décrit brièvement l'utilisation des polices LaTeX dans le traitement des documents. Il mentionne également les métriques de police TeX et les formes de caractères.
+description: L'article décrit l'utilisation des polices LaTeX dans le traitement des documents ainsi que les métriques et formes de caractères des polices TeX.
 lastmod: "2024-09-27"
 ---
 

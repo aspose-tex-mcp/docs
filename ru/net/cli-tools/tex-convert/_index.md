@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-title: Конвертер командной строки TeX | Инструменты интерфейса командной строки Aspose.TeX
+title: Конвертер командной строки TeX | Инструменты CLI Aspose.TeX
 linktitle: Aspose.TeX конвертировать
 weight: 80
 url: /net/cli-tools/tex-convert/

@@ -5,7 +5,7 @@ title: Guide du développeur | Aspose.TeX pour .NET
 linktitle: Guide du développeur
 weight: 30
 url: /net/developer-guide/
-description: Ce chapitre explique les fonctionnalités de la solution API Aspose.TeX pour .NET aux développeurs et leur fournit des exemples de code sur la façon de gérer TeX.
+description: Ce chapitre explique les fonctionnalités de la API Aspose.TeX pour .NET aux développeurs et leur fournit des exemples de code sur la façon de gérer TeX.
 lastmod: "2024-09-27"
 ---
 

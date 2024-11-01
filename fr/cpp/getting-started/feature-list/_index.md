@@ -5,7 +5,7 @@ title: Liste des fonctionnalités | Aspose.TeX pour C++
 linktitle: Liste des fonctionnalités
 weight: 30
 url: /cpp/feature-list/
-description: Ajoutez la fonctionnalité de manipulation de fichiers TeX à votre propre solution. Découvrez les fonctionnalités que la solution API Aspose.TeX pour C++ vous offre.
+description: Ajoutez la fonctionnalité d'édition de fichiers TeX à votre solution. Découvrez les fonctionnalités offertes par Aspose.TeX pour C++.
 lastmod: "2024-09-27"
 ---
 

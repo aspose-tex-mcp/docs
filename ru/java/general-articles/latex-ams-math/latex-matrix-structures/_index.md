@@ -1,11 +1,11 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: Матрица и подобные среды
-title: 3. Матрица и подобные среды | Руководство по LaTeX
+linktitle: Матрица и подобные среды. Cистема уравнений LaTeX
+title: 3. Матрица LaTeX | Руководство по LaTeX
 weight: 30
 url: /java/latex-ams-matrix/
-keywords: ams-latex, amsmath, amscd, латехная матрица, латехные чехлы, латехный деларрей, латехные коммутативные диаграммы
+keywords: матрица latex, amsmath, матрицы в латехе, латехная матрица, latex система уравнений выравнивание, латехный деларрей, латехные коммутативные диаграммы
 description: В этой статье представлено краткое введение в набор матричных структур LaTeX с использованием пакетов AMS-LATEX.
 lastmod: "2024-09-24"
 ---

@@ -5,7 +5,7 @@ title: Packages LaTeX externes | Python
 linktitle: Packages LaTeX externes
 weight: 19
 url: /python-net/external-latex-packages/
-description: L'API Aspose.TeX pour Python prend en charge l'utilisation de packages externes qui ne sont pas inclus dans la bibliothèque elle-même, tels que les packages fancybox et pgfplots.
+description: Aspose.TeX pour Python permet l'utilisation de packages non inclus dans la bibliothèque elle-même, tels que les packages fancybox ou pgfplots.
 lastmod: "2024-09-27"
 ---
 

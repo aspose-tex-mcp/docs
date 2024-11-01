@@ -2,11 +2,11 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: Symboles dans les formules mathématiques
-title: 9. Symboles dans les formules mathématiques | Manuel LaTeX
+title: 9. Symbole en LaTeX | Manuel LaTeX
 weight: 90
 url: /java/latex-math-symbols/
-keywords: ams-latex, amsmath, amsfonts, amssymb, cours de symboles mathématiques en latex, paquet stmaryrd, police st mary road
-description: Apprenez la classification des symboles mathématiques dans TeX et accédez aux symboles de différentes classes à l'aide des commandes du standard TeX (LaTeX) et du package amssymb.
+keywords: ams-latex, amsmath, amsfonts, amssymb, cours de symboles mathématiques en latex, paquet stmaryrd, police st mary road, symbole latex, symboles latex
+description: Classification des symboles mathématiques dans TeX et des symboles de différentes classes à l'aide de commandes de la norme TeX et du package amssymb.
 lastmod: "2024-09-27"
 ---
 

@@ -1,11 +1,11 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-title: Paquetes LaTeX externos | .NETO
+title: Paquetes LaTeX externos | .NET
 linktitle: Paquetes externos de LaTeX
 weight: 20
 url: /net/external-latex-packages/
-description: La API Aspose.TeX para .NET permite utilizar paquetes externos, es decir, los que no están incluidos en la propia biblioteca, como los paquetes fancybox y pgfplots.
+description: Aspose.TeX para .NET permite utilizar paquetes externos, es decir, los que no están incluidos en la propia biblioteca, como los paquetes pgfplots.
 lastmod: "2024-10-30"
 ---
 

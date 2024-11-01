@@ -1,11 +1,11 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-title: Reparación de archivos LaTeX | .NETO
+title: Reparación de archivos LaTeX | .NET
 linktitle: Reparación de archivos LaTeX
 weight: 30
 url: /net/latex-repair/
-description: La solución API Aspose.TeX para la reparación de .NET LaTeX se describe en este artículo. Conozca los ejemplos de código sobre cómo utilizar la funcionalidad.
+description: La solución Aspose.TeX para la reparación de .NET LaTeX se describe en este artículo. Conozca los ejemplos de código sobre cómo utilizar la funcionalidad.
 lastmod: "2024-10-30"
 ---
 

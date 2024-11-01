@@ -5,7 +5,7 @@ title: Інші вихідні формати перетворення TeX | Jav
 linktitle: Інші формати TeX
 weight: 18
 url: /java/other-tex-formats/
-description: Функція перетворення рішення Aspose.TeX API для Java дозволяє конвертувати файли LaTeX і ваші власні файли TeX. Ось кілька прикладів коду.
+description: Функція перетворення рішення Aspose.TeX API для Java дозволяє конвертувати файли LaTeX і ваші власні файли TeX.
 lastmod: 2024-09-20
 ---
 

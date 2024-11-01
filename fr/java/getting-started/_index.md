@@ -5,7 +5,7 @@ title: Commencer | Aspose.TeX pour Java
 linktitle: Commencer
 weight: 10
 url: /java/getting-started/
-description: API Java permettant aux développeurs de manipuler et de traiter les fichiers TeX et LaTeX. Apprenez les principes fondamentaux pour commencer à travailler avec la solution.
+description: API Java permettant de manipuler et de traiter les fichiers TeX et LaTeX. Apprenez les principes fondamentaux pour commencer à travailler avec la solution.
 lastmod: "2024-09-27"
 ---
 

@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-python-net.md
-title: Paquetes LaTeX externos | Pitón
+title: Paquetes LaTeX externos | Python 
 linktitle: Paquetes externos de LaTeX
 weight: 19
 url: /python-net/external-latex-packages/

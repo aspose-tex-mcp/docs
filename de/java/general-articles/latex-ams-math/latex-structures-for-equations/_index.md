@@ -2,11 +2,11 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: Anzeige und Ausrichtung
-title: 2. Anzeige und Ausrichtung für LaTeX-Gleichungen | LaTeX ausrichten
+title: 2. Anzeige und Ausrichtung für LaTeX-Gleichungen | LaTeX
 weight: 10
 url: /java/latex-structures-for-equations/
 keywords: ams-latex, amsmath, amsmath-Optionen, Latex-Gleichungsausrichtung, leqno, eqno, fleqn, Latex-Gleichungs-Tag, Latex-Gleichungsbezeichnung, Latex-Gleichungen ausrichten
-description: Dies ist eine Einführung in das Setzen von LaTeX-Gleichungen mit AMS-LATEX-Paketen und enthält einige Beispiele und deren Erklärungen. LaTeX richtet Gleichungen aus.
+description: Dies ist eine Einführung in das Setzen von LaTeX-Gleichungen mit AMS-LATEX-Paketen und enthält einige Beispiele und deren Erklärungen. 
 lastmod: "2024-09-26"
 ---
 

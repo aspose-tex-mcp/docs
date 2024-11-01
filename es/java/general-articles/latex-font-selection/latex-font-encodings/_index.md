@@ -6,7 +6,7 @@ title: Codificaciones de entrada y salida.
 weight: 10
 url: /java/latex-font-encodings/
 keywords: látex, fuentes de látex, codificaciones de fuentes de látex, nfss
-description: Este artículo explica brevemente los conceptos de codificaciones de entrada y salida en LaTeX. También menciona el nuevo esquema de selección de fuentes (NFSS).
+description: Este artículo explica brevemente los conceptos de codificaciones de entrada y salida en LaTeX. También menciona el nuevo esquema de selección de fuentes.
 lastmod: "2024-10-30"
 ---
 

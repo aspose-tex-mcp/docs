@@ -5,7 +5,7 @@ title: E/S TeX | Solution API Aspose.TeX pour .NET
 linktitle: E/S TeX
 weight: 12
 url: /net/tex-io/
-description: Principes fondamentaux du travail avec TeX comme format de sortie ou d'entrée dans l'API Aspose.TeX. Le travail TeX s'exécute sur un fichier explicitement spécifié.
+description: Principes fondamentaux du travail avec TeX comme format de sortie ou d'entrée dans. Le travail TeX s'exécute sur un fichier spécifié spécifié.
 lastmod: "2024-09-27"
 ---
 

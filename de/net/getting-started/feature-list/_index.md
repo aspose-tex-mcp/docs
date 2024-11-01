@@ -5,7 +5,7 @@ title: Funktionsliste | Aspose.TeX für .NET
 linktitle: Funktionsliste
 weight: 30
 url: /net/feature-list/
-description: Fügen Sie die Funktionalität zur Bearbeitung von TeX-Dateien zu Ihrer eigenen Lösung hinzu. Erfahren Sie mehr über die Funktionen, die Ihnen die Aspose.TeX-API-Lösung für .NET bietet.
+description: Fügen Sie Ihrer Lösung eine TeX-Dateibearbeitungsfunktion hinzu. Erfahren Sie mehr über die Funktionen von Aspose.TeX für .NET.
 lastmod: "2024-09-26"
 ---
 

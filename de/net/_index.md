@@ -5,7 +5,7 @@ linktitle: Aspose.TeX für .NET-Dokumentation
 title: Aspose.TeX für .NET API-Lösung
 weight: 10
 url: /net/
-description: Verwalten Sie TeX-Dateien in der API-Lösung für C# .NET. Die Bibliothek bietet Möglichkeiten, TeX-Eingaben zu übergeben und Ausgaben sowie erweiterte Funktionen zu erhalten.
+description: API-Lösung zum Verwalten von TeX-Dateien für .NET. Übergeben Sie TeX-Eingaben, erhalten Sie Ausgaben und erstellen Sie Ihr eigenes TeX-Format.
 aliases:
 - /display/texnet
 is_root: true

@@ -5,7 +5,7 @@ title: Guide du développeur | Aspose.TeX pour C++
 linktitle: Guide du développeur
 weight: 20
 url: /cpp/developer-guide/
-description: API C++ permettant aux développeurs de manipuler et de traiter les fichiers TeX et LaTeX. Découvrez le guide du développeur pour savoir comment utiliser la solution.
+description: API C++ permettant de manipuler et de traiter les fichiers TeX et LaTeX. Découvrez le guide du développeur pour savoir comment utiliser la solution.
 lastmod: "2024-09-27"
 ---
 

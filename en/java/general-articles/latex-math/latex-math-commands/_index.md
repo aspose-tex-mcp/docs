@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: 3. LaTeX commands
-title: LaTeX commands | LaTeX manual
+title: LaTeX commands | LaTeX manual | Aspose.TeX for Java
 weight: 30
 url: /java/latex-math-commands/
 keywords: latex, latex math formulas, latex math, latex math commands, latex square root, latex math underline, latex math overline

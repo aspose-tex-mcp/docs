@@ -5,7 +5,7 @@ title: Representación de fórmulas matemáticas LaTeX | Java
 linktitle: Representación de fórmulas matemáticas LaTeX
 weight: 10
 url: /java/latex-math-formula-rendering/
-description: En este artículo se describe la representación de fórmulas matemáticas de LaTeX dentro de la API Aspose.TeX para Java. Conozca los ejemplos de código sobre cómo utilizar la funcionalidad.
+description: Este artículo describe la representación de fórmulas matemáticas LaTeX dentro de la API Aspose.TeX para Java, explicada con ejemplos de código.
 lastmod: "2024-10-30"
 ---
 

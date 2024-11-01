@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: 2. Характеристики шрифта
-title: Характеристики шрифта
+title: Характеристики шрифта | Aspose.TeX для Java
 weight: 20
 url: /java/latex-font-attributes/
 keywords: латех, латехные шрифты, кодировки латехных шрифтов, nfss

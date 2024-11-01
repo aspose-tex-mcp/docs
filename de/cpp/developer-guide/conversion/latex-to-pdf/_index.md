@@ -6,7 +6,7 @@ linktitle: LaTeX in PDF
 weight: 11
 url: /cpp/latex-to-pdf/
 keywords: Latex in PDF, Latex PDF, Latex in PDF konvertieren
-description: Um TeX mit der Aspose.TeX-API-Lösung für C++ in PDF zu konvertieren, lesen Sie diesen Artikel, in dem die Vorgehensweise und die Codebeispiele beschrieben werden.
+description: Um TeX mit der Aspose.TeX für C++ in PDF zu konvertieren, lesen Sie diesen Artikel, in dem die Vorgehensweise und die Codebeispiele beschrieben werden.
 lastmod: "2024-09-26"
 ---
 

@@ -9,7 +9,7 @@ aliases:
 - /java/latex-to-png/
 - /java/latex-to-svg/
 keywords: látex a png, látex png, látex a imagen, imagen de látex, látex a jpg, látex jpg, látex a jpeg, látex jpeg, látex a tiff, látex tiff, látex a bmp, látex bmp
-description: Para convertir TeX a formatos de imagen utilizando la solución API Aspose.TeX para Java, aprenda este artículo que describe cómo hacerlo y los ejemplos de código.
+description: Para convertir TeX a formatos de imagen utilizando la Aspose.TeX paraJava, aprenda este artículo que describe cómo hacerlo y los ejemplos de código.
 lastmod: "2024-10-30"
 ---
 

@@ -5,7 +5,7 @@ title: Preguntas frecuentes | Aspose.TeX para .NET
 linktitle: Preguntas frecuentes
 weight: 80
 url: /net/faq/
-description: Obtenga respuestas a todas las preguntas más frecuentes sobre Aspose.TeX para .NET, que es una API integral para composición tipográfica y manipulación de TeX y LaTeX.
+description: Obtenga respuestas a preguntas frecuentes sobre Aspose.TeX para .NET, que es una API para componer y manipular TeX y LaTeX.
 lastmod: "2024-10-30"
 ---
 

@@ -5,7 +5,7 @@ title: Otras opciones de gestión de TeX | Java
 linktitle: Otras opciones
 weight: 17
 url: /java/other-options/
-description: La funcionalidad de conversión de la solución API Aspose.TeX para Java permite establecer el modo de interacción inicial en el que se inicia el motor. A continuación se muestran algunos ejemplos de código.
+description: La funcionalidad de conversión de la solución API Aspose.TeX para Java permite establecer el modo de interacción inicial en el que se inicia el motor.
 lastmod: "2024-10-30"
 ---
 

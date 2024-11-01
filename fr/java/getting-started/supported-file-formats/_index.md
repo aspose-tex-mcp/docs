@@ -5,7 +5,7 @@ title: Formats de fichiers pris en charge | Aspose.TeX pour Java
 linktitle: Formats de fichiers pris en charge
 weight: 20
 url: /java/supported-file-formats/
-description: Cette solution de manipulation TeX pour Java prend en charge les fichiers TeX pour l'entrée et une variété de formats de sortie tels que TeX, XPS, PDF, PNG, JPEG, TIFF et PNG.
+description: Cette solution de manipulation TeX pour Java convertit les fichiers TeX en formats de sortie tels que TeX, XPS, PDF, PNG, JPEG, TIFF et PNG.
 lastmod: "2024-09-27"
 ---
 

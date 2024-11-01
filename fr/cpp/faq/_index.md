@@ -5,7 +5,7 @@ title: Foire aux questions | Aspose.TeX pour C++
 linktitle: FAQ
 weight: 80
 url: /cpp/faq/
-description: Obtenez des réponses à toutes les questions les plus fréquentes sur Aspose.TeX pour C++, qui est une API complète pour la composition et la manipulation de TeX et LaTeX.
+description: Obtenez des réponses aux questions fréquemment posées sur Aspose.TeX pour C++, qui est une API pour la composition et la manipulation de TeX et LaTeX.
 lastmod: "2024-09-27"
 ---
 

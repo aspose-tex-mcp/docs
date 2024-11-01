@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: LaTeX-Tabellen
+linktitle: Tabellen in LaTeX
 title: LaTeX-Tabellen | Aspose.TeX für Java
 weight: 50
 url: /java/latex-tables/

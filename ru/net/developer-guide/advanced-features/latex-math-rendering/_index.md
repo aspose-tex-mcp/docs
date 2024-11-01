@@ -1,11 +1,11 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-title: Рендеринг математических формул LaTeX | .СЕТЬ
+title: Рендеринг математических формул LaTeX | .NET 
 linktitle: Отрисовка математических формул LaTeX
 weight: 10
 url: /net/latex-math-formula-rendering/
-description: В этой статье описано решение Aspose.TeX API для рендеринга математических формул .NET LaTeX. Изучите примеры кода о том, как использовать эту функциональность.
+description: В этой статье описано Aspose.TeX API для рендеринга математических формул .NET LaTeX. Изучите примеры кода о том, как использовать эту функциональность.
 lastmod: "2024-09-24"
 ---
 

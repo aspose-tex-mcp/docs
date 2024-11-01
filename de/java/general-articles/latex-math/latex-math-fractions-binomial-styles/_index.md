@@ -6,7 +6,7 @@ title: Brüche, Binomialkoeffizienten und Mathematikstile
 weight: 50
 url: /java/latex-math-fractions-binomial-styles/
 keywords: Latex, Latex-Mathe-Formeln, Latex-Mathematik, Latex-Mathe-Brüche, Latex-Mathe-Binomialkoeffizienten, Latex-Mathe-Stile
-description: Erfahren Sie mehr über das Setzen von mathematischen Konstruktionen wie Brüchen, Binomialkoeffizienten usw. und über die mathematischen Stile, in denen TeX Formeln setzt.
+description: Erfahren Sie über das Setzen von mathematischen Konstruktionen wie Brüchen, Binomialkoeffizienten, die mathematischen Stile, in denen TeX Formeln setzt.
 lastmod: "2024-09-26"
 ---
 

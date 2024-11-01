@@ -1,7 +1,7 @@
 ---
 translation: true
 template: /templates/_template-java.md
-title: LaTeX embedded graphics | Include graphics in the LaTeX code
+title: LaTeX embedded graphics | API for Java
 linktitle: LaTeX embedded graphics
 weight: 18	
 url: /java/latex-graphics-embedding/

@@ -5,7 +5,7 @@ title: Entwicklerhandbuch | Aspose.TeX für .NET
 linktitle: Entwicklerhandbuch
 weight: 30
 url: /net/developer-guide/
-description: In diesem Kapitel wird Entwicklern die Funktionalität der Aspose.TeX-API-Lösung für .NET erläutert und ihnen Codebeispiele zur Verwaltung von TeX bereitgestellt.
+description: Hier wird Entwicklern die Funktionalität der Aspose.TeX-API-Lösung für .NET erläutert und ihnen Codebeispiele zur Verwaltung von TeX bereitgestellt.
 lastmod: "2024-09-26"
 ---
 

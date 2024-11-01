@@ -6,7 +6,7 @@ title: Auswahlschema für LaTeX-Schriftarten
 weight: 60
 url: /java/latex-font-selection/
 keywords: Latex, Latex-Schriftarten, Auswahl von Latex-Schriftarten, NFSS
-description: In diesem Artikel wird kurz die Verwendung von LaTeX-Schriftarten bei der Verarbeitung von Dokumenten beschrieben. Außerdem werden TeX-Schriftartmetriken und Zeichenformen erwähnt.
+description: Lernen Sie die Verwendung von LaTeX-Schriftarten bei der Verarbeitung von Dokumenten. Außerdem werden TeX-Schriftartmetriken und Zeichenformen erwähnt.
 lastmod: "2024-09-26"
 ---
 

@@ -6,7 +6,7 @@ linktitle: LaTeX в XPS
 weight: 12
 url: /python-net/latex-to-xps/
 aliases: /python-net/other-target-formats/
-description: Решение Aspose.TeX API для Python предоставляет функции преобразования для преобразования файлов LaTeX в формат XPS. Вот несколько примеров кода.
+description: Решение Aspose.TeX API для Python предоставляет функции преобразования для преобразования файлов LaTeX в формат XPS.
 lastmod: "2024-09-24"
 ---
 

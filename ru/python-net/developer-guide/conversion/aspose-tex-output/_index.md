@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-python-net.md
-title: Выходной интерфейс Aspose.TeX | Питон
+title: Выходной интерфейс Aspose.TeX | Python
 linktitle: Выходной интерфейс Aspose.TeX
 weight: 16
 url: /python-net/aspose-tex-output/

@@ -2,11 +2,11 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: 2. Schrifteigenschaften
-title: Schrifteigenschaften
+title: Schrifteigenschaften | Aspose.TeX für Java
 weight: 20
 url: /java/latex-font-attributes/
 keywords: Latex, Latex-Schriftarten, Latex-Schriftkodierungen, NFSS
-description: In diesem Artikel werden LaTeX-Schriftklassifizierungen im Hinblick auf verschiedene Schriftmerkmale behandelt. Es erwähnt auch das Konzept der LaTeX-Schriftkodierungen.
+description: Lernen Sie LaTeX-Schriftklassifizierungen im Hinblick auf verschiedene Schriftmerkmale behandelt und das Konzept der LaTeX-Schriftkodierungen.
 lastmod: "2024-09-26"
 ---
 

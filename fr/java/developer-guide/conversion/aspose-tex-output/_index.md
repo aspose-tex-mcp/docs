@@ -5,7 +5,7 @@ title: Interface de sortie d'Aspose.TeX | Java
 linktitle: Interface de sortie d'Aspose.TeX
 weight: 16
 url: /java/aspose-tex-output/
-description: La fonctionnalité de conversion de la solution API Aspose.TeX pour Java avec TeX, en tant que format de sortie, est expliquée ici avec les exemples de code.
+description: De conversion de la solution API Aspose.TeX pour Java avec TeX, en tant que format de sortie, est expliquée ici avec les exemples de code.
 lastmod: "2024-09-27"
 ---
 

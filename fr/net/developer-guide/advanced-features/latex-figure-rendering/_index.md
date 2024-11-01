@@ -5,7 +5,7 @@ title: Rendu de figures LaTeX | Aspose.TeX pour .NET
 linktitle: LaTeX inclut la figure
 weight: 20
 url: /net/latex-figure-rendering/
-description: La solution API Aspose.TeX pour le rendu des fragments (figures) .NET LaTeX est décrite dans cet article. Découvrez les exemples de code sur la façon d’utiliser la fonctionnalité.
+description: Aspose.TeX pour le rendu des fragments .NET LaTeX est décrite dans cet article. Découvrez les exemples de code sur la façon d’utiliser la fonctionnalité.
 keywords: figurine en latex, taille de figurine en latex, image en latex, image en latex, figurine incluse en latex, photo en latex, options de figurine en latex
 lastmod: "2024-09-27"
 ---

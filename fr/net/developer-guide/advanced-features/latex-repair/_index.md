@@ -1,11 +1,11 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-title: Réparation de fichiers LaTeX | .FILET
+title: Réparation de fichiers LaTeX | .NET
 linktitle: Réparation de fichiers LaTeX
 weight: 30
 url: /net/latex-repair/
-description: La solution API Aspose.TeX pour la réparation .NET LaTeX est décrite dans cet article. Découvrez les exemples de code sur la façon d’utiliser la fonctionnalité.
+description: Aspose.TeX pour la réparation .NET LaTeX est décrite dans cet article. Découvrez les exemples de code sur la façon d’utiliser la fonctionnalité.
 lastmod: "2024-09-27"
 ---
 

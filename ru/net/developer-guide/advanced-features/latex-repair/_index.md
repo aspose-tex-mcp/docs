@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-title: Восстановление файлов LaTeX | .СЕТЬ
+title: Восстановление файлов LaTeX | .NET 
 linktitle: восстановление файлов LaTeX
 weight: 30
 url: /net/latex-repair/

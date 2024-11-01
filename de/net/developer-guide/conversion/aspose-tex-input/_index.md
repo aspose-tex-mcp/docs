@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-title: Eingabeschnittstelle von Aspose.TeX | .NETTO
+title: Eingabeschnittstelle von Aspose.TeX | .NET
 linktitle: Die Eingabeschnittstelle von Aspose.TeX
 weight: 15
 url: /net/aspose-tex-input/

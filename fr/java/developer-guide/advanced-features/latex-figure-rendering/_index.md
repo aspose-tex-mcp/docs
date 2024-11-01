@@ -5,7 +5,7 @@ title: Rendu de figures LaTeX | Aspose.TeX pour Java
 linktitle: Rendu de figures LaTeX
 weight: 20
 url: /java/latex-figure-rendering/
-description: La solution API Aspose.TeX pour le rendu des fragments (figures) Java LaTeX est décrite dans cet article. Découvrez les exemples de code sur la façon d’utiliser la fonctionnalité.
+description: Aspose.TeX pour le rendu des fragments Java LaTeX est décrite dans cet article. Découvrez les exemples de code sur la façon d’utiliser la fonctionnalité.
 lastmod: "2024-09-27"
 ---
 

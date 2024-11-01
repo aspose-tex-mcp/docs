@@ -1,12 +1,12 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: Símbolos en fórmulas matemáticas.
-title: 9. Símbolos en fórmulas matemáticas | manual de látex
+linktitle: Símbolos en LaTeX.
+title: 9. Símbolos en fórmulas matemáticas | Manual de látex
 weight: 90
 url: /java/latex-math-symbols/
-keywords: ams-latex, amsmath, amsfonts, amssymb, clases de símbolos matemáticos de látex, paquete stmaryrd, fuente st mary road
-description: Aprenda la clasificación de símbolos matemáticos en TeX y acceda a símbolos de varias clases utilizando comandos del estándar TeX (LaTeX) y el paquete amssymb.
+keywords: ams-latex, amsmath, amsfonts, amssymb, clases de símbolos matemáticos de látex, paquete stmaryrd, fuente st mary road, simbolos en latex
+description: Clasificación de símbolos matematicos LaTeX y acceso a símbolos de varios tipos utilizando comandos estándar de TeX (LaTeX) y el paquete amssymb.
 lastmod: "2024-10-30"
 ---
 

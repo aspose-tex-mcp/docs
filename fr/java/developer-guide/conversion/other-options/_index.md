@@ -5,7 +5,7 @@ title: Autres options de gestion de TeX | Java
 linktitle: Autres options
 weight: 17
 url: /java/other-options/
-description: La fonctionnalité de conversion de la solution API Aspose.TeX pour Java permet de définir le mode d'interaction initial dans lequel le moteur démarre. Voici quelques exemples de code.
+description: De conversion de la solution API Aspose.TeX pour Java permet de définir le mode d'interaction initial dans lequel le moteur démarre.
 lastmod: "2024-09-27"
 ---
 

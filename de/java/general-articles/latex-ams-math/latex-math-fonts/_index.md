@@ -1,11 +1,11 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: Schriftarten in mathematischen Formeln
-title: 8. Schriftarten in mathematischen Formeln | Mathematik für LaTeX-Schriftarten
+linktitle: LaTeX mathe schriftart
+title: 8. Schriftarten in mathematischen Formeln  | LaTeX
 weight: 80
 url: /java/latex-math-fonts/
-keywords: ams-latex, amsmath, amsfonts, amssymb, Latex-Math-Schriftarten, Latex-Math-Alphabete, Latex-BM-Paket, Latex-Schriftarten, Latex-Schriftarten Mathe
+keywords: latex fett schreiben, entspricht zeichen latex, mathematisches alphabet, latex kleiner gleich, Latex-Math-Schriftarten, Latex-Math-Alphabete, Latex-BM-Paket, Latex-Schriftarten, Latex-Schriftarten Mathe
 description: In diesem Artikel wird der Umgang mit mathematischen Schriftarten mithilfe von Standard-LaTeX sowie die Verwendung der Pakete amsmath und bm erläutert.
 lastmod: "2024-09-26"
 ---

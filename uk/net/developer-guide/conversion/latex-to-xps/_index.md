@@ -6,7 +6,7 @@ linktitle: LaTeX до XPS
 weight: 12
 url: /net/latex-to-xps/
 aliases: /net/other-target-formats/
-description: Функція перетворення рішення Aspose.TeX API для .NET дозволяє конвертувати файли LaTeX у формат XPS. Ось кілька прикладів коду.
+description: Функція перетворення рішення Aspose.TeX API для .NET дозволяє конвертувати файли LaTeX у формат XPS.
 lastmod: 2024-09-20
 ---
 

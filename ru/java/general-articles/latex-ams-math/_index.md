@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: Пакеты LaTeX от AMS
-title: Построение математических вычислений с помощью пакетов LaTeX от AMS
+title: Построение математических вычислений с пакетами LaTeX от AMS
 weight: 40
 url: /java/what-is-ams-latex/
 keywords: ams-latex, ams latex, математика латеха, формула латеха, латех ams, уравнение латеха, математическое выражение латеха

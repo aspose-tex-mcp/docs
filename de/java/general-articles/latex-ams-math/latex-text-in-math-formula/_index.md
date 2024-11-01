@@ -6,7 +6,7 @@ title: 6. Text in mathematischen Formeln | LaTeX-Handbuch
 weight: 60
 url: /java/latex-text-in-math-formula/
 keywords: ams-latex, amsmath, Latex-Mathe-Operatoren, Latex-Mathe-Funktionen, Latex-Mathe-Text
-description: In diesem Artikel wird das Einfügen von Text in mathematische LaTeX-Formeln erläutert. Außerdem werden mathematische Funktionen und Operatoren sowie die Methode zu deren Definition beschrieben.
+description: Im Artikel wird das Einfügen von Text in LaTeX-Formeln, mathematische Funktionen und Operatoren sowie die Methode zu deren Definition erläutert.
 lastmod: "2024-09-26"
 ---
 

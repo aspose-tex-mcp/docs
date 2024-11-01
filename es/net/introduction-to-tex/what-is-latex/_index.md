@@ -6,7 +6,7 @@ linktitle: ¿Qué es Látex?
 weight: 16
 url: /net/what-is-latex/
 keywords: ¿Qué es el látex? ¿Qué es el látex?
-description: Para responder a la pregunta "¿Qué es LaTeX?" Cabe mencionar que una de sus características más impresionantes es el Nuevo esquema de selección de fuentes (NFSS).
+description: Para responder a la pregunta “¿Qué es LaTeX?” recuerde que una de sus características más impresionantes es el Nuevo Esquema de Selección de Fuentes(NFSS).
 lastmod: "2024-10-30"
 ---
 

@@ -5,7 +5,7 @@ title: Representación de figuras LaTeX | Aspose.TeX para Java
 linktitle: Representación de figuras de LaTeX
 weight: 20
 url: /java/latex-figure-rendering/
-description: En este artículo se describe la solución API Aspose.TeX para la representación de fragmentos (figuras) de Java LaTeX. Conozca los ejemplos de código sobre cómo utilizar la funcionalidad.
+description: En artículo se describe la Aspose.TeX para la representación de fragmentos (figuras) de Java LaTeX. Conozca los ejemplos de código sobre cómo utilizar la funcionalidad.
 lastmod: "2024-10-30"
 ---
 

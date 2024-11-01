@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: 5. Interfaz de bajo nivel
-title: La interfaz de bajo nivel
+title: La interfaz de bajo nivel | API para Java
 weight: 50
 url: /java/latex-fonts-low-level/
 keywords: látex, fuentes de látex, sustitución de fuentes de látex, familias de fuentes de látex, series de fuentes de látex, formas de fuentes de látex

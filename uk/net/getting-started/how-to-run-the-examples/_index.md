@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-net.md
 linktitle: Як запустити приклади
-title: Як запустити приклади на C# | Aspose.TeX для .NET
+title: Як запустити приклади коду на C# | Aspose.TeX для .NET
 weight: 80
 url: /net/how-to-run-the-examples/
 description: На цій сторінці ви знайдете всі вимоги та кроки, які слід виконати для запуску прикладів рішення Aspose.TeX для .NET.

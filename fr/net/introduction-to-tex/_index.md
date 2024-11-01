@@ -5,7 +5,7 @@ linktitle: Introduction à TeX
 title: Introduction aux TeX | Aspose.TeX
 weight: 10
 url: /net/introduction-to-tex/
-description: Explication des termes et concepts de base de TeX. TeX est-il un format, comment travailler avec le fichier TeX, qu'est-ce que LaTeX et bien d'autres questions trouvent des réponses.
+description: Termes et concepts de base de TeX. TeX est-il un format, comment travailler avec le fichier TeX, qu'est-ce que LaTeX et bien d'autres questions.
 lastmod: "2024-09-27"
 ---
 

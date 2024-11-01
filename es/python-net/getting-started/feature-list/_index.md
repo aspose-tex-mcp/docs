@@ -5,7 +5,7 @@ title: Lista de funciones | Aspose.TeX para Python
 linktitle: Lista de funciones
 weight: 30
 url: /python-net/feature-list/
-description: Mejore su propia solución incorporando la capacidad de manipular archivos TeX. Conozca las características que le ofrece la solución API Aspose.TeX para Python.
+description: Agregue la función de edición de archivos TeX a su solución. Conozca las características que ofrece Aspose.TeX para Python.
 lastmod: "2024-10-30"
 ---
 

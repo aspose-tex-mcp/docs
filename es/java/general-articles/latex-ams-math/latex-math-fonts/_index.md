@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: Fuentes en fórmulas matemáticas.
-title: 8. Fuentes en fórmulas matemáticas | Matemáticas de fuentes LaTeX
+title: 8. Fuentes en fórmulas matemáticas | Matemáticas de fuentes
 weight: 80
 url: /java/latex-math-fonts/
 keywords: ams-latex, amsmath, amsfonts, amssymb, fuentes matemáticas de látex, alfabetos matemáticos de látex, paquete bm de látex, fuentes de látex, fuentes matemáticas de látex

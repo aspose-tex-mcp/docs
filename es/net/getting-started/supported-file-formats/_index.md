@@ -5,7 +5,7 @@ title: Formatos de archivo admitidos | Aspose.TeX .NET
 linktitle: Formatos de archivo admitidos
 weight: 20
 url: /net/supported-file-formats/
-description: Esta solución de manipulación TeX para .NET admite archivos TeX para entrada y una variedad de formatos de salida como TeX, XPS, PDF, PNG, JPEG, TIFF y PNG.
+description: Esta solución de manipulación TeX para .NET admite archivos TeX para entrada y una variedad de formatos de salida como TeX, XPS, PDF, JPEG, TIFF y PNG.
 lastmod: "2024-10-30"
 ---
 

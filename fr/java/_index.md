@@ -5,7 +5,7 @@ title: Aspose.TeX pour la solution API Java
 linktitle: Aspose.TeX pour Java Documentation
 weight: 20
 url: /java/
-description: Gérez les fichiers TeX dans la solution API pour Java. La bibliothèque fournit des moyens de transmettre les entrées TeX et d'obtenir des sorties et des fonctionnalités telles que la création de votre propre format TeX.
+description: Solution API pour la gestion des fichiers TeX pour Java. Transmettez l'entrée TeX et obtenez la sortie, et créez votre propre format TeX.
 is_root: true
 lastmod: "2024-09-27"
 ---

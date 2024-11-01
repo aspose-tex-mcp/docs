@@ -5,7 +5,7 @@ title: Commencer | Aspose.TeX pour .NET
 linktitle: Commencer
 weight: 20
 url: /net/getting-started/
-description: API C# .NET permettant aux développeurs de manipuler et de traiter les fichiers TeX et LaTeX. Apprenez les principes fondamentaux pour commencer à travailler avec la solution.
+description: API .NET permettant de manipuler et de traiter les fichiers TeX et LaTeX. Apprenez les principes fondamentaux pour commencer à travailler avec la solution.
 lastmod: "2024-09-27"
 ---
 

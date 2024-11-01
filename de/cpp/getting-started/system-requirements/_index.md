@@ -5,7 +5,7 @@ title: Systemanforderungen | Aspose.TeX für C++
 linktitle: Systemanforderungen
 weight: 50
 url: /cpp/system-requirements/
-description: Die Aspose.TeX-Lösung für C++ kann in jeder Entwicklungsumgebung verwendet werden, die C++ unterstützt, es gibt jedoch einige Umgebungen, die explizit unterstützt werden.
+description: Aspose.TeX kann in jeder Entwicklungsumgebung verwendet werden, die C++ unterstützt, es gibt jedoch einige Umgebungen, die explizit unterstützt werden.
 lastmod: "2024-09-26"
 ---
 

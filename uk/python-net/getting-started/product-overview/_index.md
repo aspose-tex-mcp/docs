@@ -5,7 +5,7 @@ title: Огляд продукту | Aspose.TeX для Python
 linktitle: Огляд продукту
 weight: 10
 url: /python-net/product-overview/
-description: Aspose.TeX — це бібліотека Python, яка дозволяє верстку файлів TeX. Він також пропонує такі функції, як можливості перетворення та створення спеціальних форматів TeX.
+description: Aspose.TeX — це бібліотека Python, для верстки файлів TeX і також пропонує такі функції, як можливості перетворення та створення спеціальних форматів TeX.
 lastmod: 2024-09-20
 ---
 

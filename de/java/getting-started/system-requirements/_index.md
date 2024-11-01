@@ -5,7 +5,7 @@ title: Systemanforderungen | Aspose.TeX für Java
 linktitle: Systemanforderungen
 weight: 50
 url: /java/system-requirements/
-description: Die Aspose.TeX-Lösung für Java kann in jeder Entwicklungsumgebung verwendet werden, die Java unterstützt, es gibt jedoch einige Umgebungen, die explizit unterstützt werden.
+description: Die Aspose.TeX-Lösung für Java kann in jeder Entwicklungsumgebung verwendet werden, die Java unterstützt, einige werden jedoch ausdrücklich unterstützt.
 lastmod: "2024-09-26"
 ---
 

@@ -6,7 +6,7 @@ title: Encodages d'entrée et de sortie
 weight: 10
 url: /java/latex-font-encodings/
 keywords: latex, polices latex, encodages de polices latex, nfss
-description: Cet article explique brièvement les concepts d'encodages d'entrée et de sortie dans LaTeX. Il mentionne également le nouveau système de sélection de polices (NFSS).
+description: Cet article explique brièvement les concepts d'encodages d'entrée et de sortie dans LaTeX et le nouveau système de sélection de polices (NFSS).
 lastmod: "2024-09-27"
 ---
 

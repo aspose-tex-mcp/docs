@@ -5,7 +5,7 @@ linktitle: Instalación
 title: Instalación - Aspose.TeX para .NET
 weight: 60
 url: /net/installation/
-description: La documentación de la API de Aspose.TeX para .NET se puede encontrar en el paquete ZIP descargado o en la Galería NuGet, haciendo clic en "Descargar paquete".
+description: Aspose.TeX para .NET se puede encontrar en el paquete ZIP descargado o se puede descargar desde NuGet haciendo clic en "Descargar paquete".
 lastmod: "2024-10-30"
 ---
 

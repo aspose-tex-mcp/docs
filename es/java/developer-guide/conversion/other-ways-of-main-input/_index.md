@@ -1,11 +1,11 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-title: Otras formas de proporcionar el archivo de entrada TeX principal | Java
+title: Proporcionar el archivo de entrada TeX principal | Java
 linktitle: Otras formas de proporcionar el archivo de entrada TeX principal
 weight: 14
 url: /java/other-ways-of-main-input/
-description: La funcionalidad de conversión de la solución API Aspose.TeX para Java tiene un constructor que acepta una secuencia como primer argumento. A continuación se muestran algunos ejemplos de código.
+description: La funcionalidad de conversión de la solución API Aspose.TeX para Java tiene un constructor que acepta una secuencia como primer argumento.
 lastmod: "2024-10-30"
 ---
 

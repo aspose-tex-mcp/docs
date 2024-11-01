@@ -5,7 +5,7 @@ title: LaTeX vers XPS | Aspose.TeX pour C++
 linktitle: LaTeX vers XPS
 weight: 12
 url: /cpp/latex-to-xps/
-description: La fonctionnalité de conversion de la solution API Aspose.TeX pour C++ permet de convertir les fichiers LaTeX au format XPS. Voici quelques exemples de code.
+description: De conversion de la solution API Aspose.TeX pour C++ permet de convertir les fichiers LaTeX au format XPS.
 lastmod: "2024-09-27"
 ---
 

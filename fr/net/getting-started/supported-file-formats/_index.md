@@ -5,7 +5,7 @@ title: Formats de fichiers pris en charge | Aspose.TeX .NET
 linktitle: Formats de fichiers pris en charge
 weight: 20
 url: /net/supported-file-formats/
-description: Cette solution de manipulation TeX pour .NET prend en charge les fichiers TeX pour l'entrée et une variété de formats de sortie tels que TeX, XPS, PDF, PNG, JPEG, TIFF et PNG.
+description: Cette solution de manipulation TeX pour .NET convertit les fichiers TeX en formats de sortie tels que TeX, XPS, PDF, PNG, JPEG, TIFF et PNG.
 lastmod: "2024-09-27"
 ---
 

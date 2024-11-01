@@ -2,11 +2,11 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: 2. Caractéristiques des polices
-title: Caractéristiques de la police
+title: Caractéristiques de la police | API pour Java
 weight: 20
 url: /java/latex-font-attributes/
 keywords: latex, polices latex, encodages de polices latex, nfss
-description: Cet article couvre les classifications des polices LaTeX en ce qui concerne diverses caractéristiques des polices. Il mentionne également le concept d'encodage de polices LaTeX.
+description: Cet article couvre les classifications des polices LaTeX en fonction de diverses caractéristiques de police et du codage des polices LaTeX.
 lastmod: "2024-09-27"
 ---
 

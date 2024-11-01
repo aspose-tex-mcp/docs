@@ -5,7 +5,7 @@ title: Aspose.TeX pour la solution API C++
 linktitle: Aspose.TeX pour la documentation C++
 weight: 30
 url: /cpp/
-description: Solution API de gestion des fichiers TeX pour C++. La bibliothèque fournit des moyens de transmettre l'entrée TeX et d'obtenir une sortie et des fonctionnalités telles que la création de votre propre format TeX.
+description: Solution API pour la gestion des fichiers TeX pour C++. Transmettez l'entrée TeX et obtenez la sortie, et créez votre propre format TeX.
 is_root: true
 lastmod: "2024-09-27"
 ---

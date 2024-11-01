@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-title: Зовнішні пакети LaTeX | Java
+title: Зовнішні пакети LaTeX | Aspose.TeX для Java
 linktitle: Зовнішні пакети LaTeX
 weight: 30
 url: /java/external-latex-packages/

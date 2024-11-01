@@ -5,7 +5,7 @@ title: Поддерживаемые форматы файлов | Aspose.TeX д�
 linktitle: Поддерживаемые форматы файлов
 weight: 20
 url: /python-net/supported-file-formats/
-description: Это решение Python для управления файлами TeX поддерживает файлы TeX в качестве входных и различных форматов вывода, включая TeX, XPS, PDF, PNG, JPEG, TIFF и BMP.
+description: Решение Python для управления файлами TeX поддерживает TeX в качестве входных и различных форматов вывода, включая TeX, XPS, PDF, PNG, JPEG, TIFF и BMP.
 lastmod: "2024-09-24"
 ---
 

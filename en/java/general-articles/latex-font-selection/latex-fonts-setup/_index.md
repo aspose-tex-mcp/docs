@@ -1,7 +1,7 @@
 ---
 translation: true
 template: /templates/_template-java.md
-title: How to set up new fonts
+title: How to set up new fonts | Aspose.TeX for Java
 linktitle: 6. How to set up new fonts
 weight: 60
 url: /java/latex-fonts-setup/

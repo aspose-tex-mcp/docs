@@ -2,10 +2,10 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: 4. Стандартные шрифты LaTeX.
-title: Стандартные шрифты LaTeX
+title: Стандартные шрифты LaTeX | Aspose.TeX для Java
 weight: 40
 url: /java/latex-standard-fonts/
-keywords: латех, латехные шрифты, стандартные латехные шрифты, кодировка латехных шрифтов, трассировка, nfssfont.tex
+keywords: шрифты латех, латехные шрифты, стандартные латехные шрифты, кодировка латехных шрифтов, трассировка, nfssfont.tex, шрифт latex
 description: Эта статья представляет собой краткое введение в стандартные текстовые шрифты, распространяемые вместе с LaTeX.
 lastmod: "2024-09-24"
 ---

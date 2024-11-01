@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-title: Як налаштувати нові шрифти
+title: Як налаштувати нові шрифти | Aspose.TeX для Java
 linktitle: 6. Як налаштувати нові шрифти
 weight: 60
 url: /java/latex-fonts-setup/

@@ -1,11 +1,11 @@
 ﻿---
 translation: true
 template: /templates/_template-python-net.md
-title: Fonctionnalité de conversion | Aspose.TeX pour Python via .NET
+title: Fonctionnalité de conversion | Aspose.TeX pour Python
 linktitle: Conversion
 weight: 10
 url: /python-net/conversion/
-description: La fonctionnalité de conversion de la solution API Aspose.TeX pour Python prend en charge les prochains formats de sortie TeX, XPS, PDF, PNG, JPEG, TIFF et PNG.
+description: De conversion de la solution API Aspose.TeX pour Python prend en charge les prochains formats de sortie TeX, XPS, PDF, PNG, JPEG, TIFF et PNG.
 lastmod: "2024-09-27"
 ---
 

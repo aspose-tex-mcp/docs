@@ -5,7 +5,7 @@ title: Systemanforderungen | Aspose.TeX Python
 linktitle: Systemanforderungen
 weight: 50
 url: /python-net/system-requirements/
-description: Python-Bibliothek für Entwickler zur Verarbeitung von TeX(LaTeX)-Dateien. Erfahren Sie mehr über die Systemanforderungen, um mit der Verwendung der Aspose.TeX-API-Lösung für Python zu beginnen.
+description: Python-Bibliothek zur Verarbeitung von TeX(LaTeX). Erfahren Sie über die Systemanforderungen, um mit der Verwendung der Aspose.TeX für Python zu beginnen.
 lastmod: "2024-09-26"
 ---
 

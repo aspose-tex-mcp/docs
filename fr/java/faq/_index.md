@@ -1,11 +1,11 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-title: Foire aux questions | Aspose.TeX pour C++
+title: Foire aux questions | Aspose.TeX pour Java
 linktitle: FAQ
 weight: 80
 url: /java/faq/
-description: Obtenez des réponses à toutes les questions les plus fréquentes sur Aspose.TeX pour Java, qui est une API complète pour la composition et la manipulation de TeX et LaTeX.
+description: Obtenez des réponses aux questions fréquemment posées sur Aspose.TeX pour Java, qui est une API pour la composition et la manipulation de TeX et LaTeX.
 lastmod: "2024-09-27"
 ---
 

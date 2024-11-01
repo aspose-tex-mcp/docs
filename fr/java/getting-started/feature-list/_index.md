@@ -5,7 +5,7 @@ title: Liste des fonctionnalités | Aspose.TeX pour Java
 linktitle: Liste des fonctionnalités
 weight: 30
 url: /java/feature-list/
-description: Ajoutez la fonctionnalité de manipulation de fichiers TeX à votre propre solution. Découvrez les fonctionnalités que la solution API Aspose.TeX pour Java vous offre.
+description: Ajoutez la fonctionnalité d'édition de fichiers TeX à votre solution. Découvrez les fonctionnalités offertes par Aspose.TeX pour Java.
 lastmod: "2024-09-27"
 ---
 

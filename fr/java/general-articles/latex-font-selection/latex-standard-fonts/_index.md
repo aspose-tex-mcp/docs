@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: 4. Polices LaTeX standard
-title: Polices LaTeX standards
+title: Polices LaTeX standards | API pour Java
 weight: 40
 url: /java/latex-standard-fonts/
 keywords: latex, polices latex, polices standard latex, encodage des polices latex, tracefnt, nfssfont.tex

@@ -5,7 +5,7 @@ title: Packages LaTeX externes | Java
 linktitle: Packages LaTeX externes
 weight: 30
 url: /java/external-latex-packages/
-description: L'API Aspose.TeX pour Java permet l'utilisation de packages externes, c'est-à-dire ceux qui ne sont pas inclus dans la bibliothèque elle-même, comme les packages fancybox ou pgfplots.
+description: Aspose.TeX pour Java permet l'utilisation de packages non inclus dans la bibliothèque elle-même, tels que les packages fancybox ou pgfplots.
 lastmod: "2024-09-27"
 ---
 

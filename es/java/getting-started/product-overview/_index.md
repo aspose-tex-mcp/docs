@@ -5,7 +5,7 @@ title: Descripción general del producto | Aspose.TeX para Java
 linktitle: Descripción general del producto
 weight: 10
 url: /java/product-overview/
-description: Aspose.TeX es una biblioteca Java para la composición tipográfica de archivos TeX. Le proporciona una rica funcionalidad como la conversión o la creación de su propio formato TeX.
+description: Aspose.TeX para Java es una biblioteca para la composición tipográfica de archivos TeX. Con ella también puedes convertir o crear tu propio formato TeX.
 lastmod: "2024-10-30"
 ---
 

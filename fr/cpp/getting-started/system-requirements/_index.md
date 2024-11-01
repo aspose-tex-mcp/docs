@@ -5,7 +5,7 @@ title: Configuration système requise | Aspose.TeX pour C++
 linktitle: Configuration système requise
 weight: 50
 url: /cpp/system-requirements/
-description: La solution Aspose.TeX pour C++ peut être utilisée dans n'importe quel environnement de développement prenant en charge C++, mais certains environnements sont explicitement pris en charge.
+description: Aspose.TeX pour C++ peut être utilisé dans n'importe quel environnement prenant en charge C++, mais ceux-ci sont explicitement pris en charge.
 lastmod: "2024-09-27"
 ---
 

@@ -5,7 +5,7 @@ title: Andere TeX-Konvertierungsausgabeformate | Java
 linktitle: Andere TeX-Formate
 weight: 18
 url: /java/other-tex-formats/
-description: Die Konvertierungsfunktion der Aspose.TeX-API-Lösung für Java ermöglicht die Konvertierung von LaTeX-Dateien und Ihren eigenen benutzerdefinierten TeX-Dateien. Hier sind einige Codebeispiele.
+description: Die Konvertierungsfunktion der Aspose.TeX-API für Java ermöglicht die Konvertierung von LaTeX-Dateien und Ihren eigenen benutzerdefinierten TeX-Dateien.
 lastmod: "2024-09-26"
 ---
 

@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: Font selection scheme
-title: LaTeX font selection scheme
+title: LaTeX font selection scheme | Aspose.TeX for Java
 weight: 60
 url: /java/latex-font-selection/
 keywords: latex, latex fonts, latex font selection, nfss

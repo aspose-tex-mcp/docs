@@ -5,7 +5,7 @@ title: Formats de fichiers pris en charge | Aspose.TeX pour Python
 linktitle: Formats de fichiers pris en charge
 weight: 20
 url: /python-net/supported-file-formats/
-description: Cette solution Python pour manipuler les fichiers TeX prend en charge les fichiers TeX en entrée et divers formats de sortie, notamment TeX, XPS, PDF, PNG, JPEG, TIFF et BMP.
+description: Cette solution de manipulation TeX pour Python convertit les fichiers TeX en formats de sortie tels que TeX, XPS, PDF, PNG, JPEG, TIFF et PNG.
 lastmod: "2024-09-27"
 ---
 
