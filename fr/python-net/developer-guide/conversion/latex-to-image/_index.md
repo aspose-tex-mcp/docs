@@ -9,7 +9,7 @@ aliases:
 - /python-net/latex-to-png/
 - /python-net/latex-to-svg/
 keywords: latex à png, latex png, latex à image, image latex, latex à jpg, latex jpg, latex à jpeg, latex jpeg, latex à tiff, latex tiff, latex à bmp, latex bmp
-description: Pour convertir TeX en formats d'image à l'aide de la solution API Aspose.TeX pour Python, lisez cet article pour voir qui décrit comment procéder ainsi que les exemples de code.
+description: Pour convertir TeX en formats d'image à l'aide de Aspose.TeX pour Python, lisez cet article pour voir qui décrit comment procéder ainsi que les exemples de code
 lastmod: "2024-09-27"
 ---
 

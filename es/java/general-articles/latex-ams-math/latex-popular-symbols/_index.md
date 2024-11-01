@@ -2,11 +2,11 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: Símbolos matemáticos de LaTeX y sus compañeros
-title: 10. Los símbolos matemáticos de LaTeX más populares y sus compañeros
+title: 10. Los símbolos matemáticos de LaTeX y sus compañeros
 weight: 100
 url: /java/popular-latex-math-symbols/
 keywords: suma de látex, suma de látex, límite de látex, límites de látex, látex grande, suma grande de látex
-description: Aprenda cómo obtener símbolos de suma y límite de LaTeX. El artículo también cubre el ajuste del tamaño de los operadores y el posicionamiento de los límites de los operadores.
+description: Aprenda cómo obtener símbolos de suma y límite de LaTeX, así como el tamaño del operador y el posicionamiento del límite del operador.
 lastmod: "2024-10-30"
 ---
 

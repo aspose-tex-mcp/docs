@@ -6,7 +6,7 @@ linktitle: Qu’est-ce que LaTeX ?
 weight: 16
 url: /net/what-is-latex/
 keywords: qu'est-ce que le latex, qu'est-ce que le latex
-description: Pour répondre à la question « Qu'est-ce que LaTeX ? » il convient de mentionner que l'une de ses fonctionnalités les plus impressionnantes est le nouveau système de sélection de polices (NFSS).
+description: Pour répondre à la question « Qu'est-ce que LaTeX ? », découvrez sa fonctionnalité la plus impressionnante - le nouveau système de sélection de polices.
 lastmod: "2024-09-27"
 ---
 

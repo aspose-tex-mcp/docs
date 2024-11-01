@@ -1,11 +1,11 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-title: Autres formats de sortie de conversion TeX | .FILET
+title: Autres formats de sortie de conversion TeX | .NET
 linktitle: Autres formats TeX
 weight: 18
 url: /net/other-tex-formats/
-description: La fonctionnalité de conversion de la solution API Aspose.TeX pour .NET permet de convertir des fichiers LaTeX et vos propres fichiers TeX personnalisés. Voici quelques exemples de code.
+description: De conversion de la solution API Aspose.TeX pour .NET permet de convertir des fichiers LaTeX et vos propres fichiers TeX personnalisés.
 lastmod: "2024-09-27"
 ---
 

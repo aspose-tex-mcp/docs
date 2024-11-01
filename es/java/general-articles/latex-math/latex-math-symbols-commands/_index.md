@@ -6,7 +6,7 @@ title: Apéndice. Símbolos y comandos matemáticos | manual de látex
 weight: 100
 url: /java/latex-math-symbols-commands/
 keywords: látex, fórmulas matemáticas de látex, matemáticas de látex, símbolos matemáticos de látex, letras griegas de látex, operadores grandes de látex, relaciones matemáticas de látex, operaciones binarias de látex, flechas matemáticas de látex
-description: Este artículo analiza diferentes símbolos y comandos matemáticos de LaTeX y su significado. Aprenda a insertar operadores, letras griegas, etc. dentro de LaTeX.
+description: Este artículo analiza símbolos y comandos matemáticos de LaTeX y su significado. Aprenda a insertar operadores, letras griegas, etc. dentro de LaTeX.
 lastmod: "2024-10-30"
 ---
 

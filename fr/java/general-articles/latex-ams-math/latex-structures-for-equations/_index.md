@@ -2,11 +2,11 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: Affichage et alignement
-title: 2. Affichage et alignement des équations LaTeX | Aligner LaTeX
+title: 2. Affichage et alignement des équations LaTeX | LaTeX
 weight: 10
 url: /java/latex-structures-for-equations/
 keywords: ams-latex, amsmath, options amsmath, alignement des équations en latex, leqno, eqno, fleqn, étiquette d'équation en latex, étiquette d'équation en latex, équations d'alignement en latex
-description: Ceci est une introduction à la composition d'équations LaTeX avec les packages AMS-LATEX et fournit quelques exemples et leurs explications. LaTeX aligne les équations.
+description: Ceci est une introduction à la composition d'équations LaTeX avec les packages AMS-LATEX et fournit quelques exemples et leurs explications.
 lastmod: "2024-09-27"
 ---
 

@@ -5,7 +5,7 @@ title: Gráficos de látex | comando \incluir gráficos
 linktitle: gráficos de látex
 weight: 18
 url: /net/latex-graphics/
-description: La inclusión de gráficos en TeX es un tema que vale la pena mencionar. Al hablar de ello, lo primero que me viene a la mente es el comando `\includegraphics`.
+description: La inclusión de gráficos en TeX es un tema que vale la pena mencionar. Al hablar de ello, lo primero que hay que mencionar es el comando `\includegraphics`
 lastmod: "2024-10-30"
 ---
 

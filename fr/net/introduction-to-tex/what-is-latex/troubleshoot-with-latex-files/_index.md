@@ -1,12 +1,12 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-title: Problèmes courants avec les fichiers LaTeX et comment les résoudre
+title: Problèmes avec les fichiers LaTeX et comment les résoudre
 linktitle: Dépannage avec les fichiers LaTeX
 weight: 10
 url: /net/troubleshoot-with-latex-files/
 keywords: problèmes avec les fichiers LaTeX, documents LaTeX corrompus, fichiers LaTeX corrompus, fichier LaTeX cassé, problèmes avec les fichiers LaTeX, erreurs dans LaTeX
-description: Conseils pratiques pour dépanner les fichiers LaTeX, résoudre les erreurs, les problèmes de compilation, les conflits de packages et les bogues de formatage pour une création transparente de documents.
+description: Conseils pratiques pour dépanner les fichiers LaTeX, résoudre les erreurs, les problèmes de compilation, les conflits de packages et les bogues.
 lastmod: "2024-09-27"
 ---
 

@@ -2,11 +2,11 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: Symboles mathématiques LaTeX et leurs compagnons
-title: 10. Symboles mathématiques LaTeX les plus populaires et leurs compagnons
+title: 10. Symboles mathématiques LaTeX et leurs compagnons
 weight: 100
 url: /java/popular-latex-math-symbols/
 keywords: somme de latex, somme de latex, limite de latex, limites de latex, grande somme de latex, grosse somme de latex
-description: Découvrez comment obtenir la sommation LaTeX et les symboles de limite LaTeX. L'article couvre également l'ajustement de la taille des opérateurs et le positionnement des limites des opérateurs.
+description: Découvrez comment obtenir la sommation LaTeX et les symboles de limite LaTeX, ajuster les tailles des opérateurs et positionner les limites des opérateurs.
 lastmod: "2024-09-27"
 ---
 

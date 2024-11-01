@@ -1,11 +1,11 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-title: Rendu des formules mathématiques LaTeX | .FILET
+title: Rendu des formules mathématiques LaTeX | .NET
 linktitle: Rendu des formules mathématiques LaTeX
 weight: 10
 url: /net/latex-math-formula-rendering/
-description: La solution API Aspose.TeX pour le rendu des formules mathématiques .NET LaTeX est décrite dans cet article. Découvrez les exemples de code sur la façon d’utiliser la fonctionnalité.
+description: La solution API Aspose.TeX pour le rendu des formules mathématiques .NET LaTeX est décrite dans cet article. Découvrez les exemples de code.
 lastmod: "2024-09-27"
 ---
 

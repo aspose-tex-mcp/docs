@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: Расширяемые и настраиваемые символы
-title: 5. Расширяемые и настраиваемые символы | Руководство по LaTeX
+title: 5. Расширяемые и настраиваемые символы | LaTeX
 weight: 50
 url: /java/latex-math-extensible-symbols/
 keywords: ams-latex, amsmath, amsxtra, латехные математические операторы, латехные математические разделители, латехные математические скобки, латехные математические скобки, латехные математические акценты

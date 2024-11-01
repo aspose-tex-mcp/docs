@@ -5,7 +5,7 @@ title: Requisitos del sistema | Aspose.TeX .NET
 linktitle: Requisitos del sistema
 weight: 50
 url: /net/system-requirements/
-description: La solución Aspose.TeX para .NET se puede utilizar en cualquier entorno de desarrollo que admita .NET, pero hay algunos entornos que son explícitamente compatibles.
+description: Aspose.TeX para .NET se puede utilizar en cualquier entorno de desarrollo que admita .NET, pero hay algunos entornos que son explícitamente compatibles.
 lastmod: "2024-10-30"
 ---
 

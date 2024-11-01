@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-python-net.md
-title: Interfaz de entrada de Aspose.TeX | Pitón
+title: Interfaz de entrada de Aspose.TeX | Python 
 linktitle: Interfaz de entrada de Aspose.TeX
 weight: 15
 url: /python-net/aspose-tex-input/

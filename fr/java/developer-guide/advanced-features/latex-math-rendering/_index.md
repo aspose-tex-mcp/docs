@@ -5,7 +5,7 @@ title: Rendu des formules mathématiques LaTeX | Java
 linktitle: Rendu des formules mathématiques LaTeX
 weight: 10
 url: /java/latex-math-formula-rendering/
-description: Le rendu des formules mathématiques LaTeX dans l'API Aspose.TeX pour Java est décrit dans cet article. Découvrez les exemples de code expliquant comment utiliser la fonctionnalité.
+description: Le rendu des formules mathématiques LaTeX dans l'API Aspose.TeX pour Java est décrit dans cet article avec les exemples de code.
 lastmod: "2024-09-27"
 ---
 

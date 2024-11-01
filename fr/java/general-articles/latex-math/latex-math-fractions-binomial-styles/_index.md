@@ -6,7 +6,7 @@ title: Fractions, coefficients binomiaux et styles mathématiques
 weight: 50
 url: /java/latex-math-fractions-binomial-styles/
 keywords: latex, formules mathématiques en latex, mathématiques en latex, fractions mathématiques en latex, coefficients binomiaux mathématiques en latex, styles mathématiques en latex
-description: Découvrez la composition de constructions mathématiques telles que les fractions, les coefficients binomiaux, etc., ainsi que les styles mathématiques dans lesquels TeX compose les formules.
+description: Composition de constructions mathématiques telles que des fractions, des coefficients binomiaux et des styles dans lesquels TeX compose des formules.
 lastmod: "2024-09-27"
 ---
 

@@ -5,7 +5,7 @@ title: E/S LaTeX | Aspose.TeX pour .NET
 linktitle: Entrée/sortie LaTeX
 weight: 17
 url: /net/latex-io/
-description: Cette page décrit brièvement les particularités du travail avec LaTeX comme format de sortie ou d'entrée et le fichier *.aux* comme partie obligatoire de LaTeX.
+description: Cette page décrit les particularités du travail avec LaTeX comme format de sortie ou d'entrée et le fichier *.aux* comme obligatoire.
 keywords: latex io, latex i, latex o, fichier d'entrée latex, entrée en latex
 lastmod: "2024-09-27"
 ---

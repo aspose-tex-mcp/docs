@@ -1,11 +1,11 @@
 ﻿---
 translation: true
 template: /templates/_template-python-net.md
-title: Representación de fórmulas matemáticas LaTeX | Pitón
+title: Representación de fórmulas matemáticas LaTeX | Python 
 linktitle: Representación de fórmulas matemáticas LaTeX
 weight: 10
 url: /python-net/latex-math-formula-rendering/
-description: El artículo proporciona una descripción general de la solución API Aspose.TeX para Python y su funcionalidad para representar fórmulas matemáticas de LaTeX. Aprenda los ejemplos de código
+description: El artículo proporciona una descripción general de la solución Aspose.TeX para Python y su funcionalidad para representar fórmulas matemáticas de LaTeX.
 lastmod: "2024-10-30"
 ---
 

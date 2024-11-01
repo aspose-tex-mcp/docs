@@ -1,11 +1,11 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-title: Representación de fórmulas matemáticas LaTeX | .NETO
+title: Representación de fórmulas matemáticas LaTeX | .NET
 linktitle: Representación de fórmulas matemáticas LaTeX
 weight: 10
 url: /net/latex-math-formula-rendering/
-description: En este artículo se describe la solución API Aspose.TeX para la representación de fórmulas matemáticas .NET LaTeX. Conozca los ejemplos de código sobre cómo utilizar la funcionalidad.
+description: En artículo se describe la Aspose.TeX para la representación de fórmulas matemáticas .NET LaTeX. Conozca los ejemplos de código sobre cómo utilizar la funcionalidad.
 lastmod: "2024-10-30"
 ---
 

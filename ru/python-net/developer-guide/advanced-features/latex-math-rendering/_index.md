@@ -1,11 +1,11 @@
 ﻿---
 translation: true
 template: /templates/_template-python-net.md
-title: Рендеринг математических формул LaTeX | Питон
+title: Рендеринг математических формул LaTeX | Python
 linktitle: Отрисовка математических формул LaTeX
 weight: 10
 url: /python-net/latex-math-formula-rendering/
-description: В статье представлен обзор API-решения Aspose.TeX для Python и его функциональных возможностей для рендеринга математических формул LaTeX. Изучите примеры кода
+description: В статье представлен обзор API-Aspose.TeX для Python и его функциональных возможностей для рендеринга математических формул LaTeX. Изучите примеры кода.
 lastmod: "2024-09-24"
 ---
 

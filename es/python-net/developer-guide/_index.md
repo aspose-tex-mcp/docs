@@ -1,11 +1,11 @@
 ﻿---
 translation: true
 template: /templates/_template-python-net.md
-title: Guía para desarrolladores | Aspose.TeX para Python a través de .NET
+title: Guía para desarrolladores | Python a través de .NET
 linktitle: Guía para desarrolladores
 weight: 30
 url: /python-net/developer-guide/
-description: Este capítulo proporciona a los desarrolladores una descripción general de la solución API Aspose.TeX para la funcionalidad de Python ilustrada con ejemplos de código.
+description: Este capítulo proporciona una descripción general de la solución API Aspose.TeX para la funcionalidad de Python ilustrada con ejemplos de código.
 lastmod: "2024-10-30"
 ---
 

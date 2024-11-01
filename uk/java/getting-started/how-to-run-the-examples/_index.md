@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-title: Як запустити приклади в Java
+title: Як запустити приклади коду на Java
 linktitle: Як запустити приклади
 weight: 80
 url: /java/how-to-run-the-examples/

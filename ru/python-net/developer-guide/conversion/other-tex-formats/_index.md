@@ -1,11 +1,11 @@
 ﻿---
 translation: true
 template: /templates/_template-python-net.md
-title: Другие выходные форматы преобразования TeX | Питон
+title: Другие выходные форматы преобразования TeX | Python
 linktitle: Другие форматы TeX
 weight: 18
 url: /python-net/other-tex-formats/
-description: Решение Aspose.TeX API для Python предоставляет функциональные возможности, позволяющие конвертировать файлы LaTeX и пользовательские файлы TeX. Вот несколько примеров кода.
+description: Решение Aspose.TeX API для Python предоставляет функциональные возможности, позволяющие конвертировать файлы LaTeX и пользовательские файлы TeX.
 lastmod: "2024-09-24"
 ---
 

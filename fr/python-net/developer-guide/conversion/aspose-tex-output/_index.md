@@ -5,7 +5,7 @@ title: Interface de sortie d'Aspose.TeX | Python
 linktitle: Interface de sortie d'Aspose.TeX
 weight: 16
 url: /python-net/aspose-tex-output/
-description: Voici une explication de la fonctionnalité de conversion de la solution API Aspose.TeX pour Python, avec TeX comme format de sortie, avec des exemples de code.
+description: Voici une explication de De conversion de la solution API Aspose.TeX pour Python, avec TeX comme format de sortie, avec des exemples de code.
 lastmod: "2024-09-27"
 ---
 

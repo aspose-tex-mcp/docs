@@ -5,7 +5,7 @@ title: Formatos de archivo admitidos | Aspose.TeX para Python
 linktitle: Formatos de archivo admitidos
 weight: 20
 url: /python-net/supported-file-formats/
-description: Esta solución Python para manipular archivos TeX admite archivos TeX como entrada y varios formatos de salida, incluidos TeX, XPS, PDF, PNG, JPEG, TIFF y BMP.
+description: Esta solución Python para manipular archivos TeX admite archivos TeX como entrada y varios formatos de salida, incluidos TeX, PDF, PNG, JPEG, TIFF y BMP.
 lastmod: "2024-10-30"
 ---
 

@@ -6,7 +6,7 @@ title: 6. Texto en fórmulas matemáticas | manual de látex
 weight: 60
 url: /java/latex-text-in-math-formula/
 keywords: ams-latex, amsmath, operadores matemáticos de látex, funciones matemáticas de látex, texto matemático de látex
-description: Este artículo analiza la inserción de texto en fórmulas matemáticas de LaTeX. También describe funciones y operadores matemáticos, así como el método para definirlos.
+description: Este artículo analiza cómo insertar texto en fórmulas matemáticas en LaTeX y describe funciones y operadores matemáticos, y el método para definirlos.
 lastmod: "2024-10-30"
 ---
 

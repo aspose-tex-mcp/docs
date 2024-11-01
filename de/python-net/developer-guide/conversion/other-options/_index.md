@@ -5,7 +5,7 @@ title: Andere TeX-Verwaltungsoptionen | Python
 linktitle: Andere Optionen
 weight: 17
 url: /python-net/other-options/
-description: Die Aspose.TeX-API-Lösung für Python umfasst eine Konvertierungsfunktion, mit der Sie den anfänglichen Interaktionsmodus festlegen können, in dem die Engine startet.
+description: Aspose.TeX für Python umfasst eine Konvertierungsfunktion, mit der Sie den anfänglichen Interaktionsmodus festlegen können, in dem die Engine startet.
 lastmod: "2024-09-26"
 ---
 

@@ -6,7 +6,7 @@ title: 10. Die beliebtesten LaTeX-Mathesymbole und ihre Begleiter
 weight: 100
 url: /java/popular-latex-math-symbols/
 keywords: Latexsumme, Latexsumme, Latexgrenze, Latexgrenzen, Latex groß, Latex große Summe
-description: Erfahren Sie, wie Sie LaTeX-Summierungs- und LaTeX-Grenzwertsymbole erhalten. Der Artikel befasst sich auch mit der Anpassung der Größe von Operatoren und der Positionierung von Operatorgrenzen.
+description: Wie Sie LaTeX-Summierungs- und LaTeX-Grenzwertsymbole erhalten, mit der Anpassung der Größe von Operatoren und der Positionierung von Operatorgrenzen?
 lastmod: "2024-09-26"
 ---
 

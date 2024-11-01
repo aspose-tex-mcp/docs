@@ -2,11 +2,11 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: 10. Annexe. Symboles et commandes mathématiques
-title: Appendice. Symboles et commandes mathématiques | Manuel LaTeX
+title: Appendice. Symboles et commandes mathématiques | LaTeX
 weight: 100
 url: /java/latex-math-symbols-commands/
 keywords: latex, formules mathématiques en latex, mathématiques en latex, symboles mathématiques en latex, lettres grecques en latex, grands opérateurs en latex, relations mathématiques en latex, opérations binaires en latex, flèches mathématiques en latex
-description: Cet article traite des différents symboles et commandes mathématiques LaTeX et de leur signification. Apprenez à insérer des opérateurs, des lettres grecques, etc. dans LaTeX.
+description: Cet article traite des symboles et commandes mathématiques de LaTeX. Apprenez à insérer des opérateurs, des lettres grecques, etc. dans LaTeX.
 lastmod: "2024-09-27"
 ---
 

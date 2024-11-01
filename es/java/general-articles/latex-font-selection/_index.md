@@ -6,7 +6,7 @@ title: Esquema de selección de fuentes LaTeX
 weight: 60
 url: /java/latex-font-selection/
 keywords: látex, fuentes de látex, selección de fuentes de látex, nfss
-description: Este artículo describe brevemente el uso de fuentes LaTeX en el procesamiento de documentos. También menciona las métricas de fuentes TeX y las formas de los caracteres.
+description: Este artículo describe el uso de fuentes LaTeX en el procesamiento de documentos y menciona las métricas de las fuentes TeX y las formas de los caracteres.
 lastmod: "2024-10-30"
 ---
 

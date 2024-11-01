@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-title: LaTeX-Dateireparatur | Java
+title: LaTeX-Dateireparatur | API für Java
 linktitle: Reparatur von LaTeX-Dateien
 weight: 30
 url: /java/latex-repair/

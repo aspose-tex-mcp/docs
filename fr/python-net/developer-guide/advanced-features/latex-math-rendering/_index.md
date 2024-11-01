@@ -5,7 +5,7 @@ title: Rendu des formules mathématiques LaTeX | Python
 linktitle: Rendu des formules mathématiques LaTeX
 weight: 10
 url: /python-net/latex-math-formula-rendering/
-description: L'article donne un aperçu de la solution API Aspose.TeX pour Python et de ses fonctionnalités de rendu des formules mathématiques LaTeX. Apprenez les exemples de code
+description: L'article donne un aperçu API Aspose.TeX pour Python et de ses fonctionnalités de rendu des formules mathématiques LaTeX. Apprenez les exemples de code
 lastmod: "2024-09-27"
 ---
 

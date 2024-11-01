@@ -6,7 +6,7 @@ title: Fracciones, coeficientes binomiales y estilos matemáticos.
 weight: 50
 url: /java/latex-math-fractions-binomial-styles/
 keywords: látex, fórmulas matemáticas de látex, matemáticas de látex, fracciones matemáticas de látex, coeficientes binomiales matemáticos de látex, estilos matemáticos de látex
-description: Aprenda sobre la composición tipográfica de construcciones matemáticas como fracciones, coeficientes binomiales, etc., y los estilos matemáticos en los que TeX escribe fórmulas.
+description: Aprenda a componer construcciones matemáticas como fracciones, coeficientes binomiales y estilos en los que TeX escribe fórmulas.
 lastmod: "2024-10-30"
 ---
 

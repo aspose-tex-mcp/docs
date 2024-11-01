@@ -1,11 +1,11 @@
 ﻿---
 translation: true
 template: /templates/_template-python-net.md
-title: Externe LaTeX-Pakete | Python
+title: Externe LaTeX-Pakete | API für Python
 linktitle: Externe LaTeX-Pakete
 weight: 19
 url: /python-net/external-latex-packages/
-description: Die Aspose.TeX-API für Python unterstützt die Verwendung externer Pakete, die nicht in der Bibliothek selbst enthalten sind, wie z. B. die Pakete fancybox und pgfplots
+description: Aspose.TeX-API für Python unterstützt die Verwendung externer Pakete, die nicht in der Bibliothek selbst enthalten sind, wie fancybox und pgfplots.
 lastmod: "2024-09-26"
 ---
 

@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: Símbolos decorados y estructuras compuestas.
-title: 4. Símbolos decorados y estructuras compuestas | manual de látex
+title: 4. Símbolos decorados y estructuras compuestas | LaTeX
 weight: 40
 url: /java/latex-math-decorations/
 keywords: ams-latex, amsmath, amsxtra, integrales de látex, fracciones de látex, decoraciones de látex, flechas de látex, límites de látex, relaciones modulares de látex

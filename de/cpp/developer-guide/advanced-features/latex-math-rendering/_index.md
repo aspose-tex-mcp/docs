@@ -5,7 +5,7 @@ title: Rendern von LaTeX-Matheformeln | C++
 linktitle: Rendern von LaTeX-Matheformeln
 weight: 10
 url: /cpp/latex-math-formula-rendering/
-description: In diesem Artikel wird die Aspose.TeX-API-Lösung für das Rendern mathematischer Formeln in C++ LaTeX beschrieben. Hier finden Sie Codebeispiele der Funktionalität.
+description: Im Artikel wird die Aspose.TeX-Lösung für das Rendern mathematischer Formeln in C++ LaTeX beschrieben. Hier finden Sie Codebeispiele der Funktionalität.
 lastmod: "2024-09-26"
 ---
 

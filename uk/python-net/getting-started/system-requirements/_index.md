@@ -5,7 +5,7 @@ title: Системні вимоги | Aspose.TeX Python
 linktitle: Системні вимоги
 weight: 50
 url: /python-net/system-requirements/
-description: Бібліотека Python для розробників для обробки файлів TeX(LaTeX). Дізнайтеся про системні вимоги, щоб почати використовувати рішення Aspose.TeX API для Python.
+description: Бібліотека Python для розробників для обробки файлів TeX(LaTeX). Дізнайтеся про системні вимоги, щоб почати використовувати Aspose.TeX API для Python.
 lastmod: 2024-09-20
 ---
 

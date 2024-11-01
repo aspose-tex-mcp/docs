@@ -5,7 +5,7 @@ title: Réparation de fichiers LaTeX | Java
 linktitle: Réparation de fichiers LaTeX
 weight: 30
 url: /java/latex-repair/
-description: La fonctionnalité de réparation de fichiers LaTeX dans l'API Aspose.TeX pour Java est décrite dans cet article. Découvrez les exemples de code expliquant comment utiliser la fonctionnalité.
+description: La fonctionnalité de réparation de fichiers LaTeX dans l'API Aspose.TeX pour Java est décrite avec les exemples de code.
 lastmod: "2024-09-27"
 ---
 

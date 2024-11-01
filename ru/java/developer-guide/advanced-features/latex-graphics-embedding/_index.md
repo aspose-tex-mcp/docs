@@ -1,12 +1,12 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-title: Встроенная графика LaTeX | Включите графику в код LaTeX
+title: Встроенная графика LaTeX | API для Java
 linktitle: Встроенная графика LaTeX
 weight: 18
 url: /java/latex-graphics-embedding/
 keywords: includegraphics latex, латехная встраивание графики base64, латехная графика в кодировке Base64, write18, Shell-escape, команда Latex Shell
-description: В этой статье вы узнаете, как вставлять изображения в кодировке Base64 в исходный код LaTeX, а также изучите функцию \write18, которая делает это возможным.
+description: В статье вы узнаете, как вставлять изображения в кодировке Base64 в исходный код LaTeX, а также изучите функцию \write18, которая делает это возможным.
 lastmod: "2024-09-24"
 ---
 

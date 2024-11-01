@@ -5,7 +5,7 @@ linktitle: Aspose.TeX para la documentación de Python
 title: Aspose.TeX para la solución API de Python
 weight: 10
 url: /python-net/
-description: Administre archivos TeX dentro de la solución API para Python. La biblioteca proporciona varias formas de pasar entradas TeX y obtener resultados y funciones avanzadas.
+description: Solución API para gestionar archivos TeX para Python. Transfiera datos de entrada y obtenga resultados de TeX, y cree su propio formato TeX.
 is_root: true
 lastmod: "2024-10-30"
 ---

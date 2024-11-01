@@ -5,7 +5,7 @@ title: LaTeX-E/A | Aspose.TeX für .NET
 linktitle: LaTeX-Eingabe/Ausgabe
 weight: 17
 url: /net/latex-io/
-description: Auf dieser Seite werden kurz die Besonderheiten der Arbeit mit LaTeX als Ausgabe- bzw. Eingabeformat und der *.aux*-Datei als zwingender Bestandteil von LaTeX beschrieben.
+description: Hier werden die Besonderheiten der Arbeit mit LaTeX als Ausgabe- bzw. Eingabeformat und der *.aux*-Datei als zwingender Bestandteil von LaTeX beschrieben.
 keywords: Latex io, Latex i, Latex o, Latex-Eingabedatei, Eingabe in Latex
 lastmod: "2024-09-26"
 ---

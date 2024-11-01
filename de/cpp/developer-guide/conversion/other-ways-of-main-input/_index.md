@@ -1,11 +1,11 @@
 ﻿---
 translation: true
 template: /templates/_template-cpp.md
-title: Andere Möglichkeiten zur Bereitstellung der Haupt-TeX-Eingabedatei | C++
+title: Möglichkeiten zur Bereitstellung der Haupt-TeX-Eingabedatei
 linktitle: Andere Möglichkeiten, die Haupt-TeX-Eingabedatei bereitzustellen
 weight: 14
 url: /cpp/other-ways-of-main-input/
-description: Die Konvertierungsfunktionalität der Aspose.TeX-API-Lösung für C++ verfügt über einen Konstruktor, der einen Stream als erstes Argument akzeptiert. Hier sind einige Codebeispiele.
+description: Die Konvertierungsfunktionalität der Aspose.TeX-API-Lösung für C++ verfügt über einen Konstruktor, der einen Stream als erstes Argument akzeptiert. 
 lastmod: "2024-09-26"
 ---
 

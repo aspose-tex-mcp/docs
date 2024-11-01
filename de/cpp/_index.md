@@ -1,11 +1,11 @@
 ﻿---
 translation: true
 template: /templates/_template-cpp.md
-title: Aspose.TeX für C++ API-Lösung
+title: Aspose.TeX für C++ | API-Lösung
 linktitle: Aspose.TeX für C++-Dokumentation
 weight: 30
 url: /cpp/
-description: API-Lösung für die Verwaltung von TeX-Dateien für C++. Die Bibliothek bietet Möglichkeiten, TeX-Eingaben zu übergeben und Ausgaben zu erhalten, sowie Funktionen wie die Erstellung Ihres eigenen TeX-Formats.
+description: API-Lösung zum Verwalten von TeX-Dateien für C++. Übergeben Sie TeX-Eingaben, erhalten Sie Ausgaben und erstellen Sie Ihr eigenes TeX-Format.
 is_root: true
 lastmod: "2024-09-26"
 ---

@@ -5,7 +5,7 @@ title: Representación de fórmulas matemáticas LaTeX | C++
 linktitle: Representación de fórmulas matemáticas LaTeX
 weight: 10
 url: /cpp/latex-math-formula-rendering/
-description: En este artículo se describe la solución API Aspose.TeX para la representación de fórmulas matemáticas C++ LaTeX. Aquí encontrará ejemplos de código de la funcionalidad.
+description: En artículo se describe la Aspose.TeX para la representación de fórmulas matemáticas C++ LaTeX. Aquí encontrará ejemplos de código de la funcionalidad.
 lastmod: "2024-10-30"
 ---
 

@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: Composición tipográfica de fórmulas matemáticas
-title: Composición tipográfica de fórmulas matemáticas con LaTeX estándar
+title: Composición tipográfica de fórmulas matemáticas con LaTeX
 weight: 30
 url: /java/latex-math/
 keywords: látex, fórmulas matemáticas de látex, matemáticas de látex, fórmula de látex, ecuación de látex, expresión matemática de látex

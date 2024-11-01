@@ -5,7 +5,7 @@ title: Fonctionnalité de conversion | Aspose.TeX pour Java
 linktitle: Conversion
 weight: 10
 url: /java/conversion/
-description: La fonctionnalité de conversion de la solution API Aspose.TeX pour Java prend en charge les prochains formats de sortie TeX, XPS, PDF, PNG, JPEG, TIFF et PNG.
+description: De conversion de la solution API Aspose.TeX pour Java prend en charge les prochains formats de sortie TeX, XPS, PDF, PNG, JPEG, TIFF et PNG.
 lastmod: "2024-09-27"
 ---
 

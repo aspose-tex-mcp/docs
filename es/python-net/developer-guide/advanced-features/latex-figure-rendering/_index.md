@@ -5,7 +5,7 @@ title: Representación de figuras LaTeX | Aspose.TeX para Python
 linktitle: LaTeX incluye figura
 weight: 20
 url: /python-net/latex-figure-rendering/
-description: El artículo ofrece una descripción general de la solución API Aspose.TeX para Python y su funcionalidad para representar fragmentos de LaTeX (figuras). Conozca los ejemplos de código.
+description: El artículo ofrece una descripción general de la solución API Aspose.TeX para Python y su funcionalidad para representar fragmentos de LaTeX (figuras).
 keywords: figura de látex, tamaño de figura de látex, imagen de látex, imagen de látex, figura incluida de látex, imagen de látex, opciones de figura de látex
 lastmod: "2024-10-30"
 ---

@@ -6,7 +6,7 @@ title: Affiner les formules mathématiques | Manuel LaTeX
 weight: 80
 url: /java/latex-math-fine-points/
 keywords: latex, formules mathématiques au latex, mathématiques au latex, réglage fin des mathématiques au latex, ponctuation mathématique au latex, opérateurs mathématiques au latex, styles de polices mathématiques au latex, espacement mathématique au latex, saut de ligne mathématique au latex, matrices mathématiques au latex
-description: Découvrez les subtilités de la saisie mathématique, expliquées avec des exemples impliquant divers objets que vous pouvez trouver dans les formules mathématiques.
+description: Apprenez les subtilités de l’apport mathématique, expliquées avec des exemples et des objets que vous pouvez trouver dans les formules mathématiques.
 lastmod: "2024-09-27"
 ---
 

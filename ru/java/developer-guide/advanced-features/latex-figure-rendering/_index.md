@@ -5,7 +5,7 @@ title: LaTeX Рендеринг фигур | Aspose.TeX для Java
 linktitle: Отрисовка фигур LaTeX
 weight: 20
 url: /java/latex-figure-rendering/
-description: Решение Aspose.TeX API для рендеринга фрагментов (рисунков) Java LaTeX описано в этой статье. Изучите примеры кода о том, как использовать эту функциональность.
+description: Aspose.TeX API для рендеринга фрагментов (рисунков) Java LaTeX описано в этой статье. Изучите примеры кода о том, как использовать эту функциональность.
 lastmod: "2024-09-24"
 ---
 

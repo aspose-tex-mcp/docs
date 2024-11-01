@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-title: Интерфейс ввода Aspose.TeX | .СЕТЬ
+title: Интерфейс ввода Aspose.TeX | .NET 
 linktitle: Входной интерфейс Aspose.TeX
 weight: 15
 url: /net/aspose-tex-input/

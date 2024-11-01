@@ -6,7 +6,7 @@ title: LaTeX inclut des graphiques | Aspose.TeX pour Java
 weight: 10
 url: /java/latex-includegraphics/
 keywords: includegraphics latex, latex includegraphic, insérer des images latex, latex graphx, insérer une image en latex, package includegraphics latex, draw io latex, latex includegraphics width, includegraphics width, figure scale latex
-description: Découvrez la macro LaTeX includegraphics, ainsi que les transformations d'image, la fenêtre d'affichage, le découpage et la différence entre les packages graphiques et Graphicx.
+description: LaTeX inclut les graphiques, les transformations d'image, la fenêtre d'affichage, le recadrage et la différence entre les packages graphiques et Graphicx.
 lastmod: "2024-09-27"
 ---
 

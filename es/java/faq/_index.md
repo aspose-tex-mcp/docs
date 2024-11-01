@@ -1,11 +1,11 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-title: Preguntas frecuentes | Aspose.TeX para С++
+title: Preguntas frecuentes | Aspose.TeX para Java
 linktitle: Preguntas frecuentes
 weight: 80
 url: /java/faq/
-description: Obtenga respuestas a todas las preguntas más frecuentes sobre Aspose.TeX para Java, que es una API integral para composición tipográfica y manipulación de TeX y LaTeX.
+description: Obtenga respuestas a las preguntas más frecuentes sobre Aspose.TeX para Java, que es una API para composición tipográfica y manipulación de TeX y LaTeX.
 lastmod: "2024-10-30"
 ---
 

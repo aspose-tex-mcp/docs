@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: Украшенные символы и составные конструкции
-title: 4. Декоративные символы и составные конструкции | Руководство по LaTeX
+title: 4. Декоративные символы и составные конструкции | LaTeX
 weight: 40
 url: /java/latex-math-decorations/
 keywords: ams-latex, amsmath, amsxtra, латехные интегралы, латехные фракции, латехные украшения, латехные стрелки, латехные пределы, латехные модульные соотношения

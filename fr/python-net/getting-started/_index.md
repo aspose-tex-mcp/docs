@@ -5,7 +5,7 @@ title: Commencer | Aspose.TeX pour Python
 linktitle: Commencer
 weight: 20
 url: /python-net/getting-started/
-description: API Python permettant aux développeurs de manipuler et de traiter les fichiers TeX et LaTeX. Apprenez les principes fondamentaux pour commencer à travailler avec la solution.
+description: API Python permettant de manipuler et de traiter les fichiers TeX et LaTeX. Principes fondamentaux pour commencer à travailler avec la solution.
 lastmod: "2024-09-27"
 ---
 

@@ -1,11 +1,11 @@
 ﻿---
 translation: true
 template: /templates/_template-python-net.md
-title: Другие параметры управления TeX | Питон
+title: Другие параметры управления TeX | Python
 linktitle: Другие варианты
 weight: 17
 url: /python-net/other-options/
-description: Решение Aspose.TeX API для Python включает в себя функцию преобразования, которая позволяет вам установить начальный режим взаимодействия, в котором запускается движок.
+description: Aspose.TeX для Python включает в себя функцию конверсии, которая позволяет вам установить начальный режим взаимодействия, в котором запускается движок.
 lastmod: "2024-09-24"
 ---
 

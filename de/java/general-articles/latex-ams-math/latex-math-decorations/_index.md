@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: Verzierte Symbole und zusammengesetzte Strukturen
-title: 4. Verzierte Symbole und zusammengesetzte Strukturen | LaTeX-Handbuch
+title: 4. Verzierte Symbole und zusammengesetzte Strukturen | LaTeX
 weight: 40
 url: /java/latex-math-decorations/
 keywords: ams-latex, amsmath, amsxtra, Latex-Integrale, Latex-Brüche, Latex-Dekorationen, Latex-Pfeile, Latex-Grenzwerte, modulare Latex-Beziehungen

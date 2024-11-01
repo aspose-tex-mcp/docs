@@ -5,7 +5,7 @@ title: Configuration système requise | Aspose.TeX .NET
 linktitle: Configuration système requise
 weight: 50
 url: /net/system-requirements/
-description: La solution Aspose.TeX pour .NET peut être utilisée dans n'importe quel environnement de développement prenant en charge .NET, mais certains environnements sont explicitement pris en charge.
+description: Aspose.TeX pour .NET peut être utilisé dans n'importe quel environnement prenant en charge .NET, mais ceux-ci sont explicitement pris en charge.
 lastmod: "2024-09-27"
 ---
 

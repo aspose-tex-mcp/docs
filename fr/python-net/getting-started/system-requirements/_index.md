@@ -5,7 +5,7 @@ title: Configuration système requise | Aspose.TeX Python
 linktitle: Configuration système requise
 weight: 50
 url: /python-net/system-requirements/
-description: Bibliothèque Python permettant aux développeurs de traiter les fichiers TeX (LaTeX). Découvrez la configuration système requise pour commencer à utiliser la solution API Aspose.TeX pour Python.
+description: Aspose.TeX pour Python peut être utilisé dans n'importe quel environnement prenant en charge Python, mais ceux-ci sont explicitement pris en charge.
 lastmod: "2024-09-27"
 ---
 

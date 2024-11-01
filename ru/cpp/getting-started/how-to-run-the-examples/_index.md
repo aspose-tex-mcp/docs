@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-cpp.md
-title: Как запустить примеры на C++
+title: Как запустить примеры кода на C++
 linktitle: Как запускать примеры
 weight: 80
 url: /cpp/how-to-run-the-examples/

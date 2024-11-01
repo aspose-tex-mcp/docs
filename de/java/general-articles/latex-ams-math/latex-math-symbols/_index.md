@@ -1,12 +1,12 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: Symbole in mathematischen Formeln
-title: 9. Symbole in mathematischen Formeln | LaTeX-Handbuch
+linktitle: LaTeX mathematische symbole
+title: 9. Symbole in mathematischen Formeln | LaTeX symbole
 weight: 90
 url: /java/latex-math-symbols/
 keywords: ams-latex, amsmath, amsfonts, amssymb, Latex-Mathe-Symbolklassen, Stmaryrd-Paket, St. Mary Road-Schriftart
-description: Lernen Sie die Klassifizierung mathematischer Symbole in TeX und den Zugriff auf Symbole verschiedener Klassen mit Befehlen von Standard-TeX (LaTeX) und dem Paket amssymb.
+description: Lernen Sie die Klassifizierung mathematischer Symbole in TeX und den Zugriff auf Symbole Klassen mit Befehlen von Standard-TeX und dem Paket amssymb.
 lastmod: "2024-09-26"
 ---
 

@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-title: Interfaz de salida de Aspose.TeX | .NETO
+title: Interfaz de salida de Aspose.TeX | .NET
 linktitle: Interfaz de salida de Aspose.TeX
 weight: 16
 url: /net/aspose-tex-output/

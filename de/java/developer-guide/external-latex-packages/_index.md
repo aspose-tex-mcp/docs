@@ -1,11 +1,11 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-title: Externe LaTeX-Pakete | Java
+title: Externe LaTeX-Pakete | API für Java
 linktitle: Externe LaTeX-Pakete
 weight: 30
 url: /java/external-latex-packages/
-description: Die Aspose.TeX-API für Java ermöglicht die Verwendung externer Pakete, d. h. solcher, die nicht in der Bibliothek selbst enthalten sind, wie etwa fancybox- oder pgfplots-Pakete.
+description: Die Aspose.TeX-API für Java ermöglicht die Verwendung externer Pakete, d. h. solcher, die nicht in der Bibliothek selbst enthalten sind.
 lastmod: "2024-09-26"
 ---
 

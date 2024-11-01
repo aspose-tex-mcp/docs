@@ -1,11 +1,11 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-title: Другие выходные форматы преобразования TeX | .СЕТЬ
+title: Другие выходные форматы преобразования TeX | .NET 
 linktitle: Другие форматы TeX
 weight: 18
 url: /net/other-tex-formats/
-description: Функциональность преобразования решения Aspose.TeX API для .NET позволяет конвертировать файлы LaTeX и ваши собственные файлы TeX. Вот несколько примеров кода.
+description: Функциональность преобразования решения Aspose.TeX API для .NET позволяет конвертировать файлы LaTeX и ваши собственные файлы TeX.
 lastmod: "2024-09-24"
 ---
 

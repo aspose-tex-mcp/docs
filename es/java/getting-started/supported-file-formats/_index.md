@@ -5,7 +5,7 @@ title: Formatos de archivo admitidos | Aspose.TeX para Java
 linktitle: Formatos de archivo admitidos
 weight: 20
 url: /java/supported-file-formats/
-description: Esta solución de manipulación TeX para Java admite archivos TeX para entrada y una variedad de formatos de salida como TeX, XPS, PDF, PNG, JPEG, TIFF y PNG.
+description: Esta solución de manipulación TeX para Java admite archivos TeX para entrada y una variedad de formatos de salida como TeX, XPS, PDF, PNG, JPEG y PNG.
 lastmod: "2024-10-30"
 ---
 

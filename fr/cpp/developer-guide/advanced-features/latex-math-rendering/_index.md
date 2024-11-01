@@ -5,7 +5,7 @@ title: Rendu des formules mathématiques LaTeX | C++
 linktitle: Rendu des formules mathématiques LaTeX
 weight: 10
 url: /cpp/latex-math-formula-rendering/
-description: La solution API Aspose.TeX pour le rendu des formules mathématiques C++ LaTeX est décrite dans cet article. Vous trouverez ici des exemples de code de la fonctionnalité.
+description: Aspose.TeX pour le rendu des formules mathématiques C++ LaTeX est décrite dans cet article. Vous trouverez ici des exemples de code de la fonctionnalité.
 lastmod: "2024-09-27"
 ---
 

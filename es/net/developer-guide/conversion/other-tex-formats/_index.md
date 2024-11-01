@@ -1,11 +1,11 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-title: Otros formatos de salida de conversión TeX | .NETO
+title: Otros formatos de salida de conversión TeX | .NET
 linktitle: Otros formatos TeX
 weight: 18
 url: /net/other-tex-formats/
-description: La funcionalidad de conversión de la solución API Aspose.TeX para .NET permite convertir archivos LaTeX y sus propios archivos TeX personalizados. A continuación se muestran algunos ejemplos de código.
+description: La funcionalidad de conversión de la solución API Aspose.TeX para .NET permite convertir archivos LaTeX y sus propios archivos TeX personalizados.
 lastmod: "2024-10-30"
 ---
 

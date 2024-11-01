@@ -5,7 +5,7 @@ title: Erweiterte Funktionen | Aspose.TeX für C++
 linktitle: Erweiterte Funktionen
 weight: 20
 url: /cpp/advanced-features/
-description: In diesem Kapitel werden die Funktionen der Aspose.TeX-API-Lösung für C++ zusammengefasst, die auf der Grundlage der Object TeX/LaTeX-Implementierung erstellt wurden.
+description: Die Funktionen der Aspose.TeX API-Lösung für C++, die auf der Object TeX/LaTeX-Implementierung basiert.
 lastmod: "2024-09-26"
 ---
 

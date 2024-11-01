@@ -6,7 +6,7 @@ linktitle: Látex a PDF
 weight: 11
 url: /python-net/latex-to-pdf/
 keywords: látex a pdf, látex pdf, convertir látex a pdf
-description: Aprenda cómo convertir TeX a PDF usando la solución API Aspose.TeX para Python con este artículo, que proporciona una explicación detallada y ejemplos de código.
+description: Aprenda cómo convertir TeX a PDF usando Aspose.TeX para Python con este artículo, que proporciona una explicación detallada y ejemplos de código.
 lastmod: "2024-10-30"
 ---
 

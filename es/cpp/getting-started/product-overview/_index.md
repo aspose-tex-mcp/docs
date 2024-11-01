@@ -5,7 +5,7 @@ title: Descripción general del producto | Aspose.TeX para C++
 linktitle: Descripción general del producto
 weight: 10
 url: /cpp/product-overview/
-description: Aspose.TeX es una biblioteca de C++ para la composición tipográfica de archivos TeX. Le proporciona una rica funcionalidad como la conversión o la creación de su propio formato TeX.
+description: Aspose.TeX para C++ es una biblioteca para la composición tipográfica de archivos TeX. Con ella también puedes convertir o crear tu propio formato TeX.
 lastmod: "2024-10-30"
 ---
 

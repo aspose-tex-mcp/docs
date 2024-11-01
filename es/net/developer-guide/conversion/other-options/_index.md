@@ -1,11 +1,11 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-title: Otras opciones de gestión de TeX | .NETO
+title: Otras opciones de gestión de TeX | .NET
 linktitle: Otras opciones
 weight: 17
 url: /net/other-options/
-description: La funcionalidad de conversión de la solución API Aspose.TeX para .NET permite establecer el modo de interacción inicial en el que se inicia el motor. A continuación se muestran algunos ejemplos de código.
+description: La funcionalidad de conversión de la solución API Aspose.TeX para .NET permite establecer el modo de interacción inicial en el que se inicia el motor.
 lastmod: "2024-10-30"
 ---
 

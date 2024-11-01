@@ -5,7 +5,7 @@ title: Unterstützte Dateiformate | Aspose.TeX für Python
 linktitle: Unterstützte Dateiformate
 weight: 20
 url: /python-net/supported-file-formats/
-description: Diese Python-Lösung zum Bearbeiten von TeX-Dateien unterstützt TeX-Dateien als Eingabe und verschiedene Ausgabeformate, einschließlich TeX, XPS, PDF, PNG, JPEG, TIFF und BMP.
+description: Diese Python-Lösung unterstützt TeX-Dateien als Eingabe und verschiedene Ausgabeformate, einschließlich TeX, XPS, PDF, PNG, JPEG, TIFF und BMP.
 lastmod: "2024-09-26"
 ---
 

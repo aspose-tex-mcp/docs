@@ -5,7 +5,7 @@ title: Guía para desarrolladores | Aspose.TeX para Java
 linktitle: Guía para desarrolladores
 weight: 20
 url: /java/developer-guide/
-description: Este capítulo explica la funcionalidad de la solución API Aspose.TeX para Java a los desarrolladores y les proporciona ejemplos de código sobre cómo administrar TeX.
+description: Este capítulo explica la funcionalidad de la Aspose.TeX para Java a los desarrolladores y les proporciona ejemplos de código sobre cómo administrar TeX.
 lastmod: "2024-10-30"
 ---
 

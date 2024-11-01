@@ -7,7 +7,7 @@ weight: 10
 url: /cpp/latex-to-image/
 aliases: /cpp/latex-a-png/
 keywords: látex a png, látex png, látex a imagen, imagen de látex, látex a jpg, látex jpg, látex a jpeg, látex jpeg, látex a tiff, látex tiff, látex a bmp, látex bmp
-description: Para convertir TeX a formatos de imagen utilizando la solución API Aspose.TeX para C++, lea este artículo que describe cómo hacerlo y los ejemplos de código.
+description: Para convertir TeX a formatos de imagen utilizando la Aspose.TeX paraC++, lea este artículo que describe cómo hacerlo y los ejemplos de código.
 lastmod: 2023-03-23
 ---
 

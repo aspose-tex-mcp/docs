@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-title: Часто задаваемые вопросы | Aspose.TeX для С++
+title: Часто задаваемые вопросы | Aspose.TeX для Java
 linktitle: Часто задаваемые вопросы
 weight: 80
 url: /java/faq/

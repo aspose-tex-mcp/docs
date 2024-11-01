@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: 4. Standard-LaTeX-Schriftarten
-title: Standard-LaTeX-Schriftarten
+title: Standard-LaTeX-Schriftarten | API für Java
 weight: 40
 url: /java/latex-standard-fonts/
 keywords: Latex, Latex-Schriftarten, Latex-Standardschriftarten, Latex-Schriftkodierung, Tracefnt, nfssfont.tex

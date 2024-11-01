@@ -1,11 +1,11 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: Символи в математичних формулах
-title: 9. Символи в математичних формулах | Підручник з LaTeX
+linktitle: Математичні символи в LaTeX
+title: 9. Символи в математичних формулах | Символи LaTeX
 weight: 90
 url: /java/latex-math-symbols/
-keywords: ams-latex, amsmath, amsfonts, amssymb, класи латексних математичних символів, пакет stmaryrd, шрифт st mary road
+keywords: символи в LaTeX, aсимволи латех, amsfonts, amssymb, класи математичних символів латех, пакет stmaryrd, шрифт st mary road
 description: Вивчіть класифікацію математичних символів у TeX і доступ до символів різних класів за допомогою команд стандартного TeX(LaTeX) і пакету amssymb.
 lastmod: 2024-09-20
 ---

@@ -1,12 +1,12 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-title: LaTeX eingebettete Grafiken | Fügen Sie Grafiken in den LaTeX-Code ein
+title: LaTeX eingebettete Grafiken | API fur Java
 linktitle: LaTeX-eingebettete Grafiken
 weight: 18
 url: /java/latex-graphics-embedding/
 keywords: includegraphics latex, latex base64-Grafiken einbetten, latex base64-kodierte Grafiken, write18, Shell-Escape, Latex-Shell-Befehl
-description: In diesem Artikel erfahren Sie, wie Sie Base64-codierte Bilder in den LaTeX-Quellcode einfügen und lernen die \write18-Funktion kennen, die dies ermöglicht.
+description: Im Artikel erfahren Sie, wie Sie Base64-codierte Bilder in den LaTeX-Quellcode einfügen und lernen die \write18-Funktion kennen, die dies ermöglicht.
 lastmod: "2024-09-26"
 ---
 

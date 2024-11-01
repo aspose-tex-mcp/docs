@@ -6,7 +6,7 @@ title: So verwenden Sie LaTeX-Schriftarten in Texten
 weight: 30
 url: /java/latex-text-fonts/
 keywords: Latex, Latex-Schriftarten, Latex-Textschriftbefehle, Latex groß, Latex-Schriftgröße
-description: In diesem Artikel werden LaTeX-Schriftbefehle behandelt, die verschiedene Schriftartattribute unabhängig voneinander für die Verwendung in normalem Text ändern.
+description: Im Artikel werden LaTeX-Schriftbefehle behandelt, die verschiedene Schriftartattribute unabhängig voneinander für die Verwendung in normalem Text ändern.
 lastmod: "2024-09-26"
 ---
 

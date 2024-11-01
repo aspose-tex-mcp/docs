@@ -1,11 +1,11 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-title: Andere Möglichkeiten zur Bereitstellung der Haupt-TeX-Eingabedatei | Java
+title: Bereitstellung der Haupt-TeX-Eingabedatei | Java
 linktitle: Andere Möglichkeiten, die Haupt-TeX-Eingabedatei bereitzustellen
 weight: 14
 url: /java/other-ways-of-main-input/
-description: Die Konvertierungsfunktionalität der Aspose.TeX-API-Lösung für Java verfügt über einen Konstruktor, der einen Stream als erstes Argument akzeptiert. Hier sind einige Codebeispiele.
+description: Die Konvertierungsfunktionalität der Aspose.TeX-API-Lösung für Java verfügt über einen Konstruktor, der einen Stream als erstes Argument akzeptiert.
 lastmod: "2024-09-26"
 ---
 

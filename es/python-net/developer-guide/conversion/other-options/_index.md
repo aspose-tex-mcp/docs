@@ -1,11 +1,11 @@
 ﻿---
 translation: true
 template: /templates/_template-python-net.md
-title: Otras opciones de gestión de TeX | Pitón
+title: Otras opciones de gestión de TeX | Python 
 linktitle: Otras opciones
 weight: 17
 url: /python-net/other-options/
-description: La solución API Aspose.TeX para Python incluye una funcionalidad de conversión que le permite configurar el modo de interacción inicial en el que se inicia el motor.
+description: La Aspose.TeX para Python incluye una funcionalidad de conversión que le permite configurar el modo de interacción inicial en el que se inicia el motor.
 lastmod: "2024-10-30"
 ---
 

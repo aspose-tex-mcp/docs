@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-title: Die Ausgabeschnittstelle von Aspose.TeX | .NETTO
+title: Die Ausgabeschnittstelle von Aspose.TeX | .NET
 linktitle: Die Ausgabeschnittstelle von Aspose.TeX
 weight: 16
 url: /net/aspose-tex-output/

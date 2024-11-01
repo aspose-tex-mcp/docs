@@ -5,7 +5,7 @@ title: Erweiterte Funktionen | Aspose.TeX für Python
 linktitle: Erweiterte Funktionen
 weight: 20
 url: /python-net/advanced-features/
-description: In diesem Kapitel werden die Funktionen der Aspose.TeX-API-Lösung für Python zusammengestellt, die auf der Grundlage der Object TeX/LaTeX-Implementierung erstellt wurde.
+description: Die Funktionen der Aspose.TeX-API-Lösung für Python zusammengestellt, die auf der Grundlage der Object TeX/LaTeX-Implementierung erstellt wurde.
 lastmod: "2024-09-26"
 ---
 

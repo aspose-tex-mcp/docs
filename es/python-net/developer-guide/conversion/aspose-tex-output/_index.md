@@ -1,11 +1,11 @@
 ﻿---
 translation: true
 template: /templates/_template-python-net.md
-title: Interfaz de salida de Aspose.TeX | Pitón
+title: Interfaz de salida de Aspose.TeX | Python 
 linktitle: Interfaz de salida de Aspose.TeX
 weight: 16
 url: /python-net/aspose-tex-output/
-description: Aquí hay una explicación de la funcionalidad de conversión de la solución API Aspose.TeX para Python, con TeX como formato de salida, con ejemplos de código.
+description: Aquí hay una explicación de la funcionalidad de conversión de la solución Aspose.TeX para Python, con TeX como formato de salida, con ejemplos de código.
 lastmod: "2024-10-30"
 ---
 

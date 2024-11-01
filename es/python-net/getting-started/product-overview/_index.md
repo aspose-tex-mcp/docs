@@ -5,7 +5,7 @@ title: Descripción general del producto | Aspose.TeX para Python
 linktitle: Descripción general del producto
 weight: 10
 url: /python-net/product-overview/
-description: Aspose.TeX es una biblioteca de Python que permite componer archivos TeX. También ofrece funciones como capacidades de conversión y creación de formatos TeX personalizados.
+description: Aspose.TeX para Python es una biblioteca para la composición tipográfica de archivos TeX. Con ella también puedes convertir o crear tu propio formato TeX.
 lastmod: "2024-10-30"
 ---
 

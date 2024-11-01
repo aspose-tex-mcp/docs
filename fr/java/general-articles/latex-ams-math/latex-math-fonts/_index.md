@@ -2,17 +2,17 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: Polices dans les formules mathématiques
-title: 8. Polices dans les formules mathématiques | Mathématiques des polices LaTeX
+title: 8. Polices dans les formules mathématiques | LaTeX
 weight: 80
 url: /java/latex-math-fonts/
-keywords: ams-latex, amsmath, amsfonts, amssymb, polices mathématiques latex, alphabets mathématiques latex, paquet bm latex, polices latex, polices mathématiques latex
+keywords: latex gras, alphabet latex, amsfonts, amssymb, polices mathématiques latex, alphabets mathématiques latex, paquet bm latex, polices latex, polices mathématiques latex
 description: Cet article traite de la gestion des polices mathématiques au moyen de LaTeX standard, ainsi que de l'utilisation des packages amsmath et bm.
 lastmod: "2024-09-27"
 ---
 
 {{<section overview>}}
 
-## Introduction aux polices LaTeX
+## Introduction aux police LaTeX
 
 Contrairement au texte flottant, vous n’aurez généralement pas besoin de modifications automatiques des formes de police. Différentes formes ont des significations spécifiques en mathématiques. Par exemple, des lettres verticales en gras peuvent être utilisées pour les vecteurs. Si les caractères d’une formule devaient changer en raison des conditions environnantes, le résultat serait incorrect. C'est pourquoi la gestion des polices dans les formules mathématiques diffère de celle dans le texte.
 

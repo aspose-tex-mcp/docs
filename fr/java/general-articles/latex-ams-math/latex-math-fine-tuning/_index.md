@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: Ajustements de prédimensionnement de la mise en page
-title: 7. Ajustements de prédimensionnement de la mise en page | Manuel LaTeX
+title: 7. Ajustements de prédimensionnement de la mise en page
 weight: 70
 url: /java/latex-math-fine-tuning/
 keywords: ams-latex, amsmath, espacement mathématique en latex, styles mathématiques en latex, délimiteurs mathématiques en latex, parenthèses mathématiques en latex, alignement mathématique en latex

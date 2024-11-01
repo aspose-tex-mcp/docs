@@ -5,7 +5,7 @@ title: Présentation du produit | Aspose.TeX pour .NET
 linktitle: Présentation du produit
 weight: 10
 url: /net/product-overview/
-description: Aspose.TeX est une bibliothèque .NET pour la composition de fichiers TeX. Il vous offre des fonctionnalités riches telles que la conversion ou la création de votre propre format TeX.
+description: Aspose.TeX pour .NET est une bibliothèque de composition de fichiers TeX. Avec elle, vous pouvez également convertir ou créer votre propre format TeX.
 lastmod: "2024-09-27"
 ---
 

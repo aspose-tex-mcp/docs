@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: 4. Diferentes caracteres en fórmulas matemáticas.
-title: El significado de diferentes caracteres en fórmulas matemáticas.
+title: Diferentes caracteres en fórmulas matemáticas.
 weight: 40
 url: /java/latex-math-symbol-classes/
 keywords: látex, fórmulas matemáticas de látex, matemáticas de látex, símbolos matemáticos de látex, variables matemáticas de látex, operaciones binarias matemáticas de látex, relaciones matemáticas de látex, acentos matemáticos de látex

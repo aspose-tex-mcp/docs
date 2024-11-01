@@ -1,11 +1,11 @@
 ﻿---
 translation: true
 template: /templates/_template-python-net.md
-title: Alternative Methoden zur Bereitstellung der Haupt-TeX-Eingabedatei | Python
+title: Bereitstellung der Haupt-TeX-Eingabedatei | Python
 linktitle: Andere Möglichkeiten, die Haupt-TeX-Eingabedatei bereitzustellen
 weight: 14
 url: /python-net/other-ways-of-main-input/
-description: Die Aspose.TeX-API-Lösung für Python enthält einen Konstruktor, der einen Stream als erstes Argument akzeptiert und so Konvertierungsfunktionen bereitstellt.
+description: Aspose.TeX-API-Lösung für Python enthält einen Konstruktor, der einen Stream als erstes Argument akzeptiert und so Konvertierungsfunktionen bereitstellt.
 lastmod: "2024-09-26"
 ---
 

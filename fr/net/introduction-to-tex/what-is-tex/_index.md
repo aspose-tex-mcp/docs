@@ -6,7 +6,7 @@ linktitle: Qu’est-ce que TeX ?
 weight: 10
 url: /net/what-is-tex/
 keywords: qu'est-ce que le Texas
-description: Cette page répond brièvement à la question « Qu'est-ce que TeX ? » Est-ce l'un des langages de programmation ou est-il considéré comme un format de document ?
+description: Cette page répond à la question "Qu'est-ce que TeX ?" Est-ce un langage de programmation ou un format de document ?
 lastmod: "2024-09-27"
 ---
 

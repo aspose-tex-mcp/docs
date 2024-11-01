@@ -5,7 +5,7 @@ title: Produktübersicht | Aspose.TeX für C++
 linktitle: Produktübersicht
 weight: 10
 url: /cpp/product-overview/
-description: Aspose.TeX ist eine C++-Bibliothek zum Setzen von TeX-Dateien. Es bietet Ihnen umfangreiche Funktionen wie die Konvertierung oder die Erstellung Ihres eigenen TeX-Formats.
+description: Aspose.TeX ist eine C++-Bibliothek zum Setzen von TeX-Dateien. Es bietet Funktionen wie die Konvertierung oder die Erstellung Ihres eigenen TeX-Formats.
 lastmod: "2024-09-26"
 ---
 

@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-net.md
 linktitle: Вступ до TeX
-title: Вступ до TeXs | Aspose.TeX
+title: Вступ до TeXs | Aspose.TeX для .NET
 weight: 10
 url: /net/introduction-to-tex/
 description: Пояснення основних термінів і понять TeX. Чи є TeX форматом, як працювати з файлом TeX, що таке LaTeX та багато інших запитань.

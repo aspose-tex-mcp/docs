@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: 1. Input and output
-title: Input and output encodings
+title: Input and output encodings | Aspose.TeX for Java
 weight: 10
 url: /java/latex-font-encodings/
 keywords: latex, latex fonts, latex font encodings, nfss

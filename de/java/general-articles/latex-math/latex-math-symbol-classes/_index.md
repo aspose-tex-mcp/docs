@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: 4. Verschiedene Zeichen in mathematischen Formeln
-title: Die Bedeutung verschiedener Zeichen in mathematischen Formeln
+title: Bedeutung verschiedener Zeichen in mathematischen Formeln
 weight: 40
 url: /java/latex-math-symbol-classes/
 keywords: Latex, Latex-Mathe-Formeln, Latex-Mathematik, Latex-Mathe-Symbole, Latex-Mathe-Variablen, Latex-Mathe-Binäroperationen, Latex-Mathe-Beziehungen, Latex-Mathe-Akzente

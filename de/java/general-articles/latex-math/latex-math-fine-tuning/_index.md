@@ -6,7 +6,7 @@ title: Mathematische Formeln verfeinern | LaTeX-Handbuch
 weight: 80
 url: /java/latex-math-fine-points/
 keywords: Latex, Latex-Mathe-Formeln, Latex-Mathe, Latex-Mathe-Feinabstimmung, Latex-Mathe-Interpunktion, Latex-Mathe-Operatoren, Latex-Mathe-Schriftstile, Latex-Mathe-Spacinf, Latex-Mathe-Zeilenumbruch, Latex-Mathe-Matrizen
-description: Erfahren Sie mehr über die Feinheiten des mathematischen Tippens, erklärt anhand von Beispielen, die verschiedene Objekte betreffen, die Sie möglicherweise in mathematischen Formeln finden.
+description: Erlernen Sie die mathematische Eingabe anhand von Beispielen mit verschiedenen Objekten, die Sie in mathematischen Formeln finden können.
 lastmod: "2024-09-26"
 ---
 

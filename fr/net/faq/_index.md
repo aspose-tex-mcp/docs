@@ -5,7 +5,7 @@ title: Foire aux questions | Aspose.TeX pour .NET
 linktitle: FAQ
 weight: 80
 url: /net/faq/
-description: Obtenez des réponses à toutes les questions les plus fréquentes sur Aspose.TeX pour .NET, qui est une API complète pour la composition et la manipulation de TeX et LaTeX.
+description: Obtenez des réponses aux questions fréquemment posées sur Aspose.TeX pour .NET, qui est une API pour la composition et la manipulation de TeX et LaTeX.
 lastmod: "2024-09-27"
 ---
 
