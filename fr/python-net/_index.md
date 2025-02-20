@@ -38,3 +38,8 @@ Voici les liens vers quelques ressources utiles dont vous pourriez avoir besoin 
 - [Forum de support gratuit Aspose.TeX pour Python](https://forum.aspose.com/c/tex/)
 - [Aspose.TeX pour Python Service d'assistance payant](https://helpdesk.aspose.com/)
 
+{{% alert color="primary" %}}
+
+Essayez également nos nouveaux [**Aspose.TeX AI Agents**](https://products.aspose.ai/tex/) pilotés par l'IA - des outils utiles pour tous ceux qui travaillent avec les formats `.tex` et `.latex`.
+
+{{% /alert %}}

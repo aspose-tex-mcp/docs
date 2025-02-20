@@ -30,4 +30,5 @@ Le guide du développeur constitue une ressource complète pour utiliser efficac
 - [**Introduction à TeX**](/tex/{{lang.url-fragment}}net/introduction-to-tex/). - Ce chapitre est ajouté afin que vous puissiez vous habituer à TeX et LaTeX. Vous pourrez y comprendre leurs particularités, la structure des fichiers, les avantages et les inconvénients, les packages intégrés et bien d'autres.
 - [**Articles généraux sur LaTeX**](/tex/{{lang.url-fragment}}java/general-articles-latex/) - Vous fournit des informations de base sur LaTeX, y compris des informations sur les cas d'utilisation, comment travailler avec des polices, des images, des formules mathématiques et différents packages LaTeX.
 - [**Applications multiplateformes Aspose.Page**](https://products.aspose.app/tex/applications) - convertissez, fusionnez, affichez des fichiers TeX et LaTeX, créez des équations, des tableaux, des graphiques et des articles LaTeX sans codage et comprenez comment vous pouvez développer vos propres applications.
+- [**Aspose.TeX AI Agents**](https://products.aspose.ai/tex/) - Outils d'intelligence artificielle créés pour la manipulation de fichiers `.tex` et `.latex`.
 

@@ -35,3 +35,8 @@ Aspose.TeX — це бібліотека C++ для набору файлів Te
 - [Форум безкоштовної підтримки Aspose.TeX для C++](https://forum.aspose.com/c/tex)
 - [Довідкова служба платної підтримки Aspose.TeX для C++](https://helpdesk.aspose.com/)
 
+{{% alert color="primary" %}}
+
+Також спробуйте наші нові керовані штучним інтелектом [**Aspose.TeX ШІ Агенти**](https://products.aspose.ai/tex/) — інструменти, корисні для всіх, хто працює з форматами `.tex` і `.latex`.
+
+{{% /alert %}}

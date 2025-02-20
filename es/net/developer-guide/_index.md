@@ -29,4 +29,5 @@ La Guía para desarrolladores sirve como un recurso integral para utilizar efica
 - [**Artículos generales sobre LaTeX**](/tex/{{lang.url-fragment}}java/general-articles-latex/) - Le proporciona información básica sobre LaTeX, incluida información sobre casos de uso, cómo trabajar con fuentes, imágenes, fórmulas matemáticas y diferentes paquetes de LaTeX.
 - [**Introducción a TeX**](/tex/{{lang.url-fragment}}net/introduction-to-tex/). - Aquí podrá familiarizarse con TeX y LaTeX, comprender sus peculiaridades, estructura de archivos, pros y contras, paquetes integrados y mucho más.
 - [**Aplicaciones multiplataforma Aspose.Page**](https://products.aspose.app/tex/applications): le permitirá convertir, fusionar, ver archivos TeX y LaTeX, crear ecuaciones, tablas, gráficos y artículos LaTeX sin codificación y le brindará una comprensión de cómo Puedes desarrollar tus propias aplicaciones.
+- [**Agentes de IA de Aspose.TeX**](https://products.aspose.ai/tex/) - Herramientas de inteligencia artificial creadas para procesar archivos en formato `.tex` y `.latex`.
 

@@ -125,3 +125,7 @@ Si vous souhaitez essayer Aspose.TeX sans limitations d'évaluation, demandez un
 **R :** Consultez nos [solutions Web](https://products.aspose.app/tex/applications) pour convertir, afficher, fusionner et modifier des fichiers TeX et LaTeX, et créer des équations mathématiques et bien d'autres.
 <br><br>
 
+**Q : Aspose.TeX propose-t-il des outils d'IA à essayer ?**
+
+**R :** Oui. Nous disposons déjà d'[**Aspose.TeX AI Agents**](https://products.aspose.ai/tex/) - une combinaison de puissance d'intelligence artificielle et de nos API pour la manipulation de fichiers TeX et LaTeX.
+<br><br>

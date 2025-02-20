@@ -33,3 +33,9 @@ Aspose.TeX est une bibliothèque C++ pour la composition de fichiers TeX. Il peu
 - [Forum de support gratuit Aspose.TeX pour C++](https://forum.aspose.com/c/tex)
 - [Aspose.TeX pour le service d'assistance payant C++](https://helpdesk.aspose.com/)
 Voici les liens vers des ressources utiles dont vous pourriez avoir besoin pour accomplir vos tâches.
+
+{{% alert color="primary" %}}
+
+Essayez également nos nouveaux [**Aspose.TeX AI Agents**](https://products.aspose.ai/tex/) pilotés par l'IA - des outils utiles pour tous ceux qui travaillent avec les formats `.tex` et `.latex`.
+
+{{% /alert %}}

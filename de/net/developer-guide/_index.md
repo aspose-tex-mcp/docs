@@ -30,4 +30,5 @@ Das Entwicklerhandbuch dient als umfassende Ressource für die effektive Nutzung
 - [**Allgemeine Artikel zu LaTeX**](/tex/{{lang.url-fragment}}java/general-articles-latex/) – Bietet Ihnen grundlegende Informationen zu LaTeX, einschließlich Informationen zu Anwendungsfällen, zur Arbeit mit Schriftarten, Bildern, mathematischen Formeln und verschiedenen LaTeX-Paketen.
 - [**Einführung in TeX**](/tex/{{lang.url-fragment}}net/introduction-to-tex/). - Hier können Sie sich mit TeX und LaTeX vertraut machen, deren Besonderheiten, Dateistruktur, Vor- und Nachteile, eingebettete Pakete und vieles mehr verstehen.
 - [**Plattformübergreifende Aspose.Page-Apps**](https://products.aspose.app/tex/applications) – ermöglicht Ihnen das Konvertieren, Zusammenführen, Anzeigen von TeX- und LaTeX-Dateien, das Erstellen von LaTeX-Gleichungen, Tabellen, Diagrammen und Artikeln ohne Codierung und vermittelt Ihnen ein Verständnis dafür, wie das geht Sie können Ihre eigenen Anwendungen entwickeln.
+- [**Aspose.TeX AI Agents**](https://products.aspose.ai/tex/) - Künstliche Intelligenz-Tools zur Bearbeitung von Dateien im `.tex`- und `.latex`-Format.
 

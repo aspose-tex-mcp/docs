@@ -36,3 +36,8 @@ Im Folgenden finden Sie Links zu einigen nützlichen Ressourcen, die Sie möglic
 - [Kostenloses Support-Forum für Aspose.TeX für .NET](https://forum.aspose.com/c/tex/)
 - [Kostenpflichtiger Support-Helpdesk für Aspose.TeX für .NET](https://helpdesk.aspose.com/)
 
+{{% alert color="primary" %}}
+
+Probieren Sie auch unsere neuen KI-gesteuerten [**Aspose.TeX AI Agents**](https://products.aspose.ai/tex/) aus - nützliche Tools für alle, die mit `.tex`- und `.latex`-Formaten arbeiten.
+
+{{% /alert %}}

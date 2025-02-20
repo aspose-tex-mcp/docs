@@ -35,3 +35,8 @@ Im Folgenden finden Sie Links zu einigen nützlichen Ressourcen, die Sie möglic
 - [Aspose.TeX für Java Kostenloses Support-Forum](https://forum.aspose.com/c/tex)
 - [Kostenpflichtiger Support-Helpdesk für Aspose.TeX für Java](https://helpdesk.aspose.com/)
 
+{{% alert color="primary" %}}
+
+Probieren Sie auch unsere neuen KI-gesteuerten [**Aspose.TeX AI Agents**](https://products.aspose.ai/tex/) aus - nützliche Tools für alle, die mit `.tex`- und `.latex`-Formaten arbeiten.
+
+{{% /alert %}}
