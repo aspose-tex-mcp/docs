@@ -121,5 +121,7 @@ Si vous souhaitez essayer Aspose.TeX sans limitations d'évaluation, demandez un
 **Q : Où puis-je voir les fonctionnalités de cette solution API implémentées dans les applications Web ?**
 
 **R :** Consultez nos [solutions Web](https://products.aspose.app/tex/applications) pour convertir, afficher, fusionner et modifier des fichiers TeX et LaTeX et créer des équations mathématiques. Ce sont les exemples les plus brillants que vous pouvez utiliser l’API pour développer vos propres produits.
+
+Consultez également [Aspose.TeX AI Agents**](https://products.aspose.ai/tex/) - une combinaison de notre expérience dans le développement d'API pour le traitement de fichiers TeX et LaTeX et d'intelligence artificielle.
 <br><br>
 

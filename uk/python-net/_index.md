@@ -38,3 +38,8 @@ Aspose.TeX — це бібліотека Python, створена для лег�
 - [Форум безкоштовної підтримки Aspose.TeX для Python](https://forum.aspose.com/c/tex/)
 - [Служба підтримки платної підтримки Aspose.TeX для Python](https://helpdesk.aspose.com/)
 
+{{% alert color="primary" %}}
+
+Також спробуйте наші нові керовані штучним інтелектом [**Aspose.TeX ШІ Агенти**](https://products.aspose.ai/tex/) — інструменти, корисні для всіх, хто працює з форматами `.tex` і `.latex`.
+
+{{% /alert %}}

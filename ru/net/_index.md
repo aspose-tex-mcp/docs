@@ -37,3 +37,8 @@ Aspose.TeX — это библиотека .NET для верстки файло
 - [Форум бесплатной поддержки Aspose.TeX для .NET](https://forum.aspose.com/c/tex/)
 - [Служба поддержки платной поддержки Aspose.TeX для .NET](https://helpdesk.aspose.com/)
 
+{{% alert color="primary" %}}
+
+Также попробуйте наши новые [**Aspose.TeX ИИ Агенты**](https://products.aspose.ai/tex/) - инструменты, полезные для всех, кто работает с форматами `.tex` и `.latex`.
+
+{{% /alert %}}

@@ -33,3 +33,10 @@ Following are the links to some useful resources you may need to accomplish your
 - [Aspose.TeX for C++ API Reference Guide](https://reference.aspose.com/tex/cpp)
 - [Aspose.TeX for C++ Free Support Forum](https://forum.aspose.com/c/tex)
 - [Aspose.TeX for C++ Paid Support Helpdesk](https://helpdesk.aspose.com/)
+
+
+{{% alert color="primary" %}}
+
+Also give a try to our new AI driven [**Aspose.TeX AI Agents**](https://products.aspose.ai/tex/)   -  tools useful for anyone who works with `.tex` and `.latex` formats.
+
+{{% /alert %}}

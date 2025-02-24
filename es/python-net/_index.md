@@ -38,3 +38,8 @@ Aquí están los enlaces a algunos recursos útiles que puede necesitar para rea
 - [Foro de soporte gratuito de Aspose.TeX para Python](https://forum.aspose.com/c/tex/)
 - [Aspose.TeX para el servicio de asistencia técnica de pago de Python](https://helpdesk.aspose.com/)
 
+{{% alert color="primary" %}}
+
+Pruebe también nuestros nuevos [**Agentes de IA de Aspose.TeX**](https://products.aspose.ai/tex/) controlados por IA - herramientas útiles para cualquiera que trabaje con formatos `.tex` y `.latex`.
+
+{{% /alert %}}
