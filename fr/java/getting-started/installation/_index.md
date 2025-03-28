@@ -5,7 +5,7 @@ linktitle: Installation
 title: Installation-Aspose.TeX pour Java
 weight: 60
 url: /java/installation/
-description: La documentation de l'API Aspose.TeX pour Java peut être trouvée dans le package ZIP téléchargé ou obtenue à partir des projets Maven avec des configurations simples.
+description: La documentation de l'API Aspose.TeX pour Java peut être trouvée dans le package ZIP téléchargé ou obtenue à partir des projets Maven.
 lastmod: "2024-09-27"
 ---
 

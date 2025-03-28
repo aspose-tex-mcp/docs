@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: Отображение и выравнивание
+linktitle: Система уравнений LaTeX 
 title: 2. Отображение и выравнивание уравнений LaTeX 
 weight: 10
 url: /java/latex-structures-for-equations/
@@ -11,7 +11,6 @@ lastmod: "2024-09-24"
 ---
 
 {{<section overview>}}
-
 
 Пакет *amsmath* содержит ряд определений сред для ввода отображаемых математических формул. Их можно классифицировать по количеству линий материала (одна или несколько) и по количеству точек выравнивания.
 

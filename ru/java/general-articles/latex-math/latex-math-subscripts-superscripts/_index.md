@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: 2. Верхний и нижний индексы
-title: Нижние и верхние индексы в LaTeX | Руководство по LaTeX
+linktitle: LaTeX Верхний и нижний индексы
+title: 2. Нижние и верхние индексы в LaTeX | Руководство по LaTeX
 weight: 20
 url: /java/latex-math-subscripts-superscripts/
 keywords: нижний индекс latex, математические формулы латеха, математика латеха, индексы математики латеха, верхние индексы математики латеха, нижний индекс в латехе

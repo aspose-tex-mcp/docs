@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: 1. Ввод и вывод
-title: Кодировки ввода и вывода | Aspose.TeX для Java
+linktitle: Ввод и вывод текста LaTeX
+title: 1. Кодировки ввода и вывода текста LaTeX | Aspose.TeX для Java
 weight: 10
 url: /java/latex-font-encodings/
 keywords: латех, латехные шрифты, кодировки латехных шрифтов, nfss

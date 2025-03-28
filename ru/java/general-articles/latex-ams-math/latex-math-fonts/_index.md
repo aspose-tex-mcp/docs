@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: Шрифты в математических формулах
+linktitle: LaTeX шрифты 
 title: 8. Шрифты в математических формулах | Мат шрифты LaTeX
 weight: 80
 url: /java/latex-math-fonts/

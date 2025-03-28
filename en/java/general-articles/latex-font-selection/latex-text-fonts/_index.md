@@ -1,8 +1,8 @@
 ---
 translation: true
 template: /templates/_template-java.md
-linktitle: 3. How to use LaTeX fonts in text
-title:	How to use LaTeX fonts in text
+linktitle: LaTeX text fonts
+title:	3. How to use LaTeX fonts in text
 weight: 30
 url: /java/latex-text-fonts/
 keywords: latex, latex fonts, latex text font commands, latex large, latex font size

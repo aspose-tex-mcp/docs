@@ -5,7 +5,7 @@ title: E/S de látex | Aspose.TeX para .NET
 linktitle: Entrada/salida de látex
 weight: 17
 url: /net/latex-io/
-description: Esta página describe brevemente las peculiaridades de trabajar con LaTeX como formato de salida o entrada y el archivo *.aux* como parte obligatoria de LaTeX.
+description: Esta página describe las peculiaridades de trabajar con LaTeX como formato de entrada o salida y el archivo *.aux* como parte obligatoria de LaTeX.
 keywords: látex io, látex i, látex o, archivo de entrada de látex, entrada en látex
 lastmod: "2024-10-30"
 ---

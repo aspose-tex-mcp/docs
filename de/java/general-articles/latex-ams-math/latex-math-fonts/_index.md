@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: LaTeX mathe schriftart
+linktitle: Schriftarten LaTeX
 title: 8. Schriftarten in mathematischen Formeln  | LaTeX
 weight: 80
 url: /java/latex-math-fonts/
