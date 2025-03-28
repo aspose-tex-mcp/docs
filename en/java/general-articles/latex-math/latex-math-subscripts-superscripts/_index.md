@@ -5,7 +5,7 @@ linktitle: 2. Subscript and subscript
 title: Subscript and subscript in LaTeX | LaTeX manual
 weight: 20
 url: /java/latex-math-subscripts-superscripts/
-keywords: latex, latex math formulas, latex math, latex math subscripts, latex math superscripts
+keywords: latex, latex math formulas, latex math, latex math subscripts, latex math superscripts, latex prime
 description: This article discusses how to build math formulas that contain subscripts and superscripts with TeX and LaTeX.
 lastmod: "2024-09-20"
 ---

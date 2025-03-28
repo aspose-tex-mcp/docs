@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: 2. Subíndice y subíndice
-title: Subíndice y subíndice en LaTeX | manual de látex
+linktitle: 2. Subíndice y subíndice en LaTeX
+title: Subíndice y subíndice en LaTeX | Manual de látex
 weight: 20
 url: /java/latex-math-subscripts-superscripts/
 keywords: látex, fórmulas matemáticas de látex, matemáticas de látex, subíndices matemáticos de látex, superíndices matemáticos de látex

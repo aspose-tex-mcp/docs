@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: Polices dans les formules mathématiques
+linktitle: Police LaTeX
 title: 8. Polices dans les formules mathématiques | LaTeX
 weight: 80
 url: /java/latex-math-fonts/

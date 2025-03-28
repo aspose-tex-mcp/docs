@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: 3. Как использовать шрифты LaTeX в тексте
-title: Как использовать шрифты LaTeX в тексте
+linktitle: Шрифты LaTeX в тексте
+title: 3. Как использовать шрифты LaTeX в тексте
 weight: 30
 url: /java/latex-text-fonts/
 keywords: латех, латехные шрифты, команды латехных текстовых шрифтов, латех большой, размер латехного шрифта

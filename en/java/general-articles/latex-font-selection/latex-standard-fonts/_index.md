@@ -1,7 +1,7 @@
 ---
 translation: true
 template: /templates/_template-java.md
-linktitle: 4.	Standard LaTeX fonts
+linktitle: 4. Standard LaTeX fonts
 title:	Standard LaTeX fonts | Aspose.TeX for Java
 weight: 40
 url: /java/latex-standard-fonts/

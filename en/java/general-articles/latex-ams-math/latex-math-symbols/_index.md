@@ -1,7 +1,7 @@
 ---
 translation: true
 template: /templates/_template-java.md
-linktitle: Symbols in math formulas
+linktitle: LaTeX mathematical symbols
 title: 9. Symbols in math formulas | LaTeX manual
 weight: 90
 url: /java/latex-math-symbols/
@@ -16,7 +16,7 @@ The tables in this article list the large range of math symbols provided by the 
 
 The tables indicate which extra packages need to be loaded to use each symbol command. Symbols with command names in black are available in standard LaTeX. Symbols with command names in blue require loading either `amsmath`, `amssymb`, or `stmaryrd`. If nesessary, further classification is given by markings: <sup>(*StM*)</sup> means a symbol from `stmaryrd` when the table also contains symbols from other packages; <sup>(*kernel*)</sup> marks symbols that are available in standard LaTeX but only by combining two or more glyphs, whereas a single glyph exists in the indicated package; and <sup>(*var*)</sup> marks "Alphabetic symbols" (of type `\mathalpha`) that change appearance when used within the scope of a [math alphabet identifier](/tex/{{lang.url-fragment}}java/latex-math-fonts/#81-math-alphabet-identifiers).
 
-## 9.1. Math symbol classes
+## 9.1. LaTeX Math symbol classes
 
 The primary classification of math symbols is related to their meaning in technical usage. In math typography, this classification defines the formula layout. In particular, TeX's math formatter adjusts the horizontal space on either side of each symbol according to its mathematical class. This classification also makes some finer distinctions, for example, between accents and simple symbols and in breaking the enormous list of *Relation* symbols into several tables.
 

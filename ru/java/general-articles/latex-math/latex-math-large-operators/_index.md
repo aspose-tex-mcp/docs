@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: 6. Крупные операторы
-title: Крупные операторы | Руководство по LaTeX
+linktitle: Крупные операторы LaTeX
+title: 6. Крупные операторы | Руководство по LaTeX
 weight: 60
 url: /java/latex-math-large-operators/
 keywords: латех, формулы латехной математики, латехная математика, большие операторы латехной математики, латехная сумма, латехный интеграл

@@ -1,7 +1,7 @@
 ---
 translation: true
 template: /templates/_template-java.md
-linktitle: Fonts in math formulas 
+linktitle: LaTeX math fonts 
 title: 8. Fonts in math formulas | LaTeX font math
 weight: 80
 url: /java/latex-math-fonts/

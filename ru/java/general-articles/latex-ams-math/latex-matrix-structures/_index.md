@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: Матрица и подобные среды. Cистема уравнений LaTeX
+linktitle: LaTeX Матрица и подобные среды. Cистема уравнений LaTeX
 title: 3. Матрица LaTeX | Руководство по LaTeX
 weight: 30
 url: /java/latex-ams-matrix/

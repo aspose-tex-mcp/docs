@@ -5,7 +5,7 @@ title: LaTeX-Dateireparatur | API für .NET
 linktitle: Reparatur von LaTeX-Dateien
 weight: 30
 url: /net/latex-repair/
-description: In diesem Artikel wird die Aspose.TeX-API-Lösung für die .NET LaTeX-Reparatur beschrieben. Erfahren Sie anhand der Codebeispiele, wie Sie die Funktionalität nutzen.
+description: Im Artikel wird die Aspose.TeX-Lösung für die .NET LaTeX-Reparatur beschrieben. Erfahren Sie anhand der Codebeispiele, wie Sie die Funktionalität nutzen.
 lastmod: "2024-09-26"
 ---
 

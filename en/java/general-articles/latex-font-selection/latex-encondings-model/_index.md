@@ -1,8 +1,8 @@
 ---
 translation: true
 template: /templates/_template-java.md
-linktitle: 7. Model for character encodings
-title: LaTeX's model for character encodings
+linktitle:  Model for character encodings
+title: 7. LaTeX's model for character encodings
 weight: 70
 url: /java/latex-encodings-model/
 keywords: latex, latex fonts, latex font encodings, latex input encodings, latex output encodings, licr object, latex internal character representation

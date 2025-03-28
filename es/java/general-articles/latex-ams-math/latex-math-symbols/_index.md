@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: Símbolos en LaTeX.
+linktitle: Simbolo en LaTeX.
 title: 9. Símbolos en fórmulas matemáticas | Manual de látex
 weight: 90
 url: /java/latex-math-symbols/
@@ -16,7 +16,7 @@ Las tablas de este artículo enumeran la amplia gama de símbolos matemáticos p
 
 Las tablas indican qué paquetes adicionales deben cargarse para usar cada comando de símbolo. Los símbolos con nombres de comandos en negro están disponibles en LaTeX estándar. Los símbolos con nombres de comandos en azul requieren cargar `amsmath`, `amssymb` o `stmaryrd`. Si es necesario, se proporciona una clasificación adicional mediante marcas: <sup>(*StM*)</sup> significa un símbolo de `stmaryrd` cuando la tabla también contiene símbolos de otros paquetes; <sup>(*kernel*)</sup> marca símbolos que están disponibles en LaTeX estándar pero solo combinando dos o más glifos, mientras que existe un solo glifo en el paquete indicado; y <sup>(*var*)</sup> marca "Símbolos alfabéticos" (de tipo `\mathalpha`) que cambian de apariencia cuando se usan dentro del alcance de un [identificador del alfabeto matemático](/tex/{{lang.url-fragment}}java/latex-math-fonts/#81-math-alphabet-identifiers).
 
-## 9.1. clases de símbolos matemáticos
+## 9.1. Clases de matemáticos símbolos LaTeX
 
 La clasificación principal de los símbolos matemáticos está relacionada con su significado en el uso técnico. En tipografía matemática, esta clasificación define el diseño de la fórmula. En particular, el formateador matemático de TeX ajusta el espacio horizontal a cada lado de cada símbolo según su clase matemática. Esta clasificación también hace algunas distinciones más finas, por ejemplo, entre acentos y símbolos simples y al dividir la enorme lista de símbolos de *Relación* en varias tablas.
 
