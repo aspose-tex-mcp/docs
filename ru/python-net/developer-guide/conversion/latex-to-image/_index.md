@@ -5,9 +5,6 @@ title: LaTeX в изображение | Aspose.TeX для Python
 linktitle: LaTeX для изображения
 weight: 10
 url: /python-net/latex-to-image/
-aliases:
-- /python-net/latex-to-png/
-- /python-net/latex-to-svg/
 keywords: латех в png, латех png, латех в изображение, латехное изображение, латех в jpg, латех jpg, латех в jpeg, латех jpeg, латех в tiff, латех tiff, латех в bmp, латех bmp
 description: Чтобы преобразовать TeX в форматы изображений с помощью Aspose.TeX API для Python, изучите эту статью, чтобы увидеть, как это сделать, и примеры кода.
 lastmod: "2024-09-24"

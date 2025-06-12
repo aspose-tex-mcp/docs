@@ -64,6 +64,7 @@ Next, we specify the preamble. The default preamble is:
 \usepackage{amsfonts}
 \usepackage{amssymb}
 ```
+
 which provides slightly more advanced math formula support than basic LaTeX. You can, for example, add the `color` package if you want to use your own highlighting in the formula, as we showed in the code example.
 
 Then we instruct the renderer to scale the output by 300%.

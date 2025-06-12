@@ -38,7 +38,7 @@ This brief explanation shows that **Base64** is exactly what we need. To encode 
 
 ## Embedding the encoded image into the LaTeX file
 
-The string of characters generated from the encoding process must be placed in the standard LaTeX `filecontents*` environment within the preamble of a LaTeX file, as follows:
+The string of characters generated from the encoding process must be placed in the standard LaTeX `filecontents` environment within the preamble of a LaTeX file, as follows:
 
 ```tex
 \documentclass{article}

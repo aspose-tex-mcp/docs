@@ -5,7 +5,6 @@ title: LaTeX до зображення | Aspose.TeX для C++
 linktitle: LaTeX до зображення
 weight: 10
 url: /cpp/latex-to-image/
-aliases: /cpp/latex-to-png/
 keywords: латекс у png, латекс png, латекс у зображення, латексне зображення, латекс у jpg, латекс у jpg, латекс у jpeg, латекс у jpeg, латекс у tiff, латекс у tiff, латекс у bmp, латекс bmp
 description: Щоб перетворити TeX у формати зображень за допомогою Aspose.TeX API для C++, ознайомтеся з цією статтею, яка описує, як це зробити, і прикладами коду.
 lastmod: 2023-03-23

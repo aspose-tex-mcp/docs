@@ -13,14 +13,15 @@ lastmod: "2024-09-20"
 
 Actually, there are two aspects of LaTeX graphics that are worth mentioning:
 
- * vector graphics described directly by means of LaTeX/TeX commands and,
- * inclusion of external graphics described by means of external formats, like EPS, PDF or raster PNG and PDF.
+* vector graphics described directly by means of LaTeX/TeX commands and,
+* inclusion of external graphics described by means of external formats, like EPS, PDF or raster PNG and PDF.
 
 The former has limited support in the original LaTeX and its packages. It is implemented with help of TeX vertical and horizontal rules. That's because the original LaTeX is based on the original TeX engine, which produces main output in *DVI* format, which is not suitable for describing either lines and curves or binary raster image data. But engines that are able to output to graphics-supporting formats (like pdfTeX to PDF) can also deal with graphics using format-dependent packages or package features. The latter graphics are not supported in basic LaTeX for the same reason. We will discuss graphics inclusion features below.
 
 ## The LaTeX `graphics` package and `\includegraphics` command
 
 When talking about LaTeX graphics inclusion, the first thing that comes to mind is the `\includegraphics` command. It is defined in the `graphics` package, which you should mention in the preamble to enable its features.
+
 ```tex
 \usepackage{graphics}
 ```
@@ -31,6 +32,7 @@ If your typesetting system is not configured to use, say, pdfTeX by default, you
 ```tex
 \usepackage[pdftex]{graphics}
 ```
+
 A `driver` file is a part of a package that implements the interface between package commands and format-dependent low-level TeX extension primitives. Aspose.TeX's LaTeX graphics support is configured to use its own driver, so you don't need to specify the driver option.
 
 Now, the simplest way to include, say, a PNG image is to type:
@@ -39,10 +41,10 @@ Now, the simplest way to include, say, a PNG image is to type:
 ```tex
 \includegraphics{sample-image.png}
 ```
+
 where `sample-image.png` is the name of the file you want to include. You may even ommit the extension. The `graphics` package contains the list of definitions of supported formats. When looking for a file, it traverses that list and includes the first matching file found.
 
 You can also specify the full file name using an absolute or relative path:
-
 
 ```tex
 \includegraphics{d:/sample-image.png} % absolute path
@@ -51,7 +53,6 @@ You can also specify the full file name using an absolute or relative path:
 ```
 
 Another way to specify the graphics files location(s) is to define a list of alternative paths using `\graphicspath` command before calling `\includegraphics`:
-
 
 ```tex
 \graphicspath{{d:/img}{c:/img}{d:/work/img}}

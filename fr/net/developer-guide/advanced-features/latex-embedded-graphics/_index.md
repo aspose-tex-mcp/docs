@@ -38,7 +38,7 @@ Nous pouvons voir à partir de cette courte explication que **Base64** est ce do
 
 ## Placer l'image codée dans le fichier LaTeX
 
-La chaîne de caractères que vous obtenez suite à l'encodage doit être placée dans l'environnement standard LaTeX `filecontents*` dans le préambule d'un fichier LaTeX comme suit :
+La chaîne de caractères que vous obtenez suite à l'encodage doit être placée dans l'environnement standard LaTeX `filecontents` dans le préambule d'un fichier LaTeX comme suit :
 
 
 ```tex

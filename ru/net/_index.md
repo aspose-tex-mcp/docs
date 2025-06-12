@@ -6,8 +6,6 @@ title: Решение Aspose.TeX для .NET API
 weight: 10
 url: /net/
 description: API-решение для управления файлами TeX для .NET. Передавайте входные данные TeX и получайте выходные данные, а также создавайте собственный формат TeX.
-aliases:
-- /display/texnet
 is_root: true
 lastmod: "2024-09-24"
 ---
