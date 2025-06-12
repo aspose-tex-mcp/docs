@@ -43,7 +43,7 @@ This table below lists important Aspose.TeX for Python technical resources.
 |**Resource**|**Description**|
 | :- | :- |
 |[Aspose.TeX for Python home page](https://products.aspose.com/tex/python-net/)|Product home page.|
-|[Aspose.TeX blog](https://blog.aspose.com/category/tex/)|Check this often for information about new releases and useful tips about Aspose.TeX for Python.|
-|[Aspose.TeX for Python download](https://pypi.org/project/aspose-tex-net/)|Download the latest version of Aspose.TeX for Python from here. We release often.|
-|[Aspose.TeX for Python support forum](https://forum.aspose.com/c/tex)|Post your questions and issues here for a speedy resolution.|
-|[Aspose.TeX for Python product documentation](/tex/{{lang.url-fragment}}python-net/)|Full online documentation that includes this documentation as well as Aspose.TeX for Python API Reference.|
+|[Aspose.TeX blog](https://blog.aspose.com/category/tex/)| Check this often for information about new releases and useful tips about Aspose.TeX for Python.|
+|[Aspose.TeX for Python download](https://pypi.org/project/aspose-tex-net/)| Download the latest version of Aspose.TeX for Python from here. We release often.|
+|[Aspose.TeX for Python support forum](https://forum.aspose.com/c/tex)| Post your questions and issues here for a speedy resolution.|
+|[Aspose.TeX for Python product documentation](/tex/{{lang.url-fragment}}python-net/)| Full online documentation that includes this documentation as well as Aspose.TeX for Python API Reference.|

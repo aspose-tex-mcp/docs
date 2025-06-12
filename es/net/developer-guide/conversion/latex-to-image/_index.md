@@ -5,9 +5,6 @@ title: LaTeX a la imagen | Aspose.TeX para .NET
 linktitle: LaTeX a imagen
 weight: 10
 url: /net/latex-to-image/
-aliases:
-- /net/latex-to-png/
-- /net/latex-to-svg/
 keywords: látex a png, látex png, látex a imagen, imagen de látex, látex a jpg, látex jpg, látex a jpeg, látex jpeg, látex a tiff, látex tiff, látex a bmp, látex bmp
 description: Para convertir TeX a formatos de imagen usando la Aspose.TeX para .NET, lea este artículo para ver que describe cómo hacer esto y los ejemplos de código.
 lastmod: "2024-10-30"

@@ -5,9 +5,6 @@ title: LaTeX vers l'image | Aspose.TeX pour Java
 linktitle: LaTeX en image
 weight: 10
 url: /java/latex-to-image/
-aliases:
-- /java/latex-to-png/
-- /java/latex-to-svg/
 keywords: latex à png, latex png, latex à image, image latex, latex à jpg, latex jpg, latex à jpeg, latex jpeg, latex à tiff, latex tiff, latex à bmp, latex bmp
 description: Pour convertir TeX en formats d'image à l'aide de la solution API Aspose.TeX pour Java, consultez cet article qui décrit comment procéder.
 lastmod: "2024-09-27"

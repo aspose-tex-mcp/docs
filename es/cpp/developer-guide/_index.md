@@ -29,6 +29,6 @@ La Guía para desarrolladores actúa como un recurso integral para utilizar efic
 - [**Actualizaciones y versiones**](https://releases.aspose.com/tex/cpp/release-notes/) - incluye los lanzamientos de la solución API Aspose.TeX para C++ divididos cronológicamente.
 - [**Introducción a TeX**](/tex/{{lang.url-fragment}}net/introduction-to-tex/). - Este capítulo se agrega para que puedas acostumbrarte a TeX y LaTeX. Allí podrá comprender sus peculiaridades, estructura de archivos, pros y contras, paquetes integrados y mucho más.
 - [**Artículos generales sobre LaTeX**](/tex/{{lang.url-fragment}}java/general-articles-latex/) - Le proporciona información básica sobre LaTeX, incluida información sobre casos de uso, cómo trabajar con fuentes, imágenes, fórmulas matemáticas y diferentes paquetes de LaTeX.
-- [**Aspose.Page aplicaciones multiplataforma**](https://products.aspose.app/tex/applications): convierte, fusiona, visualiza archivos TeX y LaTeX, crea ecuaciones, tablas, gráficos y artículos LaTeX sin codificación y descubre cómo puedes desarrollar tus propias aplicaciones.
+- [Aspose.TeX aplicaciones multiplataforma**](https://products.aspose.app/tex/applications): convierte, fusiona, visualiza archivos TeX y LaTeX, crea ecuaciones, tablas, gráficos y artículos LaTeX sin codificación y descubre cómo puedes desarrollar tus propias aplicaciones.
 - [**Agentes de inteligencia artificial de Aspose.TeX**](https://products.aspose.ai/tex/), una combinación de la potencia de la inteligencia artificial y nuestras API para la manipulación de archivos TeX y LaTeX.
 

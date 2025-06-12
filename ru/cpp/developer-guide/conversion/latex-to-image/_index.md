@@ -5,7 +5,6 @@ title: LaTeX в изображение | Aspose.TeX для C++
 linktitle: LaTeX для изображения
 weight: 10
 url: /cpp/latex-to-image/
-aliases: /cpp/latex-to-png/
 keywords: латех в png, латех png, латех в изображение, латехное изображение, латех в jpg, латех jpg, латех в jpeg, латех jpeg, латех в tiff, латех tiff, латех в bmp, латех bmp
 description: Чтобы преобразовать TeX в форматы изображений с помощью Aspose.TeX для C++, изучите эту статью, в которой описывается, как это сделать, и примеры кода.
 lastmod: 2023-03-23

@@ -6,7 +6,6 @@ title: Лицензирование — Aspose.TeX для .NET
 weight: 70
 url: /net/licensing/
 description: Если вы остановились на лицензионной версии решения Aspose.TeX API для .NET, здесь вы узнаете, как применить лицензию.
-aliases: /сеть/лицензирование
 lastmod: "2024-09-24"
 ---
 

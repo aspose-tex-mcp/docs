@@ -5,7 +5,6 @@ title: LaTeX zu XPS | Aspose.TeX für Java
 linktitle: LaTeX zu XPS
 weight: 12
 url: /java/latex-to-xps/
-aliases: /java/other-target-formats/
 description: Mit der Konvertierungsfunktion der Aspose.TeX-Lösung für Java können Sie LaTeX-Dateien in das XPS-Format konvertieren. Lernen Sie die Codebeispiele kennen.
 lastmod: "2024-09-26"
 ---

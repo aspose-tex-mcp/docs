@@ -43,8 +43,8 @@ This table lists important Aspose.TeX for Java technical resources.
 
 |**Resource**|**Description**|
 | :- | :- |
-|[Aspose.TeX for Java home page](https://products.aspose.com/tex/java/)|Product home page.|
-|[Aspose.TeX blog](https://blog.aspose.com/category/tex/)|Check this often for information about new releases and useful tips about Aspose.TeX for Java.|
-|[Aspose.TeX for Java download](https://releases.aspose.com/tex/java)|Download the latest version of Aspose.TeX for Java from here. We release often.|
-|[Aspose.TeX for Java support forum](https://forum.aspose.com/c/tex)|Post your questions and issues here for a speedy resolution.|
-|[Aspose.TeX for Java product documentation](/tex/{{lang.url-fragment}}java/)|Full online documentation that includes this documentation as well as Aspose.TeX for Java API Reference.|
+|[Aspose.TeX for Java home page](https://products.aspose.com/tex/java/)| Product home page.|
+|[Aspose.TeX blog](https://blog.aspose.com/category/tex/)| Check this often for information about new releases and useful tips about Aspose.TeX for Java.|
+|[Aspose.TeX for Java download](https://releases.aspose.com/tex/java)| Download the latest version of Aspose.TeX for Java from here. We release often.|
+|[Aspose.TeX for Java support forum](https://forum.aspose.com/c/tex)| Post your questions and issues here for a speedy resolution.|
+|[Aspose.TeX for Java product documentation](/tex/{{lang.url-fragment}}java/)| Full online documentation that includes this documentation as well as Aspose.TeX for Java API Reference.|

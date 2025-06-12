@@ -5,9 +5,6 @@ title: LaTeX до зображення | Aspose.TeX для .NET
 linktitle: LaTeX до зображення
 weight: 10
 url: /net/latex-to-image/
-aliases:
-- /net/latex-to-png/
-- /net/latex-to-svg/
 keywords: латекс у png, латекс png, латекс у зображення, латексне зображення, латекс у jpg, латекс у jpg, латекс у jpeg, латекс у jpeg, латекс у tiff, латекс у tiff, латекс у bmp, латекс bmp
 description: Щоб перетворити TeX у формати зображень за допомогою Aspose.TeX API для .NET, ознайомтеся з цією статтею, щоб побачити, як це зробити, і приклади коду.
 lastmod: 2024-09-20

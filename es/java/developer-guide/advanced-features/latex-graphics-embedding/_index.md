@@ -38,7 +38,7 @@ Esta breve explicación muestra que **Base64** es exactamente lo que necesitamos
 
 ## Incrustar la imagen codificada en el archivo LaTeX
 
-La cadena de caracteres generada a partir del proceso de codificación debe colocarse en el entorno estándar `filecontents*` de LaTeX dentro del preámbulo de un archivo LaTeX, de la siguiente manera:
+La cadena de caracteres generada a partir del proceso de codificación debe colocarse en el entorno estándar `filecontents` de LaTeX dentro del preámbulo de un archivo LaTeX, de la siguiente manera:
 
 ```tex
 \documentclass{article}
