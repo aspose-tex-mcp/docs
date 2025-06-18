@@ -6,7 +6,7 @@ linktitle: Системні вимоги
 weight: 50
 url: /java/system-requirements/
 description: Рішення Aspose.TeX для Java можна використовувати в будь-якому середовищі розробки, яке підтримує Java, але є деякі середовища, які підтримуються явно.
-lastmod: 2024-09-20
+lastmod: "2025-06-13"
 ---
 
 {{<section overview>}}

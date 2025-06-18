@@ -6,7 +6,7 @@ linktitle: Відтворення математичних формул LaTeX
 weight: 10
 url: /java/latex-math-formula-rendering/
 description: Відтворення математичних формул LaTeX в Aspose.TeX API для Java описано в цій статті. Ознайомтеся з прикладами коду, як використовувати цю функцію.
-lastmod: 2024-09-20
+lastmod: "2025-06-13"
 ---
 
 {{<section overview>}}

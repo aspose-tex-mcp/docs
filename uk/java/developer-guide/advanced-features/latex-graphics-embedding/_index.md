@@ -7,7 +7,7 @@ weight: 18
 url: /java/latex-graphics-embedding/
 keywords: includegraphics latex, latex embed base64 graphics, latex base64 encoded graphics, write18, shell-escape, latex shell command
 description: Дослідіть, як вставити зображення, закодовані за допомогою Base64, у вихідний код LaTeX і дізнаєтесь про функцію \write18, яка робить це можливим.
-lastmod: 2024-09-20
+lastmod: "2025-06-13"
 ---
 
 {{<section overview>}}

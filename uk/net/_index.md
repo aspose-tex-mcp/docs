@@ -7,7 +7,7 @@ weight: 10
 url: /net/
 description: Керуйте файлами TeX у рішенні API для C# .NET. Бібліотека надає способи передавати вхідні дані TeX і отримувати вихідні дані та додаткові функції.
 is_root: true
-lastmod: 2024-09-20
+lastmod: "2025-06-13"
 ---
 
 {{<section overview>}}

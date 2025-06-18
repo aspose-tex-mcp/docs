@@ -7,7 +7,7 @@ weight: 30
 url: /java/latex-ams-matrix/
 keywords: ams-latex, amsmath, amscd, латексна матриця, латексні кейси, latex delarray, комутативні діаграми латех
 description: Ця стаття надає короткий вступ до верстки матричних структур LaTeX за допомогою пакетів AMS-LATEX.
-lastmod: 2024-09-20
+lastmod: "2025-06-13"
 ---
 
 {{<section overview>}}

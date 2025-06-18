@@ -6,7 +6,7 @@ linktitle: Системні вимоги
 weight: 50
 url: /cpp/system-requirements/
 description: Рішення Aspose.TeX для C++ можна використовувати в будь-якому середовищі розробки, яке підтримує C++, але деякі середовища підтримуються явно.
-lastmod: 2024-09-20
+lastmod: "2025-06-13"
 ---
 
 {{<section overview>}}

@@ -14,6 +14,7 @@ lastmod: "2024-09-20"
 ---
 
 {{<section overview>}}
+
 **Aspose.TeX for Java** provides features for converting LaTeX files to a number of raster image formats.
 
 ## How to convert LaTeX to PNG

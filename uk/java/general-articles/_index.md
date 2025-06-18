@@ -6,7 +6,7 @@ title: Загальні статті про LaTeX | Aspose.TeX для Java
 weight: 10
 url: /java/general-articles-latex/
 description: Базова інформація про LaTeX, включаючи інформацію про використання, як працювати зі шрифтами, зображеннями, формулами та різними пакетами LaTeX.
-lastmod: 2024-09-20
+lastmod: "2025-06-13"
 ---
 
 {{<section overview>}}

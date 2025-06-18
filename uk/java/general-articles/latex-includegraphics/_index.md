@@ -7,7 +7,7 @@ weight: 10
 url: /java/latex-includegraphics/
 keywords: includegraphics latex, latex includegraphic, вставити зображення latex, latex graphicx, латексне вставити зображення, includegraphics latex package, draw io latex, latex includegraphics width, includegraphics width, figure scale latex
 description: Дізнайтеся про макрос LaTeX includegraphics, а також про перетворення зображень, вікно перегляду, відсікання та різницю між пакетами graphics і graphicx.
-lastmod: 2024-09-20
+lastmod: "2025-06-13"
 ---
 
 {{<section overview>}}

@@ -7,7 +7,7 @@ weight: 17
 url: /net/latex-io/
 description: На цій сторінці коротко описано особливості роботи з LaTeX як вихідним або вхідним форматом та файлом *.aux* як обов’язковою частиною LaTeX.
 keywords: latex io, latex i, latex o, латексний вхідний файл, введення в latex
-lastmod: 2024-09-20
+lastmod: "2025-06-13"
 ---
 
 {{<section overview>}}

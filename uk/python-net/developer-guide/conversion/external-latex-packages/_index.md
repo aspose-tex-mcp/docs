@@ -6,7 +6,7 @@ linktitle: Зовнішні пакети LaTeX
 weight: 19
 url: /python-net/external-latex-packages/
 description: API Aspose.TeX для Python підтримує використання зовнішніх пакетів, які не входять до самої бібліотеки, наприклад пакетів fancybox і pgfplots
-lastmod: 2024-09-20
+lastmod: "2025-06-13"
 ---
 
 {{<section overview>}}

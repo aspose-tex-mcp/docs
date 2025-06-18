@@ -6,7 +6,7 @@ title: Aspose.TeX і Object TeX | Aspose.TeX для .NET
 weight: 11
 url: /net/aspose-tex-and-object-tex/
 description: TeX є форматом введення та виведення цього рішення API, тому тут ми пояснюємо Object TeX і як він перетворюється на цільовий формат.
-lastmod: 2024-09-20
+lastmod: "2025-06-13"
 ---
 
 {{<section overview>}}

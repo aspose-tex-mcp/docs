@@ -6,7 +6,7 @@ linktitle: Огляд продукту
 weight: 10
 url: /net/product-overview/
 description: Aspose.TeX — це бібліотека .NET для набору файлів TeX. Він надає вам такі широкі можливості, як конвертація або створення власного формату TeX.
-lastmod: 2024-09-20
+lastmod: "2025-06-13"
 ---
 
 {{<section overview>}}

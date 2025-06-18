@@ -6,7 +6,7 @@ linktitle: Керівництво розробника
 weight: 30
 url: /net/developer-guide/
 description: У цьому розділі розробникам пояснюється функціональність рішення Aspose.TeX API для .NET і надаються приклади коду, як керувати TeX.
-lastmod: 2024-09-20
+lastmod: "2025-06-13"
 ---
 
 {{<section overview>}}

@@ -6,7 +6,7 @@ linktitle: FAQ
 weight: 80
 url: /net/faq/
 description: Отримайте відповіді на всі найпоширеніші запитання про Aspose.TeX для .NET, який є комплексним API для верстки та маніпулювання TeX і LaTeX.
-lastmod: 2024-09-20
+lastmod: "2025-06-13"
 ---
 
 {{<section overview>}}

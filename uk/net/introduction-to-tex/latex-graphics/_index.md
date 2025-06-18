@@ -6,7 +6,7 @@ linktitle: Графіка LaTeX
 weight: 18
 url: /net/latex-graphics/
 description: Про включення графіки в TeX варто згадати. Коли мова йде про це, перше, що спадає на думку, це команда `\includegraphics`.
-lastmod: 2024-09-20
+lastmod: "2025-06-13"
 ---
 
 {{<section overview>}}

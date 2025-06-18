@@ -6,7 +6,7 @@ title: Ліцензування - Aspose.TeX для Python
 weight: 70
 url: /python-net/licensing/
 description: Якщо ви використовуєте ліцензовану версію рішення Aspose.TeX API для Python, ви можете дізнатися тут, як застосувати ліцензію.
-lastmod: 2024-09-20
+lastmod: "2025-06-13"
 ---
 
 {{<section overview>}}

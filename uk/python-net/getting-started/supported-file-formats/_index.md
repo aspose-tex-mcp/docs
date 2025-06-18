@@ -6,7 +6,7 @@ linktitle: Підтримувані формати файлів
 weight: 20
 url: /python-net/supported-file-formats/
 description: Це рішення Python для роботи з файлами TeX підтримує файли TeX як вхідні та різні вихідні формати, зокрема TeX, XPS, PDF, PNG, JPEG, TIFF і BMP.
-lastmod: 2024-09-20
+lastmod: "2025-06-13"
 ---
 
 {{<section overview>}}

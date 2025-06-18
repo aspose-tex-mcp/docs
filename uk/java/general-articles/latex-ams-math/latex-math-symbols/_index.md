@@ -7,7 +7,7 @@ weight: 90
 url: /java/latex-math-symbols/
 keywords: символи в LaTeX, aсимволи латех, amsfonts, amssymb, класи математичних символів латех, пакет stmaryrd, шрифт st mary road
 description: Вивчіть класифікацію математичних символів у TeX і доступ до символів різних класів за допомогою команд стандартного TeX(LaTeX) і пакету amssymb.
-lastmod: 2024-09-20
+lastmod: "2025-06-13"
 ---
 
 {{<section overview>}}

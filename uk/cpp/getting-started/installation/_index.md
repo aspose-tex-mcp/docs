@@ -6,7 +6,7 @@ linktitle: Установка
 weight: 60
 url: /cpp/installation/
 description: Документацію Aspose.TeX API для C++ можна знайти у завантаженому ZIP-пакеті або отримати з NuGet Gallery, натиснувши «Завантажити пакет».
-lastmod: 2024-09-20
+lastmod: "2025-06-13"
 ---
 
 {{<section overview>}}

@@ -6,7 +6,7 @@ linktitle: Стаючи до роботи
 weight: 20
 url: /net/getting-started/
 description: C# .NET API для розробників для обробки та обробки файлів TeX і LaTeX. Вивчіть основи, щоб почати працювати з рішенням.
-lastmod: 2024-09-20
+lastmod: "2025-06-13"
 ---
 
 {{<section overview>}}

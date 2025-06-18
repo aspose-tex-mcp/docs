@@ -50,7 +50,7 @@ iVBORw0KGgoAAAANSUhEUgAAAPgAAABdCAYAAAH/B5vAAAAAGXRFWHRTb2Z0d2FyZQBBZ......
 \end{document}
 ```
 
-Here it is! **Step 2** is complete. We have successfully embedded the image within the LaTeX file! But what will happen when we run the typesetting of this file with LaTeX?"
+Here it is! **Step 2** is complete. We have successfully embedded the image within the LaTeX file! But what will happen when we run the typesetting of this file with LaTeX?
 
 A LaTeX processor will write the string of characters from the environment to an external file named `sample-image.64`. Because of the `overwrite` option, the file will be overwritten if it already exists (e.g., if it was created during a previous run). This is how **Step 3** is also accomplished!
 

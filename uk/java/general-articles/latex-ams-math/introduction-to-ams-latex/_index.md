@@ -7,7 +7,7 @@ weight: 10
 url: /java/introduction-to-ams-latex/
 keywords: ams-latex, amsmath, параметри amsmath, amsopn, amstext, amscd, amsthm, amsxtra, upref
 description: Ця стаття є коротким вступом до пакета amsmath і коротко описує його параметри, а також доступні підпакети та розширення.
-lastmod: 2024-09-20
+lastmod: "2025-06-13"
 ---
 
 {{<section overview>}}

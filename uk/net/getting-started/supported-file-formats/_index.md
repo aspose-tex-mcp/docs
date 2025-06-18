@@ -6,7 +6,7 @@ linktitle: Підтримувані формати файлів
 weight: 20
 url: /net/supported-file-formats/
 description: Це рішення для роботи з TeX для .NET підтримує файли TeX для введення та різноманітні вихідні формати, такі як TeX, XPS, PDF, PNG, JPEG, TIFF і PNG.
-lastmod: 2024-09-20
+lastmod: "2025-06-13"
 ---
 
 {{<section overview>}}

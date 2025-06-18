@@ -6,7 +6,7 @@ linktitle: Стаючи до роботи
 weight: 20
 url: /python-net/getting-started/
 description: Python API для розробників, щоб маніпулювати та обробляти файли TeX і LaTeX. Вивчіть основи, щоб почати працювати з рішенням.
-lastmod: 2024-09-20
+lastmod: "2025-06-13"
 ---
 
 {{<section overview>}}

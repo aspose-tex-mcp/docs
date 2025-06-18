@@ -6,7 +6,7 @@ title: Встановлення - Aspose.TeX для Python
 weight: 60
 url: /python-net/installation/
 description: Бібліотека Python для розробників для обробки файлів TeX(LaTeX). Дізнайтеся, як встановити рішення Aspose.TeX API для Python.
-lastmod: 2024-09-20
+lastmod: "2025-06-13"
 ---
 
 {{<section overview>}}

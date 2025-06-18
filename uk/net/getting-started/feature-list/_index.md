@@ -6,7 +6,7 @@ linktitle: Список функцій
 weight: 30
 url: /net/feature-list/
 description: Додайте функціональні можливості роботи з файлами TeX до свого власного рішення. Дізнайтеся про функції, які пропонує вам рішення Aspose.TeX API для .NET.
-lastmod: 2024-09-20
+lastmod: "2025-06-13"
 ---
 
 {{<section overview>}}

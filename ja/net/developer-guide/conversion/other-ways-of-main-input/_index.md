@@ -17,7 +17,7 @@ lastmod: "2025-06-09"
 
 {{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-InputStream.cs" >}}
 
-すべての出力ファイルには *texput *という名前が付いていることに注意してください。これは、エンジンが他の名前をどこにでも入手できないためです。 *texput* はデフォルトのジョブ名です。 [ここ](/tex/{{lang.url-fragment}}net/tex-io/#tex-output)および[ここ](/tex/{{lang.url-fragment}}net/other-options/#how-to-set-the-job-name)は、ジョブ名の詳細です。
+すべての出力ファイルには *texput*という名前が付いていることに注意してください。これは、エンジンが他の名前をどこにでも入手できないためです。 *texput* はデフォルトのジョブ名です。 [ここ](/tex/{{lang.url-fragment}}net/tex-io/#tex-output)および[ここ](/tex/{{lang.url-fragment}}net/other-options/#how-to-set-the-job-name)は、ジョブ名の詳細です。
 
 ## ターミナルからメインTEX入力ファイルを入力します
 

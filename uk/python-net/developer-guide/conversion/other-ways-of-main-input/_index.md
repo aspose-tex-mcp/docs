@@ -6,7 +6,7 @@ linktitle: Інші способи надання основного вхідн�
 weight: 14
 url: /python-net/other-ways-of-main-input/
 description: API-рішення Aspose.TeX для Python містить конструктор, який приймає потік як перший аргумент, забезпечуючи функцію перетворення.
-lastmod: 2024-09-20
+lastmod: "2025-06-13"
 ---
 
 {{<section overview>}}

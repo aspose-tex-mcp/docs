@@ -6,7 +6,7 @@ linktitle: Огляд продукту
 weight: 10
 url: /cpp/product-overview/
 description: Aspose.TeX — це бібліотека C++ для верстки файлів TeX. Він надає вам такі широкі можливості, як конвертація або створення власного формату TeX.
-lastmod: 2024-09-20
+lastmod: "2025-06-13"
 ---
 
 {{<section overview>}}

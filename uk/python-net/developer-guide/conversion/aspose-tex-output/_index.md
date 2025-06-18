@@ -6,7 +6,7 @@ linktitle: Інтерфейс виведення Aspose.TeX
 weight: 16
 url: /python-net/aspose-tex-output/
 description: Ось пояснення функції перетворення рішення Aspose.TeX API для Python, з TeX як вихідним форматом, із прикладами коду.
-lastmod: 2024-09-20
+lastmod: "2025-06-13"
 ---
 
 {{<section overview>}}

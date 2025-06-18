@@ -6,7 +6,7 @@ linktitle: Системні вимоги
 weight: 50
 url: /net/system-requirements/
 description: Рішення Aspose.TeX для .NET можна використовувати в будь-якому середовищі розробки, яке підтримує .NET, але є деякі середовища, які підтримуються явно.
-lastmod: 2024-09-20
+lastmod: "2025-06-13"
 ---
 
 {{<section overview>}}

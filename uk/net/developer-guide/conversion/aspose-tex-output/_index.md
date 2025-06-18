@@ -6,7 +6,7 @@ linktitle: Інтерфейс виведення Aspose.TeX
 weight: 16
 url: /net/aspose-tex-output/
 description: Функціональність перетворення рішення Aspose.TeX API для .NET із TeX як вихідний формат пояснюється тут із прикладами коду.
-lastmod: 2024-09-20
+lastmod: "2025-06-13"
 ---
 
 {{<section overview>}}

@@ -6,7 +6,7 @@ title: Як запустити приклади | Aspose.TeX для Python
 weight: 80
 url: /python-net/how-to-run-the-examples/
 description: На цій сторінці наведено всі необхідні вимоги та кроки для запуску прикладів рішення Aspose.TeX для Python.
-lastmod: 2024-09-20
+lastmod: "2025-06-13"
 ---
 
 {{<section overview>}}

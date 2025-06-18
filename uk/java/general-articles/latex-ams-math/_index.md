@@ -7,7 +7,7 @@ weight: 40
 url: /java/what-is-ams-latex/
 keywords: ams-latex, ams latex, латексна математика, латексна формула, латексна ams, латексне рівняння, латексний математичний вираз
 description: Ця стаття проливає світло на те, що таке AMS-LATEX, і коротко пояснює, коли використовувати пакети, надані AMS.
-lastmod: 2024-09-20
+lastmod: "2025-06-13"
 ---
 
 {{<section overview>}}
