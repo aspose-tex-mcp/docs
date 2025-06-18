@@ -19,7 +19,7 @@ lastmod: "2025-06-09"
 
 ## 求人名を設定する方法
 
-メイン入力ファイルをファイル名として渡すと、他の拡張機能ではありますが、同じ名前の出力ファイルが取得されます。 TEXエンジンは、入力ファイルの名前を *ジョブ名 *を呼び出し、出力ファイルに使用します。メイン入力ファイルを[ストリーム](/tex/{{lang.url-fragment}}net/other-ways-of-main-input/#providing-the-main-input-file-as-a-stream)として渡すと、Texエンジンはデフォルトのジョブ名、つまり *texput *を使用します。
+メイン入力ファイルをファイル名として渡すと、他の拡張機能ではありますが、同じ名前の出力ファイルが取得されます。 TEXエンジンは、入力ファイルの名前を *ジョブ名 *を呼び出し、出力ファイルに使用します。メイン入力ファイルを[ストリーム](/tex/{{lang.url-fragment}}net/other-ways-of-main-input/#providing-the-main-input-file-as-a-stream)として渡すと、Texエンジンはデフォルトのジョブ名、つまり *texput*を使用します。
 どちらの場合も、適切な変換オプションを割り当てることにより、ジョブ名をオーバーライドできます。
 
 {{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-JobName.cs" >}}

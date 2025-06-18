@@ -6,7 +6,7 @@ linktitle: Відновлення файлів LaTeX
 weight: 30
 url: /java/latex-repair/
 description: У цій статті описано функцію відновлення файлів LaTeX в API Aspose.TeX для Java. Ознайомтеся з прикладами коду, як використовувати цю функцію.
-lastmod: 2024-09-20
+lastmod: "2025-06-13"
 ---
 
 {{<section overview>}}

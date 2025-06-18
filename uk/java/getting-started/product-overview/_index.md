@@ -6,7 +6,7 @@ linktitle: Огляд продукту
 weight: 10
 url: /java/product-overview/
 description: Aspose.TeX — це бібліотека Java для верстки файлів TeX. Він надає вам такі широкі можливості, як конвертація або створення власного формату TeX.
-lastmod: 2024-09-20
+lastmod: "2025-06-13"
 ---
 
 {{<section overview>}}

@@ -7,7 +7,7 @@ weight: 60
 url: /java/latex-font-selection/
 keywords: латекс, латексні шрифти, вибір латексних шрифтів, nfss
 description: У цій статті коротко описано використання шрифтів LaTeX в обробці документів. Тут також згадуються метрики шрифту TeX і форми символів.
-lastmod: 2024-09-20
+lastmod: "2025-06-13"
 ---
 
 {{<section overview>}}

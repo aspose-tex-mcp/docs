@@ -6,7 +6,7 @@ linktitle: Відтворення математичних формул LaTeX
 weight: 10
 url: /cpp/latex-math-formula-rendering/
 description: У цій статті описано рішення Aspose.TeX API для відтворення математичних формул C++ LaTeX. Тут ви знайдете приклади коду функціональності.
-lastmod: 2024-09-20
+lastmod: "2025-06-13"
 ---
 
 {{<section overview>}}

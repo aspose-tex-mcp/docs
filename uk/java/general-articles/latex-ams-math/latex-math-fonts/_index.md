@@ -7,7 +7,7 @@ weight: 80
 url: /java/latex-math-fonts/
 keywords: ams-latex, amsmath, amsfonts, amssymb, латексні математичні шрифти, латексні математичні алфавіти, пакет latex bm, латексні шрифти, латексні математичні шрифти
 description: У цій статті розглядається робота з математичними шрифтами за допомогою стандартного LaTeX, а також використання пакетів amsmath і bm.
-lastmod: 2024-09-20
+lastmod: "2025-06-13"
 ---
 
 {{<section overview>}}

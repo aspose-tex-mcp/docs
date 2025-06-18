@@ -6,7 +6,7 @@ linktitle: Керівництво розробника
 weight: 30
 url: /python-net/developer-guide/
 description: Цей розділ надає розробникам огляд рішення Aspose.TeX API для функціональності Python, проілюстрований прикладами коду.
-lastmod: 2024-09-20
+lastmod: "2025-06-13"
 ---
 
 {{<section overview>}}

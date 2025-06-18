@@ -6,7 +6,7 @@ linktitle: Інші способи надання основного вхідн�
 weight: 14
 url: /cpp/other-ways-of-main-input/
 description: Функція перетворення рішення Aspose.TeX API для C++ має конструктор, який приймає потік як перший аргумент.
-lastmod: 2024-09-20
+lastmod: "2025-06-13"
 ---
 
 {{<section overview>}}

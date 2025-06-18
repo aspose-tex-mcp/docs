@@ -6,7 +6,7 @@ linktitle: Інші формати TeX
 weight: 18
 url: /net/other-tex-formats/
 description: Функції перетворення рішення Aspose.TeX API для .NET дозволяють конвертувати файли LaTeX і ваші власні файли TeX.
-lastmod: 2024-09-20
+lastmod: "2025-06-13"
 ---
 
 {{<section overview>}}

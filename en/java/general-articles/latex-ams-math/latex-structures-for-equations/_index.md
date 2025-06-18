@@ -23,7 +23,7 @@ The following list contains the most popular display environments. Where appropr
 |---|---|---|
 | `equation` | `equation*` | One line, one equation |
 | `multline` | `multline*` | One unaligned multiple-line equation, one equation number |
-| `gather` | `gather*` | Several equations without alignment |
+| `gather` | `gather` | Several equations without alignment |
 | `align` | `align*` | Several equations with multiple alignments |
 | `flalign` | `flalign*` | Several equations: horizontally spread form of `align` |
 | `split` | | A simple alignment within a multiple-line equation |
@@ -205,7 +205,7 @@ When you need to put two or more equations into a single display without alignme
 
 ![Equation group without alignment](/tex/images/java/tutorial/latex-ams-math-2-9.png)
 
-You may need to suppress the equation number for a certain line. The `\notag` command, put in the logical line, is the answer. The `gather*` environment doesn't tag equations at all.
+You may need to suppress the equation number for a certain line. The `\notag` command, put in the logical line, is the answer. The `gather` environment doesn't tag equations at all.
 
 ```tex
 \usepackage{amsmath}

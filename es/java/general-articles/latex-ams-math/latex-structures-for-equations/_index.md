@@ -196,7 +196,7 @@ Cuando necesite colocar dos o más ecuaciones en una sola pantalla sin alineaci�
 
 ![Grupo de ecuaciones sin alineación](/tex/images/java/tutorial/latex-ams-math-2-9.png)
 
-Es posible que necesites suprimir el número de ecuación de una línea determinada. El comando `\notag`, colocado en la línea lógica, es la respuesta. El entorno `gather*` no etiqueta ecuaciones en absoluto.
+Es posible que necesites suprimir el número de ecuación de una línea determinada. El comando `\notag`, colocado en la línea lógica, es la respuesta. El entorno `gather` no etiqueta ecuaciones en absoluto.
 
 ```tex
 \usepackage{amsmath}

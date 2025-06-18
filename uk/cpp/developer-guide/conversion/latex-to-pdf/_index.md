@@ -7,7 +7,7 @@ weight: 11
 url: /cpp/latex-to-pdf/
 keywords: latex у pdf, latex pdf, конвертація latex у pdf
 description: Щоб конвертувати TeX у PDF за допомогою рішення Aspose.TeX API для C++, ознайомтеся з цією статтею, щоб побачити, як це зробити, і приклади коду.
-lastmod: 2024-09-20
+lastmod: "2025-06-13"
 ---
 
 {{<section overview>}}

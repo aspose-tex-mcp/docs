@@ -108,7 +108,7 @@ In theory, there should be only one unique bidirectional mapping between the two
 
 As we mentioned above, the input encoding declarations can be used in packages or in the document preamble. To make everything work this way, it is important to load the `inputenc` package first, thereby selecting a suitable encoding. Subsequent input encoding declarations will act as a replacement for (or addition to) those defined by the present input encoding.
 
-When using the `inputenc` package, you may see the command `\@tabacckludge`, which stands for "tabbing accent kludge". It is needed because the current version of LaTeX inherited an overloading of the commands `\=`, ``` \` ```, and `\'`, which normally denote certain accents (i.e., are encoding-specific commands), but have special meanings inside the `tabbing` environment. That is why mappings that involve any of these accents need to be encoded in a special way. For instance, if you want to map `232` to the 'e-grave' character (which has the internal representation ``` \`e ```), you should write
+When using the `inputenc` package, you may see the command `\@tabacckludge`, which stands for "tabbing accent kludge". It is needed because the current version of LaTeX inherited an overloading of the commands `\=`, ``` \` ```, and `\'`, which normally denote certain accents (i.e., are encoding-specific commands), but have special meanings inside the `tabbing` environment. That is why mappings that involve any of these accents need to be encoded in a special way. For instance, if you want to map `232` to the 'e-grave' character (which has the internal representation ``` \`e ```), you should write.
 
 ```tex
 \DeclareInputText{232}{\@tabacckludge`e}

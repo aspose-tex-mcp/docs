@@ -6,7 +6,7 @@ linktitle: Інші формати TeX
 weight: 18
 url: /python-net/other-tex-formats/
 description: Рішення Aspose.TeX API для Python забезпечує функціональні можливості, які дозволяють конвертувати файли LaTeX і спеціальні файли TeX.
-lastmod: 2024-09-20
+lastmod: "2025-06-13"
 ---
 
 {{<section overview>}}

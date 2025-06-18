@@ -7,7 +7,7 @@ weight: 10
 url: /net/troubleshoot-with-latex-files/
 keywords: проблеми з файлами LaTeX, пошкоджені документи LaTeX, пошкоджені файли LaTeX, зламаний файл LaTeX, проблеми з файлами LaTeX, помилки в LaTeX
 description: Практичні поради щодо усунення несправностей файлів LaTeX, усунення помилок, проблем компіляції, конфліктів пакетів і помилок форматування.
-lastmod: 2024-09-20
+lastmod: "2025-06-13"
 ---
 
 {{<section overview>}}

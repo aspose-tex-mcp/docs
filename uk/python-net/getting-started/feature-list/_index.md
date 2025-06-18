@@ -6,7 +6,7 @@ linktitle: Список функцій
 weight: 30
 url: /python-net/feature-list/
 description: Удосконалите своє власне рішення, додавши можливість маніпулювати файлами TeX. Дізнайтеся про функції, які пропонує вам рішення Aspose.TeX API для Python.
-lastmod: 2024-09-20
+lastmod: "2025-06-13"
 ---
 
 {{<section overview>}}

@@ -6,7 +6,7 @@ linktitle: Як запустити приклади
 weight: 80
 url: /cpp/how-to-run-the-examples/
 description: На цій сторінці ви знайдете всі вимоги та кроки, які слід виконати для запуску прикладів рішення Aspose.TeX для C++.
-lastmod: 2024-09-20
+lastmod: "2025-06-13"
 ---
 
 {{<section overview>}}

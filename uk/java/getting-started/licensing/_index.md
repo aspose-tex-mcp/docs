@@ -6,7 +6,7 @@ title: Ліцензування - Aspose.TeX для Java
 weight: 70
 url: /java/licensing/
 description: Коли ви зупинилися на ліцензійній версії рішення Aspose.TeX API для Java, тут ви дізнаєтесь, як застосувати ліцензію.
-lastmod: 2024-09-20
+lastmod: "2025-06-13"
 ---
 
 {{<section overview>}}

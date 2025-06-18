@@ -6,7 +6,7 @@ linktitle: Інтерфейс введення Aspose.TeX
 weight: 15
 url: /java/aspose-tex-input/
 description: Функціональність перетворення рішення Aspose.TeX API для Java з TeX як форматом введення пояснюється тут із прикладами коду.
-lastmod: 2024-09-20
+lastmod: "2025-06-13"
 ---
 
 {{<section overview>}}

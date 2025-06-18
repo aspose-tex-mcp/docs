@@ -204,7 +204,7 @@ Lorsque vous avez besoin de mettre deux ou plusieurs équations sur un seul affi
 
 ![Groupe d'équations sans alignement](/tex/images/java/tutorial/latex-ams-math-2-9.png)
 
-Vous devrez peut-être supprimer le numéro d’équation pour une certaine ligne. La commande `\notag`, placée dans la ligne logique, est la réponse. L'environnement `gather*` ne marque pas du tout les équations.
+Vous devrez peut-être supprimer le numéro d’équation pour une certaine ligne. La commande `\notag`, placée dans la ligne logique, est la réponse. L'environnement `gather` ne marque pas du tout les équations.
 
 ```tex
 \usepackage{amsmath}

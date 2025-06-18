@@ -7,7 +7,7 @@ weight: 40
 url: /java/latex-standard-fonts/
 keywords: латекс, латексні шрифти, стандартні латексні шрифти, латексне кодування шрифтів, tracefnt, nfssfont.tex
 description: Ця стаття є коротким ознайомленням із стандартними текстовими шрифтами, що поширюються разом із LaTeX.
-lastmod: 2024-09-20
+lastmod: "2025-06-13"
 ---
 
 {{<section overview>}}

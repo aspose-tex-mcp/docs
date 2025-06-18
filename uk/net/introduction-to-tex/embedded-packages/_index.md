@@ -6,7 +6,7 @@ linktitle: Вбудовані пакети LaTeX
 weight: 20
 url: /net/embedded-packages/
 description: Ось список пакетів, вбудованих у бібліотеку Aspose.TeX, разом із їхніми описами та використаними версіями.
-lastmod: 2024-09-20
+lastmod: "2025-06-13"
 ---
 
 {{<section overview>}}

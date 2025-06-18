@@ -6,7 +6,7 @@ linktitle: LaTeX до XPS
 weight: 12
 url: /java/latex-to-xps/
 description: Функція перетворення рішення Aspose.TeX API для Java дозволяє конвертувати файли LaTeX у формат XPS. Вивчіть приклади коду.
-lastmod: 2024-09-20
+lastmod: "2025-06-13"
 ---
 
 {{<section overview>}}
