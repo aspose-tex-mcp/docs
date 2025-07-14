@@ -5,9 +5,9 @@ title: Advanced Features of TikZ | Aspose.TeX .NET
 linktitle: Advanced TikZ Features
 weight: 20
 url: /net/advanced-features/
-keywords: advanced tikz, tikz paths, tikz diagrams
+keywords: advanced tikz, tikz paths, tikz diagrams, pgfplots, circuitikz, tikz-3dplot
 description: Learn advanced TikZ techniques including complex paths, node positioning, arrows, and diagram creation for professional-quality graphics.
-lastmod: "2024-06-29"
+lastmod: "2025-07-11"
 ---
 
 {{<section overview>}}

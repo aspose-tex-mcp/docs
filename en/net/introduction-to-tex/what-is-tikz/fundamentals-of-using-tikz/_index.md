@@ -63,7 +63,7 @@ The syntax `blue!20` means a blue color with 20% intensity.
 
 ## Line Styles and Thickness
 
-TikZ lets you modify line styles and thickness to improve graphical presentation:
+TikZ lets you modify line styles and thickness to improve the graphical presentation:
 
 - **Line thickness**:
 ```tex
@@ -79,7 +79,7 @@ TikZ lets you modify line styles and thickness to improve graphical presentation
 
 ## Nodes and Labels
 
-Nodes allow you to add textual annotations easily:
+Nodes allow you to add any textual annotations easily:
 
 ```tex
 \draw (0,0) -- (1,1) node[midway, above] {label};

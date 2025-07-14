@@ -33,9 +33,9 @@ TikZ comes pre-installed with popular TeX distributions, such as **TeX Live** an
 ### MiKTeX Users
 
 1. Open MiKTeX Console.
-2. Navigate to **Packages** tab.
+2. Navigate to the **Packages** tab.
 3. Type `pgf` into the search bar.
-4. Select and install the `pgf` package if not already installed.
+4. Select and install the `pgf` package if it's not already installed.
 
 ## Verifying Your Installation
 

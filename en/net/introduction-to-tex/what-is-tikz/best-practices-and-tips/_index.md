@@ -12,7 +12,7 @@ lastmod: "2025-06-29"
 
 {{<section overview>}}
 
-This chapter provides valuable best practices and tips to enhance your productivity, improve code readability, and optimize TikZ performance in your TeX and LaTeX documents.
+This article provides valuable best practices and tips to enhance your productivity, improve code readability, and optimize TikZ performance in your TeX and LaTeX documents.
 
 ## Optimizing TikZ Compilation
 
@@ -20,24 +20,25 @@ TikZ can be computationally demanding. Here are tips to speed up compilation:
 
 - **Externalization of graphics**  
   TikZ can externalize images to reduce compilation time significantly:
-  ```tex
+
+```tex
   \usetikzlibrary{external}
   \tikzexternalize[prefix=figures/]
-  ```
+```
 
 - **Reduce unnecessary detail**  
   Simplify graphics by removing overly detailed elements or unused styles.
 
 ## Improving Code Readability
 
-Clear and maintainable code is essential, especially in collaborative settings. Follow these guidelines:
+Clear and maintainable code is essential, especially in collaborative settings. Follow the guidelines below:
 
 - **Use descriptive node names and coordinates**:
-  ```tex
+```tex
   \node (server) at (0,0) {Server};
   \node (client) at (4,0) {Client};
   \draw[->] (client) -- (server);
-  ```
+```
 
 - **Comment extensively**:
   Clearly comment critical sections or complex paths.
@@ -50,20 +51,20 @@ Clear and maintainable code is essential, especially in collaborative settings. 
 Good structure simplifies editing and debugging:
 
 - **Use scopes and groups for modularity**:
-  ```tex
+```tex
   \begin{scope}[color=blue, thick]
     % grouped blue elements
   \end{scope}
-  ```
+```
 
 - **Reuse and modularize with macros**:
-  ```tex
+```tex
   \newcommand{\myrectangle}[2]{
     \draw (#1,#2) rectangle ++(2,1);
   }
   % usage
   \myrectangle{0}{0}
-  ```
+```
 
 ## Handling Complex Graphics
 
@@ -81,28 +82,30 @@ Here are typical issues encountered when using TikZ, along with their solutions:
 
 - **Incorrect or missing libraries**:  
   Ensure the necessary TikZ libraries are explicitly included:
-  ```tex
+
+```tex
   \usetikzlibrary{shapes, arrows.meta}
-  ```
+```
 
 - **Overlapping and misalignment**:  
   Use node positioning and anchor points carefully to avoid unintended overlaps:
-  ```tex
+
+```tex
   \node[right=of A.east, anchor=west] {B};
-  ```
+```
 
 ## Useful Resources for Further Learning
 
 Expand your TikZ knowledge with these excellent resources:
 
 - **Official TikZ Manual**  
-  Comprehensive manual by Till Tantau available at [CTAN](https://ctan.org/pkg/pgf).
+  Comprehensive manual by Till Tantau are available at [CTAN](https://ctan.org/pkg/pgf).
 
 - **TeX StackExchange**  
-  Extensive Q&A community dedicated to solving TeX-related problems.
+  An extensive Q&A community dedicated to solving TeX-related problems.
 
 - **Overleaf Examples**  
-  Practical TikZ examples and templates available on [Overleaf](https://www.overleaf.com/learn/latex/TikZ_package).
+  Practical TikZ examples and templates are available on [Overleaf](https://www.overleaf.com/learn/latex/TikZ_package).
 
 ---
 
