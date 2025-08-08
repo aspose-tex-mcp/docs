@@ -20,7 +20,7 @@ Aspose.TeXは、データのバルクがファイル、ストリーム、配列�
 
 ### ディスクファイルシステムのファイルとして出力を保存する
 
-上記[上記](/tex/{{lang.url-fragment}}net/latex-to-png/)、[output_working_directory](https://reference.aspose.com/tex/python-net/Aspose.TeX/texoptions/output_working_directory/)は、一般に[outputFilesSystemDirectory](https://reference.aspose.com/tex/python-net/aspose.tex.io/outputfilesystemdirectory/)クラスのインスタンスとして設定されます。
+上記[上記](/tex/{{lang.url-fragment}}net/latex-to-image/)、[output_working_directory](https://reference.aspose.com/tex/python-net/Aspose.TeX/texoptions/output_working_directory/)は、一般に[outputFilesSystemDirectory](https://reference.aspose.com/tex/python-net/aspose.tex.io/outputfilesystemdirectory/)クラスのインスタンスとして設定されます。
 
 これが私たちがそれを設定する方法です：
 

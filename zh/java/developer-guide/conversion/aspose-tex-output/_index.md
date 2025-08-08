@@ -19,7 +19,7 @@ lastmod: "2025-06-10"
 
 ### 将文件输出输出到磁盘文件系统
 
-正如我们提到的[上图](/tex/{{lang.url-fragment}}java/latex-to-png/)，[outputWorkingDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/TeXOptions#getOutputWorkingDirectory--)的最常见值可能是[outputsFilesystemdirectory](https://reference.aspose.com/tex/java/com.aspose.tex/OutputFileSystemDirectory)类的一个实例。
+正如我们提到的[上图](/tex/{{lang.url-fragment}}/java/conversion/)，[outputWorkingDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/TeXOptions#getOutputWorkingDirectory--)的最常见值可能是[outputsFilesystemdirectory](https://reference.aspose.com/tex/java/com.aspose.tex/OutputFileSystemDirectory)类的一个实例。
 
 这是我们将其设置的方式：
 

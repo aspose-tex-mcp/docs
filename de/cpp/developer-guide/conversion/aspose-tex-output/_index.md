@@ -19,7 +19,7 @@ Da I/O-Grundelemente der TeX-Sprache nur Dateinamen verarbeiten können, definie
 
 ### Schreiben der Dateiausgabe in das Festplattendateisystem
 
-Wie wir [oben](/tex/{{lang.url-fragment}}cpp/latex-to-png/) erwähnt haben, wäre der häufigste Wert für [OutputDirectory](https://reference.aspose.com/tex/cpp/aspose.tex/texoptions/set_outputworkingdirectory) wahrscheinlich eine Instanz der Klasse [OutputFileSystemDirectory](https://reference.aspose.com/tex/cpp/aspose.tex.io/outputfilesystemdirectory).
+Wie wir [oben](/tex/{{lang.url-fragment}}cpp/latex-to-image/) erwähnt haben, wäre der häufigste Wert für [OutputDirectory](https://reference.aspose.com/tex/cpp/aspose.tex/texoptions/set_outputworkingdirectory) wahrscheinlich eine Instanz der Klasse [OutputFileSystemDirectory](https://reference.aspose.com/tex/cpp/aspose.tex.io/outputfilesystemdirectory).
 
 So würden wir es einstellen:
 

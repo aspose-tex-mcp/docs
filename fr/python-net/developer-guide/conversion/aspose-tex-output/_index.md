@@ -20,7 +20,7 @@ Aspose.TeX définit un répertoire comme un mappage entre des noms et des blocs 
 
 ### Enregistrement de la sortie sous forme de fichier dans le système de fichiers du disque
 
-Comme mentionné [ci-dessus](/tex/{{lang.url-fragment}}net/latex-to-png/), le [output_working_directory](https://reference.aspose.com/tex/python-net/aspose.tex/texoptions/output_working_directory/) est généralement défini comme une instance de la classe [OutputFileSystemDirectory](https://reference.aspose.com/tex/python-net/aspose.tex.io/outputfilesystemdirectory/).
+Comme mentionné [ci-dessus](/tex/{{lang.url-fragment}}net/latex-to-image/), le [output_working_directory](https://reference.aspose.com/tex/python-net/aspose.tex/texoptions/output_working_directory/) est généralement défini comme une instance de la classe [OutputFileSystemDirectory](https://reference.aspose.com/tex/python-net/aspose.tex.io/outputfilesystemdirectory/).
 
 Voici comment nous le définirions :
 

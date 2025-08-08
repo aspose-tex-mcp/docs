@@ -19,7 +19,7 @@ lastmod: "2024-09-24"
 
 ### Запись вывода файла в файловую систему диска
 
-Как мы уже упоминали [выше](/tex/{{lang.url-fragment}}java/latex-to-png/), наиболее распространенным значением [OutputWorkingDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/TeXOptions#getOutputWorkingDirectory--), скорее всего, будет экземпляр класса [OutputFileSystemDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/OutputFileSystemDirectory).
+Как мы уже упоминали [выше](/tex/{{lang.url-fragment}}/java/conversion/), наиболее распространенным значением [OutputWorkingDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/TeXOptions#getOutputWorkingDirectory--), скорее всего, будет экземпляр класса [OutputFileSystemDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/OutputFileSystemDirectory).
 
 Вот как мы это установим:
 

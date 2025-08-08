@@ -19,7 +19,7 @@ Tex言語のI/O Primitivesはファイル名のみを扱うことができるた
 
 ### ディスクファイルシステムへのファイル出力の書き込み
 
-[上記](/tex/{{lang.url-fragment}}cpp/latex-to-png/)に述べたように、[outputDirectory](https://reference.aspose.com/tex/cpp/Aspose.TeX/texoptions/set_outputworkingdirectory)の最も一般的な値は、[outputFilesSystemDirectory](https://reference.aspose.com/tex/cpp/aspose.tex.io/outputfilesystemdirectory)クラスのインスタンスになる可能性があります。
+[上記](/tex/{{lang.url-fragment}}cpp/latex-to-image/)に述べたように、[outputDirectory](https://reference.aspose.com/tex/cpp/Aspose.TeX/texoptions/set_outputworkingdirectory)の最も一般的な値は、[outputFilesSystemDirectory](https://reference.aspose.com/tex/cpp/aspose.tex.io/outputfilesystemdirectory)クラスのインスタンスになる可能性があります。
 
 これが私たちがそれを設定する方法です：
 

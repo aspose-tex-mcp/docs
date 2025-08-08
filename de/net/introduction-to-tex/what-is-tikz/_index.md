@@ -49,11 +49,11 @@ Dieses Beispiel erzeugt ein einfaches Dreieck, das drei Punkte verbindet.
 Die folgenden Themen dieser TikZ-Reihe im Überblick:
 
 1. [Installation und Grundkonfiguration](/tex/net/installation-and-basic-configuration/)
-2. [Grundlagen der TikZ-Nutzung](/tex/net/fundamentals-of-using-tikz)
+2. [Grundlagen der TikZ-Nutzung](/tex/net/fundamentals-of-using-tikz/)
 3. [Erweiterte Funktionen](/tex/net/advanced-features)
-4. [TikZ für wissenschaftliche Publikationen](/tex/net/tikz-for-scientific-publications)
-5. [TikZ für Präsentationen und Infografiken](/tex/net/tikz-for-presentations-and-infographics)
-6. [Best Practices und Tipps](/tex/net/best-practices-and-tips)
+4. [TikZ für wissenschaftliche Publikationen](/tex/net/tikz-for-scientific-publications/)
+5. [TikZ für Präsentationen und Infografiken](/tex/net/tikz-for-presentations-and-infographics/)
+6. [Best Practices und Tipps](/tex/net/best-practices-and-tips/)
 
 In diesen Artikeln erfahren Sie, wie Sie mit TikZ professionelle Grafiken erstellen.
 

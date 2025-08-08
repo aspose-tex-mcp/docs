@@ -19,7 +19,7 @@ lastmod: "2025-06-10"
 
 ### 将文件输出输出到磁盘文件系统
 
-正如我们提到的[上图](/tex/{{lang.url-fragment}}cpp/latex-to-png/)，[outputDirectory](https://reference.aspose.com/tex/cpp/aspose.tex/texoptions/set_outputworkingdirectory)的最常见值可能是[outpulefilesystemdirectory](https://reference.aspose.com/tex/cpp/aspose.tex.io/outputfilesystemdirectory)类的一个实例。
+正如我们提到的[上图](/tex/{{lang.url-fragment}}cpp/latex-to-image/)，[outputDirectory](https://reference.aspose.com/tex/cpp/aspose.tex/texoptions/set_outputworkingdirectory)的最常见值可能是[outpulefilesystemdirectory](https://reference.aspose.com/tex/cpp/aspose.tex.io/outputfilesystemdirectory)类的一个实例。
 
 这是我们将其设置的方式：
 

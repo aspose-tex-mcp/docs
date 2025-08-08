@@ -20,7 +20,7 @@ O Aspose.TeX define um diretório como um mapeamento entre nomes e volumes de da
 
 ### Salvando a saída como um arquivo no sistema de arquivos de disco
 
-Como mencionado [acima](/tex/{{lang.url-fragment}}net/latex-to-png/), o [output_working_directory](https://reference.aspose.com/tex/python-net/aspose.tex/texoptions/output_working_directory/) é comumente definido como uma instância da classe [outputFilesystemDirectory](https://reference.aspose.com/tex/python-net/aspose.tex.io/outputfilesystemdirectory/).
+Como mencionado [acima](/tex/{{lang.url-fragment}}net/latex-to-image/), o [output_working_directory](https://reference.aspose.com/tex/python-net/aspose.tex/texoptions/output_working_directory/) é comumente definido como uma instância da classe [outputFilesystemDirectory](https://reference.aspose.com/tex/python-net/aspose.tex.io/outputfilesystemdirectory/).
 
 Aqui está como nós o definiríamos:
 

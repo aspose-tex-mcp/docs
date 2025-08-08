@@ -20,7 +20,7 @@ aspose.tex将目录定义为名称和大部分数据之间的映射，其中大�
 
 ### 将输出作为文件保存在磁盘文件系统中
 
-如[上面](/tex/{{lang.url-fragment}}net/latex-to-png/)所述，[output_working_directory](https://reference.aspose.com/tex/python-net/aspose.tex/texoptions/output_working_directory/)通常被设置为[outputfilesystemdirectory](https://reference.aspose.com/tex/python-net/aspose.tex.io/outputfilesystemdirectory/)类的实例。
+如[上面](/tex/{{lang.url-fragment}}net/latex-to-image/)所述，[output_working_directory](https://reference.aspose.com/tex/python-net/aspose.tex/texoptions/output_working_directory/)通常被设置为[outputfilesystemdirectory](https://reference.aspose.com/tex/python-net/aspose.tex.io/outputfilesystemdirectory/)类的实例。
 
 这是我们将其设置的方式：
 

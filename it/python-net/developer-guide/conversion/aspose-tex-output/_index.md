@@ -20,7 +20,7 @@ Aspose.TeX definisce una directory come una mappatura tra nomi e numeri di dati,
 
 ### Salvare l'output come file nel file system disco
 
-Come accennato [sopra](/tex/{{lang.url-fragment}}net/latex-to-png/), la [output_working_directory](https://reference.aspose.com/tex/python-net/aspose.tex/texoptions/output_working_directory/) è comunemente impostata come istanza della classe [outputfilesystemdirectory](https://reference.aspose.com/tex/python-net/aspose.tex.io/outputfilesystemdirectory/).
+Come accennato [sopra](/tex/{{lang.url-fragment}}net/latex-to-image/), la [output_working_directory](https://reference.aspose.com/tex/python-net/aspose.tex/texoptions/output_working_directory/) è comunemente impostata come istanza della classe [outputfilesystemdirectory](https://reference.aspose.com/tex/python-net/aspose.tex.io/outputfilesystemdirectory/).
 
 Ecco come lo imposteremmo:
 

@@ -37,7 +37,7 @@ lastmod: "2025-06-10"
 
 **Q：我可以使用aspose.tex创建一个自定义格式？**
 
-**A：**是的，库具有这样的功能。在[其他TEX转换输出格式](/tex/cpp/other-tex-formats/＃create-a-a-custom-format)文章中简要描述。
+**A：**是的，库具有这样的功能。在[其他TEX转换输出格式](/tex/cpp/other-tex-formats/#creating-a-custom-format)文章中简要描述。
 <br> <br>
 
 **Q：哪些软件包嵌入Aspose.TeX API解决方案？**

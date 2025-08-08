@@ -96,7 +96,7 @@ Transcript written on hello-world.log.
 
 [**Aspose.SVG**](https://products.aspose.com/svg/)API提供了一系列功能，用于使用**svg**，例如创建，加载，编辑和转换**svg**文档。
 
-将乳胶转换为SVG与[转换为栅格图像格式](/tex/{{lang.url-fragment}}python-net/latex-to-image/)一样简单，唯一的区别是[save_options](https://reference.aspose.com/tex/python-net/aspose.tex/texoptions/save_options/)必须设置为[svgsaveoptions](https://reference.aspose.com/tex/python-net/aspose.tex.presentation.svg/svgsaveoptions/)类的实例，并且必须将设备更改为[svgdevice](svgdevice](38))。
+将乳胶转换为SVG与[转换为栅格图像格式](/tex/{{lang.url-fragment}}python-net/latex-to-image/)一样简单，唯一的区别是[save_options](https://reference.aspose.com/tex/python-net/aspose.tex/texoptions/save_options/)必须设置为[svgsaveoptions](https://reference.aspose.com/tex/python-net/aspose.tex.presentation.svg/svgsaveoptions/)类的实例，并且必须将设备更改为svgdevice。
 
 {{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Conversion-LaTeXToSvg-Simplest.py" >}}
 

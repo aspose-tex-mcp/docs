@@ -49,11 +49,11 @@ TikZ（发音为“tik-zee”）代表“TikZ ist kein Zeichenprogramm”（德�
 以下是本系列 TikZ 文章涵盖的主题概述：
 
 1. [安装和基本配置](/tex/net/installation-and-basic-configuration/)
-2. [TikZ 使用基础知识](/tex/net/fundamentals-of-using-tikz)
+2. [TikZ 使用基础知识](/tex/net/fundamentals-of-using-tikz/)
 3. [高级功能](/tex/net/advanced-features)
-4. [TikZ 用于科学出版物](/tex/net/tikz-for-scientific-publications)
-5. [TikZ 用于演示文稿和信息图表](/tex/net/tikz-for-presentations-and-infographics)
-6. [最佳实践和技巧](/tex/net/best-practices-and-tips)
+4. [TikZ 用于科学出版物](/tex/net/tikz-for-scientific-publications/)
+5. [TikZ 用于演示文稿和信息图表](/tex/net/tikz-for-presentations-and-infographics/)
+6. [最佳实践和技巧](/tex/net/best-practices-and-tips/)
 
 浏览这些文章，熟练使用 TikZ 创建专业品质的图形。
 

@@ -19,7 +19,7 @@ Como as primitivas de E/S do idioma TEX só podem lidar com nomes de arquivos, A
 
 ### Escrevendo a saída do arquivo no sistema de arquivos de disco
 
-Como mencionamos [acima](/tex/{{lang.url-fragment}}java/latex-to-png/), o valor mais comum para o [outputWorkingDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/TeXOptions#getOutputWorkingDirectory--) provavelmente seria uma instância da classe [outputFilesystemDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/OutputFileSystemDirectory).
+Como mencionamos [acima](/tex/{{lang.url-fragment}}/java/conversion/), o valor mais comum para o [outputWorkingDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/TeXOptions#getOutputWorkingDirectory--) provavelmente seria uma instância da classe [outputFilesystemDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/OutputFileSystemDirectory).
 
 Aqui está como nós o definiríamos:
 

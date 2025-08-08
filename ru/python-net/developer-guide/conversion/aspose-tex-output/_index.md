@@ -19,7 +19,7 @@ Aspose.TeX определяет каталог как сопоставление
 
 ### Сохранение вывода в виде файла в файловой системе диска.
 
-Как упоминалось [выше](/tex/{{lang.url-fragment}}net/latex-to-png/), [output_working_directory](https://reference.aspose.com/tex/python-net/aspose.tex/texoptions/output_working_directory/) обычно устанавливается как экземпляр класса [OutputFileSystemDirectory](https://reference.aspose.com/tex/python-net/aspose.tex.io/outputfilesystemdirectory/).
+Как упоминалось [выше](/tex/{{lang.url-fragment}}net/latex-to-image/), [output_working_directory](https://reference.aspose.com/tex/python-net/aspose.tex/texoptions/output_working_directory/) обычно устанавливается как экземпляр класса [OutputFileSystemDirectory](https://reference.aspose.com/tex/python-net/aspose.tex.io/outputfilesystemdirectory/).
 
 Вот как мы это установим:
 

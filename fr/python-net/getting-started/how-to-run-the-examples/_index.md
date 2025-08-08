@@ -13,7 +13,7 @@ lastmod: "2024-09-27"
 
 ## Conditions préalables
 
-Avant de continuer, veuillez vous assurer que le dossier `Aspose.TeX-...` apparaît dans le dossier `[PYTHON_PATH]\Lib\site-packages\` après l'[installation du package Aspose.TeX](). Si Python 3.11 est installé, Aspose.TeX peut être installé dans le dossier `[PYTHON_PATH]\site-packages\`. Dans ce cas, vous devez copier le dossier Aspose.TeX dans le dossier `[PYTHON_PATH]\Lib\site-packages\`, car **PyCharm** (au moins la version 23.1) recherche les packages installés exactement à cet emplacement.
+Avant de continuer, veuillez vous assurer que le dossier `Aspose.TeX-...` apparaît dans le dossier `[PYTHON_PATH]\Lib\site-packages\` après l'installation du package Aspose.TeX. Si Python 3.11 est installé, Aspose.TeX peut être installé dans le dossier `[PYTHON_PATH]\site-packages\`. Dans ce cas, vous devez copier le dossier Aspose.TeX dans le dossier `[PYTHON_PATH]\Lib\site-packages\`, car **PyCharm** (au moins la version 23.1) recherche les packages installés exactement à cet emplacement.
 
 ## Télécharger depuis GitHub
 

@@ -7,6 +7,9 @@ weight: 15
 url: /net/aspose-tex-input/
 description: Conversion functionality of Aspose.TeX API solution for .NET with TeX, as an input format is explained here with the code examples.
 lastmod: "2024-09-20"
+aliases: 
+- /cpp/typesetting-tex-input/
+- /cpp/creating-custom-tex-format/
 ---
 
 {{<section overview>}}

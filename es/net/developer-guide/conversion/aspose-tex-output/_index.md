@@ -19,7 +19,7 @@ Dado que las primitivas de E/S del lenguaje TeX sólo pueden tratar con nombres 
 
 ### Escribir la salida del archivo en el sistema de archivos del disco
 
-Como mencionamos [arriba](/tex/{{lang.url-fragment}}net/latex-to-png/), el valor más común para [OutputDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/outputworkingdirectory/) probablemente sería una instancia de la clase [OutputFileSystemDirectory](https://reference.aspose.com/tex/net/aspose.tex.io/outputfilesystemdirectory/).
+Como mencionamos [arriba](/tex/{{lang.url-fragment}}net/latex-to-image/), el valor más común para [OutputDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/outputworkingdirectory/) probablemente sería una instancia de la clase [OutputFileSystemDirectory](https://reference.aspose.com/tex/net/aspose.tex.io/outputfilesystemdirectory/).
 
 Así es como lo configuraríamos:
 
