@@ -19,7 +19,7 @@ Poiché i primitivi I/O della lingua tex possono solo affrontare i nomi dei file
 
 ### Scrivere l'output di file sul file system disco
 
-Come accennato [sopra](/tex/{{lang.url-fragment}}net/latex-to-png/), il valore più comune per la [outputDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/outputworkingdirectory/) sarebbe probabilmente un'istanza della classe [OutputFilesystemDirectory](https://reference.aspose.com/tex/net/aspose.tex.io/outputfilesystemdirectory/).
+Come accennato [sopra](/tex/{{lang.url-fragment}}net/latex-to-image/), il valore più comune per la [outputDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/outputworkingdirectory/) sarebbe probabilmente un'istanza della classe [OutputFilesystemDirectory](https://reference.aspose.com/tex/net/aspose.tex.io/outputfilesystemdirectory/).
 
 Ecco come lo imposteremmo:
 

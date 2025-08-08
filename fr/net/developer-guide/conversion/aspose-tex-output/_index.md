@@ -19,7 +19,7 @@ Veuillez vous référer à **Aspose.TeX for .NET** [Référence API](https://ref
 
 ### Écriture de la sortie du fichier sur le système de fichiers du disque
 
-Comme nous l'avons mentionné [ci-dessus](/tex/{{lang.url-fragment}}net/latex-to-png/), la valeur la plus courante pour [OutputDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/outputworkingdirectory/) serait probablement une instance de la classe [OutputFileSystemDirectory](https://reference.aspose.com/tex/net/aspose.tex.io/outputfilesystemdirectory/).
+Comme nous l'avons mentionné [ci-dessus](/tex/{{lang.url-fragment}}net/latex-to-image/), la valeur la plus courante pour [OutputDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/outputworkingdirectory/) serait probablement une instance de la classe [OutputFileSystemDirectory](https://reference.aspose.com/tex/net/aspose.tex.io/outputfilesystemdirectory/).
 
 Voici comment nous le définirions :
 

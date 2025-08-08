@@ -13,7 +13,7 @@ lastmod: "2025-06-10"
 
 ## 先决条件
 
-在继续操作之前，请确保在 [Aspose.TeX 软件包安装]() 之后，`Aspose.TeX-...` 文件夹出现在 `[PYTHON_PATH]\Lib\site-packages\` 文件夹中。如果您已安装 Python 3.11，则可以将 Aspose.TeX 安装在 `[PYTHON_PATH]\site-packages\` 文件夹中。在这种情况下，您应该将 Aspose.TeX 文件夹复制到 `[PYTHON_PATH]\Lib\site-packages\` 文件夹，因为 **PyCharm**（至少 23.1 版本）会在该位置查找已安装的软件包。
+在继续操作之前，请确保在 Aspose.TeX 软件包安装 之后，`Aspose.TeX-...` 文件夹出现在 `[PYTHON_PATH]\Lib\site-packages\` 文件夹中。如果您已安装 Python 3.11，则可以将 Aspose.TeX 安装在 `[PYTHON_PATH]\site-packages\` 文件夹中。在这种情况下，您应该将 Aspose.TeX 文件夹复制到 `[PYTHON_PATH]\Lib\site-packages\` 文件夹，因为 **PyCharm**（至少 23.1 版本）会在该位置查找已安装的软件包。
 
 ## 从Github下载
 

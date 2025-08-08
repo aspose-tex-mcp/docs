@@ -19,7 +19,7 @@ lastmod: "2025-06-13"
 
 ### Запис вихідного файлу у файлову систему диска
 
-Як ми згадували [вище](/tex/{{lang.url-fragment}}cpp/latex-to-png/), найпоширенішим значенням для [OutputDirectory](https://reference.aspose.com/tex/cpp/aspose.tex/texoptions/set_outputworkingdirectory) буде екземпляр класу [OutputFileSystemDirectory](https://reference.aspose.com/tex/cpp/aspose.tex.io/outputfilesystemdirectory).
+Як ми згадували [вище](/tex/{{lang.url-fragment}}cpp/latex-to-image/), найпоширенішим значенням для [OutputDirectory](https://reference.aspose.com/tex/cpp/aspose.tex/texoptions/set_outputworkingdirectory) буде екземпляр класу [OutputFileSystemDirectory](https://reference.aspose.com/tex/cpp/aspose.tex.io/outputfilesystemdirectory).
 
 Ось як ми це встановимо:
 

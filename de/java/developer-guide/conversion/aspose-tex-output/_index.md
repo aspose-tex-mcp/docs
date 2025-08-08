@@ -19,7 +19,7 @@ Da I/O-Grundelemente der TeX-Sprache nur Dateinamen verarbeiten können, definie
 
 ### Schreiben der Dateiausgabe in das Festplattendateisystem
 
-Wie wir [oben](/tex/{{lang.url-fragment}}java/latex-to-png/) erwähnt haben, wäre der häufigste Wert für [OutputWorkingDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/TeXOptions#getOutputWorkingDirectory--) wahrscheinlich eine Instanz der Klasse [OutputFileSystemDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/OutputFileSystemDirectory).
+Wie wir [oben](/tex/{{lang.url-fragment}}/java/conversion/) erwähnt haben, wäre der häufigste Wert für [OutputWorkingDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/TeXOptions#getOutputWorkingDirectory--) wahrscheinlich eine Instanz der Klasse [OutputFileSystemDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/OutputFileSystemDirectory).
 
 So würden wir es einstellen:
 

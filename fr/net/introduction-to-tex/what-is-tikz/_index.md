@@ -51,11 +51,11 @@ Cet exemple produit un triangle simple reliant trois points.
 Voici un aperçu des sujets abordés dans cette série sur TikZ :
 
 1. [Installation et configuration de base](/tex/net/installation-and-basic-configuration/)
-2. [Principes fondamentaux de l'utilisation de TikZ](/tex/net/fundamentals-of-using-tikz)
+2. [Principes fondamentaux de l'utilisation de TikZ](/tex/net/fundamentals-of-using-tikz/)
 3. [Fonctionnalités avancées](/tex/net/advanced-features)
-4. [TikZ pour les publications scientifiques](/tex/net/tikz-for-scientific-publications)
-5. [TikZ pour les présentations et les infographies](/tex/net/tikz-for-presentations-and-infographics)
-6. [Bonnes pratiques et conseils](/tex/net/best-practices-and-tips)
+4. [TikZ pour les publications scientifiques](/tex/net/tikz-for-scientific-publications/)
+5. [TikZ pour les présentations et les infographies](/tex/net/tikz-for-presentations-and-infographics/)
+6. [Bonnes pratiques et conseils](/tex/net/best-practices-and-tips/)
 
 Explorez ces articles pour maîtriser la création d'images de qualité professionnelle avec TikZ.
 

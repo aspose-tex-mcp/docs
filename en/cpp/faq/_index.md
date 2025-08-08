@@ -37,7 +37,7 @@ For more examples, please visit [Convertion](/tex/{{lang.url-fragment}}cpp/conve
 
 **Q: Can I create a custom format using Aspose.TeX for C++?**
 
-**A:** Yes, the Library has such functionality. It is briefly described in the [Other TeX conversion output formats ] (/tex/cpp/other-tex-formats/#creating-a-custom-format) article.
+**A:** Yes, the Library has such functionality. It is briefly described in the [Other TeX conversion output formats ](/tex/cpp/other-tex-formats/#creating-a-custom-format) article.
 <br><br>
 
 **Q: What packages are embedded into Aspose.TeX API Solution?**

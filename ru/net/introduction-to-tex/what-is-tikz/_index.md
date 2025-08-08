@@ -50,11 +50,11 @@ TikZ обладает рядом преимуществ по сравнению 
 Ниже представлен обзор тем, рассматриваемых в этой серии статей о TikZ:
 
 1. [Установка и базовая настройка](/tex/net/installation-and-basic-configuration/)
-2. [Основы использования TikZ](/tex/net/fundamentals-of-using-tikz)
+2. [Основы использования TikZ](/tex/net/fundamentals-of-using-tikz/)
 3. [Расширенные функции](/tex/net/advanced-features)
-4. [TikZ для научных публикаций](/tex/net/tikz-for-scientific-publications)
-5. [TikZ для презентаций и инфографики](/tex/net/tikz-for-presentations-and-infographics)
-6. [Рекомендации и советы](/tex/net/best-practices-and-tips)
+4. [TikZ для научных публикаций](/tex/net/tikz-for-scientific-publications/)
+5. [TikZ для презентаций и инфографики](/tex/net/tikz-for-presentations-and-infographics/)
+6. [Рекомендации и советы](/tex/net/best-practices-and-tips/)
 
 Изучите эти статьи, чтобы научиться создавать профессиональную графику с помощью TikZ.
 

@@ -19,7 +19,7 @@ Aspose.TeX definiert ein Verzeichnis als eine Zuordnung zwischen Namen und Daten
 
 ### Speichern der Ausgabe als Datei im Festplattendateisystem
 
-Wie [oben](/tex/{{lang.url-fragment}}net/latex-to-png/) erwähnt, wird das [output_working_directory](https://reference.aspose.com/tex/python-net/aspose.tex/texoptions/output_working_directory/) üblicherweise als Instanz der Klasse [OutputFileSystemDirectory](https://reference.aspose.com/tex/python-net/aspose.tex.io/outputfilesystemdirectory/) festgelegt.
+Wie [oben](/tex/{{lang.url-fragment}}net/latex-to-image/) erwähnt, wird das [output_working_directory](https://reference.aspose.com/tex/python-net/aspose.tex/texoptions/output_working_directory/) üblicherweise als Instanz der Klasse [OutputFileSystemDirectory](https://reference.aspose.com/tex/python-net/aspose.tex.io/outputfilesystemdirectory/) festgelegt.
 
 So würden wir es einstellen:
 

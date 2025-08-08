@@ -19,7 +19,7 @@ Veuillez vous référer à **Aspose.TeX for Java** [Référence API](https://ref
 
 ### Écriture de la sortie du fichier sur le système de fichiers du disque
 
-Comme nous l'avons mentionné [ci-dessus](/tex/{{lang.url-fragment}}java/latex-to-png/), la valeur la plus courante pour [OutputWorkingDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/TeXOptions#getOutputWorkingDirectory--) serait probablement une instance de la classe [OutputFileSystemDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/OutputFileSystemDirectory).
+Comme nous l'avons mentionné [ci-dessus](/tex/{{lang.url-fragment}}/java/conversion/), la valeur la plus courante pour [OutputWorkingDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/TeXOptions#getOutputWorkingDirectory--) serait probablement une instance de la classe [OutputFileSystemDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/OutputFileSystemDirectory).
 
 Voici comment nous le définirions :
 

@@ -13,7 +13,7 @@ lastmod: "2025-06-09"
 
 ## 前提条件
 
-続行する前に、[Aspose.TeX パッケージのインストール]() 後、`[PYTHON_PATH]\Lib\site-packages\` フォルダーに `Aspose.TeX-...` フォルダーが表示されていることを確認してください。Python 3.11 がインストールされている場合は、Aspose.TeX を `[PYTHON_PATH]\site-packages\` フォルダーにインストールできます。この場合、**PyCharm** (バージョン 23.1 以降) はインストール済みパッケージをまさにその場所で探すため、Aspose.TeX フォルダーを `[PYTHON_PATH]\Lib\site-packages\` フォルダーにコピーする必要があります。
+続行する前に、Aspose.TeX パッケージのインストール 後、`[PYTHON_PATH]\Lib\site-packages\` フォルダーに `Aspose.TeX-...` フォルダーが表示されていることを確認してください。Python 3.11 がインストールされている場合は、Aspose.TeX を `[PYTHON_PATH]\site-packages\` フォルダーにインストールできます。この場合、**PyCharm** (バージョン 23.1 以降) はインストール済みパッケージをまさにその場所で探すため、Aspose.TeX フォルダーを `[PYTHON_PATH]\Lib\site-packages\` フォルダーにコピーする必要があります。
 
 ## Githubからダウンロードしてください
 

@@ -48,10 +48,10 @@ Este ejemplo produce un triángulo simple que conecta tres puntos.
 A continuación, se presenta un resumen de los temas tratados en esta serie sobre TikZ:
 
 1. [Instalación y configuración básica](/tex/net/installation-and-basic-configuration/)
-2. [Fundamentos del uso de TikZ](/tex/net/fundamentals-of-using-tikz)
+2. [Fundamentos del uso de TikZ](/tex/net/fundamentals-of-using-tikz/)
 3. [Funciones avanzadas](/tex/net/advanced-features)
-4. [TikZ para publicaciones científicas](/tex/net/tikz-for-scientific-publications)
-5. [TikZ para presentaciones e infografías](/tex/net/tikz-for-presentations-and-infographics)
-6. [Mejores prácticas y consejos](/tex/net/best-practices-and-tips)
+4. [TikZ para publicaciones científicas](/tex/net/tikz-for-scientific-publications/)
+5. [TikZ para presentaciones e infografías](/tex/net/tikz-for-presentations-and-infographics/)
+6. [Mejores prácticas y consejos](/tex/net/best-practices-and-tips/)
 
 Explora estos artículos para dominar la creación de gráficos de calidad profesional con TikZ. **Además, explora nuestra [aplicación web gratuita](https://products.aspose.app/tex/conversion/latex/) basada en la [API de Aspose.TeX para .NET](https://products.aspose.com/tex/net/) para conversiones de TeX rápidas y sencillas.**

@@ -19,7 +19,7 @@ Since I/O primitives of the TeX language can only deal with file names, Aspose.T
 
 ### Writing file output to the disk file system
 
-As we mentioned [above](/tex/{{lang.url-fragment}}net/latex-to-png/), the most common value for the [OutputDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/outputworkingdirectory/) would likely be an instance of the [OutputFileSystemDirectory](https://reference.aspose.com/tex/net/aspose.tex.io/outputfilesystemdirectory/) class.
+As we mentioned [above](/tex/{{lang.url-fragment}}net/latex-to-image/), the most common value for the [OutputDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/outputworkingdirectory/) would likely be an instance of the [OutputFileSystemDirectory](https://reference.aspose.com/tex/net/aspose.tex.io/outputfilesystemdirectory/) class.
 
 Here's how we would set it:
 
