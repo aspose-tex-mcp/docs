@@ -4,7 +4,7 @@ template: /templates/_template-net.md
 title: Qu'est-ce que TikZ | Aspose.TeX .NET
 linktitle: Qu'est-ce que TikZ
 weight: 21
-url: /net/what-is-tikz/
+url: /net/tikz-introduction/
 keywords: Qu'est-ce que TikZ, Introduction à TikZ, Bases de TikZ
 description: Introduction à TikZ, une extension puissante pour créer des graphiques de haute qualité dans des documents LaTeX.
 lastmod: "2025-06-29"
@@ -50,12 +50,12 @@ Cet exemple produit un triangle simple reliant trois points.
 
 Voici un aperçu des sujets abordés dans cette série sur TikZ :
 
-1. [Installation et configuration de base](/tex/net/installation-and-basic-configuration/)
-2. [Principes fondamentaux de l'utilisation de TikZ](/tex/net/fundamentals-of-using-tikz/)
-3. [Fonctionnalités avancées](/tex/net/advanced-features)
+1. [Installation et configuration de base](/tex/net/tikz-installation-and-basic-configuration/)
+2. [Principes fondamentaux de l'utilisation de TikZ](/tex/net/tikz-fundamentals-of-using-tikz/)
+3. [Fonctionnalités avancées](/tex/net/tikz-advanced-features)
 4. [TikZ pour les publications scientifiques](/tex/net/tikz-for-scientific-publications/)
 5. [TikZ pour les présentations et les infographies](/tex/net/tikz-for-presentations-and-infographics/)
-6. [Bonnes pratiques et conseils](/tex/net/best-practices-and-tips/)
+6. [Bonnes pratiques et conseils](/tex/net/tikz-best-practices-and-tips/)
 
 Explorez ces articles pour maîtriser la création d'images de qualité professionnelle avec TikZ.
 

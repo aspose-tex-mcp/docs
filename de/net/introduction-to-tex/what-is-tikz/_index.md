@@ -4,7 +4,7 @@ template: /templates/_template-net.md
 title: Was ist TikZ? | Aspose.TeX .NET
 linktitle: Was ist TikZ?
 weight: 21
-url: /net/what-is-tikz/
+url: /net/tikz-introduction/
 keywords: Was ist TikZ?, TikZ-Einführung, TikZ-Grundlagen
 description: Einführung in TikZ, eine leistungsstarke Erweiterung zum Erstellen hochwertiger Grafiken in LaTeX-Dokumenten.
 lastmod: "2025-06-29"
@@ -48,12 +48,12 @@ Dieses Beispiel erzeugt ein einfaches Dreieck, das drei Punkte verbindet.
 
 Die folgenden Themen dieser TikZ-Reihe im Überblick:
 
-1. [Installation und Grundkonfiguration](/tex/net/installation-and-basic-configuration/)
-2. [Grundlagen der TikZ-Nutzung](/tex/net/fundamentals-of-using-tikz/)
-3. [Erweiterte Funktionen](/tex/net/advanced-features)
+1. [Installation und Grundkonfiguration](/tex/net/tikz-installation-and-basic-configuration/)
+2. [Grundlagen der TikZ-Nutzung](/tex/net/tikz-fundamentals-of-using-tikz/)
+3. [Erweiterte Funktionen](/tex/net/tikz-advanced-features)
 4. [TikZ für wissenschaftliche Publikationen](/tex/net/tikz-for-scientific-publications/)
 5. [TikZ für Präsentationen und Infografiken](/tex/net/tikz-for-presentations-and-infographics/)
-6. [Best Practices und Tipps](/tex/net/best-practices-and-tips/)
+6. [Best Practices und Tipps](/tex/net/tikz-best-practices-and-tips/)
 
 In diesen Artikeln erfahren Sie, wie Sie mit TikZ professionelle Grafiken erstellen.
 

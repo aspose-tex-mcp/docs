@@ -4,7 +4,7 @@ template: /templates/_template-net.md
 title: Що таке TikZ | Aspose.TeX .NET
 linktitle: Що таке TikZ
 weight: 21
-url: /net/what-is-tikz/
+url: /net/tikz-introduction/
 keywords: що таке tikz, вступ до tikz, основи tikz
 description: Вступ до TikZ, потужного розширення для створення високоякісної графіки в документах LaTeX.
 lastmod: "2025-06-29"
@@ -51,12 +51,12 @@ TikZ пропонує кілька переваг порівняно з трад
 
 Нижче наведено огляд тем, розглянутих у цій серії про TikZ:
 
-1. [Встановлення та базова конфігурація](/tex/net/installation-and-basic-configuration/)
-2. [Основи використання TikZ](/tex/net/fundamentals-of-using-tikz/)
-3. [Додаткові функції](/tex/net/advanced-features)
+1. [Встановлення та базова конфігурація](/tex/net/tikz-installation-and-basic-configuration/)
+2. [Основи використання TikZ](/tex/net/tikz-fundamentals-of-using-tikz/)
+3. [Додаткові функції](/tex/net/tikz-advanced-features)
 4. [TikZ для наукових публікацій](/tex/net/tikz-for-scientific-publications/)
 5. [TikZ для презентацій та інфографіки](/tex/net/tikz-for-presentations-and-infographics/)
-6. [Найкращі практики та поради](/tex/net/best-practices-and-tips/)
+6. [Найкращі практики та поради](/tex/net/tikz-best-practices-and-tips/)
 
 Ознайомтеся з цими статтями, щоб навчитися створювати графіку професійної якості за допомогою TikZ.
 

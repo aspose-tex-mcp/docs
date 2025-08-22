@@ -1,12 +1,12 @@
 ---
 translation: true
 template: /templates/_template-net.md
-title: Qu'est-ce que TikZ | Aspose.TeX .NET
-linktitle: Qu'est-ce que TikZ
+title: Cos'è TikZ | Aspose.TeX .NET
+linktitle: Cos'è TikZ
 weight: 21
-url: /net/what-is-tikz/
-keywords: Qu'est-ce que TikZ, Introduction à TikZ, Bases de TikZ
-description: Introduction à TikZ, une extension puissante pour créer des graphiques de haute qualité dans des documents LaTeX.
+url: /net/tikz-introduction/
+keywords: Cos'è TikZ, Introduzione a TikZ, Basi di TikZ
+description: Introduzione a TikZ, una potente estensione per creare grafici di alta qualità nei documenti LaTeX.
 lastmod: "2025-06-29"
 ---
 
@@ -50,12 +50,12 @@ Cet exemple produit un triangle simple reliant trois points.
 
 Voici un aperçu des sujets abordés dans cette série sur TikZ :
 
-1. [Installation et configuration de base](/tex/net/installation-and-basic-configuration/)
-2. [Principes fondamentaux de l'utilisation de TikZ](/tex/net/fundamentals-of-using-tikz/)
-3. [Fonctionnalités avancées](/tex/net/advanced-features)
-4. [TikZ pour les publications scientifiques](/tex/net/tikz-for-scientific-publications/)
-5. [TikZ pour les présentations et les infographies](/tex/net/tikz-for-presentations-and-infographics/)
-6. [Bonnes pratiques et conseils](/tex/net/best-practices-and-tips/)
+1. [Installazione e configurazione di base](/tex/net/tikz-installation-and-basic-configuration/)
+2. [Fondamenti dell'uso di TikZ](/tex/net/tikz-fundamentals-of-using-tikz/)
+3. [Funzionalità avanzate](/tex/net/tikz-advanced-features)
+4. [TikZ per pubblicazioni scientifiche](/tex/net/tikz-for-scientific-publications/)
+5. [TikZ per presentazioni e infografiche](/tex/net/tikz-for-presentations-and-infographics/)
+6. [Migliori pratiche e suggerimenti](/tex/net/tikz-best-practices-and-tips/)
 
 Explorez ces articles pour maîtriser la création d'images de qualité professionnelle avec TikZ.
 

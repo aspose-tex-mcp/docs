@@ -4,7 +4,7 @@ template: /templates/_template-net.md
 title: 什么是 TikZ | Aspose.TeX .NET
 linktitle: 什么是 TikZ
 weight: 21
-url: /net/what-is-tikz/
+url: /net/tikz-introduction/
 keywords: 什么是 tikz、tikz 简介、tikz 基础知识
 description: TikZ 简介，一款用于在 LaTeX 文档中创建高质量图形的强大扩展程序。
 lastmod: "2025-06-29"
@@ -48,12 +48,12 @@ TikZ（发音为“tik-zee”）代表“TikZ ist kein Zeichenprogramm”（德�
 
 以下是本系列 TikZ 文章涵盖的主题概述：
 
-1. [安装和基本配置](/tex/net/installation-and-basic-configuration/)
-2. [TikZ 使用基础知识](/tex/net/fundamentals-of-using-tikz/)
-3. [高级功能](/tex/net/advanced-features)
+1. [安装和基本配置](/tex/net/tikz-installation-and-basic-configuration/)
+2. [TikZ 使用基础知识](/tex/net/tikz-fundamentals-of-using-tikz/)
+3. [高级功能](/tex/net/tikz-advanced-features)
 4. [TikZ 用于科学出版物](/tex/net/tikz-for-scientific-publications/)
 5. [TikZ 用于演示文稿和信息图表](/tex/net/tikz-for-presentations-and-infographics/)
-6. [最佳实践和技巧](/tex/net/best-practices-and-tips/)
+6. [最佳实践和技巧](/tex/net/tikz-best-practices-and-tips/)
 
 浏览这些文章，熟练使用 TikZ 创建专业品质的图形。
 
