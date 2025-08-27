@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-title: Asspose.Tex's Input Interface | .NETTO
+title: Asspose.Tex's Input Interface | .NET
 linktitle: Aspose.TeX's Input Interface
 weight: 15
 url: /net/aspose-tex-input/

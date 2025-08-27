@@ -58,10 +58,10 @@ Parfois, nous pouvons avoir besoin d'avoir des formules mathématiques sous form
 
 Le moteur ObjectTeX nous permet d'inclure des fichiers graphiques aux formats raster (PNG et JPG) ainsi qu'aux formats PS(EPS) et XPS(OXPS). Les deux derniers formats contiennent généralement des éléments vectoriels et des textes. Pour les pixelliser et les inclure sous forme d'images solides, nous pouvons utiliser l'option suivante :
 
-{{< gist "aspose-com-gists""76c7e5770ac8b3f6d409f6ec60f02030""Aspose.TeX.Examples-Conversion-RasterizeIn IncludedGraphics.cs" >}}
+{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-RasterizeIncludedGraphics.cs" >}}
 
 ## Comment sous-ensembler des polices
 
 Si nous souhaitons réduire la taille du fichier de sortie, nous pouvons recourir au sous-réglage des polices, ce qui signifie que les polices du document de sortie ne contiendront que des données sur les glyphes utilisés dans le document. Voici comment nous pouvons résoudre ce problème :
 
-{{< gist "aspose-com-gists""76c7e5770ac8b3f6d409f6ec60f02030""Aspose.TeX.Examples-Conversion-SubsetFonts.cs" >}}
+{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-SubsetFonts.cs" >}}

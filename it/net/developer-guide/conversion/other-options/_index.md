@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-title: Altre opzioni di gestione Tex | .NETTO
+title: Altre opzioni di gestione Tex | .NET
 linktitle: Altre opzioni
 weight: 17
 url: /net/other-options/

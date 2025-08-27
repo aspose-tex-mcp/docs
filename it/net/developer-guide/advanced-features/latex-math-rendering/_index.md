@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-title: Formule matematiche in LaTeX rendering | .NETTO
+title: Formule matematiche in LaTeX rendering | .NET
 linktitle: Formule matematiche in LaTeX rendering
 weight: 10
 url: /net/latex-math-formula-rendering/

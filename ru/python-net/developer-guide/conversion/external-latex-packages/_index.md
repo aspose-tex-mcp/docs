@@ -125,7 +125,7 @@ with open("path-to-zip-with-pgfplots-sources") as zipStream:
 
 Ниже приведен пример пользовательского требуемого входного каталога, демонстрирующий, как реализовать интерфейс [IFileCollector](https://reference.aspose.com/tex/python-net/aspose.tex.io/ifilecollector/). Этот пример фокусируется на сборе имен файлов по расширению и намеренно опускает детали хранения и извлечения файлов.
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Conversion-RequiredInputDirectory.py" >}}
+{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Conversion-RequiredInput-Zip.py" >}}
 -->
 
 ### Ограничения

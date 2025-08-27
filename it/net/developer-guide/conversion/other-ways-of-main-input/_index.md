@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-title: Altri modi per fornire il principale file di input Tex | .NETTO
+title: Altri modi per fornire il principale file di input Tex | .NET
 linktitle: Altri modi per fornire il principale file di input Tex
 weight: 14
 url: /net/other-ways-of-main-input/

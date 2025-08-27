@@ -125,7 +125,7 @@ The **Aspose.TeX**'s *Object TeX* engine extension requires font maps, which are
 
 Below is an example of a custom required input directory that demonstrates how to implement the [IFileCollector](https://reference.aspose.com/tex/python-net/aspose.tex.io/ifilecollector/) interface. This example focuses on collecting file names by extension and intentionally omits the details of file storage and retrieval.
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Conversion-RequiredInputDirectory.py" >}}
+{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Conversion-RequiredInput-Zip.py" >}}
 -->
 
 ### Restrictions

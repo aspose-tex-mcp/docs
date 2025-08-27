@@ -125,7 +125,7 @@ with open("path-to-zip-with-pgfplots-sources") as zipStream:
 
 下面是一个自定义必需输入目录的示例，演示了如何实现 [IFileCollector](https://reference.aspose.com/tex/python-net/aspose.tex.io/ifilecollector/) 接口。此示例重点介绍按扩展名收集文件名，并有意省略了文件存储和检索的细节。
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Conversion-RequiredInputDirectory.py" >}}
+{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Conversion-RequiredInput-Zip.py" >}}
 -->
 
 ### 限制

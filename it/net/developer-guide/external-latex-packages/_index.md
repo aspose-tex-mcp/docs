@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-title: Pacchetti in LaTeX esterni | .NETTO
+title: Pacchetti in LaTeX esterni | .NET
 linktitle: Pacchetti di LaTeX esterni
 weight: 20
 url: /net/external-latex-packages/
@@ -56,7 +56,7 @@ Dopo aver eseguito un lavoro Tex con questa opzione (non dimenticare di regolare
 
 Ecco il codice sorgente completo per l'esempio:
 
-{{<gist "aspose-com-gists""76c7e5770ac8b3f6d409f6ec60f02030""aspose.tex.examples-conversion-requiredinput-filesystem.cs">}}}}}}}}}}}}}}}}}}
+{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-RequiredInput-FileSystem.cs" >}}
 
 ### Input richiesto archiviato (pacchetto `pgfplots`)
 
@@ -117,18 +117,19 @@ Dopo aver eseguito un lavoro Tex con questa opzione, otteniamo il documento di o
 
 Ecco il codice sorgente completo per l'esempio:
 
-{{<gist "aspose-com-gisti""76c7e5770ac8b3f6d409f6ec60f02030""aspose.tex.examples-conversion-requiredinput-zip.cs">}}}
+{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-RequiredInput-Zip.cs" >}}
 
-> **_NOTE:_** The result was verified using the `pgfplots` package version 1.18.1. While the version of the `pfg` package included in the **Aspose.TeX** library is 3.1.9a.
+> **_NOTA:_** Il risultato è stato verificato utilizzando il pacchetto `pgfplots` versione 1.18.1. Mentre la versione del pacchetto `pfg` inclusa nella libreria **Aspose.TeX** è la 3.1.9a.
 
 ### Impiegando pacchetti di caratteri esterni
 
 Di norma, le distribuzioni in LaTeX forniscono una serie di caratteri predefiniti disponibili per la composizione. Tranne questi caratteri, **Aspose.TeX** include una serie di pacchetti di carattere non standard. Ad esempio, `amsfonts`,` eurosym` e `wasysym`. Come abbiamo visto sopra, Aspose.TeX consente anche di impiegare pacchetti esterni. Ma soprattutto stavamo parlando di pacchetti che non contengono caratteri.
-**aspose.tex** 's*Object tex*Il motore estensione ha bisogno di mappe dei caratteri (che sono file di testo in un determinato formato con l'estensione `.map` per convenzione) per determinare quali caratteri fisici corrispondono al nome del carattere interno di ciascun tex. Queste mappe dei caratteri devono essere caricate nella memoria di Tex durante la fase di inizializzazione. E, naturalmente, devono essere presenti tra i file del pacchetto che si sta collegando. Poiché il motore non conosce i nomi di tutte le mappe dei caratteri, cerca tutti i file con l'estensione `.map`. Pertanto, un'implementazione dell'interfaccia [IinputWorkingDirectory](https://reference.aspose.com/tex/net/aspose.tex.io/iinputworkingdirectory/) che viene utilizzata come valore dell'opzione [RecomeInputDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/requiredinputdirectory/) deve fornire un modo per accedere alle raccolte di nomi di file per estensione. Più specificamente, questa implementazione deve anche implementare l'interfaccia [IfileCollector (10). Le implementazioni standard - [InputFilesystemDirectory](https://reference.aspose.com/tex/net/aspose.tex.io/inputfilesystemdirectory/) e [inputZipDirectory](https://reference.aspose.com/tex/net/aspose.tex.io/inputzipdirectory/) - lo fanno già.
+**aspose.tex** 's*Object tex*Il motore estensione ha bisogno di mappe dei caratteri (che sono file di testo in un determinato formato con l'estensione `.map` per convenzione) per determinare quali caratteri fisici corrispondono al nome del carattere interno di ciascun tex. Queste mappe dei caratteri devono essere caricate nella memoria di Tex durante la fase di inizializzazione. E, naturalmente, devono essere presenti tra i file del pacchetto che si sta collegando. Poiché il motore non conosce i nomi di tutte le mappe dei caratteri, cerca tutti i file con l'estensione `.map`. Pertanto, un'implementazione dell'interfaccia [IinputWorkingDirectory](https://reference.aspose.com/tex/net/aspose.tex.io/iinputworkingdirectory/) che viene utilizzata come valore dell'opzione [RecomeInputDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/requiredinputdirectory/) deve fornire un modo per accedere alle raccolte di nomi di file per estensione. Più specificamente, questa implementazione deve anche implementare l'interfaccia [IFileCollector](https://reference.aspose.com/tex/net/aspose.tex.io/ifilecollector/). Le implementazioni standard - [InputFilesystemDirectory](https://reference.aspose.com/tex/net/aspose.tex.io/inputfilesystemdirectory/) e [inputZipDirectory](https://reference.aspose.com/tex/net/aspose.tex.io/inputzipdirectory/) - lo fanno già.
 
-Di seguito, forniamo un esempio illustrativo di una directory di input richiesta personalizzata che implementa anche l'interfaccia [IfileCollector (13). Mentre ci concentriamo sulla raccolta dei nomi dei file per estensione, omettiamo intenzionalmente i dettagli di archiviazione e recupero dei file.
+Di seguito, forniamo un esempio illustrativo di una directory di input richiesta personalizzata che implementa anche l'interfaccia [IFileCollector](https://reference.aspose.com/tex/net/aspose.tex.io/ifilecollector/). Mentre ci concentriamo sulla raccolta dei nomi dei file per estensione, omettiamo intenzionalmente i dettagli di archiviazione e recupero dei file.
 
-{{<gist "aspose-com-gisti""76c7e5770ac8b3f6d409f6ec60f02030""aspose.tex.examples-conversion-requiredInputDirectory.cs">}}}}}}}}}}}}}}}}}}
+{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-RequiredInputDirectory.cs" >}}
+
 
 ### Restrizioni
 

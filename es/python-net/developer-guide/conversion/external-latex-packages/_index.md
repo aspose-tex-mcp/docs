@@ -124,7 +124,7 @@ a extensión del motor *Object TeX* de **Aspose.TeX** requiere mapas de fuentes,
 
 A continuación, se muestra un ejemplo de un directorio de entrada obligatorio personalizado que demuestra cómo implementar la interfaz [IFileCollector](https://reference.aspose.com/tex/python-net/aspose.tex.io/ifilecollector/). Este ejemplo se centra en la recopilación de nombres de archivos por extensión y omite intencionalmente los detalles de almacenamiento y recuperación de archivos.
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Conversion-RequiredInputDirectory.py" >}}
+{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Conversion-RequiredInput-Zip.py" >}}
 -->
 
 ### Restricciones
