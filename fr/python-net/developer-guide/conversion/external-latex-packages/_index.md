@@ -124,7 +124,7 @@ L'extension du moteur *Object TeX* d'**Aspose.TeX** nécessite des tables de pol
 
 Vous trouverez ci-dessous un exemple de répertoire d'entrée personnalisé requis qui montre comment implémenter l'interface [IFileCollector](https://reference.aspose.com/tex/python-net/aspose.tex.io/ifilecollector/). Cet exemple se concentre sur la collecte des noms de fichiers par extension et omet intentionnellement les détails du stockage et de la récupération des fichiers.
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Conversion-RequiredInputDirectory.py" >}}
+{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Conversion-RequiredInput-Zip.py" >}}
 -->
 
 ### Restrictions

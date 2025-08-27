@@ -57,7 +57,7 @@ S'il est nécessaire de convertir des formules mathématiques en images raster a
 
 Le moteur ObjectTeX offre la possibilité d'inclure des fichiers graphiques dans des formats raster tels que PNG et JPG, ainsi que dans les formats PS (EPS) et XPS (OXPS). Ces deux derniers formats contiennent généralement des éléments vectoriels et du texte. Si nous voulons les pixelliser et les inclure sous forme d'images solides, nous pouvons utiliser l'option suivante :
 
-{{< gist "aspose-com-gists""68d217858f0be40062562ce2bb2cd908""Aspose.TeX.Examples-Conversion-RasterizeIn IncludedGraphics.py" >}}
+{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Conversion-RasterizeIncludedGraphics.py" >}}
 
 ## Polices de sous-ensemble
 

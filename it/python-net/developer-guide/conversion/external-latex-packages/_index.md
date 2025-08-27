@@ -125,7 +125,7 @@ L'estensione del motore *Object TeX* di **Aspose.TeX** richiede mappe di font, o
 
 Di seguito è riportato un esempio di directory di input personalizzata che illustra come implementare l'interfaccia [IFileCollector](https://reference.aspose.com/tex/python-net/aspose.tex.io/ifilecollector/). Questo esempio si concentra sulla raccolta dei nomi dei file per estensione e omette intenzionalmente i dettagli relativi all'archiviazione e al recupero dei file.
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Conversion-RequiredInputDirectory.py" >}}
+{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Conversion-RequiredInput-Zip.py" >}}
 -->
 
 ### Restrizioni

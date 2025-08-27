@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-title: Altri formati di output di conversione Tex | .NETTO
+title: Altri formati di output di conversione Tex | .NET
 linktitle: Altri formati di Tex
 weight: 18
 url: /net/other-tex-formats/

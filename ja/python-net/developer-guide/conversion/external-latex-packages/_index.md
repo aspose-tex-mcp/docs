@@ -125,7 +125,7 @@ with open("path-to-zip-with-pgfplots-sources") as zipStream:
 
 以下は、[IFileCollector](https://reference.aspose.com/tex/python-net/aspose.tex.io/ifilecollector/) インターフェイスの実装方法を示す、カスタムの必須入力ディレクトリの例です。この例では、拡張子によるファイル名の収集に重点を置き、ファイルの保存と取得の詳細は意図的に省略しています。
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Conversion-RequiredInputDirectory.py" >}}
+{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Conversion-RequiredInput-Zip.py" >}}
 -->
 
 ### 制限

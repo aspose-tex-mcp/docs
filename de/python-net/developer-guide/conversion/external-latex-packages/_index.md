@@ -125,7 +125,7 @@ Die *Object TeX*-Engine-Erweiterung von **Aspose.TeX** erfordert Fontmaps, also 
 
 Unten sehen Sie ein Beispiel für ein benutzerdefiniertes erforderliches Eingabeverzeichnis, das zeigt, wie die Schnittstelle [IFileCollector](https://reference.aspose.com/tex/python-net/aspose.tex.io/ifilecollector/) implementiert wird. Dieses Beispiel konzentriert sich auf das Sammeln von Dateinamen nach Erweiterung und lässt absichtlich die Details der Dateispeicherung und des Dateiabrufs aus.
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Conversion-RequiredInputDirectory.py" >}}
+{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Conversion-RequiredInput-Zip.py" >}}
 -->
 
 ### Einschränkungen
