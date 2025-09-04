@@ -19,7 +19,7 @@ lastmod: "2025-06-16"
 
 ## Disponível * AMSMATH * Opções do pacote
 
-As três opções a seguir podem ser usadas como opções globais de documentos (especificadas no comando `\documentClass`) ou como *amsmath* opções de pacote quando for carregado com o comando `\usepackage`.
+As três opções a seguir podem ser usadas como opções globais de documentos (especificadas no comando `\documentclass`) ou como *amsmath* opções de pacote quando for carregado com o comando `\usepackage`.
 
 |||
 |---|---|

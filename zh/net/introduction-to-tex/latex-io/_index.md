@@ -29,7 +29,7 @@ lastmod: "2025-06-10"
 
 其中`<<a document>`是[文档类](https://en.wikibooks.org/wiki/LaTeX/Document_Structure#Document_classes)的名称，它是一个输入TEX文件，它定义了最适合某种类型的文档的输出文档页面和宏的显示。
 
-老实说，您可以在`\documentClass{}`，如`\nonstopmode`等之前插入原始控制序列。但是每个乳胶宏都检查它是否位于文件的适当部分。
+老实说，您可以在`\documentclass{}`，如`\nonstopmode`等之前插入原始控制序列。但是每个乳胶宏都检查它是否位于文件的适当部分。
 
 在使用乳胶文件的背景下，关于Tex [Input](/tex/{{lang.url-fragment}}net/tex-io/#tex-input)(3)和[输出](/tex/{{lang.url-fragment}}net/tex-io/#tex-output)有一些值得注意的事情。
 

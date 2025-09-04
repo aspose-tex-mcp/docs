@@ -15,7 +15,7 @@ lastmod: "2025-06-09"
 
 **Q：JavaにAspose.TeX APIソリューションを使用できますか？**
 
-**A：** asops.tex for javaは、Texファイルを管理および操作するためのワンストップショップです。それはあなたに力を与えます：
+**A:** asops.tex for javaは、Texファイルを管理および操作するためのワンストップショップです。それはあなたに力を与えます：
 
 - Texファイルとラテックスファイルを簡単に変換します。
 - Aspose.TeXは、TEXコードをフィードし、生成された出力を目的の形式で取得するための複数の方法を提供します。
@@ -25,12 +25,12 @@ lastmod: "2025-06-09"
 
 **Q：Javaサポート用のAspose.TeXはどの形式ですか？**
 
-**A：** Asops.texは、入力としてTexとLaTexをサポートし、XPS、PDF、PNG、JPEG、TIFF、SVG、およびBMP形式を出力としてサポートします。
+**A:** Asops.texは、入力としてTexとLaTexをサポートし、XPS、PDF、PNG、JPEG、TIFF、SVG、およびBMP形式を出力としてサポートします。
 <br> <br>
 
 **Q：Java内でTexを変換する方法？**
 
-**A：**それは非常に簡単です。 TexからPDF変換の例で説明しましょう！ 
+**A:**それは非常に簡単です。 TexからPDF変換の例で説明しましょう！ 
 
 ```Java
 // Create conversion options for Object LaTeX format on Object TeX engine extension
@@ -49,12 +49,12 @@ new TeXJob(Utils.getInputDirectory() + "hello-world.tex", new PdfDevice(), optio
 
 **Q：Javaのasops.texを使用してカスタム形式を作成できますか？**
 
-**A：**はい、ライブラリにはそのような機能があります。 [その他のTex変換出力形式](/tex/{{lang.url-fragment}}java/other-tex-formats/#creating-a-custom-format)の記事で簡単に説明します。
+**A:**はい、ライブラリにはそのような機能があります。 [その他のTex変換出力形式](/tex/{{lang.url-fragment}}java/other-tex-formats/#creating-a-custom-format)の記事で簡単に説明します。
 <br> <br>
 
 **Q：どのパッケージがAspose.TeX apiソリューションに埋め込まれていますか？**
 
-**A：**今では、[Aspose.TeX埋め込みラテックスパッケージ](/tex/{{lang.url-fragment}}net/embedded-packages/)が含まれています。 
+**A:**今では、[Aspose.TeX埋め込みラテックスパッケージ](/tex/{{lang.url-fragment}}net/embedded-packages/)が含まれています。 
 
 - eurosym
 - geometry
@@ -74,12 +74,12 @@ new TeXJob(Utils.getInputDirectory() + "hello-world.tex", new PdfDevice(), optio
 
 **Q：JavaのAspose.TeXには、幾何学的なフィギュアレンダリングの機能がありますか？**
 
-**A：**はい、[PNGまたはSVGにラテックスフィギュアを書くことができます](/tex/{{lang.url-fragment}}java/latex-figure-rendering/)このライブラリを使用して。
+**A:**はい、[PNGまたはSVGにラテックスフィギュアを書くことができます](/tex/{{lang.url-fragment}}java/latex-figure-rendering/)このライブラリを使用して。
 <br> <br>
 
 **Q：MavenからJavaパッケージ用のAspose.TeXをインストールする方法？**
 
-**A：** Aspose Mavenリポジトリから最新バージョンを直接ダウンロードし、POM.xmlに次の構成を追加して、Mavenベースのプロジェクトにインストールできます。
+**A:** Aspose Mavenリポジトリから最新バージョンを直接ダウンロードし、POM.xmlに次の構成を追加して、Mavenベースのプロジェクトにインストールできます。
 
 ```Java
     <repository>
@@ -99,7 +99,7 @@ new TeXJob(Utils.getInputDirectory() + "hello-world.tex", new PdfDevice(), optio
 
 **Q：Javaのasops.texを使用してラテックス式をレンダリングできますか？**
 
-**A：**はい、Aspose.TeX 数式レンダリングライブラリを使用すると、数学式でSVGまたはPNG画像を作成できます。 
+**A:**はい、Aspose.TeX 数式レンダリングライブラリを使用すると、数学式でSVGまたはPNG画像を作成できます。 
 
 1. SvgMathRendererOptionsクラスをインスタンス化します。
 2. 背景色、前文、解像度、前景の色、スケーリング係数を指定します。
@@ -112,33 +112,33 @@ new TeXJob(Utils.getInputDirectory() + "hello-world.tex", new PdfDevice(), optio
 
 **Q：Texについてはどこで詳しく知ることができますか？**
 
-**A：** [LaTexに関する一般記事](/tex/{{lang.url-fragment}}java/general-articles-latex/)を見てください。ここでは、すべてのドキュメント著者が従わなければならないルールを学ぶことができます。また、ソースファイルの構造も定義します。これは、本質的にタイプセットプログラムです。
+**A:** [LaTexに関する一般記事](/tex/{{lang.url-fragment}}java/general-articles-latex/)を見てください。ここでは、すべてのドキュメント著者が従わなければならないルールを学ぶことができます。また、ソースファイルの構造も定義します。これは、本質的にタイプセットプログラムです。
 <br> <br>
 
 **Q：JavaのAspose.TeXのシステム要件は何ですか？**
 
-**A：** [システム要件](/tex/{{lang.url-fragment}}java/system-requirements/)ページに移動して、JavaのASPOSE.TEXを処理するために必要なオペレーティングシステムと開発環境に関する実際の情報を取得します。
+**A:** [システム要件](/tex/{{lang.url-fragment}}java/system-requirements/)ページに移動して、JavaのASPOSE.TEXを処理するために必要なオペレーティングシステムと開発環境に関する実際の情報を取得します。
 <br> <br>
 
 **Q：購入する前にソリューションを試してもいいですか？**
 
-**A：**はい、評価の目的でJava製品用のAspose.TeXを簡単にダウンロードできます。 Aspose.TeXの評価バージョン(ライセンスを指定しない)は、[評価制限](/tex/{{lang.url-fragment}}java/licensing/#evaluation-version-limitations)を除き、完全な製品機能を提供します。
+**A:**はい、評価の目的でJava製品用のAspose.TeXを簡単にダウンロードできます。 Aspose.TeXの評価バージョン(ライセンスを指定しない)は、[評価制限](/tex/{{lang.url-fragment}}java/licensing/#evaluation-version-limitations)を除き、完全な製品機能を提供します。
 
 評価制限なしにAspose.TeXを試してみたい場合は、30日間の[一時ライセンス](https://purchase.aspose.com/temporary-license/)を要求します。
 <br> <br>
 
 **Q：ライブラリに問題がある場合はどこでヘルプを得ることができますか？**
 
-**A：** [Aspose Forum](https://forum.aspose.com/c/tex/47)の回答を確認するか、問題に適したものを見つけられなかった場合は、問題に新しいトピックを追加します。 
+**A:** [Aspose Forum](https://forum.aspose.com/c/tex/47)の回答を確認するか、問題に適したものを見つけられなかった場合は、問題に新しいトピックを追加します。 
 <br> <br>
 
 **Q：JavaのAspose.TeXのライセンスを取得するにはどうすればよいですか？**
 
-**A：** `license.setlicense`メソッドを使用して、コンポーネントのライセンスを取得します。 [ライセンスを設定](/tex/{{lang.url-fragment}}java/licensing/)の最も簡単な方法は、ライセンスファイルをAsops.tex.jarと同じフォルダーに配置し、パスなしでファイル名を指定することです。
+**A:** `license.setlicense`メソッドを使用して、コンポーネントのライセンスを取得します。 [ライセンスを設定](/tex/{{lang.url-fragment}}java/licensing/)の最も簡単な方法は、ライセンスファイルをAsops.tex.jarと同じフォルダーに配置し、パスなしでファイル名を指定することです。
 <br> <br>
 
 **Q：Webアプリケーションに実装されているこのAPIソリューションの機能を確認できますか？**
 
-**A：** [Web Solutions](https://products.aspose.app/tex/applications)を確認して、TexファイルとLatexファイルを変換、表示、マージ、編集し、数学的方程式などを作成します。
+**A:** [Web Solutions](https://products.aspose.app/tex/applications)を確認して、TexファイルとLatexファイルを変換、表示、マージ、編集し、数学的方程式などを作成します。
 <br> <br>
 
