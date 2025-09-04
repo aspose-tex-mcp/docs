@@ -25,7 +25,7 @@ Semelhante a um trabalho de TEX regular, começamos criando um objeto que manté
 
 Depois que as opções forem atribuídas, podemos prosseguir com a execução do processo.
 
-Então, como é o processo de verificação e reparo? Começa com a pesquisa de API por uma ocorrência `\documentClass` no arquivo de entrada. Se não for encontrado, a API assume que `\documentClass {Article}` deve ser inserida no início do arquivo. Esta informação é registrada no arquivo de relatório de reparo (.log).
+Então, como é o processo de verificação e reparo? Começa com a pesquisa de API por uma ocorrência `\documentclass` no arquivo de entrada. Se não for encontrado, a API assume que `\documentclass {Article}` deve ser inserida no início do arquivo. Esta informação é registrada no arquivo de relatório de reparo (.log).
 
 Em seguida, o processo começa a digitalizar o arquivo de entrada ajustado desde o início. O mecanismo TEX equipado com o formato do LATEX pode, em algum momento, lançar um erro indicando que `\ Begin {Document}`ainda não foi encontrado quando deveria já ter. Dessa forma, a posição na qual `\begin {document}` deve ser inserida é definida e refletida no relatório.
 

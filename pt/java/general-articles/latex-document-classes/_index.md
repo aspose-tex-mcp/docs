@@ -16,7 +16,7 @@ lastmod: "2025-06-16"
 
 O LATEX define algumas regras que todo autor do documento deve seguir. Ele também define a estrutura do arquivo de origem, que é essencialmente um programa de tipógraneo. De acordo com essa estrutura, o código -fonte do documento deve conter uma parte responsável pelo conteúdo do documento em si - *Body* - que é anexado em um par de comandos: `\Begin {Document}` e `\end {document}` . O LaTeX ignora qualquer coisa que siga o fim do corpo. A parte do código -fonte antes de `\Begin {document}` é chamada de *preâmbulo*.
 
-Normalmente, o primeiro comando no preâmbulo deve ser `\documentClass`, que leva um único argumento exigido que é o nome da classe **do documento**. A classe de documento em si é um conjunto de parâmetros de formatação, métricas de layout, macros etc. que são adequados e úteis para o desenvolvimento de documentos de um determinado tipo e coletados sob o nome único. Neste artigo, discutiremos as classes de documentos predefinidas **do LATEX** que são embutidas e mostraram seus usos, diferenças e semelhanças. Também mencionaremos alguns argumentos opcionais que o comando `\documentClass` pode assumir e que personalizam a aparência do documento.
+Normalmente, o primeiro comando no preâmbulo deve ser `\documentclass`, que leva um único argumento exigido que é o nome da classe **do documento**. A classe de documento em si é um conjunto de parâmetros de formatação, métricas de layout, macros etc. que são adequados e úteis para o desenvolvimento de documentos de um determinado tipo e coletados sob o nome único. Neste artigo, discutiremos as classes de documentos predefinidas **do LATEX** que são embutidas e mostraram seus usos, diferenças e semelhanças. Também mencionaremos alguns argumentos opcionais que o comando `\documentclass` pode assumir e que personalizam a aparência do documento.
 
 ## Aulas de documentos de LaTeX predefinidos
 
@@ -164,7 +164,7 @@ Se você inserir essa declaração em um determinado ambiente de 'letra', isso m
 
 ## Opções de aula de documentos do LATEX
 
-Agora vamos dar uma olhada nas opções de comando `\documentClass` mencionadas no início do artigo.
+Agora vamos dar uma olhada nas opções de comando `\documentclass` mencionadas no início do artigo.
 
 ### Tamanho da fonte
 

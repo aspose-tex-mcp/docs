@@ -29,7 +29,7 @@ Se tivermos um [Tex File](/tex/{{lang.url-fragment}}net/tex-io/#tex-file) que te
 
 onde `<uma classe de documento>` é um nome de uma [classe de documento](https://en.wikibooks.org/wiki/LaTeX/Document_Structure#Document_classes), que é um arquivo tex de entrada que define a aparência das páginas e macros do documento de saída que são mais adequadas para um certo tipo de documento.
 
-Para ser sincero, você pode inserir sequências de controle primitivo antes de `\documentClass {}`, como `\não -estopmode`, etc. Mas cada macro de LaTeX verifica se está localizado em uma parte adequada de um arquivo.
+Para ser sincero, você pode inserir sequências de controle primitivo antes de `\documentclass {}`, como `\não -estopmode`, etc. Mas cada macro de LaTeX verifica se está localizado em uma parte adequada de um arquivo.
 
 Vale a pena notar algumas coisas sobre Tex [entrada](/tex/{{lang.url-fragment}}net/tex-io/#tex-input) e [saída](/tex/{{lang.url-fragment}}net/tex-io/#tex-output) no contexto do trabalho com arquivos de LaTeX.
 

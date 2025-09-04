@@ -108,7 +108,7 @@ Os documentos de LaTeX geralmente dependem de pacotes para fornecer recursos adi
 
 1. Veja a mensagem de erro que indica qual pacote está faltando. Geralmente inclui o nome do pacote e possivelmente uma descrição do comando ou ambiente a ser usado.
 2. Verifique a documentação do pacote ausente para entender seu objetivo e como usá -lo. Geralmente, você pode encontrar a documentação do pacote em [CTAN](https://ctan.org/?lang=en) ou usando os mecanismos de pesquisa.
-3. Para importar o pacote ausente, escreva no preâmbulo do seu documento de LaTeX (a área entre `\documentClass` e `\Begin {document} `) e adicione o comando `\usepackage`. 
+3. Para importar o pacote ausente, escreva no preâmbulo do seu documento de LaTeX (a área entre `\documentclass` e `\Begin {document} `) e adicione o comando `\usepackage`. 
 Por exemplo:
 
 

@@ -25,7 +25,7 @@ Assim como em um trabalho de TEX regular, primeiro criamos um objeto que contém
 
 Depois de atribuir as opções, simplesmente executamos o processo!
 
-Então, como é o processo de verificação e reparo? Em primeiro lugar, a API pesquisa o arquivo de entrada para uma ocorrência `\documentClass`. Se falhar, pressupõe que `\documentClass {artigo}` deve ser inserido no início do arquivo. Esse fato é refletido no arquivo de relatório de reparo (`.log`).
+Então, como é o processo de verificação e reparo? Em primeiro lugar, a API pesquisa o arquivo de entrada para uma ocorrência `\documentclass`. Se falhar, pressupõe que `\documentclass {artigo}` deve ser inserido no início do arquivo. Esse fato é refletido no arquivo de relatório de reparo (`.log`).
 
 Em seguida, ele começa a digitalizar o arquivo de entrada ajustado desde o início. O mecanismo TEX carregado com o formato do LATEX pode causar um erro em algum momento, sinalizando que nenhum `\ Begin {Document}` foi encontrado até agora, embora já deva ter ocorrido. Assim, a posição na qual `\begin {document}` deve ser inserida é definida e refletida no relatório.
 
@@ -35,7 +35,7 @@ Aqui está um exemplo muito simples que apenas mapeia o comando `\head` para o p
 
 {{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Features-LaTeXRepairer-PackageGuessingCallback.cs" >}}
 
-Quanto ao arquivo de amostra, o mecanismo encontra primeiro o comando `\ Capítulo`, que não está definido na classe de documentos`artigo`, mas é definido na classe de documentos `book`. A API ajusta a classe Document para que a versão final do arquivo fixo seja iniciado com `\documentClass {Book}`. Em seguida, o motor encontra o comando `\lhead` mencionado acima e decide que`\usepackage {FancyHdr} `deve ser inserido no preâmbulo. Os comandos `\href` e `\incluemGraphics` que ocorrem mais tarde para fazer o reparador inserir `\usepackage {hyperref}` e `\usepackage {gráficos}` no preâmbulo, respectivamente. Essas decisões são baseadas nos mapeamentos internos da API. Novamente, todas essas correções são registradas no arquivo de relatório.
+Quanto ao arquivo de amostra, o mecanismo encontra primeiro o comando `\ Capítulo`, que não está definido na classe de documentos`artigo`, mas é definido na classe de documentos `book`. A API ajusta a classe Document para que a versão final do arquivo fixo seja iniciado com `\documentclass {Book}`. Em seguida, o motor encontra o comando `\lhead` mencionado acima e decide que`\usepackage {FancyHdr} `deve ser inserido no preâmbulo. Os comandos `\href` e `\incluemGraphics` que ocorrem mais tarde para fazer o reparador inserir `\usepackage {hyperref}` e `\usepackage {gráficos}` no preâmbulo, respectivamente. Essas decisões são baseadas nos mapeamentos internos da API. Novamente, todas essas correções são registradas no arquivo de relatório.
 
 Finalmente, o motor termina anormalmente, pois falta o final normal de um documento de LaTeX. Isso faz com que o reparador anexe `\end {document}`até o final do arquivo e reflita esse fato no relatório.
 
