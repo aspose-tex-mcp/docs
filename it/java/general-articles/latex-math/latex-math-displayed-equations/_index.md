@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: 9. Equazioni visualizzate
-title: Equazioni visualizzate | Manuale in LaTeX
+linktitle: Equazioni visualizzate
+title: 9. Equazioni visualizzate 
 weight: 90
 url: /java/latex-math-displayed-equations/
 keywords: Formule di matematica in LaTeX, LaTeX, matematica in LaTeX, formula di matematica in LaTeX, LaTeX matematica mostrata equazione, array di equazioni di matematica in LaTeX, allineamento della matematica in LaTeX

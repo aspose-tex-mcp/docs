@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-cpp.md
-title: Рішення API Aspose.TeX для C++
-linktitle: Документація по Aspose.TeX для C++
+title: Документація по Aspose.TeX для C++
+linktitle: Aspose.TeX для C++
 weight: 30
 url: /cpp/
 description: Рішення API для керування файлами TeX для C++. Передавати вхідні дані TeX і отримувати вихідні дані, а також створювати власний формат TeX.
@@ -30,7 +30,7 @@ Aspose.TeX — це бібліотека C++ для набору файлів Te
 - [Функції Aspose.TeX для C++](/tex/{{lang.url-fragment}}cpp/feature-list/)
 - [Примітки до випуску Aspose.TeX для C++](https://releases.aspose.com/tex/cpp/release-notes/)
 - [Сторінка продукту Aspose.TeX для C++](https://products.aspose.com/tex/cpp/)
-- [Установити пакет Aspose.TeX для C++ NuGet](https://www.nuget.org/packages/Aspose.TeX/)
+- [Установити NuGet пакет Aspose.TeX для C++](https://www.nuget.org/packages/Aspose.TeX/)
 - [Довідковий посібник з API Aspose.TeX для C++](https://reference.aspose.com/tex/cpp)
 - [Форум безкоштовної підтримки Aspose.TeX для C++](https://forum.aspose.com/c/tex)
 - [Довідкова служба платної підтримки Aspose.TeX для C++](https://helpdesk.aspose.com/)

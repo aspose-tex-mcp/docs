@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: Tabelas de LaTeX
-title: Tabelas no LaTeX | Aspose.TeX para java
+title: Tabelas no LaTeX 
 weight: 50
 url: /java/latex-tables/
 keywords: Tabelas de LaTeX, ambiente tabular, design de tabela de LaTeX, formatação de tabela em LaTeX, tabelas de composição em LaTeX, layout da tabela de LaTeX, espaçamento de mesa de LaTeX, personalização de tabelas de LaTeX, alinhamento de tabela de LaTeX, multirrow e multicolumn em tabelas de LaTeX

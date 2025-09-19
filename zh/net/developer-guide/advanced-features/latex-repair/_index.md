@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-title: 乳胶文件维修| Aspose.TeX for .NET
+title: 乳胶文件维修| .NET的Aspose.TeX
 linktitle: 乳胶文件维修
 weight: 30
 url: /net/latex-repair/

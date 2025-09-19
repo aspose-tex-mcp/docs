@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-title: Requisitos do sistema | Aspose.TeX .net
+title: Requisitos do sistema | Aspose.TeX para .NET
 linktitle: Requisitos do sistema
 weight: 50
 url: /net/system-requirements/

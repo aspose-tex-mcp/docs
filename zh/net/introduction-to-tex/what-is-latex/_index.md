@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-title: 什么是乳胶？ | aspose.tex .net
+title: 什么是乳胶？
 linktitle: 什么是乳胶？
 weight: 16
 url: /net/what-is-latex/

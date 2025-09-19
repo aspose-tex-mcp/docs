@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-net.md
 linktitle: 许可
-title: 许可 - Aspose.TeX的.NET
+title: 许可 | .NET的Aspose.TeX
 weight: 70
 url: /net/licensing/
 description: 当您停止使用Aspose.TeX API解决方案的.NET的许可版本时，您会发现如何应用许可证。

@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-title: 開発者ガイド| .netのAspose.TeX
+title: 開発者ガイド| .NETのAspose.TeX
 linktitle: 開発者ガイド
 weight: 30
 url: /net/developer-guide/

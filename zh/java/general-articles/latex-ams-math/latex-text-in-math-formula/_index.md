@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: 数学公式的文字
-title: 6. 数学公式中的文字|乳胶手册
+title: 6. 数学公式中的文字
 weight: 60
 url: /java/latex-text-in-math-formula/
 keywords: AMS-LATEX，AMSMATH，乳胶数学运营商，乳胶数学功能，乳胶数学文本

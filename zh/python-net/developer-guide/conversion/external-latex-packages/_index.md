@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-python-net.md
-title: 外部乳胶软件包| Python
+title: 外部乳胶软件包| 通过 .NET 为 Python 提供 Aspose.TeX
 linktitle: 外部乳胶软件包
 weight: 19
 url: /python-net/external-latex-packages/

@@ -3,7 +3,7 @@ translation: true
 template: /templates/_template-default.md
 linktitle: Aspose.TeX-Produktfamilie
 title: Aspose.TeX-Produktfamilie | Dokumentation
-description: Aspose.TeX für .NET ist eine leistungsstarke Bibliothek für TeX-Dateien-Satzanwendungen in .NET.
+description: Aspose.TeX ist eine Hochleistungsbibliothek für TeX- und LaTeX-Dateisatzanwendungen in .NET, Java, C++ und Python.
 lastmod: "2024-09-26"
 sitemap.changefreq: weekly
 sitemap.priority: 0.5
@@ -13,6 +13,7 @@ submenu: menu-tex
 ---
 
 {{<section welcome-net>}}
+
 {{% alert color="primary" %}}
 
 <p><img src="/tex/icons/aspose_tex-for-net.png" alt="Aspose.TeX for .NET logo" width="128" height="128"></p>
@@ -66,7 +67,8 @@ Im Folgenden finden Sie Links zu einigen nützlichen Ressourcen, die Sie möglic
 {{% alert color="primary" %}}
 
 <p><img src="/tex/icons/aspose_tex-for-cpp.png" alt="Aspose.TeX for C++ logo" width="128" height="128"></p>
-**Welcome to Aspose.TeX for C++**
+
+**Willkommen bei Aspose.TeX für C++**
 
 Erleben Sie die Leistungsfähigkeit von Aspose.TeX, der führenden C++-Bibliothek zum Setzen von TeX-Dateien. Mit Aspose.TeX können Sie TeX-Eingaben mühelos in beeindruckende Grafikformate wie XPS, PDF, PNG, JPEG, TIFF und BMP umwandeln. Unsere fortschrittliche Bibliothek bietet nicht nur außergewöhnliche Rendering-Funktionen, sondern liefert auch umfassende Ablaufverfolgungsinformationen und gewährleistet so eine optimale Leistung.
 
@@ -102,6 +104,7 @@ Erleben Sie die Leistungsfähigkeit und Flexibilität von Aspose.TeX in Ihren Py
 {{% /alert %}}
 
 ## Aspose.TeX für Python-Ressourcen
+
 Im Folgenden finden Sie Links zu einigen nützlichen Ressourcen, die Sie möglicherweise zur Erfüllung Ihrer Aufgaben benötigen.
 
 - [Aspose.TeX für Python Online-Dokumentation](/tex/{{lang.url-fragment}}python-net/)

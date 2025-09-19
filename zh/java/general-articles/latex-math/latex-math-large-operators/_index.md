@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: 6. 大型运营商
-title: 大型操作员|乳胶手册
+linktitle: 大型运营商
+title: 6. 大型操作员|乳胶手册
 weight: 60
 url: /java/latex-math-large-operators/
 keywords: 乳胶，乳胶数学公式，乳胶数学，乳胶数学大型运营商，乳胶总和，乳胶积分

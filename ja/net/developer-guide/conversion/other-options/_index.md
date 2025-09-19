@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-title: TEXオプションの他の管理| 。ネット
+title: TEXオプションの他の管理| .NET
 linktitle: その他のオプション
 weight: 17
 url: /net/other-options/
@@ -13,7 +13,7 @@ lastmod: "2025-06-09"
 
 ## インタラクションモードを設定する方法
 
-[ここ](/tex/{{lang.url-fragment}}net/tex-io/#tex-interaction-modes)、**.netのAspose.TeX**を述べたように、エンジンが起動する最初のインタラクションモードを設定できます。これが私たちのやり方です：
+[ここ](/tex/{{lang.url-fragment}}net/tex-io/#tex-interaction-modes)、**.NETのAspose.TeX**を述べたように、エンジンが起動する最初のインタラクションモードを設定できます。これが私たちのやり方です：
 
 {{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-InteractionMode.cs" >}}
 

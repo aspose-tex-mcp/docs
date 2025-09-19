@@ -1,8 +1,8 @@
 ---
 translation: true
 template: /templates/_template-java.md
-linktitle: 5. Fractions, binomial coefficients and math styles
-title: Fractions, binomial coefficients and math styles
+linktitle: Fractions, binomial coefficients and math styles
+title: 5. Fractions, binomial coefficients and math styles
 weight: 50
 url: /java/latex-math-fractions-binomial-styles/
 keywords: latex, latex math formulas, latex math, latex math fractions, latex math binomial coefficients, latex math styles

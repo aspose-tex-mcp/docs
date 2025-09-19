@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: Presize adjustments to the layout
-title: 7. Presize adjustments to the layout | LaTeX manual
+title: 7. Presize adjustments to the layout
 weight: 70
 url: /java/latex-math-fine-tuning/
 keywords: ams-latex, amsmath, latex math spacing, latex math styles, latex math delimiters, latex math parentheses, latex math alignment

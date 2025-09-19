@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-cpp.md
-title: Як запустити приклади коду на C++
+title: Як запустити приклади коду | Aspose.TeX для C++
 linktitle: Як запустити приклади
 weight: 80
 url: /cpp/how-to-run-the-examples/

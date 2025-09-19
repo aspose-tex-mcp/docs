@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-title: Riparazione del file in LaTeX | Aspose.TeX per .NET
+title: Riparazione del file in LaTeX | .NET
 linktitle: Riparazione dei file in LaTeX
 weight: 30
 url: /net/latex-repair/

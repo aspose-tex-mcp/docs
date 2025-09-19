@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: 10. Annexe. Symboles et commandes mathématiques
-title: Appendice. Symboles et commandes mathématiques | LaTeX
+linktitle: Annexe. Symboles et commandes mathématiques
+title: 10. Appendice. Symboles et commandes mathématiques
 weight: 100
 url: /java/latex-math-symbols-commands/
 keywords: latex, formules mathématiques en latex, mathématiques en latex, symboles mathématiques en latex, lettres grecques en latex, grands opérateurs en latex, relations mathématiques en latex, opérations binaires en latex, flèches mathématiques en latex

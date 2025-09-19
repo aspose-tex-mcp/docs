@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-python-net.md
 linktitle: 例を実行する方法
-title: 例を実行する方法| Python用のAspose.TeX
+title: 例を実行する方法| .NET経由でPython用のAspose.TeX
 weight: 80
 url: /python-net/how-to-run-the-examples/
 description: このページには、Python用のAspose.TeXソリューションの例を実行するためのすべての必要な要件と手順を提供します。

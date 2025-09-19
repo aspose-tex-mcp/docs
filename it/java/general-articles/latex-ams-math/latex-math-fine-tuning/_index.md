@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: Prestare le regolazioni al layout
-title: 7. Prestare le regolazioni al layout | Manuale in LaTeX
+title: 7. Prestare le regolazioni al layout
 weight: 70
 url: /java/latex-math-fine-tuning/
 keywords: AMS-Latex, Amsmath, Latex Math Spacing, LaTex Math Styles, Delimitatori di matematica in LaTeX, parentesi di matematica in LaTeX, allineamento matematico in LaTeX

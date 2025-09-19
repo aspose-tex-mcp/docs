@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-net.md
 linktitle: 对象Tex
-title: Aspose.TeX和对象Tex | Aspose.TeX for .NET
+title: Aspose.TeX和对象Tex 
 weight: 11
 url: /net/aspose-tex-and-object-tex/
 description: TEX是此API解决方案的输入和输出格式，因此我们可以在这里解释对象Tex以及如何将其转换为目标格式。

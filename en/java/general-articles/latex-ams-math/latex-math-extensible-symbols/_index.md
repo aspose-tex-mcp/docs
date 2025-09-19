@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: Extensible and adjustable symbols
-title: 5. Extensible and adjustable symbols  | LaTeX manual
+title: 5. Extensible and adjustable symbols 
 weight: 50
 url: /java/latex-math-extensible-symbols/
 keywords: ams-latex, amsmath, amsxtra, latex math operators, latex math delimiters, latex math brackets, latex math braces, latex math accents

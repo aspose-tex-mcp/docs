@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-title: イメージへのラテックス| .netのAspose.TeX
+title: イメージへのラテックス| .NET
 linktitle: 画像からラテックス
 weight: 10
 url: /net/latex-to-image/
@@ -12,7 +12,7 @@ lastmod: "2025-06-09"
 
 {{<section overview>}}
 
-**.netのasops.tex**を使用すると、ラテックスファイルを多数のラスター画像形式に変換できます。
+**.NETのasops.tex**を使用すると、ラテックスファイルを多数のラスター画像形式に変換できます。
 
 ## ラテックスをPNGに変換する方法
 

@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-python-net.md
-title: Externe LaTeX-Pakete | API für Python
+title: Externe LaTeX-Pakete | Python
 linktitle: Externe LaTeX-Pakete
 weight: 19
 url: /python-net/external-latex-packages/

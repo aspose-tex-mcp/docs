@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-title: Configuration système requise | Aspose.TeX .NET
+title: Configuration système requise | Aspose.TeX pour .NET
 linktitle: Configuration système requise
 weight: 50
 url: /net/system-requirements/

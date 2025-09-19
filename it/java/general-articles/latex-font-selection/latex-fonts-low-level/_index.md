@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: 5. Interfaccia di basso livello
-title: L'interfaccia di basso livello | Aspose.TeX per java
+linktitle: Interfaccia di basso livello
+title: 5. L'interfaccia di basso livello
 weight: 50
 url: /java/latex-fonts-low-level/
 keywords: Font in LaTeX, LaTeX, sostituzione del carattere in LaTeX, famiglie di caratteri in LaTeX, serie di caratteri in LaTeX, forma del carattere in LaTeX

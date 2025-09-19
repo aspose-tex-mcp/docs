@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-cpp.md
-title: その他のTEX変換出力形式| C ++
+title: その他のTEX変換出力形式| C++
 linktitle: その他のTEX形式
 weight: 18
 url: /cpp/other-tex-formats/

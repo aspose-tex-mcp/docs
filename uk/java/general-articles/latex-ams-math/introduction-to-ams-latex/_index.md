@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: АМС-ЛАТЕХ
-title: 1. Введення в AMS-LATEX | Підручник з LaTeX
+linktitle: AMS-LATEX
+title: 1. Введення в AMS-LATEX 
 weight: 10
 url: /java/introduction-to-ams-latex/
 keywords: ams-latex, amsmath, параметри amsmath, amsopn, amstext, amscd, amsthm, amsxtra, upref

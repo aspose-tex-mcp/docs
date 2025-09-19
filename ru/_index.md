@@ -3,7 +3,7 @@ translation: true
 template: /templates/_template-default.md
 linktitle: Семейство продуктов Aspose.TeX
 title: Семейство продуктов Aspose.TeX | Документация
-description: Aspose.TeX for .NET — это высокопроизводительная библиотека для приложений верстки файлов TeX в .NET.
+description: Aspose.TeX — высокопроизводительная библиотека для приложений вёрстки файлов TeX и LaTeX в .NET, Java, C++ и Python.
 lastmod: "2024-09-24"
 sitemap.changefreq: weekly
 sitemap.priority: 0.5
@@ -24,7 +24,7 @@ Aspose.TeX — это библиотека .NET для верстки файло
 
 {{% /alert %}}
 
-## Aspose.TeX для ресурсов .NET
+## Aspose.TeX для .NET ресурсы
 
 Ниже приведены ссылки на некоторые полезные ресурсы, которые могут вам понадобиться для выполнения ваших задач.
 - [Онлайн-документация Aspose.TeX для .NET](/tex/{{lang.url-fragment}}net/)
@@ -48,18 +48,18 @@ Aspose.TeX — это библиотека Java, предназначенная 
 
 {{% /alert %}}
 
-## Aspose.TeX для ресурсов Java
+## Aspose.TeX для Java ресурсы
 
 Ниже приведены ссылки на некоторые полезные ресурсы, которые могут вам понадобиться для выполнения ваших задач.
 - [Онлайн-документация Aspose.TeX для Java](/tex/{{lang.url-fragment}}java/)
-- [Aspose.TeX для функций Java](/tex/{{lang.url-fragment}}java/feature-list/)
+- [Aspose.TeX для ava функциональность](/tex/{{lang.url-fragment}}java/feature-list/)
 - [Примечания к выпуску Aspose.TeX для Java](https://releases.aspose.com/tex/java/release-notes/)
 - [Страница продукта Aspose.TeX для Java](https://products.aspose.com/tex/java/)
 - [Загрузить Aspose.TeX для Java](https://releases.aspose.com/tex/java/)
-- [Aspose.TeX для репозитория Java Maven](https://releases.aspose.com/java/repo/com/aspose/aspose-tex/)
-- [Справочное руководство по Aspose.TeX для Java API](https://reference.aspose.com/tex/java)
+- [Aspose.TeX для Java репозиторий Maven](https://releases.aspose.com/java/repo/com/aspose/aspose-tex/)
+- [Справочное руководство по API Aspose.TeX для Java](https://reference.aspose.com/tex/java)
 - [Форум бесплатной поддержки Aspose.TeX для Java](https://forum.aspose.com/c/tex)
-- [Aspose.TeX для службы поддержки платной поддержки Java](https://helpdesk.aspose.com/)
+- [Aspose.TeX для Java служба платной поддержки](https://helpdesk.aspose.com/)
 
 
 {{<section welcome-c>}}
@@ -67,6 +67,7 @@ Aspose.TeX — это библиотека Java, предназначенная 
 {{% alert color="primary" %}}
 
 <p><img src="/tex/icons/aspose_tex-for-cpp.png" alt="Aspose.TeX for C++ logo" width="128" height="128"></p>
+
 **Добро пожаловать в Aspose.TeX для C++**
 
 Испытайте мощь Aspose.TeX, ведущей библиотеки C++ для верстки файлов TeX. С помощью Aspose.TeX вы можете легко преобразовать входные данные TeX в потрясающие графические форматы, такие как XPS, PDF, PNG, JPEG, TIFF и BMP. Наша расширенная библиотека не только обеспечивает исключительные возможности рендеринга, но также предоставляет исчерпывающую информацию о трассировке, обеспечивая оптимальную производительность.
@@ -75,7 +76,7 @@ Aspose.TeX — это библиотека Java, предназначенная 
 
 {{% /alert %}}
 
-## Aspose.TeX для ресурсов C++
+## Aspose.TeX для C++ ресурсы
 
 Ниже приведены ссылки на некоторые полезные ресурсы, которые могут вам понадобиться для выполнения ваших задач.
 - [Онлайн-документация Aspose.TeX для C++](/tex/{{lang.url-fragment}}cpp/)
@@ -101,15 +102,16 @@ Aspose.TeX — это библиотека Java, предназначенная 
 Испытайте мощь и гибкость Aspose.TeX в своих проектах Python и улучшите свой рабочий процесс разработки уже сегодня!
 {{% /alert %}}
 
-## Aspose.TeX для ресурсов Python
+## Aspose.TeX для Python ресурсы
 
 Ниже приведены ссылки на некоторые полезные ресурсы, которые могут вам понадобиться для выполнения ваших задач.
+
 - [Онлайн-документация Aspose.TeX для Python](/tex/{{lang.url-fragment}}python-net/)
 - [Aspose.TeX для функций Python](/tex/{{lang.url-fragment}}python-net/feature-list/)
 - [Примечания к выпуску Aspose.TeX для Python](https://releases.aspose.com/tex/python-net/release-notes/)
 - [Страница продукта Aspose.TeX для Python](https://products.aspose.com/tex/python-net/)
-- [Установить Aspose.TeX для пакетов Python Wheel](https://pypi.org/project/aspose-tex-net/)
+- [Установить Aspose.TeX для Python пакет Wheel](https://pypi.org/project/aspose-tex-net/)
 - [Справочное руководство по Aspose.TeX для Python API](https://reference.aspose.com/python-tex/net/)
 - [Форум бесплатной поддержки Aspose.TeX для Python](https://forum.aspose.com/c/tex)
-- [Aspose.TeX для службы поддержки платной поддержки Python](https://helpdesk.aspose.com/)
+- [Aspose.TeX для Python службы поддержки платной поддержки](https://helpdesk.aspose.com/)
 

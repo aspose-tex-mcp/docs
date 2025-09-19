@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: 3. 乳胶命令
-title: 乳胶命令|乳胶手册| 用于 Java 的 Aspose.TeX
+title: 乳胶命令|乳胶手册
 weight: 30
 url: /java/latex-math-commands/
 keywords: 乳胶，乳胶数学公式，乳胶数学，乳胶数学命令，乳胶平方根，乳胶数学下划线，乳胶数学上线

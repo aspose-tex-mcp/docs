@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-cpp.md
-title: Möglichkeiten zur Bereitstellung der Haupt-TeX-Eingabedatei
+title: Möglichkeiten zur Bereitstellung der Haupt-TeX-Eingabedatei | C++
 linktitle: Andere Möglichkeiten, die Haupt-TeX-Eingabedatei bereitzustellen
 weight: 14
 url: /cpp/other-ways-of-main-input/

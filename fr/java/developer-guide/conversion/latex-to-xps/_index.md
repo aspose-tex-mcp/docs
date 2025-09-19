@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-title: LaTeX vers XPS | Aspose.TeX pour Java
+title: LaTeX vers XPS | Java
 linktitle: LaTeX vers XPS
 weight: 12
 url: /java/latex-to-xps/

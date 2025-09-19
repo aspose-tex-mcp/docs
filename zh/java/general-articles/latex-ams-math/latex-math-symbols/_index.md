@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: 乳胶数学符号
-title: 9. 数学公式中的符号|乳胶手册
+title: 9. 数学公式中的符号
 weight: 90
 url: /java/latex-math-symbols/
 keywords: AMS-LATEX，AMSMATH，AMSFONTS，AMSSYMB，乳胶数学Sybol课程，Stmaryrd Package，St Mary Road Font

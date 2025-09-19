@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: 字体选择方案
-title: 乳胶字体选择方案| 用于 Java 的 Aspose.TeX
+title: 乳胶字体选择方案
 weight: 60
 url: /java/latex-font-selection/
 keywords: 乳胶，乳胶字体，乳胶字体选择，NFSS

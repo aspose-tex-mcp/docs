@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-title: ラテックスからXPS | .netのAspose.TeX
+title: ラテックスからXPS | .NET
 linktitle: ラテックスからXPS
 weight: 12
 url: /net/latex-to-xps/

@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-net.md
 linktitle: インストール
-title: インストール-.NETのAsophes.Tex
+title: インストール| .NETのAspose.TeX
 weight: 60
 url: /net/installation/
 description: .NETのAspose.TeX APIドキュメントは、「ダウンロードパッケージ」をクリックして、ダウンロードしたZIPパッケージにあるか、Nugetギャラリーから入手できます。

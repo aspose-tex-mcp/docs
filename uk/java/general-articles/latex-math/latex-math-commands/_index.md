@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: 3. Команди LaTeX
-title: Команди LaTeX | Підручник з LaTeX
+linktitle: Команди LaTeX
+title: 3. Команди LaTeX 
 weight: 30
 url: /java/latex-math-commands/
 keywords: латекс, латексні математичні формули, латексні математичні команди, латексні математичні команди, латексний квадратний корінь, латексні математичні підкреслення, латексні математичні підкреслення

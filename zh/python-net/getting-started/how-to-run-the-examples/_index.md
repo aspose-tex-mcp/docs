@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-python-net.md
 linktitle: 如何运行示例
-title: 如何运行示例| Aspose.TeX for Python
+title: 如何运行示例| 通过 .NET 为 Python 提供 Aspose.TeX
 weight: 80
 url: /python-net/how-to-run-the-examples/
 description: 此页面提供了所有必要的要求和步骤来运行python的aspose.tex解决方案的示例。

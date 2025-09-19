@@ -2,10 +2,10 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: Clases de documentos LaTeX
-title: Clases de documentos LaTeX | Aspose.TeX para Java
+title: Clases de documentos LaTeX
 weight: 20
 url: /java/latex-document-classes/
-keywords: clase de artículo de látex, clase de documento de látex, plantilla de documento de látex, artículo de látex, libro de látex, diapositivas de látex, informe de látex, carta de látex, clase de documento en látex
+keywords: clase de artículo de LaTeX, clase de documento de LaTeX, plantilla de documento de LaTeX, artículo de LaTeX, libro de LaTeX, diapositivas de LaTeX, informe de LaTeX, carta de LaTeX, clase de documento en LaTeX
 description: Este artículo es un resumen conciso de las clases de documentos LaTeX y sus opciones. También proporciona algunos ejemplos.
 lastmod: "2024-10-30"
 ---

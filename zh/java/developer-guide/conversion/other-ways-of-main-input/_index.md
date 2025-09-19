@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-title: 提供主Tex输入文件的其他方法|爪哇
+title: 提供主Tex输入文件的其他方法| Java的Aspose.TeX
 linktitle: 提供主Tex输入文件的其他方法
 weight: 14
 url: /java/other-ways-of-main-input/

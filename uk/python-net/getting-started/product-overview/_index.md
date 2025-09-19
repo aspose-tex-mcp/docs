@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-python-net.md
-title: Огляд продукту | Aspose.TeX для Python
+title: Огляд продукту | Aspose.TeX для Python через .NET
 linktitle: Огляд продукту
 weight: 10
 url: /python-net/product-overview/

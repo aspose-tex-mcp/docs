@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: 3. Comandi in LaTeX
-title: Comandi in LaTeX | Manuale in LaTeX | Aspose.TeX per java
+linktitle: Comandi in LaTeX
+title: 3. Comandi in LaTeX 
 weight: 30
 url: /java/latex-math-commands/
 keywords: Latex, formule di matematica in LaTeX, matematica in LaTeX, comandi matematica in LaTeX, radice quadrata in LaTeX, sottolineatura di matematica in LaTeX, matematica in LaTeX

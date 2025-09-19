@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-cpp.md
-title: Perguntas frequentes | Aspose.TeX para с ++
+title: Perguntas frequentes | Aspose.TeX para C++
 linktitle: Perguntas frequentes
 weight: 80
 url: /cpp/faq/

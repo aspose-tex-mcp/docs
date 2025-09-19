@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-title: ラテックスファイルの修理| .netのAspose.TeX
+title: ラテックスファイルの修理| .NET
 linktitle: ラテックスファイルの修理
 weight: 30
 url: /net/latex-repair/

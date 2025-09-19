@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-title: LaTeX eingebettete Grafiken | Aspose.TeX
+title: LaTeX eingebettete Grafiken | Aspose.TeX für .NET
 linktitle: LaTeX-eingebettete Grafiken
 weight: 18
 url: /net/latex-embedded-graphics/

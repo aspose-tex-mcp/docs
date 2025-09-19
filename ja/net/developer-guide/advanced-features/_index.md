@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-title: 高度な機能| .netのAspose.TeX
+title: 高度な機能| .NETのAspose.TeX
 linktitle: 高度な機能
 weight: 20
 url: /net/advanced-features/

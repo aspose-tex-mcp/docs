@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-title: Rendern von LaTeX-Matheformeln | Java
+title: Rendern von LaTeX-Matheformeln | Aspose.TeX für Java
 linktitle: Rendern von LaTeX-Matheformeln
 weight: 10
 url: /java/latex-math-formula-rendering/

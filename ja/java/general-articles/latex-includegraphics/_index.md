@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: Graphicsを含む
-title: ラテックスにはグラフィクスが含まれます| Java用のAspose.TeX
+title: ラテックスにはグラフィクスが含まれます
 weight: 10
 url: /java/latex-includegraphics/
 keywords: インクルードグラフィクスのラテックス、ラテックスインクルードグラフィック、挿入イメージ、ラテックス、ラテックスグラフィック、インサート画像、インクルードグラフィックラテックスパッケージ、描画IOラテックス、ラテックスの描画幅、グラフィクスの幅、フィギュアスケールラテックス

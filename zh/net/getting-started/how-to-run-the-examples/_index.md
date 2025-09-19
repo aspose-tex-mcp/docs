@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-net.md
 linktitle: 如何运行示例
-title: 如何在c＃|中运行示例Aspose.TeX for .NET
+title: 如何在c＃| .NET的Aspose.TeX
 weight: 80
 url: /net/how-to-run-the-examples/
 description: 在此页面上，您将找到所有需要采取的要求和步骤来运行.net的aspose.tex解决方案的示例。

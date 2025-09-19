@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-title: TeX ввод/вывод | Решение Aspose.TeX API для .NET
-linktitle: Текс ввода/вывода
+title: TeX ввод/вывод 
+linktitle: TeX ввод/вывод
 weight: 12
 url: /net/tex-io/
 description: Основы работы с TeX как форматом вывода или ввода в API Aspose.TeX. Задание TeX выполняется для явно указанного файла.

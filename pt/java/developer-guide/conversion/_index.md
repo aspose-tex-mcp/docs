@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-title: Funcionalidade de conversão | Aspose.TeX para java
+title: Funcionalidade de conversão | Aspose.TeX para Java
 linktitle: Conversão
 weight: 10
 url: /java/conversion/

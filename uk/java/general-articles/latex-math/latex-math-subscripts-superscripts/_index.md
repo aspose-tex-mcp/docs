@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: 2. Підрядковий і підрядковий
-title: Нижній і нижній індекс у LaTeX | Підручник з LaTeX
+linktitle: Нижній і нижній індек
+title: 2. Нижній і нижній індекс у LaTeX 
 weight: 20
 url: /java/latex-math-subscripts-superscripts/
 keywords: латекс, латексні математичні формули, латексна математика, латексні математичні індекси, латексні математичні верхні індекси

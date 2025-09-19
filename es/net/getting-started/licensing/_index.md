@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-net.md
 linktitle: Licencias
-title: Licencias - Aspose.TeX para .NET
+title: Licencias | Aspose.TeX para .NET
 weight: 70
 url: /net/licensing/
 description: Cuando se detuvo en la versión con licencia de la solución API Aspose.TeX para .NET, aquí descubrirá cómo aplicar la licencia.

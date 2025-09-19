@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: ラテックスドキュメントクラス
-title: ラテックスドキュメントクラス| Java用のAspose.TeX
+title: ラテックスドキュメントクラス
 weight: 20
 url: /java/latex-document-classes/
 keywords: ラテックスの記事クラス、ラテックスドキュメントクラス、ラテックスドキュメントテンプレート、ラテックス記事、ラテックスブック、ラテックススライド、ラテックスレポート、ラテックスレター、ドキュメントクラスのラテックス

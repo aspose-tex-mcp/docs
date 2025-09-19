@@ -51,7 +51,7 @@ La sección del cuerpo del documento contiene el contenido real del documento. E
 
 **P: ¿Cuál es la sintaxis de TeX?**
 
-**A:** La sintaxis de TeX (y su paquete macro más popular, látex) se basa en comandos y entornos.
+**A:** La sintaxis de TeX (y su paquete macro más popular, LaTeX) se basa en comandos y entornos.
 
 La mayoría de los comandos comienzan con una barra insegura `(\)` y el nombre del comando. Por ejemplo, `\maketitle` crea el título del documento. Algunos comandos también toman parámetros opcionales en los soportes cuadrados `[...]` y argumentos obligatorios en aparatos `{...}`.
 
@@ -94,7 +94,7 @@ Este es el caso de uso más común. En lugar de escribir un archivo de LaTeX com
 - Producción científica y matemática
 
 2. Incrustación de pitón en LaTeX
-También puede usar el código Python directamente desde un documento de látex e insertar la salida. Esto se hace con paquetes como `Pythontex`.
+También puede usar el código Python directamente desde un documento de LaTeX e insertar la salida. Esto se hace con paquetes como `Pythontex`.
 <br> <br>
 
 **P: ¿El LaTeX es como html?**

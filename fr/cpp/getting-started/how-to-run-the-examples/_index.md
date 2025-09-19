@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-cpp.md
-title: Comment exécuter les exemples en C++
+title: Comment exécuter les exemples | Aspose.TeX pour C++
 linktitle: Comment exécuter les exemples
 weight: 80
 url: /cpp/how-to-run-the-examples/

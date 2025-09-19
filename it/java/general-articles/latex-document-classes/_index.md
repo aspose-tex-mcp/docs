@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: Classi di documenti in LaTeX
-title: Classi di documenti in LaTeX | Aspose.TeX per java
+title: Classi di documenti in LaTeX 
 weight: 20
 url: /java/latex-document-classes/
 keywords: Classe di articoli in LaTeX, Classe di documenti in LaTeX, modello di documento in LaTeX, articolo in LaTeX, libro in LaTeX, diapositive in LaTeX, report Latex, lettera Latex, Document Class in Latex

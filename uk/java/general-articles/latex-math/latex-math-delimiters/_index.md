@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: 7. Розділові знаки
-title: Роздільники | Підручник з LaTeX | Aspose.TeX
+linktitle: Розділові знаки
+title: 7. Розділові знаки
 weight: 70
 url: /java/latex-math-delimiters/
 keywords: латекс, латексні математичні формули, латексні математичні обмежувачі, латексні математичні дужки, латексні математичні дужки, латексні математичні дужки

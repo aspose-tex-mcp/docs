@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-title: Herramientas de línea de comandos LaTeX | .NET
+title: Herramientas de línea de comandos LaTeX | Aspose.TeX para .NET
 linktitle: Herramientas CLI para manipular archivos TeX/LaTeX
 weight: 70
 url: /net/cli-tools/

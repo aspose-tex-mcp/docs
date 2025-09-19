@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: Классы документов LaTeX
-title: Классы документов LaTeX | Aspose.TeX для Java
+title: Классы документов LaTeX 
 weight: 20
 url: /java/latex-document-classes/
 keywords: Класс изделий из латеха, класс документов из латеха, шаблон документа из латеха, изделие из латеха, книга из латеха, слайды из латеха, отчет о латехе, письмо из латеха, класс документов из латеха

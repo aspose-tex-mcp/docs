@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: 乳胶表
-title: 乳胶中的桌子| 用于 Java 的 Aspose.TeX
+title: 乳胶中的桌子
 weight: 50
 url: /java/latex-tables/
 keywords: 乳胶桌，表格环境，乳胶桌设计，乳胶格式，乳胶中排版桌，乳胶桌布局，乳胶桌间距，自定义乳胶表，乳胶桌对齐，乳胶桌中的多餐和多餐

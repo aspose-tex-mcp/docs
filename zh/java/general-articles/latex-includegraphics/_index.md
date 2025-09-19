@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: 包括图
-title: 乳胶包括图| 用于 Java 的 Aspose.TeX
+title: 乳胶包括图
 weight: 10
 url: /java/latex-includegraphics/
 keywords: 包括图乳胶，乳胶，包括图形，插入图像乳胶，乳胶graphicx，乳胶插入图像，包括图形乳胶软件包，绘制io乳胶，乳胶包括图形宽度，包括图形宽度，图表乳胶

@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: 10。付録。数学のシンボルとコマンド
-title: 付録。数学のシンボルとコマンド|ラテックスマニュアル
+linktitle: 付録。数学のシンボルとコマンド
+title: 10。付録。数学のシンボルとコマンド|ラテックスマニュアル
 weight: 100
 url: /java/latex-math-symbols-commands/
 keywords: ラテックス、ラテックス数学式、ラテックス数学、ラテックス数学記号、ラテックスギリシャ文字、ラテックス大規模オペレーター、ラテックス数学関係、ラテックスバイナリ操作、ラテックス数学矢印

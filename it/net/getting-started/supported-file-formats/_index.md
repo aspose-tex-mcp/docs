@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-title: Formati di file supportati | Aspose.TeX .net
+title: Formati di file supportati | Aspose.TeX per .NET
 linktitle: Formati di file supportati
 weight: 20
 url: /net/supported-file-formats/

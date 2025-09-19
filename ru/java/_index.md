@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-title: Aspose.TeX для решения Java API
-linktitle: Документация Aspose.TeX для Java
+title: Документация Aspose.TeX для Java
+linktitle: Aspose.TeX для Java
 weight: 20
 url: /java/
 description: API-решение для управления файлами TeX для Java. Передавайте входные данные TeX и получайте выходные данные, а также создавайте собственный формат TeX.
@@ -22,18 +22,20 @@ Aspose.TeX — это Java-библиотека для верстки файло
 
 {{% /alert %}}
 
-## Aspose.TeX для ресурсов Java
+## Aspose.TeX для Java ресурсы
+
+Ниже приведены ссылки на некоторые полезные ресурсы, которые могут вам понадобиться для выполнения ваших задач.
 
 - [Онлайн-документация Aspose.TeX для Java](/tex/{{lang.url-fragment}}java/)
 - [Aspose.TeX для функций Java](/tex/{{lang.url-fragment}}java/feature-list/)
 - [Примечания к выпуску Aspose.TeX для Java](https://releases.aspose.com/tex/java/release-notes/)
 - [Загрузить Aspose.TeX для Java](https://releases.aspose.com/tex/java/)
-- [Aspose.TeX для репозитория Java Maven](https://releases.aspose.com/java/repo/com/aspose/aspose-tex/)
+- [Aspose.TeX для Java репозитория Maven](https://releases.aspose.com/java/repo/com/aspose/aspose-tex/)
 - [Страница продукта Aspose.TeX для Java](https://products.aspose.com/tex/java/)
 - [Справочное руководство по Aspose.TeX для Java API](https://reference.aspose.com/tex/java)
 - [Форум бесплатной поддержки Aspose.TeX для Java](https://forum.aspose.com/c/tex)
-- [Aspose.TeX для службы поддержки платной поддержки Java](https://helpdesk.aspose.com/)
-Ниже приведены ссылки на некоторые полезные ресурсы, которые могут вам понадобиться для выполнения ваших задач.
+- [Aspose.TeX для Java служба платной поддержки](https://helpdesk.aspose.com/)
+
 
 {{% alert color="primary" %}}
 

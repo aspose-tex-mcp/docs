@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-title: Внешние пакеты LaTeX | Aspose.TeX для .СЕТЬ
+title: Внешние пакеты LaTeX | Aspose.TeX для .NET
 linktitle: Внешние пакеты LaTeX
 weight: 20
 url: /net/external-latex-packages/

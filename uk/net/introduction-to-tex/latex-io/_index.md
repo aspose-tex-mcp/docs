@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-title: LaTeX I/O | Aspose.TeX для .NET
-linktitle: Введення/виведення LaTeX
+title: Введення/виведення LaTeX
+linktitle: LaTeX I/O 
 weight: 17
 url: /net/latex-io/
 description: На цій сторінці коротко описано особливості роботи з LaTeX як вихідним або вхідним форматом та файлом *.aux* як обов’язковою частиною LaTeX.

@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: 1。入力と出力
-title: 入力および出力エンコーディング| Java用のAspose.TeX
+linktitle: 入力と出力
+title: 1。入力および出力エンコーディング
 weight: 10
 url: /java/latex-font-encodings/
 keywords: ラテックス、ラテックスフォント、ラテックスフォントエンコーディング、NFSS

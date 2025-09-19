@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: 3。ラテックスコマンド
-title: ラテックスコマンド|ラテックスマニュアル| Java用のAspose.TeX
+linktitle: ラテックスコマンド
+title: 3。ラテックスコマンド|ラテックスマニュアル
 weight: 30
 url: /java/latex-math-commands/
 keywords: ラテックス、ラテックス数学式、ラテックス数学、ラテックス数学コマンド、ラテックススクエアルート、ラテックス数学の下線、ラテックス数学オーバーライン

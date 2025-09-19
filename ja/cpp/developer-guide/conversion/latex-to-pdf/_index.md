@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-conversion-cpp.md
-title: ラテックスからPDF | C ++のAspose.TeX APIソリューション
+title: ラテックスからPDF | C++
 linktitle: ラテックスからPDF
 weight: 11
 url: /cpp/latex-to-pdf/

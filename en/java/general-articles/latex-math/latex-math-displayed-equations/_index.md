@@ -1,8 +1,8 @@
 ---
 translation: true
 template: /templates/_template-java.md
-linktitle: 9. Displayed equations
-title: Displayed equations | LaTeX manual
+linktitle: Displayed equations
+title: 9. Displayed equations
 weight: 90
 url: /java/latex-math-displayed-equations/
 keywords: latex, latex math formulas, latex math, latex math displayed formula, latex math displayed equation, latex math equation array, latex math displayed alignment

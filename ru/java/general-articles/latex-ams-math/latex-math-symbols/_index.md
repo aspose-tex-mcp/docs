@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: LaTeX Символы 
-title: 9. Mатематические символы LaTeX | Aspose.TeX
+title: 9. Mатематические символы LaTeX 
 weight: 90
 url: /java/latex-math-symbols/
 keywords: латех символы, математические символы latex, греческие буквы латех, amssymb, классы символов латехной математики, пакет stmaryrd, шрифт St Mary Road

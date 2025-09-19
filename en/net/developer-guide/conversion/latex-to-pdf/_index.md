@@ -1,7 +1,7 @@
 ---
 translation: true
 template: /templates/_template-net.md
-title: LaTeX to PDF | Aspose.TeX for .NET
+title: LaTeX to PDF | .NET
 linktitle: LaTeX to PDF
 weight: 11
 url: /net/latex-to-pdf/

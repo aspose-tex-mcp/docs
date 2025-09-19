@@ -1,11 +1,11 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: 4. Diferentes caracteres en fórmulas matemáticas.
-title: Diferentes caracteres en fórmulas matemáticas.
+linktitle: Diferentes caracteres en fórmulas matemáticas.
+title: 4. Diferentes caracteres en fórmulas matemáticas.
 weight: 40
 url: /java/latex-math-symbol-classes/
-keywords: látex, fórmulas matemáticas de látex, matemáticas de látex, símbolos matemáticos de látex, variables matemáticas de látex, operaciones binarias matemáticas de látex, relaciones matemáticas de látex, acentos matemáticos de látex
+keywords: LaTeX, fórmulas matemáticas de LaTeX, matemáticas de LaTeX, símbolos matemáticos de LaTeX, variables matemáticas de LaTeX, operaciones binarias matemáticas de LaTeX, relaciones matemáticas de LaTeX, acentos matemáticos de LaTeX
 description: Este artículo analiza la división de los símbolos matemáticos TeX en clases y el significado de estas clases en matemáticas.
 lastmod: "2024-10-30"
 ---

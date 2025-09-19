@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-cpp.md
-title: Installation-Aspose.TeX pour C++
+title: Installation | Aspose.TeX pour C++
 linktitle: Installation
 weight: 60
 url: /cpp/installation/

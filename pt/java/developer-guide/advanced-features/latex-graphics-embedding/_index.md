@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-title: Gráficos embutidos de LaTeX | API para Java
+title: Gráficos embutidos de LaTeX | Aspose.TeX para Java
 linktitle: Gráficos embutidos de LaTeX
 weight: 18
 url: /java/latex-graphics-embedding/

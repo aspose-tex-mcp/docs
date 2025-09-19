@@ -1,11 +1,11 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: 1. Entrada y salida
-title: Codificaciones de entrada y salida.
+linktitle: Entrada y salida
+title: 1. Codificaciones de entrada y salida.
 weight: 10
 url: /java/latex-font-encodings/
-keywords: látex, fuentes de látex, codificaciones de fuentes de látex, nfss
+keywords: LaTeX, fuentes de LaTeX, codificaciones de fuentes de LaTeX, nfss
 description: Este artículo explica brevemente los conceptos de codificaciones de entrada y salida en LaTeX. También menciona el nuevo esquema de selección de fuentes.
 lastmod: "2024-10-30"
 ---

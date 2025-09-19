@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: 4. Personagens diferentes nas fórmulas de matemática
-title: O significado de diferentes caracteres nas fórmulas matemáticas
+linktitle: Personagens diferentes nas fórmulas de matemática
+title: 4. O significado de diferentes caracteres nas fórmulas matemáticas
 weight: 40
 url: /java/latex-math-symbol-classes/
 keywords: LATEX, fórmulas de matemática de LaTeX, matemática de LaTeX, símbolos de matemática de LaTeX, variáveis ​​matemáticas de LaTeX, operações binárias de matemática de LaTeX, relações matemáticas de LaTeX, detalhes em matemática de LaTeX

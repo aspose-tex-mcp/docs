@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: 5. Interface de bas niveau
-title: L'interface de bas niveau | API pour Java
+linktitle: Interface de bas niveau
+title: 5. L'interface de bas niveau
 weight: 50
 url: /java/latex-fonts-low-level/
 keywords: latex, polices latex, substitution de polices latex, familles de polices latex, séries de polices latex, formes de polices latex

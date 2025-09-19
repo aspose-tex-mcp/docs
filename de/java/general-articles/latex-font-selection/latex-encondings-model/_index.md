@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: 7. Modell für Zeichenkodierungen
-title: LaTeX-Modell für Zeichenkodierungen
+linktitle: Modell für Zeichenkodierungen
+title: 7. LaTeX-Modell für Zeichenkodierungen
 weight: 70
 url: /java/latex-encodings-model/
 keywords: Latex, Latex-Schriftarten, Latex-Schriftartkodierungen, Latex-Eingabekodierungen, Latex-Ausgabekodierungen, Licr-Objekt, interne Latex-Zeichendarstellung

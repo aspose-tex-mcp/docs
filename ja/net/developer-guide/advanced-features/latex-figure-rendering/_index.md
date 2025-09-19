@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-title: ラテックスフィギュアレンダリング| .netのAspose.TeX
+title: ラテックスフィギュアレンダリング| .NET
 linktitle: ラテックスには図が含まれています
 weight: 20
 url: /net/latex-figure-rendering/

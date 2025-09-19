@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-title: 外部乳胶软件包| .NET
+title: 外部乳胶软件包| .NET的Aspose.TeX
 linktitle: 外部乳胶软件包
 weight: 20
 url: /net/external-latex-packages/

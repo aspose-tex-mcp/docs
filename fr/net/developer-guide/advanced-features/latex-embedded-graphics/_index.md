@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-title: Inclure des graphiques dans le code LaTeX
+title: Inclure des graphiques dans le code LaTeX | .NET
 linktitle: Graphiques intégrés LaTeX
 weight: 18
 url: /net/latex-embedded-graphics/

@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-cpp.md
-title: Caratteristiche avanzate | Aspose.TeX per C ++
+title: Caratteristiche avanzate | Aspose.TeX per C++
 linktitle: Caratteristiche avanzate
 weight: 20
 url: /cpp/advanced-features/

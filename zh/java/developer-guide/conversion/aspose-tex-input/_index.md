@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-title: Aspose.TeX的输入接口|爪哇
-linktitle: Aspose.TeX的输入接口
+title: 的输入接口|爪哇| Java的Aspose.TeX
+linktitle: 的输入接口
 weight: 15
 url: /java/aspose-tex-input/
 description: Aspose.TeX api解决方案的转换功能与TEX一起使用，作为输入格式，请参见代码示例。

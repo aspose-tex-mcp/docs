@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: 4. Diversi personaggi nelle formule di matematica
-title: Il significato di diversi personaggi nelle formule matematiche
+linktitle: Diversi personaggi nelle formule di matematica
+title: 4. Il significato di diversi personaggi nelle formule matematiche
 weight: 40
 url: /java/latex-math-symbol-classes/
 keywords: Formule di matematica in LaTeX, LaTeX, matematica in LaTeX, simboli di matematica in LaTeX, variabili di matematica in LaTeX, operazioni binarie di matematica in LaTeX, relazioni matematiche in LaTeX, accenti di matematica in LaTeX

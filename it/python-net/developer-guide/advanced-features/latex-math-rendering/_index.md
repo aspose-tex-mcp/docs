@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-python-net.md
-title: Formule matematiche in LaTeX rendering | Python
+title: Formule matematiche in LaTeX rendering | Python tramite .NET
 linktitle: Formule matematiche in LaTeX rendering
 weight: 10
 url: /python-net/latex-math-formula-rendering/

@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-title: E/S TeX | Solution API Aspose.TeX pour .NET
+title: Entrée/sortie TeX 
 linktitle: E/S TeX
 weight: 12
 url: /net/tex-io/

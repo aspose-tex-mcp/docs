@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: 2. Schrifteigenschaften
-title: Schrifteigenschaften | Aspose.TeX für Java
+linktitle: Schrifteigenschaften
+title: 2. Schrifteigenschaften
 weight: 20
 url: /java/latex-font-attributes/
 keywords: Latex, Latex-Schriftarten, Latex-Schriftkodierungen, NFSS

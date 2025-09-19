@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: ラテックス数学記号
-title: 9。数式のシンボル|ラテックスマニュアル
+title: 9。数式のシンボル
 weight: 90
 url: /java/latex-math-symbols/
 keywords: AMS-Latex、AMSMath、AMSFONTS、AMSSYMB、LATEX MATH SYBOLクラス、STMARYRDパッケージ、StMary Roadフォント

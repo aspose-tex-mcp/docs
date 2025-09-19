@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-title: 乳胶数学公式渲染| .NET
+title: 乳胶数学公式渲染| .NET的Aspose.TeX
 linktitle: 乳胶数学公式渲染
 weight: 10
 url: /net/latex-math-formula-rendering/

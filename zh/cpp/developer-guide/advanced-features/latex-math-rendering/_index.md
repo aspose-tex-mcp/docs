@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-cpp.md
-title: 乳胶数学公式渲染| C ++
+title: 乳胶数学公式渲染| C++的Aspose.TeX
 linktitle: 乳胶数学公式渲染
 weight: 10
 url: /cpp/latex-math-formula-rendering/

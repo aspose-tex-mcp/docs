@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: Schema di selezione dei caratteri
-title: Schema di selezione dei caratteri in LaTeX | Aspose.TeX per java
+title: Schema di selezione dei caratteri in LaTeX
 weight: 60
 url: /java/latex-font-selection/
 keywords: Font in LaTeX, LaTeX, selezione dei caratteri in LaTeX, NFSS

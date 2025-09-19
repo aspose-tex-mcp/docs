@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-net.md
 linktitle: 安装
-title: 安装 -  aspose.tex .net
+title: 安装 | .NET的Aspose.TeX
 weight: 60
 url: /net/installation/
 description: 通过单击“下载软件包”，可以在下载的ZIP软件包或从Nuget Gallery中找到.NET的Aspose.TeX API文档。

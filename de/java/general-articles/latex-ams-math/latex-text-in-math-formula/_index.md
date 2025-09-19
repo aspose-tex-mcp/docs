@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: Text in mathematischen Formeln
-title: 6. Text in mathematischen Formeln | LaTeX-Handbuch
+title: 6. Text in mathematischen Formeln
 weight: 60
 url: /java/latex-text-in-math-formula/
 keywords: ams-latex, amsmath, Latex-Mathe-Operatoren, Latex-Mathe-Funktionen, Latex-Mathe-Text

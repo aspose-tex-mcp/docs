@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-python-net.md
-title: LaTeX до зображення | Aspose.TeX для Python
+title: LaTeX до зображення | Python через .NET
 linktitle: LaTeX до зображення
 weight: 10
 url: /python-net/latex-to-image/

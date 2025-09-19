@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-cpp.md
-title: Panoramica del prodotto | Aspose.TeX per C ++
+title: Panoramica del prodotto | Aspose.TeX per C++
 linktitle: Panoramica del prodotto
 weight: 10
 url: /cpp/product-overview/

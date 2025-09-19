@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: Esquema de seleção de fontes
-title: Esquema de seleção de fontes de LaTeX | Aspose.TeX para java
+title: Esquema de seleção de fontes de LaTeX | Aspose.TeX para Java
 weight: 60
 url: /java/latex-font-selection/
 keywords: LATEX, fontes de LaTeX, seleção de fontes de LaTeX, NFSS

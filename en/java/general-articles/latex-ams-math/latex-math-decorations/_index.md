@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: Decorated symbols and compound structures 
-title: 4. Decorated symbols and compound structures | LaTeX manual
+title: 4. Decorated symbols and compound structures
 weight: 40
 url: /java/latex-math-decorations/
 keywords: ams-latex, amsmath, amsxtra, latex integrals, latex fractions, latex decorations, latex arrows, latex limits, latex modular relations

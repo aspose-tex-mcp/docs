@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-python-net.md
-title: Altre opzioni di gestione Tex | Python
+title: Altre opzioni di gestione Tex | Python tramite .NET
 linktitle: Altre opzioni
 weight: 17
 url: /python-net/other-options/

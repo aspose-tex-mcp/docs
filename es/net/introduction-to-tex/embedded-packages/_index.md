@@ -58,7 +58,7 @@ Versión adaptada equivalente a v0.4b 30/09/2020.
 
 v6.7b 04/12/2022.
 
-### Paquete `látex-herramientas`:
+### Paquete `LaTeX-herramientas`:
 
 `afterpage`, `array`, `bm`, `calc`, `dcolumn`, `delarray`, `enumerate`, `fileerr`, `fontsmpl`, `ftnright`, `hhline`, `indentfirst`, `layout `, `longtable`, `multicol`, `rawfonts`, `showkeys`, `somedefs`, `tabularx`, `theorem`, `trace`, `varioref`, `verbatim`, `xr` y `xspace` .
 

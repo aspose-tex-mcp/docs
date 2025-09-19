@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-title: Встроенная графика LaTeX | Включите графику в код LaTeX
+title: Встроенная графика LaTeX | .NET
 linktitle: Встроенная графика LaTeX
 weight: 18
 url: /net/latex-embedded-graphics/

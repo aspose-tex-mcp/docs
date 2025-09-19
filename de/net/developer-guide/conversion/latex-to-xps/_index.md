@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-title: LaTeX zu XPS | Aspose.TeX für .NET
+title: LaTeX zu XPS | .NET
 linktitle: LaTeX zu XPS
 weight: 12
 url: /net/latex-to-xps/

@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: 8. 微调数学公式
-title: 微调数学公式|乳胶手册
+linktitle:  微调数学公式
+title: 8. 微调数学公式|乳胶手册
 weight: 80
 url: /java/latex-math-fine-points/
 keywords: 乳胶，乳胶数学公式，乳胶数学，乳胶数学微调，乳胶数学标点符号，乳胶数学运算符，乳胶数学字体样式，乳胶数学SPACINF，乳胶数学线折断，乳胶数学矩阵

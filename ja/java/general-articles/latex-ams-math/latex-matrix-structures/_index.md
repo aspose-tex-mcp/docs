@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: マトリックスおよび同様の環境
-title: 3。マトリックスと同様の環境|ラテックスマニュアル
+title: 3。マトリックスと同様の環境
 weight: 30
 url: /java/latex-ams-matrix/
 keywords: AMS-Latex、AMSMATH、AMSCD、ラテックスマトリックス、ラテックスケース、ラテックスデラレイ、ラテックス通勤図

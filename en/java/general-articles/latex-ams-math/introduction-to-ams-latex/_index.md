@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: AMS-LATEX
-title: 1. Introduction to AMS-LATEX | LaTeX manual
+title: 1. Introduction to AMS-LATEX
 weight: 10
 url: /java/introduction-to-ams-latex/
 keywords: ams-latex, amsmath, amsmath options, amsopn, amstext, amscd, amsthm, amsxtra, upref

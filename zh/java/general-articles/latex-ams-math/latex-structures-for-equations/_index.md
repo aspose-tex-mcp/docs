@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: 乳胶方程对齐和显示
-title: 2. 乳胶方程的显示和对齐|乳胶对齐 *
+title: 2. 乳胶方程的显示和对齐
 weight: 10
 url: /java/latex-structures-for-equations/
 keywords: AMS-LATEX，AMSMATH，AMSMATH选项，乳胶方程对齐，Leqno，Eqno，Fleqn，乳胶方程式标签，乳胶方程标签，乳胶对齐方程

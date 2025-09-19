@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: 乳胶数学字体
-title: 8. 数学公式中的字体|乳胶字体数学
+title: 8. 数学公式中的字体
 weight: 80
 url: /java/latex-math-fonts/
 keywords: AMS-LATEX，AMSMATH，AMSFONTS，AMSSYMB，乳胶数学字体，乳胶数学字母，乳胶BM套件，乳胶字体，乳胶字体数学

@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: 2. Sobbriposto e pedice
-title: Sobbriposto e pedice in LaTeX | Manuale in LaTeX
+linktitle: Sobbriposto e pedice
+title: 2. Sobbriposto e pedice in LaTeX 
 weight: 20
 url: /java/latex-math-subscripts-superscripts/
 keywords: Latex, formule di matematica in LaTeX, matematica in LaTeX, abbonamenti matematici in LaTeX, apripisti di matematica in LaTeX, latex Prime

@@ -1,9 +1,9 @@
 ---
 translation: true
 template: /templates/_template-python-net.md
-linktitle: Aspose.TeX for Python Documentation
-title: Aspose.TeX for Python API Solution
-weight: 10
+linktitle: Aspose.TeX for Python via .NET
+title: Aspose.TeX for Python Documentation
+weight: 40
 url: /python-net/
 description: Manage TeX files within API solution for Python. The Library provides various ways to pass TeX input and obtain output and advanced features.
 is_root: true
@@ -40,6 +40,6 @@ Here are the links to some useful resources you may need to accomplish your task
 
 {{% alert color="primary" %}}
 
-Also give a try to our new AI driven [**Aspose.TeX AI Agents**](https://products.aspose.ai/tex/)   -  tools useful for anyone who works with `.tex` and `.latex` formats.
+Also give a try to our new AI driven [**Aspose.TeX AI Agents**](https://products.aspose.ai/tex/) - tools useful for anyone who works with `.tex` and `.latex` formats.
 
 {{% /alert %}}

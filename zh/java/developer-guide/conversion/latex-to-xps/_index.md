@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-title: 乳胶到XPS | 用于 Java 的 Aspose.TeX
+title: 乳胶到XPS | Java的Aspose.TeX
 linktitle: 乳胶到XPS
 weight: 12
 url: /java/latex-to-xps/

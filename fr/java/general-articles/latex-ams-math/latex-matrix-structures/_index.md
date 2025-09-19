@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: Matrice et environnements similaires
-title: 3. Matrice et environnements similaires | Manuel LaTeX
+title: 3. Matrice et environnements similaires
 weight: 30
 url: /java/latex-ams-matrix/
 keywords: ams-latex, amsmath, amscd, matrice latex, cas latex, latex delarray, diagrammes commutatifs latex

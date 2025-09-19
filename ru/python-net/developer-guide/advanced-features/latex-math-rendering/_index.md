@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-python-net.md
-title: Рендеринг математических формул LaTeX | Python
+title: Рендеринг математических формул LaTeX | Python через .NET
 linktitle: Отрисовка математических формул LaTeX
 weight: 10
 url: /python-net/latex-math-formula-rendering/

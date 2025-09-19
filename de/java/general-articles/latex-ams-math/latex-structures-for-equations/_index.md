@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: Anzeige und Ausrichtung
-title: 2. Anzeige und Ausrichtung für LaTeX-Gleichungen | LaTeX
+title: 2. Anzeige und Ausrichtung für LaTeX-Gleichungen
 weight: 10
 url: /java/latex-structures-for-equations/
 keywords: ams-latex, amsmath, amsmath-Optionen, Latex-Gleichungsausrichtung, leqno, eqno, fleqn, Latex-Gleichungs-Tag, Latex-Gleichungsbezeichnung, Latex-Gleichungen ausrichten

@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-python-net.md
-title: 乳胶图渲染| Aspose.TeX for Python
+title: 乳胶图渲染| 通过 .NET 为 Python 提供 Aspose.TeX
 linktitle: 乳胶包括图
 weight: 20
 url: /python-net/latex-figure-rendering/

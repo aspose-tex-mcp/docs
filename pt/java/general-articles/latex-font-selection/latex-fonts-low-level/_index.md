@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: 5. Interface de baixo nível
-title: A interface de baixo nível | Aspose.TeX para java
+linktitle: Interface de baixo nível
+title: 5. A interface de baixo nível
 weight: 50
 url: /java/latex-fonts-low-level/
 keywords: LaTeX, fontes de LaTeX, substituição de fontes de LaTeX, famílias de fontes de LaTeX, série de fontes de LaTeX, formas de fontes de LaTeX

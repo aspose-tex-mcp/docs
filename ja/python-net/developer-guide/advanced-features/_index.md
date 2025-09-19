@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-python-net.md
-title: 高度な機能| Python用のAspose.TeX
+title: 高度な機能| .NET経由でPython用のAspose.TeX
 linktitle: 高度な機能
 weight: 20
 url: /python-net/advanced-features/

@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-title: 乳胶到图像| Aspose.TeX for .NET
+title: 乳胶到图像| .NET的Aspose.TeX
 linktitle: 乳胶到图像
 weight: 10
 url: /net/latex-to-image/

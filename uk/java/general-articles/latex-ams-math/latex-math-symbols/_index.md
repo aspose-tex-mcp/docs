@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: Математичні символи в LaTeX
-title: 9. Символи в математичних формулах | Символи LaTeX
+title: 9. Символи в математичних формулах
 weight: 90
 url: /java/latex-math-symbols/
 keywords: символи в LaTeX, aсимволи латех, amsfonts, amssymb, класи математичних символів латех, пакет stmaryrd, шрифт st mary road

@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: LaTeX document classes
-title: LaTeX document classes | Aspose.TeX for Java
+title: LaTeX document classes 
 weight: 20
 url: /java/latex-document-classes/
 keywords: latex article class, latex documentclass, latex document template, latex article, latex book, latex slides, latex report, latex letter, documentclass in latex

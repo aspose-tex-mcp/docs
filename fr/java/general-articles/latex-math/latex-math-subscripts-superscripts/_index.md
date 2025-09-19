@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: 2. Indice et indice
-title: Indice et indice en LaTeX | Manuel LaTeX
+linktitle: Indice et indice
+title: 2. Indice et indice en LaTeX
 weight: 20
 url: /java/latex-math-subscripts-superscripts/
 keywords: latex, formules mathématiques au latex, mathématiques au latex, indices mathématiques au latex, exposants mathématiques au latex

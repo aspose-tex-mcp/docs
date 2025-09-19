@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-title: LaTeX Рендеринг фигур | Aspose.TeX для .NET
+title: LaTeX Рендеринг фигур | .NET
 linktitle: LaTeX включает рисунок
 weight: 20
 url: /net/latex-figure-rendering/

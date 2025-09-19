@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-title: Расширенные возможности | Aspose.TeX для .NET
+title: Расширенные возможности | .NET
 linktitle: Расширенные функции
 weight: 20
 url: /net/advanced-features/

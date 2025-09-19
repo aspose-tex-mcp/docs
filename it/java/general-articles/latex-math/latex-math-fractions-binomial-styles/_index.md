@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: 5. Frazioni, coefficienti binomiali e stili di matematica
-title: Frazioni, coefficienti binomiali e stili di matematica
+linktitle: Frazioni, coefficienti binomiali e stili di matematica
+title: 5. Frazioni, coefficienti binomiali e stili di matematica
 weight: 50
 url: /java/latex-math-fractions-binomial-styles/
 keywords: Formule di matematica in LaTeX, LaTeX, matematica in LaTeX, frazioni di matematica in LaTeX, coefficienti binomiali di matematica in LaTeX, stili di matematica in LaTeX

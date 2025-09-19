@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: 8. fórmulas matemáticas de ajuste fino
-title: Fórmulas matemáticas de ajuste fino | Manual de LaTeX
+linktitle: 8. Fórmulas matemáticas de ajuste fino
+title: 8. Fórmulas matemáticas de ajuste fino
 weight: 80
 url: /java/latex-math-fine-points/
 keywords: LATEX, fórmulas de matemática de LaTeX, matemática de LaTeX, ajuste fino de matemática, pontuação de matemática de LaTeX, operadores de matemática de LaTeX, estilos de fontes de matemática de LaTeX, spacinf de matemática de LaTeX, ladra de matemática de LaTeX, matrizes matemáticas de LaTeX, matrizes matemáticas de LaTeX

@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: 6. Великі оператори
-title: Великі оператори | Підручник з LaTeX
+linktitle: Великі оператори
+title: 6. Великі оператори
 weight: 60
 url: /java/latex-math-large-operators/
 keywords: латекс, латексні математичні формули, латексна математика, латексні математичні великі оператори, латексна сума, латексний інтеграл

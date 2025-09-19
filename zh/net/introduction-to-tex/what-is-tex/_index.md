@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-title: 什么是Tex？ | aspose.tex .net
+title: 什么是Tex？ 
 linktitle: 什么是Tex？
 weight: 10
 url: /net/what-is-tex/

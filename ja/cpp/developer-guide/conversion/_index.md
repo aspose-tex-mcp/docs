@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-cpp.md
-title: 変換機能| C ++のAspose.TeX
+title: 変換機能| C++のAspose.TeX
 linktitle: 変換
 weight: 10
 url: /cpp/conversion/

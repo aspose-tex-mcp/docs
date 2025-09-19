@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-title: Graphiques intégrés LaTeX | API pour Java
+title: Graphiques intégrés LaTeX | Java
 linktitle: Graphiques intégrés LaTeX
 weight: 18
 url: /java/latex-graphics-embedding/

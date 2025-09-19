@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: 4。標準のラテックスフォント
-title: 標準のラテックスフォント| Java用のAspose.TeX
+linktitle: 標準のラテックスフォント
+title: 4。標準のラテックスフォント
 weight: 40
 url: /java/latex-standard-fonts/
 keywords: ラテックス、ラテックスフォント、ラテックス標準フォント、ラテックスフォントエンコード、tracefnt、nfssfont.tex

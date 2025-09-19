@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-python-net.md
-title: Начало работы | Aspose.TeX для Python
+title: Начало работы | Aspose.TeX для Python через .NET
 linktitle: Приступая к работе
 weight: 20
 url: /python-net/getting-started/

@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-python-net.md
-title: 其他TEX转换输出格式| Python
+title: 其他TEX转换输出格式| 通过 .NET 为 Python 提供 Aspose.TeX
 linktitle: 其他Tex格式
 weight: 18
 url: /python-net/other-tex-formats/

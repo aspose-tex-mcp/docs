@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: Шрифти в математичних формулах
-title: 8. Шрифти в математичних формулах | Математика шрифтів LaTeX
+title: 8. Шрифти в математичних формулах
 weight: 80
 url: /java/latex-math-fonts/
 keywords: ams-latex, amsmath, amsfonts, amssymb, латексні математичні шрифти, латексні математичні алфавіти, пакет latex bm, латексні шрифти, латексні математичні шрифти

@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-cpp.md
-title: Aspose.TeX的输出接口| C ++
+title: Aspose.TeX的输出接口| C++的Aspose.TeX
 linktitle: Aspose.TeX的输出接口
 weight: 16
 url: /cpp/aspose-tex-output/

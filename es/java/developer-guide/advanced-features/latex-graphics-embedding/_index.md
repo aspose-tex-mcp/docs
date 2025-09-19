@@ -1,11 +1,11 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-title: Gráficos integrados LaTeX | API para Java
+title: Gráficos integrados LaTeX | Aspose.TeX para Java
 linktitle: Gráficos integrados LaTeX
 weight: 18
 url: /java/latex-graphics-embedding/
-keywords: includegraphics latex, gráficos base64 incrustados de látex, gráficos codificados en base64 de látex, write18, shell-escape, comando de shell de látex
+keywords: includegraphics latex, gráficos base64 incrustados de LaTeX, gráficos codificados en base64 de LaTeX, write18, shell-escape, comando de shell de LaTeX
 description: Explore cómo inyectar imágenes codificadas en Base64 en el código fuente LaTeX y aprenda la función \write18 que lo hace posible.
 lastmod: "2024-10-30"
 ---

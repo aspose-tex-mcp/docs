@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: Команды LaTeX
-title: 3. Команды LaTeX | Руководство по LaTeX
+title: 3. Команды LaTeX
 weight: 30
 url: /java/latex-math-commands/
 keywords: латех, математические формулы латеха, математика латеха, математические команды латеха, квадратный корень латеха, подчеркивание математики латеха, подчеркивание математики латеха

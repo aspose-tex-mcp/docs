@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-python-net.md
-title: 乳胶数学公式渲染| Python
+title: 乳胶数学公式渲染| 通过 .NET 为 Python 提供 Aspose.TeX
 linktitle: 乳胶数学公式渲染
 weight: 10
 url: /python-net/latex-math-formula-rendering/

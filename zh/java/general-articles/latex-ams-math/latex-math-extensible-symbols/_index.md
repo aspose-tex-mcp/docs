@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: 可扩展且可调的符号
-title: 5. 可扩展且可调的符号|乳胶手册
+title: 5. 可扩展且可调的符号
 weight: 50
 url: /java/latex-math-extensible-symbols/
 keywords: AMS-LATEX，AMSMATH，AMSXTRA，乳胶数学运营商，乳胶数学分配器，乳胶数学支架，乳胶数学括号，乳胶数学口音

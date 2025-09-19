@@ -1,8 +1,8 @@
 ---
 translation: true
 template: /templates/_template-java.md
-linktitle: 6. Large operators
-title: Large operators | LaTeX manual
+linktitle: Large operators
+title: 6. LaTeX Large operators 
 weight: 60
 url: /java/latex-math-large-operators/
 keywords: latex, latex math formulas, latex math, latex math large operators, latex sum, latex integral

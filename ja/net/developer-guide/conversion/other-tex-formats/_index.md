@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-title: その他のTEX変換出力形式| 。ネット
+title: その他のTEX変換出力形式| .NET
 linktitle: その他のTEX形式
 weight: 18
 url: /net/other-tex-formats/

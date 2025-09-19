@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-net.md
 linktitle: Introdução ao Tex
-title: Introdução ao TEXS | Aspose.TeX
+title: Introdução ao TEXS | Aspose.TeX para .NET
 weight: 10
 url: /net/introduction-to-tex/
 description: Explicação dos termos e conceitos básicos do TEX. É um formato tex, como trabalhar com o arquivo tex, o que é LaTeX e muitas outras perguntas são respondidas.

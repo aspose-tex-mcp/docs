@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: Symboles décorés et structures composées
-title: 4. Symboles décorés et structures composées | Manuel LaTeX
+title: 4. Symboles décorés et structures composées
 weight: 40
 url: /java/latex-math-decorations/
 keywords: ams-latex, amsmath, amsxtra, intégrales de latex, fractions de latex, décorations en latex, flèches en latex, limites du latex, relations modulaires en latex

@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: Símbolos extensíveis e ajustáveis
-title: 5. Símbolos extensíveis e ajustáveis ​​| Manual de LaTeX
+title: 5. Símbolos extensíveis e ajustáveis
 weight: 50
 url: /java/latex-math-extensible-symbols/
 keywords: AMS-Latex, Amsmath, AMSXTRA, Operadores de matemática de LaTeX, delimitadores de matemática de LaTeX, suportes matemáticos de LaTeX, aparelhos matemáticos de LaTeX, detalhes em matemática de LaTeX

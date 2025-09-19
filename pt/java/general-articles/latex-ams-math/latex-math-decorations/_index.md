@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: Símbolos decorados e estruturas compostas
-title: 4. Símbolos decorados e estruturas compostas | Manual de LaTeX
+title: 4. Símbolos decorados e estruturas compostas
 weight: 40
 url: /java/latex-math-decorations/
 keywords: AMS-Latex, Amsmath, AMSXTRA, integrais de LaTeX, frações de LaTeX, decorações de LaTeX, setas de LaTeX, limites de LaTeX, relações modulares de LaTeX

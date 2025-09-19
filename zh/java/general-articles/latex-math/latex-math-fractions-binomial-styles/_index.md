@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: 5. 分数，二项式系数和数学样式
-title: 分数，二项式系数和数学样式
+linktitle:  分数，二项式系数和数学样式
+title: 5. 分数，二项式系数和数学样式
 weight: 50
 url: /java/latex-math-fractions-binomial-styles/
 keywords: 乳胶，乳胶数学公式，乳胶数学，乳胶数学分数，乳胶数学二项式系数，乳胶数学样式

@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-title: Come impostare nuovi caratteri | Aspose.TeX per java
-linktitle: 6. Come impostare nuovi caratteri
+title: 6. Come impostare nuovi caratteri
+linktitle: Come impostare nuovi caratteri
 weight: 60
 url: /java/latex-fonts-setup/
 keywords: Font in LaTeX, LaTeX, sostituzione del carattere in LaTeX, configurazione del carattere in LaTeX

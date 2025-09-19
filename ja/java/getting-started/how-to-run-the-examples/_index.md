@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-title: Javaで例を実行する方法
+title: で例を実行する方法 | Java用のAspose.TeX
 linktitle: 例を実行する方法
 weight: 80
 url: /java/how-to-run-the-examples/

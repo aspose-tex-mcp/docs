@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: LaTeX шрифты 
-title: 8. Шрифты в математических формулах | Мат шрифты LaTeX
+title: 8. Шрифты в математических формулах
 weight: 80
 url: /java/latex-math-fonts/
 keywords: меньше или равно latex, большие скобки латех, amsfonts, latex меньше или равно, латехные математические шрифты, латехные математические алфавиты, латехный пакет bm, латехные шрифты, латехные математические шрифты

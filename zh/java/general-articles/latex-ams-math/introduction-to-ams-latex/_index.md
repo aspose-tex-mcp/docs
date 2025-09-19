@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: AMS-LATEX
-title: 1. AMS-LATEX简介|乳胶手册
+title: 1. AMS-LATEX简介
 weight: 10
 url: /java/introduction-to-ams-latex/
 keywords: AMS-LATEX，AMSMATH，AMSMATH选项，AMSOPN，AMSTEXT，AMSCD，AMSTHM，AMSXTRA，UPREF

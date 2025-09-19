@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-title: 乳胶嵌入式图形|在乳胶代码中包括图形
+title: 乳胶嵌入式图形| .NET的Aspose.TeX
 linktitle: 乳胶嵌入式图形
 weight: 18
 url: /net/latex-embedded-graphics/

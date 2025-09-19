@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-python-net.md
-title: 外部ラテックスパッケージ| Python
+title: 外部ラテックスパッケージ| .NET経由でPython用のAspose.TeX
 linktitle: 外部ラテックスパッケージ
 weight: 19
 url: /python-net/external-latex-packages/

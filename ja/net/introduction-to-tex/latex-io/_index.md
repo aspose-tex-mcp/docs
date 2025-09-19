@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-title: ラテックスI/O | .netのAspose.TeX
+title: ラテックスI/O
 linktitle: ラテックス入力/出力
 weight: 17
 url: /net/latex-io/

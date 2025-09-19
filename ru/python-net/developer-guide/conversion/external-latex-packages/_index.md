@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-python-net.md
-title: Внешние пакеты LaTeX | Aspose.TeX для Питон
+title: Внешние пакеты LaTeX | Python через .NET
 linktitle: Внешние пакеты LaTeX
 weight: 19
 url: /python-net/external-latex-packages/

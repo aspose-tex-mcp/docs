@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-title: Відтворення математичних формул LaTeX | Java
+title: Відтворення математичних формул LaTeX | Aspose.TeX для Java
 linktitle: Відтворення математичних формул LaTeX
 weight: 10
 url: /java/latex-math-formula-rendering/

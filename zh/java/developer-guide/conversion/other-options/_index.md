@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-title: 其他管理Tex选项|爪哇
+title: 其他管理Tex选项| Java的Aspose.TeX
 linktitle: 其他选项
 weight: 17
 url: /java/other-options/

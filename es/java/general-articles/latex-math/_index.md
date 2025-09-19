@@ -5,7 +5,7 @@ linktitle: Composición tipográfica de fórmulas matemáticas
 title: Composición tipográfica de fórmulas matemáticas con LaTeX
 weight: 30
 url: /java/latex-math/
-keywords: látex, fórmulas matemáticas de látex, matemáticas de látex, fórmula de látex, ecuación de látex, expresión matemática de látex
+keywords: LaTeX, fórmulas matemáticas de LaTeX, matemáticas de LaTeX, fórmula de LaTeX, ecuación de LaTeX, expresión matemática de LaTeX
 description: Este artículo cubre brevemente la idea básica de construir fórmulas matemáticas con TeX. También menciona LaTeX en este trabajo.
 lastmod: "2024-10-30"
 ---

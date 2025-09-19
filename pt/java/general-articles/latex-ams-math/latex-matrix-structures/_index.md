@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: Matriz e ambientes semelhantes
-title: 3. Matriz e ambientes semelhantes | Manual de LaTeX
+title: 3. Matriz e ambientes semelhantes
 weight: 30
 url: /java/latex-ams-matrix/
 keywords: AMS-LATEX, AMSMATH, AMSCD, MATRIXA LATEX, CASOS DE LATEX, LATEX DELARRAY, Diagramas de comutativos de LaTeX

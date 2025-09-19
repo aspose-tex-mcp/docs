@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-python-net.md
-title: Другие параметры управления TeX | Python
+title: Другие параметры управления TeX | Python через .NET
 linktitle: Другие варианты
 weight: 17
 url: /python-net/other-options/

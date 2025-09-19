@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: Equazione in LaTeX allineare e visualizzare
-title: 2. Visualizzazione e allineamento per le equazioni in LaTeX | Allineamento in LaTeX
+title: 2. Visualizzazione e allineamento per le equazioni in LaTeX 
 weight: 10
 url: /java/latex-structures-for-equations/
 keywords: AMS-Latex, Amsmath, Opzioni AMSMath, allineamento dell'equazione in LaTeX, Leqno, Eqno, Fleqn, tag di equazione in LaTeX, etichetta di equazione in LaTeX, equazioni allineate in LaTeX

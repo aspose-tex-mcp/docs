@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-python-net.md
 linktitle: Licensing
-title: Licensing - Aspose.TeX for Python
+title: Licensing | Aspose.TeX for Python
 weight: 70
 url: /python-net/licensing/
 description: If you are using the licensed version of the Aspose.TeX API solution for Python, you can learn here how to apply the license.

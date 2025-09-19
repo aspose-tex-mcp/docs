@@ -1,8 +1,8 @@
 ---
 translation: true
 template: /templates/_template-java.md
-linktitle: 2. Font characteristics
-title: Font characteristics | Aspose.TeX for Java
+linktitle: Font characteristics
+title: 2. Font characteristics
 weight: 20
 url: /java/latex-font-attributes/
 keywords: latex, latex fonts, latex font encodings, nfss

@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: 4。数式の異なる文字
-title: 数式の異なる文字の意味
+linktitle: 数式の異なる文字
+title: 4。数式の異なる文字の意味
 weight: 40
 url: /java/latex-math-symbol-classes/
 keywords: ラテックス、ラテックス数学式、ラテックス数学、ラテックス数学記号、ラテックス数学変数、ラテックス数学バイナリ操作、ラテックス数学関係、ラテックス数学アクセント

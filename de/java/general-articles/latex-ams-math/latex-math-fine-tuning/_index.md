@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: Vorgrößenanpassungen des Layouts
-title: 7. Vorgrößenanpassungen des Layouts | LaTeX-Handbuch
+title: 7. Vorgrößenanpassungen des Layouts
 weight: 70
 url: /java/latex-math-fine-tuning/
 keywords: ams-latex, amsmath, Latex-Math-Abstände, Latex-Math-Stile, Latex-Math-Trennzeichen, Latex-Math-Klammern, Latex-Math-Ausrichtung

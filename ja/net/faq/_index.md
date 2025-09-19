@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-title: よくある質問| .netのAspose.TeX
+title: よくある質問| .NETのAspose.TeX
 linktitle: よくある質問
 weight: 80
 url: /net/faq/

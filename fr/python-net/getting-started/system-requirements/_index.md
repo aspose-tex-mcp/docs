@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-python-net.md
-title: Configuration système requise | Aspose.TeX Python
+title: Configuration système requise | Aspose.TeX pour Python
 linktitle: Configuration système requise
 weight: 50
 url: /python-net/system-requirements/

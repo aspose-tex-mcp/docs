@@ -1,8 +1,8 @@
 ---
 translation: true
 template: /templates/_template-java.md
-linktitle: 2. Subscript and subscript
-title: Subscript and subscript in LaTeX | LaTeX manual
+linktitle: Subscript and subscript
+title: 2. Subscript and subscript in LaTeX 
 weight: 20
 url: /java/latex-math-subscripts-superscripts/
 keywords: latex, latex math formulas, latex math, latex math subscripts, latex math superscripts, latex prime

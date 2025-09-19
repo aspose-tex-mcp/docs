@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-title: Java APIソリューション用のAspose.TeX
-linktitle: Javaドキュメント用のAspose.TeX
+title: Aspose.TeX 用 Java ドキュメント
+linktitle: Aspose.TeX 用 Java
 weight: 20
 url: /java/
 description: JavaのAPIソリューション内のTEXファイルを管理します。ライブラリは、TEX入力を渡し、出力を取得する方法と独自のTex形式の作成などの機能を提供します
@@ -26,15 +26,15 @@ Aspose.TeXは、Tex Files TaptingのJavaライブラリです。 XPS、PDF、PNG
 
 以下は、タスクを達成するために必要ないくつかの有用なリソースへのリンクです。
 
-- [JavaオンラインドキュメントのためのAspose.TeX](/tex/{{lang.url-fragment}}java/)
-- [Java機能用のAspose.TeX](/tex/{{lang.url-fragment}}java/feature-list/)
-- [JavaリリースノートのAspose.TeX](https://releases.aspose.com/tex/java/release-notes/)
-- [JavaのAspose.TeXをダウンロード](https://releases.aspose.com/tex/java/)
-- [Java Mavenリポジトリ用のAspose.TeX](https://releases.aspose.com/java/repo/com/aspose/aspose-tex/)
-- [Java製品ページのAspose.TeX](https://products.aspose.com/tex/java/)
-- [Java APIリファレンスガイド用のAspose.TeX](https://reference.aspose.com/tex/java)
-- [Java Free Support ForumのAspose.TeX](https://forum.aspose.com/c/tex)
-- [JavaのサポートヘルプデスクのAspose.TeX](https://helpdesk.aspose.com/)
+- [Aspose.TeX 用 Javaオンラインドキュメントのための](/tex/{{lang.url-fragment}}java/)
+- [Aspose.TeX 用 Java機能用の](/tex/{{lang.url-fragment}}java/feature-list/)
+- [Aspose.TeX 用 Javaリリースノートの](https://releases.aspose.com/tex/java/release-notes/)
+- [Aspose.TeX 用 Javaをダウンロード](https://releases.aspose.com/tex/java/)
+- [Aspose.TeX 用 Java Mavenリポジトリ用の](https://releases.aspose.com/java/repo/com/aspose/aspose-tex/)
+- [Aspose.TeX 用 Java製品ページの](https://products.aspose.com/tex/java/)
+- [Aspose.TeX 用 Java APIリファレンスガイド用の](https://reference.aspose.com/tex/java)
+- [Aspose.TeX 用 Java 無料サポートフォーラムの](https://forum.aspose.com/c/tex)
+- [Aspose.TeX 用 Javaのサポートヘルプデスクの](https://helpdesk.aspose.com/)
 
 {{% alert color="primary" %}}
 

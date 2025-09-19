@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-python-net.md
-title: Інтерфейс виводу Aspose.TeX | Python
+title: Інтерфейс виводу Aspose.TeX | Python через .NET
 linktitle: Інтерфейс виведення Aspose.TeX
 weight: 16
 url: /python-net/aspose-tex-output/

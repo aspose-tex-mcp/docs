@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-python-net.md
-title: 乳胶到XPS | Aspose.TeX for Python
+title: 乳胶到XPS | 通过 .NET 为 Python 提供 Aspose.TeX
 linktitle: 乳胶到XPS
 weight: 12
 url: /python-net/latex-to-xps/

@@ -1,11 +1,11 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: 3. Cómo utilizar fuentes LaTeX en texto
-title: Cómo utilizar fuentes LaTeX en texto
+linktitle: Cómo utilizar fuentes LaTeX en texto
+title: 3. Cómo utilizar fuentes LaTeX en texto
 weight: 30
 url: /java/latex-text-fonts/
-keywords: látex, fuentes de látex, comandos de fuente de texto de látex, látex grande, tamaño de fuente de látex
+keywords: LaTeX, fuentes de LaTeX, comandos de fuente de texto de LaTeX, LaTeX grande, tamaño de fuente de LaTeX
 description: Este artículo cubre los comandos de fuentes LaTeX que cambian de forma independiente diferentes atributos de fuente para su uso en texto normal.
 lastmod: "2024-10-30"
 ---

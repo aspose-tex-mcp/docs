@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-title: Латех ввода/вывода | Aspose.TeX для .NET
+title: Ввод/вывод LaTeX
 linktitle: Ввод/вывод LaTeX
 weight: 17
 url: /net/latex-io/

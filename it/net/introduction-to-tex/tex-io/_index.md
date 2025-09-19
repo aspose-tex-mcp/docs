@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-title: Tex i/o | Soluzione API Aspose.TeX per .NET
+title: Input/output in TeX
 linktitle: Tex i/o
 weight: 12
 url: /net/tex-io/

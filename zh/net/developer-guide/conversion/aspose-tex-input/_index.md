@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-title: Aspose.TeX的输入接口| .NET
+title: Aspose.TeX的输入接口| .NET的Aspose.TeX
 linktitle: Aspose.TeX的输入接口
 weight: 15
 url: /net/aspose-tex-input/

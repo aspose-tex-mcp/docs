@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-title: ラテックスコマンドラインツール| .netのAspose.TeX
+title: ラテックスコマンドラインツール| .NETのAspose.TeX
 linktitle: TEX/LATEXファイルを操作するCLIツール
 weight: 70
 url: /net/cli-tools/

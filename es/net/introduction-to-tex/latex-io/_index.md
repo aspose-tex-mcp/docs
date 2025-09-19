@@ -1,18 +1,18 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-title: E/S de látex | Aspose.TeX para .NET
-linktitle: Entrada/salida de látex
+title: Entrada/salida de LaTeX
+linktitle: E/S de LaTeX
 weight: 17
 url: /net/latex-io/
 description: Esta página describe las peculiaridades de trabajar con LaTeX como formato de entrada o salida y el archivo *.aux* como parte obligatoria de LaTeX.
-keywords: látex io, látex i, látex o, archivo de entrada de látex, entrada en látex
+keywords: LaTeX io, LaTeX i, LaTeX o, archivo de entrada de LaTeX, entrada en LaTeX
 lastmod: "2024-10-30"
 ---
 
 {{<section overview>}}
 
-## archivo látex
+## archivo LaTeX
 
 Si tenemos un [archivo TeX](/tex/{{lang.url-fragment}}net/tex-io/#tex-file) que tiene la siguiente estructura, entonces llamaremos a este archivo *archivo LaTeX*:
 
@@ -40,7 +40,7 @@ Aunque las primitivas `\openout`, `\write` y `\closeout` no están prohibidas, l
 
 Otras partes de la salida son arbitrarias, también siguen el concepto general de [salida TeX](/tex/{{lang.url-fragment}}net/tex-io/#tex-output) y dependen de qué se supone que debe hacer exactamente su archivo (programa) TeX, qué paquetes (ver más abajo) está utilizando, etc.
 
-## Archivo de entrada de látex
+## Archivo de entrada de LaTeX
 
 El archivo *.aux* mencionado anteriormente es una parte obligatoria de la entrada en LaTeX al mismo tiempo. Algorítmicamente, LaTeX no puede realizar esas tareas relacionadas con las referencias en una sola ejecución, por lo que el mismo trabajo debe ejecutarse dos veces: la primera vez para recopilar datos y la segunda para utilizarlos. Muchos sistemas de software basados ​​en LaTeX ejecutan trabajos LaTeX dos veces automáticamente. Spoiler: Hay una [opción](/tex/{{lang.url-fragment}}net/other-options/#how-to-repeat-the-job) en la API Aspose.TeX que nos permite controlar este comportamiento.
 

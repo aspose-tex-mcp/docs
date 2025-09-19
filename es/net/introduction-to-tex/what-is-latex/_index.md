@@ -1,11 +1,11 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-title: ¿Qué es Látex? | Aspose.TeX .NET
+title: ¿Qué es Látex?
 linktitle: ¿Qué es Látex?
 weight: 16
 url: /net/what-is-latex/
-keywords: ¿Qué es el látex? ¿Qué es el látex?
+keywords: ¿Qué es el LaTeX? ¿Qué es el LaTeX?
 description: Para responder a la pregunta “¿Qué es LaTeX?” recuerde que una de sus características más impresionantes es el Nuevo Esquema de Selección de Fuentes(NFSS).
 lastmod: "2024-10-30"
 ---

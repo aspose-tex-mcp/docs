@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-title: 乳胶嵌入式图形| java的API
+title: 乳胶嵌入式图形| Java的Aspose.TeX
 linktitle: 乳胶嵌入式图形
 weight: 18
 url: /java/latex-graphics-embedding/

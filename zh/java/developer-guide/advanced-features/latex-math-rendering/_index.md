@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-title: 乳胶数学公式渲染|爪哇
+title: 乳胶数学公式渲染| Java的Aspose.TeX
 linktitle: 乳胶数学公式渲染
 weight: 10
 url: /java/latex-math-formula-rendering/

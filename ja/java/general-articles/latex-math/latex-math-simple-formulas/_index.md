@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: 1。単純な式
-title: 単純な式|ラテックスマニュアル
+linktitle: 単純な式
+title: 1。単純な式|ラテックスマニュアル
 weight: 10
 url: /java/latex-math-simple-formulas/
 keywords: ラテックス、ラテックス数学式、ラテックス数学、ラテックス数学文字、ラテックスギリシャ文字、ラテックス番号

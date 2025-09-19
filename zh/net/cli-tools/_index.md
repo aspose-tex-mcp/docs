@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-title: 乳胶命令行工具| Aspose.TeX for .NET
+title: 乳胶命令行工具| .NET的Aspose.TeX
 linktitle: 操纵Tex/乳胶文件的CLI工具
 weight: 70
 url: /net/cli-tools/

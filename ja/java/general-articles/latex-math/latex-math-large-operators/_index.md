@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: 6。大規模な演算子
-title: 大規模な演算子|ラテックスマニュアル
+linktitle: 大規模な演算子
+title: 6。大規模な演算子|ラテックスマニュアル
 weight: 60
 url: /java/latex-math-large-operators/
 keywords: ラテックス、ラテックス数学式、ラテックス数学、ラテックス数学の大規模オペレーター、ラテックス合計、ラテックス積分

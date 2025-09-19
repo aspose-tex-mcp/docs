@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: 7. Trennzeichen
-title: Trennzeichen | LaTeX-Handbuch | Aspose.TeX
+linktitle: Trennzeichen
+title: 3. Trennzeichen | LaTeX-Handbuch
 weight: 70
 url: /java/latex-math-delimiters/
 keywords: Latex, Latex-Mathe-Formeln, Latex-Mathematik, Latex-Mathe-Trennzeichen, Latex-Mathe-Klammern, Latex-Mathe-Klammern, Latex-Mathe-Klammern

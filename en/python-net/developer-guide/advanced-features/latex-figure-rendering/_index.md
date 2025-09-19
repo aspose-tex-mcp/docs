@@ -1,7 +1,7 @@
 ---
 translation: true
 template: /templates/_template-python-net.md
-title: LaTeX Figure rendering | Aspose.TeX for Python
+title: LaTeX Figure rendering | Python via .NET
 linktitle: LaTeX include figure
 weight: 20
 url: /python-net/latex-figure-rendering/

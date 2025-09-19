@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-title: Lista de recursos | Aspose.TeX para java
+title: Lista de recursos | Aspose.TeX para Java
 linktitle: Lista de recursos
 weight: 30
 url: /java/feature-list/

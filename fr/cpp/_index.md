@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-cpp.md
-title: Aspose.TeX pour la solution API C++
-linktitle: Aspose.TeX pour la documentation C++
+title: Aspose.TeX pour la documentation C++
+linktitle: Aspose.TeX pour C++
 weight: 30
 url: /cpp/
 description: Solution API pour la gestion des fichiers TeX pour C++. Transmettez l'entrée TeX et obtenez la sortie, et créez votre propre format TeX.
@@ -24,14 +24,14 @@ Aspose.TeX est une bibliothèque C++ pour la composition de fichiers TeX. Il peu
 
 ## Aspose.TeX pour les ressources C++
 
-- [Aspose.TeX pour la documentation en ligne C++](/tex/{{lang.url-fragment}}cpp/)
-- [Aspose.TeX pour les fonctionnalités C++](/tex/{{lang.url-fragment}}cpp/feature-list/)
+- [Aspose.TeX pour C++ la documentation en ligne](/tex/{{lang.url-fragment}}cpp/)
+- [Aspose.TeX pour C++ les fonctionnalités](/tex/{{lang.url-fragment}}cpp/feature-list/)
 - [Notes de version d'Aspose.TeX pour C++](https://releases.aspose.com/tex/cpp/release-notes/)
 - [Page produit Aspose.TeX pour C++](https://products.aspose.com/tex/cpp/)
-- [Installer Aspose.TeX pour le package NuGet C++](https://www.nuget.org/packages/Aspose.TeX/)
+- [Installer Aspose.TeX pour C++ le package NuGet](https://www.nuget.org/packages/Aspose.TeX/)
 - [Guide de référence de l'API Aspose.TeX pour C++](https://reference.aspose.com/tex/cpp)
 - [Forum de support gratuit Aspose.TeX pour C++](https://forum.aspose.com/c/tex)
-- [Aspose.TeX pour le service d'assistance payant C++](https://helpdesk.aspose.com/)
+- [Aspose.TeX pour C++ le service d'assistance payant](https://helpdesk.aspose.com/)
 Voici les liens vers des ressources utiles dont vous pourriez avoir besoin pour accomplir vos tâches.
 
 {{% alert color="primary" %}}

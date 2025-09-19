@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-title: Aspose.TeX für Java API-Lösung
-linktitle: Aspose.TeX für Java-Dokumentation
+title: Aspose.TeX für Java-Dokumentation
+linktitle: Aspose.TeX für Java
 weight: 20
 url: /java/
 description: API-Lösung zum Verwalten von TeX-Dateien für Java. Übergeben Sie TeX-Eingaben, erhalten Sie Ausgaben und erstellen Sie Ihr eigenes TeX-Format.
@@ -11,6 +11,7 @@ lastmod: "2024-09-26"
 ---
 
 {{<section overview>}}
+
 {{% alert color="primary" %}}
 
 <p><img src="/tex/icons/aspose_tex-for-java.png" alt="Aspose.TeX for Java logo" width="128" height="128"></p>

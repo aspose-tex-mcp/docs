@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-cpp.md
-title: 其他管理Tex选项| C ++
+title: 其他管理Tex选项| C++的Aspose.TeX
 linktitle: 其他选项
 weight: 17
 url: /cpp/other-options/

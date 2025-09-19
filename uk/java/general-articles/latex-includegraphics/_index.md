@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: Пакет Includegraphics
-title: ЛаТеХ includegraphics | Aspose.TeX для Java
+title: ЛаТеХ includegraphics
 weight: 10
 url: /java/latex-includegraphics/
 keywords: includegraphics latex, latex includegraphic, вставити зображення latex, latex graphicx, латексне вставити зображення, includegraphics latex package, draw io latex, latex includegraphics width, includegraphics width, figure scale latex

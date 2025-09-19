@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-python-net.md
-title: Empezando | Aspose.TeX para Python
+title: Empezando | Python a través de .NET
 linktitle: Empezando
 weight: 20
 url: /python-net/getting-started/

@@ -1,9 +1,9 @@
 ﻿---
 translation: true
 template: /templates/_template-python-net.md
-linktitle: Aspose.TeX para documentação Python
-title: Aspose.TeX for Python API Solution
-weight: 10
+linktitle: Aspose.TeX para Python via .NET
+title: Aspose.TeX para Python Documentação
+weight: 40
 url: /python-net/
 description: Gerenciar arquivos TEX na solução da API para Python. A biblioteca fornece várias maneiras de passar a entrada Tex e obter recursos e recursos avançados.
 is_root: true
@@ -29,14 +29,14 @@ Liberte sua criatividade com a API intuitiva da Aspose.TeX, perfeitamente integr
 
 Aqui estão os links para alguns recursos úteis necessários para realizar suas tarefas.
 
-- [Aspose.TeX for python online documentação](/tex/{{lang.url-fragment}}python-net/)
-- [Aspose.TeX for Python Recursos](/tex/{{lang.url-fragment}}python-net/feature-list/)
-- [Aspose.TeX para notas de lançamento do Python](https://releases.aspose.com/tex/python-net/release-notes/)
-- [Aspose.TeX para Python Página do produto](https://products.aspose.com/tex/python-net/)
-- [Instale Aspose.TeX para pacotes de rodas Python](https://pypi.org/project/aspose-tex-net/)
-- [Guia de referência da API Aspose.TeX for Python](https://reference.aspose.com/tex/python-net/)
-- [Aspose.TeX para fórum de suporte livre em Python](https://forum.aspose.com/c/tex/)
-- [Aspose.TeX for python pagou suporte helpdesk](https://helpdesk.aspose.com/)
+- [Documentação Online do Aspose.TeX para Python](/tex/{{lang.url-fragment}}python-net/)
+- [Recursos do Aspose.TeX para Python](/tex/{{lang.url-fragment}}python-net/feature-list/)
+- [Aspose.TeX Release Notes for Python](https://releases.aspose.com/tex/python-net/release-notes/)
+- [Página do Produto do Aspose.TeX para Python](https://products.aspose.com/tex/python-net/)
+- [Instalar os Pacotes Wheel do Aspose.TeX para Python](https://pypi.org/project/aspose-tex-net/)
+- [Referência da API do Aspose.TeX para Python Guia](https://reference.aspose.com/tex/python-net/)
+- [Fórum de Suporte Gratuito do Aspose.TeX para Python](https://forum.aspose.com/c/tex/)
+- [Central de Ajuda com Suporte Pago do Aspose.TeX para Python](https://helpdesk.aspose.com/)
 
 {{% alert color="primary" %}}
 

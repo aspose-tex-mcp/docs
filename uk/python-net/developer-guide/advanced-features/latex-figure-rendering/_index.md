@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-python-net.md
-title: Візуалізація фігур LaTeX | Aspose.TeX для Python
+title: Візуалізація фігур LaTeX | Python через .NET
 linktitle: LaTeX містить малюнок
 weight: 20
 url: /python-net/latex-figure-rendering/

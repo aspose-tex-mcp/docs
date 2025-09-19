@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-title: Gráficos de látex | comando \incluir gráficos
-linktitle: gráficos de látex
+title: Gráficos de LaTeX | comando \incluir gráficos
+linktitle: Gráficos de LaTeX
 weight: 18
 url: /net/latex-graphics/
 description: La inclusión de gráficos en TeX es un tema que vale la pena mencionar. Al hablar de ello, lo primero que hay que mencionar es el comando `\includegraphics`

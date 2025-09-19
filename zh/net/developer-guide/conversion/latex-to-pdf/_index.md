@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-title: 乳胶到PDF | Aspose.TeX for .NET
+title: 乳胶到PDF| .NET的Aspose.TeX
 linktitle: 乳胶到PDF
 weight: 11
 url: /net/latex-to-pdf/

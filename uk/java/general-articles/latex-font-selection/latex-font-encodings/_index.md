@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: 1. Ввід і вивід
-title: Кодування вхідних і вихідних даних
+linktitle: Ввід і вивід
+title: 1. Кодування вхідних і вихідних даних
 weight: 10
 url: /java/latex-font-encodings/
 keywords: латекс, латексні шрифти, кодування латексних шрифтів, nfss

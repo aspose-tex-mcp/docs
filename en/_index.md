@@ -3,7 +3,7 @@ translation: true
 template: /templates/_template-default.md
 linktitle: Aspose.TeX Product Family
 title: Aspose.TeX Product Family | Documentation
-description: "Aspose.TeX for .NET is a high-performance library for TeX files typesetting applications in .NET."
+description: "Aspose.TeX is a high-performance library for TeX and LaTeX file typesetting applications in .NET, Java, C++, and Python."
 lastmod: "2023-04-20"
 sitemap.changefreq: "weekly"
 sitemap.priority: 0.5
@@ -68,6 +68,7 @@ Following are the links to some useful resources you may need to accomplish your
 {{% alert color="primary" %}}
 
 <p><img src="/tex/icons/aspose_tex-for-cpp.png" alt="Aspose.TeX for C++ logo" width="128" height="128"></p>
+
 **Welcome to Aspose.TeX for C++**
 
 Experience the power of Aspose.TeX, the premier C++ library for typesetting TeX files. With Aspose.TeX, you can effortlessly transform TeX input into stunning graphical formats like XPS, PDF, PNG, JPEG, TIFF, and BMP. Our advanced library not only provides exceptional rendering capabilities but also delivers comprehensive tracing information, ensuring optimal performance.

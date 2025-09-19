@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-cpp.md
-title: Altre opzioni di gestione Tex | C ++
+title: Altre opzioni di gestione Tex | C++
 linktitle: Altre opzioni
 weight: 17
 url: /cpp/other-options/

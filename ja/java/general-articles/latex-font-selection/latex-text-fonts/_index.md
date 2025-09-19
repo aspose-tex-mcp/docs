@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: ラテックステキストフォント
-title: 3.テキストでラテックスフォントを使用する方法
+title: 3。テキストでラテックスフォントを使用する方法
 weight: 30
 url: /java/latex-text-fonts/
 keywords: ラテックス、ラテックスフォント、ラテックステキストフォントコマンド、ラテックスラージ、ラテックスフォントサイズ

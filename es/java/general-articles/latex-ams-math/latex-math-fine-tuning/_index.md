@@ -2,10 +2,10 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: Ajustes de tamaño previo al diseño.
-title: 7. Ajustes de tamaño previo al diseño | manual de látex
+title: 7. Ajustes de tamaño previo al diseño
 weight: 70
 url: /java/latex-math-fine-tuning/
-keywords: ams-latex, amsmath, espaciado matemático de látex, estilos matemáticos de látex, delimitadores matemáticos de látex, paréntesis matemáticos de látex, alineación matemática de látex
+keywords: ams-latex, amsmath, espaciado matemático de LaTeX, estilos matemáticos de LaTeX, delimitadores matemáticos de LaTeX, paréntesis matemáticos de LaTeX, alineación matemática de LaTeX
 description: Este artículo analiza el ajuste del diseño matemático - tamaño y espaciado automáticos, delimitadores grandes, alineación precisa.
 lastmod: "2024-10-30"
 ---

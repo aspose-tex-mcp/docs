@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: LaTeX math fonts 
-title: 8. Fonts in math formulas | LaTeX font math
+title: 8. Fonts in math formulas 
 weight: 80
 url: /java/latex-math-fonts/
 keywords: ams-latex, amsmath, amsfonts, amssymb, latex math fonts, latex math alphabets, latex bm package, latex fonts, latex fonts math

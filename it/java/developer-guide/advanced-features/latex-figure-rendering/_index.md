@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-title: Rendering di figura in LaTeX | Aspose.TeX per java
+title: Rendering di figura in LaTeX | Java
 linktitle: Rendering di figura in LaTeX
 weight: 20
 url: /java/latex-figure-rendering/

@@ -2,10 +2,10 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: Fuentes en fórmulas matemáticas.
-title: 8. Fuentes en fórmulas matemáticas | Matemáticas de fuentes
+title: 8. Fuentes en fórmulas matemáticas
 weight: 80
 url: /java/latex-math-fonts/
-keywords: ams-latex, amsmath, amsfonts, amssymb, fuentes matemáticas de látex, alfabetos matemáticos de látex, paquete bm de látex, fuentes de látex, fuentes matemáticas de látex
+keywords: ams-latex, amsmath, amsfonts, amssymb, fuentes matemáticas de LaTeX, alfabetos matemáticos de LaTeX, paquete bm de LaTeX, fuentes de LaTeX, fuentes matemáticas de LaTeX
 description: Este artículo analiza el manejo de fuentes matemáticas mediante LaTeX estándar, así como el uso de los paquetes amsmath y bm.
 lastmod: "2024-10-30"
 ---

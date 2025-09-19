@@ -3,7 +3,7 @@ translation: true
 template: /templates/_template-default.md
 linktitle: Familia de productos Aspose.TeX
 title: Familia de productos Aspose.TeX | Documentación
-description: Aspose.TeX para .NET es una biblioteca de alto rendimiento para aplicaciones de composición tipográfica de archivos TeX en .NET.
+description: Aspose.TeX es una biblioteca de alto rendimiento para aplicaciones de composición tipográfica de archivos TeX y LaTeX en .NET, Java, C++ y Python.
 lastmod: "2024-10-30"
 sitemap.changefreq: weekly
 sitemap.priority: 0.5
@@ -24,15 +24,15 @@ Aspose.TeX es una biblioteca .NET para composición tipográfica de archivos TeX
 
 {{% /alert %}}
 
-## Aspose.TeX para recursos .NET
+## Recursos de Aspose.TeX para .NET
 
 A continuación se encuentran los enlaces a algunos recursos útiles que puede necesitar para realizar sus tareas.
 
-- [Aspose.TeX para documentación en línea de .NET](/tex/{{lang.url-fragment}}net/)
-- [Aspose.TeX para funciones .NET](/tex/{{lang.url-fragment}}net/feature-list/)
+- [Aspose.TeX para .NET documentación en línea](/tex/{{lang.url-fragment}}net/)
+- [Aspose.TeX para .NET funciones](/tex/{{lang.url-fragment}}net/feature-list/)
 - [Notas de la versión de Aspose.TeX para .NET](https://releases.aspose.com/tex/net/release-notes/)
 - [Página del producto Aspose.TeX para .NET](https://products.aspose.com/tex/net/)
-- [Instalar Aspose.TeX para el paquete .NET NuGet](https://www.nuget.org/packages/Aspose.TeX/)
+- [Instalar Aspose.TeX para .NET el paquete NuGet](https://www.nuget.org/packages/Aspose.TeX/)
 - [Guía de referencia de API de Aspose.TeX para .NET](https://reference.aspose.com/tex/net/)
 - [Foro de soporte gratuito de Aspose.TeX para .NET](https://forum.aspose.com/c/tex)
 - [Servicio de asistencia técnica de pago de Aspose.TeX para .NET](https://helpdesk.aspose.com/)
@@ -58,7 +58,7 @@ A continuación se encuentran los enlaces a algunos recursos útiles que puede n
 - [Notas de la versión de Aspose.TeX para Java](https://releases.aspose.com/tex/java/release-notes/)
 - [Página del producto Aspose.TeX para Java](https://products.aspose.com/tex/java/)
 - [Descargar Aspose.TeX para Java](https://releases.aspose.com/tex/java/)
-- [Aspose.TeX para el repositorio Java Maven](https://releases.aspose.com/java/repo/com/aspose/aspose-tex/)
+- [Aspose.TeX para Java el repositorio Maven](https://releases.aspose.com/java/repo/com/aspose/aspose-tex/)
 - [Guía de referencia de la API de Aspose.TeX para Java](https://reference.aspose.com/tex/java)
 - [Foro de soporte gratuito de Aspose.TeX para Java](https://forum.aspose.com/c/tex)
 - [Servicio de asistencia técnica de pago de Aspose.TeX para Java](https://helpdesk.aspose.com/)
@@ -68,7 +68,8 @@ A continuación se encuentran los enlaces a algunos recursos útiles que puede n
 {{% alert color="primary" %}}
 
 <p><img src="/tex/icons/aspose_tex-for-cpp.png" alt="Aspose.TeX for C++ logo" width="128" height="128"></p>
-**Welcome to Aspose.TeX for C++**
+
+**Bienvenido a Aspose.TeX para C++**
 
 Experimente el poder de Aspose.TeX, la principal biblioteca de C++ para componer archivos TeX. Con Aspose.TeX, puede transformar sin esfuerzo la entrada TeX en impresionantes formatos gráficos como XPS, PDF, PNG, JPEG, TIFF y BMP. Nuestra biblioteca avanzada no solo proporciona capacidades de renderizado excepcionales, sino que también ofrece información de seguimiento completa, lo que garantiza un rendimiento óptimo.
 
@@ -76,7 +77,7 @@ Desbloquee infinitas posibilidades con la API intuitiva de Aspose.TeX, que ofrec
 
 {{% /alert %}}
 
-## Aspose.TeX para recursos de C++
+## Recursos de Aspose.TeX para C++
 
 A continuación se encuentran los enlaces a algunos recursos útiles que puede necesitar para realizar sus tareas.
 
@@ -84,7 +85,7 @@ A continuación se encuentran los enlaces a algunos recursos útiles que puede n
 - [Características de Aspose.TeX para C++](/tex/{{lang.url-fragment}}cpp/feature-list/)
 - [Notas de la versión de Aspose.TeX para C++](https://releases.aspose.com/tex/cpp/release-notes/)
 - [Página del producto Aspose.TeX para C++](https://products.aspose.com/tex/cpp/)
-- [Instalar Aspose.TeX para el paquete NuGet de C++](https://www.nuget.org/packages/Aspose.TeX.Cpp/)
+- [Instalar Aspose.TeX para C++ el paquete NuGet](https://www.nuget.org/packages/Aspose.TeX.Cpp/)
 - [Guía de referencia de API de Aspose.TeX para C++](https://reference.aspose.com/tex/cpp)
 - [Foro de soporte gratuito de Aspose.TeX para C++](https://forum.aspose.com/c/tex)
 - [Servicio de asistencia técnica de pago de Aspose.TeX para C++](https://helpdesk.aspose.com/)
@@ -103,15 +104,16 @@ Descubra las capacidades inigualables de Aspose.TeX, la nueva biblioteca de Pyth
 
 {{% /alert %}}
 
-## Aspose.TeX para recursos de Python
+## Recursos de Aspose.TeX para Python
+
 A continuación se encuentran los enlaces a algunos recursos útiles que puede necesitar para realizar sus tareas.
 
 - [Documentación en línea de Aspose.TeX para Python](/tex/{{lang.url-fragment}}python-net/)
-- [Aspose.TeX para funciones de Python](/tex/{{lang.url-fragment}}python-net/feature-list/)
+- [Aspose.TeX para Python funciones](/tex/{{lang.url-fragment}}python-net/feature-list/)
 - [Notas de la versión de Aspose.TeX para Python](https://releases.aspose.com/tex/python-net/release-notes/)
 - [Página del producto Aspose.TeX para Python](https://products.aspose.com/tex/python-net/)
-- [Instalar Aspose.TeX para paquetes de ruedas Python](https://pypi.org/project/aspose-tex-net/)
+- [Instalar Aspose.TeX para Python paquetes de ruedas](https://pypi.org/project/aspose-tex-net/)
 - [Guía de referencia de la API de Aspose.TeX para Python](https://reference.aspose.com/python-tex/net/)
 - [Foro de soporte gratuito de Aspose.TeX para Python](https://forum.aspose.com/c/tex)
-- [Aspose.TeX para el servicio de asistencia técnica de pago de Python](https://helpdesk.aspose.com/)
+- [Aspose.TeX para Python el servicio de asistencia técnica de pago](https://helpdesk.aspose.com/)
 

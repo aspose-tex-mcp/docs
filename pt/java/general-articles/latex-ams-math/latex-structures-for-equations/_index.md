@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: Equação de LaTeX alinhe e exibir
-title: 2. Exibição e alinhamento para equações de LaTeX | Alinhamento de LaTeX *
+title: 2. Exibição e alinhamento para equações de LaTeX
 weight: 10
 url: /java/latex-structures-for-equations/
 keywords: AMS-LATEX, AMSMATH, AMSMATH OPÇÕES, Alinhamento da equação de LaTeX, LEQNO, EQNO, FLEQN, etiqueta de equação de LaTeX, etiqueta de equação de LaTeX, equações de alinhamento de LaTeX

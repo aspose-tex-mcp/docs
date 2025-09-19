@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: Разделители
-title: 7. Разделители | Руководство по LaTeX | Aspose.TeX
+title: 7. Разделители
 weight: 70
 url: /java/latex-math-delimiters/
 keywords: латех, математические формулы из латеха, математика из латеха, математические разделители из латеха, математические скобки из латеха, математические скобки из латеха, математические скобки из латеха

@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: LaTeX Матрица и подобные среды. Cистема уравнений LaTeX
-title: 3. Матрица LaTeX | Руководство по LaTeX
+linktitle: Матрица LaTeX 
+title: 3. LaTeX Матрица и подобные среды. Cистема уравнений LaTeX
 weight: 30
 url: /java/latex-ams-matrix/
 keywords: матрица latex, amsmath, матрицы в латехе, латехная матрица, latex система уравнений выравнивание, латехный деларрей, латехные коммутативные диаграммы

@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-cpp.md
-title: Outras maneiras de fornecer o principal arquivo de entrada tex principal | C ++
+title: Outras maneiras de fornecer o principal arquivo de entrada tex principal | C++
 linktitle: Outras maneiras de fornecer o principal arquivo de entrada tex
 weight: 14
 url: /cpp/other-ways-of-main-input/

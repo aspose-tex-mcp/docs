@@ -1,11 +1,11 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-title: Cómo configurar nuevas fuentes
-linktitle: 6. Cómo configurar nuevas fuentes
+title: 6. Cómo configurar nuevas fuentes
+linktitle: Cómo configurar nuevas fuentes
 weight: 60
 url: /java/latex-fonts-setup/
-keywords: látex, fuentes de látex, sustitución de fuentes de látex, configuración de fuentes de látex
+keywords: LaTeX, fuentes de LaTeX, sustitución de fuentes de LaTeX, configuración de fuentes de LaTeX
 description: Este artículo cubre la configuración de nuevas fuentes para usar con LaTeX y también incluye un ejemplo de definición de fuente.
 lastmod: "2024-10-30"
 ---

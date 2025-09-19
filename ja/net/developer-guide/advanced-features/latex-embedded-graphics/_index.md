@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-title: ラテックス埋め込みグラフィックス|ラテックスコードにグラフィックを含めます
+title: ラテックス埋め込みグラフィックス|.NET
 linktitle: ラテックス埋め込みグラフィックス
 weight: 18
 url: /net/latex-embedded-graphics/

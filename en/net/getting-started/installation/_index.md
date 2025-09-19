@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-net.md
 linktitle: Installation
-title: Installation - Aspose.TeX for .NET
+title: Installation | Aspose.TeX for .NET
 weight: 60
 url: /net/installation/
 description: Aspose.TeX API Documentation for .NET can be found in the downloaded ZIP package or gotten from NuGet Gallery, by clicking the “Download package”.

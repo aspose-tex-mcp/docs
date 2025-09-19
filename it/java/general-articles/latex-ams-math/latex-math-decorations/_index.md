@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: Simboli decorati e strutture composte
-title: 4. Simboli decorati e strutture composte | Manuale in LaTeX
+title: 4. Simboli decorati e strutture composte
 weight: 40
 url: /java/latex-math-decorations/
 keywords: AMS-Latex, Amsmath, AMSXTRA, Integrali in LaTeX, frazioni in LaTeX, decorazioni in LaTeX, frecce in LaTeX, limiti di LaTeX, relazioni modulari in LaTeX

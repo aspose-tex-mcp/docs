@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-title: 新しいフォントを設定する方法| Java用のAspose.TeX
-linktitle: 6.新しいフォントをセットアップする方法
+title: 6。新しいフォントを設定する方法
+linktitle: 新しいフォントをセットアップする方法
 weight: 60
 url: /java/latex-fonts-setup/
 keywords: ラテックス、ラテックスフォント、ラテックスフォント置換、ラテックスフォントセットアップ

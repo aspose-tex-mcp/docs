@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-cpp.md
-title: Licences - Aspose.TeX pour C++
+title: Licences | Aspose.TeX pour C++
 linktitle: Licence
 weight: 70
 url: /cpp/licensing/

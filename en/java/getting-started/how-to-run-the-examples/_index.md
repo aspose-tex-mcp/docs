@@ -1,7 +1,7 @@
 ---
 translation: true
 template: /templates/_template-java.md
-title: How to Run the Examples in Java
+title: How to Run the Examples | Aspose.TeX for Java
 linktitle: How to Run the Examples
 weight: 80
 url: /java/how-to-run-the-examples/

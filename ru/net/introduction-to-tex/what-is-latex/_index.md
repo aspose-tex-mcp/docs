@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-title: Что такое латех? | Aspose.TeX .NET
-linktitle: Что такое латех?
+title: Что такое LaTeX? 
+linktitle: Что такое LaTeX?
 weight: 16
 url: /net/what-is-latex/
 keywords: что такое латех, латех, что это такое

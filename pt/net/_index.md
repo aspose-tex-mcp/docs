@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-linktitle: Aspose.TeX para documentação .NET
-title: Aspose.TeX para .NET API Solution
+linktitle: Aspose.TeX para .NET
+title: Aspose.TeX para .NET Documentação 
 weight: 10
 url: /net/
 description: Gerenciar arquivos TEX na solução da API para C# .NET. A biblioteca fornece maneiras de passar a entrada Tex e obter recursos e recursos avançados.
@@ -22,15 +22,15 @@ Aspose.TeX é uma biblioteca .NET para arquivos TEX Tipsetting. Ele pode apresen
 
 {{% /alert %}}
 
-## Aspose.TeX para recursos .NET
+## Aspose.TeX para .NET recursos 
 
 A seguir, estão os links para alguns recursos úteis necessários para realizar suas tarefas.
 
-- [Aspose.TeX para documentação online .NET](/tex/{{lang.url-fragment}}net/)
-- [Aspose.TeX para recursos .NET](/tex/{{lang.url-fragment}}net/feature-list/)
-- [Aspose.TeX for .Net Notas de versão](https://releases.aspose.com/tex/net/release-notes/)
+- [Aspose.TeX para .NET documentação online](/tex/{{lang.url-fragment}}net/)
+- [Aspose.TeX para .NET recursos](/tex/{{lang.url-fragment}}net/feature-list/)
+- [Aspose.TeX for .NET Notas de versão](https://releases.aspose.com/tex/net/release-notes/)
 - [Aspose.TeX para .NET Página do produto](https://products.aspose.com/tex/net/)
-- [Instale Aspose.TeX para .Net Nuget Package](https://www.nuget.org/packages/Aspose.TeX/)
+- [Instale Aspose.TeX para .NET Nuget Package](https://www.nuget.org/packages/Aspose.TeX/)
 - [Aspose.TeX para .NET Guia de referência da API](https://reference.aspose.com/tex/net/)
 - [Aspose.TeX para .NET Fórum de suporte gratuito](https://forum.aspose.com/c/tex/)
 - [Aspose.TeX para .NET pagou suporte helpdesk](https://helpdesk.aspose.com/)

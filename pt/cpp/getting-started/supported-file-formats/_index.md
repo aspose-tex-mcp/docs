@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-cpp.md
-title: Formatos de arquivo suportados | Aspose.TeX para C ++
+title: Formatos de arquivo suportados | Aspose.TeX para C++
 linktitle: Formatos de arquivo suportados
 weight: 20
 url: /cpp/supported-file-formats/

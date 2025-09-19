@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: 4. 标准乳胶字体
-title: 标准乳胶字体| 用于 Java 的 Aspose.TeX
+linktitle: 标准乳胶字体
+title: 4. 标准乳胶字体
 weight: 40
 url: /java/latex-standard-fonts/
 keywords: 乳胶，乳胶字体，乳胶标准字体，乳胶字体编码，tracefnt，nfssfont.tex

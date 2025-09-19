@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-python-net.md
-title: Aspose.TeX的输入接口| Python
+title: Aspose.TeX的输入接口| 通过 .NET 为 Python 提供 Aspose.TeX
 linktitle: Aspose.TeX的输入接口
 weight: 15
 url: /python-net/aspose-tex-input/

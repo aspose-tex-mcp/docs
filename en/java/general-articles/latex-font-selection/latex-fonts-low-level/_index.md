@@ -1,8 +1,8 @@
 ---
 translation: true
 template: /templates/_template-java.md
-linktitle: 5. Low-level interface
-title: The low-level interface | Aspose.TeX for Java
+linktitle: Low-level interface
+title: 5. The low-level interface
 weight: 50
 url: /java/latex-fonts-low-level/
 keywords: latex, latex fonts, latex font substitution, latex font families, latex font series, latex font shapes

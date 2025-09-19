@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-cpp.md
-title: 其他TEX转换输出格式| C ++
+title: 其他TEX转换输出格式| C++的Aspose.TeX
 linktitle: 其他Tex格式
 weight: 18
 url: /cpp/other-tex-formats/

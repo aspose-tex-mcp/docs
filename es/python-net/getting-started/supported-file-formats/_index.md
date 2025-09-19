@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-python-net.md
-title: Formatos de archivo admitidos | Aspose.TeX para Python
+title: Formatos de archivo admitidos | Python a través de .NET
 linktitle: Formatos de archivo admitidos
 weight: 20
 url: /python-net/supported-file-formats/

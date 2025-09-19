@@ -1,11 +1,11 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: 4. Fuentes LaTeX estándar
-title: Fuentes LaTeX estándar | LaTeX para Java
+linktitle: Fuentes LaTeX estándar
+title: 4. Fuentes LaTeX estándar
 weight: 40
 url: /java/latex-standard-fonts/
-keywords: látex, fuentes de látex, fuentes estándar de látex, codificación de fuentes de látex, tracefnt, nfssfont.tex
+keywords: LaTeX, fuentes de LaTeX, fuentes estándar de LaTeX, codificación de fuentes de LaTeX, tracefnt, nfssfont.tex
 description: Este artículo es una breve introducción a las fuentes de texto estándar distribuidas junto con LaTeX.
 lastmod: "2024-10-30"
 ---

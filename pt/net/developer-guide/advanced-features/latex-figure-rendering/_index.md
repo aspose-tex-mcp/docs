@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-title: Renderização de figuras de LaTeX | Aspose.TeX para .NET
+title: Renderização de figuras de LaTeX | .NET
 linktitle: O LaTeX inclui a figura
 weight: 20
 url: /net/latex-figure-rendering/
