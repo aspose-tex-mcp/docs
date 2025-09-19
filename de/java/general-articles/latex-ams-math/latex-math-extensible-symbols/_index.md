@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: Erweiterbare und anpassbare Symbole
-title: 5. Erweiterbare und anpassbare Symbole | LaTeX-Handbuch
+title: 5. Erweiterbare und anpassbare Symbole
 weight: 50
 url: /java/latex-math-extensible-symbols/
 keywords: ams-latex, amsmath, amsxtra, Latex-Mathe-Operatoren, Latex-Mathe-Trennzeichen, Latex-Mathe-Klammern, Latex-Mathe-Klammern, Latex-Mathe-Akzente

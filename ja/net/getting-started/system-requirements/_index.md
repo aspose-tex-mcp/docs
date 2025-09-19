@@ -1,11 +1,11 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-title: システム要件| Aspose.TeX .net
+title: システム要件| .NETのAspose.TeX
 linktitle: システム要件
 weight: 50
 url: /net/system-requirements/
-description: .NET用のAsopes.Texソリューションは、.NETをサポートする任意の開発環境で使用できますが、いくつかの環境が明示的にサポートされています。
+description: .NET用のAspose.Texソリューションは、.NETをサポートする任意の開発環境で使用できますが、いくつかの環境が明示的にサポートされています。
 lastmod: "2025-06-09"
 ---
 

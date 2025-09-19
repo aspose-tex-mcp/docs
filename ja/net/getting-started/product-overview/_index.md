@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-title: 製品の概要| .netのAspose.TeX
+title: 製品の概要| .NETのAspose.TeX
 linktitle: 製品の概要
 weight: 10
 url: /net/product-overview/
@@ -15,7 +15,7 @@ lastmod: "2025-06-09"
 
 <p><img src="/tex/icons/aspose_tex-for-net.png" alt=".NET 用の Aspose.TeX logo" width="128" height="128"></p>
 
-**.netのAspose.TeXへようこそ**
+**.NETのAspose.TeXへようこそ**
 
 Aspose.TeXは、TEXファイルを植えるための.NETライブラリです。 XPS、PDF、PNG、JPEG、TIFF、BMPなどのさまざまなグラフィック形式でTEXファイルを表示できます。また、他のTexエンジンと同じようにトレース情報を出力します。 APIは、入力を供給して出力を取得するさまざまな方法を提供します。また、高度な機能として、均一に設計されたいくつかのドキュメントを入力したい場合は、独自のTex形式を作成できます。
 

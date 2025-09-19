@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-conversion-cpp.md
-title: LaTeX до зображення | Aspose.TeX для C++
+title: LaTeX до зображення | C++
 linktitle: LaTeX до зображення
 weight: 10
 url: /cpp/latex-to-image/

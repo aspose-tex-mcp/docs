@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: 9. Équations affichées
-title: Équations affichées | Manuel LaTeX
+linktitle: Équations affichées
+title: 9. Équations affichées 
 weight: 90
 url: /java/latex-math-displayed-equations/
 keywords: latex, formules mathématiques en latex, mathématiques en latex, formule affichée en mathématiques en latex, équation affichée en mathématiques en latex, tableau d'équations mathématiques en latex, alignement affiché en mathématiques en latex

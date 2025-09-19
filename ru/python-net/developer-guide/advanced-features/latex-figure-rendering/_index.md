@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-python-net.md
-title: LaTeX Рендеринг фигур | Aspose.TeX для Python
+title: LaTeX Рендеринг фигур | Python через .NET
 linktitle: LaTeX включает рисунок
 weight: 20
 url: /python-net/latex-figure-rendering/

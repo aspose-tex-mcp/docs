@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-python-net.md
-title: ラテックスフィギュアレンダリング| Python用のAspose.TeX
+title: ラテックスフィギュアレンダリング| .NET経由でPython用のAspose.TeX
 linktitle: ラテックスには図が含まれています
 weight: 20
 url: /python-net/latex-figure-rendering/

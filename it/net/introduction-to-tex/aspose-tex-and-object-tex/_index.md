@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-net.md
 linktitle: Oggetto tex
-title: Aspose.TeX e oggetto tex | Aspose.TeX per .NET
+title: Aspose.TeX e oggetto tex 
 weight: 11
 url: /net/aspose-tex-and-object-tex/
 description: Tex è un formato di input e output di questa soluzione API, quindi qui andiamo a spiegare l'oggetto Tex e come si trasforma in un formato target.

@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: 2。フォント特性
-title: フォントの特性| Java用のAspose.TeX
+linktitle: フォント特性
+title: 2。フォントの特性
 weight: 20
 url: /java/latex-font-attributes/
 keywords: ラテックス、ラテックスフォント、ラテックスフォントエンコーディング、NFSS

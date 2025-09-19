@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-python-net.md
-title: LaTeX zu PDF | Aspose.TeX für Python
+title: LaTeX zu PDF | Python
 linktitle: LaTeX in PDF
 weight: 11
 url: /python-net/latex-to-pdf/

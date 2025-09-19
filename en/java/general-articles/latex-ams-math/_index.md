@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: AMS's LaTeX packages
-title: Building maths with AMS's LaTeX packages
+title: Building maths with AMS's LaTeX packages 
 weight: 40
 url: /java/what-is-ams-latex/
 keywords: ams-latex, ams latex, latex math, latex formula, latex ams, latex equation, latex math expression

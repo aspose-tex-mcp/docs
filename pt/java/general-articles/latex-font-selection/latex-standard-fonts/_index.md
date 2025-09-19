@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: 4. Fontes de LaTeX padrão
-title: Fontes de LaTeX padrão | Aspose.TeX para java
+linktitle: Fontes de LaTeX padrão
+title: 4. Fontes de LaTeX padrão
 weight: 40
 url: /java/latex-standard-fonts/
 keywords: LATEX, fontes de LaTeX, fontes padrão de LaTeX, codificação de fontes de LaTeX, tracefnt, nfssfont.tex

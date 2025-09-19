@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-title: ラテックスからPDF | Java用のAspose.TeX
+title: ラテックスからPDF | Java
 linktitle: ラテックスからPDF
 weight: 11
 url: /java/latex-to-pdf/

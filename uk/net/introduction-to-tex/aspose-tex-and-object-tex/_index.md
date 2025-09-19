@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-net.md
 linktitle: Object TeX
-title: Aspose.TeX і Object TeX | Aspose.TeX для .NET
+title: Aspose.TeX і Object TeX 
 weight: 11
 url: /net/aspose-tex-and-object-tex/
 description: TeX є форматом введення та виведення цього рішення API, тому тут ми пояснюємо Object TeX і як він перетворюється на цільовий формат.

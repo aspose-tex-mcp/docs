@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-cpp.md
-title: ラテックス数学式レンダリング| C ++
+title: ラテックス数学式レンダリング| C++
 linktitle: ラテックス数学式レンダリング
 weight: 10
 url: /cpp/latex-math-formula-rendering/

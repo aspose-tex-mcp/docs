@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-title: 乳胶图渲染| Aspose.TeX for .NET
+title: 乳胶图渲染| .NET的Aspose.TeX
 linktitle: 乳胶包括图
 weight: 20
 url: /net/latex-figure-rendering/

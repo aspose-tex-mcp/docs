@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: 2. 下标和下标
-title: 乳胶中的下标和下标|乳胶手册
+linktitle: 下标和下标
+title: 2. 乳胶中的下标和下标|乳胶手册
 weight: 20
 url: /java/latex-math-subscripts-superscripts/
 keywords: 乳胶，乳胶数学公式，乳胶数学，乳胶数学下标，乳胶数学上标，乳胶prime

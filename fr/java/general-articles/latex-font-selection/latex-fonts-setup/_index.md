@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-title: Comment configurer de nouvelles polices
-linktitle: 6. Comment configurer de nouvelles polices
+title: 6. Comment configurer de nouvelles polices
+linktitle: Comment configurer de nouvelles polices
 weight: 60
 url: /java/latex-fonts-setup/
 keywords: latex, polices latex, substitution de polices latex, configuration des polices latex

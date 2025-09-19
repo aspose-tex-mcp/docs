@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-net.md
 linktitle: オブジェクトtex
-title: Aspose.TeXおよびオブジェクトtex | .netのAspose.TeX
+title: Aspose.TeXおよびオブジェクトTeX
 weight: 11
 url: /net/aspose-tex-and-object-tex/
 description: TexはこのAPIソリューションの入力および出力形式であるため、ここではオブジェクトTexとそれがターゲット形式にどのように変換されるかを説明します。

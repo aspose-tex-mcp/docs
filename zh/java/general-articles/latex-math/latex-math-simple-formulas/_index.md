@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: 1. 简单公式
-title: 简单公式|乳胶手册
+linktitle: 简单公式
+title: 1. 简单公式|乳胶手册
 weight: 10
 url: /java/latex-math-simple-formulas/
 keywords: 乳胶，乳胶数学公式，乳胶数学，乳胶数学字母，乳胶希腊字母，乳胶编号

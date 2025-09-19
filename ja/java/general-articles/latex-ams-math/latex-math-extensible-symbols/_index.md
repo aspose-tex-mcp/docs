@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: 拡張可能な調整可能なシンボル
-title: 5。拡張可能な調整可能なシンボル|ラテックスマニュアル
+title: 5。拡張可能な調整可能なシンボル
 weight: 50
 url: /java/latex-math-extensible-symbols/
 keywords: AMS-Latex、AMSMATH、AMSXTRA、ラテックス数学オペレーター、ラテックス数学デリミター、ラテックス数学ブラケット、ラテックス数学ブレース、ラテックス数学アクセント

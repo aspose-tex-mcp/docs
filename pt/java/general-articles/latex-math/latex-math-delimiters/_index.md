@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: 7. Delimitadores
-title: Delimitadores | Manual de LaTeX | Aspose.TeX
+linktitle:  Delimitadores
+title: 7. Delimitadores 
 weight: 70
 url: /java/latex-math-delimiters/
 keywords: LATEX, fórmulas de matemática de LaTeX, matemática de LaTeX, delimitadores de matemática de LaTeX, aparelhos matemáticos de LaTeX, suportes de matemática de LaTeX, parênteses matemáticos de LaTeX

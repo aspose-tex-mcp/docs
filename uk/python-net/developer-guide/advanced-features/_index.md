@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-python-net.md
-title: Розширені функції | Aspose.TeX для Python
+title: Розширені функції | Aspose.TeX для Python через .NET
 linktitle: Розширені функції
 weight: 20
 url: /python-net/advanced-features/

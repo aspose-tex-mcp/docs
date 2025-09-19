@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-net.md
 linktitle: ライセンス
-title: ライセンス-.netのAspose.TeX
+title: ライセンス| .NETのAspose.TeX
 weight: 70
 url: /net/licensing/
 description: ライセンスバージョンのAspose.TeX APIソリューションの.NETで停止した場合、ここでライセンスの適用方法を見つけます。

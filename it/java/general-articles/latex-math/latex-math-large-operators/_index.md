@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: 6. Operatori di grandi dimensioni
-title: Grandi operatori | Manuale in LaTeX
+linktitle: Operatori di grandi dimensioni
+title: 6. Grandi operatori 
 weight: 60
 url: /java/latex-math-large-operators/
 keywords: LaTeX, formule di matematica in LaTeX, matematica in LaTeX, matematica in LaTeX grandi operatori, somma del LaTeX, integrale in LaTeX

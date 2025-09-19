@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-python-net.md
-title: Altri formati di output di conversione Tex | Python
+title: Altri formati di output di conversione Tex | Python tramite .NET
 linktitle: Altri formati di Tex
 weight: 18
 url: /python-net/other-tex-formats/

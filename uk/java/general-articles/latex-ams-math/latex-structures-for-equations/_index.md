@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: Відображення та вирівнювання
-title: 2. Відображення та вирівнювання рівнянь LaTeX |  LaTeX
+title: 2. Відображення та вирівнювання рівнянь LaTeX
 weight: 10
 url: /java/latex-structures-for-equations/
 keywords: ams-latex, amsmath, параметри amsmath, вирівнювання латексного рівняння, leqno, eqno, fleqn, тег латексного рівняння, мітка латексного рівняння, рівняння латексного рівняння

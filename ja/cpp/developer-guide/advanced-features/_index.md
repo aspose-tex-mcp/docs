@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-cpp.md
-title: 高度な機能| C ++のAspose.TeX
+title: 高度な機能| C++のAspose.TeX
 linktitle: 高度な機能
 weight: 20
 url: /cpp/advanced-features/

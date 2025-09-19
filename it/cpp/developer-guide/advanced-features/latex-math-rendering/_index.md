@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-cpp.md
-title: Formule matematiche in LaTeX rendering | C ++
+title: Formule matematiche in LaTeX rendering | C++
 linktitle: Formule matematiche in LaTeX rendering
 weight: 10
 url: /cpp/latex-math-formula-rendering/

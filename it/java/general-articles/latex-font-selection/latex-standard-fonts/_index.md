@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: 4. Caratteri di LaTeX standard
-title: Caratteri in LaTeX standard | Aspose.TeX per java
+linktitle: Caratteri di LaTeX standard
+title: 4. Caratteri in LaTeX standard
 weight: 40
 url: /java/latex-standard-fonts/
 keywords: caratteri in LaTeX, LaTeX, caratteri standard in LaTeX, codifica del carattere in LaTeX, Tracefnt, nfssfont.tex

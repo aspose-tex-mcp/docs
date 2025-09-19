@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: Grafiken einschließen
-title: LaTeX includegraphics | Aspose.TeX für Java
+title: LaTeX includegraphics
 weight: 10
 url: /java/latex-includegraphics/
 keywords: includegraphics Latex, Latex includegraphic, Bilder einfügen Latex, Latex-Grafik

@@ -1,9 +1,9 @@
 ﻿---
 translation: true
 template: /templates/_template-python-net.md
-linktitle: Pythonドキュメント用のAspose.TeX
-title: Python APIソリューション用のAspose.TeX
-weight: 10
+linktitle: Python APIソリューション用のAspose.TeX
+title: .NET 経由の Python 用 Aspose.TeX
+weight: 40
 url: /python-net/
 description: PythonのAPIソリューション内のTEXファイルを管理します。ライブラリは、TEX入力を渡し、出力と高度な機能を取得するさまざまな方法を提供します。
 is_root: true
@@ -29,14 +29,14 @@ Aspose.TeXの直感的なAPIであなたの創造性を解き放ち、Pythonア�
 
 タスクを達成するために必要ないくつかの有用なリソースへのリンクを以下に示します。
 
-- [Pythonオンラインドキュメント用のAspose.TeX](/tex/{{lang.url-fragment}}python-net/)
-- [Python機能用のAspose.TeX](/tex/{{lang.url-fragment}}python-net/feature-list/)
-- [PythonリリースノートのAspose.TeX](https://releases.aspose.com/tex/python-net/release-notes/)
-- [Python製品ページのAspose.TeX](https://products.aspose.com/tex/python-net/)
-- [PythonホイールパッケージにAspose.TeXをインストール](https://pypi.org/project/aspose-tex-net/)
-- [Python APIリファレンスガイド用のAspose.TeX](https://reference.aspose.com/tex/python-net/)
-- [Python Free Support ForumのAspose.TeX](https://forum.aspose.com/c/tex/)
-- [PythonのサポートヘルプデスクのAspose.TeX](https://helpdesk.aspose.com/)
+- [Aspose.TeX 用 Python オンラインドキュメント](/tex/{{lang.url-fragment}}python-net/)
+- [Aspose.TeX 用 Python の機能](/tex/{{lang.url-fragment}}python-net/feature-list/)
+- [Aspose.TeX 用 Python リリースノート](https://releases.aspose.com/tex/python-net/release-notes/)
+- [Aspose.TeX 用 Python 製品ページ](https://products.aspose.com/tex/python-net/)
+- [Aspose.TeX 用 Python Wheel パッケージのインストール](https://pypi.org/project/aspose-tex-net/)
+- [Aspose.TeX 用 Python API リファレンスガイド](https://reference.aspose.com/tex/python-net/)
+- [Aspose.TeX 用 Python 無料サポートフォーラム](https://forum.aspose.com/c/tex/)
+- [Aspose.TeX 用 Python 有料サポートヘルプデスク](https://helpdesk.aspose.com/)
 
 {{% alert color="primary" %}}
 

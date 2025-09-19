@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: 1. Einfache Formeln
-title: Einfache Formeln | LaTeX-Handbuch
+linktitle: Einfache Formeln
+title: 1. Einfache Formeln
 weight: 10
 url: /java/latex-math-simple-formulas/
 keywords: Latex, Latex-Mathe-Formeln, Latex-Mathematik, Latex-Mathe-Buchstaben, griechische Latex-Buchstaben, Latex-Zahlen

@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-cpp.md
-title: Proporcionar el archivo de entrada TeX principal | C++
-linktitle: Otras formas de proporcionar el archivo de entrada TeX principal
+title: Otras formas de proporcionar el archivo de entrada TeX principal| C++
+linktitle: Proporcionar el archivo de entrada TeX principal
 weight: 14
 url: /cpp/other-ways-of-main-input/
 description: La funcionalidad de conversión de la solución API Aspose.TeX para C++ tiene un constructor que acepta una secuencia como primer argumento.

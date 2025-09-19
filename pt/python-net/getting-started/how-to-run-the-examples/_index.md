@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-python-net.md
 linktitle: Como executar os exemplos
-title: Como executar os exemplos | Aspose.TeX para Python
+title: Como executar os exemplos | Aspose.TeX for Python via .NET
 weight: 80
 url: /python-net/how-to-run-the-examples/
 description: Esta página fornece todos os requisitos e etapas necessários para executar os exemplos da solução Aspose.TeX para Python.

@@ -1,8 +1,8 @@
 ---
 translation: true
 template: /templates/_template-java.md
-linktitle: 4. Different characters in math formulas
-title: The meaning of different characters in math formulas
+linktitle: Different characters in math formulas
+title: 4. The meaning of different characters in math formulas
 weight: 40
 url: /java/latex-math-symbol-classes/
 keywords: latex, latex math formulas, latex math, latex math symbols, latex math variables, latex math binary operations, latex math relations, latex math accents

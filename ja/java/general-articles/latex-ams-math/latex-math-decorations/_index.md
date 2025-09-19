@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: 装飾されたシンボルと複合構造
-title: 4。装飾されたシンボルと複合構造|ラテックスマニュアル
+title: 4。装飾されたシンボルと複合構造
 weight: 40
 url: /java/latex-math-decorations/
 keywords: AMS-Latex、AMSMATH、AMSXTRA、ラテックス積分、ラテックス画分、ラテックス装飾、ラテックス矢印、ラテックス制限、ラテックスモジュラー関係

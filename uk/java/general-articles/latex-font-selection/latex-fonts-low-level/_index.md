@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: 5. Низькорівневий інтерфейс
-title: Низькорівневий інтерфейс | Aspose.TeX для Java
+linktitle: Низькорівневий інтерфейс
+title: 5. Низькорівневий інтерфейс
 weight: 50
 url: /java/latex-fonts-low-level/
 keywords: латекс, латексні шрифти, заміна латексних шрифтів, сімейства латексних шрифтів, серії латексних шрифтів, форми латексних шрифтів

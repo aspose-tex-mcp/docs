@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-cpp.md
-title: Elenco delle funzionalità | Aspose.TeX per C ++
+title: Elenco delle funzionalità | Aspose.TeX per C++
 linktitle: Elenco delle funzionalità
 weight: 30
 url: /cpp/feature-list/

@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-python-net.md
-title: Métodos alternativos para fornecer o arquivo de entrada TEX principal | Python
+title: Métodos alternativos para fornecer o arquivo de entrada TEX principal | Python via .NET
 linktitle: Outras maneiras de fornecer o principal arquivo de entrada tex
 weight: 14
 url: /python-net/other-ways-of-main-input/

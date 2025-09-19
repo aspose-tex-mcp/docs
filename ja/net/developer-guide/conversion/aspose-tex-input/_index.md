@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-title: Aspose.TeXの入力インターフェイス| 。ネット
+title: Aspose.TeXの入力インターフェイス| .NET
 linktitle: Aspose.TeXの入力インターフェイス
 weight: 15
 url: /net/aspose-tex-input/

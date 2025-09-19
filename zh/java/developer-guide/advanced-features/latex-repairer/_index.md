@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-title: 乳胶文件维修| 用于 Java 的 Aspose.TeX
+title: 乳胶文件维修| Java的Aspose.TeX
 linktitle: 乳胶文件维修
 weight: 30
 url: /java/latex-repair/

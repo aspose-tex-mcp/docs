@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-python-net.md
 linktitle: 许可
-title: 许可-Aspose.TeX for Python
+title: 许可| 通过 .NET 为 Python 提供 Aspose.TeX
 weight: 70
 url: /python-net/licensing/
 description: 如果您使用的是python的Aspose.TeX API解决方案的许可版本，则可以在此处学习如何应用许可证。

@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: Simboli matematici in LaTeX
-title: 9. Simboli nelle formule di matematica | Manuale in LaTeX
+title: 9. Simboli nelle formule di matematica
 weight: 90
 url: /java/latex-math-symbols/
 keywords: AMS-Latex, Amsmath, Amsfonts, Amssymb, classi di Sybol Math Latex, pacchetto Stmaryrd, St Mary Road Carattere

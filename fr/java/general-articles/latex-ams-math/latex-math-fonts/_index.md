@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: Police LaTeX
-title: 8. Polices dans les formules mathématiques | LaTeX
+title: 8. Polices dans les formules mathématiques
 weight: 80
 url: /java/latex-math-fonts/
 keywords: latex gras, alphabet latex, amsfonts, amssymb, polices mathématiques latex, alphabets mathématiques latex, paquet bm latex, polices latex, polices mathématiques latex

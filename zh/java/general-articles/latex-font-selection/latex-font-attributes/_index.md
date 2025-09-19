@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: 2. 字体特性
-title: 字体特性| 用于 Java 的 Aspose.TeX
+linktitle: 字体特性
+title: 2. 字体特性
 weight: 20
 url: /java/latex-font-attributes/
 keywords: 乳胶，乳胶字体，乳胶字体编码，NFSS

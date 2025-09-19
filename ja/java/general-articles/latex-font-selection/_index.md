@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: フォント選択スキーム
-title: ラテックスフォント選択スキーム| Java用のAspose.TeX
+title: ラテックスフォント選択スキーム
 weight: 60
 url: /java/latex-font-selection/
 keywords: ラテックス、ラテックスフォント、ラテックスフォント選択、NFSS

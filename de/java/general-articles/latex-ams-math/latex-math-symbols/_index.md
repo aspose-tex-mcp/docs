@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: LaTeX mathematische symbole
-title: 9. Symbole in mathematischen Formeln | LaTeX symbole
+title: 9. Symbole in mathematischen Formeln
 weight: 90
 url: /java/latex-math-symbols/
 keywords: ams-latex, amsmath, amsfonts, amssymb, Latex-Mathe-Symbolklassen, Stmaryrd-Paket, St. Mary Road-Schriftart

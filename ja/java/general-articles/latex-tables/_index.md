@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: ラテックステーブル
-title: ラテックスのテーブル| Java用のAspose.TeX
+title: ラテックスのテーブル
 weight: 50
 url: /java/latex-tables/
 keywords: ラテックステーブル、表形式環境、ラテックステーブルデザイン、ラテックスでのテーブルのフォーマット、ラテックスのテーブルの植林、ラテックステーブルレイアウト、ラテックステーブル間隔、ラテックステーブルのカスタマイズ、ラテックステーブルアライメント、マルチロウ、マルチコラムのラテックステーブルのカスタマイズ

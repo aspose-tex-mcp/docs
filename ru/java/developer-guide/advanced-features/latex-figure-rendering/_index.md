@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-title: LaTeX Рендеринг фигур | Aspose.TeX для Java
+title: LaTeX Рендеринг фигур | Java
 linktitle: Отрисовка фигур LaTeX
 weight: 20
 url: /java/latex-figure-rendering/

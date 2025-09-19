@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: 2. Subscrito e subscrito
-title: Subscrito e subscrito no LATEX | Manual de LaTeX
+linktitle: Subscrito e subscrito
+title: 2. Subscrito e subscrito no LATEX
 weight: 20
 url: /java/latex-math-subscripts-superscripts/
 keywords: LATEX, fórmulas de matemática de LaTeX, matemática de LaTeX, subscritos de matemática do LATEX, SUPERSCRITOS DE MATHA DE LATEX, LATEX PRIME

@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: 装饰的符号和复合结构
-title: 4. 装饰的符号和复合结构|乳胶手册
+title: 4. 装饰的符号和复合结构
 weight: 40
 url: /java/latex-math-decorations/
 keywords: AMS-LATEX，AMSMATH，AMSXTRA，乳胶积分，乳胶分数，乳胶装饰，乳胶箭头，乳胶限制，乳胶模块化关系

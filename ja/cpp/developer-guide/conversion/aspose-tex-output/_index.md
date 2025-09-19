@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-cpp.md
-title: Aspose.TeXの出力インターフェイス| C ++
+title: Aspose.TeXの出力インターフェイス| C++
 linktitle: Aspose.TeXの出力インターフェイス
 weight: 16
 url: /cpp/aspose-tex-output/

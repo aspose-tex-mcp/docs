@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: 乳胶文档课程
-title: 乳胶文档课程| 用于 Java 的 Aspose.TeX
+title: 乳胶文档课程
 weight: 20
 url: /java/latex-document-classes/
 keywords: 乳胶文章类，乳胶文档类，乳胶文档模板，乳胶文章，乳胶书籍，乳胶幻灯片，乳胶报告，乳胶字母，乳胶中的文档类

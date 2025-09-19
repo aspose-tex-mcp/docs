@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: 2. Caratteristiche del carattere
-title: Caratteristiche del carattere | Aspose.TeX per java
+linktitle: Caratteristiche del carattere
+title: 2. Caratteristiche del carattere
 weight: 20
 url: /java/latex-font-attributes/
 keywords: Font in LaTeX, LaTeX, codifica del carattere in LaTeX, NFSS

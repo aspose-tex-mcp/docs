@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-python-net.md
 linktitle: インストール
-title: インストール-Python用のAspose.TeX
+title: インストール| .NET経由でPython用のAspose.TeX
 weight: 60
 url: /python-net/installation/
 description: 開発者がTEX(LATEX)ファイルを処理するためのPythonライブラリ。 Python用のAspose.TeX APIソリューションをインストールする方法を学びます。

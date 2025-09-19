@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-title: ラテックス数学式レンダリング| Java
+title: ラテックス数学式レンダリング| Java用のAspose.TeX
 linktitle: ラテックス数学式レンダリング
 weight: 10
 url: /java/latex-math-formula-rendering/

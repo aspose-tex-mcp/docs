@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: Схема підбору шрифту
-title: Схема вибору шрифту LaTeX | Aspose.TeX для Java
+title: Схема вибору шрифту LaTeX 
 weight: 60
 url: /java/latex-font-selection/
 keywords: латекс, латексні шрифти, вибір латексних шрифтів, nfss

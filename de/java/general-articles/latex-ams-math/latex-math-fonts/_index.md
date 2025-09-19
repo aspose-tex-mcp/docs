@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: Schriftarten LaTeX
-title: 8. Schriftarten in mathematischen Formeln  | LaTeX
+title: 8. Schriftarten in mathematischen Formeln
 weight: 80
 url: /java/latex-math-fonts/
 keywords: latex fett schreiben, entspricht zeichen latex, mathematisches alphabet, latex kleiner gleich, Latex-Math-Schriftarten, Latex-Math-Alphabete, Latex-BM-Paket, Latex-Schriftarten, Latex-Schriftarten Mathe

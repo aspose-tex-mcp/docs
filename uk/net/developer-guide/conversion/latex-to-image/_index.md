@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-title: LaTeX до зображення | Aspose.TeX для .NET
+title: LaTeX до зображення | .NET
 linktitle: LaTeX до зображення
 weight: 10
 url: /net/latex-to-image/

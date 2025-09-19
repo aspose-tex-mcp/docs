@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: 1. Ingresso e output
-title: Codifica di input e output | Aspose.TeX per java
+linktitle: Ingresso e output
+title: 1. Codifica di input e output 
 weight: 10
 url: /java/latex-font-encodings/
 keywords: Font in LaTeX, LaTeX, codifica del carattere in LaTeX, NFSS

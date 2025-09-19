@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: Декоровані символи та складені структури
-title: 4. Оформлені символи та складені конструкції | LaTeX
+title: 4. Оформлені символи та складені конструкції
 weight: 40
 url: /java/latex-math-decorations/
 keywords: ams-latex, amsmath, amsxtra, латексні інтеграли, латексні фракції, латексні прикраси, латексні стрілки, латексні межі, латексні модульні співвідношення

@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: 5。低レベルのインターフェイス
-title: 低レベルのインターフェイス| Java用のAspose.TeX
+linktitle: 低レベルのインターフェイス
+title: 5。低レベルのインターフェイス
 weight: 50
 url: /java/latex-fonts-low-level/
 keywords: ラテックス、ラテックスフォント、ラテックスフォント置換、ラテックスフォントファミリ、ラテックスフォントシリーズ、ラテックスフォント形状

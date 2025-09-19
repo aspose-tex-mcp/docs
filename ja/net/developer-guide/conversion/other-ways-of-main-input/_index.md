@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-title: メインのTex入力ファイルを提供する他の方法| 。ネット
+title: メインのTex入力ファイルを提供する他の方法| .NET
 linktitle: メインのTex入力ファイルを提供する他の方法
 weight: 14
 url: /net/other-ways-of-main-input/

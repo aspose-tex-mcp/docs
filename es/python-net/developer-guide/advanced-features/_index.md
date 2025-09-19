@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-python-net.md
-title: Funciones avanzadas | Aspose.TeX para Python
+title: Funciones avanzadas | Python a través de .NET
 linktitle: Funciones avanzadas
 weight: 20
 url: /python-net/advanced-features/

@@ -1,11 +1,11 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: 3. Comandos LaTeX
-title: Comandos LaTeX | manual de látex
+linktitle: Comandos LaTeX
+title: 3. Comandos LaTeX
 weight: 30
 url: /java/latex-math-commands/
-keywords: látex, fórmulas matemáticas de látex, matemáticas de látex, comandos matemáticos de látex, raíz cuadrada de látex, subrayado matemático de látex, sobrerayado matemático de látex
+keywords: LaTeX, fórmulas matemáticas de LaTeX, matemáticas de LaTeX, comandos matemáticos de LaTeX, raíz cuadrada de LaTeX, subrayado matemático de LaTeX, sobrerayado matemático de LaTeX
 description: Este artículo analiza otra forma de componer fórmulas matemáticas que involucra comandos macro proporcionados por LaTeX.
 lastmod: "2024-10-30"
 ---

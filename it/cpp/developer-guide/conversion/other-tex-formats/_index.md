@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-cpp.md
-title: Altri formati di output di conversione Tex | C ++
+title: Altri formati di output di conversione Tex | C++
 linktitle: Altri formati di Tex
 weight: 18
 url: /cpp/other-tex-formats/

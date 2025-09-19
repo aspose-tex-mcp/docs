@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-title: E/S LaTeX | Aspose.TeX pour .NET
-linktitle: Entrée/sortie LaTeX
+title: Entrée/sortie LaTeX
+linktitle: E/S LaTeX 
 weight: 17
 url: /net/latex-io/
 description: Cette page décrit les particularités du travail avec LaTeX comme format de sortie ou d'entrée et le fichier *.aux* comme obligatoire.

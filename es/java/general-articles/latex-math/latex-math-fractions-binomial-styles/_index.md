@@ -1,11 +1,11 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: 5. Fracciones, coeficientes binomiales y estilos matemáticos
-title: Fracciones, coeficientes binomiales y estilos matemáticos.
+linktitle: Fracciones, coeficientes binomiales y estilos matemáticos
+title: 5. Fracciones, coeficientes binomiales y estilos matemáticos.
 weight: 50
 url: /java/latex-math-fractions-binomial-styles/
-keywords: látex, fórmulas matemáticas de látex, matemáticas de látex, fracciones matemáticas de látex, coeficientes binomiales matemáticos de látex, estilos matemáticos de látex
+keywords: LaTeX, fórmulas matemáticas de LaTeX, matemáticas de LaTeX, fracciones matemáticas de LaTeX, coeficientes binomiales matemáticos de LaTeX, estilos matemáticos de LaTeX
 description: Aprenda a componer construcciones matemáticas como fracciones, coeficientes binomiales y estilos en los que TeX escribe fórmulas.
 lastmod: "2024-10-30"
 ---

@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-title: LaTeX-E/A | Aspose.TeX für .NET
-linktitle: LaTeX-Eingabe/Ausgabe
+title: LaTeX-Eingabe/Ausgabe
+linktitle: LaTeX-E/A
 weight: 17
 url: /net/latex-io/
 description: Hier werden die Besonderheiten der Arbeit mit LaTeX als Ausgabe- bzw. Eingabeformat und der *.aux*-Datei als zwingender Bestandteil von LaTeX beschrieben.

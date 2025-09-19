@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: Symboles dans les formules mathématiques
-title: 9. Symbole en LaTeX | Manuel LaTeX
+linktitle: Symbole en LaTeX 
+title: 9. Symboles dans les formules mathématiques
 weight: 90
 url: /java/latex-math-symbols/
 keywords: ams-latex, amsmath, amsfonts, amssymb, cours de symboles mathématiques en latex, paquet stmaryrd, police st mary road, symbole latex, symboles latex

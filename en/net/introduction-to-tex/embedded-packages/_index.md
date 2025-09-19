@@ -1,7 +1,7 @@
 ---
 translation: true
 template: /templates/_template-net.md
-title: Aspose.TeX embedded LaTeX packages
+title: Aspose.TeX embedded LaTeX packages 
 linktitle: Embedded LaTeX packages
 weight: 20
 url: /net/embedded-packages/

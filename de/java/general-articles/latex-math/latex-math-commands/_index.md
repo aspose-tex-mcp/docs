@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: 3. LaTeX-Befehle
-title: LaTeX-Befehle | LaTeX-Handbuch
+linktitle: LaTeX-Befehle
+title: 3. LaTeX-Befehle 
 weight: 30
 url: /java/latex-math-commands/
 keywords: Latex, Latex-Mathe-Formeln, Latex-Mathe, Latex-Mathe-Befehle, Latex-Quadratwurzel, Latex-Mathe-Unterstreichung, Latex-Mathe-Überstreichung

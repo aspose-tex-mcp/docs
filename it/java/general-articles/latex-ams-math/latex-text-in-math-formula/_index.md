@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: Testo nelle formule matematiche
-title: 6. Testo nelle formule matematiche | Manuale in LaTeX
+title: 6. Testo nelle formule matematiche
 weight: 60
 url: /java/latex-text-in-math-formula/
 keywords: AMS-Latex, Amsmath, Operatori di matematica in LaTeX, Funzioni matematiche in LaTeX, Testo di matematica in LaTeX

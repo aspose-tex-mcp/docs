@@ -2,10 +2,10 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: Símbolos decorados y estructuras compuestas.
-title: 4. Símbolos decorados y estructuras compuestas | LaTeX
+title: 4. Símbolos decorados y estructuras compuestas
 weight: 40
 url: /java/latex-math-decorations/
-keywords: ams-latex, amsmath, amsxtra, integrales de látex, fracciones de látex, decoraciones de látex, flechas de látex, límites de látex, relaciones modulares de látex
+keywords: ams-latex, amsmath, amsxtra, integrales de LaTeX, fracciones de LaTeX, decoraciones de LaTeX, flechas de LaTeX, límites de LaTeX, relaciones modulares de LaTeX
 description: Este artículo analiza una serie de comandos que producen varias estructuras matemáticas de tamaño mediano utilizando el paquete amsmath.
 lastmod: "2024-10-30"
 ---

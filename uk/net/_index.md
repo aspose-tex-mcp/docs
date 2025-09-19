@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-linktitle: Документація по Aspose.TeX для .NET
-title: Рішення Aspose.TeX для .NET API
+linktitle: Aspose.TeX для .NET
+title: Документація по Aspose.TeX для .NET
 weight: 10
 url: /net/
 description: Керуйте файлами TeX у рішенні API для C# .NET. Бібліотека надає способи передавати вхідні дані TeX і отримувати вихідні дані та додаткові функції.
@@ -22,7 +22,7 @@ Aspose.TeX — це бібліотека .NET для набору файлів T
 
 {{% /alert %}}
 
-## Aspose.TeX для ресурсів .NET
+## Aspose.TeX для .NET ресурси
 
 Нижче наведено посилання на деякі корисні ресурси, які можуть знадобитися для виконання ваших завдань.
 
@@ -30,10 +30,10 @@ Aspose.TeX — це бібліотека .NET для набору файлів T
 - [Функції Aspose.TeX для .NET](/tex/{{lang.url-fragment}}net/feature-list/)
 - [Примітки до випуску Aspose.TeX для .NET](https://releases.aspose.com/tex/net/release-notes/)
 - [Сторінка продукту Aspose.TeX для .NET](https://products.aspose.com/tex/net/)
-- [Встановити Aspose.TeX для пакета .NET NuGet](https://www.nuget.org/packages/Aspose.TeX/)
+- [Встановити Aspose.TeX для .NET NuGet пакет](https://www.nuget.org/packages/Aspose.TeX/)
 - [Довідковий посібник з Aspose.TeX для .NET API](https://reference.aspose.com/tex/net/)
 - [Форум безкоштовної підтримки Aspose.TeX для .NET](https://forum.aspose.com/c/tex/)
-- [Служба підтримки платної підтримки Aspose.TeX для .NET](https://helpdesk.aspose.com/)
+- [Служба платної підтримки Aspose.TeX для .NET](https://helpdesk.aspose.com/)
 
 {{% alert color="primary" %}}
 

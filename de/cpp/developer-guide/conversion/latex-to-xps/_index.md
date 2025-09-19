@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-cpp.md
-title: LaTeX zu XPS | Aspose.TeX für C++
+title: LaTeX zu XPS | C++
 linktitle: LaTeX zu XPS
 weight: 12
 url: /cpp/latex-to-xps/

@@ -1,12 +1,12 @@
 ﻿---
 translation: true
 template: /templates/_template-python-net.md
-title: Látex para pdf | Aspose.TeX para Python
+title: Látex para pdf | Python via .NET
 linktitle: Látex para pdf
 weight: 11
 url: /python-net/latex-to-pdf/
 keywords: LATEX para PDF, LATEX PDF, Converta LATEX em PDF
-description: Aprenda a converter Tex para PDF usando a solução API ASPOPE.TEX para Python com este artigo, que fornece uma explicação detalhada e exemplos de código.
+description: Aprenda a converter Tex para PDF usando a solução API Aspose.TeX para Python com este artigo, que fornece uma explicação detalhada e exemplos de código.
 lastmod: "2025-06-16"
 ---
 

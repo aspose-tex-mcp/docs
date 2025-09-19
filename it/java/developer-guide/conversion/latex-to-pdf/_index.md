@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-title: LaTeX a pdf | Aspose.TeX per java
-linktitle: LaTeX a pdf
+title: LaTeX a PDF | Java
+linktitle: LaTeX a PDF
 weight: 11
 url: /java/latex-to-pdf/
 keywords: LaTeX a PDF, PDF in LaTeX, convertite in LaTeX in PDF

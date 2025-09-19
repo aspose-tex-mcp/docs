@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-title: Rendern von LaTeX-Matheformeln | .NET
+title: Rendern von LaTeX-Matheformeln | Aspose.TeX für .NET
 linktitle: Rendern von LaTeX-Matheformeln
 weight: 10
 url: /net/latex-math-formula-rendering/

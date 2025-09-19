@@ -1,11 +1,11 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: 2. Características de la fuente
-title: Características de la fuente | API para Java
+linktitle: Características de la fuente
+title: 2. Características de la fuente
 weight: 20
 url: /java/latex-font-attributes/
-keywords: látex, fuentes de látex, codificaciones de fuentes de látex, nfss
+keywords: LaTeX, fuentes de LaTeX, codificaciones de fuentes de LaTeX, nfss
 description: L'article couvre les classifications des sources LaTeX en fonction de leurs diverses caractéristiques et du concept de codification des sources LaTeX.
 lastmod: "2024-10-30"
 ---

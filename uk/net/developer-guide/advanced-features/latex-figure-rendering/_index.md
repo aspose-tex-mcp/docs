@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-title: Візуалізація фігур LaTeX | Aspose.TeX для .NET
+title: Візуалізація фігур LaTeX | .NET
 linktitle: LaTeX містить малюнок
 weight: 20
 url: /net/latex-figure-rendering/

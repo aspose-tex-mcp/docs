@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: 主张对布局的调整
-title: 7. 为布局进行调整|乳胶手册
+title: 7. 为布局进行调整
 weight: 70
 url: /java/latex-math-fine-tuning/
 keywords: AMS-LATEX，AMSMATH，乳胶数学间距，乳胶数学样式，乳胶数学分配器，乳胶数学括号，乳胶数学对齐

@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-python-net.md
-title: ラテックスからPDF | Python用のAspose.TeX
+title: ラテックスからPDF | .NET経由でPython用のAspose.TeX
 linktitle: ラテックスからPDF
 weight: 11
 url: /python-net/latex-to-pdf/

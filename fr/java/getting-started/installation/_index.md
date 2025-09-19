@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: Installation
-title: Installation-Aspose.TeX pour Java
+title: Installation | Aspose.TeX pour Java
 weight: 60
 url: /java/installation/
 description: La documentation de l'API Aspose.TeX pour Java peut être trouvée dans le package ZIP téléchargé ou obtenue à partir des projets Maven.

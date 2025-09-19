@@ -1,11 +1,11 @@
 ﻿---
 translation: true
 template: /templates/_template-conversion-cpp.md
-title: Látex a PDF | Solución API Aspose.TeX para C++
+title: Látex a PDF | C++
 linktitle: Látex a PDF
 weight: 11
 url: /cpp/latex-to-pdf/
-keywords: látex a pdf, látex pdf, convertir látex a pdf
+keywords: LaTeX a pdf, LaTeX pdf, convertir LaTeX a pdf
 description: Para convertir TeX a PDF usando la solución API Aspose.TeX para C++, lea este artículo para ver cómo se hace esto y los ejemplos de código.
 lastmod: "2024-10-30"
 ---

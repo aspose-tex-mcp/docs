@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: 10. 附录。数学符号和命令
-title: 附录。数学符号和命令|乳胶手册
+linktitle: 附录。数学符号和命令
+title: 10. 附录。数学符号和命令|乳胶手册
 weight: 100
 url: /java/latex-math-symbols-commands/
 keywords: 乳胶，乳胶数学公式，乳胶数学，乳胶数学符号，乳胶希腊字母，乳胶大运营商，乳胶数学关系，乳胶二进制操作，乳胶数学箭头

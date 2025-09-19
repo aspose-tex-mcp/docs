@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: АМС-латех
-title: 1. Знакомство с AMS-LATEX | Руководство по LaTeX
+linktitle: АМС-LaTeX
+title: 1. Знакомство с AMS-LATEX 
 weight: 10
 url: /java/introduction-to-ams-latex/
 keywords: ams-latex, amsmath, параметры amsmath, amsopn, amstext, amscd, amsthm, amsxtra, upref

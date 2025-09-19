@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-python-net.md
 linktitle: Installazione
-title: Installazione - Aspose.TeX per Python
+title: Installazione | Aspose.TeX per Python
 weight: 60
 url: /python-net/installation/
 description: La biblioteca Python per gli sviluppatori per elaborare i file tex (latex). Scopri come installare la soluzione API Aspose.TeX per Python.

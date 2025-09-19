@@ -1,11 +1,11 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: 7. Delimitadores
-title: Delimitadores | Manual de látex | Aspose.TeX
+linktitle: Delimitadores
+title: 7. Delimitadores
 weight: 70
 url: /java/latex-math-delimiters/
-keywords: látex, fórmulas matemáticas de látex, matemáticas de látex, delimitadores matemáticos de látex, llaves matemáticas de látex, corchetes matemáticos de látex, paréntesis matemáticos de látex
+keywords: LaTeX, fórmulas matemáticas de LaTeX, matemáticas de LaTeX, delimitadores matemáticos de LaTeX, llaves matemáticas de LaTeX, corchetes matemáticos de LaTeX, paréntesis matemáticos de LaTeX
 description: Este artículo analiza cómo dividir lógicamente fórmulas en subfórmulas con diferentes tipos de delimitadores.
 lastmod: "2024-10-30"
 ---

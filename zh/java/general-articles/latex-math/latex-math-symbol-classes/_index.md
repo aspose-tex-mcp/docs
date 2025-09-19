@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: 4. 数学公式中的不同字符
-title: 数学公式中不同字符的含义
+linktitle: 数学公式中的不同字符
+title: 4. 数学公式中不同字符的含义
 weight: 40
 url: /java/latex-math-symbol-classes/
 keywords: 乳胶，乳胶数学公式，乳胶数学，乳胶数学符号，乳胶数学变量，乳胶数学二进制操作，乳胶数学关系，乳胶数学口音

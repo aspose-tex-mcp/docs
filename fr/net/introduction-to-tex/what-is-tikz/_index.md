@@ -1,7 +1,7 @@
 ---
 translation: true
 template: /templates/_template-net.md
-title: Qu'est-ce que TikZ | Aspose.TeX .NET
+title: Qu'est-ce que TikZ 
 linktitle: Qu'est-ce que TikZ
 weight: 21
 url: /net/tikz-introduction/

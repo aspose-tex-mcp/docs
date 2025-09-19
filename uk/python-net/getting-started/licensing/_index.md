@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-python-net.md
 linktitle: Ліцензування
-title: Ліцензування - Aspose.TeX для Python
+title: Ліцензування | Aspose.TeX для Python через .NET
 weight: 70
 url: /python-net/licensing/
 description: Якщо ви використовуєте ліцензовану версію рішення Aspose.TeX API для Python, ви можете дізнатися тут, як застосувати ліцензію.

@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-cpp.md
-title: Aspose.TeX für C++ | API-Lösung
-linktitle: Aspose.TeX für C++-Dokumentation
+title: Aspose.TeX für C++ -Dokumentation
+linktitle: Aspose.TeX für C++
 weight: 30
 url: /cpp/
 description: API-Lösung zum Verwalten von TeX-Dateien für C++. Übergeben Sie TeX-Eingaben, erhalten Sie Ausgaben und erstellen Sie Ihr eigenes TeX-Format.
@@ -11,6 +11,7 @@ lastmod: "2024-09-26"
 ---
 
 {{<section overview>}}
+
 {{% alert color="primary" %}}
 
 <p><img src="/tex/icons/aspose_tex-for-cpp.png" alt="Aspose.TeX for C++ logo" width="128" height="128"></p>

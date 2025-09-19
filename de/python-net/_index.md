@@ -1,9 +1,9 @@
 ﻿---
 translation: true
 template: /templates/_template-python-net.md
-linktitle: Aspose.TeX für Python-Dokumentation
-title: Aspose.TeX für Python-API-Lösung
-weight: 10
+linktitle: Aspose.TeX für Python über .NET
+title: Aspose.TeX für Python-Dokumentation
+weight: 40
 url: /python-net/
 description: API-Lösung zum Verwalten von TeX-Dateien für Python. Übergeben Sie TeX-Eingaben, erhalten Sie Ausgaben und erstellen Sie Ihr eigenes TeX-Format.
 is_root: true

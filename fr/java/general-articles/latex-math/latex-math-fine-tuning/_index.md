@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: 8. Affiner les formules mathématiques
-title: Affiner les formules mathématiques | Manuel LaTeX
+linktitle: Affiner les formules mathématiques
+title: 8. Affiner les formules mathématiques
 weight: 80
 url: /java/latex-math-fine-points/
 keywords: latex, formules mathématiques au latex, mathématiques au latex, réglage fin des mathématiques au latex, ponctuation mathématique au latex, opérateurs mathématiques au latex, styles de polices mathématiques au latex, espacement mathématique au latex, saut de ligne mathématique au latex, matrices mathématiques au latex

@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-title: Aspose.TeX para la solución API de Java
-linktitle: Documentación de Aspose.TeX para Java
+title: Documentación de Aspose.TeX para Java
+linktitle: Aspose.TeX para Java
 weight: 20
 url: /java/
 description: Solución API para gestionar archivos TeX para Java. Transfiera datos de entrada y obtenga resultados de TeX, y cree su propio formato TeX.
@@ -30,7 +30,7 @@ A continuación se encuentran los enlaces a algunos recursos útiles que puede n
 - [Características de Aspose.TeX para Java](/tex/{{lang.url-fragment}}java/feature-list/)
 - [Notas de la versión de Aspose.TeX para Java](https://releases.aspose.com/tex/java/release-notes/)
 - [Descargar Aspose.TeX para Java](https://releases.aspose.com/tex/java/)
-- [Aspose.TeX para el repositorio Java Maven](https://releases.aspose.com/java/repo/com/aspose/aspose-tex/)
+- [Aspose.TeX para Java el repositorio Maven](https://releases.aspose.com/java/repo/com/aspose/aspose-tex/)
 - [Página del producto Aspose.TeX para Java](https://products.aspose.com/tex/java/)
 - [Guía de referencia de la API de Aspose.TeX para Java](https://reference.aspose.com/tex/java)
 - [Foro de soporte gratuito de Aspose.TeX para Java](https://forum.aspose.com/c/tex)

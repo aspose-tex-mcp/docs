@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-title: 乳胶到XPS | Aspose.TeX for .NET
+title: 乳胶到XPS | .NET的Aspose.TeX
 linktitle: 乳胶到XPS
 weight: 12
 url: /net/latex-to-xps/

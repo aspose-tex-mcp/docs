@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: 7. Délimiteurs
-title: Délimiteurs | Manuel LaTeX | Aspose.TeX
+linktitle: Délimiteurs
+title: 7. Délimiteurs
 weight: 70
 url: /java/latex-math-delimiters/
 keywords: latex, formules mathématiques en latex, mathématiques en latex, délimiteurs mathématiques en latex, bretelles mathématiques en latex, supports mathématiques en latex, parenthèses mathématiques en latex

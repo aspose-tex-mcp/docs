@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: 矩阵和类似环境
-title: 3. 矩阵和类似环境|乳胶手册
+title: 3. 矩阵和类似环境
 weight: 30
 url: /java/latex-ams-matrix/
 keywords: AMS-LATEX，AMSMATH，AMSCD，乳胶矩阵，乳胶案例，乳胶delarray，乳胶交换图

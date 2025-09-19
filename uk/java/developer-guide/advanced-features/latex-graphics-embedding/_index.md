@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-title: Вбудована графіка LaTeX | API для Java
+title: Вбудована графіка LaTeX | Aspose.TeX для Java
 linktitle: Вбудована графіка LaTeX
 weight: 18
 url: /java/latex-graphics-embedding/

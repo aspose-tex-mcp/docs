@@ -2,10 +2,10 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: Matrix y entornos similares
-title: 3. Matrix y entornos similares | manual de látex
+title: 3. Matrix y entornos similares
 weight: 30
 url: /java/latex-ams-matrix/
-keywords: ams-latex, amsmath, amscd, matriz de látex, casos de látex, delarray de látex, diagramas conmutativos de látex
+keywords: ams-latex, amsmath, amscd, matriz de LaTeX, casos de LaTeX, delarray de LaTeX, diagramas conmutativos de LaTeX
 description: Este artículo proporciona una breve introducción a la composición tipográfica de estructuras tipo matriz LaTeX utilizando paquetes AMS-LATEX.
 lastmod: "2024-10-30"
 ---

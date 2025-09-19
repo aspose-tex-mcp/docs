@@ -1,11 +1,11 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: 7. Modelo para codificaciones de caracteres.
-title: Modelo de LaTeX para codificaciones de caracteres.
+linktitle: Modelo para codificaciones de caracteres
+title: 7. Modelo de LaTeX para codificaciones de caracteres.
 weight: 70
 url: /java/latex-encodings-model/
-keywords: látex, fuentes de látex, codificaciones de fuentes de látex, codificaciones de entrada de látex, codificaciones de salida de látex, objeto licr, representación de caracteres internos de látex
+keywords: LaTeX, fuentes de LaTeX, codificaciones de fuentes de LaTeX, codificaciones de entrada de LaTeX, codificaciones de salida de LaTeX, objeto licr, representación de caracteres internos de LaTeX
 description: Este artículo cubre los aspectos internos de las codificaciones de entrada y salida en LaTeX, así como la representación de caracteres internos de LaTeX.
 lastmod: "2024-10-30"
 ---

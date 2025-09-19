@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-python-net.md
-title: Иные методы предоставления входного файла TeX | Python
+title: Иные методы предоставления входного файла TeX | Python через .NET
 linktitle: Другие способы предоставления основного входного файла TeX
 weight: 14
 url: /python-net/other-ways-of-main-input/

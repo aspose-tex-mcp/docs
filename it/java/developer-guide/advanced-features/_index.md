@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-title: Caratteristiche avanzate | Aspose.TeX per java
+title: Caratteristiche avanzate | Aspose.TeX per Java
 linktitle: Caratteristiche avanzate
 weight: 20
 url: /java/advanced-features/

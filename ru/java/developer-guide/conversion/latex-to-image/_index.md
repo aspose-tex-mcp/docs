@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-title: LaTeX в изображение | Aspose.TeX для Java
+title: LaTeX в изображение | Java
 linktitle: LaTeX для изображения
 weight: 10
 url: /java/latex-to-image/

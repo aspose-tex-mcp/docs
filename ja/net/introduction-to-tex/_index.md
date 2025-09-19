@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-net.md
 linktitle: Texの紹介
-title: Texsの紹介| Aspose.TeX
+title: Texsの紹介| .NETのAspose.TeX
 weight: 10
 url: /net/introduction-to-tex/
 description: Texの基本的な用語と概念の説明。 Texは形式ですか、Texファイルの操作方法、LaTexとは何か、さらに多くの質問が答えられます。

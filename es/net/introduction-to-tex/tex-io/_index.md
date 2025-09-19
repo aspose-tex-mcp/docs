@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-title: E/S TeX | Solución API Aspose.TeX para .NET
-linktitle: E/S de texto
+title: E/S de TeX
+linktitle: E/S de TeX
 weight: 12
 url: /net/tex-io/
 description: Trabajar con TeX como formato de salida o entrada dentro de la API Aspose.TeX. El trabajo TeX se ejecuta en un archivo especificado explícitamente.

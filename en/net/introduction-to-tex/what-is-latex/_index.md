@@ -1,7 +1,7 @@
 ---
 translation: true
 template: /templates/_template-net.md
-title: What is LaTeX? | Aspose.TeX .NET
+title: What is LaTeX?
 linktitle: What is LaTeX?
 weight: 16
 url: /net/what-is-latex/

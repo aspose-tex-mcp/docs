@@ -1,7 +1,7 @@
 ---
 translation: true
 template: /templates/_template-java.md
-title: LaTeX math formulas rendering | Java
+title: LaTeX math formulas rendering | Aspose.TeX for Java
 linktitle: LaTeX math formulas rendering
 weight: 10
 url: /java/latex-math-formula-rendering/

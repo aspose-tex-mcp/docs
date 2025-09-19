@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: 1. Entrada e saída
-title: Codificações de entrada e saída | Aspose.TeX para java
+linktitle: Entrada e saída
+title: 1. Codificações de entrada e saída
 weight: 10
 url: /java/latex-font-encodings/
 keywords: LATEX, fontes de LaTeX, codificações de fontes de LaTeX, NFSS

@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-conversion-cpp.md
-title: 乳胶到图像| C ++的Aspose.TeX
+title: 乳胶到图像| C++的Aspose.TeX
 linktitle: 乳胶到图像
 weight: 10
 url: /cpp/latex-to-image/

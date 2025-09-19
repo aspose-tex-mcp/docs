@@ -1,7 +1,7 @@
 ---
 translation: true
 template: /templates/_template-python-net.md
-title: Advanced Features | Aspose.TeX for Python
+title: Advanced Features | Python via .NET
 linktitle: Advanced Features 
 weight: 20
 url: /python-net/advanced-features/

@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: Simboli estensibili e regolabili
-title: 5. Simboli estensibili e regolabili | Manuale in LaTeX
+title: 5. Simboli estensibili e regolabili
 weight: 50
 url: /java/latex-math-extensible-symbols/
 keywords: AMS-Latex, Amsmath, AMSXTRA, Operatori di matematica in LaTeX, delimitatori di matematica in LaTeX, parentesi di matematica in LaTeX, bretelle matematiche in LaTeX, accenti matematici in LaTeX

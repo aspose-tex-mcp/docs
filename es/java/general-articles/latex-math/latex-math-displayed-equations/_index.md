@@ -1,11 +1,11 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: 9. Ecuaciones mostradas
-title: Ecuaciones mostradas | manual de látex
+linktitle: Ecuaciones mostradas
+title: 9. Ecuaciones mostradas
 weight: 90
 url: /java/latex-math-displayed-equations/
-keywords: látex, fórmulas matemáticas de látex, matemáticas de látex, fórmula mostrada de matemáticas de látex, ecuación mostrada de matemáticas de látex, matriz de ecuaciones matemáticas de látex, alineación mostrada de matemáticas de látex
+keywords: LaTeX, fórmulas matemáticas de LaTeX, matemáticas de LaTeX, fórmula mostrada de matemáticas de LaTeX, ecuación mostrada de matemáticas de LaTeX, matriz de ecuaciones matemáticas de LaTeX, alineación mostrada de matemáticas de LaTeX
 description: Conozca la forma de mostrar fórmulas matemáticas de gran tamaño o una gran cantidad de fórmulas utilizando comandos proporcionados por LaTeX.
 lastmod: "2024-10-30"
 ---

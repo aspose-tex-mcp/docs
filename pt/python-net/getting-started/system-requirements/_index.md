@@ -5,7 +5,7 @@ title: Requisitos do sistema | Aspose.TeX python
 linktitle: Requisitos do sistema
 weight: 50
 url: /python-net/system-requirements/
-description: Biblioteca Python para os desenvolvedores processar arquivos TEX (LATEX). Aprenda os requisitos do sistema para começar a usar a solução API ASPOPE.TEX para Python.
+description: Biblioteca Python para os desenvolvedores processar arquivos TEX (LATEX). Aprenda os requisitos do sistema para começar a usar a solução API Aspose.TeX para Python.
 lastmod: "2025-06-16"
 ---
 

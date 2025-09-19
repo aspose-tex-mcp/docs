@@ -1,8 +1,8 @@
 ---
 translation: true
 template: /templates/_template-java.md
-linktitle: 8. Fine-tuning mathematical formulas
-title: Fine-tuning mathematical formulas | LaTeX manual
+linktitle: Fine-tuning mathematical formulas
+title: 8. Fine-tuning mathematical formulas
 weight: 80
 url: /java/latex-math-fine-points/
 keywords: latex, latex math formulas, latex math, latex math fine-tuning, latex math punctuation, latex math operators, latex math font styles, latex math spacinf, latex math line breaking, latex math matrices

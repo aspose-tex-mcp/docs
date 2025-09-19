@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: Matrix and similar environments
-title: 3. Matrix and similar environments | LaTeX manual
+title: 3. Matrix and similar environments
 weight: 30
 url: /java/latex-ams-matrix/
 keywords: ams-latex, amsmath, amscd, latex matrix, latex cases, latex delarray, latex commutative diagrams

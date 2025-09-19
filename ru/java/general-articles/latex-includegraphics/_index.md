@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: Включить графику
-title: LaTeX включитьграфику | Aspose.TeX для Java
+linktitle: includegraphics
+title: LaTeX включитьграфику 
 weight: 10
 url: /java/latex-includegraphics/
 keywords: includegraphics latex, latex includegraphic, вставка изображений latex, latexgraphicx, латехная вставка изображения, пакет includegraphics latex, draw io latex, латехная ширина includegraphics, ширина includegraphics, латех масштаба фигуры

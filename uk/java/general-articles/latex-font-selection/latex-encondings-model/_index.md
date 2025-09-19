@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: 7. Модель для кодування символів
-title: Модель LaTeX для кодування символів
+linktitle: Модель для кодування символів
+title: 7. Модель LaTeX для кодування символів
 weight: 70
 url: /java/latex-encodings-model/
 keywords: латекс, латексні шрифти, латексні кодування шрифтів, латексні кодування введення, латексні вихідні кодування, об’єкт licr, латексне внутрішнє представлення символів

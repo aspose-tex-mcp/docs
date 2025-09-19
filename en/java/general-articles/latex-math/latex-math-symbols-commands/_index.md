@@ -1,8 +1,8 @@
 ---
 translation: true
 template: /templates/_template-java.md
-linktitle: 10. Appendix. Math symbols and commands
-title: Appendix. Math symbols and commands | LaTeX manual
+linktitle: Appendix. Math symbols and commands
+title: 10. Appendix. Math symbols and commands
 weight: 100
 url: /java/latex-math-symbols-commands/
 keywords: latex, latex math formulas, latex math, latex math symbols, latex greek letters, latex large operators, latex math relations, latex binary operations, latex math arrows

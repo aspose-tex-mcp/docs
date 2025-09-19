@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-title: 乳胶到PDF | 用于 Java 的 Aspose.TeX
+title: 乳胶到PDF | Java的Aspose.TeX
 linktitle: 乳胶到PDF
 weight: 11
 url: /java/latex-to-pdf/

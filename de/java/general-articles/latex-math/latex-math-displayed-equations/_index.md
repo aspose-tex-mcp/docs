@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: 9. Angezeigte Gleichungen
-title: Angezeigte Gleichungen | LaTeX-Handbuch
+linktitle: Angezeigte Gleichungen
+title: 9. Angezeigte Gleichungen
 weight: 90
 url: /java/latex-math-displayed-equations/
 keywords: Latex, Latex-Mathe-Formeln, Latex-Mathematik, angezeigte Latex-Mathe-Formel, angezeigte Latex-Mathe-Gleichung, Latex-Mathe-Gleichungsarray, angezeigte Latex-Mathe-Ausrichtung

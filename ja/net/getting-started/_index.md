@@ -1,7 +1,7 @@
 ---
 translation: true
 template: /templates/_template-net.md
-title: はじめに | .NET 用の Aspose.TeX
+title: はじめに | .NETのAspose.TeX
 linktitle: はじめに
 weight: 20
 url: /net/getting-started/

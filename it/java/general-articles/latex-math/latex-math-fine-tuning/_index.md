@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: 8. Formule matematiche a perfezionamento
-title: Formule matematiche di perfezionamento | Manuale in LaTeX
+linktitle: Formule matematiche a perfezionamento
+title: 8. Formule matematiche di perfezionamento 
 weight: 80
 url: /java/latex-math-fine-points/
 keywords: Formule di matematica in LaTeX, LaTeX, matematica in LaTeX, fine della matematica in LaTeX, punteggiatura matematica in LaTeX, operatori di matematica in LaTeX, stili di font matematica in LaTeX, LaTeX matema

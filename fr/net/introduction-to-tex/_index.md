@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-net.md
 linktitle: Introduction à TeX
-title: Introduction aux TeX | Aspose.TeX
+title: Introduction aux TeX | Aspose.TeX pour .NET
 weight: 10
 url: /net/introduction-to-tex/
 description: Termes et concepts de base de TeX. TeX est-il un format, comment travailler avec le fichier TeX, qu'est-ce que LaTeX et bien d'autres questions.

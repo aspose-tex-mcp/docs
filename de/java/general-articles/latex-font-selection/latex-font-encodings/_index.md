@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: 1. Eingabe und Ausgabe
-title: Eingabe- und Ausgabekodierungen
+linktitle: Eingabe und Ausgabe
+title: 1. Eingabe- und Ausgabekodierungen
 weight: 10
 url: /java/latex-font-encodings/
 keywords: Latex, Latex-Schriftarten, Latex-Schriftkodierungen, NFSS

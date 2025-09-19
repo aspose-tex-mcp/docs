@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-title: Tex I/O | Aspose.TeX API解决方案.NET
-linktitle: Tex I/O。
+title: Tex 输入/输出
+linktitle: Tex I/O
 weight: 12
 url: /net/tex-io/
 description: 与Tex合作作为Aspose.TeX API中的输出或输入格式的基本原理。 Tex作业在明确指定的文件上运行。

@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: 2. Características da fonte
-title: Características da fonte | Aspose.TeX para java
+linktitle: Características da fonte
+title: 2. Características da fonte
 weight: 20
 url: /java/latex-font-attributes/
 keywords: LATEX, fontes de LaTeX, codificações de fontes de LaTeX, NFSS

@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-title: TeX-E/A | Aspose.TeX API-Lösung für .NET
+title: TeX-Ausgabe/Eingabeformat
 linktitle: TeX-E/A
 weight: 12
 url: /net/tex-io/

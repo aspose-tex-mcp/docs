@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-python-net.md
-title: Asspose.Tex's Input Interface | Python
+title: Asspose.Tex's Input Interface | Python tramite .NET
 linktitle: Aspose.TeX's Input Interface
 weight: 15
 url: /python-net/aspose-tex-input/

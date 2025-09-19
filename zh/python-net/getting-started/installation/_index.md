@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-python-net.md
 linktitle: 安装
-title: 安装 -  python的aspose.tex
+title: 安装 | 通过 .NET 为 Python 提供 Aspose.TeX
 weight: 60
 url: /python-net/installation/
 description: Python库供开发人员处理Tex(乳胶)文件。了解如何为Python安装Aspose.TeX API解决方案。

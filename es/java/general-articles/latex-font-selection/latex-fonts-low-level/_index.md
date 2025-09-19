@@ -1,11 +1,11 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: 5. Interfaz de bajo nivel
-title: La interfaz de bajo nivel | API para Java
+linktitle: Interfaz de bajo nivel
+title: 5. La interfaz de bajo nivel
 weight: 50
 url: /java/latex-fonts-low-level/
-keywords: látex, fuentes de látex, sustitución de fuentes de látex, familias de fuentes de látex, series de fuentes de látex, formas de fuentes de látex
+keywords: LaTeX, fuentes de LaTeX, sustitución de fuentes de LaTeX, familias de fuentes de LaTeX, series de fuentes de LaTeX, formas de fuentes de LaTeX
 description: Este artículo cubre la interfaz de fuentes de bajo nivel LaTeX que se utiliza principalmente en las definiciones de comandos.
 lastmod: "2024-10-30"
 ---

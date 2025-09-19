@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: 8. Mathematische Formeln verfeinern
-title: Mathematische Formeln verfeinern | LaTeX-Handbuch
+linktitle: Mathematische Formeln verfeinern
+title: 8. Mathematische Formeln verfeinern 
 weight: 80
 url: /java/latex-math-fine-points/
 keywords: Latex, Latex-Mathe-Formeln, Latex-Mathe, Latex-Mathe-Feinabstimmung, Latex-Mathe-Interpunktion, Latex-Mathe-Operatoren, Latex-Mathe-Schriftstile, Latex-Mathe-Spacinf, Latex-Mathe-Zeilenumbruch, Latex-Mathe-Matrizen

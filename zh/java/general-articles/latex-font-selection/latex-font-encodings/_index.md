@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: 1. 输入和输出
-title: 输入和输出编码| 用于 Java 的 Aspose.TeX
+linktitle:  输入和输出
+title: 1. 输入和输出编码
 weight: 10
 url: /java/latex-font-encodings/
 keywords: 乳胶，乳胶字体，乳胶字体编码，NFSS

@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-cpp.md
-title: Requisiti di sistema | Aspose.TeX per C ++
+title: Requisiti di sistema | Aspose.TeX per C++
 linktitle: Requisiti di sistema
 weight: 50
 url: /cpp/system-requirements/

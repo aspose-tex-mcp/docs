@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-title: Встроенная графика LaTeX | API для Java
+title: Встроенная графика LaTeX | Java
 linktitle: Встроенная графика LaTeX
 weight: 18
 url: /java/latex-graphics-embedding/

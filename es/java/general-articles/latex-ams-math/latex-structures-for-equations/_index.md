@@ -2,10 +2,10 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: Visualización y alineación
-title: 2. Visualización y alineación de ecuaciones LaTeX | LaTeX
+title: 2. Visualización y alineación de ecuaciones LaTeX
 weight: 10
 url: /java/latex-structures-for-equations/
-keywords: ams-latex, amsmath, opciones de amsmath, alineación de ecuaciones de látex, leqno, eqno, fleqn, etiqueta de ecuación de látex, etiqueta de ecuación de látex, ecuaciones de alineación de látex
+keywords: ams-latex, amsmath, opciones de amsmath, alineación de ecuaciones de LaTeX, leqno, eqno, fleqn, etiqueta de ecuación de LaTeX, etiqueta de ecuación de LaTeX, ecuaciones de alineación de LaTeX
 description: Esta es una introducción a la composición tipográfica de ecuaciones LaTeX con paquetes AMS-LATEX y proporciona algunos ejemplos y sus explicaciones.
 lastmod: "2024-10-30"
 ---

@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-title: 产品概述| Aspose.TeX for .NET
+title: 产品概述| .NET的Aspose.TeX
 linktitle: 产品概述
 weight: 10
 url: /net/product-overview/

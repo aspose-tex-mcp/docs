@@ -1,9 +1,9 @@
 ﻿---
 translation: true
 template: /templates/_template-python-net.md
-linktitle: Aspose.TeX pour la documentation Python
-title: Aspose.TeX pour la solution API Python
-weight: 10
+linktitle: Aspose.TeX pour Python via .NET
+title: Aspose.TeX pour Python la documentation
+weight: 40
 url: /python-net/
 description: Solution API pour la gestion des fichiers TeX pour Python. Transmettez l'entrée TeX et obtenez la sortie, et créez votre propre format TeX.
 is_root: true
@@ -29,11 +29,11 @@ Libérez votre créativité avec l'API intuitive d'Aspose.TeX, parfaitement int�
 
 Voici les liens vers quelques ressources utiles dont vous pourriez avoir besoin pour accomplir vos tâches.
 
-- [Aspose.TeX pour la documentation en ligne Python](/tex/{{lang.url-fragment}}python-net/)
-- [Aspose.TeX pour les fonctionnalités Python](/tex/{{lang.url-fragment}}python-net/feature-list/)
+- [Aspose.TeX pour Python la documentation en ligne](/tex/{{lang.url-fragment}}python-net/)
+- [Aspose.TeX pour Python les fonctionnalités](/tex/{{lang.url-fragment}}python-net/feature-list/)
 - [Notes de version d'Aspose.TeX pour Python](https://releases.aspose.com/tex/python-net/release-notes/)
 - [Page produit Aspose.TeX pour Python](https://products.aspose.com/tex/python-net/)
--[Installer Aspose.TeX pour les packages Python Wheel](https://pypi.org/project/aspose-tex-net/)
+-[Installer Aspose.TeX pour Python  les packages Wheel](https://pypi.org/project/aspose-tex-net/)
 - [Guide de référence de l'API Aspose.TeX pour Python](https://reference.aspose.com/tex/python-net/)
 - [Forum de support gratuit Aspose.TeX pour Python](https://forum.aspose.com/c/tex/)
 - [Aspose.TeX pour Python Service d'assistance payant](https://helpdesk.aspose.com/)

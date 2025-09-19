@@ -1,8 +1,8 @@
 ---
 translation: true
 template: /templates/_template-java.md
-linktitle: 1. Simple formulas
-title: Simple formulas | LaTeX manual
+linktitle: Simple formulas
+title: 1. Simple formulas 
 weight: 10
 url: /java/latex-math-simple-formulas/
 keywords: latex, latex math formulas, latex math, latex math letters, latex greek letters, latex numbers

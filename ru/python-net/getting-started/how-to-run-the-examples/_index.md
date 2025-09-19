@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-python-net.md
 linktitle: Как запускать примеры
-title: Как запускать примеры | Aspose.TeX для Python
+title: Как запускать примеры | Python через .NET
 weight: 80
 url: /python-net/how-to-run-the-examples/
 description: На этой странице представлены все необходимые требования и шаги для запуска примеров решения Aspose.TeX для Python.

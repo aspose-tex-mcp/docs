@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: 9。表示された方程式
-title: 表示された方程式|ラテックスマニュアル
+linktitle: 表示された方程式
+title: 9。表示された方程式|ラテックスマニュアル
 weight: 90
 url: /java/latex-math-displayed-equations/
 keywords: ラテックス、ラテックス数学式、ラテックス数学、ラテックス数学表示式、ラテックス数学表示方程式、ラテックス数学方程式アレイ、ラテックス数学表示アライメント

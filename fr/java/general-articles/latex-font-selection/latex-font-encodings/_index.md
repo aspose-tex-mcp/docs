@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: 1. Entrée et sortie
-title: Encodages d'entrée et de sortie
+linktitle: Entrée et sortie
+title: 1. Encodages d'entrée et de sortie
 weight: 10
 url: /java/latex-font-encodings/
 keywords: latex, polices latex, encodages de polices latex, nfss

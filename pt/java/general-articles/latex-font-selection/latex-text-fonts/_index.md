@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: Fontes de texto de LaTeX
-title: 3. Como usar fontes de LaTeX no texto
+linktitle: 3. Fontes de texto de LaTeX
+title: Como usar fontes de LaTeX no texto
 weight: 30
 url: /java/latex-text-fonts/
 keywords: LATEX, fontes de LaTeX, comandos de fontes de texto LaTeX, LaTeX grande, tamanho da fonte de LaTeX

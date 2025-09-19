@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-title: ラテックスからPDF | .netのAspose.TeX
+title: ラテックスからPDF | .NET
 linktitle: ラテックスからPDF
 weight: 11
 url: /net/latex-to-pdf/

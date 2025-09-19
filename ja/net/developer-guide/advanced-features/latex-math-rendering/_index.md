@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-title: ラテックス数学式レンダリング| 。ネット
+title: ラテックス数学式レンダリング| .NET
 linktitle: ラテックス数学式レンダリング
 weight: 10
 url: /net/latex-math-formula-rendering/

@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-title: Graphics de LaTeX | \ Incluir comando GRAPHICS
+title: Graphics de LaTeX | \incluirgraphics comando
 linktitle: Incluir LATEXGRAPHICS
 weight: 18
 url: /net/latex-graphics/

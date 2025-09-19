@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: 5 frações, coeficientes binomiais e estilos de matemática
-title: Frações, coeficientes binomiais e estilos de matemática
+linktitle: Frações, coeficientes binomiais e estilos de matemática
+title: 5. Frações, coeficientes binomiais e estilos de matemática
 weight: 50
 url: /java/latex-math-fractions-binomial-styles/
 keywords: LATEX, fórmulas de matemática de LaTeX, matemática de LaTeX, frações matemáticas de LaTeX, coeficientes binomiais matemáticos de LaTeX, estilos de matemática de LaTeX

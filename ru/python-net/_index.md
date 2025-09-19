@@ -2,8 +2,8 @@
 translation: true
 template: /templates/_template-python-net.md
 linktitle: Документация Aspose.TeX для Python
-title: Aspose.TeX для API-решения Python
-weight: 10
+title: Aspose.TeX для Python через .NET
+weight: 40
 url: /python-net/
 description: API-решение для управления файлами TeX для Python. Передавайте входные данные TeX и получайте выходные данные, а также создавайте собственный формат TeX.
 is_root: true
@@ -29,14 +29,14 @@ Aspose.TeX — это библиотека Python, созданная для у�
 
 Вот ссылки на некоторые полезные ресурсы, которые могут вам понадобиться для выполнения ваших задач.
 
-- [Онлайн-документация Aspose.TeX для Python](/tex/{{lang.url-fragment}}python-net/)
-- [Aspose.TeX для функций Python](/tex/{{lang.url-fragment}}python-net/feature-list/)
-- [Примечания к выпуску Aspose.TeX для Python](https://releases.aspose.com/tex/python-net/release-notes/)
+- [Онлайн-документация по Aspose.TeX для Python](/tex/{{lang.url-fragment}}python-net/)
+- [Функции Aspose.TeX для Python](/tex/{{lang.url-fragment}}python-net/feature-list/)
+- [Заметки о выпуске Aspose.TeX для Python](https://releases.aspose.com/tex/python-net/release-notes/)
 - [Страница продукта Aspose.TeX для Python](https://products.aspose.com/tex/python-net/)
-- [Установить Aspose.TeX для пакетов Python Wheel](https://pypi.org/project/aspose-tex-net/)
-- [Справочное руководство по Aspose.TeX для Python API](https://reference.aspose.com/tex/python-net/)
-- [Форум бесплатной поддержки Aspose.TeX для Python](https://forum.aspose.com/c/tex/)
-- [Aspose.TeX для службы поддержки платной поддержки Python](https://helpdesk.aspose.com/)
+- [Установка пакетов Aspose.TeX для Python Wheel](https://pypi.org/project/aspose-tex-net/)
+- [Справочник по API Aspose.TeX для Python Руководство](https://reference.aspose.com/tex/python-net/)
+- [Бесплатный форум поддержки Aspose.TeX для Python](https://forum.aspose.com/c/tex/)
+- [Платная служба поддержки Aspose.TeX для Python](https://helpdesk.aspose.com/)
 
 {{% alert color="primary" %}}
 

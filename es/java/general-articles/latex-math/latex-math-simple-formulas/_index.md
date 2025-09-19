@@ -1,11 +1,11 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: 1. Fórmulas simples
-title: Fórmulas simples | manual de látex
+linktitle: Fórmulas simples
+title: 1. Fórmulas simples
 weight: 10
 url: /java/latex-math-simple-formulas/
-keywords: látex, fórmulas matemáticas de látex, matemáticas de látex, letras matemáticas de látex, letras griegas de látex, números de látex
+keywords: LaTeX, fórmulas matemáticas de LaTeX, matemáticas de LaTeX, letras matemáticas de LaTeX, letras griegas de LaTeX, números de LaTeX
 description: Este artículo analiza cómo crear expresiones matemáticas atómicas simples para fórmulas más complejas con TeX y LaTeX.
 lastmod: "2024-10-30"
 ---

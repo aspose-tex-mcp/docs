@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-cpp.md
-title: Recursos avançados | Aspose.TeX para C ++
+title: Recursos avançados | Aspose.TeX para C++
 linktitle: Recursos avançados
 weight: 20
 url: /cpp/advanced-features/

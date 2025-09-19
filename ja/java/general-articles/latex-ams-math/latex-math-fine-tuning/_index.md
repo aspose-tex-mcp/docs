@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: レイアウトの調整を提示します
-title: 7.レイアウトの調整を推進|ラテックスマニュアル
+title: 7.レイアウトの調整を推進
 weight: 70
 url: /java/latex-math-fine-tuning/
 keywords: AMS-Latex、AMSMATH、LATEX MATH SPACING、LATEX MATH STYLES、LATEX MATH DELIMITERS、LATEX MATH PARENTES、LATEX MATH ALIGNMENT

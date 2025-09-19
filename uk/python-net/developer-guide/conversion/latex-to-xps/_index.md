@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-python-net.md
-title: LaTeX до XPS | Aspose.TeX для Python
+title: LaTeX до XPS | Python через .NET
 linktitle: LaTeX до XPS
 weight: 12
 url: /python-net/latex-to-xps/

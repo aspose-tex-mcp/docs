@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-python-net.md
-title: ラテックス数学式レンダリング| Python
+title: ラテックス数学式レンダリング| .NET経由でPython用のAspose.TeX
 linktitle: ラテックス数学式レンダリング
 weight: 10
 url: /python-net/latex-math-formula-rendering/

@@ -5,7 +5,7 @@ linktitle: Paquetes LaTeX de AMS
 title: Construyendo matemáticas con los paquetes LaTeX de AMS
 weight: 40
 url: /java/what-is-ams-latex/
-keywords: ams-latex, látex ams, matemáticas de látex, fórmula de látex, ams de látex, ecuación de látex, expresión matemática de látex
+keywords: ams-latex, LaTeX ams, matemáticas de LaTeX, fórmula de LaTeX, ams de LaTeX, ecuación de LaTeX, expresión matemática de LaTeX
 description: Este artículo arroja algo de luz sobre qué es AMS-LATEX y explica brevemente cuándo utilizar los paquetes proporcionados por AMS.
 lastmod: "2024-10-30"
 ---

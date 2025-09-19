@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: 7。デリミター
-title: デリミター|ラテックスマニュアル| Aspose.TeX
+linktitle: デリミター
+title: 7。デリミター|ラテックスマニュアル
 weight: 70
 url: /java/latex-math-delimiters/
 keywords: ラテックス、ラテックス数学フォーミュラ、ラテックス数学、ラテックス数学デリミター、ラテックス数学ブレース、ラテックス数学ブラケット、ラテックス数学の括弧、

@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: 5. Low-Level-Schnittstelle
-title: Die Low-Level-Schnittstelle | Aspose.TeX für Java
+linktitle: Low-Level-Schnittstelle
+title: 5. Die Low-Level-Schnittstelle
 weight: 50
 url: /java/latex-fonts-low-level/
 keywords: Latex, Latex-Schriftarten, Latex-Schriftersatz, Latex-Schriftfamilien, Latex-Schriftserien, Latex-Schriftformen

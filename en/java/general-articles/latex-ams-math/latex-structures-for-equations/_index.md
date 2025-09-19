@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: Latex equation align and display
-title: 2. Display and alignment for LaTeX equations | LaTeX align *
+title: 2. Display and alignment for LaTeX equations
 weight: 10
 url: /java/latex-structures-for-equations/
 keywords: ams-latex, amsmath, amsmath options, latex equation alignment, leqno, eqno, fleqn, latex equation tag, latex equation label, latex align equations

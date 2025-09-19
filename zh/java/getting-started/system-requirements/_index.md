@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-title: 系统要求| 用于 Java 的 Aspose.TeX
+title: 系统要求| Java的Aspose.TeX
 linktitle: 系统要求
 weight: 50
 url: /java/system-requirements/

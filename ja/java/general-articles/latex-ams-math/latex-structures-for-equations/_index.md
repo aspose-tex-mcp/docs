@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: ラテックス方程式は調整され、表示されます
-title: 2。ラテックス方程式の表示とアライメント|ラテックスアライメント *
+title: 2。ラテックス方程式の表示とアライメント
 weight: 10
 url: /java/latex-structures-for-equations/
 keywords: AMS-Latex、AMSMATH、AMSMATHオプション、ラテックス方程式アライメント、LEQNO、EQNO、FLEQN、LATEX方程式タグ、ラテックス方程式ラベル、ラテックスアライン方程式

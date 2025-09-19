@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: 1. Прості формули
-title: Прості формули | Підручник з LaTeX
+linktitle: Прості формули
+title: 1. Прості формули
 weight: 10
 url: /java/latex-math-simple-formulas/
 keywords: латекс, латексні математичні формули, латексна математика, латексні математичні літери, латексні грецькі літери, латексні цифри

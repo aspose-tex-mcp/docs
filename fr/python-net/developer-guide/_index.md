@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-python-net.md
-title: Guide du développeur | Aspose.TeX pour Python via .NET
+title: Guide du développeur | Aspose.TeX pour Python
 linktitle: Guide du développeur
 weight: 30
 url: /python-net/developer-guide/

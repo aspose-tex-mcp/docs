@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: 3. So verwenden Sie LaTeX-Schriftarten in Texten
-title: So verwenden Sie LaTeX-Schriftarten in Texten
+linktitle: So verwenden Sie LaTeX-Schriftarten in Texten
+title: 3. So verwenden Sie LaTeX-Schriftarten in Texten
 weight: 30
 url: /java/latex-text-fonts/
 keywords: Latex, Latex-Schriftarten, Latex-Textschriftbefehle, Latex groß, Latex-Schriftgröße

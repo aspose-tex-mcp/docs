@@ -1,11 +1,11 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: 6. Grandes operadores
-title: Grandes operadores | manual de látex
+linktitle: Grandes operadores
+title: 6. Grandes operadores
 weight: 60
 url: /java/latex-math-large-operators/
-keywords: látex, fórmulas matemáticas de látex, matemáticas de látex, operadores grandes de matemáticas de látex, suma de látex, integral de látex
+keywords: LaTeX, fórmulas matemáticas de LaTeX, matemáticas de LaTeX, operadores grandes de matemáticas de LaTeX, suma de LaTeX, integral de LaTeX
 description: Este artículo analiza cómo crear fórmulas matemáticas que contengan operadores grandes, como suma e integración con TeX y LaTeX.
 lastmod: "2024-10-30"
 ---

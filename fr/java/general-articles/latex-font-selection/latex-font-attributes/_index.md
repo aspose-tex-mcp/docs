@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: 2. Caractéristiques des polices
-title: Caractéristiques de la police | API pour Java
+linktitle: Caractéristiques des polices
+title: 2. Caractéristiques de la police
 weight: 20
 url: /java/latex-font-attributes/
 keywords: latex, polices latex, encodages de polices latex, nfss

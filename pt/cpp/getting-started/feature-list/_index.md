@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-cpp.md
-title: Lista de recursos | Aspose.TeX para C ++
+title: Lista de recursos | Aspose.TeX para C++
 linktitle: Lista de recursos
 weight: 30
 url: /cpp/feature-list/

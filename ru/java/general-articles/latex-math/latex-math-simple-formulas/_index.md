@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: Простые формулы LaTeX
-title: 1. Простые формулы | Руководство по LaTeX
+linktitle: Простые формулы
+title: 1. Простые формулы LaTeX
 weight: 10
 url: /java/latex-math-simple-formulas/
 keywords: латех, математические формулы из латеха, математика из латеха, математические буквы из латеха, греческие буквы из латеха, цифры из латеха

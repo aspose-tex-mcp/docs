@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-title: Recursos avançados | Aspose.TeX para java
+title: Recursos avançados | Aspose.TeX para Java
 linktitle: Recursos avançados
 weight: 20
 url: /java/advanced-features/

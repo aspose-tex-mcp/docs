@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-title: Como configurar novas fontes | Aspose.TeX para java
-linktitle: 6. Como configurar novas fontes
+title: 6. Como configurar novas fontes
+linktitle: Como configurar novas fontes
 weight: 60
 url: /java/latex-fonts-setup/
 keywords: LaTeX, fontes de LaTeX, substituição de fontes de LaTeX, configuração de fontes de LaTeX

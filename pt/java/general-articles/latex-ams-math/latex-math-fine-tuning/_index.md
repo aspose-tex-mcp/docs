@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: Receba ajustes no layout
-title: 7. Presça os ajustes no layout | Manual de LaTeX
+title: 7. Presça os ajustes no layout
 weight: 70
 url: /java/latex-math-fine-tuning/
 keywords: AMS-Latex, Amsmath, espaçamento matemático de LaTeX, estilos de matemática de LaTeX, delimitadores de matemática de LaTeX, parênteses matemáticos de LaTeX, alinhamento de matemática de LaTeX

@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-title: 外部乳胶软件包|爪哇
+title: 外部乳胶软件包| Java的Aspose.TeX
 linktitle: 外部乳胶软件包
 weight: 30
 url: /java/external-latex-packages/

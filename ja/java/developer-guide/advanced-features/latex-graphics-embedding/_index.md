@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-title: ラテックス埋め込みグラフィックス| JavaのAPI
+title: ラテックス埋め込みグラフィックス| Java用のAspose.TeX
 linktitle: ラテックス埋め込みグラフィックス
 weight: 18
 url: /java/latex-graphics-embedding/

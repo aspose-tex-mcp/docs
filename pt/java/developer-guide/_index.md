@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-title: Guia do desenvolvedor | Aspose.TeX para java
+title: Guia do desenvolvedor | Aspose.TeX para Java
 linktitle: Guia do desenvolvedor
 weight: 20
 url: /java/developer-guide/

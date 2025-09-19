@@ -1,7 +1,7 @@
 ---
 translation: true
 template: /templates/_template-python-net.md
-title: 入门 | Aspose.TeX 用于 Python
+title: 入门 | 通过 .NET 为 Python 提供 Aspose.TeX
 linktitle: 入门
 weight: 20
 url: /python-net/getting-started/

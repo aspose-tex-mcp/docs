@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-python-net.md
-title: 支持的文件格式| Aspose.TeX for Python
+title: 支持的文件格式| 通过 .NET 为 Python 提供 Aspose.TeX
 linktitle: 支持的文件格式
 weight: 20
 url: /python-net/supported-file-formats/

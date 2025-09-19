@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-python-net.md
-title: 高级功能| Aspose.TeX for Python
+title: 高级功能| 通过 .NET 为 Python 提供 Aspose.TeX
 linktitle: 高级功能
 weight: 20
 url: /python-net/advanced-features/

@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: 5. Brüche, Binomialkoeffizienten und Mathematikstile
-title: Brüche, Binomialkoeffizienten und Mathematikstile
+linktitle: Brüche, Binomialkoeffizienten und Mathematikstile
+title: 5. Brüche, Binomialkoeffizienten und Mathematikstile
 weight: 50
 url: /java/latex-math-fractions-binomial-styles/
 keywords: Latex, Latex-Mathe-Formeln, Latex-Mathematik, Latex-Mathe-Brüche, Latex-Mathe-Binomialkoeffizienten, Latex-Mathe-Stile

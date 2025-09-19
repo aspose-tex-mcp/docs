@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: 6. Große Betreiber
-title: Große Betreiber | LaTeX-Handbuch
+linktitle: Große Betreiber
+title: 6. Große Betreiber
 weight: 60
 url: /java/latex-math-large-operators/
 keywords: Latex, Latex-Mathe-Formeln, Latex-Mathematik, große Latex-Mathe-Operatoren, Latex-Summe, Latex-Integral

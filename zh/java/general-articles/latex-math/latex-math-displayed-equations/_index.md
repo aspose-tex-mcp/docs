@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: 9. 显示的方程式
-title: 显示的方程式|乳胶手册
+linktitle:  显示的方程式
+title: 9. 显示的方程式|乳胶手册
 weight: 90
 url: /java/latex-math-displayed-equations/
 keywords: 乳胶，乳胶数学公式，乳胶数学，乳胶数学显示公式，乳胶数学显示方程，乳胶数学方程式阵列，乳胶数学显示对齐

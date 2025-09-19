@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: Licenze
-title: Licensing - Aspose.TeX per java
+title: Licensing | Aspose.TeX per Java
 weight: 70
 url: /java/licensing/
 description: Quando ti sei fermato sulla versione autorizzata della soluzione API Aspose.Tex per Java qui scopri come applicare la licenza.

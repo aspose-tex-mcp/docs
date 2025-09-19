@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-title: Latex i/o | Aspose.TeX per .NET
-linktitle: Input/output in LaTeX
+title: Input/output in LaTeX
+linktitle: LaTeX i/o 
 weight: 17
 url: /net/latex-io/
 description: Questa pagina descrive brevemente le peculiarità del lavoro con il LaTeX come output o formato di input e il file *.aux* come parte obbligatoria del LaTeX.

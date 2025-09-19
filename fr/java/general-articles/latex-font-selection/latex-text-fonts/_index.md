@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: 3. Comment utiliser les polices LaTeX dans le texte
-title: Comment utiliser les polices LaTeX dans le texte
+linktitle: Comment utiliser les polices LaTeX dans le texte
+title: 3. Comment utiliser les polices LaTeX dans le texte
 weight: 30
 url: /java/latex-text-fonts/
 keywords: latex, polices latex, commandes de police de texte latex, latex grand, taille de police latex

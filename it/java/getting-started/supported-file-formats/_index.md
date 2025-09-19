@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-title: Formati di file supportati | Aspose.TeX per java
+title: Formati di file supportati | Aspose.TeX per Java
 linktitle: Formati di file supportati
 weight: 20
 url: /java/supported-file-formats/

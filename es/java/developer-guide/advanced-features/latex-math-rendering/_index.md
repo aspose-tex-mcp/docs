@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-title: Representación de fórmulas matemáticas LaTeX | Java
+title: Representación de fórmulas matemáticas LaTeX | Aspose.TeX para Java
 linktitle: Representación de fórmulas matemáticas LaTeX
 weight: 10
 url: /java/latex-math-formula-rendering/

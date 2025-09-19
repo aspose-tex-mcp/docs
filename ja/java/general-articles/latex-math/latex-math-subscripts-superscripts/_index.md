@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: 2。添え字と添え字
-title: ラテックスの添え字と添え字|ラテックスマニュアル
+linktitle: 添え字と添え字
+title: 2。ラテックスの添え字と添え字|ラテックスマニュアル
 weight: 20
 url: /java/latex-math-subscripts-superscripts/
 keywords: ラテックス、ラテックス数学式、ラテックス数学、ラテックス数学サブスクリプト、ラテックス数学の補充、ラテックスプライム

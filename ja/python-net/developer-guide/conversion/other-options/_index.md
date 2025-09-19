@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-python-net.md
-title: TEXオプションの他の管理| Python
+title: TEXオプションの他の管理| .NET経由でPython用のAspose.TeX
 linktitle: その他のオプション
 weight: 17
 url: /python-net/other-options/

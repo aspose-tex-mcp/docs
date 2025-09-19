@@ -1,8 +1,8 @@
 ---
 translation: true
 template: /templates/_template-net.md
-linktitle: Aspose.TeX for .NET Documentation
-title: Aspose.TeX for .NET API Solution
+linktitle: Aspose.TeX for .NET
+title: Aspose.TeX for .NET Documentation
 weight: 10
 url: /net/
 description: Manage TeX files within API solution for C# .NET. The Library provides ways to pass TeX input and obtain output and advanced features.

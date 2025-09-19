@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: 10. Anhang. Mathematische Symbole und Befehle
-title: Anhang. Mathematische Symbole und Befehle | LaTeX-Handbuch
+linktitle: Anhang. Mathematische Symbole und Befehle
+title: 10. Anhang. Mathematische Symbole und Befehle
 weight: 100
 url: /java/latex-math-symbols-commands/
 keywords: Latex, Latex-Mathe-Formeln, Latex-Mathematik, Latex-Mathe-Symbole, griechische Latex-Buchstaben, große Latex-Operatoren, Latex-Mathe-Beziehungen, Latex-Binäroperationen, Latex-Mathe-Pfeile

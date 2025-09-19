@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-python-net.md
-title: 乳胶到图像| Aspose.TeX for Python
+title: 乳胶到图像| 通过 .NET 为 Python 提供 Aspose.TeX
 linktitle: 乳胶到图像
 weight: 10
 url: /python-net/latex-to-image/

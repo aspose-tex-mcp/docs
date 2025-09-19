@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: ラテックス数学フォント
-title: 8。数式のフォント|ラテックスフォント数学
+title: 8。数式のフォント
 weight: 80
 url: /java/latex-math-fonts/
 keywords: AMS-Latex、AMSMath、AMSFONTS、AMSSYMB、LATEX MATH FONTS、LATEX MATH ALPHABETS、LATEX BMパッケージ、ラテックスフォント、ラテックスフォント数学

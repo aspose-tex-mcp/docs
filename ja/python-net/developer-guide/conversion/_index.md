@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-python-net.md
-title: 変換機能| .net経由でpython用のAspose.TeX
+title: 変換機能| .NET経由でPython用のAspose.TeX
 linktitle: 変換
 weight: 10
 url: /python-net/conversion/

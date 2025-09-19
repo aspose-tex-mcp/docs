@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: Розширювані та регульовані символи
-title: 5. Розширювані та настроювані символи | Підручник з LaTeX
+title: 5. Розширювані та настроювані символи
 weight: 50
 url: /java/latex-math-extensible-symbols/
 keywords: ams-latex, amsmath, amsxtra, латексні математичні оператори, латексні математичні роздільники, латексні математичні дужки, латексні математичні дужки, латексні математичні акценти

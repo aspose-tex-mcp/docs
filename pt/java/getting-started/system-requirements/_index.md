@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-title: Requisitos do sistema | Aspose.TeX para java
+title: Requisitos do sistema | Aspose.TeX para Java
 linktitle: Requisitos do sistema
 weight: 50
 url: /java/system-requirements/

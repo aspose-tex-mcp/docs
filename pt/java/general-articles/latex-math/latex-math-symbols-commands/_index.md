@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: 10. Apêndice. Símbolos e comandos de matemática
-title: Apêndice. Símbolos e comandos de matemática | Manual de LaTeX
+linktitle: Apêndice. Símbolos e comandos de matemática
+title: 10. Apêndice. Símbolos e comandos de matemática
 weight: 100
 url: /java/latex-math-symbols-commands/
 keywords: LATEX, fórmulas de matemática de LaTeX, matemática de LaTeX, símbolos de matemática de LaTeX, letras gregas de LaTeX, grandes operadores de LaTeX, relações matemáticas de LaTeX, operações binárias de LaTeX, setas matemáticas de LaTeX

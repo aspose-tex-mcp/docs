@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: 7. Modèle pour les encodages de caractères
-title: Le modèle LaTeX pour les encodages de caractères
+linktitle: Modèle pour les encodages de caractères
+title: 7. Le modèle LaTeX pour les encodages de caractères
 weight: 70
 url: /java/latex-encodings-model/
 keywords: latex, polices latex, encodages de polices latex, encodages d'entrée latex, encodages de sortie latex, objet licr, représentation des caractères internes latex

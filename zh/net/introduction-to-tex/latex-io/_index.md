@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-title: 乳胶I/O | Aspose.TeX for .NET
+title: 乳胶I/O
 linktitle: 乳胶输入/输出
 weight: 17
 url: /net/latex-io/

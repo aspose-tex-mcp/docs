@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: LaTeX Tiefgestellt und tiefgestellt
-title: 2. LaTeX Index und Index | LaTeX-Handbuch
+linktitle: LaTeX tiefgestellte und hochgestellte
+title: 2. LaTeX tiefgestellte und hochgestellte
 weight: 20
 url: /java/latex-math-subscripts-superscripts/
 keywords: Latex, Latex-Mathe-Formeln, Latex-Mathematik, Latex-Mathe-Indizes, Latex-Mathe-Hochstellungen

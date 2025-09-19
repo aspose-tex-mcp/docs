@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-python-net.md
-title: Systemanforderungen | Aspose.TeX Python
+title: Systemanforderungen | Python über .NET
 linktitle: Systemanforderungen
 weight: 50
 url: /python-net/system-requirements/

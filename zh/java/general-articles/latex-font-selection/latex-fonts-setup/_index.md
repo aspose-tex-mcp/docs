@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-title: 如何设置新字体| 用于 Java 的 Aspose.TeX
-linktitle: 6. 如何设置新字体
+title: 6. 如何设置新字体
+linktitle: 如何设置新字体
 weight: 60
 url: /java/latex-fonts-setup/
 keywords: 乳胶，乳胶字体，乳胶字体替代，乳胶字体设置

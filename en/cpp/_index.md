@@ -1,8 +1,8 @@
 ---
 translation: true
 template: /templates/_template-cpp.md
-title: Aspose.TeX for C++ API Solution
-linktitle: Aspose.TeX for C++ Documentation
+title: Aspose.TeX for C++ Documentation
+linktitle: Aspose.TeX for C++ 
 weight: 30
 url: /cpp/
 description: Managing TeX files API solution for C++. The Library provides ways to pass TeX input and obtain output and features like creating your own TeX format.
@@ -37,6 +37,6 @@ Following are the links to some useful resources you may need to accomplish your
 
 {{% alert color="primary" %}}
 
-Also give a try to our new AI driven [**Aspose.TeX AI Agents**](https://products.aspose.ai/tex/)   -  tools useful for anyone who works with `.tex` and `.latex` formats.
+Also give a try to our new AI driven [**Aspose.TeX AI Agents**](https://products.aspose.ai/tex/) - tools useful for anyone who works with `.tex` and `.latex` formats.
 
 {{% /alert %}}

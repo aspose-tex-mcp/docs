@@ -1,9 +1,9 @@
 ﻿---
 translation: true
 template: /templates/_template-python-net.md
-linktitle: Aspose.TeX for python文档
-title: Aspose.TeX用于Python API溶液
-weight: 10
+linktitle: Python的Aspose.TeX
+title: 通过 .NET 使用 Aspose.TeX for Python
+weight: 40
 url: /python-net/
 description: 在Python的API解决方案中管理TEX文件。该库提供了通过Tex输入并获得输出和高级功能的各种方法。
 is_root: true
@@ -15,7 +15,7 @@ lastmod: "2025-06-10"
 
 {{% alert color="primary" %}}
 
-![Aspose.TeX for python徽标](/tex/icons/aspose_tex-for-python-net.png)
+![Aspose.TeX for Python徽标](/tex/icons/aspose_tex-for-python-net.png)
 
 **欢迎来到aspose.tex for Python**
 
@@ -29,14 +29,14 @@ Aspose.TeX是一个python库，可用于轻松排版Tex文件。它可以代表�
 
 这是指向完成任务可能需要的一些有用资源的链接。
 
-- [Aspose.TeX for python在线文档](/tex/{{lang.url-fragment}}python-net/)
-- [Aspose.TeX for python特征](/tex/{{lang.url-fragment}}python-net/feature-list/)
-- [Aspose.TeX for python发行说明](https://releases.aspose.com/tex/python-net/release-notes/)
-- [python产品页面Aspose.TeX](https://products.aspose.com/tex/python-net/)
-- [安装Aspose.TeX for Python wheel套件](https://pypi.org/project/aspose-tex-net/)
-- [python API参考指南的Aspose.TeX](https://reference.aspose.com/tex/python-net/)
-- [python免费支持论坛的Aspose.TeX](https://forum.aspose.com/c/tex/)
-- [Aspose.TeX for Python付费支持HELPESK](https://helpdesk.aspose.com/)
+- [Aspose.TeX for Python 在线文档](/tex/{{lang.url-fragment}}python-net/)
+- [Aspose.TeX for Python 功能](/tex/{{lang.url-fragment}}python-net/feature-list/)
+- [Aspose.TeX for Python 发行说明](https://releases.aspose.com/tex/python-net/release-notes/)
+- [Aspose.TeX for Python 产品页面](https://products.aspose.com/tex/python-net/)
+- [安装 Aspose.TeX for Python Wheel 软件包](https://pypi.org/project/aspose-tex-net/)
+- [Aspose.TeX for Python API 参考指南](https://reference.aspose.com/tex/python-net/)
+- [Aspose.TeX for Python 免费支持论坛](https://forum.aspose.com/c/tex/)
+- [Aspose.TeX for Python 付费支持帮助台](https://helpdesk.aspose.com/)
 
 {{% alert color="primary" %}}
 

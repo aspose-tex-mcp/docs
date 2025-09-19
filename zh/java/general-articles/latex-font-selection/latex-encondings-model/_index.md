@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: 字符编码的模型
-title: 7. 乳胶的字符编码模型
+linktitle: 7. 字符编码的模型
+title: 乳胶的字符编码模型
 weight: 70
 url: /java/latex-encodings-model/
 keywords: 乳胶，乳胶字体，乳胶字体编码，乳胶输入编码，乳胶输出编码，LICR对象，乳胶内部字符表示

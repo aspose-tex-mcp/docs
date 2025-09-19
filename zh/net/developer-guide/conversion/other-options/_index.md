@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-title: 其他管理Tex选项| .NET
+title: 其他管理Tex选项| .NET的Aspose.TeX
 linktitle: 其他选项
 weight: 17
 url: /net/other-options/

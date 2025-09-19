@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-python-net.md
-title: メインのTEX入力ファイルを提供する代替方法| Python
+title: メインのTEX入力ファイルを提供する代替方法| .NET経由でPython用のAspose.TeX
 linktitle: メインのTex入力ファイルを提供する他の方法
 weight: 14
 url: /python-net/other-ways-of-main-input/

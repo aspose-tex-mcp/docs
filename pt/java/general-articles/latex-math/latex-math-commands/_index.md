@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: 3. Comandos de LaTeX
-title: Comandos de LaTeX | Manual de LaTeX | Aspose.TeX para java
+linktitle:  Comandos de LaTeX
+title: 3. Comandos de LaTeX 
 weight: 30
 url: /java/latex-math-commands/
 keywords: Latex, fórmulas de matemática de LaTeX, matemática de LaTeX, comandos de matemática de LaTeX, raiz da praça de LaTeX, sublinhamento de matemática de LaTeX, latex matemática Overline

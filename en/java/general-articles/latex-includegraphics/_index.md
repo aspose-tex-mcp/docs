@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: Includegraphics
-title: LaTeX includegraphics | Aspose.TeX for Java
+title: LaTeX includegraphics 
 weight: 10
 url: /java/latex-includegraphics/
 keywords: includegraphics latex, latex includegraphic, insert images latex, latex graphicx, latex insert image, includegraphics latex package, draw io latex, latex includegraphics width, includegraphics width, figure scale latex

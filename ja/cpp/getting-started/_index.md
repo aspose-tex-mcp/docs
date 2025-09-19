@@ -1,7 +1,7 @@
 ---
 translation: true
 template: /templates/_template-cpp.md
-title: はじめに | Aspose.TeX for C++
+title: はじめに | C++のAspose.TeX
 linktitle: はじめに
 weight: 10
 url: /cpp/getting-started/

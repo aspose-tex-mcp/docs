@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: Матричні структури в LaTeX
-title: 3. Матричні та подібні середовища | Матриця LaTeX
+title: 3. Матричні та подібні середовища
 weight: 30
 url: /java/latex-ams-matrix/
 keywords: ams-latex, amsmath, amscd, латексна матриця, латексні кейси, latex delarray, комутативні діаграми латех

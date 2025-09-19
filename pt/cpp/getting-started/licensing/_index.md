@@ -1,11 +1,11 @@
 ﻿---
 translation: true
 template: /templates/_template-cpp.md
-title: Licenciamento - Aspose.TeX para C ++
+title: Licenciamento | Aspose.TeX para C++
 linktitle: Licenciamento
 weight: 70
 url: /cpp/licensing/
-description: Quando você parou na versão licenciada da solução API ASPOPE.TEX para C ++ aqui, você descobre como aplicar a licença.
+description: Quando você parou na versão licenciada da solução API Aspose.TeX para C ++ aqui, você descobre como aplicar a licença.
 lastmod: "2025-06-16"
 ---
 

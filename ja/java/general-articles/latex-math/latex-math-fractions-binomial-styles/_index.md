@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: 5。分数、二項係数、数学スタイル
-title: 画分、二項係数、数学スタイル
+linktitle: 分数、二項係数、数学スタイル
+title: 5。画分、二項係数、数学スタイル
 weight: 50
 url: /java/latex-math-fractions-binomial-styles/
 keywords: ラテックス、ラテックス数学式、ラテックス数学、ラテックス数学分数、ラテックス数学の二項係数、ラテックス数学スタイル

@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: 6. Grands opérateurs
-title: Grands opérateurs | Manuel LaTeX
+linktitle: Grands opérateurs
+title: 6. Grands opérateurs
 weight: 60
 url: /java/latex-math-large-operators/
 keywords: latex, formules mathématiques en latex, mathématiques en latex, grands opérateurs mathématiques en latex, somme en latex, intégrale en latex

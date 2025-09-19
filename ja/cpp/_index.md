@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-cpp.md
-title: C ++ APIソリューション用のAspose.TeX
-linktitle: C ++ドキュメント用のAspose.TeX
+title: Aspose.TeX 用 C++ ドキュメント
+linktitle: Aspose.TeX 用 C++
 weight: 30
 url: /cpp/
 description: C ++のTEXファイルAPIソリューションの管理。ライブラリは、TEX入力を渡し、出力と独自のTex形式の作成などの機能を取得する方法を提供します。
@@ -25,14 +25,15 @@ Aspose.TeXは、TEXファイルタイプセット用のC ++ライブラリです
 ## C ++リソース用のAspose.TeX
 
 以下は、タスクを達成するために必要ないくつかの有用なリソースへのリンクです。
-- [C ++オンラインドキュメントのためのAspose.TeX](/tex/{{lang.url-fragment}}cpp/)
-- [C ++機能のAspose.TeX](/tex/{{lang.url-fragment}}cpp/feature-list/)
-- [C ++リリースノートのAspose.TeX](https://releases.aspose.com/tex/cpp/release-notes/)
-- [C ++製品ページのAspose.TeX](https://products.aspose.com/tex/cpp/)
-- [c ++ nugetパッケージにAspose.TeXをインストール](https://www.nuget.org/packages/Aspose.TeX/)
-- [C ++ APIリファレンスガイドのAspose.TeX](https://reference.aspose.com/tex/cpp)
-- [C ++無料サポートフォーラム用のAspose.TeX](https://forum.aspose.com/c/tex)
-- [C ++有料サポートヘルプデスクのAspose.TeX](https://helpdesk.aspose.com/)
+
+- [Aspose.TeX 用 C++ オンラインドキュメント](/tex/{{lang.url-fragment}}cpp/)
+- [Aspose.TeX 用 C++ 機能](/tex/{{lang.url-fragment}}cpp/feature-list/)
+- [Aspose.TeX 用 C++ リリースノート](https://releases.aspose.com/tex/cpp/release-notes/)
+- [Aspose.TeX 用 C++ 製品ページ](https://products.aspose.com/tex/cpp/)
+- [Aspose.TeX 用 C++ NuGet パッケージのインストール](https://www.nuget.org/packages/Aspose.TeX/)
+- [Aspose.TeX 用 C++ API リファレンスガイド](https://reference.aspose.com/tex/cpp)
+- [Aspose.TeX 用 C++ 無料サポートフォーラム](https://forum.aspose.com/c/tex)
+- [Aspose.TeX 用 C++ 有料サポートヘルプデスク](https://helpdesk.aspose.com/)
 
 
 {{% alert color="primary" %}}

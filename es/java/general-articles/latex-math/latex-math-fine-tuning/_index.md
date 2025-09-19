@@ -1,11 +1,11 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: 8. Afinar fórmulas matemáticas
-title: Afinando fórmulas matemáticas | manual de látex
+linktitle: Afinar fórmulas matemáticas
+title:  8. Afinando fórmulas matemáticas
 weight: 80
 url: /java/latex-math-fine-points/
-keywords: látex, fórmulas matemáticas de látex, matemáticas de látex, ajuste fino de matemáticas de látex, puntuación matemática de látex, operadores matemáticos de látex, estilos de fuentes matemáticas de látex, espaciado matemático de látex, salto de línea matemática de látex, matrices matemáticas de látex
+keywords: LaTeX, fórmulas matemáticas de LaTeX, matemáticas de LaTeX, ajuste fino de matemáticas de LaTeX, puntuación matemática de LaTeX, operadores matemáticos de LaTeX, estilos de fuentes matemáticas de LaTeX, espaciado matemático de LaTeX, salto de línea matemática de LaTeX, matrices matemáticas de LaTeX
 description: Conozca los detalles de la mecanografía matemática, explicados con ejemplos que involucran varios objetos que puede encontrar en fórmulas matemáticas.
 lastmod: "2024-10-30"
 ---

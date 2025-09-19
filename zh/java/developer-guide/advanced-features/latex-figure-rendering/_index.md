@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-title: 乳胶图渲染| 用于 Java 的 Aspose.TeX
+title: 乳胶图渲染| Java的Aspose.TeX
 linktitle: 乳胶图渲染
 weight: 20
 url: /java/latex-figure-rendering/

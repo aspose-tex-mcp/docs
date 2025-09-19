@@ -1,11 +1,11 @@
 ﻿---
 translation: true
 template: /templates/_template-conversion-cpp.md
-title: LaTeX a la imagen | Aspose.TeX para C++
+title: LaTeX a la imagen | C++
 linktitle: LaTeX a imagen
 weight: 10
 url: /cpp/latex-to-image/
-keywords: látex a png, látex png, látex a imagen, imagen de látex, látex a jpg, látex jpg, látex a jpeg, látex jpeg, látex a tiff, látex tiff, látex a bmp, látex bmp
+keywords: LaTeX a png, LaTeX png, LaTeX a imagen, imagen de LaTeX, LaTeX a jpg, LaTeX jpg, LaTeX a jpeg, LaTeX jpeg, LaTeX a tiff, LaTeX tiff, LaTeX a bmp, LaTeX bmp
 description: Para convertir TeX a formatos de imagen utilizando la Aspose.TeX paraC++, lea este artículo que describe cómo hacerlo y los ejemplos de código.
 lastmod: 2023-03-23
 ---

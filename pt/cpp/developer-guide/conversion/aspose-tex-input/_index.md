@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-cpp.md
-title: Interface de entrada do Aspose.TeX | C ++
+title: Interface de entrada do Aspose.TeX | C++
 linktitle: Interface de entrada do Aspose.TeX
 weight: 15
 url: /cpp/aspose-tex-input/

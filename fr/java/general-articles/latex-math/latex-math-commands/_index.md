@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: 3. Commandes LaTeX
-title: Commandes LaTeX | Manuel LaTeX
+linktitle: Commandes LaTeX
+title: 3. Commandes LaTeX
 weight: 30
 url: /java/latex-math-commands/
 keywords: latex, formules mathématiques au latex, mathématiques au latex, commandes mathématiques au latex, racine carrée du latex, soulignement mathématique au latex, surlignement mathématique au latex

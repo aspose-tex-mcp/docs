@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: AMS-Latex
-title: 1。AMS-Latexの紹介|ラテックスマニュアル
+title: 1。AMS-Latexの紹介
 weight: 10
 url: /java/introduction-to-ams-latex/
 keywords: AMS-Latex、AMSMATH、AMSMATHオプション、AMSOPN、AMSTEXT、AMSCD、AMSTHM、AMSXTRA、UPREF

@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-title: Aspose.TeX for Java API Solution
-linktitle: Aspose.TeX para documentação Java
+title: Aspose.TeX para Java Documentação 
+linktitle: Aspose.TeX para Java
 weight: 20
 url: /java/
 description: Gerenciar arquivos TEX na solução da API para Java. A biblioteca fornece maneiras de passar a entrada Tex e obter saída e recursos como criar seu próprio formato Tex
@@ -22,19 +22,19 @@ Aspose.TeX é uma biblioteca Java para Tex Files Typeatting. Ele pode apresentar
 
 {{% /alert %}}
 
-## Aspose.TeX para recursos java
+## Aspose.TeX para Java recursos
 
 A seguir, estão os links para alguns recursos úteis necessários para realizar suas tarefas.
 
-- [Aspose.TeX para documentação online Java](/tex/{{lang.url-fragment}}java/)
-- [Aspose.TeX para recursos java](/tex/{{lang.url-fragment}}java/feature-list/)
-- [Aspose.TeX para notas de liberação de java](https://releases.aspose.com/tex/java/release-notes/)
-- [Download Aspose.TeX for java](https://releases.aspose.com/tex/java/)
-- [Aspose.TeX para o repositório Java Maven](https://releases.aspose.com/java/repo/com/aspose/aspose-tex/)
+- [Aspose.TeX para Java documentação online](/tex/{{lang.url-fragment}}java/)
+- [Aspose.TeX para Java recursos](/tex/{{lang.url-fragment}}java/feature-list/)
+- [Aspose.TeX para Java notas de liberação](https://releases.aspose.com/tex/java/release-notes/)
+- [Download Aspose.TeX for Java](https://releases.aspose.com/tex/java/)
+- [Aspose.TeX para Java o repositório Maven](https://releases.aspose.com/java/repo/com/aspose/aspose-tex/)
 - [Aspose.TeX para Java Página do produto](https://products.aspose.com/tex/java/)
-- [Aspose.TeX API Reference Guide for Java](https://reference.aspose.com/tex/java)
+- [Aspose.TeX para Java Guia de Referência API](https://reference.aspose.com/tex/java)
 - [Aspose.TeX para Java Fórum de suporte gratuito](https://forum.aspose.com/c/tex)
-- [Aspose.TeX para Java pagou suporte helpdesk](https://helpdesk.aspose.com/)
+- [Aspose.TeX para Java Pagou suporte helpdesk](https://helpdesk.aspose.com/)
 
 {{% alert color="primary" %}}
 

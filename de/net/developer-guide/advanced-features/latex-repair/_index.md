@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-title: LaTeX-Dateireparatur | API für .NET
+title: LaTeX-Dateireparatur | Aspose.TeX für .NET
 linktitle: Reparatur von LaTeX-Dateien
 weight: 30
 url: /net/latex-repair/

@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-python-net.md
-title: Lista de funciones | Aspose.TeX para Python
+title: Lista de funciones | Python a través de .NET
 linktitle: Lista de funciones
 weight: 30
 url: /python-net/feature-list/

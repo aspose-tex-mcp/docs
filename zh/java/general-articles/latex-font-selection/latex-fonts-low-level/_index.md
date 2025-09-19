@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: 5. 低级接口
-title: 低级接口| 用于 Java 的 Aspose.TeX
+linktitle: 低级接口
+title: 5. 低级接口
 weight: 50
 url: /java/latex-fonts-low-level/
 keywords: 乳胶，乳胶字体，乳胶字体替代，乳胶字体家庭，乳胶字体系列，乳胶字体形状

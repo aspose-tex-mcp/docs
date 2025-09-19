@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: 数式のテキスト
-title: 6。数式のテキスト|ラテックスマニュアル
+title: 6。数式のテキスト
 weight: 60
 url: /java/latex-text-in-math-formula/
 keywords: AMS-Latex、AMSMATH、LATEX MATH OPERATORS、LATEX MATH FUNCTIONS、LATEX MATH TEXT

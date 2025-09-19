@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: 8。微調整数学式
-title: 数学式の微調整|ラテックスマニュアル
+linktitle: 微調整数学式
+title: 8。数学式の微調整|ラテックスマニュアル
 weight: 80
 url: /java/latex-math-fine-points/
 keywords: ラテックス、ラテックス数学フォーミュラ、ラテックス数学、ラテックス数学微調整、ラテックス数学句読点、ラテックス数学オペレーター、ラテックス数学フォントスタイル、ラテックス数学スペイシンフ、ラテックス数学ラインブレイク、ラテックス数学マトリックス

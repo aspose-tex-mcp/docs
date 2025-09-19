@@ -1,8 +1,8 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-title: So richten Sie neue Schriftarten ein
-linktitle: 6. So richten Sie neue Schriftarten ein
+title: 6. So richten Sie neue Schriftarten ein
+linktitle: So richten Sie neue Schriftarten ein
 weight: 60
 url: /java/latex-fonts-setup/
 keywords: Latex, Latex-Schriftarten, Ersetzung von Latex-Schriftarten, Einrichtung von Latex-Schriftarten

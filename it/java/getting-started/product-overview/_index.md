@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-title: Panoramica del prodotto | Aspose.TeX per java
+title: Panoramica del prodotto | Aspose.TeX per Java
 linktitle: Panoramica del prodotto
 weight: 10
 url: /java/product-overview/
