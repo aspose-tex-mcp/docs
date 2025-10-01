@@ -52,7 +52,7 @@ Você também pode especificar o nome completo do arquivo usando um caminho abso
 \includegraphics{../img/sample-image.png} % relative to the directory containing the current one
 ```
 
-Outra maneira de especificar os arquivos gráficos Localização (s) é definir uma lista de caminhos alternativos usando o comando `\ graphicsPath`antes de ligar para `\incluirGraphics`:
+Outra maneira de especificar os arquivos gráficos Localização (s) é definir uma lista de caminhos alternativos usando o comando `\graphicsPath` antes de ligar para `\incluirGraphics`:
 
 ```tex
 \graphicspath{{d:/img}{c:/img}{d:/work/img}}
@@ -97,6 +97,7 @@ O pacote LATEX `graphicx` fornece a interface `key = value` para transformaçõe
 Você pode combinar qualquer uma das seguintes opções, mas lembre -se de que a ordem é importante.
 
 ### Viewport gráfico
+
 ```tex
 \includegraphics[viewport=10 10 280 220]{sample-image.png} % sets the viewport with the lower left corner
                                                            % at the point (10, 10) (coinsides with (0, 0)

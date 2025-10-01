@@ -37,7 +37,7 @@ Tex言語のI/O Primitivesはファイル名のみを扱うことができるた
 
 ## 出力端子の概念
 
-出力には別の重要な部分があります---端子出力。これについては、**asops.tex for .net**が一般的な[ioutputterminal](https://reference.aspose.com/tex/net/aspose.tex.io/ioutputterminal/)インターフェイスを定義します。実装を以下で説明します。
+出力には別の重要な部分があります---端子出力。これについては、**Aspose.TeX for .net**が一般的な[ioutputterminal](https://reference.aspose.com/tex/net/aspose.tex.io/ioutputterminal/)インターフェイスを定義します。実装を以下で説明します。
 
 ### コンソールへの端子出力の書き込み
 

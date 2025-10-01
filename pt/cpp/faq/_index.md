@@ -107,7 +107,7 @@ Para mais exemplos, visite [LATEX MATH FORMULAS RENDERINAÇÃO](/tex/{{lang.url-
 
 **A:** Sim, você pode fazer o download facilmente do Aspose.TeX para produtos C ++ para fins de avaliação. A versão de avaliação do Aspose.TeX (sem uma licença especificada) fornece funcionalidade completa do produto, exceto algumas [limitações de avaliação](/tex/{{lang.url-fragment}}cpp/licensing/#evaluation-version-limitations).
 
-Se você deseja tentar o Aspose.TeX sem limitações de avaliação, solicite uma [licença temporária] de 30 dias (7).
+Se você deseja tentar o Aspose.TeX sem limitações de avaliação, solicite uma [licença temporária](https://purchase.aspose.com/temporary-license/) de 30 dias.
 <br> <br>
 
 **Q: Onde posso obter ajuda se tiver algum problema com a biblioteca?**

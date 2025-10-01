@@ -139,6 +139,7 @@ que dão
 O '\' aqui dá uma separação visual que compensa parcialmente o estilo ruim.
 
 ### 8.4. Espaçamento nas fórmulas
+
 Já vimos que o Tex faz espaçamento automático de fórmulas de matemática, o que as faz parecer certas na maioria dos casos. No entanto, é natural que as exceções surjam, uma vez que o número de fórmulas possíveis é enorme e as regras de espaçamento da Tex são bastante simples. Portanto, é desejável ter unidades finas de espaçamento para tais casos, em vez das peças grandes que surgem de `\`, `\quad` e `\qquad`.
 
 Os elementos básicos do espaço que Tex coloca em fórmulas são chamados de *espaços finos*, *espaços médios* e *espaços grossos*. A Tex os insere automaticamente em fórmulas, mas você pode adicionar seu próprio espaçamento sempre que quiser, usando os comandos
@@ -159,7 +160,7 @@ Espaços finos também devem ser inseridos após os pontos de exclamação (oper
 
 ![Os exemplos de espaçamento adequado nas fórmulas com operação fatorial](/tex/images/java/tutorial/latex-math-8-16.png)
 
-Além desses casos, você ocasionalmente encontra fórmulas nas quais os símbolos são agrupados com muita força, ou onde o muito espaço em branco aparece, por causa de certas combinações de formas infelizes. Um aplicado com bom gosto `\,` ou `\!`abrirá as coisas ou fechará as coisas juntas para que o leitor não seja distraído do significado matemático da fórmula. Radicais e múltiplas integrais geralmente são candidatos a um ajuste fino. Aqui estão alguns exemplos de situações a serem observadas:
+Além desses casos, você ocasionalmente encontra fórmulas nas quais os símbolos são agrupados com muita força, ou onde o muito espaço em branco aparece, por causa de certas combinações de formas infelizes. Um aplicado com bom gosto `\,` ou `\!` abrirá as coisas ou fechará as coisas juntas para que o leitor não seja distraído do significado matemático da fórmula. Radicais e múltiplas integrais geralmente são candidatos a um ajuste fino. Aqui estão alguns exemplos de situações a serem observadas:
 
 ![Os exemplos de espaçamento adequado em casos de certas combinações de forma](/tex/images/java/tutorial/latex-math-8-17.png)
 
@@ -286,7 +287,7 @@ $$A=\left(\matrix{x-\lambda&1&0\cr
                   0&0&x-\lambda\cr}\right).$$
 ```
 
-Isso é bastante semelhante à construção `\casos` que analisamos anteriormente; Cada linha da matriz é seguida por `\cr` e` & `sinais são usados ​​entre as entradas individuais de cada linha. No entanto, ao contrário de `\casos`, você deve colocar seus próprios delimitadores`\left` e `\right`" em torno da matriz. O motivo é que diferentes delimitadores podem ser usados ​​em diferentes construções de matriz. Por outro lado, os parênteses são usados ​​com mais frequência do que outros delimitadores, para que você possa digitar `\pmatrix` se deseja que o Latex defina os parênteses para você:
+Isso é bastante semelhante à construção `\casos` que analisamos anteriormente; Cada linha da matriz é seguida por `\cr` eb `&`sinais são usados ​​entre as entradas individuais de cada linha. No entanto, ao contrário de `\casos`, você deve colocar seus próprios delimitadores`\left` e `\right`" em torno da matriz. O motivo é que diferentes delimitadores podem ser usados ​​em diferentes construções de matriz. Por outro lado, os parênteses são usados ​​com mais frequência do que outros delimitadores, para que você possa digitar `\pmatrix` se deseja que o Latex defina os parênteses para você:
 
 ```tex
 $$\pmatrix{x-\lambda&...&x-\lambda\cr}.$$
@@ -296,7 +297,7 @@ Cada entrada de uma matriz é normalmente centrada em sua coluna e cada coluna s
 
 Cada entrada de uma matriz é processada separadamente dos outros e é compensada como uma fórmula matemática no estilo de texto. Assim, por exemplo, se você disser `\rm` em uma entrada, ela não afeta os outros. Dizendo `{\ rm x & y}` é inválido.
 
-As matrizes geralmente aparecem como padrões genéricos que usam elipses para indicar linhas ou colunas que são deixadas de fora. Você pode compensar essas matrizes colocando as elipses em suas próprias linhas e/ou colunas. Além de `\ldots`, o LATEX fornece `\ vdots` (pontos verticais) e `\ddots` (pontos diagonais) para tais construções. Considere a seguinte matriz
+As matrizes geralmente aparecem como padrões genéricos que usam elipses para indicar linhas ou colunas que são deixadas de fora. Você pode compensar essas matrizes colocando as elipses em suas próprias linhas e/ou colunas. Além de `\ldots`, o LATEX fornece `\vdots` (pontos verticais) e `\ddots` (pontos diagonais) para tais construções. Considere a seguinte matriz
 
 ![Uma matriz como um padrão geral com elipses](/tex/images/java/tutorial/latex-math-8-30.png)
 

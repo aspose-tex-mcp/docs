@@ -92,7 +92,6 @@ TikZ inclut des bibliothèques graphiques dédiées (`graphs` et `graphdrawing`)
 ```
 
 
-403 / 5,000
 Cela génère automatiquement des mises en page visuellement attrayantes de graphiques complexes.
 
 ## Bibliothèques externes et personnalisation

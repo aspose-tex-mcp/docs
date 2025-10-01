@@ -464,7 +464,7 @@ Con il pacchetto `xcolor`, puoi anche specificare il colore di una particolare c
 
 ### Utilizzando il pacchetto `colortbl`
 
-Il pacchetto `Colortbl` fornisce il comando `\columncolor` per specificare il colore della colonna nel preambolo di un ambiente tabulare all'interno del costrutto `> {...}`. Ciò significa che devi anche avere il pacchetto `Array` incluso. (Non dimenticare di includere anche il pacchetto `xcolor`.)
+Il pacchetto `Colortbl` fornisce il comando `\columncolor` per specificare il colore della colonna nel preambolo di un ambiente tabulare all'interno del costrutto `>{...}`. Ciò significa che devi anche avere il pacchetto `Array` incluso. (Non dimenticare di includere anche il pacchetto `xcolor`.)
 
 ```tex
 \begin{tabular}{|>{\columncolor{green}}l|>{\color{white}\columncolor{red}}c|}
@@ -695,7 +695,7 @@ Forniremo un altro esempio piuttosto complesso di una tabella che combina molte 
 \end{document}
 ```
 
-Prima dell'ambiente `longtable`, definiamo i tipi di colonna con il comando `\newcolumntype` fornito dal pacchetto `dColumn`. All'interno degli argomenti, utilizziamo la notazione `> {...}` per definire i formati di colonna. Le definizioni della colonna, a loro volta, usano comandi che specificano colori, allineamento, caratteri e larghezze della colonna. L'ambiente "Longtable" è un'altra caratteristica impiegata. All'interno dell'ambiente, utilizziamo il comando `\multicolumn` per unire le celle in orizzontale insieme ai tipi di colonne precedentemente definiti.
+Prima dell'ambiente `longtable`, definiamo i tipi di colonna con il comando `\newcolumntype` fornito dal pacchetto `dColumn`. All'interno degli argomenti, utilizziamo la notazione `>{...}` per definire i formati di colonna. Le definizioni della colonna, a loro volta, usano comandi che specificano colori, allineamento, caratteri e larghezze della colonna. L'ambiente "Longtable" è un'altra caratteristica impiegata. All'interno dell'ambiente, utilizziamo il comando `\multicolumn` per unire le celle in orizzontale insieme ai tipi di colonne precedentemente definiti.
 
 Il risultato di tutti gli sforzi è sotto:
 

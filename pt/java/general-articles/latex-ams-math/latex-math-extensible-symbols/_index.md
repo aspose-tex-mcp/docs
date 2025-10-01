@@ -30,7 +30,7 @@ $H_1 \times H_2 \times \dots \times H_n$.
 
 ![Elipseis com espaçamento determinado automaticamente](/tex/images/java/tutorial/latex-ams-math-5-1.png)
 
-No entanto, quando os pontos aparecerem no final de uma fórmula, o próximo objeto será algo como `\end` ou` \) `ou` $ `, e isso não dá idéia sobre o posicionamento dos pontos. Nesse caso, você deve ajudar usando `\dotsc` para pontos seguidos por vírgulas,` \Dotsb` para pontos seguidos por *operador binário *ou *símbolo de relação *, `\dotsm` para pontos seguidos por pontos de multiplicação,`\dotsi` para que outros.
+No entanto, quando os pontos aparecerem no final de uma fórmula, o próximo objeto será algo como `\end` ou` \) `ou` $ `, e isso não dá idéia sobre o posicionamento dos pontos. Nesse caso, você deve ajudar usando `\dotsc` para pontos seguidos por vírgulas,`\dotsb` para pontos seguidos por *operador binário *ou *símbolo de relação *, `\dotsm` para pontos seguidos por pontos de multiplicação,`\dotsi` para que outros.
 
 ```tex
 \usepackage{amsmath}
@@ -46,7 +46,7 @@ integral: \[ \int_{H_1} \int_{H_2} \dotsi \;
 
 ## 5.2. Símbolos que são horizontalmente extensíveis
 
-Basicamente, o LATEX permite a configuração de qualquer comando de acento matemático para produzir o glifo apropriado a partir de uma variedade de larguras sempre que forem fornecidas pelas fontes disponíveis. No entanto, no LATEX padrão, existem apenas dois desses comandos: `\widehat` e `\ widetilde`.
+Basicamente, o LATEX permite a configuração de qualquer comando de acento matemático para produzir o glifo apropriado a partir de uma variedade de larguras sempre que forem fornecidas pelas fontes disponíveis. No entanto, no LATEX padrão, existem apenas dois desses comandos: `\widehat` e `\widetilde`.
 
 No próximo exemplo, demonstramos o uso de alguns comandos que produzem construções semelhantes aos detalhes extensíveis acima mencionados. Todos eles produzem símbolos compostos da classe de matemática *Ordinary *.
 
@@ -110,7 +110,7 @@ Esses símbolos se tornam extensíveis apenas em certos usos. Eles devem ser bas
 
 > Se o LaTeX estiver a utilizar o programa eTeX, também pode utilizar estes símbolos extensíveis com `\middle`.
 
-Aqui `<Ext-Open>` e `<Ext-Close>` pode ser qualquer um dos símbolos (exceto `\sqrtsign`) listado na tabela acima. Eles devem ser símbolos que foram configurados para serem extensíveis, conforme descrito no [FntGuide](https://www.latex-project.org/help/documentation/fntguide.pdf). Assim, um símbolo que representa a ausência de um glifo real deve estar disponível. Aconteceu que esse símbolo, também conhecido como Delimitador *Nulo *, é o período (.). Os tamanhos dos glifos reais para digitar um símbolo extensível são escolhidos para se encaixar na altura e profundidade da subformula que está entre eles.
+Aqui `<Ext-Open>` e `<Ext-Close>` pode ser qualquer um dos símbolos (exceto `\sqrtsign`) listado na tabela acima. Eles devem ser símbolos que foram configurados para serem extensíveis, conforme descrito no [FntGuide](https://www.latex-project.org/help/documentation/fntguide.pdf). Assim, um símbolo que representa a ausência de um glifo real deve estar disponível. Aconteceu que esse símbolo, também conhecido como Delimitador *Nulo*, é o período (.). Os tamanhos dos glifos reais para digitar um símbolo extensível são escolhidos para se encaixar na altura e profundidade da subformula que está entre eles.
 
 O símbolo radical `\sqrtsign` cresce vertical e horizontalmente para se ajustar ao tamanho de seu argumento. No LATEX, você prefere usar o comando `\sqrt` para obter este símbolo.
 

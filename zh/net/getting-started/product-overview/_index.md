@@ -42,8 +42,6 @@ Aspose为其所有产品提供无限的免费技术支持。支持所有用户�
 
 |**资源**|**描述**|
 | :- | :- |
-
-724 / 5,000
 |[Aspose.TeX for .NET 主页](https://products.aspose.com/tex/net/)| 产品主页。|
 |[Aspose.TeX 博客](https://blog.aspose.com/category/tex/)| 经常查看此博客，了解 Aspose.TeX for .NET 的新版本发布信息和实用技巧。|
 |[Aspose.TeX for .NET 下载](https://www.nuget.org/packages/aspose.tex/)| 从此处下载 Aspose.TeX for .NET 的最新版本。我们经常发布新版本。|

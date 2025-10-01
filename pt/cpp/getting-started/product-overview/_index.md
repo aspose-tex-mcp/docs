@@ -42,8 +42,6 @@ Esta tabela lista importante aspose.tex para recursos técnicos C ++.
 
 |**Recurso**|**Descrição**|
 | :- | :- |
-
-718 / 5,000
 |[Página inicial do Aspose.TeX para C++](https://products.aspose.com/tex/cpp/)|Página inicial do produto.|
 |[Blog do Aspose.TeX](https://blog.aspose.com/category/tex/)|Consulte frequentemente para obter informações sobre novos lançamentos e dicas úteis sobre o Aspose.TeX para C++.|
 |[Download do Aspose.TeX para C++](https://www.nuget.org/packages/aspose.tex.cpp/)|Descarregue aqui a versão mais recente do Aspose.TeX para C++. Lançamos com frequência.|

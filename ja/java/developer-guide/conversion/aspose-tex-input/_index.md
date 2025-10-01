@@ -35,7 +35,7 @@ Tex言語のI/O Primitivesはファイル名のみを扱うことができるた
 
 ## 入力端子の概念
 
-次に、端子入力もあることを覚えておいてください。これに関しては、**asops.tex for java**一般[iinputterminal](https://reference.aspose.com/tex/java/com.Aspose.TeX/IInputTerminal)インターフェイスを2つのメソッドがあると定義します。そのうちの1人は[BufferedReader](https://docs.oracle.com/javase/6/docs/api/java/io/BufferedReader.html)インスタンスを返します。別のメソッドは、[inputstream](https://docs.oracle.com/javase/6/docs/api/java/io/InputStream.html)を基礎となるストリームとして返します。インターフェイスの実装を以下で説明します。
+次に、端子入力もあることを覚えておいてください。これに関しては、**Aspose.TeX for java**一般[iinputterminal](https://reference.aspose.com/tex/java/com.Aspose.TeX/IInputTerminal)インターフェイスを2つのメソッドがあると定義します。そのうちの1人は[BufferedReader](https://docs.oracle.com/javase/6/docs/api/java/io/BufferedReader.html)インスタンスを返します。別のメソッドは、[inputstream](https://docs.oracle.com/javase/6/docs/api/java/io/InputStream.html)を基礎となるストリームとして返します。インターフェイスの実装を以下で説明します。
 
 ### コンソールから端子入力を取得します
 

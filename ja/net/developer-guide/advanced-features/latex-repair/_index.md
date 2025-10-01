@@ -21,7 +21,7 @@ lastmod: "2025-06-09"
 
 {{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Features-LaTeXRepairer.cs" >}}
 
-通常のTexの仕事と同様に、最初に実行しようとしているプロセスのオプションを含むオブジェクトを作成します。それらのほとんどは、通常のTexジョブのオプションと同じです。実際、[inputworkingDirectory](https://reference.aspose.com/tex/net/aspose.tex.features/latexrepaireroptions/inputworkingdirectory/)は、入力ファイルを読み取るスペースです。ファイルシステムのメイン入力ファイルへのフルパスを提供し、メイン入力ファイルにカスタムファイルが含まれていないため、ここでは使用しません。次に、[outputWorkingDirectory](https://reference.aspose.com/tex/net/aspose.tex.features/latexrepaireroptions/outputworkingdirectory/)は、出力ファイルを書き込む必要があるスペースです。 [rebulyinputDirectory](https://reference.aspose.com/tex/net/aspose.tex.features/latexrepaireroptions/requiredinputdirectory/)が割り当てられた場合、Asoppes.texライブラリに埋め込まれていないラテックスパッケージを保存できるスペースを指します。 [推測PackageCallback](https://reference.aspose.com/tex/net/aspose.tex.features/latexrepaireroptions/guesspackagecallback/)プロパティについては後で説明します。
+通常のTexの仕事と同様に、最初に実行しようとしているプロセスのオプションを含むオブジェクトを作成します。それらのほとんどは、通常のTexジョブのオプションと同じです。実際、[inputworkingDirectory](https://reference.aspose.com/tex/net/aspose.tex.features/latexrepaireroptions/inputworkingdirectory/)は、入力ファイルを読み取るスペースです。ファイルシステムのメイン入力ファイルへのフルパスを提供し、メイン入力ファイルにカスタムファイルが含まれていないため、ここでは使用しません。次に、[outputWorkingDirectory](https://reference.aspose.com/tex/net/aspose.tex.features/latexrepaireroptions/outputworkingdirectory/)は、出力ファイルを書き込む必要があるスペースです。 [rebulyinputDirectory](https://reference.aspose.com/tex/net/aspose.tex.features/latexrepaireroptions/requiredinputdirectory/)が割り当てられた場合、Aspose.TeXライブラリに埋め込まれていないラテックスパッケージを保存できるスペースを指します。 [推測PackageCallback](https://reference.aspose.com/tex/net/aspose.tex.features/latexrepaireroptions/guesspackagecallback/)プロパティについては後で説明します。
 
 オプションを割り当てた後、プロセスを実行するだけです！
 

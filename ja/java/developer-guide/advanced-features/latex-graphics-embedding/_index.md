@@ -65,7 +65,7 @@ PDF Texなどの新しいTex実装では、 `\ write18`を使用できます。�
 
 通常、アクセシビリティには3つのレベルのアクセシビリティがあります。無効化、制限により有効になり、完全に有効になっています。
 
-**asops.tex**では、`shellmode`と呼ばれるTexジョブオプションがあります。これは、`shellestricted`と`shellestricted`という2つの可能な値のいずれかをとることができます。 `noshellescape`値は、機能が無効になっていることを示します。後者の値は、実行を必要とするコマンドが「実行可能可能」クラスの拡張機能としてユーザーが実装する必要があることを意味します。ここでは、このような実装の詳細については説明しませんが、 `base64`コマンドエミュレーションは既にAsoppes.texに実装されており、デフォルトでは`Texoptions`クラスインスタンスの「実行可能ファイル」コレクションプロパティに含まれていることに注意することが重要です。
+**Aspose.TeX**では、`shellmode`と呼ばれるTexジョブオプションがあります。これは、`shellestricted`と`shellestricted`という2つの可能な値のいずれかをとることができます。 `noshellescape`値は、機能が無効になっていることを示します。後者の値は、実行を必要とするコマンドが「実行可能可能」クラスの拡張機能としてユーザーが実装する必要があることを意味します。ここでは、このような実装の詳細については説明しませんが、 `base64`コマンドエミュレーションは既にAspose.TeXに実装されており、デフォルトでは`Texoptions`クラスインスタンスの「実行可能ファイル」コレクションプロパティに含まれていることに注意することが重要です。
 
 ### Base64エンコードデータのデコード
 
@@ -118,4 +118,4 @@ iVBORw0KGgoAAAANSUhEUgAAAPgAAABdCAYAAAH/B5vAAAAAGXRFWHRTb2Z0d2FyZQBBZ......
 
 そして今**ステップ5**が完了しました。本当に包括的な例については、[プロジェクトの例](https://github.com/aspose-tex/Aspose.TeX-for-Java)をご覧ください。
 
-**[.NET APIのasops.tex](https://products.aspose.com/tex/net/)に基づいて構築された無料変換[Webアプリ](https://products.aspose.app/tex/conversion/latex/)をチェックアウトすることもできます。**
+**[.NET APIのAspose.TeX](https://products.aspose.com/tex/net/)に基づいて構築された無料変換[Webアプリ](https://products.aspose.app/tex/conversion/latex/)をチェックアウトすることもできます。**

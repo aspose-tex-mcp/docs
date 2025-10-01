@@ -29,6 +29,6 @@ lastmod: "2025-06-09"
 {{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-LaTeXToXps-Alternative.cs" >}}
 
 
-効果は[ここ]を取得するのと同じです(8)。
+効果は[ここ](https://products.aspose.app/tex/conversion/latex-to-xps)を取得するのと同じです。
 
 **[.NET APIのAsops.Tex](https://products.aspose.com/tex/net/)に基づいて構築された無料のLaTex-to-XPS変換[Webアプリ](https://products.aspose.app/tex/conversion/latex-to-xps)をチェックアウトすることもできます。**

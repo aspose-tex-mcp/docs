@@ -50,7 +50,7 @@ lastmod: "2025-06-10"
 
 ## 2. 乳胶的基础知识
 
-乳胶中表的基本概念围绕着“表格”环境，您在其中定义列，行及其内容以结构化且视觉上令人愉悦的格式组织和呈现数据。
+乳胶中表的基本概念围绕着`tabular`环境，您在其中定义列，行及其内容以结构化且视觉上令人愉悦的格式组织和呈现数据。
 
 乳胶中表的基本结构涉及以下组件：
 
@@ -60,7 +60,7 @@ lastmod: "2025-06-10"
 
 3. **行内容**：表格的每一行都是通过指定行内每个单元格的内容来创建的。单元格之间用 `&` 符号分隔，每行以 `\\` 命令结尾。
 
-4. **水平线**：您可以使用`\ hline`命令添加水平线和水平外边界。这增强了表的视觉结构。
+4. **水平线**：您可以使用`\hline`命令添加水平线和水平外边界。这增强了表的视觉结构。
 
 ### 简单的例子
 
@@ -75,7 +75,7 @@ lastmod: "2025-06-10"
 
 ```
 
-在此示例中，“表格”环境用于创建一个带有三列的表，每个列中居中(`c`)。排版的结果如下：
+在此示例中，`tabular`环境用于创建一个带有三列的表，每个列中居中(`c`)。排版的结果如下：
 
 <a href="/tex/images/java/tutorial/latex-tables-1.jpg" style="display:inline-block;width:100%;">![示例输出](/tex/images/java/tutorial/latex-tables-1.jpg)</a>
 
@@ -124,10 +124,10 @@ lastmod: "2025-06-10"
 
 <a href="/tex/java/latex-tables/latex-tables-4.jpg" style="display:inline-block;width:100%;">![示例输出](/tex/images/java/tutorial/latex-tables-4.jpg)</a>
 
-包含“数组”软件包，还有两个选项可用于固定宽度列：`m {width}` - 与`p {width}`相同，但垂直将中间的单元格内容对齐；
-`b {width}` - 与`p {width}`相同，但垂直将底部的单元格内容对齐。
+包含“数组”软件包，还有两个选项可用于固定宽度列：`m{width}` - 与`p{width}`相同，但垂直将中间的单元格内容对齐；
+`b{width}` - 与`p{width}`相同，但垂直将底部的单元格内容对齐。
 
-在极少数需要在段落中包含表的情况下，您可以指定表相对于封闭文本行的基线的位置。为此，您使用`t'，`c`(默认)或`b`选项将基线对齐到表的顶部，中心或底部。例如，
+在极少数需要在段落中包含表的情况下，您可以指定表相对于封闭文本行的基线的位置。为此，您使用`t`，`c`(默认)或`b`选项将基线对齐到表的顶部，中心或底部。例如，
 
 ```tex
 This is the text of the paragraph
@@ -146,7 +146,7 @@ that include a table.
 
 ### 定义多个列
 
-当您的表包含相同对齐的列时，您可以使用`*{num} {format}`语法将它们全部定义在一个列。当您的表有许多列时，这特别有用。
+当您的表包含相同对齐的列时，您可以使用`*{num}{format}`语法将它们全部定义在一个列。当您的表有许多列时，这特别有用。
 
 ```tex
 \begin{tabular}{l*{7}{c}r}
@@ -160,9 +160,9 @@ that include a table.
 
 <a href="/tex/java/latex-tables/latex-tables-6.jpg" style="display:inline-block;width:100%;">![示例输出](/tex/images/java/tutorial/latex-tables-6.jpg)</a>
 
-### 使用`> {\ commmand}`and`<{\ command}`列规范
+### 使用`>{\commmand}`and`<{\command}`列规范
 
-指定列的另一种方法是使用`> {\ command}`对于 *在 *每个列元素之前正确执行 *的命令，并且在 *每个列元素后正确执行 *执行的命令。当您在文档序言中包含“阵列”软件包时，可以使用。在下面的示例中，我们使用此语法将两个列中的每条中心中心，并以粗体面键入第一个。
+指定列的另一种方法是使用`>{\commmand}``对于 *在 *每个列元素之前正确执行 *的命令，并且在 *每个列元素后正确执行 *执行的命令。当您在文档序言中包含“阵列”软件包时，可以使用。在下面的示例中，我们使用此语法将两个列中的每条中心中心，并以粗体面键入第一个。
 
 ```tex
 \begin{tabular}{>{\centering\textbf\bgroup}p{3.5cm}<{\egroup}>|{\centering}p{3.5cm} }
@@ -184,11 +184,11 @@ that include a table.
 
 ### 柱间间距
 
-乳胶自动在列之间添加一些空间。要调整列间空间，您可以在表格环境之前使用`\ setLength {\ tabcolsep} {value}`命令。增加值会增加列之间的空间。默认值为“ 6pt”。
+乳胶自动在列之间添加一些空间。要调整列间空间，您可以在表格环境之前使用`\setlength{\tabcolsep}{value}`命令。增加值会增加列之间的空间。默认值为“ 6pt”。
 
 ### 行间间距
 
-为了增加行之间的空间，您可以使用`\ renewcommand {\ arrayStretch} {value} {value}`命令在`tagular`环境之前。增加价值会使行分开，从而增强了桌子的垂直间距。默认值为`1.0`。
+为了增加行之间的空间，您可以使用`\renewcommand{\arraystretch}{value}`命令在`tagular`环境之前。增加价值会使行分开，从而增强了桌子的垂直间距。默认值为`1.0`。
 
 您也可以在线路终止器后明确使用胶水明确指定跳线。
 
@@ -205,7 +205,7 @@ that include a table.
 
 ### 使用`@'和`！'表达
 
-在文档序言中包含“数组”软件包，您可以使用`@{...}`or`or`or`！{...}`构造指定列分隔符。
+在文档序言中包含“数组”软件包，您可以使用`@{...}`or`or`or`{...}`构造指定列分隔符。
 
 他们通常以一些文本为参数，当将其附加到列上时，他们会在该单元格之前和/或之后自动将其插入该列中的每个单元格中。 `@{...}`命令用指定为参数的内容代替了柱间空间。通过将参数留为空，您可以抑制柱间空间。
 
@@ -290,7 +290,7 @@ that include a table.
 
 ### 跨越多行的单元
 
-要使单元跨越多行，您需要包括``Multirow``软件包。该软件包提供以下命令：`\ multirow {num_rows} {width} {contents}`。
+要使单元跨越多行，您需要包括``Multirow``软件包。该软件包提供以下命令：`\multirow{num_rows}{width}{contents}`。
 
 在这里，`num_rows`是要合并的行数。 ``宽度``是单元格宽度(对于内容的自然宽度)，而``内容``是要在单元格中排除的实际数据。
 
@@ -315,7 +315,7 @@ that include a table.
 
 <a href="/tex/java/latex-tables/latex-tables-14.jpg" style="display:inline-block;width:100%;">![示例输出](/tex/images/java/tutorial/latex-tables-14.jpg)</a>
 
-您需要记住，当使用`\ Multirow`命令时，都必须在每个随后的行中插入每个适当单元格的空白条目，以要跨越。
+您需要记住，当使用`multirow`命令时，都必须在每个随后的行中插入每个适当单元格的空白条目，以要跨越。
 
 ### 在两个方向上跨越细胞
 
@@ -337,13 +337,13 @@ that include a table.
 \end{tabular}
 ```
 
-命令`\多柱{1} {`用于绘制垂直左右边框。尽管它与`\ sultirow {2} {*} {...}`结合使用，但它仍然绘制仅跨第一行的垂直边界。为了弥补这一点，我们添加了`\多柱{1} {`在由`mutltirow`跨越以下行中添加。
+命令`\multicolumn{1}{`用于绘制垂直左右边框。尽管它与`\multirow{2}{*}{...}`结合使用，但它仍然绘制仅跨第一行的垂直边界。为了弥补这一点，我们添加了`\multicolumn{1}{`在由`mutltirow`跨越以下行中添加。
 
 <a href="/tex/java/latex-tables/latex-tables-15.jpg" style="display:inline-block;width:100%;">![示例输出](/tex/images/java/tutorial/latex-tables-15.jpg)</a>
 
 ## 5. 桌子大小
 
-`graphICX`软件包提供了命令`\ resizebox {width} {height} {object} {object} {可以与``tagular`环境一起使用，以将表拉伸或缩小表至指定的宽度和高度。在下面的示例中，我们将表调整到12厘米的宽度，同时保持纵横比。
+`graphICX`软件包提供了命令`\resizebox{width}{height}{object}`可以与`tagular`环境一起使用，以将表拉伸或缩小表至指定的宽度和高度。在下面的示例中，我们将表调整到12厘米的宽度，同时保持纵横比。
 
 ```tex
 \resizebox{12cm}{!} {
@@ -357,7 +357,7 @@ that include a table.
 
 <a href="/tex/java/latex-tables/latex-tables-16.jpg" style="display:inline-block;width:100%;">![示例输出](/tex/images/java/tutorial/latex-tables-16.jpg)</a>
 
-您还可以以相同的方式使用`\ scalebox {ratio} {object} {object} {object}`，但使用比率而不是固定大小：
+您还可以以相同的方式使用`\scalebox{ratio}{object}`，但使用比率而不是固定大小：
 
 ```tex
 \scalebox{0.7}{
@@ -393,10 +393,11 @@ that include a table.
 
 `h`-将桌子放在这个精确的位置(非常类似于``h``)。
 
-为了水平居中，您可以在``表格环境''中使用``\ centering''命令之前的“表格”环境。
+为了水平居中，您可以在`tabular`中使用`\centering`命令之前的`tabular`环境。
 
 ## 7. 字幕，标签和参考
-您可以用一些文字标记表格。在输出中，文本将以 *表N。 *前缀为前缀，其中 *n*是乳胶自动跟踪的适当表号。为此，请使用`\ catchion`命令。也可以将标签分配给表格，以便可以从文档中的任何地方引用该表。相应的一对命令为`\ label`和`\ ref`。考虑以下示例：
+
+您可以用一些文字标记表格。在输出中，文本将以 *表N*前缀为前缀，其中 *n*是乳胶自动跟踪的适当表号。为此，请使用`\caption`命令。也可以将标签分配给表格，以便可以从文档中的任何地方引用该表。相应的一对命令为`\label`和`\ref`。考虑以下示例：
 
 ```tex
 Table \ref{table:1} is an example of a referenced \LaTeX{} element.
@@ -421,8 +422,8 @@ Table \ref{table:1} is an example of a referenced \LaTeX{} element.
 
 ### 桌行中的变化颜色
 
-`XColor`软件包提供了必要的命令，以产生带有其他行颜色的表。包装必须加上表选项：`\usepackage {table] {xcolor}`。
-命令`\ rowcolors {starter_row} {odd_color} {even_color}`必须在`tagular`环境启动''之前发生。
+`xcolor`软件包提供了必要的命令，以产生带有其他行颜色的表。包装必须加上表选项：`\usepackage {table] {xcolor}`。
+命令`\rowcolors{starting_row}{odd_color}{even_color}`必须在`tagular`环境启动''之前发生。
 
 ```tex
 \begin{center}
@@ -439,7 +440,7 @@ Table \ref{table:1} is an example of a referenced \LaTeX{} element.
 \end{center}
 ```
 
-由`XColor`软件包提供的命令`\ hiderOwColors`，从其出现到表末端的行开始。要重新激发突出显示，请使用“ \ showrowcolors”命令。
+由`xcolor`软件包提供的命令`\hiderowcolors`，从其出现到表末端的行开始。要重新激发突出显示，请使用`\showrowcolors`命令。
 
 <a href="/tex/java/latex-tables/latex-tables-18.jpg" style="display:inline-block;width:100%;">![示例输出](/tex/images/java/tutorial/latex-tables-18.jpg)</a>
 
@@ -462,9 +463,9 @@ Table \ref{table:1} is an example of a referenced \LaTeX{} element.
 
 <a href="/tex/java/latex-tables/latex-tables-19.jpg" style="display:inline-block;width:100%;">![示例输出](/tex/images/java/tutorial/latex-tables-19.jpg)</a>
 
-### 使用“ colortbl”软件包
+### 使用`colortbl`软件包
 
-“ colortbl”软件包提供了`\ columnColor`命令，以在`> {...}`构造中指定列颜色。这意味着您还必须包含“数组”软件包。 (别忘了还包括“ Xcolor”软件包。)
+`colortbl`软件包提供了`\columncolor`命令，以在`>{...}`构造中指定列颜色。这意味着您还必须包含`array`软件包。 (别忘了还包括`xcolor`软件包。)
 
 ```tex
 \begin{tabular}{|>{\columncolor{green}}l|>{\color{white}\columncolor{red}}c|}
@@ -475,7 +476,7 @@ Table \ref{table:1} is an example of a referenced \LaTeX{} element.
 
 <a href="/tex/java/latex-tables/latex-tables-20.jpg" style="display:inline-block;width:100%;">![示例输出](/tex/images/java/tutorial/latex-tables-20.jpg)</a>
 
-`\ rowcolor`命令可用于指定行颜色。必须在行开始时使用它。该命令具有与`\ columnColor`的语法相同的语法。
+`\rowcolor`命令可用于指定行颜色。必须在行开始时使用它。该命令具有与`\columncolor`的语法相同的语法。
 
 ```tex
 \begin{tabular}{l|c|}
@@ -503,9 +504,9 @@ Table \ref{table:1} is an example of a referenced \LaTeX{} element.
 
 <a href="/tex/java/latex-tables/latex-tables-22.jpg" style="display:inline-block;width:100%;">![示例输出](/tex/images/java/tutorial/latex-tables-22.jpg)</a>
 
-注意`\ setLength {\ arrayRulewIdth} {2pt}`用于更改规则厚度的使用。
+注意`\setlength{\arrayrulewidth}{2pt}`用于更改规则厚度的使用。
 
-但是，颜色`\ hline`和`\ cline`有点棘手，并且可以带有额外的命令(然后也适用于垂直规则)。 `\ arrayrulecolor`命令可在全球或表中使用。在这两种情况下，它都会影响所有后续规则。因此，如果您想要垂直规则的其他颜色，则应在表序列中指定它。例如，
+但是，颜色`\hline`和`\cline`有点棘手，并且可以带有额外的命令(然后也适用于垂直规则)。 `\arrayrulecolor`命令可在全球或表中使用。在这两种情况下，它都会影响所有后续规则。因此，如果您想要垂直规则的其他颜色，则应在表序列中指定它。例如，
 
 ```tex
 \setlength\arrayrulewidth{2pt}
@@ -528,11 +529,11 @@ Table \ref{table:1} is an example of a referenced \LaTeX{} element.
 
 ## 9. 建造长桌子
 
-“表格”环境具有一个重要的缺点。它可以使用Tex的内置页面破坏算法在页面之间分配的表格。因此，如果您的桌子很长，它将仅在页面底部下方。
+`tabular`环境具有一个重要的缺点。它可以使用Tex的内置页面破坏算法在页面之间分配的表格。因此，如果您的桌子很长，它将仅在页面底部下方。
 
-令人高兴的是，如今大多数发行版中提供了“ Longtable”软件包，该软件包定义了用于处理此类长桌子的“ Longtable”环境。在大多数方面，此环境的工作方式与“表格”环境相同。但是，有一些差异。
+令人高兴的是，如今大多数发行版中提供了`longtable`软件包，该软件包定义了用于处理此类长桌子的`longtable`环境。在大多数方面，此环境的工作方式与`tabular`环境相同。但是，有一些差异。
 
-我们将在下面的示例中演示大多数“ longtable”功能，您还可以在其中找到使用“表明”和“表格”环境的差异。 (该示例还使用`verbatim`软件包用于某些文本格式，因此还必须包括在内。)
+我们将在下面的示例中演示大多数`longtable`功能，您还可以在其中找到使用“表明”和`tabular`环境的差异。 (该示例还使用`verbatim`软件包用于某些文本格式，因此还必须包括在内。)
 
 ```tex
 \begin{longtable}{|r||p{1in}|}
@@ -695,7 +696,7 @@ Table \ref{table:1} is an example of a referenced \LaTeX{} element.
 \end{document}
 ```
 
-在“ longtable”环境之前，我们使用`dcolumn`软件包提供的`\ newColumnType`命令定义列类型。在参数中，我们使用`> {...}`符号来定义列格式。列定义依次使用命令指定颜色，对齐方式，字体和列宽度。 “ Longtable”环境本身是使用的另一个功能。在环境中，我们使用`\多列命令与先前定义的列类型一起水平合并单元格。
+在`longtable`环境之前，我们使用`dcolumn`软件包提供的`\newcolumntype`命令定义列类型。在参数中，我们使用`>{...}`符号来定义列格式。列定义依次使用命令指定颜色，对齐方式，字体和列宽度。 `longtable`环境本身是使用的另一个功能。在环境中，我们使用`\multicolumn`多列命令与先前定义的列类型一起水平合并单元格。
 
 所有努力的结果如下：
 
@@ -712,7 +713,7 @@ Table \ref{table:1} is an example of a referenced \LaTeX{} element.
 2. **在小数点处对齐数值数据：**
    - 呈现数值数据时，请将小数点对齐以提高可读性。您可以使用 `dcolumn` 包来实现此目的。
    
-3. **避免垂直藤蔓**：
+3. **避免垂直藤蔓：**
    - 在专业出版物中，通常建议避免使用垂直线分隔列。为了清晰起见，请谨慎使用水平线。
 
 4. **保持一致性：**
@@ -742,7 +743,7 @@ Table \ref{table:1} is an example of a referenced \LaTeX{} element.
 
 我们已经浏览了乳胶中复杂的餐桌结构世界，发现了这个排版系统提供的显着多功能性和精度。乳胶将表无缝集成到文档中的能力使用户能够与宽限和清晰度传达复杂的数据，比较以及关系。
 
-从“表格”环境的基本概念到涉及``Multirow''longtable'软件包的先进技术，我们探索了使乳胶成为制作桌子的强大设备的工具和策略。我们已经了解了乳胶不仅如何美化我们的桌子，还可以简化数据显示，并有助于有效的沟通。 
+从`tabular`环境的基本概念到涉及`multirow``longtable`软件包的先进技术，我们探索了使乳胶成为制作桌子的强大设备的工具和策略。我们已经了解了乳胶不仅如何美化我们的桌子，还可以简化数据显示，并有助于有效的沟通。 
 
 我们强调了最佳实践的重要性：有意义的柱标头，对齐，适当的间距和一致性。这些实践使我们能够创建功能功能，而且具有视觉吸引力和专业的桌子。
 

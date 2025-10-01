@@ -223,7 +223,7 @@ $(abc)\sphat$ \quad $(abc)\sptilde$
 
 ## 4.7. Outras decorações
 
-O LATEX padrão possui o comando `\Stackrel` que coloca um superestrado acima de um símbolo *Relation* . Além disso, o pacote `AMSMATH` define os comandos` \overset` e `\ UnderSet`. Use -o para colocar o material acima ou abaixo de qualquer símbolo *Ordinary* ou *Relation*  ou *Operador Binário*.
+O LATEX padrão possui o comando `\Stackrel` que coloca um superestrado acima de um símbolo *Relation* . Além disso, o pacote `AMSMATH` define os comandos` \overset` e `\UnderSet`. Use -o para colocar o material acima ou abaixo de qualquer símbolo *Ordinary* ou *Relation*  ou *Operador Binário*.
 
 O comando `\sideet`adiciona decorações a qualquer símbolo *Operator* (soma, produto, etc.), além dos limites normais. Estes são colocados nas posições subscritas e superscritões à esquerda e à direita do *Operator*.
 

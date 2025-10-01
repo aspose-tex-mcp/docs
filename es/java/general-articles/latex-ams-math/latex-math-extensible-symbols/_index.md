@@ -84,8 +84,6 @@ La extensibilidad vertical es mucho más amplia. La siguiente tabla enumera todo
 
 |||||||
 |:---:|---|:---:|---|:---:|---|
-
-895 / 5,000
 | !["Paréntesis"](/tex/images/java/tutorial/latex-ams-math-delim-5-1.png) | `(` `)` | !["Llaves abiertas"](/tex/images/java/tutorial/latex-ams-math-delim-5-11.png) | `\{` `\}` | !["Barras verticales dobles"](/tex/images/java/tutorial/latex-ams-math-delim-5-18.png) | *`\lVert` `\rVert`* |
 | !["Corchetes angulares"](/tex/images/java/tutorial/latex-ams-math-delim-5-2.png) | `\langle` `\rangle` | !["Las llaves se cierran"](/tex/images/java/tutorial/latex-ams-math-delim-5-11.png) | `\lbrace` `\rbrace` | !["Barras verticales simples"](/tex/images/java/tutorial/latex-ams-math-delim-5-19.png) | *`\lvert` `\rvert`* |
 | !["Grupo L y grupo R"](/tex/images/java/tutorial/latex-ams-math-delim-5-3.png) | `\lgroup` `\rgroup` | !["Los corchetes se abren"](/tex/images/java/tutorial/latex-ams-math-delim-5-12.png) | `[` `]` | !["Barra vertical"](/tex/images/java/tutorial/latex-ams-math-delim-5-20.png) | `|` |

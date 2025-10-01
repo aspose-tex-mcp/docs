@@ -43,8 +43,6 @@ Depois de criar a versão fixa do arquivo original, o reparador executa um traba
 
 Aqui está o relatório completo:
 
-
-2,545 / 5,000
 ```
 A tentar reparar o ficheiro original...
 --------------------------------------------------------------------------------

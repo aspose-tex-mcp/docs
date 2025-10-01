@@ -13,9 +13,9 @@ lastmod: "2025-06-09"
 
 ## 外部ラテックスパッケージ
 
-**asops.tex**ライブラリには、[一般的なラテックスパッケージ](/tex/{{lang.url-fragment}}net/embedded-packages/)が含まれています。したがって、これらのパッケージをライブラリのTexエンジンに提供する方法を心配する必要はありません。ただし、ラテックスファイルがパッケージの「ネイティブにサポートされている「バンドル」を超えるパッケージが必要になる場合があります。この場合、[Texoptions](https://reference.aspose.com/tex/net/Aspose.TeX/texoptions/)クラスインスタンスの[rebulyinputDirectory](https://reference.aspose.com/tex/net/Aspose.TeX/texoptions/requiredinputdirectory/)オプションを使用して、必要な入力、つまり必要なパッケージのソースファイルを提供するようにしてください。これが2つの例でどのように機能するかを確認します。
+**Aspose.TeX**ライブラリには、[一般的なラテックスパッケージ](/tex/{{lang.url-fragment}}net/embedded-packages/)が含まれています。したがって、これらのパッケージをライブラリのTexエンジンに提供する方法を心配する必要はありません。ただし、ラテックスファイルがパッケージの「ネイティブにサポートされている「バンドル」を超えるパッケージが必要になる場合があります。この場合、[Texoptions](https://reference.aspose.com/tex/net/Aspose.TeX/texoptions/)クラスインスタンスの[rebulyinputDirectory](https://reference.aspose.com/tex/net/Aspose.TeX/texoptions/requiredinputdirectory/)オプションを使用して、必要な入力、つまり必要なパッケージのソースファイルを提供するようにしてください。これが2つの例でどのように機能するかを確認します。
 
-### 未解決の必要な入力(「ファンシーボックス」パッケージ)
+### 未解決の必要な入力(`fancybox`パッケージ)
 
 次の単純なラテックスファイルがあるとしましょう。
 
@@ -43,7 +43,7 @@ Test: \fbox{
 \end{document}
 ```
 
-3行目では、ファイルには「ネイティブに」サポートされていない「ファンシーボックス」パッケージが必要であることがわかります。また、「ファンシーボックス」パッケージソースファイルがあると仮定しましょう。シンプルなパッケージなので、実際には単一のファイルで構成されています。このファイルをファイルシステムのどこにでも配置し、以下に示すようにディレクトリパスを指定できます。
+3行目では、ファイルには「ネイティブに」サポートされていない`fancybox`パッケージが必要であることがわかります。また、`fancybox`パッケージソースファイルがあると仮定しましょう。シンプルなパッケージなので、実際には単一のファイルで構成されています。このファイルをファイルシステムのどこにでも配置し、以下に示すようにディレクトリパスを指定できます。
 
 
 ```C#
@@ -56,11 +56,11 @@ options.RequiredInputDirectory = new InputFileSystemDirectory("path-to-directory
 
 これが例の完全なソースコードです。
 
-{<<gist "Aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.examples-conversion-requiredinput-filesystem.cs">}}}
+{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-RequiredInput-FileSystem.cs" >}}
 
 ### 必要な入力( `pgfplots`パッケージ)アーカイブ
 
-次に、次の非常にシンプルなラテックスファイルもあります。これは、「必要なZip.tex」です。
+次に、次の非常にシンプルなラテックスファイルもあります。これは、`required-input-zip.tex`です。
 
 
 ```tex
@@ -95,7 +95,7 @@ First example is 2D and 3D math expressions plotted side-by-side.
 ```
 
 
-3行目では、ファイルには「PGFPlots」パッケージが必要であることがわかります。これは「ネイティブに」サポートされていません。繰り返しますが、「pgfplots」パッケージソースファイルがあると想定しています。 LaTexタイプセットアプリケーションのインストールディレクトリにそれらを見つけた場合、2つの場所に分割されたファイルが非常に多数です。 「\ tex \ generic」と `\ tex \ latex`フォルダーの両方で「pgfplots」フォルダーを見つけることができます。また、これらの両方のフォルダーのコンテンツは、Asoppes.texライブラリへの必要な入力として提供する必要があります。これらのソースファイルをzipアーカイブにパッケージ化することを望んでいるので、アーカイブのレイアウトは次のとおりです。
+3行目では、ファイルには`pgfplots`パッケージが必要であることがわかります。これは「ネイティブに」サポートされていません。繰り返しますが、`pgfplots`パッケージソースファイルがあると想定しています。 LaTexタイプセットアプリケーションのインストールディレクトリにそれらを見つけた場合、2つの場所に分割されたファイルが非常に多数です。 `\tex\generic`と `\tex\latex`フォルダーの両方で`pgfplots`フォルダーを見つけることができます。また、これらの両方のフォルダーのコンテンツは、Aspose.TeXライブラリへの必要な入力として提供する必要があります。これらのソースファイルをzipアーカイブにパッケージ化することを望んでいるので、アーカイブのレイアウトは次のとおりです。
 
 ![アーカイブのレイアウト](/tex/images/net/pgfplots-zip-layout.png)
 
@@ -117,21 +117,21 @@ using (Stream zipStream = File.Open("path-to-zip-with-pgfplots-sources"), FileMo
 
 これが例の完全なソースコードです。
 
-{<<gist "Aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.examples-conversion-requiredinput-zip.cs">}}}
+{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-RequiredInput-Zip.cs" >}}
 
 > **_NOTE:_** The result was verified using the `pgfplots` package version 1.18.1. While the version of the `pfg` package included in the **Aspose.TeX** library is 3.1.9a.
 
 ### 外部フォントパッケージを使用します
 
-原則として、LaTexディストリビューションは、版形セットに利用できる一連のデフォルトのフォントを提供します。これらのフォントを除き、**Asops.tex**には、標準以外のフォントパッケージが多数含まれています。たとえば、「amsfonts」、 `eurosym'、および` wasysym」。上で見たように、Aspose.TeXでは、外部パッケージを使用することもできます。しかし、ほとんどの場合、フォントが含まれていないパッケージについて話していました。
-**Aspose.TeX** 'S*Object Tex*エンジン拡張機能は、各Texの内部フォント名に対応する物理フォントを判断するために、「.Map`拡張機能による特定の形式のテキストファイルです)を必要とします。これらのフォントマップは、初期化フェーズ中にTexのメモリにロードする必要があります。そして、もちろん、それらはあなたがプラグインしているパッケージのファイルに存在する必要があります。エンジンはすべてのフォントマップの名前がわからないため、 `.map`拡張子を持つすべてのファイルを探します。したがって、[IinputWorkingDirectory](https://reference.aspose.com/tex/net/aspose.tex.io/iinputworkingdirectory/)インターフェイスの実装は、[rebysinginputDirectory](https://reference.aspose.com/tex/net/Aspose.TeX/texoptions/requiredinputdirectory/)オプションの値として使用されます。より具体的には、この実装は[ifileCollector](https://reference.aspose.com/tex/net/aspose.tex.io/ifilecollector/)インターフェイスも実装する必要があります。標準の実装 -  [inputFilesSystemDirectory](https://reference.aspose.com/tex/net/aspose.tex.io/inputfilesystemdirectory/)および[inputZipDirectory](https://reference.aspose.com/tex/net/aspose.tex.io/inputzipdirectory/) - すでにそれを行います。
+原則として、LaTexディストリビューションは、版形セットに利用できる一連のデフォルトのフォントを提供します。これらのフォントを除き、**Asops.tex**には、標準以外のフォントパッケージが多数含まれています。たとえば、`amsfonts`、`eurosym`、および `wasysym`。上で見たように、Aspose.TeXでは、外部パッケージを使用することもできます。しかし、ほとんどの場合、フォントが含まれていないパッケージについて話していました。
+**Aspose.TeX** 'S*Object Tex*エンジン拡張機能は、各Texの内部フォント名に対応する物理フォントを判断するために、`.map`拡張機能による特定の形式のテキストファイルですを必要とします。これらのフォントマップは、初期化フェーズ中にTexのメモリにロードする必要があります。そして、もちろん、それらはあなたがプラグインしているパッケージのファイルに存在する必要があります。エンジンはすべてのフォントマップの名前がわからないため、 `.map`拡張子を持つすべてのファイルを探します。したがって、[IinputWorkingDirectory](https://reference.aspose.com/tex/net/aspose.tex.io/iinputworkingdirectory/)インターフェイスの実装は、[rebysinginputDirectory](https://reference.aspose.com/tex/net/Aspose.TeX/texoptions/requiredinputdirectory/)オプションの値として使用されます。より具体的には、この実装は[ifileCollector](https://reference.aspose.com/tex/net/aspose.tex.io/ifilecollector/)インターフェイスも実装する必要があります。標準の実装 -  [inputFilesSystemDirectory](https://reference.aspose.com/tex/net/aspose.tex.io/inputfilesystemdirectory/)および[inputZipDirectory](https://reference.aspose.com/tex/net/aspose.tex.io/inputzipdirectory/) - すでにそれを行います。
 
 以下に、[ifileCollector](https://reference.aspose.com/tex/net/aspose.tex.io/ifilecollector/)インターフェイスを実装するカスタム要求の入力ディレクトリの例を示します。さらに、ファイル名の収集に焦点を当てながら、ファイルストレージと取得の詳細を意図的に省略します。
 
-{<<gist "Aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.examples-conversion-requiredinputdirectory.cs">}}}
+{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-RequiredInputDirectory.cs" >}}
 
 ### 制限
 
-ラテックスファイルに必要なパッケージが * latex3e *カーネルの下で開発されていることがあります。このようなパッケージは、**Aspose.TeX**ライブラリで動作しない可能性が最も高くなります。後者は*latex2e*カーネルに基づいているためです。
+ラテックスファイルに必要なパッケージが *LaTeX3e*カーネルの下で開発されていることがあります。このようなパッケージは、**Aspose.TeX**ライブラリで動作しない可能性が最も高くなります。後者は*latex2e*カーネルに基づいているためです。
 
 また、LaTexファイルが必要とするパッケージは、**Aspose.TeX**ライブラリの*オブジェクトTex*エンジンによってサポートされていないデバイス依存のプリミティブコマンドを直接呼び出すことがあります。残念ながら、このようなパッケージは確かに機能しません。

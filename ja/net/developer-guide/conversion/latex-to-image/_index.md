@@ -12,7 +12,7 @@ lastmod: "2025-06-09"
 
 {{<section overview>}}
 
-**.NETのasops.tex**を使用すると、ラテックスファイルを多数のラスター画像形式に変換できます。
+**.NETのAspose.TeX**を使用すると、ラテックスファイルを多数のラスター画像形式に変換できます。
 
 ## ラテックスをPNGに変換する方法
 
@@ -79,13 +79,13 @@ Transcript written on hello-world.log.
 
 {{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-LaTeXToTiff.cs" >}}
 
-**[.NET APIのasops.tex](https://products.aspose.com/tex/net/)に基づいて構築された無料のラテックスからティフへの変換[Webアプリ](https://products.aspose.app/tex/conversion/latex-to-tiff)をチェックアウトすることもできます。**
+**[.NET APIのAspose.TeX](https://products.aspose.com/tex/net/)に基づいて構築された無料のラテックスからティフへの変換[Webアプリ](https://products.aspose.app/tex/conversion/latex-to-tiff)をチェックアウトすることもできます。**
 
 ## ラテックスをBMPに変換する方法
 
 {{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-LaTeXToBmp.cs" >}}
 
-**[.NET APIのasops.tex](https://products.aspose.com/tex/net/)に基づいて構築された無料のラテックスからBMPへの変換[Webアプリ](https://products.aspose.app/tex/conversion/latex-to-bmp)をチェックアウトすることもできます。**
+**[.NET APIのAspose.TeX](https://products.aspose.com/tex/net/)に基づいて構築された無料のラテックスからBMPへの変換[Webアプリ](https://products.aspose.app/tex/conversion/latex-to-bmp)をチェックアウトすることもできます。**
 
 ## ラテックスをSVGに変換する方法
 

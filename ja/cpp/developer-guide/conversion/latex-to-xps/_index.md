@@ -58,6 +58,6 @@ System::MakeObject<Aspose::TeX::TeXJob>(u"hello-world.ltx", System::MakeObject<X
     }
 ```
 
-効果は[ここ]を取得するのと同じです(7)。
+効果は[ここ](https://products.aspose.app/tex/conversion/latex-to-xps)を取得するのと同じです。
 
 **[.NETのAsops.Tex](https://products.aspose.com/tex/net/)APIに基づいて構築された無料のLaTex-to-XPS変換[Webアプリ](https://products.aspose.app/tex/conversion/latex-to-xps)をチェックアウトすることもできます。 [ここ](https://products.aspose.com/tex/cpp/)はC ++バージョンページです。**

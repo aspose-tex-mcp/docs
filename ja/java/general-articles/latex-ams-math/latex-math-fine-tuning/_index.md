@@ -174,7 +174,6 @@ $\sqrt{x} + \sqrt{\smash[b]{y}} + \sqrt{z}$
 | !["Outer Brackets Too Large"](/tex/images/java/tutorial/latex-ams-math-smashing-7-1.png) | `\left( {\Hmjd } \right)` | *Outer brackets too large* |
 | !["Outer Brackets Too Small and Rules Too Close"](/tex/images/java/tutorial/latex-ams-math-smashing-7-2.png) | `\left( \smash{\Hmjd } \right)` | *Outer brackets too small and rules too close* |
 | !["Just Right"](/tex/images/java/tutorial/latex-ams-math-smashing-7-3.png) |
-751 / 5,000
 | *外観* | `コード` | *コメント* |
 |:---:|:---:|---|
 | !["外側の括弧が大きすぎます"](/tex/images/java/tutorial/latex-ams-math-smashing-7-1.png) | `\left( {\Hmjd } \right)` | *外側の括弧が大きすぎます* |

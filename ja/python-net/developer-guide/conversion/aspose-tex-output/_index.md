@@ -38,7 +38,7 @@ Aspose.TeXは、データのバルクがファイル、ストリーム、配列�
 
 ## 出力端子の背後にあるアイデア
 
-端子出力は、出力のもう1つの重要な側面です。このため、**python for python** asops.texは一般[ioutputterminal](https://reference.aspose.com/tex/python-net/aspose.tex.io/ioutputterminal/)インターフェイスを定義します。これには、[TerminalWriter](https://reference.aspose.com/tex/python-net/aspose.tex.io/terminalwriter/)の実装のインスタンスを返す単一のプロパティがあります。利用可能な実装については、以下で説明します。
+端子出力は、出力のもう1つの重要な側面です。このため、**python for python** Aspose.TeXは一般[ioutputterminal](https://reference.aspose.com/tex/python-net/aspose.tex.io/ioutputterminal/)インターフェイスを定義します。これには、[TerminalWriter](https://reference.aspose.com/tex/python-net/aspose.tex.io/terminalwriter/)の実装のインスタンスを返す単一のプロパティがあります。利用可能な実装については、以下で説明します。
 
 ### コンソールへの端子出力を書き込みます
 

@@ -448,7 +448,7 @@ finally {
 }
 ```
 
-Rendererオプションの使用に関する詳細は、[.netのAspose.TeX](/tex/{{lang.url-fragment}}net/latex-math-formula-rendering/)または[asops.tex for java](/tex/{{lang.url-fragment}}java/latex-math-formula-rendering/)を使用して、ラテックス数学式のレンダリングに関する記事の使用に関する詳細を見つけることができます。しかし、それらの1つはここで私たちにとって重要です。このオプションを使用して、必要な結果を取得するために必要なLaTexドキュメントプリアンブルを指定できます。 (以下、ソースコードのC＃バージョンのみを提示します。)
+Rendererオプションの使用に関する詳細は、[.netのAspose.TeX](/tex/{{lang.url-fragment}}net/latex-math-formula-rendering/)または[Aspose.TeX for java](/tex/{{lang.url-fragment}}java/latex-math-formula-rendering/)を使用して、ラテックス数学式のレンダリングに関する記事の使用に関する詳細を見つけることができます。しかし、それらの1つはここで私たちにとって重要です。このオプションを使用して、必要な結果を取得するために必要なLaTexドキュメントプリアンブルを指定できます。 (以下、ソースコードのC＃バージョンのみを提示します。)
 
 
 ```csharp

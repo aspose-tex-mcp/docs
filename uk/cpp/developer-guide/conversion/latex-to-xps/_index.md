@@ -60,4 +60,4 @@ System::MakeObject<Aspose::TeX::TeXJob>(u"hello-world.ltx", System::MakeObject<X
 
 Ефект такий самий, як ми отримуємо [тут](/tex/{{lang.url-fragment}}cpp/latex-to-pdf/#an-alternative-way-to-write-main-output-pdf-file).
 
-**Ви також можете ознайомитися з безкоштовною [веб-програмою] для перетворення LaTeX на XPS (8), створеною на основі API [Aspose.TeX для .NET](https://products.aspose.com/tex/net/). [Тут](https://products.aspose.com/tex/cpp/) – сторінка версії C++.**
+**Ви також можете ознайомитися з безкоштовною [веб-програмою](https://products.aspose.app/tex/conversion/latex-to-xps) для перетворення LaTeX на XPS, створеною на основі API [Aspose.TeX для .NET](https://products.aspose.com/tex/net/). [Тут](https://products.aspose.com/tex/cpp/) – сторінка версії C++.**

@@ -29,7 +29,7 @@ lastmod: "2025-06-10"
 
 接下来，该过程从一开始就开始扫描调整后的输入文件。配备乳胶格式的Tex引擎可能在某个时候会丢弃一个错误，表明`\begin {document}`尚未在应该已经存在时找到。这样，必须在报告中定义并反映了必须插入`\begin {document}`的位置。
 
-在进一步扫描文件时，引擎可能会遇到未定义的命令或环境。在这种情况下，对于某些最常见的命令和环境，API可以在[嵌入式所需软件包](/tex/{{lang.url-fragment}}net/embedded-packages/)上做出假设(5)(5)(5)。但是，可以通过实现[IguessPackageCallback](https://reference.aspose.com/tex/java/com.aspose.tex.features/iguesspackagecallback/)接口的类在外部进行此类假设。一旦开发了这样的类，应通过调用`setGuessPackageCallback()`方法将其实例传递给该过程。
+在进一步扫描文件时，引擎可能会遇到未定义的命令或环境。在这种情况下，对于某些最常见的命令和环境，API可以在[嵌入式所需软件包](/tex/{{lang.url-fragment}}net/embedded-packages/)上做出假设。但是，可以通过实现[IguessPackageCallback](https://reference.aspose.com/tex/java/com.aspose.tex.features/iguesspackagecallback/)接口的类在外部进行此类假设。一旦开发了这样的类，应通过调用`setGuessPackageCallback()`方法将其实例传递给该过程。
 
 这是一个基本示例，只需将`\head`命令映射到`fancyhdr` 包'：
 

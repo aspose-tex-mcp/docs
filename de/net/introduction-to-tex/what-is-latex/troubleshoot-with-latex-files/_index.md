@@ -51,7 +51,6 @@ LaTeX stellt Ihnen verschiedene Pakete und Befehle zur Verfügung, mit denen Sie
 LaTeX bietet im Vergleich zu anderen Dokumentenvorbereitungssystemen mehrere Vorteile und einige Nachteile. Lernen Sie sie kennen, um zu sehen, ob dieses Format die richtige Wahl für Ihre Aufgabe ist.
 
 
-592 / 5,000
 | **Vorteile** | **Nachteile** |
 | :- | :- |
 | LaTeX bietet hochwertigen Schriftsatz, was zu professionell aussehenden Dokumenten führt. | Aufgrund seines befehlsbasierten Ansatzes ist LaTeX im Vergleich zu anderen WYSIWYG-Editoren schwieriger zu erlernen. |

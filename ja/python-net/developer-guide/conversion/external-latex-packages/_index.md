@@ -15,7 +15,7 @@ lastmod: "2025-06-09"
 
 **Aspose.TeX**ライブラリには、さまざまな[一般的なラテックスパッケージ](/tex/{{lang.url-fragment}}net/embedded-packages/)が付属しているため、これらのパッケージをTexエンジンに手動で提供する必要はありません。ただし、ラテックスファイルには、ライブラリのパッケージの「バンドル」に含まれていないパッケージが必要な状況がある場合があります。そのような場合、[rebused_input_directory](https://reference.aspose.com/tex/python-net/Aspose.TeX/texoptions/required_input_directory/)[texoptions](https://reference.aspose.com/tex/python-net/Aspose.TeX/texoptions/)クラスインスタンスのオプションを介して、必要なパッケージのソースファイルなど、必要な入力を提供してみてください。これが2つの例でどのように機能するかを探ります。
 
-### 未梱包のフォーム(「ファンシーボックス」パッケージ)で提供される必要な入力。
+### 未梱包のフォーム(`fancybox`パッケージ)で提供される必要な入力。
 
 「required-input-fs.tex」という名前の次の基本的なラテックスファイルがあるとします。これは[サンプルソリューション](https://GitHub.com/aspose-tex/Aspose.TeX-for-Python-.NET)の一部です。
 
@@ -57,7 +57,7 @@ options.required_input_directory = InputFileSystemDirectory('path-to-directory-w
 
 {{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Conversion-RequiredInput-FileSystem.py" >}}
 
-### アーカイブフォームで必要な入力を提供する(「pgfplots」パッケージ)
+### アーカイブフォームで必要な入力を提供する(`pgfplots`パッケージ)
 
 次に、「必要な入力Zip.tex」という名前の次のLaTexファイルがあるとします。これは、例のソリューションからの簡単なファイルでもあります。
 
@@ -93,7 +93,7 @@ First example is 2D and 3D math expressions plotted side-by-side.
 \end{document}
 ```
 
-3行目では、ファイルが「ネイティブに」サポートされていない「pgfplots」パッケージが必要であることが観察できます。繰り返しになりますが、「PGFPlots」パッケージのソースファイルを所有していると仮定すると、これらのファイルは非常に多く、LaTexタイプセットアプリケーションのインストールディレクトリ内の2つの異なるディレクトリにあります。 `pgfplots`フォルダーは、「\ tex \ generic」と` \ tex \ latex`ディレクトリの両方にあります。 Aspose.TeXライブラリが正しく機能するには、これらの両方のフォルダーの内容を入力として提供する必要があります。これを達成するために、これらのソースファイルをzipアーカイブにパッケージ化したいと考えています。以下は、アーカイブの目的のレイアウトです。
+3行目では、ファイルが「ネイティブに」サポートされていない`pgfplots`パッケージが必要であることが観察できます。繰り返しになりますが、`pgfplots`」パッケージのソースファイルを所有していると仮定すると、これらのファイルは非常に多く、LaTexタイプセットアプリケーションのインストールディレクトリ内の2つの異なるディレクトリにあります。 `pgfplots`フォルダーは、`\tex\generic`と` \ tex \ latex`ディレクトリの両方にあります。 Aspose.TeXライブラリが正しく機能するには、これらの両方のフォルダーの内容を入力として提供する必要があります。これを達成するために、これらのソースファイルをzipアーカイブにパッケージ化したいと考えています。以下は、アーカイブの目的のレイアウトです。
 
 ![アーカイブのレイアウト](/tex/images/python-net/pgfplots-zip-layout.png)
 

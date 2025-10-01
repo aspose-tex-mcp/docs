@@ -44,8 +44,6 @@ Una volta creata la versione fissa del file originale, il riparatore esegue il l
 Ecco il rapporto completo:
 
 
-
-2,545 / 5,000
 ```
 Tentativo di riparazione del file originale...
 --------------------------------------------------------------------------------

@@ -93,7 +93,7 @@ First example is 2D and 3D math expressions plotted side-by-side.
 \end{document}
 ```
 
-在第三行上，可以观察到该文件需要“ PGFPLOTS”软件包，而不是“本地”支持。再一次，假设我们拥有“ PGFPLOTS”软件包的源文件，这些文件很多，并且位于任何乳胶排放应用程序的安装目录中的两个不同目录中。可以在`\ tex \ generic`和`\ tex \ latex`目录”中找到“ pgfplots”文件夹。为了使aspose.tex库正确运行，必须提供两个文件夹的内容作为输入。为了实现这一目标，我们希望将这些源文件包装到ZIP档案中。以下是档案的所需布局：
+在第三行上，可以观察到该文件需要“ PGFPLOTS”软件包，而不是“本地”支持。再一次，假设我们拥有“ PGFPLOTS”软件包的源文件，这些文件很多，并且位于任何乳胶排放应用程序的安装目录中的两个不同目录中。可以在`\ tex \ generic`和`\tex\latex`目录”中找到“ pgfplots”文件夹。为了使aspose.tex库正确运行，必须提供两个文件夹的内容作为输入。为了实现这一目标，我们希望将这些源文件包装到ZIP档案中。以下是档案的所需布局：
 
 ![存档的布局](/tex/images/python-net/pgfplots-zip-layout.png)
 

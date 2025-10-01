@@ -64,4 +64,4 @@ Transcript written on hello-world.log.
 
 他のTEXジョブオプションについて説明します[ここ](/tex/{{lang.url-fragment}}net/other-options/)。
 
-**[.NET APIのasops.tex](https://products.aspose.com/tex/net/)に基づいて構築された無料のラテックスからPDFへの変換[Webアプリ](https://products.aspose.app/tex/conversion/latex-to-pdf)をチェックアウトすることもできます。**
+**[.NET APIのAspose.TeX](https://products.aspose.com/tex/net/)に基づいて構築された無料のラテックスからPDFへの変換[Webアプリ](https://products.aspose.app/tex/conversion/latex-to-pdf)をチェックアウトすることもできます。**

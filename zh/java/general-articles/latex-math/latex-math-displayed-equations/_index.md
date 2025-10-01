@@ -100,7 +100,7 @@ $$x^2-y^2 = (x+y)(x-y).\leqno(15)$$
 
 ![方程环境的使用](/tex/images/java/tutorial/latex-math-9-6.png)
 
-也可以使用`\ label`和 `\ ref`标记和参考方程。例如，
+也可以使用`\label`和 `\ref`标记和参考方程。例如，
 
 ```tex
 \begin{equation} \label{eq:someequation}

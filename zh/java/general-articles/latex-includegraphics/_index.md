@@ -16,19 +16,19 @@ lastmod: "2025-06-10"
 
 在研究您的学术和科学文档(例如研究论文，会议记录和学术演讲)时，您可能有时希望包括图形数字。
 
-一方面，这些可以是图纸，图，直方图或通常称为矢量图形的其他内容。现代乳胶系统(例如“ PDFTEX”)为在文档中创建此类图形提供了大量工具。例如，`pict2e`，`pgf(tikz)`和`pgfplots`软件包。在大多数情况下，数字本身是由Tex引擎生成的，并将其包含在输出文件中，作为适合特定输出格式的向量图形指令的序列。
+一方面，这些可以是图纸，图，直方图或通常称为矢量图形的其他内容。现代乳胶系统(例如`pdfTeX`)为在文档中创建此类图形提供了大量工具。例如，`pict2e`，`PGF(TikZ)`和`PGFplots软件包。在大多数情况下，数字本身是由Tex引擎生成的，并将其包含在输出文件中，作为适合特定输出格式的向量图形指令的序列。
 
 另一方面，您可能还具有也希望在出版物中包含的栅格图像。乳胶系统目前也能够执行此操作，但是您需要在乳胶文件中指定图像文件的路径作为某些乳胶宏的参数。
 
-本文使用`Graphics`(以及随附的`GraphICX`)软件包中包含乳胶文件中的栅格图像。
+本文使用`graphics`(以及随附的`graphicx`)软件包中包含乳胶文件中的栅格图像。
 
-## 选择哪个软件包，`graphics'或`graphicx`？
+## 选择哪个软件包，`graphics`或`graphicx`？
 
-两个软件包`Graphics`和`graphicx`都非常相似。主要区别在于语法。尽管“ Graphics”软件包使用一组单独的宏来将转换应用于图像，但`graphicx`软件包使用`key = value`符号对`\includegraphics`宏的参数''表示这些转换。我们将一次为两个软件包提供每个用例的示例，以使差异更加清晰。
+两个软件包`graphics`和`graphicx`都非常相似。主要区别在于语法。尽管`graphics`软件包使用一组单独的宏来将转换应用于图像，但`graphicx`软件包使用`key=value`符号对`\includegraphics`宏的参数''表示这些转换。我们将一次为两个软件包提供每个用例的示例，以使差异更加清晰。
 
 ## 包括选定的包裹
 
-这是用“ \usepackage”命令与任何其他乳胶软件包相同的方法来完成的：
+这是用`\usepackage`命令与任何其他乳胶软件包相同的方法来完成的：
 
 
 ```tex
@@ -38,7 +38,7 @@ lastmod: "2025-06-10"
 
 ### 指定驱动程序
 
-如果您的排版系统未配置为默认情况下使用“ pdftex”，则应指定适当的选项，该选项将迫使软件包使用所需的“驱动程序”：
+如果您的排版系统未配置为默认情况下使用`pdfTeX`，则应指定适当的选项，该选项将迫使软件包使用所需的“驱动程序”：
 
 
 ```tex
@@ -75,7 +75,7 @@ lastmod: "2025-06-10"
 
 ## 乳胶图形转换
 
-乳胶`Graphics`和`graphICX“软件包都提供了多种操纵内容的方法。
+乳胶`graphics`和`graphICX“软件包都提供了多种操纵内容的方法。
 
 ### 比例图乳胶
 
@@ -129,15 +129,15 @@ lastmod: "2025-06-10"
 \includegraphics[viewport=10 10 250 220,clip]{sample-image.png} % the same, but the image is clipped by the viewport
 ```
 
-至于“ GraphICX”软件包，可以将转换组合在一起，但顺序很重要。
-要了解有关“ Graphics”软件包捆绑功能的更多信息，请参阅[CTAN](https://ctan.org/pkg/graphics)上的软件包页面
+至于`graphicx`软件包，可以将转换组合在一起，但顺序很重要。
+要了解有关`graphics`软件包捆绑功能的更多信息，请参阅[CTAN](https://ctan.org/pkg/graphics)上的软件包页面
 [软件包文档](http://mirrors.ctan.org/macros/latex/required/graphics/graphics.pdf)。
 
 ### 乳胶包括图形免费网络应用
 
-如果您不想以编程方式使用Include Graphics乳胶软件包，则还可以查看基于[Aspose.TeX for .NET api]构建的免费[latex include graphics](https://products.aspose.app/tex/includegraphics/)Web应用程序(4)。 
+如果您不想以编程方式使用Include Graphics乳胶软件包，则还可以查看基于[Aspose.TeX for .NET api](https://products.aspose.com/tex/net/)构建的免费[latex include graphics](https://products.aspose.app/tex/includegraphics/)Web应用程序。 
 
-该应用程序允许您选择多个图像并为其视觉调整转换。它还使用“ GraphICX”软件包生成乳胶源代码，并在页面上显示结果。
+该应用程序允许您选择多个图像并为其视觉调整转换。它还使用`graphicx`软件包生成乳胶源代码，并在页面上显示结果。
 
 ### Aspose.TeX库中的乳胶图渲染功能
 

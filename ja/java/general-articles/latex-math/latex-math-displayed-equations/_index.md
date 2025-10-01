@@ -100,7 +100,7 @@ LaTexは、方程式を自動的に番号付けする方程式環境も提供し
 
 ![方程式環境の使用](/tex/images/java/tutorial/latex-math-9-6.png)
 
-`\ label`および` \ ref`を使用して方程式をラベル付けして参照することも可能です。例えば、
+`\label`および` \ ref`を使用して方程式をラベル付けして参照することも可能です。例えば、
 
 ```tex
 \begin{equation} \label{eq:someequation}

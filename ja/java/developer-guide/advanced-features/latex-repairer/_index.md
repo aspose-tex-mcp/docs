@@ -29,9 +29,9 @@ lastmod: "2025-06-09"
 
 次に、プロセスが最初から調整された入力ファイルのスキャンを開始します。 LaTex形式を装備したTEXエンジンは、ある時点で、「{document}」が既にあるべきである場合にまだ見つかっていないことを示すエラーを投げることができます。このようにして、「{document}」を挿入する必要がある位置が定義され、レポートに反映されます。
 
-ファイルをさらにスキャンしている間、エンジンは未定義のコマンドや環境に遭遇する可能性があります。そのような場合、APIは、最も一般的なコマンドと環境のいくつかについて、[これらのパッケージが含まれるまで定義されていないコマンドと環境を定義するものを埋め込んだ](/tex/{{lang.url-fragment}}net/embedded-packages/)(5)(5)(5)(5)(5)で仮定することができます。ただし、[iguesspackagecallback](https://reference.aspose.com/tex/java/com.Aspose.TeX.features/iguesspackagecallback/)インターフェイスを実装するクラスによって、そのような仮定を外部から行うことができます。このようなクラスを開発したら、`setguesspackagecallback()`メソッドを呼び出すことにより、そのインスタンスをプロセスに渡す必要があります。
+ファイルをさらにスキャンしている間、エンジンは未定義のコマンドや環境に遭遇する可能性があります。そのような場合、APIは、最も一般的なコマンドと環境のいくつかについて、[これらのパッケージが含まれるまで定義されていないコマンドと環境を定義するものを埋め込んだ](/tex/{{lang.url-fragment}}net/embedded-packages/)で仮定することができます。ただし、[iguesspackagecallback](https://reference.aspose.com/tex/java/com.Aspose.TeX.features/iguesspackagecallback/)インターフェイスを実装するクラスによって、そのような仮定を外部から行うことができます。このようなクラスを開発したら、`setguesspackagecallback()`メソッドを呼び出すことにより、そのインスタンスをプロセスに渡す必要があります。
 
-`fancehdr`パッケージに`\ head`コマンドを単純にマップする基本的な例があります。
+`fancehdr`パッケージに`\head`コマンドを単純にマップする基本的な例があります。
 
 {{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Features-LaTeXRepairer-PackageGuessingCallback.java" >}}
 

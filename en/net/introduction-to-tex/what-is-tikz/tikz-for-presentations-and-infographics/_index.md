@@ -5,6 +5,7 @@ title: TikZ for Presentations and Infographics | Aspose.TeX .NET
 linktitle: TikZ for Presentations
 weight: 22
 url: /net/tikz-for-presentations-and-infographics/
+aliases: /net/presentations-and-infographics/
 keywords: tikz presentations, tikz beamer, tikz infographics
 description: Discover how to use TikZ for creating professional presentations and engaging infographics.
 lastmod: "2025-06-29"

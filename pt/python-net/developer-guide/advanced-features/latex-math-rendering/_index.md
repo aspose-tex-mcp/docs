@@ -52,7 +52,7 @@ Aqui está o resultado da renderização.
 
 Isso representa a aplicação mais comum e ampla da funcionalidade **FORMULAÇÃO DE FORMULAÇÃO DE MATHA DE LATEX**.
 
-**Você também pode explorar o [aplicativo web] gratuito (5), que utiliza o recurso implementado do [Aspose.TeX para .NET API](https://products.aspose.com/tex/net/).**
+**Você também pode explorar o [aplicativo web](https://products.aspose.app/tex) gratuito, que utiliza o recurso implementado do [Aspose.TeX para .NET API](https://products.aspose.com/tex/net/).**
 
 ## Renderizando uma fórmula de matemática de LaTeX para SVG
 

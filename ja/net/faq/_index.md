@@ -42,7 +42,7 @@ lastmod: "2025-06-09"
 
 **Q：どのパッケージがAspose.TeX apiソリューションに埋め込まれていますか？**
 
-**A:** [Aspose.TeX埋め込みラテックスパッケージ]のリストによると、(6)それらは次のとおりです。 
+**A:** [Aspose.TeX埋め込みラテックスパッケージ](https://purchase.aspose.com/temporary-license/)のリストによるとそれらは次のとおりです。 
 
 - eurosym
 - geometry
