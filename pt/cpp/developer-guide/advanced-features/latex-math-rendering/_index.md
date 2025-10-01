@@ -85,4 +85,4 @@ As últimas linhas do exemplo imprimem dois artefatos de renderização de fórm
 
 Este é o caso de uso mais geral para a renderização de fórmula matemática do LATEX.
 
-**Você também pode conferir o [aplicativo web] gratuito (4) construído com base no recurso implementado em [Aspose.TeX para C ++ API](https://products.aspose.com/tex/cpp/).**
+**Você também pode conferir o [aplicativo web](https://products.aspose.app/tex) gratuito construído com base no recurso implementado em [Aspose.TeX para C ++ API](https://products.aspose.com/tex/cpp/).**

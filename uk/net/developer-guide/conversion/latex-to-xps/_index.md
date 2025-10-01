@@ -30,4 +30,4 @@ lastmod: "2025-06-13"
 
 Ефект такий самий, як ми отримуємо [тут](/tex/{{lang.url-fragment}}net/latex-to-pdf/#an-alternative-way-to-write-main-output-pdf-file).
 
-**Ви також можете ознайомитися з безкоштовною [веб-програмою] для перетворення LaTeX на XPS (9), створеною на основі [Aspose.TeX для .NET API](https://products.aspose.com/tex/net/).**
+**Ви також можете ознайомитися з безкоштовною [веб-програмою](https://products.aspose.app/tex/conversion/latex-to-xps) для перетворення LaTeX на XPS, створеною на основі [Aspose.TeX для .NET API](https://products.aspose.com/tex/net/).**

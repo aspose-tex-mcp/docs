@@ -56,6 +56,6 @@ Por exemplo,
 \usepackage[a6paper,landscape]{geometry}
 ```
 
-Embora `\input`, ` \ Openin`, `\read` e `\ Closein` Primitivos não sejam proibidos, os pacotes são o local mais adequado para eles. Portanto, você deve usá -los melhor em seus próprios pacotes personalizados se estiver desenvolvendo -os.
+Embora `\input`, `\Openin`, `\read` e `\Closein` Primitivos não sejam proibidos, os pacotes são o local mais adequado para eles. Portanto, você deve usá -los melhor em seus próprios pacotes personalizados se estiver desenvolvendo -os.
 
 Outras partes da entrada são arbitrárias, também seguem o conceito Geral [TEX INTRUPT](/tex/{{lang.url-fragment}}net/tex-io/#tex-input) e dependem do que exatamente o seu arquivo tex (programa) deve fazer, quais pacotes você está usando, etc.

@@ -42,8 +42,6 @@ PythonのAspose.TeXの問題が効率的に解決されることを確認する�
 
 |**リソース**|**説明**|
 | :- | :- |
-
-759 / 5,000
 |[Aspose.TeX for Python ホームページ](https://products.aspose.com/tex/python-net/)|製品のホームページです。|
 |[Aspose.TeX ブログ](https://blog.aspose.com/category/tex/)| Aspose.TeX for Python の新しいリリースや役立つヒントについては、このページを頻繁に確認してください。|
 |[Aspose.TeX for Python のダウンロード](https://pypi.org/project/aspose-tex-net/)| Aspose.TeX for Python の最新バージョンは、こちらからダウンロードできます。頻繁にリリースしています。|

@@ -25,8 +25,8 @@ XPSへの変換は、[saveoptions](https://reference.aspose.com/tex/java/com.Asp
 
 [XPSDevice](https://reference.aspose.com/tex/java/com.Aspose.TeX.rendering/XpsDevice#XpsDevice-java.io.OutputStream-)クラスの別のコンストラクターがあります。これにより、結果のXPSファイルを別の方法で取得できます。
 
-{<<gist "Aspose-com-gists" "67385C777283964D328086603F691AC9" "ASPOSE.TEX.CONVELS-CONVERSION-LATEXTOXPS-ALTERNATIVE.JAVA">}}}}
+{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Conversion-LaTeXToXps-Alternative.java" >}}
 
-効果は[ここ]を取得するのと同じです(7)。
+効果は[ここ](https://products.aspose.app/tex/conversion/latex-to-xps)を取得するのと同じです。
 
 **[.NETのAsops.Tex](https://products.aspose.com/tex/net/)APIに基づいて構築された無料のLaTex-to-XPS変換[Webアプリ](https://products.aspose.app/tex/conversion/latex-to-xps)をチェックアウトすることもできます。 [ここ](https://products.aspose.com/tex/java/)はJavaバージョンページです。**

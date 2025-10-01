@@ -35,7 +35,7 @@ Tex言語のI/O Primitivesはファイル名のみを扱うことができるた
 
 ## 入力端子の概念
 
-さて、端子入力もあることを覚えておく時が来ました。これについては、**asops.tex for .net**が一般[iinputterminal](https://reference.aspose.com/tex/net/aspose.tex.io/iinputterminal/)インターフェイスを定義します。実装を以下で説明します。
+さて、端子入力もあることを覚えておく時が来ました。これについては、**Aspose.TeX for .net**が一般[iinputterminal](https://reference.aspose.com/tex/net/aspose.tex.io/iinputterminal/)インターフェイスを定義します。実装を以下で説明します。
 
 ### コンソールから端子入力を取得します
 

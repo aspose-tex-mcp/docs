@@ -92,7 +92,7 @@ First example is 2D and 3D math expressions plotted side-by-side.
 \end{document}
 ```
 
-在第三行上，我们看到该文件需要“ PGFPLOTS”软件包，这也不是“本地”支持的。同样，我们假设我们有“ PGFPLOTS”软件包源文件。如果您在任何乳胶排放应用程序的安装目录中找到两个位置，则在两个位置之间进行了大量文件。您可以在`\ tex \ generic`和`\ tex \ latex`文件夹上找到`pgfplots`文件夹。并且必须根据需要输入Aspose.TeX库提供两个文件夹的内容。我们希望将这些源文件包装在zip存档中，因此这是存档的布局：
+在第三行上，我们看到该文件需要“ PGFPLOTS”软件包，这也不是“本地”支持的。同样，我们假设我们有“ PGFPLOTS”软件包源文件。如果您在任何乳胶排放应用程序的安装目录中找到两个位置，则在两个位置之间进行了大量文件。您可以在`\ tex \ generic`和`\tex\latex`文件夹上找到`pgfplots`文件夹。并且必须根据需要输入Aspose.TeX库提供两个文件夹的内容。我们希望将这些源文件包装在zip存档中，因此这是存档的布局：
 
 ![存档的布局](/tex/images/java/pgfplots-zip-layout.png)
 
@@ -132,6 +132,6 @@ try {
 
 ### 限制
 
-您的乳胶文件要求的包装可以在 * latex3e *内核下开发。这样的软件包很可能无法与**Aspose.TeX**库一起使用，因为后者基于*lastx2e*内核。
+您的乳胶文件要求的包装可以在 *LaTeX3e*内核下开发。这样的软件包很可能无法与**Aspose.TeX**库一起使用，因为后者基于*lastx2e*内核。
 
 此外，您的乳胶文件要求的软件包可以直接调用**Aspose.TeX**库*对象Tex*引擎不支持的设备依赖的原始命令。不幸的是，这样的软件包无法确定。

@@ -15,7 +15,7 @@ lastmod: "2025-06-09"
 
 **Q：JavaにAspose.TeX APIソリューションを使用できますか？**
 
-**A:** asops.tex for javaは、Texファイルを管理および操作するためのワンストップショップです。それはあなたに力を与えます：
+**A:** Aspose.TeX for javaは、Texファイルを管理および操作するためのワンストップショップです。それはあなたに力を与えます：
 
 - Texファイルとラテックスファイルを簡単に変換します。
 - Aspose.TeXは、TEXコードをフィードし、生成された出力を目的の形式で取得するための複数の方法を提供します。
@@ -47,7 +47,7 @@ new TeXJob(Utils.getInputDirectory() + "hello-world.tex", new PdfDevice(), optio
 その他の例については、[Convertion](/tex/{{lang.url-fragment}}java/conversion/)ガイドをご覧ください。
 <br> <br>
 
-**Q：Javaのasops.texを使用してカスタム形式を作成できますか？**
+**Q：JavaのAspose.TeXを使用してカスタム形式を作成できますか？**
 
 **A:**はい、ライブラリにはそのような機能があります。 [その他のTex変換出力形式](/tex/{{lang.url-fragment}}java/other-tex-formats/#creating-a-custom-format)の記事で簡単に説明します。
 <br> <br>
@@ -97,7 +97,7 @@ new TeXJob(Utils.getInputDirectory() + "hello-world.tex", new PdfDevice(), optio
     </dependency>
 ```
 
-**Q：Javaのasops.texを使用してラテックス式をレンダリングできますか？**
+**Q：JavaのAspose.TeXを使用してラテックス式をレンダリングできますか？**
 
 **A:**はい、Aspose.TeX 数式レンダリングライブラリを使用すると、数学式でSVGまたはPNG画像を作成できます。 
 

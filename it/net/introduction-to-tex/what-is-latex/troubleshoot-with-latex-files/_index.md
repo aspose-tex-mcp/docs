@@ -55,8 +55,6 @@ LaTex offre diversi vantaggi e alcuni svantaggi rispetto ad altri sistemi di pre
 | LaTeX offre una composizione di alta qualità, che si traduce in documenti dall'aspetto professionale. | LaTeX è più difficile da imparare rispetto agli editor WYSIWYG a causa del suo approccio basato sui comandi. |
 | LaTeX impone un approccio strutturato alla creazione di documenti utilizzando i suoi comandi e ambienti. | Sebbene sia ottimo per la formattazione complessa, la formattazione semplice potrebbe richiedere più impegno e tempo. |
 | È uno strumento perfetto per scrivere equazioni e simboli matematici. | A differenza degli editor WYSIWYG, LaTeX richiede la compilazione del documento per visualizzare l'output finale. |
-
-625 / 5,000
 | LaTeX numera automaticamente sezioni, figure, tabelle, equazioni e riferimenti, consentendo agli utenti di risparmiare tempo. | La collaborazione può essere difficile se i collaboratori non hanno familiarità con LaTeX o non dispongono degli strumenti necessari. |
 | LaTeX offre un semplice sistema di riferimenti incrociati all'interno del documento, rendendolo accurato e facile da consultare. | Per documenti semplici con requisiti di formattazione minimi, LaTeX può sembrare troppo complesso. |
 | È facile da integrare con BibTeX o BibLaTeX per la gestione delle citazioni e la generazione di bibliografie. | Errori e problemi di LaTeX possono a volte essere criptici, soprattutto per i principianti. |

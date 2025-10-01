@@ -125,7 +125,7 @@ Observe o uso do comando `\newline`.
 <a href="/tex/java/latex-tables/latex-tables-4.jpg" style="display:inline-block;width:100%;">![Exemplo de saída](/tex/images/java/tutorial/latex-tables-4.jpg)</a>
 
 Com o pacote `Array` incluído, mais duas opções estão disponíveis para colunas de largura fixa:` m {width} ` - o mesmo que` p {width} `, mas alinhe verticalmente o teor de células no meio;
-`b {width}` - o mesmo que `p {width}`, mas alinha verticalmente o conteúdo de células na parte inferior.
+`b{width}` - o mesmo que `p{width}`, mas alinha verticalmente o conteúdo de células na parte inferior.
 
 No caso raro de que uma tabela precisa ser incluída no texto de um parágrafo, você pode especificar a posição da tabela em relação à linha de base da linha de texto anexante. Para esse fim, você usa a opção `t`, ` c` (padrão) ou `b` para alinhar a linha de base ao topo, centro ou inferior da tabela. Por exemplo,
 
@@ -146,7 +146,7 @@ Aqui dizemos ao LATEX que a linha de base deve se alinhar ao fundo da tabela.
 
 ### Definindo várias colunas
 
-Quando a sua tabela contém colunas alinhadas de forma idêntica, você pode definir todas elas em outras usando o `*{num} {format}` sintaxe. Isso é especialmente útil quando sua tabela possui muitas colunas.
+Quando a sua tabela contém colunas alinhadas de forma idêntica, você pode definir todas elas em outras usando o `*{num}{format}` sintaxe. Isso é especialmente útil quando sua tabela possui muitas colunas.
 
 ```tex
 \begin{tabular}{l*{7}{c}r}
@@ -160,7 +160,7 @@ Quando a sua tabela contém colunas alinhadas de forma idêntica, você pode def
 
 <a href="/tex/java/latex-tables/latex-tables-6.jpg" style="display:inline-block;width:100%;">![Exemplo de saída](/tex/images/java/tutorial/latex-tables-6.jpg)</a>
 
-### Especificação da coluna usando `> {\ commmand}` e `<{\ comando}`
+### Especificação da coluna usando `>{\commmand}` e `<{\ comando}`
 
 Outra maneira de especificar colunas é usar `> {\ comando}` para comandos executados direito *antes de* cada elemento da coluna e `<{\ comando}` para comandos executados direito *após* cada elemento da coluna. Isso está disponível quando você possui o pacote `Array` incluído no preâmbulo do documento. No exemplo a seguir, usamos essa sintaxe para centralizar cada uma das duas colunas e digitar a primeira em ousada face.
 
@@ -267,7 +267,7 @@ Uma tabela um pouco mais complexa pode ser obtida pela fusão de células horizo
 
 ### Células abrangendo várias colunas
 
-A forma geral do comando que faz uma extensão celular sobre várias colunas é: `\multicolumn {num_cols} {alinhamento} {contents}`. Aqui, `num_cols` é o número de colunas para mesclar; `alinhamento` é` l`, `c`, ` r`, ou, para ter um texto de texto, `p {width}`. E `conteúdo `são os dados que você deseja colocar nessa célula.
+A forma geral do comando que faz uma extensão celular sobre várias colunas é: `\multicolumn {num_cols} {alinhamento} {contents}`. Aqui, `num_cols` é o número de colunas para mesclar; `alinhamento` é` l`, `c`, ` r`, ou, para ter um texto de texto, `p{width}`. E `conteúdo `são os dados que você deseja colocar nessa célula.
 
 Aqui está o exemplo simples:
 
@@ -465,7 +465,7 @@ Com o pacote `xcolor`, você também pode especificar a cor de uma célula espec
 
 ### Usando o pacote `colortbl`
 
-O pacote `colortbl` fornece o comando `\columnColor` para especificar a cor da coluna no preâmbulo de um ambiente tabular dentro do construto `> {...}`. Isso significa que você também deve ter o pacote `Array` incluído. (Não se esqueça de incluir também o pacote `xcolor`.)
+O pacote `colortbl` fornece o comando `\columnColor` para especificar a cor da coluna no preâmbulo de um ambiente tabular dentro do construto `>{...}`. Isso significa que você também deve ter o pacote `Array` incluído. (Não se esqueça de incluir também o pacote `xcolor`.)
 
 ```tex
 \begin{tabular}{|>{\columncolor{green}}l|>{\color{white}\columncolor{red}}c|}
@@ -696,7 +696,7 @@ Forneceremos um exemplo mais complexo de uma tabela que combina muitos dos recur
 \end{document}
 ```
 
-Antes do ambiente `LongTable`, definimos tipos de colunas com o comando`\newColumnType` fornecido pelo pacote `dcolumn`. Dentro dos argumentos, usamos a notação `> {...}` para definir formatos de coluna. As definições da coluna, por sua vez, usam comandos especificando cores, alinhamento, fontes e larguras da coluna. O próprio ambiente "longTable" é outro recurso empregado. Dentro do ambiente, usamos o comando `\multicolumn` para mesclar células horizontalmente junto com os tipos de coluna previamente definidos.
+Antes do ambiente `LongTable`, definimos tipos de colunas com o comando`\newColumnType` fornecido pelo pacote `dcolumn`. Dentro dos argumentos, usamos a notação `>{...}` para definir formatos de coluna. As definições da coluna, por sua vez, usam comandos especificando cores, alinhamento, fontes e larguras da coluna. O próprio ambiente "longTable" é outro recurso empregado. Dentro do ambiente, usamos o comando `\multicolumn` para mesclar células horizontalmente junto com os tipos de coluna previamente definidos.
 
 O resultado de todos os esforços está abaixo:
 

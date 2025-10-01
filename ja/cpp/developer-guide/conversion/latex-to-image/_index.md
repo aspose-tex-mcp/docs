@@ -133,4 +133,4 @@ options->set_SaveOptions(System::MakeObject<TiffSaveOptions>());
 options->set_SaveOptions(System::MakeObject<BmpSaveOptions>());
 ```
 
-**[.NETのasops.tex](https://products.aspose.com/tex/net/)APIに基づいて構築された無料のラテックスからBMPへの変換[Webアプリ](https://products.aspose.app/tex/conversion/latex-to-bmp)をチェックアウトすることもできます。 [ここ](https://products.aspose.com/tex/cpp/)はC ++バージョンページです。**
+**[.NETのAspose.TeX](https://products.aspose.com/tex/net/)APIに基づいて構築された無料のラテックスからBMPへの変換[Webアプリ](https://products.aspose.app/tex/conversion/latex-to-bmp)をチェックアウトすることもできます。 [ここ](https://products.aspose.com/tex/cpp/)はC ++バージョンページです。**

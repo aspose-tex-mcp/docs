@@ -107,24 +107,25 @@ We demonstrate this with the formula
 
 замінить налаштування за замовчуванням для ідентифікатора алфавіту `\mathsf`. Він переключиться на **Adobe Avant Garde** у ваших формулах.
 
-> Note that if the math alphabet in question is part of a symbol font that is already loaded by LaTeX for other reasons (e.g., `\mathcal`), it is better to use `\DeclareSymbolFontAlphabet` as it makes better use of TeX's somewhat limited resources for math.
+> Зверніть увагу, що якщо відповідний математичний алфавіт є частиною шрифту символів, який вже завантажено LaTeX з інших причин (наприклад, `\mathcal`), краще використовувати `\DeclareSymbolFontAlphabet`, оскільки це краще використовує дещо обмежені ресурси TeX для математики
 
 ## Найкращі математичні шрифти
 
 Окрім стандартного шрифту *Computer Modern*, LaTeX пропонує сім вбудованих шрифтів для набору математичних алфавітів, тому користувачі можуть налаштовувати свої математичні вирази, не вимагаючи додаткових пакетів у преамбулі. І найкращий варіант для вас – використовувати один із цих 8 шрифтів.
 
-| **Font** | **Usage** | **Command** |
+| **Шрифт** | **Використання** | **Команда** |
 |---|---|---|
-|Upright Roman | Standard Upright font|`\mathrm{}`|
-|Calligraphic | Used for typesetting regular mathematics letters.|`\mathnormal{}`|
-|Calligraphic | Used to typeset capital letters with a special Calligraphic font.|`\mathcal{}`|
-|Italic letters| Make the text in italic letters|`\mathit{}`|
-|Upright [Sans Serif](/font/net/what-is-font/sans-serif-fonts/)| Sets upright Sans Serif letters|`\mathsf{}`|
-|Upright Roman boldface| Used for typesetting upright Roman boldface letters|`\mathbf{}`|
-|Typewriter type|Used for for typesetting upright typewriter type letters.|`\mathtt{}`|
+|Вертикальний римський | Стандартний прямий шрифт|`\mathrm{}`|
+|Каліграфічний | Використовується для набору звичайних математичних літер.|`\mathnormal{}`|
+|Каліграфічний | Використовується для набору великих літер спеціальним каліграфічним шрифтом.|`\mathcal{}`|
+|Курсивні літери| Зробити текст курсивом|`\mathit{}`|
+|Вертикальний [Беззасічкові](/font/net/what-is-font/sans-serif-fonts/)| Встановлює прямі літери беззасічкових шрифтів|`\mathsf{}`|
+|Вертикальний римський жирний шрифт| Використовується для набору прямих римських жирних літер|`\mathbf{}`|
+|Тип друкарської машинки|Використовується для набору прямих літер друкарської машинки.|`\mathtt{}`|
 
 
 ## 8.2. Команди шрифту тексту в математиці
+
 Хоча оголошення текстових шрифтів, як-от `\rmfamily`, не можна використовувати в математиці, команди зміни шрифту, наприклад, `\textrm`, можна використовувати як у тексті, так і в математиці. Використовуючи ці команди, ви можете тимчасово переключитися з математичного контексту на текстовий контекст і набрати текст у середині формули, який логічно є частиною навколишнього тексту поза формулою. Шрифт, який використовується для набору цього тексту, залежатиме від навколишніх умов, що означає, що він успадковуватиме поточне кодування, сімейство, серію та форму, як у прикладі нижче.
 
 ```tex

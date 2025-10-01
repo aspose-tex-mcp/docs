@@ -52,7 +52,7 @@ Voici le résultat du rendu.
 
 Il s'agit de l'application la plus courante et la plus large de la fonctionnalité de **rendu de formule mathématique LaTeX**.
 
-**Vous pouvez également explorer l'[application Web] gratuite(5), qui utilise la fonctionnalité implémentée de l'[API Aspose.TeX pour .NET](https://products.aspose.com/tex/net/).**
+**Vous pouvez également explorer l'[application Web](https://products.aspose.app/tex) gratuite, qui utilise la fonctionnalité implémentée de l'[API Aspose.TeX pour .NET](https://products.aspose.com/tex/net/).**
 
 ## Rendu d'une formule mathématique LaTeX en SVG
 

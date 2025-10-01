@@ -15,9 +15,9 @@ lastmod: "2025-06-16"
 
 *AMS*-LATEX A versão 1.0 foi lançado em 1990 e apresentou a conversão original em LaTeX dos recursos de matemática no*ams*-tex de Michael Spivak, de Frank Mittelbach e Rainer Schopf, que trabalhavam como consultores do*AMS*, com a assistência de Michael Downes of the*AMS*Tech Staff. Em 1994, o trabalho adicional foi realizado com David M. Jones.
 
-* O pacote AMSMATH* aceita algumas opções que afetam principalmente o posicionamento de* limites* em vários operadores de matemática ou no posicionamento das tags de equação.
+O pacote *AMSMATH* aceita algumas opções que afetam principalmente o posicionamento de *limites* em vários operadores de matemática ou no posicionamento das tags de equação.
 
-## Disponível * AMSMATH * Opções do pacote
+## Disponível *AMSMATH* Opções do pacote
 
 As três opções a seguir podem ser usadas como opções globais de documentos (especificadas no comando `\documentclass`) ou como *amsmath* opções de pacote quando for carregado com o comando `\usepackage`.
 

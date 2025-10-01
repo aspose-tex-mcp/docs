@@ -18,7 +18,7 @@ lastmod: "2025-06-10"
 
 前者对原始乳胶及其包装的支持有限。它是在Tex垂直和水平规则的帮助下实施的。这是因为原始乳胶基于原始TEX发动机，该发动机以 *DVI*格式产生主要输出，不适合描述线条和曲线或二进制栅格图像数据。但是，能够输出图形支持格式的引擎(例如PDFTEX到PDF)也可以使用依赖格式的软件包或软件包功能处理图形。由于相同的原因，基本乳胶不支持后一个图形。我们将在下面讨论图形包含功能。
 
-## 乳胶`graphics'软件包和`\includegraphics`命令
+## 乳胶`graphics`软件包和`\includegraphics`命令
 
 在谈论乳胶图形包含时，想到的第一件事是`\includegraphics`命令。它是在“图形”软件包中定义的，您应该在序言中提到以启用其功能。
 
@@ -42,7 +42,7 @@ lastmod: "2025-06-10"
 \includegraphics{sample-image.png}
 ```
 
-其中`sample-image.png`是您要包含的文件的名称。您甚至可以使用扩展名。 “ Graphics”软件包包含支持格式的定义列表。查找文件时，它会遍历列表，并包含第一个匹配的文件。
+其中`sample-image.png`是您要包含的文件的名称。您甚至可以使用扩展名。 `graphics`软件包包含支持格式的定义列表。查找文件时，它会遍历列表，并包含第一个匹配的文件。
 
 您还可以使用绝对或相对路径指定完整的文件名：
 
@@ -60,7 +60,7 @@ lastmod: "2025-06-10"
 
 ### 缩放图形
 
-乳胶“ Graphics”软件包提供了操纵内容的命令。因此，您可以缩放随附的图形(实际上是Tex/latex代码所描述的任何内容)如下：
+乳胶`graphics`软件包提供了操纵内容的命令。因此，您可以缩放随附的图形(实际上是Tex/latex代码所描述的任何内容)如下：
 
 
 ```tex
@@ -123,7 +123,7 @@ lastmod: "2025-06-10"
 \includegraphics[angle=10]{sample-image.png} % rotates the image by 10 degrees counterclockwise
 ```
 
-要了解有关“ Graphics”软件包捆绑功能的更多信息，请参见文档[此处](https://ctan.org/pkg/graphics)和
+要了解有关`graphics`软件包捆绑功能的更多信息，请参见文档[此处](https://ctan.org/pkg/graphics)和
 [这里](http://mirrors.ctan.org/macros/latex/required/graphics/graphics.pdf)。
 
 **您也可以查看基于[Aspose.TeX for .NET api](https://products.aspose.com/tex/net/)的免费转换[Web应用](https://products.aspose.app/tex/conversion/latex/)。**

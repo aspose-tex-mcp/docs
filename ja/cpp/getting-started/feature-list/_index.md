@@ -5,7 +5,7 @@ title: 機能リスト| C++のAspose.TeX
 linktitle: 機能リスト
 weight: 30
 url: /cpp/feature-list/
-description: TEXファイルの操作機能を独自のソリューションに追加します。 C ++が提供するasops.tex APIソリューションを学びます。
+description: TEXファイルの操作機能を独自のソリューションに追加します。 C ++が提供するAspose.TeX APIソリューションを学びます。
 lastmod: "2025-06-09"
 ---
 

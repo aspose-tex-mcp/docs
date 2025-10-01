@@ -37,7 +37,7 @@ Tex言語のI/O Primitivesはファイル名のみを扱うことができるた
 
 ## 出力端子の概念
 
-出力には別の重要な部分があります---端子出力。これに関しては、**asops.tex for java**一般[ioutputterminal](https://reference.aspose.com/tex/java/com.Aspose.TeX/IOutputTerminal)インターフェイスを2つのメソッドがあると定義します。そのうちの1人は[BufferedWriter](https://docs.oracle.com/javase/6/docs/api/java/io/BufferedWriter.html)インスタンスを返します。別のものは、[outputStream](https://docs.oracle.com/javase/6/docs/api/java/io/OutputStream.html)インスタンスを基礎となるストリームとして返します。インターフェイスの実装を以下で説明します。
+出力には別の重要な部分があります---端子出力。これに関しては、**Aspose.TeX for java**一般[ioutputterminal](https://reference.aspose.com/tex/java/com.Aspose.TeX/IOutputTerminal)インターフェイスを2つのメソッドがあると定義します。そのうちの1人は[BufferedWriter](https://docs.oracle.com/javase/6/docs/api/java/io/BufferedWriter.html)インスタンスを返します。別のものは、[outputStream](https://docs.oracle.com/javase/6/docs/api/java/io/OutputStream.html)インスタンスを基礎となるストリームとして返します。インターフェイスの実装を以下で説明します。
 
 ### コンソールへの端子出力の書き込み
 

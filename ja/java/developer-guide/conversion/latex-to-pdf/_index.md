@@ -63,4 +63,4 @@ Transcript written on hello-world.log.
 
 他のTEXジョブオプションについて説明します[ここ](/tex/{{lang.url-fragment}}java/other-options/)。
 
-**[.netのasops.tex](https://products.aspose.com/tex/net/)APIに基づいて構築された無料のLaTex-to-PDF変換[Webアプリ](https://products.aspose.app/tex/conversion/latex-to-pdf)をチェックアウトすることもできます。 [ここ](https://products.aspose.com/tex/java/)はJavaバージョンページです。**
+**[.netのAspose.TeX](https://products.aspose.com/tex/net/)APIに基づいて構築された無料のLaTex-to-PDF変換[Webアプリ](https://products.aspose.app/tex/conversion/latex-to-pdf)をチェックアウトすることもできます。 [ここ](https://products.aspose.com/tex/java/)はJavaバージョンページです。**

@@ -95,7 +95,7 @@ options.RequiredInputDirectory = new InputFileSystemDirectory("path-to-directory
 ```
 
 
-在第三行上，我们可以看到该文件需要`pgfplots`软件包，这也不是“本地”支持的。同样，我们假设我们有“ PGFPLOTS”软件包源文件。如果您在任何乳胶排放应用程序的“安装目录”中找到两个位置，则大量文件在两个位置之间进行了分配。您可以在`\ tex \ generic`和`\ tex \ latex`文件夹上找到`pgfplots`文件夹。并且必须根据需要输入Aspose.TeX库提供两个文件夹的内容。我们希望将这些源文件包装在zip存档中，因此这是存档的布局：
+在第三行上，我们可以看到该文件需要`pgfplots`软件包，这也不是“本地”支持的。同样，我们假设我们有“ PGFPLOTS”软件包源文件。如果您在任何乳胶排放应用程序的“安装目录”中找到两个位置，则大量文件在两个位置之间进行了分配。您可以在`\ tex \ generic`和`\tex\latex`文件夹上找到`pgfplots`文件夹。并且必须根据需要输入Aspose.TeX库提供两个文件夹的内容。我们希望将这些源文件包装在zip存档中，因此这是存档的布局：
 
 ![存档的布局](/tex/images/net/pgfplots-zip-layout.png)
 
@@ -123,7 +123,7 @@ using (Stream zipStream = File.Open("path-to-zip-with-pgfplots-sources"), FileMo
 
 ### 采用外部字体软件包
 
-通常，乳胶分布提供一组可用于排版的默认字体。除这些字体外，**Aspose.TeX**包括许多非标准字体软件包。例如，`amsfonts'，`eurosym'和`wasysym`。如上所述，Aspose.TeX还允许使用外部包装。但是大多数情况下，我们在谈论不包含字体的软件包。
+通常，乳胶分布提供一组可用于排版的默认字体。除这些字体外，**Aspose.TeX**包括许多非标准字体软件包。例如，`amsfonts'，`eurosym`和`wasysym`。如上所述，Aspose.TeX还允许使用外部包装。但是大多数情况下，我们在谈论不包含字体的软件包。
 
 **Aspose.TeX**的*对象Tex*引擎扩展需要字体映射(以“约定”为“ .map”扩展为特定格式的文本文件)，以确定哪些物理字体对应于每个Tex的内部字体名称。这些字体图必须在初始化阶段加载到Tex的内存中。而且，当然，它们必须存在于您要插入的软件包的文件中。由于引擎不知道所有字体地图的名称，因此它可以在所有文件中查找所有文件。因此，用于[InsirceInputInputDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/requiredinputdirectory/)选项的[IinputworkingDirectory](https://reference.aspose.com/tex/net/aspose.tex.io/iinputworkingdirectory/)接口的实现必须提供一种通过扩展访问文件名的收集的方法。更具体地说，该实现还必须实现[IfileCollector](https://reference.aspose.com/tex/net/aspose.tex.io/ifilecollector/)接口。标准实现 -  [InputFilesystemDirectory](https://reference.aspose.com/tex/net/aspose.tex.io/inputfilesystemdirectory/)和[InputzipDirectory](https://reference.aspose.com/tex/net/aspose.tex.io/inputzipdirectory/) - 已经这样做。
 
@@ -133,6 +133,6 @@ using (Stream zipStream = File.Open("path-to-zip-with-pgfplots-sources"), FileMo
 
 ### 限制
 
-可能会在 * latex3e *内核下开发乳胶文件所需的包装。这样的软件包很可能无法与**Aspose.TeX**库一起使用，因为后者基于*lastx2e*内核。
+可能会在 *LaTeX3e*内核下开发乳胶文件所需的包装。这样的软件包很可能无法与**Aspose.TeX**库一起使用，因为后者基于*lastx2e*内核。
 
 您的乳胶文件要求的软件包可能会直接调用**Aspose.TeX**库的*对象Tex*引擎不支持设备的原始命令。不幸的是，这样的软件包无法确定。

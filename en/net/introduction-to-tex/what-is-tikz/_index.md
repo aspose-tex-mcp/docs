@@ -8,6 +8,7 @@ url: /net/tikz-introduction/
 keywords: what is tikz, tikz introduction, tikz basics
 description: Introduction to TikZ, a powerful extension for creating high-quality graphics in LaTeX documents.
 lastmod: "2025-06-29"
+aliases: /net/what-is-tikz/
 ---
 
 {{<section overview>}}

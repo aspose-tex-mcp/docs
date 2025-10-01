@@ -122,6 +122,7 @@ Telestas multi-lines geralmente incluem várias equações que devem ser alinhad
 ![Uma equação de várias linhas com o ambiente da matriz](/tex/images/java/tutorial/latex-math-9-8.png)
 
 O método recomendado para tal exibição é usar o ambiente `Array` fornecido pelo LATEX:
+
 ```tex
 $$\begin{array}{rl}
   X_1+\cdots+\X_p&=m,\\
@@ -249,6 +250,7 @@ Isso rende
 ![Fórmula longa quebrada usando o ambiente alinhado*](/tex/images/java/tutorial/latex-math-9-14.png)
 
 A idéia é tratar uma fórmula de uma linha longa como uma fórmula de duas linhas, usando `\qquad` na segunda linha, para que a segunda parte da fórmula pareça bem à direita do sinal '=' na primeira linha.
+
 Na verdade, não é uma tarefa fácil decidir como quebrar fórmulas longas exibidas em linhas; A Tex nunca tenta fazer isso, porque nenhum conjunto de regras é realmente adequado. O autor de um manuscrito matemático é geralmente o melhor juiz do que fazer, pois as posições de quebra dependem de fatores sutis de exposições matemáticas. Por exemplo, muitas vezes é desejável enfatizar parte da simetria ou outra estrutura subjacente à fórmula, e essas coisas exigem uma sólida compreensão do que exatamente está acontecendo nessa fórmula.
 
 No entanto, é possível declarar algumas regras de polegar sobre como lidar com fórmulas longas em exibições, pois existem alguns princípios de que o melhor tipador matemático tende a seguir:

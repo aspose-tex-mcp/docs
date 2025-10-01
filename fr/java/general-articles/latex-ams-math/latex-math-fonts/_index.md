@@ -32,7 +32,6 @@ Un alphabet et un grand nombre de symboles ne suffisent pas aux scientifiques. I
 LaTeX possède déjà quelques identifiants alphabétiques intégrés. Ils sont présentés dans le tableau ci-dessous. Les deux dernières lignes montrent que les lettres utilisées dans les formules sont tirées de l'alphabet mathématique « \mathnormal ». D'un autre côté, les lettres produites par `\mathit` ont un espacement différent, ce qui signifie que cet alphabet peut être utilisé pour fournir des noms de variables complets qui sont courants dans certaines disciplines.
 
 
-905 / 5,000
 | *Commande* | *Exemple de code* | *Résultat* |
 |---|---|---|
 | `\mathcal` | `$\mathcal{A}=a$` | !["A calligraphique égal à a"](/tex/images/java/tutorial/latex-ams-math-8-1.png) |

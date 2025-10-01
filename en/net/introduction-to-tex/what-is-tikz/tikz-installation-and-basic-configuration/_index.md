@@ -5,6 +5,7 @@ title: Installation and Basic Configuration | Aspose.TeX .NET
 linktitle: Installation and Configuration
 weight: 18
 url: /net/tikz-installation-and-basic-configuration/
+aliases: /net/installation-and-basic-configuration/
 keywords: install tikz, configure tikz, setup tikz
 description: Step-by-step guide on how to install and configure TikZ for use in your TeX and LaTeX documents.
 lastmod: "2025-06-29"

@@ -52,7 +52,7 @@ Aqui está o resultado da renderização.
 
 Este é o caso de uso mais geral para **fórmula de matemática de LaTeX** renderização.
 
-**Você também pode conferir o [aplicativo da web] gratuito (4) construído com base no recurso implementado no [Aspose.TeX para .NET](https://products.aspose.com/tex/net/) API. [Aqui](https://products.aspose.com/tex/java/) é a página da versão Java.**
+**Você também pode conferir o [aplicativo da web](https://products.aspose.app/tex) gratuito construído com base no recurso implementado no [Aspose.TeX para .NET](https://products.aspose.com/tex/net/) API. [Aqui](https://products.aspose.com/tex/java/) é a página da versão Java.**
 
 ## Como renderizar uma fórmula de matemática de LaTeX para SVG
 

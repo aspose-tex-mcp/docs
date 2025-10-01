@@ -66,7 +66,7 @@ iVBORw0KGgoAAAANSUhEUgAAAPgAAABdCAYAAAH/B5vAAAAAGXRFWHRTb2Z0d2FyZQBBZ......
 
 一般に、3つのレベルにはアクセシビリティがあります。無効化、制限により有効になり、完全に有効になっています。
 
-**asops.tex**では、`shellmode`と呼ばれるTexジョブオプションがありますが、適切な値は2つしかありません。 `noshellescape`値は、機能が無効になっていることを意味します。 2番目の値は、実行する必要があるコマンドが「実行可能可能」クラスの拡張機能としてユーザーが実装する必要があることを示しています。ここでは、このような実装の詳細については掘り下げませんが、 `base64`コマンドエミュレーションは既にAsoppes.texで実装されていることを言及します。デフォルトでは、そのプロトタイプインスタンスは、`Texoptions`クラスインスタンスの「executables」コレクションプロパティで見つけることができます。
+**Aspose.TeX**では、`shellmode`と呼ばれるTexジョブオプションがありますが、適切な値は2つしかありません。 `noshellescape`値は、機能が無効になっていることを意味します。 2番目の値は、実行する必要があるコマンドが「実行可能可能」クラスの拡張機能としてユーザーが実装する必要があることを示しています。ここでは、このような実装の詳細については掘り下げませんが、 `base64`コマンドエミュレーションは既にAspose.TeXで実装されていることを言及します。デフォルトでは、そのプロトタイプインスタンスは、`Texoptions`クラスインスタンスの「executables」コレクションプロパティで見つけることができます。
 
 ### Base64エンコードデータのデコード
 
@@ -119,4 +119,4 @@ iVBORw0KGgoAAAANSUhEUgAAAPgAAABdCAYAAAH/B5vAAAAAGXRFWHRTb2Z0d2FyZQBBZ......
 
 そして今、私たちは**ステップ5**を完了しました。真に完全な例については、[プロジェクトの例](https://github.com/aspose-tex/Aspose.TeX-for-.NET)を調べてください。
 
-**[.NET APIのasops.tex](https://products.aspose.com/tex/net/)に基づいて構築された無料変換[Webアプリ](https://products.aspose.app/tex/conversion/latex/)をチェックアウトすることもできます。**
+**[.NET APIのAspose.TeX](https://products.aspose.com/tex/net/)に基づいて構築された無料変換[Webアプリ](https://products.aspose.app/tex/conversion/latex/)をチェックアウトすることもできます。**

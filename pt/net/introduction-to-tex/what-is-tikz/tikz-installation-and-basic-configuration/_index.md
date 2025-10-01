@@ -32,8 +32,6 @@ O TikZ vem pré-instalado com distribuições TeX populares, como o **TeX Live**
    tlmgr install pgf
    ```
 
-
-306 / 5,000
 ### Utilizadores do MiKTeX
 
 1. Abra o MiKTeX Console.
@@ -90,7 +88,6 @@ For comfortable editing and real-time compilation, we recommend the following La
 - **TeXstudio** – Free, feature-rich editor with integrated TikZ preview.
 - **Overleaf** – Cloud-based collaborative editor with excellent TikZ support.
 - **Visual Studio Code** with **LaTeX Workshop** extension – Modern, lightweight editor supporting TikZ.
-898 / 5,000
 Inclua estes comandos no preâmbulo do seu documento para aplicar um estilo consistente.
 
 ## Editores Recomendados para o TikZ
