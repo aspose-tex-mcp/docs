@@ -55,9 +55,13 @@ Encontraremos outras "frutas" do trabalho do motor na pasta que especificamos co
 
 Há outra maneira de obter dados da imagem como uma matriz de matrizes de bytes, cada matriz na segunda dimensão representa dados de imagem para uma página separada.
 
+**Exemplo de conversão alternativo**
+
+O seguinte trecho de código em C# demonstra outra forma de obter a saída PNG escrevendo os dados da imagem num fluxo de memória em vez de diretamente no sistema de ficheiros. Esta abordagem é útil quando necessita dos bytes PNG gerados na memória para processamento posterior, como enviá-los pela rede, armazená-los numa base de dados ou realizar transformações adicionais antes de guardar.
+
 {{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-LaTeXToPng-Alternative.cs" >}}
 
-Os arquivos * "página-n.png" * serão gravados em qualquer caminho que especifique. Ao contrário de [saída em PDF](/tex/{{lang.url-fragment}}net/latex-to-pdf/#an-alternative-way-to-write-main-output-pdf-file), eles duplicarão os arquivos PNG de saída gravados no diretório de saída.
+Os arquivos *"página-n.png"* serão gravados em qualquer caminho que especifique. Ao contrário de [saída em PDF](/tex/{{lang.url-fragment}}net/latex-to-pdf/#an-alternative-way-to-write-main-output-pdf-file), eles duplicarão os arquivos PNG de saída gravados no diretório de saída.
 
 ## Sobre opções de entrada
 

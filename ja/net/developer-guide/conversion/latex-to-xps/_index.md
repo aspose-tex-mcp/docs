@@ -20,14 +20,35 @@ lastmod: "2025-06-09"
 
 ラテックスからXPSへの変換は、[saveoptions](https://reference.aspose.com/tex/net/Aspose.TeX/texoptions/saveoptions/)を[xpssaveoptions](https://reference.aspose.com/tex/net/aspose.tex.presentation.xps/xpssaveoptions/)クラスインスタンス(デフォルトまたは明示的に)に設定する必要があり、[xpsdevice](https://reference.aspose.com/tex/net/aspose.tex.presentation.xps/xpsdevice/)クラスのインスタンスにデバイスを変更する必要があります。
 
+**最も簡単な変換例**
+
+以下の例は、LaTeX ファイルを XPS に変換する方法を数ステップで示しています。
+
+1. `TexDocument` インスタンスを作成します。
+2. `TexDocument.Load` を使用して、ソースの `.tex` ファイルを読み込みます。
+3. (オプション) 圧縮設定などの `XpsSaveOptions` を設定します。
+4. `XpsDevice` を指定して `document.Save` を呼び出し、ドキュメントを XPS に保存します。
+
+このコードは、LaTeX から XPS ファイルを生成する最も直接的な方法を示しています。
+
 {{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-LaTeXToXps-Simplest.cs" >}}
 
 ### メイン出力XPSファイルを書き込む代替方法
 
 [XPSDevice](https://reference.aspose.com/tex/net/aspose.tex.presentation.xps/xpsdevice/xpsdevice/)クラスの別のコンストラクターがあります。これにより、結果のXPSファイルを別の方法で取得できます。
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-LaTeXToXps-Alternative.cs" >}}
+**別の変換例**
 
+このスニペットは、`Stream` を受け入れる `XpsDevice` コンストラクターの使用方法を示しています。手順は次のとおりです。
+
+1. `TexDocument` を作成し、LaTeX ソースを読み込みます。
+2. XPS 出力を保持するための `MemoryStream` を作成します。
+3. ストリームを使って `XpsDevice` をインスタンス化します。
+4. ドキュメントをデバイスに保存すると、ストリームを使用できるようになります（例：ネットワーク経由で送信したり、データベースに保存したり）。
+
+この方法は、XPS データをディスク上のファイルではなくメモリ上に保存する必要がある場合に便利です。
+
+{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-LaTeXToXps-Alternative.cs" >}}
 
 効果は[ここ](https://products.aspose.app/tex/conversion/latex-to-xps)を取得するのと同じです。
 

@@ -55,6 +55,10 @@ Transcript written on hello-world.log.
 
 还有另一种将图像数据作为字节数组数组的方法，第二维中的每个数组代表单独的页面的图像数据。
 
+**替代转换示例**
+
+以下 C# 代码片段演示了另一种获取 PNG 输出的方法，即将图像数据写入内存流，而不是直接写入文件系统。当您需要在内存中保存生成的 PNG 字节进行进一步处理（例如通过网络发送、存储到数据库中或在保存前执行其他转换）时，此方法非常有用。
+
 {{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-LaTeXToPng-Alternative.cs" >}}
 
 *“ Page-n.png” *文件将写入我们指定的任何路径。与[PDF输出](/tex/{{lang.url-fragment}}net/latex-to-pdf/#an-alternative-way-to-write-main-output-pdf-file)不同，他们将复制写入输出目录的输出PNG文件。

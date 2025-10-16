@@ -6,6 +6,7 @@ linktitle: 外部乳胶软件包
 weight: 20
 url: /net/external-latex-packages/
 description: aspose.tex for .NET允许使用外部软件包，即库本身不包含的api，例如fancybox和pgfplots软件包。
+keywords: 外部 latex 包、aspose tex、.net tex、latex 包、fancybox、pgfplots、所需输入目录、输入 zip、自定义输入目录、tex 转换
 lastmod: "2025-06-10"
 ---
 

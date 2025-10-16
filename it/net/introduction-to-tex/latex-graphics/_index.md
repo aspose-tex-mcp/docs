@@ -33,7 +33,7 @@ Se il sistema di composizione non è configurato per l'uso, diciamo, PDFTEX per 
 \usepackage[pdftex]{graphics}
 ```
 
-Un file `driver` fa parte di un pacchetto che implementa l'interfaccia tra i comandi del pacchetto e le primitive di estensione TEX di basso livello dipendenti dal formato. Il supporto grafico in LaTeX ASPUSE.TEX è configurato per utilizzare il proprio driver, quindi non è necessario specificare l'opzione del driver.
+Un file `driver` fa parte di un pacchetto che implementa l'interfaccia tra i comandi del pacchetto e le primitive di estensione TEX di basso livello dipendenti dal formato. Il supporto grafico in LaTeX Aspose.TeX è configurato per utilizzare il proprio driver, quindi non è necessario specificare l'opzione del driver.
 
 Ora, il modo più semplice per includere, diciamo, un'immagine PNG è digitare:
 

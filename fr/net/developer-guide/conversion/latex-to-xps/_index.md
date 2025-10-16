@@ -20,11 +20,33 @@ Il existe la bibliothèque [**Aspose.Page**](https://products.aspose.com/page/) 
 
 La conversion LaTeX en XPS est tout aussi simple que la [conversion aux formats d'image raster](/tex/{{lang.url-fragment}}net/latex-to-image/), sauf que [SaveOptions](https://reference.aspose.com/tex/net/aspose.tex/texoptions/saveoptions/) DOIT être défini sur une instance de classe [XpsSaveOptions](https://reference.aspose.com/tex/net/aspose.tex.presentation.xps/xpssaveoptions/) (par défaut ou explicitement) , et le périphérique DOIT être remplacé par une instance de la classe [XpsDevice](https://reference.aspose.com/tex/net/aspose.tex.presentation.xps/xpsdevice/).
 
+**Exemple de conversion le plus simple**
+
+L'exemple ci-dessous montre comment convertir un fichier LaTeX en XPS en quelques étapes :
+
+1. Créez une instance `TexDocument`.
+2. Chargez le fichier source `.tex` à l'aide de `TexDocument.Load`.
+3. (Facultatif) Configurez `XpsSaveOptions`, comme les paramètres de compression.
+4. Enregistrez le document au format XPS en appelant `document.Save` avec un `XpsDevice`.
+
+Ce code illustre la méthode la plus directe pour générer un fichier XPS à partir de LaTeX.
+
 {{< gist "aspose-com-gists""76c7e5770ac8b3f6d409f6ec60f02030""Aspose.TeX.Examples-Conversion-LaTeXToXps-Simplest.cs" >}}
 
 ### Une autre façon d'écrire le fichier XPS de sortie principal
 
 Il existe un autre constructeur de la classe [XpsDevice](https://reference.aspose.com/tex/net/aspose.tex.presentation.xps/xpsdevice/xpsdevice/), qui nous permet d'obtenir le fichier XPS résultant d'une manière alternative.
+
+**Exemple de conversion alternatif**
+
+Cet extrait de code illustre l'utilisation du constructeur `XpsDevice` qui accepte un `Stream`. Les étapes sont les suivantes :
+
+1. Créez un `TexDocument` et chargez la source LaTeX.
+2. Créez un `MemoryStream` pour stocker la sortie XPS.
+3. Instanciez `XpsDevice` avec le flux.
+4. Enregistrez le document sur l'appareil, puis utilisez le flux (par exemple, envoyez-le sur un réseau ou stockez-le dans une base de données).
+
+Cette approche est utile lorsque vous avez besoin des données XPS en mémoire plutôt que sous forme de fichier sur disque.
 
 {{< gist "aspose-com-gists""76c7e5770ac8b3f6d409f6ec60f02030""Aspose.TeX.Examples-Conversion-LaTeXToXps-Alternative.cs" >}}
 

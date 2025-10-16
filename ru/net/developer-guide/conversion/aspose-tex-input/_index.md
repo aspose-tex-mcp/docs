@@ -6,6 +6,7 @@ linktitle: Входной интерфейс Aspose.TeX
 weight: 15
 url: /net/aspose-tex-input/
 description: Функциональность преобразования решения Aspose.TeX API для .NET с TeX в качестве входного формата объясняется здесь с примерами кода.
+keywords: входные данные aspose tex, .net tex, входной каталог, входной zip, консоль ввода, параметры tex, iinputworkingdirectory, inputzipdirectory, inputterminal, преобразование tex
 lastmod: "2024-09-24"
 ---
 

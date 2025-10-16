@@ -20,11 +20,33 @@ lastmod: "2025-06-10"
 
 乳胶到XPS转换与[转换为栅格图像格式](/tex/{{lang.url-fragment}}net/latex-to-image/)一样简单，只是必须将[saveOptions](https://reference.aspose.com/tex/net/aspose.tex/texoptions/saveoptions/)设置为[XPSSaveOptions](https://reference.aspose.com/tex/net/aspose.tex.presentation.xps/xpssaveoptions/)类实例(默认情况下或明确)，并且必须将设备更改为[XPSDEVICE](https://reference.aspose.com/tex/net/aspose.tex.presentation.xps/xpsdevice/)class的实例。
 
+**最简单的转换示例**
+
+以下示例展示了如何通过几个步骤将 LaTeX 文件转换为 XPS：
+
+1. 创建一个 `TexDocument` 实例。
+2. 使用 `TexDocument.Load` 加载源 `.tex` 文件。
+3. （可选）配置 `XpsSaveOptions`，例如压缩设置。
+4. 通过使用 `XpsDevice` 调用 `document.Save` 将文档保存为 XPS。
+
+此代码演示了从 LaTeX 生成 XPS 文件的最直接方法。
+
 {{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-LaTeXToXps-Simplest.cs" >}}
 
 ### 编写主输出XPS文件的另一种方法
 
 [XPSDevice](https://reference.aspose.com/tex/net/aspose.tex.presentation.xps/xpsdevice/xpsdevice/)类的另一个构造函数使我们可以以替代方式获取所得的XPS文件。
+
+**其他转换示例**
+
+此代码片段演示了如何使用接受 `Stream` 参数的 `XpsDevice` 构造函数。步骤如下：
+
+1. 创建一个 `TexDocument` 并加载 LaTeX 源文件。
+2. 创建一个 `MemoryStream` 来保存 XPS 输出。
+3. 使用流实例化 `XpsDevice`。
+4. 将文档保存到设备，然后即可使用流（例如，通过网络发送或存储在数据库中）。
+
+当您需要将 XPS 数据保存在内存中而不是作为磁盘上的文件时，此方法非常有用。
 
 {{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-LaTeXToXps-Alternative.cs" >}}
 

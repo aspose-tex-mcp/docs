@@ -6,6 +6,7 @@ linktitle: Interfaz de entrada de Aspose.TeX
 weight: 15
 url: /net/aspose-tex-input/
 description: La funcionalidad de conversión de la solución API Aspose.TeX para .NET con TeX, como formato de entrada, se explica aquí con los ejemplos de código.
+keywords: entrada de texto aspose, texto .NET, directorio de entrada, zip de entrada, consola de entrada, opciones de texto, iinputworkingdirectory, inputzipdirectory, terminal de entrada, conversión de texto
 lastmod: "2024-10-30"
 ---
 

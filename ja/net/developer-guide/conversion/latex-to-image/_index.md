@@ -55,9 +55,13 @@ Transcript written on hello-world.log.
 
 画像データをバイト配列の配列として取得する別の方法があり、2番目のディメンションの各配列は別のページの画像データを表します。
 
+**別の変換例**
+
+以下のC#スニペットは、画像データをファイルシステムに直接書き込むのではなく、メモリストリームに書き込むことでPNG出力を取得する別の方法を示しています。この方法は、生成されたPNGバイトをメモリ内に保存しておき、ネットワーク経由で送信したり、データベースに保存したり、保存前に追加の変換を実行したりするなど、さらなる処理が必要な場合に便利です。
+
 {{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-LaTeXToPng-Alternative.cs" >}}
 
-* "page-n.png" *ファイルは、指定する任意のパスに書き込まれます。 [PDF出力](/tex/{{lang.url-fragment}}net/latex-to-pdf/#an-alternative-way-to-write-main-output-pdf-file)とは異なり、それらは出力ディレクトリに書き込まれた出力PNGファイルを複製します。
+*"page-n.png"*ファイルは、指定する任意のパスに書き込まれます。 [PDF出力](/tex/{{lang.url-fragment}}net/latex-to-pdf/#an-alternative-way-to-write-main-output-pdf-file)とは異なり、それらは出力ディレクトリに書き込まれた出力PNGファイルを複製します。
 
 ## 入力オプションについて
 メイン入力ファイルに、基本的なラテックスシステムに含まれておらず、サポートされているパッケージに含まれていないパッケージなどの依存関係が必要な場合は、[RequiredInputDirectory](https://reference.aspose.com/tex/net/Aspose.TeX/texoptions/requiredinputdirectory/)オプションを設定する必要があります。依存関係は、サブディレクトリで任意に組織される場合があります。タイプセットプロセス、たとえば外部グラフィックファイルに沿って含める独自のファイルがある場合は、それらのファイルが収集される場所へのパスを使用して[inputWorkingDirectory](https://reference.aspose.com/tex/net/Aspose.TeX/texoptions/inputworkingdirectory/)を設定する必要があります。また、メイン入力ファイルを入力ディレクトリ内のどこかに配置し、 `run()`メソッドの相対パスを指定することもできます(または、メイン入力ファイルがルートにある場合はパスをまったく指定しません)。 [ここ](/tex/{{lang.url-fragment}}net/aspose-tex-input/)は、.net **の** Aspose.TeXの入力ディレクトリの概念の詳細であり、実装が提供されています。

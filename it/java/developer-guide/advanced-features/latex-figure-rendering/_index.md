@@ -5,7 +5,7 @@ title: Rendering di figura in LaTeX | Java
 linktitle: Rendering di figura in LaTeX
 weight: 20
 url: /java/latex-figure-rendering/
-description: Soluzione API ASPUSE.TEX per il rendering di frammenti di LaTeX Java (Figura) è descritta in questo articolo. Impara gli esempi di codice su come utilizzare la funzionalità.
+description: Soluzione API Aspose.TeX per il rendering di frammenti di LaTeX Java (Figura) è descritta in questo articolo. Impara gli esempi di codice su come utilizzare la funzionalità.
 lastmod: "2025-06-13"
 ---
 
