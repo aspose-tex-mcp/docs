@@ -55,6 +55,10 @@ Nous retrouverons d'autres "fruits" du travail du moteur dans le dossier que nou
 
 Il existe une autre façon d'obtenir des données d'image sous forme de tableau de tableaux d'octets, chaque tableau de la deuxième dimension représente les données d'image d'une page distincte.
 
+**Ejemplo de conversión alternativo**
+
+El siguiente fragmento de C# muestra otra forma de obtener la salida PNG: escribir los datos de la imagen en un flujo de memoria en lugar de hacerlo directamente en el sistema de archivos. Este método es útil cuando se necesitan los bytes PNG generados en memoria para su posterior procesamiento, como enviarlos a través de una red, almacenarlos en una base de datos o realizar transformaciones adicionales antes de guardarlos.
+
 {{< gist "aspose-com-gists""76c7e5770ac8b3f6d409f6ec60f02030""Aspose.TeX.Examples-Conversion-LaTeXToPng-Alternative.cs" >}}
 
 Le(s) fichier(s) *"page-n.png"* seront écrits dans n'importe quel chemin que nous spécifions. Contrairement à [Sortie PDF](/tex/{{lang.url-fragment}}net/latex-to-pdf/#an-alternative-way-to-write-main-output-pdf-file), ils dupliqueront les fichiers PNG de sortie écrits dans le répertoire de sortie.

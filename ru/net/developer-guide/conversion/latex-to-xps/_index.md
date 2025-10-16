@@ -18,13 +18,35 @@ lastmod: "2024-09-24"
 
 ## Как конвертировать LaTeX в XPS
 
-Преобразование LaTeX в XPS так же просто, как и [преобразование в форматы растровых изображений](/tex/{{lang.url-fragment}}net/latex-to-image/), за исключением того, что для [SaveOptions](https://reference.aspose.com/tex/net/aspose.tex/texoptions/saveoptions/) ДОЛЖЕН быть установлен экземпляр класса [XpsSaveOptions](https://reference.aspose.com/tex/net/aspose.tex.presentation.xps/xpssaveoptions/) (по умолчанию или явно). , и устройство ДОЛЖНО быть изменено на экземпляр класса [XpsDevice](https://reference.aspose.com/tex/net/aspose.tex.presentation.xps/xpsdevice/).
+Преобразование LaTeX в XPS так же просто, как и [преобразование в форматы растровых изображений](/tex/{{lang.url-fragment}}net/latex-to-image/), за исключением того, что для [SaveOptions](https://reference.aspose.com/tex/net/aspose.tex/texoptions/saveoptions/) ДОЛЖЕН быть установлен экземпляр класса [XpsSaveOptions](https://reference.aspose.com/tex/net/aspose.tex.presentation.xps/xpssaveoptions/) (по умолчанию или явно), и устройство ДОЛЖНО быть изменено на экземпляр класса [XpsDevice](https://reference.aspose.com/tex/net/aspose.tex.presentation.xps/xpsdevice/).
+
+**Простейший пример преобразования**
+
+В примере ниже показано, как преобразовать файл LaTeX в XPS за несколько шагов:
+
+1. Создайте экземпляр `TexDocument`.
+2. Загрузите исходный файл `.tex` с помощью `TexDocument.Load`.
+3. (Необязательно) настройте `XpsSaveOptions`, например, параметры сжатия.
+4. Сохраните документ в XPS, вызвав `document.Save` с `XpsDevice`.
+
+Этот код демонстрирует самый простой способ создания XPS-файла из LaTeX.
 
 {{< gist "aspose-com-gists""76c7e5770ac8b3f6d409f6ec60f02030""Aspose.TeX.Examples-Conversion-LaTeXToXps-Simplest.cs" >}}
 
 ### Альтернативный способ записи основного выходного файла XPS.
 
 Есть еще один конструктор класса [XpsDevice](https://reference.aspose.com/tex/net/aspose.tex.presentation.xps/xpsdevice/xpsdevice/), который позволяет нам получить результирующий XPS-файл альтернативным способом.
+
+**Альтернативный пример преобразования**
+
+В этом фрагменте кода показано использование конструктора `XpsDevice`, принимающего `Stream`. Шаги следующие:
+
+1. Создайте `TexDocument` и загрузите исходный файл LaTeX.
+2. Создайте `MemoryStream` для хранения выходных данных XPS.
+3. Создайте экземпляр `XpsDevice` с потоком.
+4. Сохраните документ на устройстве, после чего вы сможете использовать поток (например, отправить его по сети или сохранить в базе данных).
+
+Этот подход полезен, когда данные XPS нужны в памяти, а не в виде файла на диске.
 
 {{< gist "aspose-com-gists""76c7e5770ac8b3f6d409f6ec60f02030""Aspose.TeX.Examples-Conversion-LaTeXToXps-Alternative.cs" >}}
 

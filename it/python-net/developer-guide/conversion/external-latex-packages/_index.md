@@ -5,7 +5,7 @@ title: Pacchetti in LaTeX esterni | Python tramite .NET
 linktitle: Pacchetti di LaTeX esterni
 weight: 19
 url: /python-net/external-latex-packages/
-description: API ASPUSE.TEX per Python supporta l'uso di pacchetti esterni che non sono inclusi nella biblioteca stessa, come i pacchetti FancyBox e PGFPlots
+description: API Aspose.TeX per Python supporta l'uso di pacchetti esterni che non sono inclusi nella biblioteca stessa, come i pacchetti FancyBox e PGFPlots
 lastmod: "2025-06-13"
 ---
 

@@ -5,7 +5,8 @@ title: Pacchetti in LaTeX esterni | Aspose.TeX per .NET
 linktitle: Pacchetti di LaTeX esterni
 weight: 20
 url: /net/external-latex-packages/
-description: API ASPUSE.TEX per .NET consente l'utilizzo di pacchetti esterni, ovvero quelli non inclusi nella libreria stessa come pacchetti FancyBox e PGFPLOTS.
+description: API Aspose.TeX per .NET consente l'utilizzo di pacchetti esterni, ovvero quelli non inclusi nella libreria stessa come pacchetti FancyBox e PGFPLOTS.
+keywords: pacchetti latex esterni, aspose tex, .net tex, pacchetti latex, fancybox, pgfplots, directory di input richiesta, zip di input, directory di input personalizzata, conversione tex
 lastmod: "2025-06-13"
 ---
 

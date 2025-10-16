@@ -5,7 +5,7 @@ title: Formule matematiche in LaTeX rendering | C++
 linktitle: Formule matematiche in LaTeX rendering
 weight: 10
 url: /cpp/latex-math-formula-rendering/
-description: Soluzione API ASPUSE.TEX per le formule di matematica C ++ Latex è descritta in questo articolo. Qui troverai esempi di codice della funzionalità.
+description: Soluzione API Aspose.TeX per le formule di matematica C ++ Latex è descritta in questo articolo. Qui troverai esempi di codice della funzionalità.
 lastmod: "2025-06-13"
 ---
 

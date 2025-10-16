@@ -55,11 +55,16 @@ Weitere „Früchte“ der Engine-Arbeit finden wir in dem Ordner, den wir als A
 
 Es gibt eine andere Möglichkeit, Bilddaten als Array von Byte-Arrays abzurufen. Jedes Array in der zweiten Dimension repräsentiert Bilddaten für eine separate Seite.
 
+**Alternatives Konvertierungsbeispiel**
+
+Der folgende C#-Ausschnitt zeigt eine weitere Möglichkeit, die PNG-Ausgabe zu erhalten, indem die Bilddaten in einen Speicherstream statt direkt in das Dateisystem geschrieben werden. Dieser Ansatz ist nützlich, wenn Sie die generierten PNG-Bytes im Speicher für die weitere Verarbeitung benötigen, z. B. zum Senden über ein Netzwerk, zum Speichern in einer Datenbank oder für zusätzliche Transformationen vor dem Speichern.
+
 {{< gist "aspose-com-gists""76c7e5770ac8b3f6d409f6ec60f02030""Aspose.TeX.Examples-Conversion-LaTeXToPng-Alternative.cs" >}}
 
 Die *"page-n.png"*-Datei(en) werden in jeden von uns angegebenen Pfad geschrieben. Im Gegensatz zu [PDF-Ausgabe](/tex/{{lang.url-fragment}}net/latex-to-pdf/#an-alternative-way-to-write-main-output-pdf-file) duplizieren sie die ausgegebenen PNG-Dateien, die in das Ausgabeverzeichnis geschrieben werden.
 
 ## Über Eingabemöglichkeiten
+
 Falls unsere Haupteingabedatei Abhängigkeiten erfordert, beispielsweise Pakete, die nicht im grundlegenden LaTeX-System und den unterstützten Paketen enthalten sind, MÜSSEN wir die Option [RequiredInputDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/requiredinputdirectory/) auf die gleiche Weise festlegen, wie wir die Option [OutputWorkingDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/outputworkingdirectory/) festlegen. Option und legen Sie die Abhängigkeiten in diesem Verzeichnis ab. Abhängigkeiten können beliebig in Unterverzeichnissen organisiert werden. Falls wir unsere eigenen Dateien in den Schriftsatzprozess einbeziehen möchten, beispielsweise externe Grafikdateien, MÜSSEN wir auch das [InputWorkingDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/inputworkingdirectory/) festlegen, indem wir den Pfad zum Speicherort verwenden, an dem diese Dateien gesammelt werden. Wir können die Haupteingabedatei auch irgendwo im Eingabeverzeichnis platzieren und den relativen Pfad in der Methode „run()“ angeben (oder überhaupt keinen Pfad angeben, wenn sich die Haupteingabedatei im Stammverzeichnis befindet). [Hier](/tex/{{lang.url-fragment}}net/aspose-tex-input/) finden Sie die Details zum Eingabeverzeichniskonzept in **Aspose.TeX für .NET** und den bereitgestellten Implementierungen.
 
 Weitere TeX-Joboptionen werden [hier](/tex/{{lang.url-fragment}}net/other-options/) besprochen.
