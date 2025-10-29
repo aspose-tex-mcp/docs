@@ -61,7 +61,6 @@ Die Unterschiede sind:
  * Wir geben keine Auflösung an.
  * Wir verwenden die Klasse [SvgFigureRenderer](https://reference.aspose.com/tex/java/com.aspose.tex/SvgFigureRenderer) anstelle von [PngFigureRenderer](https://reference.aspose.com/tex/java/com.aspose.tex/PngFigureRenderer).
 
-
  
 Hier ist das Ergebnis:
 
