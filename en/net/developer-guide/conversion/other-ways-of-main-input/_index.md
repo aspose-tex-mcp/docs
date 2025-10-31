@@ -15,7 +15,7 @@ lastmod: "2024-09-20"
 
 Up to this point, we only knew how to pass the [main input file](/tex/{{lang.url-fragment}}net/tex-io/#tex-input) to the TeX engine as a file name, whether fully specified or in short form, whether with an extension or without it. But there's another [constructor](https://reference.aspose.com/tex/net/aspose.tex/texjob/texjob/) of the `TeXJob` class, which takes a stream as the first argument. This is convenient if for some reason we have the main input file in a form other than a file on the disk file system. Here's how it can be implemented:
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-InputStream.cs" >}}
+{{< gist "aspose-com-gists" "4e3bae6ecbe041bcb411e0cf4c98dc71" "Example-StreamInput-LaTeX.cs" >}}
 
 Note that all output files will have the name *texput*. That's because the engine can't get any other name anywhere. *texput* is the default job name. [Here](/tex/{{lang.url-fragment}}net/tex-io/#tex-output) and [here](/tex/{{lang.url-fragment}}net/other-options/#how-to-set-the-job-name) are details about job names.
 
@@ -25,7 +25,7 @@ There's yet another [constructor](https://reference.aspose.com/tex/net/aspose.te
 
 Here is the code:
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-MainInputTerminal.cs" >}}
+{{< gist "aspose-com-gists" "4e3bae6ecbe041bcb411e0cf4c98dc71" "Example-MainInputTerminal.cs" >}}
 
 As soon as it's run, the engine sticks, waiting for us to enter the file name (with or without a path, with or without an extension):
 

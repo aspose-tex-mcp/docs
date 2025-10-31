@@ -31,7 +31,7 @@ lastmod: "2025-06-09"
 
 このコードは、LaTeX から XPS ファイルを生成する最も直接的な方法を示しています。
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-LaTeXToXps-Simplest.cs" >}}
+{{< gist "aspose-com-gists" "1d10927e18d23e49096c91ce726e9d6f" "Example-ConvertLaTeXToXPS-Simplest.cs" >}}
 
 ### メイン出力XPSファイルを書き込む代替方法
 
@@ -48,7 +48,7 @@ lastmod: "2025-06-09"
 
 この方法は、XPS データをディスク上のファイルではなくメモリ上に保存する必要がある場合に便利です。
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-LaTeXToXps-Alternative.cs" >}}
+{{< gist "aspose-com-gists" "1d10927e18d23e49096c91ce726e9d6f" "Example-ConvertLaTeXToXPS-Alternative.cs" >}}
 
 効果は[ここ](https://products.aspose.app/tex/conversion/latex-to-xps)を取得するのと同じです。
 

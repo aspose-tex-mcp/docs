@@ -17,7 +17,7 @@ lastmod: "2025-06-10"
 
 让我们详细了解C＃中的代码，提供最简单的方法将乳胶转换为PDF格式。
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-LaTeXToPdf-Simplest.cs" >}}
+{{< gist "aspose-com-gists" "507170b996a1d0c39bb4374e888b3205" "Example-ConvertLaTeXToPDF-Simplest.cs" >}}
 
 因此，我们需要做的第一件事(有时不是第一件)是创建[Texoptions](https://reference.aspose.com/tex/net/aspose.tex/texoptions/)类的实例。这样做的唯一静态方法是[consoleappoptions()](https://reference.aspose.com/tex/net/aspose.tex/texoptions/consoleappoptions/)，因此不要被其名称的含义所困扰。该方法采用[TexConfig](https://reference.aspose.com/tex/net/aspose.tex/texconfig/)类的[实例](https://reference.aspose.com/tex/net/aspose.tex/texconfig/objectlatex/)，该类完全适合转换[latex文件](/tex/{{lang.url-fragment}}net/latex-io/#latex-file)。该配置告诉对象Tex引擎加载对象乳胶格式并准备好接受乳胶文件。对象乳胶格式实际上只是[乳胶](/tex/{{lang.url-fragment}}net/what-is-latex/)格式，只是它使用[Object tex](/tex/{{lang.url-fragment}}net/aspose-tex-and-object-tex/#object-tex)特定的原始图来设置页面指标。
 
@@ -54,7 +54,7 @@ Transcript written on hello-world.log.
 
 [PDFDEVICE](https://reference.aspose.com/tex/net/aspose.tex.presentation.pdf/pdfdevice/pdfdevice/)类的另一个构造函数使我们可以以另一种方式获取所得的PDF文件。
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-LaTeXToPdf-Alternative.cs" >}}
+{{< gist "aspose-com-gists" "507170b996a1d0c39bb4374e888b3205" "Example-ConvertLaTeXToPDF-Alternative.cs" >}}
 
 指定目录中的 *any-name.pdf*文件将是我们的主要输出PDF文件。同时，与[图像输出](/tex/{{lang.url-fragment}}net/latex-to-png/#an-alternative-way-to-write-main-output-png-files)不同，我们在转换选项定义的输出目录中找不到任何PDF文件。异常： *any-name.pdf*位于同一文件系统目录中(通过其路径)，使用[outputfilesystemdirectory](https://reference.aspose.com/tex/net/aspose.tex.io/outputfilesystemdirectory/)分配给[outputWorkingDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/outputworkingdirectory/)选项。
 

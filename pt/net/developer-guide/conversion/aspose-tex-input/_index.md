@@ -22,7 +22,7 @@ Como as primitivas de E/S do idioma TEX só podem lidar com nomes de arquivos, *
 
 Aqui está como faríamos isso:
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-InputFileSystemDirectory.cs" >}}
+{{< gist "aspose-com-gists" "0fbd18cd8c28d5ed12e19cd52634ebd4" "Example-InputFileSystemDirectory.cs" >}}
 
 Este caso de uso é bastante simples, então não há mais necessidade de se concentrar nele.
 
@@ -30,7 +30,7 @@ Este caso de uso é bastante simples, então não há mais necessidade de se con
 
 Também podemos colocar os arquivos de entrada em um arquivo zip e considerá -lo um diretório de entrada. Nesse caso, devemos prosseguir da seguinte forma:
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-InputZipDirectory.cs" >}}
+{{< gist "aspose-com-gists" "0fbd18cd8c28d5ed12e19cd52634ebd4" "Example-InputZipDirectory.cs" >}}
 
 Primeiro, criamos o fluxo que contém o arquivo zip. Então, depois de criar as opções de conversão, definimos a opção [InputWorkingDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/inputworkingdirectory/) para ser uma instância da classe [InputZipDirectory](https://reference.aspose.com/tex/net/aspose.tex.io/inputzipdirectory/). O segundo argumento do construtor é o caminho base dentro do arquivo. Se queremos que todo o arquivo seja um diretório de entrada, devemos passar na string vazia. 
 
@@ -42,7 +42,7 @@ Agora é hora de lembrar que há também a entrada do terminal. Quanto a este, *
 
 Para fazer isso, precisamos definir a opção [Terminalin](https://reference.aspose.com/tex/net/aspose.tex/texoptions/terminalin/) para ser uma instância da classe [inputConsoleterminal](https://reference.aspose.com/tex/net/aspose.tex.io/inputconsoleterminal/).
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-InputConsoleTerminal.cs" >}}
+{{< gist "aspose-com-gists" "0fbd18cd8c28d5ed12e19cd52634ebd4" "Example-InputConsoleTerminal.cs" >}}
 
 Mas, para dizer a verdade, esse é o valor padrão da opção, portanto, não há necessidade real de especificá -la. Devido a esse fato e, desde que não haja outras implementações, esta seção serve apenas para fins de demonstração.
 

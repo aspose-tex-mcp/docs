@@ -24,7 +24,7 @@ Tex言語のI/O Primitivesはファイル名のみを扱うことができるた
 
 これが私たちがそれを設定する方法です：
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-OutputFileSystemDirectory.cs" >}}
+{{< gist "aspose-com-gists" "0fbd18cd8c28d5ed12e19cd52634ebd4" "Example-OutputFileSystemDirectory.cs" >}}
 
 このユースケースは非常に簡単なので、もうそれに集中する必要はありません。
 
@@ -32,7 +32,7 @@ Tex言語のI/O Primitivesはファイル名のみを扱うことができるた
 
 また、ファイル(またはストリーム)を作成し、TexエンジンにZIPアーカイブとして使用して出力ファイルを保存することもできます。ここにあります：
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-OutputZipDirectory.cs" >}}
+{{< gist "aspose-com-gists" "0fbd18cd8c28d5ed12e19cd52634ebd4" "Example-OutputZipDirectory.cs" >}}
 
 まず、zipファイルの出力ストリームを作成します。次に、変換オプションを作成した後、[outputzipdirectory](https://reference.aspose.com/tex/net/aspose.tex.io/outputzipdirectory/)クラスのインスタンスになるように[outputworkingdirectory](https://reference.aspose.com/tex/net/Aspose.TeX/texoptions/outputworkingdirectory/)オプションを設定します。
 
@@ -44,7 +44,7 @@ Tex言語のI/O Primitivesはファイル名のみを扱うことができるた
 
 これを行うには、[OutputConsoleterminal](https://reference.aspose.com/tex/net/aspose.tex.io/outputconsoleterminal/)クラスのインスタンスになるには、[Terminalout](https://reference.aspose.com/tex/net/Aspose.TeX/texoptions/terminalout/)オプションを設定する必要があります。
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-OutputConsoleTerminal.cs" >}}
+{{< gist "aspose-com-gists" "0fbd18cd8c28d5ed12e19cd52634ebd4" "Example-OutputConsoleTerminal.cs" >}}
 
 繰り返しますが、これはオプションのデフォルト値であるため、指定する必要はありません。このため、このセクションはデモンストレーションのみを提供します。
 
@@ -52,6 +52,6 @@ Tex言語のI/O Primitivesはファイル名のみを扱うことができるた
 
 入力端子とは異なり、**Aspose.TeX for .net**は、[ioutputterminal](https://reference.aspose.com/tex/net/aspose.tex.io/ioutputterminal/)の実装を提供します。これにより、端子出力を出力ディレクトリのファイルに書き込むことができます。
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-OutputFileTerminal.cs" >}} 
+{{< gist "aspose-com-gists" "0fbd18cd8c28d5ed12e19cd52634ebd4" "Example-OutputFileTerminal.cs" >}} 
 
 ここでは、TEXエンジンに、[<job_name>](/tex/{{lang.url-fragment}}net/tex-io/#tex-output).trmという名前のファイルに端子出力を書き込むように依頼します。しかし、これは必要ありません。 [ioutputterminal](https://reference.aspose.com/tex/net/aspose.tex.io/ioutputterminal/)の実装の他のインスタンスをコンストラクターに渡すこともできます。

@@ -22,7 +22,7 @@ lastmod: "2025-06-10"
 
 这就是我们的方式：
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-InputFileSystemDirectory.cs" >}}
+{{< gist "aspose-com-gists" "0fbd18cd8c28d5ed12e19cd52634ebd4" "Example-InputFileSystemDirectory.cs" >}}
 
 此用例非常简单，因此无需重点关注它。
 
@@ -30,7 +30,7 @@ lastmod: "2025-06-10"
 
 我们还可以将输入文件放入zip存档中，并将其视为输入目录。在这种情况下，我们应该按以下方式进行：
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-InputZipDirectory.cs" >}}
+{{< gist "aspose-com-gists" "0fbd18cd8c28d5ed12e19cd52634ebd4" "Example-InputZipDirectory.cs" >}}
 
 首先，我们创建包含zip文件的流。然后，在创建转换选项后，我们将[InputWorkingDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/inputworkingdirectory/)选项设置为[InputzipDirectory](https://reference.aspose.com/tex/net/aspose.tex.io/inputzipdirectory/)类的实例。构造函数的第二个论点是存档内部的基本路径。如果我们希望整个存档成为输入目录，则应传递空字符串。 
 
@@ -42,7 +42,7 @@ lastmod: "2025-06-10"
 
 为此，我们需要将[终端素](https://reference.aspose.com/tex/net/aspose.tex/texoptions/terminalin/)选项设置为[InputConsoleterminal](https://reference.aspose.com/tex/net/aspose.tex.io/inputconsoleterminal/)类的实例。
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-InputConsoleTerminal.cs" >}}
+{{< gist "aspose-com-gists" "0fbd18cd8c28d5ed12e19cd52634ebd4" "Example-InputConsoleTerminal.cs" >}}
 
 但是，告诉您真相，这是该选项的默认值，因此没有真正的指定。由于这一事实，只要没有其他实施，本节就只有演示目的。
 

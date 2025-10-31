@@ -16,7 +16,7 @@ lastmod: "2025-06-16"
 
 A seção de referência da API relacionada a este tópico é [aqui](https://reference.aspose.com/tex/net/aspose.tex.features/). De fato, a maneira mais fácil de demonstrar o recurso **FORMULAÇÃO DE FORMULAÇÃO DE MATHA DE LATEX** é começar com o exemplo. Aqui está:
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Features-PngLaTeXMathRendering.cs" >}}
+{{< gist "aspose-com-gists" "cd0acc55d1634f17dcf42e02075ca005" "Example-RenderMathToPNG.cs" >}}
 
 Vamos até os detalhes. Primeiro de tudo, criamos uma instância [de renderização](https://reference.aspose.com/tex/net/aspose.tex.features/mathrendereroptions/), semelhante à digitação Tex/Latex. Fazemos isso aqui especificando simultaneamente a resolução da imagem de saída.
 
@@ -58,7 +58,7 @@ Este é o caso de uso mais geral para o recurso **de fórmula matemática**.
 
 Da mesma maneira, podemos renderizar uma fórmula matemática de LaTeX ao formato SVG.
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Features-SvgLaTeXMathRendering.cs" >}}
+{{< gist "aspose-com-gists" "cd0acc55d1634f17dcf42e02075ca005" "Example-RenderMathToSVG.cs" >}}
 
 As diferenças são:
 

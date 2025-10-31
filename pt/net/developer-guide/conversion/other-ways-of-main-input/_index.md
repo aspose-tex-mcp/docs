@@ -15,7 +15,7 @@ lastmod: "2025-06-16"
 
 Até este ponto, sabíamos apenas como passar o [arquivo de entrada principal](/tex/{{lang.url-fragment}}net/tex-io/#tex-input) para o mecanismo TEX como nome de arquivo, totalmente especificado ou de curta forma, seja com uma extensão ou sem ele. Mas há outro [construtor](https://reference.aspose.com/tex/net/aspose.tex/texjob/texjob/) da classe `texjob`, que leva um fluxo como o primeiro argumento. Isso é conveniente se, por algum motivo, tivermos o arquivo de entrada principal em um formulário que não seja um arquivo no sistema de arquivos de disco. Veja como pode ser implementado:
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-InputStream.cs" >}}
+{{< gist "aspose-com-gists" "4e3bae6ecbe041bcb411e0cf4c98dc71" "Example-StreamInput-LaTeX.cs" >}}
 
 Observe que todos os arquivos de saída terão o nome *texput*. Isso porque o motor não pode obter nenhum outro nome em nenhum lugar. *Texput* é o nome da tarefa padrão. [Aqui](/tex/{{lang.url-fragment}}net/tex-io/#tex-output) e [aqui](/tex/{{lang.url-fragment}}net/other-options/#how-to-set-the-job-name) são detalhes sobre nomes de trabalho.
 
@@ -25,7 +25,7 @@ Há ainda outro [construtor](https://reference.aspose.com/tex/net/aspose.tex/tex
 
 Aqui está o código:
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-MainInputTerminal.cs" >}}
+{{< gist "aspose-com-gists" "4e3bae6ecbe041bcb411e0cf4c98dc71" "Example-MainInputTerminal.cs" >}}
 
 Assim que é executado, o motor gruda, esperando que insira o nome do arquivo (com ou sem um caminho, com ou sem uma extensão):
 

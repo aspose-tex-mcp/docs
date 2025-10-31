@@ -49,17 +49,17 @@ Utilizzare il metodo [Licenza.setLicense](https://reference.aspose.com/tex/net/a
 
 Questo frammento di codice inizializza una licenza memorizzata in un file o in una risorsa incorporata.
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-LoadLicenseFromFile.cs" >}}
+{{< gist "aspose-com-gists" "366cba3dc08d43c99c22bb33ecb5d555" "Example-SetLicenseFromFile.cs" >}}
 
 #### Caricamento di una licenza da un oggetto Stream
 
 Questi frammenti di codice inizializzano la licenza dal flusso.
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-LoadLicenseFromStream.cs" >}}
+{{< gist "aspose-com-gists" "366cba3dc08d43c99c22bb33ecb5d555" "Example-SetLicenseFromStream.cs" >}}
 
 ### Licenza misurata
 Aspose.TeX ha un meccanismo di licenza alternativo. Quei clienti che desiderano essere fatturati in base all'utilizzo delle funzionalità API possono utilizzare *licenze misurate *. L'applicazione di una * patente misurata * è in realtà semplice come applicare una coppia di chiavi crittografiche. Per maggiori dettagli, consultare la sezione [FAQ di licenza misurata](https://purchase.aspose.com/faqs/licensing/metered/).
 
 Le chiavi pubbliche e private di una licenza misurata sono impostate utilizzando un'istanza della classe [*misurata*](https://reference.aspose.com/tex/net/aspose.tex/metered/), come mostrato nell'esempio seguente: 
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-SetMeteredLicense.cs" >}}
+{{< gist "aspose-com-gists" "366cba3dc08d43c99c22bb33ecb5d555" "Example-SetMeteredLicense.cs" >}}

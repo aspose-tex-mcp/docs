@@ -19,7 +19,7 @@ lastmod: "2025-06-10"
 
 让我们记住，格式文件是Tex发动机内部状态的二进制文件。
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-CreateCustomTeXFormatFile.cs" >}}
+{{< gist "aspose-com-gists" "c0eb6cbcfb001b7e6355cafa4611afed" "Example-CreateCustomFormat.cs" >}}
 
 如您所见，该代码类似于用于转换Tex文件的代码。但是有一些差异。
 
@@ -33,7 +33,7 @@ lastmod: "2025-06-10"
 
 现在，我们已经拥有自己的TEX格式，我们想在以这种格式写下Tex文件。这是代码：
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-TypesetWithCustomTeXFormat.cs" >}}
+{{< gist "aspose-com-gists" "c0eb6cbcfb001b7e6355cafa4611afed" "Example-TypesetWithCustomFormat.cs" >}}
 
 显然，我们必须以某种方式指定格式。首先，我们需要创建一个[formatprovider](https://reference.aspose.com/tex/net/aspose.tex.resourceproviders/formatprovider/)类的实例。然后，在选项构造函数中，我们使用[TexConfig.Objecttex()](https://reference.aspose.com/tex/net/aspose.tex/texconfig/objecttex/)配置，该配置将我们的格式提供程序作为参数，并将格式加载到引擎的“处女”状态之上。
 

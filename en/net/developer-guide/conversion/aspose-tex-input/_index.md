@@ -25,7 +25,7 @@ Since I/O primitives of the TeX language can only deal with file names, **Aspose
 
 Here's how we would do it:
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-InputFileSystemDirectory.cs" >}}
+{{< gist "aspose-com-gists" "0fbd18cd8c28d5ed12e19cd52634ebd4" "Example-InputFileSystemDirectory.cs" >}}
 
 This use case is quite simple, so there's no need to focus on it anymore.
 
@@ -33,7 +33,7 @@ This use case is quite simple, so there's no need to focus on it anymore.
 
 We can also put the input files in a ZIP archive and consider it an input directory. In this case, we should proceed as follows:
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-InputZipDirectory.cs" >}}
+{{< gist "aspose-com-gists" "0fbd18cd8c28d5ed12e19cd52634ebd4" "Example-InputZipDirectory.cs" >}}
 
 First, we create the stream containing the ZIP file. Then, after creating the conversion options, we set the [InputWorkingDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/inputworkingdirectory/) option to be an instance of the [InputZipDirectory](https://reference.aspose.com/tex/net/aspose.tex.io/inputzipdirectory/) class. The second argument of the constructor is the base path inside the archive. If we want the entire archive to be an input directory, we should pass the empty string. 
 
@@ -45,7 +45,7 @@ Now it's time to remember that there is also the terminal input. As for this one
 
 To do this, we need to set the [TerminalIn](https://reference.aspose.com/tex/net/aspose.tex/texoptions/terminalin/) option to be an instance of the [InputConsoleTerminal](https://reference.aspose.com/tex/net/aspose.tex.io/inputconsoleterminal/) class.
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-InputConsoleTerminal.cs" >}}
+{{< gist "aspose-com-gists" "0fbd18cd8c28d5ed12e19cd52634ebd4" "Example-InputConsoleTerminal.cs" >}}
 
 But, to tell you the truth, this is the default value of the option, so there's no real need to specify it. Due to this fact, and as long as there are no other implementations, this section serves only demonstration purposes.
 

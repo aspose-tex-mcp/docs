@@ -49,13 +49,13 @@ lastmod: "2025-06-13"
 
 Цей фрагмент коду ініціалізує ліцензію, що зберігається у файлі або вбудованому ресурсі.
 
-{{< gist "aspose-com-gists""76c7e5770ac8b3f6d409f6ec60f02030""Aspose.TeX.Examples-LoadLicenseFromFile.cs" >}}
+{{< gist "aspose-com-gists""366cba3dc08d43c99c22bb33ecb5d555""Example-SetLicenseFromFile.cs" >}}
 
 #### Завантаження ліцензії з потокового об’єкта
 
 Ці фрагменти коду ініціалізують ліцензію з потоку.
 
-{{< gist "aspose-com-gists""76c7e5770ac8b3f6d409f6ec60f02030""Aspose.TeX.Examples-LoadLicenseFromStream.cs" >}}
+{{< gist "aspose-com-gists""366cba3dc08d43c99c22bb33ecb5d555""Example-SetLicenseFromStream.cs" >}}
 
 ### Ліцензія з виміром
 
@@ -63,4 +63,4 @@ Aspose.TeX має альтернативний механізм ліцензув
 
 Відкритий і закритий ключі обмеженої ліцензії встановлюються за допомогою екземпляра класу [*Metered*](https://reference.aspose.com/tex/net/aspose.tex/metered/), як показано в наступному прикладі: 
 
-{{< gist "aspose-com-gists""76c7e5770ac8b3f6d409f6ec60f02030""Aspose.TeX.Examples-SetMeteredLicense.cs" >}}
+{{< gist "aspose-com-gists""366cba3dc08d43c99c22bb33ecb5d555""Example-SetMeteredLicense.cs" >}}

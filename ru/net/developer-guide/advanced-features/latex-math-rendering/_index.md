@@ -16,7 +16,7 @@ lastmod: "2024-09-24"
 
 Справочный раздел API, связанный с этой темой, находится [здесь](https://reference.aspose.com/tex/net/aspose.tex.features/). Фактически, самый простой способ продемонстрировать функцию **рендеринга математических формул LaTeX** — начать с примера. Вот:
 
-{{< gist "aspose-com-gists""76c7e5770ac8b3f6d409f6ec60f02030""Aspose.TeX.Examples-Features-PngLaTeXMathRendering.cs" >}}
+{{< gist "aspose-com-gists""cd0acc55d1634f17dcf42e02075ca005""Example-RenderMathToPNG.cs" >}}
 
 Давайте перейдем к деталям. Прежде всего, мы создаем экземпляр [параметры рендеринга](https://reference.aspose.com/tex/net/aspose.tex.features/mathrendereroptions/), аналогичный набору текста TeX/LaTeX. Мы делаем это здесь, одновременно указывая разрешение выходного изображения.
 
@@ -59,7 +59,7 @@ lastmod: "2024-09-24"
 
 Практически таким же образом мы можем преобразовать математическую формулу LaTeX в формат SVG.
 
-{{< gist "aspose-com-gists""76c7e5770ac8b3f6d409f6ec60f02030""Aspose.TeX.Examples-Features-SvgLaTeXMathRendering.cs" >}}
+{{< gist "aspose-com-gists""cd0acc55d1634f17dcf42e02075ca005""Example-RenderMathToSVG.cs" >}}
 
 Отличия заключаются в следующем:
 

@@ -19,7 +19,7 @@ lastmod: "2025-06-10"
 
 现在让我们看一下C＃代码示例。
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Features-LaTeXRepairer.cs" >}}
+{{< gist "aspose-com-gists" "7f54d335270200ebf5987d071bad028a" "Examples_LaTeXRepairerExample" >}}
 
 与常规TEX作业一样，我们首先创建一个对象，其中包含我们将要运行的过程的选项。他们中的大多数与常规Tex工作的选项相同。实际上，[InputWorkingDirectory](https://reference.aspose.com/tex/net/aspose.tex.features/latexrepaireroptions/inputworkingdirectory/)是应读取输入文件的空间。我们在这里不使用它，因为我们提供了文件系统中主要输入文件的完整路径，并且不应在主输入文件中包含自定义文件。然后，[outputWorkingDirectory](https://reference.aspose.com/tex/net/aspose.tex.features/latexrepaireroptions/outputworkingdirectory/)是应编写输出文件的空间。 [esultiNputDirectory](https://reference.aspose.com/tex/net/aspose.tex.features/latexrepaireroptions/requiredinputdirectory/)，如果分配，则指向您可以存储未嵌入Aspose.TeX库中的乳胶软件包的空间。 [GuesspackageCallback](https://reference.aspose.com/tex/net/aspose.tex.features/latexrepaireroptions/guesspackagecallback/)属性将在稍后讨论。
 
@@ -34,7 +34,7 @@ lastmod: "2025-06-10"
 这是一个非常简单的示例，只需将`\ head`命令映射到``fancyhdr``package：
 
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Features-LaTeXRepairer-PackageGuessingCallback.cs" >}}
+{{< gist "aspose-com-gists" "7f54d335270200ebf5987d071bad028a" "Examples_PackageGuessingCallback" >}}
 
 对于示例文件，引擎首先遇到 `\chapter` 命令，该命令未在 `article` 文档类中定义，但在 `book` 文档类中定义。API 会调整文档类，使修复文件的最终版本以 `\documentclass{book}` 开头。然后，引擎找到前面提到的 `\lhead` 命令，并决定必须在前言中插入 `\usepackage{fancyhdr}`。随后出现的 `\href` 和 `\includegraphics` 命令分别使修复程序在前言中插入 `\usepackage{hyperref}` 和 `\usepackage{graphics}`。这些决定基于 API 的内部映射。同样，所有此类修复都会记录在报告文件中。
 

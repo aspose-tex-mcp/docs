@@ -22,7 +22,7 @@ Tex言語のI/O Primitivesはファイル名のみを扱うことができるた
 
 これが私たちがそれをする方法です：
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-InputFileSystemDirectory.cs" >}}
+{{< gist "aspose-com-gists" "0fbd18cd8c28d5ed12e19cd52634ebd4" "Example-InputFileSystemDirectory.cs" >}}
 
 このユースケースは非常に簡単なので、もうそれに集中する必要はありません。
 
@@ -30,7 +30,7 @@ Tex言語のI/O Primitivesはファイル名のみを扱うことができるた
 
 また、入力ファイルをZIPアーカイブに配置して、入力ディレクトリと見なすこともできます。この場合、次のように進める必要があります。
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-InputZipDirectory.cs" >}}
+{{< gist "aspose-com-gists" "0fbd18cd8c28d5ed12e19cd52634ebd4" "Example-InputZipDirectory.cs" >}}
 
 最初に、zipファイルを含むストリームを作成します。次に、変換オプションを作成した後、[inputzipdirectory](https://reference.aspose.com/tex/net/aspose.tex.io/inputzipdirectory/)クラスのインスタンスになるように[inputWorkingDirectory](https://reference.aspose.com/tex/net/Aspose.TeX/texoptions/inputworkingdirectory/)オプションを設定します。コンストラクターの2番目の引数は、アーカイブ内のベースパスです。アーカイブ全体を入力ディレクトリにしたい場合は、空の文字列を渡す必要があります。 
 
@@ -42,7 +42,7 @@ Tex言語のI/O Primitivesはファイル名のみを扱うことができるた
 
 これを行うには、[inputConsoleterminal](https://reference.aspose.com/tex/net/aspose.tex.io/inputconsoleterminal/)クラスのインスタンスになるには、[Terminalin](https://reference.aspose.com/tex/net/Aspose.TeX/texoptions/terminalin/)オプションを設定する必要があります。
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-InputConsoleTerminal.cs" >}}
+{{< gist "aspose-com-gists" "0fbd18cd8c28d5ed12e19cd52634ebd4" "Example-InputConsoleTerminal.cs" >}}
 
 
 しかし、真実を伝えるために、これはオプションのデフォルト値であるため、指定する必要はありません。この事実のため、および他の実装がない限り、このセクションはデモンストレーションのみを提供します。

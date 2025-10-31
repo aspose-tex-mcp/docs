@@ -15,53 +15,53 @@ lastmod: "2024-09-20"
 
 As we mentioned [here](/tex/{{lang.url-fragment}}net/tex-io/#tex-interaction-modes), **Aspose.TeX for .NET** lets us set the initial interaction mode in which the engine starts. Here's how we do it:
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-InteractionMode.cs" >}}
+{{< gist "aspose-com-gists" "deadfd7c29ffe40024a9b6d12f0ed18a" "Example-InteractionMode.cs" >}}
 
 ## How to set the job name
 
 When we pass the main input file as a file name, we get output files with the same name, although with other extensions. The TeX engine calls the input file's name the *job name* and uses it for output files, except in cases when auxiliary files with explicitly specified other names are written. When we pass the main input file as a [stream](/tex/{{lang.url-fragment}}net/other-ways-of-main-input/#providing-the-main-input-file-as-a-stream), the TeX engine uses the default job name, which is *texput*.
 In both cases, we can override the job name by assigning the appropriate conversion option.
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-JobName.cs" >}}
+{{< gist "aspose-com-gists" "deadfd7c29ffe40024a9b6d12f0ed18a" "Example-JobName.cs" >}}
 
 ## How to "stop time"
 
 LaTeX has a feature to automatically generate a title from some definitions in the preamble. This title normally contains the current date. We may wish to freeze the date in some desired value. Here's how it can be done:
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-DateTime.cs" >}}
+{{< gist "aspose-com-gists" "deadfd7c29ffe40024a9b6d12f0ed18a" "Example-DateTime.cs" >}}
 
 ## How to ignore missing packages
 
 We may want to convert a LaTeX file that references some packages that are not supported by the Aspose.TeX for .NET library. In this case, the TeX engine will halt with an error when trying to load such a package. To avoid this, we can use the following option:
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-IgnoreMissingPackages.cs" >}}
+{{< gist "aspose-com-gists" "deadfd7c29ffe40024a9b6d12f0ed18a" "Example-IgnoreMissingPackages.cs" >}}
 
 ## How to avoid building ligatures
 
 Normally, the TeX engine builds ligatures for certain pairs of characters if the font provides the data required to do so. We can instruct the engine to skip ligature building with the following code:
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-NoLigatures.cs" >}}
+{{< gist "aspose-com-gists" "deadfd7c29ffe40024a9b6d12f0ed18a" "Example-NoLigatures.cs" >}}
 
 ## How to repeat the job
 
 As we have mentioned [above](/tex/{{lang.url-fragment}}net/latex-io/#latex-input) regarding labels and references, there are cases when we would like to run the same job twice. Here is how it can be done:
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-Repeat.cs" >}}
+{{< gist "aspose-com-gists" "deadfd7c29ffe40024a9b6d12f0ed18a" "Example-Repeat.cs" >}}
 
 ## How to turn math formulas to raster images
 
 Sometimes we may need to have math formulas as raster images rather than typed in fonts. The following option can serve for this purpose:
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-RasterizeFormulas.cs" >}}
+{{< gist "aspose-com-gists" "deadfd7c29ffe40024a9b6d12f0ed18a" "Example-RasterizeFormulas.cs" >}}
 
 ## How to turn graphics to raster images
 
 The ObjectTeX engine allows us to include graphic files in raster formats (PNG and JPG) as well as PS(EPS) and XPS(OXPS) formats. The last two formats usually contain vector elements and texts. To have them rasterized and included as solid images, we can use the following option:
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-RasterizeIncludedGraphics.cs" >}}
+{{< gist "aspose-com-gists" "deadfd7c29ffe40024a9b6d12f0ed18a" "Example-RasterizeIncludedGraphics.cs" >}}
 
 ## How to subset fonts
 
 In case we want to reduce the size of the output file, we can resort to font subsetting, which means that the fonts in the output document will only contain data about the glyphs that are used in the document. Here's how we can solve this:
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-SubsetFonts.cs" >}}
+{{< gist "aspose-com-gists" "deadfd7c29ffe40024a9b6d12f0ed18a" "Example-SubsetFonts.cs" >}}

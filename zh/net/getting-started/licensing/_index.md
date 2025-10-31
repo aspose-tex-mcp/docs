@@ -49,13 +49,13 @@ aspose.tex的评估版(未指定许可证)提供完整的产品功能，只是�
 
 此代码段将在文件或嵌入式资源中存储的许可初始化。
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-LoadLicenseFromFile.cs" >}}
+{{< gist "aspose-com-gists" "366cba3dc08d43c99c22bb33ecb5d555" "Example-SetLicenseFromFile.cs" >}}
 
 #### 从流对象加载许可证
 
 这些代码片段从流中初始化许可证。
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-LoadLicenseFromStream.cs" >}}
+{{< gist "aspose-com-gists" "366cba3dc08d43c99c22bb33ecb5d555" "Example-SetLicenseFromStream.cs" >}}
 
 ### 计量许可证
 
@@ -63,4 +63,4 @@ aspose.tex具有替代许可机制。那些希望根据API功能使用的客户�
 
 使用[*Metered*](https://reference.aspose.com/tex/net/aspose.tex/metered/)类的实例设置了计量许可证的公共和私钥，如下所示： 
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-SetMeteredLicense.cs" >}}
+{{< gist "aspose-com-gists" "366cba3dc08d43c99c22bb33ecb5d555" "Example-SetMeteredLicense.cs" >}}

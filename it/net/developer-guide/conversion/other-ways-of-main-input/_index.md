@@ -15,7 +15,7 @@ lastmod: "2025-06-13"
 
 Fino a questo punto, sapevamo solo come passare il [file di input principale](/tex/{{lang.url-fragment}}net/tex-io/#tex-input) al motore TEX come nome di un file, sia completamente specificato che in breve, sia con un'estensione che senza di essa. Ma c'è un altro [costruttore](https://reference.aspose.com/tex/net/aspose.tex/texjob/texjob/) della classe `Texjob`, che prende un flusso come primo argomento. Questo è conveniente se per qualche motivo abbiamo il file di input principale in un modulo diverso da un file sul file system disco. Ecco come può essere implementato:
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-InputStream.cs" >}}
+{{< gist "aspose-com-gists" "4e3bae6ecbe041bcb411e0cf4c98dc71" "Example-StreamInput-LaTeX.cs" >}}
 
 Si noti che tutti i file di output avranno il nome *texput*. Questo perché il motore non può ottenere nessun altro nome da nessuna parte. *texput* è il nome del lavoro predefinito. [Qui](/tex/{{lang.url-fragment}}net/tex-io/#tex-output) e [qui](/tex/{{lang.url-fragment}}net/other-options/#how-to-set-the-job-name) sono dettagli sui nomi dei lavori.
 
@@ -25,7 +25,7 @@ C'è ancora un altro [costruttore](https://reference.aspose.com/tex/net/aspose.t
 
 Ecco il codice:
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-MainInputTerminal.cs" >}}
+{{< gist "aspose-com-gists" "4e3bae6ecbe041bcb411e0cf4c98dc71" "Example-MainInputTerminal.cs" >}}
 
 Non appena viene eseguito, il motore si attacca, aspettando che inseriamo il nome del file (con o senza percorso, con o senza estensione):
 

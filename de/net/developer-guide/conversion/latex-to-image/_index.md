@@ -18,7 +18,7 @@ lastmod: "2024-09-26"
 
 Werfen wir einen detaillierten Blick auf den Code in C#, der die einfachste Möglichkeit zum Konvertieren von LaTeX in das PNG-Format bietet.
 
-{{< gist "aspose-com-gists""76c7e5770ac8b3f6d409f6ec60f02030""Aspose.TeX.Examples-Conversion-LaTeXToPng-Simplest.cs" >}}
+{{< gist "aspose-com-gists" "58d1c43acd187f1cde7917fa9a430281" "Example-ConvertLaTeXToPNG-Simplest.cs" >}}
 
 Das erste, was wir also tun müssen (na ja, manchmal nicht das allererste), ist, eine Instanz der Klasse [TeXOptions](https://reference.aspose.com/tex/net/aspose.tex/texoptions/) zu erstellen. Die einzige statische Methode, die dies tut, ist [ConsoleAppOptions()](https://reference.aspose.com/tex/net/aspose.tex/texoptions/consoleappoptions/). Lassen Sie uns also nicht über die Bedeutung ihres Namens rätseln. Die Methode verwendet die [ObjectLaTeX-Instanz](https://reference.aspose.com/tex/net/aspose.tex/texconfig/objectlatex/) der Klasse [TeXConfig](https://reference.aspose.com/tex/net/aspose.tex/texconfig/), die genau zum Konvertieren einer [LaTeX-Datei](/tex/{{lang.url-fragment}}net/latex-io/#latex-file) geeignet ist. Diese Konfiguration weist die Object TeX-Engine an, das Object LaTeX-Format zu laden und bereit zu sein, die LaTeX-Datei zu akzeptieren. Das Object LaTeX-Format ist eigentlich nur das [LaTeX](/tex/{{lang.url-fragment}}net/what-is-latex/)-Format, außer dass es [Object TeX](/tex/{{lang.url-fragment}}net/aspose-tex-and-object-tex/#object-tex)-spezifische Grundelemente verwendet, um die Seitenmetriken einzurichten.
 
@@ -59,7 +59,7 @@ Es gibt eine andere Möglichkeit, Bilddaten als Array von Byte-Arrays abzurufen.
 
 Der folgende C#-Ausschnitt zeigt eine weitere Möglichkeit, die PNG-Ausgabe zu erhalten, indem die Bilddaten in einen Speicherstream statt direkt in das Dateisystem geschrieben werden. Dieser Ansatz ist nützlich, wenn Sie die generierten PNG-Bytes im Speicher für die weitere Verarbeitung benötigen, z. B. zum Senden über ein Netzwerk, zum Speichern in einer Datenbank oder für zusätzliche Transformationen vor dem Speichern.
 
-{{< gist "aspose-com-gists""76c7e5770ac8b3f6d409f6ec60f02030""Aspose.TeX.Examples-Conversion-LaTeXToPng-Alternative.cs" >}}
+{{< gist "aspose-com-gists" "58d1c43acd187f1cde7917fa9a430281" "Example-ConvertLaTeXToPNG-Alternative.cs" >}}
 
 Die *"page-n.png"*-Datei(en) werden in jeden von uns angegebenen Pfad geschrieben. Im Gegensatz zu [PDF-Ausgabe](/tex/{{lang.url-fragment}}net/latex-to-pdf/#an-alternative-way-to-write-main-output-pdf-file) duplizieren sie die ausgegebenen PNG-Dateien, die in das Ausgabeverzeichnis geschrieben werden.
 
@@ -75,19 +75,19 @@ Im Folgenden diskutieren wir die LaTeX-Konvertierung in andere unterstützte Ras
 
 ## So konvertieren Sie LaTeX in JPG
 
-{{< gist "aspose-com-gists""76c7e5770ac8b3f6d409f6ec60f02030""Aspose.TeX.Examples-Conversion-LaTeXToJpeg.cs" >}}
+{{< gist "aspose-com-gists" "58d1c43acd187f1cde7917fa9a430281" "Example-ConvertLaTeXToJPEG.cs" >}}
 
 **Sie können sich auch die kostenlose LaTeX-zu-JPG-Konvertierung [Web-App](https://products.aspose.app/tex/conversion/latex-to-jpg) ansehen, die auf [Aspose.TeX für .NET API](https://products.aspose.com/tex/net/) basiert.**
 
 ## So konvertieren Sie LaTeX in TIFF
 
-{{< gist "aspose-com-gists""76c7e5770ac8b3f6d409f6ec60f02030""Aspose.TeX.Examples-Conversion-LaTeXToTiff.cs" >}}
+{{< gist "aspose-com-gists" "58d1c43acd187f1cde7917fa9a430281" "Example-ConvertLaTeXToTIFF.cs" >}}
 
 **Sie können sich auch die kostenlose LaTeX-zu-TIFF-Konvertierung [Web-App](https://products.aspose.app/tex/conversion/latex-to-tiff) ansehen, die auf [Aspose.TeX für .NET API](https://products.aspose.com/tex/net/) basiert.**
 
 ## So konvertieren Sie LaTeX in BMP
 
-{{< gist "aspose-com-gists""76c7e5770ac8b3f6d409f6ec60f02030""Aspose.TeX.Examples-Conversion-LaTeXToBmp.cs" >}}
+{{< gist "aspose-com-gists" "58d1c43acd187f1cde7917fa9a430281" "Example-ConvertLaTeXToBMP.cs" >}}
 
 **Sie können sich auch die kostenlose LaTeX-zu-BMP-Konvertierung [Web-App](https://products.aspose.app/tex/conversion/latex-to-bmp) ansehen, die auf [Aspose.TeX für .NET API](https://products.aspose.com/tex/net/) basiert.**
 
@@ -101,6 +101,6 @@ Es gibt die Bibliothek [**Aspose.SVG**](https://products.aspose.com/svg/), die v
 
 Die Konvertierung von LaTeX in SVG ist ebenfalls so einfach wie die [Konvertierung in Rasterbildformate](/tex/{{lang.url-fragment}}net/latex-to-image/), außer dass [SaveOptions](https://reference.aspose.com/tex/net/aspose.tex/texoptions/saveoptions/) auf eine Instanz der Klasse [SvgSaveOptions](https://reference.aspose.com/tex/net/aspose.tex.presentation.svg/svgsaveoptions/) gesetzt sein MUSS und das Gerät darauf MUSS in eine Instanz der Klasse [SvgDevice](https://reference.aspose.com/tex/net/aspose.tex.presentation.svg/svgdevice/) geändert.
 
-{{< gist "aspose-com-gists""76c7e5770ac8b3f6d409f6ec60f02030""Aspose.TeX.Examples-Conversion-LaTeXToSvg-Simplest.cs" >}}
+{{< gist "aspose-com-gists" "58d1c43acd187f1cde7917fa9a430281" "Example-ConvertLaTeXToSVG-Simplest.cs" >}}
 
 **Sie können sich auch die kostenlose LaTeX-zu-SVG-Konvertierung [Web-App](https://products.aspose.app/tex/conversion/latex-to-svg) ansehen, die auf der [Aspose.TeX for .NET API](https://products.aspose.com/tex/net/) basiert.**

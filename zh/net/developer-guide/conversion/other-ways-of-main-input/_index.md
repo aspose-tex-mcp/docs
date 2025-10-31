@@ -15,7 +15,7 @@ lastmod: "2025-06-10"
 
 到目前为止，我们只知道如何将[主输入文件](/tex/{{lang.url-fragment}}net/tex-io/#tex-input)传递给TEX引擎作为文件名，无论是完全指定还是简短形式，无论是扩展名还是没有扩展名。但是，“ Texjob”类的另一个[构造函数](https://reference.aspose.com/tex/net/aspose.tex/texjob/texjob/)是第一个参数。如果出于某种原因，我们将主要输入文件中的主要输入文件中的其他形式除外，则很方便。这是可以实施的方式：
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-InputStream.cs" >}}
+{{< gist "aspose-com-gists" "4e3bae6ecbe041bcb411e0cf4c98dc71" "Example-StreamInput-LaTeX.cs" >}}
 
 请注意，所有输出文件都有名称 *texput*。那是因为引擎在任何地方都无法获得任何其他名称。 *texput*是默认作业名称。 [此处](/tex/{{lang.url-fragment}}net/tex-io/#tex-output)和[此处](/tex/{{lang.url-fragment}}net/other-options/#how-to-set-the-job-name)是有关工作名称的详细信息。
 
@@ -25,7 +25,7 @@ lastmod: "2025-06-10"
 
 这是代码：
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-MainInputTerminal.cs" >}}
+{{< gist "aspose-com-gists" "4e3bae6ecbe041bcb411e0cf4c98dc71" "Example-MainInputTerminal.cs" >}}
 
 运行后，发动机会粘贴，等待我们输入文件名(有或没有路径，有或没有扩展的情况)：
 

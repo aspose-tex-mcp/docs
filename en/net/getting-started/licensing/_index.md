@@ -50,13 +50,14 @@ Use the [License.SetLicense](https://reference.aspose.com/tex/net/aspose.tex/lic
 
 This code snippet initializes a license stored in a file or in an embedded resource.
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-LoadLicenseFromFile.cs" >}}
+{{< gist "aspose-com-gists" "366cba3dc08d43c99c22bb33ecb5d555" "Example-SetLicenseFromFile.cs" >}}
 
 #### Loading a License from a Stream Object
 
 These code snippets initialize the license from the stream.
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-LoadLicenseFromStream.cs" >}}
+{{< gist "aspose-com-gists" "366cba3dc08d43c99c22bb33ecb5d555" "Example-SetLicenseFromStream.cs" >}}
+
 
 ### Metered License
 
@@ -64,4 +65,4 @@ Aspose.TeX has an alternative licensing mechanism. Those customers who wish to b
 
 The public and private keys of a metered license are set using an instance of the [*Metered*](https://reference.aspose.com/tex/net/aspose.tex/metered/) class, as shown in the following example: 
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-SetMeteredLicense.cs" >}}
+{{< gist "aspose-com-gists" "366cba3dc08d43c99c22bb33ecb5d555" "Example-SetMeteredLicense.cs" >}}

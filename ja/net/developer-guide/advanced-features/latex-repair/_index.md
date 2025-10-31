@@ -19,7 +19,7 @@ lastmod: "2025-06-09"
 
 次に、C＃コードサンプルを見てみましょう。
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Features-LaTeXRepairer.cs" >}}
+{{< gist "aspose-com-gists" "7f54d335270200ebf5987d071bad028a" "Examples_LaTeXRepairerExample" >}}
 
 通常のTexの仕事と同様に、最初に実行しようとしているプロセスのオプションを含むオブジェクトを作成します。それらのほとんどは、通常のTexジョブのオプションと同じです。実際、[inputworkingDirectory](https://reference.aspose.com/tex/net/aspose.tex.features/latexrepaireroptions/inputworkingdirectory/)は、入力ファイルを読み取るスペースです。ファイルシステムのメイン入力ファイルへのフルパスを提供し、メイン入力ファイルにカスタムファイルが含まれていないため、ここでは使用しません。次に、[outputWorkingDirectory](https://reference.aspose.com/tex/net/aspose.tex.features/latexrepaireroptions/outputworkingdirectory/)は、出力ファイルを書き込む必要があるスペースです。 [rebulyinputDirectory](https://reference.aspose.com/tex/net/aspose.tex.features/latexrepaireroptions/requiredinputdirectory/)が割り当てられた場合、Aspose.TeXライブラリに埋め込まれていないラテックスパッケージを保存できるスペースを指します。 [推測PackageCallback](https://reference.aspose.com/tex/net/aspose.tex.features/latexrepaireroptions/guesspackagecallback/)プロパティについては後で説明します。
 
@@ -34,7 +34,7 @@ lastmod: "2025-06-09"
 `fancehdr`パッケージに`\ head`コマンドをマップするだけの非常に簡単な例があります。
 
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Features-LaTeXRepairer-PackageGuessingCallback.cs" >}}
+{{< gist "aspose-com-gists" "7f54d335270200ebf5987d071bad028a" "Examples_PackageGuessingCallback" >}}
 
 
 サンプルファイルに関しては、エンジンは最初に`\ Chapter`コマンドに遭遇します。これは、「記事」ドキュメントクラスで定義されていないが、`Book`ドキュメントクラスで定義されています。 APIはドキュメントクラスを調整して、固定ファイルの最終バージョンが「\ documentClass {book}」で始まるようになります。次に、エンジンは前述の`\ lhead`コマンドを見つけ、 `\ usepackage {fancyhdr}`をプリアンブルに挿入する必要があると判断します。後で発生する`\ href`および `\ increctgraphics`コマンドは、修理業者を挿入するようにします。これらの決定は、APIの内部マッピングに基づいています。繰り返しますが、そのような修正はすべてレポートファイルに記録されます。

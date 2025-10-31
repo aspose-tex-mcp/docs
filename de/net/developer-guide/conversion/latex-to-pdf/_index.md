@@ -17,7 +17,7 @@ lastmod: "2024-09-26"
 
 Werfen wir einen detaillierten Blick auf den Code in C#, der die einfachste Möglichkeit zum Konvertieren von LaTeX in das PDF-Format bietet.
 
-{{< gist "aspose-com-gists""76c7e5770ac8b3f6d409f6ec60f02030""Aspose.TeX.Examples-Conversion-LaTeXToPdf-Simplest.cs" >}}
+{{< gist "aspose-com-gists" "507170b996a1d0c39bb4374e888b3205" "Example-ConvertLaTeXToPDF-Simplest.cs" >}}
 
 Das erste, was wir also tun müssen (na ja, manchmal nicht das allererste), ist, eine Instanz der Klasse [TeXOptions](https://reference.aspose.com/tex/net/aspose.tex/texoptions/) zu erstellen. Die einzige statische Methode, die dies tut, ist [ConsoleAppOptions()](https://reference.aspose.com/tex/net/aspose.tex/texoptions/consoleappoptions/). Lassen Sie uns also nicht über die Bedeutung ihres Namens rätseln. Die Methode benötigt eine [Instanz](https://reference.aspose.com/tex/net/aspose.tex/texconfig/objectlatex/) der Klasse [TeXConfig](https://reference.aspose.com/tex/net/aspose.tex/texconfig/), die genau zum Konvertieren einer [LaTeX-Datei](/tex/{{lang.url-fragment}}net/latex-io/#latex-file) geeignet ist. Diese Konfiguration weist die Object TeX-Engine an, das Object LaTeX-Format zu laden und bereit zu sein, die LaTeX-Datei zu akzeptieren. Das Object LaTeX-Format ist eigentlich nur das [LaTeX](/tex/{{lang.url-fragment}}net/what-is-latex/)-Format, außer dass es [Object TeX](/tex/{{lang.url-fragment}}net/aspose-tex-and-object-tex/#object-tex)-spezifische Grundelemente verwendet, um die Seitenmetriken einzurichten.
 
@@ -54,7 +54,7 @@ Weitere „Früchte“ der Engine-Arbeit finden wir in dem Ordner, den wir als A
 
 Es gibt einen weiteren Konstruktor der Klasse [PdfDevice](https://reference.aspose.com/tex/net/aspose.tex.presentation.pdf/pdfdevice/pdfdevice/), mit dem wir die resultierende PDF-Datei auf alternative Weise erhalten können.
 
-{{< gist "aspose-com-gists""76c7e5770ac8b3f6d409f6ec60f02030""Aspose.TeX.Examples-Conversion-LaTeXToPdf-Alternative.cs" >}}
+{{< gist "aspose-com-gists" "507170b996a1d0c39bb4374e888b3205" "Example-ConvertLaTeXToPDF-Alternative.cs" >}}
 
 Die Datei *any-name.pdf* im angegebenen Verzeichnis ist unsere Hauptausgabe-PDF-Datei. Gleichzeitig finden wir im Gegensatz zu [Bildausgabe](/tex/{{lang.url-fragment}}net/latex-to-png/#an-alternative-way-to-write-main-output-png-files) keine PDF-Dateien in dem durch die Konvertierungsoptionen definierten Ausgabeverzeichnis. Ausnahme: *any-name.pdf* befindet sich (durch seinen Pfad) im selben Dateisystemverzeichnis, das der Option [OutputWorkingDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/outputworkingdirectory/) mit [OutputFileSystemDirectory](https://reference.aspose.com/tex/net/aspose.tex.io/outputfilesystemdirectory/) zugewiesen ist.
 

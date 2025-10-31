@@ -16,7 +16,7 @@ lastmod: "2025-06-13"
 
 La sezione di riferimento API relativa a questo argomento è [qui](https://reference.aspose.com/tex/net/aspose.tex.features/). In effetti, il modo più semplice per dimostrare la funzione **LaTeX Math Rendering** è iniziare con l'esempio. Ecco qui:
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Features-PngLaTeXMathRendering.cs" >}}
+{{< gist "aspose-com-gists" "cd0acc55d1634f17dcf42e02075ca005" "Example-RenderMathToPNG.cs" >}}
 
 Arriviamo ai dettagli. Prima di tutto, creiamo un'istanza di [rendering options](https://reference.aspose.com/tex/net/aspose.tex.features/mathrendereroptions/), simile alla composizione Tex/Latex. Lo facciamo qui contemporaneamente specificando la risoluzione dell'immagine di output.
 
@@ -59,7 +59,7 @@ Questo è il caso d'uso più generale per la funzione **Latex Math Rendering**.
 
 Allo stesso modo, possiamo rendere una formula matematica in LaTeX al formato SVG.
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Features-SvgLaTeXMathRendering.cs" >}}
+{{< gist "aspose-com-gists" "cd0acc55d1634f17dcf42e02075ca005" "Example-RenderMathToSVG.cs" >}}
 
 Le differenze sono:
 

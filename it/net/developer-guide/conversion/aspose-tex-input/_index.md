@@ -22,7 +22,7 @@ Poiché i primitivi I/O della lingua tex possono solo gestire i nomi dei file, *
 
 Ecco come lo faremmo:
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-InputFileSystemDirectory.cs" >}}
+{{< gist "aspose-com-gists" "0fbd18cd8c28d5ed12e19cd52634ebd4" "Example-InputFileSystemDirectory.cs" >}}
 
 Questo caso d'uso è abbastanza semplice, quindi non c'è più bisogno di concentrarsi su di esso.
 
@@ -30,7 +30,7 @@ Questo caso d'uso è abbastanza semplice, quindi non c'è più bisogno di concen
 
 Possiamo anche mettere i file di input in un archivio ZIP e considerarlo una directory di input. In questo caso, dovremmo procedere come segue:
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-InputZipDirectory.cs" >}}
+{{< gist "aspose-com-gists" "0fbd18cd8c28d5ed12e19cd52634ebd4" "Example-InputZipDirectory.cs" >}}
 
 Innanzitutto, creiamo il flusso contenente il file zip. Quindi, dopo aver creato le opzioni di conversione, impostiamo l'opzione [InputWorkingDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/inputworkingdirectory/) per essere un'istanza della classe [InputZipDirectory](https://reference.aspose.com/tex/net/aspose.tex.io/inputzipdirectory/). Il secondo argomento del costruttore è il percorso di base all'interno dell'archivio. Se vogliamo che l'intero archivio sia una directory di input, dovremmo passare la stringa vuota. 
 
@@ -42,7 +42,7 @@ Ora è il momento di ricordare che c'è anche l'input del terminale. Per quanto 
 
 Per fare ciò, dobbiamo impostare l'opzione [Terminalin](https://reference.aspose.com/tex/net/aspose.tex/texoptions/terminalin/) per essere un'istanza della classe [InputConsoleterminal](https://reference.aspose.com/tex/net/aspose.tex.io/inputconsoleterminal/).
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-InputConsoleTerminal.cs" >}}
+{{< gist "aspose-com-gists" "0fbd18cd8c28d5ed12e19cd52634ebd4" "Example-InputConsoleTerminal.cs" >}}
 
 Ma, per dirti la verità, questo è il valore predefinito dell'opzione, quindi non è necessario specificarla. Per questo fatto, e fintanto che non ci sono altre implementazioni, questa sezione ha solo scopi dimostrativi.
 

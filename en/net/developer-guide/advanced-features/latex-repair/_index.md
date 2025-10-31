@@ -19,7 +19,7 @@ First of all, it is worth mentioning that although the sample file seems to use 
 
 Let's now look at the C# code sample.
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Features-LaTeXRepairer.cs" >}}
+{{< gist "aspose-com-gists" "7f54d335270200ebf5987d071bad028a" "Examples_LaTeXRepairerExample" >}}
 
 As with a regular TeX job, we first create an object that contains the options of the process we are about to run. Most of them are the same as the options of a regular TeX job. Indeed, the [InputWorkingDirectory](https://reference.aspose.com/tex/net/aspose.tex.features/latexrepaireroptions/inputworkingdirectory/) is the space from which the input files should be read. We don't use it here because we provide the full path to the main input file in the file system, and no custom files are supposed to be included in the main input file. Then, [OutputWorkingDirectory](https://reference.aspose.com/tex/net/aspose.tex.features/latexrepaireroptions/outputworkingdirectory/) is the space where the output files should be written. [RequiredInputDirectory](https://reference.aspose.com/tex/net/aspose.tex.features/latexrepaireroptions/requiredinputdirectory/), if assigned, points to the space where you may store LaTeX packages that are not embedded in the Aspose.TeX library. The [GuessPackageCallback](https://reference.aspose.com/tex/net/aspose.tex.features/latexrepaireroptions/guesspackagecallback/) property will be discussed later.
 
@@ -34,7 +34,7 @@ As the engine scans the file further, it may find undefined commands or environm
 Here is a very simple example that just maps the `\head` command to the `fancyhdr` package:
 
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Features-LaTeXRepairer-PackageGuessingCallback.cs" >}}
+{{< gist "aspose-com-gists" "7f54d335270200ebf5987d071bad028a" "Examples_PackageGuessingCallback" >}}
 
 
 As for the sample file, the engine first encounters the `\chapter` command, which is not defined in the `article` document class but is defined in the `book` document class. The API adjusts the document class so that the final version of the fixed file will start with `\documentclass{book}`. Then, the engine finds the aforementioned `\lhead` command and decides that `\usepackage{fancyhdr}` must be inserted in the preamble. The `\href` and `\includegraphics` commands that occur later on make the Repairer insert `\usepackage{hyperref}` and `\usepackage{graphics}` in the preamble, respectively. These decisions are based on the API's internal mappings. Again, all such fixes are logged in the report file.

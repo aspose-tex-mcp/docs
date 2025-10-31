@@ -24,7 +24,7 @@ Come accennato [sopra](/tex/{{lang.url-fragment}}net/latex-to-image/), il valore
 
 Ecco come lo imposteremmo:
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-OutputFileSystemDirectory.cs" >}}
+{{< gist "aspose-com-gists" "0fbd18cd8c28d5ed12e19cd52634ebd4" "Example-OutputFileSystemDirectory.cs" >}}
 
 Questo caso d'uso è abbastanza semplice, quindi non c'è più bisogno di concentrarsi su di esso.
 
@@ -32,7 +32,7 @@ Questo caso d'uso è abbastanza semplice, quindi non c'è più bisogno di concen
 
 Possiamo anche creare un file (o streaming) e lasciare che il motore TEX lo utilizzi come archivio zip per archiviare i file di output. Ecco qui:
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-OutputZipDirectory.cs" >}}
+{{< gist "aspose-com-gists" "0fbd18cd8c28d5ed12e19cd52634ebd4" "Example-OutputZipDirectory.cs" >}}
 
 Innanzitutto, creiamo un flusso di output per il file zip. Quindi, dopo aver creato le opzioni di conversione, impostiamo l'opzione [OutputWorkingDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/outputworkingdirectory/) per essere un'istanza della classe [OutputzipDirectory](https://reference.aspose.com/tex/net/aspose.tex.io/outputzipdirectory/).
 
@@ -44,7 +44,7 @@ C'è un'altra parte importante dell'uscita --- l'output del terminale. Per quant
 
 Per fare ciò, dobbiamo impostare l'opzione [terminale](https://reference.aspose.com/tex/net/aspose.tex/texoptions/terminalout/) per essere un'istanza della classe [outputConsoleterminal](https://reference.aspose.com/tex/net/aspose.tex.io/outputconsoleterminal/).
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-OutputConsoleTerminal.cs" >}}
+{{< gist "aspose-com-gists" "0fbd18cd8c28d5ed12e19cd52634ebd4" "Example-OutputConsoleTerminal.cs" >}}
 
 Ancora una volta, questo è il valore predefinito dell'opzione, quindi non è necessario specificarlo. Per questo motivo, questa sezione ha solo scopi dimostrativi.
 
@@ -52,6 +52,6 @@ Ancora una volta, questo è il valore predefinito dell'opzione, quindi non è ne
 
 A differenza del terminale di input, **Aspose.TeX per .NET** fornisce un'implementazione di [IoutPutterminal](https://reference.aspose.com/tex/net/aspose.tex.io/ioutputterminal/), che ci consente di scrivere l'output del terminale in un file in una directory di output.
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-OutputFileTerminal.cs" >}} 
+{{< gist "aspose-com-gists" "0fbd18cd8c28d5ed12e19cd52634ebd4" "Example-OutputFileTerminal.cs" >}} 
 
 Qui chiediamo al motore TEX di scrivere l'output del terminale nel file con il nome [<Bob_name>](/tex/{{lang.url-fragment}}net/tex-io/#tex-output) .TRM, che verrà archiviato nella stessa directory di output che abbiamo specificato per il resto dell'output. Ma questo non è necessario. Potremmo anche passare qualsiasi altra istanza di qualsiasi implementazione di [IoutPutterminal](https://reference.aspose.com/tex/net/aspose.tex.io/ioutputterminal/) al costruttore.

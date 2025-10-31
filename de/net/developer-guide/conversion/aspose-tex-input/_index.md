@@ -22,7 +22,7 @@ Da E/A-Grundelemente der TeX-Sprache nur Dateinamen verarbeiten können, definie
 
 So würden wir es machen:
 
-{{< gist "aspose-com-gists""76c7e5770ac8b3f6d409f6ec60f02030""Aspose.TeX.Examples-Conversion-InputFileSystemDirectory.cs" >}}
+{{< gist "aspose-com-gists" "0fbd18cd8c28d5ed12e19cd52634ebd4" "Example-InputFileSystemDirectory.cs" >}}
 
 Dieser Anwendungsfall ist recht einfach, sodass Sie sich nicht mehr darauf konzentrieren müssen.
 
@@ -30,7 +30,7 @@ Dieser Anwendungsfall ist recht einfach, sodass Sie sich nicht mehr darauf konze
 
 Wir können die Eingabedateien auch in ein ZIP-Archiv legen und es als Eingabeverzeichnis betrachten. In diesem Fall sollten wir wie folgt vorgehen:
 
-{{< gist "aspose-com-gists""76c7e5770ac8b3f6d409f6ec60f02030""Aspose.TeX.Examples-Conversion-InputZipDirectory.cs" >}}
+{{< gist "aspose-com-gists" "0fbd18cd8c28d5ed12e19cd52634ebd4" "Example-InputZipDirectory.cs" >}}
 
 Zuerst erstellen wir den Stream, der die ZIP-Datei enthält. Nachdem wir die Konvertierungsoptionen erstellt haben, legen wir dann die Option [InputWorkingDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/inputworkingdirectory/) als Instanz der Klasse [InputZipDirectory](https://reference.aspose.com/tex/net/aspose.tex.io/inputzipdirectory/) fest. Das zweite Argument des Konstruktors ist der Basispfad innerhalb des Archivs. Wenn wir möchten, dass das gesamte Archiv ein Eingabeverzeichnis ist, sollten wir die leere Zeichenfolge übergeben. 
 
@@ -42,7 +42,7 @@ Jetzt ist es an der Zeit, sich daran zu erinnern, dass es auch die Terminaleinga
 
 Dazu müssen wir die Option [TerminalIn](https://reference.aspose.com/tex/net/aspose.tex/texoptions/terminalin/) als Instanz der Klasse [InputConsoleTerminal](https://reference.aspose.com/tex/net/aspose.tex.io/inputconsoleterminal/) festlegen.
 
-{{< gist "aspose-com-gists""76c7e5770ac8b3f6d409f6ec60f02030""Aspose.TeX.Examples-Conversion-InputConsoleTerminal.cs" >}}
+{{< gist "aspose-com-gists" "0fbd18cd8c28d5ed12e19cd52634ebd4" "Example-InputConsoleTerminal.cs" >}}
 
 Aber ehrlich gesagt ist dies der Standardwert der Option, es besteht also keine wirkliche Notwendigkeit, ihn anzugeben. Aus diesem Grund und solange es keine anderen Implementierungen gibt, dient dieser Abschnitt nur Demonstrationszwecken.
 

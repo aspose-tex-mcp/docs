@@ -31,7 +31,7 @@ lastmod: "2024-09-24"
 
 Этот код демонстрирует самый простой способ создания XPS-файла из LaTeX.
 
-{{< gist "aspose-com-gists""76c7e5770ac8b3f6d409f6ec60f02030""Aspose.TeX.Examples-Conversion-LaTeXToXps-Simplest.cs" >}}
+{{< gist "aspose-com-gists""1d10927e18d23e49096c91ce726e9d6f""Example-ConvertLaTeXToXPS-Simplest.cs" >}}
 
 ### Альтернативный способ записи основного выходного файла XPS.
 
@@ -48,7 +48,7 @@ lastmod: "2024-09-24"
 
 Этот подход полезен, когда данные XPS нужны в памяти, а не в виде файла на диске.
 
-{{< gist "aspose-com-gists""76c7e5770ac8b3f6d409f6ec60f02030""Aspose.TeX.Examples-Conversion-LaTeXToXps-Alternative.cs" >}}
+{{< gist "aspose-com-gists""1d10927e18d23e49096c91ce726e9d6f""Example-ConvertLaTeXToXPS-Alternative.cs" >}}
 
 Эффект тот же, что мы получаем [здесь](/tex/{{lang.url-fragment}}net/latex-to-pdf/#an-alternative-way-to-write-main-output-pdf-file).
 

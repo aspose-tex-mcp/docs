@@ -19,7 +19,7 @@ Wir beginnen mit der Erstellung eines benutzerdefinierten Formats.
 
 Denken Sie daran, dass die Formatdatei ein binärer Speicherauszug des internen Zustands der TeX-Engine ist.
 
-{{< gist "aspose-com-gists""76c7e5770ac8b3f6d409f6ec60f02030""Aspose.TeX.Examples-CreateCustomTeXFormatFile.cs" >}}
+{{< gist "aspose-com-gists" "c0eb6cbcfb001b7e6355cafa4611afed" "Example-CreateCustomFormat.cs" >}}
 
 Wie Sie sehen, ähnelt der Code dem Code zum Konvertieren einer TeX-Datei. Aber es gibt ein paar Unterschiede.
 
@@ -33,7 +33,7 @@ Und der zweite wesentliche Unterschied ist die Art und Weise, wie wir den Job au
 
 Da wir nun über unser eigenes TeX-Format verfügen, möchten wir eine in diesem Format geschriebene TeX-Datei setzen. Hier ist der Code:
 
-{{< gist "aspose-com-gists""76c7e5770ac8b3f6d409f6ec60f02030""Aspose.TeX.Examples-TypesetWithCustomTeXFormat.cs" >}}
+{{< gist "aspose-com-gists" "c0eb6cbcfb001b7e6355cafa4611afed" "Example-TypesetWithCustomFormat.cs" >}}
 
 Natürlich müssen wir das Format irgendwie festlegen. Zunächst müssen wir eine Instanz der Klasse [FormatProvider](https://reference.aspose.com/tex/net/aspose.tex.resourceproviders/formatprovider/) erstellen. Dann verwenden wir im Optionskonstruktor die Konfiguration [TeXConfig.ObjectTeX()](https://reference.aspose.com/tex/net/aspose.tex/texconfig/objecttex/), die unseren Formatanbieter als Argument verwendet und das Format über den „jungfräulichen“ Zustand der Engine lädt.
 

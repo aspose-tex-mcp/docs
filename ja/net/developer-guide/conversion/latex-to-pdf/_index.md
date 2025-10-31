@@ -17,7 +17,7 @@ lastmod: "2025-06-09"
 
 C＃のコードを詳細に見てみましょう。ラテックスをPDF形式に変換する最も簡単な方法を提供します。
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-LaTeXToPdf-Simplest.cs" >}}
+{{< gist "aspose-com-gists" "507170b996a1d0c39bb4374e888b3205" "Example-ConvertLaTeXToPDF-Simplest.cs" >}}
 
 したがって、私たちが最初に行う必要があること(まあ、時には最初のものではないこともあります)は、[テキサプティオン](https://reference.aspose.com/tex/net/Aspose.TeX/texoptions/)クラスのインスタンスを作成することです。これを行う唯一の静的方法は[consoleappoptions()](https://reference.aspose.com/tex/net/Aspose.TeX/texoptions/consoleappoptions/)です。したがって、その名前の意味に困惑しないようにしましょう。このメソッドは、[TexConfig](https://reference.aspose.com/tex/net/Aspose.TeX/texconfig/)クラスの[インスタンス](https://reference.aspose.com/tex/net/Aspose.TeX/texconfig/objectlatex/)を取ります。これは[LaTexファイル](/tex/{{lang.url-fragment}}net/latex-io/#latex-file)の変換に正確に適しています。この構成は、Object Tex EngineにObject Latex形式をロードし、LaTexファイルを受け入れる準備ができているように指示します。オブジェクトラテックス形式は、実際には[latex](/tex/{{lang.url-fragment}}net/what-is-latex/)形式にすぎませんが、[オブジェクトTex](/tex/{{lang.url-fragment}}net/aspose-tex-and-object-tex/#object-tex)特定のプリミティブを使用してページメトリックをセットアップすることを除きます。
 
@@ -54,7 +54,7 @@ Transcript written on hello-world.log.
 
 [pdfdevice](https://reference.aspose.com/tex/net/aspose.tex.presentation.pdf/pdfdevice/pdfdevice/)クラスの別のコンストラクターがあります。これにより、結果のPDFファイルを代替方法で取得できます。
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-LaTeXToPdf-Alternative.cs" >}}
+{{< gist "aspose-com-gists" "507170b996a1d0c39bb4374e888b3205" "Example-ConvertLaTeXToPDF-Alternative.cs" >}}
 
 指定されたディレクトリの *any-name.pdf* ファイルは、メインの出力PDFファイルになります。同時に、[画像出力](/tex/{{lang.url-fragment}}net/latex-to-png/#an-alternative-way-to-write-main-output-png-files)とは異なり、変換オプションで定義された出力ディレクトリにPDFファイルは見つかりません。例外： *any-name.pdf* は、[outputFilesSystemDirectory](https://reference.aspose.com/tex/net/aspose.tex.io/outputfilesystemdirectory/)を使用して[outputWorkingDirectory](https://reference.aspose.com/tex/net/Aspose.TeX/texoptions/outputworkingdirectory/)オプションに割り当てられている同じファイルシステムディレクトリに(そのパスで)配置されます。
 

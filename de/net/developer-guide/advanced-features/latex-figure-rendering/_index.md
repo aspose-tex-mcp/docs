@@ -19,7 +19,7 @@ Manchmal möchten Sie vielleicht einige Inhalte aus einer LaTeX-Datei als separa
 
 Der API-Referenzabschnitt zu diesem Thema ist [hier](https://reference.aspose.com/tex/net/aspose.tex.features/). Und wie bei der Formeldarstellung beginnen wir mit einem Beispiel. Hier ist es:
 
-{{< gist "aspose-com-gists""76c7e5770ac8b3f6d409f6ec60f02030""Aspose.TeX.Examples-Features-PngLaTeXFigureRendering.cs" >}}
+{{< gist "aspose-com-gists" "79be6a0d7a31aa5deb213ba4ca81cb1b" "Example-RenderFigureToPNG.cs" >}}
 
 Zunächst erstellen wir eine [LaTeX-Figurenoptionen](https://reference.aspose.com/tex/net/aspose.tex.features/figurerendereroptions/)-Instanz. Wir tun dies hier und geben gleichzeitig die Ausgabebildauflösung an.
 
@@ -56,7 +56,7 @@ Dies ist der allgemeinste Anwendungsfall für die Funktion **LaTeX-Figurenrender
 
 Auf die gleiche Weise können wir eine LaTeX-Figur im SVG-Format rendern.
 
-{{< gist "aspose-com-gists""76c7e5770ac8b3f6d409f6ec60f02030""Aspose.TeX.Examples-Features-SvgLaTeXFigureRendering.cs" >}}
+{{< gist "aspose-com-gists" "79be6a0d7a31aa5deb213ba4ca81cb1b" "Example-RenderFigureToSVG.cs" >}}
 
 Die Unterschiede sind:
 

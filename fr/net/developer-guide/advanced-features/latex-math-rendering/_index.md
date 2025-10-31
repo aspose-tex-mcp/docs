@@ -16,7 +16,7 @@ lastmod: "2024-09-27"
 
 La section de référence de l'API liée à ce sujet est [ici](https://reference.aspose.com/tex/net/aspose.tex.features/). En fait, le moyen le plus simple de démontrer la fonctionnalité de **rendu de formule mathématique LaTeX** est de commencer par l'exemple. C'est ici:
 
-{{< gist "aspose-com-gists""76c7e5770ac8b3f6d409f6ec60f02030""Aspose.TeX.Examples-Features-PngLaTeXMathRendering.cs" >}}
+{{< gist "aspose-com-gists" "cd0acc55d1634f17dcf42e02075ca005" "Example-RenderMathToPNG.cs" >}}
 
 Passons aux détails. Tout d'abord, nous créons une instance [options de rendu](https://reference.aspose.com/tex/net/aspose.tex.features/mathrendereroptions/), similaire à la composition TeX/LaTeX. Nous le faisons ici simultanément en spécifiant la résolution de l’image de sortie.
 
@@ -58,7 +58,7 @@ Il s'agit du cas d'utilisation le plus général de la fonctionnalité de **rend
 
 De la même manière, nous pouvons restituer une formule mathématique LaTeX au format SVG.
 
-{{< gist "aspose-com-gists""76c7e5770ac8b3f6d409f6ec60f02030""Aspose.TeX.Examples-Features-SvgLaTeXMathRendering.cs" >}}
+{{< gist "aspose-com-gists" "cd0acc55d1634f17dcf42e02075ca005" "Example-RenderMathToSVG.cs" >}}
 
 Les différences sont :
 

@@ -16,7 +16,7 @@ lastmod: "2025-06-09"
 
 このトピックに関連するAPI参照セクションは[ここ](https://reference.aspose.com/tex/net/aspose.tex.features/)です。実際、**ラテックス数学の式レンダリング**機能を実証する最も簡単な方法は、例から始めることです。ここにあります：
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Features-PngLaTeXMathRendering.cs" >}}
+{{< gist "aspose-com-gists" "cd0acc55d1634f17dcf42e02075ca005" "Example-RenderMathToPNG.cs" >}}
 
 詳細について説明しましょう。まず、Tex/LaTexタイプセットと同様に、[レンダリングオプション](https://reference.aspose.com/tex/net/aspose.tex.features/mathrendereroptions/)インスタンスを作成します。ここでは、出力画像解像度を同時に指定します。
 
@@ -59,7 +59,7 @@ lastmod: "2025-06-09"
 
 ほぼ同じように、LaTex MathフォーミュラをSVG形式にレンダリングできます。
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Features-SvgLaTeXMathRendering.cs" >}}
+{{< gist "aspose-com-gists" "cd0acc55d1634f17dcf42e02075ca005" "Example-RenderMathToSVG.cs" >}}
 
 違いは次のとおりです。
 

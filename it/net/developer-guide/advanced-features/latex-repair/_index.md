@@ -19,7 +19,7 @@ Prima di tutto, vale la pena ricordare che sebbene il file di esempio sembri uti
 
 Diamo ora un'occhiata al campione del codice C#.
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Features-LaTeXRepairer.cs" >}}
+{{< gist "aspose-com-gists" "7f54d335270200ebf5987d071bad028a" "Examples_LaTeXRepairerExample" >}}
 
 Come con un normale lavoro Tex, creiamo prima un oggetto che contiene le opzioni del processo che stiamo per eseguire. La maggior parte di loro è uguale alle opzioni di un normale lavoro Tex. In effetti, [inputworkingdirectory](https://reference.aspose.com/tex/net/aspose.tex.features/latexrepaireroptions/inputworkingdirectory/) è lo spazio da cui dovrebbero essere letti i file di input. Non lo utilizziamo qui perché forniamo il percorso completo al file di input principale nel file system e non si suppone che non siano inclusi file personalizzati nel file di input principale. Quindi, [OutputWorkingDirectory](https://reference.aspose.com/tex/net/aspose.tex.features/latexrepaireroptions/outputworkingdirectory/) è lo spazio in cui i file di output dovrebbero essere scritti. [RecomeNinputDirectory](https://reference.aspose.com/tex/net/aspose.tex.features/latexrepaireroptions/requiredinputdirectory/), se assegnato, punta allo spazio in cui è possibile archiviare pacchetti in LaTeX che non sono incorporati nella libreria ASPIPE.Tex. La proprietà [Ipotesi di Ipotesi](https://reference.aspose.com/tex/net/aspose.tex.features/latexrepaireroptions/guesspackagecallback/) sarà discussa più avanti.
 
@@ -33,7 +33,7 @@ Man mano che il motore scruta ulteriormente il file, potrebbe trovare comandi o 
 
 Ecco un esempio molto semplice che mappa il comando `\head` al pacchetto `fancyhdr`:
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Features-LaTeXRepairer-PackageGuessingCallback.cs" >}}
+{{< gist "aspose-com-gists" "7f54d335270200ebf5987d071bad028a" "Examples_PackageGuessingCallback" >}}
 
 Per quanto riguarda il file di esempio, il motore incontra per la prima volta il comando `\capitolo`, che non è definito nella classe di documenti` Articolo` ma è definito nella classe di documenti `Book`. L'API regola la classe di documenti in modo che la versione finale del file fisso inizi con `\DocumentClass {Book}`. Quindi, il motore trova il suddetto comando `\lhead` e decide che`\usapackage {FancyHDr} `deve essere inserito nel preambolo. I comandi `\href` e `\includegraphics` che si verificano in seguito a rendere il riparatore insert `\usepackage {hyperref}` e `\usepackage {graphics}` nel preambolo, rispettivamente. Queste decisioni si basano sulle mappature interne dell'API. Ancora una volta, tutte queste correzioni sono registrate nel file di report.
 
