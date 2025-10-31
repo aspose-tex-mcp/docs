@@ -57,7 +57,7 @@ options.RequiredInputDirectory = new InputFileSystemDirectory("path-to-directory
 
 Вот полный исходный код примера:
 
-{{< gist "aspose-com-gists""76c7e5770ac8b3f6d409f6ec60f02030""Aspose.TeX.Examples-Conversion-RequiredInput-FileSystem.cs" >}}
+{{< gist "aspose-com-gists""03f720960e15bd497ed26ce2eb9c03b2""Example-RequiredInput-FileSystem.cs" >}}
 
 ### Заархивированные необходимые данные (пакет pgfplots)
 
@@ -118,7 +118,7 @@ using (Stream zipStream = File.Open("path-to-zip-with-pgfplots-sources"), FileMo
 
 Вот полный исходный код примера:
 
-{{< gist "aspose-com-gists""76c7e5770ac8b3f6d409f6ec60f02030""Aspose.TeX.Examples-Conversion-RequiredInput-Zip.cs" >}}
+{{< gist "aspose-com-gists""03f720960e15bd497ed26ce2eb9c03b2""Example-RequiredInput-Zip.cs" >}}
 
 > **_ПРИМЕЧАНИЕ:_** Результат был проверен с использованием пакета `pgfplots` версии 1.18.1. В то время как версия пакета `pfg`, включенного в библиотеку **Aspose.TeX**, - 3.1.9a.
 
@@ -129,7 +129,7 @@ using (Stream zipStream = File.Open("path-to-zip-with-pgfplots-sources"), FileMo
 
 Ниже мы приводим наглядный пример пользовательского обязательного входного каталога, который также реализует интерфейс [IFileCollector](https://reference.aspose.com/tex/net/aspose.tex.io/ifilecollector/). Сосредотачиваясь на сборе имен файлов по расширению, мы намеренно опускаем детали хранения и поиска файлов.
 
-{{< gist "aspose-com-gists""76c7e5770ac8b3f6d409f6ec60f02030""Aspose.TeX.Examples-Conversion-RequiredInputDirectory.cs" >}}
+{{< gist "aspose-com-gists""03f720960e15bd497ed26ce2eb9c03b2""Example-RequiredInputDirectory.cs" >}}
 
 ### Ограничения
 

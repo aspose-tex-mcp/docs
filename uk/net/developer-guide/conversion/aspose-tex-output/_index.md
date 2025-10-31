@@ -24,7 +24,7 @@ lastmod: "2025-06-13"
 
 Ось як ми це встановимо:
 
-{{< gist "aspose-com-gists""76c7e5770ac8b3f6d409f6ec60f02030""Aspose.TeX.Examples-Conversion-OutputFileSystemDirectory.cs" >}}
+{{< gist "aspose-com-gists""0fbd18cd8c28d5ed12e19cd52634ebd4""Example-OutputFileSystemDirectory.cs" >}}
 
 Цей варіант використання досить простий, тому більше не потрібно зосереджуватися на ньому.
 
@@ -32,7 +32,7 @@ lastmod: "2025-06-13"
 
 Ми також можемо створити файл (або потік) і дозволити механізму TeX використовувати його як ZIP-архів для зберігання вихідних файлів. Ось воно:
 
-{{< gist "aspose-com-gists""76c7e5770ac8b3f6d409f6ec60f02030""Aspose.TeX.Examples-Conversion-OutputZipDirectory.cs" >}}
+{{< gist "aspose-com-gists""0fbd18cd8c28d5ed12e19cd52634ebd4""Example-OutputZipDirectory.cs" >}}
 
 Спочатку ми створюємо вихідний потік для файлу ZIP. Потім, після створення параметрів перетворення, ми встановлюємо параметр [OutputWorkingDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/outputworkingdirectory/) як екземпляр класу [OutputZipDirectory](https://reference.aspose.com/tex/net/aspose.tex.io/outputzipdirectory/).
 
@@ -44,7 +44,7 @@ lastmod: "2025-06-13"
 
 Для цього нам потрібно встановити параметр [TerminalOut](https://reference.aspose.com/tex/net/aspose.tex/texoptions/terminalout/) як екземпляр класу [OutputConsoleTerminal](https://reference.aspose.com/tex/net/aspose.tex.io/outputconsoleterminal/).
 
-{{< gist "aspose-com-gists""76c7e5770ac8b3f6d409f6ec60f02030""Aspose.TeX.Examples-Conversion-OutputConsoleTerminal.cs" >}}
+{{< gist "aspose-com-gists""0fbd18cd8c28d5ed12e19cd52634ebd4""Example-OutputConsoleTerminal.cs" >}}
 
 Знову ж таки, це значення параметра за замовчуванням, тому немає потреби вказувати його. Через це цей розділ служить лише для демонстраційних цілей.
 
@@ -52,6 +52,6 @@ lastmod: "2025-06-13"
 
 На відміну від вхідного терміналу, **Aspose.TeX для .NET** забезпечує реалізацію [IOutputTerminal](https://reference.aspose.com/tex/net/aspose.tex.io/ioutputterminal/), яка дозволяє нам записувати вихідні дані терміналу у файл у деякому вихідному каталозі.
 
-{{< gist "aspose-com-gists""76c7e5770ac8b3f6d409f6ec60f02030""Aspose.TeX.Examples-Conversion-OutputFileTerminal.cs" >}} 
+{{< gist "aspose-com-gists""0fbd18cd8c28d5ed12e19cd52634ebd4""Example-OutputFileTerminal.cs" >}} 
 
 Тут ми просимо механізм TeX записати вихідні дані терміналу у файл із назвою [<назва_завдання>](/tex/{{lang.url-fragment}}net/tex-io/#tex-output).trm, який зберігатиметься в тому самому каталозі виводу, який ми вказали для решти виводу. Але в цьому немає необхідності. Ми також можемо передати будь-який інший екземпляр будь-якої реалізації [IOutputTerminal](https://reference.aspose.com/tex/net/aspose.tex.io/ioutputterminal/) до конструктора.

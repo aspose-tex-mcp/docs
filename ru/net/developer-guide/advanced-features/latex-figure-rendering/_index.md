@@ -19,7 +19,7 @@ lastmod: "2024-09-24"
 
 Справочный раздел API, связанный с этой темой, находится [здесь](https://reference.aspose.com/tex/net/aspose.tex.features/). Как и в случае с рендерингом формул, мы начнем с примера. Вот:
 
-{{< gist "aspose-com-gists""76c7e5770ac8b3f6d409f6ec60f02030""Aspose.TeX.Examples-Features-PngLaTeXFigureRendering.cs" >}}
+{{< gist "aspose-com-gists""79be6a0d7a31aa5deb213ba4ca81cb1b""Example-RenderFigureToPNG.cs" >}}
 
 Прежде всего, мы создаем экземпляр [Параметры фигуры LaTeX](https://reference.aspose.com/tex/net/aspose.tex.features/figurerendereroptions/). Мы делаем это здесь, одновременно указывая разрешение выходного изображения.
 
@@ -56,7 +56,7 @@ lastmod: "2024-09-24"
 
 Примерно таким же образом мы можем визуализировать фигуру LaTeX в формате SVG.
 
-{{< gist "aspose-com-gists""76c7e5770ac8b3f6d409f6ec60f02030""Aspose.TeX.Examples-Features-SvgLaTeXFigureRendering.cs" >}}
+{{< gist "aspose-com-gists""79be6a0d7a31aa5deb213ba4ca81cb1b""Example-RenderFigureToSVG.cs" >}}
 
 Отличия заключаются в следующем:
 

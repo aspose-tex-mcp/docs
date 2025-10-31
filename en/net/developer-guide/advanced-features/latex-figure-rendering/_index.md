@@ -19,7 +19,7 @@ Sometimes you may want to extract some content from a LaTeX file as a separately
 
 The API reference section related to this topic is [here](https://reference.aspose.com/tex/net/aspose.tex.features/). And as with formula rendering, we will start with an example. Here it is:
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Features-PngLaTeXFigureRendering.cs" >}}
+{{< gist "aspose-com-gists" "79be6a0d7a31aa5deb213ba4ca81cb1b" "Example-RenderFigureToPNG.cs" >}}
 
 First of all, we create a [LaTeX figure options](https://reference.aspose.com/tex/net/aspose.tex.features/figurerendereroptions/) instance. We do it here simultaneously specifying the output image resolution.
 
@@ -56,7 +56,7 @@ This is the most general use case for the **LaTeX figure rendering** feature.
 
 In much the same way, we can render a LaTeX figure in SVG format.
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Features-SvgLaTeXFigureRendering.cs" >}}
+{{< gist "aspose-com-gists" "79be6a0d7a31aa5deb213ba4ca81cb1b" "Example-RenderFigureToSVG.cs" >}}
 
 The differences are:
 

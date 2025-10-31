@@ -31,7 +31,7 @@ Das folgende Beispiel zeigt, wie Sie eine LaTeX-Datei in wenigen Schritten in XP
 
 Dieser Code demonstriert den direktesten Weg, eine XPS-Datei aus LaTeX zu erstellen.
 
-{{< gist "aspose-com-gists""76c7e5770ac8b3f6d409f6ec60f02030""Aspose.TeX.Examples-Conversion-LaTeXToXps-Simplest.cs" >}}
+{{< gist "aspose-com-gists" "1d10927e18d23e49096c91ce726e9d6f" "Example-ConvertLaTeXToXPS-Simplest.cs" >}}
 
 ### Eine alternative Möglichkeit, die XPS-Hauptausgabedatei zu schreiben
 
@@ -48,7 +48,7 @@ Dieser Codeausschnitt demonstriert die Verwendung des Konstruktors `XpsDevice`, 
 
 Dieser Ansatz ist nützlich, wenn Sie die XPS-Daten im Speicher und nicht als Datei auf der Festplatte benötigen.
 
-{{< gist "aspose-com-gists""76c7e5770ac8b3f6d409f6ec60f02030""Aspose.TeX.Examples-Conversion-LaTeXToXps-Alternative.cs" >}}
+{{< gist "aspose-com-gists" "1d10927e18d23e49096c91ce726e9d6f" "Example-ConvertLaTeXToXPS-Alternative.cs" >}}
 
 Der Effekt ist derselbe, den wir [hier](/tex/{{lang.url-fragment}}net/latex-to-pdf/#an-alternative-way-to-write-main-output-pdf-file) erhalten.
 

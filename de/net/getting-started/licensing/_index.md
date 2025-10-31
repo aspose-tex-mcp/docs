@@ -49,13 +49,13 @@ Verwenden Sie die Methode [License.SetLicense](https://reference.aspose.com/tex/
 
 Dieser Codeausschnitt initialisiert eine Lizenz, die in einer Datei oder einer eingebetteten Ressource gespeichert ist.
 
-{{< gist "aspose-com-gists""76c7e5770ac8b3f6d409f6ec60f02030""Aspose.TeX.Examples-LoadLicenseFromFile.cs" >}}
+{{< gist "aspose-com-gists" "366cba3dc08d43c99c22bb33ecb5d555" "Example-SetLicenseFromFile.cs" >}}
 
 #### Laden einer Lizenz aus einem Stream-Objekt
 
 Diese Codeausschnitte initialisieren die Lizenz aus dem Stream.
 
-{{< gist "aspose-com-gists""76c7e5770ac8b3f6d409f6ec60f02030""Aspose.TeX.Examples-LoadLicenseFromStream.cs" >}}
+{{< gist "aspose-com-gists" "366cba3dc08d43c99c22bb33ecb5d555" "Example-SetLicenseFromStream.cs" >}}
 
 ### Gemessene Lizenz
 
@@ -63,4 +63,4 @@ Aspose.TeX verfügt über einen alternativen Lizenzierungsmechanismus. Kunden, d
 
 Die öffentlichen und privaten Schlüssel einer gemessenen Lizenz werden mithilfe einer Instanz der Klasse [*Metered*](https://reference.aspose.com/tex/net/aspose.tex/metered/) festgelegt, wie im folgenden Beispiel gezeigt: 
 
-{{< gist "aspose-com-gists""76c7e5770ac8b3f6d409f6ec60f02030""Aspose.TeX.Examples-SetMeteredLicense.cs" >}}
+{{< gist "aspose-com-gists" "366cba3dc08d43c99c22bb33ecb5d555" "Example-SetMeteredLicense.cs" >}}

@@ -19,7 +19,7 @@ Inizieremo con la creazione di un formato personalizzato.
 
 Ricordiamo che il file di formato è una dump binaria dello stato interno del motore Tex.
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-CreateCustomTeXFormatFile.cs" >}}
+{{< gist "aspose-com-gists" "c0eb6cbcfb001b7e6355cafa4611afed" "Example-CreateCustomFormat.cs" >}}
 
 Come puoi vedere, il codice è simile al codice per la conversione di un file Tex. Ma ci sono alcune differenze.
 
@@ -33,7 +33,7 @@ E la seconda differenza chiave è il modo in cui gestiamo il lavoro. Questa volt
 
 Ora che abbiamo il nostro formato tex, vogliamo scrivere un file Tex scritto in questo formato. Ecco il codice:
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-TypesetWithCustomTeXFormat.cs" >}}
+{{< gist "aspose-com-gists" "c0eb6cbcfb001b7e6355cafa4611afed" "Example-TypesetWithCustomFormat.cs" >}}
 
 Ovviamente, dobbiamo in qualche modo specificare il formato. Prima di tutto, dobbiamo creare un'istanza della classe [FormatProvider](https://reference.aspose.com/tex/net/aspose.tex.resourceproviders/formatprovider/). Quindi, nel costruttore di opzioni, utilizziamo la configurazione [TexConfig.objectx()](https://reference.aspose.com/tex/net/aspose.tex/texconfig/objecttex/), che prende il nostro fornitore di formato come argomento e carica il formato in cima allo stato "vergine" del motore.
 

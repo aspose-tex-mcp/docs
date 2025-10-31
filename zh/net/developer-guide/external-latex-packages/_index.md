@@ -57,7 +57,7 @@ options.RequiredInputDirectory = new InputFileSystemDirectory("path-to-directory
 
 这是该示例的完整源代码：
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-RequiredInput-FileSystem.cs" >}}
+{{< gist "aspose-com-gists" "03f720960e15bd497ed26ce2eb9c03b2" "Example-RequiredInput-FileSystem.cs" >}}
 
 ### 存档所需的输入(`pgfplots`软件包)
 
@@ -118,7 +118,7 @@ using (Stream zipStream = File.Open("path-to-zip-with-pgfplots-sources"), FileMo
 
 这是该示例的完整源代码：
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-RequiredInput-Zip.cs" >}}
+{{< gist "aspose-com-gists" "03f720960e15bd497ed26ce2eb9c03b2" "Example-RequiredInput-Zip.cs" >}}
 
 > **_注意：_** 结果是使用 `pgfplots` 软件包版本 1.18.1 验证的。而 **Aspose.TeX** 库中包含的 `pfg` 软件包版本为 3.1.9a。
 
@@ -130,10 +130,10 @@ using (Stream zipStream = File.Open("path-to-zip-with-pgfplots-sources"), FileMo
 
 下面，我们提供了一个自定义所需输入目录的说明性示例，该目录还实现了[IfileCollector](https://reference.aspose.com/tex/net/aspose.tex.io/ifilecollector/)接口。在专注于按扩展程序收集文件名的同时，我们故意省略了文件存储和检索的详细信息。
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-RequiredInputDirectory.cs" >}}
+{{< gist "aspose-com-gists" "03f720960e15bd497ed26ce2eb9c03b2" "Example-RequiredInputDirectory.cs" >}}
 
 ### 限制
 
-可能会在 *LaTeX3e*内核下开发乳胶文件所需的包装。这样的软件包很可能无法与**Aspose.TeX**库一起使用，因为后者基于*lastx2e*内核。
+可能会在 *LaTeX3e*内核下开发乳胶文件所需的包装。这样的软件包很可能无法与**Aspose.TeX**库一起使用，因为后者基于*LaTeX2e*内核。
 
 您的乳胶文件要求的软件包可能会直接调用**Aspose.TeX**库的*对象Tex*引擎不支持设备的原始命令。不幸的是，这样的软件包无法确定。

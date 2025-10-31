@@ -19,7 +19,7 @@ lastmod: "2025-06-09"
 
 このトピックに関連するAPI参照セクションは[ここ](https://reference.aspose.com/tex/net/aspose.tex.features/)です。また、式レンダリングと同様に、例から始めます。ここにあります：
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Features-PngLaTeXFigureRendering.cs" >}}
+{{< gist "aspose-com-gists" "79be6a0d7a31aa5deb213ba4ca81cb1b" "Example-RenderFigureToPNG.cs" >}}
 
 まず、[LaTexフィギュアオプション](https://reference.aspose.com/tex/net/aspose.tex.features/figurerendereroptions/)インスタンスを作成します。ここでは、出力画像解像度を同時に指定します。
 
@@ -56,7 +56,7 @@ lastmod: "2025-06-09"
 
 ほぼ同じように、SVG形式でラテックスフィギュアをレンダリングできます。
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Features-SvgLaTeXFigureRendering.cs" >}}
+{{< gist "aspose-com-gists" "79be6a0d7a31aa5deb213ba4ca81cb1b" "Example-RenderFigureToSVG.cs" >}}
 
 違いは次のとおりです。
 

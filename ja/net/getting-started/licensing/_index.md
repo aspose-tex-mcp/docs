@@ -49,17 +49,17 @@ Aspose.TeXの評価バージョン(ライセンスを指定しない)は、出�
 
 このコードスニペットは、ファイルまたは組み込みリソースに保存されているライセンスを初期化します。
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-LoadLicenseFromFile.cs" >}}
+{{< gist "aspose-com-gists" "366cba3dc08d43c99c22bb33ecb5d555" "Example-SetLicenseFromFile.cs" >}}
 
 #### ストリームオブジェクトからライセンスをロードします
 
 これらのコードスニペットは、ストリームからライセンスを初期化します。
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-LoadLicenseFromStream.cs" >}}
+{{< gist "aspose-com-gists" "366cba3dc08d43c99c22bb33ecb5d555" "Example-SetLicenseFromStream.cs" >}}
 
 ### メーター付きライセンス
 Aspose.TeXには、代替ライセンスメカニズムがあります。 API機能の使用に基づいて請求されることを希望する顧客は、 *メーターのライセンス *を使用できます。 *メーター付きライセンス *を適用することは、実際には暗号化キーのペアを適用するのと同じくらい簡単です。詳細については、[メーターライセンスFAQセクション](https://purchase.aspose.com/faqs/licensing/metered/)を参照してください。
 
 次の例に示すように、メーター付きライセンスのパブリックキーとプライベートキーは、[*メーター*](https://reference.aspose.com/tex/net/Aspose.TeX/metered/)クラスのインスタンスを使用して設定されます。 
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-SetMeteredLicense.cs" >}}
+{{< gist "aspose-com-gists" "366cba3dc08d43c99c22bb33ecb5d555" "Example-SetMeteredLicense.cs" >}}

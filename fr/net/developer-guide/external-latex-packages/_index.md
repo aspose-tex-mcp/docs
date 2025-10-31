@@ -57,7 +57,7 @@ Après avoir exécuté un travail TeX avec cette option (n'oubliez pas d'ajuster
 
 Voici le code source complet de l'exemple :
 
-{{< gist "aspose-com-gists""76c7e5770ac8b3f6d409f6ec60f02030""Aspose.TeX.Examples-Conversion-RequiredInput-FileSystem.cs" >}}
+{{< gist "aspose-com-gists" "03f720960e15bd497ed26ce2eb9c03b2" "Example-RequiredInput-FileSystem.cs" >}}
 
 ### Entrée requise archivée (package `pgfplots`)
 
@@ -117,7 +117,7 @@ Après avoir exécuté un travail TeX avec cette option, nous obtenons le docume
 
 Voici le code source complet de l'exemple :
 
-{{< gist "aspose-com-gists""76c7e5770ac8b3f6d409f6ec60f02030""Aspose.TeX.Examples-Conversion-RequiredInput-Zip.cs" >}}
+{{< gist "aspose-com-gists" "03f720960e15bd497ed26ce2eb9c03b2" "Example-RequiredInput-Zip.cs" >}}
 
 > **_REMARQUE :_** Le résultat a été vérifié à l'aide du package `pgfplots` version 1.18.1. La version du package `pfg` inclus dans la bibliothèque **Aspose.TeX** est la 3.1.9a.
 
@@ -128,7 +128,7 @@ L'extension du moteur *Object TeX* de **Aspose.TeX** a besoin de cartes de polic
 
 Ci-dessous, nous fournissons un exemple illustratif d'un répertoire d'entrée requis personnalisé qui implémente également l'interface [IFileCollector](https://reference.aspose.com/tex/net/aspose.tex.io/ifilecollector/). Tout en nous concentrant sur la collecte des noms de fichiers par extension, nous omettons intentionnellement les détails du stockage et de la récupération des fichiers.
 
-{{< gist "aspose-com-gists""76c7e5770ac8b3f6d409f6ec60f02030""Aspose.TeX.Examples-Conversion-RequiredInputDirectory.cs" >}}
+{{< gist "aspose-com-gists" "03f720960e15bd497ed26ce2eb9c03b2" "Example-RequiredInputDirectory.cs" >}}
 
 ### Restrictions
 

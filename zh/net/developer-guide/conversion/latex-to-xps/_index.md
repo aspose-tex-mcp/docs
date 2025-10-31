@@ -31,7 +31,7 @@ lastmod: "2025-06-10"
 
 此代码演示了从 LaTeX 生成 XPS 文件的最直接方法。
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-LaTeXToXps-Simplest.cs" >}}
+{{< gist "aspose-com-gists" "1d10927e18d23e49096c91ce726e9d6f" "Example-ConvertLaTeXToXPS-Simplest.cs" >}}
 
 ### 编写主输出XPS文件的另一种方法
 
@@ -48,7 +48,7 @@ lastmod: "2025-06-10"
 
 当您需要将 XPS 数据保存在内存中而不是作为磁盘上的文件时，此方法非常有用。
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-LaTeXToXps-Alternative.cs" >}}
+{{< gist "aspose-com-gists" "1d10927e18d23e49096c91ce726e9d6f" "Example-ConvertLaTeXToXPS-Alternative.cs" >}}
 
 效果与我们得到[这里](/tex/{{lang.url-fragment}}net/latex-to-pdf/#an-alternative-way-to-write-main-output-pdf-file)相同。
 

@@ -16,7 +16,7 @@ lastmod: "2024-09-20"
 
 The API reference section related to this topic is [here](https://reference.aspose.com/tex/net/aspose.tex.features/). In fact, the easiest way to demonstrate the **LaTeX math formula rendering** feature is to start with the example. Here it is:
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Features-PngLaTeXMathRendering.cs" >}}
+{{< gist "aspose-com-gists" "cd0acc55d1634f17dcf42e02075ca005" "Example-RenderMathToPNG.cs" >}}
 
 Let's get to the details. First of all, we create a [rendering options](https://reference.aspose.com/tex/net/aspose.tex.features/mathrendereroptions/) instance, similar to the TeX/LaTeX typesetting. We do it here simultaneously specifying the output image resolution.
 
@@ -59,7 +59,7 @@ This is the most general use case for the **LaTeX math formula rendering** featu
 
 In much the same way, we can render a LaTeX math formula to SVG format.
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Features-SvgLaTeXMathRendering.cs" >}}
+{{< gist "aspose-com-gists" "cd0acc55d1634f17dcf42e02075ca005" "Example-RenderMathToSVG.cs" >}}
 
 The differences are:
 

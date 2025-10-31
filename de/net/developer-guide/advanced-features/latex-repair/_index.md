@@ -19,7 +19,7 @@ Zunächst ist zu erwähnen, dass die Beispieldatei zwar die TeX-Syntax zu verwen
 
 Schauen wir uns nun das C#-Codebeispiel an.
 
-{{< gist "aspose-com-gists""76c7e5770ac8b3f6d409f6ec60f02030""Aspose.TeX.Examples-Features-LaTeXRepairer.cs" >}}
+{{< gist "aspose-com-gists" "7f54d335270200ebf5987d071bad028a" "Examples_LaTeXRepairerExample" >}}
 
 Wie bei einem regulären TeX-Job erstellen wir zunächst ein Objekt, das die Optionen des Prozesses enthält, den wir ausführen möchten. Die meisten davon entsprechen den Optionen eines regulären TeX-Jobs. Tatsächlich ist das [InputWorkingDirectory](https://reference.aspose.com/tex/net/aspose.tex.features/latexrepaireroptions/inputworkingdirectory/) der Bereich, aus dem die Eingabedateien gelesen werden sollen. Wir verwenden es hier nicht, da wir den vollständigen Pfad zur Haupteingabedatei im Dateisystem bereitstellen und keine benutzerdefinierten Dateien in die Haupteingabedatei aufgenommen werden sollen. Dann ist [OutputWorkingDirectory](https://reference.aspose.com/tex/net/aspose.tex.features/latexrepaireroptions/outputworkingdirectory/) der Bereich, in den die Ausgabedateien geschrieben werden sollen. [RequiredInputDirectory](https://reference.aspose.com/tex/net/aspose.tex.features/latexrepaireroptions/requiredinputdirectory/) verweist, falls zugewiesen, auf den Bereich, in dem Sie LaTeX-Pakete speichern können, die nicht in die Aspose.TeX-Bibliothek eingebettet sind. Die Eigenschaft [GuessPackageCallback](https://reference.aspose.com/tex/net/aspose.tex.features/latexrepaireroptions/guesspackagecallback/) wird später besprochen.
 
@@ -34,7 +34,7 @@ Während die Engine die Datei weiter durchsucht, findet sie möglicherweise unde
 Hier ist ein sehr einfaches Beispiel, das lediglich den Befehl „\head“ dem Paket „fancyhdr“ zuordnet:
 
 
-{{< gist "aspose-com-gists""76c7e5770ac8b3f6d409f6ec60f02030""Aspose.TeX.Examples-Features-LaTeXRepairer-PackageGuessingCallback.cs" >}}
+{{< gist "aspose-com-gists" "7f54d335270200ebf5987d071bad028a" "Examples_PackageGuessingCallback" >}}
 
 Was die Beispieldatei betrifft, stößt die Engine zunächst auf den Befehl `\chapter`, der nicht in der Dokumentklasse „article“, sondern in der Dokumentklasse „book“ definiert ist. Die API passt die Dokumentklasse so an, dass die endgültige Version der korrigierten Datei mit `\documentclass{book}` beginnt. Dann findet die Engine den oben genannten `\lhead`-Befehl und entscheidet, dass `\usepackage{fancyhdr}` in die Präambel eingefügt werden muss. Die Befehle `\href` und `\includegraphics`, die später auftreten, veranlassen den Repairer, `\usepackage{hyperref}` bzw. `\usepackage{graphics}` in die Präambel einzufügen. Diese Entscheidungen basieren auf den internen Zuordnungen der API. Auch hier werden alle derartigen Korrekturen in der Berichtsdatei protokolliert.
 

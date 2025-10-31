@@ -57,7 +57,7 @@ options.RequiredInputDirectory = new InputFileSystemDirectory("path-to-directory
 
 これが例の完全なソースコードです。
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-RequiredInput-FileSystem.cs" >}}
+{{< gist "aspose-com-gists" "03f720960e15bd497ed26ce2eb9c03b2" "Example-RequiredInput-FileSystem.cs" >}}
 
 ### 必要な入力( `pgfplots`パッケージ)アーカイブ
 
@@ -118,7 +118,7 @@ using (Stream zipStream = File.Open("path-to-zip-with-pgfplots-sources"), FileMo
 
 これが例の完全なソースコードです。
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-RequiredInput-Zip.cs" >}}
+{{< gist "aspose-com-gists" "03f720960e15bd497ed26ce2eb9c03b2" "Example-RequiredInput-Zip.cs" >}}
 
 > **_NOTE:_** The result was verified using the `pgfplots` package version 1.18.1. While the version of the `pfg` package included in the **Aspose.TeX** library is 3.1.9a.
 
@@ -129,7 +129,7 @@ using (Stream zipStream = File.Open("path-to-zip-with-pgfplots-sources"), FileMo
 
 以下に、[ifileCollector](https://reference.aspose.com/tex/net/aspose.tex.io/ifilecollector/)インターフェイスを実装するカスタム要求の入力ディレクトリの例を示します。さらに、ファイル名の収集に焦点を当てながら、ファイルストレージと取得の詳細を意図的に省略します。
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-RequiredInputDirectory.cs" >}}
+{{< gist "aspose-com-gists" "03f720960e15bd497ed26ce2eb9c03b2" "Example-RequiredInputDirectory.cs" >}}
 
 ### 制限
 

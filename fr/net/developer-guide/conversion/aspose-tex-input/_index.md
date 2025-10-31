@@ -22,7 +22,7 @@ Veuillez vous référer à **Aspose.TeX for .NET** [Référence API](https://ref
 
 Voici comment nous procéderions :
 
-{{< gist "aspose-com-gists""76c7e5770ac8b3f6d409f6ec60f02030""Aspose.TeX.Examples-Conversion-InputFileSystemDirectory.cs" >}}
+{{< gist "aspose-com-gists" "0fbd18cd8c28d5ed12e19cd52634ebd4" "Example-InputFileSystemDirectory.cs" >}}
 
 Ce cas d’utilisation est assez simple, il n’est donc plus nécessaire de s’y concentrer.
 
@@ -30,7 +30,7 @@ Ce cas d’utilisation est assez simple, il n’est donc plus nécessaire de s�
 
 Nous pouvons également mettre les fichiers d'entrée dans une archive ZIP et la considérer comme un répertoire d'entrée. Dans ce cas, il faut procéder comme suit :
 
-{{< gist "aspose-com-gists""76c7e5770ac8b3f6d409f6ec60f02030""Aspose.TeX.Examples-Conversion-InputZipDirectory.cs" >}}
+{{< gist "aspose-com-gists" "0fbd18cd8c28d5ed12e19cd52634ebd4" "Example-InputZipDirectory.cs" >}}
 
 Tout d'abord, nous créons le flux contenant le fichier ZIP. Ensuite, après avoir créé les options de conversion, nous définissons l'option [InputWorkingDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/inputworkingdirectory/) comme étant une instance de la classe [InputZipDirectory](https://reference.aspose.com/tex/net/aspose.tex.io/inputzipdirectory/). Le deuxième argument du constructeur est le chemin de base à l'intérieur de l'archive. Si nous voulons que l'archive entière soit un répertoire d'entrée, nous devons transmettre la chaîne vide. 
 
@@ -42,7 +42,7 @@ Il est maintenant temps de se rappeler qu'il y a aussi l'entrée du terminal. Qu
 
 Pour ce faire, nous devons définir l'option [TerminalIn](https://reference.aspose.com/tex/net/aspose.tex/texoptions/terminalin/) pour qu'elle soit une instance de la classe [InputConsoleTerminal](https://reference.aspose.com/tex/net/aspose.tex.io/inputconsoleterminal/).
 
-{{< gist "aspose-com-gists""76c7e5770ac8b3f6d409f6ec60f02030""Aspose.TeX.Examples-Conversion-InputConsoleTerminal.cs" >}}
+{{< gist "aspose-com-gists" "0fbd18cd8c28d5ed12e19cd52634ebd4" "Example-InputConsoleTerminal.cs" >}}
 
 Mais, à vrai dire, il s’agit de la valeur par défaut de l’option, il n’est donc pas vraiment nécessaire de la spécifier. De ce fait, et tant qu'il n'y a pas d'autres implémentations, cette section sert uniquement à des fins de démonstration.
 

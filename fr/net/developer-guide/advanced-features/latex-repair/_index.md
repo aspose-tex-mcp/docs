@@ -19,7 +19,7 @@ Tout d'abord, il convient de mentionner que bien que l'exemple de fichier semble
 
 Examinons maintenant l'exemple de code C#.
 
-{{< gist "aspose-com-gists""76c7e5770ac8b3f6d409f6ec60f02030""Aspose.TeX.Examples-Features-LaTeXRepairer.cs" >}}
+{{< gist "aspose-com-gists" "7f54d335270200ebf5987d071bad028a" "Examples_LaTeXRepairerExample" >}}
 
 Comme pour un travail TeX classique, nous créons d'abord un objet qui contient les options du processus que nous sommes sur le point d'exécuter. La plupart d'entre elles sont identiques aux options d'un travail TeX classique. En effet, le [InputWorkingDirectory](https://reference.aspose.com/tex/net/aspose.tex.features/latexrepaireroptions/inputworkingdirectory/) est l'espace à partir duquel les fichiers d'entrée doivent être lus. Nous ne l'utilisons pas ici car nous fournissons le chemin complet du fichier d'entrée principal dans le système de fichiers, et aucun fichier personnalisé n'est censé être inclus dans le fichier d'entrée principal. Ensuite, [OutputWorkingDirectory](https://reference.aspose.com/tex/net/aspose.tex.features/latexrepaireroptions/outputworkingdirectory/) est l'espace où les fichiers de sortie doivent être écrits. [RequiredInputDirectory](https://reference.aspose.com/tex/net/aspose.tex.features/latexrepaireroptions/requiredinputdirectory/), s'il est attribué, pointe vers l'espace où vous pouvez stocker les packages LaTeX qui ne sont pas intégrés dans la bibliothèque Aspose.TeX. La propriété [GuessPackageCallback](https://reference.aspose.com/tex/net/aspose.tex.features/latexrepaireroptions/guesspackagecallback/) sera abordée plus tard.
 
@@ -33,7 +33,7 @@ Au fur et à mesure que le moteur analyse le fichier, il peut trouver des comman
 
 Voici un exemple très simple qui mappe simplement la commande `\head` au package `fancyhdr` :
 
-{{< gist "aspose-com-gists""76c7e5770ac8b3f6d409f6ec60f02030""Aspose.TeX.Examples-Features-LaTeXRepairer-PackageGuessingCallback.cs" >}}
+{{< gist "aspose-com-gists" "7f54d335270200ebf5987d071bad028a" "Examples_PackageGuessingCallback" >}}
 
 Comme pour le fichier exemple, le moteur rencontre d'abord la commande `\chapter`, qui n'est pas définie dans la classe de document `article` mais est définie dans la classe de document `book`. L'API ajuste la classe du document afin que la version finale du fichier corrigé commence par `\documentclass{book}`. Ensuite, le moteur trouve la commande `\lhead` susmentionnée et décide que `\usepackage{fancyhdr}` doit être inséré dans le préambule. Les commandes `\href` et `\includegraphics` qui se produisent plus tard obligent le réparateur à insérer `\usepackage{hyperref}` et `\usepackage{graphics}` dans le préambule, respectivement. Ces décisions sont basées sur les mappages internes de l'API. Encore une fois, tous ces correctifs sont enregistrés dans le fichier de rapport.
 

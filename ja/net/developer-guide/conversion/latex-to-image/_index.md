@@ -18,7 +18,7 @@ lastmod: "2025-06-09"
 
 C＃のコードを詳細に見てみましょう。ラテックスをPNG形式に変換する最も簡単な方法を提供します。
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-LaTeXToPng-Simplest.cs" >}}
+{{< gist "aspose-com-gists" "58d1c43acd187f1cde7917fa9a430281" "Example-ConvertLaTeXToPNG-Simplest.cs" >}}
 
 したがって、私たちが最初に行う必要があること(まあ、時には最初のものではないこともあります)は、[テキサプティオン](https://reference.aspose.com/tex/net/Aspose.TeX/texoptions/)クラスのインスタンスを作成することです。これを行う唯一の静的方法は[consoleappoptions()](https://reference.aspose.com/tex/net/Aspose.TeX/texoptions/consoleappoptions/)です。したがって、その名前の意味に困惑しないようにしましょう。このメソッドは、[TexConfig](https://reference.aspose.com/tex/net/Aspose.TeX/texconfig/)クラスの[ObjectLatexインスタンス](https://reference.aspose.com/tex/net/Aspose.TeX/texconfig/objectlatex/)を取ります。これは[LaTexファイル](/tex/{{lang.url-fragment}}net/latex-io/#latex-file)の変換に正確に適しています。この構成は、Object Tex EngineにObject Latex形式をロードし、LaTexファイルを受け入れる準備ができているように指示します。オブジェクトラテックス形式は、実際には[latex](/tex/{{lang.url-fragment}}net/what-is-latex/)形式にすぎませんが、[オブジェクトTex](/tex/{{lang.url-fragment}}net/aspose-tex-and-object-tex/#object-tex)特定のプリミティブを使用してページメトリックをセットアップすることを除きます。
 
@@ -59,7 +59,7 @@ Transcript written on hello-world.log.
 
 以下のC#スニペットは、画像データをファイルシステムに直接書き込むのではなく、メモリストリームに書き込むことでPNG出力を取得する別の方法を示しています。この方法は、生成されたPNGバイトをメモリ内に保存しておき、ネットワーク経由で送信したり、データベースに保存したり、保存前に追加の変換を実行したりするなど、さらなる処理が必要な場合に便利です。
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-LaTeXToPng-Alternative.cs" >}}
+{{< gist "aspose-com-gists" "58d1c43acd187f1cde7917fa9a430281" "Example-ConvertLaTeXToPNG-Alternative.cs" >}}
 
 *"page-n.png"*ファイルは、指定する任意のパスに書き込まれます。 [PDF出力](/tex/{{lang.url-fragment}}net/latex-to-pdf/#an-alternative-way-to-write-main-output-pdf-file)とは異なり、それらは出力ディレクトリに書き込まれた出力PNGファイルを複製します。
 
@@ -74,20 +74,20 @@ Transcript written on hello-world.log.
 
 ## ラテックスをJPGに変換する方法
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-LaTeXToJpeg.cs" >}}
+{{< gist "aspose-com-gists" "58d1c43acd187f1cde7917fa9a430281" "Example-ConvertLaTeXToJPEG.cs" >}}
 
 
 **[.NET APIのasophes.tex](https://products.aspose.com/tex/net/)に基づいて構築された無料のLaTex-to-JPG変換[Webアプリ](https://products.aspose.app/tex/conversion/latex-to-jpg)をチェックアウトすることもできます。**
 
 ## ラテックスをTIFFに変換する方法
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-LaTeXToTiff.cs" >}}
+{{< gist "aspose-com-gists" "58d1c43acd187f1cde7917fa9a430281" "Example-ConvertLaTeXToTIFF.cs" >}}
 
 **[.NET APIのAspose.TeX](https://products.aspose.com/tex/net/)に基づいて構築された無料のラテックスからティフへの変換[Webアプリ](https://products.aspose.app/tex/conversion/latex-to-tiff)をチェックアウトすることもできます。**
 
 ## ラテックスをBMPに変換する方法
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-LaTeXToBmp.cs" >}}
+{{< gist "aspose-com-gists" "58d1c43acd187f1cde7917fa9a430281" "Example-ConvertLaTeXToBMP.cs" >}}
 
 **[.NET APIのAspose.TeX](https://products.aspose.com/tex/net/)に基づいて構築された無料のラテックスからBMPへの変換[Webアプリ](https://products.aspose.app/tex/conversion/latex-to-bmp)をチェックアウトすることもできます。**
 
@@ -101,6 +101,6 @@ Transcript written on hello-world.log.
 
 ラテックスからSVGへの変換は、[saveoptions](https://reference.aspose.com/tex/net/Aspose.TeX/texoptions/saveoptions/)を[svgsaveoptions](https://reference.aspose.com/tex/net/aspose.tex.presentation.svg/svgsaveoptions/)クラスインスタンスに設定する必要があり、デバイスを[svgdevice](https://reference.aspose.com/tex/net/aspose.tex.presentation.svg/svgdevice/)クラスのインスタンスに変更する必要があることを除いて、[ラスター画像形式への変換](/tex/{{lang.url-fragment}}net/latex-to-image/)と同じくらい簡単です。
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-LaTeXToSvg-Simplest.cs" >}}
+{{< gist "aspose-com-gists" "58d1c43acd187f1cde7917fa9a430281" "Example-ConvertLaTeXToSVG-Simplest.cs" >}}
 
 **[.NET APIのAspose.TeX](https://products.aspose.com/tex/net/)に基づいて構築された無料のLaTex-to-SVG変換[Webアプリ](https://products.aspose.app/tex/conversion/latex-to-svg)をチェックアウトすることもできます。**

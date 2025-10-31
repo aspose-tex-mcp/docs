@@ -19,7 +19,7 @@ Parfois, vous souhaiterez peut-être extraire du contenu d'un fichier LaTeX sous
 
 La section de référence de l'API liée à ce sujet est [ici](https://reference.aspose.com/tex/net/aspose.tex.features/). Et comme pour le rendu de formule, nous commencerons par un exemple. C'est ici:
 
-{{< gist "aspose-com-gists""76c7e5770ac8b3f6d409f6ec60f02030""Aspose.TeX.Examples-Features-PngLaTeXFigureRendering.cs" >}}
+{{< gist "aspose-com-gists" "79be6a0d7a31aa5deb213ba4ca81cb1b" "Example-RenderFigureToPNG.cs" >}}
 
 Tout d'abord, nous créons une instance [LaTeX figure options](https://reference.aspose.com/tex/net/aspose.tex.features/figurerendereroptions/). Nous le faisons ici simultanément en spécifiant la résolution de l’image de sortie.
 
@@ -56,7 +56,7 @@ Il s'agit du cas d'utilisation le plus général de la fonctionnalité **Rendu d
 
 De la même manière, nous pouvons restituer une figure LaTeX au format SVG.
 
-{{< gist "aspose-com-gists""76c7e5770ac8b3f6d409f6ec60f02030""Aspose.TeX.Examples-Features-SvgLaTeXFigureRendering.cs" >}}
+{{< gist "aspose-com-gists" "79be6a0d7a31aa5deb213ba4ca81cb1b" "Example-RenderFigureToSVG.cs" >}}
 
 Les différences sont :
 

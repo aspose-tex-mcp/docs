@@ -19,7 +19,7 @@ A volte potresti voler estrarre alcuni contenuti da un file in LaTeX come pezzo 
 
 La sezione di riferimento API relativa a questo argomento è [qui](https://reference.aspose.com/tex/net/aspose.tex.features/). E come per il rendering della formula, inizieremo con un esempio. Ecco qui:
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Features-PngLaTeXFigureRendering.cs" >}}
+{{< gist "aspose-com-gists" "79be6a0d7a31aa5deb213ba4ca81cb1b" "Example-RenderFigureToPNG.cs" >}}
 
 Prima di tutto, creiamo un'istanza [opzioni di figura in LaTeX](https://reference.aspose.com/tex/net/aspose.tex.features/figurerendereroptions/). Lo facciamo qui contemporaneamente specificando la risoluzione dell'immagine di output.
 
@@ -56,7 +56,7 @@ Questo è il caso d'uso più generale per la funzione **Latex Figure**.
 
 Allo stesso modo, possiamo rendere una figura in LaTeX in formato SVG.
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Features-SvgLaTeXFigureRendering.cs" >}}
+{{< gist "aspose-com-gists" "79be6a0d7a31aa5deb213ba4ca81cb1b" "Example-RenderFigureToSVG.cs" >}}
 
 Le differenze sono:
 

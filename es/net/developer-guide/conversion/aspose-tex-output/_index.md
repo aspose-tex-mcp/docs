@@ -24,7 +24,7 @@ Como mencionamos [arriba](/tex/{{lang.url-fragment}}net/latex-to-image/), el val
 
 Así es como lo configuraríamos:
 
-{{< gist "aspose-com-gists""76c7e5770ac8b3f6d409f6ec60f02030""Aspose.TeX.Examples-Conversion-OutputFileSystemDirectory.cs" >}}
+{{< gist "aspose-com-gists" "0fbd18cd8c28d5ed12e19cd52634ebd4" "Example-OutputFileSystemDirectory.cs" >}}
 
 Este caso de uso es bastante simple, por lo que ya no es necesario centrarse en él.
 
@@ -32,7 +32,7 @@ Este caso de uso es bastante simple, por lo que ya no es necesario centrarse en 
 
 También podemos crear un archivo (o secuencia) y dejar que el motor TeX lo use como un archivo ZIP para almacenar los archivos de salida. Aquí lo tienes:
 
-{{< gist "aspose-com-gists""76c7e5770ac8b3f6d409f6ec60f02030""Aspose.TeX.Examples-Conversion-OutputZipDirectory.cs" >}}
+{{< gist "aspose-com-gists" "0fbd18cd8c28d5ed12e19cd52634ebd4" "Example-OutputZipDirectory.cs" >}}
 
 Primero, creamos un flujo de salida para el archivo ZIP. Luego, después de crear las opciones de conversión, configuramos la opción [OutputWorkingDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/outputworkingdirectory/) para que sea una instancia de la clase [OutputZipDirectory](https://reference.aspose.com/tex/net/aspose.tex.io/outputzipdirectory/).
 
@@ -44,7 +44,7 @@ Hay otra parte importante de la salida: la salida del terminal. En cuanto a este
 
 Para hacer esto, necesitamos configurar la opción [TerminalOut](https://reference.aspose.com/tex/net/aspose.tex/texoptions/terminalout/) para que sea una instancia de la clase [OutputConsoleTerminal](https://reference.aspose.com/tex/net/aspose.tex.io/outputconsoleterminal/).
 
-{{< gist "aspose-com-gists""76c7e5770ac8b3f6d409f6ec60f02030""Aspose.TeX.Examples-Conversion-OutputConsoleTerminal.cs" >}}
+{{< gist "aspose-com-gists" "0fbd18cd8c28d5ed12e19cd52634ebd4" "Example-OutputConsoleTerminal.cs" >}}
 
 Nuevamente, este es el valor predeterminado de la opción, por lo que no es necesario especificarlo. Debido a esto, esta sección tiene únicamente fines de demostración.
 
@@ -52,6 +52,6 @@ Nuevamente, este es el valor predeterminado de la opción, por lo que no es nece
 
 A diferencia del terminal de entrada, **Aspose.TeX para .NET** proporciona una implementación de [IOutputTerminal](https://reference.aspose.com/tex/net/aspose.tex.io/ioutputterminal/), que nos permite escribir la salida del terminal en un archivo en algún directorio de salida.
 
-{{< gist "aspose-com-gists""76c7e5770ac8b3f6d409f6ec60f02030""Aspose.TeX.Examples-Conversion-OutputFileTerminal.cs" >}} 
+{{< gist "aspose-com-gists" "0fbd18cd8c28d5ed12e19cd52634ebd4" "Example-OutputFileTerminal.cs" >}} 
 
 Aquí le pedimos al motor TeX que escriba la salida del terminal en el archivo con el nombre [<job_name>](/tex/{{lang.url-fragment}}net/tex-io/#tex-output).trm, que se almacenará en el mismo directorio de salida que especificamos para el resto de la salida. Pero esto no es necesario. También podríamos pasar cualquier otra instancia de cualquier implementación de [IOutputTerminal](https://reference.aspose.com/tex/net/aspose.tex.io/ioutputterminal/) al constructor.

@@ -19,7 +19,7 @@ lastmod: "2025-06-09"
 
 フォーマットファイルは、TEXエンジンの内部状態のバイナリダンプであることを覚えておいてください。
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-CreateCustomTeXFormatFile.cs" >}}
+{{< gist "aspose-com-gists" "c0eb6cbcfb001b7e6355cafa4611afed" "Example-CreateCustomFormat.cs" >}}
 
 ご覧のとおり、コードはTEXファイルを変換するためのコードに似ています。しかし、いくつかの違いがあります。
 
@@ -33,7 +33,7 @@ lastmod: "2025-06-09"
 
 独自のTex形式ができたので、この形式で記述されたTexファイルを整形したいと考えています。これがコードです：
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-TypesetWithCustomTeXFormat.cs" >}}
+{{< gist "aspose-com-gists" "c0eb6cbcfb001b7e6355cafa4611afed" "Example-TypesetWithCustomFormat.cs" >}}
 
 明らかに、形式を何らかの形で指定する必要があります。まず、[formatprovider](https://reference.aspose.com/tex/net/aspose.tex.resourceproviders/formatprovider/)クラスのインスタンスを作成する必要があります。次に、オプションコンストラクターで[texconfig.objecttex()](https://reference.aspose.com/tex/net/Aspose.TeX/texconfig/objecttex/)構成を使用します。これは、フォーマットプロバイダーを引数として受け取り、エンジンの「処女」状態の上に形式をロードします。
 

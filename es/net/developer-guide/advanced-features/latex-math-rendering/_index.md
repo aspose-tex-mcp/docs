@@ -1,26 +1,27 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
-title: Representación de fórmulas matemáticas LaTeX | .NET
-linktitle: Representación de fórmulas matemáticas LaTeX
+title: LaTeX math formulas rendering | Aspose.TeX for .NET
+linktitle: LaTeX math formulas rendering
 weight: 10
 url: /net/latex-math-formula-rendering/
-description: Este artículo describe con ejemplos de código cómo representar fórmulas matemáticas en LaTeX con Aspose.TeX para .NET.
-lastmod: "2024-10-30"
+description: Aspose.TeX API solution for .NET LaTeX math formulas rendering is described in this article. Learn the code examples on how to use the functionality.
+lastmod: "2024-09-20"
 ---
 
 {{<section overview>}}
 
 
-## Cómo renderizar una fórmula matemática LaTeX a PNG
+## How to render a LaTeX math formula to PNG
 
-La sección de referencia de API relacionada con este tema está [aquí](https://reference.aspose.com/tex/net/aspose.tex.features/). De hecho, la forma más sencilla de demostrar la función **Representación de fórmulas matemáticas de LaTeX** es comenzar con el ejemplo. Aquí lo tienes:
+The API reference section related to this topic is [here](https://reference.aspose.com/tex/net/aspose.tex.features/). In fact, the easiest way to demonstrate the **LaTeX math formula rendering** feature is to start with the example. Here it is:
 
-{{< gist "aspose-com-gists""76c7e5770ac8b3f6d409f6ec60f02030""Aspose.TeX.Examples-Features-PngLaTeXMathRendering.cs" >}}
+{{< gist "aspose-com-gists" "cd0acc55d1634f17dcf42e02075ca005" "Example-RenderMathToPNG.cs" >}}
 
-Vayamos a los detalles. En primer lugar, creamos una instancia de [opciones de renderizado](https://reference.aspose.com/tex/net/aspose.tex.features/mathrendereroptions/), similar a la composición tipográfica TeX/LaTeX. Lo hacemos aquí especificando simultáneamente la resolución de la imagen de salida.
+Let's get to the details. First of all, we create a [rendering options](https://reference.aspose.com/tex/net/aspose.tex.features/mathrendereroptions/) instance, similar to the TeX/LaTeX typesetting. We do it here simultaneously specifying the output image resolution.
 
-A continuación, especificamos el preámbulo. El preámbulo predeterminado es:
+Next, we specify the preamble. The default preamble is:
+
 
 ```tex
 \usepackage{amsmath}
@@ -28,46 +29,46 @@ A continuación, especificamos el preámbulo. El preámbulo predeterminado es:
 \usepackage{amssymb}
 ```
 
-que proporciona un soporte de fórmulas matemáticas ligeramente más avanzado que el LaTeX básico. Puede, por ejemplo, agregar el paquete `color` si desea utilizar su propio resaltado en la fórmula, como mostramos en el ejemplo de código.
+which provides slightly more advanced math formula support than basic LaTeX. You can, for example, add the `color` package if you want to use your own highlighting in the formula, as we showed in the code example.
 
-Luego le indicamos al renderizador que escale la salida en un 300%.
+Then we instruct the renderer to scale the output by 300%.
 
-Las siguientes dos opciones definen los colores de primer plano y de fondo. Aquellas partes de la fórmula que no estén cubiertas ("coloreadas") por el resaltado personalizado se mostrarán en el color "TextColor".
+Next two options define the foreground and background colors. Those parts of the formula that are not covered ("colored") by the custom highlighting will be displayed in the `TextColor` color.
 
-La siguiente línea del ejemplo no tiene mucho sentido. Simplemente demuestra que puede dirigir la salida del registro a alguna secuencia.
+The next line of the example doesn't make much sense. It just demonstrates that you can direct the log output to some stream.
 
-Y la última opción `ShowTerminal` le permite alternar la escritura de la salida del terminal en la consola.
+And the last option `ShowTerminal` allows you to toggle writing the terminal output to the console.
 
-El método que realmente realiza la renderización es [MathRenderer.Render()](https://reference.aspose.com/tex/net/aspose.tex.features/mathrenderer/render/). Devuelve el tamaño de la fórmula en puntos.
+The method that actually performs the rendering is [MathRenderer.Render()](https://reference.aspose.com/tex/net/aspose.tex.features/mathrenderer/render/). It returns the size of the formula in points.
 
-El método acepta la secuencia donde se escribirá la imagen como segundo argumento. Creamos la secuencia a continuación.
+The stream where the image is to be written is accepted by the method as the second argument. We create the stream next.
 
-Y finalmente, llamamos al método `MathRenderer.Render()`, pasando opciones como tercer argumento. El código LaTeX de la fórmula se pasa como primer argumento.
+And finally, we call the `MathRenderer.Render()` method itself, passing options as the third argument. The LaTeX code of the formula is passed as the first argument.
 
-Las últimas líneas del ejemplo imprimen dos artefactos de la representación de fórmulas matemáticas: el tamaño de la fórmula y el breve informe de errores (en caso de que haya errores).
+The last lines of the example print two artifacts of math formula rendering - the size of the formula and the brief error report (in case there are errors).
 
-Aquí está el resultado del renderizado.
+Here is the result of rendering.
 
-<a href="/tex/net/latex-math-formula-rendering/math-formula.png">![Representación de fórmula matemática LaTeX a PNG](/tex/images/net/math-formula.png)</a>
+<a href="/tex/net/latex-math-formula-rendering/math-formula.png">![LaTeX Math Formula rendering to PNG](/tex/images/net/math-formula.png)</a>
 
-Este es el caso de uso más general para la función **Representación de fórmulas matemáticas LaTeX**.
+This is the most general use case for the **LaTeX math formula rendering** feature.
 
-**También puede consultar la [aplicación web](https://products.aspose.app/tex/equation-editor/png) gratuita creada en función de la función implementada en [Aspose.TeX para .NET API](https://products.aspose.com/tex/net/).**
+**You may also check out the free [web app](https://products.aspose.app/tex/equation-editor/png) built based on the feature implemented within [Aspose.TeX for .NET API](https://products.aspose.com/tex/net/).**
 
-## Cómo renderizar una fórmula matemática LaTeX a SVG
+## How to render a LaTeX math formula to SVG
 
-De la misma manera, podemos representar una fórmula matemática de LaTeX en formato SVG.
+In much the same way, we can render a LaTeX math formula to SVG format.
 
-{{< gist "aspose-com-gists""76c7e5770ac8b3f6d409f6ec60f02030""Aspose.TeX.Examples-Features-SvgLaTeXMathRendering.cs" >}}
+{{< gist "aspose-com-gists" "cd0acc55d1634f17dcf42e02075ca005" "Example-RenderMathToSVG.cs" >}}
 
-Las diferencias son:
+The differences are:
 
-* Usamos la clase [SvgMathRendererOptions](https://reference.aspose.com/tex/net/aspose.tex.features/svgmathrendereroptions/) en lugar de [PngMathRendererOptions](https://reference.aspose.com/tex/net/aspose.tex.features/pngmathrendereroptions/).
-* No especificamos resolución.
-* Usamos la clase [SvgMathRenderer](https://reference.aspose.com/tex/net/aspose.tex.features/svgmathrenderer/) en lugar de [PngMathRenderer](https://reference.aspose.com/tex/net/aspose.tex.features/pngmathrenderer/).
+* We use [SvgMathRendererOptions](https://reference.aspose.com/tex/net/aspose.tex.features/svgmathrendereroptions/) class instead of [PngMathRendererOptions](https://reference.aspose.com/tex/net/aspose.tex.features/pngmathrendereroptions/).
+* We don't specify resolution.
+* We use [SvgMathRenderer](https://reference.aspose.com/tex/net/aspose.tex.features/svgmathrenderer/) class instead of [PngMathRenderer](https://reference.aspose.com/tex/net/aspose.tex.features/pngmathrenderer/).
  
-Aquí está el resultado:
+Here is the result:
 
-<a href="/tex/net/latex-math-formula-rendering/math-formula.svg">![Representación de fórmula matemática LaTeX a SVG](/tex/images/net/math-formula.svg)</a>
+<a href="/tex/net/latex-math-formula-rendering/math-formula.svg">![LaTeX Math Formula rendering to SVG](/tex/images/net/math-formula.svg)</a>
 
-**También puede consultar la [aplicación web](https://products.aspose.app/tex/equation-editor/svg) gratuita creada en función de la función implementada en [Aspose.TeX para .NET API](https://products.aspose.com/tex/net/).**
+**You may also check out the free [web app](https://products.aspose.app/tex/equation-editor/svg) built based on the feature implemented within [Aspose.TeX for .NET API](https://products.aspose.com/tex/net/).**

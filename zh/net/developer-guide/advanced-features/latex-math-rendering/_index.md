@@ -16,7 +16,7 @@ lastmod: "2025-06-10"
 
 与此主题相关的API参考部分是[此处](https://reference.aspose.com/tex/net/aspose.tex.features/)。实际上，演示**乳胶数学公式渲染**功能的最简单方法是从示例开始。这里是：
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Features-PngLaTeXMathRendering.cs" >}}
+{{< gist "aspose-com-gists" "cd0acc55d1634f17dcf42e02075ca005" "Example-RenderMathToPNG.cs" >}}
 
 让我们了解细节。首先，我们创建一个[渲染选项](https://reference.aspose.com/tex/net/aspose.tex.features/mathrendereroptions/)实例，类似于Tex/latex排版。我们在这里同时指定输出图像分辨率。
 
@@ -59,7 +59,7 @@ lastmod: "2025-06-10"
 
 以几乎相同的方式，我们可以将乳胶数学公式呈现为SVG格式。
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Features-SvgLaTeXMathRendering.cs" >}}
+{{< gist "aspose-com-gists" "cd0acc55d1634f17dcf42e02075ca005" "Example-RenderMathToSVG.cs" >}}
 
 差异是：
 

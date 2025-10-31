@@ -19,7 +19,7 @@ lastmod: "2025-06-13"
 
 Довідковий розділ API, пов’язаний із цією темою, знаходиться [тут](https://reference.aspose.com/tex/net/aspose.tex.features/). Як і у випадку з відтворенням формул, ми почнемо з прикладу. Ось воно:
 
-{{< gist "aspose-com-gists""76c7e5770ac8b3f6d409f6ec60f02030""Aspose.TeX.Examples-Features-PngLaTeXFigureRendering.cs" >}}
+{{< gist "aspose-com-gists""79be6a0d7a31aa5deb213ba4ca81cb1b""Example-RenderFigureToPNG.cs" >}}
 
 Перш за все, ми створюємо екземпляр [LaTeX figure options](https://reference.aspose.com/tex/net/aspose.tex.features/figurerendereroptions/). Ми робимо це тут, одночасно вказуючи роздільну здатність вихідного зображення.
 
@@ -56,7 +56,7 @@ lastmod: "2025-06-13"
 
 Приблизно так само ми можемо відобразити фігуру LaTeX у форматі SVG.
 
-{{< gist "aspose-com-gists""76c7e5770ac8b3f6d409f6ec60f02030""Aspose.TeX.Examples-Features-SvgLaTeXFigureRendering.cs" >}}
+{{< gist "aspose-com-gists""79be6a0d7a31aa5deb213ba4ca81cb1b""Example-RenderFigureToSVG.cs" >}}
 
 Відмінності:
 

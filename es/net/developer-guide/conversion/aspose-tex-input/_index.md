@@ -22,7 +22,7 @@ Dado que las primitivas de E/S del lenguaje TeX solo pueden tratar con nombres d
 
 Así es como lo haríamos:
 
-{{< gist "aspose-com-gists""76c7e5770ac8b3f6d409f6ec60f02030""Aspose.TeX.Examples-Conversion-InputFileSystemDirectory.cs" >}}
+{{< gist "aspose-com-gists" "0fbd18cd8c28d5ed12e19cd52634ebd4" "Example-InputFileSystemDirectory.cs" >}}
 
 Este caso de uso es bastante simple, por lo que ya no es necesario centrarse en él.
 
@@ -30,7 +30,7 @@ Este caso de uso es bastante simple, por lo que ya no es necesario centrarse en 
 
 También podemos poner los archivos de entrada en un archivo ZIP y considerarlo un directorio de entrada. En este caso debemos proceder de la siguiente manera:
 
-{{< gist "aspose-com-gists""76c7e5770ac8b3f6d409f6ec60f02030""Aspose.TeX.Examples-Conversion-InputZipDirectory.cs" >}}
+{{< gist "aspose-com-gists" "0fbd18cd8c28d5ed12e19cd52634ebd4" "Example-InputZipDirectory.cs" >}}
 
 Primero, creamos la secuencia que contiene el archivo ZIP. Luego, después de crear las opciones de conversión, configuramos la opción [InputWorkingDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/inputworkingdirectory/) para que sea una instancia de la clase [InputZipDirectory](https://reference.aspose.com/tex/net/aspose.tex.io/inputzipdirectory/). El segundo argumento del constructor es la ruta base dentro del archivo. Si queremos que todo el archivo sea un directorio de entrada, debemos pasar la cadena vacía. 
 
@@ -42,7 +42,7 @@ Ahora toca recordar que también está la entrada del terminal. En cuanto a este
 
 Para hacer esto, necesitamos configurar la opción [TerminalIn](https://reference.aspose.com/tex/net/aspose.tex/texoptions/terminalin/) para que sea una instancia de la clase [InputConsoleTerminal](https://reference.aspose.com/tex/net/aspose.tex.io/inputconsoleterminal/).
 
-{{< gist "aspose-com-gists""76c7e5770ac8b3f6d409f6ec60f02030""Aspose.TeX.Examples-Conversion-InputConsoleTerminal.cs" >}}
+{{< gist "aspose-com-gists" "0fbd18cd8c28d5ed12e19cd52634ebd4" "Example-InputConsoleTerminal.cs" >}}
 
 Pero, a decir verdad, este es el valor predeterminado de la opción, por lo que no es necesario especificarlo. Por lo tanto, y mientras no existan otras implementaciones, esta sección tiene únicamente fines demostrativos.
 

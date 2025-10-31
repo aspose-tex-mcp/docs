@@ -57,7 +57,7 @@ After running a TeX job with this option (don't forget to adjust the other optio
 
 Here is the complete source code for the example:
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-RequiredInput-FileSystem.cs" >}}
+{{< gist "aspose-com-gists" "03f720960e15bd497ed26ce2eb9c03b2" "Example-RequiredInput-FileSystem.cs" >}}
 
 ### Archived required input (`pgfplots` package)
 
@@ -118,7 +118,7 @@ After running a TeX job with this option, we get the output document:
 
 Here is the complete source code for the example:
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-RequiredInput-Zip.cs" >}}
+{{< gist "aspose-com-gists" "03f720960e15bd497ed26ce2eb9c03b2" "Example-RequiredInput-Zip.cs" >}}
 
 > **_NOTE:_** The result was verified using the `pgfplots` package version 1.18.1. While the version of the `pfg` package included in the **Aspose.TeX** library is 3.1.9a.
 
@@ -130,7 +130,7 @@ The **Aspose.TeX**'s *Object TeX* engine extension needs font maps (which are te
 
 Below, we provide an illustrative example of a custom required input directory that also implements the [IFileCollector](https://reference.aspose.com/tex/net/aspose.tex.io/ifilecollector/) interface. While focusing on collecting file names by extension, we intentionally omit the details of file storage and retrieval.
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-RequiredInputDirectory.cs" >}}
+{{< gist "aspose-com-gists" "03f720960e15bd497ed26ce2eb9c03b2" "Example-RequiredInputDirectory.cs" >}}
 
 ### Restrictions
 

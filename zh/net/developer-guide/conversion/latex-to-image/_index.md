@@ -18,7 +18,7 @@ lastmod: "2025-06-10"
 
 让我们详细了解C＃中的代码，提供最简单的方法将乳胶转换为PNG格式。
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-LaTeXToPng-Simplest.cs" >}}
+{{< gist "aspose-com-gists" "58d1c43acd187f1cde7917fa9a430281" "Example-ConvertLaTeXToPNG-Simplest.cs" >}}
 
 因此，我们需要做的第一件事(有时不是第一件)是创建[Texoptions](https://reference.aspose.com/tex/net/aspose.tex/texoptions/)类的实例。这样做的唯一静态方法是[consoleappoptions()](https://reference.aspose.com/tex/net/aspose.tex/texoptions/consoleappoptions/)，因此不要被其名称的含义所困扰。该方法将[TexConfig](https://reference.aspose.com/tex/net/aspose.tex/texconfig/)类的[Objectlatex实例](https://reference.aspose.com/tex/net/aspose.tex/texconfig/objectlatex/)进行，该类完全适合转换[latex file](/tex/{{lang.url-fragment}}net/latex-io/#latex-file)。该配置告诉对象Tex引擎加载对象乳胶格式并准备好接受乳胶文件。对象乳胶格式实际上只是[乳胶](/tex/{{lang.url-fragment}}net/what-is-latex/)格式，只是它使用[Object tex](/tex/{{lang.url-fragment}}net/aspose-tex-and-object-tex/#object-tex)特定的原始图来设置页面指标。
 
@@ -59,7 +59,7 @@ Transcript written on hello-world.log.
 
 以下 C# 代码片段演示了另一种获取 PNG 输出的方法，即将图像数据写入内存流，而不是直接写入文件系统。当您需要在内存中保存生成的 PNG 字节进行进一步处理（例如通过网络发送、存储到数据库中或在保存前执行其他转换）时，此方法非常有用。
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-LaTeXToPng-Alternative.cs" >}}
+{{< gist "aspose-com-gists" "58d1c43acd187f1cde7917fa9a430281" "Example-ConvertLaTeXToPNG-Alternative.cs" >}}
 
 *“ Page-n.png” *文件将写入我们指定的任何路径。与[PDF输出](/tex/{{lang.url-fragment}}net/latex-to-pdf/#an-alternative-way-to-write-main-output-pdf-file)不同，他们将复制写入输出目录的输出PNG文件。
 
@@ -75,19 +75,19 @@ Transcript written on hello-world.log.
 
 ## 如何将乳胶转换为JPG
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-LaTeXToJpeg.cs" >}}
+{{< gist "aspose-com-gists" "58d1c43acd187f1cde7917fa9a430281" "Example-ConvertLaTeXToJPEG.cs" >}}
 
 **您还可以查看基于 [Aspose.TeX for .NET API](https://products.aspose.com/tex/net/) 构建的免费 LaTeX 到 JPG 转换 [web 应用程序](https://products.aspose.app/tex/conversion/latex-to-jpg)。**
 
 ## 如何将乳胶转换为tiff
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-LaTeXToTiff.cs" >}}
+{{< gist "aspose-com-gists" "58d1c43acd187f1cde7917fa9a430281" "Example-ConvertLaTeXToTIFF.cs" >}}
 
 **您还可以查看基于 [Aspose.TeX for .NET API](https://products.aspose.com/tex/net/) 构建的免费 LaTeX 到 TIFF 转换 [网页应用](https://products.aspose.app/tex/conversion/latex-to-tiff)。**
 
 ## 如何将乳胶转换为BMP
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-LaTeXToBmp.cs" >}}
+{{< gist "aspose-com-gists" "58d1c43acd187f1cde7917fa9a430281" "Example-ConvertLaTeXToBMP.cs" >}}
 
 **您还可以查看基于 [Aspose.TeX for .NET API](https://products.aspose.com/tex/net/) 构建的免费 LaTeX 到 BMP 转换 [web 应用程序](https://products.aspose.app/tex/conversion/latex-to-bmp)。**
 
@@ -101,6 +101,6 @@ Transcript written on hello-world.log.
 
 乳胶到SVG转换也与[转换为栅格图像格式](/tex/{{lang.url-fragment}}net/latex-to-image/)一样简单，只是必须将[saveOptions](https://reference.aspose.com/tex/net/aspose.tex/texoptions/saveoptions/)设置为[svgsaveoptions](https://reference.aspose.com/tex/net/aspose.tex.presentation.svg/svgsaveoptions/)类实例，并且必须将设备更改为[svgdevice](https://reference.aspose.com/tex/net/aspose.tex.presentation.svg/svgdevice/)类的实例。
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-LaTeXToSvg-Simplest.cs" >}}
+{{< gist "aspose-com-gists" "58d1c43acd187f1cde7917fa9a430281" "Example-ConvertLaTeXToSVG-Simplest.cs" >}}
 
 **您还可以查看基于 [Aspose.TeX for .NET API](https://products.aspose.com/tex/net/) 构建的免费 LaTeX 到 SVG 转换 [web 应用程序](https://products.aspose.app/tex/conversion/latex-to-svg)。**

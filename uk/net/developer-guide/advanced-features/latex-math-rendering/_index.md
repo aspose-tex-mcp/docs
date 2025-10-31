@@ -16,7 +16,7 @@ lastmod: "2025-06-13"
 
 Довідковий розділ API, пов’язаний із цією темою, знаходиться [тут](https://reference.aspose.com/tex/net/aspose.tex.features/). Насправді, найпростіший спосіб продемонструвати функцію **відтворення математичних формул LaTeX** — це почати з прикладу. Ось воно:
 
-{{< gist "aspose-com-gists""76c7e5770ac8b3f6d409f6ec60f02030""Aspose.TeX.Examples-Features-PngLaTeXMathRendering.cs" >}}
+{{< gist "aspose-com-gists""cd0acc55d1634f17dcf42e02075ca005""Example-RenderMathToPNG.cs" >}}
 
 Перейдемо до деталей. Перш за все, ми створюємо екземпляр [параметри візуалізації](https://reference.aspose.com/tex/net/aspose.tex.features/mathrendereroptions/), подібний до набору TeX/LaTeX. Ми робимо це тут, одночасно вказуючи роздільну здатність вихідного зображення.
 
@@ -59,7 +59,7 @@ lastmod: "2025-06-13"
 
 Приблизно так само ми можемо відобразити математичну формулу LaTeX у форматі SVG.
 
-{{< gist "aspose-com-gists""76c7e5770ac8b3f6d409f6ec60f02030""Aspose.TeX.Examples-Features-SvgLaTeXMathRendering.cs" >}}
+{{< gist "aspose-com-gists""cd0acc55d1634f17dcf42e02075ca005""Example-RenderMathToSVG.cs" >}}
 
 Відмінності:
 

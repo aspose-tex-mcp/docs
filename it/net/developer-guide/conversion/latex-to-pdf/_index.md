@@ -17,7 +17,7 @@ lastmod: "2025-06-13"
 
 Diamo uno sguardo dettagliato al codice in C# fornendo il modo più semplice per convertire il LaTeX in formato PDF.
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-LaTeXToPdf-Simplest.cs" >}}
+{{< gist "aspose-com-gists" "507170b996a1d0c39bb4374e888b3205" "Example-ConvertLaTeXToPDF-Simplest.cs" >}}
 
 Quindi, la prima cosa che dobbiamo fare (beh, a volte non il primo) è creare un'istanza della classe [texoptions](https://reference.aspose.com/tex/net/aspose.tex/texoptions/). L'unico metodo statico che fa questo è [ConsoleAppoptions()](https://reference.aspose.com/tex/net/aspose.tex/texoptions/consoleappoptions/), quindi non essere perplessi dal significato del suo nome. Il metodo prende una [istanza](https://reference.aspose.com/tex/net/aspose.tex/texconfig/objectlatex/) della classe [TexConfig](https://reference.aspose.com/tex/net/aspose.tex/texconfig/), che è esattamente adatta per la conversione di un [file latex](/tex/{{lang.url-fragment}}net/latex-io/#latex-file). Questa configurazione indica al motore Object Tex di caricare il formato Object Latex e di essere pronto ad accettare il file Latex. Il formato di LaTeX oggetto è in realtà solo il formato [LaTeX](/tex/{{lang.url-fragment}}net/what-is-latex/), tranne per il fatto che utilizza le primitive specifiche [Object Tex](/tex/{{lang.url-fragment}}net/aspose-tex-and-object-tex/#object-tex) per impostare le metriche di pagina.
 
@@ -54,7 +54,7 @@ Troveremo altri "frutti" del lavoro del motore nella cartella che abbiamo specif
 
 C'è un altro costruttore della classe [PDFDEVICE](https://reference.aspose.com/tex/net/aspose.tex.presentation.pdf/pdfdevice/pdfdevice/), che ci consente di ottenere il file PDF risultante in modo alternativo.
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-LaTeXToPdf-Alternative.cs" >}}
+{{< gist "aspose-com-gists" "507170b996a1d0c39bb4374e888b3205" "Example-ConvertLaTeXToPDF-Alternative.cs" >}}
 
 Il file *Any-name.pdf* nella directory specificata sarà il nostro principale file PDF di output. Allo stesso tempo, a differenza di [output di immagini](/tex/{{lang.url-fragment}}net/latex-to-png/#an-alternative-way-to-write-main-output-png-files), non troveremo alcun file PDF nella directory di output definita dalle opzioni di conversione. Eccezione: *Any-name.pdf* si trova (dal suo percorso) nella stessa directory del file system assegnato all'opzione [outputworkingdirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/outputworkingdirectory/) utilizzando [outputfilesystemdirectory](https://reference.aspose.com/tex/net/aspose.tex.io/outputfilesystemdirectory/).
 
