@@ -5,7 +5,7 @@ linktitle: {{i18n.linktitle}}
 description: {{i18n.description}}
 url: {{i18n.url}}
 weight: {{i18n.weight}}
-informat: {{i18n.lastmod}}
+lastmod: {{i18n.lastmod}}
 aliases: {{aliases}}
 submenu: menu-tex-for-net
 type: docs
