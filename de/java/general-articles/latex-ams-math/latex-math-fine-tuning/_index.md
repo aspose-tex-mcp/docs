@@ -7,7 +7,7 @@ weight: 70
 url: /java/latex-math-fine-tuning/
 keywords: ams-latex, amsmath, Latex-Math-Abstände, Latex-Math-Stile, Latex-Math-Trennzeichen, Latex-Math-Klammern, Latex-Math-Ausrichtung
 description: In diesem Artikel geht es um die Feinabstimmung des mathematischen Layouts – automatische Größen- und Abstände, große Trennzeichen, präzise Ausrichtung.
-lastmod: 20.09.2024
+lastmod: 2024-09-20
 ---
 
 {{<section overview>}}
