@@ -69,10 +69,8 @@ lastmod: "2025-12-03"
 
 ## Де завантажити шаблони LaTeX
 
-- **Overleaf Gallery** – найбільша публічна колекція (≈4000 безкоштовних шаблонів).  
-  <https://www.overleaf.com/gallery>
-- **CTAN (ComprehensiveTeXArchive Network)** – офіційний репозиторій для окремих класів журналів.  
-  <https://ctan.org/>
+- [**Overleaf Gallery**](https://www.overleaf.com/gallery) – найбільша публічна колекція (≈4000 безкоштовних шаблонів).  
+- [**CTAN (ComprehensiveTeXArchive Network)**](https://ctan.org/) – офіційний репозиторій для окремих класів журналів.  
 - **GitHub / GitLab** – багато авторів публікують із відкритим кодом шаблони тез або конференцій.  
 - Веб-сторінки університетів/інститутів – більшість шкіл розміщують «офіційний» шаблон дипломної роботи/дисертації.
 
@@ -118,7 +116,7 @@ lastmod: "2025-12-03"
 
 ```text
 Що?            → Попередньо створений макет (клас+стиль+ресурси)
-Використати?   → \documentclass{mytemplate} + слідкувати за README
+Використати?   → \documentclass{mytemplate} + слідувати README
 Створити?      → Написати .cls або .sty → упакувати ресурси → zip/GitHub
 Отримати?      → Галерея Overleaf, CTAN, GitHub, університетські сайти
 Гаряча десятка → IEEEtran, llncs, elsarticle, modern‑simple‑cv,
