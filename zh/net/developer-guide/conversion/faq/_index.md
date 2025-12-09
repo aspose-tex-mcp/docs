@@ -17,12 +17,12 @@ lastmod: "2025-12-04"
 
 **问：Aspose.TeX for .NET 支持哪些源和输出格式？**  
 
-**答：** Aspose.TeX 可以读取 LaTeX 源文件(`*.tex`)、纯文本 LaTeX 片段和内联数学(`$$...$$`、`\(...\)`、`\[...\]`)。它可以输出为 PDF、XPS、SVG、PNG、JPEG、BMP、TIFF、DOCX、ODT、HTML-5(带 CSS)和 EPUB(通过 PDF→EPUB)。  
+**答:** Aspose.TeX 可以读取 LaTeX 源文件(`*.tex`)、纯文本 LaTeX 片段和内联数学(`$$...$$`、`\(...\)`、`\[...\]`)。它可以输出为 PDF、XPS、SVG、PNG、JPEG、BMP、TIFF、DOCX、ODT、HTML-5(带 CSS)和 EPUB(通过 PDF→EPUB)。  
 <br><br>
 
 **问：如何在 C# 中将 `.tex` 文件转换为 PDF？**  
 
-**答：** 
+**答:** 
 ```csharp
 using Aspose.TeX;
 
@@ -39,22 +39,22 @@ using (var pdf = tex.ToPdf())
 
 **问：我可以直接将 LaTeX 转换为 Word (DOC/DOCX) 或 HTML 吗？**  
 
-**答：** 是的。对于 DOC/DOCX 使用 `TexDocument.ToWord()`，对于干净的 HTML-5 输出使用 `TexDocument.ToHtml()`(默认情况下样式是内联的)。  
+**答:** 是的。对于 DOC/DOCX 使用 `TexDocument.ToWord()`，对于干净的 HTML-5 输出使用 `TexDocument.ToHtml()`(默认情况下样式是内联的)。  
 <br><br>
 
 **问：数学方程是否准确呈现？**  
 
-**答：** 内置 LaTeX 数学解析器将方程渲染为 PDF/SVG 中的高质量矢量图形或 PNG/JPEG 中的抗锯齿位图。为复杂环境提供全面支持，例如“align”、“eqnarray”、“amsmath”和“tikz”。  
+**答:** 内置 LaTeX 数学解析器将方程渲染为 PDF/SVG 中的高质量矢量图形或 PNG/JPEG 中的抗锯齿位图。为复杂环境提供全面支持，例如“align”、“eqnarray”、“amsmath”和“tikz”。  
 <br><br>
 
 **问：我需要在服务器上安装 LaTeX(例如 MiKTeX)吗？**  
 
-**答：** 不需要。Aspose.TeX 是一个完全独立的 .NET 库，不需要任何外部 TeX 发行版。  
+**答:** 不需要。Aspose.TeX 是一个完全独立的 .NET 库，不需要任何外部 TeX 发行版。  
 <br><br>
 
 **问：运行时要求是什么？**  
 
-**答：** 
+**答:** 
 
 • .NET Framework4.6 或更高版本**或** .NETCore2.1+/.NET5+。  
 • Windowsx64/x86、Linux (glibc2.12+)、macOS (Catalyst)。  
@@ -63,7 +63,7 @@ using (var pdf = tex.ToPdf())
 
 **问：如何控制图像输出分辨率和质量？**  
 
-**答：** 
+**答:** 
 ```ccsharp
 var opts = new ImageSaveOptions
 {
@@ -77,12 +77,12 @@ img.Save(@"C:\Output\sample.png");
 
 **问：有免费试用版或评估版吗？**  
 
-**答：** Aspose 网站提供了 30 天的评估 DLL。它包含完整的功能集，但将每次转换的输入限制为 500KB。试用版不需要许可证密钥。  
+**答:** Aspose 网站提供了 30 天的评估 DLL。它包含完整的功能集，但将每次转换的输入限制为 500KB。试用版不需要许可证密钥。  
 <br><br>
 
 **问：代码中如何处理许可？**  
 
-**答：** 
+**答:** 
 ```csharp
 Aspose.TeX.License license = new Aspose.TeX.License();
 license.SetLicense(@"C:\License\Aspose.TeX.lic");
@@ -91,7 +91,7 @@ license.SetLicense(@"C:\License\Aspose.TeX.lic");
 
 **问：我可以高效地执行批量转换(多个“.tex”文件)吗？** 
 
-**答：** 是的。每个文件创建一个“TexDocument”或为多个片段重用单个实例。该库对于只读操作是线程安全的，因此您可以使用“Parallel.ForEach”并行工作。  
+**答:** 是的。每个文件创建一个“TexDocument”或为多个片段重用单个实例。该库对于只读操作是线程安全的，因此您可以使用“Parallel.ForEach”并行工作。  
 <br><br>
 
 **问：我可以获得对自定义包或用户定义宏的支持吗？**  
@@ -101,7 +101,7 @@ license.SetLicense(@"C:\License\Aspose.TeX.lic");
 
 **问：如何在生成的 PDF 中添加水印或页码？**  
 
-**答：** 转换后，您可以将结果视为“Aspose.Pdf.PdfDocument”。示例：  
+**答:** 转换后，您可以将结果视为“Aspose.Pdf.PdfDocument”。示例：  
 ```csharp
 var pdf = tex.ToPdf();
 pdf.AddWatermarkText("Confidential");
@@ -113,7 +113,7 @@ pdf.Save(@"C:\Output\sample.pdf");
 
 **问：定价模型是什么？**  
 
-**答：** 
+**答:** 
 
 • 开发商小型企业：999 美元/年(最多 5 名开发商)。  
 • 开发者OEM：永久许可证起价为3499 美元/年(包括源代码)。
@@ -123,7 +123,7 @@ pdf.Save(@"C:\Output\sample.pdf");
 
 **问：在哪里可以找到详细的 API 文档和示例？**  
 <br>
-**答：** 
+**答:** 
 
 • [官方文档](https://docs.aspose.com/tex/net/)
 • [GitHub 示例](https://github.com/aspose-tex/Aspose.TeX-net) 
