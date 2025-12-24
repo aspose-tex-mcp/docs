@@ -46,7 +46,7 @@ Si su sistema de composición tipográfica no está configurado para usar, digam
 
 Un "controlador" es parte de un paquete que implementa la interfaz entre los comandos del paquete y las primitivas de extensión TeX de bajo nivel que dependen del formato. **La compatibilidad con gráficos LaTeX de Aspose.TeX** está configurada para usar su propio controlador, por lo que no es necesario especificar la opción del controlador.
 
-## Macro de LaTeX `\ includegraphics`
+## Macro de LaTeX `\includegraphics`
 
 Ahora procedamos con el ejemplo más simple. Por supuesto, se trata de incluir una imagen sin ninguna transformación. Como era de esperar, el código LaTeX que utiliza ambos paquetes es el mismo:
 
