@@ -24,7 +24,7 @@ Um trabalho de Tex é executado em um arquivo tex explicitamente especificado. P
 * `\leia <número> para <sequência de controle>` requer o número para o qual um arquivo é mapeado e lê uma linha dele por vez, para que `<Sequência de controle>` corresponda à lista de tokens lidos.
 * `\Closein <4 bit-number>` fecha o arquivo mapeado para o número.
 
-Os arquivos cujos nomes são passados ​​para os comandos `\input` e `\ Openin` também estão incluídos na entrada Tex, e nós os chamaremos de *arquivos de entrada auxiliar* ou *dependências*, enquanto o arquivo especificado para o trabalho chamamos o arquivo *principal de entrada*.
+Os arquivos cujos nomes são passados ​​para os comandos `\input` e `\openin` também estão incluídos na entrada Tex, e nós os chamaremos de *arquivos de entrada auxiliar* ou *dependências*, enquanto o arquivo especificado para o trabalho chamamos o arquivo *principal de entrada*.
 
 Os quatro comandos podem ocorrer no arquivo de entrada principal ou em um arquivo de entrada auxiliar. Mas cuidado com as dependências circulares.
 
