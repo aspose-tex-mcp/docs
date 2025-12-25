@@ -2,11 +2,11 @@
 translation: true
 template: /templates/_template-net.md
 title: Что такое TikZ
-linktitle: Что такое TikZ
+linktitle: Введение в TikZ
 weight: 21
 url: /net/tikz-introduction/
 keywords: что такое tikz, введение в tikz, основы tikz
-description: Введение в TikZ — мощное расширение для создания высококачественной графики в документах LaTeX.
+description: Познакомьтесь с TikZ, который представляет собой мощное расширение для создания высококачественной графики в документах LaTeX.
 lastmod: "2025-06-29"
 ---
 

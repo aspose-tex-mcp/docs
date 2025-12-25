@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-net.md
 title: TikZ для научных публикаций | Aspose.TeX .NET
-linktitle: TikZ для науки
+linktitle: TikZ для научных работ
 weight: 21
 url: /net/tikz-for-scientific-publications/
 keywords: научные графики tikz, академические диаграммы tikz, математические примеры tikz

@@ -1,7 +1,7 @@
 ---
 translation: true
 template: /templates/_template-net.md
-title: Лучшие практики и советы по использованию TikZ | Aspose.TeX .NET
+title: Лучшие практики и советы для TikZ | Aspose.TeX .NET
 linktitle: Лучшие практики и советы
 weight: 23
 url: /net/tikz-best-practices-and-tips/

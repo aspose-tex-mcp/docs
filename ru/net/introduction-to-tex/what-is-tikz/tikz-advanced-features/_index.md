@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-net.md
 title: Расширенные возможности TikZ | Aspose.TeX .NET
-linktitle: Расширенные возможности TikZ
+linktitle: Расширенная функциональность TikZ
 weight: 20
 url: /net/tikz-advanced-features/
 keywords: расширенный tikz, пути tikz, диаграммы tikz, pgfplots, circuitikz, tikz-3dplot

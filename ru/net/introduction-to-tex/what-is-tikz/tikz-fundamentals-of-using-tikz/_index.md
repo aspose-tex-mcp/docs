@@ -1,7 +1,7 @@
 ---
 translation: true
 template: /templates/_template-net.md
-title: Основы использования TikZ | Aspose.TeX .NET
+title: Основы работы с TikZ | Aspose.TeX .NET
 linktitle: Основы TikZ
 weight: 19
 url: /net/tikz-fundamentals-of-using-tikz/
