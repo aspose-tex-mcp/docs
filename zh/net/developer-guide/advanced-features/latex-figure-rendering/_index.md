@@ -1,69 +1,67 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-title: 乳胶图渲染| .NET的Aspose.TeX
-linktitle: 乳胶包括图
+title: LaTeX 图形渲染 | Aspose.TeX for .NET
+linktitle: LaTeX 包含图形
 weight: 20
 url: /net/latex-figure-rendering/
-description: ASPOSE.TEX API解决方案用于.NET乳胶片段(图)渲染。了解有关如何使用功能的代码示例。
-keywords: 乳胶图，图形尺寸乳胶，乳胶图片，乳胶图像，乳胶包括图，乳胶图片，乳胶图选项
-lastmod: "2025-06-10"
+description: Aspose.TeX API 为 .NET 提供的 LaTeX 片段（图形）渲染解决方案在本文中进行说明。了解如何使用该功能的代码示例。
+keywords: LaTeX 图形、LaTeX 图形大小、LaTeX 图片、LaTeX 图像、LaTeX 包含图形、LaTeX 图片、LaTeX 图形选项
+lastmod: "2026-02-25"
 ---
 
 {{<section overview>}}
 
+有时您可能希望从 LaTeX 文件中提取部分内容作为单独渲染的片段，或者称作 *“图形”*，而不与页面布局关联。例如，这可以作为您在互联网上发布的插图。您可以使用我们的 API 实现此功能。目标格式有两种选择——PNG 和 SVG。与 LaTeX 数学公式渲染功能相同。值得注意的是，**LaTeX 图形渲染**是对[LaTeX math formula rendering](/tex/{{lang.url-fragment}}net/latex-math-formula-rendering/)的概括。
 
-有时，您可能需要从乳胶文件中提取一些内容作为单独渲染的片段或 *“图”*，而无需与页面布局的任何连接。例如，它可以是您在互联网上出版的例证。您可以使用我们的API进行。至于目标格式，有两种选项-PNG和SVG。与乳胶数学公式渲染功能一样。还值得注意的是，**乳胶图渲染**是[乳胶数学公式渲染](/tex/{{lang.url-fragment}}net/latex-math-formula-rendering/)的概括。
+## 如何将 LaTeX 图形渲染为 PNG
 
-## 如何将乳胶图形渲染到png
-
-与此主题相关的API参考部分是[此处](https://reference.aspose.com/tex/net/aspose.tex.features/)。与公式渲染一样，我们将从一个示例开始。这里是：
+与本主题相关的 API 参考部分位于[此处](https://reference.aspose.com/tex/net/aspose.tex.features/)。与公式渲染一样，我们将从示例开始。代码如下：
 
 {{< gist "aspose-com-gists" "79be6a0d7a31aa5deb213ba4ca81cb1b" "Example-RenderFigureToPNG.cs" >}}
 
-首先，我们创建[乳胶图选项](https://reference.aspose.com/tex/net/aspose.tex.features/figurerendereroptions/)实例。我们在这里同时指定输出图像分辨率。
+首先，我们创建一个[LaTeX figure options](https://reference.aspose.com/tex/net/aspose.tex.features/figurerendereroptions/)实例，并在此同时指定输出图像的分辨率。
 
-接下来，我们指定前导码。LaTeX 图形渲染没有默认的前导码，因此，例如，如果您要渲染一些使用 `pict2e` LaTeX 包绘制的图形，则需要在前导码中指定它：
-
+接下来，指定前导代码（preamble）。LaTeX 图形渲染没有默认的前导代码，因此如果您要渲染使用 `pict2e` LaTeX 包绘制的图形，需要在前导代码中声明：
 
 ```tex
 \usepackage{pict2e}
 ```
 
-然后，我们指示渲染器将输出扩展300％。
+然后，我们指示渲染器将输出按 300% 缩放。
 
-下一个选项定义背景颜色。与数学公式渲染不同，我们没有指定前景颜色，因为我们假设颜色完全在乳胶代码的控制之下。实际上，背景颜色也是如此，因此这只是一个便利选择。
+下一个选项定义背景颜色。与数学公式渲染不同，我们不指定前景颜色，因为我们假设颜色完全由 LaTeX 代码控制。事实上，背景颜色也是如此，这只是一个便利选项。
 
-该示例的下一行没有太多意义。它只是证明您可以将日志输出引导到某些流。
+示例中的下一行代码意义不大，仅演示了如何将日志输出定向到某个流。
 
-最后一个选项`ShowTerminal`使您可以切换将终端输出写入控制台。
+最后一个选项 `ShowTerminal` 允许您切换是否将终端输出写入控制台。
 
-实际执行渲染的方法是[figurerenderer.render()](https://reference.aspose.com/tex/net/aspose.tex.features/figurerenderer/render/)。它返回点的大小。
+实际执行渲染的方式是调用[FigureRenderer.Render()](https://reference.aspose.com/tex/net/aspose.tex.features/figurerenderer/render/)。它返回图形的尺寸（以点为单位）。
 
-该方法将要编写图像的流作为第二个参数接受。我们下一步创建流。
+渲染方法的第二个参数是用于写入图像的流。我们随后创建该流。
 
-最后，我们将`FigureRenderer.render()`方法本身称为第三个参数。该图的乳胶代码作为第一个参数传递。
+最后，我们调用 `FigureRenderer.Render()` 方法本身，将选项作为第三个参数传入。图形的 LaTeX 代码作为第一个参数传入。
 
-示例的最后一行打印了图形渲染的两个伪像 - 图的大小和简短的错误报告(如果有错误)。
+示例的最后几行会输出两个渲染产出——图形的尺寸以及简要的错误报告（如果有错误）。
 
-这是渲染的结果。
+以下是渲染结果。
 
-<a href="/tex/net/latex-figure-rendering/text-and-formula.png">![乳胶图渲染到PNG](/tex/images/net/text-and-formula.png)</a>
+<a href="/tex/net/latex-figure-rendering/text-and-formula.png">![LaTeX 图形渲染为 PNG](/tex/images/net/text-and-formula.png)</a>
 
-这是**乳胶图渲染**功能最通用的用例。
+这是 **LaTeX 图形渲染** 功能最常见的使用场景。
 
-## 如何将乳胶数字渲染到SVG
+## 如何将 LaTeX 图形渲染为 SVG
 
-以几乎相同的方式，我们可以以SVG格式渲染乳胶图。
+以类似的方式，我们可以将 LaTeX 图形渲染为 SVG 格式。
 
 {{< gist "aspose-com-gists" "79be6a0d7a31aa5deb213ba4ca81cb1b" "Example-RenderFigureToSVG.cs" >}}
 
-差异是：
+区别如下：
 
-* 我们使用[SVGFIGURERENDEREROPTIONS](https://reference.aspose.com/tex/net/aspose.tex.features/svgfigurerendereroptions/)类，而不是[PNGFIGURERENDEREROPTIONS](https://reference.aspose.com/tex/net/aspose.tex.features/pngfigurerendereroptions/)。
-* 我们没有指定分辨率。
-* 我们使用[svgfigurerenderer](https://reference.aspose.com/tex/net/aspose.tex.features/svgfigurerenderer/)类代替[pngfigurerenderer](https://reference.aspose.com/tex/net/aspose.tex.features/pngfigurerenderer/)。
- 
-这是结果：
+* 我们使用[SvgFigureRendererOptions](https://reference.aspose.com/tex/net/aspose.tex.features/svgfigurerendereroptions/)类，而不是[PngFigureRendererOptions](https://reference.aspose.com/tex/net/aspose.tex.features/pngfigurerendereroptions/)。
+* 不再指定分辨率。
+* 使用[SvgFigureRenderer](https://reference.aspose.com/tex/net/aspose.tex.features/svgfigurerenderer/)类，而不是[PngFigureRenderer](https://reference.aspose.com/tex/net/aspose.tex.features/pngfigurerenderer/)。
 
-<a href="/tex/net/latex-figure-rendering/text-and-formula.svg">![乳胶图渲染到SVG](/tex/images/net/text-and-formula.svg)</a>
+以下是渲染结果：
+
+<a href="/tex/net/latex-figure-rendering/text-and-formula.svg">![LaTeX 图形渲染为 SVG](/tex/images/net/text-and-formula.svg)</a>

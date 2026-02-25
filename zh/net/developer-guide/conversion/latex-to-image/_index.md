@@ -1,37 +1,39 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-title: 乳胶到图像| .NET的Aspose.TeX
-linktitle: 乳胶到图像
+title: LaTeX 转图像 | .NET
+linktitle: LaTeX 转图像
 weight: 10
 url: /net/latex-to-image/
-keywords: 乳胶到PNG，乳胶PNG，乳胶到图像，乳胶图像，乳胶到JPG，乳胶JPG，乳胶，乳胶至JPEG，jpeg，latex jpeg，latex jpeg，latex to tiff，tiff，latex tiff，latex to bmp to bmp，latex bmp
-description: 要使用Aspose.TeX API解决方案。
-lastmod: "2025-06-10"
+aliases: 
+- /net/latex-to-png/
+- /net/latex-to-svg/
+keywords: latex to png, latex png, latex to image, latex image, latex to jpg, latex jpg, latex to jpeg, latex jpeg, latex to tiff, latex tiff, latex to bmp, latex bmp
+description: 通过 Aspose.TeX API 将 TeX 转换为图像格式（适用于 .NET）的解决方案，请阅读本文了解如何操作以及代码示例。
+lastmod: "2026-02-25"
 ---
 
 {{<section overview>}}
 
-**Aspose.TeX for .NET**允许我们将乳胶文件转换为许多栅格图像格式。
+**Aspose.TeX for .NET** 允许我们将 LaTeX 文件转换为多种光栅图像格式。
 
-## 如何将乳胶转换为png
+## 如何将 LaTeX 转换为 PNG
 
-让我们详细了解C＃中的代码，提供最简单的方法将乳胶转换为PNG格式。
+让我们详细查看 C# 代码，了解将 LaTeX 转换为 PNG 格式的最简方法。
 
 {{< gist "aspose-com-gists" "58d1c43acd187f1cde7917fa9a430281" "Example-ConvertLaTeXToPNG-Simplest.cs" >}}
 
-因此，我们需要做的第一件事(有时不是第一件)是创建[Texoptions](https://reference.aspose.com/tex/net/aspose.tex/texoptions/)类的实例。这样做的唯一静态方法是[consoleappoptions()](https://reference.aspose.com/tex/net/aspose.tex/texoptions/consoleappoptions/)，因此不要被其名称的含义所困扰。该方法将[TexConfig](https://reference.aspose.com/tex/net/aspose.tex/texconfig/)类的[Objectlatex实例](https://reference.aspose.com/tex/net/aspose.tex/texconfig/objectlatex/)进行，该类完全适合转换[latex file](/tex/{{lang.url-fragment}}net/latex-io/#latex-file)。该配置告诉对象Tex引擎加载对象乳胶格式并准备好接受乳胶文件。对象乳胶格式实际上只是[乳胶](/tex/{{lang.url-fragment}}net/what-is-latex/)格式，只是它使用[Object tex](/tex/{{lang.url-fragment}}net/aspose-tex-and-object-tex/#object-tex)特定的原始图来设置页面指标。
+因此，我们需要做的第一件事（有时不是第一件事）是创建一个 [TeXOptions](https://reference.aspose.com/tex/net/aspose.tex/texoptions/) 类的实例。唯一的静态方法是 [ConsoleAppOptions()](https://reference.aspose.com/tex/net/aspose.tex/texoptions/consoleappoptions/)，所以不要被其名称困惑。该方法接受 [ObjectLaTeX 实例](https://reference.aspose.com/tex/net/aspose.tex/texconfig/objectlatex/)（属于 [TeXConfig](https://reference.aspose.com/tex/net/aspose.tex/texconfig/) 类），该实例正好适用于转换 [LaTeX 文件](/tex/{{lang.url-fragment}}net/latex-io/#latex-file)。此配置告诉 Object TeX 引擎加载 Object LaTeX 格式，并准备接受 LaTeX 文件。Object LaTeX 格式实际上就是 [LaTeX](/tex/{{lang.url-fragment}}net/what-is-latex/) 格式，只是使用了 [Object TeX](/tex/{{lang.url-fragment}}net/aspose-tex-and-object-tex/#object-tex) 特定的原语来设置页面度量。
 
-所需的第一个选项是[outputWorkingDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/outputworkingdirectory/)，该选项定义了将编写Tex输出的空间或区域。 [此处](/tex/{{lang.url-fragment}}net/aspose-tex-output/)是有关.net **的** aspose.tex中输出目录概念的详细信息。在此示例中，我们使用[outputeFilesystemDirectory](https://reference.aspose.com/tex/net/aspose.tex.io/outputfilesystemdirectory/)类，该类使我们能够将输出写入指定的目录或文件夹。
+第一个必需的选项是 [OutputWorkingDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/outputworkingdirectory/)，它定义了 TeX 输出将被写入的空间或区域。[这里](/tex/{{lang.url-fragment}}net/aspose-tex-output/) 有关于 **Aspose.TeX for .NET** 中输出目录概念的详细信息。在本例中，我们使用 [OutputFileSystemDirectory](https://reference.aspose.com/tex/net/aspose.tex.io/outputfilesystemdirectory/) 类，它允许我们将输出写入指定的目录或文件夹。
 
-第二个选项是[SaveOptions](https://reference.aspose.com/tex/net/aspose.tex.presentation/saveoptions/)类实例，它将控制[对象模型](/tex/{{lang.url-fragment}}net/aspose-tex-and-object-tex/#why-the-new-tex-is-object)对目标格式的转换。由于我们将乳胶转换为png，因此是[pngsaveoptions](https://reference.aspose.com/tex/net/aspose.tex.presentation.image/pngsaveoptions/)类实例，它使我们可以指定输出图像的分辨率。
+第二个选项是一个 [SaveOptions](https://reference.aspose.com/tex/net/aspose.tex.presentation/saveoptions/) 类实例，用于控制将 [对象模型](/tex/{{lang.url-fragment}}net/aspose-tex-and-object-tex/#why-the-new-tex-is-object) 转换为目标格式的方式。因为我们要将 LaTeX 转换为 PNG，所以使用的是 [PngSaveOptions](https://reference.aspose.com/tex/net/aspose.tex.presentation.image/pngsaveoptions/) 类实例，它允许我们指定输出图像的分辨率。
 
-然后，我们需要创建一个[Texjob](https://reference.aspose.com/tex/net/aspose.tex/texjob/)类的实例。要转换存储在文件系统中的乳胶文件，我们使用[this](https://reference.aspose.com/tex/net/aspose.tex/texjob/texjob/)版本的构造函数。我们需要指定文件的完整路径。否则，发动机将在当前目录(即[CurrentDirectory](https://docs.microsoft.com/en-us/dotnet/api/system.environment.currentdirectory))中寻找它，并且很可能找不到它。然而， *.tex*扩展可能会省略。引擎将自动添加它。构造函数的第二个参数是[设备](https://reference.aspose.com/tex/net/aspose.tex.presentation/device/)类实例。由于我们将乳胶转换为png，因此这是一个[Imagedevice](https://reference.aspose.com/tex/net/aspose.tex.presentation.image/imagedevice/)类实例，这对于所有受支持的图像格式都是常见的。作为最后一个论点，我们通过了最近准备的转换选项。
+接下来我们需要创建一个 [TeXJob](https://reference.aspose.com/tex/net/aspose.tex/texjob/) 类的实例。想要转换存储在文件系统中的 LaTeX 文件时，我们使用 [此](https://reference.aspose.com/tex/net/aspose.tex/texjob/texjob/) 构造函数版本。我们需要指定文件的完整路径。否则，引擎会在当前目录（即 [CurrentDirectory](https://docs.microsoft.com/en-us/dotnet/api/system.environment.currentdirectory)）中查找，且很可能找不到。即使省略 *.tex* 扩展名，也会自动追加。构造函数的第二个参数是一个 [Device](https://reference.aspose.com/tex/net/aspose.tex.presentation/device/) 类实例。因为我们将 LaTeX 转换为 PNG，所以使用的是 [ImageDevice](https://reference.aspose.com/tex/net/aspose.tex.presentation.image/imagedevice/) 类实例，这对所有受支持的图像格式都是通用的。最后一个参数传入我们刚刚准备好的转换选项。
 
-现在剩下要做的就是[运行](https://reference.aspose.com/tex/net/aspose.tex/texjob/run/)工作。
+现在唯一剩下的事情就是 [run](https://reference.aspose.com/tex/net/aspose.tex/texjob/run/) 该作业。
 
-无论运行是否成功，我们都会看到的第一个结果将是终端输出。如果跑步成功，它将看起来像这样：
-
+无论运行是否成功，首先会看到终端输出。如果运行成功，输出大致如下：
 
 ```text
 This is ObjectTeX, Version 3.1415926-1.0 (Aspose.TeX 21.8)
@@ -49,58 +51,58 @@ Output written on hello-world.png (1 page).
 Transcript written on hello-world.log.
 ```
 
-我们将在我们指定为输出目录的文件夹中找到引擎劳动力的其他“水果”。这些将是成绩单文件，**在这里是！**，主要输出png映像文件。
+我们将在指定的输出目录中找到引擎工作产生的其他“成果”。其中包括记录文件以及 **看这里！** 主输出的 PNG 图像文件。
 
-## 编写主要输出PNG文件的另一种方法
+## 以另一种方式写入主输出 PNG 文件
 
-还有另一种将图像数据作为字节数组数组的方法，第二维中的每个数组代表单独的页面的图像数据。
+还有另一种方式可以将图像数据作为字节数组数组获取，第二维的每个数组代表单独页面的图像数据。
 
-**替代转换示例**
+**替代转换示例**  
 
-以下 C# 代码片段演示了另一种获取 PNG 输出的方法，即将图像数据写入内存流，而不是直接写入文件系统。当您需要在内存中保存生成的 PNG 字节进行进一步处理（例如通过网络发送、存储到数据库中或在保存前执行其他转换）时，此方法非常有用。
+下面的 C# 代码片段演示了另一种通过写入内存流而不是直接写入文件系统来获取 PNG 输出的方法。此方法在需要将生成的 PNG 字节保存在内存中以便进一步处理（例如通过网络发送、存入数据库或在保存前进行其他转换）时非常有用。
 
 {{< gist "aspose-com-gists" "58d1c43acd187f1cde7917fa9a430281" "Example-ConvertLaTeXToPNG-Alternative.cs" >}}
 
-*“ Page-n.png” *文件将写入我们指定的任何路径。与[PDF输出](/tex/{{lang.url-fragment}}net/latex-to-pdf/#an-alternative-way-to-write-main-output-pdf-file)不同，他们将复制写入输出目录的输出PNG文件。
+*"page-n.png"* 文件将写入我们指定的任何路径。与 [PDF 输出](/tex/{{lang.url-fragment}}net/latex-to-pdf/#an-alternative-way-to-write-main-output-pdf-file) 不同，它们会复制写入输出目录的 PNG 文件。
 
 ## 关于输入选项
 
-如果我们的主要输入文件需要依赖项，例如，这些依赖项不包含在基本乳胶系统和支持的软件包中，我们必须设置[requientInputInputDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/requiredinputdirectory/)选项选项的类似方式，我们设置了[outputworkworkingDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/outputworkingdirectory/)选项并将依赖项放入该目录中。依赖项可以在子目录中任意组织。如果我们有自己的文件要在排版过程中包括，例如外部图形文件，我们还必须使用通往收集这些文件的位置的路径来设置[InputWorkingDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/inputworkingdirectory/)。我们还可以将主输入文件放置在输入目录中的某个位置，并在`run()`方法中指定相对路径(如果主输入文件在root中，则根本没有指定路径)。 [此处](/tex/{{lang.url-fragment}}net/aspose-tex-input/)是有关.net 的aspose.tex中输入目录概念的详细信息，并提供了实现。
+如果我们的主输入文件需要依赖项（例如未包含在基本 LaTeX 系统和支持的宏包中的宏包），我们必须以类似设置 [OutputWorkingDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/outputworkingdirectory/) 的方式设置 [RequiredInputDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/requiredinputdirectory/) 选项，并将依赖项放入该目录。依赖项可以任意组织在子目录中。如果我们有自己的文件需要在排版过程中包含，例如外部图形文件，还必须使用指向这些文件所在位置的路径设置 [InputWorkingDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/inputworkingdirectory/) 选项。我们也可以将主输入文件放在输入目录的某个子路径下，并在 `run()` 方法中指定相对路径（如果主输入文件位于根目录，则可以不指定路径）。[这里](/tex/{{lang.url-fragment}}net/aspose-tex-input/) 有关于 **Aspose.TeX for .NET** 中输入目录概念的详细信息以及相应实现。
 
-讨论了其他TEX的工作选择[此处](/tex/{{lang.url-fragment}}net/other-options/)。
+其他 TeX 作业选项请参见[此处](/tex/{{lang.url-fragment}}net/other-options/)。
 
-**您还可以查看基于 [Aspose.TeX for .NET API](https://products.aspose.com/tex/net/) 构建的免费 LaTeX 到 PNG 转换 [web 应用程序](https://products.aspose.app/tex/conversion/latex-to-png)。**
+**您还可以查看基于 [Aspose.TeX for .NET API](https://products.aspose.com/tex/net/) 构建的免费 LaTeX 转 PNG 转换 [网络应用](https://products.aspose.app/tex/conversion/latex-to-png)。**
 
-下面，我们讨论乳胶转换为其他受支持的光栅图像格式，而没有深入细节，因为实际上没有细节。唯一的区别是转换选项中[SaveOptions](https://reference.aspose.com/tex/net/aspose.tex/texoptions/saveoptions/)属性的类型。
+下面，我们将讨论将 LaTeX 转换为其他受支持的光栅图像格式，而不深入细节，因为实际上没有太多细节。唯一的区别在于转换选项中 [SaveOptions](https://reference.aspose.com/tex/net/aspose.tex/texoptions/saveoptions/) 属性的类型。
 
-## 如何将乳胶转换为JPG
+## 如何将 LaTeX 转换为 JPG
 
 {{< gist "aspose-com-gists" "58d1c43acd187f1cde7917fa9a430281" "Example-ConvertLaTeXToJPEG.cs" >}}
 
-**您还可以查看基于 [Aspose.TeX for .NET API](https://products.aspose.com/tex/net/) 构建的免费 LaTeX 到 JPG 转换 [web 应用程序](https://products.aspose.app/tex/conversion/latex-to-jpg)。**
+**您还可以查看基于 [Aspose.TeX for .NET API](https://products.aspose.com/tex/net/) 构建的免费 LaTeX 转 JPG 转换 [网络应用](https://products.aspose.app/tex/conversion/latex-to-jpg)。**
 
-## 如何将乳胶转换为tiff
+## 如何将 LaTeX 转换为 TIFF
 
 {{< gist "aspose-com-gists" "58d1c43acd187f1cde7917fa9a430281" "Example-ConvertLaTeXToTIFF.cs" >}}
 
-**您还可以查看基于 [Aspose.TeX for .NET API](https://products.aspose.com/tex/net/) 构建的免费 LaTeX 到 TIFF 转换 [网页应用](https://products.aspose.app/tex/conversion/latex-to-tiff)。**
+**您还可以查看基于 [Aspose.TeX for .NET API](https://products.aspose.com/tex/net/) 构建的免费 LaTeX 转 TIFF 转换 [网络应用](https://products.aspose.app/tex/conversion/latex-to-tiff)。**
 
-## 如何将乳胶转换为BMP
+## 如何将 LaTeX 转换为 BMP
 
 {{< gist "aspose-com-gists" "58d1c43acd187f1cde7917fa9a430281" "Example-ConvertLaTeXToBMP.cs" >}}
 
-**您还可以查看基于 [Aspose.TeX for .NET API](https://products.aspose.com/tex/net/) 构建的免费 LaTeX 到 BMP 转换 [web 应用程序](https://products.aspose.app/tex/conversion/latex-to-bmp)。**
+**您还可以查看基于 [Aspose.TeX for .NET API](https://products.aspose.com/tex/net/) 构建的免费 LaTeX 转 BMP 转换 [网络应用](https://products.aspose.app/tex/conversion/latex-to-bmp)。**
 
-## 如何将乳胶转换为SVG
+## 如何将 LaTeX 转换为 SVG
 
-另一种支持的目标格式是[**svg**](https://en.wikipedia.org/wiki/SVG)。 **可扩展的向量图形(SVG)**是一种基于XML的矢量图像格式，用于定义二维图形，支持交互性和动画。
+还有一种受支持的目标格式是 [**SVG**](https://en.wikipedia.org/wiki/SVG)。**可伸缩矢量图形 (SVG)** 是一种基于 XML 的矢量图像格式，用于定义二维图形，支持交互和动画。
 
-**SVG**图像以矢量图形格式定义，并存储在XML文本文件中。 **svg**可以将图像缩放而不会丢失质量，并且**svg**可以搜索，索引，脚本脚本和压缩。可以使用文本编辑器或矢量图形编辑器创建和编辑XML文本文件，并由最使用的Web浏览器渲染。
+**SVG** 图像以矢量图形格式定义，并存储在 XML 文本文件中。因此，**SVG** 图像可以在不损失质量的情况下缩放大小，且 **SVG** 文件可以被搜索、索引、脚本化和压缩。XML 文本文件可以使用文本编辑器或矢量图形编辑器创建和编辑，并由主流网页浏览器渲染。
 
-有[**Aspose.SVG**](https://products.aspose.com/svg/)库，它提供了与**svg**相关的各种功能。这些包括创建，加载，编辑和转换**SVG**文档。
+有一个 [**Aspose.SVG**](https://products.aspose.com/svg/) 库提供了与 **SVG** 相关的各种功能，包括创建、加载、编辑和转换 **SVG** 文档。
 
-乳胶到SVG转换也与[转换为栅格图像格式](/tex/{{lang.url-fragment}}net/latex-to-image/)一样简单，只是必须将[saveOptions](https://reference.aspose.com/tex/net/aspose.tex/texoptions/saveoptions/)设置为[svgsaveoptions](https://reference.aspose.com/tex/net/aspose.tex.presentation.svg/svgsaveoptions/)类实例，并且必须将设备更改为[svgdevice](https://reference.aspose.com/tex/net/aspose.tex.presentation.svg/svgdevice/)类的实例。
+LaTeX 转 SVG 的转换同样像[转换为光栅图像格式](/tex/{{lang.url-fragment}}net/latex-to-image/) 那样简单，只是需要将 [SaveOptions](https://reference.aspose.com/tex/net/aspose.tex/texoptions/saveoptions/) 设置为 [SvgSaveOptions](https://reference.aspose.com/tex/net/aspose.tex.presentation.svg/svgsaveoptions/) 类实例，并且必须把设备更改为 [SvgDevice](https://reference.aspose.com/tex/net/aspose.tex.presentation.svg/svgdevice/) 类的实例。
 
 {{< gist "aspose-com-gists" "58d1c43acd187f1cde7917fa9a430281" "Example-ConvertLaTeXToSVG-Simplest.cs" >}}
 
-**您还可以查看基于 [Aspose.TeX for .NET API](https://products.aspose.com/tex/net/) 构建的免费 LaTeX 到 SVG 转换 [web 应用程序](https://products.aspose.app/tex/conversion/latex-to-svg)。**
+**您还可以查看基于 [Aspose.TeX for .NET API](https://products.aspose.com/tex/net/) 构建的免费 LaTeX 转 SVG 转换 [网络应用](https://products.aspose.app/tex/conversion/latex-to-svg)。**
