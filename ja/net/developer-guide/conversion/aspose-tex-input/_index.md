@@ -1,50 +1,52 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-title: Aspose.TeXの入力インターフェイス| .NET
-linktitle: Aspose.TeXの入力インターフェイス
+title: Aspose.TeX の入力インターフェイス | .NET
+linktitle: Aspose.TeX の入力インターフェイス
 weight: 15
 url: /net/aspose-tex-input/
-description: 入力形式として、Texを使用した.NET用のAspose.TeX APIソリューションの変換機能については、コードの例で説明します。
-keywords: aspose tex 入力、.net tex、入力ディレクトリ、入力 zip、入力コンソール、tex オプション、iinputworkingdirectory、inputzipdirectory、inputterminal、tex 変換
-lastmod: "2025-06-09"
+description: Aspose.TeX API ソリューションの .NET 用変換機能で、TeX を入力形式として使用する方法をコード例とともに説明します。
+keywords: aspose.tex 入力、.net tex、入力ディレクトリ、入力 zip、入力コンソール、tex オプション、iinputworkingdirectory、inputzipdirectory、inputterminal、tex 変換
+lastmod: "2026-02-25"
+aliases: 
+- /cpp/typesetting-tex-input/
+- /cpp/creating-custom-tex-format/
 ---
 
 {{<section overview>}}
 
-I/O実装の正式な定義については、.NET **[API参照](https://reference.aspose.com/tex/net/aspose.tex.io/)の** Aspose.TeXを参照してください。
+**Aspose.TeX for .NET** の [API reference](https://reference.aspose.com/tex/net/aspose.tex.io/) を参照してください。
 
-## 入力ディレクトリの概念
+## The concept of the input directory
 
-Tex言語のI/O Primitivesはファイル名のみを扱うことができるため、**Aspose.TeX for .net**ディレクトリを名前とデータのバルクの間のマッピングとして定義します。データの大部分は、ファイル、ストリーム、配列などであるはずです。APIにより、入力および出力作業ディレクトリを個別に指定できます。一般的な[iinputworkingdirectory](https://reference.aspose.com/tex/net/aspose.tex.io/iinputworkingdirectory/)インターフェイスを提供します。これは、ユーザーが独自の目的で実装できる。また、独自の実装も提供します。これについては、以下で説明します。インターフェイスは[getFile()](https://reference.aspose.com/tex/net/aspose.tex.io/iinputworkingdirectory/getfile/)メソッドを定義します。これは、データストリームを返してファイルのフルネームを決定しますが、仮説的に異なる名前を最初の引数として使用します。実際、マッピングキーです。
+TeX 言語の I/O プリミティブはファイル名しか扱えないため、**Aspose.TeX for .NET** ではディレクトリを名前とデータのバルクのマッピングとして定義しています。データのバルクはファイル、ストリーム、配列、またはその他何でも構いません。API は入力作業ディレクトリと出力作業ディレクトリを個別に指定できるようにしています。一般的な [IInputWorkingDirectory](https://reference.aspose.com/tex/net/aspose.tex.io/iinputworkingdirectory/) インターフェイスが提供されており、ユーザーは独自に実装できます。また、以下で説明する独自実装も用意されています。このインターフェイスは [GetFile()](https://reference.aspose.com/tex/net/aspose.tex.io/iinputworkingdirectory/getfile/) メソッドを定義しており、データストリームを返し、最初の引数として仮想的に異なる名前（実際にはマッピングキー）を受け取ってファイルの完全名を決定します。
 
-### ディスクファイルシステムからファイル入力を取得します
+### Getting file input from the disk file system
 
-これが私たちがそれをする方法です：
+以下のように実装します。
 
 {{< gist "aspose-com-gists" "0fbd18cd8c28d5ed12e19cd52634ebd4" "Example-InputFileSystemDirectory.cs" >}}
 
-このユースケースは非常に簡単なので、もうそれに集中する必要はありません。
+この使用例は非常にシンプルなため、これ以上詳しく説明する必要はありません。
 
-### ZIPアーカイブからファイル入力を取得します
+### Getting file input from a ZIP archive
 
-また、入力ファイルをZIPアーカイブに配置して、入力ディレクトリと見なすこともできます。この場合、次のように進める必要があります。
+入力ファイルを ZIP アーカイブに格納し、入力ディレクトリとして扱うこともできます。その場合は次の手順で実装します。
 
 {{< gist "aspose-com-gists" "0fbd18cd8c28d5ed12e19cd52634ebd4" "Example-InputZipDirectory.cs" >}}
 
-最初に、zipファイルを含むストリームを作成します。次に、変換オプションを作成した後、[inputzipdirectory](https://reference.aspose.com/tex/net/aspose.tex.io/inputzipdirectory/)クラスのインスタンスになるように[inputWorkingDirectory](https://reference.aspose.com/tex/net/Aspose.TeX/texoptions/inputworkingdirectory/)オプションを設定します。コンストラクターの2番目の引数は、アーカイブ内のベースパスです。アーカイブ全体を入力ディレクトリにしたい場合は、空の文字列を渡す必要があります。 
+まず、ZIP ファイルを含むストリームを作成します。その後、変換オプションを作成し、[InputWorkingDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/inputworkingdirectory/) オプションに [InputZipDirectory](https://reference.aspose.com/tex/net/aspose.tex.io/inputzipdirectory/) クラスのインスタンスを設定します。コンストラクタの第 2 引数はアーカイブ内のベースパスです。アーカイブ全体を入力ディレクトリとして使用したい場合は空文字列を渡します。
 
-## 入力端子の概念
+## The concept of the input terminal
 
-さて、端子入力もあることを覚えておく時が来ました。これについては、**Aspose.TeX for .net**が一般[iinputterminal](https://reference.aspose.com/tex/net/aspose.tex.io/iinputterminal/)インターフェイスを定義します。実装を以下で説明します。
+次に、端末入力についても説明します。**Aspose.TeX for .NET** は、[IInputTerminal](https://reference.aspose.com/tex/net/aspose.tex.io/iinputterminal/) インターフェイスを定義しており、これは [TextReader](https://docs.microsoft.com/en-us/dotnet/api/system.io.textreader) 実装インスタンスを返す唯一のプロパティを持ちます。提供されている実装については以下で紹介します。
 
-### コンソールから端子入力を取得します
+### Getting terminal input from the console
 
-これを行うには、[inputConsoleterminal](https://reference.aspose.com/tex/net/aspose.tex.io/inputconsoleterminal/)クラスのインスタンスになるには、[Terminalin](https://reference.aspose.com/tex/net/Aspose.TeX/texoptions/terminalin/)オプションを設定する必要があります。
+これを行うには、[TerminalIn](https://reference.aspose.com/tex/net/aspose.tex/texoptions/terminalin/) オプションに [InputConsoleTerminal](https://reference.aspose.com/tex/net/aspose.tex.io/inputconsoleterminal/) クラスのインスタンスを設定します。
 
 {{< gist "aspose-com-gists" "0fbd18cd8c28d5ed12e19cd52634ebd4" "Example-InputConsoleTerminal.cs" >}}
 
+しかし実際には、このオプションのデフォルト値が同クラスのインスタンスであるため、明示的に指定する必要はほとんどありません。この事実と、他の実装が存在しないことから、この節はデモンストレーション目的に留めておきます。
 
-しかし、真実を伝えるために、これはオプションのデフォルト値であるため、指定する必要はありません。この事実のため、および他の実装がない限り、このセクションはデモンストレーションのみを提供します。
-
-理論的には、予測可能な動作を備えたインタラクティブなTEXファイル(またはスクリプト)がある場合、TEXエンジンの要求に応答するための補完的なスクリプトを含む入力端子のバージョンを実装することをお勧めします。時間があるときは手を試してみてください！
+理論的には、予測可能な動作を持つインタラクティブな TeX ファイル（またはスクリプト）を扱う場合、TeX エンジンのリクエストに応答する補助スクリプトを含む入力端末の実装を作成したくなるでしょう。時間があるときにぜひお試しください！

@@ -1,55 +1,57 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-title: 乳胶到XPS | .NET的Aspose.TeX
-linktitle: 乳胶到XPS
+title: LaTeX 转 XPS | .NET
+linktitle: LaTeX 转 XPS
 weight: 12
 url: /net/latex-to-xps/
-description: .NET的Aspose.Tex API解决方案的转换功能使LATEX文件转换为XPS格式。这是一些代码示例。
-lastmod: "2025-06-10"
+aliases: /net/other-target-formats/
+description: Aspose.TeX API 解决方案的 .NET 转换功能可以将 LaTeX 文件转换为 XPS 格式。以下是一些代码示例。
+keywords: latex 转 xps, aspose tex, .net 转换, xps 格式, tex 转 xps, 文档转换, aspose page, xpsdevice, xpssaveoptions, c# 示例
+lastmod: "2026-02-25"
 ---
 
 {{<section overview>}}
 
 
-另一种目标格式是[**xps**](https://en.wikipedia.org/wiki/Open_XML_Paper_Specification)。一个**xps**文件实际上是一个ZIP软件包，其中包含文档的分页内容，以及特定查看者(例如Windows XPS查看器)和打印所需的元数据。软件包中的所有数据均由文件表示。其中一些是二进制的，并且包含图像，字体和ICC配置文件等资源。其他是各种特定模式中的XML文件。后者包括包含文档数据本身的文件。文档数据由一组文件组成 - 每个文件都包含文档单个页面的数据。此类文件由单个页面元素和子元素树组成 -  *canvas*， *path* 和 *glyphs*。 *canvas*是一个分组元素，可以包含其他*帆布*，*路径*和*glyphs*。它可以控制所有子元素作为一个小组的外观。 *路径*元素用于定义向量图形路径。 *字形 *元素用于定义文本内容。这三个元素均具有定义外观各个方面的属性。
+另一个目标格式是[**XPS**](https://en.wikipedia.org/wiki/Open_XML_Paper_Specification)。**XPS** 文件实际上是一个 ZIP 包，包含文档的分页内容以及特定查看器（例如 Windows XPS Viewer）正确显示和打印所需的元数据。包中的所有数据都以文件形式表示。其中一些是二进制文件，包含图像、字体和 ICC 配置文件等资源。其他则是采用各种特定模式的 XML 文件。后者包括包含文档数据本身的文件。文档数据由一组文件组成——每个文件包含文档中单独页面的数据。此类文件由单个页面元素和子元素树组成——*Canvas*、*Path* 和 *Glyphs*。*Canvas* 是一种分组元素，能够容纳其他 *Canvas*、*Path* 和 *Glyphs*，用于统一控制所有子元素的外观。*Path* 元素用于定义矢量图形路径。*Glyphs* 元素用于定义文本内容。这三种元素都有属性，用于定义外观的各种方面。
 
-有[**aspose.page**](https://products.aspose.com/page/)库，该库提供了用于操纵XPS文档的API，并将其转换为PDF和栅格图像格式。
+有[**Aspose.Page**](https://products.aspose.com/page/) 库提供了操作 XPS 文档的 API，并且可以将它们转换为 PDF 和光栅图像格式。
 
-## 如何将乳胶转换为XPS
+## 如何将 LaTeX 转换为 XPS
 
-乳胶到XPS转换与[转换为栅格图像格式](/tex/{{lang.url-fragment}}net/latex-to-image/)一样简单，只是必须将[saveOptions](https://reference.aspose.com/tex/net/aspose.tex/texoptions/saveoptions/)设置为[XPSSaveOptions](https://reference.aspose.com/tex/net/aspose.tex.presentation.xps/xpssaveoptions/)类实例(默认情况下或明确)，并且必须将设备更改为[XPSDEVICE](https://reference.aspose.com/tex/net/aspose.tex.presentation.xps/xpsdevice/)class的实例。
+LaTeX 到 XPS 的转换和[转换为光栅图像格式](/tex/{{lang.url-fragment}}net/latex-to-image/)一样简单，只是必须将 [SaveOptions](https://reference.aspose.com/tex/net/aspose.tex/texoptions/saveoptions/) 设置为 [XpsSaveOptions](https://reference.aspose.com/tex/net/aspose.tex.presentation.xps/xpssaveoptions/) 类实例（默认或显式），并且必须将设备更改为 [XpsDevice](https://reference.aspose.com/tex/net/aspose.tex.presentation.xps/xpsdevice/) 类的实例。
 
-**最简单的转换示例**
+**最简转换示例**
 
-以下示例展示了如何通过几个步骤将 LaTeX 文件转换为 XPS：
+下面的示例演示了如何在几步操作中将 LaTeX 文件转换为 XPS：
 
-1. 创建一个 `TexDocument` 实例。
-2. 使用 `TexDocument.Load` 加载源 `.tex` 文件。
-3. （可选）配置 `XpsSaveOptions`，例如压缩设置。
-4. 通过使用 `XpsDevice` 调用 `document.Save` 将文档保存为 XPS。
+1. 创建 `TexDocument` 实例。  
+2. 使用 `TexDocument.Load` 加载源 `.tex` 文件。  
+3. （可选）配置 `XpsSaveOptions`，例如压缩设置。  
+4. 通过调用 `document.Save` 并传入 `XpsDevice` 将文档保存为 XPS。
 
-此代码演示了从 LaTeX 生成 XPS 文件的最直接方法。
+此代码展示了从 LaTeX 生成 XPS 文件的最直接方式。
 
 {{< gist "aspose-com-gists" "1d10927e18d23e49096c91ce726e9d6f" "Example-ConvertLaTeXToXPS-Simplest.cs" >}}
 
-### 编写主输出XPS文件的另一种方法
+### 以另一种方式写入主输出 XPS 文件
 
-[XPSDevice](https://reference.aspose.com/tex/net/aspose.tex.presentation.xps/xpsdevice/xpsdevice/)类的另一个构造函数使我们可以以替代方式获取所得的XPS文件。
+还有一种 [XpsDevice](https://reference.aspose.com/tex/net/aspose.tex.presentation.xps/xpsdevice/xpsdevice/) 类的构造函数，可让我们以另一种方式获取生成的 XPS 文件。
 
-**其他转换示例**
+**备用转换示例**
 
-此代码片段演示了如何使用接受 `Stream` 参数的 `XpsDevice` 构造函数。步骤如下：
+此代码片段演示了使用接受 `Stream` 的 `XpsDevice` 构造函数。步骤如下：
 
-1. 创建一个 `TexDocument` 并加载 LaTeX 源文件。
-2. 创建一个 `MemoryStream` 来保存 XPS 输出。
-3. 使用流实例化 `XpsDevice`。
-4. 将文档保存到设备，然后即可使用流（例如，通过网络发送或存储在数据库中）。
+1. 创建 `TexDocument` 并加载 LaTeX 源。  
+2. 创建 `MemoryStream` 用于保存 XPS 输出。  
+3. 使用该流实例化 `XpsDevice`。  
+4. 将文档保存到设备，然后可以使用该流（例如，发送到网络或存储到数据库）。
 
-当您需要将 XPS 数据保存在内存中而不是作为磁盘上的文件时，此方法非常有用。
+当需要将 XPS 数据保存在内存中而非磁盘文件时，这种方式非常有用。
 
 {{< gist "aspose-com-gists" "1d10927e18d23e49096c91ce726e9d6f" "Example-ConvertLaTeXToXPS-Alternative.cs" >}}
 
-效果与我们得到[这里](/tex/{{lang.url-fragment}}net/latex-to-pdf/#an-alternative-way-to-write-main-output-pdf-file)相同。
+效果与我们在[此处](/tex/{{lang.url-fragment}}net/latex-to-pdf/#an-alternative-way-to-write-main-output-pdf-file)得到的相同。
 
-**您还可以根据[Aspose.TeX for .NET api](https://products.aspose.com/tex/net/)构建的免费乳胶转换[Web App](https://products.aspose.app/tex/conversion/latex-to-xps)。**
+**您也可以尝试基于 [Aspose.TeX for .NET API](https://products.aspose.com/tex/net/) 构建的免费 LaTeX 转 XPS 转换[网页应用](https://products.aspose.app/tex/conversion/latex-to-xps)。**

@@ -1,69 +1,68 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-title: ラテックスフィギュアレンダリング| .NET
-linktitle: ラテックスには図が含まれています
+title: LaTeX 図レンダリング | Aspose.TeX for .NET
+linktitle: LaTeX 図の追加
 weight: 20
 url: /net/latex-figure-rendering/
-description: .NETラテックスフラグメント(図)レンダリング用のAspose.TeX APIソリューションについては、この記事で説明します。機能の使用方法に関するコードの例を学びます。
-keywords: ラテックスフィギュア、フィギュアサイズのラテックス、ラテックス画像、ラテックス画像、ラテックスにはフィギュア、ラテックス写真、ラテックスフィギュアオプションが含まれます
-lastmod: "2025-06-09"
+description: この記事では、.NET LaTeX フラグメント（図）レンダリングのための Aspose.TeX API ソリューションについて説明します。コード例を用いて、この機能の使用方法をご確認ください。
+keywords: LaTeX 図、LaTeX 図サイズ、LaTeX 画像、LaTeX 画像、LaTeX include figure、LaTeX 画像、LaTeX 図オプション
+lastmod: "2026-02-25"
 ---
 
 {{<section overview>}}
 
 
-ページレイアウトに接続せずに、個別にレンダリングされたピース、または *"figure"*として、LaTexファイルからコンテンツを抽出する場合があります。たとえば、インターネット上での出版物のイラストになる可能性があります。 APIで行うことができます。ターゲット形式については、PNGとSVGの2つのオプションがあります。ラテックス数学式レンダリング機能の場合と同様です。また、**ラテックスフィギュアレンダリング**は[ラテックス数学式レンダリング](/tex/{{lang.url-fragment}}net/latex-math-formula-rendering/)の一般化であることも注目に値します。
+時々、LaTeX ファイルからコンテンツを抽出して、ページレイアウトとは無関係に別々にレンダリングされた *「図」* として扱いたいことがあります。たとえば、インターネット上の出版物のイラストにすることができます。これを当社の API で実現できます。対象フォーマットは PNG と SVG の 2 つがあります。LaTeX 数式レンダリング機能と同様です。また、**LaTeX 図のレンダリング**は [LaTeX 数式レンダリング](/tex/{{lang.url-fragment}}net/latex-math-formula-rendering/) の一般化であることにも留意してください。
 
-## ラテックスフィギュアをPNGにレンダリングする方法
+## LaTeX 図を PNG にレンダリングする方法
 
-このトピックに関連するAPI参照セクションは[ここ](https://reference.aspose.com/tex/net/aspose.tex.features/)です。また、式レンダリングと同様に、例から始めます。ここにあります：
+このトピックに関する API リファレンスセクションは [こちら](https://reference.aspose.com/tex/net/aspose.tex.features/) です。数式レンダリングと同様に、例から始めます。以下が例です：
 
 {{< gist "aspose-com-gists" "79be6a0d7a31aa5deb213ba4ca81cb1b" "Example-RenderFigureToPNG.cs" >}}
 
-まず、[LaTexフィギュアオプション](https://reference.aspose.com/tex/net/aspose.tex.features/figurerendereroptions/)インスタンスを作成します。ここでは、出力画像解像度を同時に指定します。
+まず、[LaTeX 図オプション](https://reference.aspose.com/tex/net/aspose.tex.features/figurerendereroptions/) のインスタンスを作成します。ここで出力画像の解像度も同時に指定します。
 
-次に、前文を指定します。ラテックスフィギュアレンダリングにはデフォルトのプリアンブルはありません。たとえば、 `pict2e`ラテックスパッケージを使用してプロットされたグラフィックをレンダリングする場合は、preambleで指定する必要があります。
-
+次に、プレアンブルを指定します。LaTeX 図のレンダリングにはデフォルトのプレアンブルがないため、たとえば `pict2e` LaTeX パッケージを使用して描画したグラフィックをレンダリングする場合は、プレアンブルで指定する必要があります：
 
 ```tex
 \usepackage{pict2e}
 ```
 
-次に、レンダラーに出力を300％スケーリングするよう指示します。
+次に、レンダラに出力を 300% に拡大するよう指示します。
 
-次のオプションは、背景色を定義します。数学の式レンダリングとは異なり、色は完全にラテックスコードの制御下にあると仮定するため、前景の色を指定しません。実際、背景色もそうですので、これは単なる便利なオプションです。
+次のオプションは背景色を定義します。数式レンダリングとは異なり、前景色は指定しません。なぜなら、色はすべて LaTeX コード側で制御されていると想定しているからです。実際、背景色も同様で、これは単なる便利なオプションです。
 
-例の次の行はあまり意味がありません。ログ出力をストリームに向けることができることを示しています。
+例の次の行はあまり意味がありません。単にログ出力をストリームに向けることができることを示しています。
 
-また、最後のオプション「showterminal」を使用すると、ターミナル出力の書き込みをコンソールに切り替えることができます。
+そして最後のオプション `ShowTerminal` は、ターミナル出力をコンソールに書き込むかどうかを切り替えることができます。
 
-実際にレンダリングを実行する方法は[figurerenderer.render()](https://reference.aspose.com/tex/net/aspose.tex.features/figurerenderer/render/)です。フィギュアのサイズをポイントで返します。
+実際にレンダリングを行うメソッドは [FigureRenderer.Render()](https://reference.aspose.com/tex/net/aspose.tex.features/figurerenderer/render/) です。これは図のサイズをポイント単位で返します。
 
-画像が記述されるストリームは、2番目の引数としてメソッドによって受け入れられます。次にストリームを作成します。
+画像を書き込むストリームはメソッドの第2引数として受け取ります。次にストリームを作成します。
 
-そして最後に、 `figurerenderer.render()`メソッド自体を3番目の引数として渡すオプションを呼び出します。図のラテックスコードは、最初の引数として渡されます。
+最後に、`FigureRenderer.Render()` メソッド自体を呼び出し、オプションを第3引数として渡します。図の LaTeX コードは第1引数として渡されます。
 
-この例の最後の行には、図のレンダリングの2つのアーティファクトが印刷されています。図のサイズと簡単なエラーレポート(エラーがある場合)。
+例の最後の行は、図のレンダリング結果として 2 つの情報—図のサイズと簡易エラーレポート（エラーがある場合）—を出力します。
 
-レンダリングの結果です。
+以下はレンダリング結果です。
 
-<a href="/tex/net/latex-figure-rendering/text-and-formula.png">![ラテックスフィギュアはPNGにレンダリングします](/tex/images/net/text-and-formula.png)</a>
+<a href="/tex/net/latex-figure-rendering/text-and-formula.png">![LaTeX Figure rendering to PNG](/tex/images/net/text-and-formula.png)</a>
 
-これは、**LaTexフィギュアレンダリング**機能の最も一般的なユースケースです。
+これは **LaTeX 図のレンダリング** 機能の最も汎用的な使用例です。
 
-## ラテックスフィギュアをSVGにレンダリングする方法
+## LaTeX 図を SVG にレンダリングする方法
 
-ほぼ同じように、SVG形式でラテックスフィギュアをレンダリングできます。
+同様の方法で、LaTeX 図を SVG 形式でレンダリングできます。
 
 {{< gist "aspose-com-gists" "79be6a0d7a31aa5deb213ba4ca81cb1b" "Example-RenderFigureToSVG.cs" >}}
 
-違いは次のとおりです。
+相違点は次のとおりです：
 
-* [pngfigurerenderereroptions](https://reference.aspose.com/tex/net/aspose.tex.features/pngfigurerendereroptions/)の代わりに[svgfigurerenderereroptions](https://reference.aspose.com/tex/net/aspose.tex.features/svgfigurerendereroptions/)クラスを使用します。
-* 解決策は指定しません。
-* [pngfigurerenderer](https://reference.aspose.com/tex/net/aspose.tex.features/pngfigurerenderer/)の代わりに[svgfigurerenderer](https://reference.aspose.com/tex/net/aspose.tex.features/svgfigurerenderer/)クラスを使用します。
- 
-これが結果です：
+* 私たちは [SvgFigureRendererOptions](https://reference.aspose.com/tex/net/aspose.tex.features/svgfigurerendereroptions/) クラスを使用し、[PngFigureRendererOptions](https://reference.aspose.com/tex/net/aspose.tex.features/pngfigurerendereroptions/) の代わりに使用します。
+* 解像度は指定しません。
+* 私たちは [SvgFigureRenderer](https://reference.aspose.com/tex/net/aspose.tex.features/svgfigurerenderer/) クラスを使用し、[PngFigureRenderer](https://reference.aspose.com/tex/net/aspose.tex.features/pngfigurerenderer/) の代わりに使用します。
 
-<a href="/tex/net/latex-figure-rendering/text-and-formula.svg">![ラテックスフィギュアはSVGにレンダリングします](/tex/images/net/text-and-formula.svg)</a>
+結果は以下の通りです：
+
+<a href="/tex/net/latex-figure-rendering/text-and-formula.svg">![LaTeX Figure rendering to SVG](/tex/images/net/text-and-formula.svg)</a>

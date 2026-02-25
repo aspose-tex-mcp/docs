@@ -1,50 +1,47 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-title: ラテックスファイルの修理| .NET
-linktitle: ラテックスファイルの修理
+title: LaTeX ファイル修復 | Aspose.TeX for .NET
+linktitle: LaTeX ファイル修復
 weight: 30
 url: /net/latex-repair/
-description: .NETラテックス修復用のAspose.TeX APIソリューションについては、この記事で説明します。機能の使用方法に関するコードの例を学びます。
-lastmod: "2025-06-09"
+description: Aspose.TeX API の .NET 用 LaTeX 修復ソリューションについて説明しています。機能の使用方法を示すコード例をご覧ください。
+lastmod: "2026-02-25"
 ---
 
 {{<section overview>}}
 
-## ラテックスファイルを確認して修復する方法
+## LaTeX ファイルのチェックと修復方法
 
-ラテックスファイルであると思われるテキストファイルがあり、それがタイプセットになりたいが、それが実際にラテックスファイルであるかどうかはわかりません(おそらくあなたはラテックスの世界に新しくなっています)。次の例では、.NET例プロジェクトのAspose.TeXから、サンプルファイル「Invalid-Latex.tex」を確認して修復します。
+テキストファイルが LaTeX ファイルだと思われ、組版したいが本当に LaTeX ファイルか確信が持てない（LaTeX の世界に不慣れな場合など）場合は、Aspose.TeX API for .NET が提供する LaTeX のチェックと修復機能を試すことができます。以下の例では、Aspose.TeX for .NET のサンプルプロジェクトに含まれる `invalid-latex.tex` というサンプルファイルをチェックし、修復します。
 
-まず第一に、サンプルファイルはTex構文を使用しているように見えますが、LaTexに必要な構造がないことに言及する価値があります。ご存知かもしれませんが、ラテックスファイルには、`documentClass`コマンドと「Document」環境内のボディ、つまり `\begin{document}`と `\end{document}`の間にボディから始まる前文が必要です。
+まず最初に、サンプルファイルは TeX 構文を使用しているように見えても、LaTeX が要求する構造を持っていないことを指摘しておきます。ご存知のとおり、LaTeX ファイルは `\documentclass` コマンドで始まるプレアンブルと、`document` 環境内の本文（`\begin{document}` と `\end{document}` の間）を持つ必要があります。
 
-次に、C＃コードサンプルを見てみましょう。
+それでは C# のコードサンプルを見てみましょう。
 
 {{< gist "aspose-com-gists" "7f54d335270200ebf5987d071bad028a" "Examples_LaTeXRepairerExample" >}}
 
-通常のTexの仕事と同様に、最初に実行しようとしているプロセスのオプションを含むオブジェクトを作成します。それらのほとんどは、通常のTexジョブのオプションと同じです。実際、[inputworkingDirectory](https://reference.aspose.com/tex/net/aspose.tex.features/latexrepaireroptions/inputworkingdirectory/)は、入力ファイルを読み取るスペースです。ファイルシステムのメイン入力ファイルへのフルパスを提供し、メイン入力ファイルにカスタムファイルが含まれていないため、ここでは使用しません。次に、[outputWorkingDirectory](https://reference.aspose.com/tex/net/aspose.tex.features/latexrepaireroptions/outputworkingdirectory/)は、出力ファイルを書き込む必要があるスペースです。 [rebulyinputDirectory](https://reference.aspose.com/tex/net/aspose.tex.features/latexrepaireroptions/requiredinputdirectory/)が割り当てられた場合、Aspose.TeXライブラリに埋め込まれていないラテックスパッケージを保存できるスペースを指します。 [推測PackageCallback](https://reference.aspose.com/tex/net/aspose.tex.features/latexrepaireroptions/guesspackagecallback/)プロパティについては後で説明します。
+通常の TeX ジョブと同様に、まずは実行したいプロセスのオプションを含むオブジェクトを作成します。ほとんどのオプションは通常の TeX ジョブの場合と同じです。たとえば、[InputWorkingDirectory](https://reference.aspose.com/tex/net/aspose.tex.features/latexrepaireroptions/inputworkingdirectory/) は入力ファイルを読み取るべき場所を示します。ここでは、ファイルシステム上のメイン入力ファイルへのフルパスを指定しているため使用しません。また、[OutputWorkingDirectory](https://reference.aspose.com/tex/net/aspose.tex.features/latexrepaireroptions/outputworkingdirectory/) は出力ファイルを書き込む場所です。[RequiredInputDirectory](https://reference.aspose.com/tex/net/aspose.tex.features/latexrepaireroptions/requiredinputdirectory/) を設定すると、Aspose.TeX ライブラリに組み込まれていない LaTeX パッケージを保存できる場所を指します。[GuessPackageCallback](https://reference.aspose.com/tex/net/aspose.tex.features/latexrepaireroptions/guesspackagecallback/) プロパティについては後述します。
 
-オプションを割り当てた後、プロセスを実行するだけです！
+オプションを設定したら、単にプロセスを実行するだけです！
 
-それで、チェックと修復のプロセスはどのようなものですか？まず、APIは入力ファイルを検索して`documentClass`の発生を検索します。失敗した場合、 `\ documentclass {article}`をファイルの最初に挿入する必要があると想定しています。この事実は、修理レポートファイル( `.log`)に反映されています。
+では、チェックと修復のプロセスはどのように行われるのでしょうか。まず API は入力ファイル内に `\documentclass` があるか検索します。見つからなければ、ファイルの先頭に `\documentclass{article}` を挿入したとみなします。この事実は修復レポートファイル（`.log`）に記録されます。
 
-次に、最初から調整された入力ファイルのスキャンを開始します。ラテックス形式で充電されたTEXエンジンは、ある時点でエラーを投げる可能性があり、「{document} `がこれまでに発見されていないことを示していますが、すでに発生するはずです。したがって、「{document}」を挿入する必要がある位置が定義され、レポートに反映されます。
+次に、調整された入力ファイルの先頭からスキャンを開始します。LaTeX 形式で動作する TeX エンジンは、途中で `\begin{document}` が見つからないことを示すエラーを出すことがあります。その場合、`\begin{document}` を挿入すべき位置が決定され、レポートに反映されます。
 
-エンジンがファイルをさらにスキャンすると、未定義のコマンドまたは環境が見つかる場合があります。 APIは、最も一般的なコマンドと環境の一部について、[埋め込まれた必須パッケージ](/tex/{{lang.url-fragment}}net/embedded-packages/)(これらのパッケージが含まれるまで定義されていないコマンドと環境を定義するもの)で仮定を作成できます。ただし、[iguesspackagecallback](https://reference.aspose.com/tex/net/aspose.tex.features/iguesspackagecallback/)インターフェイスを実装することにより、そのような仮定を外部から行う方法があります。このようなクラスのインスタンスは、「buesspackagecallback」オプションに割り当てる必要があります。
+エンジンがファイルをさらに走査すると、未定義のコマンドや環境が見つかることがあります。API は、最も一般的なコマンドや環境に対して、[埋め込み必須パッケージ](/tex/{{lang.url-fragment}}net/embedded-packages/)（これらのコマンドや環境を定義するパッケージ）を推測できます。ただし、外部から `IGuessPackageCallback` インターフェイスを実装してその推測ロジックを提供することも可能です。`GuessPackageCallback` オプションにそのクラスのインスタンスを割り当てます。
 
-`fancehdr`パッケージに`\ head`コマンドをマップするだけの非常に簡単な例があります。
-
+以下は、`\head` コマンドを `fancyhdr` パッケージにマッピングする非常にシンプルな例です。
 
 {{< gist "aspose-com-gists" "7f54d335270200ebf5987d071bad028a" "Examples_PackageGuessingCallback" >}}
 
+サンプルファイルの場合、エンジンは最初に `\chapter` コマンドに遭遇します。これは `article` クラスには定義されていませんが、`book` クラスには定義されています。したがって API は文書クラスを `\documentclass{book}` に変更します。続いてエンジンは `\lhead` コマンドを見つけ、プレアンブルに `\usepackage{fancyhdr}` を挿入すべきと判断します。後に出現する `\href` と `\includegraphics` コマンドに対しては、プレアンブルにそれぞれ `\usepackage{hyperref}` と `\usepackage{graphics}` を挿入します。これらの判断は API の内部マッピングに基づいており、すべての修正はレポートファイルに記録されます。
 
-サンプルファイルに関しては、エンジンは最初に`\ Chapter`コマンドに遭遇します。これは、「記事」ドキュメントクラスで定義されていないが、`Book`ドキュメントクラスで定義されています。 APIはドキュメントクラスを調整して、固定ファイルの最終バージョンが「\ documentClass {book}」で始まるようになります。次に、エンジンは前述の`\ lhead`コマンドを見つけ、 `\ usepackage {fancyhdr}`をプリアンブルに挿入する必要があると判断します。後で発生する`\ href`および `\ increctgraphics`コマンドは、修理業者を挿入するようにします。これらの決定は、APIの内部マッピングに基づいています。繰り返しますが、そのような修正はすべてレポートファイルに記録されます。
+最後に、LaTeX 文書の通常の終了が欠落しているためエンジンは異常終了します。このため Repairer はファイルの末尾に `\end{document}` を追加し、レポートにその事実を反映させます。
 
-最後に、ラテックスドキュメントの通常の終了が欠落しているため、エンジンは異常に終了します。これにより、修理業者は`\end{document}`をファイルの最後に追加し、レポートにこの事実を反映させます。
+修正された元ファイルが生成されたら、Repairer は最終チェックのためにそのファイルで再度 TeX ジョブを実行します。この例では、致命的なエラーは見つからず、修正後のファイルはほぼ期待通りに組版できます。
 
-元のファイルの固定バージョンが構築されると、修理業者は最終チェックのためにTEXジョブを実行します。この例では、この実行には重要なエラーが見つかりません。そのため、固定バージョンは予想通りに多かれ少なかれタイプセットされる可能性があります。
-
-これが完全なレポートです：
-
+以下は完全なレポートです。
 
 ```
 Trying to repair the original file...
@@ -82,4 +79,4 @@ Checking the repaired file...
 There are no critical errors in the fixed file.
 ```
 
-**無料[** ai latex Repairer **](https://products.aspose.ai/tex/latex-repairer)Webアプリもチェックしてください。これは、[.NET APIのAspose.TeX]内に実装された機能に基づいて構築され、「Iguesspackagecalback」インターフェースのより高度な実装を伴います。
+**無料の **[**AI LaTeX Repairer**](https://products.aspose.ai/tex/latex-repairer)** ウェブアプリもぜひお試しください。このアプリは [Aspose.TeX for .NET API](https://products.aspose.com/tex/net/) の機能を基に構築されており、`IGuessPackageCallback` インターフェイスの高度な実装を取り入れています。**
