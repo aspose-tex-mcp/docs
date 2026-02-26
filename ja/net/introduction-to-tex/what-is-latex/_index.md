@@ -1,33 +1,32 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-title: ラテックスとは何ですか？ 
-linktitle: ラテックスとは何ですか？
+title: LaTeXとは何ですか？
+linktitle: LaTeXとは何ですか？
 weight: 16
 url: /net/what-is-latex/
-keywords: ラテックスとは、ラテックスそれは何ですか
-description: 「ラテックスとは？」という質問に答えるために最も印象的な機能の1つは、新しいフォント選択スキーム(NFSS)であることに言及する価値があります。
-lastmod: "2025-06-09"
+keywords: LaTeXとは何か, LaTeXとは, LaTeXについて
+description: 「LaTeXとは何か？」という質問に答えるには、その最も印象的な機能のひとつである New Font Selection Scheme (NFSS) に言及する価値があります。
+lastmod: "2026-02-26"
 ---
 
 {{<section overview>}}
 
-それで、ラテックスとは何ですか？
+では、LaTeXとは何でしょうか？
 
-ラテックスは、要するに[Tex](/tex/{{lang.url-fragment}}net/what-is-tex/)形式です。
+LaTeXは[TeX](/tex/{{lang.url-fragment}}net/what-is-tex/)フォーマットです、要するに。
 
-LaTeX（*LAH-tekh または LAY-tekh*、しばしばLATEXと表記されます）は、文書作成用のソフトウェアシステムで、1980年代初頭に<a href="https://en.wikipedia.org/wiki/SRI_International" target=_blank rel="nofollow">SRI International</a>の<a href="https://en.wikipedia.org/wiki/Leslie_Lamport" target=_blank rel="nofollow">Leslie Lamport</a>によって開発されました。これは<a href="https://en.wikipedia.org/wiki/LaTeX" target=_blank rel="nofollow">Wikipedia</a>で説明されている内容です。
+LaTeX（*LAH‑tek または LAY‑tek*、しばしば LATEX と表記されます）は、1980年代初頭に <a href="https://en.wikipedia.org/wiki/Leslie_Lamport" target=_blank rel="nofollow">Leslie Lamport</a> が <a href="https://en.wikipedia.org/wiki/SRI_International" target=_blank rel="nofollow">SRI International</a> で作成した文書作成用ソフトウェアシステムです。これは <a href="https://en.wikipedia.org/wiki/LaTeX" target=_blank rel="nofollow">Wikipedia</a> が説明している内容です。
 
-「ラテックスとは？」という質問に答えるその機能のいくつかについて言及したいと思います。
+「LaTeXとは何か？」という質問に答えるにあたり、まずその特徴のいくつかを挙げておきます。
 
-ラテックスの最も印象的な機能の1つは、新しいフォント選択スキーム(NFSS)です。これは、元のTexで機能したため、新しいフォント全体を定義するのではなく、現在のフォントの個々のプロパティを変更できるマクロサブシステムです(プレーンテックスもこれにはあまり提供しませんでした)。たとえば、コンピューターモダンローマイタリックである現在のフォントがあり、別のフォントファイルにある物理的な同じタイプの太字に切り替えたいと考えています。元のTexでは、フォントファイル名にマッピングされたシーケンスを制御する必要があるため、切り替えるには別のコマンドを呼び出すだけです。しかし、価格はあまりにも多くの制御シーケンスです。ラテックスでは、エンジンに書体を変更するように依頼する必要があります。適切な現在のフォントを選択します。
+LaTeXの最も印象的な機能のひとつは New Font Selection Scheme (NFSS) です。これはマクロサブシステムで、現在のフォントの個々の属性を変更できるようにします。従来の TeX では新しいフォント全体を定義する必要があり（Plain TeX でも同様でした）、たとえば現在のフォントが Computer Modern Roman のイタリック体で、同じ種類の太字フォントが別のフォントファイルに存在する場合、元の TeX ではフォントファイル名に対応する制御シーケンスを呼び出す必要がありました。価格は制御シーケンスが多数必要になることです。LaTeX ではエンジンにフォントの切り替えを指示するだけで済み、適切なフォントが自動的に選択されます。
 
-別の機能は、いわゆるドキュメントクラスの多数です。これらは、本、記事、文字、その他など、特定のドキュメントタイプに対応するTEXの内部パラメーターの値を含む補助入力ファイルです。
+別の特徴として、いわゆる文書クラスがあります。これは特定の文書タイプ（書籍、記事、レターなど）に対応した TeX の内部パラメータの値を含む補助入力ファイルです。
 
-ラテックスには、ドキュメント著者にとって便利なさまざまな機能のサポートも含まれています。これらの機能は通常、パッケージと呼ばれる補助入力ファイルで収集されます。パッケージでは、数学タイプセット、グラフィックの描画、ラテックス分布の一部ではないフォントのサポートなどの高度なツールを見つけることができます。2D化学式の描画でも。
+LaTeX には、文書執筆者にとって便利なさまざまな機能がパッケージという形で提供されています。これらのパッケージには、数式組版、グラフィック描画、配布に含まれないフォントのサポートなどの高度なツールが含まれます。2D 化学構造式の描画にも対応しています。
 
-これが比較的小さな例です：
-
+以下は比較的小規模な例です。
 
 ```tex
 \documentclass[]{article}
@@ -61,7 +60,7 @@ LaTeX（*LAH-tekh または LAY-tekh*、しばしばLATEXと表記されます�
 \maketitle
 \begin{abstract}
 
-このドキュメントは、お好みの \LaTeX コンパイラを使用してコンパイルされたファイル ``sample.tex'' の出力を表しています。このファイルは、 ``.tex'' ファイルの基本構造を示す良い例となるだけでなく、数学記号や数式を含むドキュメントの組版に必要な基本的なコマンドの多くも網羅しています。各コマンドの動作に関する詳しい説明については、コースのウェブページにあるリンクを参照してください。
+このドキュメントは、`sample.tex`ファイルをお好みの\LaTeX コンパイラでコンパイルした出力です。このファイルは、`.tex`ファイルの基本構造を示す良い例となるだけでなく、数学記号や数式を含む文書の組版に必要な基本的なコマンドの多くも網羅しています。各コマンドの動作に関する詳しい説明については、コースのウェブページにあるリンクをご覧ください。
 
 \end{abstract}
 \section{Lists}
@@ -83,7 +82,7 @@ LaTeX（*LAH-tekh または LAY-tekh*、しばしばLATEXと表記されます�
 \subsection{Binomial Theorem}
 \begin{theorem}[Binomial Theorem]
 For any nonnegative integer $n$, we have
-$$(1+x)^n = \sum_{i=0}^n {n \choose i} x^i$$
+$(1+x)^n = \sum_{i=0}^n {n \choose i} x^i$
 \end{theorem}
 \subsection{Taylor Series}
 The Taylor series expansion for the function $e^x$ is given by
@@ -93,7 +92,7 @@ e^x = 1 + x + \frac{x^2}{2} + \frac{x^3}{6} + \cdots = \sum_{n\geq 0} \frac{x^n}
 \subsection{Sets}
 \begin{theorem}
 For any sets $A$, $B$ and $C$, we have
-$$ (A\cup B)-(C-A) = A \cup (B-C)$$
+$ (A\cup B)-(C-A) = A \cup (B-C)$
 \end{theorem}
 \begin{proof}
 \begin{eqnarray*}
@@ -121,7 +120,7 @@ left justified & center & right justified \\ \hline
 \setlength{\unitlength}{1pt}
 \put(20,70){\circle{30}}  \put(20,70){\circle*{10}}   % left eye
 \put(80,70){\circle{30}}  \put(80,70){\circle*{10}}   % right eye
-\put(40,40){\line(1,2){10}} \put(60,40){\line(-1,2){10}} \put(40,40){\line(1,0){20}} % nose
+\put(40,40){\line(1,2){10}} \put(60,40){\line(-1,2){10}} \put(40,0){\line(1,0){20}} % nose
 \put(50,20){\oval(80,10)[b]} % mouth
 \multiput(0,90)(4,0){10}{\line(1,3){4}}  % left eyebrow
 \multiput(100,90)(-4,0){10}{\line(-1,3){4}}  % right eyebrow
@@ -130,12 +129,12 @@ left justified & center & right justified \\ \hline
 \end{document}
 ```
 
-そして、ここに出力の2ページがあります：
+そして、以下の2ページの出力例です:
 
-<a href="/tex/net/what-is-latex/example-page-1.png" style="display:inline-block;width:49%;" aria-label="Example Page 1">![例1](/tex/images/net/tutorial/example-page-1.png)</a>
-<a href="/tex/net/what-is-latex/example-page-2.png" style="display:inline-block;width:49%;" aria-label="Example Page 2">![例2](/tex/images/net/tutorial/example-page-2.png)</a>
+<a href="/tex/net/what-is-latex/example-page-1.png" style="display:inline-block;width:49%;" aria-label="Example Page 1">![Example Page 1](/tex/images/net/tutorial/example-page-1.png)</a>
+<a href="/tex/net/what-is-latex/example-page-2.png" style="display:inline-block;width:49%;" aria-label="Example Page 2">![Example Page 2](/tex/images/net/tutorial/example-page-2.png)</a>
 
 
-当然のことながら、「ラテックスとは何ですか？」という質問に対する完全な答えがあるふりをしていません。これは非常に多くの情報だからです。 LaTexファイルは引き続きプログラミングされているため、それをよく知りたい場合は、時間を費やす必要があります。あなたはそれが欲しいかどうか。
+当然ながら「LaTeXとは何か？」という質問に対して完全な答えを用意できるわけではありません。情報量が多く、LaTeX ファイルを書くことはプログラミングに近い作業ですので、習熟するにはある程度の時間が必要です。必要かどうかはご自身で判断してください。
 
-**[.NET APIのAspose.TeX](https://products.aspose.com/tex/net/)に基づいて構築された無料の[Webアプリ](https://products.aspose.app/tex/conversion/latex/)をチェックアウトすることもできます。**
+**また、[Aspose.TeX for .NET API](https://products.aspose.com/tex/net/) を基に構築された無料の[ウェブアプリ](https://products.aspose.app/tex/conversion/latex/)もご確認ください。**

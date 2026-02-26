@@ -1,33 +1,32 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-title: 什么是乳胶？
-linktitle: 什么是乳胶？
+title: LaTeX 是什么？
+linktitle: LaTeX 是什么？
 weight: 16
 url: /net/what-is-latex/
-keywords: 什么是乳胶，乳胶是什么
-description: 要回答“什么是乳胶？”值得一提的是，其最令人印象深刻的功能之一是新的字体选择方案(NFSS)。
-lastmod: "2025-06-10"
+keywords: 什么是 latex, latex 是什么
+description: 要回答“什么是 LaTeX？”这个问题，值得一提的是其最令人印象深刻的特性之一是新字体选择方案（NFSS）。
+lastmod: "2026-02-26"
 ---
 
 {{<section overview>}}
 
-那么，什么是乳胶？
+所以，LaTeX 是什么？
 
-乳胶是[Tex](/tex/{{lang.url-fragment}}net/what-is-tex/)格式，简而言之。
+LaTeX 是 [TeX](/tex/{{lang.url-fragment}}net/what-is-tex/) 格式，简而言之。
 
-LaTeX（*LAH-tekh 或 LAY-tekh*，通常缩写为 LATEX）是一款用于文档准备的软件系统，最初由 <a href="https://en.wikipedia.org/wiki/Leslie_Lamport" target=_blank rel="nofollow">Leslie Lamport</a> 在 <a href="https://en.wikipedia.org/wiki/SRI_International" target=_blank rel="nofollow">SRI International</a> 于 20 世纪 80 年代初开发。<a href="https://en.wikipedia.org/wiki/LaTeX" target=_blank rel="nofollow">维基百科</a> 介绍了以下内容。
+LaTeX（*LAH-tekh 或 LAY-tekh*，通常写作 LATEX）是一个文档准备的软件系统，最初在 1980 年代初由 <a href="https://en.wikipedia.org/wiki/Leslie_Lamport" target=_blank rel="nofollow">Leslie Lamport</a> 在 <a href="https://en.wikipedia.org/wiki/SRI_International" target=_blank rel="nofollow">SRI International</a> 编写。这是 <a href="https://en.wikipedia.org/wiki/LaTeX" target=_blank rel="nofollow">Wikipedia</a> 所述。
 
-回答“什么是乳胶？”我们想提及它的一些功能。
+回答 “什么是 LaTeX？” 时，我们想提及它的一些特性。
 
-乳胶最令人印象深刻的功能之一是新的字体选择方案(NFSS)。这是宏观子系统，您可以更改当前字体的各个属性，而不是将新字体定义为整体，因为它在原始的Tex中起作用(Pline Tex也不为此提供太多)。例如，您具有当前的字体，该字体是计算机现代罗马斜体，并且要切换到与位于其他字体文件中的物理状态相同类型的粗体字体。在原始TEX中，您需要控制映射到字体文件名的序列，因此要切换，您只需要调用另一个命令即可。但是价格太多了。在乳胶中，您只需要要求引擎更改字体即可。它将为您选择适当的当前字体。
+LaTeX 最令人印象深刻的特性之一是新字体选择方案（NFSS）。它是一个宏子系统，允许您更改当前字体的单个属性，而不是像原始 TeX 那样一次性定义整套新字体（Plain TeX 对此也几乎没有提供）。例如，您当前使用的是 Computer Modern Roman 斜体，而想切换到同类型的粗体，而该粗体实际存放在另一个字体文件中。在原始 TeX 中，您需要控制映射到字体文件名的控制序列，因此只需调用另一个命令即可切换，但这会产生大量的控制序列。而在 LaTeX 中，您只需请求引擎更改字形，它会为您选择合适的当前字体。
 
-另一个功能是许多所谓的文档类。这些是辅助输入文件，其中包含与特定文档类型相对应的Tex内部参数的值，例如书，文章，信件或其他任何内容。
+另一个特性是一系列所谓的文档类。这些是辅助输入文件，包含对应特定文档类型（如书籍、文章、信件等）的 TeX 内部参数值。
 
-乳胶还包括对文档作者可能方便的各种功能的支持。这些功能通常集中在称为软件包的辅助输入文件中。在包装中，您可以找到用于数学排版，绘制图形的高级工具，对不属于乳胶分布的字体的支持等。
+LaTeX 还包括对各种可能对文档作者便利的特性的支持。这些特性通常收集在称为宏包的辅助输入文件中。在宏包中，您可以找到用于数学排版、绘图、支持不在 LaTeX 发行版中的字体等高级工具，甚至用于绘制二维化学式。
 
-这是相对较小的例子：
-
+下面是一个相对较小的示例：
 
 ```tex
 \documentclass[]{article}
@@ -61,7 +60,7 @@ LaTeX（*LAH-tekh 或 LAY-tekh*，通常缩写为 LATEX）是一款用于文档�
 \maketitle
 \begin{abstract}
 
-本文档是使用您常用的 \LaTeX 编译器编译“sample.tex”文件后的输出。该文件可以很好地展示“.tex”文件的基本结构，以及排版涉及数学符号和表达式的文档所需的许多最基本命令。有关每个命令工作原理的更多说明，请参阅我们课程网页上的链接。
+本文档展示了使用您常用的 LaTeX 编译器编译 `sample.tex` 文件后的输出结果。该文件可以很好地展示 `.tex` 文件的基本结构，以及排版包含数学符号和表达式的文档所需的许多基本命令。有关每个命令的详细说明，请参阅我们课程网页上的相关链接。
 
 \end{abstract}
 \section{Lists}
@@ -83,7 +82,7 @@ LaTeX（*LAH-tekh 或 LAY-tekh*，通常缩写为 LATEX）是一款用于文档�
 \subsection{Binomial Theorem}
 \begin{theorem}[Binomial Theorem]
 For any nonnegative integer $n$, we have
-$$(1+x)^n = \sum_{i=0}^n {n \choose i} x^i$$
+$(1+x)^n = \sum_{i=0}^n {n \choose i} x^i$
 \end{theorem}
 \subsection{Taylor Series}
 The Taylor series expansion for the function $e^x$ is given by
@@ -93,7 +92,7 @@ e^x = 1 + x + \frac{x^2}{2} + \frac{x^3}{6} + \cdots = \sum_{n\geq 0} \frac{x^n}
 \subsection{Sets}
 \begin{theorem}
 For any sets $A$, $B$ and $C$, we have
-$$ (A\cup B)-(C-A) = A \cup (B-C)$$
+$ (A\cup B)-(C-A) = A \cup (B-C)$
 \end{theorem}
 \begin{proof}
 \begin{eqnarray*}
@@ -130,12 +129,12 @@ left justified & center & right justified \\ \hline
 \end{document}
 ```
 
-这是输出的两页：
+以下是两页输出示例：
 
-<a href="/tex/net/what-is-latex/example-page-1.png" style="display:inline-block;width:49%;" aria-label="Example Page 1">![示例第1页](/tex/images/net/tutorial/example-page-1.png)</a>
-<a href="/tex/net/what-is-latex/example-page-2.png" style="display:inline-block;width:49%;" aria-label="Example Page 2">![示例第2页](/tex/images/net/tutorial/example-page-2.png)</a>
+<a href="/tex/net/what-is-latex/example-page-1.png" style="display:inline-block;width:49%;" aria-label="示例页面 1">![示例页面 1](/tex/images/net/tutorial/example-page-1.png)</a>
+<a href="/tex/net/what-is-latex/example-page-2.png" style="display:inline-block;width:49%;" aria-label="示例页面 2">![示例页面 2](/tex/images/net/tutorial/example-page-2.png)</a>
 
 
-自然，我们不会假装对“什么是乳胶？”这个问题有任何完整的答案，因为这是大量信息。由于编写乳胶文件仍在编程中，因此，如果您想更好地了解它，则必须花一些时间。你想要还是不想要。
+自然地，我们并不假装对 “什么是 LaTeX？” 这个问题有完整的答案，因为这涉及的信息量相当大。由于编写 LaTeX 文件仍然是一种编程活动，如果您想更好地熟悉它，需要花一些时间。您想不想了解都由您自行决定。
 
-**您还可以查看基于[Aspose.TeX for .NET api](https://products.aspose.com/tex/net/)的免费[Web App](https://products.aspose.app/tex/conversion/latex/)。**
+**您也可以查看基于 [Aspose.TeX for .NET API](https://products.aspose.com/tex/net/) 构建的免费 [Web 应用](https://products.aspose.app/tex/conversion/latex/)。**

@@ -1,29 +1,29 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-title: LaTeX テンプレート - クイックスタート ガイド
+title: LaTeX テンプレート - クイックスタートガイド
 linktitle: LaTeX テンプレート
 type: docs
 weight: 100
 url: /net/latex-templates/
-description: LaTeX テンプレートとは何か、その使用方法と作成方法、最も人気のあるテンプレートのダウンロード先、すぐにコピーできるスニペットを使用した高速ワークフローについて学びます。
-keywords: LaTeX、テンプレート、クラス、スタイル、オーバーリーフ、CTAN、参考文献、ビーマー、論文、履歴書
-lastmod: "2025-12-03"
+description: LaTeX テンプレートとは何か、使用方法と作成方法、人気のあるテンプレートのダウンロード先、すぐにコピーできるスニペットを使った高速ワークフローを学びましょう。
+keywords: LaTeX, テンプレート, クラス, スタイル, Overleaf, CTAN, 文献管理, Beamer, 論文, 履歴書
+lastmod: "2026-02-26"
 ---
 
 {{<section overview>}}
 
 # LaTeX テンプレートのガイド
 
-## LaTeXテンプレートとは何ですか?
+## LaTeX テンプレートとは？
 
-LaTeX テンプレートには、**クラス** (`.cls`)、**スタイル** (`.sty`)、サンプルの `.tex` ファイル、および特定の文書タイプ (雑誌記事、論文、履歴書、ポスター、スライド デッキなど) のレイアウト、タイポグラフィ、および構造を定義するサポート アセット (ロゴ、参考文献ファイルなど) がバンドルされています。
+LaTeX テンプレートは **class**（`.cls`）や **style**（`.sty`）に加えて、サンプル `.tex` ファイルやサポート資産（ロゴ、文献データベースなど）をまとめたもので、特定の文書タイプ（学術論文、卒業論文、履歴書、ポスター、スライドデッキ等）のレイアウト、タイポグラフィ、構造を定義します。
 
-## LaTeXテンプレートの使い方
+## LaTeX テンプレートの使い方
 
-1. ZIP を **ダウンロード**するか、リポジトリのクローンを作成します。  
-2. メインの `.tex` ファイル (通常は `main.tex` または `article.tex` と呼ばれます) を開きます。  
-3. テンプレートによって提供されるクラスまたはスタイルをロードし、README の「構造」 (タイトル ページ、要約、セクション、参考文献) に従います。
+1. **ダウンロード** かリポジトリをクローンします。  
+2. メインの `.tex` ファイル（多くは `main.tex` や `article.tex`）を開きます。  
+3. テンプレートが提供する class や style を読み込み、README の「構造」に従って編集します（タイトルページ、要旨、章、文献など）。
 
 ```latex
 \documentclass[options]{mytemplate}   % class supplied by the template
@@ -36,17 +36,17 @@ LaTeX テンプレートには、**クラス** (`.cls`)、**スタイル** (`.st
 \end{document}
 ```
 
-`pdflatex`、`latexmk -pdf`、またはオーバーリーフの「再コンパイル」ボタンを使用してコンパイルします。
+`pdflatex`、`latexmk -pdf`、または Overleaf の「Recompile」ボタンでコンパイルします。
 
-## 独自のテンプレートを作成する方法
+## オリジナルテンプレートの作り方
 
-| **目標** | **推奨ファイル** | **最小限のスケルトン** |
+| **目的** | **推奨ファイル** | **最小スケルトン** |
 |------|------------------|-----------------|
-| ドキュメント構造を完全に制御 | **クラス** (`.cls`) | 下記のコードブロックを参照 |
-| 追加のマクロまたはフォーマットのみ | **スタイル** (`.sty`) | – |
-| 配布 | Zip アーカイブまたは GitHub リポジトリ (クラス/スタイル、オプションの `.bib`、ロゴ、README を含む) | – |
+| 文書構造を完全にコントロール | **クラス** (`.cls`) | 以下のコードブロック参照 |
+| 追加のマクロや書式設定のみ | **スタイル** (`.sty`) | – |
+| 配布 | Zip アーカイブまたは GitHub リポジトリ（class/style、任意の `.bib`、ロゴ、README を含む） | – |
 
-### 最小限のクラス スケルトン (`mytemplate.cls`)
+### 最小クラススケルトン (`mytemplate.cls`)
 
 ```latex
 % mytemplate.cls – a very simple article‑style class
@@ -65,65 +65,64 @@ LaTeX テンプレートには、**クラス** (`.cls`)、**スタイル** (`.st
 \endinput
 ```
 
-ドキュメント内で `\documentclass{mytemplate}` と一緒に使用します。
+文書内では `\documentclass{mytemplate}` を使用します。
 
-## LaTeX テンプレートをダウンロードする場所
+## LaTeX テンプレートの入手先
 
-- **Overleaf Gallery** – 最大のパブリック コレクション (約 4000 個の無料テンプレート)。  
+- **Overleaf Gallery** – 最大規模の公開コレクション（約 4 000 件の無料テンプレート）。  
   <https://www.overleaf.com/gallery>
-- **CTAN (ComprehensiveTeXArchive Network)** – ジャーナル固有のクラスの公式リポジトリ。  
+- **CTAN (Comprehensive TeX Archive Network)** – 学会・ジャーナル向けクラスの公式リポジトリ。  
   <https://ctan.org/>
-- **GitHub / GitLab** – 多くの著者がオープンソースの論文や会議テンプレートを公開しています。  
-- 大学/研究機関の Web ページ – ほとんどの学校は、「公式」論文/学位論文テンプレートをホストしています。
+- **GitHub / GitLab** – 多くの作者がオープンソースの卒業論文や会議テンプレートを公開。  
+- 大学・研究機関のウェブページ – 多くの学校が「公式」卒業論文テンプレートを提供。
 
-## 最も使用されている/高評価のテンプレート
+## 人気・高評価テンプレート
 
-| **#** | **テンプレート** | **一般的な使用方法** |
-|---|-----------|-------------|
-| 1 | **IEEEtran** (`ieeetran.cls`) | IEEE 会議論文およびジャーナル論文 |
-| 2 | **SpringerLNCS** (`llncs.cls`) |コンピュータサイエンスの講義ノート |
-| 3 | **エルゼビア論文** (`elsarticle.cls`) | エルゼビアジャーナル |
-| 4 | **モダンシンプルCV** | 1ページの履歴書 |
-| 5 | **クラシック論文** (`classicthesis.sty`) | エレガントなタイポグラフィを使用した書籍/論文 |
-| 6 | **ビーマー** (`beamer.cls`) | スライドプレゼンテーション |
+| **#** | **テンプレート** | **主な用途** |
+|---|----------|-------------|
+| 1 | **IEEEtran** (`ieeetran.cls`) | IEEE の会議・ジャーナル論文 |
+| 2 | **Springer LNCS** (`llncs.cls`) | Computer Science の講演録 (Lecture Notes in Computer Science) |
+| 3 | **Elsevier article** (`elsarticle.cls`) | Elsevier ジャーナル |
+| 4 | **Modern Simple CV** | 1ページの履歴書 |
+| 5 | **Classic Thesis** (`classicthesis.sty`) | エレガントな組版の書籍・卒業論文 |
+| 6 | **Beamer** (`beamer.cls`) | スライドプレゼンテーション |
 | 7 | **a0poster / tikzposter** | 大型科学ポスター |
-| 8 | **大学独自の論文** (例: `cambridgephd.cls`) | 機関の博士論文/修士論文 |
-| 9 | **天文学と天体物理学** (`aa.cls`) | A&Aジャーナル記事 |
-|10 | **基本的な学術ジャーナル記事** |記事のシンプルなスターター (Overleaf) |
+| 8 | **University‑specific thesis** (e.g., `cambridgephd.cls`) | 大学指定の博士・修士論文 |
+| 9 | **Astronomy & Astrophysics** (`aa.cls`) | A&A ジャーナル記事 |
+|10 | **Basic Academic Journal Article** | 記事のシンプルなテンプレート (Overleaf) |
 
-## 初めてのユーザー向けの素早いワークフロー
+## 初心者向けクイックワークフロー
 
-1. **テンプレートを選択** → [オーバーリーフで開く] をクリック **または** ZIP をダウンロードします。  
-2. **プレースホルダ フィールドを編集します** (`\title{}`、`\author{}` など)。  
-3. **コンパイル** → PDF が表示されます。  
-4. ローカルで作業する場合: unzip → `latexmk -pdf main.tex` (または必要に応じて `pdflatex` + `biber`) を実行します。  
-5. PDF を **エクスポート**するか、バージョン管理のためにソースを Git リポジトリにプッシュします。
+1. **テンプレートを選択** → 「Open in Overleaf」ボタンをクリック **または** ZIP をダウンロード。  
+2. プレースホルダー（`\title{}`、`\author{}` など）を編集。  
+3. **コンパイル** → PDF が生成されます。  
+4. ローカルで作業する場合: 解凍 → `latexmk -pdf main.tex`（または必要に応じて `pdflatex` + `biber`）を実行。  
+5. PDF をエクスポート、またはソースを Git リポジトリにプッシュしてバージョン管理。
 
 ## よくある落とし穴とヒント
 
-- **パッケージがありません** – ディストリビューションのマネージャー (`tlmgr install <pkg>` または MiKTeX コンソール) を使用してインストールします。  
-- **古いクラス** – Overleaf は最新の TeXLive を使用します。ローカルの TeX インストールを定期的に更新してください。  
-- **参考文献エンジン** – 多くの最新のテンプレートは「biber」を期待しています。最初の LaTeX パスの後で `biber <basename>` を実行します。  
-- **ブランド資産** – ロゴ、カラー PDF、または組織の色を定義する `.sty` ファイルを置き換えます。  
-- **カスタム コマンド** – 別の `.sty` ファイルに保存します。その後、複数の用紙で同じレイアウトを再利用できます。
+- **パッケージが見つからない** – ディストリビューションのパッケージマネージャ（`tlmgr install <pkg>` または MiKTeX コンソール）でインストール。  
+- **クラスが古い** – Overleaf は最新の TeX Live を使用。ローカル環境も定期的に更新してください。  
+- **文献管理エンジン** – 多くのモダンテンプレートは `biber` を想定。最初の LaTeX パスの後に `biber <basename>` を実行。  
+- **ブランディング資産** – ロゴやカラースキーム、機関別カラーを定義する `.sty` ファイルを差し替え。  
+- **カスタムコマンド** – 別の `.sty` ファイルにまとめれば、複数の論文で同じレイアウトを再利用可能。
 
+## Aspose について
 
-## アポーズはどうですか？
-
-LaTeX から生成された PDF を .NET、Java、または Python アプリケーションで操作 (マージ、透かし、または他の形式への変換) する必要がある場合、**Aspose.TeX** などのライブラリは、完全な LaTeX ツールチェーンを必要とせずに PDF ファイルを操作するための言語に依存しない API を提供します。
+.NET、Java、Python アプリケーションで LaTeX から生成された PDF を操作（結合、透かし、他フォーマットへの変換）したい場合、**Aspose.TeX** のようなライブラリが LaTeX ツールチェーンを不要にし、PDF を直接扱える言語非依存 API を提供します。
 
 ---
 
-### TL;DR チートシート
+### TL;DR ハイシート
 
 ```text
-何を？     → 既成レイアウト（クラス+スタイル+アセット）
-使う？     → \documentclass{mytemplate} + READMEに従う
-作る？     → .clsまたは.styを書く → アセットをパックする → zip/GitHub
-入手する？ → Overleaf Gallery、CTAN、GitHub、大学のサイト
-ホット10   → IEEEtran、llncs、elsarticle、modern-simple-cv、
-          classicthesis、beamer、a0poster、UNICAMP thesis、
-          aa.cls、Basic Academic Journal Article
+What?   → Pre‑built layout (class+style+assets)
+Use?    → \documentclass{mytemplate} + follow README
+Create? → Write .cls or .sty → pack assets → zip/GitHub
+Get?    → Overleaf Gallery, CTAN, GitHub, university sites
+Hot 10  → IEEEtran, llncs, elsarticle, modern‑simple‑cv,
+          classicthesis, beamer, a0poster, UNICAMP thesis,
+          aa.cls, Basic Academic Journal Article
 ```
 
-ハッピー植字！
+良い組版を！

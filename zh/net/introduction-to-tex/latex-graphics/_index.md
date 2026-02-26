@@ -1,50 +1,48 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-title: 乳胶图形| \ include graphics命令
-linktitle: 包括图乳胶
-weight: 18
+title: LaTeX 图形 | \includegraphics 命令
+linktitle: Includegraphics LaTeX
+weight: 18	
 url: /net/latex-graphics/
-description: 值得一提的是在TEX中包含图形。在谈论它时，想到的第一件事是“ \includegraphics”命令。
-lastmod: "2025-06-10"
+description: 在 TeX 中插入图形是值得一提的事情。谈到它时，首先想到的是 `\includegraphics` 命令。
+lastmod: "2026-02-26"
 ---
 
 {{<section overview>}}
 
-实际上，值得一提的乳胶图形有两个方面：
+实际上，LaTeX 图形有两个值得一提的方面：
 
-* 向量图形直接通过乳胶/tex命令描述，并且
-* 包括外部格式描述的外部图形，例如EPS，PDF或栅格PNG和PDF。
+* 通过 LaTeX/TeX 命令直接描述的矢量图形，以及
+* 通过外部格式（如 EPS、PDF 或光栅 PNG 和 PDF）描述的外部图形的嵌入。
 
-前者对原始乳胶及其包装的支持有限。它是在Tex垂直和水平规则的帮助下实施的。这是因为原始乳胶基于原始TEX发动机，该发动机以 *DVI*格式产生主要输出，不适合描述线条和曲线或二进制栅格图像数据。但是，能够输出图形支持格式的引擎(例如PDFTEX到PDF)也可以使用依赖格式的软件包或软件包功能处理图形。由于相同的原因，基本乳胶不支持后一个图形。我们将在下面讨论图形包含功能。
+前者在原始 LaTeX 及其宏包中支持有限。它通过 TeX 的垂直和水平规则实现。原因是原始 LaTeX 基于原始 TeX 引擎，该引擎的主要输出为 *DVI* 格式，这不适合描述直线、曲线或二进制光栅图像数据。但能够输出为支持图形的格式（如 pdfTeX 输出为 PDF）的引擎也可以使用与格式相关的宏包或宏包功能来处理图形。后者的图形由于相同原因在基本 LaTeX 中不受支持。我们将在下文讨论图形嵌入功能。
 
-## 乳胶`graphics`软件包和`\includegraphics`命令
+## LaTeX `graphics` 宏包和 `\includegraphics` 命令
 
-在谈论乳胶图形包含时，想到的第一件事是`\includegraphics`命令。它是在“图形”软件包中定义的，您应该在序言中提到以启用其功能。
+谈到 LaTeX 图形的嵌入时，首先想到的是 `\includegraphics` 命令。它在 `graphics` 宏包中定义，你应在导言区提及该宏包以启用其功能。
 
 ```tex
 \usepackage{graphics}
 ```
 
-如果您的排版系统未配置为默认情况下使用PDFTEX，则应指定适当的选项，该选项将迫使软件包使用所需的“驱动程序”文件：
-
+如果你的排版系统默认未配置使用例如 pdfTeX，你应指定相应的选项，以强制宏包使用所需的 `driver` 文件：
 
 ```tex
 \usepackage[pdftex]{graphics}
 ```
 
-“驱动程序”文件是软件包的一部分，该软件包的一部分在软件包命令和格式依赖性的低级别Tex扩展程序之间实现了接口。 Aspose.TeX的乳胶图形支持配置为使用自己的驱动程序，因此您无需指定驱动程序选项。
+`driver` 文件是宏包的一部分，用于实现宏包命令与特定格式低层 TeX 扩展原语之间的接口。Aspose.TeX 的 LaTeX 图形支持已配置为使用其自带的 driver，因此无需指定 driver 选项。
 
-现在，包括PNG图像的最简单方法是键入：
-
+现在，包含 PNG 图像的最简单方式是输入：
 
 ```tex
 \includegraphics{sample-image.png}
 ```
 
-其中`sample-image.png`是您要包含的文件的名称。您甚至可以使用扩展名。 `graphics`软件包包含支持格式的定义列表。查找文件时，它会遍历列表，并包含第一个匹配的文件。
+其中 `sample-image.png` 是你想要包含的文件名。你甚至可以省略扩展名。`graphics` 宏包包含支持格式的定义列表。搜索文件时，它会遍历该列表并包含找到的第一个匹配文件。
 
-您还可以使用绝对或相对路径指定完整的文件名：
+你也可以使用绝对或相对路径指定完整文件名：
 
 ```tex
 \includegraphics{d:/sample-image.png} % absolute path
@@ -52,7 +50,7 @@ lastmod: "2025-06-10"
 \includegraphics{../img/sample-image.png} % relative to the directory containing the current one
 ```
 
-指定图形文件位置的另一种方法是在调用`
+另一种指定图形文件位置的方法是在调用 `\includegraphics` 之前使用 `\graphicspath` 命令定义一系列备选路径：
 
 ```tex
 \graphicspath{{d:/img}{c:/img}{d:/work/img}}
@@ -60,8 +58,7 @@ lastmod: "2025-06-10"
 
 ### 缩放图形
 
-乳胶`graphics`软件包提供了操纵内容的命令。因此，您可以缩放随附的图形(实际上是Tex/latex代码所描述的任何内容)如下：
-
+LaTeX `graphics` 宏包提供了用于操作内容的命令。因此，你可以按如下方式缩放包含的图形（实际上，任何由 TeX/LaTeX 代码描述的内容）：
 
 ```tex
 \scalebox{.5}{\includegraphics{sample-image.png}} % scales both width and height by 0.5
@@ -70,8 +67,7 @@ lastmod: "2025-06-10"
 
 ### 调整图形大小
 
-它类似于缩放，但是您指定所需的大小，而不是缩放系数：
-
+这与缩放类似，但你需要指定所需的尺寸而不是缩放因子：
 
 ```tex
 \resizebox{10mm}{!}{\includegraphics{sample-image.png}} % changes the width to 10mm preserving the proprtions
@@ -84,19 +80,18 @@ lastmod: "2025-06-10"
 \rotatebox{25}{\includegraphics{sample-image.png}} % rotates the image by 25 degrees counterclockwise
 ```
 
-## 乳胶`graphicx`软件包
+## LaTeX `graphicx` 宏包
 
-乳胶`graphicx`软件包提供了``键= value接口''的内容转换。要启用其功能，您应该在序言中提及它：
-
+LaTeX `graphicx` 宏包提供了 `key=value` 接口用于内容变换。要启用其功能，你应在导言区提及它：
 
 ```tex
 \usepackage{graphicx}
 \usepackage[pdftex]{graphicx} % with the driver option
 ```
 
-您可以结合以下任何选项，但请记住，该顺序很重要。
+你可以组合以下任何选项，但请注意顺序很重要。
 
-### 图形视口
+### Graphics viewport
 ```tex
 \includegraphics[viewport=10 10 280 220]{sample-image.png} % sets the viewport with the lower left corner
                                                            % at the point (10, 10) (coinsides with (0, 0)
@@ -123,7 +118,6 @@ lastmod: "2025-06-10"
 \includegraphics[angle=10]{sample-image.png} % rotates the image by 10 degrees counterclockwise
 ```
 
-要了解有关`graphics`软件包捆绑功能的更多信息，请参见文档[此处](https://ctan.org/pkg/graphics)和
-[这里](http://mirrors.ctan.org/macros/latex/required/graphics/graphics.pdf)。
+要了解更多关于 `graphics` 宏包捆绑功能的信息，请参阅文档[此处](https://ctan.org/pkg/graphics)和[此处](http://mirrors.ctan.org/macros/latex/required/graphics/graphics.pdf)。
 
-**您也可以查看基于[Aspose.TeX for .NET api](https://products.aspose.com/tex/net/)的免费转换[Web应用](https://products.aspose.app/tex/conversion/latex/)。**
+**你还可以查看基于 [Aspose.TeX for .NET API](https://products.aspose.com/tex/net/) 构建的免费转换[Web 应用](https://products.aspose.app/tex/conversion/latex/)。**
