@@ -61,7 +61,7 @@ Here is relatively small example:
 \maketitle
 \begin{abstract}
 
-This document represents the output from the file ``sample.tex" once compiled using your favorite \LaTeX compiler.  This file should serve as a good example of the basic structure of a ``.tex" file as well as many of the most basic commands needed for typesetting documents involving mathematical symbols and expressions.  For more of a description on how each command works, please consult the links found on our course webpage.
+This document represents the output from the file `sample.tex` once compiled using your favorite \LaTeX compiler.  This file should serve as a good example of the basic structure of a `.tex` file as well as many of the most basic commands needed for typesetting documents involving mathematical symbols and expressions. For more of a description on how each command works, please consult the links found on our course webpage.
 
 \end{abstract}
 \section{Lists}

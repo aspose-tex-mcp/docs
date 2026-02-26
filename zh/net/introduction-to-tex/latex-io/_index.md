@@ -1,20 +1,20 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-title: 乳胶I/O
-linktitle: 乳胶输入/输出
+title: LaTeX 输入/输出  
+linktitle: LaTeX I/O
 weight: 17
 url: /net/latex-io/
-description: 此页面简要地描述了与乳胶合作的特殊性作为输出或输入格式，而 * .aux *文件是乳胶的强制性部分。
-keywords: 乳胶IO，乳胶i，乳胶o，乳胶输入文件，输入乳胶
-lastmod: "2025-06-10"
+description: 此页面简要描述了使用 LaTeX 作为输出或输入格式的特殊之处，以及 *.aux* 文件作为 LaTeX 的强制性部分。
+keywords: latex io, latex i, latex o, latex 输入文件, latex 输入
+lastmod: "2026-02-26"
 ---
 
 {{<section overview>}}
 
-## 乳胶文件
+## LaTeX 文件
 
-如果我们有一个具有以下结构的[TEX文件](/tex/{{lang.url-fragment}}net/tex-io/#tex-file)，则将此文件称为 *latex文件*：
+如果我们有一个 [TeX file](/tex/{{lang.url-fragment}}net/tex-io/#tex-file) 并且它具有以下结构，那么我们将此文件称为 *LaTeX 文件*：
 
 
 ```tex
@@ -27,27 +27,27 @@ lastmod: "2025-06-10"
 \end{document}
 ```
 
-其中`<<a document>`是[文档类](https://en.wikibooks.org/wiki/LaTeX/Document_Structure#Document_classes)的名称，它是一个输入TEX文件，它定义了最适合某种类型的文档的输出文档页面和宏的显示。
+其中 `<a document class>` 是一个 [document class](https://en.wikibooks.org/wiki/LaTeX/Document_Structure#Document_classes) 的名称，它是一个输入 TeX 文件，用来定义输出文档页面的外观以及最适合特定文档类型的宏。
 
-老实说，您可以在`\documentclass{}`，如`\nonstopmode`等之前插入原始控制序列。但是每个乳胶宏都检查它是否位于文件的适当部分。
+说实话，你可以在 `\documentclass{}` 之前插入原始控制序列，例如 `\nonstopmode` 等。但每个 LaTeX 宏都会检查它是否位于文件的恰当位置。
 
-在使用乳胶文件的背景下，关于Tex [Input](/tex/{{lang.url-fragment}}net/tex-io/#tex-input)(3)和[输出](/tex/{{lang.url-fragment}}net/tex-io/#tex-output)有一些值得注意的事情。
+关于在处理 LaTeX 文件时 TeX 的 [input](/tex/{{lang.url-fragment}}net/tex-io/#tex-input) 和 [output](/tex/{{lang.url-fragment}}net/tex-io/#tex-output) 有几件值得注意的事情。
 
-## 乳胶输出文件
+## LaTeX 输出文件
 
-典型的乳胶作业创建了一个辅助输出文件，并以[作业名称](/tex/{{lang.url-fragment}}net/tex-io/#tex-output)为其名称和扩展名 *.aux*。该文件通常包含引擎在作业运行中收集的参考数据，如果您设置了数学公式(方程式)的标签，然后参考文本中的某个地方。如果您不使用任何此类文件，则此文件仅包含`\haliso`控制序列(这是Tex原始序列之一)。所以不要感到惊讶。
+典型的 LaTeX 作业会创建一个辅助输出文件，文件名为 [job name](/tex/{{lang.url-fragment}}net/tex-io/#tex-output)，扩展名为 *.aux*。如果你为数学公式（方程）设置了标签并在正文中引用，它通常会包含引擎在作业运行过程中收集的引用数据。若你没有使用此类功能，该文件仅包含 `\relax` 控制序列（TeX 原始指令之一），所以不要感到惊讶。
 
-尽管`\openout`，“`\ write`和`\closeout'diminives`不禁止，但包装是最适合它们的地方。因此，如果您要开发它们，则最好在自己的自定义软件包中使用它们。
+虽然 `\openout`、`\write` 和 `\closeout` 原始指令并未被禁止，但包是使用它们的最合适场所。因此，如果你在开发自定义包，最好在自己的包中使用这些指令。
 
-输出的其他部分是任意的，也遵循常规[TEX输出](/tex/{{lang.url-fragment}}net/tex-io/#tex-output)概念，取决于您的TEC文件(程序)应该执行的确切含义，您正在使用的包(请参见下文)等等。
+输出的其他部分是任意的，也遵循通用的 [TeX output](/tex/{{lang.url-fragment}}net/tex-io/#tex-output) 概念，取决于你的 TeX 文件（程序）具体要做什么、使用了哪些包（见下文）等。
 
-## 乳胶输入文件
+## LaTeX 输入文件
 
-上述 *.aux*文件同时是乳胶输入的强制性部分。从算法上讲，乳胶无法在一次运行中完成与参考相关的任务，因此需要两次运行相同的作业 - 首次收集数据，第二次使用这些数据。许多基于乳胶的软件系统会自动两次运行乳胶作业。剧透：Aspose.TeX API中有一个[选项](/tex/{{lang.url-fragment}}net/other-options/#how-to-repeat-the-job)，可以控制这种行为。
+前面提到的 *.aux* 文件在 LaTeX 中同时是输入的强制性部分。算法上，LaTeX 无法在一次运行中完成引用相关的任务，因此同一个作业需要运行两次——第一次收集数据，第二次使用这些数据。许多基于 LaTeX 的软件系统会自动运行两次 LaTeX 作业。提示：Aspose.TeX API 中有一个 [option](/tex/{{lang.url-fragment}}net/other-options/#how-to-repeat-the-job) 可以让我们控制这种行为。
 
-另一个强制性部分是[文档类](/tex/{{lang.url-fragment}}net/latex-io/#latex-file)。依次，文档类文件可能会隐式取决于其他文件，因此，这些文件也包含在乳胶输入中。
+另一个强制性部分是 [document class](/tex/{{lang.url-fragment}}net/latex-io/#latex-file)。文档类文件本身可能隐式依赖其他文件，这些文件同样会被包含在 LaTeX 输入中。
 
-如果您想使用基本乳胶及其文档类别范围之外的功能，但在某个TEX引擎实现的支持下，则通常使用一个软件包，该软件包必须在序言中通知引擎。一个 *乳胶软件包 *是一个文件，或以一个名称组装的一组文件，可提供此类功能。要通知引擎，您需要将`\usepackage`命令与软件包名称和可观的选项(如果包装定义)使用。
+如果你想使用超出基本 LaTeX 及其文档类范围，但由特定 TeX 引擎实现支持的功能，通常需要使用宏包，并在导言区通知引擎。*LaTeX 包* 是一个文件或一组文件，以同一名称组合，提供此类功能。要通知引擎，需要使用 `\usepackage` 命令并提供包名和可省略的选项（如果该包定义了选项的话）。
 
 例如，
 
@@ -56,6 +56,6 @@ lastmod: "2025-06-10"
 \usepackage[a6paper,landscape]{geometry}
 ```
 
-尽管“ `\input`”，“ `\openin`”，`\read`和`\closein`原始词不禁止，但包装是最适合它们的地方。因此，如果您要开发它们，则最好在自己的自定义软件包中使用它们。
+虽然 `\input`、`\openin`、`\read` 和 `\closein` 原始指令并未被禁止，但包是使用它们的最合适场所。因此，如果你在开发自定义包，最好在自己的包中使用这些指令。
 
-输入的其他部分是任意的，也遵循常规[TEX输入](/tex/{{lang.url-fragment}}net/tex-io/#tex-input)概念，并取决于您的TEX文件(程序)应该执行的操作，您正在使用的软件包等等。
+输入的其他部分是任意的，也遵循通用的 [TeX input](/tex/{{lang.url-fragment}}net/tex-io/#tex-input) 概念，取决于你的 TeX 文件（程序）具体要做什么、使用了哪些包等。
