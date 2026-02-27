@@ -1,82 +1,82 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-title: ラテックスファイルの修理| Java用のAspose.TeX
-linktitle: ラテックスファイルの修理
+title: LaTeX ファイルの修復 | Aspose.TeX for Java
+linktitle: LaTeX ファイルの修復
 weight: 30
 url: /java/latex-repair/
-description: JavaのAspose.TeX API内のラテックスファイル修理機能については、この記事で説明します。機能の使用方法のコード例を学びます。
-lastmod: "2025-06-09"
+description: Aspose.TeX API for Java の LaTeX ファイル修復機能について説明します。機能の使用方法のコード例をご覧ください。
+lastmod: "2026-02-27"
 ---
 
 {{<section overview>}}
 
-## ラテックスファイルを確認して修復する方法
+## LaTeX ファイルのチェックと修復方法
 
-テキストファイルがLaTexファイルであるかどうかがわからず、それをタイプセットにしたい場合は、JavaのAspose.TeX APIが提供するチェックと修復のラテックス機能を利用できます。以下の例では、Java ExampleプロジェクトのAspose.TeXからサンプルファイル「Invalid-Latex.tex」を確認して修復します。
+テキストファイルが LaTeX ファイルかどうか確信が持てず、組版したい場合は、Aspose.TeX API for Java が提供する LaTeX のチェックおよび修復機能を利用できます。以下の例では、Aspose.TeX for Java のサンプルプロジェクトにある `invalid-latex.tex` というファイルをチェックし、修復します。
 
-そもそも、サンプルファイルはTex構文を使用しているように見えるが、LaTexに必要な構造がないことに注意することが重要です。ご存知かもしれませんが、ラテックスファイルには、\ DocumentClassコマンドから始まる前文と、特に\ begin {document}と\ end {document}の間にドキュメント環境に囲まれたボディを含める必要があります。
+まず最初に、サンプルファイルは TeX 構文を使用していますが、LaTeX に必要な構造が欠けていることに注意してください。ご存知のとおり、LaTeX ファイルは `\documentclass` コマンドで始まるプリアンブルと、`\begin{document}` と `\end{document}` の間にある本文から構成されます。
 
-次に、Javaコードサンプルを見てみましょう。
+それでは Java のコードサンプルを見てみましょう。
 
 {{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Features-LaTeXRepairer.java" >}}
 
-通常のTexジョブと同様に、実行しようとしているプロセスのオプションを保持するオブジェクトを作成することから始めます。これらのオプションのほとんどは、通常のTEXジョブのオプションと同じです。実際、[setInputWorkingDirectory()](https://reference.aspose.com/tex/java/com.Aspose.TeX.features/latexrepaireroptions/#setInputWorkingDirectory-com.Aspose.TeX.IInputWorkingDirectory-)メソッドを呼び出して、入力ファイルを読み取るスペースを指定します。ただし、この例では、ファイルシステムのメイン入力ファイルへのフルパスを提供し、メイン入力ファイルにカスタムファイルを含めることはないため、ここでは使用しません。次に、[SetOutputWorkingDirectory()](https://reference.aspose.com/tex/java/com.Aspose.TeX.features/latexrepaireroptions/#setOutputWorkingDirectory-com.Aspose.TeX.IOutputWorkingDirectory-)メソッドを呼び出して、出力ファイルの書き込みスペースを指定します。呼び出された場合、[setRequiredInputDirectory()](https://reference.aspose.com/tex/java/com.Aspose.TeX.features/latexrepaireroptions/#setRequiredInputDirectory-com.Aspose.TeX.IInputWorkingDirectory-)メソッドにより、オプションは、Aspose.TeXライブラリに埋め込まれていないラテックスパッケージを保存できるスペースを指します。最後に、[setguesspackagecallback()](https://reference.aspose.com/tex/java/com.Aspose.TeX.features/latexrepaireroptions/#setGuessPackageCallback-com.Aspose.TeX.features.IGuessPackageCallback-)メソッドについては後で説明します。
+通常の TeX ジョブと同様に、まず処理に必要なオプションを保持するオブジェクトを作成します。これらのオプションは通常の TeX ジョブとほぼ同じです。たとえば、[setInputWorkingDirectory()](https://reference.aspose.com/tex/java/com.aspose.tex.features/latexrepaireroptions/#setInputWorkingDirectory-com.aspose.tex.IInputWorkingDirectory-) メソッドで入力ファイルを読むディレクトリを指定しますが、この例ではファイルシステム上のメイン入力ファイルへのフルパスを直接渡すため使用していません。次に、[setOutputWorkingDirectory()](https://reference.aspose.com/tex/java/com.aspose.tex.features/latexrepaireroptions/#setOutputWorkingDirectory-com.aspose.tex.IOutputWorkingDirectory-) メソッドで出力ファイルを書き込むディレクトリを指定します。必要に応じて、[setRequiredInputDirectory()](https://reference.aspose.com/tex/java/com.aspose.tex.features/latexrepaireroptions/#setRequiredInputDirectory-com.aspose.tex.IInputWorkingDirectory-) メソッドで、Aspose.TeX ライブラリに組み込まれていない LaTeX パッケージを格納できるディレクトリを指すことができます。最後に、[setGuessPackageCallback()](https://reference.aspose.com/tex/java/com.aspose.tex.features/latexrepaireroptions/#setGuessPackageCallback-com.aspose.tex.features.IGuessPackageCallback-) メソッドについては後述します。
 
-オプションが割り当てられたら、プロセスの実行を進めることができます。
+オプションが設定されたら、プロセスを実行します。
 
-それで、チェックと修復のプロセスはどのようなものですか？ APIが入力ファイルで`documentClass`の発生を検索することから始まります。発見されていない場合、APIは、`documentClass {article}`をファイルの開始時に挿入する必要があると想定しています。この情報は、修理レポートファイル(.log)に記録されます。
+では、チェックと修復の流れはどのようになるのでしょうか。まず API は入力ファイル内に `\documentclass` があるか検索します。見つからなければ、API はファイルの先頭に `\documentclass{article}` を挿入すべきだと判断し、修復レポート（.log）にその情報を記録します。
 
-次に、プロセスが最初から調整された入力ファイルのスキャンを開始します。 LaTex形式を装備したTEXエンジンは、ある時点で、「{document}」が既にあるべきである場合にまだ見つかっていないことを示すエラーを投げることができます。このようにして、「{document}」を挿入する必要がある位置が定義され、レポートに反映されます。
+次に、調整された入力ファイルの先頭からスキャンを開始します。LaTeX フォーマットが組み込まれた TeX エンジンは、途中で `\begin{document}` がまだ見つからないというエラーを出すことがあります。このとき、` \begin{document}` を挿入すべき位置が特定され、レポートに反映されます。
 
-ファイルをさらにスキャンしている間、エンジンは未定義のコマンドや環境に遭遇する可能性があります。そのような場合、APIは、最も一般的なコマンドと環境のいくつかについて、[これらのパッケージが含まれるまで定義されていないコマンドと環境を定義するものを埋め込んだ](/tex/{{lang.url-fragment}}net/embedded-packages/)で仮定することができます。ただし、[iguesspackagecallback](https://reference.aspose.com/tex/java/com.Aspose.TeX.features/iguesspackagecallback/)インターフェイスを実装するクラスによって、そのような仮定を外部から行うことができます。このようなクラスを開発したら、`setguesspackagecallback()`メソッドを呼び出すことにより、そのインスタンスをプロセスに渡す必要があります。
+ファイルをさらに走査していくと、エンジンは未定義のコマンドや環境に出くわすことがあります。そのような場合、API は最も一般的なコマンドや環境に対して、[埋め込み必須パッケージ](/tex/{{lang.url-fragment}}net/embedded-packages/)（これらのコマンドや環境を定義するパッケージ）を自動的に推測して使用します。ただし、[IGuessPackageCallback](https://reference.aspose.com/tex/java/com.aspose.tex.features/iguesspackagecallback/) インターフェイスを実装したクラスを作成すれば、外部からこの推測ロジックをカスタマイズできます。そのクラスのインスタンスは `setGuessPackageCallback()` メソッドでプロセスに渡します。
 
-`fancehdr`パッケージに`\head`コマンドを単純にマップする基本的な例があります。
+以下は、`\head` コマンドを `fancyhdr` パッケージにマッピングする簡単な例です。
 
 {{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Features-LaTeXRepairer-PackageGuessingCallback.java" >}}
 
-サンプルファイルに関しては、エンジンは最初に`\ Chapter`コマンドに遭遇します。これは、「記事」ドキュメントクラスで定義されていないが、`Book`ドキュメントクラスで定義されています。 APIはドキュメントクラスを調整して、修復されたファイルの最終バージョンが `\ documentclass {book}`で始まるようになります。次に、エンジンは前述の`\ lhead`コマンドを見つけ、 `\ usepackage {fancyhdr}`をプリアンブルに挿入する必要があると判断します。ファイルの後半で発生する`\ href`および `\ increctgraphics`コマンドは、修理業者に` \ usepackage {hyperRef} `および` \ usepackage {graphics} `を挿入します。これらの決定は、APIの内部マッピングに基づいて行われます。前と同様に、これらのすべての修理はレポートファイルに記録されています。
+サンプルファイルについて説明すると、エンジンは最初に `\chapter` コマンドに出会います。これは `article` クラスには定義されていませんが、`book` クラスには定義されています。そのため API はドキュメントクラスを `\documentclass{book}` に変更します。次に `\lhead` コマンドが見つかり、プリアンブルに `\usepackage{fancyhdr}` を挿入すべきと判断します。さらにファイル後半で `\href` と `\includegraphics` が現れたため、Repairer はそれぞれ `\usepackage{hyperref}` と `\usepackage{graphics}` をプリアンブルに追加します。これらの判断は API の内部マッピングに基づいて行われ、すべての修復内容はレポートファイルに記録されます。
 
-最後に、ラテックス文書の適切な結論が欠落しているため、エンジンは異常に終了します。その結果、修理業者は`\end{document}`をファイルの最後に追加し、レポートにこの情報を含めます。
+最終的に、LaTeX 文書の正しい終了部が欠如しているためエンジンは異常終了します。その結果、Repairer はファイル末尾に `\end{document}` を付加し、レポートにもその旨を記載します。
 
-元のファイルの固定バージョンを作成した後、修理業者は最終検証のためにTEXジョブを実行します。この例では、この実行は重要なエラーを検出しないため、固定バージョンを予想どおりに多かれ少なかれタイプセットすることができます。
+修正された元ファイルを作成した後、Repairer は最終確認のためにそのファイルで TeX ジョブを実行します。この実行で致命的なエラーが検出されなければ、修正後のファイルは期待通りに組版可能です。
 
-これが完全なレポートです：
+以下は完全なレポートです。
 
 ```
-元のファイルを修復しています...
+Trying to repair the original file...
 --------------------------------------------------------------------------------
-    \documentclass が元のファイル内に見つかりません。先頭に挿入しました。
-    \begin{document} が元のファイル内に見つかりません。3 行目の 0 番目に挿入しました。
-    3 行目の 0 番目にあるコマンド \chapter は未​​定義です。プリアンブルで \usepackage{package_name} を使用することを検討してください。
-    ここで 'package_name' は、このコマンドを定義するパッケージの名前です。
-    5 行目の 0 番目にあるコマンド \lhead は未定義です。\usepackage{fancyhdr} がプリアンブルに挿入されています。
-    'fancyhdr' パッケージがこのコマンドを定義していると思われるためです。
-    8 行目の 0 番目にあるコマンド \href は未定義です。\usepackage{hyperref} がプリアンブルに挿入されています。
-    'hyperref' パッケージがコマンドを定義していると思われるため。
-17行目の位置 0 にあるコマンド \href は未定義です。\usepackage{hyperref} がプリアンブルに挿入されています。
-    'hyperref' パッケージがコマンドを定義していると思われるため。
-20行目の位置 0 にあるコマンド \href は未定義です。\usepackage{hyperref} がプリアンブルに挿入されています。
-    'hyperref' パッケージがコマンドを定義していると思われるため。
-27行目の位置 0 にあるコマンド \href は未定義です。\usepackage{hyperref} がプリアンブルに挿入されています。
-    'hyperref' パッケージがコマンドを定義していると思われるため。
-32行目の位置 0 にあるコマンド \href は未定義です。\usepackage{hyperref} がプリアンブルに挿入されています。
-    'hyperref' パッケージがコマンドを定義していると思われるため。
-54 行目、位置 2 のコマンド \includegraphics は未定義です。\usepackage{graphicx} がプリアンブルに挿入されています。
-    'graphicx' パッケージがコマンドを定義していると思われるため。
-67 行目、位置 0 のコマンド \href は未定義です。\usepackage{hyperref} がプリアンブルに挿入されています。
-    'hyperref' パッケージがコマンドを定義していると思われるため。
-95 行目、位置 57 のコマンド \href は未定義です。\usepackage{hyperref} がプリアンブルに挿入されています。
-   'hyperref' パッケージがコマンドを定義していると思われるため。
-96 行目、位置 0 のコマンド \href は未定義です。\usepackage{hyperref} がプリアンブルに挿入されています。
-    'hyperref' パッケージがコマンドを定義しているはずなので。
-98行目、100番目のコマンド \href は未定義です。\usepackage{hyperref} がプリアンブルに挿入されています。
-    'hyperref' パッケージがコマンドを定義しているはずなので。
-\end{document} が元のファイルにありません。末尾に挿入されています。
+\documentclass is missing in the original file. Inserted at the beginning.
+\begin{document} is missing in the original file. Inserted at line 3, pos. 0.
+The command \chapter at line 3, pos. 0 is undefined. Consider using \usepackage{package_name} in the preamble,
+    where 'package_name' is the name of the package which defines this command.
+The command \lhead at line 5, pos. 0 is undefined. \usepackage{fancyhdr} is inserted in the preamble
+    since the 'fancyhdr' package supposedly defines the command.
+The command \href at line 8, pos. 0 is undefined. \usepackage{hyperref} is inserted in the preamble
+    since the 'hyperref' package supposedly defines the command.
+The command \href at line 17, pos. 0 is undefined. \usepackage{hyperref} is inserted in the preamble
+    since the 'hyperref' package supposedly defines the command.
+The command \href at line 20, pos. 0 is undefined. \usepackage{hyperref} is inserted in the preamble
+    since the 'hyperref' package supposedly defines the command.
+The command \href at line 27, pos. 0 is undefined. \usepackage{hyperref} is inserted in the preamble
+    since the 'hyperref' package supposedly defines the command.
+The command \href at line 32, pos. 0 is undefined. \usepackage{hyperref} is inserted in the preamble
+    since the 'hyperref' package supposedly defines the command.
+The command \includegraphics at line 54, pos. 2 is undefined. \usepackage{graphicx} is inserted in the preamble
+    since the 'graphicx' package supposedly defines the command.
+The command \href at line 67, pos. 0 is undefined. \usepackage{hyperref} is inserted in the preamble
+    since the 'hyperref' package supposedly defines the command.
+The command \href at line 95, pos. 57 is undefined. \usepackage{hyperref} is inserted in the preamble
+    since the 'hyperref' package supposedly defines the command.
+The command \href at line 96, pos. 0 is undefined. \usepackage{hyperref} is inserted in the preamble
+    since the 'hyperref' package supposedly defines the command.
+The command \href at line 98, pos. 100 is undefined. \usepackage{hyperref} is inserted in the preamble
+    since the 'hyperref' package supposedly defines the command.
+\end{document} is missing in the original file. Inserted at the end.
 
-修復されたファイルを確認しています...
+Checking the repaired file...
 --------------------------------------------------------------------------------
-修正されたファイルには重大なエラーはありません。
+There are no critical errors in the fixed file.
 ```
 
-**無料[** ai latex Repairer **](https://products.aspose.ai/tex/latex-repairer)Webアプリもチェックしてください。これは、[.NET APIのAspose.TeX]内に実装された機能に基づいて構築され、「Iguesspackagecalback」インターフェースのより高度な実装を伴います。
+**また、[**AI LaTeX Repairer**](https://products.aspose.ai/tex/latex-repairer) の無料ウェブアプリもぜひお試しください。このアプリは [Aspose.TeX for .NET API](https://products.aspose.com/tex/net/) に実装された機能をベースにしており、`IGuessPackageCallback` インターフェイスのより高度な実装が含まれています。**

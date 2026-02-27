@@ -1,35 +1,35 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-title: 乳胶命令行工具| .NET的Aspose.TeX
-linktitle: 操纵Tex/乳胶文件的CLI工具
+title: LaTeX 命令行工具 | Aspose.TeX for .NET
+linktitle: CLI 工具 用于 操作 TeX/LaTeX 文件
 weight: 70
 url: /net/cli-tools/
-description: aspose.tex命令线接口(CLI)用于.NET的工具，可通过简单命令轻松处理和编辑Tex和乳胶。
-keywords: C＃CLI用于Tex文档，C＃CLI Tex Management，C＃CLI Tex编码，Tex Documents C＃CLI
-lastmod: "2025-06-10"
+description: Aspose.TeX 命令行界面（CLI）工具为 .NET 提供了通过简单命令轻松处理和编辑 TeX 与 LaTeX 的能力。
+keywords: c# cli for tex documents, c# cli tex management, c# cli tex coding, tex documents c# cli
+lastmod: "2026-02-27"
 ---
 
 {{<section overview>}}
 
-# aspose.tex的CLI应用程序
+# Aspose.TeX 的 CLI 应用
 
-## CLI工具简介
+## CLI 工具简介
 
-**命令行接口(CLI)**释放计算机的功能！  命令行接口(CLI)工具让您使用简单的文本命令来控制系统。非常适合程序员，管理员以及任何想自动化任务，批量运行工作或构建自定义功能的人。  它们轻巧，易于学习，并且可以很好地使用自动化工具。另外，Power用户只需一个命令即可完成复杂的任务，或直接将功能添加到其项目中。
+**命令行界面（CLI）** 释放你的计算机潜能！命令行界面（CLI）工具让你通过简洁的文本命令控制系统。无论是程序员、管理员，还是想要自动化任务、批量运行或构建自定义功能的任何人，都非常适合。它们轻量、易学，并且与自动化工具配合良好。高级用户甚至可以仅用一个命令完成复杂任务，或直接将功能添加到项目中。
 
-## Aspose.TeX CLI应用
+## Aspose.TeX CLI 应用程序
 
-aspose.tex的.NET提供了方便的命令行工具。这使您只需几个命令即可将复杂的TEX和乳胶文档转换为更易于管理的格式。需要将TEX处理集成到您的工作流程中吗？这个工具使它变得简单！
+Aspose.TeX for .NET 提供了一个实用的命令行工具。它可以让你通过几条简单命令将复杂的 TeX 和 LaTeX 文档转换为更易处理的格式。需要将 TeX 处理集成到工作流中？此工具让一切变得简洁！
 
-### 可用的CLI工具
+### 可用的 CLI 工具
 
-- [Aspose.TeX convert](/tex/{{lang.url-fragment}}net/cli-tools/tex-convert/)
+- [Aspose.TeX 转换](/tex/{{lang.url-fragment}}net/cli-tools/tex-convert/)
 
-### 使用命令行程序的好处
+### 使用命令行程序的优势
 
-- **效率**：自动化重复任务并减少手动干预。
-- **灵活性**：使用简单的命令行命令执行复杂的操作。
-- **集成**：轻松地与流线型工作流程的脚本和自动化框架集成。
+- **高效**：自动化重复任务，降低人工干预。
+- **灵活**：使用简单的命令行指令完成复杂操作。
+- **集成**：轻松与脚本和自动化框架结合，实现工作流的流畅化。
 
-有关每个工具的更多详细信息，请访问各个部分。
+如需了解每个工具的更多细节，请访问相应章节。

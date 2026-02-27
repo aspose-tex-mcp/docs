@@ -1,25 +1,25 @@
 ﻿---
 translation: true
 template: /templates/_template-python-net.md
-title: ラテックス数学式レンダリング| .NET経由でPython用のAspose.TeX
-linktitle: ラテックス数学式レンダリング
+title: LaTeX 数式のレンダリング | Python via .NET
+linktitle: LaTeX 数式のレンダリング
 weight: 10
 url: /python-net/latex-math-formula-rendering/
-description: この記事では、Python用のAsops.tex APIソリューションと、LaTex Math式のレンダリングの機能の概要を説明します。コードの例を学びます
-lastmod: "2025-06-09"
+description: 記事では、Python 用 Aspose.TeX API ソリューションの概要と LaTeX 数式のレンダリング機能について紹介します。コード例をご覧ください
+lastmod: "2026-02-27"
 ---
 
 {{<section overview>}}
 
-## ラテックス数学式をPNGにレンダリングします
+## PNG に LaTeX 数式をレンダリングする
 
-必要に応じて、このトピックの[API参照セクション](https://reference.aspose.com/tex/python-net/aspose.tex.features/)をご覧ください。実際、**ラテックス数学式**レンダリング機能を実証する最良の方法は、例から始めることです。ここにあります：
+必要に応じて、[このトピックのAPIリファレンスセクション](https://reference.aspose.com/tex/python-net/aspose.tex.features/)をご覧ください。実際、**LaTeX数式**レンダリング機能を理解するには、まず例を挙げるのが最も効果的です。以下に例を示します。
 
 {{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Features-PngLaTeXMathRendering.py" >}}
 
-詳細について説明しましょう。まず、目的の出力画像解像度の仕様を含むTex/LaTexタイプセットと同様に、[レンダリングオプション](https://reference.aspose.com/tex/python-net/aspose.tex.features/mathrendereroptions/)オブジェクトを開始します。
+詳細を見ていきましょう。まず、TeX/LaTeXタイプセッティングに似た[レンダリングオプション](https://reference.aspose.com/tex/python-net/aspose.tex.features/mathrendereroptions/)オブジェクトを初期化します。このオブジェクトには、必要な出力画像解像度の指定が含まれています。
 
-次に、前文を指定します。デフォルトのプリアンブルは次のとおりです。
+次に、プリアンブルを指定します。デフォルトのプリアンブルは次のとおりです。
 
 
 ```tex
@@ -28,46 +28,47 @@ lastmod: "2025-06-09"
 \usepackage{amssymb}
 ```
 
-標準のラテックスと比較して、数式の強化されたサポートを提供します。たとえば、「Color」パッケージを含めて、指定されたコードの例で示されているように、式のハイライトをカスタマイズすることができます。
+これは、標準的なLaTeXに比べて数式のサポートが強化されています。例えば、提供されているコード例に示すように、`color`パッケージをインクルードすることで、数式内のハイライト表示をカスタマイズできます。
 
-次に、レンダラーに出力を300％スケーリングするよう指示します。
+次に、レンダラーに出力を300%に拡大するように指示します。
 
-次の2つのオプションは、前景と背景の色を決定します。カスタムハイライトの影響を受けない式の部分は、「TextColor」色で表示されます。
+次の2つのオプションは、前景色と背景色を決定します。数式の中でカスタムハイライトの影響を受けない部分は、`TextColor`カラーで表示されます。
 
-この例の次の行は、ログ出力を特定のストリームにリダイレクトするオプションがあるというイラストとして機能します。
+例の次の行は、ログ出力を特定のストリームにリダイレクトするオプションがあることを示しています。
 
-最後に、「showterminal」オプションを使用すると、コンソールに端子出力を表示するかどうかを制御できます。
+最後に、`ShowTerminal` オプションを使用すると、ターミナル出力をコンソールに表示するかどうかを制御できます。
 
-実際のレンダリングプロセスは、[MathRenderer.Render()](https://reference.aspose.com/tex/python-net/aspose.tex.features/mathrenderer/render/)メソッドによって実行され、ポイントの式のサイズを返します。
+実際のレンダリング処理は [MathRenderer.render()](https://reference.aspose.com/tex/python-net/aspose.tex.features/mathrenderer/render/) メソッドによって実行され、数式のサイズをポイント単位で返します。
 
-この方法は、画像が2番目の引数として記述されるストリームを受け入れます。その後、ストリームの作成に進みます。
+このメソッドは、画像を書き込むストリームを第2引数として受け取ります。その後、ストリームの作成に進みます。
 
-そして最後に、 `mathrenderer.render()`メソッドが呼び出され、オプションは3番目の引数として渡されます。式のラテックスコードは、最初の引数として提供されます。
+最後に、`MathRenderer.render()` メソッドが呼び出され、オプションが3番目の引数として渡されます。数式の LaTeX コードは1番目の引数として提供されます。
 
-この例の最後の行には、数式レンダリングプロセスの2つの出力が表示されます。エラーが発生した場合、式のサイズと簡潔なエラーレポートです。
+例の最後の行には、数式レンダリング処理の2つの出力（数式のサイズと、エラーが発生した場合の簡潔なエラーレポート）が表示されます。
 
-レンダリングの結果です。
+レンダリングの結果は次のとおりです。
 
-<a href="/tex/python-net/latex-math-formula-rendering/math-formula.png">![ラテックス数学式はPNGにレンダリングします](/tex/images/python-net/math-formula.png)</a>
+<a href="/tex/python-net/latex-math-formula-rendering/math-formula.png">![LaTeX 数式を PNG にレンダリング](/tex/images/python-net/math-formula.png)</a>
 
-これは、**ラテックス数学式レンダリング**機能の最も一般的で広範なアプリケーションを表しています。
+これは、**LaTeX 数式レンダリング** 機能の最も一般的で幅広い応用例です。
 
-**無料[Webアプリ](https://products.aspose.app/tex/equation-editor/png)を探索することもできます。
+**また、[Aspose.TeX for .NET API](https://products.aspose.com/tex/net/) の実装機能を活用した無料の[Webアプリ](https://products.aspose.app/tex/equation-editor/png)もお試しください。**
 
-## LaTex MATHフォーミュラをSVGにレンダリングします
+## SVG に LaTeX 数式をレンダリングする
 
-同様に、同じアプローチを使用して、ラテックス数学の式をSVG形式に変換できます。
+同様に、同じ方法でLaTeXの数式をSVG形式に変換できます。
 
 {{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Features-SvgLaTeXMathRendering.py" >}}
 
-違いは次のとおりです。
+違いは以下のとおりです。
 
-* [pngmathrendereroroptions](https://reference.aspose.com/tex/python-net/aspose.tex.features/pngmathrendereroptions/)クラスを使用する代わりに、[svgmathrendereroptions](https://reference.aspose.com/tex/python-net/aspose.tex.features/svgmathrendereroptions/)クラスを使用します。
-* 解像度を指定しません。
-* [pngmathrenderer](https://reference.aspose.com/tex/python-net/aspose.tex.features/pngmathrenderer/)クラスを使用する代わりに、[svgmathrenderer](https://reference.aspose.com/tex/python-net/aspose.tex.features/svgmathrenderer/)クラスを使用します。
- 
-これが結果です：
+* [PngMathRendererOptions](https://reference.aspose.com/tex/python-net/aspose.tex.features/pngmathrendereroptions/) クラスの代わりに、[SvgMathRendererOptions](https://reference.aspose.com/tex/python-net/aspose.tex.features/svgmathrendereroptions/) クラスを使用します。
+* 解像度は指定しません。
+* [PngMathRenderer](https://reference.aspose.com/tex/python-net/aspose.tex.features/pngmathrenderer/) クラスの代わりに、[SvgMathRenderer](https://reference.aspose.com/tex/python-net/aspose.tex.features/svgmathrenderer/) クラスを使用します。
 
-<a href="/tex/python-net/latex-math-formula-rendering/math-formula.svg">![ラテックス数学式はSVGにレンダリングします](/tex/images/python-net/math-formula.svg)</a>
+結果は以下のとおりです。
 
-**無料[Webアプリ](https://products.aspose.app/tex/equation-editor/svg)を探索することもできます。
+<a href="/tex/python-net/latex-math-formula-rendering/math-formula.svg">![LaTeX 数式を SVG にレンダリング](/tex/images/python-net/math-formula.svg)</a>
+
+**[Aspose.TeX for .NET API](https://products.aspose.com/tex/net/) の実装機能を活用した無料の [Web アプリ](https://products.aspose.app/tex/equation-editor/svg) もお試しください。**
+< A href ="/ tex/ pyth
