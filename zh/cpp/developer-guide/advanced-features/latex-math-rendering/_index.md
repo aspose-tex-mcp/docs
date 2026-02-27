@@ -1,17 +1,17 @@
 ﻿---
 translation: true
 template: /templates/_template-cpp.md
-title: 乳胶数学公式渲染| C++的Aspose.TeX
-linktitle: 乳胶数学公式渲染
+title: LaTeX 数学公式渲染 | C++
+linktitle: LaTeX 数学公式渲染
 weight: 10
 url: /cpp/latex-math-formula-rendering/
-description: Aspose.TeX API解决方案用于C ++乳胶数学公式渲染。在这里，您将找到该功能的代码示例。
-lastmod: "2025-06-10"
+description: 本文介绍了 Aspose.TeX API 在 C++ 中的 LaTeX 数学公式渲染解决方案。您将在此找到功能的代码示例。
+lastmod: "2026-02-27"
 ---
 
 {{<section overview>}}
 
-与此主题相关的API参考部分是[此处](https://reference.aspose.com/tex/cpp/namespace/aspose.te_x.features)。实际上，演示乳胶数学公式渲染功能的最简单方法是从示例开始。这里是：
+与本主题相关的 API 参考章节位于[此处](https://reference.aspose.com/tex/cpp/namespace/aspose.te_x.features)。事实上，演示 LaTeX 数学公式渲染功能最简单的方式是从示例开始。示例代码如下：
 
 ```C++
     // Create rendering options 
@@ -54,10 +54,9 @@ lastmod: "2025-06-10"
 
 ```
 
-让我们了解细节。首先，我们创建一个[渲染选项](https://reference.aspose.com/tex/cpp/aspose.tex.features/mathrendereroptions)实例，类似于Tex/latex排版。我们在这里同时指定输出图像分辨率。
+让我们进入细节。首先，我们创建一个[渲染选项](https://reference.aspose.com/tex/cpp/aspose.tex.features/mathrendereroptions)实例，类似于 TeX/LaTeX 排版。在这里我们同时指定输出图像的分辨率。
 
-接下来，我们指定序言。默认序言是：
-
+接下来，指定前置段（preamble）。默认的前置段如下：
 
 ```tex
 \usepackage{amsmath}
@@ -65,24 +64,24 @@ lastmod: "2025-06-10"
 \usepackage{amssymb}
 ```
 
-与基本乳胶相比，它提供了更高级的数学公式支持。例如，如果您想在公式中使用自己的突出显示，则可以添加“颜色”软件包，如我们在代码示例中所示。
+它比基本的 LaTeX 提供了稍微更高级的数学公式支持。例如，您可以添加 `color` 包，以便在公式中使用自己的高亮显示，正如我们在代码示例中所展示的。
 
-然后，我们指示渲染器将输出扩展300％。
+然后，我们指示渲染器将输出按 300% 缩放。
 
-接下来的两个选项定义了前景和背景颜色。自定义突出显示的未覆盖(“彩色”)的公式的那些部分将显示在`TextColor`颜色中。
+接下来的两个选项定义前景色和背景色。公式中未被自定义高亮（“着色”）覆盖的部分将以 `TextColor` 颜色显示。
 
-该示例的下一行没有太多意义。它只是证明您可以将日志输出引导到某些流。
+示例中的下一行并没有太大意义，它仅演示了您可以将日志输出定向到某个流。
 
-最后一个选项`ShowTerminal`使您可以切换将终端输出写入控制台。
+最后一个选项 `ShowTerminal` 允许您切换是否在控制台上显示终端输出。
 
-实际执行渲染的方法是[Mathrenderer.render()](https://reference.aspose.com/tex/cpp/aspose.tex.features/mathrenderer/render)。它返回点数中的公式大小。
+实际执行渲染的方法是[MathRenderer.Render()](https://reference.aspose.com/tex/cpp/aspose.tex.features/mathrenderer/render)。它返回公式的点数大小。
 
-该方法作为第二个参数将其写入图像的流。我们下一步创建流。
+图像写入的流作为第二个参数由该方法获取。我们随后创建该流。
 
-最后，我们将`the Mathrenderer.render()`方法本身称为第三个参数。公式的乳胶代码通过第一个参数作为字符串传递。
+最后，我们调用 `MathRenderer.Render()` 方法本身，将选项作为第三个参数传入。公式的 LaTeX 代码作为字符串通过第一个参数传递。
 
-示例的最后一行打印了数学公式渲染的两个伪像 - 公式的大小和简短的错误报告(如果有错误)。
+示例的最后几行打印了数学公式渲染的两个结果——公式的大小以及简要的错误报告（如果有错误的话）。
 
-这是乳胶数学公式渲染的最一般用例。
+这就是 LaTeX 数学公式渲染的最通用用例。
 
-**您还可以查看基于 [Aspose.TeX for C++ API](https://products.aspose.com/tex/cpp/) 中实现的功能构建的免费 [web 应用程序](https://products.aspose.app/tex/mathrenderer)。**
+**您还可以查看基于在 [Aspose.TeX for C++ API](https://products.aspose.com/tex/cpp/) 中实现的功能构建的免费[网络应用](https://products.aspose.app/tex/mathrenderer)。**

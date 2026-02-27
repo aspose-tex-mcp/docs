@@ -1,67 +1,67 @@
 ﻿---
 translation: true
 template: /templates/_template-python-net.md
-title: 乳胶图渲染| 通过 .NET 为 Python 提供 Aspose.TeX
-linktitle: 乳胶包括图
+title: LaTeX 图形渲染 | Python via .NET
+linktitle: LaTeX 包含图形
 weight: 20
 url: /python-net/latex-figure-rendering/
-description: 本文概述了Aspose.TeX API解决方案及其用于渲染乳胶片段的功能(图)。学习代码示例。
-keywords: 乳胶图，图形尺寸乳胶，乳胶图片，乳胶图像，乳胶包括图，乳胶图片，乳胶图选项
-lastmod: "2025-06-10"
+description: 本文概述了 Aspose.TeX API 在 Python 中的解决方案及其用于渲染 LaTeX 片段（图形）的功能。了解代码示例。
+keywords: latex figure, figure size latex, latex picture, latex image, latex include figure, latex pic, latex figure options
+lastmod: "2026-02-27"
 ---
 
 {{<section overview>}}
 
-在某些情况下，您可能需要从 LaTeX 文件中提取特定内容作为独立的渲染片段，通常称为“图形”，而无需与页面布局建立任何关联。例如，在为在线出版物创建插图时，这可能很有用。我们的 API 允许您实现这一点。图形渲染的目标格式是 PNG 和 SVG，就像 LaTeX 数学公式渲染功能一样。值得注意的是，与 [LaTeX 数学公式渲染](/tex/{{lang.url-fragment}}python-net/latex-math-formula-rendering/) 相比，**LaTeX 图形渲染** 是一项更通用的功能。
+在某些情况下，您可能需要将 LaTeX 文件中的特定内容提取为一个独立渲染的部分，通常称为 *图形*，且不与页面布局关联。例如，这在为在线出版物创建插图时可能会很有用。我们的 API 允许您实现此功能。用于渲染图形的目标格式为 PNG 和 SVG，正如 LaTeX 数学公式渲染功能一样。值得注意的是，**LaTeX 图形渲染**是一个比 [LaTeX 数学公式渲染](/tex/{{lang.url-fragment}}python-net/latex-math-formula-rendering/) 更通用的功能。
 
-## 将乳胶图形呈现到png
+## 将 LaTeX 图形渲染为 PNG
 
-如果需要，请首先查看[此主题的API参考部分](https://reference.aspose.com/tex/python-net/aspose.tex.features/)。与公式渲染类似，我们将以一个示例开始。这里是：
+如有需要，首先查看此主题的 [API 参考章节](https://reference.aspose.com/tex/python-net/aspose.tex.features/)。与公式渲染类似，我们将从一个示例开始。示例代码如下：
 
 {{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Features-PngLaTeXFigureRendering.py" >}}
 
-首先，我们创建一个[乳胶图渲染器选项](https://reference.aspose.com/tex/python-net/aspose.tex.features/figurerendereroptions/)类的实例，我们同时指定输出图像分辨率。
+首先，我们创建 [LaTeX 图形渲染器选项](https://reference.aspose.com/tex/python-net/aspose.tex.features/figurerendereroptions/) 类的实例，并同时指定输出图像的分辨率。
 
-接下来，我们需要指定序言。与乳胶数学公式渲染不同，乳胶图渲染没有默认的序言。因此，如果您打算使用“ Pict2e”乳胶软件包创建图形，则需要在序言中指定它：
+接下来，需要指定前导内容（preamble）。与 LaTeX 数学公式渲染不同，LaTeX 图形渲染没有默认的前导内容。因此，如果您计划渲染使用 `pict2e` LaTeX 包创建的图形，例如，需要在前导内容中指定该包：
 
 ```tex
 \usepackage{pict2e}
 ```
 
-然后，我们指示渲染器将输出扩展300％。
+然后我们指示渲染器将输出放大 300%。
 
-下一个选项确定背景颜色。与数学公式渲染不同，我们不需要指定前景颜色，因为我们假设颜色完全由乳胶代码控制。同样，背景颜色也由乳胶代码控制，因此为方便起见提供此选项。
+下一个选项决定背景颜色。与公式渲染不同，我们不需要指定前景颜色，因为我们假设颜色完全由 LaTeX 代码控制。同样，背景颜色也由 LaTeX 代码控制，此选项仅为方便而提供。
 
-示例中的以下行可能不是特别有意义。只是旨在证明您可以选择将日志输出引导到特定流。
+示例中的下一行可能没有太大意义，它仅用于演示您可以将日志输出定向到特定流。
 
-最终选项“ Show -Terminal”使您可以控制终端输出是否应显示在控制台中。
+最后一个选项 `ShowTerminal` 允许您控制是否在控制台显示终端输出。
 
-负责渲染该图的方法是[figurerenderer.render()](https://reference.aspose.com/tex/python-net/aspose.tex.features/figurerenderer/render/#str-io.RawIOBase-aspose.tex.features.FigureRendererOptions)。它返回点的大小。
+负责渲染图形的方法是 [FigureRenderer.render()](https://reference.aspose.com/tex/python-net/aspose.tex.features/figurerenderer/render/#str-io.RawIOBase-aspose.tex.features.FigureRendererOptions)。该方法返回图形的点数大小。
 
-该方法接受流作为第二个参数，这是图像写的流。我们在下一行中创建流。
+该方法接受第二个参数作为流，即图像将被写入的流。我们在下一行创建该流。
 
-最后，我们调用`figurerender.render()`方法本身，将选项作为第三个参数传递。该图的乳胶代码作为第一个参数提供。
+最后，我们调用 `FigureRenderer.render()` 方法本身，将选项作为第三个参数传入。图形的 LaTeX 代码作为第一个参数提供。
 
-该示例的最后几行显示了与图形渲染相关的两个信息 - 图的大小和简短的错误报告(如果有任何错误)。
+示例的最后几行显示了与图形渲染相关的两条信息——图形的大小以及简要的错误报告（如果有错误）。
 
-这是渲染的结果。
+以下是渲染结果。
 
-<a href="/tex/python-net/latex-figure-rendering/text-and-formula.png">![乳胶图渲染到PNG](/tex/images/python-net/text-and-formula.png)</a>
+<a href="/tex/python-net/latex-figure-rendering/text-and-formula.png">![LaTeX 图形渲染为 PNG](/tex/images/python-net/text-and-formula.png)</a>
 
-这代表了**乳胶图渲染**功能最通用的用例。
+这代表了 **LaTeX 图形渲染** 功能的最通用使用场景。
 
-## 将乳胶数字渲染为SVG
+## 将 LaTeX 图形渲染为 SVG
 
-同样，我们也可以以SVG格式渲染乳胶图。
+同样，我们也可以将 LaTeX 图形渲染为 SVG 格式。
 
 {{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Features-SvgLaTeXFigureRendering.py" >}}
 
-差异是：
+区别如下：
 
-* 我们使用[svgfigurerendereroptions](https://reference.aspose.com/tex/python-net/aspose.tex.features/svgfigurerendereroptions/)类，而不是使用[pngfigurerendereroptions](https://reference.aspose.com/tex/python-net/aspose.tex.features/pngfigurerendereroptions/)类。
-* 我们不需要指定分辨率。
-* 我们使用[svgfigurererer](https://reference.aspose.com/tex/python-net/aspose.tex.features/svgfigurerenderer/)类，而不是使用[pngfigurerenderer](https://reference.aspose.com/tex/python-net/aspose.tex.features/pngfigurerenderer/)类。
- 
-这是结果：
+* 使用 [SvgFigureRendererOptions](https://reference.aspose.com/tex/python-net/aspose.tex.features/svgfigurerendereroptions/) 类，而不是 [PngFigureRendererOptions](https://reference.aspose.com/tex/python-net/aspose.tex.features/pngfigurerendereroptions/) 类。
+* 不需要指定分辨率。
+* 使用 [SvgFigureRenderer](https://reference.aspose.com/tex/python-net/aspose.tex.features/svgfigurerenderer/) 类，而不是 [PngFigureRenderer](https://reference.aspose.com/tex/python-net/aspose.tex.features/pngfigurerenderer/) 类。
 
-<a href="/tex/python-net/latex-figure-rendering/text-and-formula.svg">![乳胶图渲染到SVG](/tex/images/python-net/text-and-formula.svg)</a>
+以下是渲染结果：
+
+<a href="/tex/python-net/latex-figure-rendering/text-and-formula.svg">![LaTeX 图形渲染为 SVG](/tex/images/python-net/text-and-formula.svg)</a>
