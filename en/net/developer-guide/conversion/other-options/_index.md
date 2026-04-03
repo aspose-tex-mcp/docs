@@ -6,7 +6,7 @@ linktitle: Other options
 weight: 17
 url: /net/other-options/
 description: Conversion functionality of Aspose.TeX API solution for .NET lets set the initial interaction mode in which the engine starts. Here are some code examples.
-lastmod: "2024-09-20"
+lastmod: "2026-04-03"
 ---
 
 {{<section overview>}}

@@ -6,7 +6,7 @@ linktitle: Rendu des formules mathématiques LaTeX
 weight: 10
 url: /python-net/latex-math-formula-rendering/
 description: L'article donne un aperçu API Aspose.TeX pour Python et de ses fonctionnalités de rendu des formules mathématiques LaTeX. Apprenez les exemples de code
-lastmod: "2024-09-27"
+lastmod: "2026-04-03"
 ---
 
 {{<section overview>}}
@@ -70,4 +70,4 @@ Voici le résultat :
 
 <a href="/tex/python-net/latex-math-formula-rendering/math-formula.svg">![Rendu de formule mathématique LaTeX en SVG](/tex/images/python-net/math-formula.svg)</a>
 
-**Vous pouvez également explorer l'[application Web] gratuite(12), qui utilise la fonctionnalité implémentée de l'[API Aspose.TeX pour .NET](https://products.aspose.com/tex/net/).**
+**Vous pouvez également explorer l'[application Web](https://products.aspose.app/tex/equation-editor/svg) gratuite, qui utilise la fonctionnalité implémentée de l'[API Aspose.TeX pour .NET](https://products.aspose.com/tex/net/).**

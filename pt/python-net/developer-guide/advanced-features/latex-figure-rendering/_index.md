@@ -7,7 +7,7 @@ weight: 20
 url: /python-net/latex-figure-rendering/
 description: O artigo fornece uma visão geral do Aspose.Tex API Solution for Python e sua funcionalidade para renderizar fragmentos de LaTeX (figuras). Aprenda os exemplos de código.
 keywords: figura de LaTeX, tamanho da figura, imagem de LaTeX, imagem de LaTeX, imagem de LaTeX, figura de LaTeX, foto de LaTeX, opções de figura de LaTeX
-lastmod: "2025-06-16"
+lastmod: "2026-04-03"
 ---
 
 {{<section overview>}}
@@ -34,13 +34,13 @@ A próxima opção determina a cor do fundo. Ao contrário da renderização da 
 
 A linha a seguir no exemplo pode não ser particularmente significativa. É simplesmente destinado a demonstrar que você tem a opção de direcionar a saída de log para um fluxo específico.
 
-A opção final, `showMerminal`, permite controlar se a saída do terminal deve ser exibida no console.
+A opção final, `ShowTerminal`, permite controlar se a saída do terminal deve ser exibida no console.
 
-O método responsável por renderizar a figura é [FiguureRender.render()](https://reference.aspose.com/tex/python-net/aspose.tex.features/figurerenderer/render/#str-io.RawIOBase-aspose.tex.features.FigureRendererOptions). Ele retorna o tamanho da figura em pontos.
+O método responsável por renderizar a figura é [FigureRenderer.render()](https://reference.aspose.com/tex/python-net/aspose.tex.features/figurerenderer/render/). Ele retorna o tamanho da figura em pontos.
 
 O método aceita um fluxo como o segundo argumento, que é o fluxo em que a imagem será gravada. Criamos o fluxo na próxima linha.
 
-Por fim, invocamos o próprio método `figuureRender.render()`, passando as opções como o terceiro argumento. O código do LATEX da figura é fornecido como o primeiro argumento.
+Por fim, invocamos o método `FigureRenderer.render()`, passando as opções como o terceiro argumento. O código do LATEX da figura é fornecido como o primeiro argumento.
 
 As últimas linhas do exemplo exibem duas informações relacionadas à renderização de figuras - o tamanho da figura e um breve relatório de erro (se houver algum erro).
 
@@ -48,7 +48,7 @@ Aqui está o resultado da renderização.
 
 <a href="/tex/python-net/latex-figure-rendering/text-and-formula.png">![Figura de LaTeX renderização para png](/tex/images/python-net/text-and-formula.png)</a>
 
-Isso representa o caso de uso mais geral para o recurso **de renderização de figuras** **.
+Isso representa o caso de uso mais geral para o recurso de **renderização de figuras de LaTeX**.
 
 ## Renderizando uma figura de LaTeX para SVG
 

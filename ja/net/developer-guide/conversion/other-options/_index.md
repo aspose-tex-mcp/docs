@@ -5,8 +5,8 @@ title: TEXオプションの他の管理| .NET
 linktitle: その他のオプション
 weight: 17
 url: /net/other-options/
-description: .NET用のASOPSE.TEX APIソリューションの変換機能により、エンジンが起動する初期インタラクションモードを設定できます。いくつかのコードの例を次に示します。
-lastmod: "2025-06-09"
+description: .NET用Aspose.TeX APIソリューションの変換機能により、エンジンが起動する初期インタラクションモードを設定できます。いくつかのコードの例を次に示します。
+lastmod: "2026-04-03"
 ---
 
 {{<section overview>}}
@@ -17,7 +17,7 @@ lastmod: "2025-06-09"
 
 {{< gist "aspose-com-gists" "deadfd7c29ffe40024a9b6d12f0ed18a" "Example-InteractionMode.cs" >}}
 
-## 求人名を設定する方法
+## ジョブ名を設定する方法
 
 メイン入力ファイルをファイル名として渡すと、他の拡張機能ではありますが、同じ名前の出力ファイルが取得されます。 TEXエンジンは、入力ファイルの名前を *ジョブ名 *を呼び出し、出力ファイルに使用します。メイン入力ファイルを[ストリーム](/tex/{{lang.url-fragment}}net/other-ways-of-main-input/#providing-the-main-input-file-as-a-stream)として渡すと、Texエンジンはデフォルトのジョブ名、つまり *texput*を使用します。
 どちらの場合も、適切な変換オプションを割り当てることにより、ジョブ名をオーバーライドできます。

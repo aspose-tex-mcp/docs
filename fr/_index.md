@@ -4,7 +4,7 @@ template: /templates/_template-default.md
 linktitle: Famille de produits Aspose.TeX
 title: Famille de produits Aspose.TeX | Documentation
 description: Aspose.TeX est une bibliothèque hautes performances pour les applications de composition de fichiers TeX et LaTeX dans .NET, Java, C++ et Python.
-lastmod: "2024-09-27"
+lastmod: "2026-04-03"
 sitemap.changefreq: weekly
 sitemap.priority: 0.5
 weight: 10

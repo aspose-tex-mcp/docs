@@ -7,7 +7,7 @@ weight: 70
 url: /net/cli-tools/
 description: Las herramientas de interfaz de línea de comandos (CLI) Aspose.TeX para .NET permiten el procesamiento y la edición de TeX y LaTeX de forma sencilla.
 keywords: c# cli para documentos tex, gestión de tex c# cli, codificación tex c# cli, documentos tex c# cli
-lastmod: "2024-10-30"
+lastmod: "2026-04-03"
 ---
 
 {{<section overview>}}

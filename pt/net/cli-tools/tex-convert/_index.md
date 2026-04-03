@@ -7,7 +7,7 @@ weight: 80
 url: /net/cli-tools/tex-convert/
 description: Ferramenta de conversor de linha de comando poderosa do Aspose.TeX para converter documentos Tex/Latex com facilidade e eficiência. ASPO CLI TEX conversor.
 keywords: Conversor Tex para PDF CLI, LATEX para PDF CLI Converter, CLI Tex Converter
-lastmod: "2025-06-16"
+lastmod: "2026-04-03"
 ---
 
 {{<section overview>}}

@@ -6,7 +6,7 @@ linktitle: восстановление файлов LaTeX
 weight: 30
 url: /net/latex-repair/
 description: Решение Aspose.TeX API для восстановления .NET LaTeX описано в этой статье. Изучите примеры кода о том, как использовать эту функциональность.
-lastmod: "2024-09-24"
+lastmod: "2026-04-03"
 ---
 
 {{<section overview>}}

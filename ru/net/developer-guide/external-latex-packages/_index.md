@@ -7,7 +7,7 @@ weight: 20
 url: /net/external-latex-packages/
 description: Aspose.TeX API для .NET позволяет использовать внешние пакеты, т.е. те, которые не включены в саму библиотеку, например пакеты Fancybox и pgfplots.
 keywords: внешние пакеты Latex, aspose tex, .net tex, пакеты Latex, fancybox, pgfplots, требуемый входной каталог, входной zip-архив, пользовательский входной каталог, преобразование tex
-lastmod: "2024-09-24"
+lastmod: "2026-04-03"
 ---
 
 {{<section overview>}}

@@ -6,7 +6,7 @@ linktitle: Інші варіанти
 weight: 17
 url: /net/other-options/
 description: Функціональність перетворення рішення Aspose.TeX API для .NET дозволяє встановити початковий режим взаємодії, у якому запускається двигун.
-lastmod: "2025-06-13"
+lastmod: "2026-04-03"
 ---
 
 {{<section overview>}}

@@ -6,7 +6,7 @@ linktitle: その他のTEX形式
 weight: 18
 url: /net/other-tex-formats/
 description: .NET用のAspose.TeX APIソリューションの変換機能により、LaTexファイルと独自のカスタムTEXファイルを変換できます。いくつかのコードの例を次に示します。
-lastmod: "2025-06-09"
+lastmod: "2026-04-03"
 ---
 
 {{<section overview>}}

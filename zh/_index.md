@@ -20,7 +20,7 @@ submenu: menu-tex
 
 **欢迎来到Aspose.TeX for .NET**
 
-aspose.tex是一个.NET库，用于排水的Tex文件。它可以以XPS，PDF，PNG，JPEG，TIFF和BMP等各种图形格式显示Tex输入。它还像任何其他Tex发动机一样输出跟踪信息。 API提供了通过Tex输入和获取输出的各种方式。而且，作为一项高级功能，如果您想统一设计许多文档，则可以创建自己的TEX格式。
+Aspose.TeX是一个.NET库，用于TeX文件排版。它可以以XPS，PDF，PNG，JPEG，TIFF和BMP等各种图形格式显示Tex输入。它还像任何其他Tex发动机一样输出跟踪信息。 API提供了通过Tex输入和获取输出的各种方式。而且，作为一项高级功能，如果您想统一设计许多文档，则可以创建自己的TEX格式。
 
 {{% /alert %}}
 

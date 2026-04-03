@@ -7,7 +7,7 @@ weight: 20
 url: /python-net/latex-figure-rendering/
 description: L'article donne un aperçu de la API Aspose.TeX pour Python et de ses fonctionnalités de rendu de fragments LaTeX (figures). Apprenez les exemples de code.
 keywords: figurine en latex, taille de figurine en latex, image en latex, image en latex, figurine incluse en latex, photo en latex, options de figurine en latex
-lastmod: "2024-09-27"
+lastmod: "2026-04-03"
 ---
 
 {{<section overview>}}

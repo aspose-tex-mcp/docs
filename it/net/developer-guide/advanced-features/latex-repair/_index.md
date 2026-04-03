@@ -1,12 +1,12 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-title: Riparazione del file in LaTeX | .NET
+title: Riparazione di file in LaTeX | .NET
 linktitle: Riparazione dei file in LaTeX
 weight: 30
 url: /net/latex-repair/
-description: ASPIPE.Tex Soluzione API per la riparazione del LaTeX .NET è descritta in questo articolo. Impara gli esempi di codice su come utilizzare la funzionalità.
-lastmod: "2025-06-13"
+description: La soluzione API TeX per la riparazione del LaTeX .NET è descritta in questo articolo. Scopri gli esempi di codice su come utilizzare la funzionalità.
+lastmod: "2026-04-03"
 ---
 
 {{<section overview>}}
@@ -15,7 +15,7 @@ lastmod: "2025-06-13"
 
 Se hai un file di testo che ritieni sia un file LaTeX e vuoi che sia composto, ma non sei sicuro che sia davvero un file in LaTeX (forse sei nuovo nel mondo in LaTeX), puoi provare a utilizzare la funzione di controllo e riparazione del LaTeX fornita dall'API Aspose.TeX per .NET. Nell'esempio seguente, controlleremo e riparare un file di esempio, `Invalid-latex.tex`, da Aspose.TeX per il progetto di esempio .NET.
 
-Prima di tutto, vale la pena ricordare che sebbene il file di esempio sembri utilizzare la sintassi di Tex, non ha la struttura richiesta dal LaTeX. Come forse saprai, un file Latex deve avere un preambolo che inizia con il comando `\documentclass` e un corpo all'interno dell'ambiente` Document`, ovvero tra `\inizio {Document}` e `\end {Document}`.
+Prima di tutto, vale la pena ricordare che sebbene il file di esempio sembri utilizzare la sintassi di Tex, non ha la struttura richiesta dal LaTeX. Come sai, un file LaTeX deve avere un preambolo che inizia con il comando `\documentclass` e un corpo all'interno dell'ambiente `document`, ovvero tra `\begin{document}` e `\end{document}`.
 
 Diamo ora un'occhiata al campione del codice C#.
 

@@ -1,12 +1,12 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-title: Látex para xps | .NET
+title: LaTeX para XPS | .NET
 linktitle: Látex para XPS
 weight: 12
 url: /net/latex-to-xps/
 description: Funcionalidade de conversão do Aspose. Aqui estão alguns exemplos de código.
-lastmod: "2025-06-16"
+lastmod: "2026-04-03"
 ---
 
 {{<section overview>}}

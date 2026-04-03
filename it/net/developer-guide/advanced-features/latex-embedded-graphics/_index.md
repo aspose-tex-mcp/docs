@@ -6,15 +6,15 @@ linktitle: Grafica incorporata in LaTeX
 weight: 18
 url: /net/latex-embedded-graphics/
 keywords: Includegraphics Latex, LaTeX incorporato grafico Base64, LaTeX base64 grafica codificata, write18, shell-escape, comando shell latex
-description: Questo articolo copre come includere le immagini codificate da Base64 nel codice sorgente in LaTeX, nonché la funzione \ write18 che lo rende possibile.
-lastmod: "2025-06-13"
+description: Questo articolo copre come includere le immagini codificate da Base64 nel codice sorgente in LaTeX, nonché la funzione \write18 che lo rende possibile.
+lastmod: "2026-04-03"
 ---
 
 {{<section overview>}}
 
 ## Un altro modo per includere le immagini
 
-Alcuni sistemi TEX/LaTex consentono di includere immagini che non sono archiviate esternamente rispetto al file in LaTeX stesso, ma piuttosto inclusi direttamente all'interno del file LaTeX. Tuttavia, poiché i file tex/latex sono file di testo semplice e quindi non possono contenere dati binari, abbiamo bisogno di un modo per rappresentare i dati binari in forma di testo. In altre parole, i dati binari devono essere codificati in una rappresentazione di testo. Il problema è che un motore TEX non può interpretare direttamente tali immagini codificate. In effetti, inclusa un'immagine viene realizzata usando il buon vecchio comando `\include` dal pacchetto`Graphicx`. Tuttavia, questo comando può gestire solo file di immagini esterni. Sì, un file di immagine esterno (insieme a un altro file intermedio) verrà comunque creato al di fuori del file Latex. Il punto chiave è che devi solo distribuire il file LaTeX da solo.
+Alcuni sistemi TeX/LaTeX consentono di includere immagini che non sono archiviate esternamente rispetto al file LaTeX stesso, ma piuttosto inclusi direttamente all'interno del file LaTeX. Tuttavia, poiché i file TeX/LaTeX sono file di testo semplice e quindi non possono contenere dati binari, abbiamo bisogno di un modo per rappresentare i dati binari in forma di testo. In altre parole, i dati binari devono essere codificati in una rappresentazione di testo. Il problema è che un motore TeX non può interpretare direttamente tali immagini codificate. In effetti, inclusa un'immagine viene realizzata usando il buon vecchio comando `\includegraphics` dal pacchetto `graphicx`. Tuttavia, questo comando può gestire solo file di immagini esterni. Sì, un file di immagine esterno (insieme a un altro file intermedio) verrà comunque creato al di fuori del file LaTeX. Il punto chiave è che devi solo distribuire il file LaTeX da solo.
 
 Ok, diciamo che in qualche modo abbiamo posizionato un'immagine codificata nel file LaTex. Ma come possiamo decodificare l'immagine? Sfortunatamente, non possiamo decodificare il file leggendolo dal file LaTeX e scrivendolo al file di immagine esterno. La stringa di testo che rappresenta l'immagine codificata deve prima essere scritta su un file di testo esterno, che può quindi essere decodificato per produrre un file di immagine.
 

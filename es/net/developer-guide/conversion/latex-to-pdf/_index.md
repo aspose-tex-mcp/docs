@@ -7,7 +7,7 @@ weight: 11
 url: /net/latex-to-pdf/
 keywords: LaTeX a pdf, LaTeX pdf, convertir LaTeX a pdf
 description: Para convertir TeX a PDF usando la solución API Aspose.TeX para .NET, lea este artículo para ver cómo se hace esto y los ejemplos de código.
-lastmod: "2024-10-30"
+lastmod: "2026-04-03"
 ---
 
 {{<section overview>}}

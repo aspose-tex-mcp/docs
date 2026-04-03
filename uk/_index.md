@@ -4,7 +4,7 @@ template: /templates/_template-default.md
 linktitle: Сімейство продуктів Aspose.TeX
 title: Сімейство продуктів Aspose.TeX | Документація
 description: Aspose.TeX — це високопродуктивна бібліотека для програм верстки файлів TeX та LaTeX у .NET, Java, C++ та Python.
-lastmod: "2024-09-25"
+lastmod: "2026-04-03"
 sitemap.changefreq: weekly
 sitemap.priority: 0.5
 weight: 10

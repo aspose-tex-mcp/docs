@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-python-net.md
 title: LaTeX 数式のレンダリング | Python via .NET
@@ -6,7 +6,7 @@ linktitle: LaTeX 数式のレンダリング
 weight: 10
 url: /python-net/latex-math-formula-rendering/
 description: 記事では、Python 用 Aspose.TeX API ソリューションの概要と LaTeX 数式のレンダリング機能について紹介します。コード例をご覧ください
-lastmod: "2026-02-27"
+lastmod: "2026-04-03"
 ---
 
 {{<section overview>}}
@@ -17,7 +17,7 @@ lastmod: "2026-02-27"
 
 {{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Features-PngLaTeXMathRendering.py" >}}
 
-詳細を見ていきましょう。まず、TeX/LaTeXタイプセッティングに似た[レンダリングオプション](https://reference.aspose.com/tex/python-net/aspose.tex.features/mathrendereroptions/)オブジェクトを初期化します。このオブジェクトには、必要な出力画像解像度の指定が含まれています。
+詳細を見ていきましょう。まず、TeX/LaTeXタイプッティングに似た[レンダリングオプション](https://reference.aspose.com/tex/python-net/aspose.tex.features/mathrendereroptions/)オブジェクトを初期化します。このオブジェクトには、必要な出力画像解像度の指定が含まれています。
 
 次に、プリアンブルを指定します。デフォルトのプリアンブルは次のとおりです。
 
@@ -71,4 +71,3 @@ lastmod: "2026-02-27"
 <a href="/tex/python-net/latex-math-formula-rendering/math-formula.svg">![LaTeX 数式を SVG にレンダリング](/tex/images/python-net/math-formula.svg)</a>
 
 **[Aspose.TeX for .NET API](https://products.aspose.com/tex/net/) の実装機能を活用した無料の [Web アプリ](https://products.aspose.app/tex/equation-editor/svg) もお試しください。**
-< A href ="/ tex/ pyth

@@ -5,14 +5,14 @@ title: Rendering di figura in LaTeX | Python tramite .NET
 linktitle: Il LaTeX include la figura
 weight: 20
 url: /python-net/latex-figure-rendering/
-description: L'articolo fornisce una panoramica della soluzione API ASPUS.TEX per Python e la sua funzionalità per il rendering di frammenti di LaTeX (figure). Impara gli esempi di codice.
+description: L'articolo fornisce una panoramica della soluzione API Aspose.TeX per Python e la sua funzionalità per il rendering di frammenti di LaTeX (figure). Impara gli esempi di codice.
 keywords: figura in LaTeX, dimensione della figura LaTeX, immagine in LaTeX, immagine in LaTeX, LaTeX includono figura, latex pic, opzioni di figura in LaTeX
-lastmod: "2025-06-13"
+lastmod: "2026-04-03"
 ---
 
 {{<section overview>}}
 
-In determinate situazioni, potrebbe essere necessario estrarre contenuti specifici da un file LaTeX come pezzo reso autonomo, comunemente indicato come *figur*, senza alcuna connessione al layout della pagina. Ciò potrebbe essere utile, ad esempio, quando si creano illustrazioni per una pubblicazione online. La nostra API ti consente di raggiungere questo obiettivo. I formati target per le figure di rendering sono PNG e SVG, proprio come con la funzione di rendering della formula matematica in LaTeX. Vale la pena notare che **il rendering di figura in LaTeX** è una caratteristica più generale rispetto al [rendering di formula matematica in LaTeX](/tex/{{lang.url-fragment}}python-net/latex-math-formula-rendering/).
+In determinate situazioni, potrebbe essere necessario estrarre contenuti specifici da un file LaTeX come pezzo reso autonomo, comunemente indicata come *figura*, senza alcuna connessione al layout della pagina. Ciò potrebbe essere utile, ad esempio, quando si creano illustrazioni per una pubblicazione online. La nostra API ti consente di raggiungere questo obiettivo. I formati target per le figure di rendering sono PNG e SVG, proprio come con la funzione di rendering della formula matematica in LaTeX. Vale la pena notare che **il rendering di figura in LaTeX** è una caratteristica più generale rispetto al [rendering di formula matematica in LaTeX](/tex/{{lang.url-fragment}}python-net/latex-math-formula-rendering/).
 
 ## Rendere una figura in LaTeX a PNG
 
@@ -22,7 +22,7 @@ Se necessario, prima dai un'occhiata alla sezione di riferimento [API per questo
 
 Per iniziare, creiamo un'istanza della classe [Opzioni di rendering di figura in LaTeX](https://reference.aspose.com/tex/python-net/aspose.tex.features/figurerendereroptions/), in cui specifichiamo contemporaneamente la risoluzione dell'immagine di output.
 
-Successivamente, dobbiamo specificare il preambolo. A differenza del rendering della formula matematica in LaTeX, non esiste un preambolo predefinito per il rendering delle figure in LaTeX. Pertanto, se hai intenzione di rendere la grafica creata utilizzando il pacchetto `Pict2e` Latex, ad esempio, dovrai specificarlo nel preambolo:
+Successivamente, dobbiamo specificare il preambolo. A differenza del rendering della formula matematica in LaTeX, non esiste un preambolo predefinito per il rendering delle figure in LaTeX. Pertanto, se hai intenzione di rendere la grafica creata utilizzando il pacchetto `pict2e` LaTeX, ad esempio, dovrai specificarlo nel preambolo:
 
 ```tex
 \usepackage{pict2e}
@@ -34,13 +34,13 @@ L'opzione successiva determina il colore di sfondo. A differenza del rendering d
 
 La seguente riga nell'esempio potrebbe non essere particolarmente significativa. È semplicemente destinato a dimostrare che hai la possibilità di dirigere l'output del registro su un flusso specifico.
 
-L'opzione finale, `showterminal`, consente di controllare se l'uscita del terminale deve essere visualizzata nella console.
+L'opzione finale, `ShowTerminal`, consente di controllare se l'uscita del terminale deve essere visualizzata nella console.
 
-Il metodo responsabile del rendering della figura è [figurerender.render()](https://reference.aspose.com/tex/python-net/aspose.tex.features/figurerenderer/render/#str-io.RawIOBase-aspose.tex.features.FigureRendererOptions). Restituisce le dimensioni della figura in punti.
+Il metodo responsabile del rendering della figura è [FigureRenderer.render()](https://reference.aspose.com/tex/python-net/aspose.tex.features/figurerenderer/render/). Restituisce le dimensioni della figura in punti.
 
 Il metodo accetta un flusso come secondo argomento, che è il flusso in cui verrà scritto l'immagine. Creiamo il flusso nella riga successiva.
 
-Infine, invochiamo il metodo `figurerender.render()`, passando le opzioni come terzo argomento. Il codice in LaTeX della figura è fornito come primo argomento.
+Infine, invochiamo il metodo `FigureRenderer.render()`, passando le opzioni come terzo argomento. Il codice in LaTeX della figura è fornito come primo argomento.
 
 Le ultime righe dell'esempio visualizzano due informazioni relative al rendering della figura: le dimensioni della figura e un breve rapporto di errore (se ci sono errori).
 

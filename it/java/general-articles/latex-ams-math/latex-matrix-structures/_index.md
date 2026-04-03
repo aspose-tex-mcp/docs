@@ -1,25 +1,25 @@
-﻿---
+---
 translation: true
 template: /templates/_template-java.md
-linktitle: Matrice e ambienti simili
-title: 3. Matrix e ambienti simili
+linktitle: Matrici e ambienti simili
+title: 3. Matrici e ambienti simili
 weight: 30
 url: /java/latex-ams-matrix/
-keywords: AMS-Latex, Amsmath, AMSCD, Matrix in LaTeX, Caso in LaTeX, Delarray in LaTeX, Diagrammi di commutazione in LaTeX
-description: Questo articolo fornisce una breve introduzione alle strutture simili a matrice in LaTeX che utilizzano pacchetti AMS-Latex.
-lastmod: "2025-06-13"
+keywords: ams-latex, amsmath, amscd, matrici LaTeX, casi LaTeX, delarray LaTeX, diagrammi commutativi LaTeX
+description: Questo articolo fornisce una breve introduzione alla composizione di strutture simili a matrici in LaTeX utilizzando i pacchetti AMS-LaTeX.
+lastmod: "2026-03-30"
 ---
 
 {{<section overview>}}
 
-Esistono numerosi ambienti per le strutture simili a matrice di composizione definite nel pacchetto `amsmath`. Sono tutti simili all'ambiente standard in LaTeX `array` in sintassi e layout. In generale, un'ampia varietà di strutture matematiche bidimensionali e layout tabulari possono essere descritti come array.
+Esistono numerosi ambienti per la composizione di strutture simili a matrici definiti nel pacchetto `amsmath`. Sono tutti simili all'ambiente standard di LaTeX `array` per sintassi e layout. In generale, un'ampia varietà di strutture matematiche bidimensionali e layout tabulari può essere descritta come array.
 
-Tre ambienti - `casi`,` matrix` e `pmatrix` - Sostituire i comandi del LaTeX standard. I comandi standard utilizzano una notazione diversa in modo da non poter essere utilizzati insieme ai moduli ambientali discussi qui. Il pacchetto `amsmath` produrrà un messaggio di errore se viene utilizzato uno dei vecchi comandi. Al contrario, se si tenta di utilizzare i moduli ambientali `amsmath` senza caricare il pacchetto, molto probabilmente riceverai il seguente messaggio di errore:` "Carattero della scheda di allineamento fuori posto e" `.
+Tre ambienti — `cases`, `matrix` e `pmatrix` — sostituiscono i comandi del LaTeX standard. I comandi standard utilizzano una notazione diversa, quindi non possono essere utilizzati insieme agli ambienti discussi qui. Il pacchetto `amsmath` produrrà un messaggio di errore se viene utilizzato uno dei vecchi comandi. Al contrario, se si tenta di utilizzare gli ambienti di `amsmath` senza caricare il pacchetto, molto probabilmente si riceverà il seguente messaggio di errore: `"Misplaced alignment tab character &"`.
 
 
-## 3.1. L'ambiente "casi"
+## 3.1. L'ambiente "cases"
 
-L'ambiente `Case` viene utilizzato per gestire le costruzioni, in cui una singola equazione ha alcune varianti. Tali costruzioni sono molto comuni in matematica. Produce un array con due colonne, entrambe allineate a sinistra.
+L'ambiente `cases` viene utilizzato per gestire costruzioni in cui una singola equazione presenta diverse varianti. Tali costruzioni sono molto comuni in matematica. Produce un array con due colonne, entrambe allineate a sinistra.
 
 
 ```tex
@@ -35,11 +35,11 @@ r! \, (-1)^{(r - j)/2} & \text{if $r - j$ is even.}
 
 ![Ambiente dei casi](/tex/images/java/tutorial/latex-ams-math-3-1.png)
 
-Notare l'uso del comando `\text` e della" modalità matematica incorporata "nelle stringhe di testo.
+Notate l'uso del comando `\text` e della "modalità matematica incorporata" nelle stringhe di testo.
 
 ## 3.2. Gli ambienti di matrice
 
-Gli ambienti di matrice, a differenza del "array" di LaTe, non accettano un argomento che specifica i formati delle colonne. Invece, forniscono un formato predefinito: fino a 10 colonne centrate. La spaziatura differisce anche leggermente dal valore predefinito in "Array". I seguenti esempi illustrano gli ambienti `matrix`,` pmatrix`, `bmatrix`,` bmatrix`, `vmatrix` e ` vmatrix`.
+Gli ambienti di matrice, a differenza dell'`array` di LaTeX, non accettano un argomento che specifichi il formato delle colonne. Forniscono invece un formato predefinito: fino a 10 colonne centrate. Anche la spaziatura differisce leggermente dal valore predefinito in `array`. I seguenti esempi illustrano gli ambienti `matrix`, `pmatrix`, `bmatrix`, `Bmatrix`, `vmatrix` e `Vmatrix`.
 
 
 ```tex
@@ -54,7 +54,7 @@ Gli ambienti di matrice, a differenza del "array" di LaTe, non accettano un argo
 
 ![Ambienti a matrice](/tex/images/java/tutorial/latex-ams-math-3-2.png)
 
-Il contatore `maxmatrixcols` determina il numero massimo di colonne in un ambiente a matrice. È possibile modificarlo usando il comando standard di LaTex. Il valore del parametro di lunghezza `\ArrayColsep` determina la quantità di spazio tra le colonne. Proprio come negli array standard, ma non viene aggiunto spazio su entrambi i lati dell'array. Altre colonne renderà il LaTeX di lavoro più difficile e richiede più risorse. Tuttavia, è possibile l'impostazione di "maxmatrixcols" a 20 o superiore senza un notevole successo delle prestazioni, poiché con le tipiche implementazioni di oggi tali limiti sono meno importanti.
+Il contatore `MaxMatrixCols` determina il numero massimo di colonne in un ambiente di matrice. È possibile modificarlo usando il comando standard di LaTeX. Il valore del parametro di lunghezza `\arraycolsep` determina la quantità di spazio tra le colonne. Proprio come negli array standard, non viene aggiunto spazio su entrambi i lati dell'array. Un numero maggiore di colonne renderà il lavoro di LaTeX più oneroso e richiederà più risorse. Tuttavia, è possibile impostare `MaxMatrixCols` a 20 o superiore senza un notevole calo delle prestazioni, poiché con le tipiche implementazioni odierne di TeX tali limiti sono meno rilevanti.
 
 
 ```tex
@@ -73,9 +73,9 @@ Il contatore `maxmatrixcols` determina il numero massimo di colonne in un ambien
 
 ![Altre colonne in ambienti a matrice](/tex/images/java/tutorial/latex-ams-math-3-3.png)
 
-In questo esempio il comando `\hdotsfor` viene utilizzato per produrre una riga di punti in una matrice, che copre un determinato numero di colonne. Il parametro opzionale (qui 2) può essere utilizzato per specificare un moltiplicatore per lo spazio predefinito (3 unità matematiche) tra i punti. Lo spazio sottile e il gruppo Brace `\, {}` Alla fine di ogni riga semplicemente rendono il layout migliore; Insieme producono due spazi sottili, circa 6MU o 1/3EM.
+In questo esempio il comando `\hdotsfor` viene utilizzato per produrre una riga di puntini in una matrice, estendendosi su un determinato numero di colonne. Il parametro opzionale (qui 2) può essere utilizzato per specificare un moltiplicatore per lo spazio predefinito (3 unità matematiche) tra i puntini. Lo spazio sottile e il gruppo di graffe `\, {}` alla fine di ogni riga migliorano semplicemente il layout; insieme producono due spazi sottili, circa 6mu o 1/3em.
 
-Per produrre una piccola matrice inline per l'uso nel testo, è possibile utilizzare l'ambiente "Smallmatrix".
+Per produrre una piccola matrice inline nel testo, è possibile utilizzare l'ambiente `smallmatrix`.
 
 
 ```tex
@@ -90,13 +90,13 @@ and follow it with enough text to ensure that there is at least one full line be
 
 ![L'ambiente Smallmatrix](/tex/images/java/tutorial/latex-ams-math-3-4.png)
 
-Si noti che le righe di testo non sono sparse anche se la linea prima della piccola matrice contiene lettere con discendenti.
+Si noti che le righe di testo non vengono distanziate ulteriormente, anche se la riga precedente la piccola matrice contiene lettere con tratti discendenti.
 
-## 3.3. Impilamento in abbonamenti e rivestimenti
+## 3.3. Impilamento in pedici e apici
 
-A volte potrebbe essere necessario compromettere diverse righe all'interno di un pedice o apice. Per fare ciò, puoi usare il comando `\Scadack` con righe di delimitazione di` \\ `.
+A volte potrebbe essere necessario comporre diverse righe all'interno di un pedice o di un apice. Per fare ciò, si può usare il comando `\substack` con `\\` come delimitatore di riga.
 
-L'ambiente "Subarray" è una struttura leggermente più generale che ti consente di allineare le linee a sinistra o a destra, piuttosto che centrali.
+L'ambiente `subarray` è una struttura leggermente più generale che consente di allineare le righe a sinistra o a destra, anziché centrarle.
 
 
 ```tex
@@ -112,15 +112,15 @@ i \in \Lambda \\
 \end{gather}
 ```
 
-![Impilamento in sotto-e apice](/tex/images/java/tutorial/latex-ams-math-3-5.png)
+![Impilamento in pedici e apici](/tex/images/java/tutorial/latex-ams-math-3-5.png)
 
 > Si noti che entrambi gli ambienti devono essere racchiusi tra parentesi graffe quando appaiono come apice o pedice.
 
 ## 3.4. Diagrammi commutativi
 
-Il pacchetto `Amscd` definisce alcuni comandi per la produzione di semplici diagrammi commutativi basati su array. Esistono alcune utili forme di stenografia per specificare frecce decorate e altri connettori. Tuttavia, ha limitazioni, ad esempio, questi connettori possono essere solo orizzontali o verticali.
+Il pacchetto `amscd` definisce alcuni comandi per la produzione di semplici diagrammi commutativi basati su array. Esistono alcune utili forme abbreviate (shorthand) per specificare frecce decorate e altri connettori. Tuttavia, presenta delle limitazioni: ad esempio, questi connettori possono essere solo orizzontali o verticali.
 
-Nell'ambiente `CD`, le notazioni`@>>> ``@<<< `,`@vvv` `e@@aaa` producono rispettivamente a destra, a sinistra, giù e in alto. L'esempio seguente mostra anche l'uso del comando `\dichiarathoperator`.
+Nell'ambiente `CD`, le notazioni `@>>>`, `@<<<`, `@VVV` e `@AAA` producono rispettivamente frecce verso destra, sinistra, il basso e l'alto. L'esempio seguente mostra anche l'uso del comando `\DeclareMathOperator`.
 
 
 ```tex
@@ -139,11 +139,11 @@ Nell'ambiente `CD`, le notazioni`@>>> ``@<<< `,`@vvv` `e@@aaa` producono rispett
 
 ![Diagramma commutativo semplice](/tex/images/java/tutorial/latex-ams-math-3-6.png)
 
-Vediamo come vengono specificate le decorazioni. Per le frecce orizzontali, il materiale tra il primo e il secondo simboli `` `` o `<` saranno composti come appescrive e il materiale tra il secondo e il terzo verrà composto come un pedice. Allo stesso modo, il materiale tra il primo e il secondo, o il secondo e il terzo, `a` o` V` di frecce verticali sarà composto come sinistro o destro "sceneggiatura laterale". Vedremo l'uso di questo formato nel prossimo esempio.
+Vediamo come vengono specificate le decorazioni. Per le frecce orizzontali, il materiale tra il primo e il secondo simbolo `>` o `<` sarà composto come apice, mentre quello tra il secondo e il terzo come pedice. Allo stesso modo, il materiale tra il primo e il secondo, o tra il secondo e il terzo, `A` o `V` delle frecce verticali sarà composto come "side-script" a sinistra o a destra. Vedremo l'uso di questo formato nel prossimo esempio.
 
-Le notazioni `@=` e `@|` Dai doppie linee orizzontali e verticali.
+Le notazioni `@=` e `@|` producono doppie linee orizzontali e verticali.
 
-Invece di una freccia visibile, puoi usare una "freccia nulla" (`@.`) per compilare un array dove necessario.
+Invece di una freccia visibile, si può usare una "freccia nulla" (`@.`) per riempire l'array dove necessario.
 
 
 ```tex
@@ -155,12 +155,11 @@ S^{W_\Lambda}\otimes T @>j>> T \\
 @VVV @VV{\End P}V \\
 (S \otimes T)/I @= (Z\otimes T)/J
 \end{CD} \]
-
 ```
 
 ![Diagramma commutativo con script](/tex/images/java/tutorial/latex-ams-math-3-7.png)
 
-Un layout simile può essere prodotto nel LaTeX standard. Ma non sembra buono.
+Un layout simile può essere prodotto nel LaTeX standard, ma il risultato non è altrettanto buono.
 
 
 ```tex
@@ -173,11 +172,11 @@ S^{\mathcal{W}_\Lambda}\otimes T & \stackrel{j}{\longrightarrow} & T \\
 
 ![Diagramma commutativo nel LaTeX standard](/tex/images/java/tutorial/latex-ams-math-3-8.png)
 
-Questo esempio mostra abbastanza chiaramente quanto meglio risultati produce il pacchetto `Amscd`: la notazione è più semplice, le frecce orizzontali sono più lunghe, la spaziatura tra gli elementi è molto migliorata. I pacchetti più specializzati ti aiuteranno a ottenere risultati ancora più belli.
+Questo esempio mostra chiaramente quanto siano migliori i risultati prodotti dal pacchetto `amscd`: la notazione è più semplice, le frecce orizzontali sono più lunghe, la spaziatura tra gli elementi è notevolmente migliorata. Pacchetti più specializzati aiuteranno a ottenere risultati ancora più belli.
 
-## 3.5. Delimitatori che circondano un array: il pacchetto `Delarray`
+## 3.5. Delimitatori che circondano un array: il pacchetto delarray
 
-In questa sezione, discuteremo di un'utile estensione generale al pacchetto `Array`. Utilizzando questa estensione, l'utente può specificare l'apertura e la chiusura dei delimitatori estensibili per circondare un ambiente di matematica "Array". Diamo un'occhiata all'esempio:
+In questa sezione discuteremo di un'utile estensione generale del pacchetto `array`. Utilizzando questa estensione, l'utente può specificare delimitatori estensibili di apertura e chiusura per circondare un ambiente `array` in modalità matematica. Vediamo l'esempio:
 
 
 ```tex
@@ -192,8 +191,8 @@ In questa sezione, discuteremo di un'utile estensione generale al pacchetto `Arr
 
 ![L'uso del pacchetto Delarray](/tex/images/java/tutorial/latex-ams-math-3-9.png)
 
-> Si noti che il pacchetto `delarray` è indipendente da `amsmath` ma carica automaticamente il pacchetto `array` se necessario.
+> Si noti che il pacchetto `delarray` è indipendente da `amsmath`, ma carica automaticamente il pacchetto `array` se necessario.
 
 I delimitatori sono posizionati su entrambi i lati di `{cc}`.
 
-Questo esempio illustra anche la caratteristica più utile del pacchetto `Delarray`: l'uso degli argomenti opzionali` [t] `e` [b] `, che non sono consentiti con gli ambienti a matrice di` Amsmath`. Questi mostrano che l'uso della sintassi di `Delarray` non è equivalente all'ambiente circostante con`\left` e `\a destra`, poiché i delimitatori sono sollevati e l'array stesso.
+Questo esempio illustra anche la caratteristica più utile del pacchetto `delarray`: l'uso degli argomenti opzionali `[t]` e `[b]`, che non sono consentiti con gli ambienti di matrice di `amsmath`. Questi mostrano che l'uso della sintassi di `delarray` non è equivalente al circondare l'ambiente `array` con `\left` e `\right`, poiché i delimitatori vengono sollevati insieme all'array stesso.
