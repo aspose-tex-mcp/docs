@@ -5,8 +5,8 @@ title: Funzionalità di conversione | Aspose.TeX per .NET
 linktitle: Conversione
 weight: 10
 url: /net/conversion/
-description: Funzionalità di conversione della soluzione API ASPUS.TEX per .NET supporta i formati di output successivi Tex, XPS, PDF, PNG, JPEG, TIFF e PNG.
-lastmod: "2025-06-13"
+description: Funzionalità di conversione della soluzione API **Aspose.TeX** per .NET supporta i formati di output successivi TeX, XPS, PDF, PNG, JPEG, TIFF e PNG.
+lastmod: "2026-04-03"
 ---
 
 {{<section overview>}}

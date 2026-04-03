@@ -6,7 +6,7 @@ linktitle: LaTeX ファイル修復
 weight: 30
 url: /net/latex-repair/
 description: Aspose.TeX API の .NET 用 LaTeX 修復ソリューションについて説明しています。機能の使用方法を示すコード例をご覧ください。
-lastmod: "2026-02-25"
+lastmod: "2026-04-03"
 ---
 
 {{<section overview>}}

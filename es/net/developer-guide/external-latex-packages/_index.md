@@ -7,7 +7,7 @@ weight: 20
 url: /net/external-latex-packages/
 description: Aspose.TeX para .NET permite utilizar paquetes externos, es decir, los que no están incluidos en la propia biblioteca, como los paquetes pgfplots.
 keywords: paquetes externos de LaTeX, Aspose TeX, .NET TeX, paquetes de LaTeX, FancyBox, pgfplots, directorio de entrada requerido, archivo zip de entrada, directorio de entrada personalizado, conversión de TeX
-lastmod: "2024-10-30"
+lastmod: "2026-04-03"
 ---
 
 {{<section overview>}}

@@ -1,36 +1,36 @@
-﻿---
+---
 translation: true
 template: /templates/_template-java.md
-linktitle: Caratteri di matematica in LaTeX
-title: 8. Fonts in Math Formule | Matematica del carattere in LaTeX
+linktitle: I font matematici in LaTeX
+title: 8. I font nelle formule matematiche
 weight: 80
 url: /java/latex-math-fonts/
-keywords: AMS-Latex, Amsmath, Amsfonts, AMSSYMB, Fonts di matematica in LaTeX, alfabeti di matematica in LaTeX, pacchetto BM in LaTeX, caratteri in LaTeX, caratteri in LaTeX matematica
-description: Questo articolo discute la gestione dei caratteri matematici per mezzo del LaTeX standard, nonché l'utilizzo dei pacchetti AMSMath e BM.
-lastmod: "2025-06-13"
+keywords: ams-latex, amsmath, amsfonts, amssymb, font matematici LaTeX, alfabeti matematici LaTeX, pacchetto bm LaTeX, font in LaTeX, font in LaTeX matematica
+description: Questo articolo discute la gestione dei font matematici tramite il LaTeX standard e l'utilizzo dei pacchetti amsmath e bm.
+lastmod: "2026-03-30"
 ---
 
 {{<section overview>}}
 
-## Introduzione ai caratteri in LaTeX
+## Introduzione ai font in LaTeX
 
-A differenza del testo galleggiante, in genere non avresti bisogno di cambiamenti automatici nelle forme del carattere. Forme diverse hanno significati specifici in matematica. Ad esempio, le lettere verticali in grassetto possono essere utilizzate per i vettori. Se i personaggi in una formula dovessero cambiare a causa delle condizioni circostanti, il risultato sarebbe errato. Ecco perché la gestione dei caratteri nelle formule di matematica differisce da quella nel testo.
+A differenza del testo a scorrimento, in genere non sono necessari cambiamenti automatici nelle forme dei font. Forme diverse hanno significati specifici in matematica. Ad esempio, le lettere verticali in grassetto possono essere utilizzate per i vettori. Se i caratteri in una formula dovessero cambiare a causa delle condizioni circostanti, il risultato sarebbe errato. Ecco perché la gestione dei font nelle formule matematiche differisce da quella nel testo.
 
-I personaggi in una formula possono essere divisi in due classi: simboli e caratteri alfabeti (comprese le cifre). In realtà, Tex si occupa internamente di otto classi che definiscono la spaziatura appropriata. Ma per la discussione in corso, la divisione in due classi è abbastanza.
+I caratteri in una formula possono essere divisi in due classi: simboli e caratteri alfabetici (comprese le cifre). In realtà, TeX gestisce internamente otto classi che definiscono la spaziatura appropriata, ma per la discussione in corso è sufficiente la divisione in due classi.
 
-Alcuni simboli, come `=`, possono essere inseriti direttamente dalla tastiera. Tuttavia, una parte di essi deve essere inserita tramite un comando, ad esempio, `\leq` fornisce un segno inferiore o uguale. L'altro gruppo principale di caratteri in una formula, i caratteri dell'alfabeto, vengono inseriti direttamente dalla tastiera.
+Alcuni simboli, come `=`, possono essere inseriti direttamente dalla tastiera. Tuttavia, parte di essi deve essere inserita tramite un comando: ad esempio, `\leq` produce il segno di minore o uguale. L'altro gruppo principale di caratteri in una formula, i caratteri alfabetici, viene inserito direttamente dalla tastiera.
 
-Ci sono più di 200 simboli predefiniti nel LaTeX standard. Consente all'utente di compiere quasi tutte le formula desiderate. Questi simboli si trovano in diversi caratteri, ma è possibile accedere in modo tale che l'utente non debba essere consapevole di come sono rappresentati internamente. Se necessario, i caratteri a simbolo aggiuntivi possono essere resi accessibili in modo simile.
+Esistono più di 200 simboli predefiniti nel LaTeX standard, il che consente all'utente di comporre quasi ogni formula desiderata. Questi simboli si trovano in diversi font, ma vi si accede in modo tale che l'utente non debba preoccuparsi di come siano rappresentati internamente. Se necessario, è possibile rendere accessibili in modo simile font di simboli aggiuntivi.
 
-I simboli e i caratteri alfabeti hanno una differenza che è più importante per noi ora: i simboli hanno la stessa rappresentazione grafica all'interno di una formula, mentre l'utente può cambiare l'aspetto dei caratteri dell'alfabeto. I comandi che cambiano l'aspetto dei caratteri dell'alfabeto in una formula sono chiamati *identificatori di alfabeto di matematica* e i caratteri associati a questi comandi sono chiamati *alfabeti matematici*. Una formula non cambia se viene posizionata, per esempio, all'interno di un ambiente di teorema in cui il testo è composto in corsivo per impostazione predefinita, perché gli identificatori di alfabeto sono indipendenti dai comandi di carattere circostante al di fuori della formula. Questo comportamento è molto importante perché le forme di carattere trasportano significati che devono rimanere invariati ovunque la formula appaia in un documento.
+Simboli e caratteri alfabetici hanno una differenza molto importante: i simboli hanno la stessa rappresentazione grafica all'interno di una formula, mentre l'utente può cambiare l'aspetto dei caratteri alfabetici. I comandi che cambiano l'aspetto dei caratteri alfabetici in una formula sono chiamati *identificatori alfabetici matematici* e i font associati a questi comandi sono chiamati *alfabeti matematici*. Una formula non cambia se viene posizionata, ad esempio, all'interno di un ambiente di teorema in cui il testo è composto in corsivo per impostazione predefinita, poiché gli identificatori alfabetici sono indipendenti dai comandi dei font circostanti al di fuori della formula. Questo comportamento è fondamentale perché le forme dei caratteri veicolano significati che devono rimanere invariati ovunque la formula appaia nel documento.
 
-## 8.1. Identificatori alfabeti di matematica
+## 8.1. Identificatori alfabetici matematici
 
-Un alfabeto e un numero enorme di simboli non sono sufficienti per gli scienziati. Cercano di utilizzare ogni carattere tipografico disponibile per indicare concetti speciali. Oltre agli alfabeti stranieri come le lettere greche, che di solito sono accessibili come simboli - `\alpha`,`\beta`, ecc. - Possiamo trovare lettere serif sans per matrici, lettere serif audaci per vettori, caratteri Fraktur per gruppi, ideali o campi. Altri usano forme calligrafiche per indicare i set. Il numero di convenzioni è infinito e differiscono da una disciplina all'altra. E il LaTeX accoglie questo che consente di dichiarare nuovi identificatori di alfabeto matematico e associarli a qualsiasi gruppo di forma di carattere desiderato invece di fare affidamento solo su un set predefinito che non può essere esteso. Questi identificatori sono comandi speciali da utilizzare in una formula che compromettono qualsiasi carattere alfabetico nel loro argomento in un carattere tipografico specifico. Questi identificatori possono utilizzare diversi caratteri tipografici in diverse formule, come vedremo [più tardi](/tex/{{lang.url-fragment}}java/latex-math-fonts/#3-math-formula-versions), ma all'interno di una formula selezionano sempre lo stesso carattere tipografico indipendentemente dalle condizioni circostanti.
+Un solo alfabeto e un numero enorme di simboli non sono sufficienti per gli scienziati, che cercano di utilizzare ogni font disponibile per indicare concetti speciali. Oltre agli alfabeti stranieri come le lettere greche (solitamente accessibili come simboli — `\alpha`, `\beta`, ecc.), si possono trovare lettere sans serif per le matrici, lettere serif in grassetto per i vettori, font Fraktur per gruppi, ideali o campi. Altri usano forme calligrafiche per indicare gli insiemi. Il numero di convenzioni è infinito e varia da una disciplina all'altra. LaTeX asseconda tutto questo consentendo di dichiarare nuovi identificatori alfabetici matematici e di associarli a qualsiasi forma di font desiderata, invece di affidarsi solo a un set predefinito non estensibile. Questi identificatori sono comandi speciali da usare in una formula che compongono qualsiasi carattere alfabetico nel loro argomento con uno specifico font. Questi identificatori possono utilizzare font diversi in formule diverse, come vedremo [più avanti](/tex/{{lang.url-fragment}}java/latex-math-fonts/#3-math-formula-versions), ma all'interno di una singola formula selezionano sempre lo stesso font indipendentemente dalle condizioni circostanti.
 
-### Identificatori alfabeti predefiniti
+### Identificatori alfabetici predefiniti
 
-LaTex ha già alcuni identificatori di alfabeto integrati. Sono mostrati nella tabella seguente. Le ultime due righe mostrano che le lettere utilizzate nelle formule sono tratte dall'alfabeto matematico `\mathnormal`. D'altra parte, le lettere prodotte da `\Mathit` hanno una spaziatura diversa, il che significa che questo alfabeto può essere usato per fornire nomi di variabili di una parola piena che sono comuni in alcune discipline.
+LaTeX ha già alcuni identificatori alfabetici integrati, mostrati nella tabella seguente. Le ultime due righe mostrano che le lettere usate nelle formule sono tratte dall'alfabeto matematico `\mathnormal`. D'altra parte, le lettere prodotte da `\mathit` hanno una spaziatura diversa, il che significa che questo alfabeto può essere usato per nomi di variabili composti da una parola intera, comuni in alcune discipline.
 
 | *Comando* | *Codice di esempio* | *Risultato* |
 |---|---|---|
@@ -42,8 +42,7 @@ LaTex ha già alcuni identificatori di alfabeto integrati. Sono mostrati nella t
 | `\mathnormal` | `$\mathnormal{abc}=abc$`| !["Normal abc Equals abc"](/tex/images/java/tutorial/latex-ams-math-8-6.png) |
 | `\mathit` | `$differ\neq\mathit{differ}$`| !["Italic Differ Not Equal to Differ"](/tex/images/java/tutorial/latex-ams-math-8-7.png) |
 
-In Latex2E, gli identificatori di alfabeto di matematica sono comandi con un argomento, una singola lettera o una singola parola da compensare in un carattere speciale.
-
+In LaTeX2e, gli identificatori alfabetici matematici sono comandi con un argomento: una singola lettera o una singola parola da comporre con un font speciale.
 
 ```tex
 Therefore, $\mathsf{G}$ can be computed as
@@ -53,11 +52,11 @@ Therefore, $\mathsf{G}$ can be computed as
 \end{equation}
 ```
 
-![Identificatori alfabeti di matematica predefinita](/tex/images/java/tutorial/latex-ams-math-8-8.png)
+![Identificatori alfabetici matematici predefiniti](/tex/images/java/tutorial/latex-ams-math-8-8.png)
 
-*** Alphabet matematica predefinita***
+***Alfabeto matematico predefinito***
 
-Se non si specifica esplicitamente un identificatore di alfabeto, da cui sono selezionati i caratteri dell'alfabeto? In altre parole, qual è l'alfabeto matematico predefinito? La risposta è che non esiste un singolo alfabeto matematico predefinito. Il sistema in LaTeX può essere impostato in modo che i caratteri alfabetici vengano recuperati da diversi alfabeti, a meno che l'utente non ne richieda esplicitamente uno specifico, e questo è normalmente il caso, come mostra l'esempio seguente.
+Se non si specifica esplicitamente un identificatore alfabetico, da quale alfabeto vengono selezionati i caratteri? In altre parole, qual è l'alfabeto matematico predefinito? La risposta è che non esiste un unico alfabeto matematico predefinito. Il sistema LaTeX può essere impostato in modo che i caratteri alfabetici siano prelevati da alfabeti diversi (a meno che l'utente non ne richieda uno specifico), e questo è normalmente il caso, come mostrato nell'esempio seguente.
 
 ```tex
 \begin{eqnarray}
@@ -69,25 +68,25 @@ x &=& 12345 \\
 
 ![Nessun alfabeto matematico predefinito](/tex/images/java/tutorial/latex-ams-math-8-9.png)
 
-Qui puoi vedere che `\mathrm` non cambia le cifre e`\mathnormal` non cambia le lettere, quindi il valore predefinito per le cifre nella normale configurazione è l'alfabeto matematico associato a `\mathrm` e il valore predefinito per le lettere è quello associato a`\mathnormal`. Questo comportamento può essere controllato con il comando `\dichiarathsymbol".
+Qui si può vedere che `\mathrm` non cambia le cifre e `\mathnormal` non cambia le lettere; quindi, il predefinito per le cifre nella configurazione normale è l'alfabeto matematico associato a `\mathrm`, mentre il predefinito per le lettere è quello associato a `\mathnormal`. Questo comportamento può essere controllato con il comando `\DeclareMathSymbol`.
 
-### Quale carattere usa il LaTeX per la matematica?
+### Quale font usa LaTeX per la matematica?
 
-In LaTeX, il carattere predefinito utilizzato per la modalità matematica è in genere *computer moderno *. Tuttavia, puoi anche usare caratteri diversi specificandoli nel preambolo del documento Latex usando i pacchetti.
+In LaTeX, il font predefinito utilizzato per la modalità matematica è in genere *Computer Modern*. Tuttavia, è possibile utilizzare anche font diversi specificandoli nel preambolo del documento tramite appositi pacchetti.
 
-### Identificatori alfabeti personalizzati
+### Identificatori alfabetici personalizzati
 
-È possibile utilizzare il comando `\dichiarathalphabet` per definire un nuovo identificatore di alfabeto matematico. Diciamo che vuoi rendere disponibile un carattere tipografico sans serif inclinati come alfabeto di matematica. Per prima cosa decidi un nuovo nome di comando, come `\msfsl`, da usare come identificatore di alfabeto. Quindi ti riferisci alla tabella di classificazione del carattere di seguito per trovare un gruppo di forma del carattere adatto da assegnare a questo identificatore di alfabeto.
+È possibile utilizzare il comando `\DeclareMathAlphabet` per definire un nuovo identificatore alfabetico matematico. Supponiamo di voler rendere disponibile un font sans serif inclinato come alfabeto matematico. Per prima cosa, si sceglie un nuovo nome per il comando, ad esempio `\msfsl`. Quindi, si fa riferimento alla tabella di classificazione dei font qui sotto per trovare un gruppo di forme di font adatto da assegnare a questo identificatore.
 
-![Classificazione delle famiglie di caratteri moderni del computer](/tex/images/java/tutorial/latex-ams-math-8-10.png)
+![Classificazione delle famiglie di font Computer Modern](/tex/images/java/tutorial/latex-ams-math-8-10.png)
 
-Scoprirai che la famiglia moderna **moderna**, ad esempio, è costituita da una serie media con forme verticali e inclinate. Se decidi di usare la forma inclusa di questa famiglia, dici il LaTeX usando `\dichiarathalphabet`.
+Si scoprirà che la famiglia **Computer Modern Sans**, ad esempio, consiste in una serie medium con forme verticali e inclinate. Se si decide di utilizzare la forma inclinata di questa famiglia, lo si comunica a LaTeX tramite `\DeclareMathAlphabet`.
 
 ```text
 \DeclareMathAlphabet{cmd}{encoding}{family}{series}{shape}
 ```
 
-Esistono quattro parametri (oltre all'identificatore stesso) nella dichiarazione: il nome di codifica, la famiglia, la serie e la forma del carattere da utilizzare. L'identificatore di alfabeto definito nel seguente esempio passerà sempre a **Computer modern sans** medio inclinato.
+Esistono quattro parametri (oltre all'identificatore stesso) nella dichiarazione: il nome della codifica, la famiglia, la serie e la forma del font da utilizzare. L'identificatore alfabetico definito nel seguente esempio passerà sempre a **Computer Modern Sans** medium slanted.
 
 ```tex
 \DeclareMathAlphabet{\msfsl}{OT1}{cmss}{m}{sl}
@@ -98,53 +97,53 @@ We demonstrate this with the formula
 \end{equation}
 ```
 
-![Dichiarare un identificatore di alfabeto matematico personalizzato](/tex/images/java/tutorial/latex-ams-math-8-11.png)
+![Dichiarazione di un identificatore alfabetico matematico personalizzato](/tex/images/java/tutorial/latex-ams-math-8-11.png)
 
-Puoi anche ridefinire un identificatore di alfabeto matematico esistente in un file di pacchetto o nel preambolo del documento. Per esempio,
+È anche possibile ridefinire un identificatore alfabetico matematico esistente in un pacchetto o nel preambolo del documento. Per esempio:
 
 ```tex
 \DeclareMathAlphabet{\mathsf}{OT1}{pag}{m}{n}
 ```
 
-Sostituirà le impostazioni predefinite per l'identificatore di alfabeto `\mathsf`. Passerà a **Adobe Avant Garde** nelle tue formule.
+sostituirà le impostazioni predefinite per l'identificatore `\mathsf`, passando a **Adobe Avant Garde** nelle formule.
 
-> Si noti che se l'alfabeto matematico in questione fa parte di un font di simboli già caricato da LaTeX per altri motivi (ad esempio, `\mathcal`), è meglio usare `\DeclareSymbolFontAlphabet` poiché sfrutta meglio le risorse alquanto limitate di TeX per la matematica.
+> Si noti che se l'alfabeto matematico in questione fa parte di un font di simboli già caricato da LaTeX per altri motivi (ad esempio, `\mathcal`), è meglio usare `\DeclareSymbolFontAlphabet`, poiché sfrutta meglio le risorse talvolta limitate di TeX per la matematica.
 
-## I migliori caratteri di matematica
+## I migliori font matematici
 
-Oltre al carattere predefinito *per computer moderno*, il LaTeX offre sette caratteri integrati per la composizione alfabetica matematica, in modo che gli utenti possano personalizzare le proprie espressioni matematiche senza richiedere pacchetti aggiuntivi nel preambolo. E l'opzione migliore per te è usare uno di questi 8 caratteri.
+Oltre al font predefinito *Computer Modern*, LaTeX offre sette font integrati per la composizione degli alfabeti matematici, consentendo agli utenti di personalizzare le proprie espressioni senza richiedere pacchetti aggiuntivi nel preambolo. Usare uno di questi 8 font è l'opzione migliore.
 
-| **Carattere** | **Utilizzo** | **Comando** |
+| **Font** | **Utilizzo** | **Comando** |
 |---|---|---|
-|Roman Verticale | Carattere Verticale Standard|`\mathrm{}`|
-|Calligrafico | Utilizzato per la composizione di lettere matematiche regolari.|`\mathnormal{}`|
-|Calligrafico | Utilizzato per la composizione di lettere maiuscole con uno speciale font calligrafico.|`\mathcal{}`|
-|Lettere Corsive| Rende il testo in corsivo|`\mathit{}`|
-|[Sans Serif Verticale](/font/net/what-is-font/sans-serif-fonts/)| Imposta le lettere Sans Serif verticali|`\mathsf{}`|
-|Roman Verticale Grassetto| Utilizzato per la composizione di lettere Romane Verticali Grassetto|`\mathbf{}`|
-|Tipo di macchina da scrivere|Utilizzato per la composizione di lettere verticali tipo macchina da scrivere.|`\mathtt{}`|
+|Romano verticale | Font verticale standard|`\mathrm{}`|
+|Corsivo matematico | Usato per comporre le normali lettere matematiche.|`\mathnormal{}`|
+|Calligrafico | Usato per comporre lettere maiuscole con uno speciale font calligrafico.|`\mathcal{}`|
+|Lettere corsive| Rende il testo in lettere corsive.|`\mathit{}`|
+|Sans Serif verticale| Imposta le lettere in sans serif verticale.|`\mathsf{}`|
+|Romano verticale grassetto| Usato per comporre lettere in romano verticale grassetto.|`\mathbf{}`|
+|Dattilo (Typewriter)|Usato per comporre lettere verticali in stile macchina da scrivere.|`\mathtt{}`|
 
 
-## 8.2. Comandi di carattere di testo in matematica
+## 8.2. Comandi dei font di testo in matematica
 
-Sebbene le dichiarazioni del carattere di testo come `\rmfamily` non possano essere usate in matematica, i comandi che cambiano il carattere - ad esempio,`\textrm` - possono essere utilizzati sia in testo che in matematica. Usando questi comandi, è possibile passare temporaneamente dal contesto matematico al testo e scrivere un testo nel mezzo della formula che logicamente fa parte del testo circostante fuori dalla formula. Il carattere utilizzato per compensare questo testo dipenderà dalle condizioni circostanti, il che significa che erediterà l'attuale codifica, famiglia, serie e forma, come nell'esempio seguente.
+Sebbene le dichiarazioni dei font di testo come `\rmfamily` non possano essere usate in matematica, i comandi che cambiano il font — ad esempio, `\textrm` — possono essere utilizzati sia nel testo che in matematica. Usando questi comandi, è possibile passare temporaneamente dal contesto matematico al testo e scrivere del testo nel mezzo della formula che logicamente faccia parte del testo circostante. Il font utilizzato dipenderà dalle condizioni esterne, ereditando codifica, famiglia, serie e forma correnti, come nell'esempio seguente.
 
 ```tex
 \sffamily The result will be
 \[ x = 10 \textbf{ and thus } y = 12 \]
 ```
 
-![Comandi di carattere di testo in matematica](/tex/images/java/tutorial/latex-ams-math-8-12.png)
+![Comandi dei font di testo in matematica](/tex/images/java/tutorial/latex-ams-math-8-12.png)
 
-Qui possiamo vedere che la famiglia **Sans** è stata mantenuta e la serie è stata cambiata in grassetto. Il comando [`\text`](/tex/{{lang.url-fragment}}java/latex-text-in-math-formula/#61-the-text-command) fornito dal pacchetto `amstext` (che è anche caricato da `amsmath`) può rivelarsi più utile. Raccoglie i valori di codifica, famiglia, serie e forma attuale senza cambiarne nessuno.
+Qui si vede che la famiglia **Sans** è stata mantenuta e la serie è stata cambiata in grassetto. Il comando [`\text`](/tex/{{lang.url-fragment}}java/latex-text-in-math-formula/#61-the-text-command) fornito dal pacchetto `amstext` (caricato anche da `amsmath`) può rivelarsi più utile, poiché rileva i valori di codifica, famiglia, serie e forma correnti senza modificarli.
 
-## 8.3. Versioni di formula matematica
+## 8.3. Versioni delle formule matematiche
 
-Abbiamo discusso di come cambiare parti di una formula usando identificatori di alfabeto matematico. Il LaTeX ti consente anche di cambiare l'aspetto di una formula nel suo insieme. Le formule di matematica sono sempre composti in una certa *versione matematica *. E puoi passare da una versioni matematiche al di fuori della modalità matematica usando il comando `\mathversion`, che cambia il layout generale delle seguenti formule.
+Abbiamo discusso di come cambiare parti di una formula utilizzando identificatori alfabetici matematici. LaTeX consente anche di cambiare l'aspetto di una formula nel suo insieme. Le formule matematiche sono sempre composte in una certa *versione matematica*. È possibile passare da una versione all'altra al di fuori della modalità matematica tramite il comando `\mathversion`, che cambia il layout generale delle formule successive.
 
-Latex ha due versioni matematiche per impostazione predefinita: *normale * e *grassetto*. E i pacchetti speciali offrono più versioni. Ad esempio, il pacchetto *MathTime*(per i caratteri commerciali **MathTime**) imposta una versione matematica chiamata*Heavy*per compensare formule con simboli ultra audaci come fornito dai caratteri **MathTime**.
+LaTeX ha due versioni matematiche predefinite: *normal* e *bold*. Pacchetti speciali offrono ulteriori versioni: ad esempio, il pacchetto *MathTime* (per i font commerciali **MathTime**) imposta una versione chiamata *heavy* per comporre formule con simboli ultra-grassetti.
 
-Ovviamente, la versione matematica predefinita è `\mathversion {normale}`. La versione audace, a sua volta, produrrà caratteri e simboli alfabeti audaci, sebbene i grandi operatori, come `\sum`, non siano modificati per impostazione predefinita. L'esempio seguente mostra prima la stessa formula nella versione matematica normale e poi nella versione matematica audace.
+Ovviamente, la versione predefinita è `\mathversion{normal}`. La versione bold, a sua volta, produce caratteri alfabetici e simboli in grassetto, anche se i grandi operatori come `\sum` non vengono modificati per impostazione predefinita. L'esempio seguente mostra la stessa formula prima nella versione normale e poi in quella grassetto.
 
 ```tex
 \begin{equation}
@@ -158,32 +157,32 @@ Ovviamente, la versione matematica predefinita è `\mathversion {normale}`. La v
 
 ![Versioni matematiche](/tex/images/java/tutorial/latex-ams-math-8-13.png)
 
-L'uso di `\Mathversion` può essere adatto in determinate situazioni, ad esempio nelle intestazioni, ma devi tenere presente che cambiare la versione significa cambiare l'aspetto e possibilmente il significato dell'intera formula. Se si desidera oscurare solo alcuni simboli o caratteri all'interno di una formula, è necessario utilizzare l'identificatore di alfabeto `\mathbf` per i personaggi e/o utilizzare il comando `\bm` fornito dal pacchetto [`bm`](/tex/{{lang.url-fragment}}java/latex-math-fonts/#5-bold-face-in-formulas-the-bm-package) piuttosto che modificare`\mathversion`.
+L'uso di `\mathversion` può essere adatto in certe situazioni, come nelle intestazioni, ma bisogna ricordare che cambiare versione significa cambiare l'aspetto e forse il significato dell'intera formula. Se si desidera rendere in grassetto solo alcuni simboli o caratteri in una formula, è preferibile usare l'identificatore `\mathbf` per i caratteri e/o il comando `\bm` del pacchetto [`bm`](/tex/{{lang.url-fragment}}java/latex-math-fonts/#5-bold-face-in-formulas-the-bm-package).
 
-Quando si cambia la versione matematica, il LaTeX guarda nelle sue tabelle interne per trovare dove si trovano tutti i simboli per questa nuova versione matematica. Può anche cambiare tutto o alcuni degli identificatori di alfabeti matematici e associarli ad altre forme di carattere in questa versione.
+Quando si cambia la versione matematica, LaTeX consulta le sue tabelle interne per trovare i simboli della nuova versione. Può anche cambiare alcuni o tutti gli identificatori alfabetici matematici associandoli ad altre forme di font.
 
-Ma cosa succede agli identificatori di alfabeto personalizzati come `\msfsl` che abbiamo definito nell'[esempio](/tex/{{lang.url-fragment}}java/latex-math-fonts/#custom-alphabet-identifiers)? Finché li hai dichiarati usando `\DeclareMathAlphabet`, rimarranno gli stessi in tutte le versioni di matematica.
+Ma cosa succede agli identificatori personalizzati come `\msfsl` definiti nell'[esempio](/tex/{{lang.url-fragment}}java/latex-math-fonts/#custom-alphabet-identifiers)? Se dichiarati tramite `\DeclareMathAlphabet`, rimarranno gli stessi in tutte le versioni matematiche.
 
-Se l'identificatore di alfabeto matematico deve produrre un carattere diverso in una versione matematica speciale, è necessario raccontarne il LaTeX usando il comando `\setmathalphabet`. Ad esempio, nell'impostazione predefinita l'identificatore di alfabeto `\mathsf` è definito come segue:
+Se l'identificatore deve produrre un font diverso in una versione speciale, bisogna comunicarlo a LaTeX tramite `\SetMathAlphabet`. Ad esempio:
 
 ```tex
 \DeclareMathAlphabet{\mathsf}{OT1}{cmss}{m}{n}
 \SetMathAlphabet{\mathsf}{bold}{OT1}{cmss}{bx}{n}
 ```
 
-La prima riga imposta **Computer Modern sans** Medium come predefinito per `\mathsf` in tutte le versioni matematiche. La seconda riga indica al LaTeX di utilizzare **Computer Modern sans** grassetto esteso nella versione matematica audace.
+La prima riga imposta **Computer Modern Sans** Medium come predefinito per `\mathsf`. La seconda istruisce LaTeX a usare **Computer Modern Sans** Bold Extended nella versione bold.
 
 ```tex
 \SetMathAlphabet{cmd}{version}{encoding}{family}{series}{shape}
 ```
 
-Come avrete indovinato dall'esempio precedente, `\setmathalphabet` prende sei argomenti: l'identificatore di alfabeto matematico, il nome della versione matematica per il quale stai definendo un set-up speciale e quattro parametri per identificare il carattere con cui si sta associando la configurazione.
+`\SetMathAlphabet` accetta sei argomenti: l'identificatore alfabetico, il nome della versione matematica, e i quattro parametri del font da associare.
 
-Come abbiamo notato in precedenza, puoi ridefinire un identificatore di alfabeto di matematica esistente usando `\dichiarathalphabet`. In tal caso, tutte le precedenti dichiarazioni `\setmathalphabet` per questo identificatore vengono rimosse dalla memoria interna del LaTeX. Quindi l'identificatore uscirà lo stesso in tutte le versioni matematiche a meno che tu non aggiunga nuove dichiarazioni `\setmathalphabet` per esso.
+Come notato prima, si può ridefinire un identificatore esistente con `\DeclareMathAlphabet`. In tal caso, tutte le precedenti dichiarazioni `\SetMathAlphabet` per quell'identificatore vengono rimosse dalla memoria di LaTeX.
 
-## 8.4. Fonti di sintonia in formule con pacchetti AMS-Latex
+## 8.4. Ottimizzazione dei font nelle formule con i pacchetti AMS-LaTeX
 
-Il pacchetto *amsfonts *(e *amssymb*) definisce due alfabeti di matematica: l'alfabeto Euler Fraktur (`\MathFrak`) e l'alfabeto BLASCHBOARD BOLD (`\MATHBB`). Vedi l'esempio seguente.
+Il pacchetto *amsfonts* (e *amssymb*) definisce due alfabeti matematici: l'alfabeto Euler Fraktur (`\mathfrak`) e l'alfabeto Blackboard Bold (`\mathbb`). Vedere l'esempio seguente.
 
 ```tex
 \usepackage{amsfonts}
@@ -191,13 +190,13 @@ Il pacchetto *amsfonts *(e *amssymb*) definisce due alfabeti di matematica: l'al
 $ \forall n \in \mathbb{N} : \mathfrak{M}_n \leq \mathfrak{A} $
 ```
 
-![Amsfonts Math Alphabet Identifiers](/tex/images/java/tutorial/latex-ams-math-8-14.png)
+![Identificatori alfabetici matematici amsfonts](/tex/images/java/tutorial/latex-ams-math-8-14.png)
 
-## 5. Bold Math Carattere Stile. Il pacchetto `BM`
+## 5. Lo stile dei font matematici in grassetto. Il pacchetto bm
 
-Solo per lettere latine, puoi usare il comando `\mathbf`. Per tutto il resto, c'è il pacchetto `BM`. Basta caricarlo e utilizzare `\bm` per creare qualsiasi formula audace e bella come consentono i caratteri disponibili.
+Solo per le lettere latine si può usare il comando `\mathbf`. Per tutto il resto esiste il pacchetto `bm`. Basta caricarlo e usare `\bm` per creare formule in grassetto.
 
-L'esempio seguente mostra molti modi per utilizzare i comandi `\bm` e `\mathbf`. Mostra anche una strategia per definire i nomi stenografici per simboli audaci che si verificano frequentemente, usando sia `\commisand` standard in LaTeX, e `\bmdefine`, che è fornito dal pacchetto` BM`. Si noti che `\mathbf {xy}` non è identico a `\bm {xy}`. Il primo produce audace romano "**xy**" e il secondo produce "*** xy***" (audace matematica corsivo).
+L'esempio seguente mostra vari modi di usare `\bm` e `\mathbf`. Mostra anche una strategia per definire nomi abbreviati per simboli in grassetto frequenti, usando sia `\newcommand` che `\bmdefine` (fornito dal pacchetto `bm`). Notate che `\mathbf{xy}` non è identico a `\bm{xy}`: il primo produce un romano grassetto "**xy**", il secondo un corsivo matematico in grassetto "***xy***".
 
 ```tex
 \usepackage{amsmath,amssymb,bm}
@@ -215,15 +214,15 @@ L'esempio seguente mostra molti modi per utilizzare i comandi `\bm` e `\mathbf`.
 \end{gather}
 ```
 
-![Utilizzando il pacchetto BM](/tex/images/java/tutorial/latex-ams-math-8-15.png)
+![Utilizzo del pacchetto bm](/tex/images/java/tutorial/latex-ams-math-8-15.png)
 
-In questo esempio `bm` cerca del suo meglio per soddisfare le richieste di versioni audaci di singoli simboli e lettere. Ma se guardi da vicino, vedrai che i risultati non sono sempre ottimali. Ad esempio, la somma e gli operatori di prodotti sono realizzati con una tecnica nota come *povera l'uomo audace *, in cui il simbolo è sovrastimato tre volte con lievi offset. Inoltre, le staffe ricci non sono affatto audaci. Tali svantaggi non possono essere evitati perché per alcuni simboli non esiste semplicemente una variante audace quando si usano i caratteri **Modern** Math Math.
+In questo esempio `bm` cerca di soddisfare le richieste di versioni in grassetto di singoli simboli e lettere. Ma a un'analisi attenta i risultati non sono sempre ottimali. Per gli operatori di somma e prodotto viene usata la tecnica *poor man's bold*, sovrimprimendo il simbolo tre volte. Inoltre, le graffe non sono affatto in grassetto. Questi inconvenienti sono inevitabili perché per alcuni simboli non esiste una variante in grassetto nei font **Computer Modern**.
 
-Quali sono le regole esatte che `\bm` segue per produrre forme audaci dei simboli nel suo argomento? In generale, utilizza il fatto che il LaTeX include una versione di matematica **Bold** (accessibile tramite `\Boldmath`) per la composizione di un'intera formula in grassetto (sono disponibili e configurati i caratteri audaci forniti). Per ogni simbolo, il comando `\bm` guarda questa versione matematica per vedere cosa sarebbe stato fatto in quella versione. Se il carattere selezionato per il simbolo è diverso da quello selezionato nella versione matematica normale, quindi descrive il simbolo in questo carattere audace, ottenendo un risultato perfetto (supponendo che la versione matematica audace sia stata impostata correttamente). Se i caratteri in entrambe le versioni sono identici, presuppone che non vi sia una variante audace disponibile e applica il povero uomo in grassetto.
+Quali regole segue `\bm`? In generale, sfrutta la versione matematica **bold** di LaTeX (accessibile via `\boldmath`). Per ogni simbolo, `\bm` controlla quella versione: se il font selezionato è diverso da quello normale, compone il simbolo con quel font (risultato perfetto). Se i font sono identici, assume che non ci sia una variante e applica il *poor man's bold*.
 
-> Carica il pacchetto `bm` dopo i pacchetti che modificano la configurazione esistente dei font matematici!
+> Caricate il pacchetto `bm` dopo i pacchetti che modificano la configurazione esistente dei font matematici!
 
-La situazione è ancora più complessa con delimitatori, come `\biggl \lbrace` nell'esempio. TEX in genere compone un delimitatore da un glifo scelto per abbinare un'altezza richiesta da una sequenza di dimensioni diverse. Questi glifi possono essere posizionati in caratteri diversi e una dimensione particolare può o meno avere varianti audaci. Tutto questo insieme rende impossibile per `\bm` determinare in modo affidabile se deve applicare l'audace degli uomini poveri. Pertanto, compromette il delimitatore usando qualsiasi caratteristica offerta dalla versione matematica audace. Con i caratteri di matematica **Modern** moderni, solo le dimensioni del delimitatore più piccole sono disponibili in grassetto; Tutte le altre dimensioni provengono da caratteri che non hanno varianti audaci.
+Con i delimitatori (come `\biggl\lbrace`) la situazione è complessa. TeX compone un delimitatore da un glifo scelto per l'altezza richiesta da una sequenza di dimensioni. Questi glifi possono trovarsi in font diversi e non tutti hanno varianti in grassetto. Questo rende impossibile per `\bm` determinare sempre se applicare il *poor man's bold*.
 
 ```tex
 \usepackage{bm}
@@ -234,26 +233,26 @@ $\bm{\Biggl\lbrace\biggl\lbrace\Bigl\lbrace\bigl \lbrace \lbrace
 \Biggr\rangle}$
 ```
 
-![Delimitatori realizzati (e non resi) in grassetto dal comando \ bm](/tex/images/java/tutorial/latex-ams-math-8-16.png)
+![Delimitatori resi (e non resi) in grassetto dal comando \bm](/tex/images/java/tutorial/latex-ams-math-8-16.png)
 
-Normalmente, se un comando che si occupa di essa stesso è all'interno dell'argomento di `\bm`, allora quel comando deve essere completamente incluso nell'argomento di `\bm`. Di conseguenza, tutte le parti del materiale da composizione saranno in grassetto. Se hai bisogno che l'output di un comando con argomenti sia solo parzialmente audace, allora dovresti fare quanto segue. Dovresti mettere i simboli che non vuoi essere audace in un `\mbox` e ripristinare esplicitamente la versione matematica all'interno del contenuto della casella usando `\Unboldmath`. Tex considera un `\mbox` come un simbolo della classe *ordinaria*. Pertanto, per ottenere la spaziatura giusta, potresti doverlo circondare da un `\mathbin`,`\mathrel` o `\mathop`.
+Normalmente, un comando che accetta argomenti deve essere incluso interamente nell'argomento di `\bm`. Se si desidera comporre solo parte dell'output in grassetto, si possono mettere i simboli non grassetti in un `\mbox` e ripristinare la versione matematica con `\unboldmath`, circondandolo magari con `\mathbin`, `\mathrel` o `\mathop` per la spaziatura corretta.
 
 ```tex
 \usepackage{amsmath,bm}
 % -------------------------------------------------------------------------------
-$ \bm{\sqrt[2]{x \times \alpha}} $ but
+$ \bm{\sqrt[2]{x \times \alpha}} $ ma
 $ \bm{\sqrt[2]{x \mathbin{\mbox{\unboldmath$\times$}} \alpha}} $
-or the similar
+o simile
 $ \bm{\sqrtsign}{\bm{x} \times \bm{\alpha}} $
 ```
 
-![\ bm con comandi che prendono argomenti](/tex/images/java/tutorial/latex-ams-math-8-17.png)
+![ \bm con comandi che accettano argomenti](/tex/images/java/tutorial/latex-ams-math-8-17.png)
 
-Fortunatamente, raramente sono richieste operazioni così complesse. Nella maggior parte dei casi che coinvolgono comandi con argomenti, solo parti dell'argomento devono essere rese audaci. E questo può essere ottenuto usando il comando `\bm` all'interno di tali argomenti. Come per `\sqrtsign` nell'esempio precedente, per il caso comune di accenti audaci,`\bm` è appositamente programmata per consentire all'argomentazione dell'accento di essere al di fuori del proprio argomento. Tuttavia, se hai bisogno di tali accenti regolarmente, è meglio definire le tue abbreviazioni, come nell'esempio seguente.
+Fortunatamente, operazioni così complesse sono raramente necessarie. Di solito basta usare `\bm` dentro gli argomenti dei comandi. Per gli accenti in grassetto, `\bm` permette all'argomento dell'accento di stare fuori dal proprio. Se servono spesso, è meglio definire abbreviazioni.
 
 ***Miglioramento delle prestazioni***
 
-Sebbene `\bmdefine \ bpi {\ pi}` sembri essere semplicemente scorciatoia per `\newCommand \ bpi {\ bm {\ pi}}`, in realtà la verità è quasi l'opposto: `\bm` definisce un nuovo comando temporaneo nascosto usando`\bmdefine` e quindi usa immediatamente questo comando temporaneo per produrre il simbolo audace. In altre parole, `\bmdefine` fa tutto il duro lavoro! Se usi frequentemente, ad esempio, qualcosa che viene definito tramite `\bm {\ alpha}`, allora viene eseguito ogni volta un nuovo `\bmdefine`. Se fornisci la definizione `\bmdefine \ balpha {\ alpha}` nel preambolo, allora `\bmdefine` fa il suo lavoro che richiede tempo solo una volta, non importa quante volte viene utilizzata`\Balpha`.
+Sebbene `\bmdefine\bpi{\pi}` sembri un'abbreviazione per `\newcommand\bpi{\bm{\pi}}`, la verità è l'opposto: `\bm` definisce un comando temporaneo tramite `\bmdefine`. Quindi `\bmdefine` fa il lavoro pesante. Se usate spesso `\bm{\alpha}`, viene eseguito un `\bmdefine` ogni volta. Definendo `\bmdefine\balpha{\alpha}` nel preambolo, il lavoro viene fatto una sola volta.
 
 ```tex
 \usepackage{bm}
@@ -262,6 +261,6 @@ Sebbene `\bmdefine \ bpi {\ pi}` sembri essere semplicemente scorciatoia per `\n
 $\hat a \neq \bm{\hat a} \neq \bm\hat a = \bhat a\neq \bm\widehat a$
 ```
 
-![Ottimizzato rendendo gli accenti in grassetto con il comando \ bm](/tex/images/java/tutorial/latex-ams-math-8-18.png)
+![Ottimizzazione degli accenti in grassetto con il comando \bm](/tex/images/java/tutorial/latex-ams-math-8-18.png)
 
-Questo esempio mostra anche che gli accenti di larghezza variabile (ad esempio, `\widehat`) condividono una carenza con i delimitatori: nel **configurazione di matematica moderna** moderna provengono da un carattere per il quale non è disponibile alcuna variante audace.
+Questo esempio mostra che gli accenti a larghezza variabile (`\widehat`) condividono una carenza con i delimitatori: nella configurazione **Computer Modern** provengono da font senza varianti in grassetto.

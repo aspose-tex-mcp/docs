@@ -6,7 +6,7 @@ linktitle: LaTeX 数学公式渲染
 weight: 10
 url: /python-net/latex-math-formula-rendering/
 description: 本文概述了 Aspose.TeX API 在 Python 中的解决方案及其渲染 LaTeX 数学公式的功能。了解代码示例
-lastmod: "2026-02-27"
+lastmod: "2026-04-03"
 ---
 
 {{<section overview>}}

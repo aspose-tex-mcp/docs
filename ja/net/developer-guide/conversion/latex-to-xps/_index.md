@@ -8,7 +8,7 @@ url: /net/latex-to-xps/
 aliases: /net/other-target-formats/
 description: Aspose.TeX API ソリューション for .NET の変換機能を使用すると、LaTeX ファイルを XPS 形式に変換できます。以下にコード例を示します。
 keywords: LaTeXからXPS、Aspose Tex、.NET変換、XPS形式、TexからXPS、ドキュメント変換、Aspose Page、XPSデバイス、XPS保存オプション、C#の例
-lastmod: "2026-02-25"
+lastmod: "2026-04-03"
 ---
 
 {{<section overview>}}

@@ -6,7 +6,7 @@ linktitle: Andere Optionen
 weight: 17
 url: /net/other-options/
 description: Mit der Konvertierungsfunktion der Aspose.TeX-API-Lösung für .NET können Sie den anfänglichen Interaktionsmodus festlegen, in dem die Engine startet.
-lastmod: "2024-09-26"
+lastmod: "2026-04-03"
 ---
 
 {{<section overview>}}

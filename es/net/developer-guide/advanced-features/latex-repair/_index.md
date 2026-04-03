@@ -6,7 +6,7 @@ linktitle: Reparación de archivos LaTeX
 weight: 30
 url: /net/latex-repair/
 description: La solución Aspose.TeX para la reparación de .NET LaTeX se describe en este artículo. Conozca los ejemplos de código sobre cómo utilizar la funcionalidad.
-lastmod: "2024-10-30"
+lastmod: "2026-04-03"
 ---
 
 {{<section overview>}}

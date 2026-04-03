@@ -6,7 +6,7 @@ linktitle: Other TeX formats
 weight: 18
 url: /net/other-tex-formats/
 description: Conversion functionality of Aspose.TeX API solution for .NET allows converting LaTeX files and your own custom TeX files. Here are some code examples.
-lastmod: "2024-09-20"
+lastmod: "2026-04-03"
 ---
 
 {{<section overview>}}

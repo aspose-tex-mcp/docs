@@ -7,7 +7,7 @@ weight: 18
 url: /net/latex-embedded-graphics/
 keywords: includegraphics latex、latex 埋め込み base64 グラフィック、latex base64 エンコード グラフィック、write18、shell-escape、latex シェルコマンド
 description: この記事では、LaTeX ソースコードに base64 エンコードされた画像を埋め込む方法と、これを可能にする \write18 機能について説明します。
-lastmod: "2026-02-25"
+lastmod: "2026-04-03"
 ---
 
 {{<section overview>}}

@@ -7,7 +7,7 @@ weight: 18
 url: /net/latex-embedded-graphics/
 keywords: 包含图形 LaTeX、LaTeX 嵌入 Base64 图形、LaTeX Base64 编码图形、write18、shell 转义、LaTeX shell 命令
 description: 本文介绍了如何在 LaTeX 源代码中包含 Base64 编码的图像，以及实现此功能的 \write18 功能。
-lastmod: "2026-02-25"
+lastmod: "2026-04-03"
 ---
 
 {{<section overview>}}

@@ -6,7 +6,7 @@ linktitle: 変換
 weight: 10
 url: /net/conversion/
 description: .NET用のAspose.TeX APIソリューションの変換機能は、次の出力形式をサポートします。Tex、XPS、PDF、PNG、JPEG、TIFF、およびPNG。
-lastmod: "2025-06-09"
+lastmod: "2026-04-03"
 ---
 
 {{<section overview>}}

@@ -6,8 +6,8 @@ linktitle: LaTeX 包含图形
 weight: 20
 url: /python-net/latex-figure-rendering/
 description: 本文概述了 Aspose.TeX API 在 Python 中的解决方案及其用于渲染 LaTeX 片段（图形）的功能。了解代码示例。
-keywords: latex figure, figure size latex, latex picture, latex image, latex include figure, latex pic, latex figure options
-lastmod: "2026-02-27"
+keywords: latex 图形, latex 图形尺寸, latex 图片, latex 图像, latex 包含图形, latex 图片, latex 图形选项
+lastmod: "2026-04-03"
 ---
 
 {{<section overview>}}

@@ -6,7 +6,7 @@ linktitle: Representación de fórmulas matemáticas LaTeX
 weight: 10
 url: /python-net/latex-math-formula-rendering/
 description: El artículo proporciona una descripción general de la solución Aspose.TeX para Python y su funcionalidad para representar fórmulas matemáticas de LaTeX.
-lastmod: "2024-10-30"
+lastmod: "2026-04-03"
 ---
 
 {{<section overview>}}

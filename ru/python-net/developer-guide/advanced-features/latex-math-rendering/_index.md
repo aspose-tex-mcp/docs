@@ -6,7 +6,7 @@ linktitle: Отрисовка математических формул LaTeX
 weight: 10
 url: /python-net/latex-math-formula-rendering/
 description: В статье представлен обзор API-Aspose.TeX для Python и его функциональных возможностей для рендеринга математических формул LaTeX. Изучите примеры кода.
-lastmod: "2024-09-24"
+lastmod: "2026-04-03"
 ---
 
 {{<section overview>}}

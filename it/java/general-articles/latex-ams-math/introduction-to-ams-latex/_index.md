@@ -1,35 +1,35 @@
-﻿---
+---
 translation: true
 template: /templates/_template-java.md
-linktitle: Ams-Latex
-title: 1. Introduzione AMS-LATEX 
+linktitle: AMS-LaTeX
+title: 1. Introduzione ad AMS-LaTeX
 weight: 10
 url: /java/introduction-to-ams-latex/
-keywords: AMS-Latex, Amsmath, Amsmath Options, Amsopn, Amstext, Amscd, AmstHm, Amsxtra, UpRef
-description: Questo articolo è una breve introduzione nel pacchetto Amsmath e copre brevemente le sue opzioni, nonché i sottopagoni e le estensioni disponibili.
-lastmod: "2025-06-13"
+keywords: ams-latex, amsmath, amsmath options, amsopn, amstext, amscd, amsthm, amsxtra, upref
+description: Questo articolo è una breve introduzione al pacchetto amsmath e copre brevemente le sue opzioni, nonché i sottopacchetti e le estensioni disponibili.
+lastmod: "2026-03-30"
 ---
 
 {{<section overview>}}
 
 
-*AMS*-latex versione 1.0 è stata rilasciata nel 1990 e ha presentato la conversione originale in LaTeX delle capacità di matematica in*Ams*-tex di Michael Spivak di Frank Mittelbach e Rainer Schopf, che ha lavorato come consulenti per il*Ams*, con l'assistenza di Michael Downe dello staff tecnologico*AMS*. Nel 1994, l'ulteriore lavoro è stato svolto con David M. Jones.
+La versione 1.0 di *AMS*-LaTeX è stata rilasciata nel 1990 e ha presentato la conversione originale in LaTeX delle funzionalità matematiche di *AMS*-TeX di Michael Spivak, curata da Frank Mittelbach e Rainer Schopf (che hanno lavorato come consulenti per l'AMS) con l'assistenza di Michael Downes dello staff tecnico dell'AMS. Nel 1994 è stato svolto un ulteriore lavoro con David M. Jones.
 
-* Il pacchetto Amsmath* accetta alcune opzioni che influiscono principalmente sul posizionamento di* limiti* su vari operatori di matematica o sul posizionamento dei tag di equazione.
+Il pacchetto *amsmath* accetta alcune opzioni che influiscono principalmente sul posizionamento dei *limiti* su vari operatori matematici o sul posizionamento dei tag delle equazioni.
 
-## Disponibile * Opzioni del pacchetto Amsmath *
+## Opzioni disponibili per il pacchetto *amsmath*
 
-Le seguenti tre opzioni possono essere utilizzate come opzioni di documento globale (specificate nel comando `\documentclass`) o come *Amsmath* Opzioni del pacchetto quando viene caricato con il comando `\usepackage`.
+Le tre opzioni seguenti possono essere utilizzate come opzioni globali del documento (specificate nel comando `\documentclass`) o come opzioni del pacchetto *amsmath* quando viene caricato tramite il comando `\usepackage`.
 
 |||
 |---|---|
 | `reqno` **(predefinito)** | Posiziona i numeri delle equazioni (tag) a destra. |
-| `leqno` | Posiziona i numeri delle equazioni (tag) a sinistra (predefinito, quando si utilizzano le classi di documento *AMS*-LATEX). |
+| `leqno` | Posiziona i numeri delle equazioni (tag) a sinistra (predefinito quando si utilizzano le classi di documento *AMS*-LaTeX). |
 | `fleqn` | Posiziona le equazioni a un rientro fisso dal margine sinistro anziché al centro della colonna di testo. |
 
-## Sottopagoni disponibili
+## Sottopacchetti disponibili
 
-Nella distribuzione *AMS *-latex, puoi anche trovare componenti che possono essere caricati in modo indipendente dal comando `\usapackage`. I seguenti pacchetti più piccoli forniscono alcune funzionalità del pacchetto *amsmath*:
+Nella distribuzione *AMS*-LaTeX, puoi trovare anche componenti che possono essere caricati indipendentemente tramite il comando `\usepackage`. I seguenti piccoli pacchetti forniscono alcune funzionalità del pacchetto *amsmath*:
 
 |||
 |---|---|
@@ -45,4 +45,4 @@ I pacchetti elencati di seguito forniscono funzionalità aggiuntive e devono ess
 | `amscd` | Definisce alcuni comandi per semplificare la generazione di diagrammi commutativi. |
 | `amsthm` | Fornisce un metodo per dichiarare strutture simili a teoremi e offre un ambiente `proof`. |
 | `amsxtra` | Fornisce alcune funzionalità necessarie per la compatibilità storica, come `\fracwithdelims`, `\accentedsymbol` e comandi per posizionare gli accenti come apici. |
-| `upref` | Fa sì che `\ref` stampi i numeri dei riferimenti incrociati in un font verticale/romano, indipendentemente dal contesto. |
+| `upref` | Fa sì che `\ref` stampi i numeri dei riferimenti in un font verticale/romano, indipendentemente dal contesto. |

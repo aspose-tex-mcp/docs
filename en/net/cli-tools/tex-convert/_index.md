@@ -7,7 +7,7 @@ weight: 80
 url: /net/cli-tools/tex-convert/
 description: Powerful Command-Line Converter tool from Aspose.TeX to convert TeX/LaTeX documents easily and efficiently. Aspose CLI TeX converter.
 keywords: tex to pdf cli converter, latex to pdf cli converter, cli tex converter
-lastmod: "2024-09-20"
+lastmod: "2026-04-03"
 ---
 
 {{<section overview>}}

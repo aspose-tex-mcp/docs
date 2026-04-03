@@ -6,7 +6,7 @@ linktitle: Відтворення математичних формул LaTeX
 weight: 10
 url: /python-net/latex-math-formula-rendering/
 description: У статті подано огляд рішення Aspose.TeX API для Python та його функціональних можливостей для відтворення математичних формул LaTeX. Вивчіть приклади коду
-lastmod: "2025-06-13"
+lastmod: "2026-04-03"
 ---
 
 {{<section overview>}}

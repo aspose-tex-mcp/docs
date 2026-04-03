@@ -5,8 +5,8 @@ title: Altre opzioni di gestione Tex | .NET
 linktitle: Altre opzioni
 weight: 17
 url: /net/other-options/
-description: Funzionalità di conversione della soluzione API ASUP.Tex per .NET consente di impostare la modalità di interazione iniziale in cui inizia il motore. Ecco alcuni esempi di codice.
-lastmod: "2025-06-13"
+description: Funzionalità di conversione della soluzione API **Aspose.TeX** per .NET consente di impostare la modalità di interazione iniziale in cui inizia il motore. Ecco alcuni esempi di codice.
+lastmod: "2026-04-03"
 ---
 
 {{<section overview>}}

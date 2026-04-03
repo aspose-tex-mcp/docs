@@ -7,7 +7,7 @@ weight: 18
 url: /net/latex-embedded-graphics/
 keywords: includegraphics latex, graphiques latex embed base64, graphiques codés latex base64, write18, shell-escape, commande shell latex
 description: Cet article explique comment inclure des images codées en base64 dans le code source de LaTeX, ainsi que la fonctionnalité \write18 qui rend cela possible.
-lastmod: "2024-09-27"
+lastmod: "2026-04-03"
 ---
 
 {{<section overview>}}

@@ -5,8 +5,8 @@ title: Altri formati di output di conversione Tex | .NET
 linktitle: Altri formati di Tex
 weight: 18
 url: /net/other-tex-formats/
-description: La funzionalità di conversione della soluzione API ASPUS.TEX per .NET consente di convertire i file in LaTeX e i tuoi file TEX personalizzati. Ecco alcuni esempi di codice.
-lastmod: "2025-06-13"
+description: La funzionalità di conversione della soluzione API **Aspose.TeX** per .NET consente di convertire i file in LaTeX e i tuoi file TeX personalizzati. Ecco alcuni esempi di codice.
+lastmod: "2026-04-03"
 ---
 
 {{<section overview>}}

@@ -6,7 +6,7 @@ linktitle: Outras opções
 weight: 17
 url: /net/other-options/
 description: Funcionalidade de conversão do Aspose.TeX Solução da API para .NET Vamos definir o modo de interação inicial no qual o motor inicia. Aqui estão alguns exemplos de código.
-lastmod: "2025-06-16"
+lastmod: "2026-04-03"
 ---
 
 {{<section overview>}}

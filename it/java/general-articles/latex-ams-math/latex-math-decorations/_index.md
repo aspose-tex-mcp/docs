@@ -1,18 +1,18 @@
-﻿---
+---
 translation: true
 template: /templates/_template-java.md
 linktitle: Simboli decorati e strutture composte
 title: 4. Simboli decorati e strutture composte
 weight: 40
 url: /java/latex-math-decorations/
-keywords: AMS-Latex, Amsmath, AMSXTRA, Integrali in LaTeX, frazioni in LaTeX, decorazioni in LaTeX, frecce in LaTeX, limiti di LaTeX, relazioni modulari in LaTeX
-description: Questo articolo discute una serie di comandi che producono varie strutture matematiche di medie dimensioni utilizzando il pacchetto Amsmath.
-lastmod: "2025-06-13"
+keywords: ams-latex, amsmath, amsxtra, integrali in LaTeX, frazioni in LaTeX, decorazioni in LaTeX, frecce in LaTeX, limiti in LaTeX, relazioni modulari in LaTeX
+description: Questo articolo descrive una serie di comandi che producono varie strutture matematiche di medie dimensioni utilizzando il pacchetto amsmath.
+lastmod: "2026-03-30"
 ---
 
 {{<section overview>}}
 
-Il pacchetto `amsmath` fornisce alcuni comandi per produrre strutture come oggetti simili alla frazione e simboli decorati. Questo discute su alcuni di loro.
+Il pacchetto `amsmath` fornisce alcuni comandi per produrre strutture come frazioni e simboli decorati. In questo articolo ne descriveremo alcuni.
 
 
 ## 4.1. Frazioni generali
@@ -23,7 +23,7 @@ Il pacchetto `amsmath` definisce il comando `\genfrac`, che produce una frazione
 \genfrac{ldelim}{rdelim}{thick}{style}{num}{denom}
 ```
 
-I primi due argomenti definiscono rispettivamente delimitatori sinistro e destro. Usando il terzo argomento, *spesso*, è possibile sovrascrivere lo spessore predefinito della regola della frazione. Ad esempio, i coefficienti binominali (vedi sotto) usano il valore `0pt` per questo argomento per rendere invisibile la linea. Il valore predefinito (quando lasciato vuoto) dello spessore della linea è determinato dalla configurazione del carattere corrente per la composizione matematica. Il seguente elenco contiene impostazioni predefinite utilizzate negli esempi di questo articolo.
+I primi due argomenti definiscono rispettivamente i delimitatori sinistro e destro. Usando il terzo argomento, *thick*, è possibile sovrascrivere lo spessore predefinito della linea di frazione. Ad esempio, i coefficienti binomiali (vedi sotto) usano il valore `0pt` per questo argomento per rendere invisibile la linea. Il valore predefinito (quando lasciato vuoto) dello spessore della linea è determinato dalla configurazione del font corrente per la composizione matematica. Il seguente elenco contiene le impostazioni predefinite utilizzate negli esempi di questo articolo.
 
 | ***Style*** | ***Default Thickness*** |
 |:---:|:---:|
@@ -31,13 +31,13 @@ I primi due argomenti definiscono rispettivamente delimitatori sinistro e destro
 | script | 0.34pt |
 | scriptscript | 0.24pt |
 
-Il quarto argomento, *stile *, sostituisce (se non lasciato vuoto) lo stile matematico per il layout e le dimensioni del carattere utilizzate. Il valore deve essere nell'intervallo 0-3: 0 - `\displaystyle`, 1 -`\textstyle`, 2 - `\scriptstyle`, 3 -`\scriptscriptstyle`. Se questo argomento viene lasciato vuoto, lo stile viene selezionato in base alle normali regole per le frazioni. Gli ultimi due argomenti sono il numeratore e il denominatore.
+Il quarto argomento, *style*, sostituisce (se non lasciato vuoto) lo stile matematico per il layout e le dimensioni del font utilizzate. Il valore deve essere nell'intervallo 0-3: 0 - `\displaystyle`, 1 - `\textstyle`, 2 - `\scriptstyle`, 3 - `\scriptscriptstyle`. Se questo argomento viene lasciato vuoto, lo stile viene selezionato in base alle normali regole per le frazioni. Gli ultimi due argomenti sono il numeratore e il denominatore.
 
 > I vecchi comandi di frazione `\over`, `\overwithdelims`, `\atop`, `\atopwithdelims`, `\above` e `\abovewithdelims`, che il LaTeX standard eredita da TeX, generano avvisi quando vengono utilizzati con il pacchetto `amsmath`.
 
 ### 4.1.1. Frazioni semplici
 
-Avendo il comando `\genfrac`, il pacchetto `amsmath` definisce anche tre comandi come comode stendi: `\frac`,`\dfrac` e `\tfrac`.
+Disponendo del comando `\genfrac`, il pacchetto `amsmath` definisce anche tre comandi come comode scorciatoie: `\frac`, `\dfrac` e `\tfrac`.
 
 ```tex
 \newcommand\frac [2]{\genfrac{}{}{}{}{#1}{#2}}
@@ -63,10 +63,9 @@ Text: $ \sqrt{ \frac{1}{k} \log_2 c(f) } \quad
 
 ### 4.1.2. Coefficienti binomiali
 
-Un'altra struttura a forma di frazione sono i coefficienti binomiali. Per aiutarti a comprometterli, il pacchetto `amsmath` fornisce comandi simili `\binom`, `\dbinom` e `\tbinom`.
+Un'altra struttura simile a una frazione sono i coefficienti binomiali. Per aiutarvi a comporli, il pacchetto `amsmath` fornisce comandi simili come `\binom`, `\dbinom` e `\tbinom`.
 
 Ecco come abbreviano il comando `\genfrac`:
-
 
 ```tex
 \newcommand\binom[2]{\genfrac{(}{)}{0pt}{}{#1}{#2}}
@@ -89,7 +88,7 @@ Text: $ \binom{k}{2} 2^{k - 1} + \dbinom{k - 1}{2} 2^{k - 2} $.
 
 ### 4.1.3. Frazioni continue
 
-Se è necessario compromettere un array di frazione, che è essenzialmente una frazione infinita, nota anche come "frazione continua", c'è il comando `\cFrac` nel pacchetto `amsmath`. Passa l'argomento opzionale `[l]` o `[r]` per allineare un numeratore a sinistra o a destra, che è centrato per impostazione predefinita.
+Se è necessario comporre una serie di frazioni, che è essenzialmente una frazione infinita, nota anche come "frazione continua", esiste il comando `\cFrac` nel pacchetto `amsmath`. È possibile passare l'argomento opzionale `[l]` o `[r]` per allineare un numeratore a sinistra o a destra (è centrato per impostazione predefinita).
 
 ```tex
 \usepackage{amsmath}
@@ -106,9 +105,9 @@ Se è necessario compromettere un array di frazione, che è essenzialmente una f
 
 ![Una frazione continua](/tex/images/java/tutorial/latex-ams-math-4-3.png)
 
-## 4.2. Matematica in scatola
+## 4.2. Matematica in un riquadro
 
-Il pacchetto `amsmath` fornisce il comando `\boxed` simile a `\fbox` per mettere il contenuto della modalità matematica in una scatola.
+Il pacchetto `amsmath` fornisce il comando `\boxed` simile a `\fbox` per inserire il contenuto della modalità matematica in un riquadro.
 
 ```tex
 \usepackage{amsmath}
@@ -118,11 +117,11 @@ Il pacchetto `amsmath` fornisce il comando `\boxed` simile a `\fbox` per mettere
 \end{equation}
 ```
 
-![Una formula in scatola](/tex/images/java/tutorial/latex-ams-math-4-4.png)
+![Una formula in un riquadro](/tex/images/java/tutorial/latex-ams-math-4-4.png)
 
-## 4.3. Posizionando i limiti
+## 4.3. Posizionamento dei limiti
 
-Abbonamenti e apice su integrali, somme, prodotti o altri operatori possono essere posizionati sopra e sotto l'operatore di matematica (la "posizione limite") o nella posizione del pedice/apice sulla destra dell'operatore. In genere, i limiti non vengono utilizzati nel testo (altrimenti le righe possono diffondersi). In una formula visualizzata, il posizionamento dipende dall'operatore. L'esempio seguente mostra il posizionamento predefinito in LaTeX.
+Pedici e apici su integrali, somme, prodotti o altri operatori possono essere posizionati sopra e sotto l'operatore matematico (la "posizione del limite") o nella posizione di pedice/apice alla destra dell'operatore. In genere, i limiti non vengono utilizzati nel testo (altrimenti le righe potrebbero allargarsi). In una formula visualizzata, il posizionamento dipende dall'operatore. L'esempio seguente mostra il posizionamento predefinito in LaTeX.
 
 ```tex
 \[
@@ -131,19 +130,19 @@ Abbonamenti e apice su integrali, somme, prodotti o altri operatori possono esse
 Text: $\sum_{n=1}^N$, $\int_{-\infty}^\infty$, $\lim_{x \to x_0}$.
 ```
 
-![Il posizionamento predefinito degli abbonamenti/apice in LaTeX](/tex/images/java/tutorial/latex-ams-math-4-5.png)
+![Il posizionamento predefinito di pedici/apici in LaTeX](/tex/images/java/tutorial/latex-ams-math-4-5.png)
 
-Il pacchetto `amsmath` 'offre opzioni per il controllo del posizionamento. Sono elencati di seguito, dove *predefinito* segna il comportamento nel caso in cui il pacchetto `amsmath` 'sia utilizzato con una classe di documenti in LaTeX standard ma senza nessuna di queste opzioni.
+Il pacchetto `amsmath` offre opzioni per il controllo del posizionamento. Sono elencate di seguito, dove *predefinito* indica il comportamento nel caso in cui il pacchetto `amsmath` sia utilizzato con una classe di documenti LaTeX standard ma senza nessuna di queste opzioni.
 
 |||
 |:---:|---|
-| `intlimits`, `nointlimits` | Posiziona gli apici/pedici dei simboli di integrazione rispettivamente sopra e sotto o lateralmente (impostazione predefinita). Utilizzato solo nelle formule visualizzate. |
-| `sumlimits`, `nosumlimits` | Posiziona gli apici/pedici degli *operatori di grandi dimensioni* (somma, prodotto, ecc.) rispettivamente sopra e sotto (impostazione predefinita) o lateralmente. Utilizzato solo nelle formule visualizzate. |
+| `intlimits`, `nointlimits` | Posiziona gli apici/pedici dei simboli di integrazione rispettivamente sopra e sotto oppure lateralmente (impostazione predefinita). Utilizzato solo nelle formule visualizzate. |
+| `sumlimits`, `nosumlimits` | Posiziona gli apici/pedici degli *operatori di grandi dimensioni* (somma, prodotto, ecc.) rispettivamente sopra e sotto (impostazione predefinita) oppure lateralmente. Utilizzato solo nelle formule visualizzate. |
 | `namelimits`, `nonamelimits` | Simile a `sumlimits` o `nosumlimits`, ma per alcuni operatori, o "nomi di operatore", come `inf`, `sup`, `lim`, `min`, `max`, che tradizionalmente sono composti con pedici sottostanti, almeno quando compaiono in una formula visualizzata. |
 
-Tex ha tre comandi primitivi che, sono apparsi immediatamente dopo il simbolo o il nome dell'operatore, controllano il posizionamento di abbonamenti/apice: `\limiti`,`\nolimits` e `\Displaylimits`. Il comando `\Displaylimits` 'produce abbonamenti/apice in posizione limite quando l'attuale stile matematico è uno stile di visualizzazione. Questo è il comportamento predefinito ogni volta che appare un simbolo dell'operatore di classe * o viene utilizzato un comando `\mathop`. Se è necessario compromettere un operatore con abbonamenti/apice in posizione limite al di fuori di un display, è necessario dichiararlo individualmente utilizzando il comando `\Limits`.
+TeX ha tre comandi primitivi che, se compaiono immediatamente dopo il simbolo o il nome dell'operatore, controllano il posizionamento dei pedici/apici: `\limits`, `\nolimits` e `\displaylimits`. Il comando `\displaylimits` produce pedici/apici in posizione di limite quando lo stile matematico corrente è uno stile di visualizzazione. Questo è il comportamento predefinito ogni volta che appare un simbolo dell'operatore di classe *Operator* o viene utilizzato un comando `\mathop`. Se è necessario comporre un operatore con pedici/apici in posizione di limite al di fuori di un display, è necessario dichiararlo individualmente utilizzando il comando `\limits`.
 
-Confronta il seguente esempio con quello precedente.
+Confrontate il seguente esempio con quello precedente.
 
 ```tex
 \[
@@ -152,11 +151,11 @@ Confronta il seguente esempio con quello precedente.
 Text: $\sum\nolimits_{n=1}^N$, $\int\limits_{-\infty}^\infty$, $\lim\displaylimits_{x \to x_0}$.
 ```
 
-![Controllo del posizionamento degli abbonamenti/appestri con le primitive tex](/tex/images/java/tutorial/latex-ams-math-4-6.png)
+![Controllo del posizionamento di pedici/apici con le primitive TeX](/tex/images/java/tutorial/latex-ams-math-4-6.png)
 
 ## 4.3. Integrali multipli
 
-Per scrivere più segni integrali con spazi ben adattati tra loro sia nel testo che nei display, utilizzare i comandi `\iint`,`\iiint` e `\iiiint`. `\IDotsint` produce due segni integrali con punti Ellipsis tra loro.
+Per scrivere più segni integrali con spazi ben adattati tra loro sia nel testo che nei display, utilizzate i comandi `\iint`, `\iiint` e `\iiiint`. Il comando `\idotsint` produce due segni integrali con puntini di sospensione tra loro.
 
 ```tex
 \usepackage{amsmath}
@@ -173,7 +172,7 @@ Per scrivere più segni integrali con spazi ben adattati tra loro sia nel testo 
 
 ## 4.4. Relazioni modulari
 
-La notazione "mod" per le classi di equivalenza di numeri interi è governata dalle convenzioni di spaziatura speciali. Per affrontarlo, il pacchetto `amsmath` offre comandi `\mod`, `\bmod`,`\pmod` e `\pod`. Il seguente esempio mostra l'uso di questi comandi.
+La notazione "mod" per le classi di equivalenza di numeri interi è regolata da speciali convenzioni di spaziatura. Per gestirla, il pacchetto `amsmath` offre i comandi `\mod`, `\bmod`, `\pmod` e `\pod`. Il seguente esempio mostra l'uso di questi comandi.
 
 ```tex
 \usepackage{amsmath}
@@ -197,7 +196,7 @@ x \equiv y \mod c \, ; \quad x \equiv y \pod d\, .
 
 ## 4.5. Accenti matematici a punti
 
-Oltre agli accenti matematici `\dot` e `\ddot`, il pacchetto `amsmath` fornisce i comandi `\dddot` e `\ddddot`, che producono rispettivamente accenti a dot tripli e quadrupli.
+Oltre agli accenti matematici `\dot` e `\ddot`, il pacchetto `amsmath` fornisce i comandi `\dddot` e `\ddddot`, che producono rispettivamente accenti a triplo e quadruplo punto.
 
 ```tex
 \usepackage{amsmath}
@@ -205,11 +204,11 @@ Oltre agli accenti matematici `\dot` e `\ddot`, il pacchetto `amsmath` fornisce 
 $ \dot{A} \quad \ddot{B} \quad \dddot{C} \quad \ddddot{D} $
 ```
 
-![Accenti dot](/tex/images/java/tutorial/latex-ams-math-4-9.png)
+![Accenti a punti](/tex/images/java/tutorial/latex-ams-math-4-9.png)
 
-## 4.6. Creazione di aprile dagli accenti: il pacchetto `amsxtra`
+## 4.6. Creazione di apici dagli accenti: il pacchetto `amsxtra`
 
-Il pacchetto `Amsxtra` offre una funzione utile, una raccolta di semplici comandi per posizionare accenti come apripisti per la subformance:
+Il pacchetto `amsxtra` offre una funzione utile, una raccolta di semplici comandi per posizionare accenti come apici per le sottoformule:
 
 ```tex
 \usepackage{amsxtra}
@@ -219,13 +218,13 @@ $(abc)\spbreve$ \quad $(abc)\spcheck$ \\
 $(abc)\sphat$ \quad $(abc)\sptilde$
 ```
 
-![Accenti come apripisti](/tex/images/java/tutorial/latex-ams-math-4-10.png)
+![Accenti come apici](/tex/images/java/tutorial/latex-ams-math-4-10.png)
 
 ## 4.7. Altre decorazioni
 
-Il LaTeX standard ha il comando `\stackrel` che pone un apice sopra un simbolo *relazione*. Inoltre, il pacchetto `amsmath` definisce i comandi`\overset` e `\underserset`. Usalo per posizionare il materiale sopra o sotto qualsiasi simbolo *Ordinary* o  Relation* o *Operatore binario*.
+Il LaTeX standard ha il comando `\stackrel` che pone un apice sopra un simbolo di *relazione*. Inoltre, il pacchetto `amsmath` definisce i comandi `\overset` e `\underset`. Utilizzateli per posizionare materiale sopra o sotto qualsiasi simbolo *Ordinary* o *Relation* o *Binary operator*.
 
-Il comando `\sideet` aggiunge decorazioni a qualsiasi simbolo *operatore* (somma, prodotto, ecc.) Oltre ai limiti normali. Questi sono inseriti nelle posizioni del pedice e appescript a sinistra e a destra dell'operatore *.
+Il comando `\sideset` aggiunge decorazioni a qualsiasi simbolo *operatore* (somma, prodotto, ecc.) in aggiunta ai limiti normali. Queste sono inserite nelle posizioni di pedice e apice a sinistra e a destra dell'operatore.
 
 ```tex
 \[ \overset{*}{X} > \underset{*}{X}

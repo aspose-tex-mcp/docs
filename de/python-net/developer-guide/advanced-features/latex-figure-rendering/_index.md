@@ -7,7 +7,7 @@ weight: 20
 url: /python-net/latex-figure-rendering/
 description: Der Artikel gibt einen Überblick über die Aspose.TeX-API-Lösung für Python und ihre Funktionalität zum Rendern von LaTeX-Fragmenten (Abbildungen).
 keywords: Latexfigur, Latexfigurengröße, Latexbild, Latexbild, Latex-Einschlussfigur, Latexbild, Latexfigurenoptionen
-lastmod: "2024-09-26"
+lastmod: "2026-04-03"
 ---
 
 {{<section overview>}}

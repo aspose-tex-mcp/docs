@@ -1,13 +1,13 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-title: LaTeX a pdf | .NET
-linktitle: LaTeX a pdf
+title: LaTeX a PDF | .NET
+linktitle: LaTeX a PDF
 weight: 11
 url: /net/latex-to-pdf/
 keywords: LaTeX a PDF, PDF in LaTeX, convertite in LaTeX in PDF
 description: Per convertire TEX in PDF usando la soluzione API Aspose.TeX per .NET Impara questo articolo per vedere che descrive come fare questo e gli esempi di codice.
-lastmod: "2025-06-13"
+lastmod: "2026-04-03"
 ---
 
 {{<section overview>}}

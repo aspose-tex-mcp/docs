@@ -6,14 +6,14 @@ linktitle: Fórmulas de matemática de LaTeX renderização
 weight: 10
 url: /python-net/latex-math-formula-rendering/
 description: O artigo fornece uma visão geral da solução da API Aspose.Tex para o Python e sua funcionalidade para renderizar fórmulas de matemática de LaTeX. Aprenda os exemplos de código
-lastmod: "2025-06-16"
+lastmod: "2026-04-03"
 ---
 
 {{<section overview>}}
 
 ## Renderizando uma fórmula de matemática de LaTeX para png
 
-Se necessário, dê uma olhada na [seção de referência da API para este tópico](https://reference.aspose.com/tex/python-net/aspose.tex.features/). De fato, a melhor maneira de demonstrar o recurso **de fórmula de matemática** ** é começar com um exemplo. Aqui está:
+Se necessário, dê uma olhada na [seção de referência da API para este tópico](https://reference.aspose.com/tex/python-net/aspose.tex.features/). De fato, a melhor maneira de demonstrar o recurso de renderização de **fórmula matemática LaTeX** é começar com um exemplo. Aqui está:
 
 {{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Features-PngLaTeXMathRendering.py" >}}
 
@@ -50,7 +50,7 @@ Aqui está o resultado da renderização.
 
 <a href="/tex/python-net/latex-math-formula-rendering/math-formula.png">![Fórmula de matemática de LaTeX renderização para PNG](/tex/images/python-net/math-formula.png)</a>
 
-Isso representa a aplicação mais comum e ampla da funcionalidade **FORMULAÇÃO DE FORMULAÇÃO DE MATHA DE LATEX**.
+Isso representa a aplicação mais comum e ampla da funcionalidade de **renderização de fórmula matemática LaTeX**.
 
 **Você também pode explorar o [aplicativo web](https://products.aspose.app/tex) gratuito, que utiliza o recurso implementado do [Aspose.TeX para .NET API](https://products.aspose.com/tex/net/).**
 
@@ -70,4 +70,4 @@ Aqui está o resultado:
 
 <a href="/tex/python-net/latex-math-formula-rendering/math-formula.svg">![Fórmula de matemática de LaTeX renderização para SVG](/tex/images/python-net/math-formula.svg)</a>
 
-**Você também pode explorar o [aplicativo web] gratuito (12), que utiliza o recurso implementado do [Aspose.TeX para .NET API](https://products.aspose.com/tex/net/).**
+**Você também pode explorar o [aplicativo web](https://products.aspose.app/tex/equation-editor/svg) gratuito, que utiliza o recurso implementado do [Aspose.TeX para .NET API](https://products.aspose.com/tex/net/).**
