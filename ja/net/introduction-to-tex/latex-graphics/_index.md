@@ -1,12 +1,12 @@
-﻿---
+---
 translation: true
-template: /templates/_template-java.md
+template: /templates/_template-net.md
 title: LaTeX グラフィックス | \includegraphics コマンド
 linktitle: グラフィックス LaTeX を含める
 weight: 18	
 url: /net/latex-graphics/
 description: TeX におけるグラフィックスの挿入は言及すべき重要な項目です。これについて語るとき、まず頭に浮かぶのは `\includegraphics` コマンドです。
-lastmod: "2026-02-26"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}

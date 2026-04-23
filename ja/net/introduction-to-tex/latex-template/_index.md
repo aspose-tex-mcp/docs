@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: LaTeX テンプレート - クイックスタートガイド
@@ -8,7 +8,7 @@ weight: 100
 url: /net/latex-templates/
 description: LaTeX テンプレートとは何か、使用方法と作成方法、人気のあるテンプレートのダウンロード先、すぐにコピーできるスニペットを使った高速ワークフローを学びましょう。
 keywords: LaTeX, テンプレート, クラス, スタイル, Overleaf, CTAN, 文献管理, Beamer, 論文, 履歴書
-lastmod: "2026-02-26"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}

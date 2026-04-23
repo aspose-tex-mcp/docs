@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-java.md
 title: Aspose.TeXの入力インターフェイス| Java
@@ -6,7 +6,7 @@ linktitle: Aspose.TeXの入力インターフェイス
 weight: 15
 url: /java/aspose-tex-input/
 description: 入力形式として、Texを使用したJava用のAspose.TeX APIソリューションの変換機能については、コードの例で説明します。
-lastmod: "2025-06-09"
+lastmod: "2026-04-21"
 ---
 
 {{<section overview>}}

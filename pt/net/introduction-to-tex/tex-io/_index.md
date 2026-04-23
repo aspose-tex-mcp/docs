@@ -1,12 +1,12 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
-title: Entrada/saída de TeX | Solução de API Aspose.TeX para .NET
+title: Entrada/saída de TeX <span></span>
 linktitle: Tex E/S.
 weight: 12
 url: /net/tex-io/
 description: Fundamentos de trabalho com Tex como formato de saída ou entrada dentro da API Aspose.TeX. TEX Job é executado em um arquivo explicitamente especificado.
-lastmod: "2025-06-16"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
@@ -50,9 +50,9 @@ Simultaneamente com a gravação no arquivo de log, o mecanismo TEX pode gerar i
 
 Um trabalho de Tex pode estar em execução em um dos quatro modos de interação a qualquer momento. Esses modos são alterados pelas seguintes primitivas TEX:
 
-* `\BatchMode`. O motor omite todas as paradas e omite a saída do terminal e, portanto, não requer o terminal para entrada ou saída.
-* `\nonStopMode`. O motor omite todas as paradas e, portanto, requer o terminal apenas para saída.
+* `\batchmode`. O motor omite todas as paradas e omite a saída do terminal e, portanto, não requer o terminal para entrada ou saída.
+* `\nonstopmode`. O motor omite todas as paradas e, portanto, requer o terminal apenas para saída.
 * `\scrollmode`. O motor omite o erro para e requer o terminal para entrada e saída.
-* `\ErrorStopMode`. O motor para em todas as oportunidades para interagir.
+* `\errorstopmode`. O motor para em todas as oportunidades para interagir.
 
-O Aspose.TeX nos permite especificar o modo de interação como uma opção de emprego TEX quando seu objeto está sendo criado. Esse modo será definido no estado interno do mecanismo imediatamente após o carregamento do formato Tex (se algum formato for carregado) e será alterado para outro modo assim que o mecanismo encontrar um dos quatro comandos. O valor padrão desta opção preservará o modo de interação definido pelo formato Tex. Quando nenhum formato é carregado, o modo de interação é o mesmo definido pelo comando `\ErrorStopMode`.
+O Aspose.TeX nos permite especificar o modo de interação como uma opção de emprego TEX quando seu objeto está sendo criado. Esse modo será definido no estado interno do mecanismo imediatamente após o carregamento do formato Tex (se algum formato for carregado) e será alterado para outro modo assim que o mecanismo encontrar um dos quatro comandos. O valor padrão desta opção preservará o modo de interação definido pelo formato Tex. Quando nenhum formato é carregado, o modo de interação é o mesmo definido pelo comando `\errorstopmode`.

@@ -6,7 +6,7 @@ linktitle: TeX I/O
 weight: 12
 url: /net/tex-io/
 description: Fundamentals of working with TeX as an output or input format within Aspose.TeX API. TeX job runs on an explicitly specified file. 
-lastmod: "2024-09-20"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}

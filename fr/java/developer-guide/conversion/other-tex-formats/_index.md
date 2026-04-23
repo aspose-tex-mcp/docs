@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-java.md
 title: Autres formats de sortie de conversion TeX | Java
@@ -6,7 +6,7 @@ linktitle: Autres formats TeX
 weight: 18
 url: /java/other-tex-formats/
 description: De conversion de la solution API Aspose.TeX pour Java permet de convertir des fichiers LaTeX et vos propres fichiers TeX personnalisés.
-lastmod: "2024-09-27"
+lastmod: "2026-04-21"
 ---
 
 {{<section overview>}}
@@ -19,7 +19,7 @@ Nous commencerons par créer un format personnalisé.
 
 Rappelons que le fichier de format est un dump binaire de l'état interne du moteur TeX.
 
-{{< gist "aspose-com-gists""67385c777283964d328086603f691ac9""Aspose.TeX.Examples-CreateCustomTeXFormatFile.java" >}}
+{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-CreateCustomTeXFormatFile.java" >}}
 
 Comme vous pouvez le voir, le code est similaire au code de conversion d'un fichier TeX. Mais il existe quelques différences.
 
@@ -33,7 +33,7 @@ Et la deuxième différence clé réside dans la manière dont nous gérons le t
 
 Maintenant que nous avons notre propre format TeX, nous souhaitons composer un fichier TeX écrit dans ce format. Voici le code :
 
-{{< gist "aspose-com-gists""67385c777283964d328086603f691ac9""Aspose.TeX.Examples-TypesetWithCustomTeXFormat.java" >}}
+{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-TypesetWithCustomTeXFormat.java" >}}
 
 Évidemment, nous devons préciser le format d’une manière ou d’une autre. Tout d’abord, nous devons créer une instance de la classe [FormatProvider](https://reference.aspose.com/tex/java/com.aspose.tex/FormatProvider). Ensuite, dans le constructeur d'options, nous utilisons la configuration [TeXConfig.objectTeX()](https://reference.aspose.com/tex/java/com.aspose.tex/TeXConfig#objectTeX--), qui prend notre fournisseur de format comme argument et charge le format au-dessus de l'état "vierge" du moteur.
 

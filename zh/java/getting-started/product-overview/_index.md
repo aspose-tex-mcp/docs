@@ -5,8 +5,8 @@ title: 产品概述| Java的Aspose.TeX
 linktitle: 产品概述
 weight: 10
 url: /java/product-overview/
-description: aspose.tex是用于排版Tex文件的Java库。它为您提供丰富的功能，例如转换或创建自己的TEX格式。
-lastmod: "2025-06-10"
+description: Aspose.TeX是用于排版Tex文件的Java库。它为您提供丰富的功能，例如转换或创建自己的TEX格式。
+lastmod: "2026-04-21"
 ---
 
 {{<section overview>}}
@@ -26,7 +26,7 @@ Aspose.TeX是用于排版Tex文件的Java库。它可以以各种图形格式显
 
 Aspose为其所有产品提供无限的免费技术支持。支持所有用户都可以使用，包括评估。
 
-如果您需要Aspose.TeX的Java帮助，[**访问aspose.forums**](https://forum.aspose.com/)。在Java论坛的Aspose.TeX中发布您的问题，并在几个小时内得到回答。这些问题直接由Java支持团队的Aspose.TeX回答。
+如果您需要Aspose.TeX的Java帮助，[**访问Aspose.Forums**](https://forum.aspose.com/)。在Java论坛的Aspose.TeX中发布您的问题，并在几个小时内得到回答。这些问题直接由Java支持团队的Aspose.TeX回答。
 
 当期望论坛上的答复时，请允许时区差异。
 

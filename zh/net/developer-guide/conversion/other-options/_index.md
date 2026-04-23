@@ -1,12 +1,12 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
-title: 其他管理Tex选项| .NET的Aspose.TeX
+title: 其他管理TeX选项| .NET的Aspose.TeX
 linktitle: 其他选项
 weight: 17
 url: /net/other-options/
 description: Aspose.TeX API解决方案的转换功能。这是一些代码示例。
-lastmod: "2025-06-10"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
@@ -19,7 +19,7 @@ lastmod: "2025-06-10"
 
 ## 如何设置工作名称
 
-当我们将主要输入文件作为文件名传递时，我们将获得具有相同名称的输出文件，尽管其他扩展名。 Tex引擎将输入文件的名称称为 *作业名称*，并将其用于输出文件，除非在编写具有明确指定其他名称的辅助文件的情况下。当我们以[流](/tex/{{lang.url-fragment}}net/other-ways-of-main-input/#providing-the-main-input-file-as-a-stream)为单位的主要输入文件时，Tex引擎使用默认的作业名称，即 *texput*。
+当我们将主要输入文件作为文件名传递时，我们将获得具有相同名称的输出文件，尽管其他扩展名。 TeX引擎将输入文件的名称称为 *作业名称*，并将其用于输出文件，除非在编写具有明确指定其他名称的辅助文件的情况下。当我们以[流](/tex/{{lang.url-fragment}}net/other-ways-of-main-input/#providing-the-main-input-file-as-a-stream)为单位的主要输入文件时，TeX引擎使用默认的作业名称，即 *texput*。
 在这两种情况下，我们都可以通过分配适当的转换选项来覆盖作业名称。
 
 {{< gist "aspose-com-gists" "deadfd7c29ffe40024a9b6d12f0ed18a" "Example-JobName.cs" >}}
@@ -27,15 +27,15 @@ lastmod: "2025-06-10"
 
 ## 如何“停止时间”
 
-乳胶具有从序言中的某些定义中自动生成标题的功能。此标题通常包含当前日期。我们可能希望以一些理想的价值冻结日期。这是可以做到的：
+LaTeX具有从序言中的某些定义中自动生成标题的功能。此标题通常包含当前日期。我们可能希望以一些理想的价值冻结日期。这是可以做到的：
 
 {{< gist "aspose-com-gists" "deadfd7c29ffe40024a9b6d12f0ed18a" "Example-DateTime.cs" >}}
 
 ## 如何忽略丢失的软件包
 
-我们可能需要转换一个乳胶文件，该文件引用了.net库Aspose.TeX不支持的某些软件包。在这种情况下，Tex发动机在尝试加载这样的软件包时会出现错误。为了避免这种情况，我们可以使用以下选项：
+我们可能需要转换一个LaTeX文件，该文件引用了.net库Aspose.TeX不支持的某些软件包。在这种情况下，TeX发动机在尝试加载这样的软件包时会出现错误。为了避免这种情况，我们可以使用以下选项：
 
-{{< gist "aspose-com-gists" "deadfd7c29ffe40024a9b6d12f0ed18a" "Example-DateTime.cs" >}}
+{{< gist "aspose-com-gists" "deadfd7c29ffe40024a9b6d12f0ed18a" "Example-IgnoreMissingPackages.cs" >}}
 
 ## 如何避免建立连接
 

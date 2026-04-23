@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-java.md
 title: Funzionalità di conversione | Aspose.TeX per Java
@@ -6,7 +6,7 @@ linktitle: Conversione
 weight: 10
 url: /java/conversion/
 description: La funzionalità di conversione della soluzione API ASPUS.TEX per Java supporta i successivi formati di output Tex, XPS, PDF, PNG, JPEG, TIFF e PNG.
-lastmod: "2025-06-13"
+lastmod: "2026-04-21"
 ---
 
 {{<section overview>}}

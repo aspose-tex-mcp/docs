@@ -1,13 +1,13 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
-title: Ferramentas da linha de comando do LATEX | Aspose.TeX para .NET
-linktitle: Ferramentas da CLI para manipular arquivos TEX/LATEX
+title: Ferramentas da linha de comando do LaTeX | Aspose.TeX para .NET
+linktitle: Ferramentas da CLI para manipular arquivos TeX/LaTeX
 weight: 70
 url: /net/cli-tools/
-description: As ferramentas de interface da linha de comando Aspose.TeX (CLI) para .NET Habilite o processamento e a edição fácil de Tex e LaTeX por meio de comandos simples.
-keywords: C# cli para documentos tex, c# cli tex gestão, c# cli tex coding, documentos tex c# cli
-lastmod: "2026-04-03"
+description: As ferramentas de interface da linha de comando Aspose.TeX (CLI) para .NET Habilite o processamento e a edição fácil de TeX e LaTeX por meio de comandos simples.
+keywords: C# cli para documentos TeX, c# cli TeX gestão, c# cli TeX coding, documentos TeX c# cli
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
@@ -18,9 +18,9 @@ lastmod: "2026-04-03"
 
 **Interface da linha de comando (CLI)** Liberte o poder do seu computador!  As ferramentas de interface da linha de comando (CLI) permitem controlar seu sistema com comandos de texto simples. Perfeito para programadores, administradores e qualquer pessoa que queira automatizar tarefas, executar coisas a granel ou criar recursos personalizados.  Eles são leves, fáceis de aprender e funcionam muito bem com ferramentas de automação. Além disso, os usuários elétricos podem realizar tarefas complexas com apenas um comando ou adicionar funcionalidade diretamente aos seus projetos.
 
-## APLICAÇÕES ASPOSE.TEX CLI
+## Aplicações CLI da Aspose.TeX
 
-Aspose.TeX para .NET oferece uma ferramenta útil da linha de comando. Isso permite converter documentos complexos Tex e LaTeX em formatos mais gerenciáveis ​​com apenas alguns comandos. Precisa integrar o processamento TEX ao seu fluxo de trabalho? Esta ferramenta simplifica!
+Aspose.TeX para .NET oferece uma ferramenta útil da linha de comando. Isso permite converter documentos complexos TeX e LaTeX em formatos mais gerenciáveis ​​com apenas alguns comandos. Precisa integrar o processamento TeX ao seu fluxo de trabalho? Esta ferramenta simplifica!
 
 ### Ferramentas da CLI disponíveis
 

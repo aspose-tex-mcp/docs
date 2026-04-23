@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: Інші способи надання основного вхідного файлу TeX | .NET
@@ -6,7 +6,7 @@ linktitle: Інші способи надання основного вхідн�
 weight: 14
 url: /net/other-ways-of-main-input/
 description: Функціональність перетворення рішення Aspose.TeX API для .NET має конструктор, який приймає потік як перший аргумент.
-lastmod: "2025-06-13"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
@@ -15,9 +15,9 @@ lastmod: "2025-06-13"
 
 До цього моменту ми лише знали, як передати [основний вхідний файл](/tex/{{lang.url-fragment}}net/tex-io/#tex-input) механізму TeX як ім’я файлу, повністю вказане чи у короткій формі, з розширенням чи без нього. Але є інший [конструктор](https://reference.aspose.com/tex/net/aspose.tex/texjob/texjob/) класу `TeXJob`, який приймає потік як перший аргумент. Це зручно, якщо з якоїсь причини ми маємо основний вхідний файл у формі, відмінній від файлу у файловій системі диска. Ось як це можна реалізувати:
 
-{{< gist "aspose-com-gists""4e3bae6ecbe041bcb411e0cf4c98dc71""Example-StreamInput-LaTeX.cs" >}}
+{{< gist "aspose-com-gists" "4e3bae6ecbe041bcb411e0cf4c98dc71" "Example-StreamInput-LaTeX.cs" >}}
 
-Зауважте, що всі вихідні файли матимуть назву *textput*. Це тому, що двигун ніде не може отримати іншу назву. *textput* — назва завдання за умовчанням. [Тут](/tex/{{lang.url-fragment}}net/tex-io/#tex-output) і [тут](/tex/{{lang.url-fragment}}net/other-options/#how-to-set-the-job-name) наведено відомості про назви посад.
+Зауважте, що всі вихідні файли матимуть назву *texput*. Це тому, що двигун ніде не може отримати іншу назву. *texput* — назва завдання за умовчанням. [Тут](/tex/{{lang.url-fragment}}net/tex-io/#tex-output) і [тут](/tex/{{lang.url-fragment}}net/other-options/#how-to-set-the-job-name) наведено відомості про назви посад.
 
 ## Введення основного вхідного файлу TeX з терміналу
 
@@ -25,7 +25,7 @@ lastmod: "2025-06-13"
 
 Ось код:
 
-{{< gist "aspose-com-gists""4e3bae6ecbe041bcb411e0cf4c98dc71""Example-MainInputTerminal.cs" >}}
+{{< gist "aspose-com-gists" "4e3bae6ecbe041bcb411e0cf4c98dc71" "Example-MainInputTerminal.cs" >}}
 
 Як тільки він запускається, движок зависає, чекаючи, поки ми введемо ім’я файлу (із шляхом чи без, із розширенням чи без):
 

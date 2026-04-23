@@ -6,7 +6,7 @@ title: ライセンス| Java用のAspose.TeX
 weight: 70
 url: /java/licensing/
 description: Java用のAspose.TeX APIソリューションのライセンス版で停止した場合、ライセンスの適用方法がわかります。
-lastmod: "2025-06-09"
+lastmod: "2026-04-21"
 ---
 
 {{<section overview>}}
@@ -20,7 +20,7 @@ Aspose.TeXの評価バージョン(ライセンスを指定しない)は、出�
 
 ### ファイルまたはストリームオブジェクトを使用してライセンスを適用します
 
-[ライセンス.setlicense](https://reference.aspose.com/tex/java/com.Aspose.TeX/License#setLicense-java.lang.String-)メソッドを使用して、コンポーネントをライセンスします。ライセンスを設定する最も簡単な方法は、ライセンスファイルを * Aspose.TeX.jar *と同じフォルダーに配置し、以下に示すようにパスなしでファイル名を指定することです。
+[License.setLicense](https://reference.aspose.com/tex/java/com.Aspose.TeX/License#setLicense-java.lang.String-)メソッドを使用して、コンポーネントをライセンスします。ライセンスを設定する最も簡単な方法は、ライセンスファイルを * Aspose.TeX.jar *と同じフォルダーに配置し、以下に示すようにパスなしでファイル名を指定することです。
 
 #### ファイルからライセンスをロードします
 

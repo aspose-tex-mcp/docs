@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-java.md
 title: Інтерфейс виводу Aspose.TeX | Java
@@ -6,7 +6,7 @@ linktitle: Інтерфейс виведення Aspose.TeX
 weight: 16
 url: /java/aspose-tex-output/
 description: Функціональність перетворення рішення Aspose.TeX API для Java з TeX як формат виводу пояснюється тут із прикладами коду.
-lastmod: "2025-06-13"
+lastmod: "2026-04-21"
 ---
 
 {{<section overview>}}
@@ -23,7 +23,7 @@ lastmod: "2025-06-13"
 
 Ось як ми це встановимо:
 
-{{< gist "aspose-com-gists""67385c777283964d328086603f691ac9""Aspose.TeX.Examples-Conversion-OutputFileSystemDirectory.java" >}}
+{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Conversion-OutputFileSystemDirectory.java" >}}
 
 Цей варіант використання досить простий, тому ми не будемо на ньому довго зупинятися.
 
@@ -31,7 +31,7 @@ lastmod: "2025-06-13"
 
 Ми також можемо створити файл (або потік) і дозволити механізму TeX використовувати його як ZIP-архів для зберігання вихідних файлів. Ось воно:
 
-{{< gist "aspose-com-gists""67385c777283964d328086603f691ac9""Aspose.TeX.Examples-Conversion-OutputZipDirectory.java" >}}
+{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Conversion-OutputZipDirectory.java" >}}
 
 Спочатку ми створюємо вихідний потік для файлу ZIP. Потім, після створення параметрів перетворення, ми встановлюємо параметр [OutputWorkingDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/TeXOptions#getOutputWorkingDirectory--) як екземпляр класу [OutputZipDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/OutputZipDirectory).
 
@@ -43,7 +43,7 @@ lastmod: "2025-06-13"
 
 Для цього нам потрібно встановити параметр [TerminalOut](https://reference.aspose.com/tex/java/com.aspose.tex/TeXOptions#getTerminalOut--) як екземпляр класу [OutputConsoleTerminal](https://reference.aspose.com/tex/java/com.aspose.tex/OutputConsoleTerminal).
 
-{{< gist "aspose-com-gists""67385c777283964d328086603f691ac9""Aspose.TeX.Examples-Conversion-OutputConsoleTerminal.java" >}}
+{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Conversion-OutputConsoleTerminal.java" >}}
 
 Знову ж таки, це значення параметра за замовчуванням, тому немає потреби вказувати його. Через це цей розділ служить лише для демонстраційних цілей.
 
@@ -51,6 +51,6 @@ lastmod: "2025-06-13"
 
 На відміну від вхідного терміналу, **Aspose.TeX для Java** забезпечує реалізацію [IOutputTerminal](https://reference.aspose.com/tex/java/com.aspose.tex/IOutputTerminal), яка дозволяє нам записувати вихідні дані терміналу у файл у деякому вихідному каталозі.
 
-{{< gist "aspose-com-gists""67385c777283964d328086603f691ac9""Aspose.TeX.Examples-Conversion-OutputFileTerminal.java" >}} 
+{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Conversion-OutputFileTerminal.java" >}} 
 
 Тут ми просимо механізм TeX записати вихідні дані терміналу у файл із назвою [<назва_завдання>](/tex/{{lang.url-fragment}}net/tex-io/#tex-output).trm, який зберігатиметься в тому самому каталозі виводу, який ми вказали для решти виводу. Але в цьому немає необхідності. Ми також можемо передати будь-який інший екземпляр будь-якої реалізації [IOutputTerminal](https://reference.aspose.com/tex/java/com.aspose.tex/IOutputTerminal) до конструктора.

@@ -6,7 +6,7 @@ linktitle: Aspose.TeX的输出接口
 weight: 16
 url: /cpp/aspose-tex-output/
 description: Aspose.TeX API解决方案的转换功能与Tex一起使用，作为输出格式，请参见代码示例。
-lastmod: "2025-06-10"
+lastmod: "2026-04-20"
 ---
 
 {{<section overview>}}

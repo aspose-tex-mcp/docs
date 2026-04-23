@@ -5,8 +5,8 @@ title: 如何运行示例| Java的Aspose.TeX
 linktitle: 如何运行示例
 weight: 80
 url: /java/how-to-run-the-examples/
-description: 在此页面上，您将找到应采取的所有要求和步骤来运行Java的aspose.tex解决方案的示例。
-lastmod: "2025-06-10"
+description: 在此页面上，您将找到应采取的所有要求和步骤来运行Java的Aspose.TeX解决方案的示例。
+lastmod: "2026-04-21"
 ---
 
 {{<section overview>}}
@@ -25,7 +25,7 @@ Java的Aspose.TeX的所有示例均在GitHub上托管。您可以使用您喜欢
 
 要运行一个示例，只需右键单击文件，然后选择“运行..”，将执行该示例，并且输出将显示在内置控制台输出窗口中。
 
-## 蚀
+## Eclipse
 
 单击“文件”菜单，然后选择导入。选择Maven-现有的Maven项目。浏览您从github克隆或下载的文件夹，然后选择pom.xml文件。
 

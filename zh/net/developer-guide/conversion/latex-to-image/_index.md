@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: LaTeX 转图像 | .NET
@@ -10,7 +10,7 @@ aliases:
 - /net/latex-to-svg/
 keywords: latex to png, latex png, latex to image, latex image, latex to jpg, latex jpg, latex to jpeg, latex jpeg, latex to tiff, latex tiff, latex to bmp, latex bmp
 description: 通过 Aspose.TeX API 将 TeX 转换为图像格式（适用于 .NET）的解决方案，请阅读本文了解如何操作以及代码示例。
-lastmod: "2026-02-25"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}

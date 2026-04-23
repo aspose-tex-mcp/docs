@@ -60,4 +60,4 @@ lastmod: "2024-09-26"
 
 ![Alternative Namen](/tex/images/java/tutorial/latex-math-app-11.png)
 
-Es gibt auch „\iff“, das genau wie „\Longleftrightarrow“ ist, außer dass es auf jeder Seite ein extra dickes Leerzeichen einfügt.
+Es gibt auch `\iff`, das genau wie `\Longleftrightarrow` ist, außer dass es auf jeder Seite ein extra dickes Leerzeichen einfügt.

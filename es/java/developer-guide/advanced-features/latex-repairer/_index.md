@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-java.md
 title: Reparación de archivos LaTeX | Aspose.TeX para Java
@@ -6,7 +6,7 @@ linktitle: Reparación de archivos LaTeX
 weight: 30
 url: /java/latex-repair/
 description: En este artículo se describe la función de reparación de archivos LaTeX dentro de Aspose.TeX para Java con la funcionalidad de ejemplos de código.
-lastmod: "2024-10-30"
+lastmod: "2026-04-21"
 ---
 
 {{<section overview>}}
@@ -15,11 +15,11 @@ lastmod: "2024-10-30"
 
 Si no está seguro de si un archivo de texto es un archivo LaTeX y desea componerlo, puede utilizar la función de verificación y reparación de LaTeX que ofrece la API Aspose.TeX para Java. En el siguiente ejemplo, comprobaremos y repararemos un archivo de muestra, `invalid-latex.tex`, del proyecto de ejemplo Aspose.TeX para Java.
 
-Para empezar, es importante señalar que el archivo de muestra parece emplear la sintaxis TeX pero carece de la estructura requerida por LaTeX. Como sabrás, un archivo LaTeX debe incluir un preámbulo que comience con el comando \documentclass, así como un cuerpo encerrado dentro del entorno del documento, específicamente entre \begin{document} y \end{document}.
+Para empezar, es importante señalar que el archivo de muestra parece emplear la sintaxis TeX pero carece de la estructura requerida por LaTeX. Como sabrás, un archivo LaTeX debe incluir un preámbulo que comience con el comando `\documentclass`, así como un cuerpo encerrado dentro del entorno del documento, específicamente entre `\begin{document}` y `\end{document}`.
 
 Veamos ahora el ejemplo de código Java.
 
-{{< gist "aspose-com-gists""67385c777283964d328086603f691ac9""Aspose.TeX.Examples-Features-LaTeXRepairer.java" >}}
+{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Features-LaTeXRepairer.java" >}}
 
 De manera similar a un trabajo TeX normal, comenzamos creando un objeto que contiene las opciones para el proceso que estamos a punto de ejecutar. La mayoría de estas opciones son las mismas que las de un trabajo TeX normal. De hecho, al llamar al método [setInputWorkingDirectory()](https://reference.aspose.com/tex/java/com.aspose.tex.features/latexrepaireroptions/#setInputWorkingDirectory-com.aspose.tex.IInputWorkingDirectory-), especificamos el espacio desde el cual se deben leer los archivos de entrada. Sin embargo, en este ejemplo, no lo usamos aquí porque proporcionamos la ruta completa al archivo de entrada principal en el sistema de archivos y no se deben incluir archivos personalizados en el archivo de entrada principal. A continuación, llamamos al método [setOutputWorkingDirectory()](https://reference.aspose.com/tex/java/com.aspose.tex.features/latexrepaireroptions/#setOutputWorkingDirectory-com.aspose.tex.IOutputWorkingDirectory-) para especificar el espacio donde se deben escribir los archivos de salida. Si se llama, el método [setRequiredInputDirectory()](https://reference.aspose.com/tex/java/com.aspose.tex.features/latexrepaireroptions/#setRequiredInputDirectory-com.aspose.tex.IInputWorkingDirectory-) hace que las opciones apunten al espacio donde puede almacenar paquetes LaTeX que no están integrados en la biblioteca Aspose.TeX. Finalmente, el método [setGuessPackageCallback()](https://reference.aspose.com/tex/java/com.aspose.tex.features/latexrepaireroptions/#setGuessPackageCallback-com.aspose.tex.features.IGuessPackageCallback-) se analizará más adelante.
 
@@ -33,7 +33,8 @@ Mientras analiza más el archivo, el motor puede encontrar comandos o entornos n
 
 Aquí hay un ejemplo básico que simplemente asigna el comando `\head` al paquete `fancyhdr`:
 
-{{< gist "aspose-com-gists""67385c777283964d328086603f691ac9""Aspose.TeX.Examples-Features-LaTeXRepairer-PackageGuessingCallback.java" >}}
+{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Features-LaTeXRepairer-PackageGuessingCallback.java" >}}
+
 En cuanto al archivo de muestra, el motor encuentra primero el comando `\chapter`, que no está definido en la clase de documento `article` pero sí en la clase de documento `book`. La API ajusta la clase de documento para que la versión final del archivo reparado comience con `\documentclass{book}`. Luego, el motor encuentra el comando `\lhead` antes mencionado y determina que `\usepackage{fancyhdr}` debe insertarse en el preámbulo. Los comandos `\href` e `\includegraphics` que aparecen más adelante en el archivo hacen que el reparador inserte `\usepackage{hyperref}` y `\usepackage{graphics}` en el preámbulo, respectivamente. Estas decisiones se toman en función de las asignaciones internas de la API. Como antes, todas estas reparaciones se registran en el archivo del informe.
 
 Finalmente, el motor finaliza de forma anormal porque falta la conclusión adecuada de un documento LaTeX. Como resultado, el reparador agrega `\end{document}` al final del archivo e incluye esta información en el informe.

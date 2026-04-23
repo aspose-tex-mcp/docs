@@ -7,7 +7,7 @@ weight: 22
 url: /net/tikz-for-presentations-and-infographics/
 keywords: TikZ-Präsentationen, TikZ-Beamer, TikZ-Infografiken
 description: Entdecken Sie, wie Sie mit TikZ professionelle Präsentationen und ansprechende Infografiken erstellen.
-lastmod: "2025-06-29"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}

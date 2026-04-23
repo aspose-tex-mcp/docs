@@ -6,8 +6,8 @@ linktitle: Fundamentos de TikZ
 weight: 19
 url: /net/tikz-fundamentals-of-using-tikz/
 keywords: fundamentos de TikZ, fundamentos de TikZ, tutorial de TikZ
-description: EExplora los principios fundamentales y los comandos básicos de TikZ para crear gráficos para tus documentos TeX y LaTeX.
-lastmod: "2025-06-29"
+description: Explora los principios fundamentales y los comandos básicos de TikZ para crear gráficos para tus documentos TeX y LaTeX.
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}

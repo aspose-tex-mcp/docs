@@ -6,7 +6,7 @@ linktitle: Requisiti di sistema
 weight: 50
 url: /cpp/system-requirements/
 description: La soluzione Aspose.TeX per C ++ può essere utilizzata in qualsiasi ambiente di sviluppo che supporti C ++, ma alcuni ambienti sono esplicitamente supportati.
-lastmod: "2025-06-13"
+lastmod: "2026-04-20"
 ---
 
 {{<section overview>}}

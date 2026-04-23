@@ -7,7 +7,7 @@ weight: 10
 url: /java/introduction-to-ams-latex/
 keywords: ams-latex, amsmath, amsmath options, amsopn, amstext, amscd, amsthm, amsxtra, upref
 description: この記事は amsmath パッケージの簡単な紹介であり、そのオプションや利用可能なサブパッケージ、拡張機能について簡潔に説明します。
-lastmod: "2026-02-19"
+lastmod: "2026-04-21"
 ---
 
 {{<section overview>}}
@@ -38,7 +38,7 @@ lastmod: "2026-02-19"
 
 ## 拡張パッケージ
 
-The packages listed below provide additional features and must be loaded explicitly.
+以下にリストされたパッケージは追加機能を提供し、明示的にロードする必要があります。
 
 |||
 |---|---|

@@ -1,39 +1,39 @@
-﻿---
+---
 translation: true
-template: /templates/_template-java.md
-title: Graphics de LaTeX | \incluirgraphics comando
-linktitle: Incluir LATEXGRAPHICS
+template: /templates/_template-net.md
+title: Graphics de LaTeX | \includegraphics comando
+linktitle: Includegraphics LaTeX
 weight: 18
 url: /net/latex-graphics/
-description: A inclusão de gráficos em Tex é uma questão que vale a pena mencionar. Ao falar sobre isso, a primeira coisa que vem à mente é o comando `\incluirgraphics`.
-lastmod: "2025-06-16"
+description: A inclusão de gráficos em TeX é uma questão que vale a pena mencionar. Ao falar sobre isso, a primeira coisa que vem à mente é o comando `\includegraphics`.
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
 
 Na verdade, existem dois aspectos dos gráficos de LaTeX que valem a pena mencionar:
 
-* Gráficos vetoriais descritos diretamente por meio de comandos LATEX/TEX e,
+* Gráficos vetoriais descritos diretamente por meio de comandos LaTeX/TeX e,
 * Inclusão de gráficos externos descritos por meio de formatos externos, como EPS, PDF ou Raster PNG e PDF.
 
-O primeiro tem apoio limitado no LaTeX original e em seus pacotes. É implementado com a ajuda das regras verticais e horizontais da TEX. Isso ocorre porque o LaTeX original é baseado no mecanismo Tex original, que produz a saída principal no formato * DVI *, que não é adequado para descrever linhas e curvas ou dados de imagem de varredura binária. Mas os mecanismos capazes de produzir para formatos de suporte a gráficos (como o PDFTEX para PDF) também podem lidar com gráficos usando pacotes ou recursos de pacote dependentes de formato. Os últimos gráficos não são suportados no LaTeX básico pelo mesmo motivo. Discutiremos os recursos de inclusão gráfica abaixo.
+O primeiro tem apoio limitado no LaTeX original e em seus pacotes. É implementado com a ajuda das regras verticais e horizontais da TEX. Isso ocorre porque o LaTeX original é baseado no mecanismo TeX original, que produz a saída principal no formato * DVI *, que não é adequado para descrever linhas e curvas ou dados de imagem de varredura binária. Mas os mecanismos capazes de produzir para formatos de suporte a gráficos (como o PDFTEX para PDF) também podem lidar com gráficos usando pacotes ou recursos de pacote dependentes de formato. Os últimos gráficos não são suportados no LaTeX básico pelo mesmo motivo. Discutiremos os recursos de inclusão gráfica abaixo.
 
-## O pacote de LaTeX `graphics` e `\incluirgraphics`
+## O pacote de LaTeX `graphics` e `\includegraphics`
 
-Ao falar sobre a inclusão de gráficos de LaTeX, a primeira coisa que vem à mente é o comando `\incluirgraphics`. Ele é definido no pacote `graphics`, que você deve mencionar no preâmbulo para ativar seus recursos.
+Ao falar sobre a inclusão de gráficos de LaTeX, a primeira coisa que vem à mente é o comando `\includegraphics`. Ele é definido no pacote `graphics`, que você deve mencionar no preâmbulo para ativar seus recursos.
 
 ```tex
 \usepackage{graphics}
 ```
 
-Se o seu sistema de composição não estiver configurado para usar, digamos, PDFTEX por padrão, você deve especificar a opção apropriada que forçará o pacote a usar o arquivo `driver 'necessário:
+Se o seu sistema de composição não estiver configurado para usar, digamos, pdfTeX por padrão, você deve especificar a opção apropriada que forçará o pacote a usar o arquivo `driver 'necessário:
 
 
 ```tex
 \usepackage[pdftex]{graphics}
 ```
 
-Um arquivo `driver` faz parte de um pacote que implementa a interface entre os comandos do pacote e as primitivas de extensão Tex de baixo nível dependente de formato. O suporte gráfico do Aspose.Tex é configurado para usar seu próprio driver, para que você não precise especificar a opção Driver.
+Um arquivo `driver` faz parte de um pacote que implementa a interface entre os comandos do pacote e as primitivas de extensão TeX de baixo nível dependente de formato. O suporte gráfico do Aspose.TeX é configurado para usar seu próprio driver, para que você não precise especificar a opção Driver.
 
 Agora, a maneira mais simples de incluir, digamos, uma imagem PNG é digitar:
 
@@ -52,7 +52,7 @@ Você também pode especificar o nome completo do arquivo usando um caminho abso
 \includegraphics{../img/sample-image.png} % relative to the directory containing the current one
 ```
 
-Outra maneira de especificar os arquivos gráficos Localização (s) é definir uma lista de caminhos alternativos usando o comando `\graphicsPath` antes de ligar para `\incluirGraphics`:
+Outra maneira de especificar os arquivos gráficos Localização (s) é definir uma lista de caminhos alternativos usando o comando `\graphicspath` antes de ligar para `\includegraphics`:
 
 ```tex
 \graphicspath{{d:/img}{c:/img}{d:/work/img}}

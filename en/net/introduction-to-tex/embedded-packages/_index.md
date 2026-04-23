@@ -6,7 +6,7 @@ linktitle: Embedded LaTeX packages
 weight: 20
 url: /net/embedded-packages/
 description: Here is a list of packages embedded into the Aspose.TeX library along with their descriptions and versions used.
-lastmod: "2024-09-20"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}

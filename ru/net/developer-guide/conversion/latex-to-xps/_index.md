@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: LaTeX в XPS | .NET
@@ -6,7 +6,7 @@ linktitle: LaTeX в XPS
 weight: 12
 url: /net/latex-to-xps/
 description: Функциональность преобразования решения Aspose.TeX API для .NET позволяет конвертировать файлы LaTeX в формат XPS.
-lastmod: "2026-04-03"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
@@ -31,7 +31,7 @@ lastmod: "2026-04-03"
 
 Этот код демонстрирует самый простой способ создания XPS-файла из LaTeX.
 
-{{< gist "aspose-com-gists""1d10927e18d23e49096c91ce726e9d6f""Example-ConvertLaTeXToXPS-Simplest.cs" >}}
+{{< gist "aspose-com-gists" "1d10927e18d23e49096c91ce726e9d6f" "Example-ConvertLaTeXToXPS-Simplest.cs" >}}
 
 ### Альтернативный способ записи основного выходного файла XPS.
 
@@ -48,7 +48,7 @@ lastmod: "2026-04-03"
 
 Этот подход полезен, когда данные XPS нужны в памяти, а не в виде файла на диске.
 
-{{< gist "aspose-com-gists""1d10927e18d23e49096c91ce726e9d6f""Example-ConvertLaTeXToXPS-Alternative.cs" >}}
+{{< gist "aspose-com-gists" "1d10927e18d23e49096c91ce726e9d6f" "Example-ConvertLaTeXToXPS-Alternative.cs" >}}
 
 Эффект тот же, что мы получаем [здесь](/tex/{{lang.url-fragment}}net/latex-to-pdf/#an-alternative-way-to-write-main-output-pdf-file).
 

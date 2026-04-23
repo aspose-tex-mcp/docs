@@ -7,7 +7,7 @@ weight: 70
 url: /java/latex-encodings-model/
 keywords: Font in LaTeX, LaTeX, codifica del carattere in LaTeX, codifica input in LaTeX, codifica in output in LaTeX, oggetto LICR, rappresentazione del carattere interno in LaTeX
 description: Questo articolo copre gli interni di codifica di input e output in LaTeX, nonché rappresentazione del carattere interno in LaTeX.
-lastmod: "2025-06-13"
+lastmod: "2026-04-21"
 ---
 
 {{<section overview>}}
@@ -63,7 +63,7 @@ L'insieme di comandi specifici per codifica dei caratteri non è fisso ma è imp
 
 ## 7.3. Codifica input
 
-Una volta caricato il pacchetto `inputenc`, diventano disponibili le due dichiarazioni`\dichiaraInputText` e `\dichiaraInputMath` per la mappatura dei caratteri di input a 8 bit agli oggetti LICR. Dovrebbero essere utilizzati solo in file di codifica (vedi sotto), pacchetti o, se necessario, nel preambolo del documento.
+Una volta caricato il pacchetto `inputenc`, diventano disponibili le due dichiarazioni`\DeclareInputText` e `\DeclareInputMath` per la mappatura dei caratteri di input a 8 bit agli oggetti LICR. Dovrebbero essere utilizzati solo in file di codifica (vedi sotto), pacchetti o, se necessario, nel preambolo del documento.
 
 Questi comandi prendono un numero a 8 bit come primo argomento, che può essere dato come numero decimale, numero ottale o in notazione esadecimale. L'uso della notazione decimale è consigliato poiché i personaggi `` `e/o` `` possono ottenere significati speciali in un pacchetto di supporto linguistico, come le scorciatoie per gli accenti, rendendo in tal modo la notazione ottale e/o esadecimale non valida se i pacchetti sono caricati nell'ordine sbagliato.
 
@@ -71,7 +71,7 @@ Questi comandi prendono un numero a 8 bit come primo argomento, che può essere 
 \DeclareInputText{number}{LICR-object}
 ```
 
-Il comando `\dichiaraInputText dichiara le mappature dei caratteri per l'uso nel testo. Il suo secondo argomento contiene il comando (o la sequenza di comandi) specifica per codifica, ovvero gli oggetti LICR a cui il numero di carattere dovrebbe essere mappato. Per esempio,
+Il comando `\DeclareInputText dichiara le mappature dei caratteri per l'uso nel testo. Il suo secondo argomento contiene il comando (o la sequenza di comandi) specifica per codifica, ovvero gli oggetti LICR a cui il numero di carattere dovrebbe essere mappato. Per esempio,
 
 ```tex
 \DeclareInputText{239}{\"\i}
@@ -83,7 +83,7 @@ mappa il numero `239` alla rappresentazione specifica della codifica della" i-Um
 \DeclareInputMath{number}{math-object}
 ```
 
-Se il numero rappresenta un carattere da utilizzare nelle formule matematiche, deve essere utilizzata la dichiarazione `\dichiaraInputMath`. Ad esempio, nella codifica input `CP437DE` (tastiera MS-DOS tedesca),
+Se il numero rappresenta un carattere da utilizzare nelle formule matematiche, deve essere utilizzata la dichiarazione `\DeclareInputMath`. Ad esempio, nella codifica input `CP437DE` (tastiera MS-DOS tedesca),
 
 ```tex
 \DeclareInputMath{224}{\alpha}
@@ -140,7 +140,7 @@ Se ci sono mappature per comandi specifici per codifica che potrebbero non esser
 
 Il comando `\textsymbolunavailable` emette un avvertimento che indica che un determinato carattere non è disponibile con i caratteri attualmente usati. Questo può essere utile come impostazione predefinita quando tali caratteri sono disponibili solo se vengono caricati caratteri speciali e non esiste un modo adatto per falsificare i personaggi con caratteri esistenti (come è stato possibile per un valore predefinito per `\textonehalf`).
 
-Il resto del file dovrebbe includere solo le dichiarazioni di codifica input `\dichiaraInputText` e `\dichiaraInputMath`. Come accennato in precedenza, l'uso di quest'ultimo comando è scoraggiato ma consentito. Nessun altro comando deve essere utilizzato all'interno di un file di codifica input, in particolare, nessun comando che impedisce la lettura del file più volte (ad esempio, `\newCommand`), poiché i file di codifica vengono spesso caricati più volte in un singolo documento.
+Il resto del file dovrebbe includere solo le dichiarazioni di codifica input `\DeclareInputText` e `\DeclareInputMath`. Come accennato in precedenza, l'uso di quest'ultimo comando è scoraggiato ma consentito. Nessun altro comando deve essere utilizzato all'interno di un file di codifica input, in particolare, nessun comando che impedisce la lettura del file più volte (ad esempio, `\newCommand`), poiché i file di codifica vengono spesso caricati più volte in un singolo documento.
 
 ### File di mappatura di input per UTF8
 
@@ -176,7 +176,7 @@ Ancora una volta, un file di codifica di output inizia con una riga di identific
 \ProvidesFile{t1enc.def}[2001/06/05 v1.94 Standard LaTeX file]
 ```
 
-Prima di dichiarare qualsiasi comando specifico per codifica per una particolare codifica, dobbiamo prima far conoscere questa codifica al LaTeX. Questo viene fatto tramite il comando `\dichiarafontencoding`. A questo punto, è anche utile dichiarare le regole di sostituzione predefinita per la codifica. Possiamo farlo usando il comando `\dichiarafontsubstitution`. Entrambe le dichiarazioni sono discusse in dettaglio in [come impostare nuovi caratteri](/tex/{{lang.url-fragment}}java/latex-fonts-setup/).
+Prima di dichiarare qualsiasi comando specifico per codifica per una particolare codifica, dobbiamo prima far conoscere questa codifica al LaTeX. Questo viene fatto tramite il comando `\DeclareFontEncoding`. A questo punto, è anche utile dichiarare le regole di sostituzione predefinita per la codifica. Possiamo farlo usando il comando `\DeclareFontSubstitution`. Entrambe le dichiarazioni sono discusse in dettaglio in [come impostare nuovi caratteri](/tex/{{lang.url-fragment}}java/latex-fonts-setup/).
 
 ```tex
 \DeclareFontEncoding{T1}{}{}

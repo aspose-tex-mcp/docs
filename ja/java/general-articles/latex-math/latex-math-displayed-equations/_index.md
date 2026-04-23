@@ -7,7 +7,7 @@ weight: 90
 url: /java/latex-math-displayed-equations/
 keywords: latex、latex 数式、latex 数式、latex 数式の表示、latex 数式の表示、latex 数式の表示、latex 数式の表示配列、latex 数式の表示配置
 description: LaTeX が提供するコマンドを使用して、大きなサイズの数式や多数の数式を表示する方法について学びます。
-lastmod: "2026-02-24"
+lastmod: "2026-04-21"
 ---
 
 {{<section overview>}}
@@ -101,7 +101,7 @@ LaTeX は `equation` 環境を提供しており、式を自動的に番号付�
 \begin{equation} \label{eq:someequation}
   f(x)=(x+a)(x+b)
 \end{equation}
-this references equation \ref{eq:someequation}.
+これは式 \ref{eq:someequation} を参照しています。
 ```
 
 は次のようになります。

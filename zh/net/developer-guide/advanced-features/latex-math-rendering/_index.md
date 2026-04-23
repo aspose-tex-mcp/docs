@@ -1,12 +1,12 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
-title: 乳胶数学公式渲染| .NET的Aspose.TeX
+title: LaTeX 数学公式渲染 | Aspose.TeX for .NET
 linktitle: 乳胶数学公式渲染
 weight: 10
 url: /net/latex-math-formula-rendering/
 description: Aspose.TeX API解决方案用于.NET乳胶数学公式渲染。了解有关如何使用功能的代码示例。
-lastmod: "2026-02-25"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
@@ -18,7 +18,7 @@ lastmod: "2026-02-25"
 
 {{< gist "aspose-com-gists" "cd0acc55d1634f17dcf42e02075ca005" "Example-RenderMathToPNG.cs" >}}
 
-让我们了解细节。首先，我们创建一个[渲染选项](https://reference.aspose.com/tex/net/aspose.tex.features/mathrendereroptions/)实例，类似于Tex/latex排版。我们在这里同时指定输出图像分辨率。
+让我们了解细节。首先，我们创建一个[渲染选项](https://reference.aspose.com/tex/net/aspose.tex.features/mathrendereroptions/)实例，类似于 TeX/LaTeX 排版。我们在这里同时指定输出图像分辨率。
 
 接下来，我们指定序言。默认序言是：
 
@@ -43,7 +43,7 @@ lastmod: "2026-02-25"
 
 该方法将要编写图像的流作为第二个参数接受。我们下一步创建流。
 
-最后，我们将`MathRenderer.Render()`方法本身称为第三个参数。公式的乳胶代码作为第一个参数传递。
+最后，我们将 `MathRenderer.Render()` 方法本身称为第三个参数。公式的 LaTeX 代码作为第一个参数传递。
 
 示例的最后一行打印了数学公式渲染的两个工件——公式的大小和简短的错误报告（如果有错误）。
 

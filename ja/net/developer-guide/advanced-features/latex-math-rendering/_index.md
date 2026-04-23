@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: ラテックス数学式レンダリング | Aspose.TeX for .NET
@@ -6,7 +6,7 @@ linktitle: ラテックス数学式レンダリング
 weight: 10
 url: /net/latex-math-formula-rendering/
 description: .NETラテックス数学式レンダリング用のAspose.TeX APIソリューションについては、この記事で説明します。機能の使用方法に関するコードの例を学びます。
-lastmod: "2026-02-25"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
@@ -20,7 +20,7 @@ lastmod: "2026-02-25"
 
 {{< gist "aspose-com-gists" "cd0acc55d1634f17dcf42e02075ca005" "Example-RenderMathToPNG.cs" >}}
 
-詳細について説明しましょう。まず、Tex/LaTexタイプセットと同様に、[レンダリングオプション](https://reference.aspose.com/tex/net/aspose.tex.features/mathrendereroptions/)インスタンスを作成します。ここでは、出力画像解像度を同時に指定します。
+詳細について説明しましょう。まず、TeX/LaTeXタイプセットと同様に、[レンダリングオプション](https://reference.aspose.com/tex/net/aspose.tex.features/mathrendereroptions/)インスタンスを作成します。ここでは、出力画像解像度を同時に指定します。
 
 
 次に、前文を指定します。デフォルトのプリアンブルは次のとおりです。

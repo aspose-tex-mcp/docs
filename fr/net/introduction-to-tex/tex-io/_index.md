@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: Entrée/sortie TeX 
@@ -6,7 +6,7 @@ linktitle: E/S TeX
 weight: 12
 url: /net/tex-io/
 description: Principes fondamentaux du travail avec TeX comme format de sortie ou d'entrée dans. Le travail TeX s'exécute sur un fichier spécifié spécifié.
-lastmod: "2024-09-27"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}

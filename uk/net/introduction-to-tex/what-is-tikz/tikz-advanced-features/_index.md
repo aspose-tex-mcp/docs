@@ -7,7 +7,7 @@ weight: 20
 url: /net/tikz-advanced-features/
 keywords: розширені tikz, шляхи tikz, діаграми tikz, pgfplots, circuitikz, tikz-3dplot
 description: Вивчіть розширені методи TikZ, включаючи складні шляхи, позиціонування вузлів, стрілки та створення діаграм для графіки професійної якості.
-lastmod: "2025-06-29"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}

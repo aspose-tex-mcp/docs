@@ -7,7 +7,7 @@ weight: 19
 url: /net/tikz-fundamentals-of-using-tikz/
 keywords: Principes fondamentaux de TikZ, Principes fondamentaux de TikZ, Tutoriel TikZ
 description: Explorez les principes fondamentaux et les commandes de base de TikZ pour créer des graphiques pour vos documents TeX et LaTeX.
-lastmod: "2025-06-29"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}

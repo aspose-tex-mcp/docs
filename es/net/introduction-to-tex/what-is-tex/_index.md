@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: ¿Qué es TeX?
@@ -7,7 +7,7 @@ weight: 10
 url: /net/what-is-tex/
 keywords: que es tex
 description: Esta página responde brevemente a la pregunta "¿Qué es TeX?" ¿Es uno de los lenguajes de programación o se considera un formato de documento?
-lastmod: "2024-10-30"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
@@ -16,7 +16,7 @@ lastmod: "2024-10-30"
 
 TeX definitivamente no es un formato en absoluto.
 
-## ¿Qué es Texas?
+## ¿Qué es TeX?
 
 Entonces, ¿qué es TeX? Bueno, esa es la cuestión, como dijo Hamlet[^1]. Intentemos responderla de la forma más sencilla posible.
 
@@ -37,4 +37,4 @@ Afortunadamente, estas no fueron las únicas cosas que hizo. También propuso la
 Lo único que queda por señalar aquí es que, de hecho, los caracteres del texto que se está escribiendo también son comandos que obligan al motor TeX a escribir los caracteres correspondientes (teniendo en cuenta la codificación de entrada actual) utilizando la configuración de fuente actual (que, a su vez son controlables mediante secuencias de control). Por tanto, al definir macros, también podemos utilizar caracteres.
 
 Esperamos que a partir de ahora la pregunta “¿Qué es TeX?” ya no existe en tu mente.
-[^1]: 1 
+[^1]: El personaje de "The Tragical Historie of Hamlet, Prince of Denmarke" de W. Shakespeare.

@@ -6,7 +6,7 @@ linktitle: Інші способи надання основного вхідн�
 weight: 14
 url: /python-net/other-ways-of-main-input/
 description: API-рішення Aspose.TeX для Python містить конструктор, який приймає потік як перший аргумент, забезпечуючи функцію перетворення.
-lastmod: "2025-06-13"
+lastmod: "2026-04-20"
 ---
 
 {{<section overview>}}
@@ -15,7 +15,7 @@ lastmod: "2025-06-13"
 
 Поки що ми навчилися лише надавати [основний вхідний файл](/tex/{{lang.url-fragment}}net/tex-io/#tex-input) механізму TeX як ім’я файлу, чи то в його повній формі, чи то в скороченій формі, з розширенням або без нього. Однак у класі [TeXJob](https://reference.aspose.com/tex/python-net/aspose.tex/texjob) доступний [інший конструктор](https://reference.aspose.com/tex/python-net/aspose.tex/texjob/__init__/#io.RawIOBase-aspose.tex.presentation.Device-aspose.tex.TeXOptions), який приймає потік як перший аргумент. Це корисно, якщо з якоїсь причини основний вхідний файл не має форми файлу у файловій системі диска. Ось приклад того, як це можна реалізувати:
 
-{{< gist "aspose-com-gists""68d217858f0be40062562ce2bb2cd908""Aspose.TeX.Examples-Conversion-InputStream.py" >}}
+{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Conversion-InputStream.py" >}}
 
 Зауважте, що всі вихідні файли матимуть назву `textput`. Це тому, що механізм не має доступу до жодного іншого імені. `textput` — назва завдання за замовчуванням. Ви можете знайти більш детальну інформацію про назви завдань [Вивід TeX](/tex/{{lang.url-fragment}}net/tex-io/#tex-output) і [Як встановити назву завдання](/tex/{{lang.url-fragment}}net/other-options/#how-to-set-the-job-name).
 
@@ -25,7 +25,7 @@ lastmod: "2025-06-13"
 
 Ось код:
 
-{{< gist "aspose-com-gists""68d217858f0be40062562ce2bb2cd908""Aspose.TeX.Examples-Conversion-MainInputTerminal.py" >}}
+{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Conversion-MainInputTerminal.py" >}}
 
 Щойно він запуститься, движок призупиниться і чекатиме, поки ми введемо ім’я файлу (із шляхом чи без, із розширенням чи без):
 

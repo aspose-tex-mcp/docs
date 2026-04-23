@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: 用于 .NET 的 Aspose.TeX 转换器 – 常见问题解答
@@ -8,7 +8,7 @@ weight: 90
 url: /net/conversion/faq/
 description: 有关 Aspose.TeX for .NET 的常见问题解答，涵盖支持的格式、转换示例、许可、批处理、图像选项等。
 keywords: Aspose.TeX、.NET、常见问题解答、LaTeX 转换、PDF、Word、HTML、图像导出、许可、批量转换、API、文档
-lastmod: "2025-12-04"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
@@ -56,15 +56,15 @@ using (var pdf = tex.ToPdf())
 
 **答:** 
 
-• .NET Framework4.6 或更高版本**或** .NETCore2.1+/.NET5+。  
-• Windowsx64/x86、Linux (glibc2.12+)、macOS (Catalyst)。  
+• .NET Framework 4.6 或更高版本**或** .NET Core 2.1+/.NET 5+。
+• Windows x64/x86、Linux (glibc 2.12+)、macOS (Catalyst)。
 • 不需要额外的本机二进制文件。  
 <br><br>
 
 **问：如何控制图像输出分辨率和质量？**  
 
 **答:** 
-```ccsharp
+```csharp
 var opts = new ImageSaveOptions
 {
     Resolution = 300,   // DPI

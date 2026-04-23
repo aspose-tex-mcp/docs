@@ -1,21 +1,21 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: Rendering di figura in LaTeX | .NET
 linktitle: Il LaTeX include la figura
 weight: 20
 url: /net/latex-figure-rendering/
-description: Soluzione API ASPIPE.TEX per il rendering del frammento di LaTeX .NET (Figura) è descritta in questo articolo. Impara gli esempi di codice su come utilizzare la funzionalità.
+description: La soluzione API Aspose.TeX per il rendering di frammenti LaTeX (figure) per .NET è descritta in questo articolo. Scopri gli esempi di codice su come utilizzare la funzionalità.
 keywords: figura in LaTeX, dimensione della figura LaTeX, immagine in LaTeX, immagine in LaTeX, LaTeX includono figura, latex pic, opzioni di figura in LaTeX
-lastmod: "2025-06-13"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
 
 
-A volte potresti voler estrarre alcuni contenuti da un file in LaTeX come pezzo reso separatamente, o una *figura " *, senza alcuna connessione al layout della pagina. Può essere un'illustrazione per la tua pubblicazione su Internet, per esempio. Puoi farlo con la nostra API. Per quanto riguarda i formati target, ci sono due opzioni: PNG e SVG. Come nel caso della funzione di rendering della formula matematica in LaTeX. Vale anche la pena notare che **il rendering di figura in LaTeX** è una generalizzazione del [rendering di formula matematica in LaTeX](/tex/{{lang.url-fragment}}net/latex-math-formula-rendering/).
+A volte potresti voler estrarre alcuni contenuti da un file LaTeX come pezzo reso separatamente, o una *“figura”*, senza alcuna connessione al layout della pagina. Può essere un'illustrazione per la tua pubblicazione su Internet, per esempio. Puoi farlo con la nostra API. Per quanto riguarda i formati target, ci sono due opzioni: PNG e SVG. Come nel caso della funzione di rendering della formula matematica LaTeX. Vale anche la pena notare che **il rendering di figure LaTeX** è una generalizzazione del [rendering di formule matematiche LaTeX](/tex/{{lang.url-fragment}}net/latex-math-formula-rendering/).
 
-## Come rendere una figura in LaTeX a png
+## Come eseguire il rendering di una figura LaTeX in PNG
 
 La sezione di riferimento API relativa a questo argomento è [qui](https://reference.aspose.com/tex/net/aspose.tex.features/). E come per il rendering della formula, inizieremo con un esempio. Ecco qui:
 
@@ -50,7 +50,7 @@ Ecco il risultato del rendering.
 
 <a href="/tex/net/latex-figure-rendering/text-and-formula.png">![Figura in LaTeX rendering a png](/tex/images/net/text-and-formula.png)</a>
 
-Questo è il caso d'uso più generale per la funzione **Latex Figure**.
+Questo è il caso d'uso più generale per la funzione di **rendering delle figure LaTeX**.
 
 ## Come rendere una figura in LaTeX a SVG
 
@@ -60,9 +60,9 @@ Allo stesso modo, possiamo rendere una figura in LaTeX in formato SVG.
 
 Le differenze sono:
 
-* Usiamo la classe [svgfigurerendereroptions](https://reference.aspose.com/tex/net/aspose.tex.features/svgfigurerendereroptions/) anziché [pngfurererendereroptions](https://reference.aspose.com/tex/net/aspose.tex.features/pngfigurerendereroptions/).
+* Utilizziamo la classe [SvgFigureRendererOptions](https://reference.aspose.com/tex/net/aspose.tex.features/svgfigurerendereroptions/) invece di [PngFigureRendererOptions](https://reference.aspose.com/tex/net/aspose.tex.features/pngfigurerendereroptions/).
 * Non specifichiamo la risoluzione.
-* Usiamo la classe [svgfigurerender](https://reference.aspose.com/tex/net/aspose.tex.features/svgfigurerenderer/) anziché [pngfigurerender](https://reference.aspose.com/tex/net/aspose.tex.features/pngfigurerenderer/).
+* Utilizziamo la classe [SvgFigureRenderer](https://reference.aspose.com/tex/net/aspose.tex.features/svgfigurerenderer/) invece di [PngFigureRenderer](https://reference.aspose.com/tex/net/aspose.tex.features/pngfigurerenderer/).
  
 Ecco il risultato:
 

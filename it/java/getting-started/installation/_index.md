@@ -6,18 +6,18 @@ title: Installazione | Aspose.TeX per Java
 weight: 60
 url: /java/installation/
 description: Aspose.TeX Documentazione API per Java è disponibile nel pacchetto Zip scaricato o ottenuto da progetti Maven con semplici configurazioni.
-lastmod: "2025-06-13"
+lastmod: "2026-04-21"
 ---
 
 {{<section overview>}}
 
 ## Installazione di Aspose.TeX per java dal repository Aspose
 
-ASPERE HOST TUTTI le API Java sul repository ASPE. È possibile utilizzare facilmente Aspose.Tex per l'API Java direttamente nei progetti Maven con semplici configurazioni.
+Aspose ospita tutte le API Java nel repository Aspose. È possibile utilizzare facilmente Aspose.TeX per Java direttamente nei progetti Maven con semplici configurazioni.
 
-## Specificare la configurazione del repository aspirante
+## Specificare la configurazione del repository Aspose
 
-Innanzitutto, è necessario specificare la configurazione / posizione del repository ASPE in Maven Pom.xml come segue:
+Innanzitutto, è necessario specificare la configurazione / posizione del repository Aspose in Maven Pom.xml come segue:
 
 
 ```
@@ -32,7 +32,7 @@ Innanzitutto, è necessario specificare la configurazione / posizione del reposi
 
 ## Definisci Aspose.TeX per la dipendenza dall'API Java
 
-Quindi definisci Aspose.Tex per la dipendenza dall'API Java nel tuo pom.xml come segue:
+Quindi definisci Aspose.TeX per la dipendenza dall'API Java nel tuo pom.xml come segue:
 
 ```
 <dependencies>

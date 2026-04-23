@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-java.md
 title: Outras maneiras de fornecer o principal arquivo de entrada tex principal | Java
@@ -6,7 +6,7 @@ linktitle: Outras maneiras de fornecer o principal arquivo de entrada tex
 weight: 14
 url: /java/other-ways-of-main-input/
 description: Funcionalidade de conversão do Aspose.TeX Solução da API para Java possui um construtor que aceita um fluxo como o primeiro argumento. Aqui estão alguns exemplos de código.
-lastmod: "2025-06-16"
+lastmod: "2026-04-21"
 ---
 
 {{<section overview>}}

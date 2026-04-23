@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-java.md
 title: Документація по Aspose.TeX для Java
@@ -7,7 +7,7 @@ weight: 20
 url: /java/
 description: Рішення API для керування файлами TeX для Java. Передавати вхідні дані TeX і отримувати вихідні дані, а також створювати власний формат TeX.
 is_root: true
-lastmod: "2025-06-13"
+lastmod: "2026-04-21"
 ---
 
 {{<section overview>}}
@@ -30,7 +30,7 @@ Aspose.TeX — це бібліотека Java для набору файлів T
 - [Функціональність Aspose.TeX для Java](/tex/{{lang.url-fragment}}java/feature-list/)
 - [Примітки до випуску Aspose.TeX для Java](https://releases.aspose.com/tex/java/release-notes/)
 - [Завантажити Aspose.TeX для Java](https://releases.aspose.com/tex/java/)
-- [Aspose.TeX для Java Maven ховище ](https://releases.aspose.com/java/repo/com/aspose/aspose-tex/)
+- [Aspose.TeX для Java сховище Maven](https://releases.aspose.com/java/repo/com/aspose/aspose-tex/)
 - [Сторінка продукту Aspose.TeX для Java](https://products.aspose.com/tex/java/)
 - [Довідковий посібник з API Aspose.TeX для Java](https://reference.aspose.com/tex/java)
 - [Форум безкоштовної підтримки Aspose.TeX для Java](https://forum.aspose.com/c/tex)

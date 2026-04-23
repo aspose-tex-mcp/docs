@@ -7,7 +7,7 @@ weight: 30
 url: /cpp/
 description: Gerenciando a solução da API de arquivos TEX para C ++. A biblioteca fornece maneiras de passar por entrada Tex e obter saída e recursos como criar seu próprio formato Tex.
 is_root: true
-lastmod: "2025-06-16"
+lastmod: "2026-04-20"
 ---
 
 {{<section overview>}}

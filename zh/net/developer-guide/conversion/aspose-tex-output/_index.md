@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: Aspose.TeX 的输出接口 | .NET
@@ -6,8 +6,8 @@ linktitle: Aspose.TeX 的输出接口
 weight: 16
 url: /net/aspose-tex-output/
 description: 本文通过代码示例，讲解了 Aspose.TeX API 解决方案在 .NET 环境下将 TeX 文件转换为输出格式的功能。
-keywords: 本文通过代码示例，讲解了 Aspose.TeX API 解决方案在 .NET 环境下将 TeX 文件转换为输出格式的功能。
-lastmod: "2026-02-25"
+keywords: aspose tex output, .net tex, output directory, output zip, output console, output terminal, tex options, outputfiledirectory, outputzipdirectory, tex conversion
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}

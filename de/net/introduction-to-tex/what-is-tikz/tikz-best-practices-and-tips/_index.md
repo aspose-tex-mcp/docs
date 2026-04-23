@@ -7,7 +7,7 @@ weight: 23
 url: /net/tikz-best-practices-and-tips/
 keywords: TikZ Best Practices, TikZ Tipps, TikZ Performance-Optimierung
 description: Erfahren Sie Best Practices und nützliche Tipps für die effiziente und effektive Nutzung von TikZ in Ihren TeX- und LaTeX-Dokumenten.
-lastmod: "2025-06-29"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}

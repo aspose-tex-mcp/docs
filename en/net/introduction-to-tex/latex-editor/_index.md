@@ -8,7 +8,7 @@ weight: 90
 url: /latex-editor/
 description: A concise guide that explains what a LaTeX editor does, the typical workflow, common editor categories, and the modern LaTeX 3 (expl3) programming layer.
 keywords: LaTeX editor, LaTeX 3, expl3, TeX, PDF compilation, syntax highlighting, live preview, academic writing, package development
-lastmod: "2025-12-02"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}

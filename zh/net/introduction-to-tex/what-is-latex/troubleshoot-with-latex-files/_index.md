@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: LaTeX 文件常见问题及解决方案
@@ -7,7 +7,7 @@ weight: 10
 url: /net/troubleshoot-with-latex-files/
 keywords: LaTeX 文件问题, 损坏的 LaTeX 文档, 损坏的 LaTeX 文件, 损坏的 LaTeX, LaTeX 文件问题, LaTeX 错误
 description: 实用技巧帮助排除 LaTeX 文件故障，解决错误、编译问题、宏包冲突和格式化错误，实现无缝文档创建。
-lastmod: "2026-02-26"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
@@ -72,7 +72,7 @@ LaTeX 相较于其他文档排版系统有若干优势，也存在一些劣势�
 
 LaTeX 文档必须编译后才能得到最终输出。编译错误可能由多种原因引起，从简单的语法错误到宏包冲突或文档结构问题。以下是常见的编译错误原因：
 
-- 语法错误，例如错误使用 LaTeX 命令、缺少反斜杠 `()`，或花括号不匹配 `({})`。  
+- 语法错误，例如错误使用 LaTeX 命令、缺少反斜杠 `(\)`，或花括号不匹配 `({})`。  
 - 缺少或未正确导入/安装的宏包。  
 - 环境未闭合（如 `\begin{...}` 缺少对应的 `\end{...}`）。  
 - 使用了在 LaTeX 中具有特殊含义的字符，例如下划线 `(_)`。  

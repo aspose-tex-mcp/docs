@@ -6,7 +6,7 @@ linktitle: 開発者ガイド
 weight: 30
 url: /python-net/developer-guide/
 description: この章では、コードの例に示されているPython機能のAsops.tex APIソリューションの概要を開発者に提供します。
-lastmod: "2025-06-09"
+lastmod: "2026-04-20"
 ---
 
 {{<section overview>}}
@@ -17,12 +17,12 @@ lastmod: "2025-06-09"
 
 - **[変換](/tex/{{lang.url-fragment}}python-net/conversion/)**  - 最も必要な変換ペア、TEX入力、および出力などについてご覧ください。
 - **[外部ラテックスパッケージ](/tex/{{lang.url-fragment}}java/external-latex-packages/)**  - ここに、ライブラリのTexエンジンにそれらを提供する方法の詳細が記載された最も必要な外部パッケージが収集されます。
-- **[高度な機能](/tex/{{lang.url-fragment}}python-net/advanced-features/)**  - 章は、C ++のためにAspose.TeXが提供する高度な機能を簡単に使用できるように役立ちます。
+- **[高度な機能](/tex/{{lang.url-fragment}}python-net/advanced-features/)**  - 章は、.NETのためにAspose.TeXが提供する高度な機能を簡単に使用できるように役立ちます。
 
 
 ## Python開発者向けのその他の有用なリソース：
 
-- [**概要**](/tex/{{lang.url-fragment}}python-net/product-overview/) -  C ++のこのAPIソリューションの目的と利点を含む、ソフトウェア、フレームワーク、またはテクノロジーの概要を示します。
+- [**概要**](/tex/{{lang.url-fragment}}python-net/product-overview/) -  .NETのこのAPIソリューションの目的と利点を含む、ソフトウェア、フレームワーク、またはテクノロジーの概要を示します。
 - [**インストールとセットアップ**](/tex/{{lang.url-fragment}}python-net/installation/) - 開発環境のインストールとセットアップの方法に関する段階的な指示です。 
 - [**システム要件**](/tex/{{lang.url-fragment}}python-net/system-requirements/) -  APIと一緒に環境が正しく到達したかどうかを理解します。
 - [**APIリファレンス**](https://reference.aspose.com/page/python-net/) - 提供された機能、クラス、メソッド、パラメーター、およびJavaのAspos.tex APIのリターンタイプのドキュメントについてここで学びます。 

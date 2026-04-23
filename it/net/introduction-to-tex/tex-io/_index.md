@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: Input/output in TeX
@@ -6,7 +6,7 @@ linktitle: Tex i/o
 weight: 12
 url: /net/tex-io/
 description: Fondamenti di lavoro con Tex come output o formato di input all'interno di API Aspose.Tex. Tex Job si svolge su un file esplicitamente specificato.
-lastmod: "2025-06-13"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
@@ -19,10 +19,10 @@ Tecnicamente, qualsiasi file può essere un file tex. Non ha nemmeno bisogno di 
 
 Un lavoro Tex funziona su un file TEX esplicitamente specificato. Quindi, includiamo questo file nell'input di un determinato lavoro Tex. Inoltre, Tex ha quattro primitive relative all'input ausiliario:
 
-* `\Input <Nome file>` richiede un nome file e inizia a elaborare quel file non appena l'elaborazione del file contenente raggiunge il comando `\input`. Una volta raggiunta la fine del file ausiliario, l'elaborazione ritorna al file contenente il comando `\input`.
-* `\OpenIn <4-BIT-Number> = <nome file>` richiede anche un nome file, ma apre solo un file e lo mappa a un numero da 0 a 15.
-* `\Read <umber> a <sequenza di controllo>` richiede il numero a cui un file viene mappato e legge una riga da esso alla volta in modo che `<Sequenza di controllo>` corrisponda all'elenco dei token letti.
-* `\Closein <4-BIT-Number>` chiude il file mappato al numero.
+* `\input <Nome file>` richiede un nome file e inizia a elaborare quel file non appena l'elaborazione del file contenente raggiunge il comando `\input`. Una volta raggiunta la fine del file ausiliario, l'elaborazione ritorna al file contenente il comando `\input`.
+* `\openin <4-BIT-Number> = <nome file>` richiede anche un nome file, ma apre solo un file e lo mappa a un numero da 0 a 15.
+* `\read <umber> a <sequenza di controllo>` richiede il numero a cui un file viene mappato e legge una riga da esso alla volta in modo che `<Sequenza di controllo>` corrisponda all'elenco dei token letti.
+* `\closein <4-BIT-Number>` chiude il file mappato al numero.
 
 I file i cui nomi sono passati ai comandi `\input` e `\openin` sono anche inclusi nell'ingresso di TEX e li chiameremo *file di input ausiliario* o *dipendenze*, mentre il file specificato per il lavoro chiameremo il file *input principale*.
 
@@ -50,8 +50,8 @@ Contemporaneamente alla scrittura nel file di registro, il motore TEX può forni
 Un lavoro Tex può essere eseguito in una delle quattro modalità di interazione in qualsiasi momento. Queste modalità sono cambiate dai seguenti primitivi Tex:
 
 * `\batchmode`. Il motore omette tutte le fermate e omette l'uscita del terminale e quindi non richiede il terminale per ingresso o output.
-* `\non -stopmode`. Il motore omette tutte le fermate e quindi richiede il terminale solo per l'uscita.
-* `\ScrollMode`. Il motore omette l'errore si arresta e richiede il terminale sia per l'ingresso che per l'output.
-* `\ErrorStopMode`. Il motore si ferma ad ogni opportunità di interagire.
+* `\nonstopmode`. Il motore omette tutte le fermate e quindi richiede il terminale solo per l'uscita.
+* `\scrollmode`. Il motore omette l'errore si arresta e richiede il terminale sia per l'ingresso che per l'output.
+* `\errorstopmode`. Il motore si ferma ad ogni opportunità di interagire.
 
-Aspose.Tex ci consente di specificare la modalità di interazione come opzione di lavoro Tex quando viene creato il suo oggetto. Questa modalità verrà impostata nello stato interno del motore immediatamente dopo il caricamento del formato TEX (se si suppone che un formato dovrebbe essere caricato) e verrà trasferito in un'altra modalità non appena il motore incontra uno dei quattro comandi. Il valore predefinito di questa opzione preserverà la modalità di interazione definita dal formato Tex. Quando non viene caricato alcun formato, la modalità di interazione è la stessa impostata dal comando `\ErrorStopMode`.
+Aspose.Tex ci consente di specificare la modalità di interazione come opzione di lavoro Tex quando viene creato il suo oggetto. Questa modalità verrà impostata nello stato interno del motore immediatamente dopo il caricamento del formato TEX (se si suppone che un formato dovrebbe essere caricato) e verrà trasferito in un'altra modalità non appena il motore incontra uno dei quattro comandi. Il valore predefinito di questa opzione preserverà la modalità di interazione definita dal formato Tex. Quando non viene caricato alcun formato, la modalità di interazione è la stessa impostata dal comando `\errorstopmode`.

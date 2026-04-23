@@ -7,7 +7,8 @@ weight: 21
 url: /net/tikz-introduction/
 keywords: Was ist TikZ?, TikZ-Einführung, TikZ-Grundlagen
 description: Einführung in TikZ, eine leistungsstarke Erweiterung zum Erstellen hochwertiger Grafiken in LaTeX-Dokumenten.
-lastmod: "2025-06-29"
+lastmod: "2026-04-22"
+aliases: /net/what-is-tikz/
 ---
 
 {{<section overview>}}

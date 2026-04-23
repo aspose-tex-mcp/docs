@@ -7,7 +7,7 @@ weight: 21
 url: /net/tikz-for-scientific-publications/
 keywords: tikz 科学的グラフ, tikz 学術図, tikz 数学例
 description: TikZ を利用して、科学および学術出版物向けのプロフェッショナルな品質のグラフィックと図表を作成します。
-lastmod: "2026-02-26"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}

@@ -7,7 +7,7 @@ weight: 30
 url: /java/latex-text-fonts/
 keywords: Caratteri in LaTeX, LaTeX, comandi del carattere di testo in LaTeX, LaTeX grande, dimensione del carattere in LaTeX
 description: Questo articolo copre i comandi del carattere in LaTeX che cambiano indipendentemente attributi di carattere per l'uso nel testo normale.
-lastmod: "2025-06-13"
+lastmod: "2026-04-21"
 ---
 
 {{<section overview>}}
@@ -38,7 +38,7 @@ The bold typeface\end{bfseries} continues here.
 
 Le stesse forme dichiarative sono spesso migliori nella definizione di nuovi ambienti o comandi.
 
-> It is also important that the font commands with one argument do not allow paragraph breaks in their arguments.
+> È anche importante che i comandi di carattere con un argomento non consentano interruzioni di paragrafo nei loro argomenti.
 
 ### Il carattere del documento principale
 Usando il comando `\textNormal` o la dichiarazione`\NormalFont`, è possibile passare al carattere del documento principale. In genere si verificano solo nelle definizioni di comandi o ambienti quando è importante definire un modo per compromettere sempre lo stesso carattere indipendentemente dalle condizioni circostanti. Ad esempio, il comando per compensare i nomi dei comandi in LaTeX sembrerebbe come segue:

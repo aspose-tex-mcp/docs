@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: Огляд продукту | Aspose.TeX для .NET
@@ -6,7 +6,7 @@ linktitle: Огляд продукту
 weight: 10
 url: /net/product-overview/
 description: Aspose.TeX — це бібліотека .NET для набору файлів TeX. Він надає вам такі широкі можливості, як конвертація або створення власного формату TeX.
-lastmod: "2025-06-13"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}

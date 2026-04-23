@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: Preguntas frecuentes | Aspose.TeX para .NET
@@ -6,7 +6,7 @@ linktitle: Preguntas frecuentes
 weight: 80
 url: /net/faq/
 description: Obtenga respuestas a preguntas frecuentes sobre Aspose.TeX para .NET, que es una API para componer y manipular TeX y LaTeX.
-lastmod: "2024-10-30"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
@@ -15,7 +15,7 @@ lastmod: "2024-10-30"
 
 **P: ¿Cuál es la funcionalidad principal de la solución API Aspose.TeX?**
 
-**R:** Aspose.TeX es una solución API integral para componer textos TeX y Latex que le permite crear ecuaciones LaTeX y crear y convertir archivos TeX. Es una eficiente gestión de documentos TeX y creación de fórmulas.
+**R:** Aspose.TeX es una solución API integral para componer textos TeX y LaTeX que le permite crear ecuaciones LaTeX y crear y convertir archivos TeX. Es una eficiente gestión de documentos TeX y creación de fórmulas.
 <br><br>
 
 **P: ¿Qué formatos admite Aspose.TeX?**
@@ -27,10 +27,10 @@ lastmod: "2024-10-30"
 
 **R:** Es muy sencillo. ¡Solo necesitas dar unos pocos pasos! 
 
-1. Inicie la clase [TeXOptions](https://reference.aspose.com/tex/net/aspose.tex/texoptions/).
-2. Especifique el directorio de trabajo del sistema de archivos para la salida configurando la propiedad [OutputWorkingDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/outputworkingdirectory/).
+1. Inicie la clase [TeXOptions](https://reference.aspose.com/tex/net/Aspose.TeX/texoptions/).
+2. Especifique el directorio de trabajo del sistema de archivos para la salida configurando la propiedad [OutputWorkingDirectory](https://reference.aspose.com/tex/net/Aspose.TeX/texoptions/outputworkingdirectory/).
 3. Inicialice las opciones de guardado para el formato de salida utilizando la clase SaveOptions (formato de archivo).
-4. Convierta TeX usando el método [Run()](https://reference.aspose.com/tex/net/aspose.tex/texjob/run/).
+4. Convierta TeX usando el método [Run()](https://reference.aspose.com/tex/net/Aspose.TeX/texjob/run/).
 
 Para obtener más ejemplos, visite las guías de [Conversión](/tex/{{lang.url-fragment}}net/conversion/).
 <br><br>

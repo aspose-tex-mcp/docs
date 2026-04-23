@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: 'Plantillas LaTeX - guía de inicio rápido'
@@ -7,8 +7,8 @@ type: docs
 weight: 100
 url: /net/latex-templates/
 description: Aprenda qué son las plantillas LaTeX, cómo usarlas y crearlas, dónde descargar las más populares y un flujo de trabajo rápido con fragmentos listos para copiar.
-keywords: LaTeX, plantilla, clase, estilo, Al dorso, CTAN, bibliografía, Beamer, tesis, CV
-lastmod: "2025-12-03"
+keywords: LaTeX, plantilla, clase, estilo, Overleaf, CTAN, bibliografía, Beamer, tesis, CV
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
@@ -36,7 +36,7 @@ Una plantilla LaTeX incluye una **clase** (`.cls`), un **estilo** (`.sty`), arch
 \end{document}
 ```
 
-Compile con `pdflatex`, `latexmk -pdf` o el botón “Recompilar” al dorso.
+Compile con `pdflatex`, `latexmk -pdf` o el botón “Recompilar” de Overleaf.
 
 ## Cómo crear tu propia plantilla
 
@@ -69,7 +69,7 @@ Compile con `pdflatex`, `latexmk -pdf` o el botón “Recompilar” al dorso.
 
 ## Dónde descargar plantillas LaTeX
 
-- **Galería al dorso**: la colección pública más grande (≈4000 plantillas gratuitas).  
+- **Galería Overleaf**: la colección pública más grande (≈4000 plantillas gratuitas).  
   <https://www.overleaf.com/gallery>
 - **CTAN (ComprehensiveTeXArchive Network)**: repositorio oficial para clases específicas de revistas.  
   <https://ctan.org/>
@@ -89,11 +89,11 @@ Compile con `pdflatex`, `latexmk -pdf` o el botón “Recompilar” al dorso.
 | 7 | **a0poster / tikzposter** | Pósteres científicos grandes |
 | 8 | **Tesis universitarias** (p. ej., `cambridgephd.cls`) | Tesis institucionales de doctorado/máster |
 | 9 | **Astronomía y Astrofísica** (`aa.cls`) | Artículos de revistas de Astronomía y Astrofísica |
-| 10 | **Artículo básico de revista académica** | Introducción sencilla para artículos (al dorso) |
+| 10 | **Artículo básico de revista académica** | Introducción sencilla para artículos (Overleaf) |
 
 ## Flujo de trabajo rápido para usuarios nuevos
 
-1. **Elija una plantilla** → haga clic en “Abrir al dorso” **o** descargue el ZIP.  
+1. **Elija una plantilla** → haga clic en “Abrir Overleaf” **o** descargue el ZIP.  
 2. **Editar campos de marcador de posición** (`\title{}`, `\author{}`, etc.).  
 3. **Compilar** → Aparece PDF.  
 4. Si trabaja localmente: descomprima → ejecute `latexmk -pdf main.tex` (o `pdflatex` + `biber` según sea necesario).  
@@ -102,7 +102,7 @@ Compile con `pdflatex`, `latexmk -pdf` o el botón “Recompilar” al dorso.
 ## Errores y consejos comunes
 
 - **Paquetes faltantes**: instálelo con el administrador de su distribución (`tlmgr install <pkg>` o consola MiKTeX).  
-- **Clases obsoletas**: al dorso se utiliza la última versión de TeXLive; actualice su instalación local de TeX con regularidad.  
+- **Clases obsoletas**: Overleaf se utiliza la última versión de TeXLive; actualice su instalación local de TeX con regularidad.  
 - **Motor de bibliografía**: muchas plantillas modernas esperan "biber". Ejecute `biber <basename>` después del primer pase de LaTeX.  
 - **Activos de marca**: reemplace logotipos, archivos PDF en color o archivos ".sty" que definen los colores institucionales.  
 - **Comandos personalizados**: manténgalos en un archivo `.sty` separado; luego podrá reutilizar el mismo diseño en varios documentos.

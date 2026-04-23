@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-java.md
 title: Rendering di figura in LaTeX | Java
@@ -6,7 +6,7 @@ linktitle: Rendering di figura in LaTeX
 weight: 20
 url: /java/latex-figure-rendering/
 description: Soluzione API Aspose.TeX per il rendering di frammenti di LaTeX Java (Figura) è descritta in questo articolo. Impara gli esempi di codice su come utilizzare la funzionalità.
-lastmod: "2025-06-13"
+lastmod: "2026-04-21"
 ---
 
 {{<section overview>}}
@@ -57,9 +57,9 @@ Allo stesso modo, possiamo rendere una figura in LaTeX al formato SVG.
 
 Le differenze sono:
 
-* Usiamo la classe [SVGFigureRenderEroptions](https://reference.aspose.com/tex/java/com.aspose.tex/SvgFigureRendererOptions) anziché [PNGFURESTERERIPTIONS](https://reference.aspose.com/tex/java/com.aspose.tex/PngFigureRendererOptions).
+* Usiamo la classe [SvgFigureRendererOptions](https://reference.aspose.com/tex/java/com.aspose.tex/SvgFigureRendererOptions) anziché [PngFigureRendererOptions](https://reference.aspose.com/tex/java/com.aspose.tex/PngFigureRendererOptions).
 * Non specifichiamo la risoluzione.
-* Usiamo la classe [svgfigurerender](https://reference.aspose.com/tex/java/com.aspose.tex/SvgFigureRenderer) anziché [pngfigurerender](https://reference.aspose.com/tex/java/com.aspose.tex/PngFigureRenderer).
+* Usiamo la classe [SvgFigureRenderer](https://reference.aspose.com/tex/java/com.aspose.tex/SvgFigureRenderer) anziché [PngFigureRenderer](https://reference.aspose.com/tex/java/com.aspose.tex/PngFigureRenderer).
  
 Ecco il risultato:
 

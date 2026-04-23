@@ -6,7 +6,7 @@ linktitle: Product Overview
 weight: 10
 url: /net/product-overview/
 description: Aspose.TeX is a .NET library for typesetting of TeX files. It provides you with the rich functionality like conversion or creating your own TeX format.
-lastmod: "2024-09-20"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}

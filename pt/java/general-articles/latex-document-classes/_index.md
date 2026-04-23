@@ -7,34 +7,34 @@ weight: 20
 url: /java/latex-document-classes/
 keywords: Classe de artigo do LATEX, Latex DocumentClass, Latex Document Model, Latex Article, Latex Book, Slides de Latex, Relatório de Latex, Letter Letter, DocumentClass in Latex
 description: Este artigo é um resumo conciso das classes de documentos do LATEX e suas opções. Ele também fornece alguns exemplos.
-lastmod: "2025-06-16"
+lastmod: "2026-04-21"
 ---
 
 {{<section overview>}}
 
 ## O que é um documentclass no LaTeX?
 
-O LATEX define algumas regras que todo autor do documento deve seguir. Ele também define a estrutura do arquivo de origem, que é essencialmente um programa de tipógraneo. De acordo com essa estrutura, o código -fonte do documento deve conter uma parte responsável pelo conteúdo do documento em si - *Body* - que é anexado em um par de comandos: `\Begin {Document}` e `\end {document}` . O LaTeX ignora qualquer coisa que siga o fim do corpo. A parte do código -fonte antes de `\Begin {document}` é chamada de *preâmbulo*.
+O LATEX define algumas regras que todo autor do documento deve seguir. Ele também define a estrutura do arquivo de origem, que é essencialmente um programa de tipógraneo. De acordo com essa estrutura, o código -fonte do documento deve conter uma parte responsável pelo conteúdo do documento em si - *Body* - que é anexado em um par de comandos: `\begin{document}` e `\end{document}` . O LaTeX ignora qualquer coisa que siga o fim do corpo. A parte do código -fonte antes de `\Begin {document}` é chamada de *preâmbulo*.
 
 Normalmente, o primeiro comando no preâmbulo deve ser `\documentclass`, que leva um único argumento exigido que é o nome da classe **do documento**. A classe de documento em si é um conjunto de parâmetros de formatação, métricas de layout, macros etc. que são adequados e úteis para o desenvolvimento de documentos de um determinado tipo e coletados sob o nome único. Neste artigo, discutiremos as classes de documentos predefinidas **do LATEX** que são embutidas e mostraram seus usos, diferenças e semelhanças. Também mencionaremos alguns argumentos opcionais que o comando `\documentclass` pode assumir e que personalizam a aparência do documento.
 
-## Aulas de documentos de LaTeX predefinidos
+## Classes de documentos LaTeX predefinidos
 
 O LATEX padrão contém as seguintes classes de documentos:
 
 | <div style="text-align:center;">LaTeX<br>document<br>class</div> | <div style="text-align:center;">Usage</div> |
 |---|---|
-| **artigo** | A classe LaTeX article é utilizada para criar artigos para revistas científicas, relatórios curtos, documentação de programas e, em geral, qualquer documento curto que não necessite de uma divisão complexa em capítulos e partes. |
+| **article** | A classe LaTeX article é utilizada para criar artigos para revistas científicas, relatórios curtos, documentação de programas e, em geral, qualquer documento curto que não necessite de uma divisão complexa em capítulos e partes. |
 | **report** | A classe LaTeX report é utilizada para artigos longos que podem conter vários capítulos (algo como pequenos livros e teses). |
-| **livro** | É utilizada para compor livros reais. Inclui todos os tipos de padrões de composição adequados para livros impressos: capítulos e partes, dois tipos de páginas, elementos iniciais, elementos finais, etc. |
-| **diapositivos** | Pode ser utilizada para produzir slides, embora exista o pacote externo [beamer](https://ctan.org/pkg/beamer) que é muito mais poderoso para este fim. |
-| **letra** | Esta classe de documento é utilizada para escrever cartas. |
+| **book** | É utilizada para compor livros reais. Inclui todos os tipos de padrões de composição adequados para livros impressos: capítulos e partes, dois tipos de páginas, elementos iniciais, elementos finais, etc. |
+| **slides** | Pode ser utilizada para produzir slides, embora exista o pacote externo [beamer](https://ctan.org/pkg/beamer) que é muito mais poderoso para este fim. |
+| **letter** | Esta classe de documento é utilizada para escrever cartas. |
 
-As duas primeiras classes de documentos são básicas. Então, comece com **artigo** sempre que você não tiver certeza de qual classe você precisa.
+As duas primeiras classes de documentos são básicas. Então, comece com **article** sempre que você não tiver certeza de qual classe você precisa.
 
-A classe **relatório** é muito semelhante. A principal diferença do artigo **** é que você pode inserir capítulos com o comando `\Capítulo`, enquanto a classe **** de documento não define uma unidade de secção.
+A classe **report** é muito semelhante. A principal diferença do artigo **** é que você pode inserir capítulos com o comando `\Capítulo`, enquanto a classe **** de documento não define uma unidade de secção.
 
-## O LIVRO LATEX ****
+## O **book** LaTeX
 
 Os livros, em padrões tipográficos, têm a matéria da frente e a matéria traseira, que são a principal diferença entre livros e, por exemplo, relatórios ou artigos. A questão da frente de um livro geralmente consiste em uma página de meio título, uma página de título principal, uma página de direitos autorais, um prefácio ou prefácio e um conteúdo da tabela. Peças menos obrigatórias são reconhecimentos, uma dedicação, uma lista de figuras, uma lista de tabelas, uma lista de outros livros da mesma série e outros conteúdos editoriais e promocionais. A matéria traseira normalmente inclui um índice e pode conter um posfácio, bem como reconhecimentos, uma bibliografia, um colofão etc.
 
@@ -99,7 +99,7 @@ E aqui está o índice em detalhes:
 
 <a href="/tex/java/latex-document-classes/latex-document-classes-3.png">![Índice](/tex/images/java/tutorial/latex-document-classes-3.png)</a>
 
-## **ímpar** e **até** páginas em livros
+## **odd** e **even** páginas em livros
 
 Nos livros, **ímpar** e **até** páginas não parecem iguais. As margens, e geralmente cabeçalhos e rodapés, diferem para tornar o livro mais legível quando está vinculado. A classe de documentos do LATEX lida com isso, e você pode achar que:
 - **Esquerda (par)** As páginas têm uma margem esquerda maior, o número da página está no canto superior direito da página e o título do capítulo atual está à direita;

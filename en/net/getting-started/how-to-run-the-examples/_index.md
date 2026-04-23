@@ -6,7 +6,7 @@ title: How to Run the Examples in C# | Aspose.TeX for .NET
 weight: 80
 url: /net/how-to-run-the-examples/
 description: On this page, you will find all the requirements and steps that should be taken to run the examples of Aspose.TeX solution for .NET.
-lastmod: "2024-09-20"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
@@ -27,7 +27,7 @@ All examples of Aspose.TeX for .NET are hosted on [GitHub](https://GitHub.com/as
 - The project is created in Visual Studio 2019, but the solution file is compatible with Visual Studio 2010 SP1 and higher.
 - Open the solution file in Visual Studio and build the project.
 - Download library from [Aspose.TeX for .NET download page](https://releases.aspose.com/tex/net).
-- Place Apose.TeX.dll in **Aspose.TeX.Examples/libs** folder.
+- Place Aspose.TeX.dll in **Aspose.TeX.Examples/libs** folder.
 - **Aspose.TeX.Examples/input** contains input files which examples use. It is necessary to download the **input** folder along with the examples project.
 - Open **RunExamples.cs**; all the examples are called from here.
 - Uncomment the examples you want to run from within the project.

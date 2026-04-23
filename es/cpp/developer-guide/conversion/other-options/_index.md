@@ -5,8 +5,8 @@ title: Otras opciones de gestión de TeX | C++
 linktitle: Otras opciones
 weight: 17
 url: /cpp/other-options/
-description: La funcionalidad de conversión de la solución API Aspose.TeX para C++ permite establecer el modo de interacción inicial en el que se inicia el motor.
-lastmod: "2024-10-30"
+description: La funcionalidad de conversión de la solución API Aspose.TeX para C++ permite establecer el modo de interacción inicial en el que se inicia el motor. Aquí hay algunos ejemplos de código.
+lastmod: "2026-04-20"
 ---
 
 {{<section overview>}}

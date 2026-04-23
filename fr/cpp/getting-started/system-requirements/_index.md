@@ -6,7 +6,7 @@ linktitle: Configuration système requise
 weight: 50
 url: /cpp/system-requirements/
 description: Aspose.TeX pour C++ peut être utilisé dans n'importe quel environnement prenant en charge C++, mais ceux-ci sont explicitement pris en charge.
-lastmod: "2024-09-27"
+lastmod: "2026-04-20"
 ---
 
 {{<section overview>}}

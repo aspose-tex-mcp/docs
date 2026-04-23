@@ -8,7 +8,7 @@ url: /net/tikz-fundamentals-of-using-tikz/
 aliases: /net/fundamentals-of-using-tikz/
 keywords: basics of tikz, tikz fundamentals, tikz tutorial
 description: Explore the fundamental principles and basic commands of TikZ to create graphics for your TeX and LaTeX documents.
-lastmod: "2025-06-29"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}

@@ -8,7 +8,7 @@ url: /net/tikz-best-practices-and-tips/
 aliases: /net/best-practices-and-tips/
 keywords: tikz best practices, tikz tips, tikz performance optimization
 description: Learn best practices and useful tips for efficient and effective use of TikZ in your TeX and LaTeX documents.
-lastmod: "2025-06-29"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}

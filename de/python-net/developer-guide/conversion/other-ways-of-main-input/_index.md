@@ -6,7 +6,7 @@ linktitle: Andere Möglichkeiten, die Haupt-TeX-Eingabedatei bereitzustellen
 weight: 14
 url: /python-net/other-ways-of-main-input/
 description: Aspose.TeX-API-Lösung für Python enthält einen Konstruktor, der einen Stream als erstes Argument akzeptiert und so Konvertierungsfunktionen bereitstellt.
-lastmod: "2024-09-26"
+lastmod: "2026-04-20"
 ---
 
 {{<section overview>}}
@@ -15,7 +15,7 @@ lastmod: "2024-09-26"
 
 Bisher haben wir nur gelernt, wie man der TeX-Engine die [Haupteingabedatei](/tex/{{lang.url-fragment}}net/tex-io/#tex-input) als Dateinamen bereitstellt, sei es in vollständiger Form oder in verkürzter Form, mit oder ohne Erweiterung. Allerdings gibt es in der Klasse [TeXJob](https://reference.aspose.com/tex/python-net/aspose.tex/texjob) einen [anderen Konstruktor](https://reference.aspose.com/tex/python-net/aspose.tex/texjob/__init__/#io.RawIOBase-aspose.tex.presentation.Device-aspose.tex.TeXOptions), der einen Stream als erstes Argument akzeptiert. Dies ist nützlich, wenn die Haupteingabedatei aus irgendeinem Grund nicht in Form einer Datei im Dateisystem der Festplatte vorliegt. Hier ein Beispiel, wie es umgesetzt werden kann:
 
-{{< gist "aspose-com-gists""68d217858f0be40062562ce2bb2cd908""Aspose.TeX.Examples-Conversion-InputStream.py" >}}
+{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Conversion-InputStream.py" >}}
 
 Beachten Sie, dass alle Ausgabedateien den Namen „texput“ erhalten. Dies liegt daran, dass die Engine keinen Zugriff auf einen anderen Namen hat. „texput“ ist der Standard-Jobname. Ausführlichere Informationen zu Jobnamen finden Sie in den Absätzen [TeX-Ausgabe](/tex/{{lang.url-fragment}}net/tex-io/#tex-output) und [So legen Sie den Jobnamen fest](/tex/{{lang.url-fragment}}net/other-options/#how-to-set-the-job-name).
 
@@ -25,7 +25,7 @@ In der Klasse [TeXJob](https://reference.aspose.com/tex/python-net/aspose.tex/te
 
 Hier ist der Code:
 
-{{< gist "aspose-com-gists""68d217858f0be40062562ce2bb2cd908""Aspose.TeX.Examples-Conversion-MainInputTerminal.py" >}}
+{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Conversion-MainInputTerminal.py" >}}
 
 Sobald es ausgeführt wird, hält die Engine an und wartet darauf, dass wir den Dateinamen eingeben (mit oder ohne Pfad und mit oder ohne Erweiterung):
 

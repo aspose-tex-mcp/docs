@@ -6,7 +6,7 @@ linktitle: Developer Guide
 weight: 30
 url: /python-net/developer-guide/
 description: This chapter provides developers with an overview of the Aspose.TeX API solution for Python functionality illustrated with the code examples.
-lastmod: "2024-09-20"
+lastmod: "2026-04-20"
 ---
 
 {{<section overview>}}

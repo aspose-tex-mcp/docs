@@ -1,12 +1,12 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: システム要件| .NETのAspose.TeX
 linktitle: システム要件
 weight: 50
 url: /net/system-requirements/
-description: .NET用のAspose.Texソリューションは、.NETをサポートする任意の開発環境で使用できますが、いくつかの環境が明示的にサポートされています。
-lastmod: "2025-06-09"
+description: .NET用のAspose.TeXソリューションは、.NETをサポートする任意の開発環境で使用できますが、いくつかの環境が明示的にサポートされています。
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
@@ -15,14 +15,14 @@ lastmod: "2025-06-09"
 
 ### Windows
 
-* MicrosoftWindows2003サーバー(x64、x86)
-* Microsoft Windows 2012サーバー(x64、x86)
-* MicrosoftWindows2008サーバー(x64、x86)
-* Microsoft Windows XP(x64、x86)
-* Microsoft WindowsVista(x64、x86)
-* Microsoft Windows 8、8.1(x64、x86)
-* MicrosoftWindows7(x64、x86)
-* MicrosoftWindows10(x64、x86)
+* Microsoft Windows 2003 Server ( x64, x86)
+* Microsoft Windows 2008 Server ( x64, x86)
+* Microsoft Windows 2012 Server ( x64, x86)
+* Microsoft Windows XP ( x64, x86)
+* Microsoft Windows Vista ( x64, x86)
+* Microsoft Windows 7 ( x64, x86)
+* Microsoft Windows 8, 8.1 ( x64, x86)
+* Microsoft Windows 10 ( x64, x86)
 * Windows Azure
 
 ## 開発環境

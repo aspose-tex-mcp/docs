@@ -5,8 +5,8 @@ title: Elenco delle funzionalità | Aspose.TeX per Java
 linktitle: Elenco delle funzionalità
 weight: 30
 url: /java/feature-list/
-description: Aggiungi la funzionalità di manipolazione dei file tex alla propria soluzione. Scopri le funzionalità Aspose.TeX Solution API per le offerte Java.
-lastmod: "2025-06-13"
+description: Aggiungi la funzionalità di manipolazione dei file tex alla propria soluzione. Scopri le funzionalità offerte dalla soluzione Aspose.TeX API per Java.
+lastmod: "2026-04-21"
 ---
 
 {{<section overview>}}
@@ -16,7 +16,7 @@ lastmod: "2025-06-13"
 
 **Operazioni supportate**
 
-- TEX Input Typetting
+- Tipografia di input TEX
 - Creazione del formato tex personalizzato
 
 **Supporto per vari formati di file di output**

@@ -5,9 +5,9 @@ title: Лучшие практики и советы для TikZ | Aspose.TeX .N
 linktitle: Лучшие практики и советы
 weight: 23
 url: /net/tikz-best-practices-and-tips/
-keywords: лучшие практики по tikz, советы по tikz, оптимизация производительности tikz
+keywords: лучшие практики по TikZ, советы по TikZ, оптимизация производительности TikZ
 description: Ознакомьтесь с лучшими практиками и полезными советами по эффективному использованию TikZ в документах TeX и LaTeX.
-lastmod: "2025-06-29"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}

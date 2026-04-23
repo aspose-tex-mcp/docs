@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: Convertidores Aspose.TeX para .NET – Preguntas frecuentes
@@ -8,7 +8,7 @@ weight: 90
 url: /net/conversion/faq/
 description: Preguntas frecuentes sobre Aspose.TeX para .NET que cubren formatos compatibles, ejemplos de conversión, licencias, procesamiento por lotes, opciones de imágenes y más.
 keywords: Aspose.TeX, .NET, preguntas frecuentes, conversión a LaTeX, PDF, Word, HTML, exportación de imágenes, licencias, conversión por lotes, API, documentación
-lastmod: "2025-12-04"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
@@ -56,15 +56,15 @@ using (var pdf = tex.ToPdf())
 
 **R:** 
 
-• .NET Framework4.6 o posterior **o** .NETCore2.1+/.NET5+.  
-• Windowsx64/x86, Linux (glibc2.12+), macOS (Catalyst).  
+• .NET Framework 4.6 o posterior **o** .NET Core 2.1+/.NET 5+.
+• Windows x64/x86, Linux (glibc 2.12+), macOS (Catalyst).
 • No se necesitan binarios nativos adicionales.  
 <br><br>
 
 **P: ¿Cómo controlo la resolución y la calidad de salida de la imagen?**  
 
 **R:** 
-```ccsharp
+```csharp
 var opts = new ImageSaveOptions
 {
     Resolution = 300,   // DPI

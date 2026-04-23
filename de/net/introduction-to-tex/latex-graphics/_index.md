@@ -1,12 +1,12 @@
-﻿---
+---
 translation: true
-template: /templates/_template-java.md
+template: /templates/_template-net.md
 title: LaTeX-Grafiken | \includegraphics-Befehl
 linktitle: LaTeX-Grafiken
 weight: 18
 url: /net/latex-graphics/
 description: Erwähnenswert ist die Einbindung von Grafiken in TeX. Wenn man darüber spricht, fällt mir als Erstes der Befehl `\includegraphics` ein.
-lastmod: "2024-09-26"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
@@ -56,7 +56,7 @@ Eine andere Möglichkeit, den/die Speicherort(e) der Grafikdateien anzugeben, be
 
 
 ```tex
-`\graphicspath`{{d:/img}{c:/img}{d:/work/img}}
+\graphicspath{{d:/img}{c:/img}{d:/work/img}}
 ```
 
 ### Skalieren der Grafiken

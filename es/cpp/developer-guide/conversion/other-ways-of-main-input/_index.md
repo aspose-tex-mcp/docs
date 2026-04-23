@@ -5,8 +5,8 @@ title: Otras formas de proporcionar el archivo de entrada TeX principal| C++
 linktitle: Proporcionar el archivo de entrada TeX principal
 weight: 14
 url: /cpp/other-ways-of-main-input/
-description: La funcionalidad de conversión de la solución API Aspose.TeX para C++ tiene un constructor que acepta una secuencia como primer argumento.
-lastmod: "2024-10-30"
+description: La funcionalidad de conversión de la solución API Aspose.TeX para C++ tiene un constructor que acepta una secuencia como primer argumento. Aquí hay algunos ejemplos de código.
+lastmod: "2026-04-20"
 ---
 
 {{<section overview>}}

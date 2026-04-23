@@ -6,7 +6,7 @@ linktitle: Introdução
 weight: 10
 url: /java/getting-started/
 description: API Java para os programadores manipularem e processarem ficheiros TeX e LaTeX. Aprenda os fundamentos para começar a trabalhar com a solução.
-lastmod: "2025-06-16"
+lastmod: "2026-04-21"
 ---
 
 {{<section overview>}}
@@ -27,7 +27,7 @@ Liberte o poder dos ficheiros TeX nas suas aplicações Java com a nossa API int
 
 Este capítulo foi criado para lhe fornecer informações úteis para que possa começar a trabalhar facilmente com o Aspose.TeX para Java. Descubra links para alguns recursos de que pode precisar para começar a programar ou perceber se a solução vai ao encontro das necessidades do seu projeto.
 
-- [Product Overview](/tex/{{lang.url-fragment}}java/product-overview/)
+- [Visão geral do produto](/tex/{{lang.url-fragment}}java/product-overview/)
 - [Formatos de ficheiro suportados](/tex/{{lang.url-fragment}}java/supported-file-formats/)
 - [Recursos](/tex/{{lang.url-fragment}}java/feature-list/)
 - [Requisitos do sistema](/tex/{{lang.url-fragment}}java/system-requirements/)

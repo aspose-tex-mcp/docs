@@ -7,7 +7,7 @@ weight: 30
 url: /cpp/
 description: 管理C ++的Tex文件API解决方案。该图书馆提供了传递Tex输入并获得输出和功能(例如创建自己的Tex格式)的方法。
 is_root: true
-lastmod: "2025-06-10"
+lastmod: "2026-04-20"
 ---
 
 {{<section overview>}}

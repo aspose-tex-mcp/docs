@@ -6,7 +6,7 @@ linktitle: Lista de recursos
 weight: 30
 url: /python-net/feature-list/
 description: Aprimore sua própria solução, incorporando a capacidade de manipular arquivos TEX. Aprenda os recursos Aspose.Tex API Solution for Python oferece a você.
-lastmod: "2025-06-16"
+lastmod: "2026-04-20"
 ---
 
 {{<section overview>}}
@@ -16,7 +16,7 @@ lastmod: "2025-06-16"
 
 **Operações suportadas**
 
-- Tex Entrada Typeatting
+- Entrada tipográfica TeX
 - Criação de formato tex personalizada
 - Renderizar números em LaTeX
 - Renderizar fórmulas e equações de matemática

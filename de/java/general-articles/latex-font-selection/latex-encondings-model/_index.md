@@ -52,7 +52,7 @@ Eine kleine Anzahl von Zeichen wird durch „sich selbst“ dargestellt. Beispie
 
 ### Darstellung als Zeichenfolgen
 
-Der interne Ligaturmechanismus von TeX kann aus einer Folge von Eingabezeichen neue Zeichen generieren. Dies ist eigentlich eine Eigenschaft der Schriftart, obwohl einige dieser Sequenzen explizit als Eingabekürzel für Zeichen konzipiert wurden, die sonst mit den meisten Tastaturen nur schwer zu adressieren sind. Nur wenige auf diese Weise generierte Zeichen gelten als zur internen Darstellung von LaTeX gehörend. Dazu gehören der Bindestrich „en“ und der Bindestrich „em“, die durch die Ligaturen „--“ und „---“ erzeugt werden, sowie die öffnenden und schließenden doppelten Anführungszeichen, die durch „“ „, „ „“ und „“ erzeugt werden. ` (Letzteres kann normalerweise auch durch das einzelne `"` dargestellt werden). Während die meisten Schriftarten auch ``` !` ``` und ``` ?` ``` implementieren, um umgekehrte Ausrufe- und Fragezeichen zu erzeugen, ist dies nicht der Fall universell in allen Schriftarten verfügbar. Aus diesem Grund haben **alle** dieser Zeichen eine alternative interne Darstellung als Befehl (z. B. „\textendash“ oder „\textexclamdown“).
+Der interne Ligaturmechanismus von TeX kann aus einer Folge von Eingabezeichen neue Zeichen generieren. Dies ist eigentlich eine Eigenschaft der Schriftart, obwohl einige dieser Sequenzen explizit als Eingabekürzel für Zeichen konzipiert wurden, die sonst mit den meisten Tastaturen nur schwer zu adressieren sind. Nur wenige auf diese Weise generierte Zeichen gelten als zur internen Darstellung von LaTeX gehörend. Dazu gehören der Bindestrich „en“ und der Bindestrich „em“, die durch die Ligaturen „--“ und „---“ erzeugt werden, sowie die öffnenden und schließenden doppelten Anführungszeichen, die durch „“ „, „ „“ und „“ erzeugt werden. (Letzteres kann normalerweise auch durch das einzelne `"` dargestellt werden). Während die meisten Schriftarten auch ``` !` ``` und ``` ?` ``` implementieren, um umgekehrte Ausrufe- und Fragezeichen zu erzeugen, ist dies nicht der Fall universell in allen Schriftarten verfügbar. Aus diesem Grund haben **alle** dieser Zeichen eine alternative interne Darstellung als Befehl (z. B. „\textendash“ oder „\textexclamdown“).
 
 ### Darstellung als „fontkodierungsspezifische“ Befehle
 
@@ -63,7 +63,7 @@ Der Satz schriftkodierungsspezifischer Befehle ist nicht festgelegt, sondern imp
 
 ## 7.3. Eingabekodierungen
 
-Sobald das Paket „inputenc“ geladen ist, stehen die beiden Deklarationen „\DeclareInputText“ und „\DeclareInputMath“ zum Zuordnen von 8-Bit-Eingabezeichen zu LICR-Objekten zur Verfügung. Sie sollten nur in Codierungsdateien (siehe unten), Paketen oder, falls erforderlich, in der Dokumentpräambel verwendet werden.
+Sobald das Paket `inputenc` geladen ist, stehen die beiden Deklarationen „\DeclareInputText“ und „\DeclareInputMath“ zum Zuordnen von 8-Bit-Eingabezeichen zu LICR-Objekten zur Verfügung. Sie sollten nur in Codierungsdateien (siehe unten), Paketen oder, falls erforderlich, in der Dokumentpräambel verwendet werden.
 
 Diese Befehle verwenden als erstes Argument eine 8-Bit-Zahl, die entweder als Dezimalzahl, Oktalzahl oder in Hexadezimalschreibweise angegeben werden kann. Es wird empfohlen, die Dezimalschreibweise zu verwenden, da die Zeichen „“ und/oder „““ in einem Sprachunterstützungspaket besondere Bedeutungen haben können, z. B. Abkürzungen für Akzente, wodurch die Oktal- und/oder Hexadezimalschreibweise ungültig wird, wenn Pakete falsch geladen werden Befehl.
 
@@ -103,10 +103,10 @@ Diese Deklaration ist nur verfügbar, wenn die Option „utf8“ verwendet wird.
 \DeclareUnicodeCharacter{2031}{\textpertenthousand}
 ```
 
-Theoretisch sollte es nur eine eindeutige bidirektionale Zuordnung zwischen den beiden Leerzeichen geben, sodass alle derartigen Deklarationen bereits automatisch erfolgen könnten, wenn die Option „utf8“ ausgewählt wird. In der Praxis sind die Dinge etwas komplizierter. Erstens würde die automatische Bereitstellung der gesamten Tabelle eine große Menge an TeX-Speicher erfordern. Darüber hinaus gibt es viele Unicode-Zeichen, für die kein LICR-Objekt existiert, und umgekehrt gibt es für viele LICR-Objekte kein Äquivalent in Unicode. Dieses Problem wird im Paket „inputenc“ gelöst, indem nur diejenigen Unicode-Zuordnungen geladen werden, die den in einem bestimmten Dokument verwendeten Kodierungen entsprechen (sofern diese bekannt sind) und auf jede andere Anfrage nach einem Unicode-Zeichen mit einer entsprechenden Fehlermeldung geantwortet wird. Es ist dann die Aufgabe des Benutzers, entweder die richtigen Zuordnungsinformationen bereitzustellen oder bei Bedarf eine zusätzliche Schriftartenkodierung zu laden.
+Theoretisch sollte es nur eine eindeutige bidirektionale Zuordnung zwischen den beiden Leerzeichen geben, sodass alle derartigen Deklarationen bereits automatisch erfolgen könnten, wenn die Option „utf8“ ausgewählt wird. In der Praxis sind die Dinge etwas komplizierter. Erstens würde die automatische Bereitstellung der gesamten Tabelle eine große Menge an TeX-Speicher erfordern. Darüber hinaus gibt es viele Unicode-Zeichen, für die kein LICR-Objekt existiert, und umgekehrt gibt es für viele LICR-Objekte kein Äquivalent in Unicode. Dieses Problem wird im Paket `inputenc` gelöst, indem nur diejenigen Unicode-Zuordnungen geladen werden, die den in einem bestimmten Dokument verwendeten Kodierungen entsprechen (sofern diese bekannt sind) und auf jede andere Anfrage nach einem Unicode-Zeichen mit einer entsprechenden Fehlermeldung geantwortet wird. Es ist dann die Aufgabe des Benutzers, entweder die richtigen Zuordnungsinformationen bereitzustellen oder bei Bedarf eine zusätzliche Schriftartenkodierung zu laden.
 
-Wie oben erwähnt, können die Eingabekodierungsdeklarationen in Paketen oder in der Dokumentpräambel verwendet werden. Damit alles so funktioniert, ist es wichtig, zuerst das Paket „inputenc“ zu laden und dabei eine passende Kodierung auszuwählen. Nachfolgende Eingabekodierungsdeklarationen dienen als Ersatz (oder Ergänzung) für diejenigen, die durch die aktuelle Eingabekodierung definiert werden.
-Wenn Sie das Paket „inputenc“ verwenden, sehen Sie möglicherweise den Befehl „\@tabacckludge“, der für „tabbing Accent Kludge“ steht. Es wird benötigt, weil die aktuelle Version von LaTeX eine Überladung der Befehle „\=“, „\“ und „\“ geerbt hat, die normalerweise bestimmte Akzente bezeichnen (d. h. kodierungsspezifische Befehle sind). haben aber innerhalb der „Tabbing“-Umgebung besondere Bedeutungen. Aus diesem Grund müssen Zuordnungen, die einen dieser Akzente beinhalten, auf besondere Weise codiert werden. Wenn Sie beispielsweise „232“ dem Zeichen „e-grave“ zuordnen möchten (das intern die Darstellung „\`e“ hat), sollten Sie schreiben
+Wie oben erwähnt, können die Eingabekodierungsdeklarationen in Paketen oder in der Dokumentpräambel verwendet werden. Damit alles so funktioniert, ist es wichtig, zuerst das Paket `inputenc` zu laden und dabei eine passende Kodierung auszuwählen. Nachfolgende Eingabekodierungsdeklarationen dienen als Ersatz (oder Ergänzung) für diejenigen, die durch die aktuelle Eingabekodierung definiert werden.
+Wenn Sie das Paket `inputenc` verwenden, sehen Sie möglicherweise den Befehl „\@tabacckludge“, der für „tabbing Accent Kludge“ steht. Es wird benötigt, weil die aktuelle Version von LaTeX eine Überladung der Befehle „\=“, „\“ und „\“ geerbt hat, die normalerweise bestimmte Akzente bezeichnen (d. h. kodierungsspezifische Befehle sind). haben aber innerhalb der „Tabbing“-Umgebung besondere Bedeutungen. Aus diesem Grund müssen Zuordnungen, die einen dieser Akzente beinhalten, auf besondere Weise codiert werden. Wenn Sie beispielsweise „232“ dem Zeichen „e-grave“ zuordnen möchten (das intern die Darstellung „\`e“ hat), sollten Sie schreiben
 
 ```tex
 \DeclareInputText{232}{\@tabacckludge`e}
@@ -125,7 +125,7 @@ Aus technischen und konzeptionellen Gründen unterscheidet TeX sehr stark zwisch
 ### Eingabekodierungsdateien für 8-Bit-Kodierungen
 
 Eingabekodierungen werden in Dateien mit der Erweiterung „.def“ gespeichert, wobei der Basisname der Name der Eingabekodierung ist (z. B. „latin1.def“). Solche Dateien sollten nur die im aktuellen Abschnitt besprochenen Befehle enthalten.
-Die Datei sollte mit einer Identifikationszeile beginnen, die den Befehl „\ProvidesFile“ enthält und die Art der Datei beschreibt. Zum Beispiel:
+Die Datei sollte mit einer Identifikationszeile beginnen, die den Befehl `\ProvidesFile` enthält und die Art der Datei beschreibt. Zum Beispiel:
 
 ```tex
 \ProvidesFile{latin1.def}[2000/07/01 v0.996 Input encoding file]
@@ -144,15 +144,15 @@ Der Rest der Datei sollte nur die Eingabekodierungsdeklarationen „\DeclareInpu
 
 ### Eingabezuordnungsdateien für UTF8
 
-Wie bereits erwähnt, ist die Zuordnung von Unicode zu LICR-Objekten so organisiert, dass LaTeX nur die Zuordnungen laden kann, die für die im aktuellen Dokument verwendeten Schriftartenkodierungen relevant sind. Dazu wird versucht, für jede Kodierung <*Name*> eine Datei <*Name*>`enc.dfu` zu laden, die, sofern vorhanden, die Zuordnungsinformationen für die Unicode-Zeichen enthält, die von dieser bestimmten Kodierung bereitgestellt werden. Neben einer Reihe von „\DeclareUnicodeCharacter“-Deklarationen sollten solche Dateien nur eine „\ProvidesFile“-Zeile enthalten.
+Wie bereits erwähnt, ist die Zuordnung von Unicode zu LICR-Objekten so organisiert, dass LaTeX nur die Zuordnungen laden kann, die für die im aktuellen Dokument verwendeten Schriftartenkodierungen relevant sind. Dazu wird versucht, für jede Kodierung <*Name*> eine Datei <*Name*>`enc.dfu` zu laden, die, sofern vorhanden, die Zuordnungsinformationen für die Unicode-Zeichen enthält, die von dieser bestimmten Kodierung bereitgestellt werden. Neben einer Reihe von „\DeclareUnicodeCharacter“-Deklarationen sollten solche Dateien nur eine `\ProvidesFile`-Zeile enthalten.
 
 Da unterschiedliche Schriftartenkodierungen häufig mehr oder weniger dieselben Zeichen bereitstellen, kommt es häufig vor, dass Deklarationen für dasselbe Unicode-Zeichen in verschiedenen „.dfu“-Dateien erscheinen. Daher ist es sehr wichtig, dass diese Deklarationen in verschiedenen Dateien identisch sind. Andernfalls bleibt die zuletzt geladene Deklaration erhalten, die von Dokument zu Dokument unterschiedlich sein kann.
 
-Wer also eine neue „.dfu“-Datei für eine bisher nicht abgedeckte Kodierung bereitstellen möchte, sollte die vorhandenen Definitionen in „.dfu“-Dateien sorgfältig auf verwandte Kodierungen prüfen. Standarddateien, die mit „inputenc“ bereitgestellt werden, haben garantiert einheitliche Definitionen. Tatsächlich werden sie alle aus einer einzigen Liste generiert, die entsprechend aufgeteilt ist. Eine vollständige Liste der aktuell vorhandenen Zuordnungen finden Sie in der Datei „utf8enc.dfu“.
+Wer also eine neue „.dfu“-Datei für eine bisher nicht abgedeckte Kodierung bereitstellen möchte, sollte die vorhandenen Definitionen in „.dfu“-Dateien sorgfältig auf verwandte Kodierungen prüfen. Standarddateien, die mit `inputenc` bereitgestellt werden, haben garantiert einheitliche Definitionen. Tatsächlich werden sie alle aus einer einzigen Liste generiert, die entsprechend aufgeteilt ist. Eine vollständige Liste der aktuell vorhandenen Zuordnungen finden Sie in der Datei „utf8enc.dfu“.
 
 ## 7.4. Ausgabekodierungen
 
-Wir haben bereits erwähnt, dass Ausgabekodierungen die Zuordnung vom LICR zu den Glyphen (oder aus Glyphen erstellten Konstrukten) definieren, die in den für den Schriftsatz verwendeten Schriftarten verfügbar sind. Auf diese Zuordnungen wird in LaTeX durch zwei- oder dreibuchstabige Namen verwiesen (z. B. „OT1“ und „T3“). Wir sagen, dass eine bestimmte Schriftart eine bestimmte Kodierung aufweist, wenn die Zuordnung den Positionen der Glyphen in der Schriftart entspricht. Schauen wir uns nun die genauen Bestandteile einer solchen Zuordnung an.
+Wir haben bereits erwähnt, dass Ausgabekodierungen die Zuordnung vom LICR zu den Glyphen (oder aus Glyphen erstellten Konstrukten) definieren, die in den für den Schriftsatz verwendeten Schriftarten verfügbar sind. Auf diese Zuordnungen wird in LaTeX durch zwei- oder dreibuchstabige Namen verwiesen (z. B. `OT1` und „T3“). Wir sagen, dass eine bestimmte Schriftart eine bestimmte Kodierung aufweist, wenn die Zuordnung den Positionen der Glyphen in der Schriftart entspricht. Schauen wir uns nun die genauen Bestandteile einer solchen Zuordnung an.
 
 Intern durch ASCII-Zeichen dargestellte Zeichen werden einfach an die Schriftart weitergegeben. Mit anderen Worten: TeX verwendet den ASCII-Code, um eine Glyphe aus der aktuellen Schriftart auszuwählen. Beispielsweise führt das Zeichen „A“ mit dem ASCII-Code 65 dazu, dass das Glyph an Position 65 in der aktuellen Schriftart gesetzt wird. Aus diesem Grund erfordert LaTeX, dass Schriftarten für Text alle derartigen ASCII-Buchstaben an ihren ASCII-Codepositionen enthalten, da es keine Möglichkeit gibt, mit diesem grundlegenden TeX-Mechanismus zu interagieren. Daher ist für sichtbares ASCII in allen Ausgabekodierungen implizit eine Eins-zu-Eins-Zuordnung vorhanden.
 
@@ -160,13 +160,13 @@ Zeichen, die intern als Folgen von ASCII-Zeichen dargestellt werden (z. B. „--
 
 Dennoch besteht der größte Teil der internen Zeichendarstellung aus schriftkodierungsspezifischen Befehlen, die über die unten beschriebenen Deklarationen abgebildet werden. Alle Deklarationen haben in ihren ersten beiden Argumenten die gleiche Struktur: den schriftartcodierungsspezifischen Befehl (oder die erste Komponente davon, wenn es sich um eine Befehlssequenz handelt), gefolgt vom Namen der Codierung. Alle verbleibenden Argumente hängen vom Deklarationstyp ab.
 
-Eine Kodierung „XYZ“ wird also durch eine Reihe von Deklarationen definiert, die alle den Namen „XYZ“ als zweites Argument haben. Dann müssen natürlich einige Schriftarten in dieser Kodierung kodiert werden. Tatsächlich erfolgt die Entwicklung von Schriftartenkodierungen normalerweise umgekehrt: Jemand beginnt mit einer vorhandenen Schriftart und stellt dann entsprechende Deklarationen für deren Verwendung bereit. Diese Sammlung von Deklarationen erhält dann einen passenden Namen, z. B. „OT1“. Im Folgenden nehmen wir die Schriftart „ecrm1000“ (siehe Glyphendiagramm), deren Schriftartenkodierung in LaTeX „T1“ heißt, und erstellen entsprechende Deklarationen, um auf Glyphen einer auf diese Weise codierten Schriftart zuzugreifen. Die blauen Zeichen im Glyphendiagramm sollten in jeder Textcodierung an derselben Position vorhanden sein, da sie transparent durch LaTeX weitergeleitet werden.
+Eine Kodierung „XYZ“ wird also durch eine Reihe von Deklarationen definiert, die alle den Namen „XYZ“ als zweites Argument haben. Dann müssen natürlich einige Schriftarten in dieser Kodierung kodiert werden. Tatsächlich erfolgt die Entwicklung von Schriftartenkodierungen normalerweise umgekehrt: Jemand beginnt mit einer vorhandenen Schriftart und stellt dann entsprechende Deklarationen für deren Verwendung bereit. Diese Sammlung von Deklarationen erhält dann einen passenden Namen, z. B. `OT1`. Im Folgenden nehmen wir die Schriftart „ecrm1000“ (siehe Glyphendiagramm), deren Schriftartenkodierung in LaTeX `.fd` heißt, und erstellen entsprechende Deklarationen, um auf Glyphen einer auf diese Weise codierten Schriftart zuzugreifen. Die blauen Zeichen im Glyphendiagramm sollten in jeder Textcodierung an derselben Position vorhanden sein, da sie transparent durch LaTeX weitergeleitet werden.
 
 ![Glyphendiagramm der Schriftart ecrm1000](/tex/images/java/tutorial/latex-font-selection-7-2.png)
 
 ### Codierungsdateien ausgeben
 
-Ausgabekodierungsdateien werden durch die gleiche „.def“-Erweiterung identifiziert wie Eingabekodierungsdateien. Allerdings ist der Basisname der Datei etwas strukturierter. Es besteht aus dem Kodierungsnamen in Kleinbuchstaben, gefolgt von „enc“ (z. B. „t1enc.def“ für die Kodierung „T1“).
+Ausgabekodierungsdateien werden durch die gleiche „.def“-Erweiterung identifiziert wie Eingabekodierungsdateien. Allerdings ist der Basisname der Datei etwas strukturierter. Es besteht aus dem Kodierungsnamen in Kleinbuchstaben, gefolgt von „enc“ (z. B. „t1enc.def“ für die Kodierung `.fd`).
 
 Diese Dateien sollten nur die im aktuellen Abschnitt beschriebenen Deklarationen enthalten. Da Ausgabekodierungsdateien möglicherweise mehrmals von LaTeX gelesen werden, ist es wichtig, diese Regel zu befolgen und beispielsweise nicht `\newcommand` zu verwenden, was verhindert, dass eine solche Datei mehr als einmal gelesen wird!
 
@@ -176,14 +176,14 @@ Auch hier beginnt eine Ausgabekodierungsdatei mit einer Identifikationszeile, di
 \ProvidesFile{t1enc.def}[2001/06/05 v1.94 Standard LaTeX file]
 ```
 
-Bevor wir kodierungsspezifische Befehle für eine bestimmte Kodierung deklarieren, müssen wir diese Kodierung zunächst LaTeX bekannt machen. Dies geschieht über den Befehl „\DeclareFontEncoding“. An dieser Stelle ist es auch sinnvoll, die Standard-Ersetzungsregeln für die Kodierung zu deklarieren. Wir können dies tun, indem wir den Befehl „\DeclareFontSubstitution“ verwenden. Beide Deklarationen werden im Detail unter [So richten Sie neue Schriftarten ein](/tex/{{lang.url-fragment}}java/latex-fonts-setup/) besprochen.
+Bevor wir kodierungsspezifische Befehle für eine bestimmte Kodierung deklarieren, müssen wir diese Kodierung zunächst LaTeX bekannt machen. Dies geschieht über den Befehl `\DeclareFontEncoding`. An dieser Stelle ist es auch sinnvoll, die Standard-Ersetzungsregeln für die Kodierung zu deklarieren. Wir können dies tun, indem wir den Befehl „\DeclareFontSubstitution“ verwenden. Beide Deklarationen werden im Detail unter [So richten Sie neue Schriftarten ein](/tex/{{lang.url-fragment}}java/latex-fonts-setup/) besprochen.
 
 ```tex
 \DeclareFontEncoding{T1}{}{}
 \DeclareFontSubstitution{T1}{cmr}{m}{n}
 ```
 
-Nachdem wir nun die „T1“-Kodierung in LaTeX auf diese Weise eingeführt haben, können wir mit der Erklärung fortfahren, wie sich schriftartkodierungsspezifische Befehle in dieser Kodierung verhalten sollen.
+Nachdem wir nun die `.fd`-Kodierung in LaTeX auf diese Weise eingeführt haben, können wir mit der Erklärung fortfahren, wie sich schriftartkodierungsspezifische Befehle in dieser Kodierung verhalten sollen.
 
 ```tex
 \DeclareTextSymbol{LICR-Object}{encoding}{slot}
@@ -197,7 +197,7 @@ Am einfachsten scheint die Deklaration für Textsymbole zu sein. Hier kann die i
 \DeclareTextSymbol{\ae}{T1}{"E6} %...as hexadecimal number
 ```
 
-Deklarieren Sie, dass die für die Schriftartenkodierung spezifischen Befehle „\ss“, „\AE“ und „\ae“ den Schriftart-(Dezimal-)Positionen 255, 198 bzw. 230 in einer „T1“-Kodierung zugeordnet werden sollen Schriftart. Wie oben erwähnt, ist es am sichersten, in solchen Deklarationen die Dezimalschreibweise zu verwenden. Wie auch immer, das Mischen von Notationen wie im vorherigen Beispiel ist sicherlich ein schlechter Stil.
+Deklarieren Sie, dass die für die Schriftartenkodierung spezifischen Befehle „\ss“, „\AE“ und „\ae“ den Schriftart-(Dezimal-)Positionen 255, 198 bzw. 230 in einer `.fd`-Kodierung zugeordnet werden sollen Schriftart. Wie oben erwähnt, ist es am sichersten, in solchen Deklarationen die Dezimalschreibweise zu verwenden. Wie auch immer, das Mischen von Notationen wie im vorherigen Beispiel ist sicherlich ein schlechter Stil.
 
 ```tex
 \DeclareTextAccent{LICR-accent}{encoding}{slot}
@@ -209,7 +209,7 @@ Schriftarten enthalten häufig diakritische Zeichen als einzelne Glyphen, um die
 \DeclareTextAccent{\"}{T1}{4}
 ```
 
-definiert den „Umlaut“-Akzent. Ab diesem Zeitpunkt hat eine interne Darstellung wie „\“a“ in der „T1“-Codierung die folgende Bedeutung: Setzen Sie „a mit Umlaut“, indem Sie den Akzent an Position 4 über den Glyphen an Position 97 (dem ASCII-Code von) setzen das Zeichen „a“. Eine solche Deklaration definiert tatsächlich implizit eine große Auswahl an internen Zeichendarstellungen – also alles vom Typ „\“`*<Basisglyphe>*, wobei *<Basisglyphe>* ist etwas, das über „\DeclareTextSymbol“ oder ein beliebiges ASCII-Zeichen definiert wird, das zum LICR gehört, wie zum Beispiel „a“.
+definiert den „Umlaut“-Akzent. Ab diesem Zeitpunkt hat eine interne Darstellung wie „\“a“ in der `.fd`-Codierung die folgende Bedeutung: Setzen Sie „a mit Umlaut“, indem Sie den Akzent an Position 4 über den Glyphen an Position 97 (dem ASCII-Code von) setzen das Zeichen „a“. Eine solche Deklaration definiert tatsächlich implizit eine große Auswahl an internen Zeichendarstellungen – also alles vom Typ „\“`*<Basisglyphe>*, wobei *<Basisglyphe>* ist etwas, das über „\DeclareTextSymbol“ oder ein beliebiges ASCII-Zeichen definiert wird, das zum LICR gehört, wie zum Beispiel „a“.
 
 Selbst solche Kombinationen, die wenig Sinn ergeben, wie z. B. „\“\P“ (d. h. Pilcrow-Zeichen mit Umlaut), werden auf diese Weise konzeptionell zu Mitgliedern der Menge der für die Schriftartenkodierung spezifischen Befehle.
 
@@ -218,7 +218,7 @@ Selbst solche Kombinationen, die wenig Sinn ergeben, wie z. B. „\“\P“ (d. 
      {LICR-accent}{encoding}{simple-LICR-object}{slot}
 ```
 
-Das obige Glyphendiagramm enthält eine große Anzahl akzentuierter Zeichen als einzelne Glyphen – zum Beispiel „a mit Umlaut“ an der Position „240“ oktal. Daher sollte in „T1“ der codierungsspezifische Befehl „\“a“ nicht dazu führen, dass ein Akzent über dem Zeichen „a“ gesetzt wird, sondern stattdessen direkt auf die Glyphe an dieser Position der Schriftart zugreifen. Dies wird durch die Deklaration erreicht
+Das obige Glyphendiagramm enthält eine große Anzahl akzentuierter Zeichen als einzelne Glyphen – zum Beispiel „a mit Umlaut“ an der Position „240“ oktal. Daher sollte in `.fd` der codierungsspezifische Befehl „\“a“ nicht dazu führen, dass ein Akzent über dem Zeichen „a“ gesetzt wird, sondern stattdessen direkt auf die Glyphe an dieser Position der Schriftart zugreifen. Dies wird durch die Deklaration erreicht
 
 ```tex
 \DeclareTextComposite{\"}{T1}{a}{228}
@@ -233,7 +233,7 @@ Das dritte Argument, *simple-LICR-object*, sollte ein einzelner Buchstabe wie �
      {LICR-object}{encoding}{simple-LICR-object}{code}
 ```
 
-Obwohl es nicht für die „T1“-Kodierung verwendet wird, gibt es auch eine allgemeinere Version von „\DeclareTextComposite“, die beliebigen Code anstelle einer Slot-Position zulässt. Dies wird zum Beispiel in der „OT1“-Codierung verwendet, um den Ringakzent über dem „A“ im Vergleich zu der Art und Weise, wie er mit dem Grundelement „\accent“ von TeX gesetzt würde, abzusenken. Auch die Akzente über dem „i“ werden mit dieser Deklarationsform umgesetzt:
+Obwohl es nicht für die `.fd`-Kodierung verwendet wird, gibt es auch eine allgemeinere Version von „\DeclareTextComposite“, die beliebigen Code anstelle einer Slot-Position zulässt. Dies wird zum Beispiel in der `OT1`-Codierung verwendet, um den Ringakzent über dem „A“ im Vergleich zu der Art und Weise, wie er mit dem Grundelement `\accent` von TeX gesetzt würde, abzusenken. Auch die Akzente über dem „i“ werden mit dieser Deklarationsform umgesetzt:
 
 ```tex
 \DeclareTextCompositeCommand{\'}{OT1}{i}{\@tabacckludge'\i}
@@ -246,7 +246,7 @@ Einige diakritische Zeichen werden nicht über anderen Zeichen, sondern irgendwo
 \DeclareTextCommand{LICR-object}{encoding}[num][default]{code}
 ```
 
-Beispielsweise wird der „Unterstrich“-Akzent „\b“ in der „T1“-Kodierung mit dem folgenden Code definiert:
+Beispielsweise wird der „Unterstrich“-Akzent „\b“ in der `.fd`-Kodierung mit dem folgenden Code definiert:
 
 ```tex
 \DeclareTextCommand{\b}{T1}[1]
@@ -256,7 +256,7 @@ Beispielsweise wird der „Unterstrich“-Akzent „\b“ in der „T1“-Kodier
 
 In dieser Diskussion spielt es keine große Rolle, was der Code genau bedeutet, aber wir können sehen, dass „\DeclareTextCommand“ in gewisser Weise `\newcommand` ähnelt. Es verfügt über ein optionales *num*-Argument, das die Anzahl der Argumente angibt (hier eines), ein zweites optionales *default*-Argument (hier nicht vorhanden) und ein letztes obligatorisches Argument, das den Code enthält, in dem auf das Argument verwiesen werden kann( s) mit „#1“, „#2“ usw.
 
-„\DeclareTextCommand“ kann auch verwendet werden, um schriftkodierungsspezifische Befehle zu erstellen, die aus einer einzelnen Steuersequenz bestehen. In diesem Fall wird es ohne das optionale Argument verwendet und definiert somit einen Befehl ohne Argumente. Beispielsweise gibt es in „T1“ keine Glyphe für ein „Promille“-Zeichen, aber es gibt ein kleines `o` an der Position „30“, das, wenn es direkt hinter einem „%“ platziert wird, die entsprechende Glyphe ergibt . Somit können wir folgende Erklärungen abgeben:
+„\DeclareTextCommand“ kann auch verwendet werden, um schriftkodierungsspezifische Befehle zu erstellen, die aus einer einzelnen Steuersequenz bestehen. In diesem Fall wird es ohne das optionale Argument verwendet und definiert somit einen Befehl ohne Argumente. Beispielsweise gibt es in `.fd` keine Glyphe für ein „Promille“-Zeichen, aber es gibt ein kleines `o` an der Position „30“, das, wenn es direkt hinter einem „%“ platziert wird, die entsprechende Glyphe ergibt . Somit können wir folgende Erklärungen abgeben:
 
 ```tex
 \DeclareTextCommand{\textperthousand} {T1}{\%\char 24}
@@ -304,7 +304,7 @@ Es gibt eine ähnliche Deklaration für LICR-Objekte, die ein Argument annehmen,
 \DeclareTextAccentDefault{\t}{OML}
 ```
 
-Das heißt, wenn das „\““ in der aktuellen Kodierung nicht definiert ist, verwenden Sie das Zeichen einer „OT1“-kodierten Schriftart. Um einen Krawattenakzent zu erhalten, verwenden Sie ihn ebenfalls aus „OML“, wenn nichts Besseres verfügbar ist .
+Das heißt, wenn das „\““ in der aktuellen Kodierung nicht definiert ist, verwenden Sie das Zeichen einer `OT1`-kodierten Schriftart. Um einen Krawattenakzent zu erhalten, verwenden Sie ihn ebenfalls aus „OML“, wenn nichts Besseres verfügbar ist .
 
 ```tex
 \ProvideTextCommandDefault{LICR-object}[num][default]{code}
@@ -323,14 +323,14 @@ Pakete wie „textcomp“ können solche Definitionen dann durch Deklarationen e
 \UndeclareTextCommand{LICR-object}{encoding}
 ```
 
-In manchen Fällen muss eine vorhandene Deklaration entfernt werden, um sicherzustellen, dass stattdessen eine Standarddeklaration verwendet wird. Dies kann durch die Verwendung von „\UndeclareTextCommand“ erfolgen. Beispielsweise entfernt das Paket „textcomp“ die Definitionen von „\textdollar“ und „\textsterling“ aus der „OT1“-Kodierung, da nicht jede „OT1“-kodierte Schriftart tatsächlich über diese Symbole verfügt.
+In manchen Fällen muss eine vorhandene Deklaration entfernt werden, um sicherzustellen, dass stattdessen eine Standarddeklaration verwendet wird. Dies kann durch die Verwendung von „\UndeclareTextCommand“ erfolgen. Beispielsweise entfernt das Paket „textcomp“ die Definitionen von „\textdollar“ und „\textsterling“ aus der `OT1`-Kodierung, da nicht jede `OT1`-kodierte Schriftart tatsächlich über diese Symbole verfügt.
 
 ```tex
 \UndeclareTextCommand{\textsterling}{OT1}
 \UndeclareTextCommand{\textdollar} {OT1}
 ```
 
-Ohne diese Entfernung würden die neuen Standarddeklarationen zur Übernahme der Symbole von „TS1“ nicht für Schriftarten verwendet, die mit „OT1“ codiert sind.
+Ohne diese Entfernung würden die neuen Standarddeklarationen zur Übernahme der Symbole von „TS1“ nicht für Schriftarten verwendet, die mit `OT1` codiert sind.
 
 ```tex
 \UseTextSymbol{encoding}{LICR-object}
@@ -353,7 +353,7 @@ hat den gleichen Effekt wie die Eingabe des untenstehenden Codes. Beachten Sie i
 
 ### Eine Liste der Standard-LICR-Objekte
 
-Die Tabelle in diesem Unterabschnitt bietet einen Überblick über die internen Darstellungen von LaTeX, die mit den drei Hauptkodierungen für lateinische Sprachen verfügbar sind: „OT1“ (die ursprüngliche TeX-Kodierung), „T1“ (die LaTeX-Standardkodierung) und „LY1“ ( eine von Y&Y vorgeschlagene alternative 8-Bit-Kodierung). Darüber hinaus werden alle LICR-Objekte angezeigt, die durch „TS1“ (die LaTeX-Standard-Textsymbolkodierung) deklariert wurden und durch das Laden des „textcomp“-Pakets bereitgestellt werden.
+Die Tabelle in diesem Unterabschnitt bietet einen Überblick über die internen Darstellungen von LaTeX, die mit den drei Hauptkodierungen für lateinische Sprachen verfügbar sind: `OT1` (die ursprüngliche TeX-Kodierung), `.fd` (die LaTeX-Standardkodierung) und „LY1“ ( eine von Y&Y vorgeschlagene alternative 8-Bit-Kodierung). Darüber hinaus werden alle LICR-Objekte angezeigt, die durch „TS1“ (die LaTeX-Standard-Textsymbolkodierung) deklariert wurden und durch das Laden des „textcomp“-Pakets bereitgestellt werden.
 
 Die erste Spalte der Tabelle zeigt die LICR-Objektnamen in alphabetischer Reihenfolge und gibt an, welche LICR-Objekte wie Akzente wirken. Die zweite Spalte zeigt eine Glyphendarstellung des Objekts.
 

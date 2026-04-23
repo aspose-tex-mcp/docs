@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: Elenco delle funzionalità | Aspose.TeX per .NET
@@ -6,7 +6,7 @@ linktitle: Elenco delle funzionalità
 weight: 30
 url: /net/feature-list/
 description: Aggiungi la funzionalità di manipolazione dei file tex alla propria soluzione. Impara le funzionalità Aspose.TeX Solution per le offerte .NET.
-lastmod: "2025-06-13"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
@@ -15,8 +15,8 @@ lastmod: "2025-06-13"
 
 **Operazioni supportate**
 
-- TEX Input Typetting
-- Creazione del formato tex personalizzato
+- Composizione input TeX
+- Creazione del formato TeX personalizzato
 
 **Supporto per vari formati di file di output**
 
@@ -27,8 +27,8 @@ lastmod: "2025-06-13"
 - TIFF
 - BMP
 
-**modi supportati per leggere input e scrittura output**
+**Modi supportati per leggere l'input e scrivere l'output**
 
 - Directory del file system
-- Archivio zip
-- Il file tex principale può anche essere passato attraverso un flusso
+- Archivio ZIP
+- Il file TeX principale può anche essere passato attraverso un flusso

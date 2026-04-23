@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: Noções básicas sobre editores LaTeX e a camada de programação LaTeX3 (expl3)
@@ -8,7 +8,7 @@ weight: 90
 url: /latex-editor/
 description: Um guia conciso que explica o que um editor LaTeX faz, o fluxo de trabalho típico, categorias comuns do editor e a moderna camada de programação LaTeX3 (expl3).
 keywords: Editor LaTeX, LaTeX3, expl3, TeX, compilação de PDF, destaque de sintaxe, visualização ao vivo, redação acadêmica, desenvolvimento de pacotes
-lastmod: "2025-12-03"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
@@ -119,7 +119,7 @@ Os delimitadores `\ExplSyntaxOn` / `\ExplSyntaxOff` alternam o modo de sintaxe e
 ---
 
 ## E o Aspose?
-Aspose fornece uma família de APIs que podem manipular programaticamente PDFs gerados por LaTeX.  Usando uma biblioteca Aspose, os desenvolvedores podem mesclar, dividir ou converter PDFs produzidos em LaTeX para outros formatos (por exemplo, DOCX, HTML) sem precisar de uma distribuição completa de LaTeX em tempo de execução.
+Aspose.TeX fornece uma família de APIs que podem manipular programaticamente PDFs gerados por LaTeX.  Usando uma biblioteca Aspose, os desenvolvedores podem mesclar, dividir ou converter PDFs produzidos em LaTeX para outros formatos (por exemplo, DOCX, HTML) sem precisar de uma distribuição completa de LaTeX em tempo de execução.
 
 ---
 

@@ -1,20 +1,20 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: Entrada/saída de LaTeX
-linktitle: E/O do LATEX
+linktitle: E/O do LaTeX
 weight: 17
 url: /net/latex-io/
-description: Esta página descreve brevemente as peculiaridades de trabalhar com o LATEX como um formato de saída ou entrada e o arquivo * .aux * como parte obrigatória do LATEX.
-keywords: LATEX IO, LATEX I, LATEX O, LATEX INPUT FILE, entrada no LATEX
-lastmod: "2025-06-16"
+description: Esta página descreve brevemente as peculiaridades de trabalhar com o LaTeX como um formato de saída ou entrada e o arquivo * .aux * como parte obrigatória do LaTeX.
+keywords: LaTeX IO, LaTeX I, LaTeX O, LaTeX INPUT FILE, entrada no LaTeX
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
 
 ## Arquivo de LaTeX
 
-Se tivermos um [Tex File](/tex/{{lang.url-fragment}}net/tex-io/#tex-file) que tenha a seguinte estrutura, chamaremos esse arquivo de arquivo *LATEX*:
+Se tivermos um [TeX File](/tex/{{lang.url-fragment}}net/tex-io/#tex-file) que tenha a seguinte estrutura, chamaremos esse arquivo de arquivo *LaTeX*:
 
 
 ```tex
@@ -31,7 +31,7 @@ onde `<uma classe de documento>` é um nome de uma [classe de documento](https:/
 
 Para ser sincero, você pode inserir sequências de controle primitivo antes de `\documentclass {}`, como `\não -estopmode`, etc. Mas cada macro de LaTeX verifica se está localizado em uma parte adequada de um arquivo.
 
-Vale a pena notar algumas coisas sobre Tex [entrada](/tex/{{lang.url-fragment}}net/tex-io/#tex-input) e [saída](/tex/{{lang.url-fragment}}net/tex-io/#tex-output) no contexto do trabalho com arquivos de LaTeX.
+Vale a pena notar algumas coisas sobre TeX [entrada](/tex/{{lang.url-fragment}}net/tex-io/#tex-input) e [saída](/tex/{{lang.url-fragment}}net/tex-io/#tex-output) no contexto do trabalho com arquivos de LaTeX.
 
 ## Arquivo de saída de LaTeX
 
@@ -39,7 +39,7 @@ Um trabalho típico de LaTeX cria um arquivo de saída auxiliar com o [nome do t
 
 Embora os primitivos `\openout`, ` \ write` e `\closeout` não sejam proibidos, os pacotes são o local mais adequado para eles. Portanto, você deve usá -los melhor em seus próprios pacotes personalizados se estiver desenvolvendo -os.
 
-Outras partes da saída são arbitrárias, também seguem o conceito Geral [Tex Output](/tex/{{lang.url-fragment}}net/tex-io/#tex-output) e dependem do que exatamente o seu arquivo tex (programa) deve fazer, quais pacotes (veja abaixo) que você está usando, etc.
+Outras partes da saída são arbitrárias, também seguem o conceito Geral [TeX Output](/tex/{{lang.url-fragment}}net/tex-io/#tex-output) e dependem do que exatamente o seu arquivo tex (programa) deve fazer, quais pacotes (veja abaixo) que você está usando, etc.
 
 ## Arquivo de entrada de LaTeX
 
@@ -47,7 +47,7 @@ O arquivo *.aux* acima mencionado é uma parte obrigatória da entrada no LaTeX 
 
 Outra parte obrigatória é uma [classe de documento](/tex/{{lang.url-fragment}}net/latex-io/#latex-file). O arquivo da classe de documentos, por sua vez, pode depender implicitamente de outros arquivos, que também são incluídos na entrada do LaTeX.
 
-Se você deseja usar os recursos além do escopo do LaTeX básico e de suas classes de documentos, mas suportados por uma determinada implementação do mecanismo Tex, normalmente usa um pacote, sobre o qual deve notificar o mecanismo no preâmbulo. A *pacote de LaTeX* é um arquivo ou um grupo de arquivos montados com um nome, que fornece esses recursos. Para notificar o mecanismo, você precisa usar o comando `\usepackage` com o nome do pacote e opções omitíveis, se o pacote definir algum.
+Se você deseja usar os recursos além do escopo do LaTeX básico e de suas classes de documentos, mas suportados por uma determinada implementação do mecanismo TeX, normalmente usa um pacote, sobre o qual deve notificar o mecanismo no preâmbulo. A *pacote de LaTeX* é um arquivo ou um grupo de arquivos montados com um nome, que fornece esses recursos. Para notificar o mecanismo, você precisa usar o comando `\usepackage` com o nome do pacote e opções omitíveis, se o pacote definir algum.
 
 Por exemplo,
 

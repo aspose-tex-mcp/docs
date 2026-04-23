@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: Системные требования | Aspose.TeX .NET
@@ -6,7 +6,7 @@ linktitle: Системные требования
 weight: 50
 url: /net/system-requirements/
 description: Решение Aspose.TeX для .NET можно использовать в любой среде разработки, поддерживающей .NET, но некоторые среды поддерживаются явно.
-lastmod: "2024-09-24"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
@@ -15,14 +15,14 @@ lastmod: "2024-09-24"
 
 ### Windows
 
-* Microsoft Windows 2003 Server (x64, x86)
-* Microsoft Windows 2012 Server (x64, x86)
-* Microsoft Windows 2008 Server (x64, x86)
-* Microsoft Windows XP (x64, x86)
-* Microsoft Windows Vista (x64, x86)
-* Microsoft Windows 8, 8.1 (x64, x86)
-* Microsoft Windows 7 (x64, x86)
-* Microsoft Windows 10 (x64, x86)
+* Microsoft Windows 2003 Server ( x64, x86)
+* Microsoft Windows 2012 Server ( x64, x86)
+* Microsoft Windows 2008 Server ( x64, x86)
+* Microsoft Windows XP ( x64, x86)
+* Microsoft Windows Vista ( x64, x86)
+* Microsoft Windows 8, 8.1 ( x64, x86)
+* Microsoft Windows 7 ( x64, x86)
+* Microsoft Windows 10 ( x64, x86)
 * Windows Azure
 
 ## Среды разработки

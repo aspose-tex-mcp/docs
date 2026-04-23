@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-java.md
 title: Aspose.TeX 用于 Java 文档
@@ -7,7 +7,7 @@ weight: 20
 url: /java/
 description: 在Java的API解决方案中管理TEX文件。图书馆提供了通过Tex输入并获得输出和功能的方法，例如创建您自己的Tex格式
 is_root: true
-lastmod: "2025-06-10"
+lastmod: "2026-04-21"
 ---
 
 {{<section overview>}}
@@ -38,5 +38,6 @@ aspose.tex是用于排版Tex文件的Java库。它可以以XPS，PDF，PNG，JPE
 
 {{% alert color="primary" %}}
 
-还要尝试一下我们新的AI驱动的[**Aspose.TeX ai代理**](https://products.aspose.ai/tex/) - 对使用`.tex`和.latex格式的任何人都有用的工具。
+还要尝试一下我们新的AI驱动的[**Aspose.TeX AI Agents**](https://products.aspose.ai/tex/) - 对使用`.tex`和`.latex`格式的任何人都有用的工具。
+
 {{% /alert %}}

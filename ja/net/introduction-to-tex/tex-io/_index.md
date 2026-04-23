@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: TeX 入出力
@@ -6,7 +6,7 @@ linktitle: TeX I/O
 weight: 12
 url: /net/tex-io/
 description: Aspose.TeX API 内で出力または入力形式として TeX を使用する際の基本。TeX ジョブは明示的に指定されたファイルで実行されます。
-lastmod: "2026-02-26"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}

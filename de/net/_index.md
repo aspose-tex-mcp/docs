@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 linktitle: Aspose.TeX für .NET
@@ -7,10 +7,11 @@ weight: 10
 url: /net/
 description: API-Lösung zum Verwalten von TeX-Dateien für .NET. Übergeben Sie TeX-Eingaben, erhalten Sie Ausgaben und erstellen Sie Ihr eigenes TeX-Format.
 is_root: true
-lastmod: "2024-09-26"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
+
 {{% alert color="primary" %}}
 
 ![Aspose.TeX für .NET-Logo](/tex/icons/aspose_tex-for-net.png)

@@ -7,7 +7,7 @@ weight: 20
 url: /net/tikz-advanced-features/
 keywords: TikZ avanzado, rutas TikZ, diagramas TikZ, pgfplots, circuitikz, tikz-3dplot
 description: Aprenda técnicas avanzadas de TikZ, incluyendo rutas complejas, posicionamiento de nodos, flechas y creación de diagramas para obtener gráficos de calidad profesional.
-lastmod: "2025-07-11"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}

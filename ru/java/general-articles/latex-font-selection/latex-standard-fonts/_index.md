@@ -7,7 +7,7 @@ weight: 40
 url: /java/latex-standard-fonts/
 keywords: шрифты латех, латехные шрифты, стандартные латехные шрифты, кодировка латехных шрифтов, трассировка, nfssfont.tex, шрифт latex
 description: Эта статья представляет собой краткое введение в стандартные текстовые шрифты, распространяемые вместе с LaTeX.
-lastmod: "2024-09-24"
+lastmod: "2026-04-21"
 ---
 
 {{<section overview>}}
@@ -189,4 +189,4 @@ Font size [10pt]:
 
 ![Пример текста для OT1/cmdh/m/n/10](/tex/images/java/tutorial/latex-font-selection-4-8.png)
 
-> There are two points to be aware of. First, the `nfssfont.tex` program issues an implicit `\init` command, so the first line of input should either contain a font name or be completely empty to indicate that an NFSS classification follows. Second, the input to `\init` must appear on individual lines with nothing else (not even a comment) because the line ending indicates the end of the response to a prompt like `Font encoding[T1]: \encoding=` that you will get.
+> Есть две важные детали, о которых следует помнить. Во-первых, программа `nfssfont.tex` автоматически вызывает команду `\init`, поэтому первая строка ввода должна либо содержать имя шрифта, либо быть полностью пустой, чтобы указать, что следует предоставить классификацию NFSS. Во-вторых, ввод для `\init` должен быть размещён по отдельным строкам без какого-либо другого текста (даже без комментариев), поскольку конец строки обозначает окончание ответа на запрос вроде `Font encoding[T1]: \encoding=`.

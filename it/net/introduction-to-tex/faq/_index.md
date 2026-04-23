@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: Domande frequenti su TeX
@@ -6,7 +6,7 @@ linktitle: FAQ
 weight: 80
 url: /net/introduction-to-tex/faq/
 description: Ottieni risposte a tutte le domande più frequenti su TeX e LaTeX, la loro struttura, l'uso e le peculiarità.
-lastmod: 2025-09-03
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
@@ -51,7 +51,7 @@ La sezione del corpo del documento contiene il contenuto effettivo del documento
 
 **Q: Qual è la sintassi di TeX?**
 
-**A:** La sintassi di TeX (e il suo pacchetto macro più popolare, LaTex) si basa su comandi e ambienti.
+**A:** La sintassi di TeX (e il suo pacchetto macro più popolare, LaTeX) si basa su comandi e ambienti.
 
 La maggior parte dei comandi inizia con una backslash `(\)` e il nome del comando. Ad esempio, `\maketitle` crea il titolo del documento. Alcuni comandi prendono anche parametri opzionali tra parentesi quadrate `[...]` e argomenti obbligatori nelle parentesi graffe `{...}`.
 
@@ -83,7 +83,7 @@ LaTeX è un sistema molto più intuitivo e di alto livello per la creazione di d
 - I documenti in LaTeX sono file di testo semplice, che sono facili da archiviare, condividere e gestire.
 <br> <br>
 
-**Q: Latex usa Python?**
+**Q: LaTeX usa Python?**
 
 **A:** Il LaTeX stesso non usa direttamente Python. Tuttavia, possono lavorare insieme nei seguenti modi:
 
@@ -123,7 +123,7 @@ Tuttavia, se sei uno studente o un professionista in un campo STEM o se scrivi r
 
 **Q: qual è il pacchetto LaTeX?**
 
-**A:** Un pacchetto Latex è un insieme di macro e comandi per aggiungere funzionalità specifiche a un documento LaTex. È come una libreria di software che puoi importare nel tuo documento per aggiungere più funzionalità. Il sistema Core Latex fornisce comandi di base per la strutturazione di un documento (come `\ section` e `\subsection`), ma i pacchetti allargano queste capacità per compiti più complessi.
+**A:** Un pacchetto LaTeX è un insieme di macro e comandi per aggiungere funzionalità specifiche a un documento LaTeX. È come una libreria di software che puoi importare nel tuo documento per aggiungere più funzionalità. Il sistema Core LaTeX fornisce comandi di base per la strutturazione di un documento (come `\ section` e `\subsection`), ma i pacchetti allargano queste capacità per compiti più complessi.
 <br> <br>
 
 **Q: come funziona il pacchetto LaTeX?**

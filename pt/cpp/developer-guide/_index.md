@@ -6,7 +6,7 @@ linktitle: Guia do desenvolvedor
 weight: 20
 url: /cpp/developer-guide/
 description: API C ++ para os desenvolvedores manipularem e processarem arquivos Tex e LaTex. Aprenda o guia do desenvolvedor sobre como trabalhar com a solução.
-lastmod: "2025-06-16"
+lastmod: "2026-04-20"
 ---
 
 {{<section overview>}}

@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-java.md
 title: Aspose.TeX para Java Documentação 
@@ -7,7 +7,7 @@ weight: 20
 url: /java/
 description: Gerenciar arquivos TEX na solução da API para Java. A biblioteca fornece maneiras de passar a entrada Tex e obter saída e recursos como criar seu próprio formato Tex
 is_root: true
-lastmod: "2025-06-16"
+lastmod: "2026-04-21"
 ---
 
 {{<section overview>}}
@@ -38,5 +38,6 @@ A seguir, estão os links para alguns recursos úteis necessários para realizar
 
 {{% alert color="primary" %}}
 
-Experimente também nossos novos Ferramentas de AI [**Aspose.TeX AI AGENTS**](https://products.aspose.ai/tex/) - para quem trabalha com formatos `.tex` e `.latex`.
+Experimente também nossos novos Ferramentas de AI [**Aspose.TeX AI Agents**](https://products.aspose.ai/tex/) - para quem trabalha com formatos `.tex` e `.latex`.
+
 {{% /alert %}}

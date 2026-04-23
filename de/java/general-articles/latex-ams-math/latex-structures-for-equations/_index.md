@@ -7,7 +7,7 @@ weight: 10
 url: /java/latex-structures-for-equations/
 keywords: ams-latex, amsmath, amsmath-Optionen, Latex-Gleichungsausrichtung, leqno, eqno, fleqn, Latex-Gleichungs-Tag, Latex-Gleichungsbezeichnung, Latex-Gleichungen ausrichten
 description: Dies ist eine Einführung in das Setzen von LaTeX-Gleichungen mit AMS-LATEX-Paketen und enthält einige Beispiele und deren Erklärungen. 
-lastmod: "2024-09-26"
+lastmod: "2026-04-21"
 ---
 
 {{<section overview>}}
@@ -248,12 +248,12 @@ Die „Align“-Umgebung verteilt das Material gleichmäßig über die Anzeigebr
 ```tex
 \usepackage{amsmath}
 % -------------------------------------------------------------------------------
-This example has two column-pairs.
+Dieses Beispiel hat zwei Spaltenpaare.
 \begin{align} \text{Compare }
 x^2 + y^2 &= 1 &                      x^3 + y^3 &= 1 \\
 x              &= \sqrt {1-y^2}   &           x &= \sqrt[3]{1-y^3}
 \end{align}
-This example has three column-pairs.
+Dieses Beispiel hat drei Spaltenpaare.
 \begin{align}
      x &= y        &        X &= Y      &   a &= b+c \\
     x' &= y'       &       X' &= Y'     &  a' &= b \\
@@ -269,12 +269,12 @@ Das Layout des „flalign“ ist ähnlich, es gibt jedoch keinen Platz an den R�
 ```tex
 \usepackage{amsmath}
 % -------------------------------------------------------------------------------
-This example has two column-pairs.
+Dieses Beispiel hat zwei Spaltenpaare.
 \begin{flalign} \text{Compare }
 x^2 + y^2 &= 1               &   x^3 + y^3 &= 1 \\
         x &= \sqrt {1-y^2}   &           x &= \sqrt[3]{1-y^3}
 \end{flalign}
-This example has three column-pairs.
+Dieses Beispiel hat drei Spaltenpaare.
 \begin{flalign}
      x &= y        &        X  &= Y        &     a &= b+c \\
     x' &= y'       &       X'  &= Y'       &    a' &= b \\
@@ -290,13 +290,13 @@ In beiden Fällen kann der Mindestabstand zwischen Spaltenpaaren durch Ändern v
 ```tex
 \usepackage{amsmath}
 % -------------------------------------------------------------------------------
-This example has two column-pairs.
+Dieses Beispiel hat zwei Spaltenpaare.
 \renewcommand\minalignsep{0pt}
 \begin{align} \text{Compare }
 x^2 + y^2 &= 1               &   x^3 + y^3 &= 1 \\
         x &= \sqrt {1-y^2}   &           x &= \sqrt[3]{1-y^3}
 \end{align}
-This example has three column-pairs.
+Dieses Beispiel hat drei Spaltenpaare.
 \renewcommand\minalignsep{15pt}
 \begin{flalign}
      x &= y        &        X  &= Y        &     a &= b+c \\

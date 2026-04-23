@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-java.md
 title: イメージへのラテックス| Java
@@ -7,7 +7,7 @@ weight: 10
 url: /java/latex-to-image/
 keywords: ラテックスからPNG、ラテックスPNG、ラテックスから画像、ラテックス画像、ラテックス、JPG、ラテックスJPG、ラテックス、JPEG、ラテックスJPEG、ラテックスからTIFF、ラテックスティフ、ラテックスからBMP、ラテックスBMP
 description: Aspose.TeX APIソリューションを使用してTexを画像形式に変換するには、これを行う方法とコードの例を説明するこの記事を学びます。
-lastmod: "2025-06-09"
+lastmod: "2026-04-21"
 ---
 
 {{<section overview>}}

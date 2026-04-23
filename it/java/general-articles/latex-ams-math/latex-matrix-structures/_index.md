@@ -81,11 +81,11 @@ Per produrre una piccola matrice inline nel testo, è possibile utilizzare l'amb
 ```tex
 \usepackage{amsmath}
 % -------------------------------------------------------------------------------
-To show the effect of the matrix on surrounding lines inside a paragraph, we put it here:
+Per mostrare l'effetto della matrice sulle righe circostanti all'interno di un paragrafo, la inseriamo qui:
 $ \left( \begin{smallmatrix}
 1 & 0 \\ 0 & -1
 \end{smallmatrix} \right) $
-and follow it with enough text to ensure that there is at least one full line below the matrix.
+e seguiamo con abbastanza testo per garantire che ci sia almeno una riga completa sotto la matrice.
 ```
 
 ![L'ambiente Smallmatrix](/tex/images/java/tutorial/latex-ams-math-3-4.png)

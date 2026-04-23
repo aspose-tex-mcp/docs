@@ -7,7 +7,7 @@ weight: 21
 url: /net/tikz-for-scientific-publications/
 keywords: gráficos científicos TikZ, diagramas académicos TikZ, exemplos matemáticos TikZ
 description: Utilize o TikZ para criar gráficos e diagramas com qualidade profissional para publicações científicas e académicas.
-lastmod: "2025-07-11"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
@@ -80,7 +80,7 @@ Figuras claramente identificadas melhoram a compreensão dos conceitos matemáti
 
 ## Diagramas Químicos e Biológicos
 
-O TikTok também suporta diagramas amplamente utilizados em química e biologia, tornando os seus artigos científicos visualmente atraentes e profissionais:
+TikZ também suporta diagramas amplamente utilizados em química e biologia, tornando os seus artigos científicos visualmente atraentes e profissionais:
 
 ```tex
 \usetikzlibrary{shapes, positioning}

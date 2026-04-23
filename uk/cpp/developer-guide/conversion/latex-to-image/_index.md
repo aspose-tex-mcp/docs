@@ -100,7 +100,7 @@ Transcript written on hello-world.log.
 
 Інші варіанти завдань TeX обговорюються [тут](/tex/{{lang.url-fragment}}cpp/other-options/).
 
-**Ви також можете ознайомитися з безкоштовною [веб-програмою] для перетворення LaTeX у PNG (26), створеною на основі API [Aspose.TeX для .NET](https://products.aspose.com/tex/net/). [Тут](https://products.aspose.com/tex/cpp/) – сторінка версії C++.**
+**Ви також можете ознайомитися з безкоштовною веб‑програмою для перетворення LaTeX у PNG, створеною на основі API [Aspose.TeX для .NET](https://products.aspose.com/tex/net/). [Тут](https://products.aspose.com/tex/cpp/) – сторінка версії C++.**
 
 Нижче ми обговорюємо перетворення LaTeX в інші підтримувані формати растрових зображень. Ми не будемо вдаватися в подробиці лише тому, що їх насправді немає. Єдина відмінність полягає в типі властивості [SaveOptions](https://reference.aspose.com/tex/cpp/aspose.tex/texoptions/set_saveoptions) у параметрах перетворення.
 
@@ -112,7 +112,7 @@ Transcript written on hello-world.log.
 options->set_SaveOptions(System::MakeObject<JpegSaveOptions>());
 ```
 
-**Ви також можете ознайомитися з безкоштовною [веб-програмою] для перетворення LaTeX у JPEG (30), створеною на основі API [Aspose.TeX для .NET](https://products.aspose.com/tex/net/). [Тут](https://products.aspose.com/tex/cpp/) – сторінка версії C++.**
+**Ви також можете ознайомитися з безкоштовною веб‑програмою для перетворення LaTeX у JPEG, створеною на основі API [Aspose.TeX для .NET](https://products.aspose.com/tex/net/). [Тут](https://products.aspose.com/tex/cpp/) – сторінка версії C++.**
 
 ## Як конвертувати LaTeX у TIFF
 
@@ -122,7 +122,7 @@ options->set_SaveOptions(System::MakeObject<JpegSaveOptions>());
 options->set_SaveOptions(System::MakeObject<TiffSaveOptions>());
 ```
 
-**Ви також можете скористатися безкоштовною [веб-програмою] для перетворення LaTeX у TIFF (33), створеною на основі API [Aspose.TeX для .NET](https://products.aspose.com/tex/net/). [Тут](https://products.aspose.com/tex/cpp/) – сторінка версії C++.**
+**Ви також можете скористатися безкоштовною веб‑програмою для перетворення LaTeX у TIFF, створеною на основі API [Aspose.TeX для .NET](https://products.aspose.com/tex/net/). [Тут](https://products.aspose.com/tex/cpp/) – сторінка версії C++.**
 
 ## Як конвертувати LaTeX у BMP
 

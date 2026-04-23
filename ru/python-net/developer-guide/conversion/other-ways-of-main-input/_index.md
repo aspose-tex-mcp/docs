@@ -6,7 +6,7 @@ linktitle: Другие способы предоставления основн
 weight: 14
 url: /python-net/other-ways-of-main-input/
 description: Aspose.TeX API для Python включает в себя конструктор, который принимает поток в качестве первого аргумента, обеспечивая функциональность преобразования.
-lastmod: "2024-09-24"
+lastmod: "2026-04-20"
 ---
 
 {{<section overview>}}
@@ -15,7 +15,7 @@ lastmod: "2024-09-24"
 
 До сих пор мы только узнали, как предоставить [основной входной файл](/tex/{{lang.url-fragment}}net/tex-io/#tex-input) движку TeX как имя файла, в полной или сокращенной форме, с расширением или без него. Однако в классе [TeXJob](https://reference.aspose.com/tex/python-net/aspose.tex/texjob) доступен [еще один конструктор](https://reference.aspose.com/tex/python-net/aspose.tex/texjob/__init__/#io.RawIOBase-aspose.tex.presentation.Device-aspose.tex.TeXOptions), который принимает поток в качестве первого аргумента. Это полезно, если по какой-то причине основной входной файл не находится в виде файла в файловой системе диска. Вот пример того, как это можно реализовать:
 
-{{< gist "aspose-com-gists""68d217858f0be40062562ce2bb2cd908""Aspose.TeX.Examples-Conversion-InputStream.py" >}}
+{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Conversion-InputStream.py" >}}
 
 Обратите внимание, что все выходные файлы будут называться «texput». Это связано с тем, что у движка нет доступа ни к какому другому имени. `texput` — это имя задания по умолчанию. Более подробную информацию о названиях заданий вы можете найти в параграфах [Вывод TeX](/tex/{{lang.url-fragment}}net/tex-io/#tex-output) и [Как задать имя задания](/tex/{{lang.url-fragment}}net/other-options/#how-to-set-the-job-name).
 
@@ -25,7 +25,7 @@ lastmod: "2024-09-24"
 
 Вот код:
 
-{{< gist "aspose-com-gists""68d217858f0be40062562ce2bb2cd908""Aspose.TeX.Examples-Conversion-MainInputTerminal.py" >}}
+{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Conversion-MainInputTerminal.py" >}}
 
 Как только он запустится, движок приостановится и будет ждать, пока мы введем имя файла (с путем или без него, с расширением или без него):
 

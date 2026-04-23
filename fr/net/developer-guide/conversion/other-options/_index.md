@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: Autres options de gestion de TeX | .NET
@@ -6,7 +6,7 @@ linktitle: Autres options
 weight: 17
 url: /net/other-options/
 description: De conversion de la solution API Aspose.TeX pour .NET permet de définir le mode d'interaction initial dans lequel le moteur démarre.
-lastmod: "2026-04-03"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}

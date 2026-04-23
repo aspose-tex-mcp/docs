@@ -7,7 +7,7 @@ weight: 80
 url: /java/latex-math-fonts/
 keywords: latex fett schreiben, entspricht zeichen latex, mathematisches alphabet, latex kleiner gleich, Latex-Math-Schriftarten, Latex-Math-Alphabete, Latex-BM-Paket, Latex-Schriftarten, Latex-Schriftarten Mathe
 description: In diesem Artikel wird der Umgang mit mathematischen Schriftarten mithilfe von Standard-LaTeX sowie die Verwendung der Pakete amsmath und bm erläutert.
-lastmod: "2024-09-26"
+lastmod: "2026-04-21"
 ---
 
 {{<section overview>}}
@@ -45,7 +45,7 @@ In LaTeX2e sind mathematische Alphabetbezeichner Befehle mit einem Argument, ein
 
 
 ```tex
-Therefore, $\mathsf{G}$ can be computed as
+Daher kann $\mathsf{G}$ berechnet werden als
 \begin{equation}
 \mathsf{G} = \mathcal{A} +
              \sum_{i=1}^{n} \mathcal{B}_{i}
@@ -68,7 +68,7 @@ x &=& 12345 \\
 
 ![Kein Standard-Mathe-Alphabet](/tex/images/java/tutorial/latex-ams-math-8-9.png)
 
-Hier können Sie sehen, dass `\mathrm` die Ziffern und `\mathnormal` die Buchstaben nicht ändert, sodass die Standardeinstellung für Ziffern im normalen Setup das mit `\mathrm` und dem verknüpfte mathematische Alphabet ist Der Standardwert für Buchstaben ist der mit `\mathnormal` verknüpfte. Dieses Verhalten kann mit dem Befehl „\DeclareMathSymbol“ gesteuert werden.
+Hier können Sie sehen, dass `\mathrm` die Ziffern und `\mathnormal` die Buchstaben nicht ändert, sodass die Standardeinstellung für Ziffern im normalen Setup das mit `\mathrm` und dem verknüpfte mathematische Alphabet ist Der Standardwert für Buchstaben ist der mit `\mathnormal` verknüpfte. Dieses Verhalten kann mit dem Befehl `\DeclareMathSymbol` gesteuert werden.
 
 ### Welche Schriftart verwendet LaTeX für Mathematik?
 

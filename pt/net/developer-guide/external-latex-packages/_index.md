@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: Pacotes de LaTeX externos | Aspose.TeX para .NET
@@ -6,19 +6,19 @@ linktitle: Pacotes de LaTeX externos
 weight: 20
 url: /net/external-latex-packages/
 description: API Aspose.TeX para .NET permite o uso de pacotes externos, ou seja, os que não estão incluídos na própria biblioteca, como pacotes FancyBox e PGFPlots.
-keywords: latex extern packages, aspose tex, .net tex, latex packages, fancybox, pgfplots, obrigation input directory, input zip, custom input directory, tex conversion
-lastmod: "2025-06-16"
+keywords: latex extern packages, aspose tex, .net tex, latex packages, fancybox, pgfplots, required input directory, input zip, custom input directory, TeX conversion
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
 
 ## Pacotes de LaTeX externos
 
-A biblioteca **Aspose.TeX** inclui vários [pacotes de LaTeX comuns](/tex/{{lang.url-fragment}}net/embedded-packages/). Portanto, você não precisa se preocupar com como fornecer esses pacotes ao mecanismo Tex da biblioteca. Mas, às vezes (ou com bastante frequência), seu arquivo de LaTeX pode exigir um pacote além do pacote "nativamente" suportado "de pacotes. Se for esse o caso, você pode tentar fornecer a entrada necessária, ou seja, os arquivos de origem do pacote necessário, através da opção [RequerirdIpputDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/requiredinputdirectory/) da instância da classe [Texoptions](https://reference.aspose.com/tex/net/aspose.tex/texoptions/). Veremos como isso funciona com dois exemplos.
+A biblioteca **Aspose.TeX** inclui vários [pacotes de LaTeX comuns](/tex/{{lang.url-fragment}}net/embedded-packages/). Portanto, você não precisa se preocupar com como fornecer esses pacotes ao TeX engine da biblioteca. Mas, às vezes (ou com bastante frequência), seu arquivo de LaTeX pode exigir um pacote além do pacote "nativamente" suportado "de pacotes. Se for esse o caso, você pode tentar fornecer a entrada necessária, ou seja, os arquivos de origem do pacote necessário, através da opção [RequiredInputDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/requiredinputdirectory/) da instância da classe [TeXOptions](https://reference.aspose.com/tex/net/aspose.tex/texoptions/). Veremos como isso funciona com dois exemplos.
 
 ### Pacote necessário de entrada necessária (pacote `FancyBox`)
 
-Digamos que temos o seguinte arquivo de LaTeX simples, que é ` requerir-input-f-fs.tex` da nossa [Solução de exemplo](https://GitHub.com/aspose-tex/Aspose.TeX-for-.NET):
+Digamos que temos o seguinte arquivo de LaTeX simples, que é `required-input-fs.tex` da nossa [Solução de exemplo](https://GitHub.com/aspose-tex/Aspose.TeX-for-.NET):
 
 
 ```tex
@@ -51,7 +51,7 @@ Na terceira linha, podemos ver que o arquivo requer o pacote `FancyBox`, que nã
 options.RequiredInputDirectory = new InputFileSystemDirectory("path-to-directory-where-fancybox.sty-located");
 ```
 
-Depois de executar um trabalho de Tex com esta opção (não se esqueça de ajustar as outras opções conforme necessário), obtemos o documento de saída (ou seja, uma imagem PNG).
+Depois de executar um TeXJob com esta opção (não se esqueça de ajustar as outras opções conforme necessário), obtemos o documento de saída (ou seja, uma imagem PNG).
 
 ![Documento de saída](/tex/images/net/Conversion-RequiredInputFs.png)
 
@@ -61,7 +61,7 @@ Aqui está o código -fonte completo para o exemplo:
 
 ### Entrada necessária arquivada (pacote `pgfplots`)
 
-Digamos agora que temos o seguinte arquivo de LaTeX bastante simples, que é `` requerida-input-zip.tex` da nossa solução de exemplo:
+Digamos agora que temos o seguinte arquivo de LaTeX bastante simples, que é `required-input-zip.tex` da nossa solução de exemplo:
 
 
 ```tex
@@ -111,7 +111,7 @@ using (Stream zipStream = File.Open("path-to-zip-with-pgfplots-sources"), FileMo
 }
 ```
 
-Depois de executar um trabalho de Tex com esta opção, obtemos o documento de saída:
+Depois de executar um TeXJob com esta opção, obtemos o documento de saída:
 
 ![Documento de saída](/tex/images/net/Conversion-RequiredInputZip.png)
 
@@ -124,14 +124,14 @@ Aqui está o código -fonte completo para o exemplo:
 ### Empregando pacotes de fontes externos
 
 Como regra, as distribuições de LaTeX fornecem um conjunto de fontes padrão disponíveis para o tipothting. Exceto essas fontes, **Aspose.TeX** Inclui vários pacotes de fontes não padrão. Por exemplo, `amsfonts`, ` eurosym` e `wasysym '. Como vimos acima, Aspose.TeX também permite empregar pacotes externos. Mas principalmente estávamos conversando sobre pacotes que não contêm fontes.
-O **Aspose.TeX** 's*objeto Tex*A extensão do motor precisa de mapas de fonte (que são arquivos de texto em um determinado formato com a extensão `.map` por convenção) para determinar quais fontes físicas correspondem ao nome da fonte interna de cada Tex. Esses mapas de fonte devem ser carregados na memória do TEX durante a fase de inicialização. E, é claro, eles devem estar presentes entre os arquivos do pacote que você está conectando. Como o mecanismo não sabe os nomes de todos os mapas de fonte, ele procura todos os arquivos com a extensão `.map`. Portanto, uma implementação da interface [iInputWorkingDirectory](https://reference.aspose.com/tex/net/aspose.tex.io/iinputworkingdirectory/) que é usada como um valor da opção [requerirDutDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/requiredinputdirectory/) deve fornecer uma maneira de acessar coleções de nomes de arquivos por extensão. Mais especificamente, essa implementação também deve implementar a interface [ifileCollector](https://reference.aspose.com/tex/net/aspose.tex.io/ifilecollector/). As implementações padrão - [InputFilesystemDirectory](https://reference.aspose.com/tex/net/aspose.tex.io/inputfilesystemdirectory/) e [inputzipDirectory](https://reference.aspose.com/tex/net/aspose.tex.io/inputzipdirectory/) - já o fazem.
+O **Aspose.TeX** 's*Object TeX*A extensão do motor precisa de mapas de fonte (que são arquivos de texto em um determinado formato com a extensão `.map` por convenção) para determinar quais fontes físicas correspondem ao nome da fonte interna de cada Tex. Esses mapas de fonte devem ser carregados na TeX memory durante a fase de inicialização. E, é claro, eles devem estar presentes entre os arquivos do pacote que você está conectando. Como o mecanismo não sabe os nomes de todos os mapas de fonte, ele procura todos os arquivos com a extensão `.map`. Portanto, uma implementação da interface [IInputWorkingDirectory](https://reference.aspose.com/tex/net/aspose.tex.io/iinputworkingdirectory/) que é usada como um valor da opção [RequiredInputDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/requiredinputdirectory/) deve fornecer uma maneira de acessar coleções de nomes de arquivos por extensão. Mais especificamente, essa implementação também deve implementar a interface [IFileCollector](https://reference.aspose.com/tex/net/aspose.tex.io/ifilecollector/). As implementações padrão - [InputFileSystemDirectory](https://reference.aspose.com/tex/net/aspose.tex.io/inputfilesystemdirectory/) e [InputZipDirectory](https://reference.aspose.com/tex/net/aspose.tex.io/inputzipdirectory/) - já o fazem.
 
-Abaixo, fornecemos um exemplo ilustrativo de um diretório de entrada personalizado que também implementa a interface [ifileCollector](https://reference.aspose.com/tex/net/aspose.tex.io/ifilecollector/). Enquanto focamos em coletar nomes de arquivos por extensão, omitimos intencionalmente os detalhes do armazenamento e recuperação de arquivos.
+Abaixo, fornecemos um exemplo ilustrativo de um diretório de entrada personalizado que também implementa a interface [IFileCollector](https://reference.aspose.com/tex/net/aspose.tex.io/ifilecollector/). Enquanto focamos em coletar nomes de arquivos por extensão, omitimos intencionalmente os detalhes do armazenamento e recuperação de arquivos.
 
 {{< gist "aspose-com-gists" "03f720960e15bd497ed26ce2eb9c03b2" "Example-RequiredInputDirectory.cs" >}}
 
 ### Restrições
 
-Pode acontecer que um pacote exigido pelo seu arquivo de LaTeX seja desenvolvido no kernel *LateX3e*. Esse pacote provavelmente não funcionará com a biblioteca **Aspose.TeX**, pois este é baseado no kernel *LateX2e*.
+Pode acontecer que um pacote exigido pelo seu arquivo de LaTeX seja desenvolvido no kernel *LaTeX3e*. Esse pacote provavelmente não funcionará com a biblioteca **Aspose.TeX**, pois este é baseado no kernel *LaTeX2e*.
 
-Também pode acontecer que um pacote exigido pelo seu arquivo de LaTeX chama diretamente de comandos primitivos dependentes do dispositivo que não são suportados pelo mecanismo **Aspose.TeX** ** da biblioteca *Tex*. Infelizmente, esse pacote não funcionará com certeza.
+Também pode acontecer que um pacote exigido pelo seu arquivo de LaTeX chame diretamente comandos primitivos dependentes do dispositivo que não são suportados pelo mecanismo Object TeX da biblioteca Aspose.TeX. Infelizmente, esse pacote não funcionará com certeza.

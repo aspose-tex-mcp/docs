@@ -6,7 +6,7 @@ linktitle: So führen Sie die Beispiele aus
 weight: 80
 url: /java/how-to-run-the-examples/
 description: Auf dieser Seite finden Sie alle Anforderungen und Schritte, die zum Ausführen der Beispiele der Aspose.TeX-Lösung für Java erforderlich sind.
-lastmod: "2024-09-26"
+lastmod: "2026-04-21"
 ---
 
 {{<section overview>}}
@@ -17,7 +17,7 @@ Alle Beispiele von Aspose.TeX für Java werden auf GitHub gehostet. Sie können 
 
 Extrahieren Sie den Inhalt der ZIP-Datei in einen beliebigen Ordner auf Ihrem Computer. Alle Beispiele befinden sich im Beispielordner. Das Projekt verwendet das Maven-Build-System. Jede moderne IDE kann das Projekt und seine Abhängigkeiten problemlos öffnen oder importieren. Im Folgenden zeigen wir Ihnen, wie Sie gängige IDEs zum Erstellen und Ausführen der Beispiele verwenden.
 
-## IntelliJ-IDEE
+## IntelliJ IDEA
 
 Klicken Sie auf das Menü „Datei“ und wählen Sie „Öffnen“. Navigieren Sie zum Projektordner und wählen Sie die Datei pom.xml aus.
 
@@ -25,7 +25,7 @@ Das Projekt wird geöffnet und die Abhängigkeiten werden automatisch herunterge
 
 Um ein Beispiel auszuführen, klicken Sie einfach mit der rechten Maustaste auf die Datei und wählen Sie „Ausführen …“. Das Beispiel wird ausgeführt und die Ausgabe wird im integrierten Ausgabefenster der Konsole angezeigt.
 
-## Finsternis
+## Eclipse
 
 Klicken Sie auf das Menü „Datei“ und wählen Sie „Importieren“. Wählen Sie „Maven – Vorhandene Maven-Projekte“. Navigieren Sie zu dem Ordner, den Sie geklont oder von GitHub heruntergeladen haben, und wählen Sie die Datei pom.xml aus.
 

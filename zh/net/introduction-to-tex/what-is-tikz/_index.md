@@ -7,7 +7,7 @@ weight: 21
 url: /net/tikz-introduction/
 keywords: 什么是 TikZ, TikZ 介绍, TikZ 基础
 description: TikZ 介绍，强大的扩展，用于在 LaTeX 文档中创建高质量图形。
-lastmod: "2026-02-26"
+lastmod: "2026-04-22"
 aliases: /net/what-is-tikz/
 ---
 
@@ -47,12 +47,12 @@ TikZ（发音为“tik-zee”）全称是 “TikZ ist kein Zeichenprogramm”（
 
 下面是本系列关于 TikZ 主题的概览：
 
-1. [Installation and Basic Configuration](/tex/net/tikz-installation-and-basic-configuration/)  
-2. [Fundamentals of Using TikZ](/tex/net/tikz-fundamentals-of-using-tikz/)  
-3. [Advanced Features](/tex/net/tikz-advanced-features)  
-4. [TikZ for Scientific Publications](/tex/net/tikz-for-scientific-publications/)  
-5. [TikZ for Presentations and Infographics](/tex/net/tikz-for-presentations-and-infographics/)  
-6. [Best Practices and Tips](/tex/net/tikz-best-practices-and-tips/)  
+1. [安装和基本配置](/tex/net/tikz-installation-and-basic-configuration/)  
+2. [使用 TikZ 的基础知识](/tex/net/tikz-fundamentals-of-using-tikz/)  
+3. [高级功能](/tex/net/tikz-advanced-features)  
+4. [用于科学出版物的 TikZ](/tex/net/tikz-for-scientific-publications/)  
+5. [用于演示文稿和信息图表的 TikZ](/tex/net/tikz-for-presentations-and-infographics/)  
+6. [最佳实践和技巧](/tex/net/tikz-best-practices-and-tips/)  
 
 浏览这些文章，掌握使用 TikZ 创建专业质量图形的技巧。
 

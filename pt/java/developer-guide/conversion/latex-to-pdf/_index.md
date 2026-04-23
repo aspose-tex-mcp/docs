@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-java.md
 title: Látex para pdf | Java
@@ -7,7 +7,7 @@ weight: 11
 url: /java/latex-to-pdf/
 keywords: LATEX para PDF, LATEX PDF, Converta LATEX em PDF
 description: Para converter Tex para PDF usando a solução API Aspose.TeX para Java, aprenda este artigo para ver que descreve como fazer isso e os exemplos de código.
-lastmod: "2025-06-16"
+lastmod: "2026-04-21"
 ---
 
 {{<section overview>}}

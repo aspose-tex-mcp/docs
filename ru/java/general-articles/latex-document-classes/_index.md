@@ -44,9 +44,9 @@ LaTeX определяет некоторые правила, которым д�
 
 Главный вопрос в том, из чего состоит основная часть книги, начиная с первой главы или части и заканчивая приложениями. Передняя, ​​основная и задняя части начинаются с команд `\frontmatter`, `\mainmatter` и `\backmatter` соответственно.
 
-> In the standard book class, front matter pages are numbered with Roman numerals, while main and back matter pages are numbered with Arabic numerals.
+> В стандартном классе book, front matter pages are numbered with Roman numerals, while main and back matter pages are numbered with Arabic numerals.
 
-> The `\chapter` command doesn't produce a chapter number in the front and back matters, although it does create an entry in the table of contents. This is typically used to create a preface or acknowledgements section. Within such chapters, only the starred versions of other sectioning commands (like, `\section*` and `\subsection`) should be used.
+> Команда `\chapter` не создает номер главы in the front and back matters, although it does create an entry in the table of contents. This is typically used to create a preface or acknowledgements section. Within such chapters, only the starred versions of other sectioning commands (like, `\section*` and `\subsection`) should be used.
 
 ## Пример использования книжного класса LaTeX
 

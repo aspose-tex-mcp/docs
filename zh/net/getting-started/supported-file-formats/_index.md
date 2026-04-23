@@ -1,19 +1,19 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: 支持的文件格式| .NET的Aspose.TeX
 linktitle: 支持的文件格式
 weight: 20
 url: /net/supported-file-formats/
-description: 该.NET的TEX操纵解决方案支持用于输入的Tex文件以及TEX，XPS，PDF，PNG，JPEG，TIFF和PNG等各种输出格式。
-lastmod: "2025-06-10"
+description: 该.NET的TeX操纵解决方案支持用于输入的TeX文件以及XPS、PDF、PNG、JPEG、TIFF和BMP等各种输出格式。
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
 
 ## 支持的文件格式
 
-下表指示.net的aspose.tex的文件格式可以加载和保存。
+下表显示了 Aspose.TeX for .NET 可以加载和保存的文件格式。
 
 |**格式**|**描述**|**输入**|**输出**|**备注**|
 | :- | :- | :- | :- | :- |

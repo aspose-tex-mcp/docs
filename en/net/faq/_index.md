@@ -5,8 +5,8 @@ title: Frequently Asked Questions | Aspose.TeX for .NET
 linktitle: FAQ
 weight: 80
 url: /net/faq/
-description:  Get answers to all the most frequent questions about Aspose.TeX for .NET, which is a comprehensive API for typesetting and manipulation TeX and LaTeX.
-lastmod: "2024-09-20"
+description:  Get answers to all the most frequent questions about Aspose.TeX for .NET, which is a comprehensive API for typesetting and manipulating TeX and LaTeX.
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
@@ -32,7 +32,7 @@ lastmod: "2024-09-20"
 3. Initialize save options for the output format using the (file format)SaveOptions class.
 4. Convert TeX using the [Run()](https://reference.aspose.com/tex/net/aspose.tex/texjob/run/) method.
 
-For more examples, please visit [Convertion](/tex/{{lang.url-fragment}}net/conversion/) guides.
+For more examples, please visit [Conversion](/tex/{{lang.url-fragment}}net/conversion/) guides.
 <br><br>
 
 **Q: Which external LaTeX packages are supported by Aspose.TeX?**

@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: Látex a XPS | .NET
@@ -6,7 +6,7 @@ linktitle: Látex a XPS
 weight: 12
 url: /net/latex-to-xps/
 description: La funcionalidad de conversión de la solución API Aspose.TeX para .NET permite convertir archivos LaTeX al formato XPS.
-lastmod: "2026-04-03"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}

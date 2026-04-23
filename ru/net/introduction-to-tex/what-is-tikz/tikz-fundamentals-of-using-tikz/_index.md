@@ -7,7 +7,7 @@ weight: 19
 url: /net/tikz-fundamentals-of-using-tikz/
 keywords: основы tikz, основы tikz, руководство по tikz
 description: Изучите основные принципы и основные команды TikZ для создания графики для документов TeX и LaTeX.
-lastmod: "2025-06-29"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}

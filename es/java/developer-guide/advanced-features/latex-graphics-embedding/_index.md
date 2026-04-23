@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-java.md
 title: Gráficos integrados LaTeX | Aspose.TeX para Java
@@ -7,7 +7,7 @@ weight: 18
 url: /java/latex-graphics-embedding/
 keywords: includegraphics latex, gráficos base64 incrustados de LaTeX, gráficos codificados en base64 de LaTeX, write18, shell-escape, comando de shell de LaTeX
 description: Explore cómo inyectar imágenes codificadas en Base64 en el código fuente LaTeX y aprenda la función \write18 que lo hace posible.
-lastmod: "2024-10-30"
+lastmod: "2026-04-21"
 ---
 
 {{<section overview>}}
@@ -51,13 +51,14 @@ iVBORw0KGgoAAAANSUhEUgAAAPgAAABdCAYAAAH/B5vAAAAAGXRFWHRTb2Z0d2FyZQBBZ......
 ```
 
 ¡Aquí lo tienes! **El paso 2** está completo. ¡Hemos incrustado con éxito la imagen dentro del archivo LaTeX! ¿Pero qué pasará cuando ejecutemos la composición tipográfica de este archivo con LaTeX?"
+
 Un procesador LaTeX escribirá la cadena de caracteres del entorno en un archivo externo llamado `sample-image.64`. Debido a la opción "sobrescribir", el archivo se sobrescribirá si ya existe (por ejemplo, si se creó durante una ejecución anterior). ¡Así es como también se logra el **Paso 3**!
 
 ## Decodificando una cadena base64
 
 **El paso 4** de nuestro plan es donde entran en juego las diferencias en las implementaciones de TeX. La decodificación de una cadena de caracteres Base64 se realiza mediante algo más común conocido como función `\write18`.
 
-### `\escribir18`
+### `\write18`
 
 En los motores TeX clásicos, `\write<número>(<lista de tokens>)` es la primitiva utilizada para escribir una *lista de tokens*. Cuando se utiliza, esta primitiva va seguida de un número entero. Si el número entero es negativo, los tokens se escriben en el archivo de transcripción (registro). Si el número entero es mayor que "15", los tokens se envían al terminal. Si el número entero está dentro del rango de `0..15`, los tokens se escriben en un archivo cuyo nombre se especifica mediante una aparición anterior de la primitiva `\openout`. La primitiva `\openout<entero de 4 bits>=<nombre de archivo>` asocia un nombre de archivo con un número.
 
@@ -111,7 +112,7 @@ iVBORw0KGgoAAAANSUhEUgAAAPgAAABdCAYAAAH/B5vAAAAAGXRFWHRTb2Z0d2FyZQBBZ......
 
 Y el código Java que utiliza la API **Aspose.TeX** es similar a lo que se puede encontrar en otros artículos, con la excepción de especificar la opción del modo shell:
 
-{{< gist "aspose-com-gists""67385c777283964d328086603f691ac9""Aspose.TeX.Examples-Conversion-EmbeddedBase64EncodedImage.java" >}}
+{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Conversion-EmbeddedBase64EncodedImage.java" >}}
 
 Y ahora el **Paso 5** está completo. Para ver ejemplos verdaderamente completos, explore nuestro [Proyecto de ejemplo](https://github.com/aspose-tex/Aspose.TeX-for-Java).
 

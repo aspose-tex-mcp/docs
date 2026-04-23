@@ -5,8 +5,8 @@ title: Andere TeX-Konvertierungsausgabeformate | C++
 linktitle: Andere TeX-Formate
 weight: 18
 url: /cpp/other-tex-formats/
-description: Die Konvertierungsfunktion der Aspose.TeX-Lösung für C++ ermöglicht die Konvertierung von LaTeX-Dateien und Ihren eigenen benutzerdefinierten TeX-Dateien.
-lastmod: "2024-09-26"
+description: Die Konvertierungsfunktion der Aspose.TeX-Lösung für C++ ermöglicht die Konvertierung von LaTeX-Dateien und Ihren eigenen benutzerdefinierten TeX-Dateien. Hier sind einige Codebeispiele.
+lastmod: "2026-04-20"
 ---
 
 {{<section overview>}}

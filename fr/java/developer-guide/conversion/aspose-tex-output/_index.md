@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-java.md
 title: Interface de sortie d'Aspose.TeX | Java
@@ -6,7 +6,7 @@ linktitle: Interface de sortie d'Aspose.TeX
 weight: 16
 url: /java/aspose-tex-output/
 description: De conversion de la solution API Aspose.TeX pour Java avec TeX, en tant que format de sortie, est expliquée ici avec les exemples de code.
-lastmod: "2024-09-27"
+lastmod: "2026-04-21"
 ---
 
 {{<section overview>}}
@@ -23,7 +23,7 @@ Comme nous l'avons mentionné [ci-dessus](/tex/{{lang.url-fragment}}/java/conver
 
 Voici comment nous le définirions :
 
-{{< gist "aspose-com-gists""67385c777283964d328086603f691ac9""Aspose.TeX.Examples-Conversion-OutputFileSystemDirectory.java" >}}
+{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Conversion-OutputFileSystemDirectory.java" >}}
 
 Ce cas d'utilisation est assez simple, nous ne nous y attarderons donc pas longtemps.
 
@@ -31,7 +31,7 @@ Ce cas d'utilisation est assez simple, nous ne nous y attarderons donc pas longt
 
 Nous pouvons également créer un fichier (ou un flux) et laisser le moteur TeX l'utiliser comme archive ZIP pour stocker les fichiers de sortie. C'est ici:
 
-{{< gist "aspose-com-gists""67385c777283964d328086603f691ac9""Aspose.TeX.Examples-Conversion-OutputZipDirectory.java" >}}
+{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Conversion-OutputZipDirectory.java" >}}
 
 Tout d'abord, nous créons un flux de sortie pour le fichier ZIP. Ensuite, après avoir créé les options de conversion, nous définissons l'option [OutputWorkingDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/TeXOptions#getOutputWorkingDirectory--) comme étant une instance de la classe [OutputZipDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/OutputZipDirectory).
 
@@ -43,7 +43,7 @@ Il y a une autre partie importante de la sortie : la sortie du terminal. Quant �
 
 Pour ce faire, nous devons définir l'option [TerminalOut](https://reference.aspose.com/tex/java/com.aspose.tex/TeXOptions#getTerminalOut--) pour qu'elle soit une instance de la classe [OutputConsoleTerminal](https://reference.aspose.com/tex/java/com.aspose.tex/OutputConsoleTerminal).
 
-{{< gist "aspose-com-gists""67385c777283964d328086603f691ac9""Aspose.TeX.Examples-Conversion-OutputConsoleTerminal.java" >}}
+{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Conversion-OutputConsoleTerminal.java" >}}
 
 Encore une fois, il s’agit de la valeur par défaut de l’option, il n’est donc pas vraiment nécessaire de la spécifier. Pour cette raison, cette section sert uniquement à des fins de démonstration.
 
@@ -51,6 +51,6 @@ Encore une fois, il s’agit de la valeur par défaut de l’option, il n’est 
 
 Contrairement au terminal d'entrée, **Aspose.TeX pour Java** fournit une implémentation de [IOutputTerminal](https://reference.aspose.com/tex/java/com.aspose.tex/IOutputTerminal), qui nous permet d'écrire la sortie du terminal dans un fichier dans un répertoire de sortie.
 
-{{< gist "aspose-com-gists""67385c777283964d328086603f691ac9""Aspose.TeX.Examples-Conversion-OutputFileTerminal.java" >}} 
+{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Conversion-OutputFileTerminal.java" >}} 
 
 Ici, nous demandons au moteur TeX d'écrire la sortie du terminal dans le fichier portant le nom [<job_name>](/tex/{{lang.url-fragment}}net/tex-io/#tex-output).trm, qui sera stocké dans le même répertoire de sortie que celui que nous avons spécifié pour le reste de la sortie. Mais ce n'est pas nécessaire. Nous pourrions aussi bien transmettre toute autre instance de toute implémentation de [IOutputTerminal](https://reference.aspose.com/tex/java/com.aspose.tex/IOutputTerminal) au constructeur.

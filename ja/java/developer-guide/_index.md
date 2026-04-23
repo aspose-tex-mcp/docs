@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-java.md
 title: 開発者ガイド| Java用のAspose.TeX
@@ -6,7 +6,7 @@ linktitle: 開発者ガイド
 weight: 20
 url: /java/developer-guide/
 description: この章では、開発者へのJava用のAspose.TeX APIソリューションの機能について説明し、TEXの管理方法に関するコード例を提供します。
-lastmod: "2025-06-09"
+lastmod: "2026-04-21"
 ---
 
 {{<section overview>}}
@@ -31,4 +31,4 @@ Developer Guideは、Java APIソリューション用のAspose.TeXを効果的�
 - [**Texの紹介**](/tex/{{lang.url-fragment}}net/introduction-to-tex/)。 - この章が追加されているため、TexとLaTexに慣れることができます。そこでは、それらの特性、ファイル構造、長所と短所、埋め込まれたパッケージなどを理解できます。
 - [**ラテックスの一般的な記事**](/tex/{{lang.url-fragment}}java/general-articles-latex/) - ユースケースに関する情報、フォント、画像、数式、さまざまなラテックスパッケージに関する情報を含む、ラテックスに関する基本情報を提供します。
 - [**Aspose.TeX Cross -Platform Apps**](https://products.aspose.app/tex/applications) - 変換、マージ、TexおよびLaTexファイルの表示、コーディングせずにラテックス方程式、テーブル、グラフ、記事を作成し、独自のアプリケーションを開発する方法を理解してください。
-- [**Aspose.TeX aiエージェント**](https://products.aspose.ai/tex/) - `.tex`および `.latex`ファイル操作用に作成された人工知能ツール。
+- [**Aspose.TeX AI Agents**](https://products.aspose.ai/tex/) - `.tex`および `.latex`ファイル操作用に作成された人工知能ツール。

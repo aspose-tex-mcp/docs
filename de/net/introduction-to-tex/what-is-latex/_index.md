@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: Was ist LaTeX?
@@ -7,7 +7,7 @@ weight: 16
 url: /net/what-is-latex/
 keywords: Was ist Latex, Latex was ist das?
 description: Zur Beantwortung der Frage „Was ist LaTeX?“ Es ist erwähnenswert, dass eines der beeindruckendsten Features das New Font Selection Scheme (NFSS) ist.
-lastmod: "2024-09-26"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
@@ -16,7 +16,7 @@ Was ist LaTeX?
 
 Kurz gesagt ist LaTeX das [TeX](/tex/{{lang.url-fragment}}net/what-is-tex/)-Format.
 
-LaTeX (*LAH-tekh oder LAY-tekh*, oft stilisiert als LATEX) ist ein Softwaresystem zur Dokumentenvorbereitung, das ursprünglich in den frühen 1980er Jahren von <a href="https://en.wikipedia.org/wiki/ geschrieben wurde. Leslie_Lamport" target=_blank rel="nofollow">Leslie Lamport</a> bei <a href="https://en.wikipedia.org/wiki/SRI_International" target=_blank rel="nofollow">SRI International</a>. Das sagt <a href="https://en.wikipedia.org/wiki/LaTeX" target=_blank rel="nofollow">Wikipedia</a>.
+LaTeX (*LAH-tekh oder LAY-tekh*, oft stilisiert als LATEX) ist ein Softwaresystem zur Dokumentenvorbereitung, das ursprünglich in den frühen 1980er Jahren von <a href="https://en.wikipedia.org/wiki/Leslie_Lamport" target=_blank rel="nofollow">Leslie Lamport</a> bei <a href="https://en.wikipedia.org/wiki/SRI_International" target=_blank rel="nofollow">SRI International</a>. Das sagt <a href="https://en.wikipedia.org/wiki/LaTeX" target=_blank rel="nofollow">Wikipedia</a>.
 
 Beantwortung der Frage „Was ist LaTeX?“ Wir möchten einige seiner Funktionen erwähnen.
 

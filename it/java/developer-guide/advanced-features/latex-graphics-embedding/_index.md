@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-java.md
 title: Grafica incorporata in LaTeX | Java
@@ -7,7 +7,7 @@ weight: 18
 url: /java/latex-graphics-embedding/
 keywords: Includegraphics Latex, LaTeX incorporato grafico Base64, LaTeX base64 grafica codificata, write18, shell-escape, comando shell latex
 description: In questo articolo, esplorerai come iniettare immagini codificate da Base64 nel codice sorgente in LaTeX e imparerai la funzione \ write18 che lo rende possibile.
-lastmod: "2025-06-13"
+lastmod: "2026-04-21"
 ---
 
 {{<section overview>}}
@@ -51,6 +51,7 @@ iVBORw0KGgoAAAANSUhEUgAAAPgAAABdCAYAAAH/B5vAAAAAGXRFWHRTb2Z0d2FyZQBBZ......
 ```
 
 Ecco qui! **Passaggio 2** è completo. Abbiamo incorporato con successo l'immagine all'interno del file LaTex! Ma cosa succederà quando eseguirà la composizione di questo file con LaTeX? "
+
 Un processore in LaTeX scriverà la stringa di caratteri dall'ambiente a un file esterno chiamato `campione-immagine.64`. A causa dell'opzione `Overwrite`, il file verrà sovrascritto se esiste già (ad esempio, se è stato creato durante una esecuzione precedente). Ecco come viene realizzato anche il passaggio 3 **!
 
 ## Decodifica una stringa di base64
@@ -59,7 +60,7 @@ Un processore in LaTeX scriverà la stringa di caratteri dall'ambiente a un file
 
 ### `\write18`
 
-Nei motori Classic Tex, `\write <number> (<token list>)` è la primitiva usata per scrivere un *elenco di token *. Se usato, questo primitivo è seguito da un numero intero. Se l'intero è negativo, i token vengono scritti nel file Transcript (log). Se l'intero è maggiore di `15`, i token vengono inviati al terminale. Se l'intero rientra nell'intervallo di `0..15`, i token sono scritti in un file il cui nome è specificato da un precedente verificarsi della primitiva`\Openout`. `\Open <Integer a 4 bit> = <nome file>` primitivo associa un nome file con un numero.
+Nei motori Classic Tex, `\write<number>(<token list>)` è la primitiva usata per scrivere un *elenco di token*. Se usato, questo primitivo è seguito da un numero intero. Se l'intero è negativo, i token vengono scritti nel file Transcript (log). Se l'intero è maggiore di `15`, i token vengono inviati al terminale. Se l'intero rientra nell'intervallo di `0..15`, i token sono scritti in un file il cui nome è specificato da un precedente verificarsi della primitiva `\openout`. La primitiva `\openout<4-bit integer>=<file name>` associa un nome file con un numero.
 
 Le nuove implementazioni Tex, come PDF Tex, consentono l'uso di `\write18`. In questo caso, interpretano l'elenco `<token>` come riga di comando da eseguire nella shell del sistema operativo. Poiché questa funzione ovviamente rappresenta un potenziale rischio per la sicurezza, potresti percepire un pizzico di mistero ogni volta che si fa riferimento nella documentazione relativa a Tex o su Internet. Per questo motivo, gli esecutibili TEX/latex PDF offrono opzioni di comando per controllare ACESS a questa funzione.
 

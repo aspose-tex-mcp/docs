@@ -6,14 +6,14 @@ title: Como executar os exemplos | Aspose.TeX for Python via .NET
 weight: 80
 url: /python-net/how-to-run-the-examples/
 description: Esta página fornece todos os requisitos e etapas necessários para executar os exemplos da solução Aspose.TeX para Python.
-lastmod: "2025-06-16"
+lastmod: "2026-04-20"
 ---
 
 {{<section overview>}}
 
 ## Pré -requisitos
 
-Antes de prosseguir, verifique se a pasta `asposit.tex -...`aparece na pasta `[python_path] \lib \site-packages \`após a instalação do pacote Aspose.TeX. Se você tiver o Python 3.11 instalado, Aspose.TeX pode ser instalado na pasta `[python_path] \site-packages \`. Nesse caso, você deve copiar a pasta Aspose.TeX para a pasta `[python_path] \lib \site-packages \`, como **PyCharm** (pelo menos a versão 23.1) procura pacotes instalados exatamente nesse local.
+Antes de prosseguir, verifique se a pasta `Aspose.TeX-...` aparece na pasta `[python_path] \lib \site-packages \`após a instalação do pacote Aspose.TeX. Se você tiver o Python 3.11 instalado, Aspose.TeX pode ser instalado na pasta `[python_path] \site-packages \`. Nesse caso, você deve copiar a pasta Aspose.TeX para a pasta `[python_path] \lib \site-packages \`, como **PyCharm** (pelo menos a versão 23.1) procura pacotes instalados exatamente nesse local.
 
 ## Download do github
 
@@ -33,7 +33,7 @@ Certifique -se de que o recurso **Python Development** esteja instalado no Visua
 
 Para executar exemplos, basta clicar no botão ***run_examples.py*** com a seta verde na barra de ferramentas na janela do Visual Studio.
 
-## Contribuir para aspose.tex para python
+## Contribuir para Aspose.TeX para Python
 
 Se você deseja contribuir para o projeto, adicionando ou melhorando um exemplo, recomendamos que você o faça. Todos os exemplos e projetos de exibição neste repositório são de código aberto e podem ser usados ​​livremente em seus aplicativos.
 

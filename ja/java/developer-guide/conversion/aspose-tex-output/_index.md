@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-java.md
 title: Aspose.TeXの出力インターフェイス| Java
@@ -6,7 +6,7 @@ linktitle: Aspose.TeXの出力インターフェイス
 weight: 16
 url: /java/aspose-tex-output/
 description: Aspose.TeX APIソリューションの変換機能TEXを使用したJavaのAPIソリューションは、ここではコードの例で説明されています。
-lastmod: "2025-06-09"
+lastmod: "2026-04-21"
 ---
 
 {{<section overview>}}

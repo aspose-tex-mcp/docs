@@ -1,12 +1,12 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: Panoramica del prodotto | Aspose.TeX per .NET
 linktitle: Panoramica del prodotto
 weight: 10
 url: /net/product-overview/
-description: Aspose.TeX è una libreria .NET per la composizione dei file tex. Ti fornisce la ricca funzionalità come la conversione o la creazione del tuo formato tex.
-lastmod: "2025-06-13"
+description: Aspose.TeX è una libreria .NET per la composizione dei file TeX. Ti fornisce la ricca funzionalità come la conversione o la creazione del tuo formato TeX.
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
@@ -17,13 +17,13 @@ lastmod: "2025-06-13"
 
 **Benvenuti su Aspose.TeX per .NET**
 
-Aspose.TeX è una libreria .NET per la composizione dei file tex. Può presentare file TEX in vari formati grafici come XPS, PDF, PNG, JPEG, TIFF e BMP. Output anche le informazioni di tracciamento come fa qualsiasi altro motore Tex. L'API fornisce vari modi per alimentare l'input e l'output. E, come caratteristica avanzata, ti consente di creare il tuo formato tex se si desidera scrivere una serie di documenti progettati in modo uniforme.
+Aspose.TeX è una libreria .NET per la composizione dei file TeX. Può presentare file TeX in vari formati grafici come XPS, PDF, PNG, JPEG, TIFF e BMP. Output anche le informazioni di tracciamento come fa qualsiasi altro motore TeX. L'API fornisce vari modi per alimentare l'input e l'output. E, come caratteristica avanzata, ti consente di creare il tuo formato TeX se si desidera scrivere una serie di documenti progettati in modo uniforme.
 
 {{% /alert %}}
 
 ## Supporto tecnico
 
-Aspone fornisce supporto tecnico gratuito illimitato per tutti i suoi prodotti. Il supporto è disponibile per tutti gli utenti, inclusa la valutazione.
+Aspose fornisce supporto tecnico gratuito illimitato per tutti i suoi prodotti. Il supporto è disponibile per tutti gli utenti, inclusa la valutazione.
 
 Se hai bisogno di aiuto con Aspose.TeX per .NET, [**Visita l'Aspose.Forums**](https://forum.aspose.com/). Pubblica la tua domanda in Aspose.TeX per il forum .NET e riceverà una risposta entro poche ore. Le domande vengono risposte direttamente da Aspose.TeX per il team di supporto .NET.
 
@@ -38,7 +38,7 @@ Se hai un problema con Aspose.TeX per .NET, segui questi semplici passaggi per a
 
 ## Risorse
 
-Questa tabella elenca l'importante ASPUTI.Tex per le risorse tecniche .NET.
+Questa tabella elenca le importanti risorse tecniche Aspose.TeX per .NET.
 
 |**Risorsa**|**Descrizione**|
 | :- | :- |

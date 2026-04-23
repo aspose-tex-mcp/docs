@@ -6,7 +6,7 @@ linktitle: FAQ
 weight: 80
 url: /net/faq/
 description: Ottieni risposte alle domande più frequenti su Aspose.TeX per .NET, un'API completa per la composizione e la manipolazione di TeX e LaTeX.
-lastmod: "2024-09-20"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}

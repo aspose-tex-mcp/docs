@@ -5,8 +5,8 @@ title: Asspose.Tex's Input Interface | C++
 linktitle: Aspose.TeX's Input Interface
 weight: 15
 url: /cpp/aspose-tex-input/
-description: Funzionalità di conversione della soluzione API ASPUS.TEX per C ++ con Tex, poiché un formato di input è spiegato qui con gli esempi di codice.
-lastmod: "2025-06-13"
+description: Funzionalità di conversione della soluzione API Aspose.TeX per C++ con Tex, come formato di input, è spiegata qui con gli esempi di codice.
+lastmod: "2026-04-20"
 ---
 
 {{<section overview>}}

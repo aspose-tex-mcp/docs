@@ -6,7 +6,7 @@ linktitle: Formule matematiche in LaTeX rendering
 weight: 10
 url: /cpp/latex-math-formula-rendering/
 description: Soluzione API Aspose.TeX per le formule di matematica C ++ Latex è descritta in questo articolo. Qui troverai esempi di codice della funzionalità.
-lastmod: "2025-06-13"
+lastmod: "2026-04-20"
 ---
 
 {{<section overview>}}
@@ -16,7 +16,7 @@ La sezione di riferimento API relativa a questo argomento è [qui](https://refer
 ```C++
     // Create rendering options 
     System::SharedPtr<PngMathRendererOptions> options = System::MakeObject<PngMathRendererOptions>();
-    // Sspecify the image resolution 150 dpi
+    // Specify the image resolution 150 dpi
     options->set_Resolution(150);
     // Specify the preamble.
     options->set_Preamble(u"\\usepackage{amsmath}\r\n\\usepackage{amsfonts}\r\n\\usepackage{amssymb}\r\n\\usepackage{color}");

@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-java.md
 title: Aspose.TeX 用 Java ドキュメント
@@ -7,7 +7,7 @@ weight: 20
 url: /java/
 description: JavaのAPIソリューション内のTEXファイルを管理します。ライブラリは、TEX入力を渡し、出力を取得する方法と独自のTex形式の作成などの機能を提供します
 is_root: true
-lastmod: "2025-06-09"
+lastmod: "2026-04-21"
 ---
 
 {{<section overview>}}
@@ -39,4 +39,5 @@ Aspose.TeXは、Tex Files TaptingのJavaライブラリです。 XPS、PDF、PNG
 {{% alert color="primary" %}}
 
 また、新しいAI駆動型[**Aspose.TeX AI Agents**](https://products.aspose.ai/tex/) - `.tex`および `.latex`形式で作業する人に役立つツールを試してみてください。
+
 {{% /alert %}}

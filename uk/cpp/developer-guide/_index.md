@@ -6,7 +6,7 @@ linktitle: Керівництво розробника
 weight: 20
 url: /cpp/developer-guide/
 description: C++ API для розробників для обробки та обробки файлів TeX і LaTeX. Ознайомтеся з посібником розробника, як працювати з рішенням.
-lastmod: "2025-06-13"
+lastmod: "2026-04-20"
 ---
 
 {{<section overview>}}

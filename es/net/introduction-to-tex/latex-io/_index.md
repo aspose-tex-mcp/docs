@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: Entrada/salida de LaTeX
@@ -7,7 +7,7 @@ weight: 17
 url: /net/latex-io/
 description: Esta página describe las peculiaridades de trabajar con LaTeX como formato de entrada o salida y el archivo *.aux* como parte obligatoria de LaTeX.
 keywords: LaTeX io, LaTeX i, LaTeX o, archivo de entrada de LaTeX, entrada en LaTeX
-lastmod: "2024-10-30"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}

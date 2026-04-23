@@ -7,7 +7,7 @@ weight: 19
 url: /net/tikz-fundamentals-of-using-tikz/
 keywords: основи tikz, основи tikz, навчальний посібник з tikz
 description: Дослідіть фундаментальні принципи та основні команди TikZ для створення графіки для ваших документів TeX та LaTeX.
-lastmod: "2025-06-29"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}

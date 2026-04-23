@@ -1,48 +1,48 @@
 ---
 translation: true
 template: /templates/_template-net.md
-title: Installation et configuration de base | Aspose.TeX .NET
-linktitle: Installation et configuration
+title: Installazione e configurazione di base | Aspose.TeX .NET
+linktitle: Installazione e configurazione
 weight: 18
 url: /net/tikz-installation-and-basic-configuration/
-keywords: installer tikz, configurer tikz, installer tikz
-description: Guide étape par étape pour installer et configurer TikZ pour une utilisation dans vos documents TeX et LaTeX.
-lastmod: "2025-06-29"
+keywords: installare tikz, configurare tikz, setup tikz
+description: Guida passo-passo su come installare e configurare TikZ per l'uso nei tuoi documenti TeX e LaTeX.
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
 
-Ce chapitre décrit l'installation et la configuration de base de l'extension TikZ pour TeX et LaTeX. Nous vous fournirons des instructions claires et détaillées pour vous aider à démarrer rapidement avec la création graphique avec TikZ.
+Questo capitolo descrive l'installazione e la configurazione di base dell'estensione TikZ per TeX e LaTeX. Forniremo istruzioni chiare e dettagliate per aiutarti a iniziare rapidamente con la creazione di grafiche utilizzando TikZ.
 
-## Installation de TikZ
+## Installazione di TikZ
 
-TikZ est préinstallé avec les distributions TeX les plus populaires, telles que **TeX Live** et **MiKTeX**. Si vous utilisez ces distributions, TikZ est probablement déjà installé. Sinon, suivez ces instructions :
+TikZ viene preinstallato con le distribuzioni TeX più popolari, come **TeX Live** e **MiKTeX**. Se utilizzi queste distribuzioni, TikZ è probabilmente già installato. In caso contrario, segui queste istruzioni:
 
-### Utilisateurs de TeX Live
+### Utenti TeX Live
 
-1. Ouvrez le gestionnaire TeX Live (`tlmgr`).
-2. Mettez à jour la liste des paquets :
+1. Apri il gestore TeX Live (`tlmgr`).
+2. Aggiorna l'elenco dei pacchetti:
 
    ```bash
    tlmgr update --self --all
    ```
 
-3. Installez TikZ (partie du package `pgf`) :
+3. Installa TikZ (parte del pacchetto `pgf`):
 
    ```bash
    tlmgr install pgf
    ```
 
-### Utilisateurs MiKTeX
+### Utenti MiKTeX
 
-1. Ouvrez la console MiKTeX.
-2. Accédez à l'onglet **Packages**.
-3. Saisissez « pgf » dans la barre de recherche.
-4. Sélectionnez et installez le paquet « pgf » s'il n'est pas déjà installé.
+1. Apri la console MiKTeX.
+2. Vai alla scheda **Packages**.
+3. Inserisci `pgf` nella barra di ricerca.
+4. Seleziona e installa il pacchetto `pgf` se non è già installato.
 
-## Vérification de l'installation
+## Verifica dell'installazione
 
-Vous pouvez vérifier la réussite de l'installation de TikZ avec ce document de test simple :
+Puoi verificare il successo dell'installazione di TikZ con questo semplice documento di prova:
 
 ```tex
 \documentclass{article}
@@ -50,7 +50,7 @@ Vous pouvez vérifier la réussite de l'installation de TikZ avec ce document de
 
 \begin{document}
 
-Test de TikZ :
+Test di TikZ:
 
 \begin{tikzpicture}
   \draw (0,0) rectangle (2,1);
@@ -59,19 +59,19 @@ Test de TikZ :
 \end{document}
 ```
 
-Compilez ce document avec « pdflatex » ou tout autre éditeur compatible LaTeX (comme TeXworks ou Overleaf). Vous devriez voir un petit rectangle dans le PDF obtenu.
+Compila questo documento con `pdflatex` o qualsiasi altro editor compatibile con LaTeX (come TeXworks o Overleaf). Dovresti vedere un piccolo rettangolo nel PDF ottenuto.
 
-## Configuration de base de TikZ
+## Configurazione di base di TikZ
 
-TikZ nécessite une configuration minimale. Vous pouvez cependant définir des options globales pour contrôler le comportement des graphiques :
+TikZ richiede una configurazione minima. Tuttavia, puoi definire opzioni globali per controllare il comportamento delle grafiche:
 
-- **Mise à l'échelle globale des graphiques** :
+- **Ridimensionare le grafiche globalmente**:
 
   ```tex
   \tikzset{every picture/.style={scale=1.5}}
   ```
 
-- **Définir les couleurs et les styles de ligne par défaut** :
+- **Impostare colori e stili di linea predefiniti**:
 
   ```tex
   \tikzset{
@@ -80,20 +80,20 @@ TikZ nécessite une configuration minimale. Vous pouvez cependant définir des o
   }
   ```
 
-Incluez ces commandes dans le préambule de votre document pour un style cohérent.
+Includi questi comandi nel preambolo del tuo documento per uno stile coerente.
 
-## Éditeurs recommandés pour TikZ
+## Editor consigliati per TikZ
 
-Pour une édition confortable et une compilation en temps réel, nous recommandons les éditeurs LaTeX suivants :
+Per un editing confortevole e una compilazione in tempo reale, consigliamo i seguenti editor LaTeX:
 
-- **TeXstudio** – Éditeur gratuit et riche en fonctionnalités avec aperçu TikZ intégré.
-- **Overleaf** – Éditeur collaboratif basé sur le cloud avec une excellente prise en charge de TikZ.
-- **Visual Studio Code** avec l'extension **LaTeX Workshop** – Éditeur moderne et léger prenant en charge TikZ.
+- **TeXstudio** – Editor gratuito e ricco di funzionalità con anteprima TikZ integrata.
+- **Overleaf** – Editor collaborativo basato su cloud con un eccellente supporto per TikZ.
+- **Visual Studio Code** con l'estensione **LaTeX Workshop** – Editor moderno e leggero con supporto per TikZ.
 
-Choisissez un éditeur en fonction de vos préférences et de vos exigences en matière de flux de travail.
+Scegli un editor in base alle tue preferenze e alle tue esigenze di flusso di lavoro.
 
 ---
 
-En suivant ces instructions, vous aurez configuré TikZ avec succès et serez prêt à créer de superbes graphismes pour vos documents TeX et LaTeX.
+Seguendo queste istruzioni, avrai configurato TikZ con successo e sarai pronto a creare splendide grafiche per i tuoi documenti TeX e LaTeX.
 
-**De plus, explorez notre [application Web](https://products.aspose.app/tex/conversion/latex/) gratuite basée sur [l'API Aspose.TeX pour .NET](https://products.aspose.com/tex/net/) pour des conversions TeX rapides et faciles.**
+**Inoltre, scopri la nostra applicazione web gratuita basata sull'[API Aspose.TeX per .NET](https://products.aspose.com/tex/net/) per conversioni TeX rapide e facili.**

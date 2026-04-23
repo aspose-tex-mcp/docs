@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-java.md
 title: LaTeX all'immagine | Java
@@ -7,7 +7,7 @@ weight: 10
 url: /java/latex-to-image/
 keywords: LaTeX a PNG, LaTeX PNG, LaTeX all'immagine, Image Latex, LaTeX a JPG, LaTeX JPG, LaTeX a JPEG, LaTeX JPEG, LaTeX a TIFF, LaTeX Tiff, LaTeX a BMP, LaTeX BMP
 description: Per convertire i formati di TEX in immagine usando la soluzione API Aspose.TeX per Java Impara questo articolo che descrive come fare questo e gli esempi di codice.
-lastmod: "2025-06-13"
+lastmod: "2026-04-21"
 ---
 
 {{<section overview>}}

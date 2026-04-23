@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 linktitle: Aspose.TeX для .NET
@@ -7,7 +7,7 @@ weight: 10
 url: /net/
 description: Керуйте файлами TeX у рішенні API для C# .NET. Бібліотека надає способи передавати вхідні дані TeX і отримувати вихідні дані та додаткові функції.
 is_root: true
-lastmod: "2025-06-13"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}

@@ -6,7 +6,7 @@ title: Aspose.TeX and Object TeX
 weight: 11
 url: /net/aspose-tex-and-object-tex/
 description: TeX is an input and output format of this API solution so here we go with explaining the Object TeX and how it is transformed into a target format.
-lastmod: "2024-09-20"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}

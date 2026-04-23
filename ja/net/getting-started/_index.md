@@ -6,7 +6,7 @@ linktitle: はじめに
 weight: 20
 url: /net/getting-started/
 description: 開発者がTeXおよびLaTeXファイルを操作・処理するためのC# .NET API。ソリューションを使い始めるための基礎を学びましょう。
-lastmod: "2025-06-09"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
@@ -41,7 +41,7 @@ Aspose.TeXは、当社のエコシステムで提供されている[TeXおよび
 
 {{% /alert %}} 
 
-[開発者ガイド](/tex/{{lang.url-fragment}}net/developer-guide/)は、APIの機能を最大限に活用するための包括的な洞察と実践的なガイダンスを提供する頼りになるリソースです。豊富な実践的な例と一般的なユースケースを示すコードスニペットが用意されており、Aspose.Page Python APIを実際のシナリオで効果的に活用できるようになります。
+[開発者ガイド](/tex/{{lang.url-fragment}}net/developer-guide/)は、APIの機能を最大限に活用するための包括的な洞察と実践的なガイダンスを提供する頼りになるリソースです。豊富な実践的な例と一般的なユースケースを示すコードスニペットが用意されており、Aspose.TeX for .NETを実際のシナリオで効果的に活用できるようになります。
 
 {{% alert color="primary" %}} 
 

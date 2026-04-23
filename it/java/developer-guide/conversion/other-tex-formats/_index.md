@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-java.md
 title: Altri formati di output di conversione Tex | Java
@@ -6,7 +6,7 @@ linktitle: Altri formati di Tex
 weight: 18
 url: /java/other-tex-formats/
 description: La funzionalità di conversione della soluzione API Aspose.TeX per Java consente di convertire i file in LaTeX e i tuoi file TEX personalizzati. Ecco alcuni esempi di codice.
-lastmod: "2025-06-13"
+lastmod: "2026-04-21"
 ---
 
 {{<section overview>}}

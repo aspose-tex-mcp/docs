@@ -8,7 +8,7 @@ weight: 100
 url: /net/latex-templates/
 description: Learn what LaTeX templates are, how to use and create them, where to download the most popular ones, and a fast workflow with ready‑to‑copy snippets.
 keywords: LaTeX, template, class, style, Overleaf, CTAN, bibliography, Beamer, thesis, CV
-lastmod: "2025-12-03"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}

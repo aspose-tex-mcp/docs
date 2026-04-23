@@ -6,7 +6,7 @@ linktitle: Panoramica del prodotto
 weight: 10
 url: /cpp/product-overview/
 description: Aspose.Tex è una libreria C ++ per la composizione dei file tex. Ti fornisce la ricca funzionalità come la conversione o la creazione del tuo formato tex.
-lastmod: "2025-06-13"
+lastmod: "2026-04-20"
 ---
 
 {{<section overview>}}

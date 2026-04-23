@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-java.md
 title: Візуалізація фігур LaTeX | Aspose.TeX для Java
@@ -6,7 +6,7 @@ linktitle: Рендеринг фігур LaTeX
 weight: 20
 url: /java/latex-figure-rendering/
 description: У цій статті описано рішення Aspose.TeX API для відтворення фрагментів (фігур) Java LaTeX. Ознайомтеся з прикладами коду, як використовувати цю функцію.
-lastmod: "2025-06-13"
+lastmod: "2026-04-21"
 ---
 
 {{<section overview>}}
@@ -17,7 +17,7 @@ lastmod: "2025-06-13"
 
 Як і у випадку з відтворенням формул, ми почнемо з прикладу. Ось воно:
 
-{{< gist "aspose-com-gists""67385c777283964d328086603f691ac9""Aspose.TeX.Examples-Features-PngLaTeXFigureRendering.java" >}}
+{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Features-PngLaTeXFigureRendering.java" >}}
 
 Перш за все, ми створюємо екземпляр [параметри візуалізації](https://reference.aspose.com/tex/java/com.aspose.tex/PngFigureRendererOptions). Ми робимо це тут разом із визначенням роздільної здатності вихідного зображення.
 
@@ -53,7 +53,7 @@ lastmod: "2025-06-13"
 
 Приблизно так само ми можемо відобразити фігуру LaTeX у форматі SVG.
 
-{{< gist "aspose-com-gists""67385c777283964d328086603f691ac9""Aspose.TeX.Examples-Features-SvgLaTeXFigureRendering.java" >}}
+{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Features-SvgLaTeXFigureRendering.java" >}}
 
 Відмінності:
 

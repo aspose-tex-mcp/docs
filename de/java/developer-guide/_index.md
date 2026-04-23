@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-java.md
 title: Entwicklerhandbuch | Aspose.TeX für Java
@@ -6,7 +6,7 @@ linktitle: Entwicklerhandbuch
 weight: 20
 url: /java/developer-guide/
 description: Dieses Kapitel erklärt Entwicklern die Funktionalität der Aspose.TeX-API für Java und stellt ihnen Codebeispiele zur Verwaltung von TeX zur Verfügung.
-lastmod: "2024-09-26"
+lastmod: "2026-04-21"
 ---
 
 {{<section overview>}}
@@ -30,6 +30,6 @@ Das Entwicklerhandbuch dient als umfassende Ressource für die effektive Nutzung
 - [**Updates und Versionierung**](https://releases.aspose.com/tex/java/release-notes/) – enthält die Veröffentlichungen von Aspose.TeX für Java API Solution chronologisch unterteilt.
 - [**Einführung in TeX**](/tex/{{lang.url-fragment}}net/introduction-to-tex/). - Dieses Kapitel wurde hinzugefügt, damit Sie sich mit TeX und LaTeX vertraut machen können. Dort können Sie deren Besonderheiten, Dateistruktur, Vor- und Nachteile, eingebettete Pakete und vieles mehr verstehen.
 - [**Allgemeine Artikel zu LaTeX**](/tex/{{lang.url-fragment}}java/general-articles-latex/) – Bietet Ihnen grundlegende Informationen zu LaTeX, einschließlich Informationen zu Anwendungsfällen, zur Arbeit mit Schriftarten, Bildern, mathematischen Formeln und verschiedenen LaTeX-Paketen.
-- [**Plattformübergreifende Aspose.Page-Apps**](https://products.aspose.app/tex/applications) – Konvertieren, Zusammenführen, Anzeigen von TeX- und LaTeX-Dateien, Erstellen von LaTeX-Gleichungen, Tabellen, Diagrammen und Artikeln ohne Codierung und Ihnen ein Verständnis dafür vermitteln, wie Sie entwickeln können Ihre eigenen Anwendungen.
+- [**Plattformübergreifende Aspose.TeX-Apps**](https://products.aspose.app/tex/applications) – Konvertieren, Zusammenführen, Anzeigen von TeX- und LaTeX-Dateien, Erstellen von LaTeX-Gleichungen, Tabellen, Diagrammen und Artikeln ohne Codierung und Ihnen ein Verständnis dafür vermitteln, wie Sie entwickeln können Ihre eigenen Anwendungen.
 - [**Aspose.TeX AI Agents**](https://products.aspose.ai/tex/) - Künstliche Intelligenz-Tools zur Bearbeitung von `.tex`- und `.latex`-Dateien.
 

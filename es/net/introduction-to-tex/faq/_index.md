@@ -1,12 +1,12 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
-title: Preguntas frecuentes sobre Tex
+title: Preguntas frecuentes sobre TeX
 linktitle: Preguntas frecuentes
 weight: 80
 url: /net/introduction-to-tex/faq/
 description: Obtenga respuestas a todas las preguntas más frecuentes sobre TeX y LaTeX, su estructura, uso y peculiaridades.
-lastmod: 2025-09-03
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
@@ -20,7 +20,7 @@ lastmod: 2025-09-03
 
 **P: ¿Cuáles son las características clave de TeX?**
 
-**A:** Tex es conocido por sus profesionales como:
+**A:** TeX es conocido por sus profesionales como:
 - TeX le proporciona una producción de alta calidad. Utiliza un conjunto sofisticado de algoritmos para cosas como la guión, la justificación (texto alineando en ambos lados) y la ruptura de la línea.
 - Su característica más notable es su capacidad para escribir una notación matemática compleja. TeX puede dimensionar automáticamente y colocar superíndices, subíndices, fracciones, radicales y otros símbolos.
 - TeX es el estándar de facto para la preparación de documentos en muchos campos científicos y académicos, incluidas matemáticas, física, informática e ingeniería. 
@@ -60,13 +60,13 @@ Los entornos se utilizan para aplicar formateo específico a un bloque de texto.
 
 **P: ¿Qué es el modo matemático?**
 
-**A:** El modo matemático es la capacidad de Tex para manejar matemáticas complejas. Puede cambiar a "modo matemático" utilizando signos de dólar `($)` para ecuaciones en línea, o signos de dólar doble `($$)` para una ecuación centrada separada en su propia línea. Dentro de este modo, puede usar comandos para símbolos especiales y formateo. Por ejemplo, `$x^2$` crea un exponente, y `$\sqrt{...}$` crea una raíz cuadrada.
+**A:** El modo matemático es la capacidad de TeX para manejar matemáticas complejas. Puede cambiar a "modo matemático" utilizando signos de dólar `($)` para ecuaciones en línea, o signos de dólar doble `($$)` para una ecuación centrada separada en su propia línea. Dentro de este modo, puede usar comandos para símbolos especiales y formateo. Por ejemplo, `$x^2$` crea un exponente, y `$\sqrt{...}$` crea una raíz cuadrada.
 
 **P: ¿Qué es LaTeX?**
 
-**A:** El LaTeX es un conjunto de macros (comandos predefinidos) construidos sobre Tex. Es un sistema de nivel superior y más fácil de usar para la creación de documentos. El LaTeX simplifica las tareas comunes al proporcionar comandos intuitivos para cosas como crear secciones, capítulos, tablas de contenido y bibliografías.
+**A:** El LaTeX es un conjunto de macros (comandos predefinidos) construidos sobre TeX. Es un sistema de nivel superior y más fácil de usar para la creación de documentos. El LaTeX simplifica las tareas comunes al proporcionar comandos intuitivos para cosas como crear secciones, capítulos, tablas de contenido y bibliografías.
 
-**P: ¿Cuál es la diferencia entre Tex y LaTeX?**
+**P: ¿Cuál es la diferencia entre TeX y LaTeX?**
 
 **A:** Estos términos se usan a menudo indistintamente, pero hay una distinción clara:
 

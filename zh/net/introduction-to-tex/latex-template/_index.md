@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: LaTeX 模板 - 快速入门指南
@@ -8,7 +8,7 @@ weight: 100
 url: /net/latex-templates/
 description: 了解 LaTeX 模板是什么，如何使用和创建它们，在哪里下载最流行的模板，以及使用可直接复制的代码片段的快速工作流。
 keywords: LaTeX, 模板, 类, 样式, Overleaf, CTAN, 参考文献, Beamer, 论文, 简历
-lastmod: "2026-02-26"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}

@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 linktitle: Объект TeX
@@ -6,7 +6,7 @@ title: Aspose.TeX и Object TeX
 weight: 11
 url: /net/aspose-tex-and-object-tex/
 description: TeX — это формат ввода и вывода этого API-решения, поэтому здесь мы объясним объект TeX и то, как он преобразуется в целевой формат.
-lastmod: "2024-09-24"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}

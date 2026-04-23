@@ -6,7 +6,7 @@ linktitle: Выходной интерфейс Aspose.TeX
 weight: 16
 url: /cpp/aspose-tex-output/
 description: Функциональность преобразования решения Aspose.TeX API для C++ с TeX в качестве выходного формата объясняется здесь с примерами кода.
-lastmod: "2024-09-24"
+lastmod: "2026-04-20"
 ---
 
 {{<section overview>}}

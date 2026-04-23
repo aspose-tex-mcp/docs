@@ -6,7 +6,7 @@ linktitle: Installation
 weight: 60
 url: /cpp/installation/
 description: Aspose.TeX für C++ finden Sie im heruntergeladenen ZIP-Paket oder können es von NuGet herunterladen, indem Sie auf „Paket herunterladen“ klicken.
-lastmod: "2024-09-26"
+lastmod: "2026-04-20"
 ---
 
 {{<section overview>}}

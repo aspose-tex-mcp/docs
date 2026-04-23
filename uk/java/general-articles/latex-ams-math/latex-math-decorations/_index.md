@@ -33,7 +33,7 @@ lastmod: "2025-06-13"
 
 Четвертий аргумент, *стиль*, замінює (якщо не залишити порожнім) математичний стиль для використовуваного макета та розміру шрифту. Значення має бути в діапазоні 0-3: 0 - `\displaystyle`, 1 - `\textstyle`, 2 - `\scriptstyle`, 3 - `\scriptscriptstyle`. Якщо цей аргумент залишити порожнім, стиль вибирається відповідно до звичайних правил для дробів. Останні два аргументи є чисельником і знаменником.
 
-> The old fraction commands `\over`, `\overwithdelims`, `\atop`, `\atopwithdelims`, `\above`, and `\abovewithdelims`, which standard LaTeX inherits from TeX, produce warnings when they are used with the `amsmath` package.
+ > Старинні команди дробів `\over`, `\overwithdelims`, `\atop`, `\atopwithdelims`, `\above` і `\abovewithdelims`, які стандартний LaTeX успадковує від TeX, викликають попередження при використанні з пакетом `amsmath`.
 
 ### 4.1.1. Прості дроби
 
@@ -184,7 +184,7 @@ u & \equiv v + 1 \bmod{n^2} \\
 u & = v + 1 \pmod{n^2} \\
 u & = v + 1 \pod{n^2}
 \end{align*}
-The in-text layout: $ u = v + 1 \pmod{n^2} $
+Відображення у тексті: $ u = v + 1 \pmod{n^2} $
 \begin{gather*}
 (m \bmod n) = k^2 \, ; \quad x \equiv y \pmod b \, ; \\
 x \equiv y \mod c \, ; \quad x \equiv y \pod d\, .
@@ -193,7 +193,7 @@ x \equiv y \mod c \, ; \quad x \equiv y \pod d\, .
 
 ![Модульне відношення](/tex/images/java/tutorial/latex-ams-math-4-8.png)
 
-> With `amsmath`, the spacing of `\pmod` is decreased within a non-displayed formula.
+ > При використанні `amsmath` інтервал `\pmod` зменшується у формулі, що не відображається.
 
 ## 4.5. Математичні крапкові наголоси
 

@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: Présentation du produit | Aspose.TeX pour .NET
@@ -6,7 +6,7 @@ linktitle: Présentation du produit
 weight: 10
 url: /net/product-overview/
 description: Aspose.TeX pour .NET est une bibliothèque de composition de fichiers TeX. Avec elle, vous pouvez également convertir ou créer votre propre format TeX.
-lastmod: "2024-09-27"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}

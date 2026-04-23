@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: LaTeX-Eingabe/Ausgabe
@@ -6,8 +6,8 @@ linktitle: LaTeX-E/A
 weight: 17
 url: /net/latex-io/
 description: Hier werden die Besonderheiten der Arbeit mit LaTeX als Ausgabe- bzw. Eingabeformat und der *.aux*-Datei als zwingender Bestandteil von LaTeX beschrieben.
-keywords: Latex io, Latex i, Latex o, Latex-Eingabedatei, Eingabe in Latex
-lastmod: "2024-09-26"
+keywords: LaTeX io, LaTeX i, LaTeX o, LaTeX-Eingabedatei, Eingabe in LaTeX
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}

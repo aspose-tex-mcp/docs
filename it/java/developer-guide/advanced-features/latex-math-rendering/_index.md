@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-java.md
 title: Formule matematiche in LaTeX rendering | Java
@@ -6,7 +6,7 @@ linktitle: Formule matematiche in LaTeX rendering
 weight: 10
 url: /java/latex-math-formula-rendering/
 description: Le formule di matematica in LaTeX rendering all'interno dell'API Aspose.Tex per Java sono descritte in questo articolo. Impara gli esempi di codice su come utilizzare la funzionalità.
-lastmod: "2025-06-13"
+lastmod: "2026-04-21"
 ---
 
 {{<section overview>}}
@@ -61,9 +61,9 @@ Allo stesso modo, possiamo rendere una formula matematica in LaTeX al formato SV
 
 Le differenze sono:
 
-* Usiamo la classe [svgmathrendereroptions](https://reference.aspose.com/tex/java/com.aspose.tex/SvgMathRendererOptions) anziché [pngmathrendereroptions](https://reference.aspose.com/tex/java/com.aspose.tex/PngMathRendererOptions).
+* Usiamo la classe [SvgMathRendererOptions](https://reference.aspose.com/tex/java/com.aspose.tex/SvgMathRendererOptions) anziché [PngMathRendererOptions](https://reference.aspose.com/tex/java/com.aspose.tex/PngMathRendererOptions).
 * Non specifichiamo la risoluzione.
-* Usiamo la classe [svgmathrender](https://reference.aspose.com/tex/java/com.aspose.tex/SvgMathRenderer) invece di [pngmathrender](https://reference.aspose.com/tex/java/com.aspose.tex/PngMathRenderer).
+* Usiamo la classe [SvgMathRenderer](https://reference.aspose.com/tex/java/com.aspose.tex/SvgMathRenderer) invece di [PngMathRenderer](https://reference.aspose.com/tex/java/com.aspose.tex/PngMathRenderer).
 
 Ecco il risultato:
 

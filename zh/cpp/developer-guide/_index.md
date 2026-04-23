@@ -6,7 +6,7 @@ linktitle: 开发人员指南
 weight: 20
 url: /cpp/developer-guide/
 description: C ++ API供开发人员操纵和处理TEX和乳胶文件。了解如何使用解决方案的开发人员指南。
-lastmod: "2025-06-10"
+lastmod: "2026-04-20"
 ---
 
 {{<section overview>}}

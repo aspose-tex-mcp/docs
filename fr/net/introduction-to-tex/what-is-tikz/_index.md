@@ -7,7 +7,8 @@ weight: 21
 url: /net/tikz-introduction/
 keywords: Qu'est-ce que TikZ, Introduction à TikZ, Bases de TikZ
 description: Introduction à TikZ, une extension puissante pour créer des graphiques de haute qualité dans des documents LaTeX.
-lastmod: "2025-06-29"
+lastmod: "2026-04-22"
+aliases: /net/what-is-tikz/
 ---
 
 {{<section overview>}}
@@ -59,4 +60,4 @@ Voici un aperçu des sujets abordés dans cette série sur TikZ :
 
 Explorez ces articles pour maîtriser la création d'images de qualité professionnelle avec TikZ.
 
-**De plus, découvrez notre application web gratuite basée sur l'API Aspose.TeX pour .NET (https://products.aspose.com/tex/net/) pour des conversions TeX rapides et faciles.**
+**De plus, découvrez notre application web gratuite basée sur l'[API Aspose.TeX pour .NET](https://products.aspose.com/tex/net/) pour des conversions TeX rapides et faciles.**

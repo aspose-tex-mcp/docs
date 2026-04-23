@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-java.md
 title: Funcionalidad de conversión | Aspose.TeX para Java

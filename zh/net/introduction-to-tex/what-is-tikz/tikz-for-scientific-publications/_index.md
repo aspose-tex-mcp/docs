@@ -7,7 +7,7 @@ weight: 21
 url: /net/tikz-for-scientific-publications/
 keywords: tikz 科学图表、tikz 学术图表、tikz 数学示例
 description: 利用 TikZ 为科学和学术出版物创建专业品质的图形和图表。
-lastmod: "2026-02-26"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
@@ -106,4 +106,4 @@ TikZ 还支持广泛用于化学和生物学的图示，使您的科学论文在
 
 使用 TikZ 绘制科学图形不仅提升了视觉清晰度，还保持了学术出版所需的高标准。
 
-**此外，探索我们的免费 [web app](https://products.aspose.app/tex/conversion/latex/) 基于 [Aspose.TeX for .NET API](https://products.aspose.com/tex/net/) ，实现快速且简易的 TeX 转换。**
+**此外，探索基于 [Aspose.TeX for .NET API](https://products.aspose.com/tex/net/) 的免费 [Web 应用](https://products.aspose.app/tex/conversion/latex/) ，实现快速且简易的 TeX 转换。**

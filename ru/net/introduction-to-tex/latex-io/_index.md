@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: Ввод/вывод LaTeX
@@ -6,8 +6,8 @@ linktitle: Ввод/вывод LaTeX
 weight: 17
 url: /net/latex-io/
 description: На этой странице кратко описаны особенности работы с LaTeX как с выходным или входным форматом, а также с файлом *.aux* как обязательной частью LaTeX.
-keywords: latex io, latex i, latex o, входной файл латеха, ввод в латехе
-lastmod: "2024-09-24"
+keywords: latex io, latex i, latex o, входной файл LaTeX, ввод в латехе
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}

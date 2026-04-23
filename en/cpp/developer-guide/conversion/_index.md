@@ -6,7 +6,7 @@ linktitle: Conversion
 weight: 10
 url: /cpp/conversion/
 description: Conversion functionality of Aspose.TeX API solution for C++ supports next output formats TeX, XPS, PDF, PNG, JPEG, TIFF, PNG and SVG.
-lastmod: "2024-09-20"
+lastmod: "2026-04-20"
 ---
 
 {{<section overview>}}

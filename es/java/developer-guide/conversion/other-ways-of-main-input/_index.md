@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-java.md
 title: Proporcionar el archivo de entrada TeX principal | Java
@@ -6,7 +6,7 @@ linktitle: Otras formas de proporcionar el archivo de entrada TeX principal
 weight: 14
 url: /java/other-ways-of-main-input/
 description: La funcionalidad de conversión de la solución API Aspose.TeX para Java tiene un constructor que acepta una secuencia como primer argumento.
-lastmod: "2024-10-30"
+lastmod: "2026-04-21"
 ---
 
 {{<section overview>}}
@@ -15,7 +15,7 @@ lastmod: "2024-10-30"
 
 Hasta este punto, sólo sabíamos cómo pasar el [archivo de entrada principal](/tex/{{lang.url-fragment}}net/tex-io/#tex-input) al motor TeX como un nombre de archivo, ya sea completamente especificado o en formato corto, con o sin extensión. Pero hay otro [constructor](https://reference.aspose.com/tex/java/com.aspose.tex/TeXJob#TeXJob-java.io.InputStream-com.aspose.tex.rendering.Device-com.aspose.tex.TeXOptions-) de la clase `TeXJob`, que acepta una secuencia como primer argumento. Esto es conveniente si por alguna razón tenemos el archivo de entrada principal en un formato que no sea un archivo en el sistema de archivos del disco. Así es como podemos afrontarlo:
 
-{{< gist "aspose-com-gists""67385c777283964d328086603f691ac9""Aspose.TeX.Examples-Conversion-InputStream.java" >}}
+{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Conversion-InputStream.java" >}}
 
 Tenga en cuenta que todos los archivos de salida tendrán el nombre *texput*. Esto se debe a que el motor no puede recibir ningún otro nombre en ninguna parte. *texput* es el nombre del trabajo predeterminado. Consulte [aquí](/tex/{{lang.url-fragment}}net/tex-io/#tex-output) y [aquí](/tex/{{lang.url-fragment}}java/other-options/#how-to-set-the-job-name) para obtener detalles sobre los nombres de los trabajos.
 
@@ -25,7 +25,7 @@ Hay otro [constructor](https://reference.aspose.com/tex/java/com.aspose.tex/TeXJ
 
 Aquí está el código:
 
-{{< gist "aspose-com-gists""67385c777283964d328086603f691ac9""Aspose.TeX.Examples-Conversion-MainInputTerminal.java" >}}
+{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Conversion-MainInputTerminal.java" >}}
 
 Nada más ejecutarlo el motor se queda esperando a que introduzcamos el nombre del archivo (con o sin ruta, con o sin extensión):
 

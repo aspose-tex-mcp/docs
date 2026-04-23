@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-java.md
 title: Rendu des formules mathématiques LaTeX | Java
@@ -6,7 +6,7 @@ linktitle: Rendu des formules mathématiques LaTeX
 weight: 10
 url: /java/latex-math-formula-rendering/
 description: Le rendu des formules mathématiques LaTeX dans l'API Aspose.TeX pour Java est décrit dans cet article avec les exemples de code.
-lastmod: "2024-09-27"
+lastmod: "2026-04-21"
 ---
 
 {{<section overview>}}
@@ -15,7 +15,7 @@ lastmod: "2024-09-27"
 
 En fait, le moyen le plus simple de démontrer la fonctionnalité de rendu de la **formule mathématique LaTeX** est de commencer par l'exemple. C'est ici:
 
-{{< gist "aspose-com-gists""67385c777283964d328086603f691ac9""Aspose.TeX.Examples-Features-PngLaTeXMathRendering.java" >}}
+{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Features-PngLaTeXMathRendering.java" >}}
 
 Passons aux détails. Tout d'abord, nous créons une instance [options de rendu](https://reference.aspose.com/tex/java/com.aspose.tex/PngMathRendererOptions), similaire à la composition TeX/LaTeX. Nous le faisons ici simultanément en spécifiant la résolution de l’image de sortie.
 
@@ -57,13 +57,13 @@ Il s'agit du cas d'utilisation le plus général du rendu de **formule mathémat
 
 De la même manière, nous pouvons restituer une formule mathématique LaTeX au format SVG.
 
-{{< gist "aspose-com-gists""67385c777283964d328086603f691ac9""Aspose.TeX.Examples-Features-SvgLaTeXMathRendering.java" >}}
+{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Features-SvgLaTeXMathRendering.java" >}}
 
 Les différences sont :
 
- * Nous utilisons la classe [SvgMathRendererOptions](https://reference.aspose.com/tex/java/com.aspose.tex/SvgMathRendererOptions) au lieu de [PngMathRendererOptions](https://reference.aspose.com/tex/java/com.aspose.tex/PngMathRendererOptions).
- * Nous ne précisons pas la résolution.
- * Nous utilisons la classe [SvgMathRenderer](https://reference.aspose.com/tex/java/com.aspose.tex/SvgMathRenderer) au lieu de [PngMathRenderer](https://reference.aspose.com/tex/java/com.aspose.tex/PngMathRenderer).
+* Nous utilisons la classe [SvgMathRendererOptions](https://reference.aspose.com/tex/java/com.aspose.tex/SvgMathRendererOptions) au lieu de [PngMathRendererOptions](https://reference.aspose.com/tex/java/com.aspose.tex/PngMathRendererOptions).
+* Nous ne précisons pas la résolution.
+* Nous utilisons la classe [SvgMathRenderer](https://reference.aspose.com/tex/java/com.aspose.tex/SvgMathRenderer) au lieu de [PngMathRenderer](https://reference.aspose.com/tex/java/com.aspose.tex/PngMathRenderer).
 
 Voici le résultat :
 

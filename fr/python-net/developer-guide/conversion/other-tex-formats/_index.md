@@ -6,7 +6,7 @@ linktitle: Autres formats TeX
 weight: 18
 url: /python-net/other-tex-formats/
 description: La solution API Aspose.TeX pour Python fournit des fonctionnalités qui vous permettent de convertir des fichiers LaTeX et des fichiers TeX personnalisés.
-lastmod: "2024-09-27"
+lastmod: "2026-04-20"
 ---
 
 {{<section overview>}}
@@ -19,7 +19,7 @@ Pour commencer, nous allons créer un format personnalisé.
 
 Gardons à l'esprit que le fichier de format est une représentation binaire de l'état interne du moteur TeX.
 
-{{< gist "aspose-com-gists""68d217858f0be40062562ce2bb2cd908""Aspose.TeX.Examples-CreateCustomTeXFormatFile.py" >}}
+{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-CreateCustomTeXFormatFile.py" >}}
 
 Comme vous pouvez le constater, le code ressemble au code de conversion d'un fichier TeX. Il existe cependant quelques distinctions.
 
@@ -33,7 +33,7 @@ Et la deuxième différence majeure réside dans la méthode par laquelle nous e
 
 Maintenant que nous avons créé notre propre format TeX, nous pouvons procéder à la composition d'un fichier TeX écrit dans ce format. Voici le code :
 
-{{< gist "aspose-com-gists""68d217858f0be40062562ce2bb2cd908""Aspose.TeX.Examples-TypesetWithCustomTeXFormat.py" >}}
+{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-TypesetWithCustomTeXFormat.py" >}}
 
 Pour spécifier le format, nous devons créer une instance de la classe [FormatProvider](https://reference.aspose.com/tex/python-net/aspose.tex.resourceproviders/formatprovider/). Dans le constructeur d'options, nous utilisons la configuration [TeXConfig.object_tex()](https://reference.aspose.com/tex/python-net/aspose.tex/texconfig/object_tex/#aspose.tex.resourceproviders.FormatProvider), qui nécessite notre fournisseur de format comme argument et charge le format au-dessus de l'état "vierge" du moteur.
 

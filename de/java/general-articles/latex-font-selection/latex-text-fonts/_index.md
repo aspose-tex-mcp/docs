@@ -38,7 +38,7 @@ The bold typeface\end{bfseries} continues here.
 
 Die deklarativen Formen selbst eignen sich häufig besser zur Definition neuer Umgebungen oder Befehle.
 
-> It is also important that the font commands with one argument do not allow paragraph breaks in their arguments.
+> Es ist außerdem wichtig, dass die Schriftbefehle mit einem Argument keine Absatzumbrüche im Argument zulassen.
 
 ### Die Hauptschriftart des Dokuments
 
@@ -195,7 +195,7 @@ Zum Beispiel, wenn Sie in der Präambel schreiben
 
 Ein ganzes Dokument würde in Computer Modern Sans herauskommen, da diese Neudefinition die Schriftfamilie für die von LaTeX verwendete Hauptschriftart ändert. Im Detail wird die Hauptschriftart des Dokuments durch die Werte von „\encodingdefault“, „\familydefault“, „\seriesdefault“ und „\Shapedefault“ bestimmt. Das bedeutet, dass Sie sicherstellen müssen, dass diese Befehle so definiert sind, dass ihre Kombination auf eine vorhandene Schriftform in den internen Tabellen von LaTeX verweist.
 
-Der Standardwert von `\encodingdefault` (`OT1`) dient eigentlich der Kompatibilität. Das bedeutet, dass LaTeX davon ausgeht, dass die meisten Schriftarten die Originalkodierung verwenden. In den meisten Fällen ist es besser, die Kodierung „T1“ zu verwenden, da sie viele zusätzliche Glyphen enthält, die mit „OT1“ nicht verfügbar sind, und eine ordnungsgemäße Silbentrennung für Wörter mit Akzentzeichen ermöglicht. Heutzutage unterstützen einige Schriftarten „OT1“ überhaupt nicht, da sie für die Verwendung mit „T1“ konzipiert sind.
+Der Standardwert von `\encodingdefault` (`OT1`) dient eigentlich der Kompatibilität. Das bedeutet, dass LaTeX davon ausgeht, dass die meisten Schriftarten die Originalkodierung verwenden. In den meisten Fällen ist es besser, die Kodierung `.fd` zu verwenden, da sie viele zusätzliche Glyphen enthält, die mit `OT1` nicht verfügbar sind, und eine ordnungsgemäße Silbentrennung für Wörter mit Akzentzeichen ermöglicht. Heutzutage unterstützen einige Schriftarten `OT1` überhaupt nicht, da sie für die Verwendung mit `.fd` konzipiert sind.
 
 Es ist wichtig zu bedenken, dass nicht jede Schriftart als Standardschriftart für die Dokumentkodierung verwendet werden kann. Voraussetzung ist, dass die Kodierung die meisten sichtbaren ASCII-Buchstaben an ihren Standardpositionen enthält. Der „\encodingdefault“ kann durch Laden des „fontenc“-Pakets mit einer oder mehreren Optionen geändert werden.
 

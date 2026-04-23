@@ -1,12 +1,12 @@
-﻿---
+---
 translation: true
-template: /templates/_template-java.md
+template: /templates/_template-net.md
 title: Графіка LaTeX | \includegraphics команда
 linktitle: Графіка LaTeX
 weight: 18
 url: /net/latex-graphics/
 description: Про включення графіки в TeX варто згадати. Коли мова йде про це, перше, що спадає на думку, це команда `\includegraphics`.
-lastmod: "2025-06-13"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
@@ -27,7 +27,7 @@ lastmod: "2025-06-13"
 \usepackage{graphics}
 ```
 
-Якщо ваша система верстки не налаштована на використання, скажімо, pdfTeX за замовчуванням, ви повинні вказати відповідний параметр, який змусить пакунок використовувати необхідний файл `driver`:
+Якщо ваша система верстки не налаштована на використання, скажімо, pdfTeX за замовчуванням, ви повинні вказати відповідний параметр, який змусить пакет використовувати необхідний файл `driver`:
 
 
 ```tex

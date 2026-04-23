@@ -6,7 +6,7 @@ linktitle: Introdução
 weight: 20
 url: /net/getting-started/
 description: API C# . NET para programadores manipularem e processarem ficheiros TeX e LaTeX. Aprenda os fundamentos para começar a trabalhar com a solução.
-lastmod: "2025-06-16"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
@@ -40,7 +40,7 @@ O Aspose.TeX pode também ser implementado nas suas próprias aplicações multi
 
 {{% /alert %}} 
 
-Explore o [Guia do Programador](/tex/{{lang.url-fragment}}net/developer-guide/), o seu recurso de referência para obter informações abrangentes e orientações práticas sobre como maximizar as capacidades da API. Descubra uma variedade de exemplos práticos e excertos de código que apresentam casos de utilização comuns, permitindo-lhe tirar partido da API Python Aspose.Page de forma eficaz em cenários do mundo real.
+Explore o [Guia do Programador](/tex/{{lang.url-fragment}}net/developer-guide/), o seu recurso de referência para obter informações abrangentes e orientações práticas sobre como maximizar as capacidades da API. Descubra uma variedade de exemplos práticos e excertos de código que apresentam casos de utilização comuns, permitindo-lhe tirar partido da Aspose.TeX para .NET de forma eficaz em cenários do mundo real.
 
 {{% alert color="primary" %}} 
 

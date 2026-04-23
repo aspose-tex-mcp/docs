@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 linktitle: Instalação
@@ -6,18 +6,18 @@ title: Instalação | Aspose.TeX para .NET
 weight: 60
 url: /net/installation/
 description: A documentação da API do Aspose.TeX para .NET pode ser encontrada no pacote ZIP baixado ou obtido na Nuget Gallery, clicando no "Pacote de download".
-lastmod: "2025-06-16"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
 
-## Instalando Aspose.TeX para .Net através do NUGET
+## Instalando Aspose.TeX para .Net através do NuGet
 
-O NUGET é um sistema de gerenciamento de pacotes focado em desenvolvedores de código aberto e gratuito para a plataforma .NET que pretende simplificar o processo de incorporar bibliotecas de terceiros em um aplicativo .NET durante o desenvolvimento. É uma extensão do Visual Studio que facilita adicionar, remover e atualizar bibliotecas e ferramentas em projetos do Visual Studio que usam a estrutura .NET. Uma biblioteca ou ferramenta pode ser facilmente compartilhada com outros desenvolvedores, criando um pacote NUGET e armazenando -o dentro de um repositório NUGET. Quando você instala o pacote, o Nuget copia os arquivos para sua solução e automaticamente faz as alterações necessárias, como adicionar referências e alterar seus arquivos app.config ou web.config. Se você decidir remover a biblioteca, o NUGET remove os arquivos e reverte as alterações feitas em seu projeto para que não haja desordem.
+O NuGet é um sistema de gerenciamento de pacotes focado em desenvolvedores de código aberto e gratuito para a plataforma .NET que pretende simplificar o processo de incorporar bibliotecas de terceiros em um aplicativo .NET durante o desenvolvimento. É uma extensão do Visual Studio que facilita adicionar, remover e atualizar bibliotecas e ferramentas em projetos do Visual Studio que usam a estrutura .NET. Uma biblioteca ou ferramenta pode ser facilmente compartilhada com outros desenvolvedores, criando um pacote NuGet e armazenando -o dentro de um repositório NuGet. Quando você instala o pacote, o Nuget copia os arquivos para sua solução e automaticamente faz as alterações necessárias, como adicionar referências e alterar seus arquivos app.config ou web.config. Se você decidir remover a biblioteca, o NuGet remove os arquivos e reverte as alterações feitas em seu projeto para que não haja desordem.
 
 ### Referenciando aspose.tex para .NET
 
-Tomando benefício desse recurso maravilhoso, nós incluímos as bibliotecas [Aspose.TeX para .NET](https://www.nuget.org/packages/Aspose.TeX) em um pacote NUGET e o carregamos em um repositório NUGET. Com esta opção, você se beneficia do uso do Aspose.TeX para .NET sem instalar este componente no seu sistema. O NUGET é executado no Visual Studio 2010 e na (s) versão (s) superior (s), o Visual Web Developer 2010 e o Windows Phone Developer Tools 7.1. Em nossos testes, testamos com o Visual Studio 2015 Ultimate.
+Tomando benefício desse recurso maravilhoso, nós incluímos as bibliotecas [Aspose.TeX para .NET](https://www.nuget.org/packages/Aspose.TeX) em um pacote NuGet e o carregamos em um repositório NuGet. Com esta opção, você se beneficia do uso do Aspose.TeX para .NET sem instalar este componente no seu sistema. O NuGet é executado no Visual Studio 2010 e na (s) versão (s) superior (s), o Visual Web Developer 2010 e o Windows Phone Developer Tools 7.1. Em nossos testes, testamos com o Visual Studio 2015 Ultimate.
 
 Para começar:
 
@@ -43,11 +43,11 @@ Para fazer referência ao componente usando o console do gerenciador de pacotes:
 
 ### Pacote de atualização usando o console do gerenciador de pacotes
 
-Se você já referenciou o componente através do NUGET, siga estas etapas para atualizar a referência à versão mais recente:
+Se você já referenciou o componente através do NuGet, siga estas etapas para atualizar a referência à versão mais recente:
 
-1. Abra você .NET APLICAÇÃO NO VISUAL ESTUDIO.
+1. Abra seu aplicativo .NET no Visual Studio.
 2. No menu **Ferramentas**, selecione **Biblioteca Package Manager**, seguido de **Console do gerenciador de pacotes** para abrir o console do gerenciador de pacotes.
-3. Digite o comando “update-package aspose.tex” para fazer referência à versão completa mais recente ou digite o comando “update-package aspose.tex -prerelease” para instalar a versão mais recente, incluindo correções quentes.
+3. Digite o comando “Update-Package Aspose.TeX” para fazer referência à versão completa mais recente ou digite o comando “Update-Package Aspose.TeX -prerelease” para instalar a versão mais recente, incluindo correções quentes.
 4. Pressione **ENTER**.
 
 ### Instale o pacote usando a GUI do gerenciador de pacotes
@@ -55,7 +55,7 @@ Se você já referenciou o componente através do NUGET, siga estas etapas para 
 Siga estas etapas para fazer referência ao componente usando a GUI do gerenciador de pacotes:
 
 1. Abra você .NET APLICAÇÃO NO VISUAL ESTUDIO.
-2. No menu **Ferramentas**, selecione **Biblioteca Package Manager** e **Gerencie pacotes NUGET** na opção **** **. 
+2. No menu **Ferramentas**, selecione **Biblioteca Package Manager** e **Gerencie pacotes NuGet** na opção **** **. 
 
     Também pode obter uma opção semelhante no Solution Explorer:
     1. Clique com o botão direito do rato no nome do projeto.

@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: LaTeX 入出力  
@@ -7,7 +7,7 @@ weight: 17
 url: /net/latex-io/
 description: このページでは、LaTeX を出力または入力フォーマットとして使用する際の特有の点と、必須となる *.aux* ファイルについて簡潔に説明します。
 keywords: latex 入出力, latex 入力, latex 出力, latex 入力ファイル, latex 入力
-lastmod: "2026-02-26"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}

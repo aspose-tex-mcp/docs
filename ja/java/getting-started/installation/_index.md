@@ -6,16 +6,16 @@ title: インストール| Java用のAspose.TeX
 weight: 60
 url: /java/installation/
 description: JavaのAspose.TeX APIドキュメントは、ダウンロードされたZIPパッケージに記載されているか、単純な構成を備えたMavenプロジェクトから入手できます。
-lastmod: "2025-06-09"
+lastmod: "2026-04-21"
 ---
 
 {{<section overview>}}
 
-## Aspose.TeXのAsopsion Repositoryからのインストール
+## Aspose.TeXのAspose Repositoryからのインストール
 
 Asposeは、すべてのJava APIをAspose Repositoryにホストします。簡単な構成を使用して、MavenプロジェクトでJava APIにAspose.TeXを簡単に使用できます。
 
-## Asopsion Repository構成を指定します
+## Aspose Repository構成を指定します
 
 まず、次のように、Maven pom.xmlのAspose Repository構成 /場所を指定する必要があります。
 
@@ -44,4 +44,4 @@ Asposeは、すべてのJava APIをAspose Repositoryにホストします。簡�
 </dependencies>
 ```
 
-上記の手順を実行した後、Java依存関係のためのAsophes.TexがMavenプロジェクトで最終的に定義されます。
+上記の手順を実行した後、Java依存関係のためのAspose.TeXがMavenプロジェクトで最終的に定義されます。

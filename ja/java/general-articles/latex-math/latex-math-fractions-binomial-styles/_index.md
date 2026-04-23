@@ -7,7 +7,7 @@ weight: 50
 url: /java/latex-math-fractions-binomial-styles/
 keywords: latex、latex 数式、latex 数式、latex 数式、latex 数式分数、latex 数式二項係数、latex 数式スタイル
 description: 分数、二項係数などの数式構造の組版と、TeX が数式を組版する際に使用する数式スタイルについて学びます。
-lastmod: "2024-09-20"
+lastmod: "2026-04-21"
 ---
 
 {{<section overview>}}

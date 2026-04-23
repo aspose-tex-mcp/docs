@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: Autres moyens de fournir le fichier d'entrée TeX | .NET
@@ -6,7 +6,7 @@ linktitle: Autres façons de fournir le fichier d'entrée TeX principal
 weight: 14
 url: /net/other-ways-of-main-input/
 description: De conversion de la solution API Aspose.TeX pour .NET a un constructeur qui accepte un flux comme premier argument.
-lastmod: "2024-09-27"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}

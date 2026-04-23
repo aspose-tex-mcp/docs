@@ -6,7 +6,7 @@ linktitle: Entwicklerhandbuch
 weight: 30
 url: /python-net/developer-guide/
 description: Dieses Kapitel bietet Entwicklern einen Überblick über die Aspose.TeX-API-Lösung für Python-Funktionalität, veranschaulicht durch die Codebeispiele.
-lastmod: "2024-09-26"
+lastmod: "2026-04-20"
 ---
 
 {{<section overview>}}
@@ -17,12 +17,12 @@ Das Entwicklerhandbuch dient als umfassende Ressource für die effektive Nutzung
 
 - **[Konvertierung](/tex/{{lang.url-fragment}}python-net/conversion/)** – Informieren Sie sich über die am häufigsten benötigten Konvertierungspaare, TeX-Eingabe und -Ausgabe und vieles mehr.
 - **[Externe LaTeX-Pakete](/tex/{{lang.url-fragment}}java/external-latex-packages/)** – hier sind die am häufigsten benötigten externen Pakete mit Details zu deren Bereitstellung für die TeX-Engine der Bibliothek zusammengestellt.
-- **[Erweiterte Funktionen](/tex/{{lang.url-fragment}}python-net/advanced-features/)** – ist ein Kapitel, das Ihnen hilft, die erweiterten Funktionen von Aspose.TeX für C++ einfach zu nutzen.
+- **[Erweiterte Funktionen](/tex/{{lang.url-fragment}}python-net/advanced-features/)** – ist ein Kapitel, das Ihnen hilft, die erweiterten Funktionen von Aspose.TeX für .NET einfach zu nutzen.
 
 
 ## Weitere nützliche Ressourcen für Python-Entwickler:
 
-- [**Übersicht**](/tex/{{lang.url-fragment}}python-net/product-overview/) – Hier finden Sie einen Überblick über die Software, das Framework oder die Technologie, einschließlich ihres Zwecks und der Vorteile dieser API-Lösung für C++.
+- [**Übersicht**](/tex/{{lang.url-fragment}}python-net/product-overview/) – Hier finden Sie einen Überblick über die Software, das Framework oder die Technologie, einschließlich ihres Zwecks und der Vorteile dieser API-Lösung für .NET.
 - [**Installation und Einrichtung**](/tex/{{lang.url-fragment}}python-net/installation/) – ist eine Schritt-für-Schritt-Anleitung zur Installation und Einrichtung der Entwicklungsumgebung. 
 - [**Systemanforderungen**](/tex/{{lang.url-fragment}}python-net/system-requirements/) – gibt Ihnen Aufschluss darüber, ob Ihre Umgebung korrekt mit den APIs zurechtkommt.
 - [**API-Referenz**](https://reference.aspose.com/page/python-net/) – Erfahren Sie hier mehr über die Dokumentation der angebotenen Funktionen, Klassen, Methoden, Parameter und Rückgabetypen von Aspose.TeX-APIs für Java. 

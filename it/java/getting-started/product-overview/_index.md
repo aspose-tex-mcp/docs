@@ -16,7 +16,7 @@ lastmod: "2025-06-13"
 
 <p><img src="/tex/icons/aspose_tex-for-java.png" alt="Aspose.TeX for Java logo" width="128" height="128"></p>
 
-**Benvenuti in Aspose.TeX per java**
+**Benvenuti in Aspose.TeX per Java**
 
 Aspose.TeX è una libreria Java per la composizione dei file tex. Può presentare file TEX in vari formati grafici come XPS, PDF, PNG, JPEG, TIFF e BMP. Output anche le informazioni di tracciamento come fa qualsiasi altro motore Tex. L'API fornisce vari modi per alimentare l'input e l'output. E, come caratteristica avanzata, ti consente di creare il tuo formato tex se si desidera scrivere una serie di documenti progettati in modo uniforme.
 
@@ -24,9 +24,9 @@ Aspose.TeX è una libreria Java per la composizione dei file tex. Può presentar
 
 ## Supporto tecnico
 
-Aspone fornisce supporto tecnico gratuito illimitato per tutti i suoi prodotti. Il supporto è disponibile per tutti gli utenti, inclusa la valutazione.
+Aspose fornisce supporto tecnico gratuito illimitato per tutti i suoi prodotti. Il supporto è disponibile per tutti gli utenti, inclusa la valutazione.
 
-Se hai bisogno di aiuto con Aspose.TeX per java, [**Visita l'Aspose.forums**](https://forum.aspose.com/). Pubblica la tua domanda nell'Aspose.Tex per Java Forum e verrà data risposta entro poche ore. Le domande vengono risposte direttamente da Aspose.TeX per il team di supporto Java.
+Se hai bisogno di aiuto con Aspose.TeX per Java, [**Visita l'Aspose.Forums**](https://forum.aspose.com/). Pubblica la tua domanda nell'Aspose.TeX per Java Forum e verrà data risposta entro poche ore. Le domande vengono risposte direttamente da Aspose.TeX per il team di supporto Java.
 
 Quando si aspetta una risposta nei forum, si prega di consentire le differenze di fuso orario.
 
@@ -39,7 +39,7 @@ Se hai un problema con Aspose.TeX per Java, segui questi semplici passaggi per a
 
 ## Risorse
 
-Questa tabella elenca l'importante ASPUTI.Tex per le risorse tecniche Java.
+Questa tabella elenca l'importante Aspose.TeX per le risorse tecniche Java.
 
 |**Risorsa**|**Descrizione**|
 | :- | :- |

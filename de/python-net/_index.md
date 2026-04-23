@@ -7,7 +7,7 @@ weight: 40
 url: /python-net/
 description: API-Lösung zum Verwalten von TeX-Dateien für Python. Übergeben Sie TeX-Eingaben, erhalten Sie Ausgaben und erstellen Sie Ihr eigenes TeX-Format.
 is_root: true
-lastmod: "2024-09-26"
+lastmod: "2026-04-20"
 ---
 
 {{<section overview>}}

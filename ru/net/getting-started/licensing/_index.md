@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 linktitle: Лицензирование
@@ -6,7 +6,7 @@ title: Лицензирование | Aspose.TeX для .NET
 weight: 70
 url: /net/licensing/
 description: Если вы остановились на лицензионной версии решения Aspose.TeX API для .NET, здесь вы узнаете, как применить лицензию.
-lastmod: "2024-09-24"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
@@ -37,7 +37,7 @@ lastmod: "2024-09-24"
 - Вам необходимо установить лицензию перед использованием любых других классов Aspose.TeX.
 - Многократный вызов SetLicense не причиняет вреда, но приводит к потере процессорного времени.
 - Если вы разрабатываете Windows Forms или консольное приложение, вызовите SetLicense в коде запуска перед использованием классов Aspose.TeX.
-- При разработке приложения ASP.NET вызовите SetLicense из файла Global.asax.cs в защищенном методе Aplication_Start. Он вызывается один раз при запуске приложения.
+- При разработке приложения ASP.NET вызовите SetLicense из файла Global.asax.cs в защищенном методе Application_Start. Он вызывается один раз при запуске приложения.
 - Не вызывайте SetLicense из методов Page_Load, поскольку это означает, что лицензия будет загружаться каждый раз при загрузке веб-страницы.
 - Если вы разрабатываете библиотеку классов, вы можете вызвать SetLicense из статического конструктора класса, использующего Aspose.TeX. Статический конструктор выполняется до создания экземпляра вашего класса, проверяя правильность установки лицензии Aspose.TeX.
 
@@ -49,13 +49,13 @@ lastmod: "2024-09-24"
 
 Этот фрагмент кода инициализирует лицензию, хранящуюся в файле или во встроенном ресурсе.
 
-{{< gist "aspose-com-gists""366cba3dc08d43c99c22bb33ecb5d555""Example-SetLicenseFromFile.cs" >}}
+{{< gist "aspose-com-gists" "366cba3dc08d43c99c22bb33ecb5d555" "Example-SetLicenseFromFile.cs" >}}
 
 #### Загрузка лицензии из объекта Stream
 
 Эти фрагменты кода инициализируют лицензию из потока.
 
-{{< gist "aspose-com-gists""366cba3dc08d43c99c22bb33ecb5d555""Example-SetLicenseFromStream.cs" >}}
+{{< gist "aspose-com-gists" "366cba3dc08d43c99c22bb33ecb5d555" "Example-SetLicenseFromStream.cs" >}}
 
 ### Лицензия с лимитом
 
@@ -63,4 +63,4 @@ Aspose.TeX имеет альтернативный механизм лиценз
 
 Открытый и закрытый ключи лимитной лицензии задаются с использованием экземпляра класса [*Metered*](https://reference.aspose.com/tex/net/aspose.tex/metered/), как показано в следующем примере: 
 
-{{< gist "aspose-com-gists""366cba3dc08d43c99c22bb33ecb5d555""Example-SetMeteredLicense.cs" >}}
+{{< gist "aspose-com-gists" "366cba3dc08d43c99c22bb33ecb5d555" "Example-SetMeteredLicense.cs" >}}

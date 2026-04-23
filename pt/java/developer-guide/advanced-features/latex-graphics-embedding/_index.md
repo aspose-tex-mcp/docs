@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-java.md
 title: Gráficos embutidos de LaTeX | Aspose.TeX para Java
@@ -7,7 +7,7 @@ weight: 18
 url: /java/latex-graphics-embedding/
 keywords: Incluir Gráficos de LATEX, LATEX INCEDENTE64, LATEX BASE64 GRAPHICS codificados, Write18, Shell-Escape, Comando de Latex Shell
 description: Neste artigo, você explorará como injetar imagens codificadas por Base64 no código-fonte do LATEX e aprender o recurso \ write18 que torna isso possível.
-lastmod: "2025-06-16"
+lastmod: "2026-04-21"
 ---
 
 {{<section overview>}}
@@ -51,6 +51,7 @@ iVBORw0KGgoAAAANSUhEUgAAAPgAAABdCAYAAAH/B5vAAAAAGXRFWHRTb2Z0d2FyZQBBZ......
 ```
 
 Aqui está! **Etapa 2** está completo. Incorporamos com sucesso a imagem no arquivo de LaTeX! Mas o que acontecerá quando executarmos a digitação deste arquivo com o LaTeX?
+
 Um processador LATEX gravará a sequência de caracteres do ambiente para um arquivo externo chamado `sample-image.64`. Devido à opção `overwrite`, o arquivo será substituído se já existir (por exemplo, se for criado durante uma execução anterior). É assim que **Etapa 3** também é realizada!
 
 ## Decodificar uma string base64

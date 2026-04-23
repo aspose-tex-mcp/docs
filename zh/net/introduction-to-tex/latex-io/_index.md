@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: LaTeX 输入/输出  
@@ -7,14 +7,14 @@ weight: 17
 url: /net/latex-io/
 description: 此页面简要描述了使用 LaTeX 作为输出或输入格式的特殊之处，以及 *.aux* 文件作为 LaTeX 的强制性部分。
 keywords: latex io, latex i, latex o, latex 输入文件, latex 输入
-lastmod: "2026-02-26"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
 
 ## LaTeX 文件
 
-如果我们有一个 [TeX file](/tex/{{lang.url-fragment}}net/tex-io/#tex-file) 并且它具有以下结构，那么我们将此文件称为 *LaTeX 文件*：
+如果我们有一个 [TeX 文件](/tex/{{lang.url-fragment}}net/tex-io/#tex-file) 并且它具有以下结构，那么我们将此文件称为 *LaTeX 文件*：
 
 
 ```tex

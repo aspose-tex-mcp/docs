@@ -1,112 +1,112 @@
 ---
 translation: true
 template: /templates/_template-net.md
-title: Principes fondamentaux de TikZ | Aspose.TeX .NET
-linktitle: Principes fondamentaux de TikZ
+title: Fondamenti dell'uso di TikZ | Aspose.TeX .NET
+linktitle: Fondamenti di TikZ
 weight: 19
 url: /net/tikz-fundamentals-of-using-tikz/
-keywords: Principes fondamentaux de TikZ, Principes fondamentaux de TikZ, Tutoriel TikZ
-description: Explorez les principes fondamentaux et les commandes de base de TikZ pour créer des graphiques pour vos documents TeX et LaTeX.
-lastmod: "2025-06-29"
+keywords: basi di tikz, fondamenti tikz, tutorial tikz
+description: Esplora i principi fondamentali e i comandi di base di TikZ per creare grafiche per i tuoi documenti TeX e LaTeX.
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
 
-Dans ce chapitre, nous explorons les principes et commandes fondamentaux de TikZ. Comprendre ces bases vous permettra de créer des graphiques clairs et expressifs pour vos documents.
+In questo capitolo, esploreremo i principi e i comandi fondamentali di TikZ. Comprendere queste basi ti permetterà di creare grafiche chiare ed espressive per i tuoi documenti.
 
-## Système de coordonnées dans TikZ
+## Sistema di coordinate in TikZ
 
-Les graphiques TikZ sont créés à l'aide de coordonnées. Ces coordonnées définissent des positions dans vos dessins et peuvent être spécifiées de différentes manières :
+Le grafiche TikZ sono create utilizzando le coordinate. Le coordinate definiscono le posizioni all'interno dei tuoi disegni e possono essere specificate in diversi modi:
 
-- **Coordonnées cartésiennes (x,y)** :
+- **Coordinate cartesiane (x,y)**:
 
 ```tex
 \draw (0,0) -- (2,2);
 ```
 
-- **Coordonnées polaires (angle : rayon)** :
+- **Coordinate polari (angolo:raggio)**:
 
 ```tex
 \draw (0,0) -- (45:2);
 ```
 
-Les coordonnées peuvent être librement combinées dans un dessin pour obtenir le résultat graphique souhaité.
+Le coordinate possono essere combinate liberamente in un disegno per ottenere il risultato grafico desiderato.
 
-## Dessin de formes simples
+## Disegnare forme semplici
 
-TikZ permet de créer facilement des formes géométriques simples :
+TikZ consente di creare facilmente forme geometriche semplici:
 
-- **Lignes et polylignes** :
+- **Linee e polilinee**:
 
 ```tex
 \draw (0,0) -- (1,1) -- (2,0);
 ```
 
-- **Rectangles**:
+- **Rettangoli**:
 
 ```tex
 \draw (0,0) rectangle (2,1);
 ```
 
-- **Cercles et ellipses** :
+- **Cerchi ed ellissi**:
 
 ```tex
 \draw (1,1) circle (0.5);
 \draw (3,1) ellipse (1 and 0.5);
 ```
 
-## Couleurs et motifs de remplissage
+## Colori e modelli di riempimento
 
-Les couleurs et les motifs de remplissage améliorent considérablement la clarté visuelle. Vous pouvez spécifier les couleurs directement ou utiliser des noms prédéfinis :
+I colori e i riempimenti migliorano significativamente la chiarezza visiva. È possibile specificare i colori direttamente o utilizzare nomi predefiniti:
 
 ```tex
 \draw[red, thick] (0,0) rectangle (1,1);
 \draw[fill=blue!20] (2,0) circle (0.5);
 ```
 
-La syntaxe « blue!20 » désigne une couleur bleue d'intensité 20 %.
+La sintassi `blue!20` indica un colore blu con un'intensità del 20%.
 
-## Styles et épaisseurs de ligne
+## Stili e spessori delle linee
 
-TikZ vous permet de modifier les styles et l'épaisseur des lignes pour améliorer la présentation graphique :
+TikZ consente di modificare gli stili e lo spessore delle linee per migliorare la presentazione grafica:
 
-- **Épaisseur de ligne** :
+- **Spessore della linea**:
 
 ```tex
 \draw[ultra thick] (0,0) -- (1,1);
 \draw[thin] (1,0) -- (2,1);
 ```
 
-- **Lignes pointillées et en pointillés** :
+- **Linee tratteggiate e punteggiate**:
 
 ```tex
 \draw[dashed] (0,0) -- (2,2);
 \draw[dotted] (2,0) -- (4,2);
 ```
 
-## Nœuds et étiquettes
+## Nodi ed etichette
 
-Les nœuds vous permettent d'ajouter facilement des annotations textuelles :
+I nodi consentono di aggiungere facilmente annotazioni testuali:
 
 ```tex
 \draw (0,0) -- (1,1) node[midway, above] {label};
 ```
 
-Vous pouvez positionner précisément les étiquettes par rapport à vos éléments graphiques, améliorant ainsi leur lisibilité.
+È possibile posizionare le etichette con precisione rispetto ai propri elementi grafici, migliorandone la leggibilità.
 
-## Tracés et courbes
+## Percorsi e curve
 
-Les tracés TikZ peuvent être des lignes droites ou des courbes. Les courbes sont créées à l'aide d'une syntaxe simple :
+I percorsi TikZ possono essere linee rette o curve. Le curve vengono create utilizzando una sintassi semplice:
 
 ```tex
 \draw (0,0) .. controls (1,2) and (3,-1) .. (4,1);
 ```
 
-Les points de contrôle façonnent la courbure de manière intuitive.
+I punti di controllo modellano la curvatura in modo intuitivo.
 
-## Regroupement d'éléments
+## Raggruppamento di elementi
 
-Le regroupement d'éléments graphiques simplifie les transformations (comme la mise à l'échelle et la rotation) :
+Il raggruppamento di elementi grafici semplifica le trasformazioni (come il ridimensionamento e la rotazione):
 
 ```tex
 \begin{scope}[rotate=45, scale=1.5]
@@ -115,10 +115,10 @@ Le regroupement d'éléments graphiques simplifie les transformations (comme la 
 \end{scope}
 ```
 
-Les éléments de la « portée » pivotent et se redimensionnent ensemble, préservant ainsi l'alignement.
+Gli elementi all'interno dello `scope` vengono ruotati e ridimensionati insieme, mantenendo l'allineamento.
 
 ---
 
-La maîtrise de ces concepts et commandes TikZ fondamentaux vous permettra de créer des graphiques sophistiqués pour vos documents.
+La padronanza di questi concetti e comandi TikZ fondamentali fornirà una solida base per la creazione di grafiche sofisticate per i tuoi documenti.
 
-**De plus, découvrez notre application web gratuite basée sur l'API Aspose.TeX pour .NET pour des conversions TeX rapides et faciles.**
+**Inoltre, scopri la nostra applicazione web gratuita basata sull'[API Aspose.TeX per .NET](https://products.aspose.com/tex/net/) per conversioni TeX rapide e facili.**

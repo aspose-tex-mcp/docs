@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: LaTeXとは何ですか？
@@ -7,7 +7,7 @@ weight: 16
 url: /net/what-is-latex/
 keywords: LaTeXとは何か, LaTeXとは, LaTeXについて
 description: 「LaTeXとは何か？」という質問に答えるには、その最も印象的な機能のひとつである New Font Selection Scheme (NFSS) に言及する価値があります。
-lastmod: "2026-02-26"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}

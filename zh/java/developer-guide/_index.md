@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-java.md
 title: 开发人员指南| Java的Aspose.TeX
@@ -6,7 +6,7 @@ linktitle: 开发人员指南
 weight: 20
 url: /java/developer-guide/
 description: 本章介绍了Java对开发人员的Aspose.TeX API解决方案的功能，并为他们提供了有关如何管理Tex的代码示例。
-lastmod: "2025-06-10"
+lastmod: "2026-04-21"
 ---
 
 {{<section overview>}}
@@ -29,6 +29,6 @@ lastmod: "2025-06-10"
 - [**免费论坛**](https://forum.aspose.com/c/tex/47) - 在此处探索并与该软件的生态系统探索并互动。
 - [**更新和版本控制**](https://releases.aspose.com/tex/java/release-notes/) - 包括Java API解决方案的Aspose.TeX的发行版，按时间顺序分配。
 - [**Tex简介**](/tex/{{lang.url-fragment}}net/introduction-to-tex/)。 - 添加了本章，以便您可以习惯于Tex和Latex。在那里，您可以理解他们的特殊性，文件结构，利弊，嵌入式软件包等等。
-- [**乳胶上的一般文章](/tex/{{lang.url-fragment}}java/general-articles-latex/) - 为您提供有关乳胶的基本信息，包括有关用例，如何使用字体，图像，数学公式和不同乳胶软件包的信息。
+- [**乳胶上的一般文章**](/tex/{{lang.url-fragment}}java/general-articles-latex/) - 为您提供有关乳胶的基本信息，包括有关用例，如何使用字体，图像，数学公式和不同乳胶软件包的信息。
 - [**Aspose.TeX跨平台应用程序**](https://products.aspose.app/tex/applications) - 转换，合并，查看TEX和乳胶文件，创建乳胶方程，表格，图形和文章而无需编码，并使您了解如何开发自己的应用程序。
-- [**Aspose.TeX ai代理**](https://products.aspose.ai/tex/) - 为.tex和.latex`文件操作创建的人工智能工具。
+- [**Aspose.TeX AI Agents**](https://products.aspose.ai/tex/) - 为 `.tex` 和 `.latex` 文件操作创建的人工智能工具。

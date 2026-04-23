@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: Візуалізація фігур LaTeX | .NET
@@ -7,7 +7,7 @@ weight: 20
 url: /net/latex-figure-rendering/
 description: У цій статті описано рішення Aspose.TeX API для відтворення фрагментів (фігур) .NET LaTeX. Ознайомтеся з прикладами коду, як використовувати цю функцію.
 keywords: латексна фігура, розмір фігури латекс, латексна картинка, латексне зображення, латексна фігура, латексне зображення, параметри латексної фігурки
-lastmod: "2025-06-13"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
@@ -19,7 +19,7 @@ lastmod: "2025-06-13"
 
 Довідковий розділ API, пов’язаний із цією темою, знаходиться [тут](https://reference.aspose.com/tex/net/aspose.tex.features/). Як і у випадку з відтворенням формул, ми почнемо з прикладу. Ось воно:
 
-{{< gist "aspose-com-gists""79be6a0d7a31aa5deb213ba4ca81cb1b""Example-RenderFigureToPNG.cs" >}}
+{{< gist "aspose-com-gists" "79be6a0d7a31aa5deb213ba4ca81cb1b" "Example-RenderFigureToPNG.cs" >}}
 
 Перш за все, ми створюємо екземпляр [LaTeX figure options](https://reference.aspose.com/tex/net/aspose.tex.features/figurerendereroptions/). Ми робимо це тут, одночасно вказуючи роздільну здатність вихідного зображення.
 
@@ -56,7 +56,7 @@ lastmod: "2025-06-13"
 
 Приблизно так само ми можемо відобразити фігуру LaTeX у форматі SVG.
 
-{{< gist "aspose-com-gists""79be6a0d7a31aa5deb213ba4ca81cb1b""Example-RenderFigureToSVG.cs" >}}
+{{< gist "aspose-com-gists" "79be6a0d7a31aa5deb213ba4ca81cb1b" "Example-RenderFigureToSVG.cs" >}}
 
 Відмінності:
 

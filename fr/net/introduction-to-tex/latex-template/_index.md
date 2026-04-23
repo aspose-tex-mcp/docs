@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: Modèles LaTeX – guide de démarrage rapide
@@ -8,7 +8,7 @@ weight: 100
 url: /net/latex-templates/
 description: Découvrez ce que sont les modèles LaTeX, comment les utiliser et les créer, où télécharger les plus populaires et un flux de travail rapide avec des extraits prêts à copier.
 keywords: LaTeX, modèle, cours, style, Overleaf, CTAN, bibliographie, Beamer, thèse, CV
-lastmod: "2025-12-03"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
@@ -36,7 +36,7 @@ Un modèle LaTeX regroupe une **classe** (`.cls`), un **style** (`.sty`), des ex
 \end{document}
 ```
 
-Compilez avec `pdflatex`, `latexmk -pdf` ou le bouton « Recompiler » au verso.
+Compilez avec `pdflatex`, `latexmk -pdf` ou le bouton « Recompiler » Overleaf.
 
 ## Comment créer votre propre modèle
 
@@ -93,7 +93,7 @@ Utilisez-le avec `\documentclass{mytemplate}` dans votre document.
 
 ## Flux de travail rapide pour les nouveaux utilisateurs
 
-1. **Choisissez un modèle** → cliquez sur « Ouvrir au verso » **ou** téléchargez le ZIP.  
+1. **Choisissez un modèle** → cliquez sur « Ouvrir Overleaf » **ou** téléchargez le ZIP.  
 2. **Modifier les champs réservés** (`\title{}`, `\author{}`, etc.).  
 3. **Compiler** → Le PDF apparaît.  
 4. Si vous travaillez localement : décompressez → exécutez `latexmk -pdf main.tex` (ou `pdflatex` + `biber` selon les besoins).  

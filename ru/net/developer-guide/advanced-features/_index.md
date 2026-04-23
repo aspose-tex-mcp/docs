@@ -1,12 +1,12 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
-title: Расширенные возможности | .NET
+title: Расширенные возможности | Aspose.TeX для .NET
 linktitle: Расширенные функции
 weight: 20
 url: /net/advanced-features/
 description: В этой главе собраны функции решения Aspose.TeX API для .NET, построенного на основе реализации Object TeX/LaTeX.
-lastmod: "2024-09-24"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}

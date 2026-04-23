@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-java.md
 title: ラテックスからPDF | Java
@@ -7,7 +7,7 @@ weight: 11
 url: /java/latex-to-pdf/
 keywords: ラテックスからPDF、ラテックスPDF、ラテックスをPDFに変換します
 description: JavaのAspose.TeX APIソリューションを使用してTexをPDFに変換するには、この記事を学び、これを行う方法とコードの例を説明します。
-lastmod: "2025-06-09"
+lastmod: "2026-04-21"
 ---
 
 {{<section overview>}}

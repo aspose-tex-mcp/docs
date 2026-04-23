@@ -1,12 +1,12 @@
-﻿---
+---
 translation: true
 template: /templates/_template-java.md
-title: 乳胶到XPS | Java的Aspose.TeX
-linktitle: 乳胶到XPS
+title: LaTeX转XPS | Java
+linktitle: LaTeX转XPS
 weight: 12
 url: /java/latex-to-xps/
-description: Java的Aspose.TeX API解决方案的转换功能使您可以将乳胶文件转换为XPS格式。学习代码示例。
-lastmod: "2025-06-10"
+description: Java的Aspose.TeX API解决方案的转换功能使您可以将LaTeX文件转换为XPS格式。学习代码示例。
+lastmod: "2026-04-21"
 ---
 
 {{<section overview>}}
@@ -16,7 +16,7 @@ lastmod: "2025-06-10"
 
 有[**aspose.page**](https://products.aspose.com/page/)库，该库提供了用于操纵XPS文档的API，并将其转换为PDF和栅格图像格式。
 
-## 如何将乳胶转换为XPS
+## 如何将LaTeX转换为XPS
 
 转换为XPS与[转换为栅格图像格式](/tex/{{lang.url-fragment}}java/latex-to-image/)一样简单，除了[SaveOptions](https://reference.aspose.com/tex/java/com.aspose.tex/TeXOptions#getSaveOptions--)之外，我们必须使用[XPSDEVICE](https://reference.aspose.com/tex/java/com.aspose.tex.rendering/XpsDevice)类的实例。
 

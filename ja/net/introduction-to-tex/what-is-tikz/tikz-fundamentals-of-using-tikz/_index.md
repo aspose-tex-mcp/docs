@@ -8,7 +8,7 @@ url: /net/tikz-fundamentals-of-using-tikz/
 aliases: /net/fundamentals-of-using-tikz/
 keywords: tikz の基礎, tikz の基本, tikz チュートリアル
 description: TikZ の基本原理と基本コマンドを学び、TeX および LaTeX 文書用のグラフィックを作成しましょう。
-lastmod: "2026-02-26"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}

@@ -7,7 +7,7 @@ weight: 22
 url: /net/tikz-for-presentations-and-infographics/
 keywords: presentaciones TikZ, proyector TikZ, infografías TikZ
 description: Descubre cómo usar TikZ para crear presentaciones profesionales e infografías atractivas.
-lastmod: "2025-06-29"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}

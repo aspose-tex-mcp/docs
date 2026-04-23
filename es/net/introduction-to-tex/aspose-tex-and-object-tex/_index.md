@@ -1,17 +1,17 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
-linktitle: Objeto de texto
-title: Aspose.TeX y Objeto TeX
+linktitle: Object TeX
+title: Aspose.TeX y Object TeX
 weight: 11
 url: /net/aspose-tex-and-object-tex/
 description: TeX es un formato de entrada y salida de esta solución API, por lo que aquí vamos a explicar el Object TeX y cómo se transforma en un formato de destino.
-lastmod: "2024-10-30"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
 
-## Objeto de texto
+## Object TeX
 
 Ahora consideremos el formato de salida.
 

@@ -7,7 +7,7 @@ weight: 30
 url: /java/latex-text-fonts/
 keywords: латех, латехные шрифты, команды латехных текстовых шрифтов, латех большой, размер латехного шрифта
 description: В этой статье рассматриваются команды шрифтов LaTeX, которые независимо изменяют различные атрибуты шрифта для использования в обычном тексте.
-lastmod: "2024-09-24"
+lastmod: "2026-04-21"
 ---
 
 {{<section overview>}}
@@ -38,7 +38,7 @@ The bold typeface\end{bfseries} continues here.
 
 Сами по себе декларативные формы зачастую лучше подходят для определения новых сред или команд.
 
-> It is also important that the font commands with one argument do not allow paragraph breaks in their arguments.
+> Также важно, чтобы команды шрифтов с одним аргументом не допускавали разрывов абзацев в своих аргументах.
 
 ### Основной шрифт документа
 

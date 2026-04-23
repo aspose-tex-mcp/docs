@@ -7,7 +7,7 @@ weight: 16
 url: /net/what-is-latex/
 keywords: what is latex, latex what is it
 description: To answer the question  "What is LaTeX?" it is worth mentioning that one of its most impressive features is the New Font Selection Scheme (NFSS).
-lastmod: "2024-09-20"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}

@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: LaTeX コマンドラインツール | Aspose.TeX for .NET
@@ -6,8 +6,8 @@ linktitle: TeX/LaTeX ファイルを操作する CLI ツール
 weight: 70
 url: /net/cli-tools/
 description: Aspose.TeX のコマンドラインインターフェイス (CLI) ツールは、.NET 用に、シンプルなコマンドで TeX と LaTeX の処理と編集を簡単に行えるようにします。
-keywords: c# cli 用 tex ドキュメント, c# cli tex 管理, c# cli tex コーディング, tex ドキュメント c# cli
-lastmod: "2026-04-03"
+keywords: c# cli 用 TeX ドキュメント, c# cli TeX 管理, c# cli TeX コーディング, TeX ドキュメント c# cli
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}

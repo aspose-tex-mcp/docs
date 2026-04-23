@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-java.md
 title: Встроенная графика LaTeX | Java
@@ -7,7 +7,7 @@ weight: 18
 url: /java/latex-graphics-embedding/
 keywords: includegraphics latex, латехная встраивание графики base64, латехная графика в кодировке Base64, write18, Shell-escape, команда Latex Shell
 description: В статье вы узнаете, как вставлять изображения в кодировке Base64 в исходный код LaTeX, а также изучите функцию \write18, которая делает это возможным.
-lastmod: "2024-09-24"
+lastmod: "2026-04-21"
 ---
 
 {{<section overview>}}
@@ -51,6 +51,7 @@ iVBORw0KGgoAAAANSUhEUgAAAPgAAABdCAYAAAH/B5vAAAAAGXRFWHRTb2Z0d2FyZQBBZ......
 ```
 
 Вот! **Шаг 2** завершен. Мы успешно встроили изображение в файл LaTeX! Но что произойдет, когда мы запустим верстку этого файла с помощью LaTeX?»
+
 Процессор LaTeX запишет строку символов из среды во внешний файл с именем sample-image.64. Благодаря опции `overwrite` файл будет перезаписан, если он уже существует (например, если он был создан во время предыдущего запуска). Так же выполняется **Шаг 3**!
 
 ## Декодирование строки base64
@@ -114,7 +115,7 @@ iVBORw0KGgoAAAANSUhEUgAAAPgAAABdCAYAAAH/B5vAAAAAGXRFWHRTb2Z0d2FyZQBBZ......
 
 А код Java, использующий API **Aspose.TeX**, аналогичен тому, что можно найти в других статьях, за исключением указания опции режима оболочки:
 
-{{< gist "aspose-com-gists""67385c777283964d328086603f691ac9""Aspose.TeX.Examples-Conversion-EmbeddedBase64EncodedImage.java" >}}
+{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Conversion-EmbeddedBase64EncodedImage.java" >}}
 
 И вот **Шаг 5** завершен. По-настоящему исчерпывающие примеры можно найти в нашем [Пример проекта](https://github.com/aspose-tex/Aspose.TeX-for-Java).
 

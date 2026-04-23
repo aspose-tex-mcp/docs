@@ -7,7 +7,7 @@ weight: 90
 url: /java/latex-math-symbols/
 keywords: ams-latex, amsmath, amsfonts, amssymb, Latex-Mathe-Symbolklassen, Stmaryrd-Paket, St. Mary Road-Schriftart
 description: Lernen Sie die Klassifizierung mathematischer Symbole in TeX und den Zugriff auf Symbole Klassen mit Befehlen von Standard-TeX und dem Paket amssymb.
-lastmod: "2024-09-26"
+lastmod: "2026-04-21"
 ---
 
 {{<section overview>}}
@@ -59,9 +59,9 @@ TeX identifiziert die Objekte als Ord, Bin, Ord usw. und fügt dann Leerzeichen 
 Ord \: Bin \: Ord \; Rel \; Ord \, Op   Open Ord Punct \, Ord Close
 ```
 
-Das Minus vor „\max“ wird in ein *Ordinary* umgewandelt, da ein *Binary* einer *Relation* nicht folgen kann.
+Das Minus vor `\max` wird in ein *Ordinary* umgewandelt, da ein *Binary* einer *Relation* nicht folgen kann.
 
-In einer `\left...\right`-Konstruktion wird die gesamte durch die Konstruktion begrenzte Unterformel zu einem einzelnen Objekt der Klasse *Inner*. Im Gegensatz dazu erzeugen Befehle wie `\bigl` und „\Bigr“ jeweils einzelne Symbole der Klassen *Opening* und *Closing*. Der Unterschied zwischen ihnen ist in der Abstandstabelle oben ersichtlich. Obwohl sie zu Trennzeichen gleicher vertikaler Größe führen können, kann es je nach benachbarten Objekten in der Formel zu Abstandsunterschieden kommen. Beispielsweise erhält *Ordinary*, gefolgt von *Opening*, kein Leerzeichen, wohingegen *Ordinary*, gefolgt von *Inner*, durch ein dünnes Leerzeichen getrennt ist. Die Leerzeichen innerhalb der Unterformel innerhalb einer `\left...\right`-Konstruktion werden wie erwartet erstellt, beginnend mit einem *Öffnen*-Symbol und enden mit einem *Schließen*-Symbol.
+In einer `\left...\right`-Konstruktion wird die gesamte durch die Konstruktion begrenzte Unterformel zu einem einzelnen Objekt der Klasse *Inner*. Im Gegensatz dazu erzeugen Befehle wie `\bigl` und `\bigr` jeweils einzelne Symbole der Klassen *Opening* und *Closing*. Der Unterschied zwischen ihnen ist in der Abstandstabelle oben ersichtlich. Obwohl sie zu Trennzeichen gleicher vertikaler Größe führen können, kann es je nach benachbarten Objekten in der Formel zu Abstandsunterschieden kommen. Beispielsweise erhält *Ordinary*, gefolgt von *Opening*, kein Leerzeichen, wohingegen *Ordinary*, gefolgt von *Inner*, durch ein dünnes Leerzeichen getrennt ist. Die Leerzeichen innerhalb der Unterformel innerhalb einer `\left...\right`-Konstruktion werden wie erwartet erstellt, beginnend mit einem *Öffnen*-Symbol und enden mit einem *Schließen*-Symbol.
 
 
 ```tex
@@ -118,7 +118,7 @@ Ein häufiger Fehler besteht darin, diese Symbole direkt als *Binär*-Operatoren
 
 ![Mathesymbole deklarieren](/tex/images/java/tutorial/latex-ams-math-9-9.png)
 
-Mit dem Befehl „\DeclareMathSymbol“ können Sie Ihren eigenen Symbolnamen deklarieren.
+Mit dem Befehl `\DeclareMathSymbol` können Sie Ihren eigenen Symbolnamen deklarieren.
 ```tex
 \DeclareMathSymbol{cmd}{type}{symbol-font}{slot}
 ```

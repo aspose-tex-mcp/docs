@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: 外部 LaTeX 包 | Aspose.TeX for .NET
@@ -7,7 +7,7 @@ weight: 20
 url: /net/external-latex-packages/
 description: Aspose.TeX API for .NET 允许使用外部包，即库本身未包含的包，如 fancybox 和 pgfplots 包。
 keywords: 外部 LaTeX 包、Aspose.TeX、.NET TeX、LaTeX 包、fancybox、pgfplots、必需输入目录、输入 zip 文件、自定义输入目录、TeX 转换
-lastmod: "2026-02-25"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}

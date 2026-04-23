@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: Häufige Probleme mit LaTeX-Dateien und wie man sie löst
@@ -7,7 +7,7 @@ weight: 10
 url: /net/troubleshoot-with-latex-files/
 keywords: Probleme mit LaTeX-Dateien, beschädigte LaTeX-Dokumente, beschädigte LaTeX-Dateien, beschädigte LaTeX-Dateien, Probleme mit LaTeX-Dateien, Fehler in LaTeX
 description: Praktische Tipps zur Fehlerbehebung bei LaTeX-Dateien, zur Behebung von Fehlern, Kompilierungsproblemen, Paketkonflikten und andere.
-lastmod: "2024-09-26"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
@@ -75,7 +75,7 @@ Die Arbeit mit LaTeX kann manchmal zu verschiedenen Herausforderungen und Proble
 
 LaTeX-Dokumente müssen kompiliert werden, um die endgültige Ausgabe zu erzeugen. Kompilierungsfehler können aus verschiedenen Gründen auftreten, von einfachen Syntaxfehlern bis hin zu komplexeren Problemen im Zusammenhang mit Paketkonflikten oder der Dokumentstruktur. Hier sind einige häufige Gründe für LaTeX-Kompilierungsfehler:
 
-- Syntaxfehler wie falsche Verwendung von LaTeX-Befehlen, fehlende Backslashes `()` oder nicht übereinstimmende geschweifte Klammern `({})`.
+- Syntaxfehler wie falsche Verwendung von LaTeX-Befehlen, fehlende Backslashes `(\)`, oder nicht übereinstimmende geschweifte Klammern `({})`.
 - Fehlende oder falsch importierte oder installierte Pakete.
 - Nicht geschlossene Umgebungen `(wie „\begin{...}` ohne entsprechendes `\end{...}`.
 - Verwendung von Sonderzeichen, die in LaTeX eine besondere Bedeutung haben, wie z. B. der Unterstrich `(_)`.
@@ -483,7 +483,7 @@ Erwägen Sie für komplexere Schriften wie Kyrillisch, Griechisch oder Devanagar
 \^a % â
 ```
 
-Alternativ können Sie das Paket „inputenc“ verwenden, um Zeichen mit Akzent direkt einzugeben:
+Alternativ können Sie das Paket `inputenc` verwenden, um Zeichen mit Akzent direkt einzugeben:
 
 ```tex
 \usepackage[utf8]{inputenc} 

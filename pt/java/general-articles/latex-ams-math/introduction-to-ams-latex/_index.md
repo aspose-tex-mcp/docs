@@ -7,13 +7,13 @@ weight: 10
 url: /java/introduction-to-ams-latex/
 keywords: AMS-LATEX, AMSMATH, AMSMATH OPÇÕES, AMSOPN, AMSTEXT, AMSCD, AMSTHM, AMSXTRA, UPREF
 description: Este artigo é uma breve introdução no pacote da Amsmath e abrange brevemente suas opções, bem como subpackagens e extensões disponíveis.
-lastmod: "2025-06-16"
+lastmod: "2026-04-21"
 ---
 
 {{<section overview>}}
 
 
-*AMS*-LATEX A versão 1.0 foi lançado em 1990 e apresentou a conversão original em LaTeX dos recursos de matemática no*ams*-tex de Michael Spivak, de Frank Mittelbach e Rainer Schopf, que trabalhavam como consultores do*AMS*, com a assistência de Michael Downes of the*AMS*Tech Staff. Em 1994, o trabalho adicional foi realizado com David M. Jones.
+*AMS*-LATEX A versão 1.0 foi lançado em 1990 e apresentou a conversão original em LaTeX dos recursos de matemática no*ams*-tex de Michael Spivak, de Frank Mittelbach e Rainer Schopf, que trabalhavam como consultores do*AMS*, com a assistência de Michael Downes da equipe técnica da *AMS*. Em 1994, o trabalho adicional foi realizado com David M. Jones.
 
 O pacote *AMSMATH* aceita algumas opções que afetam principalmente o posicionamento de *limites* em vários operadores de matemática ou no posicionamento das tags de equação.
 

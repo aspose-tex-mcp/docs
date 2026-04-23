@@ -1,12 +1,12 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: Підтримувані формати файлів | Aspose.TeX .NET
 linktitle: Підтримувані формати файлів
 weight: 20
 url: /net/supported-file-formats/
-description: Це рішення для роботи з TeX для .NET підтримує файли TeX для введення та різноманітні вихідні формати, такі як TeX, XPS, PDF, PNG, JPEG, TIFF і PNG.
-lastmod: "2025-06-13"
+description: Це рішення для роботи з TeX для .NET підтримує файли TeX для введення та різноманітні вихідні формати, такі як XPS, PDF, PNG, JPEG, TIFF і BMP.
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}

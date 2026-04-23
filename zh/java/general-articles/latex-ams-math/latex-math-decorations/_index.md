@@ -7,7 +7,7 @@ weight: 40
 url: /java/latex-math-decorations/
 keywords: ams-latex、amsmath、amsxtra、latex积分、latex分数、latex装饰、latex箭头、latex极限、latex模关系
 description: 本文讨论了一些使用 amsmath 宏包生成各种中等大小数学结构的命令。
-lastmod: "2026-02-19"
+lastmod: "2026-04-21"
 ---
 
 {{<section overview>}}

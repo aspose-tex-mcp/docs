@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-java.md
 title: LaTeX в PDF | Java
@@ -7,7 +7,7 @@ weight: 11
 url: /java/latex-to-pdf/
 keywords: латех в pdf, латех pdf, конвертировать латех в pdf
 description: Чтобы преобразовать TeX в PDF с помощью решения Aspose.TeX API для Java, изучите эту статью, в которой описано, как это сделать, и приведены примеры кода.
-lastmod: "2024-09-24"
+lastmod: "2026-04-21"
 ---
 
 {{<section overview>}}
@@ -17,7 +17,7 @@ lastmod: "2024-09-24"
 
 Давайте подробнее рассмотрим код Java, обеспечивающий самый простой способ преобразования LaTeX в формат PDF.
 
-{{< gist "aspose-com-gists""67385c777283964d328086603f691ac9""Aspose.TeX.Examples-Conversion-LaTeXToPdf-Simplest.java" >}}
+{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Conversion-LaTeXToPdf-Simplest.java" >}}
 
 Итак, первое, что нам нужно сделать (иногда не самое первое, как мы узнаем позже) — это создать экземпляр класса [TeXOptions](https://reference.aspose.com/tex/java/com.aspose.tex/TeXOptions). Единственный статический метод, который это делает, — [consoleAppOptions()](https://reference.aspose.com/tex/java/com.aspose.tex/TeXOptions#consoleAppOptions-com.aspose.tex.TeXConfig-), поэтому не будем заморачиваться над значением его имени. Метод принимает [экземпляр](https://reference.aspose.com/tex/java/com.aspose.tex/TeXConfig#objectLaTeX--) класса [TeXConfig](https://reference.aspose.com/tex/java/com.aspose.tex/TeXConfig), который точно подходит для преобразования [файла LaTeX](/tex/{{lang.url-fragment}}net/latex-io/#latex-file). Эта конфигурация предписывает механизму Object TeX загрузить формат Object LaTeX и быть готовым принять файл LaTeX. Формат объекта LaTeX — это всего лишь формат [LaTeX](/tex/{{lang.url-fragment}}net/what-is-latex/), за исключением того, что он использует специальные примитивы [Object TeX](/tex/{{lang.url-fragment}}net/aspose-tex-and-object-tex/#object-tex) для настройки показателей страницы.
 
@@ -53,7 +53,7 @@ Transcript written on hello-world.log.
 
 Есть еще один конструктор класса [PdfDevice](https://reference.aspose.com/tex/java/com.aspose.tex.rendering/PdfDevice#PdfDevice-java.io.OutputStream-), который позволяет нам получить результирующий PDF-файл альтернативным способом.
 
-{{< gist "aspose-com-gists""67385c777283964d328086603f691ac9""Aspose.TeX.Examples-Conversion-LaTeXToPdf-Alternative.java" >}}
+{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Conversion-LaTeXToPdf-Alternative.java" >}}
 
 Файл *any-name.pdf* в указанном каталоге будет нашим основным выходным PDF-файлом. В то же время, в отличие от [вывод изображения](/tex/{{lang.url-fragment}}java/latex-to-png/#an-alternative-way-to-write-main-output-png-files), мы не найдем никаких PDF-файлов в выходном каталоге, определенном параметрами преобразования. Исключение: *any-name.pdf* находится (по пути) в том же каталоге файловой системы, который назначен параметру [OutputWorkingDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/TeXOptions#getOutputWorkingDirectory--) с помощью [OutputFileSystemDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/OutputFileSystemDirectory).
 

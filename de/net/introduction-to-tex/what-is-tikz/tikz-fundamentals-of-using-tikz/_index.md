@@ -7,7 +7,7 @@ weight: 19
 url: /net/tikz-fundamentals-of-using-tikz/
 keywords: TikZ-Grundlagen, TikZ-Grundlagen, TikZ-Tutorial
 description: Lernen Sie die grundlegenden Prinzipien und Befehle von TikZ kennen, um Grafiken für Ihre TeX- und LaTeX-Dokumente zu erstellen.
-lastmod: "2025-06-29"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}

@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 linktitle: Aspose.TeX 用 .NET
@@ -7,7 +7,7 @@ weight: 10
 url: /net/
 description: C＃.NETのAPIソリューション内のTEXファイルを管理します。ライブラリは、TEX入力を渡し、出力と高度な機能を取得する方法を提供します。
 is_root: true
-lastmod: "2025-06-09"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
@@ -18,7 +18,7 @@ lastmod: "2025-06-09"
 
 **.NETのAspose.TeXへようこそ**
 
-Aspose.TeXは、Texファイルタイプセット用の.NETライブラリです。 XPS、PDF、PNG、JPEG、TIFF、BMPなどのさまざまなグラフィック形式でTEX入力を提示できます。また、他のTexエンジンと同じようにトレース情報を出力します。 APIは、TEX入力を渡して出力を取得するさまざまな方法を提供します。また、高度な機能として、均一に設計されたいくつかのドキュメントを入力したい場合は、独自のTex形式を作成できます。
+Aspose.TeXは、TeXファイルタイプセット用の.NETライブラリです。 XPS、PDF、PNG、JPEG、TIFF、BMPなどのさまざまなグラフィック形式でTeX入力を提示できます。また、他のTeXエンジンと同じようにトレース情報を出力します。 APIは、TeX入力を渡して出力を取得するさまざまな方法を提供します。また、高度な機能として、均一に設計されたいくつかのドキュメントを入力したい場合は、独自のTeX形式を作成できます。
 
 {{% /alert %}}
 

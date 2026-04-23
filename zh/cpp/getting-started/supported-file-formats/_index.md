@@ -5,8 +5,8 @@ title: 支持的文件格式| C++的Aspose.TeX
 linktitle: 支持的文件格式
 weight: 20
 url: /cpp/supported-file-formats/
-description: 该C ++的TEX操纵解决方案支持用于输入的TEX文件以及TX，XPS，PDF，PNG，JPEG，TIFF和PNG等各种输出格式。
-lastmod: "2025-06-10"
+description: 该C ++的TEX操纵解决方案支持用于输入的TEX文件以及TeX，XPS，PDF，PNG，JPEG，TIFF和PNG等各种输出格式。
+lastmod: "2026-04-20"
 ---
 
 {{<section overview>}}

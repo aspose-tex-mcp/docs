@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 linktitle: Aspose.TeX 用于 .NET
@@ -7,7 +7,7 @@ weight: 10
 url: /net/
 description: 为C＃.NET管理API解决方案中的TEX文件。该库提供了传递Tex输入并获得输出和高级功能的方法。
 is_root: true
-lastmod: "2025-06-10"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
@@ -18,7 +18,7 @@ lastmod: "2025-06-10"
 
 **欢迎来到Aspose.TeX 用于 .NET**
 
-Aspose.TeX 用于 .NET库，用于排水的Tex文件。它可以以XPS，PDF，PNG，JPEG，TIFF和BMP等各种图形格式显示Tex输入。它还像任何其他Tex发动机一样输出跟踪信息。 API提供了通过Tex输入和获取输出的各种方式。而且，作为一项高级功能，如果您想统一设计许多文档，则可以创建自己的TEX格式。
+Aspose.TeX 用于 .NET 库，用于排版的 TeX 文件。它可以以 XPS、PDF、PNG、JPEG、TIFF 和 BMP 等各种图形格式显示 TeX 输入。它还像任何其他 TeX 引擎一样输出跟踪信息。API 提供了通过 TeX 输入和获取输出的各种方式。而且，作为一项高级功能，如果您想统一设计许多文档，则可以创建自己的 TeX 格式。
 
 {{% /alert %}}
 

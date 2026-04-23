@@ -58,7 +58,7 @@ Die Grundstruktur einer Tabelle in LaTeX umfasst die folgenden Komponenten:
 
 2. Spaltenspezifikation: In der tabellarischen Umgebung definieren Sie die Anzahl der Spalten und deren Ausrichtung mithilfe von Spaltenspezifizierern. Zu den gängigen Spezifizierern gehören `l` für linksbündige Spalten, `c` für zentrierte Spalten und `r` für rechtsbündige Spalten. Sie können auch festlegen, welche Spalten LaTeX durch vertikale Linien trennen und welche vertikalen Außenränder gezeichnet werden sollen.
 
-3. **Zeileninhalt**: Jede Zeile der Tabelle wird durch Angabe des Inhalts für jede Zelle innerhalb der Zeile erstellt. Zellen werden durch das Symbol „&“ getrennt und jede Zeile wird mit dem Befehl „\\“ abgeschlossen.
+3. **Zeileninhalt**: Jede Zeile der Tabelle wird durch Angabe des Inhalts für jede Zelle innerhalb der Zeile erstellt. Zellen werden durch das Symbol `&` getrennt und jede Zeile wird mit dem Befehl `\\` abgeschlossen.
 
 4. **Horizontale Linien**: Mit dem Befehl `\hline` können Sie horizontale Linien zum Trennen von Zeilen sowie horizontale Außenränder hinzufügen. Dies wertet die optische Struktur des Tisches auf.
 
@@ -106,7 +106,7 @@ Sie können auch horizontale Linien zeichnen, die nicht die gesamte Tabelle von 
 \end{tabular}
 ```
 
-Hier weist der Befehl „\cline{i-j}“ LaTeX an, eine Linie von der i<sup>ten</sup> Spalte zur j<sup>ten</sup> Spalte zu zeichnen.
+Hier weist der Befehl `\cline{i-j}` LaTeX an, eine Linie von der i<sup>ten</sup> Spalte zur j<sup>ten</sup> Spalte zu zeichnen.
 
 <a href="/tex/java/latex-tables/latex-tables-3.jpg" style="display:inline-block;width:100%;">![Beispielausgabe](latex-tables-3.jpg)</a>
 
@@ -119,12 +119,12 @@ Spalten in einer Tabelle können eine feste Breite haben. In diesem Fall werden 
 \end{tabular}
 ```
 
-Beachten Sie die Verwendung des Befehls „\newline“.
+Beachten Sie die Verwendung des Befehls `\newline`.
 
 <a href="/tex/java/latex-tables/latex-tables-4.jpg" style="display:inline-block;width:100%;">![Beispielausgabe](/tex/images/java/tutorial/latex-tables-4.jpg)</a>
 
-Mit dem Paket `array` stehen zwei weitere Optionen für Spalten mit fester Breite zur Verfügung: „m{width}“ – wie `p{width}`, richtet den Zelleninhalt jedoch vertikal in der Mitte aus;
-„b{width}“ – wie `p{width}`, richtet den Zelleninhalt jedoch unten vertikal aus.
+Mit dem Paket `array` stehen zwei weitere Optionen für Spalten mit fester Breite zur Verfügung: `m{width}` – wie `p{width}`, richtet den Zelleninhalt jedoch vertikal in der Mitte aus;
+`b{width}` – wie `p{width}`, richtet den Zelleninhalt jedoch unten vertikal aus.
 
 In dem seltenen Fall, dass eine Tabelle in den Text eines Absatzes eingefügt werden muss, können Sie die Position der Tabelle relativ zur Grundlinie der umschließenden Textzeile angeben. Zu diesem Zweck verwenden Sie die Option `t`, `c` (Standard) oder `b`, um die Grundlinie am oberen, mittleren oder unteren Rand der Tabelle auszurichten. Zum Beispiel,
 
@@ -145,7 +145,7 @@ Hier teilen wir LaTeX mit, dass die Grundlinie am unteren Rand der Tabelle ausge
 
 ### Mehrere Spalten definieren
 
-Wenn Ihre Tabelle identisch ausgerichtete Spalten enthält, können Sie sie alle mit der Syntax „*{num}{format}“ als Eins definieren. Dies ist besonders nützlich, wenn Ihre Tabelle viele Spalten enthält.
+Wenn Ihre Tabelle identisch ausgerichtete Spalten enthält, können Sie sie alle mit der Syntax `*{num}{format}` als Eins definieren. Dies ist besonders nützlich, wenn Ihre Tabelle viele Spalten enthält.
 
 ```tex
 \begin{tabular}{l*{7}{c}r}
@@ -183,7 +183,7 @@ Bei LaTeX-Tabellen ist die Anpassung der Abstände entscheidend, um sicherzustel
 
 ### Abstand zwischen den Spalten
 
-LaTeX fügt automatisch etwas Abstand zwischen den Spalten hinzu. Um den Abstand zwischen den Spalten anzupassen, können Sie den Befehl „\setlength{\tabcolsep}{value}“ vor der tabellarischen Umgebung verwenden. Durch Erhöhen des Werts wird der Abstand zwischen den Spalten vergrößert. Der Standardwert ist „6pt“.
+LaTeX fügt automatisch etwas Abstand zwischen den Spalten hinzu. Um den Abstand zwischen den Spalten anzupassen, können Sie den Befehl `\setlength{\tabcolsep}{value}` vor der tabellarischen Umgebung verwenden. Durch Erhöhen des Werts wird der Abstand zwischen den Spalten vergrößert. Der Standardwert ist „6pt“.
 
 ### Abstand zwischen den Reihen
 
@@ -290,7 +290,7 @@ Hier ist das einfache Beispiel:
 
 Damit sich eine Zelle über mehrere Zeilen erstreckt, müssen Sie das Paket `multirow` einbinden. Das Paket stellt den folgenden Befehl bereit: `\multirow{num_rows}{width}{contents}`.
 
-Hier ist `num_rows` die Anzahl der zusammenzuführenden Zeilen; „width“ ist die Zellenbreite („*“ für die natürliche Breite des Inhalts) und „contents“ sind die tatsächlichen Daten, die in der Zelle gesetzt werden sollen.
+Hier ist `num_rows` die Anzahl der zusammenzuführenden Zeilen; `width` ist die Zellenbreite (`*` für die natürliche Breite des Inhalts) und `contents` sind die tatsächlichen Daten, die in der Zelle gesetzt werden sollen.
 
 ```tex
 \begin{tabular}{|l|l|l|}
@@ -732,7 +732,7 @@ Das Setzen von Tabellen in LaTeX kann eine differenzierte Aufgabe sein, aber die
     - Wenn Ihre Daten für eine einzelne Tabelle zu komplex sind, sollten Sie sie in mehrere kleinere Tabellen aufteilen oder andere visuelle Hilfsmittel wie Grafiken oder Diagramme verwenden.
     
 9. **Nutzen Sie den horizontalen Raum mit Bedacht:**
-    - Passen Sie den Abstand zwischen den Spalten mit „\setlength{\tabcolsep}{value}“ und den Abstand zwischen den Zeilen mit `\renewcommand{\arraystretch}{value}` an, um das Tabellenlayout zu optimieren.
+    - Passen Sie den Abstand zwischen den Spalten mit `\setlength{\tabcolsep}{value}` und den Abstand zwischen den Zeilen mit `\renewcommand{\arraystretch}{value}` an, um das Tabellenlayout zu optimieren.
 
 10. **Korrekturlesen Sie Ihre Tabellen:**
     - Lesen Sie Ihre Tabellen sorgfältig Korrektur und überprüfen Sie sie auf Fehler, einschließlich Datengenauigkeit, Formatierung und Ausrichtung.

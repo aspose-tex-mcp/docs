@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: LaTeX у PDF | .NET
@@ -7,7 +7,7 @@ weight: 11
 url: /net/latex-to-pdf/
 keywords: latex у pdf, latex pdf, конвертація latex у pdf
 description: Щоб конвертувати TeX у PDF за допомогою рішення API Aspose.TeX для .NET, ознайомтеся з цією статтею, щоб побачити, як це зробити, і приклади коду.
-lastmod: "2026-04-03"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
@@ -17,7 +17,7 @@ lastmod: "2026-04-03"
 
 Давайте детально розглянемо код у C#, що забезпечує найпростіший спосіб конвертувати LaTeX у формат PDF.
 
-{{< gist "aspose-com-gists""507170b996a1d0c39bb4374e888b3205""Example-ConvertLaTeXToPDF-Simplest.cs" >}}
+{{< gist "aspose-com-gists" "507170b996a1d0c39bb4374e888b3205" "Example-ConvertLaTeXToPDF-Simplest.cs" >}}
 
 Отже, перше, що нам потрібно зробити (ну, іноді не перше), це створити екземпляр класу [TeXOptions](https://reference.aspose.com/tex/net/aspose.tex/texoptions/). Єдиним статичним методом, який це робить, є [ConsoleAppOptions()](https://reference.aspose.com/tex/net/aspose.tex/texoptions/consoleappoptions/), тож давайте не будемо спантеличуватися значенням його назви. Метод приймає [примірник](https://reference.aspose.com/tex/net/aspose.tex/texconfig/objectlatex/) класу [TeXConfig](https://reference.aspose.com/tex/net/aspose.tex/texconfig/), який точно підходить для перетворення [файлу LaTeX](/tex/{{lang.url-fragment}}net/latex-io/#latex-file). Ця конфігурація повідомляє механізму Object TeX завантажити формат Object LaTeX і бути готовим прийняти файл LaTeX. Формат Object LaTeX насправді є лише форматом [LaTeX](/tex/{{lang.url-fragment}}net/what-is-latex/), за винятком того, що він використовує специфічні примітиви [Object TeX](/tex/{{lang.url-fragment}}net/aspose-tex-and-object-tex/#object-tex) для налаштування показників сторінки.
 
@@ -54,7 +54,7 @@ Transcript written on hello-world.log.
 
 Є ще один конструктор класу [PdfDevice](https://reference.aspose.com/tex/net/aspose.tex.presentation.pdf/pdfdevice/pdfdevice/), який дозволяє нам отримати кінцевий PDF-файл альтернативним способом.
 
-{{< gist "aspose-com-gists""507170b996a1d0c39bb4374e888b3205""Example-ConvertLaTeXToPDF-Alternative.cs" >}}
+{{< gist "aspose-com-gists" "507170b996a1d0c39bb4374e888b3205" "Example-ConvertLaTeXToPDF-Alternative.cs" >}}
 
 Файл *any-name.pdf* у вказаному каталозі буде нашим основним вихідним PDF-файлом. У той же час, на відміну від [image output](/tex/{{lang.url-fragment}}net/latex-to-png/#an-alternative-way-to-write-main-output-png-files), ми не знайдемо PDF-файлів у вихідному каталозі, визначеному параметрами перетворення. Виняток: *any-name.pdf* знаходиться (за своїм шляхом) у тому самому каталозі файлової системи, який призначено параметру [OutputWorkingDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/outputworkingdirectory/) за допомогою [OutputFileSystemDirectory](https://reference.aspose.com/tex/net/aspose.tex.io/outputfilesystemdirectory/).
 

@@ -6,7 +6,7 @@ linktitle: Licenze
 weight: 70
 url: /cpp/licensing/
 description: Quando ti sei fermato sulla versione autorizzata della soluzione API Aspose.TeX per C ++ qui scopri come applicare la licenza.
-lastmod: "2025-06-13"
+lastmod: "2026-04-20"
 ---
 
 {{<section overview>}}

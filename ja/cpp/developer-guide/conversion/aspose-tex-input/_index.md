@@ -5,8 +5,8 @@ title: Aspose.TeXの入力インターフェイス| C++
 linktitle: Aspose.TeXの入力インターフェイス
 weight: 15
 url: /cpp/aspose-tex-input/
-description: 入力形式として、Texを使用したC ++のAsophes.Tex APIソリューションの変換機能については、コードの例で説明します。
-lastmod: "2025-06-09"
+description: 入力形式として、Texを使用したC++のAspose.TeX APIソリューションの変換機能については、コードの例で説明します。
+lastmod: "2026-04-20"
 ---
 
 {{<section overview>}}

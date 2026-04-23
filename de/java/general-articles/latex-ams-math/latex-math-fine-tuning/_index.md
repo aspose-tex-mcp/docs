@@ -7,7 +7,7 @@ weight: 70
 url: /java/latex-math-fine-tuning/
 keywords: ams-latex, amsmath, Latex-Math-Abstände, Latex-Math-Stile, Latex-Math-Trennzeichen, Latex-Math-Klammern, Latex-Math-Ausrichtung
 description: In diesem Artikel geht es um die Feinabstimmung des mathematischen Layouts – automatische Größen- und Abstände, große Trennzeichen, präzise Ausrichtung.
-lastmod: 2024-09-20
+lastmod: 2026-04-21
 ---
 
 {{<section overview>}}
@@ -20,10 +20,10 @@ Mathematische Symbole und Buchstaben werden im Allgemeinen kleiner (und mit enge
 
 ||||
 |---|---|---|
-| *D, D'* | `\displaystyle`| Displayed on lines by themselves |
-| *T, T'* | `\textstyle`| Embedded in text |
-| *S, S'* | `\scriptstyle`| In superscripts or subscripts |
-| *SS, SS'* | `\scriptscriptstyle`| In all higher-order superscripts or subscripts |
+| *D, D'* | `\displaystyle`| Auf Zeilen für sich alleine angezeigt |
+| *T, T'* | `\textstyle`| Im Text eingebettet |
+| *S, S'* | `\scriptstyle`| In Hoch- bzw. Tiefstellungen |
+| *SS, SS'* | `\scriptscriptstyle`| In allen höheren Hoch- bzw. Tiefstellungen |
 
 Der Textstil (*T*) wird auf der obersten Ebene einer Formel verwendet, die im Fließtext steht (zwischen einem Paar `$` oder zwischen `\(` und `\)`), während der Anzeigestil auf der obersten Ebene einer angezeigten Formel verwendet wird (zwischen einem Paar `$$` oder zwischen `\[` und `\]`). Wie bei Unterformeln kann der Stil aus der folgenden Tabelle bestimmt werden:
 

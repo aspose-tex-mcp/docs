@@ -7,7 +7,7 @@ weight: 90
 url: /java/latex-math-displayed-equations/
 keywords: latex, formules mathématiques en latex, mathématiques en latex, formule affichée en mathématiques en latex, équation affichée en mathématiques en latex, tableau d'équations mathématiques en latex, alignement affiché en mathématiques en latex
 description: Découvrez comment afficher des formules mathématiques de grande taille ou d'un grand nombre de formules à l'aide des commandes fournies par LaTeX.
-lastmod: "2024-09-27"
+lastmod: "2026-04-21"
 ---
 
 {{<section overview>}}
@@ -106,7 +106,7 @@ Il est également possible d'étiqueter et de référencer des équations en uti
 \begin{equation} \label{eq:someequation}
   f(x)=(x+a)(x+b)
 \end{equation}
-this references equation \ref{eq:someequation}.
+cela fait référence à l'équation \ref{eq:someequation}.
 ```
 
 aboutit à

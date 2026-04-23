@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: 'Modelli LaTeX - guida rapida'
@@ -7,8 +7,8 @@ type: docs
 weight: 100
 url: /net/latex-templates/
 description: Scopri cosa sono i modelli LaTeX, come utilizzarli e crearli, dove scaricare quelli più popolari e un flusso di lavoro veloce con snippet pronti da copiare.
-keywords: LaTeX, modello, classe, stile, retro, CTAN, bibliografia, Beamer, tesi, CV
-lastmod: "2025-12-03"
+keywords: LaTeX, modello, classe, stile, Overleaf, CTAN, bibliografia, Beamer, tesi, CV
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
@@ -36,7 +36,7 @@ Un modello LaTeX raggruppa una **classe** (`.cls`), un **stile** (`.sty`), file 
 \end{document}
 ```
 
-Compilare con `pdflatex`, `latexmk -pdf` o con il pulsante “Ricompile” sul retro.
+Compilare con `pdflatex`, `latexmk -pdf` o con il pulsante “Recompile” di Overleaf.
 
 ## Come creare il tuo modello
 
@@ -69,7 +69,7 @@ Usalo con `\documentclass{mytemplate}` nel tuo documento.
 
 ## Dove scaricare i modelli LaTeX
 
-- **Galleria sul retro** – la più grande raccolta pubblica (≈4000 modelli gratuiti).  
+- **Overleaf Gallery** – la più grande raccolta pubblica (≈4000 modelli gratuiti).  
   <https://www.overleaf.com/gallery>
 - **CTAN (ComprehensiveTeXArchive Network)** – repository ufficiale per classi specifiche della rivista.  
   <https://ctan.org/>
@@ -89,11 +89,11 @@ Usalo con `\documentclass{mytemplate}` nel tuo documento.
 | 7 | **a0poster / tikzposter** | Poster scientifici di grandi dimensioni |
 | 8 | **Tesi universitarie** (ad esempio, `cambridgephd.cls`) | Tesi di dottorato/laurea magistrale istituzionali |
 | 9 | **Astronomia e astrofisica** (`aa.cls`) | Articoli di riviste A&A |
-| 10 | **Articolo di rivista accademica di base** | Introduzione semplice per articoli (retro) |
+| 10 | **Articolo di rivista accademica di base** | Introduzione semplice per articoli (Overleaf) |
 
 ## Flusso di lavoro rapido per gli utenti alle prime armi
 
-1. **Scegli un modello** → fai clic su "Apri sul retro" **o** scarica il file ZIP.  
+1. **Scegli un modello** → fai clic su "Apri in Overleaf" **o** scarica il file ZIP.  
 2. **Modifica campi segnaposto** (`\title{}`, `\author{}`, ecc.).  
 3. **Compila** → Viene visualizzato il PDF.  
 4. Se lavori localmente: decomprimi → esegui `latexmk -pdf main.tex` (o `pdflatex` + `biber` come richiesto).  
@@ -102,7 +102,7 @@ Usalo con `\documentclass{mytemplate}` nel tuo documento.
 ## Insidie ​​e suggerimenti comuni
 
 - **Pacchetti mancanti** – installa con il gestore della tua distribuzione (`tlmgr install <pkg>` o console MiKTeX).  
-- **Classi obsolete** – Sul retro viene utilizzata la versione più recente di TeXLive; aggiorna regolarmente la tua installazione locale di TeX.  
+- **Classi obsolete** – Overleaf utilizza la versione più recente di TeXLive; aggiorna regolarmente la tua installazione locale di TeX.  
 - **Motore bibliografico**: molti modelli moderni si aspettano `biber`. Esegui `biber <basename>` dopo il primo passaggio LaTeX.  
 - **Risorse di branding**: sostituisci loghi, PDF a colori o file ".sty" che definiscono i colori istituzionali.  
 - **Comandi personalizzati**: conservali in un file `.sty` separato; è quindi possibile riutilizzare lo stesso layout su più documenti.

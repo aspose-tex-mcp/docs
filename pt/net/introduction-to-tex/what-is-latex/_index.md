@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: O que é LaTeX? 
@@ -7,24 +7,24 @@ weight: 16
 url: /net/what-is-latex/
 keywords: o que é LaTeX, LaTeX o que é
 description: Para responder à pergunta "O que é LaTeX?" Vale ressaltar que um de seus recursos mais impressionantes é o novo esquema de seleção de fontes (NFSS).
-lastmod: "2025-06-16"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
 
 Então, o que é LaTeX?
 
-O LATEX é o formato [Tex](/tex/{{lang.url-fragment}}net/what-is-tex/), em resumo.
+O LaTeX é o formato [TeX](/tex/{{lang.url-fragment}}net/what-is-tex/), em resumo.
 
-O LATEX (*lah-tekh ou ley-tekh*, geralmente estilizado como LaTeX) é um sistema de software para a preparação de documentos que foi originalmente escrito no início dos anos 80 por <a href = "https://en.wikipedia.org/wiki/leslie_lamport" alvo = _blank Rel = "NOFLIGHT"> href = "https://en.wikipedia.org/wiki/sri_international" Target = _blank rel = "nofollow"> sri internacional </a>. É isso que <a href = "https://en.wikipedia.org/wiki/latex" Target = _blank rel = "Nofollow"> Wikipedia </a> Diz.
+O LaTeX (*LAH-tekh ou LAY-tekh*, geralmente estilizado como LaTeX) é um sistema de software para a preparação de documentos que foi originalmente escrito no início dos anos 80 por <a href="https://en.wikipedia.org/wiki/Leslie_Lamport" target=_blank rel="nofollow">Leslie Lamport</a> no <a href="https://en.wikipedia.org/wiki/SRI_International" target=_blank rel="nofollow">SRI International</a>. É isso que a <a href="https://en.wikipedia.org/wiki/LaTeX" target=_blank rel="nofollow">Wikipedia</a> diz.
 
 Respondendo à pergunta "O que é LaTeX?" Gostaríamos de mencionar alguns de seus recursos.
 
-Um dos recursos mais impressionantes do LaTex é o novo esquema de seleção de fontes (NFSS). É o subsistema macro que permite alterar as propriedades individuais da fonte atual, em vez de definir uma nova fonte como um todo, pois funcionava no Tex original (Pleno Tex não ofereceu muito para isso). Por exemplo, você tem a fonte atual que é o Itálico Romano Moderno do computador e deseja mudar para uma fonte em negrito do mesmo tipo que está física localizada em um arquivo de fonte diferente. No Tex original, você precisa controlar as seqüências mapeadas para os nomes de arquivos da Fonte; portanto, para alternar, basta chamar outro comando. Mas o preço é muitas sequências de controle. No LATEX, você precisa apenas pedir ao motor para alterar o tipo de letra. Ele selecionará a fonte atual apropriada para você.
+Um dos recursos mais impressionantes do LaTeX é o novo esquema de seleção de fontes (NFSS). É o subsistema macro que permite alterar as propriedades individuais da fonte atual, em vez de definir uma nova fonte como um todo, pois funcionava no TeX original (Pleno TeX não ofereceu muito para isso). Por exemplo, você tem a fonte atual que é o Itálico Romano Moderno do computador e deseja mudar para uma fonte em negrito do mesmo tipo que está física localizada em um arquivo de fonte diferente. No TeX original, você precisa controlar as seqüências mapeadas para os nomes de arquivos da Fonte; portanto, para alternar, basta chamar outro comando. Mas o preço é muitas sequências de controle. No LaTeX, você precisa apenas pedir ao motor para alterar o tipo de letra. Ele selecionará a fonte atual apropriada para você.
 
 Outro recurso é várias classes de documentos. Estes são arquivos de entrada auxiliares que contêm os valores dos parâmetros internos da TEX correspondentes a um tipo de documento específico, como um livro, artigo, carta ou qualquer outra coisa.
 
-O LATEX também inclui suporte para vários recursos que podem ser convenientes para um autor de documentos. Esses recursos geralmente são coletados em arquivos de entrada auxiliares chamados pacotes. Nos pacotes, você pode encontrar ferramentas avançadas para matemática, desenhar gráficos, suporte para fontes que não fazem parte da distribuição de LaTeX, etc. Mesmo para desenhar fórmulas químicas 2D.
+O LaTeX também inclui suporte para vários recursos que podem ser convenientes para um autor de documentos. Esses recursos geralmente são coletados em arquivos de entrada auxiliares chamados pacotes. Nos pacotes, você pode encontrar ferramentas avançadas para matemática, desenhar gráficos, suporte para fontes que não fazem parte da distribuição de LaTeX, etc. Mesmo para desenhar fórmulas químicas 2D.
 
 Aqui está um exemplo relativamente pequeno:
 

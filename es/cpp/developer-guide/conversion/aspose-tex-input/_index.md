@@ -6,7 +6,7 @@ linktitle: Interfaz de entrada de Aspose.TeX
 weight: 15
 url: /cpp/aspose-tex-input/
 description: La funcionalidad de conversión de la solución API Aspose.TeX para C++ con TeX, como formato de entrada, se explica aquí con los ejemplos de código.
-lastmod: "2024-10-30"
+lastmod: "2026-04-20"
 ---
 
 {{<section overview>}}

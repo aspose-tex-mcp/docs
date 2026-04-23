@@ -7,7 +7,7 @@ weight: 40
 url: /java/latex-math-decorations/
 keywords: ams-latex, amsmath, amsxtra, integrali in LaTeX, frazioni in LaTeX, decorazioni in LaTeX, frecce in LaTeX, limiti in LaTeX, relazioni modulari in LaTeX
 description: Questo articolo descrive una serie di comandi che producono varie strutture matematiche di medie dimensioni utilizzando il pacchetto amsmath.
-lastmod: "2026-03-30"
+lastmod: "2026-04-21"
 ---
 
 {{<section overview>}}
@@ -183,7 +183,7 @@ u & \equiv v + 1 \bmod{n^2} \\
 u & = v + 1 \pmod{n^2} \\
 u & = v + 1 \pod{n^2}
 \end{align*}
-The in-text layout: $ u = v + 1 \pmod{n^2} $
+Il layout nel testo: $ u = v + 1 \pmod{n^2} $
 \begin{gather*}
 (m \bmod n) = k^2 \, ; \quad x \equiv y \pmod b \, ; \\
 x \equiv y \mod c \, ; \quad x \equiv y \pod d\, .

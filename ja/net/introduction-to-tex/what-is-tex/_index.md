@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: TeXとは何ですか？
@@ -7,7 +7,7 @@ weight: 10
 url: /net/what-is-tex/
 keywords: what is tex
 description: このページでは「TeXとは何か？」という質問に簡潔に答えます。プログラミング言語の一種ですか、それとも文書形式とみなされますか？
-lastmod: "2026-02-26"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}

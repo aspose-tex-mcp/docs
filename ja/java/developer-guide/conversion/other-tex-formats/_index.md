@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-java.md
 title: その他のTEX変換出力形式| Java
@@ -6,7 +6,7 @@ linktitle: その他のTEX形式
 weight: 18
 url: /java/other-tex-formats/
 description: Java用のAspose.TeX APIソリューションの変換機能により、LaTexファイルと独自のカスタムTEXファイルを変換できます。いくつかのコードの例を次に示します。
-lastmod: "2025-06-09"
+lastmod: "2026-04-21"
 ---
 
 {{<section overview>}}

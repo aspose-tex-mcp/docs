@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: Другие параметры управления TeX | .NET 
@@ -6,7 +6,7 @@ linktitle: Другие варианты
 weight: 17
 url: /net/other-options/
 description: Функциональность преобразования решения Aspose.TeX API для .NET позволяет установить начальный режим взаимодействия, в котором запускается движок.
-lastmod: "2026-04-03"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
@@ -15,53 +15,53 @@ lastmod: "2026-04-03"
 
 Как мы упоминали [здесь](/tex/{{lang.url-fragment}}net/tex-io/#tex-interaction-modes), **Aspose.TeX для .NET** позволяет нам установить начальный режим взаимодействия, в котором запускается движок. Вот как мы это делаем:
 
-{{< gist "aspose-com-gists""deadfd7c29ffe40024a9b6d12f0ed18a""Example-InteractionMode.cs" >}}
+{{< gist "aspose-com-gists" "deadfd7c29ffe40024a9b6d12f0ed18a" "Example-InteractionMode.cs" >}}
 
 ## Как задать имя задания
 
 Когда мы передаем основной входной файл в качестве имени файла, мы получаем выходные файлы с тем же именем, но с другими расширениями. Движок TeX называет имя входного файла *имя задания* и использует его для выходных файлов, за исключением случаев, когда записываются вспомогательные файлы с явно указанными другими именами. Когда мы передаем основной входной файл как [поток](/tex/{{lang.url-fragment}}net/other-ways-of-main-input/#providing-the-main-input-file-as-a-stream), движок TeX использует имя задания по умолчанию — *texput*.
 В обоих случаях мы можем переопределить имя задания, назначив соответствующий параметр преобразования.
 
-{{< gist "aspose-com-gists""deadfd7c29ffe40024a9b6d12f0ed18a""Example-JobName.cs" >}}
+{{< gist "aspose-com-gists" "deadfd7c29ffe40024a9b6d12f0ed18a" "Example-JobName.cs" >}}
 
 ## Как «остановить время»
 
 В LaTeX есть функция автоматического создания заголовка на основе некоторых определений в преамбуле. Этот заголовок обычно содержит текущую дату. Возможно, мы захотим заморозить дату в каком-то желаемом значении. Вот как это можно сделать:
 
-{{< gist "aspose-com-gists""deadfd7c29ffe40024a9b6d12f0ed18a""Example-DateTime.cs" >}}
+{{< gist "aspose-com-gists" "deadfd7c29ffe40024a9b6d12f0ed18a" "Example-DateTime.cs" >}}
 
 ## Как игнорировать недостающие пакеты
 
 Возможно, мы захотим преобразовать файл LaTeX, который ссылается на некоторые пакеты, которые не поддерживаются библиотекой Aspose.TeX для .NET. В этом случае движок TeX остановится с ошибкой при попытке загрузить такой пакет. Чтобы избежать этого, мы можем использовать следующий вариант:
 
-{{< gist "aspose-com-gists""deadfd7c29ffe40024a9b6d12f0ed18a""Example-IgnoreMissingPackages.cs" >}}
+{{< gist "aspose-com-gists" "deadfd7c29ffe40024a9b6d12f0ed18a" "Example-IgnoreMissingPackages.cs" >}}
 
 ## Как избежать наращивания лигатур
 
 Обычно движок TeX создает лигатуры для определенных пар символов, если шрифт предоставляет необходимые для этого данные. Мы можем указать движку пропустить построение лигатуры с помощью следующего кода:
 
-{{< gist "aspose-com-gists""deadfd7c29ffe40024a9b6d12f0ed18a""Example-NoLigatures.cs" >}}
+{{< gist "aspose-com-gists" "deadfd7c29ffe40024a9b6d12f0ed18a" "Example-NoLigatures.cs" >}}
 
 ## Как повторить работу
 
 Как мы уже упоминали [выше](/tex/{{lang.url-fragment}}net/latex-io/#latex-input) относительно меток и ссылок, бывают случаи, когда нам нужно запустить одно и то же задание дважды. Вот как это можно сделать:
 
-{{< gist "aspose-com-gists""deadfd7c29ffe40024a9b6d12f0ed18a""Example-Repeat.cs" >}}
+{{< gist "aspose-com-gists" "deadfd7c29ffe40024a9b6d12f0ed18a" "Example-Repeat.cs" >}}
 
 ## Как превратить математические формулы в растровые изображения
 
 Иногда нам может потребоваться иметь математические формулы в виде растровых изображений, а не набирать их шрифтами. Для этой цели может служить следующий вариант:
 
-{{< gist "aspose-com-gists""deadfd7c29ffe40024a9b6d12f0ed18a""Example-RasterizeFormulas.cs" >}}
+{{< gist "aspose-com-gists" "deadfd7c29ffe40024a9b6d12f0ed18a" "Example-RasterizeFormulas.cs" >}}
 
 ## Как превратить графику в растровые изображения
 
 Движок ObjectTeX позволяет включать графические файлы в растровых форматах (PNG и JPG), а также в форматах PS(EPS) и XPS(OXPS). Последние два формата обычно содержат векторные элементы и тексты. Чтобы растрировать их и включить в виде сплошных изображений, мы можем использовать следующую опцию:
 
-{{< gist "aspose-com-gists""deadfd7c29ffe40024a9b6d12f0ed18a""Example-RasterizeIncludedGraphics.cs" >}}
+{{< gist "aspose-com-gists" "deadfd7c29ffe40024a9b6d12f0ed18a" "Example-RasterizeIncludedGraphics.cs" >}}
 
 ## Как подмножество шрифтов
 
 Если мы хотим уменьшить размер выходного файла, мы можем прибегнуть к поднабору шрифтов, что означает, что шрифты в выходном документе будут содержать только данные о глифах, которые используются в документе. Вот как мы можем это решить:
 
-{{< gist "aspose-com-gists""deadfd7c29ffe40024a9b6d12f0ed18a""Example-SubsetFonts.cs" >}}
+{{< gist "aspose-com-gists" "deadfd7c29ffe40024a9b6d12f0ed18a" "Example-SubsetFonts.cs" >}}

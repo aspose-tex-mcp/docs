@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: Выходной интерфейс Aspose.TeX | .NET 
@@ -7,7 +7,7 @@ weight: 16
 url: /net/aspose-tex-output/
 description: Функциональность преобразования решения Aspose.TeX API для .NET с TeX в качестве выходного формата объясняется здесь с примерами кода.
 keywords: вывод aspose tex, .net tex, выходной каталог, выходной zip, выходная консоль, выходной терминал, параметры tex, выходной каталог_файла, выходной каталог_zip, преобразование tex
-lastmod: "2024-09-24"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
@@ -24,7 +24,7 @@ lastmod: "2024-09-24"
 
 Вот как мы это установим:
 
-{{< gist "aspose-com-gists""0fbd18cd8c28d5ed12e19cd52634ebd4""Example-OutputFileSystemDirectory.cs" >}}
+{{< gist "aspose-com-gists" "0fbd18cd8c28d5ed12e19cd52634ebd4" "Example-OutputFileSystemDirectory.cs" >}}
 
 Этот вариант использования довольно прост, поэтому больше нет необходимости на нем зацикливаться.
 
@@ -32,7 +32,7 @@ lastmod: "2024-09-24"
 
 Мы также можем создать файл (или поток) и позволить движку TeX использовать его в качестве ZIP-архива для хранения выходных файлов. Вот:
 
-{{< gist "aspose-com-gists""0fbd18cd8c28d5ed12e19cd52634ebd4""Example-OutputZipDirectory.cs" >}}
+{{< gist "aspose-com-gists" "0fbd18cd8c28d5ed12e19cd52634ebd4" "Example-OutputZipDirectory.cs" >}}
 
 Сначала мы создаем выходной поток для ZIP-файла. Затем, после создания параметров преобразования, мы устанавливаем параметр [OutputWorkingDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/outputworkingdirectory/) как экземпляр класса [OutputZipDirectory](https://reference.aspose.com/tex/net/aspose.tex.io/outputzipdirectory/).
 
@@ -44,7 +44,7 @@ lastmod: "2024-09-24"
 
 Для этого нам нужно установить опцию [TerminalOut](https://reference.aspose.com/tex/net/aspose.tex/texoptions/terminalout/) как экземпляр класса [OutputConsoleTerminal](https://reference.aspose.com/tex/net/aspose.tex.io/outputconsoleterminal/).
 
-{{< gist "aspose-com-gists""0fbd18cd8c28d5ed12e19cd52634ebd4""Example-OutputConsoleTerminal.cs" >}}
+{{< gist "aspose-com-gists" "0fbd18cd8c28d5ed12e19cd52634ebd4" "Example-OutputConsoleTerminal.cs" >}}
 
 Опять же, это значение параметра по умолчанию, поэтому нет необходимости его указывать. В связи с этим данный раздел служит только демонстрационным целям.
 
@@ -52,6 +52,6 @@ lastmod: "2024-09-24"
 
 В отличие от терминала ввода, **Aspose.TeX for .NET** предоставляет реализацию [IOutputTerminal](https://reference.aspose.com/tex/net/aspose.tex.io/ioutputterminal/), которая позволяет нам записывать вывод терминала в файл в некотором выходном каталоге.
 
-{{< gist "aspose-com-gists""0fbd18cd8c28d5ed12e19cd52634ebd4""Example-OutputFileTerminal.cs" >}} 
+{{< gist "aspose-com-gists" "0fbd18cd8c28d5ed12e19cd52634ebd4" "Example-OutputFileTerminal.cs" >}} 
 
 Здесь мы просим движок TeX записать вывод терминала в файл с именем [<job_name>](/tex/{{lang.url-fragment}}net/tex-io/#tex-output).trm, который будет храниться в том же выходном каталоге, который мы указали для остальной части вывода. Но это не обязательно. С таким же успехом мы могли бы передать в конструктор любой другой экземпляр любой реализации [IOutputTerminal](https://reference.aspose.com/tex/net/aspose.tex.io/ioutputterminal/).

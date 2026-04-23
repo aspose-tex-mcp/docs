@@ -5,8 +5,8 @@ title: Aspose.TeXの出力インターフェイス| C++
 linktitle: Aspose.TeXの出力インターフェイス
 weight: 16
 url: /cpp/aspose-tex-output/
-description: Aspose.TeX APIソリューションの変換機能Texを使用したC ++のAPIソリューションは、出力形式としてコードの例で説明されています。
-lastmod: "2025-06-09"
+description: C++のAspose.TeX APIソリューションの変換機能は、Texを入力形式として使用し、出力形式としてコード例で説明されています。
+lastmod: "2026-04-20"
 ---
 
 {{<section overview>}}

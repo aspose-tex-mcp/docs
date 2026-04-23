@@ -6,7 +6,7 @@ linktitle: LaTeX math formulas rendering
 weight: 10
 url: /cpp/latex-math-formula-rendering/
 description: Aspose.TeX API solution for C++ LaTeX math formulas rendering is described in this article. Here you will find code examples of the functionality.
-lastmod: "2024-09-20"
+lastmod: "2026-04-20"
 ---
 
 {{<section overview>}}
@@ -16,7 +16,7 @@ The API reference section related to this topic is [here](https://reference.aspo
 ```C++
     // Create rendering options 
     System::SharedPtr<PngMathRendererOptions> options = System::MakeObject<PngMathRendererOptions>();
-    // Sspecify the image resolution 150 dpi
+    // Specify the image resolution 150 dpi
     options->set_Resolution(150);
     // Specify the preamble.
     options->set_Preamble(u"\\usepackage{amsmath}\r\n\\usepackage{amsfonts}\r\n\\usepackage{amssymb}\r\n\\usepackage{color}");

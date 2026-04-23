@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: Bereitstellung der Haupt-TeX-Eingabedatei | .NET
@@ -6,7 +6,7 @@ linktitle: Andere Möglichkeiten, die Haupt-TeX-Eingabedatei bereitzustellen
 weight: 14
 url: /net/other-ways-of-main-input/
 description: Die Konvertierungsfunktionalität der Aspose.TeX-API-Lösung für .NET verfügt über einen Konstruktor, der einen Stream als erstes Argument akzeptiert.
-lastmod: "2024-09-26"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}

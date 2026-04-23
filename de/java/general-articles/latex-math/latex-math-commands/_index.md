@@ -12,7 +12,7 @@ lastmod: "2024-09-26"
 
 {{<section overview>}}
 
-Eine andere Möglichkeit, komplexe Formeln aus einfachen zu erstellen, ist die Verwendung der Befehle `\sqrt`, „\underline“ oder `\overline`. Sie gelten auch für das Zeichen oder die Unterformel, die ihnen folgt:
+Eine andere Möglichkeit, komplexe Formeln aus einfachen zu erstellen, ist die Verwendung der Befehle `\sqrt`, `\underline` oder `\overline`. Sie gelten auch für das Zeichen oder die Unterformel, die ihnen folgt:
 
 ![Einfachste Anwendung von LaTeX-Befehlen](/tex/images/java/tutorial/latex-math-3-1.png)
 

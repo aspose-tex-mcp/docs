@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-java.md
 title: Graphiques intégrés LaTeX | Java
@@ -7,7 +7,7 @@ weight: 18
 url: /java/latex-graphics-embedding/
 keywords: includegraphics latex, graphiques latex embed base64, graphiques codés latex base64, write18, shell-escape, commande shell latex
 description: Découvrez comment injecter des images encodées en Base64 dans le code source LaTeX et découvrez la fonctionnalité \write18 qui rend cela possible.
-lastmod: "2024-09-27"
+lastmod: "2026-04-21"
 ---
 
 {{<section overview>}}
@@ -115,7 +115,7 @@ iVBORw0KGgoAAAANSUhEUgAAAPgAAABdCAYAAAH/B5vAAAAAGXRFWHRTb2Z0d2FyZQBBZ......
 
 Et le code Java utilisant l'API **Aspose.TeX** est similaire à ce que l'on peut trouver dans d'autres articles, à l'exception de la spécification de l'option de mode shell :
 
-{{< gist "aspose-com-gists""67385c777283964d328086603f691ac9""Aspose.TeX.Examples-Conversion-EmbeddedBase64EncodedImage.java" >}}
+{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Conversion-EmbeddedBase64EncodedImage.java" >}}
 
 Et maintenant, l'**étape 5** est terminée. Pour des exemples vraiment complets, explorez notre [Exemple de projet](https://github.com/aspose-tex/Aspose.TeX-for-Java).
 

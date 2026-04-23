@@ -7,7 +7,7 @@ weight: 21
 url: /net/tikz-for-scientific-publications/
 keywords: TikZ Wissenschaftliche Grafiken, TikZ Akademische Diagramme, TikZ Mathematikbeispiele
 description: Nutzen Sie TikZ, um professionelle Grafiken und Diagramme für wissenschaftliche und akademische Publikationen zu erstellen.
-lastmod: "2025-07-11"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}

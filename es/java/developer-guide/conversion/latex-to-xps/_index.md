@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-java.md
 title: Látex a XPS | Java
@@ -6,7 +6,7 @@ linktitle: Látex a XPS
 weight: 12
 url: /java/latex-to-xps/
 description: La funcionalidad de conversión de la solución API Aspose.TeX para Java le permite convertir archivos LaTeX al formato XPS. Conozca los ejemplos de código.
-lastmod: "2024-10-30"
+lastmod: "2026-04-21"
 ---
 
 {{<section overview>}}
@@ -20,13 +20,13 @@ Existe la biblioteca [**Aspose.Page**](https://products.aspose.com/page/) que pr
 
 La conversión a XPS es tan simple como la [conversión a formatos de imagen rasterizada](/tex/{{lang.url-fragment}}java/latex-to-image/), excepto que además de [SaveOptions](https://reference.aspose.com/tex/java/com.aspose.tex/TeXOptions#getSaveOptions--), tenemos que usar una instancia de la clase [XpsDevice](https://reference.aspose.com/tex/java/com.aspose.tex.rendering/XpsDevice).
 
-{{< gist "aspose-com-gists""67385c777283964d328086603f691ac9""Aspose.TeX.Examples-Conversion-LaTeXToXps-Simplest.java" >}}
+{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Conversion-LaTeXToXps-Simplest.java" >}}
 
 ### Una forma alternativa de escribir el archivo XPS de salida principal
 
 Existe otro constructor de la clase [XpsDevice](https://reference.aspose.com/tex/java/com.aspose.tex.rendering/XpsDevice#XpsDevice-java.io.OutputStream-), que nos permite obtener el archivo XPS resultante de una forma alternativa.
 
-{{< gist "aspose-com-gists""67385c777283964d328086603f691ac9""Aspose.TeX.Examples-Conversion-LaTeXToXps-Alternative.java" >}}
+{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Conversion-LaTeXToXps-Alternative.java" >}}
 
 El efecto es el mismo que obtenemos [aquí](/tex/{{lang.url-fragment}}java/latex-to-pdf/#an-alternative-way-to-write-main-output-pdf-file).
 

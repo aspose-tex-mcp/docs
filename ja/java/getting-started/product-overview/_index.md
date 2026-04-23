@@ -6,7 +6,7 @@ linktitle: 製品の概要
 weight: 10
 url: /java/product-overview/
 description: Aspose.TeXは、TEXファイルを植チ化するためのJavaライブラリです。変換や独自のTex形式の作成などの豊富な機能を提供します。
-lastmod: "2025-06-09"
+lastmod: "2026-04-21"
 ---
 
 {{<section overview>}}
@@ -26,20 +26,20 @@ Aspose.TeXは、TEXファイルを植チ化するためのJavaライブラリで
 
 Asposeは、すべての製品に無制限の無料テクニカルサポートを提供しています。サポートは、評価を含むすべてのユーザーが利用できます。
 
-JavaのAspose.TeXのサポートが必要な場合は、[**Asops.forums**](https://forum.aspose.com/)にアクセスしてください。 JavaフォーラムのAspose.TeXに質問を投稿すると、数時間以内に回答されます。質問は、Java SupportチームのAspose.TeXによって直接回答されます。
+JavaのAspose.TeXのサポートが必要な場合は、[**Aspose.Forums**](https://forum.aspose.com/)にアクセスしてください。 JavaフォーラムのAspose.TeXに質問を投稿すると、数時間以内に回答されます。質問は、Java SupportチームのAspose.TeXによって直接回答されます。
 
 フォーラムで返信を期待する場合は、タイムゾーンの違いを許可してください。
 
 JavaのAspose.TeXに問題がある場合は、これらの簡単な手順に従って、最も効率的な方法で解決されていることを確認してください。
 
-- 問題を報告する前に、Javaバージョン用の最新のAsops.texを使用してください。 [JavaダウンロードページのAspose.TeX](https://releases.aspose.com/tex/java)を参照して、最新バージョンについて調べてください。
+- 問題を報告する前に、Javaバージョン用の最新のAspose.TeXを使用してください。 [JavaダウンロードページのAspose.TeX](https://releases.aspose.com/tex/java)を参照して、最新バージョンについて調べてください。
 - 問題を報告する前に、ソリューションについては、フォーラム、このドキュメント、Wiki、および[APIリファレンス](https://reference.aspose.com/tex/java)をご覧ください。あなたの質問にはすでに答えがあるかもしれません。
-- 問題を報告するときは、元のドキュメントと、問題を引き起こすコードの断片を含めてください。複数のファイルを添付する必要がある場合は、それらを1つにzipします。お客様とAspose開発者のみが添付ファイルにアクセスできるため、ドキュメントをAsopsion.Forumsに添付することは安全です。
+- 問題を報告するときは、元のドキュメントと、問題を引き起こすコードの断片を含めてください。複数のファイルを添付する必要がある場合は、それらを1つにzipします。お客様とAspose開発者のみが添付ファイルにアクセスできるため、ドキュメントをAspose.Forumsに添付することは安全です。
 - スレッドごとに1つの問題を報告してみてください。別の問題がある場合は、別のスレッドに報告してください。
 
 ## リソース
 
-このテーブルには、Java技術リソースの重要なAsops.texがリストされています。
+このテーブルには、Java技術リソースの重要なAspose.TeXがリストされています。
 
 |**リソース**|**説明**|
 | :- | :- |

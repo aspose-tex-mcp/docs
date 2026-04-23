@@ -6,10 +6,10 @@ title: Artículos generales sobre LaTeX | Aspose.TeX para Java
 weight: 10
 url: /java/general-articles-latex/
 description: Conozca la información sobre LaTeX, incluida información sobre casos de uso, cómo trabajar con fuentes, imágenes, fórmulas matemáticas paquetes de LaTeX.
-lastmod: "2024-10-30"
+lastmod: "2026-04-21"
 ---
 
 {{<section overview>}}
 
 
-[//]: # (This brief introduction is supposed to discuss some basic uses for LaTeX.)
+[//]: # (Esta breve introducción pretende discutir algunos usos básicos de LaTeX.)

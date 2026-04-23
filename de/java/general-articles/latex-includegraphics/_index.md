@@ -16,15 +16,15 @@ lastmod: "2024-09-26"
 
 Während Sie an Ihren akademischen und wissenschaftlichen Dokumenten wie Forschungsarbeiten, Konferenzberichten und wissenschaftlichen Präsentationen arbeiten, möchten Sie möglicherweise gelegentlich grafische Abbildungen einbinden.
 
-Das können zum einen Zeichnungen, Plots, Histogramme oder etwas anderes sein, was allgemein als Vektorgrafiken bezeichnet wird. Moderne LaTeX-Systeme (wie „pdfTeX“) bieten zahlreiche Werkzeuge zum Erstellen solcher Grafiken in einem Dokument. Zum Beispiel die Pakete „pict2e“, „PGF(TikZ)“ und „PGFplots“. In den meisten Fällen werden die Figuren selbst von einer TeX-Engine generiert und als Sequenzen von Vektorgrafikanweisungen, die für ein bestimmtes Ausgabeformat geeignet sind, in die Ausgabedatei eingefügt.
+Das können zum einen Zeichnungen, Plots, Histogramme oder etwas anderes sein, was allgemein als Vektorgrafiken bezeichnet wird. Moderne LaTeX-Systeme (wie `pdfTeX`) bieten zahlreiche Werkzeuge zum Erstellen solcher Grafiken in einem Dokument. Zum Beispiel die Pakete `pict2e`, `PGF(TikZ)` und `PGFplots`. In den meisten Fällen werden die Figuren selbst von einer TeX-Engine generiert und als Sequenzen von Vektorgrafikanweisungen, die für ein bestimmtes Ausgabeformat geeignet sind, in die Ausgabedatei eingefügt.
 
 Andererseits verfügen Sie möglicherweise über Rasterbilder, die Sie ebenfalls in Ihre Publikation einbinden möchten. LaTeX-Systeme sind derzeit auch dazu in der Lage, Sie müssen jedoch den Pfad zu Ihrer Bilddatei in Ihrer LaTeX-Datei als Parameter für ein LaTeX-Makro angeben.
 
-In diesem Artikel geht es um das Einfügen von Rasterbildern in LaTeX-Dateien mithilfe des Makros `\includegraphics` aus dem Paket „graphics“ (und dem dazugehörigen Paket „graphicx“).
+In diesem Artikel geht es um das Einfügen von Rasterbildern in LaTeX-Dateien mithilfe des Makros `\includegraphics` aus dem Paket `graphics` (und dem dazugehörigen Paket `graphicx`).
 
-## Welches Paket soll ich wählen, „graphics“ oder „graphicx“?
+## Welches Paket soll ich wählen, `graphics` oder `graphicx`?
 
-Beide Pakete, „graphics“ und „graphicx“, sind sich sehr ähnlich. Der Hauptunterschied liegt in der Syntax. Während das Paket „graphics“ eine Reihe separater Makros verwendet, um Transformationen auf ein Bild anzuwenden, verwendet das Paket „graphicx“ die Notation „key=value“ für die Parameter des Makros `\includegraphics`, um diese Transformationen anzugeben. Wir geben Beispiele für jeden Anwendungsfall für beide Pakete gleichzeitig, um den Unterschied deutlicher zu machen.
+Beide Pakete, `graphics` und `graphicx`, sind sich sehr ähnlich. Der Hauptunterschied liegt in der Syntax. Während das Paket `graphics` eine Reihe separater Makros verwendet, um Transformationen auf ein Bild anzuwenden, verwendet das Paket `graphicx` die Notation `key=value` für die Parameter des Makros `\includegraphics`, um diese Transformationen anzugeben. Wir geben Beispiele für jeden Anwendungsfall für beide Pakete gleichzeitig, um den Unterschied deutlicher zu machen.
 
 ## Inklusive des gewählten Pakets
 

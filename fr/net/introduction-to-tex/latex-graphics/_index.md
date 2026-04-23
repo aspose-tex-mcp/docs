@@ -1,12 +1,12 @@
-﻿---
+---
 translation: true
-template: /templates/_template-java.md
+template: /templates/_template-net.md
 title: Graphiques LaTeX | Commande \includegraphics
 linktitle: Graphiques LaTeX
 weight: 18
 url: /net/latex-graphics/
 description: L'inclusion de graphiques dans TeX mérite d'être mentionnée. Quand on en parle, la première chose qui vient à l'esprit est la commande `\includegraphics`.
-lastmod: "2024-09-27"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}

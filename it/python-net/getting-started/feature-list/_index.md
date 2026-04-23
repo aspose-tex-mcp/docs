@@ -6,7 +6,7 @@ linktitle: Elenco delle funzionalità
 weight: 30
 url: /python-net/feature-list/
 description: Migliora la tua soluzione incorporando la capacità di manipolare i file TEX. Impara le funzionalità Aspose.TeX Solution API per le offerte Python.
-lastmod: "2025-06-13"
+lastmod: "2026-04-20"
 ---
 
 {{<section overview>}}
@@ -16,12 +16,12 @@ lastmod: "2025-06-13"
 
 **Operazioni supportate**
 
-- TEX Input Typetting
+- Impostazione di input TeX
 - Creazione del formato tex personalizzato
 - Figure di rendering in LaTeX
 - Render matematica formule ed equazioni
 - Caratteri di sottoinsieme
-- Freeze Math Formule and Graphics
+- Congelamento di formule e grafici matematici
 
 **Supporto per vari formati di file di output**
 

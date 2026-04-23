@@ -7,7 +7,7 @@ weight: 10
 url: /net/what-is-tex/
 keywords: what is tex
 description: This page briefly answers the question "What is TeX?" Is it one of the programming languages or it is considered to be a document format?
-lastmod: "2024-09-20"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}

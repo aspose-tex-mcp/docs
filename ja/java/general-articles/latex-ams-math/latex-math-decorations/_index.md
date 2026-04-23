@@ -7,7 +7,7 @@ weight: 40
 url: /java/latex-math-decorations/
 keywords: ams-latex、amsmath、amsxtra、latex 積分、latex 分数、latex 装飾、latex 矢印、latex 極限、latex モジュラー関係
 description: 本記事では、amsmath パッケージを使用してさまざまな中サイズの数式構造を生成するコマンドについて説明します。
-lastmod: "2026-02-19"
+lastmod: "2026-04-21"
 ---
 
 {{<section overview>}}
@@ -182,7 +182,7 @@ u & \equiv v + 1 \bmod{n^2} \\
 u & = v + 1 \pmod{n^2} \\
 u & = v + 1 \pod{n^2}
 \end{align*}
-The in-text layout: $ u = v + 1 \pmod{n^2} $
+テキスト内のレイアウト: $ u = v + 1 \pmod{n^2} $
 \begin{gather*}
 (m \bmod n) = k^2 \, ; \quad x \equiv y \pmod b \, ; \\
 x \equiv y \mod c \, ; \quad x \equiv y \pod d\, .

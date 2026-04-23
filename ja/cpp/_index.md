@@ -7,7 +7,7 @@ weight: 30
 url: /cpp/
 description: C ++のTEXファイルAPIソリューションの管理。ライブラリは、TEX入力を渡し、出力と独自のTex形式の作成などの機能を取得する方法を提供します。
 is_root: true
-lastmod: "2025-06-09"
+lastmod: "2026-04-20"
 ---
 
 {{<section overview>}}

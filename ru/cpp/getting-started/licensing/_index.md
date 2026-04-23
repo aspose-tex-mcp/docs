@@ -6,7 +6,7 @@ linktitle: Лицензирование
 weight: 70
 url: /cpp/licensing/
 description: Если вы остановились на лицензионной версии решения Aspose.TeX API для C++, здесь вы узнаете, как применить лицензию.
-lastmod: "2024-09-24"
+lastmod: "2026-04-20"
 ---
 
 {{<section overview>}}
@@ -47,10 +47,10 @@ lastmod: "2024-09-24"
 
 Этот фрагмент кода инициализирует лицензию, хранящуюся в файле или во встроенном ресурсе.
 
-{{< gist "aspose-com-gists""d3eef38ac5b929503e8edee25e0873ce""Aspose.TeX.Examples-LoadLicenseFromFile.cpp" >}}
+{{< gist "aspose-com-gists" "d3eef38ac5b929503e8edee25e0873ce" "Aspose.TeX.Examples-LoadLicenseFromFile.cpp" >}}
 
 #### Загрузка лицензии из объекта Stream
 
 Эти фрагменты кода инициализируют лицензию из потока.
 
-{{< gist "aspose-com-gists""d3eef38ac5b929503e8edee25e0873ce""Aspose.TeX.Examples-LoadLicenseFromStream.cpp" >}}
+{{< gist "aspose-com-gists" "d3eef38ac5b929503e8edee25e0873ce" "Aspose.TeX.Examples-LoadLicenseFromStream.cpp" >}}
