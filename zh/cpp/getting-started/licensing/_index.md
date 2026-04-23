@@ -6,7 +6,7 @@ linktitle: 许可
 weight: 70
 url: /cpp/licensing/
 description: 当您停止使用Aspose.TeX API解决方案的许可版本时，此处可以找到如何应用许可证。
-lastmod: "2025-06-10"
+lastmod: "2026-04-20"
 ---
 
 {{<section overview>}}

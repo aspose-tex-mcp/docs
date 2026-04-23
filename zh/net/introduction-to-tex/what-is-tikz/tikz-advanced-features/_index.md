@@ -8,7 +8,7 @@ url: /net/tikz-advanced-features/
 aliases: /net/advanced-features/
 keywords: advanced tikz, tikz paths, tikz diagrams, pgfplots, circuitikz, tikz-3dplot
 description: 了解高级 TikZ 技术，包括复杂路径、节点定位、箭头以及图表创建，以实现专业品质的图形。
-lastmod: "2026-02-26"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
@@ -17,7 +17,7 @@ lastmod: "2026-02-26"
 
 ## 使用节点和定位
 
-Nodes in TikZ are highly flexible and powerful elements, ideal for creating annotated diagrams and charts:
+TikZ 中的节点是非常灵活且强大的元素，非常适合创建带注释的图表：
 
 ```tex
 \node[draw, circle] (A) at (0,0) {A};

@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: Häufig gestellte Fragen | Aspose.TeX für .NET
@@ -6,7 +6,7 @@ linktitle: FAQ
 weight: 80
 url: /net/faq/
 description: Erhalten Sie Antworten auf die häufigsten Fragen zu Aspose.TeX für .NET, einer umfassenden API für den Schriftsatz und die Bearbeitung von TeX und LaTeX.
-lastmod: "2024-09-26"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
@@ -15,7 +15,7 @@ lastmod: "2024-09-26"
 
 **F: Was ist die Hauptfunktionalität der Aspose.TeX-API-Lösung?**
 
-**A:** Aspose.TeX ist eine umfassende API-Lösung zum Setzen von TeX und Latex, mit der Sie LaTeX-Gleichungen erstellen sowie TeX-Dateien erstellen und konvertieren können. Es handelt sich um eine effiziente TeX-Dokumentenverwaltung und Formelerstellung.
+**A:** Aspose.TeX ist eine umfassende API-Lösung zum Setzen von TeX und LaTeX, mit der Sie LaTeX-Gleichungen erstellen sowie TeX-Dateien erstellen und konvertieren können. Es handelt sich um eine effiziente TeX-Dokumentenverwaltung und Formelerstellung.
 <br><br>
 
 **F: Welche Formate unterstützt Aspose.TeX?**
@@ -52,8 +52,7 @@ Weitere Beispiele finden Sie in den Leitfäden [Konvertierung](/tex/{{lang.url-f
 - pgf
 - pict2e
 - setspace
-- setspace
-- Latex-Tools-Bundle: Afterpage, Array, BM, Calc, Dcolumn, Delarray, Enumerate, Fileerr, Fontsmpl, Ftnright, Hhline, Indentfirst, Layout, Longtable, Multicol, Rawfonts, Showkeys, Somedefs, Tabularx, Theorem, Trace, Varioref, wörtlich, xr und xspace.
+- latex-tools-bundle: afterpage, array, bm, calc, dcolumn, delarray, enumerate, fileerr, fontsmpl, ftnright, hhline, indentfirst, layout, longtable, multicol, rawfonts, showkeys, somedefs, tabularx, theorem, trace, varioref, verbatim, xr und xspace.
 - URL
 - wasysym
 - xcolor 

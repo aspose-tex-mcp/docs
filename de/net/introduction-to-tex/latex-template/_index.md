@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: LaTeX-Vorlagen – Kurzanleitung
@@ -8,7 +8,7 @@ weight: 100
 url: /net/latex-templates/
 description: Erfahren Sie, was LaTeX-Vorlagen sind, wie Sie sie verwenden und erstellen, wo Sie die beliebtesten herunterladen können und einen schnellen Workflow mit kopierfertigen Snippets.
 keywords: LaTeX, Vorlage, Klasse, Stil, Overleaf, CTAN, Bibliographie, Beamer, Abschlussarbeit, Lebenslauf
-lastmod: "2025-12-03"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
@@ -69,7 +69,7 @@ Verwenden Sie es mit „\documentclass{mytemplate}“ in Ihrem Dokument.
 
 ## Wo kann man LaTeX-Vorlagen herunterladen?
 
-- **Overleaf Gallery** – die größte öffentliche Sammlung (≈4000 kostenlose Vorlagen).  
+- **Overleaf-Galerie** – die größte öffentliche Sammlung (≈4000 kostenlose Vorlagen).  
   <https://www.overleaf.com/gallery>
 - **CTAN (ComprehensiveTeXArchive Network)** – offizielles Repository für zeitschriftenspezifische Klassen.  
   <https://ctan.org/>
@@ -89,11 +89,11 @@ Verwenden Sie es mit „\documentclass{mytemplate}“ in Ihrem Dokument.
 |7 | **a0poster / tikzposter** | Große wissenschaftliche Poster |
 |8 | **Universitätsspezifische Dissertation** (z. B. `cambridgephd.cls`) | Institutionelle Doktor-/Masterarbeiten |
 |9 | **Astronomie & Astrophysik** (`aa.cls`) | Artikel aus A&A-Zeitschriften |
-|10 | **Einfacher wissenschaftlicher Zeitschriftenartikel** | Einfacher Einstieg für Artikel (Rückseite) |
+|10 | **Einfacher wissenschaftlicher Zeitschriftenartikel** | Einfacher Einstieg für Artikel (Overleaf) |
 
 ## Schneller Workflow für Erstbenutzer
 
-1. **Wählen Sie eine Vorlage aus** → klicken Sie auf „Umseitig öffnen“ **oder** laden Sie die ZIP-Datei herunter.  
+1. **Wählen Sie eine Vorlage aus** → klicken Sie auf „In Overleaf öffnen“ **oder** laden Sie die ZIP-Datei herunter.  
 2. **Platzhalterfelder bearbeiten** (`\title{}`, `\author{}` usw.).  
 3. **Kompilieren** → PDF erscheint.  
 4. Wenn Sie lokal arbeiten: entpacken → „latexmk -pdf main.tex“ ausführen (oder „pdflatex“ + „biber“ nach Bedarf).  
@@ -120,7 +120,7 @@ Wenn Sie die aus LaTeX generierten PDFs in einer .NET-, Java- oder Python-Anwend
 Was?       → Vorgefertigtes Layout (Klasse + Stil + Assets)
 Verwenden? → \documentclass{mytemplate} + README befolgen
 Erstellen? → .cls- oder .sty-Datei schreiben → Assets packen → zip/GitHub
-Beziehen?  → Overleaf Gallery, CTAN, GitHub, Universitätsseiten
+Beziehen?  → Overleaf-Galerie, CTAN, GitHub, Universitätsseiten
 Top 10     → IEEEtran, llncs, elsarticle, modern‑simple‑cv,
              classicthesis, beamer, a0poster, UNICAMP thesis, aa.cls, Basic Academic Journal Article
 ```

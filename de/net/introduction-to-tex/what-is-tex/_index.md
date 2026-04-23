@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: Was ist TeX? 
@@ -7,7 +7,7 @@ weight: 10
 url: /net/what-is-tex/
 keywords: was ist tex
 description: Diese Seite beantwortet kurz die Frage „Was ist TeX?“ Gehört es zu den Programmiersprachen oder gilt es als Dokumentformat?
-lastmod: "2024-09-26"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
@@ -37,4 +37,4 @@ Glücklicherweise waren dies nicht die einzigen Dinge, die er tat. Er schlug auc
 Hier bleibt nur noch zu beachten, dass es sich bei den Zeichen des zu setzenden Textes tatsächlich auch um Befehle handelt, die die TeX-Engine dazu zwingen, entsprechende Zeichen (unter Berücksichtigung der aktuellen Eingabekodierung) unter Verwendung der aktuellen Schriftarteinstellungen (die z. wiederum sind durch Steuersequenzen steuerbar). Daher können wir bei der Definition von Makros auch Zeichen verwenden.
 
 Wir hoffen, dass die Frage „Was ist TeX?“ von nun an beantwortet wird. existiert nicht mehr in deinem Kopf.
-[^1]: 1 
+[^1]: Die Figur in W. Shakespeares "The Tragical Historie of Hamlet, Prince of Denmarke".

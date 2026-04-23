@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-java.md
 title: Representación de figuras LaTeX | Aspose.TeX para Java
@@ -6,7 +6,7 @@ linktitle: Representación de figuras de LaTeX
 weight: 20
 url: /java/latex-figure-rendering/
 description: Este artículo describe, con ejemplos de código, la representación de fragmentos de LaTeX (figuras) con Aspose.TeX para Java.
-lastmod: "2024-10-30"
+lastmod: "2026-04-21"
 ---
 
 {{<section overview>}}
@@ -17,7 +17,7 @@ Puede suceder que desee extraer algún contenido (un dibujo, un escrito, una tra
 
 Y al igual que con la representación de fórmulas, comenzaremos con un ejemplo. Aquí lo tienes:
 
-{{< gist "aspose-com-gists""67385c777283964d328086603f691ac9""Aspose.TeX.Examples-Features-PngLaTeXFigureRendering.java" >}}
+{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Features-PngLaTeXFigureRendering.java" >}}
 
 En primer lugar, creamos una instancia de [opciones de renderizado](https://reference.aspose.com/tex/java/com.aspose.tex/PngFigureRendererOptions). Lo hacemos aquí junto con la especificación de la resolución de la imagen de salida.
 
@@ -53,7 +53,7 @@ Este es el caso de uso más general para la función **Representación de figura
 
 De la misma manera, podemos renderizar una figura de LaTeX al formato SVG.
 
-{{< gist "aspose-com-gists""67385c777283964d328086603f691ac9""Aspose.TeX.Examples-Features-SvgLaTeXFigureRendering.java" >}}
+{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Features-SvgLaTeXFigureRendering.java" >}}
 
 Las diferencias son:
 

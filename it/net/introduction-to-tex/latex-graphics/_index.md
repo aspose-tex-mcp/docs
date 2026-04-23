@@ -1,39 +1,39 @@
-﻿---
+---
 translation: true
-template: /templates/_template-java.md
-title: Grafica in LaTeX | \ Comando Includegraphics
-linktitle: Includgraphics latex
+template: /templates/_template-net.md
+title: Grafica in LaTeX | comando \includegraphics
+linktitle: Includegraphics LaTeX
 weight: 18
 url: /net/latex-graphics/
-description: L'inclusione della grafica in Tex è una questione che vale la pena menzionare. Quando ne parlo, la prima cosa che mi viene in mente è il comando `\include.
-lastmod: "2025-06-13"
+description: L'inclusione della grafica in Tex è una questione che vale la pena menzionare. Quando ne parlo, la prima cosa che mi viene in mente è il comando `\includegraphics`.
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
 
 In realtà, ci sono due aspetti della grafica in LaTeX che vale la pena menzionare:
 
-* Grafica vettoriale descritta direttamente per mezzo di comandi latex/tex e,
+* Grafica vettoriale descritta direttamente per mezzo di comandi LaTeX/TeX e,
 * Inclusione della grafica esterna descritta per mezzo di formati esterni, come EPS, PDF o Raster PNG e PDF.
 
-Il primo ha un supporto limitato nel LaTeX originale e nei suoi pacchetti. È implementato con l'aiuto di regole verticali e orizzontali. Questo perché il LaTeX originale si basa sul motore TEX originale, che produce output principale in formato * dvi *, che non è adatto per descrivere né linee e curve o dati di immagini raster binarie. Ma i motori che sono in grado di produrre formati di supporto grafico (come PDFTEX a PDF) possono anche gestire la grafica utilizzando pacchetti dipendenti dal formato o funzionalità del pacchetto. Quest'ultima grafica non sono supportate nel LaTeX di base per lo stesso motivo. Di seguito discuteremo di caratteristiche di inclusione grafica.
+Il primo ha un supporto limitato nel LaTeX originale e nei suoi pacchetti. È implementato con l'aiuto di regole verticali e orizzontali. Questo perché il LaTeX originale si basa sul motore TeX originale, che produce output principale in formato * DVI *, che non è adatto per descrivere né linee e curve o dati di immagini raster binarie. Ma i motori che sono in grado di produrre formati di supporto grafico (come pdfTeX a PDF) possono anche gestire la grafica utilizzando pacchetti dipendenti dal formato o funzionalità del pacchetto. Quest'ultima grafica non sono supportate nel LaTeX di base per lo stesso motivo. Di seguito discuteremo di caratteristiche di inclusione grafica.
 
-## Il pacchetto `grafico" e il comando `\includgraphics`
+## Il pacchetto `grafico" e il comando `\includegraphics`
 
-Quando si parla di inclusione grafica in LaTeX, la prima cosa che mi viene in mente è il comando `\include`. È definito nel pacchetto `graphics`, che dovresti menzionare nel preambolo per consentire le sue caratteristiche.
+Quando si parla di inclusione grafica in LaTeX, la prima cosa che mi viene in mente è il comando `\includegraphics`. È definito nel pacchetto `graphics`, che dovresti menzionare nel preambolo per consentire le sue caratteristiche.
 
 ```tex
 \usepackage{graphics}
 ```
 
-Se il sistema di composizione non è configurato per l'uso, diciamo, PDFTEX per impostazione predefinita, è necessario specificare l'opzione appropriata che costringerà il pacchetto a utilizzare il file "driver" richiesto:
+Se il sistema di composizione non è configurato per l'uso, diciamo, pdfTeX per impostazione predefinita, è necessario specificare l'opzione appropriata che costringerà il pacchetto a utilizzare il file "driver" richiesto:
 
 
 ```tex
 \usepackage[pdftex]{graphics}
 ```
 
-Un file `driver` fa parte di un pacchetto che implementa l'interfaccia tra i comandi del pacchetto e le primitive di estensione TEX di basso livello dipendenti dal formato. Il supporto grafico in LaTeX Aspose.TeX è configurato per utilizzare il proprio driver, quindi non è necessario specificare l'opzione del driver.
+Un file `driver` fa parte di un pacchetto che implementa l'interfaccia tra i comandi del pacchetto e le primitive di estensione TeX di basso livello dipendenti dal formato. Il supporto grafico in LaTeX Aspose.TeX è configurato per utilizzare il proprio driver, quindi non è necessario specificare l'opzione del driver.
 
 Ora, il modo più semplice per includere, diciamo, un'immagine PNG è digitare:
 

@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-java.md
 title: Aspose.TeX für Java-Dokumentation

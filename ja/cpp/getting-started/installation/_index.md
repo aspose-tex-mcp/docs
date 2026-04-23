@@ -6,7 +6,7 @@ linktitle: インストール
 weight: 60
 url: /cpp/installation/
 description: C ++のAspose.TeX APIドキュメントは、「ダウンロードパッケージ」をクリックして、ダウンロードしたZIPパッケージにあるか、Nugetギャラリーから入手できます。
-lastmod: "2025-06-09"
+lastmod: "2026-04-20"
 ---
 
 {{<section overview>}}
@@ -15,13 +15,13 @@ lastmod: "2025-06-09"
 
 ### 手動インストール
 
-Nuget Galleryから[Aspose.TeX for C ++](https://www.nuget.org/packages/aspose.tex.Cpp)をダウンロードできます。これは、情報セクションの「ダウンロードパッケージ」リンクをクリックします。オフラインAPIドキュメントは、ダウンロードされたzipパッケージにもあります。
+Nuget Galleryから[Aspose.TeX for C ++](https://www.nuget.org/packages/Aspose.TeX.Cpp)をダウンロードできます。これは、情報セクションの「ダウンロードパッケージ」リンクをクリックします。オフラインAPIドキュメントは、ダウンロードされたzipパッケージにもあります。
 
-アプリケーションでC ++にasophes.texを使用するために、次の手順を実行してください。
+アプリケーションでC ++にAspose.TeXを使用するために、次の手順を実行してください。
 
-1. [ダウンロード](https://www.nuget.org/packages/aspose.tex.Cpp)最新のファイル。
+1. [ダウンロード](https://www.nuget.org/packages/Aspose.TeX.Cpp)最新のファイル。
 2. フォルダを生産環境に解凍します。
-3. C ++にAsopse.texを使用するには、プロジェクトに参照を含めてLIBフォルダーを含みます。
+3. C ++にAspose.TeXを使用するには、プロジェクトに参照を含めてLIBフォルダーを含みます。
 
 ### Nugetパッケージマネージャーを使用します
 

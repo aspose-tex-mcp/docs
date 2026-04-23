@@ -12,17 +12,17 @@ lastmod: "2024-09-26"
 
 {{<section overview>}}
 
-Die 52 Buchstaben („A“ bis „Z“ und „a“ bis „z“) bezeichnen kursive Symbole, die ein Mathematiker „Variablen“ nennen würde. TeX nennt sie einfach „gewöhnliche Symbole“, weil sie den Großteil der mathematischen Formeln ausmachen. LaTeX behandelt auch die folgenden 18 Zeichen
+Die 52 Buchstaben (`A` bis `Z` und `a` bis `z`) bezeichnen kursive Symbole, die ein Mathematiker „Variablen“ nennen würde. TeX nennt sie einfach „gewöhnliche Symbole“, weil sie den Großteil der mathematischen Formeln ausmachen. LaTeX behandelt auch die folgenden 18 Zeichen
 
-„0 1 2 3 4 5 6 7 8 9 ! ? . | ` @ "``
+`0 1 2 3 4 5 6 7 8 9 ! ? . | ` @ "``
 
 als gewöhnliche Symbole, was bedeutet, dass kein zusätzlicher Leerraum eingefügt wird, wenn diese Symbole nebeneinander oder neben Buchstaben auftreten. Im Gegensatz zu den Buchstaben bleiben diese 18 Zeichen in Formeln in lateinischer Schrift.
 
-Die drei Zeichen „+“, „-“ und „*“ werden „binäre Operationen“ genannt, da sie zwei Teile der Formel bearbeiten. Das Sternchen (*) ist selten, verhält sich aber auch wie eine binäre Operation. Hier sind einige Beispiele für binäre Textsatzoperationen, wenn sie neben gewöhnlichen Symbolen erscheinen:
+Die drei Zeichen `+`, `-` und `*` werden „binäre Operationen“ genannt, da sie zwei Teile der Formel bearbeiten. Das Sternchen (*) ist selten, verhält sich aber auch wie eine binäre Operation. Hier sind einige Beispiele für binäre Textsatzoperationen, wenn sie neben gewöhnlichen Symbolen erscheinen:
 
 ![Binäre Operationen](/tex/images/java/tutorial/latex-math-4-1.png)
 
-TeX behandelt „/“ nicht als binäre Operation, da dies zu falschen Abständen in Formeln wie „$1/2$“ führen würde. Daher behandelt TeX „/“ als gewöhnliches Symbol.
+TeX behandelt `/` nicht als binäre Operation, da dies zu falschen Abständen in Formeln wie `$1/2$` führen würde. Daher behandelt TeX `/` als gewöhnliches Symbol.
 
 Hier sind einige weitere Beispiele für binäre Operationen:
 
@@ -36,15 +36,15 @@ Die folgenden Beispiele zeigen, dass binäre Operationen als gewöhnliche Symbol
 
 ![Binäroperation als gewöhnliche Symbole in hochgestellten und tiefgestellten Zeichen](/tex/images/java/tutorial/latex-math-4-4.png)
 
-LaTeX behandelt die vier Zeichen „=“, „<“, „>“ und „:“ als „Beziehungen“, da sie eine Beziehung zwischen zwei Größen ausdrücken. Solche Beziehungen haben eine etwas andere Bedeutung als binäre Operationen und die Symbole werden etwas anders gesetzt:
+LaTeX behandelt die vier Zeichen `=`, `<`, `>`, und `:` als „Beziehungen“, da sie eine Beziehung zwischen zwei Größen ausdrücken. Solche Beziehungen haben eine etwas andere Bedeutung als binäre Operationen und die Symbole werden etwas anders gesetzt:
 
 ![Beziehungen](/tex/images/java/tutorial/latex-math-4-5.png)
 
-Die beiden Zeichen ',' (Komma) und ';' (Semikolon) werden in Formeln als Satzzeichen behandelt, was bedeutet, dass TeX nach ihnen etwas mehr Leerzeichen einfügt, aber nicht davor.
+Die beiden Zeichen `,` (Komma) und `;` (Semikolon) werden in Formeln als Satzzeichen behandelt, was bedeutet, dass TeX nach ihnen etwas mehr Leerzeichen einfügt, aber nicht davor.
 
 ![Satzzeichen](/tex/images/java/tutorial/latex-math-4-6.png)
 
-Es ist nicht üblich, nach einem „.“ zusätzliches Leerzeichen einzufügen. (Punkt) in Formeln, daher behandelt TeX einen Punkt als gewöhnliches Symbol. Wenn Sie möchten, dass das Zeichen „:“ ein Satzzeichen statt einer Beziehung ist, nennen Sie es einfach „\colon“. Und wenn Sie möchten, dass ein Komma wie ein gewöhnliches Symbol behandelt wird, setzen Sie es einfach in geschweifte Klammern. TeX behandelt alles in geschweiften Klammern als gewöhnliches Symbol.
+Es ist nicht üblich, nach einem `.` zusätzliche Leerzeichen einzufügen. (Punkt) in Formeln, daher behandelt TeX einen Punkt als gewöhnliches Symbol. Wenn Sie möchten, dass das Zeichen `:` ein Satzzeichen statt einer Beziehung ist, nennen Sie es einfach `\colon`. Und wenn Sie möchten, dass ein Komma wie ein gewöhnliches Symbol behandelt wird, setzen Sie es einfach in geschweifte Klammern. TeX behandelt alles in geschweiften Klammern als gewöhnliches Symbol.
 
 ![Doppelpunkt als Satzzeichen und Komma als gewöhnliches Symbol](/tex/images/java/tutorial/latex-math-4-7.png)
 
@@ -56,13 +56,13 @@ Schließlich reserviert LaTeX die anderen 10 Zeichen:
 
 Sie können sie nicht im Mathematikmodus verwenden. Obwohl `{` und `}` die Gruppierung angeben, können die Befehle `\{` und `\}` verwendet werden, um `{` als Eröffnung und `}` als Abschluss zu erhalten.
 
-Die Sonderzeichen „^“ und „_“ sollten nur in Formeln verwendet werden. Umgekehrt dürfen die Namen von mathematischen Symbolen wie `\alpha` und „\ approx“ sowie die Befehle für mathematische Operationen wie `\overline` nicht im normalen Text erscheinen. Außerdem ist eine Leerzeile oder „\par“ im Mathematikmodus nicht zulässig.
+Die Sonderzeichen `^` und `_` sollten nur in Formeln verwendet werden. Umgekehrt dürfen die Namen von mathematischen Symbolen wie `\alpha` und `\approx` sowie die Befehle für mathematische Operationen wie `\overline` nicht im normalen Text erscheinen. Außerdem ist eine Leerzeile oder `\par` im Mathematikmodus nicht zulässig.
 
 Mathematiker verwenden auch gerne Akzente über Buchstaben, um Beziehungen zwischen mathematischen Objekten effektiv anzuzeigen. Außerdem wird die Anzahl der verfügbaren Symbole erheblich erweitert, ohne dass sich die Anzahl der erforderlichen Schriftarten erhöht. Mathematische Akzente unterscheiden sich etwas von den Akzenten, die in gewöhnlichen Texten verwendet werden. Der Abstand ist nicht derselbe; TeX folgt speziellen Regeln für Akzente in Formeln, damit die beiden Arten von Akzenten nicht miteinander verwechselt werden. LaTeX bietet die folgenden mathematischen Akzente:
 
 ![Akzente](/tex/images/java/tutorial/latex-math-4-8.png)
 
-Die ersten neun davon heißen `\^`, `\v`, `\~`, `\'`, ``\` ``, `\.`, `\"`, `\u` und „\=“ ist jeweils ein Akzent, der nur in Formeln vorkommt, wenn Sie versuchen, `\^` oder `\v` usw. zu verwenden. in Formeln oder wenn Sie versuchen, `\hat` oder `\check` usw. in normalem Text zu verwenden.
+Die ersten neun davon heißen `\^`, `\v`, `\~`, `\'`, ``\` ``, `\.`, `\"`, `\u` und `\=` ist jeweils ein Akzent, der nur in Formeln vorkommt, wenn Sie versuchen, `\^` oder `\v` usw. zu verwenden. in Formeln oder wenn Sie versuchen, `\hat` oder `\check` usw. in normalem Text zu verwenden.
 
 Normalerweise ist es am besten, Makros für Buchstaben mit Akzent zu definieren, die Sie häufig benötigen. Sie können setzen
 

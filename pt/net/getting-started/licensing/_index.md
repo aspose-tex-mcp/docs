@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 linktitle: Licenciamento
@@ -6,14 +6,14 @@ title: Licenciamento | Aspose.TeX para .NET
 weight: 70
 url: /net/licensing/
 description: Quando você parou na versão licenciada da solução API Aspose.TeX para .NET aqui, você descobre como aplicar a licença.
-lastmod: "2025-06-16"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
 
 ## Avalie Aspose.TeX
 
-Você pode fazer o download facilmente do Aspose.Tex para o .NET Product para fins de avaliação. Consulte a página [Aspose.TeX para .NET Download](https://www.nuget.org/packages/Aspose.TeX/) para descobrir a versão mais recente. O download da avaliação é o mesmo que o download adquirido. A versão de avaliação simplesmente fica licenciada quando você adiciona algumas linhas de código para aplicar a licença.
+Você pode fazer o download facilmente do Aspose.TeX para o .NET Product para fins de avaliação. Consulte a página [Aspose.TeX para .NET Download](https://www.nuget.org/packages/Aspose.TeX/) para descobrir a versão mais recente. O download da avaliação é o mesmo que o download adquirido. A versão de avaliação simplesmente fica licenciada quando você adiciona algumas linhas de código para aplicar a licença.
 
 ### Limitações da versão de avaliação
 
@@ -35,15 +35,15 @@ Siga estas regras simples:
 
 - A licença precisa ser definida apenas uma vez por domínio do aplicativo.
 - Você precisa definir a licença antes de usar outras classes Aspose.TeX.
-- Chamar Setlicense várias vezes não é prejudicial, mas resíduos de tempo do processador.
-- Se você estiver desenvolvendo um formulário do Windows ou um aplicativo de console, ligue para o Setlicense no código de inicialização, antes de usar as classes Aspose.TeX.
-- Ao desenvolver um aplicativo ASP.NET, chame o Setlicense do arquivo global.asax.cs, no método protegido da Aplicação_start. É chamado uma vez quando o aplicativo é iniciado.
+- Chamar SetLicense várias vezes não é prejudicial, mas resíduos de tempo do processador.
+- Se você estiver desenvolvendo um formulário do Windows ou um aplicativo de console, ligue para o SetLicense no código de inicialização, antes de usar as classes Aspose.TeX.
+- Ao desenvolver um aplicativo ASP.NET, chame o SetLicense do arquivo global.asax.cs, no método protegido da Application_Start. É chamado uma vez quando o aplicativo é iniciado.
 - Não ligue para os métodos Page_Load, pois significa que a licença será carregada sempre que uma página da web for carregada.
-- Se você estiver desenvolvendo uma biblioteca de classes, poderá chamar Setlicense de um construtor estático da classe que usa aspose.tex. O construtor estático é executado antes que uma instância da sua classe seja criada, certificando -se de que a licença ASPOLE.TEX seja definida corretamente.
+- Se você estiver desenvolvendo uma biblioteca de classes, poderá chamar SetLicense de um construtor estático da classe que utiliza Aspose.TeX. O construtor estático é executado antes que uma instância da sua classe seja criada, certificando-se de que a licença Aspose.TeX seja definida corretamente.
 
 ### Aplique a licença usando o arquivo ou o objeto de fluxo
 
-Use o método [Licença.Setlicense](https://reference.aspose.com/tex/net/aspose.tex/license/) para licenciar o componente. A maneira mais fácil de definir uma licença é colocar o arquivo de licença na mesma pasta que o *aspose.tex.dll* e especificar o nome do arquivo, sem um caminho, como mostrado abaixo.
+Use o método [Licença.SetLicense](https://reference.aspose.com/tex/net/aspose.tex/license/) para licenciar o componente. A maneira mais fácil de definir uma licença é colocar o arquivo de licença na mesma pasta que o *Aspose.TeX.dll* e especificar o nome do arquivo, sem um caminho, como mostrado abaixo.
 
 #### Carregando uma licença do arquivo
 

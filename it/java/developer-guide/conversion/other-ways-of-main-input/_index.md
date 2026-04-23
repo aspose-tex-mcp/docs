@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-java.md
 title: Altri modi per fornire il principale file di input Tex | Java
@@ -6,7 +6,7 @@ linktitle: Altri modi per fornire il principale file di input Tex
 weight: 14
 url: /java/other-ways-of-main-input/
 description: La funzionalità di conversione della soluzione API ASPUS.TEX per Java ha un costruttore che accetta un flusso come primo argomento. Ecco alcuni esempi di codice.
-lastmod: "2025-06-13"
+lastmod: "2026-04-21"
 ---
 
 {{<section overview>}}

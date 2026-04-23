@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-java.md
 title: LaTeX Рендеринг фигур | Java
@@ -6,7 +6,7 @@ linktitle: Отрисовка фигур LaTeX
 weight: 20
 url: /java/latex-figure-rendering/
 description: Aspose.TeX API для рендеринга фрагментов (рисунков) Java LaTeX описано в этой статье. Изучите примеры кода о том, как использовать эту функциональность.
-lastmod: "2024-09-24"
+lastmod: "2026-04-21"
 ---
 
 {{<section overview>}}
@@ -17,7 +17,7 @@ lastmod: "2024-09-24"
 
 Как и в случае с рендерингом формул, мы начнем с примера. Вот:
 
-{{< gist "aspose-com-gists""67385c777283964d328086603f691ac9""Aspose.TeX.Examples-Features-PngLaTeXFigureRendering.java" >}}
+{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Features-PngLaTeXFigureRendering.java" >}}
 
 Прежде всего, мы создаем экземпляр [параметры рендеринга](https://reference.aspose.com/tex/java/com.aspose.tex/PngFigureRendererOptions). Мы делаем это здесь вместе с указанием разрешения выходного изображения.
 
@@ -53,7 +53,7 @@ lastmod: "2024-09-24"
 
 Примерно таким же образом мы можем преобразовать фигуру LaTeX в формат SVG.
 
-{{< gist "aspose-com-gists""67385c777283964d328086603f691ac9""Aspose.TeX.Examples-Features-SvgLaTeXFigureRendering.java" >}}
+{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Features-SvgLaTeXFigureRendering.java" >}}
 
 Отличия заключаются в следующем:
 

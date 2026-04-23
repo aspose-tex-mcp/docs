@@ -7,7 +7,7 @@ weight: 30
 url: /cpp/
 description: Рішення API для керування файлами TeX для C++. Передавати вхідні дані TeX і отримувати вихідні дані, а також створювати власний формат TeX.
 is_root: true
-lastmod: "2025-06-13"
+lastmod: "2026-04-20"
 ---
 
 {{<section overview>}}

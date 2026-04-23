@@ -1,13 +1,13 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: Qu’est-ce que TeX ? 
 linktitle: Qu’est-ce que TeX ?
 weight: 10
 url: /net/what-is-tex/
-keywords: qu'est-ce que le Texas
+keywords: qu'est-ce que TeX
 description: Cette page répond à la question "Qu'est-ce que TeX ?" Est-ce un langage de programmation ou un format de document ?
-lastmod: "2024-09-27"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
@@ -37,4 +37,4 @@ Heureusement, ce n’était pas la seule chose qu’il faisait. Il a également 
 La seule chose qui reste à noter ici est qu'en fait, les caractères du texte en cours de composition sont également des commandes qui forcent le moteur TeX à saisir les caractères correspondants (en tenant compte de l'encodage d'entrée actuel) en utilisant les paramètres de police actuels (qui, à leur tour, sont contrôlables par des séquences de contrôle). Ainsi, lors de la définition des macros, nous pouvons également utiliser des caractères.
 
 Nous espérons que désormais la question « Qu'est-ce que TeX ? » n'existe plus dans votre esprit.
-[^1]: 1 
+[^1]: Le personnage de "The Tragical Historie of Hamlet, Prince of Denmarke" de W. Shakespeare.

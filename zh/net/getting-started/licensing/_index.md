@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 linktitle: 许可
@@ -6,7 +6,7 @@ title: 许可 | .NET的Aspose.TeX
 weight: 70
 url: /net/licensing/
 description: 当您停止使用Aspose.TeX API解决方案的.NET的许可版本时，您会发现如何应用许可证。
-lastmod: "2025-06-10"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
@@ -35,15 +35,15 @@ aspose.tex的评估版(未指定许可证)提供完整的产品功能，只是�
 
 - 每个应用程序域只需要设置一次许可证。
 - 您需要在使用任何其他aspose.tex类之前设置许可证。
-- 多次调用setlicense不是有害的，而是废物处理器时间。
-- 如果要开发Windows表单或控制台应用程序，请在使用aspose.tex类之前在启动代码中调用setlicense。
-- 在开发ASP.NET应用程序时，请在aplication_start受保护的方法中从global.asax.cs文件调用setlicense。应用程序启动时，它被调用一次。
-- 请勿在page_load方法中调用setlicense，因为它意味着每次加载网页时都会加载许可证。
-- 如果您正在开发类库，则可以从使用Aspose.TeX的类的静态构造函数调用setlicense。静态构造函数在创建类实例之前执行，以确保正确设置Aspose.TeX许可证。
+- 多次调用SetLicense不是有害的，而是废物处理器时间。
+- 如果要开发Windows表单或控制台应用程序，请在使用aspose.tex类之前在启动代码中调用SetLicense。
+- 在开发ASP.NET应用程序时，请在Application_Start受保护的方法中从global.asax.cs文件调用SetLicense。应用程序启动时，它被调用一次。
+- 请勿在page_load方法中调用SetLicense，因为它意味着每次加载网页时都会加载许可证。
+- 如果您正在开发类库，则可以从使用Aspose.TeX的类的静态构造函数调用SetLicense。静态构造函数在创建类实例之前执行，以确保正确设置Aspose.TeX许可证。
 
 ### 使用文件或流对象应用许可证
 
-使用[许可证。设置](https://reference.aspose.com/tex/net/aspose.tex/license/)方法来许可组件。设置许可证的最简单方法是将许可证文件与 *aspose.tex.dll* 相同的文件夹中，并指定文件名，没有路径，如下所示。
+使用[许可证。设置](https://reference.aspose.com/tex/net/aspose.tex/license/)方法来许可组件。设置许可证的最简单方法是将许可证文件与 *Aspose.TeX.dll* 相同的文件夹中，并指定文件名，没有路径，如下所示。
 
 #### 从文件中加载许可证
 

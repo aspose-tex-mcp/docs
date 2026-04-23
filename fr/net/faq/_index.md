@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: Foire aux questions | Aspose.TeX pour .NET
@@ -6,7 +6,7 @@ linktitle: FAQ
 weight: 80
 url: /net/faq/
 description: Obtenez des réponses aux questions fréquemment posées sur Aspose.TeX pour .NET, qui est une API pour la composition et la manipulation de TeX et LaTeX.
-lastmod: "2024-09-27"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
@@ -15,7 +15,7 @@ lastmod: "2024-09-27"
 
 **Q : Quelle est la fonctionnalité principale de la solution API Aspose.TeX ?**
 
-**R :** Aspose.TeX est une solution API complète pour la composition de TeX et Latex qui vous permet de créer des équations LaTeX, ainsi que de créer et convertir des fichiers TeX. Il s'agit d'une gestion efficace de documents TeX et de création de formules.
+**R :** Aspose.TeX est une solution API complète pour la composition de TeX et LaTeX qui vous permet de créer des équations LaTeX, ainsi que de créer et convertir des fichiers TeX. Il s'agit d'une gestion efficace de documents TeX et de création de formules.
 <br><br>
 
 **Q : Quels formats Aspose.TeX prend-il en charge ?**

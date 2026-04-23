@@ -7,7 +7,7 @@ weight: 90
 url: /java/latex-math-displayed-equations/
 keywords: LATEX, fórmulas de matemática de LaTeX, matemática de LaTeX, fórmula de matemática de LaTeX exibida, equação de matemática de LaTeX, matriz de equações matemáticas de LaTeX, matemática de LaTeX exibida alinhamento
 description: Aprenda sobre a maneira de exibir fórmulas de matemática de um tamanho grande ou uma grande quantidade de fórmulas usando comandos fornecidos pelo LATEX.
-lastmod: "2025-06-16"
+lastmod: "2026-04-21"
 ---
 
 {{<section overview>}}
@@ -106,7 +106,7 @@ Também é possível rotular e referenciar equações usando `\label` e `\ref`. 
 \begin{equation} \label{eq:someequation}
   f(x)=(x+a)(x+b)
 \end{equation}
-this references equation \ref{eq:someequation}.
+isto faz referência à equação \ref{eq:someequation}.
 ```
 
 resulta em

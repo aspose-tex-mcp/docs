@@ -6,7 +6,7 @@ linktitle: Расширенные функции
 weight: 20
 url: /cpp/advanced-features/
 description: В этой главе собраны функции решения Aspose.TeX API для C++, построенного на основе реализации Object TeX/LaTeX.
-lastmod: "2024-09-24"
+lastmod: "2026-04-20"
 ---
 
 {{<section overview>}}

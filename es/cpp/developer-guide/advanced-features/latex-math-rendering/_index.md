@@ -6,7 +6,7 @@ linktitle: Representación de fórmulas matemáticas LaTeX
 weight: 10
 url: /cpp/latex-math-formula-rendering/
 description: En artículo se describe la Aspose.TeX para la representación de fórmulas matemáticas C++ LaTeX. Aquí encontrará ejemplos de código de la funcionalidad.
-lastmod: "2024-10-30"
+lastmod: "2026-04-20"
 ---
 
 {{<section overview>}}
@@ -16,7 +16,7 @@ La sección de referencia de API relacionada con este tema está [aquí](https:/
 ```C++
     // Create rendering options 
     System::SharedPtr<PngMathRendererOptions> options = System::MakeObject<PngMathRendererOptions>();
-    // Sspecify the image resolution 150 dpi
+    // Specify the image resolution 150 dpi
     options->set_Resolution(150);
     // Specify the preamble.
     options->set_Preamble(u"\\usepackage{amsmath}\r\n\\usepackage{amsfonts}\r\n\\usepackage{amssymb}\r\n\\usepackage{color}");

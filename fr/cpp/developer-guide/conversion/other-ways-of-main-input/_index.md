@@ -5,8 +5,8 @@ title: Autres moyens de fournir le fichier d'entrée TeX | C++
 linktitle: Autres façons de fournir le fichier d'entrée TeX principal
 weight: 14
 url: /cpp/other-ways-of-main-input/
-description: De conversion de la solution API Aspose.TeX pour C++ a un constructeur qui accepte un flux comme premier argument.
-lastmod: "2024-09-27"
+description: De conversion de la solution API Aspose.TeX pour C++ a un constructeur qui accepte un flux comme premier argument. Voici quelques exemples de code.
+lastmod: "2026-04-20"
 ---
 
 {{<section overview>}}

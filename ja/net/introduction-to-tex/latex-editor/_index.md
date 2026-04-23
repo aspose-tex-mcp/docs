@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: LaTeX エディタと LaTeX 3 (expl3) プログラミング層の理解
@@ -8,7 +8,7 @@ weight: 90
 url: /latex-editor/
 description: LaTeX エディタの機能、一般的なワークフロー、エディタの種類、そして最新の LaTeX 3 (expl3) プログラミング層について説明する簡潔なガイドです。
 keywords: LaTeX エディタ, LaTeX 3, expl3, TeX, PDF コンパイル, シンタックスハイライト, ライブプレビュー, 学術執筆, パッケージ開発
-lastmod: "2026-02-26"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
@@ -114,9 +114,9 @@ LaTeX エディタは、**`.tex`** ソースファイルの作成を支援し、
 * **ライブエラー報告** – expl3 を使用したパッケージでコンパイルエラーが発生した場合、エディタは `.log` ファイルから直接問題の行を表示できます。  
 * **スニペット** – 多くのエディタが一般的な expl3 構文（`\seq_map_inline:Nn`、`\bool_if:nTF`）用の既製スニペットを提供し、パッケージ開発を加速します。  
 
-## Aspose とは？
+## Aspose.TeX とは？
 
-Aspose は、LaTeX が生成した PDF をプログラムから操作できる API ファミリーを提供します。Aspose ライブラリを使用すれば、開発者は実行時にフル LaTeX 環境を用意せずに、PDF の結合・分割・他フォーマット（DOCX、HTML など）への変換を行うことができます。  
+Aspose.TeX は、LaTeX が生成した PDF をプログラムから操作できる API ファミリーを提供します。Aspose.TeX ライブラリを使用すれば、開発者は実行時にフル LaTeX 環境を用意せずに、PDF の結合・分割・他フォーマット（DOCX、HTML など）への変換を行うことができます。  
 
 ## 結論 
 

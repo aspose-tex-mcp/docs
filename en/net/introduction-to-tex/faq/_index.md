@@ -6,7 +6,7 @@ linktitle: FAQ
 weight: 80
 url: /net/introduction-to-tex/faq/
 description:  Get answers to all the most frequent questions about TeX and LaTeX, their structure, usage and peculiarities.
-lastmod: "2025-09-03"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}

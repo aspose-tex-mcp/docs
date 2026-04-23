@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: LaTeX 是什么？
@@ -7,7 +7,7 @@ weight: 16
 url: /net/what-is-latex/
 keywords: 什么是 latex, latex 是什么
 description: 要回答“什么是 LaTeX？”这个问题，值得一提的是其最令人印象深刻的特性之一是新字体选择方案（NFSS）。
-lastmod: "2026-02-26"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}

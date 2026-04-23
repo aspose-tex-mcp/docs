@@ -7,7 +7,7 @@ weight: 40
 url: /java/latex-math-decorations/
 keywords: ams-latex, amsmath, amsxtra, латехные интегралы, латехные фракции, латехные украшения, латехные стрелки, латехные пределы, латехные модульные соотношения
 description: В этой статье обсуждается ряд команд, которые создают различные математические структуры среднего размера с использованием пакета amsmath.
-lastmod: "2024-09-24"
+lastmod: "2026-04-21"
 ---
 
 {{<section overview>}}
@@ -33,7 +33,7 @@ lastmod: "2024-09-24"
 
 Четвертый аргумент, *style*, переопределяет (если не оставлен пустым) математический стиль используемого макета и размера шрифта. Значение должно находиться в диапазоне 0–3: 0 – `\displaystyle`, 1 – `\textstyle`, 2 – `\scriptstyle`, 3 – `\scriptstyle`. Если этот аргумент оставить пустым, стиль выбирается в соответствии с обычными правилами для дробей. Последние два аргумента — это числитель и знаменатель.
 
-> The old fraction commands `\over`, `\overwithdelims`, `\atop`, `\atopwithdelims`, `\above`, and `\abovewithdelims`, which standard LaTeX inherits from TeX, produce warnings when they are used with the `amsmath` package.
+ > Старинные команды дробей `\over`, `\overwithdelims`, `\atop`, `\atopwithdelims`, `\above` и `\abovewithdelims`, которые стандартный LaTeX наследует от TeX, вызывают предупреждения при использовании с пакетом `amsmath`.
 
 ### 4.1.1. Простые дроби
 
@@ -184,7 +184,7 @@ u & \equiv v + 1 \bmod{n^2} \\
 u & = v + 1 \pmod{n^2} \\
 u & = v + 1 \pod{n^2}
 \end{align*}
-The in-text layout: $ u = v + 1 \pmod{n^2} $
+Отображение в тексте: $ u = v + 1 \pmod{n^2} $
 \begin{gather*}
 (m \bmod n) = k^2 \, ; \quad x \equiv y \pmod b \, ; \\
 x \equiv y \mod c \, ; \quad x \equiv y \pod d\, .
@@ -193,7 +193,7 @@ x \equiv y \mod c \, ; \quad x \equiv y \pod d\, .
 
 ![Модульное отношение](/tex/images/java/tutorial/latex-ams-math-4-8.png)
 
-> With `amsmath`, the spacing of `\pmod` is decreased within a non-displayed formula.
+ > При использовании `amsmath` расстояние `\pmod` уменьшается в недисплейной формуле.
 
 ## 4.5. Математические точечные акценты
 

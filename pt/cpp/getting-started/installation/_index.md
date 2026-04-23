@@ -6,7 +6,7 @@ linktitle: Instalação
 weight: 60
 url: /cpp/installation/
 description: A documentação da API do Aspose.TeX para C ++ pode ser encontrada no pacote ZIP baixado ou obtido na Nuget Gallery, clicando no “Pacote de download”.
-lastmod: "2025-06-16"
+lastmod: "2026-04-20"
 ---
 
 {{<section overview>}}
@@ -27,6 +27,6 @@ Execute as seguintes etapas para usar aspose.tex para C ++ em seus aplicativos:
 
 Para fazer referência ao componente usando o console do gerenciador de pacotes:
 
-1. No Nuget Package Manager, pesquise asppose.tex
-2. Selecione o pacote Aspose.TeX.cpp nos resultados de pesquisa
+1. No Nuget Package Manager, pesquise Aspose.TeX
+2. Selecione o pacote Aspose.TeX.Cpp nos resultados de pesquisa
 3. Selecione os projetos necessitados na lista de projetos de soluções e pressione **Instale o botão** para instalar o pacote

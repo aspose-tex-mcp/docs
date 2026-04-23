@@ -6,7 +6,7 @@ linktitle: Getting Started
 weight: 20
 url: /net/getting-started/
 description: C# .NET API for developers to manipulate and process TeX and LaTeX files. Learn the fundamentals to start working with the solution.
-lastmod: "2024-09-20"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
@@ -41,7 +41,7 @@ Aspose.TeX can also be implemented into your own cross-platform applications lik
 
 {{% /alert %}} 
 
-Explore the [Developer Guide](/tex/{{lang.url-fragment}}net/developer-guide/) your go-to resource for gaining comprehensive insights and practical guidance on maximizing the capabilities of the API. Discover a wealth of practical examples and code snippets showcasing common use cases, enabling you to effectively leverage the Aspose.Page Python API in real-world scenarios.
+Explore the [Developer Guide](/tex/{{lang.url-fragment}}net/developer-guide/) your go-to resource for gaining comprehensive insights and practical guidance on maximizing the capabilities of the API. Discover a wealth of practical examples and code snippets showcasing common use cases, enabling you to effectively leverage the Aspose.TeX for .NET in real-world scenarios.
 
 {{% alert color="primary" %}} 
 

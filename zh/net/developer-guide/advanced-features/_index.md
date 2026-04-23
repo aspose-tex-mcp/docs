@@ -1,12 +1,12 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: 高级功能| .NET的Aspose.TeX
 linktitle: 高级功能
 weight: 20
 url: /net/advanced-features/
-description: 本章收集了基于对象Tex/latex实现的基于对象Tex/latex实现的.NET的ASPOSE.TEX API解决方案功能。
-lastmod: "2025-06-10"
+description: 本章收集了基于 Object TeX/LaTeX 实现的 .NET 的 Aspose.TeX API 解决方案功能。
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}

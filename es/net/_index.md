@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 linktitle: Aspose.TeX para .NET
@@ -7,7 +7,7 @@ weight: 10
 url: /net/
 description: Administre archivos TeX dentro de la solución API C# .NET que proporciona formas de pasar entrada y salida TeX, así como funciones avanzadas.
 is_root: true
-lastmod: "2024-10-30"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}

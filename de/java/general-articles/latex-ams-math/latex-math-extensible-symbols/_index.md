@@ -7,7 +7,7 @@ weight: 50
 url: /java/latex-math-extensible-symbols/
 keywords: ams-latex, amsmath, amsxtra, Latex-Mathe-Operatoren, Latex-Mathe-Trennzeichen, Latex-Mathe-Klammern, Latex-Mathe-Klammern, Latex-Mathe-Akzente
 description: In diesem Artikel werden LaTeX-Funktionen im Zusammenhang mit der Arbeit mit erweiterbaren und anpassbaren mathematischen Symbolen erläutert.
-lastmod: "2024-09-26"
+lastmod: "2026-04-21"
 ---
 
 {{<section overview>}}
@@ -60,17 +60,17 @@ Im nächsten Beispiel demonstrieren wir die Verwendung einiger Befehle, die Kons
 &= \underline {\psi_\delta(t) E_t h} \\
 \overbrace {\psi_\delta(t) E_t h}
 &= \underbrace {\psi_\delta(t) E_t h}
-& & \text{Do not change style} \\
+& & \text{Stil nicht ändern} \\
 \overrightarrow {\psi_\delta(t) E_t h} 
 &= \overleftarrow {\psi_\delta(t) E_t h}
-& & \text{Do not change style} \\[-3pt]
-& & & \text{without \textsf{amsmath}} \\
+& & \text{Stil nicht ändern} \\[-3pt]
+& & & \text{ohne \textsf{amsmath}} \\
 \underrightarrow {\psi_\delta(t) E_t h}
 &= \underleftarrow {\psi_\delta(t) E_t h}
-& & \text{Do need \textsf{amsmath}} \\
+& & \text{Benötigt \textsf{amsmath}} \\
 \overleftrightarrow {\psi_\delta(t) E_t h}
 &=\underleftrightarrow{\psi_\delta(t) E_t h}
-& & \text{Do need \textsf{amsmath}}
+& & \text{Benötigt \textsf{amsmath}}
 \end{align*}
 ```
 

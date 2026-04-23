@@ -7,7 +7,7 @@ weight: 90
 url: /java/latex-math-displayed-equations/
 keywords: Formule di matematica in LaTeX, LaTeX, matematica in LaTeX, formula di matematica in LaTeX, LaTeX matematica mostrata equazione, array di equazioni di matematica in LaTeX, allineamento della matematica in LaTeX
 description: Scopri il modo di visualizzare formule matematiche di grandi dimensioni o una grande quantità di formule utilizzando i comandi forniti dal LaTeX.
-lastmod: "2025-06-13"
+lastmod: "2026-04-21"
 ---
 
 {{<section overview>}}
@@ -106,7 +106,7 @@ si traduce
 \begin{equation} \label{eq:someequation}
   f(x)=(x+a)(x+b)
 \end{equation}
-this references equation \ref{eq:someequation}.
+questo fa riferimento all'equazione \ref{eq:someequation}.
 ```
 
 si traduce

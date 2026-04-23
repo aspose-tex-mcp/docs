@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: Aspose.TeX eingebettete LaTeX-Pakete
@@ -6,7 +6,7 @@ linktitle: Eingebettete LaTeX-Pakete
 weight: 20
 url: /net/embedded-packages/
 description: Hier ist eine Liste der in die Aspose.TeX-Bibliothek eingebetteten Pakete zusammen mit ihren Beschreibungen und verwendeten Versionen.
-lastmod: "2024-09-26"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
@@ -63,7 +63,7 @@ v6.7b 2022/12/04.
 
 `afterpage`, `array`, `bm`, `calc`, `dcolumn`, `delarray`, `enumerate`, `fileerr`, `fontsmpl`, `ftnright`, `hhline`, `indentfirst`, `layout `, `longtable`, `multicol`, `rawfonts`, `showkeys`, `somedefs`, `tabularx`, `theorem`, `trace`, `varioref`, `verbatim`, `xr` und `xspace` .
 
-### `URL`
+### `url`
 
 v3.4 16.09.2013.
 

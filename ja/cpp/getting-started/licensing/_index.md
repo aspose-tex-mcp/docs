@@ -6,7 +6,7 @@ linktitle: ライセンス
 weight: 70
 url: /cpp/licensing/
 description: C ++用のAspose.TeX APIソリューションのライセンス版で停止した場合、ライセンスの適用方法がわかります。
-lastmod: "2025-06-09"
+lastmod: "2026-04-20"
 ---
 
 {{<section overview>}}

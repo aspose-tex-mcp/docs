@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: Perguntas frequentes sobre TeX
@@ -6,7 +6,7 @@ linktitle: Perguntas frequentes
 weight: 80
 url: /net/introduction-to-tex/faq/
 description: Obtenha respostas para todas as perguntas mais frequentes sobre TeX e LaTeX, sua estrutura, uso e peculiaridades.
-lastmod: 2025-09-03
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
@@ -51,7 +51,7 @@ A seção do corpo do documento contém o conteúdo real do documento. Está fec
 
 **P: Qual é a sintaxe do TeX?**
 
-**A:** A sintaxe do TeX (e seu pacote macro mais popular, LATEX) é baseado em comandos e ambientes.
+**A:** A sintaxe do TeX (e seu pacote macro mais popular, LaTeX) é baseado em comandos e ambientes.
 
 A maioria dos comandos começa com uma barra de barragem `(\)` e o nome do comando. Por exemplo, `\maketitle` cria o título do documento. Alguns comandos também tomam parâmetros opcionais em colchetes quadrados `[...]` e argumentos obrigatórios nos aparelhos encaracolados `{...}`.
 
@@ -94,12 +94,12 @@ Este é o caso de uso mais comum. Em vez de escrever um arquivo de LaTeX complex
 - Saída científica e matemática
 
 2. Incorporando Python no LaTeX
-Você também pode usar o código Python diretamente de um documento do LATEX e inserir a saída. Isso é feito com pacotes como `pythontex`.
+Você também pode usar o código Python diretamente de um documento do LaTeX e inserir a saída. Isso é feito com pacotes como `pythontex`.
 <br> <br>
 
 **P: O LaTeX é como html?**
 
-**A:** O LaTeX é semelhante ao HTML, pois ambos são idiomas de marcação usados ​​para estruturar e formatar documentos. Você escreve em um arquivo de texto simples, adicionando comandos especiais para marcar o conteúdo. Um programa separado processa esse arquivo para renderizar a saída final. A diferença é que o LATEX é um sistema de composição. Seu objetivo principal é produzir documentos prontos para impressão e alta qualidade, com controle preciso sobre tipografia, paginação e layout. E o HTML é um idioma de marcação da Web cujo principal objetivo é estruturar o conteúdo dos navegadores da Web exibirem. Ele foi projetado para ser flexível e responsivo, adaptando -se a diferentes tamanhos e dispositivos de tela.
+**A:** O LaTeX é semelhante ao HTML, pois ambos são idiomas de marcação usados ​​para estruturar e formatar documentos. Você escreve em um arquivo de texto simples, adicionando comandos especiais para marcar o conteúdo. Um programa separado processa esse arquivo para renderizar a saída final. A diferença é que o LaTeX é um sistema de composição. Seu objetivo principal é produzir documentos prontos para impressão e alta qualidade, com controle preciso sobre tipografia, paginação e layout. E o HTML é um idioma de marcação da Web cujo principal objetivo é estruturar o conteúdo dos navegadores da Web exibirem. Ele foi projetado para ser flexível e responsivo, adaptando -se a diferentes tamanhos e dispositivos de tela.
 <br> <br>
 
 **P: Ai pode escrever no LaTeX?**
@@ -123,7 +123,7 @@ No entanto, se você é um estudante ou profissional em um campo STEM, ou se esc
 
 **P: O que é o pacote de LaTeX?**
 
-**A:** Um pacote de LaTeX é um conjunto de macros e comandos para adicionar funcionalidade específica a um documento de LaTeX. É como uma biblioteca de software que você pode importar para o seu documento para adicionar mais recursos. O sistema LATEX principal fornece comandos básicos para estruturar um documento (como `\section` e `\subsection`), mas os pacotes ampliam esses recursos para tarefas mais complexas.
+**A:** Um pacote de LaTeX é um conjunto de macros e comandos para adicionar funcionalidade específica a um documento de LaTeX. É como uma biblioteca de software que você pode importar para o seu documento para adicionar mais recursos. O sistema LaTeX principal fornece comandos básicos para estruturar um documento (como `\section` e `\subsection`), mas os pacotes ampliam esses recursos para tarefas mais complexas.
 <br> <br>
 
 **P: Como funciona o pacote de LaTeX?**

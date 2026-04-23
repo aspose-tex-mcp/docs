@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: Другие пути предоставления входного файла TeX | .NET 
@@ -6,7 +6,7 @@ linktitle: Другие способы предоставления основн
 weight: 14
 url: /net/other-ways-of-main-input/
 description: Функциональность преобразования решения Aspose.TeX API для .NET имеет конструктор, который принимает поток в качестве первого аргумента.
-lastmod: "2024-09-24"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
@@ -15,7 +15,7 @@ lastmod: "2024-09-24"
 
 До этого момента мы знали только, как передать [основной входной файл](/tex/{{lang.url-fragment}}net/tex-io/#tex-input) в движок TeX как имя файла, полностью заданное или в краткой форме, с расширением или без него. Но есть еще один [конструктор](https://reference.aspose.com/tex/net/aspose.tex/texjob/texjob/) класса TeXJob, который принимает поток в качестве первого аргумента. Это удобно, если по каким-то причинам основной входной файл у нас имеет форму, отличную от файла файловой системы диска. Вот как это можно реализовать:
 
-{{< gist "aspose-com-gists""4e3bae6ecbe041bcb411e0cf4c98dc71""Example-StreamInput-LaTeX.cs" >}}
+{{< gist "aspose-com-gists" "4e3bae6ecbe041bcb411e0cf4c98dc71" "Example-StreamInput-LaTeX.cs" >}}
 
 Обратите внимание, что все выходные файлы будут иметь имя *texput*. Это потому, что движок нигде не может получить другого имени. *texput* — это имя задания по умолчанию. [Здесь](/tex/{{lang.url-fragment}}net/tex-io/#tex-output) и [здесь](/tex/{{lang.url-fragment}}net/other-options/#how-to-set-the-job-name) — подробная информация об именах должностей.
 
@@ -25,7 +25,7 @@ lastmod: "2024-09-24"
 
 Вот код:
 
-{{< gist "aspose-com-gists""4e3bae6ecbe041bcb411e0cf4c98dc71""Example-MainInputTerminal.cs" >}}
+{{< gist "aspose-com-gists" "4e3bae6ecbe041bcb411e0cf4c98dc71" "Example-MainInputTerminal.cs" >}}
 
 Как только он запускается, движок зависает, ожидая, пока мы введем имя файла (с путем или без него, с расширением или без него):
 

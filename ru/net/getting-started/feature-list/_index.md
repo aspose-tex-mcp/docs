@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: Список функций | Aspose.TeX для .NET
@@ -6,7 +6,7 @@ linktitle: Список функций
 weight: 30
 url: /net/feature-list/
 description: Добавьте в свое решение функцию манипулирования файлами TeX. Узнайте о функциях, которые предлагает вам решение Aspose.TeX API для .NET.
-lastmod: "2024-09-24"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}

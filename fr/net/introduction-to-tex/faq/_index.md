@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: Des questions fréquemment posées sur TeX
@@ -6,7 +6,7 @@ linktitle: FAQ
 weight: 80
 url: /net/introduction-to-tex/faq/
 description: Obtenez des réponses à toutes les questions les plus fréquentes sur le TeX et le LaTeX, leur structure, leur utilisation et leurs particularités.
-lastmod: 2025-09-03
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
@@ -62,7 +62,7 @@ Les environnements sont utilisés pour appliquer un formatage spécifique à un 
 
 **A:** Le mode mathématique est la capacité de Tex à gérer les mathématiques complexes. Vous pouvez passer en "mode mathématiques" en utilisant des panneaux en dollars `($)` pour les équations en ligne, ou des panneaux à double dollar `($$)` pour une équation distincte et centrée sur sa propre ligne. À l'intérieur de ce mode, vous pouvez utiliser des commandes pour les symboles spéciaux et le formatage. Par exemple, `$x^2$` crée un exposant, et `$\sqrt{...}$` crée une racine carrée.
 
-**Q: Qu'est-ce que le LaTeX?**
+**Q: Qu'est-ce que LaTeX?**
 
 **A:** LaTeX est un ensemble de macros (commandes prédéfinies) construites au sommet de Tex. Il s'agit d'un système de niveau supérieur et plus convivial pour la création de documents. LaTeX simplifie les tâches communes en fournissant des commandes intuitives pour des choses comme la création de sections, des chapitres, des tableaux de contenu et des bibliographies.
 
@@ -75,7 +75,7 @@ Tex fournit les commandes principales pour le positionnement des caractères et 
 LaTeX est un système de haut niveau beaucoup plus convivial pour la création de documents. LaTeX gère les tâches comme les sections de numérotation, la création de bibliographies et la mise en forme de tables de contenu automatiquement, afin que vous puissiez vous concentrer sur la structure logique de votre document plutôt que sur son apparence visuelle. LaTeX simplifie l'utilisation du puissant moteur Tex.
 <br> <br>
 
-**Q: Quel est l'avantage du LaTeX?**
+**Q: Quel est l'avantage LaTeX?**
 
 **A:** - Sa caractéristique la plus célèbre est sa capacité à composer des équations mathématiques et scientifiques complexes avec le dimensionnement, l'espacement et le placement des symboles, des indices et des exposés.
 - LaTeX produit des documents avec une qualité typographique supérieure. Il utilise des algorithmes pour la rupture de ligne, la justification et la trait de congédiement pour un résultat professionnel et poli.
@@ -93,13 +93,13 @@ Il s'agit du cas d'utilisation le plus courant. Au lieu d'écrire un fichier de 
 - Documents complexes
 - Sortie scientifique et mathématique
 
-2. Intégrer le python dans le LaTeX
+2. Intégrer le python dans LaTeX
 Vous pouvez également utiliser le code Python directement à partir d'un document LaTeX et insérer la sortie. Cela se fait avec des packages comme «Pythontex».
 <br> <br>
 
 **Q: Le LaTeX est-il comme HTML?**
 
-**A:** LaTeX est similaire à HTML en ce qu'ils sont tous deux des langages de balisage utilisés pour structurer et formater des documents. Vous écrivez dans un fichier texte brut, en ajoutant des commandes spéciales pour marquer le contenu. Un programme distinct traite ensuite ce fichier pour rendre la sortie finale. La différence est que le LaTeX est un système de composition. Son objectif principal est de produire des documents prêts à imprimer de haute qualité avec un contrôle précis sur la typographie, la pagination et la disposition. Et HTML est un langage de balisage Web dont le but principal est de structurer le contenu pour que les navigateurs Web s'affichent. Il est conçu pour être flexible et réactif, s'adaptant à différentes tailles d'écran et appareils.
+**A:** LaTeX est similaire à HTML en ce qu'ils sont tous deux des langages de balisage utilisés pour structurer et formater des documents. Vous écrivez dans un fichier texte brut, en ajoutant des commandes spéciales pour marquer le contenu. Un programme distinct traite ensuite ce fichier pour rendre la sortie finale. La différence est que LaTeX est un système de composition. Son objectif principal est de produire des documents prêts à imprimer de haute qualité avec un contrôle précis sur la typographie, la pagination et la disposition. Et HTML est un langage de balisage Web dont le but principal est de structurer le contenu pour que les navigateurs Web s'affichent. Il est conçu pour être flexible et réactif, s'adaptant à différentes tailles d'écran et appareils.
 <br> <br>
 
 **Q: L'IA peut-elle écrire en LaTeX?**
@@ -115,10 +115,10 @@ Vous pouvez également utiliser le code Python directement à partir d'un docume
 **A:** Oui, le chatppt peut générer du code de LaTeX. C'est un outil puissant à cet effet. Il peut vous aider à créer des documents complexes difficiles à écrire manuellement. Mais il peut parfois produire du code contenant des erreurs ou ne se compile pas correctement, vous devez donc consulter et vérifier le code qu'il génère.
 <br> <br>
 
-**Q: Le mot peut-il être utilisé à la place du LaTeX?**
+**Q: Le mot peut-il être utilisé à la place LaTeX?**
 
-**A:** Oui, Microsoft Word peut être utilisé à la place du LaTeX, mais le choix dépend entièrement de vos besoins spécifiques et du type de document que vous créez. Pour la plupart des utilisateurs et la plupart des documents, Word est un choix parfaitement adapté et souvent préférable.
-Cependant, si vous êtes étudiant ou professionnel dans un domaine STEM, ou si vous écrivez régulièrement des documents complexes longs avec de nombreuses équations, le LaTeX est une bien meilleure option.
+**A:** Oui, Microsoft Word peut être utilisé à la place LaTeX, mais le choix dépend entièrement de vos besoins spécifiques et du type de document que vous créez. Pour la plupart des utilisateurs et la plupart des documents, Word est un choix parfaitement adapté et souvent préférable.
+Cependant, si vous êtes étudiant ou professionnel dans un domaine STEM, ou si vous écrivez régulièrement des documents complexes longs avec de nombreuses équations, LaTeX est une bien meilleure option.
 <br> <br>
 
 **Q: Qu'est-ce que le package de LaTeX?**

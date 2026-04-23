@@ -1,12 +1,12 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
-title: Aspira
+title: Pacchetti LaTeX incorporati in Aspose.TeX
 linktitle: Pacchetti in LaTeX incorporati
 weight: 20
 url: /net/embedded-packages/
 description: Ecco un elenco di pacchetti incorporati nella libreria Aspose.TeX insieme alle loro descrizioni e versioni utilizzate.
-lastmod: "2025-06-13"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
@@ -19,23 +19,23 @@ Esistono numerosi pacchetti di LaTeX incorporati nella libreria Aspose.TeX. Ecco
 
 V2.17J 2021/04/20.
 
-### `Colortbl`
+### `colortbl`
 
 V1.0F 2022/06/20.
 
-### `Eurosym`
+### `eurosym`
 
 v1.1 1998/08/06.
 
-### `geometria '
+### `geometry`
 
 Versione adattata equivalente a V5.9 2020/01/02.
 
-### `Graphics '
+### `graphics`
 
 Versione adattata equivalente a V1.4d 2021/03/04 (Graphicx v1.2c 2020/12/05, Color V1.0J 2005/11/14).
 
-### `Hyperref`
+### `hyperref`
 
 Versione adattata equivalente a V6.83M 2012/11/06.
 
@@ -43,7 +43,7 @@ Versione adattata equivalente a V6.83M 2012/11/06.
 
 V2.7 2021/09/20.
 
-### `Multirow`
+### `multirow`
 
 v2.8 2021/03/15.
 
@@ -51,14 +51,14 @@ v2.8 2021/03/15.
 
 V3.1.9A 2021/05/15.
 
-### `Pict2e`
+### `pict2e`
 Versione adattata equivalente a V0.4b 2020/09/30.
 
-### `setSpace`
+### `setspace`
 
 V6.7B 2022/12/04.
 
-### Bundle `Latex-tools`:
+### Bundle `latex-tools`:
 
 `Afterpage`,` array`, `bm`,` calc`, `dcolumn`,` delarray`, `enumerate`,` fileerr`, `fontsmpl`,` ftnright`, `hhline`,` indentfirst`, `layout`,` longtable`, `multnts`,` rawfonts` `Showkeys`,` Somedefs`, `tabularx`,` teorem`, `trace`,` varioref`, `verbatim`,` xr` e `xspace`.
 

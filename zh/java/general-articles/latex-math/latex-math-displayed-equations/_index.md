@@ -7,7 +7,7 @@ weight: 90
 url: /java/latex-math-displayed-equations/
 keywords: latex、latex 数学公式、latex 数学、latex 数学公式显示、latex 数学方程式显示、latex 数学方程式数组、latex 数学公式显示对齐方式
 description: 了解如何使用 LaTeX 提供的命令，以大尺寸或大量公式的方式显示数学公式。
-lastmod: "2026-02-24"
+lastmod: "2026-04-21"
 ---
 
 {{<section overview>}}
@@ -101,7 +101,7 @@ LaTeX 还提供了 `equation` 环境来自动给公式编号。例如，键入
 \begin{equation} \label{eq:someequation}
   f(x)=(x+a)(x+b)
 \end{equation}
-this references equation \ref{eq:someequation}.
+这引用方程 \ref{eq:someequation}。
 ```
 
 会产生

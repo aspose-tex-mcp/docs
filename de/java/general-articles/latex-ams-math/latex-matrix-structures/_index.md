@@ -7,7 +7,7 @@ weight: 30
 url: /java/latex-ams-matrix/
 keywords: ams-latex, amsmath, amscd, Latexmatrix, Latexfälle, Latex-Delarray, kommutative Latexdiagramme
 description: Dieser Artikel bietet eine kurze Einführung in das Setzen von LaTeX-matrixähnlichen Strukturen mithilfe von AMS-LATEX-Paketen.
-lastmod: "2024-09-26"
+lastmod: "2026-04-21"
 ---
 
 {{<section overview>}}
@@ -81,11 +81,11 @@ Um eine kleine Inline-Matrix zur Verwendung in Text zu erstellen, können Sie di
 ```tex
 \usepackage{amsmath}
 % -------------------------------------------------------------------------------
-To show the effect of the matrix on surrounding lines inside a paragraph, we put it here:
+Um die Wirkung der Matrix auf die umgebenden Zeilen in einem Absatz zu zeigen, setzen wir sie hier:
 $ \left( \begin{smallmatrix}
 1 & 0 \\ 0 & -1
 \end{smallmatrix} \right) $
-and follow it with enough text to ensure that there is at least one full line below the matrix.
+und folgen mit genügend Text, um sicherzustellen, dass mindestens eine volle Zeile unter der Matrix vorhanden ist.
 ```
 
 ![Die Smallmatrix-Umgebung](/tex/images/java/tutorial/latex-ams-math-3-4.png)

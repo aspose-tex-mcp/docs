@@ -5,8 +5,8 @@ title: Інші вихідні формати перетворення TeX | C++
 linktitle: Інші формати TeX
 weight: 18
 url: /cpp/other-tex-formats/
-description: Функція перетворення рішення Aspose.TeX API для C++ дозволяє конвертувати файли LaTeX і ваші власні файли TeX.
-lastmod: "2025-06-13"
+description: Функція перетворення рішення Aspose.TeX API для C++ дозволяє конвертувати файли LaTeX і ваші власні файли TeX. Ось кілька прикладів коду.
+lastmod: "2026-04-20"
 ---
 
 {{<section overview>}}

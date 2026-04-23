@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: TeX ввод/вывод 
@@ -6,7 +6,7 @@ linktitle: TeX ввод/вывод
 weight: 12
 url: /net/tex-io/
 description: Основы работы с TeX как форматом вывода или ввода в API Aspose.TeX. Задание TeX выполняется для явно указанного файла.
-lastmod: "2024-09-24"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}

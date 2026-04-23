@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-java.md
 title: LaTeX vers l'image | Java
@@ -7,7 +7,7 @@ weight: 10
 url: /java/latex-to-image/
 keywords: latex à png, latex png, latex à image, image latex, latex à jpg, latex jpg, latex à jpeg, latex jpeg, latex à tiff, latex tiff, latex à bmp, latex bmp
 description: Pour convertir TeX en formats d'image à l'aide de la solution API Aspose.TeX pour Java, consultez cet article qui décrit comment procéder.
-lastmod: "2024-09-27"
+lastmod: "2026-04-21"
 ---
 
 {{<section overview>}}
@@ -18,7 +18,7 @@ lastmod: "2024-09-27"
 
 Examinons de plus près le code Java fournissant le moyen le plus simple de convertir LaTeX au format PNG.
 
-{{< gist "aspose-com-gists""67385c777283964d328086603f691ac9""Aspose.TeX.Examples-Conversion-LaTeXToPng-Simplest.java" >}}
+{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Conversion-LaTeXToPng-Simplest.java" >}}
 
 Ainsi, la première chose que nous devons faire (parfois pas la toute première, comme nous le découvrirons plus tard) est de créer une instance de la classe [TeXOptions](https://reference.aspose.com/tex/java/com.aspose.tex/TeXOptions). La seule méthode statique qui fait cela est [consoleAppOptions()](https://reference.aspose.com/tex/java/com.aspose.tex/TeXOptions#consoleAppOptions-com.aspose.tex.TeXConfig-), alors ne nous soucions pas de la signification de son nom. La méthode prend l'[instance objectLaTeX()](https://reference.aspose.com/tex/java/com.aspose.tex/TeXConfig#objectLaTeX--) de la classe [TeXConfig](https://reference.aspose.com/tex/java/com.aspose.tex/TeXConfig), qui convient parfaitement à la conversion d'un [fichier LaTeX](/tex/{{lang.url-fragment}}net/latex-io/#latex-file). Cette configuration demande au moteur Object TeX de charger le format Object LaTeX et d'être prêt à accepter le fichier LaTeX. Le format Object LaTeX n'est en fait que le format [LaTeX](/tex/{{lang.url-fragment}}net/what-is-latex/), sauf qu'il utilise des primitives spécifiques à [Object TeX](/tex/{{lang.url-fragment}}net/aspose-tex-and-object-tex/#object-tex) pour configurer les métriques de la page.
 
@@ -54,7 +54,7 @@ Nous trouverons d'autres produits du moteur dans le dossier que nous avons spéc
 
 Il existe une autre façon d'obtenir des données d'image sous forme de tableau de tableaux d'octets, chaque tableau de la deuxième dimension représente les données d'image d'une page distincte.
 
-{{< gist "aspose-com-gists""67385c777283964d328086603f691ac9""Aspose.TeX.Examples-Conversion-LaTeXToPng-Alternative.java" >}}
+{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Conversion-LaTeXToPng-Alternative.java" >}}
 
 Le(s) fichier(s) *"page-n.png"* seront écrits dans n'importe quel chemin que nous spécifions. Contrairement à [Sortie PDF](/tex/{{lang.url-fragment}}java/latex-to-pdf/#an-alternative-way-to-write-main-output-pdf-file), ils dupliqueront les fichiers PNG de sortie écrits dans le répertoire de sortie.
 
@@ -70,19 +70,19 @@ Ci-dessous, nous discutons de la conversion de LaTeX vers d'autres formats d'ima
 
 ## Comment convertir LaTeX en JPG
 
-{{< gist "aspose-com-gists""76c7e5770ac8b3f6d409f6ec60f02030""Aspose.TeX.Examples-Conversion-LaTeXToJpeg.cs" >}}
+{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-LaTeXToJpeg.cs" >}}
 
 **Vous pouvez également consulter la conversion gratuite LaTeX vers JPG [application Web](https://products.aspose.app/tex/conversion/latex-to-jpg) construite sur la base de l'API [Aspose.TeX for .NET](https://products.aspose.com/tex/net/). [Ici](https://products.aspose.com/tex/java/) est la page de la version Java.**
 
 ## Comment convertir LaTeX en TIFF
 
-{{< gist "aspose-com-gists""76c7e5770ac8b3f6d409f6ec60f02030""Aspose.TeX.Examples-Conversion-LaTeXToTiff.cs" >}}
+{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-LaTeXToTiff.cs" >}}
 
 **Vous pouvez également consulter la conversion gratuite LaTeX vers TIFF [application Web](https://products.aspose.app/tex/conversion/latex-to-tiff) construite sur la base de l'API [Aspose.TeX for .NET](https://products.aspose.com/tex/net/). [Ici](https://products.aspose.com/tex/java/) est la page de la version Java.**
 
 ## Comment convertir LaTeX en BMP
 
-{{< gist "aspose-com-gists""76c7e5770ac8b3f6d409f6ec60f02030""Aspose.TeX.Examples-Conversion-LaTeXToBmp.cs" >}}
+{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-LaTeXToBmp.cs" >}}
 
 **Vous pouvez également consulter la conversion gratuite LaTeX vers BMP [application Web](https://products.aspose.app/tex/conversion/latex-to-bmp) construite sur la base de l'API [Aspose.TeX for .NET](https://products.aspose.com/tex/net/). [Ici](https://products.aspose.com/tex/java/) est la page de la version Java.**
 
@@ -97,6 +97,6 @@ Il existe également la bibliothèque [**Aspose.SVG**](https://products.aspose.c
 
 La conversion en SVG est aussi simple que la [conversion aux formats d'image raster](/tex/{{lang.url-fragment}}java/latex-to-image/), sauf qu'en plus des [SaveOptions](https://reference.aspose.com/tex/java/com.aspose.tex/TeXOptions#getSaveOptions--), nous devons changer le périphérique en une instance du [SvgDevice](https://reference.aspose.com/tex/java/com.aspose.tex.rendering/SvgDevice) classe.
 
-{{< gist "aspose-com-gists""67385c777283964d328086603f691ac9""Aspose.TeX.Examples-Conversion-LaTeXToSvg-Simplest.java" >}}
+{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Conversion-LaTeXToSvg-Simplest.java" >}}
 
 **Vous pouvez également consulter la conversion gratuite LaTeX vers SVG [application Web](https://products.aspose.app/tex/conversion/latex-to-svg) construite sur la base de [Aspose.TeX pour .NET](https://products.aspose.com/tex/net/). [Ici](https://products.aspose.com/tex/java/) est la page de la version Java.**

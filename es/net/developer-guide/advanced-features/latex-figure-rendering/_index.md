@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: Representación de figuras LaTeX | .NET
@@ -7,7 +7,7 @@ weight: 20
 url: /net/latex-figure-rendering/
 description: Este artículo describe la representación de fragmentos de LaTeX (figuras) con Aspose.TeX para .NET. Consulte los ejemplos de código para esta función.
 keywords: figura de LaTeX, tamaño de figura de LaTeX, imagen de LaTeX, imagen de LaTeX, figura incluida de LaTeX, imagen de LaTeX, opciones de figura de LaTeX
-lastmod: "2024-10-30"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}

@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: Modelos LaTeX – guia de início rápido
@@ -8,7 +8,7 @@ weight: 100
 url: /net/latex-templates/
 description: Aprenda o que são modelos LaTeX, como usá-los e criá-los, onde baixar os mais populares e um fluxo de trabalho rápido com trechos prontos para copiar.
 keywords: LaTeX, modelo, classe, estilo, Overleaf, CTAN, bibliografia, Beamer, tese, CV
-lastmod: "2025-12-03"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
@@ -36,15 +36,15 @@ Um modelo LaTeX agrupa uma **classe** (`.cls`), **estilo** (`.sty`), arquivos de
 \end{document}
 ```
 
-Compile com `pdflatex`, `latexmk -pdf` ou o botão “Recompilar” no verso.
+Compile com `pdflatex`, `latexmk -pdf` ou o botão “Recompilar” Overleaf.
 
 ## Como criar seu próprio modelo
 
-| **Objectivo** | **Ficheiro recomendado** | **Esqueleto mínimo** |
+| **Objetivo** | **Arquivo recomendado** | **Esqueleto mínimo** |
 |------|------------------|-----------------|
 | Controlo total sobre a estrutura do documento | **Classe** (`. cls`) | Veja o bloco de código abaixo |
 | Apenas macros ou formatação extra | **Estilo** (`. sty`) | – |
-| Distribuição | Ficheiro zip ou repositório GitHub (incluir classe/estilo, `. bib` opcional, logótipos, README) | – |
+| Distribuição | Arquivo zip ou repositório GitHub (incluir classe/estilo, `. bib` opcional, logótipos, README) | – |
 
 ### Esqueleto de classe mínimo (`mytemplate.cls`)
 
@@ -93,7 +93,7 @@ Use-o com `\documentclass{mytemplate}` no seu documento.
 
 ## Fluxo de trabalho rápido para usuários iniciantes
 
-1. **Escolha um modelo** → clique em “Abrir no verso” **ou** baixe o ZIP.  
+1. **Escolha um modelo** → clique em “Abrir Overleaf” **ou** baixe o ZIP.  
 2. **Editar campos de espaço reservado** (`\title{}`, `\author{}`, etc.).  
 3. **Compilar** → O PDF é exibido.  
 4. Se você trabalha localmente: descompacte → execute `latexmk -pdf main.tex` (ou `pdflatex` + `biber` conforme necessário).  

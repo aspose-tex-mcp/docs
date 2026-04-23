@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: Часто задаваемые вопросы | Aspose.TeX для .NET
@@ -6,7 +6,7 @@ linktitle: Часто задаваемые вопросы
 weight: 80
 url: /net/faq/
 description: Получите ответы на все наиболее частые вопросы об Aspose.TeX for .NET, комплексном API для верстки и манипулирования TeX и LaTeX.
-lastmod: "2024-09-24"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
@@ -15,7 +15,7 @@ lastmod: "2024-09-24"
 
 **В: Какова основная функциональность решения Aspose.TeX API?**
 
-**О:** Aspose.TeX — это комплексное API-решение для набора текстов TeX и Latex, которое позволяет создавать уравнения LaTeX, а также создавать и конвертировать файлы TeX. Это эффективное управление документами TeX и создание формул.
+**О:** Aspose.TeX — это комплексное API-решение для набора текстов TeX и LaTeX, которое позволяет создавать уравнения LaTeX, а также создавать и конвертировать файлы TeX. Это эффективное управление документами TeX и создание формул.
 <br><br>
 
 **В: Какие форматы поддерживает Aspose.TeX?**
@@ -52,7 +52,7 @@ lastmod: "2024-09-24"
 - pgf
 - pict2e
 - setspace
-- latex-tools bundle: afterpage, array, bm, Calc, dcolumn, delarray, enumerate, fileerr, Fontsmpl, ftnright, hhline, indentfirst, макет, longtable, multicol, rawfonts, showkeys, somedefs, tabularx, теорема, трассировка, varioref, дословно, xr и xspace.
+- latex-tools bundle: afterpage, array, bm, calc, dcolumn, delarray, enumerate, fileerr, fontsmpl, ftnright, hhline, indentfirst, layout, longtable, multicol, rawfonts, showkeys, somedefs, tabularx, theorem, trace, varioref, verbatim, xr и xspace.
 - url
 - wasysym
 - xcolor 

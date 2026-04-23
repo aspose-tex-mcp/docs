@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: TeX 输入/输出
@@ -6,7 +6,7 @@ linktitle: TeX I/O
 weight: 12
 url: /net/tex-io/
 description: 在 Aspose.TeX API 中使用 TeX 作为输出或输入格式的基础知识。TeX 作业在一个明确指定的文件上运行。 
-lastmod: "2026-02-26"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}

@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: 什么是 TeX？
@@ -7,7 +7,7 @@ weight: 10
 url: /net/what-is-tex/
 keywords: 什么是 tex
 description: 此页面简要回答“什么是 TeX？”的问题。它是编程语言之一，还是被视为文档格式？
-lastmod: "2026-02-26"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}

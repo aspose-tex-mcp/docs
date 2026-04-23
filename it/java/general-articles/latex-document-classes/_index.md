@@ -7,7 +7,7 @@ weight: 20
 url: /java/latex-document-classes/
 keywords: Classe di articoli in LaTeX, Classe di documenti in LaTeX, modello di documento in LaTeX, articolo in LaTeX, libro in LaTeX, diapositive in LaTeX, report Latex, lettera Latex, Document Class in Latex
 description: Questo articolo è un digest conciso delle classi di documenti in LaTeX e delle loro opzioni. Fornisce anche alcuni esempi.
-lastmod: "2025-06-13"
+lastmod: "2026-04-21"
 ---
 
 {{<section overview>}}
@@ -32,7 +32,7 @@ Il LaTeX standard contiene le seguenti classi di documenti:
 
 Le prime due classi di documenti sono di base. Quindi, inizia con **articolo** ogni volta che non sei sicuro di quale classe hai bisogno.
 
-La classe **rapporto** è molto simile. La differenza principale dall'articolo **** è che è possibile inserire capitoli con il comando `\capitolo`, mentre l'articolo ** la classe di documenti non definisce tale unità di sezionamento.
+La classe **report** è molto simile. La differenza principale dall'articolo **** è che è possibile inserire capitoli con il comando `\capitolo`, mentre l'articolo ** la classe di documenti non definisce tale unità di sezionamento.
 
 ## La classe del libro **del LaTeX**
 

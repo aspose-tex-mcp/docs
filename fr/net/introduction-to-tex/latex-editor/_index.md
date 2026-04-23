@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: Comprendre les éditeurs LaTeX et la couche de programmation LaTeX3 (expl3)
@@ -8,7 +8,7 @@ weight: 90
 url: /latex-editor/
 description: Un guide concis qui explique ce que fait un éditeur LaTeX, le flux de travail typique, les catégories d'éditeurs courantes et la couche de programmation LaTeX3 (expl3) moderne.
 keywords: Éditeur LaTeX, LaTeX3, expl3, TeX, compilation PDF, coloration syntaxique, aperçu en direct, rédaction académique, développement de packages
-lastmod: "2025-12-03"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
@@ -119,8 +119,8 @@ Les délimiteurs `\ExplSyntaxOn` / `\ExplSyntaxOff` basculent le mode de syntaxe
 
 ---
 
-## Et Aspose ?
-Aspose fournit une famille d'API capables de manipuler par programme les PDF générés par LaTeX.  À l'aide d'une bibliothèque Aspose, les développeurs peuvent fusionner, diviser ou convertir des PDF produits par LaTeX vers d'autres formats (par exemple, DOCX, HTML) sans avoir besoin d'une distribution LaTeX complète au moment de l'exécution.
+## Et Aspose.TeX ?
+Aspose.TeX fournit une famille d'API capables de manipuler par programme les PDF générés par LaTeX.  À l'aide d'une bibliothèque Aspose.TeX, les développeurs peuvent fusionner, diviser ou convertir des PDF produits par LaTeX vers d'autres formats (par exemple, DOCX, HTML) sans avoir besoin d'une distribution LaTeX complète au moment de l'exécution.
 
 ---
 

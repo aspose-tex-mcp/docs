@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 linktitle: ライセンス
@@ -6,7 +6,7 @@ title: ライセンス| .NETのAspose.TeX
 weight: 70
 url: /net/licensing/
 description: ライセンスバージョンのAspose.TeX APIソリューションの.NETで停止した場合、ここでライセンスの適用方法を見つけます。
-lastmod: "2025-06-09"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
@@ -37,7 +37,7 @@ Aspose.TeXの評価バージョン(ライセンスを指定しない)は、出�
 - 他のAspose.TeXクラスを使用する前に、ライセンスを設定する必要があります。
 - Setlicenseを複数回呼び出すことは有害ではありませんが、プロセッサ時間を無駄にします。
 - Windowsフォームまたはコンソールアプリケーションを開発している場合は、Aspose.TeXクラスを使用する前に、起動コードでSetlicenseを呼び出します。
-- ASP.NETアプリケーションを開発するときは、aplication_start保護されたメソッドで、global.asax.csファイルからsetlicenseを呼び出します。アプリケーションが開始されたときに1回呼び出されます。
+- ASP.NETアプリケーションを開発するときは、Application_Start保護されたメソッドで、global.asax.csファイルからSetLicenseを呼び出します。アプリケーションが開始されたときに1回呼び出されます。
 - Webページがロードされるたびにライセンスがロードされることを意味するため、Page_loadメソッド内からSetlicenseを呼び出さないでください。
 - クラスライブラリを開発している場合は、Aspose.TeXを使用するクラスの静的コンストラクターからSetlicenseを呼び出すことができます。 Static Constructorは、クラスのインスタンスが作成される前に実行され、Aspose.TeXライセンスが適切に設定されます。
 

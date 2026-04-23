@@ -6,7 +6,7 @@ linktitle: Visão geral do produto
 weight: 10
 url: /cpp/product-overview/
 description: Aspose.TeX é uma biblioteca C ++ para digitar os arquivos Tex. Ele fornece a você a rica funcionalidade, como conversão ou criação de seu próprio formato Tex.
-lastmod: "2025-06-16"
+lastmod: "2026-04-20"
 ---
 
 {{<section overview>}}

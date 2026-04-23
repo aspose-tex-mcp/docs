@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-java.md
 title: メインのTex入力ファイルを提供する他の方法| Java
@@ -6,7 +6,7 @@ linktitle: メインのTex入力ファイルを提供する他の方法
 weight: 14
 url: /java/other-ways-of-main-input/
 description: JavaのAspose.TeX APIソリューションの変換機能には、最初の引数としてストリームを受け入れるコンストラクターがあります。いくつかのコードの例を次に示します。
-lastmod: "2025-06-09"
+lastmod: "2026-04-21"
 ---
 
 {{<section overview>}}

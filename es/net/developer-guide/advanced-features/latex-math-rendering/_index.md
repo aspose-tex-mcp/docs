@@ -6,7 +6,7 @@ linktitle: LaTeX math formulas rendering
 weight: 10
 url: /net/latex-math-formula-rendering/
 description: Aspose.TeX API solution for .NET LaTeX math formulas rendering is described in this article. Learn the code examples on how to use the functionality.
-lastmod: "2024-09-20"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}

@@ -8,7 +8,7 @@ url: /net/tikz-for-presentations-and-infographics/
 aliases: /net/presentations-and-infographics/
 keywords: tikz presentations, tikz beamer, tikz infographics
 description: Discover how to use TikZ for creating professional presentations and engaging infographics.
-lastmod: "2025-06-29"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}

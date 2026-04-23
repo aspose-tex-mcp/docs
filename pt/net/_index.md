@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 linktitle: Aspose.TeX para .NET
@@ -7,7 +7,7 @@ weight: 10
 url: /net/
 description: Gerenciar arquivos TEX na solução da API para C# .NET. A biblioteca fornece maneiras de passar a entrada Tex e obter recursos e recursos avançados.
 is_root: true
-lastmod: "2025-06-16"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
@@ -18,7 +18,7 @@ lastmod: "2025-06-16"
 
 **Bem -vindo ao Aspose.TeX para .NET**
 
-Aspose.TeX é uma biblioteca .NET para arquivos TEX Tipsetting. Ele pode apresentar a entrada Tex em vários formatos gráficos, como XPS, PDF, PNG, JPEG, TIFF e BMP. Ele também gera informações sobre rastreamento como qualquer outro mecanismo Tex. A API fornece várias maneiras de passar a entrada Tex e obter a saída. E, como um recurso avançado, ele permite criar seu próprio formato Tex se desejar compensar vários documentos projetados de maneira uniforme.
+Aspose.TeX é uma biblioteca .NET para arquivos TeX Tipsetting. Ele pode apresentar a entrada TeX em vários formatos gráficos, como XPS, PDF, PNG, JPEG, TIFF e BMP. Ele também gera informações sobre rastreamento como qualquer outro mecanismo TeX. A API fornece várias maneiras de passar a entrada TeX e obter a saída. E, como um recurso avançado, ele permite criar seu próprio formato TeX se desejar compensar vários documentos projetados de maneira uniforme.
 
 {{% /alert %}}
 
@@ -28,7 +28,7 @@ A seguir, estão os links para alguns recursos úteis necessários para realizar
 
 - [Aspose.TeX para .NET documentação online](/tex/{{lang.url-fragment}}net/)
 - [Aspose.TeX para .NET recursos](/tex/{{lang.url-fragment}}net/feature-list/)
-- [Aspose.TeX for .NET Notas de versão](https://releases.aspose.com/tex/net/release-notes/)
+- [Aspose.TeX para .NET Notas de versão](https://releases.aspose.com/tex/net/release-notes/)
 - [Aspose.TeX para .NET Página do produto](https://products.aspose.com/tex/net/)
 - [Instale Aspose.TeX para .NET Nuget Package](https://www.nuget.org/packages/Aspose.TeX/)
 - [Aspose.TeX para .NET Guia de referência da API](https://reference.aspose.com/tex/net/)
@@ -37,5 +37,5 @@ A seguir, estão os links para alguns recursos úteis necessários para realizar
 
 {{% alert color="primary" %}}
 
-Experimente também nossos novos Ferramentas de AI [**Aspose.TeX AI AGENTS**](https://products.aspose.ai/tex/) - para quem trabalha com formatos `.tex` e `.latex`.
+Experimente também nossos novos [**Agentes de IA da Aspose.TeX**](https://products.aspose.ai/tex/) - ferramentas úteis para quem trabalha com formatos `.tex` e `.latex`.
 {{% /alert %}}

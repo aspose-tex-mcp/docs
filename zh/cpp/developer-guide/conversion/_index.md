@@ -5,8 +5,8 @@ title: 转换功能| C++的Aspose.TeX
 linktitle: 转换
 weight: 10
 url: /cpp/conversion/
-description: C ++的Aspose.TeX API解决方案的转换功能支持下一个输出格式TEX，XPS，PDF，PNG，JPEG，JPEG，TIFF，PNG和SVG。
-lastmod: "2025-06-10"
+description: C ++的Aspose.TeX API解决方案的转换功能支持下一个输出格式TEX，XPS，PDF，PNG，JPEG，TIFF和SVG。
+lastmod: "2026-04-20"
 ---
 
 {{<section overview>}}
@@ -15,6 +15,6 @@ lastmod: "2025-06-10"
 
 本部分的章节将指导您介绍C ++ **的** aspose.tex的转换功能，从最受欢迎的目标格式的最简单用例开始，并以高级的微调选项结束。考虑到[乳胶文件](/tex/{{lang.url-fragment}}net/latex-io/#latex-file)现在比其他任何格式的Tex文件更普遍的事实，我们不会浪费您的时间告诉您有关后者的转换。相反，我们只会稍后提及。
 
-在这一点上，我们需要注意，aspose.tex的乳胶支持包括基本乳胶系统的所有文件以及许多最常见的软件包的文件，例如 *amsmath*， *geogogetry*， *Graphics*等。通常，如果您遇到有关丢失的软件包的错误，那么您的情况比最简单的包裹要复杂一些。 [这里](/tex/{{lang.url-fragment}}cpp/latex-to-png/#about-input-options)我们为解决方案提供了线索。
+在这一点上，我们需要注意，aspose.tex的乳胶支持包括基本乳胶系统的所有文件以及许多最常见的软件包的文件，例如 *amsmath*， *geometry*， *Graphics*等。通常，如果您遇到有关丢失的软件包的错误，那么您的情况比最简单的包裹要复杂一些。 [这里](/tex/{{lang.url-fragment}}cpp/latex-to-png/#about-input-options)我们为解决方案提供了线索。
 
 **阅读很有趣！**

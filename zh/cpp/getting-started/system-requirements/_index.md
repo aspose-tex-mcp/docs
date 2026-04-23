@@ -6,7 +6,7 @@ linktitle: 系统要求
 weight: 50
 url: /cpp/system-requirements/
 description: C ++的Aspose.TeX解决方案可用于任何支持C ++的开发环境中，但是有些环境得到了明确支持。
-lastmod: "2025-06-10"
+lastmod: "2026-04-20"
 ---
 
 {{<section overview>}}

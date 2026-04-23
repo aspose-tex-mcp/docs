@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: Andere TeX-Verwaltungsoptionen | .NET
@@ -6,7 +6,7 @@ linktitle: Andere Optionen
 weight: 17
 url: /net/other-options/
 description: Mit der Konvertierungsfunktion der Aspose.TeX-API-Lösung für .NET können Sie den anfänglichen Interaktionsmodus festlegen, in dem die Engine startet.
-lastmod: "2026-04-03"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}

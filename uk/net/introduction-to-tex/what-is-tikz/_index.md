@@ -7,7 +7,8 @@ weight: 21
 url: /net/tikz-introduction/
 keywords: що таке tikz, вступ до tikz, основи tikz
 description: Вступ до TikZ, потужного розширення для створення високоякісної графіки в документах LaTeX.
-lastmod: "2025-06-29"
+lastmod: "2026-04-22"
+aliases: /net/what-is-tikz/
 ---
 
 {{<section overview>}}

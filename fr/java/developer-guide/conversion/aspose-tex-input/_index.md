@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-java.md
 title: Interface de saisie d'Aspose.TeX | Java
@@ -6,7 +6,7 @@ linktitle: Interface de saisie d'Aspose.TeX
 weight: 15
 url: /java/aspose-tex-input/
 description: De conversion de la solution API Aspose.TeX pour Java avec TeX, en tant que format d'entrée, est expliquée ici avec les exemples de code.
-lastmod: "2024-09-27"
+lastmod: "2026-04-21"
 ---
 
 {{<section overview>}}
@@ -21,7 +21,7 @@ Veuillez vous référer à **Aspose.TeX for Java** [Référence API](https://ref
 
 Voici comment nous procéderions :
 
-{{< gist "aspose-com-gists""67385c777283964d328086603f691ac9""Aspose.TeX.Examples-Conversion-InputFileSystemDirectory.java" >}}
+{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Conversion-InputFileSystemDirectory.java" >}}
 
 Ce cas d'utilisation est assez simple, nous ne nous y attarderons donc pas longtemps.
 
@@ -29,7 +29,7 @@ Ce cas d'utilisation est assez simple, nous ne nous y attarderons donc pas longt
 
 Nous pouvons également mettre les fichiers d'entrée dans une archive ZIP et la considérer comme un répertoire d'entrée. Dans ce cas, il faut procéder comme suit :
 
-{{< gist "aspose-com-gists""67385c777283964d328086603f691ac9""Aspose.TeX.Examples-Conversion-InputZipDirectory.java" >}}
+{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Conversion-InputZipDirectory.java" >}}
 
 Tout d'abord, nous créons le flux contenant le fichier ZIP. Ensuite, après avoir créé les options de conversion, nous définissons l'option [InputWorkingDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/TeXOptions#getInputWorkingDirectory--) comme étant une instance de la classe [InputZipDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/InputZipDirectory). Le deuxième argument du constructeur est le chemin de base à l'intérieur de l'archive. Si nous voulons que l'archive entière soit un répertoire d'entrée, nous devons transmettre la chaîne vide. 
 
@@ -41,7 +41,7 @@ Rappelons maintenant qu'il y a aussi l'entrée du terminal. Quant à celui-ci, *
 
 Pour ce faire, nous devons définir l'option [TerminalIn](https://reference.aspose.com/tex/java/com.aspose.tex/TeXOptions#getTerminalIn--) pour qu'elle soit une instance de la classe [InputConsoleTerminal](https://reference.aspose.com/tex/java/com.aspose.tex/InputConsoleTerminal).
 
-{{< gist "aspose-com-gists""67385c777283964d328086603f691ac9""Aspose.TeX.Examples-Conversion-InputConsoleTerminal.java" >}}
+{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Conversion-InputConsoleTerminal.java" >}}
 
 Mais, à vrai dire, il s’agit de la valeur par défaut de l’option, il n’est donc pas vraiment nécessaire de la spécifier. De ce fait, et tant qu'il n'y a pas d'autres implémentations, cette section sert uniquement à des fins de démonstration.
 

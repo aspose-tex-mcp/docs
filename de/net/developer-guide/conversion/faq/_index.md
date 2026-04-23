@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: Aspose.TeX-Konverter für .NET – FAQ
@@ -8,7 +8,7 @@ weight: 90
 url: /net/conversion/faq/
 description: Häufig gestellte Fragen zu Aspose.TeX für .NET zu unterstützten Formaten, Konvertierungsbeispielen, Lizenzierung, Stapelverarbeitung, Bildoptionen und mehr.
 keywords: Aspose.TeX, .NET, FAQ, LaTeX-Konvertierung, PDF, Word, HTML, Bildexport, Lizenzierung, Stapelkonvertierung, API, Dokumentation
-lastmod: "2025-12-04"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
@@ -56,8 +56,8 @@ using (var pdf = tex.ToPdf())
 
 **A:** 
 
-• .NET Framework4.6 oder höher **oder** .NETCore2.1+/.NET5+.  
-• Windowsx64/x86, Linux (glibc2.12+), macOS (Catalyst).  
+• .NET Framework 4.6 oder höher **oder** .NET Core 2.1+/.NET 5+.
+• Windows x64/x86, Linux (glibc 2.12+), macOS (Catalyst).
 • Es sind keine zusätzlichen nativen Binärdateien erforderlich.  
 <br><br>
 

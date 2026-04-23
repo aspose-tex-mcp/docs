@@ -7,7 +7,7 @@ weight: 21
 url: /net/tikz-introduction/
 keywords: TikZとは, TikZ入門, TikZの基本
 description: LaTeX文書で高品質なグラフィックを作成するための強力な拡張機能であるTikZの紹介。
-lastmod: "2026-02-26"
+lastmod: "2026-04-22"
 aliases: /net/what-is-tikz/
 ---
 

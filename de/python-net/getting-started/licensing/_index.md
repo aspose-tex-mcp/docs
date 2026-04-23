@@ -41,13 +41,13 @@ Bitte befolgen Sie diese Richtlinien:
 
 Der folgende Codeausschnitt zeigt, wie eine in einer Datei gespeicherte Lizenz initialisiert wird.
 
-{{< gist "aspose-com-gists""68d217858f0be40062562ce2bb2cd908""Aspose.TeX.Examples-LoadLicenseFromFile.py" >}}
+{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-LoadLicenseFromFile.py" >}}
 
 #### Laden einer Lizenz aus einem Stream-Objekt
 
 Der nächste Code initialisiert die Lizenz aus einem Stream.
 
-{{< gist "aspose-com-gists""68d217858f0be40062562ce2bb2cd908""Aspose.TeX.Examples-LoadLicenseFromStream.py" >}}
+{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-LoadLicenseFromStream.py" >}}
 
 ### Gemessene Lizenz
 

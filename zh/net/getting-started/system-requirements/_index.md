@@ -1,28 +1,28 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: 系统要求| .NET的Aspose.TeX
 linktitle: 系统要求
 weight: 50
 url: /net/system-requirements/
-description: aspose.tex解决方案可用于.NET的任何支持.NET的开发环境中，但是有些环境得到了明确支持。
-lastmod: "2025-06-10"
+description: Aspose.TeX解决方案可用于.NET的任何支持.NET的开发环境中，但是有些环境得到了明确支持。
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
 
 ## 支持的操作系统
 
-### 视窗
+### Windows
 
-* Microsoft Windows 2003服务器(x64，x86)
-* Microsoft Windows 2012 Server(x64，x86)
-* Microsoft Windows 2008服务器(x64，x86)
-* Microsoft Windows XP(X64，X86)
-* Microsoft Windows Vista(x64，x86)
-* Microsoft Windows 8，8.1(x64，x86)
-* Microsoft Windows 7(x64，x86)
-* Microsoft Windows 10(x64，x86)
+* Microsoft Windows 2003服务器 ( x64, x86)
+* Microsoft Windows 2012 Server ( x64, x86)
+* Microsoft Windows 2008服务器 ( x64, x86)
+* Microsoft Windows XP ( x64, x86)
+* Microsoft Windows Vista ( x64, x86)
+* Microsoft Windows 8，8.1 ( x64, x86)
+* Microsoft Windows 7 ( x64, x86)
+* Microsoft Windows 10 ( x64, x86)
 * Windows Azure
 
 ## 开发环境

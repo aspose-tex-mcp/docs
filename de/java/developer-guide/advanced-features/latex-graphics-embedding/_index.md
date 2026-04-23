@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-java.md
 title: LaTeX eingebettete Grafiken | Aspose.TeX für Java
@@ -7,7 +7,7 @@ weight: 18
 url: /java/latex-graphics-embedding/
 keywords: includegraphics latex, latex base64-Grafiken einbetten, latex base64-kodierte Grafiken, write18, Shell-Escape, Latex-Shell-Befehl
 description: Im Artikel erfahren Sie, wie Sie Base64-codierte Bilder in den LaTeX-Quellcode einfügen und lernen die \write18-Funktion kennen, die dies ermöglicht.
-lastmod: "2024-09-26"
+lastmod: "2026-04-21"
 ---
 
 {{<section overview>}}
@@ -38,7 +38,7 @@ Diese kurze Erklärung zeigt, dass **Base64** genau das ist, was wir brauchen. U
 
 ## Einbetten des codierten Bildes in die LaTeX-Datei
 
-Die aus dem Kodierungsprozess generierte Zeichenfolge muss wie folgt in der Standard-LaTeX-Umgebung „filecontents*“ in der Präambel einer LaTeX-Datei platziert werden:
+Die aus dem Kodierungsprozess generierte Zeichenfolge muss wie folgt in der Standard-LaTeX-Umgebung `filecontents` in der Präambel einer LaTeX-Datei platziert werden:
 
 ```tex
 \documentclass{article}
@@ -51,21 +51,22 @@ iVBORw0KGgoAAAANSUhEUgAAAPgAAABdCAYAAAH/B5vAAAAAGXRFWHRTb2Z0d2FyZQBBZ......
 ```
 
 Hier ist es! **Schritt 2** ist abgeschlossen. Wir haben das Bild erfolgreich in die LaTeX-Datei eingebettet! Aber was passiert, wenn wir den Satz dieser Datei mit LaTeX ausführen?“
-Ein LaTeX-Prozessor schreibt die Zeichenfolge aus der Umgebung in eine externe Datei mit dem Namen „sample-image.64“. Aufgrund der Option „Überschreiben“ wird die Datei überschrieben, wenn sie bereits existiert (z. B. wenn sie während eines vorherigen Laufs erstellt wurde). So gelingt auch **Schritt 3**!
+
+Ein LaTeX-Prozessor schreibt die Zeichenfolge aus der Umgebung in eine externe Datei mit dem Namen `sample-image.64`. Aufgrund der Option „Überschreiben“ wird die Datei überschrieben, wenn sie bereits existiert (z. B. wenn sie während eines vorherigen Laufs erstellt wurde). So gelingt auch **Schritt 3**!
 
 ## Dekodierung einer Base64-Zeichenfolge
 
-**Schritt 4** unseres Plans ist, wo die Unterschiede in den TeX-Implementierungen ins Spiel kommen. Das Dekodieren einer Base64-Zeichenfolge erfolgt mithilfe einer häufigeren Funktion, die als „\write18“-Funktion bekannt ist.
+**Schritt 4** unseres Plans ist, wo die Unterschiede in den TeX-Implementierungen ins Spiel kommen. Das Dekodieren einer Base64-Zeichenfolge erfolgt mithilfe einer häufigeren Funktion, die als `\write18`-Funktion bekannt ist.
 
 ### `\write18`
 
-In klassischen TeX-Engines ist „\write<Nummer>(<Token-Liste>)“ das Grundelement, das zum Schreiben einer *Liste von Token* verwendet wird. Bei Verwendung folgt auf dieses Grundelement eine Ganzzahl. Wenn die Ganzzahl negativ ist, werden die Token in die Transkriptdatei (Protokolldatei) geschrieben. Wenn die Ganzzahl größer als „15“ ist, werden die Token an das Terminal gesendet. Wenn die Ganzzahl im Bereich von „0..15“ liegt, werden die Token in eine Datei geschrieben, deren Name durch ein vorangehendes Vorkommen des Primitivs `\openout` angegeben wird. Das Grundelement „\openout<4-Bit-Ganzzahl>=<Dateiname>“ verknüpft einen Dateinamen mit einer Zahl.
+In klassischen TeX-Engines ist `\write<Nummer>(<Token-Liste>)` das Grundelement, das zum Schreiben einer *Liste von Token* verwendet wird. Bei Verwendung folgt auf dieses Grundelement eine Ganzzahl. Wenn die Ganzzahl negativ ist, werden die Token in die Transkriptdatei (Protokolldatei) geschrieben. Wenn die Ganzzahl größer als „15“ ist, werden die Token an das Terminal gesendet. Wenn die Ganzzahl im Bereich von „0..15“ liegt, werden die Token in eine Datei geschrieben, deren Name durch ein vorangehendes Vorkommen des Primitivs `\openout` angegeben wird. Das Grundelement `\openout<4-Bit-Ganzzahl>=<Dateiname>` verknüpft einen Dateinamen mit einer Zahl.
 
-Neuere TeX-Implementierungen, wie z. B. PDF TeX, ermöglichen die Verwendung von „\write18“. In diesem Fall interpretieren sie die „<token list>“ als Befehlszeile, die in der Betriebssystem-Shell ausgeführt werden soll. Da diese Funktion offensichtlich ein potenzielles Sicherheitsrisiko darstellt, könnten Sie einen Hauch von Geheimnis verspüren, wenn in der TeX-bezogenen Dokumentation oder im Internet darauf verwiesen wird. Aus diesem Grund bieten die ausführbaren Dateien von PDF TeX/LaTeX Befehlsoptionen zur Steuerung des Zugriffs auf diese Funktion.
+Neuere TeX-Implementierungen, wie z. B. PDF TeX, ermöglichen die Verwendung von `\write18`. In diesem Fall interpretieren sie die `<token list>` als Befehlszeile, die in der Betriebssystem-Shell ausgeführt werden soll. Da diese Funktion offensichtlich ein potenzielles Sicherheitsrisiko darstellt, könnten Sie einen Hauch von Geheimnis verspüren, wenn in der TeX-bezogenen Dokumentation oder im Internet darauf verwiesen wird. Aus diesem Grund bieten die ausführbaren Dateien von PDF TeX/LaTeX Befehlsoptionen zur Steuerung des Zugriffs auf diese Funktion.
 
 Typischerweise gibt es drei Stufen der Barrierefreiheit: deaktiviert, aktiviert mit Einschränkungen und vollständig aktiviert.
 
-In **Aspose.TeX** gibt es eine TeX-Joboption namens „ShellMode“, die einen von zwei möglichen Werten annehmen kann: „NoShellEscape“ und „ShellRestricted“. Der Wert „NoShellEscape“ gibt an, dass die Funktion deaktiviert ist. Der letztgenannte Wert bedeutet, dass jeder Befehl, der ausgeführt werden muss, vom Benutzer als Erweiterung der Klasse „Executable“ implementiert werden muss. Wir werden hier nicht auf die Einzelheiten solcher Implementierungen eingehen, aber es ist wichtig zu beachten, dass die Befehlsemulation „base64“ bereits in Aspose.TeX implementiert und standardmäßig in der Sammlungseigenschaft „Executables“ der Klasse „TeXOptions“ enthalten ist Beispiel.
+In **Aspose.TeX** gibt es eine TeX-Joboption namens `ShellMode`, die einen von zwei möglichen Werten annehmen kann: `NoShellEscape` und `ShellRestricted`. Der Wert `NoShellEscape` gibt an, dass die Funktion deaktiviert ist. Der letztgenannte Wert bedeutet, dass jeder Befehl, der ausgeführt werden muss, vom Benutzer als Erweiterung der Klasse `Executable` implementiert werden muss. Wir werden hier nicht auf die Einzelheiten solcher Implementierungen eingehen, aber es ist wichtig zu beachten, dass die Befehlsemulation `base64` bereits in Aspose.TeX implementiert und standardmäßig in der Sammlungseigenschaft `Executables` der Klasse `TeXOptions` enthalten ist Beispiel.
 
 ### Base64-kodierte Daten dekodieren
 
@@ -87,7 +88,7 @@ Daher sollten wir die folgende Zeile in den Hauptteil unserer LaTeX-Datei einfü
 
 > Das Präfix `\immediate` ist erforderlich, um sicherzustellen, dass die Operation `\write` sofort ausgeführt wird, wenn der TeX-Scanner auf dieses Primitiv trifft. Andernfalls wird es während der Seitenausgabe verarbeitet.
 
-Wenn wir jetzt den Satz der Datei ausführen, werden wir feststellen, dass die Bilddatei „sample-image.png“ erstellt wurde. Öffnen Sie es einfach in einem Viewer, um es zu überprüfen!
+Wenn wir jetzt den Satz der Datei ausführen, werden wir feststellen, dass die Bilddatei `sample-image.png` erstellt wurde. Öffnen Sie es einfach in einem Viewer, um es zu überprüfen!
 
 ## Einschließlich des dekodierten Bildes
 
@@ -114,7 +115,7 @@ iVBORw0KGgoAAAANSUhEUgAAAPgAAABdCAYAAAH/B5vAAAAAGXRFWHRTb2Z0d2FyZQBBZ......
 
 Und der Java-Code, der die **Aspose.TeX**-API verwendet, ähnelt dem, was in anderen Artikeln zu finden ist, mit Ausnahme der Angabe der Shell-Modus-Option:
 
-{{< gist "aspose-com-gists""67385c777283964d328086603f691ac9""Aspose.TeX.Examples-Conversion-EmbeddedBase64EncodedImage.java" >}}
+{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Conversion-EmbeddedBase64EncodedImage.java" >}}
 
 Und jetzt ist **Schritt 5** abgeschlossen. Wirklich umfassende Beispiele finden Sie in unserem [Beispielprojekt](https://github.com/aspose-tex/Aspose.TeX-for-Java).
 

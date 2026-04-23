@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-java.md
 title: Ремонт файлів LaTeX | Aspose.TeX для Java 
@@ -6,7 +6,7 @@ linktitle: Відновлення файлів LaTeX
 weight: 30
 url: /java/latex-repair/
 description: У цій статті описано функцію відновлення файлів LaTeX в API Aspose.TeX для Java. Ознайомтеся з прикладами коду, як використовувати цю функцію.
-lastmod: "2025-06-13"
+lastmod: "2026-04-21"
 ---
 
 {{<section overview>}}
@@ -19,7 +19,7 @@ lastmod: "2025-06-13"
 
 Давайте тепер розглянемо зразок коду Java.
 
-{{< gist "aspose-com-gists""67385c777283964d328086603f691ac9""Aspose.TeX.Examples-Features-LaTeXRepairer.java" >}}
+{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Features-LaTeXRepairer.java" >}}
 
 Подібно до звичайного завдання TeX, ми починаємо зі створення об’єкта, який містить параметри процесу, який ми збираємося запустити. Більшість із цих параметрів такі самі, як і для звичайної роботи TeX. Дійсно, викликаючи метод [setInputWorkingDirectory()](https://reference.aspose.com/tex/java/com.aspose.tex.features/latexrepaireroptions/#setInputWorkingDirectory-com.aspose.tex.IInputWorkingDirectory-), ми вказуємо простір, з якого слід читати вхідні файли. Однак у цьому прикладі ми не використовуємо його тут, оскільки ми надаємо повний шлях до основного вхідного файлу у файловій системі, і жодні спеціальні файли не повинні включатися в основний вхідний файл. Далі ми викликаємо метод [setOutputWorkingDirectory()](https://reference.aspose.com/tex/java/com.aspose.tex.features/latexrepaireroptions/#setOutputWorkingDirectory-com.aspose.tex.IOutputWorkingDirectory-), щоб вказати простір, куди повинні бути записані вихідні файли. Якщо викликати метод [setRequiredInputDirectory()](https://reference.aspose.com/tex/java/com.aspose.tex.features/latexrepaireroptions/#setRequiredInputDirectory-com.aspose.tex.IInputWorkingDirectory-), параметри вказують на простір, де ви можете зберігати пакети LaTeX, які не вбудовані в бібліотеку Aspose.TeX. Нарешті, метод [setGuessPackageCallback()](https://reference.aspose.com/tex/java/com.aspose.tex.features/latexrepaireroptions/#setGuessPackageCallback-com.aspose.tex.features.IGuessPackageCallback-) буде обговорено пізніше.
 
@@ -33,7 +33,8 @@ lastmod: "2025-06-13"
 
 Ось базовий приклад, який просто відображає команду `\head` на пакет `fancyhdr`:
 
-{{< gist "aspose-com-gists""67385c777283964d328086603f691ac9""Aspose.TeX.Examples-Features-LaTeXRepairer-PackageGuessingCallback.java" >}}
+{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Features-LaTeXRepairer-PackageGuessingCallback.java" >}}
+
 Що стосується файлу зразка, система спочатку зустрічає команду `\chapter`, яка не визначена в класі документа `article`, але визначена в класі документа `book`. API налаштовує клас документа так, щоб остаточна версія виправленого файлу починалася з `\documentclass{book}`. Потім механізм знаходить вищезгадану команду `\lhead` і визначає, що `\usepackage{fancyhdr}` потрібно вставити в преамбулу. Команди `\href` і `\includegraphics`, які з’являються пізніше у файлі, змушують Repairer вставляти `\usepackage{hyperref}` і `\usepackage{graphics}` у преамбулі відповідно. Ці рішення приймаються на основі внутрішніх зіставлень API. Як і раніше, усі ці ремонти реєструються у файлі звіту.
 
 Нарешті, механізм ненормально завершує роботу, оскільки відсутній належний висновок документа LaTeX. У результаті Repairer додає `\end{document}` у кінець файлу та включає цю інформацію у звіт.

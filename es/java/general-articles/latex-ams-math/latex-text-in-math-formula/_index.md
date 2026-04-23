@@ -7,12 +7,12 @@ weight: 60
 url: /java/latex-text-in-math-formula/
 keywords: ams-latex, amsmath, operadores matemáticos de LaTeX, funciones matemáticas de LaTeX, texto matemático de LaTeX
 description: Este artículo analiza cómo insertar texto en fórmulas matemáticas en LaTeX y describe funciones y operadores matemáticos, y el método para definirlos.
-lastmod: "2024-10-30"
+lastmod: "2026-04-21"
 ---
 
 {{<section overview>}}
 
-## 6.1. El comando `\texto`
+## 6.1. El comando `\text`
 
 Para poner texto normal dentro de matemáticas, es mejor usar el comando `\text` en lugar de comandos como `\mathrm`. El comando `\text` garantiza que el texto esté configurado con el tamaño de fuente correcto. La fuente será la fuente del texto que se utilice fuera del material matemático actual.
 

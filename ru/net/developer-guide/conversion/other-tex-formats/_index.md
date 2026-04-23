@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: Другие выходные форматы преобразования TeX | .NET 
@@ -6,7 +6,7 @@ linktitle: Другие форматы TeX
 weight: 18
 url: /net/other-tex-formats/
 description: Функциональность преобразования решения Aspose.TeX API для .NET позволяет конвертировать файлы LaTeX и ваши собственные файлы TeX.
-lastmod: "2026-04-03"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
@@ -19,7 +19,7 @@ lastmod: "2026-04-03"
 
 Напомним, что файл формата представляет собой двоичный дамп внутреннего состояния движка TeX.
 
-{{< gist "aspose-com-gists""c0eb6cbcfb001b7e6355cafa4611afed""Example-CreateCustomFormat.cs" >}}
+{{< gist "aspose-com-gists" "c0eb6cbcfb001b7e6355cafa4611afed" "Example-CreateCustomFormat.cs" >}}
 
 Как видите, код аналогичен коду конвертации файла TeX. Но есть несколько отличий.
 
@@ -33,7 +33,7 @@ lastmod: "2026-04-03"
 
 Теперь, когда у нас есть собственный формат TeX, мы хотим набрать файл TeX, написанный в этом формате. Вот код:
 
-{{< gist "aspose-com-gists""c0eb6cbcfb001b7e6355cafa4611afed""Example-TypesetWithCustomFormat.cs" >}}
+{{< gist "aspose-com-gists" "c0eb6cbcfb001b7e6355cafa4611afed" "Example-TypesetWithCustomFormat.cs" >}}
 
 Очевидно, нам нужно как-то указать формат. Прежде всего, нам нужно создать экземпляр класса [FormatProvider](https://reference.aspose.com/tex/net/aspose.tex.resourceproviders/formatprovider/). Затем в конструкторе параметров мы используем конфигурацию [TeXConfig.ObjectTeX()](https://reference.aspose.com/tex/net/aspose.tex/texconfig/objecttex/), которая принимает нашего поставщика формата в качестве аргумента и загружает формат поверх «девственного» состояния движка.
 

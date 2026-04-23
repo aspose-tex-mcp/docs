@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-java.md
 title: ラテックスからXPS | Java
@@ -6,7 +6,7 @@ linktitle: ラテックスからXPS
 weight: 12
 url: /java/latex-to-xps/
 description: Java用のAspose.TeX APIソリューションの変換機能を使用すると、LaTexファイルをXPS形式に変換できます。コードの例を学びます。
-lastmod: "2025-06-09"
+lastmod: "2026-04-21"
 ---
 
 {{<section overview>}}
@@ -27,6 +27,6 @@ XPSへの変換は、[saveoptions](https://reference.aspose.com/tex/java/com.Asp
 
 {{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Conversion-LaTeXToXps-Alternative.java" >}}
 
-効果は[ここ](https://products.aspose.app/tex/conversion/latex-to-xps)を取得するのと同じです。
+効果は[ここ](/tex/{{lang.url-fragment}}java/latex-to-pdf/#an-alternative-way-to-write-main-output-pdf-file)と同じです。
 
 **[.NETのAsops.Tex](https://products.aspose.com/tex/net/)APIに基づいて構築された無料のLaTex-to-XPS変換[Webアプリ](https://products.aspose.app/tex/conversion/latex-to-xps)をチェックアウトすることもできます。 [ここ](https://products.aspose.com/tex/java/)はJavaバージョンページです。**

@@ -8,7 +8,7 @@ url: /net/tikz-installation-and-basic-configuration/
 aliases: /net/installation-and-basic-configuration/
 keywords: 安装 tikz, 配置 tikz, 设置 tikz
 description: 分步指南，教您如何安装和配置 TikZ，以在您的 TeX 和 LaTeX 文档中使用。
-lastmod: "2026-02-26"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
@@ -91,4 +91,4 @@ TikZ 需要的配置很少。不过，您可以设置全局选项来控制图形
 
 通过遵循这些说明，您将成功设置 TikZ，并能够为您的 TeX 和 LaTeX 文档创建出色的图形。
 
-**此外，探索我们的免费[网页应用](https://products.aspose.app/tex/conversion/latex/)（基于[Aspose.TeX for .NET API](https://products.aspose.com/tex/net/)），实现快速简便的 TeX 转换。**
+**此外，探索基于 [Aspose.TeX for .NET API](https://products.aspose.com/tex/net/) 的免费 [Web 应用](https://products.aspose.app/tex/conversion/latex/) ，实现快速、简便的 TeX 转换。**

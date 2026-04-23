@@ -1,27 +1,27 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
-title: Altri modi per fornire il principale file di input Tex | .NET
-linktitle: Altri modi per fornire il principale file di input Tex
+title: Altri modi per fornire il principale file di input TeX | .NET
+linktitle: Altri modi per fornire il principale file di input TeX
 weight: 14
 url: /net/other-ways-of-main-input/
-description: La funzionalità di conversione della soluzione API ASPUS.TEX per .NET ha un costruttore che accetta un flusso come primo argomento. Ecco alcuni esempi di codice.
-lastmod: "2025-06-13"
+description: La funzionalità di conversione della soluzione API Aspose.TeX per .NET ha un costruttore che accetta un flusso come primo argomento. Ecco alcuni esempi di codice.
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
 
-## Fornire il file di input principale al motore TEX come flusso
+## Fornire il file di input principale al motore TeX come flusso
 
-Fino a questo punto, sapevamo solo come passare il [file di input principale](/tex/{{lang.url-fragment}}net/tex-io/#tex-input) al motore TEX come nome di un file, sia completamente specificato che in breve, sia con un'estensione che senza di essa. Ma c'è un altro [costruttore](https://reference.aspose.com/tex/net/aspose.tex/texjob/texjob/) della classe `Texjob`, che prende un flusso come primo argomento. Questo è conveniente se per qualche motivo abbiamo il file di input principale in un modulo diverso da un file sul file system disco. Ecco come può essere implementato:
+Fino a questo punto, sapevamo solo come passare il [file di input principale](/tex/{{lang.url-fragment}}net/tex-io/#tex-input) al motore TeX come nome di un file, sia completamente specificato che in breve, sia con un'estensione che senza di essa. Ma c'è un altro [costruttore](https://reference.aspose.com/tex/net/aspose.tex/texjob/texjob/) della classe `TeXJob`, che prende un flusso come primo argomento. Questo è conveniente se per qualche motivo abbiamo il file di input principale in un modulo diverso da un file sul file system disco. Ecco come può essere implementato:
 
 {{< gist "aspose-com-gists" "4e3bae6ecbe041bcb411e0cf4c98dc71" "Example-StreamInput-LaTeX.cs" >}}
 
 Si noti che tutti i file di output avranno il nome *texput*. Questo perché il motore non può ottenere nessun altro nome da nessuna parte. *texput* è il nome del lavoro predefinito. [Qui](/tex/{{lang.url-fragment}}net/tex-io/#tex-output) e [qui](/tex/{{lang.url-fragment}}net/other-options/#how-to-set-the-job-name) sono dettagli sui nomi dei lavori.
 
-## Immettere il file di input tex principale dal terminale
+## Immettere il file di input TeX principale dal terminale
 
-C'è ancora un altro [costruttore](https://reference.aspose.com/tex/net/aspose.tex/texjob/texjob/) della classe `Texjob`, che non ci consente affatto di specificare l'input. Allora, cosa sta per elaborare un lavoro del genere, potresti chiederti? Questa volta avremo bisogno di un terminale di input. Il motore Tex ci chiederà di inserire il nome del file dal terminale.
+C'è ancora un altro [costruttore](https://reference.aspose.com/tex/net/aspose.tex/texjob/texjob/) della classe `TeXJob`, che non ci consente affatto di specificare l'input. Allora, cosa sta per elaborare un lavoro del genere, potresti chiederti? Questa volta avremo bisogno di un terminale di input. Il motore TeX ci chiederà di inserire il nome del file dal terminale.
 
 Ecco il codice:
 

@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: Rendern von LaTeX-Matheformeln | Aspose.TeX für .NET
@@ -6,7 +6,7 @@ linktitle: Rendern von LaTeX-Matheformeln
 weight: 10
 url: /net/latex-math-formula-rendering/
 description: Hier wird Aspose.TeX für .NET die Darstellung math Formeln in LaTeX beschrieben. Erfahr anhand der Codebeispiele, wie kann man Funktionalität nutzen.
-lastmod: "2024-09-26"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
@@ -33,11 +33,11 @@ Dies bietet etwas erweiterte Unterstützung für mathematische Formeln als einfa
 
 Dann weisen wir den Renderer an, die Ausgabe um 300 % zu skalieren.
 
-Die nächsten beiden Optionen definieren die Vordergrund- und Hintergrundfarben. Die Teile der Formel, die nicht durch die benutzerdefinierte Hervorhebung abgedeckt („eingefärbt“) werden, werden in der Farbe „TextColor“ angezeigt.
+Die nächsten beiden Optionen definieren die Vordergrund- und Hintergrundfarben. Die Teile der Formel, die nicht durch die benutzerdefinierte Hervorhebung abgedeckt („eingefärbt“) werden, werden in der Farbe `TextColor` angezeigt.
 
 Die nächste Zeile des Beispiels ergibt wenig Sinn. Es zeigt lediglich, dass Sie die Protokollausgabe an einen Stream weiterleiten können.
 
-Und mit der letzten Option „ShowTerminal“ können Sie das Schreiben der Terminalausgabe in die Konsole umschalten.
+Und mit der letzten Option `ShowTerminal` können Sie das Schreiben der Terminalausgabe in die Konsole umschalten.
 
 Die Methode, die das Rendern tatsächlich durchführt, ist [MathRenderer.Render()](https://reference.aspose.com/tex/net/aspose.tex.features/mathrenderer/render/). Es gibt die Größe der Formel in Punkten zurück.
 

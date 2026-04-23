@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-java.md
 title: Bereitstellung der Haupt-TeX-Eingabedatei | Java
@@ -6,7 +6,7 @@ linktitle: Andere Möglichkeiten, die Haupt-TeX-Eingabedatei bereitzustellen
 weight: 14
 url: /java/other-ways-of-main-input/
 description: Die Konvertierungsfunktionalität der Aspose.TeX-API-Lösung für Java verfügt über einen Konstruktor, der einen Stream als erstes Argument akzeptiert.
-lastmod: "2024-09-26"
+lastmod: "2026-04-21"
 ---
 
 {{<section overview>}}
@@ -15,7 +15,7 @@ lastmod: "2024-09-26"
 
 Bisher wussten wir nur, wie man die [Haupteingabedatei](/tex/{{lang.url-fragment}}net/tex-io/#tex-input) als Dateinamen an die TeX-Engine übergibt, egal ob vollständig angegeben oder in Kurzform, ob mit oder ohne Erweiterung. Aber es gibt noch einen anderen [Konstruktor](https://reference.aspose.com/tex/java/com.aspose.tex/TeXJob#TeXJob-java.io.InputStream-com.aspose.tex.rendering.Device-com.aspose.tex.TeXOptions-) der Klasse „TeXJob“, der einen Stream als erstes Argument akzeptiert. Dies ist praktisch, wenn wir aus irgendeinem Grund die Haupteingabedatei in einer anderen Form als einer Datei im Dateisystem der Festplatte haben. So können wir damit umgehen:
 
-{{< gist "aspose-com-gists""67385c777283964d328086603f691ac9""Aspose.TeX.Examples-Conversion-InputStream.java" >}}
+{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Conversion-InputStream.java" >}}
 
 Beachten Sie, dass alle Ausgabedateien den Namen *texput* haben. Das liegt daran, dass die Engine nirgendwo einen anderen Namen bekommen kann. *texput* ist der Standard-Jobname. Einzelheiten zu Jobnamen finden Sie unter [hier](/tex/{{lang.url-fragment}}net/tex-io/#tex-output) und [hier](/tex/{{lang.url-fragment}}java/other-options/#how-to-set-the-job-name).
 
@@ -25,7 +25,7 @@ Es gibt noch einen weiteren [Konstruktor](https://reference.aspose.com/tex/java/
 
 Hier ist der Code:
 
-{{< gist "aspose-com-gists""67385c777283964d328086603f691ac9""Aspose.TeX.Examples-Conversion-MainInputTerminal.java" >}}
+{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Conversion-MainInputTerminal.java" >}}
 
 Sobald es ausgeführt wird, bleibt die Engine hängen und wartet darauf, dass wir den Dateinamen eingeben (mit oder ohne Pfad, mit oder ohne Erweiterung):
 

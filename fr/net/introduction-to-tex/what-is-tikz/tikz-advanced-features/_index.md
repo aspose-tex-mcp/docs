@@ -7,7 +7,7 @@ weight: 20
 url: /net/tikz-advanced-features/
 keywords: TikZ avancé, chemins TikZ, diagrammes TikZ, pgfplots, circuitikz, tikz-3dplot
 description: Apprenez les techniques avancées de TikZ, notamment les chemins complexes, le positionnement des nœuds, les flèches et la création de diagrammes pour des graphiques de qualité professionnelle.
-lastmod: "2025-07-11"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}

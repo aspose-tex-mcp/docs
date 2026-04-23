@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: Aspose.TeXの出力インターフェイス | .NET
@@ -7,7 +7,7 @@ weight: 16
 url: /net/aspose-tex-output/
 description: .NET向けAspose.TeX APIソリューションの変換機能について、出力フォーマットとしてのTeXをコード例と共に説明します。
 keywords: aspose tex 出力、.net tex、出力ディレクトリ、出力 zip、出力コンソール、出力ターミナル、tex オプション、出力ファイルディレクトリ、出力 zip ディレクトリ、tex 変換
-lastmod: "2026-02-25"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}

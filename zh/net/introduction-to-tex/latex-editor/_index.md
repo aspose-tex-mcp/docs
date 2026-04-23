@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: 理解 LaTeX 编辑器和 LaTeX 3 (expl3) 编程层
@@ -8,7 +8,7 @@ weight: 90
 url: /latex-editor/
 description: 一份简明指南，解释 LaTeX 编辑器的作用、典型工作流、常见编辑器类别以及现代 LaTeX 3 (expl3) 编程层。
 keywords: LaTeX 编辑器, LaTeX 3, expl3, TeX, PDF 编译, 语法高亮, 实时预览, 学术写作, 包开发
-lastmod: "2026-02-26"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
@@ -118,9 +118,9 @@ LaTeX 编辑器是一种专门的文本编辑环境，帮助您编写 **`.tex`**
 
 ---
 
-## Aspose 是什么？
+## Aspose.TeX 是什么？
 
-Aspose 提供一系列 API，能够以编程方式操作 LaTeX 生成的 PDF。使用 Aspose 库，开发者可以在运行时合并、拆分或将 LaTeX 生成的 PDF 转换为其他格式（如 DOCX、HTML），而无需完整的 LaTeX 发行版。
+Aspose.TeX 提供一系列 API，能够以编程方式操作 LaTeX 生成的 PDF。使用 Aspose.TeX 库，开发者可以在运行时合并、拆分或将 LaTeX 生成的 PDF 转换为其他格式（如 DOCX、HTML），而无需完整的 LaTeX 发行版。
 
 ---
 

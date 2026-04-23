@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: Розширені функції | Aspose.TeX для .NET
@@ -6,7 +6,7 @@ linktitle: Розширені функції
 weight: 20
 url: /net/advanced-features/
 description: Функції рішення Aspose.TeX API для .NET, створені на основі реалізації Object TeX/LaTeX, зібрані в цьому розділі.
-lastmod: "2025-06-13"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}

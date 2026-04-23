@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: LaTeX 图形渲染 | Aspose.TeX for .NET
@@ -7,12 +7,12 @@ weight: 20
 url: /net/latex-figure-rendering/
 description: Aspose.TeX API 为 .NET 提供的 LaTeX 片段（图形）渲染解决方案在本文中进行说明。了解如何使用该功能的代码示例。
 keywords: LaTeX 图形、LaTeX 图形大小、LaTeX 图片、LaTeX 图像、LaTeX 包含图形、LaTeX 图片、LaTeX 图形选项
-lastmod: "2026-02-25"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
 
-有时您可能希望从 LaTeX 文件中提取部分内容作为单独渲染的片段，或者称作 *“图形”*，而不与页面布局关联。例如，这可以作为您在互联网上发布的插图。您可以使用我们的 API 实现此功能。目标格式有两种选择——PNG 和 SVG。与 LaTeX 数学公式渲染功能相同。值得注意的是，**LaTeX 图形渲染**是对[LaTeX math formula rendering](/tex/{{lang.url-fragment}}net/latex-math-formula-rendering/)的概括。
+有时您可能希望从 LaTeX 文件中提取部分内容作为单独渲染的片段，或者称作 *“图形”*，而不与页面布局关联。例如，这可以作为您在互联网上发布的插图。您可以使用我们的 API 实现此功能。目标格式有两种选择——PNG 和 SVG。与 LaTeX 数学公式渲染功能相同。值得注意的是，**LaTeX 图形渲染**是对[LaTeX 数学公式渲染](/tex/{{lang.url-fragment}}net/latex-math-formula-rendering/)的概括。
 
 ## 如何将 LaTeX 图形渲染为 PNG
 

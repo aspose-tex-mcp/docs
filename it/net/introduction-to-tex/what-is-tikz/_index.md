@@ -7,29 +7,28 @@ weight: 21
 url: /net/tikz-introduction/
 keywords: Cos'è TikZ, Introduzione a TikZ, Basi di TikZ
 description: Introduzione a TikZ, una potente estensione per creare grafici di alta qualità nei documenti LaTeX.
-lastmod: "2025-06-29"
+lastmod: "2026-04-22"
+aliases: /net/what-is-tikz/
 ---
 
 {{<section overview>}}
 
-## Qu'est-ce que TikZ ?
+## Cos'è TikZ?
 
-TikZ (prononcé « tik-zé ») signifie « TikZ ist kein Zeichenprogramm » (allemand), ce qui signifie « TikZ n'est pas un programme de dessin ». C'est une extension puissante permettant de créer des graphiques vectoriels de haute qualité directement dans des documents TeX et LaTeX. Conçu par Till Tantau, TikZ permet aux utilisateurs d'intégrer des diagrammes, des tracés et d'autres visualisations complexes grâce à un code intuitif et lisible.
+TikZ (pronunciato "tik-zee") è l'acronimo di "TikZ ist kein Zeichenprogramm" (tedesco), che significa "TikZ non è un programma di disegno". Si tratta di una potente estensione per la creazione di grafica vettoriale di alta qualità direttamente nei documenti TeX e LaTeX. Progettato da Till Tantau, TikZ consente agli utenti di incorporare diagrammi complessi, grafici e altre visualizzazioni utilizzando un codice intuitivo e leggibile.
 
-## Pourquoi utiliser TikZ ?
+## Perché usare TikZ?
 
-TikZ offre plusieurs avantages par rapport aux outils de création graphique traditionnels :
+TikZ offre diversi vantaggi rispetto ai tradizionali strumenti di creazione grafica:
 
-- **Intégration** : Intègre parfaitement les graphiques aux documents TeX, en conservant des polices, des styles et un alignement cohérents.
+- **Integrazione**: integra perfettamente la grafica nei documenti TeX, mantenendo caratteri, stili e allineamento coerenti.
+- **Scalabilità**: produce grafica vettoriale scalabile di alta qualità, adatta a pubblicazioni professionali.
+- **Flessibilità**: supporta una grande varietà di elementi grafici, dalle forme geometriche di base ai diagrammi matematici complessi.
+- **Community ed estensioni**: vaste librerie e una community attiva forniscono numerosi componenti e stili predefiniti.
 
-- **Évolutivité** : Produit des graphiques vectoriels de haute qualité et évolutifs, adaptés aux publications professionnelles.
+## Primi passi con TikZ
 
-- **Flexibilité** : Prend en charge une grande variété d'éléments graphiques, des formes géométriques de base aux diagrammes mathématiques complexes.
-- **Communauté et extensions** : De vastes bibliothèques et une communauté active proposent de nombreux composants et styles prédéfinis.
-
-## Premiers pas avec TikZ
-
-Pour démarrer avec TikZ, assurez-vous qu'il est installé avec votre distribution TeX (généralement inclus dans les installations standard telles que TeX Live ou MiKTeX). Voici un exemple simple de « Hello, World » illustrant la syntaxe de base de TikZ :
+Per iniziare a usare TikZ, assicurati che sia installato con la tua distribuzione TeX (solitamente incluso nelle installazioni standard come TeX Live o MiKTeX). Ecco un semplice esempio "Hello, World" che illustra la sintassi base di TikZ:
 
 ```tex  
 \\documentclass{article}  
@@ -44,11 +43,11 @@ Pour démarrer avec TikZ, assurez-vous qu'il est installé avec votre distributi
 \\end{document}  
 ```
 
-Cet exemple produit un triangle simple reliant trois points.
+Questo esempio produce un semplice triangolo che collega tre punti.
 
-## Sommaire
+## Sommario
 
-Voici un aperçu des sujets abordés dans cette série sur TikZ :
+Ecco una panoramica degli argomenti trattati in questa serie su TikZ:
 
 1. [Installazione e configurazione di base](/tex/net/tikz-installation-and-basic-configuration/)
 2. [Fondamenti dell'uso di TikZ](/tex/net/tikz-fundamentals-of-using-tikz/)
@@ -57,6 +56,6 @@ Voici un aperçu des sujets abordés dans cette série sur TikZ :
 5. [TikZ per presentazioni e infografiche](/tex/net/tikz-for-presentations-and-infographics/)
 6. [Migliori pratiche e suggerimenti](/tex/net/tikz-best-practices-and-tips/)
 
-Explorez ces articles pour maîtriser la création d'images de qualité professionnelle avec TikZ.
+Esplora questi articoli per padroneggiare la creazione di immagini di qualità professionale con TikZ.
 
-**De plus, découvrez notre application web gratuite basée sur [l'API Aspose.TeX pour .NET ](https://products.aspose.com/tex/net/) pour des conversions TeX rapides et faciles.**
+**Inoltre, scopri la nostra applicazione web gratuita basata sull'[API Aspose.TeX per .NET](https://products.aspose.com/tex/net/) per conversioni TeX rapide e facili.**

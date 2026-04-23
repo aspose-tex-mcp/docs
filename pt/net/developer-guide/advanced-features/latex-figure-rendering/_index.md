@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: Renderização de figuras de LaTeX | .NET
@@ -7,21 +7,21 @@ weight: 20
 url: /net/latex-figure-rendering/
 description: Solução da API do Aspose.TeX para a renderização do fragmento de LaTeX .NET (Figura) é descrito neste artigo. Aprenda os exemplos de código sobre como usar a funcionalidade.
 keywords: figura de LaTeX, tamanho da figura, imagem de LaTeX, imagem de LaTeX, imagem de LaTeX, figura de LaTeX, foto de LaTeX, opções de figura de LaTeX
-lastmod: "2025-06-16"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
 
 
-Às vezes, você pode extrair algum conteúdo de um arquivo de LaTeX como uma peça renderizada separadamente, ou a *"figura"*, sem nenhuma conexão com o layout da página. Pode ser uma ilustração para sua publicação na Internet, por exemplo. Você pode fazer isso com nossa API. Quanto aos formatos de destino, existem duas opções - PNG e SVG. Como é no caso do recurso de renderização de fórmula matemática do LATEX. Também vale a pena notar que **Renderização de figuras de LaTeX** é uma generalização da [renderização de fórmula matemática do LATEX](/tex/{{lang.url-fragment}}net/latex-math-formula-rendering/).
+Às vezes, você pode extrair algum conteúdo de um arquivo LaTeX como uma peça renderizada separadamente, ou a *"figura"*, sem nenhuma conexão com o layout da página. Pode ser uma ilustração para sua publicação na Internet, por exemplo. Você pode fazer isso com nossa API. Quanto aos formatos de destino, existem duas opções - PNG e SVG. Como é no caso do recurso de renderização de fórmulas matemáticas LaTeX. Também vale a pena notar que a **Renderização de figuras LaTeX** é uma generalização da [renderização de fórmulas matemáticas LaTeX](/tex/{{lang.url-fragment}}net/latex-math-formula-rendering/).
 
-## Como renderizar uma figura de LaTeX para png
+## Como renderizar uma figura LaTeX para PNG
 
 A seção de referência da API relacionada a este tópico é [aqui](https://reference.aspose.com/tex/net/aspose.tex.features/). E, como na renderização de fórmula, começaremos com um exemplo. Aqui está:
 
 {{< gist "aspose-com-gists" "79be6a0d7a31aa5deb213ba4ca81cb1b" "Example-RenderFigureToPNG.cs" >}}
 
-Primeiro de tudo, criamos uma instância [Figura do LATEX](https://reference.aspose.com/tex/net/aspose.tex.features/figurerendereroptions/). Fazemos isso aqui especificando simultaneamente a resolução da imagem de saída.
+Primeiro de tudo, criamos uma instância de [opções de figura LaTeX](https://reference.aspose.com/tex/net/aspose.tex.features/figurerendereroptions/). Fazemos isso aqui especificando simultaneamente a resolução da imagem de saída.
 
 Em seguida, especificamos o preâmbulo. Não há preâmbulo padrão para a renderização de figuras de LaTeX; portanto, se você estiver, por exemplo, renderizar alguns gráficos plotados usando o pacote `pict2e` LATEX, você precisa especificá -lo no preâmbulo:
 
@@ -38,11 +38,11 @@ A próxima linha do exemplo não faz muito sentido. Ele apenas demonstra que voc
 
 E a última opção `showterminal` permite alternar a gravação da saída do terminal no console.
 
-O método que realmente executa a renderização é [figuureRender.render()](https://reference.aspose.com/tex/net/aspose.tex.features/figurerenderer/render/). Ele retorna o tamanho da figura em pontos.
+O método que realmente executa a renderização é [FigureRenderer.Render()](https://reference.aspose.com/tex/net/aspose.tex.features/figurerenderer/render/). Ele retorna o tamanho da figura em pontos.
 
-O fluxo em que a imagem deve ser escrito é aceito pelo método como o segundo argumento. Criamos o fluxo a seguir.
+O fluxo em que a imagem deve ser escrita é aceito pelo método como o segundo argumento. Criamos o fluxo a seguir.
 
-E, finalmente, chamamos o próprio método de `figuureRender.render()`, passando as opções como o terceiro argumento. O código do LATEX da figura é aprovado como o primeiro argumento.
+E, finalmente, chamamos o próprio método [FigureRenderer.Render()](https://reference.aspose.com/tex/net/aspose.tex.features/figurerenderer/render/), passando as opções como o terceiro argumento. O código LaTeX da figura é passado como o primeiro argumento.
 
 As últimas linhas do exemplo imprimem dois artefatos de renderização de figuras - o tamanho da figura e o breve relatório de erro (caso haja erros).
 
@@ -60,9 +60,9 @@ Da mesma maneira, podemos renderizar uma figura de LaTeX no formato SVG.
 
 As diferenças são:
 
-* Utilizamos [svgfigureReroptions](https://reference.aspose.com/tex/net/aspose.tex.features/svgfigurerendereroptions/) Classe em vez de [pngfigureReroptions](https://reference.aspose.com/tex/net/aspose.tex.features/pngfigurerendereroptions/).
+* Utilizamos a classe [SvgFigureRendererOptions](https://reference.aspose.com/tex/net/aspose.tex.features/svgfigurerendereroptions/) em vez de [PngFigureRendererOptions](https://reference.aspose.com/tex/net/aspose.tex.features/pngfigurerendereroptions/).
 * Não especificamos a resolução.
-* Utilizamos a classe [svgfigurerenderer](https://reference.aspose.com/tex/net/aspose.tex.features/svgfigurerenderer/) em vez de [pngfigurerenderer](https://reference.aspose.com/tex/net/aspose.tex.features/pngfigurerenderer/).
+* Utilizamos a classe [SvgFigureRenderer](https://reference.aspose.com/tex/net/aspose.tex.features/svgfigurerenderer/) em vez de [PngFigureRenderer](https://reference.aspose.com/tex/net/aspose.tex.features/pngfigurerenderer/).
  
 Aqui está o resultado:
 

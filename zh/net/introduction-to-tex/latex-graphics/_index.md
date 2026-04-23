@@ -1,12 +1,12 @@
-﻿---
+---
 translation: true
-template: /templates/_template-java.md
+template: /templates/_template-net.md
 title: LaTeX 图形 | \includegraphics 命令
 linktitle: Includegraphics LaTeX
 weight: 18	
 url: /net/latex-graphics/
 description: 在 TeX 中插入图形是值得一提的事情。谈到它时，首先想到的是 `\includegraphics` 命令。
-lastmod: "2026-02-26"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}

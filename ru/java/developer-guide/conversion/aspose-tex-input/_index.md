@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-java.md
 title: Интерфейс ввода Aspose.TeX | Java
@@ -6,7 +6,7 @@ linktitle: Входной интерфейс Aspose.TeX
 weight: 15
 url: /java/aspose-tex-input/
 description: Функциональность преобразования решения Aspose.TeX API для Java с TeX в качестве входного формата объясняется здесь с примерами кода.
-lastmod: "2024-09-24"
+lastmod: "2026-04-21"
 ---
 
 {{<section overview>}}
@@ -21,7 +21,7 @@ lastmod: "2024-09-24"
 
 Вот как мы это сделаем:
 
-{{< gist "aspose-com-gists""67385c777283964d328086603f691ac9""Aspose.TeX.Examples-Conversion-InputFileSystemDirectory.java" >}}
+{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Conversion-InputFileSystemDirectory.java" >}}
 
 Этот вариант использования достаточно прост, поэтому мы не будем на нем долго останавливаться.
 
@@ -29,7 +29,7 @@ lastmod: "2024-09-24"
 
 Мы также можем поместить входные файлы в ZIP-архив и считать его входным каталогом. В этом случае нам следует поступить следующим образом:
 
-{{< gist "aspose-com-gists""67385c777283964d328086603f691ac9""Aspose.TeX.Examples-Conversion-InputZipDirectory.java" >}}
+{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Conversion-InputZipDirectory.java" >}}
 
 Сначала мы создаем поток, содержащий ZIP-файл. Затем, после создания параметров преобразования, мы устанавливаем параметр [InputWorkingDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/TeXOptions#getInputWorkingDirectory--) как экземпляр класса [InputZipDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/InputZipDirectory). Второй аргумент конструктора — базовый путь внутри архива. Если мы хотим, чтобы весь архив был входным каталогом, нам следует передать пустую строку. 
 
@@ -41,7 +41,7 @@ lastmod: "2024-09-24"
 
 Для этого нам нужно установить опцию [TerminalIn](https://reference.aspose.com/tex/java/com.aspose.tex/TeXOptions#getTerminalIn--) как экземпляр класса [InputConsoleTerminal](https://reference.aspose.com/tex/java/com.aspose.tex/InputConsoleTerminal).
 
-{{< gist "aspose-com-gists""67385c777283964d328086603f691ac9""Aspose.TeX.Examples-Conversion-InputConsoleTerminal.java" >}}
+{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Conversion-InputConsoleTerminal.java" >}}
 
 Но, по правде говоря, это значение параметра по умолчанию, поэтому указывать его нет особой необходимости. В связи с этим и до тех пор, пока нет других реализаций, данный раздел служит только демонстрационным целям.
 

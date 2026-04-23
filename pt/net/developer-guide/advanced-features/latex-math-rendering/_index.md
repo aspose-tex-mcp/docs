@@ -1,24 +1,24 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: Fórmulas de matemática de LaTeX Renderização | .NET
 linktitle: Fórmulas de matemática de LaTeX renderização
 weight: 10
 url: /net/latex-math-formula-rendering/
-description: Solução da API do Aspose.TeX para a renderização do .NET LATEX MATH FORMULAS é descrita neste artigo. Aprenda os exemplos de código sobre como usar a funcionalidade.
-lastmod: "2025-06-16"
+description: A solução API Aspose.TeX para renderização de fórmulas matemáticas LaTeX para .NET é descrita neste artigo. Aprenda os exemplos de código sobre como usar a funcionalidade.
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
 
 
-## Como renderizar uma fórmula de matemática de LaTeX para png
+## Como renderizar uma fórmula matemática LaTeX para PNG
 
-A seção de referência da API relacionada a este tópico é [aqui](https://reference.aspose.com/tex/net/aspose.tex.features/). De fato, a maneira mais fácil de demonstrar o recurso **FORMULAÇÃO DE FORMULAÇÃO DE MATHA DE LATEX** é começar com o exemplo. Aqui está:
+A seção de referência da API relacionada a este tópico é [aqui](https://reference.aspose.com/tex/net/aspose.tex.features/). De fato, a maneira mais fácil de demonstrar o recurso de **renderização de fórmulas matemáticas LaTeX** é começar com o exemplo. Aqui está:
 
 {{< gist "aspose-com-gists" "cd0acc55d1634f17dcf42e02075ca005" "Example-RenderMathToPNG.cs" >}}
 
-Vamos até os detalhes. Primeiro de tudo, criamos uma instância [de renderização](https://reference.aspose.com/tex/net/aspose.tex.features/mathrendereroptions/), semelhante à digitação Tex/Latex. Fazemos isso aqui especificando simultaneamente a resolução da imagem de saída.
+Vamos até os detalhes. Primeiro de tudo, criamos uma instância de [opções de renderização](https://reference.aspose.com/tex/net/aspose.tex.features/mathrendereroptions/), semelhante à composição TeX/LaTeX. Fazemos isso aqui especificando simultaneamente a resolução da imagem de saída.
 
 Em seguida, especificamos o preâmbulo. O preâmbulo padrão é:
 
@@ -38,11 +38,11 @@ A próxima linha do exemplo não faz muito sentido. Ele apenas demonstra que voc
 
 E a última opção `showterminal` permite alternar a gravação da saída do terminal no console.
 
-O método que realmente executa a renderização é [MathRenderer.render()](https://reference.aspose.com/tex/net/aspose.tex.features/mathrenderer/render/). Ele retorna o tamanho da fórmula em pontos.
+O método que realmente executa a renderização é [MathRenderer.Render()](https://reference.aspose.com/tex/net/aspose.tex.features/mathrenderer/render/). Ele retorna o tamanho da fórmula em pontos.
 
 O fluxo em que a imagem deve ser escrito é aceito pelo método como o segundo argumento. Criamos o fluxo a seguir.
 
-E, finalmente, chamamos o próprio método de `MathRenderer.render()`, passando as opções como o terceiro argumento. O código do LATEX da fórmula é aprovado como o primeiro argumento.
+E, finalmente, chamamos o próprio método [MathRenderer.Render()](https://reference.aspose.com/tex/net/aspose.tex.features/mathrenderer/render/), passando as opções como o terceiro argumento. O código LaTeX da fórmula é passado como o primeiro argumento.
 
 As últimas linhas do exemplo imprimem dois artefatos de renderização de fórmula matemática - o tamanho da fórmula e o breve relatório de erro (caso haja erros).
 
@@ -62,9 +62,9 @@ Da mesma maneira, podemos renderizar uma fórmula matemática de LaTeX ao format
 
 As diferenças são:
 
-* Utilizamos [svgmathrenderoptions](https://reference.aspose.com/tex/net/aspose.tex.features/svgmathrendereroptions/) Classe em vez de [pngmathrenderoptions](https://reference.aspose.com/tex/net/aspose.tex.features/pngmathrendereroptions/).
+* Utilizamos a classe [SvgMathRendererOptions](https://reference.aspose.com/tex/net/aspose.tex.features/svgmathrendereroptions/) em vez de [PngMathRendererOptions](https://reference.aspose.com/tex/net/aspose.tex.features/pngmathrendereroptions/).
 * Não especificamos resolução.
-* Utilizamos a classe [svgmathrenderer](https://reference.aspose.com/tex/net/aspose.tex.features/svgmathrenderer/) em vez de [pngmathrenderer](https://reference.aspose.com/tex/net/aspose.tex.features/pngmathrenderer/).
+* Utilizamos a classe [SvgMathRenderer](https://reference.aspose.com/tex/net/aspose.tex.features/svgmathrenderer/) em vez de [PngMathRenderer](https://reference.aspose.com/tex/net/aspose.tex.features/pngmathrenderer/).
  
 Aqui está o resultado:
 

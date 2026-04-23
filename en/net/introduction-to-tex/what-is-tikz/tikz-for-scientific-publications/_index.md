@@ -7,12 +7,12 @@ weight: 21
 url: /net/tikz-for-scientific-publications/
 keywords: tikz scientific graphs, tikz academic diagrams, tikz math examples
 description: Utilize TikZ to create professional-quality graphics and diagrams for scientific and academic publications.
-lastmod: "2025-07-11"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
 
-Here you will get aswers on how TikZ can enhance scientific and academic documents by providing clear, precise, and professional-quality graphics. Explore how to create diagrams, mathematical figures, and data visualizations ideal for publication.
+Here you will get answers on how TikZ can enhance scientific and academic documents by providing clear, precise, and professional-quality graphics. Explore how to create diagrams, mathematical figures, and data visualizations ideal for publication.
 
 ## Scientific Graphs and Plots
 

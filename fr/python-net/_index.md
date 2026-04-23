@@ -33,7 +33,7 @@ Voici les liens vers quelques ressources utiles dont vous pourriez avoir besoin 
 - [Aspose.TeX pour Python les fonctionnalités](/tex/{{lang.url-fragment}}python-net/feature-list/)
 - [Notes de version d'Aspose.TeX pour Python](https://releases.aspose.com/tex/python-net/release-notes/)
 - [Page produit Aspose.TeX pour Python](https://products.aspose.com/tex/python-net/)
--[Installer Aspose.TeX pour Python  les packages Wheel](https://pypi.org/project/aspose-tex-net/)
+- [Installer Aspose.TeX pour Python les packages Wheel](https://pypi.org/project/aspose-tex-net/)
 - [Guide de référence de l'API Aspose.TeX pour Python](https://reference.aspose.com/tex/python-net/)
 - [Forum de support gratuit Aspose.TeX pour Python](https://forum.aspose.com/c/tex/)
 - [Aspose.TeX pour Python Service d'assistance payant](https://helpdesk.aspose.com/)

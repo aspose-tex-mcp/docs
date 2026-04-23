@@ -42,7 +42,7 @@ Die Buchdokumentklasse bietet Ihnen Befehle zum Erstellen der oben genannten log
 
 ## Befehle für Vordermaterie, Hauptmaterie und Hintermaterie
 
-Die Hauptsache ist, was den Hauptteil des Buches umfasst, beginnend mit dem ersten Kapitel oder Teil und endend mit den Anhängen. Die Vor-, Haupt- und Rückangelegenheiten beginnen jeweils mit den Befehlen „\frontmatter“, „\mainmatter“ und „\backmatter“.
+Die Hauptsache ist, was den Hauptteil des Buches umfasst, beginnend mit dem ersten Kapitel oder Teil und endend mit den Anhängen. Die Vor-, Haupt- und Rückangelegenheiten beginnen jeweils mit den Befehlen `\frontmatter`, `\mainmatter` und `\backmatter`.
 
 > In der Standardbuchklasse werden die Titelseiten mit römischen Ziffern nummeriert, während die Haupt- und Nachspannseiten mit arabischen Ziffern nummeriert werden.
 
@@ -119,9 +119,9 @@ Derzeit scheint die Briefdokumentklasse etwas altmodisch zu sein (genauso wie di
 
 Hier also der kurze Überblick über die Klasse.
 
-Mit einer einzigen Eingabedatei können Sie beliebig viele Briefe generieren. Ihr Name und Ihre Adresse, die in der Regel für alle Briefe gleich sind, werden in der Regel in der Präambel des Dokuments angegeben. Die Rücksprungadresse wird durch einen „\address“-Befehl deklariert, der mehrere durch „\\“ (den LaTeX-Zeilenumbruchbefehl) getrennte Zeilen als Argument akzeptiert. Ebenso akzeptiert der Befehl „\signature“ mehrere Zeilen, einschließlich Ihres Namens, Titels usw. Sie können die Absenderadresse und Signatur jedoch jederzeit ändern.
+Mit einer einzigen Eingabedatei können Sie beliebig viele Briefe generieren. Ihr Name und Ihre Adresse, die in der Regel für alle Briefe gleich sind, werden in der Regel in der Präambel des Dokuments angegeben. Die Rücksprungadresse wird durch einen `\address`-Befehl deklariert, der mehrere durch `\\` (den LaTeX-Zeilenumbruchbefehl) getrennte Zeilen als Argument akzeptiert. Ebenso akzeptiert der Befehl `\signature` mehrere Zeilen, einschließlich Ihres Namens, Titels usw. Sie können die Absenderadresse und Signatur jedoch jederzeit ändern.
 
-Jeder Brief wird von einer separaten „Brief“-Umgebung generiert, die als Argument den Namen und die Adresse des Empfängers benötigt. Der Brief beginnt mit einem „\opening“-Befehl, der die Anrede erzeugt, und endet mit einem „\closing“-Befehl, der den Schlusssatz und die Signatur erzeugt. Der Textkörper des Briefes ist eine normale LaTeX-Eingabe.
+Jeder Brief wird von einer separaten „Brief“-Umgebung generiert, die als Argument den Namen und die Adresse des Empfängers benötigt. Der Brief beginnt mit einem `\opening`-Befehl, der die Anrede erzeugt, und endet mit einem `\closing`-Befehl, der den Schlusssatz und die Signatur erzeugt. Der Textkörper des Briefes ist eine normale LaTeX-Eingabe.
 
 Alle diese Befehle sind einfach zu verwenden und sehr leistungsstark, da LaTeX die Formatierung der Buchstaben automatisch übernimmt. Lassen Sie sich also nicht von der Anzahl der Befehle abschrecken oder verwirren.
 
@@ -154,7 +154,7 @@ letter.
 
 <a href="/tex/java/latex-document-classes/latex-document-classes-4.png">![Ein Beispiel für eine Briefdokumentklasse](/tex/images/java/tutorial/latex-document-classes-4.png)</a>
 
-Beachten Sie, dass auch das aktuelle Datum automatisch erzeugt wird. Sie können jedoch den Befehl „\today“ umdefinieren, um das Datum in Ihren Briefen zu ändern. So machen Sie es:
+Beachten Sie, dass auch das aktuelle Datum automatisch erzeugt wird. Sie können jedoch den Befehl `\today` umdefinieren, um das Datum in Ihren Briefen zu ändern. So machen Sie es:
 
 ```tex
 \renewcommand{\today}{01th of March of 2492}
@@ -177,7 +177,7 @@ Die Schriftgröße wird durch drei Optionen gesteuert: 10pt, 11pt, 12pt. Standar
 > Diese Optionen sind für die Klasse „Slides“ nicht erkennbar.
 
 ### Papierformat
-„Papiergröße“ bezieht sich hier auf die Größe des Papierblatts, auf dem Sie das Dokument drucken möchten. Es hat keinen Einfluss auf die Größe der Seitendarstellung in der Ausgabe von Satzsystemen wie **PDF TeX**. Die Steuerung erfolgt über 6 Optionen: „Briefpapier“ (8,5 Zoll x 11 Zoll), „Rechtspapier“ (8,5 Zoll x 14 Zoll), „Executive-Papier“ (7,25 Zoll x 10,5 Zoll), „A4-Papier“ (210 mm x 297 mm), „A5-Papier“. ` (148mm x 210mm) und `b5paper` (176mm x 250mm). Der Standardwert ist „Briefpapier“.
+„Papiergröße“ bezieht sich hier auf die Größe des Papierblatts, auf dem Sie das Dokument drucken möchten. Es hat keinen Einfluss auf die Größe der Seitendarstellung in der Ausgabe von Satzsystemen wie **PDF TeX**. Die Steuerung erfolgt über 6 Optionen: `letterpaper` (8,5 Zoll x 11 Zoll), `legalpaper` (8,5 Zoll x 14 Zoll), `executivepaper` (7,25 Zoll x 10,5 Zoll), `a4paper` (210 mm x 297 mm), `a5paper` (148mm x 210mm) und `b5paper` (176mm x 250mm). Der Standardwert ist `letterpaper`.
 
 ```tex
 \documentclass[a4paper]{article}
@@ -197,18 +197,18 @@ Wenn TeX beim Erstellen eines Absatzes keinen ausreichend guten Zeilenumbruch er
 
 ### Zweiseitiger Druck
 
-Mit der Option „openany“ können Kapitel auf jeder Seite beginnen, während mit der Option „openright“ alle Kapitel auf einer rechten Seite beginnen. Der Standardwert ist „openany“ in der Klasse „report“ und „openright“ in der Klasse „book“. Beide Optionen werden in anderen Dokumentklassen nicht erkannt.
+Mit der Option `openany` können Kapitel auf jeder Seite beginnen, während mit der Option `openright` alle Kapitel auf einer rechten Seite beginnen. Der Standardwert ist `openany` in der Klasse `report` und `openright` in der Klasse `book`. Beide Optionen werden in anderen Dokumentklassen nicht erkannt.
 
 ### Seite für den Titel
 
-Mit der Option „titlepage“ erstellt LaTeX eine separate Seite für den Titel, der durch den Befehl „\maketitle“ erstellt wurde. Es bewirkt außerdem, dass die „Abstract“-Umgebung die Zusammenfassung auf einer neuen Seite beginnt und danach einen Seitenumbruch einfügt. Der Standardwert ist „titlepage“ für alle Klassen außer „article“, für den es „notitlepage“ ist. 
+Mit der Option `titlepage` erstellt LaTeX eine separate Seite für den Titel, der durch den Befehl `\maketitle` erstellt wurde. Es bewirkt außerdem, dass die „Abstract“-Umgebung die Zusammenfassung auf einer neuen Seite beginnt und danach einen Seitenumbruch einfügt. Der Standardwert ist `titlepage` für alle Klassen außer `article`, für den es `notitlepage` ist. 
 
 > Diese Optionen werden von der Klasse „Letter“ nicht erkannt.
 
 ### Nummerierte angezeigte Formeln
 
-Die Option „leqno“ bewirkt, dass LaTeX Gleichungszahlen (angezeigte mathematische Formeln) oder Tags auf der linken Seite anstelle der rechten Seite einfügt, was das Standardverhalten ist.
+Die Option `leqno` bewirkt, dass LaTeX Gleichungszahlen (angezeigte mathematische Formeln) oder Tags auf der linken Seite anstelle der rechten Seite einfügt, was das Standardverhalten ist.
 
 ### Angezeigte Formelausrichtung
 
-Die Option „fleqn“ richtet die angezeigten Formeln linksbündig aus. Andernfalls sind sie standardmäßig zentriert.
+Die Option `fleqn` richtet die angezeigten Formeln linksbündig aus. Andernfalls sind sie standardmäßig zentriert.

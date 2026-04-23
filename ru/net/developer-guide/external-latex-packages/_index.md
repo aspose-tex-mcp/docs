@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: Внешние пакеты LaTeX | Aspose.TeX для .NET
@@ -7,7 +7,7 @@ weight: 20
 url: /net/external-latex-packages/
 description: Aspose.TeX API для .NET позволяет использовать внешние пакеты, т.е. те, которые не включены в саму библиотеку, например пакеты Fancybox и pgfplots.
 keywords: внешние пакеты Latex, aspose tex, .net tex, пакеты Latex, fancybox, pgfplots, требуемый входной каталог, входной zip-архив, пользовательский входной каталог, преобразование tex
-lastmod: "2026-04-03"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
@@ -57,7 +57,7 @@ options.RequiredInputDirectory = new InputFileSystemDirectory("path-to-directory
 
 Вот полный исходный код примера:
 
-{{< gist "aspose-com-gists""03f720960e15bd497ed26ce2eb9c03b2""Example-RequiredInput-FileSystem.cs" >}}
+{{< gist "aspose-com-gists" "03f720960e15bd497ed26ce2eb9c03b2" "Example-RequiredInput-FileSystem.cs" >}}
 
 ### Заархивированные необходимые данные (пакет pgfplots)
 
@@ -118,7 +118,7 @@ using (Stream zipStream = File.Open("path-to-zip-with-pgfplots-sources"), FileMo
 
 Вот полный исходный код примера:
 
-{{< gist "aspose-com-gists""03f720960e15bd497ed26ce2eb9c03b2""Example-RequiredInput-Zip.cs" >}}
+{{< gist "aspose-com-gists" "03f720960e15bd497ed26ce2eb9c03b2" "Example-RequiredInput-Zip.cs" >}}
 
 > **_ПРИМЕЧАНИЕ:_** Результат был проверен с использованием пакета `pgfplots` версии 1.18.1. В то время как версия пакета `pfg`, включенного в библиотеку **Aspose.TeX**, - 3.1.9a.
 
@@ -129,7 +129,7 @@ using (Stream zipStream = File.Open("path-to-zip-with-pgfplots-sources"), FileMo
 
 Ниже мы приводим наглядный пример пользовательского обязательного входного каталога, который также реализует интерфейс [IFileCollector](https://reference.aspose.com/tex/net/aspose.tex.io/ifilecollector/). Сосредотачиваясь на сборе имен файлов по расширению, мы намеренно опускаем детали хранения и поиска файлов.
 
-{{< gist "aspose-com-gists""03f720960e15bd497ed26ce2eb9c03b2""Example-RequiredInputDirectory.cs" >}}
+{{< gist "aspose-com-gists" "03f720960e15bd497ed26ce2eb9c03b2" "Example-RequiredInputDirectory.cs" >}}
 
 ### Ограничения
 

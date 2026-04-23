@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: Что такое LaTeX? 
@@ -7,7 +7,7 @@ weight: 16
 url: /net/what-is-latex/
 keywords: что такое латех, латех, что это такое
 description: Чтобы ответить на вопрос «Что такое LaTeX?» Стоит отметить, что одной из наиболее впечатляющих особенностей является новая схема выбора шрифта (NFSS).
-lastmod: "2024-09-24"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
@@ -16,7 +16,7 @@ lastmod: "2024-09-24"
 
 Короче говоря, LaTeX — это формат [TeX](/tex/{{lang.url-fragment}}net/what-is-tex/).
 
-LaTeX (*LAH-tekh или LAY-tekh*, часто стилизованный под LATEX) — это программная система для подготовки документов, первоначально написанная в начале 1980-х годов <a href="https://en.wikipedia.org/wiki/ Leslie_Lamport" target=_blank rel="nofollow">Лесли Лэмпорт</a> в <a href="https://en.wikipedia.org/wiki/SRI_International" target=_blank rel="nofollow">SRI International</ а>. Вот что рассказывает <a href="https://en.wikipedia.org/wiki/LaTeX" target=_blank rel="nofollow">Википедия</a>.
+LaTeX (*LAH-tekh или LAY-tekh*, часто стилизованный под LATEX) — это программная система для подготовки документов, первоначально написанная в начале 1980-х годов <a href="https://en.wikipedia.org/wiki/Leslie_Lamport" target=_blank rel="nofollow">Лесли Лэмпорт</a> в <a href="https://en.wikipedia.org/wiki/SRI_International" target=_blank rel="nofollow">SRI International</a>. Вот что рассказывает <a href="https://en.wikipedia.org/wiki/LaTeX" target=_blank rel="nofollow">Википедия</a>.
 
 Отвечая на вопрос «Что такое LaTeX?» хотелось бы отметить некоторые его особенности.
 

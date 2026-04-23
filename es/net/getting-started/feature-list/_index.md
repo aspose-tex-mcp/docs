@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: Lista de funciones | Aspose.TeX para .NET
@@ -6,7 +6,7 @@ linktitle: Lista de funciones
 weight: 30
 url: /net/feature-list/
 description: Agregue la función de edición de archivos TeX a su solución. Conozca las características que ofrece Aspose.TeX para .NET.
-lastmod: "2024-10-30"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}

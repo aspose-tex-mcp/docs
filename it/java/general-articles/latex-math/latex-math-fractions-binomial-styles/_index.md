@@ -16,13 +16,32 @@ Un'altra cosa comune che potresti trovare nelle formule di matematica sono le fr
 
 ![Oggetti matematici simili alla frazione](/tex/images/java/tutorial/latex-math-5-1.png)
 
-È possibile ottenere queste tre formule come equazioni visualizzate digitando `$$ 1 \ over2 $$` e `$$ n+1 \ over3 $$ e $$ \ n+1 \ scict3 $$`.
+È possibile ottenere queste tre formule come equazioni visualizzate digitando `$1\over2$`, `$n+1\over3$` e `$
++1\choose3﻿---
+translation: true
+template: /templates/_template-java.md
+linktitle: Frazioni, coefficienti binomiali e stili di matematica
+title: 5. Frazioni, coefficienti binomiali e stili di matematica
+weight: 50
+url: /java/latex-math-fractions-binomial-styles/
+keywords: Formule di matematica in LaTeX, LaTeX, matematica in LaTeX, frazioni di matematica in LaTeX, coefficienti binomiali di matematica in LaTeX, stili di matematica in LaTeX
+description: Scopri la composizione di tali costruzioni di matematica come frazioni, coefficienti binomiali, ecc. E gli stili di matematica in cui le formule di TEX Typets.
+lastmod: "2025-06-13"
+---
 
-Il comando `\over` si applica a tutto nella formula a meno che tu non lo racchiudica in una sottomissione specifica con parentesi graffe, nel qual caso`\over` si applica a tutto in quella sottomissione.
+{{<section overview>}}
+
+Un'altra cosa comune che potresti trovare nelle formule di matematica sono le frazioni e altre costruzioni in cui qualcosa come un numeratore è posizionato sopra qualcosa come un denominatore. Un esempio di quest'ultimo sono i coefficienti binomiali.
+
+![Oggetti matematici simili alla frazione](/tex/images/java/tutorial/latex-math-5-1.png)
+
+.
+
+Il comando `\over` si applica a tutto nella formula a meno che tu non lo racchiudica in una sottomissione specifica con parentesi graffe, nel qual caso `\over` si applica a tutto in quella sottomissione.
 
 ![Frazioni](/tex/images/java/tutorial/latex-math-5-2.png)
 
-Non è possibile utilizzare `\over` due volte nella stessa sottomissione, cioè digitare` a \ over b \ over 2`. Invece, dovresti specificare esplicitamente ciò che accompagna cosa:
+Non è possibile utilizzare `\over` due volte nella stessa sottomissione, cioè digitare `a\over b\over2`. Invece, dovresti specificare esplicitamente ciò che accompagna cosa:
 
 ![Frazioni nidificate](/tex/images/java/tutorial/latex-math-5-3.png)
 
@@ -50,13 +69,13 @@ Non esiste uno stile "*sss*" poiché tali piccoli simboli sarebbero ancora meno 
 
 ![Stili di abbonamenti e superstctipts a seconda di uno stile di formula](/tex/images/java/tutorial/latex-math-5-7.png)
 
-For example, if `x^{a_b}` is to be typeset in style *D*, the `a_b` will be set in style *S*, and `b` in style *SS*; the result is ![Radici di grado arbitrario](/tex/images/java/tutorial/latex-math-5-8.png)
+Ad esempio, se `x^{a_b}` è impostato nello stile *D*, `a_b` sarà impostato nello stile *S* e `b` nello stile *SS*; il risultato è ![Radici di grado arbitrario](/tex/images/java/tutorial/latex-math-5-8.png)
 
 Non abbiamo ancora visto alcuna differenza tra gli stili *d* e *t*. C'è in realtà una leggera differenza nel posizionamento degli esponenti, sebbene in ciascun caso sia utilizzata la dimensione dello script. Ma c'è una grande distinzione tra gli stili *d* e *t* in caso di frazioni:
 
 ![Stili di un denominatore e un numeratore a seconda di uno stile di frazione](/tex/images/java/tutorial/latex-math-5-9.png)
 
-Quindi, se digiti `$ 1 \ over2 $` (in un testo) ottieni stile *s*over style *s ' *. Ma se digiti `$$ 1 \ over2 $$` ottieni stile *t* over style * t ' * in una formula visualizzata.
+Quindi, se digiti `$1\over2$` (in un testo) ottieni lo stile *s* sopra lo stile *s'*; ma se digiti `$$1\over2$$` ottieni lo stile *t* sopra lo stile *t'* in una formula visualizzata.
 
 Infine, `\sottoline` non cambia lo stile. Accenti matematici e i comandi `\sqrt` e `\overline` cambiano stili non screpolati nei loro controparti anguste che mantengono stili angusti.
 Può succedere che non ti piace lo stile che Tex seleziona in base alle sue regole. Sei libero di specificare lo stile desiderato digitando `\displaystyle` o`\textstyle` o `\scriptstyle` o`\scriptscriptstyle`; Lo stile selezionato si applicherà fino alla fine della formula o della subformance o fino a quando non si seleziona un altro stile. Ad esempio, `$$ N+\ ScriptStyle n+\ ScriptscriptStyle n. $$` produce il seguente display:

@@ -1,19 +1,19 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
-title: Aspose.TeX埋め込みラテックスパッケージ
-linktitle: 埋め込まれたラテックスパッケージ
+title: Aspose.TeX埋め込みLaTeXパッケージ
+linktitle: 埋め込まれたLaTeXパッケージ
 weight: 20
 url: /net/embedded-packages/
 description: 以下は、使用されている説明とバージョンとともに、Aspose.TeXライブラリに埋め込まれたパッケージのリストです。
-lastmod: "2025-06-09"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
 
-Aspose.TeXライブラリに埋め込まれた多くのラテックスパッケージがあります。ここにあります：
+Aspose.TeXライブラリに埋め込まれた多くのLaTeXパッケージがあります。ここにあります：
 
-## 埋め込まれたラテックスパッケージのリスト
+## 埋め込まれたLaTeXパッケージのリスト
 
 ### `amsmath`
 

@@ -6,7 +6,7 @@ linktitle: LaTeX 数学公式渲染
 weight: 10
 url: /cpp/latex-math-formula-rendering/
 description: 本文介绍了 Aspose.TeX API 在 C++ 中的 LaTeX 数学公式渲染解决方案。您将在此找到功能的代码示例。
-lastmod: "2026-02-27"
+lastmod: "2026-04-20"
 ---
 
 {{<section overview>}}
@@ -16,7 +16,7 @@ lastmod: "2026-02-27"
 ```C++
     // Create rendering options 
     System::SharedPtr<PngMathRendererOptions> options = System::MakeObject<PngMathRendererOptions>();
-    // Sspecify the image resolution 150 dpi
+    // Specify the image resolution 150 dpi
     options->set_Resolution(150);
     // Specify the preamble.
     options->set_Preamble(u"\\usepackage{amsmath}\r\n\\usepackage{amsfonts}\r\n\\usepackage{amssymb}\r\n\\usepackage{color}");

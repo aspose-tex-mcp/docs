@@ -6,7 +6,7 @@ linktitle: 如何运行示例
 weight: 80
 url: /cpp/how-to-run-the-examples/
 description: 在此页面上，您将找到应采取的所有要求和步骤来运行aspose.tex解决方案的示例。
-lastmod: "2025-06-10"
+lastmod: "2026-04-20"
 ---
 
 {{<section overview>}}
@@ -29,8 +29,8 @@ C ++的Aspose.TeX的所有示例均在[GitHub](https://GitHub.com/aspose-TeX/Asp
 - 在项目属性上检查**Windows SDK版本**，以适用于已安装的Windows SDK方向。
 - **示例/输入**包含示例使用的输入文件。
 - **示例/输出**应该存在文件夹。它是由示例使用的。
-- 打开**源/runexamples.cpp**;所有示例都是从这里调用的。
-- 取消注册您想从项目中运行的示例。
+- 打开**source/RunExamples.cpp**;所有示例都是从这里调用的。
+- 取消注释您想从项目中运行的示例。
 
 如果您有任何设置或运行示例的问题，请随时使用我们的论坛联系。
 

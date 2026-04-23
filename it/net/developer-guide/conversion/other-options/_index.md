@@ -1,12 +1,12 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
-title: Altre opzioni di gestione Tex | .NET
+title: Altre opzioni di gestione TeX | .NET
 linktitle: Altre opzioni
 weight: 17
 url: /net/other-options/
 description: Funzionalità di conversione della soluzione API **Aspose.TeX** per .NET consente di impostare la modalità di interazione iniziale in cui inizia il motore. Ecco alcuni esempi di codice.
-lastmod: "2026-04-03"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
@@ -19,26 +19,26 @@ Come abbiamo già detto [qui](/tex/{{lang.url-fragment}}net/tex-io/#tex-interact
 
 ## Come impostare il nome del lavoro
 
-Quando passiamo il file di input principale come nome di un file, otteniamo file di output con lo stesso nome, sebbene con altre estensioni. Il motore Tex chiama il nome del file di input il * nome del lavoro * e lo utilizza per i file di output, tranne nei casi in cui vengono scritti file ausiliari con altri nomi esplicitamente specificati. Quando passiamo il file di input principale come [stream](/tex/{{lang.url-fragment}}net/other-ways-of-main-input/#providing-the-main-input-file-as-a-stream), il motore Tex utilizza il nome del lavoro predefinito, che è *texput*.
+Quando passiamo il file di input principale come nome di un file, otteniamo file di output con lo stesso nome, sebbene con altre estensioni. Il motore TeX chiama il nome del file di input il * nome del lavoro * e lo utilizza per i file di output, tranne nei casi in cui vengono scritti file ausiliari con altri nomi esplicitamente specificati. Quando passiamo il file di input principale come [stream](/tex/{{lang.url-fragment}}net/other-ways-of-main-input/#providing-the-main-input-file-as-a-stream), il motore TeX utilizza il nome del lavoro predefinito, che è *texput*.
 In entrambi i casi, possiamo sovrascrivere il nome del lavoro assegnando l'opzione di conversione appropriata.
 
 {{< gist "aspose-com-gists" "deadfd7c29ffe40024a9b6d12f0ed18a" "Example-JobName.cs" >}}
 
 ## Come "fermare il tempo"
 
-LaTex ha una funzione per generare automaticamente un titolo da alcune definizioni nel preambolo. Questo titolo normalmente contiene la data corrente. Potremmo voler congelare la data in un valore desiderato. Ecco come può essere fatto:
+LaTeX ha una funzione per generare automaticamente un titolo da alcune definizioni nel preambolo. Questo titolo normalmente contiene la data corrente. Potremmo voler congelare la data in un valore desiderato. Ecco come può essere fatto:
 
 {{< gist "aspose-com-gists" "deadfd7c29ffe40024a9b6d12f0ed18a" "Example-DateTime.cs" >}}
 
 ## Come ignorare i pacchetti mancanti
 
-Potremmo voler convertire un file LaTeX che fa riferimento ad alcuni pacchetti che non sono supportati da Aspose.TeX per la libreria .NET. In questo caso, il motore TEX si fermerà con un errore quando si tenta di caricare tale pacchetto. Per evitare questo, possiamo usare la seguente opzione:
+Potremmo voler convertire un file LaTeX che fa riferimento ad alcuni pacchetti che non sono supportati da Aspose.TeX per la libreria .NET. In questo caso, il motore TeX si fermerà con un errore quando si tenta di caricare tale pacchetto. Per evitare questo, possiamo usare la seguente opzione:
 
 {{< gist "aspose-com-gists" "deadfd7c29ffe40024a9b6d12f0ed18a" "Example-IgnoreMissingPackages.cs" >}}
 
 ## Come evitare di costruire legature
 
-Normalmente, il motore TEX crea ligati per determinate coppie di caratteri se il carattere fornisce i dati necessari per farlo. Possiamo istruire il motore a saltare l'edificio della legatura con il seguente codice:
+Normalmente, il motore TeX crea ligati per determinate coppie di caratteri se il carattere fornisce i dati necessari per farlo. Possiamo istruire il motore a saltare l'edificio della legatura con il seguente codice:
 
 {{< gist "aspose-com-gists" "deadfd7c29ffe40024a9b6d12f0ed18a" "Example-NoLigatures.cs" >}}
 
@@ -56,7 +56,7 @@ A volte potremmo aver bisogno di formule di matematica come immagini raster piut
 
 ## Come trasformare la grafica in immagini raster
 
-Il motore ObjectTex ci consente di includere i file grafici in formati raster (PNG e JPG), nonché PS (EPS) e XPS (OXPS). Gli ultimi due formati di solito contengono elementi e testi vettoriali. Per averli rasterosi e inclusi come immagini solide, possiamo usare la seguente opzione:
+Il motore ObjectTeX ci consente di includere i file grafici in formati raster (PNG e JPG), nonché PS (EPS) e XPS (OXPS). Gli ultimi due formati di solito contengono elementi e testi vettoriali. Per averli rasterosi e inclusi come immagini solide, possiamo usare la seguente opzione:
 
 {{< gist "aspose-com-gists" "deadfd7c29ffe40024a9b6d12f0ed18a" "Example-RasterizeIncludedGraphics.cs" >}}
 

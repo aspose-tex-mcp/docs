@@ -7,7 +7,7 @@ weight: 70
 url: /net/licensing/
 description: When you stopped on the licensed version of the Aspose.TeX API solution for .NET here you find out how to apply the license.
 aliases: /net/licensing
-lastmod: "2024-09-20"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
@@ -38,7 +38,7 @@ Follow these simple rules:
 - You need to set the license before using any other Aspose.TeX classes.
 - Calling SetLicense multiple times is not harmful, but wastes processor time.
 - If you are developing a Windows Forms or console application, call SetLicense in the startup code, before using Aspose.TeX classes.
-- When developing an ASP.NET application, call SetLicense from the Global.asax.cs file, in the Aplication_Start protected method. It is called once when the application starts.
+- When developing an ASP.NET application, call SetLicense from the Global.asax.cs file, in the Application_Start protected method. It is called once when the application starts.
 - Do not call SetLicense from within the Page_Load methods since it means the license will be loaded every time a web page is loaded.
 - If you are developing a class library, you can call SetLicense from a static constructor of the class that uses Aspose.TeX. The static constructor executes before an instance of your class is created making sure Aspose.TeX license is properly set.
 

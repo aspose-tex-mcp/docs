@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: メイン TeX 入力ファイルを提供するその他の方法 | .NET
@@ -6,7 +6,7 @@ linktitle: メイン TeX 入力ファイルを提供するその他の方法
 weight: 14
 url: /net/other-ways-of-main-input/
 description: Aspose.TeX API ソリューション for .NET の変換機能は、最初の引数としてストリームを受け取るコンストラクタを持っています。いくつかのコード例を示します。
-lastmod: "2026-02-25"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}

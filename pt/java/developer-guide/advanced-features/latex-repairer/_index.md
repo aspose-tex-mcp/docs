@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-java.md
 title: Reparo de arquivo de LaTeX | Aspose.TeX para Java
@@ -6,7 +6,7 @@ linktitle: Reparo de arquivo de LaTeX
 weight: 30
 url: /java/latex-repair/
 description: O recurso de reparador de arquivos de LaTeX dentro da API Aspose.TeX para Java é descrito neste artigo. Aprenda os exemplos de código de como usar a funcionalidade.
-lastmod: "2025-06-16"
+lastmod: "2026-04-21"
 ---
 
 {{<section overview>}}
@@ -15,7 +15,7 @@ lastmod: "2025-06-16"
 
 Se você não tiver certeza se um arquivo de texto é um arquivo de LaTeX e deseja que ele seja digitado, pode utilizar o recurso de verificação e reparo do LaTeX oferecido pela API Aspose.TeX para Java. No exemplo abaixo, verificaremos e repararemos um arquivo de amostra, `inválido-latex.tex`, do projeto Aspose.TeX for java.
 
-Para começar, é importante observar que o arquivo de amostra parece empregar a sintaxe Tex, mas carece da estrutura exigida pelo LaTeX. Como você deve saber, um arquivo de LaTeX deve incluir um preâmbulo que começa com o comando \ documentClass, bem como um corpo envolto no ambiente do documento, especificamente entre \ begin {document} e \ end {document}.
+Para começar, é importante observar que o arquivo de amostra parece empregar a sintaxe Tex, mas carece da estrutura exigida pelo LaTeX. Como você deve saber, um arquivo de LaTeX deve incluir um preâmbulo que começa com o comando `\documentclass`, bem como um corpo envolto no ambiente do documento, especificamente entre `\begin{document}` e `\end{document}`.
 
 Agora vamos olhar para a amostra de código Java.
 
@@ -27,7 +27,7 @@ Depois que as opções forem atribuídas, podemos prosseguir com a execução do
 
 Então, como é o processo de verificação e reparo? Começa com a pesquisa de API por uma ocorrência `\documentclass` no arquivo de entrada. Se não for encontrado, a API assume que `\documentclass {Article}` deve ser inserida no início do arquivo. Esta informação é registrada no arquivo de relatório de reparo (.log).
 
-Em seguida, o processo começa a digitalizar o arquivo de entrada ajustado desde o início. O mecanismo TEX equipado com o formato do LATEX pode, em algum momento, lançar um erro indicando que `\ Begin {Document}`ainda não foi encontrado quando deveria já ter. Dessa forma, a posição na qual `\begin {document}` deve ser inserida é definida e refletida no relatório.
+Em seguida, o processo começa a digitalizar o arquivo de entrada ajustado desde o início. O mecanismo TEX equipado com o formato do LATEX pode, em algum momento, lançar um erro indicando que `\begin{document}` ainda não foi encontrado quando deveria já ter. Dessa forma, a posição na qual `\begin{document}` deve ser inserida é definida e refletida no relatório.
 
 Ao digitalizar ainda mais o arquivo, o mecanismo pode encontrar comandos ou ambientes indefinidos. Nesses casos, a API pode fazer suposições em [Pacotes necessários incorporados](/tex/{{lang.url-fragment}}net/embedded-packages/) (aqueles que definem os comandos e ambientes que não são definidos até que esses pacotes estejam incluídos) para alguns dos comandos e ambientes mais comuns. No entanto, é possível fazer essas suposições externamente por uma classe que implementa a interface [iguesspackageCallback](https://reference.aspose.com/tex/java/com.aspose.tex.features/iguesspackagecallback/). Depois de desenvolver essa classe, uma instância deve ser passada para o processo chamando o método `setGuessPackageCallback ()`.
 
@@ -37,7 +37,7 @@ Aqui está um exemplo básico que simplesmente mapeia o comando `\head` para o p
 
 Quanto ao ficheiro de exemplo, o mecanismo encontra primeiro o comando `\chapter`, que não está definido na classe de documento `article`, mas sim na classe de documento `book`. A API ajusta a classe de documento para que a versão final do ficheiro reparado comece por `\documentclass{book}`. De seguida, o motor encontra o comando `\lhead` mencionado anteriormente e determina que `\usepackage{fancyhdr}` deve ser introduzido no preâmbulo. Os comandos `\href` e `\includegraphics`, que ocorrem posteriormente no ficheiro, fazem com que o Reparador introduza `\usepackage{hyperref}` e `\usepackage{graphics}` no preâmbulo, respetivamente. Estas decisões são tomadas com base nos mapeamentos internos da API. Como antes, todos estes reparos são registados no ficheiro de relatório.
 
-Finalmente, o motor termina anormalmente porque a conclusão adequada de um documento de LaTeX está faltando. Como resultado, o reparador anexa `\end {document}`ao final do arquivo e inclui essas informações no relatório.
+Finalmente, o motor termina anormalmente porque a conclusão adequada de um documento de LaTeX está faltando. Como resultado, o reparador anexa `\end{document}` ao final do arquivo e inclui essas informações no relatório.
 
 Depois de criar a versão fixa do arquivo original, o reparador executa um trabalho de Tex nele para a verificação final. Em nosso exemplo, essa execução não detecta erros críticos; portanto, a versão fixa pode ser digita mais ou menos conforme o esperado.
 

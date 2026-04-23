@@ -8,7 +8,7 @@ url: /net/tikz-fundamentals-of-using-tikz/
 aliases: /net/fundamentals-of-using-tikz/
 keywords: tikz 基础, tikz 入门, tikz 教程
 description: 探索 TikZ 的基本原理和命令，以在您的 TeX 和 LaTeX 文档中创建图形。
-lastmod: "2026-02-26"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
@@ -115,4 +115,4 @@ TikZ 的路径可以是直线也可以是曲线。曲线通过简洁的语法创
 
 掌握这些 TikZ 基础概念和命令，将为您在文档中创建复杂图形奠定坚实基础。
 
-**此外，探索我们的免费 [web app](https://products.aspose.app/tex/conversion/latex/)（基于 [Aspose.TeX for .NET API](https://products.aspose.com/tex/net/)），实现快速、简便的 TeX 转换。**
+**此外，探索我们的免费 [Web 应用](https://products.aspose.app/tex/conversion/latex/)（基于 [Aspose.TeX for .NET API](https://products.aspose.com/tex/net/)），实现快速、简便的 TeX 转换。**

@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: 关于TeX的常见问题
@@ -6,7 +6,7 @@ linktitle: 常问问题
 weight: 80
 url: /net/introduction-to-tex/faq/
 description: 获取有关TeX和LaTeX的所有最常见问题的答案，它们的结构，用法和特点。
-lastmod: 2025-09-03
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
@@ -51,11 +51,11 @@ lastmod: 2025-09-03
 
 **Q: TeX的语法是什么？**
 
-**A:** TeX的语法(及其最受欢迎的宏套件，乳胶)基于命令和环境。
+**A:** TeX的语法(及其最受欢迎的宏套件，LaTeX)基于命令和环境。
 
 大多数命令以backslash`(\)`和命令名称开头。例如，`\maketitle`创建文档的标题。一些命令还在方括号中使用可选参数。
 
-环境用于将特定格式应用于文本块。它们是从`\begin{...}`命令开始的，并以`\end{...}`命令结束。例如，`\begin{initizize}`和`\end{initizize}`创建一个项目符号列表。
+环境用于将特定格式应用于文本块。它们是从`\begin{...}`命令开始的，并以`\end{...}`命令结束。例如，`\begin{itemize}`和`\end{itemize}`创建一个项目符号列表。
 <br> <br>
 
 **Q: 什么是数学模式？**

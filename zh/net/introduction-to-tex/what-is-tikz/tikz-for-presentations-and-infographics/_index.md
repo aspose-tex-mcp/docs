@@ -8,7 +8,7 @@ url: /net/tikz-for-presentations-and-infographics/
 aliases: /net/presentations-and-infographics/
 keywords: tikz 演示文稿、tikz beamer、tikz 信息图表
 description: 了解如何使用 TikZ 创建专业演示文稿和引人入胜的信息图表。
-lastmod: "2026-02-26"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
@@ -119,4 +119,4 @@ TikZ 能与 LaTeX Beamer 类无缝配合，创建动态且引人入胜的演示�
 
 使用 TikZ 制作演示文稿和信息图能够实现清晰、引人入胜且专业的视觉传达，提升受众的理解和记忆。
 
-**Additionally, explore our free [web app](https://products.aspose.app/tex/conversion/latex/) based on [Aspose.TeX for .NET API](https://products.aspose.com/tex/net/) for quick and easy TeX conversions.**
+**此外，还可以探索基于 [Aspose.TeX for .NET API](https://products.aspose.com/tex/net/) 的免费 [Web 应用](https://products.aspose.app/tex/conversion/latex/)，实现快速简便的 TeX 转换。**

@@ -6,7 +6,7 @@ linktitle: 開発者ガイド
 weight: 20
 url: /cpp/developer-guide/
 description: 開発者がTEXファイルとラテックスファイルを操作および処理するためのC ++ API。ソリューションの操作方法に関する開発者ガイドを学びます。
-lastmod: "2025-06-09"
+lastmod: "2026-04-20"
 ---
 
 {{<section overview>}}

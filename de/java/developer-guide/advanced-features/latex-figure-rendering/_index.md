@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-java.md
 title: LaTeX-Figurenrendering | Aspose.TeX für Java
@@ -6,7 +6,7 @@ linktitle: Darstellung von LaTeX-Figuren
 weight: 20
 url: /java/latex-figure-rendering/
 description: Hier wird Artikel die Aspose.TeX-Lösung für Java das Rendern von LaTeX-Fragmenten (Figuren) beschrieben. Erfahren Sie wie man Funktionalität nutzen kann.
-lastmod: "2024-09-26"
+lastmod: "2026-04-21"
 ---
 
 {{<section overview>}}
@@ -17,7 +17,7 @@ Es kann vorkommen, dass Sie Inhalte (eine Zeichnung, eine Schrift, einen Plot us
 
 Und wie bei der Formeldarstellung beginnen wir mit einem Beispiel. Hier ist es:
 
-{{< gist "aspose-com-gists""67385c777283964d328086603f691ac9""Aspose.TeX.Examples-Features-PngLaTeXFigureRendering.java" >}}
+{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Features-PngLaTeXFigureRendering.java" >}}
 
 Zunächst erstellen wir eine [rendering options](https://reference.aspose.com/tex/java/com.aspose.tex/PngFigureRendererOptions)-Instanz. Wir tun dies hier zusammen mit der Angabe der Ausgabebildauflösung.
 
@@ -53,7 +53,7 @@ Dies ist der allgemeinste Anwendungsfall für die Funktion **LaTeX-Figurenrender
 
 Auf die gleiche Weise können wir eine LaTeX-Figur in das SVG-Format rendern.
 
-{{< gist "aspose-com-gists""67385c777283964d328086603f691ac9""Aspose.TeX.Examples-Features-SvgLaTeXFigureRendering.java" >}}
+{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Features-SvgLaTeXFigureRendering.java" >}}
 
 Die Unterschiede sind:
 

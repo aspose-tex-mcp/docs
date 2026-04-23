@@ -7,7 +7,7 @@ weight: 22
 url: /net/tikz-for-presentations-and-infographics/
 keywords: презентации tikz, tikz-beamer, инфографика tikz
 description: Узнайте, как использовать TikZ для создания профессиональных презентаций и увлекательной инфографики.
-lastmod: "2025-06-29"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}

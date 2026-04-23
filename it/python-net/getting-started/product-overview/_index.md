@@ -23,7 +23,7 @@ Aspose.Tex è una libreria Python progettata per i file TEX di composizione. Off
 
 ## Supporto tecnico
 
-Aspone offre supporto tecnico gratuito illimitato per tutti i suoi prodotti. Questo supporto è disponibile per tutti gli utenti, compresi quelli che stanno valutando i prodotti.
+Aspose offre supporto tecnico gratuito illimitato per tutti i suoi prodotti. Questo supporto è disponibile per tutti gli utenti, compresi quelli che stanno valutando i prodotti.
 
 Se hai bisogno di assistenza con Aspose.TeX per Python, puoi visitare [**Aspose.forums**](https://forum.aspose.com/c/tex/). Basta pubblicare la tua domanda nell'Aspose.TeX per il forum di Python e puoi aspettarti una risposta entro poche ore. Le domande vengono risposte direttamente da Aspose.TeX per il team di supporto Python.
 

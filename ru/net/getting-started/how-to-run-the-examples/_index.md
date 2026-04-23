@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 linktitle: Как запускать примеры
@@ -6,7 +6,7 @@ title: Как запустить примеры кода на C# | Aspose.TeX д
 weight: 80
 url: /net/how-to-run-the-examples/
 description: На этой странице вы найдете все требования и шаги, которые необходимо предпринять для запуска примеров решения Aspose.TeX для .NET.
-lastmod: "2024-09-24"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
@@ -27,7 +27,7 @@ lastmod: "2024-09-24"
 - Проект создан в Visual Studio 2019, но файл решения совместим с Visual Studio 2010 SP1 и выше.
 - Откройте файл решения в Visual Studio и создайте проект.
 - Загрузите библиотеку со [страницы загрузки Aspose.TeX for .NET](https://releases.aspose.com/tex/net).
-- Поместите Apose.TeX.dll в папку **Aspose.TeX.Examples/libs**.
+- Поместите Aspose.TeX.dll в папку **Aspose.TeX.Examples/libs**.
 - **Aspose.TeX.Examples/input** содержит входные файлы, которые используются в примерах. Необходимо скачать папку **input** вместе с проектом примеров.
 - Откройте **RunExamples.cs**; все примеры вызываются отсюда.
 - Раскомментируйте примеры, которые хотите запустить из проекта.

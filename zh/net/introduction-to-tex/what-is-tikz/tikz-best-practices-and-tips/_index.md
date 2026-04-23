@@ -8,7 +8,7 @@ url: /net/tikz-best-practices-and-tips/
 aliases: /net/best-practices-and-tips/
 keywords: tikz 最佳实践, tikz 技巧, tikz 性能优化
 description: 了解在 TeX 和 LaTeX 文档中高效、有效使用 TikZ 的最佳实践和有用技巧。
-lastmod: "2026-02-26"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
@@ -100,7 +100,7 @@ TikZ 可能计算量大。以下是加快编译速度的技巧：
 通过以下优秀资源扩展您的 TikZ 知识：
 
 - **官方 TikZ 手册**  
-  Till Tantau 编写的 comprehensive 手册可在 [CTAN](https://ctan.org/pkg/pgf) 获取。
+  可在 [CTAN](https://ctan.org/pkg/pgf) 获取 Till Tantau 编写的详尽手册。
 
 - **TeX StackExchange**  
   致力于解决 TeX 相关问题的大型问答社区。

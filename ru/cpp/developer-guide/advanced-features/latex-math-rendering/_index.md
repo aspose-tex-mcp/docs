@@ -6,7 +6,7 @@ linktitle: Отрисовка математических формул LaTeX
 weight: 10
 url: /cpp/latex-math-formula-rendering/
 description: В этой статье описано решение Aspose.TeX API для рендеринга математических формул C++ LaTeX. Здесь вы найдете примеры кода функциональности.
-lastmod: "2024-09-24"
+lastmod: "2026-04-20"
 ---
 
 {{<section overview>}}
@@ -16,7 +16,7 @@ lastmod: "2024-09-24"
 ```C++
     // Create rendering options 
     System::SharedPtr<PngMathRendererOptions> options = System::MakeObject<PngMathRendererOptions>();
-    // Sspecify the image resolution 150 dpi
+    // Specify the image resolution 150 dpi
     options->set_Resolution(150);
     // Specify the preamble.
     options->set_Preamble(u"\\usepackage{amsmath}\r\n\\usepackage{amsfonts}\r\n\\usepackage{amssymb}\r\n\\usepackage{color}");

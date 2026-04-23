@@ -6,7 +6,7 @@ linktitle: 产品概述
 weight: 10
 url: /cpp/product-overview/
 description: aspose.tex是用于排版Tex文件的C ++库。它为您提供丰富的功能，例如转换或创建自己的TEX格式。
-lastmod: "2025-06-10"
+lastmod: "2026-04-20"
 ---
 
 {{<section overview>}}

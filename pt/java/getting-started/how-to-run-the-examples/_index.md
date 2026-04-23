@@ -6,7 +6,7 @@ linktitle: Como executar os exemplos
 weight: 80
 url: /java/how-to-run-the-examples/
 description: Nesta página, você encontrará todos os requisitos e etapas que devem ser tomados para executar os exemplos da solução de Aspose.TeX para Java.
-lastmod: "2025-06-16"
+lastmod: "2026-04-21"
 ---
 
 {{<section overview>}}

@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-java.md
 title: LaTeX a PDF | Java
@@ -7,7 +7,7 @@ weight: 11
 url: /java/latex-to-pdf/
 keywords: LaTeX a PDF, PDF in LaTeX, convertite in LaTeX in PDF
 description: Per convertire TEX in PDF usando la soluzione API Aspose.Tex per Java impara questo articolo per vedere che descrive come fare questo e gli esempi di codice.
-lastmod: "2025-06-13"
+lastmod: "2026-04-21"
 ---
 
 {{<section overview>}}

@@ -8,7 +8,7 @@ url: /net/tikz-for-presentations-and-infographics/
 aliases: /net/presentations-and-infographics/
 keywords: tikz presentations, tikz beamer, tikz infographics
 description: TikZを使用してプロフェッショナルなプレゼンテーションや魅力的なインフォグラフィックを作成する方法をご紹介します。
-lastmod: "2026-02-26"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}

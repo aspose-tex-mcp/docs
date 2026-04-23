@@ -1,12 +1,12 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: 产品概述| .NET的Aspose.TeX
 linktitle: 产品概述
 weight: 10
 url: /net/product-overview/
-description: aspose.tex是一个.NET库，用于排版Tex文件。它为您提供丰富的功能，例如转换或创建自己的TEX格式。
-lastmod: "2025-06-10"
+description: Aspose.TeX是一个.NET库，用于排版TeX文件。它为您提供丰富的功能，例如转换或创建自己的TEX格式。
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
@@ -17,7 +17,7 @@ lastmod: "2025-06-10"
 
 **欢迎来到Aspose.TeX for .NET**
 
-aspose.tex是一个.NET库，用于排版Tex文件。它可以以各种图形格式显示Tex文件，例如XPS，PDF，PNG，JPEG，TIFF和BMP。它还像任何其他Tex发动机一样输出跟踪信息。 API提供了各种进食输入和获取输出的方式。而且，作为一项高级功能，如果您想统一设计许多文档，则可以创建自己的TEX格式。
+Aspose.TeX是一个.NET库，用于排版TeX文件。它可以以各种图形格式显示TeX文件，例如XPS，PDF，PNG，JPEG，TIFF和BMP。它还像任何其他TeX引擎一样输出跟踪信息。 API提供了各种输入和获取输出的方式。而且，作为一项高级功能，如果您想统一设计许多文档，则可以创建自己的TeX格式。
 
 {{% /alert %}}
 
@@ -38,7 +38,7 @@ Aspose为其所有产品提供无限的免费技术支持。支持所有用户�
 
 ## 资源
 
-该表列出了.NET技术资源的重要aspose.tex。
+该表列出了.NET技术资源的重要Aspose.TeX。
 
 |**资源**|**描述**|
 | :- | :- |

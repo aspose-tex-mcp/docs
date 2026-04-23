@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-java.md
 title: Руководство разработчика | Aspose.TeX для Java
@@ -6,7 +6,7 @@ linktitle: Руководство разработчика
 weight: 20
 url: /java/developer-guide/
 description: В этой главе объясняются функциональные возможности решения Aspose.TeX API для Java для разработчиков и предоставляются примеры кода для управления TeX.
-lastmod: "2024-09-24"
+lastmod: "2026-04-21"
 ---
 
 {{<section overview>}}

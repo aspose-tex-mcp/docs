@@ -5,8 +5,8 @@ title: 変換機能| C++のAspose.TeX
 linktitle: 変換
 weight: 10
 url: /cpp/conversion/
-description: C ++のAspose.TeX APIソリューションの変換機能は、次の出力形式をサポートします。Tex、XPS、PDF、PNG、JPEG、TIFF、PNG、SVG。
-lastmod: "2025-06-09"
+description: C ++のAspose.TeX APIソリューションの変換機能は、次の出力形式をサポートします。Tex、XPS、PDF、PNG、JPEG、TIFF、SVG。
+lastmod: "2026-04-20"
 ---
 
 {{<section overview>}}

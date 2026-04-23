@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-java.md
 title: LaTeX zu PDF | Java
@@ -7,7 +7,7 @@ weight: 11
 url: /java/latex-to-pdf/
 keywords: Latex in PDF, Latex PDF, Latex in PDF konvertieren
 description: Um TeX mit der Aspose.TeX für Java in PDF zu konvertieren, lesen Sie diesen Artikel, in dem die Vorgehensweise und die Codebeispiele beschrieben werden.
-lastmod: "2024-09-26"
+lastmod: "2026-04-21"
 ---
 
 {{<section overview>}}
@@ -17,7 +17,7 @@ lastmod: "2024-09-26"
 
 Werfen wir einen genaueren Blick auf den Java-Code, der die einfachste Möglichkeit zur Konvertierung von LaTeX in das PDF-Format bietet.
 
-{{< gist "aspose-com-gists""67385c777283964d328086603f691ac9""Aspose.TeX.Examples-Conversion-LaTeXToPdf-Simplest.java" >}}
+{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Conversion-LaTeXToPdf-Simplest.java" >}}
 
 Das erste, was wir also tun müssen (manchmal nicht das allererste, wie wir später herausfinden werden), ist, eine Instanz der Klasse [TeXOptions](https://reference.aspose.com/tex/java/com.aspose.tex/TeXOptions) zu erstellen. Die einzige statische Methode, die dies tut, ist [consoleAppOptions()](https://reference.aspose.com/tex/java/com.aspose.tex/TeXOptions#consoleAppOptions-com.aspose.tex.TeXConfig-), also kümmern wir uns nicht um die Bedeutung ihres Namens. Die Methode benötigt eine [Instanz](https://reference.aspose.com/tex/java/com.aspose.tex/TeXConfig#objectLaTeX--) der Klasse [TeXConfig](https://reference.aspose.com/tex/java/com.aspose.tex/TeXConfig), die genau zum Konvertieren einer [LaTeX-Datei](/tex/{{lang.url-fragment}}net/latex-io/#latex-file) geeignet ist. Diese Konfiguration weist die Object-TeX-Engine an, das Object-LaTeX-Format zu laden und bereit zu sein, die LaTeX-Datei zu akzeptieren. Das Objekt-LaTeX-Format ist genau das [LaTeX](/tex/{{lang.url-fragment}}net/what-is-latex/)-Format, mit der Ausnahme, dass es [Objekt-TeX](/tex/{{lang.url-fragment}}net/aspose-tex-and-object-tex/#object-tex)-spezifische Grundelemente verwendet, um die Seitenmetriken einzurichten.
 
@@ -53,7 +53,7 @@ Weitere Produkte des Motorlaufs finden wir in dem Ordner, den wir als Ausgabever
 
 Es gibt einen weiteren Konstruktor der Klasse [PdfDevice](https://reference.aspose.com/tex/java/com.aspose.tex.rendering/PdfDevice#PdfDevice-java.io.OutputStream-), mit dem wir die resultierende PDF-Datei auf alternative Weise erhalten können.
 
-{{< gist "aspose-com-gists""67385c777283964d328086603f691ac9""Aspose.TeX.Examples-Conversion-LaTeXToPdf-Alternative.java" >}}
+{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Conversion-LaTeXToPdf-Alternative.java" >}}
 
 Die Datei *any-name.pdf* im angegebenen Verzeichnis ist unsere Hauptausgabe-PDF-Datei. Gleichzeitig finden wir im Gegensatz zu [Bildausgabe](/tex/{{lang.url-fragment}}java/latex-to-png/#an-alternative-way-to-write-main-output-png-files) keine PDF-Dateien in dem durch die Konvertierungsoptionen definierten Ausgabeverzeichnis. Ausnahme: *any-name.pdf* befindet sich (durch seinen Pfad) im selben Dateisystemverzeichnis, das der Option [OutputWorkingDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/TeXOptions#getOutputWorkingDirectory--) mit [OutputFileSystemDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/OutputFileSystemDirectory) zugewiesen ist.
 

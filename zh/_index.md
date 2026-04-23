@@ -4,7 +4,7 @@ template: /templates/_template-default.md
 linktitle: Aspose.TeX产品家族
 title: Aspose.TeX产品家族|文档
 description: Aspose.TeX 是一个高性能库，适用于 .NET、Java、C++ 和 Python 中的 TeX 和 LaTeX 文件排版应用程序。
-lastmod: "2025-06-10"
+lastmod: "2026-04-20"
 sitemap.changefreq: "weekly"
 sitemap.priority: 0.5
 weight: 10
@@ -32,7 +32,7 @@ Aspose.TeX是一个.NET库，用于TeX文件排版。它可以以XPS，PDF，PNG
 - [Aspose.TeX for .NET特征](/tex/{{lang.url-fragment}}net/feature-list/)
 - [Aspose.TeX for .NET发行说明](https://releases.aspose.com/tex/net/release-notes/)
 - [Aspose.TeX for .NET产品页面](https://products.aspose.com/tex/net/)
-- [.NET Тuget软件包安装Aspose.TeX](https://www.nuget.org/packages/Aspose.TeX/)
+- [.NET NuGet 软件包安装Aspose.TeX](https://www.nuget.org/packages/Aspose.TeX/)
 - [Aspose.TeX for .NET API参考指南](https://reference.aspose.com/tex/net/)
 - [Aspose.TeX for .NET免费支持论坛](https://forum.aspose.com/c/tex)
 - [Aspose.TeX for .NET付费支持帮助台](https://helpdesk.aspose.com/)

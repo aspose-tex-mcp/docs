@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: Problèmes avec les fichiers LaTeX et comment les résoudre
@@ -7,7 +7,7 @@ weight: 10
 url: /net/troubleshoot-with-latex-files/
 keywords: problèmes avec les fichiers LaTeX, documents LaTeX corrompus, fichiers LaTeX corrompus, fichier LaTeX cassé, problèmes avec les fichiers LaTeX, erreurs dans LaTeX
 description: Conseils pratiques pour dépanner les fichiers LaTeX, résoudre les erreurs, les problèmes de compilation, les conflits de packages et les bogues.
-lastmod: "2024-09-27"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
@@ -73,7 +73,7 @@ Travailler avec LaTeX peut parfois entraîner divers défis et problèmes. Jeton
 
 Les documents LaTeX doivent être compilés pour produire le résultat final. Des erreurs de compilation peuvent survenir pour diverses raisons, depuis de simples erreurs de syntaxe jusqu'à des problèmes plus complexes liés aux conflits de packages ou à la structure du document. Voici quelques raisons courantes des erreurs de compilation LaTeX :
 
-- Erreurs de syntaxe comme une utilisation incorrecte des commandes LaTeX, des barres obliques inverses manquantes `()` ou des accolades incompatibles `({})`.
+- Erreurs de syntaxe comme une utilisation incorrecte des commandes LaTeX, des barres obliques inverses manquantes `(\)` ou des accolades incompatibles `({})`.
 - Packages manquants ou mal importés ou installés.
 - Environnements non fermés (comme `\begin{...}` sans `\end{...}` correspondant).
 - Utiliser des caractères spéciaux qui ont une signification particulière dans LaTeX, comme le trait de soulignement `(_)`.

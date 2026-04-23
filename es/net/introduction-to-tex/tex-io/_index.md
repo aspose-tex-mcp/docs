@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: E/S de TeX
@@ -6,12 +6,12 @@ linktitle: E/S de TeX
 weight: 12
 url: /net/tex-io/
 description: Trabajar con TeX como formato de salida o entrada dentro de la API Aspose.TeX. El trabajo TeX se ejecuta en un archivo especificado explícitamente.
-lastmod: "2024-10-30"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
 
-## archivo tex
+## Archivo TeX
 
 Técnicamente, cualquier archivo puede ser un archivo TeX. Ni siquiera necesita tener la extensión *.tex*. Un motor TeX lee la entrada byte a byte tratando de reconocer los comandos que conoce (es decir, aquellos que están en su estado interno). Simplemente informa errores sobre comandos no reconocidos y/o solicita correcciones en el terminal (si se está ejecutando en [modo interactivo](/tex/{{lang.url-fragment}}net/tex-io/#tex-interaction-modes)). Pero si espera ver algo así como un documento bien compuesto, la entrada debe seguir la sintaxis TeX e, idealmente, contener sólo comandos conocidos por el motor.
 

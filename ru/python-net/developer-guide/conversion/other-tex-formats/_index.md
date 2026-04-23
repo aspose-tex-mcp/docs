@@ -6,7 +6,7 @@ linktitle: Другие форматы TeX
 weight: 18
 url: /python-net/other-tex-formats/
 description: Решение Aspose.TeX API для Python предоставляет функциональные возможности, позволяющие конвертировать файлы LaTeX и пользовательские файлы TeX.
-lastmod: "2024-09-24"
+lastmod: "2026-04-20"
 ---
 
 {{<section overview>}}
@@ -19,7 +19,7 @@ lastmod: "2024-09-24"
 
 Давайте помнить, что файл формата представляет собой двоичное представление внутреннего состояния движка TeX.
 
-{{< gist "aspose-com-gists""68d217858f0be40062562ce2bb2cd908""Aspose.TeX.Examples-CreateCustomTeXFormatFile.py" >}}
+{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-CreateCustomTeXFormatFile.py" >}}
 
 Как видите, код похож на код конвертации файла TeX. Однако есть несколько различий.
 
@@ -33,7 +33,7 @@ lastmod: "2024-09-24"
 
 Теперь, когда мы создали собственный формат TeX, мы можем приступить к верстке файла TeX, написанного в этом формате. Вот код:
 
-{{< gist "aspose-com-gists""68d217858f0be40062562ce2bb2cd908""Aspose.TeX.Examples-TypesetWithCustomTeXFormat.py" >}}
+{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-TypesetWithCustomTeXFormat.py" >}}
 
 Чтобы указать формат, нам нужно создать экземпляр класса [FormatProvider](https://reference.aspose.com/tex/python-net/aspose.tex.resourceproviders/formatprovider/). В конструкторе параметров мы используем конфигурацию [TeXConfig.object_tex()](https://reference.aspose.com/tex/python-net/aspose.tex/texconfig/object_tex/#aspose.tex.resourceproviders.FormatProvider), которая требует нашего поставщика формата в качестве аргумента и загружает формат поверх «девственного» состояния движка.
 

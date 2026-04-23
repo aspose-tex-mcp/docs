@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: Input/output in LaTeX
@@ -6,15 +6,15 @@ linktitle: LaTeX i/o
 weight: 17
 url: /net/latex-io/
 description: Questa pagina descrive brevemente le peculiarità del lavoro con il LaTeX come output o formato di input e il file *.aux* come parte obbligatoria del LaTeX.
-keywords: LaTeX IO, LaTeX I, LaTeX O, file di input latex, input in latex
-lastmod: "2025-06-13"
+keywords: LaTeX IO, LaTeX I, LaTeX O, file di input LaTeX, input in LaTeX
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
 
-## File latex
+## File LaTeX
 
-Se abbiamo un [file tex](/tex/{{lang.url-fragment}}net/tex-io/#tex-file) che ha la seguente struttura, chiameremo questo file un *file latex *:
+Se abbiamo un [file tex](/tex/{{lang.url-fragment}}net/tex-io/#tex-file) che ha la seguente struttura, chiameremo questo file un *file LaTeX *:
 
 
 ```tex
@@ -27,15 +27,15 @@ Se abbiamo un [file tex](/tex/{{lang.url-fragment}}net/tex-io/#tex-file) che ha 
 \end{document}
 ```
 
-Laddove `<A Document Class>` è un nome di una [classe di documenti](https://en.wikibooks.org/wiki/LaTeX/Document_Structure#Document_classes) che è un file di input Tex che definisce la apparenza delle pagine del documento di output e delle macro che sono più adatte per un certo tipo di documento.
+Dove `<una classe di documento>` è il nome di una [classe di documenti](https://en.wikibooks.org/wiki/LaTeX/Document_Structure#Document_classes) che è un file di input TeX che definisce la apparenza delle pagine del documento di output e delle macro che sono più adatte per un certo tipo di documento.
 
-Ad essere onesti, è possibile inserire sequenze di controllo primitive prima di `\DocumentClass {}`, come `\non -stopmode`, ecc. Ma ogni macro latex controlla se si trova in una parte corretta di un file.
+Ad essere onesti, è possibile inserire sequenze di controllo primitive prima di `\DocumentClass {}`, come `\non -stopmode`, ecc. Ma ogni macro LaTeX controlla se si trova in una parte corretta di un file.
 
-Ci sono alcune cose che vale la pena notare su Tex [input](/tex/{{lang.url-fragment}}net/tex-io/#tex-input) e [output](/tex/{{lang.url-fragment}}net/tex-io/#tex-output) nel contesto di lavorare con i file in LaTeX.
+Ci sono alcune cose che vale la pena notare su TeX [input](/tex/{{lang.url-fragment}}net/tex-io/#tex-input) e [output](/tex/{{lang.url-fragment}}net/tex-io/#tex-output) nel contesto di lavorare con i file in LaTeX.
 
 ## File di output in LaTeX
 
-Un tipico lavoro in LaTeX crea un file di output ausiliario con il [nome del lavoro](/tex/{{lang.url-fragment}}net/tex-io/#tex-output) come nome ed estensione *.aux *. Questo file di solito contiene dati di riferimento che il motore raccoglie lungo il lavoro, se si dice, imposta etichette per le formule di matematica (equazioni) e quindi fai riferimento a loro da qualche parte nel testo. Nel caso in cui non usi nulla di questo tipo, questo file contiene solo la sequenza di controllo `\Relax` (che è una delle primitive Tex). Quindi non essere sorpreso.
+Un tipico lavoro in LaTeX crea un file di output ausiliario con il [nome del lavoro](/tex/{{lang.url-fragment}}net/tex-io/#tex-output) come nome ed estensione *.aux *. Questo file di solito contiene dati di riferimento che il motore raccoglie lungo il lavoro, se si dice, imposta etichette per le formule di matematica (equazioni) e quindi fai riferimento a loro da qualche parte nel testo. Nel caso in cui non usi nulla di questo tipo, questo file contiene solo la sequenza di controllo `\Relax` (che è una delle primitive TeX). Quindi non essere sorpreso.
 
 Sebbene non siano vietati i primitivi `\Open`,`\write` e `\chiusure` non siano vietati, i pacchetti sono il luogo più adatto per loro. Pertanto dovresti meglio usarli nei tuoi pacchetti personalizzati se li stai sviluppando.
 
@@ -47,7 +47,7 @@ Il file *.aux* sopra menzionato è una parte obbligatoria dell'input in LaTeX. A
 
 Un'altra parte obbligatoria è una [classe di documenti](/tex/{{lang.url-fragment}}net/latex-io/#latex-file). Il file della classe di documenti, a sua volta, può implicitamente dipendere da altri file, che sono quindi inclusi anche nell'input di LaTeX.
 
-Se si desidera utilizzare funzionalità oltre l'ambito del LaTeX di base e le sue classi di documenti ma supportate da una certa implementazione del motore TEX, in genere si utilizza un pacchetto, che è necessario avvisare il motore nel preambolo. Un pacchetto *latex* è un file o un gruppo di file assemblati con un solo nome, che fornisce tali funzionalità. Per avvisare il motore, è necessario utilizzare il comando `\usapackage` con il nome del pacchetto e le opzioni omesse, se il pacchetto definisce uno.
+Se si desidera utilizzare funzionalità oltre l'ambito del LaTeX di base e le sue classi di documenti ma supportate da una certa implementazione del motore TEX, in genere si utilizza un pacchetto, che è necessario avvisare il motore nel preambolo. Un pacchetto *LaTeX* è un file o un gruppo di file assemblati con un solo nome, che fornisce tali funzionalità. Per avvisare il motore, è necessario utilizzare il comando `\usapackage` con il nome del pacchetto e le opzioni omesse, se il pacchetto definisce uno.
 
 Per esempio,
 

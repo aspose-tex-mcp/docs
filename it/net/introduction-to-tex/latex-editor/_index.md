@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: Comprensione degli editor LaTeX e del livello di programmazione LaTeX3 (expl3).
@@ -8,7 +8,7 @@ weight: 90
 url: /latex-editor/
 description: Una guida concisa che spiega cosa fa un editor LaTeX, il flusso di lavoro tipico, le categorie comuni dell'editor e il moderno livello di programmazione LaTeX3 (expl3).
 keywords: Editor LaTeX, LaTeX3, expl3, TeX, compilazione PDF, evidenziazione della sintassi, anteprima dal vivo, scrittura accademica, sviluppo di pacchetti
-lastmod: "2025-12-03"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
@@ -118,8 +118,8 @@ I delimitatori `\ExplSyntaxOn` / `\ExplSyntaxOff` attivano/disattivano la modali
 
 ---
 
-## Che ne dici di Aspose?
-Aspose fornisce una famiglia di API in grado di manipolare a livello di codice i PDF generati da LaTeX.  Utilizzando una libreria Aspose, gli sviluppatori possono unire, dividere o convertire i PDF prodotti da LaTeX in altri formati (ad esempio DOCX, HTML) senza bisogno di una distribuzione LaTeX completa in fase di runtime.
+## Che ne dici di Aspose.TeX?
+Aspose.TeX fornisce una famiglia di API in grado di manipolare a livello di codice i PDF generati da LaTeX.  Utilizzando una libreria Aspose.TeX, gli sviluppatori possono unire, dividere o convertire i PDF prodotti da LaTeX in altri formati (ad esempio DOCX, HTML) senza bisogno di una distribuzione LaTeX completa in fase di runtime.
 
 ---
 

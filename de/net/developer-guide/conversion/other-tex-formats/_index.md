@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: Andere TeX-Konvertierungsausgabeformate | .NET
@@ -6,7 +6,7 @@ linktitle: Andere TeX-Formate
 weight: 18
 url: /net/other-tex-formats/
 description: Die Konvertierungsfunktion der Aspose.TeX-Lösung für .NET ermöglicht die Konvertierung von LaTeX-Dateien und Ihren eigenen benutzerdefinierten TeX-Dateien.
-lastmod: "2026-04-03"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}

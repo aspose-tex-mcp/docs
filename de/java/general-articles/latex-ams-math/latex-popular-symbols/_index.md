@@ -7,7 +7,7 @@ weight: 100
 url: /java/popular-latex-math-symbols/
 keywords: Latexsumme, Latexsumme, Latexgrenze, Latexgrenzen, Latex groß, Latex große Summe
 description: Wie Sie LaTeX-Summierungs- und LaTeX-Grenzwertsymbole erhalten, mit der Anpassung der Größe von Operatoren und der Positionierung von Operatorgrenzen?
-lastmod: "2024-09-26"
+lastmod: "2026-04-21"
 ---
 
 {{<section overview>}}

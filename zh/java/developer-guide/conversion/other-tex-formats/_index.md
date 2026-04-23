@@ -1,17 +1,17 @@
-﻿---
+---
 translation: true
 template: /templates/_template-java.md
-title: 其他TEX转换输出格式| Java的Aspose.TeX
-linktitle: 其他Tex格式
+title: 其他TeX转换输出格式 | Java
+linktitle: 其他TeX格式
 weight: 18
 url: /java/other-tex-formats/
-description: Java的Aspose.TeX API解决方案的转换功能允许转换乳胶文件和您自己的自定义TEX文件。这是一些代码示例。
-lastmod: "2025-06-10"
+description: Java的Aspose.TeX API解决方案的转换功能允许转换LaTeX文件和您自己的自定义TEX文件。这是一些代码示例。
+lastmod: "2026-04-21"
 ---
 
 {{<section overview>}}
 
-您目前不太可能要转换以除乳胶以外的任何其他格式编写的TEX文件。但是，如果您出于某种原因正在学习Tex语言和/或内部语言，这是可能的。无论如何，**用于 Java 的 Aspose.TeX**允许您转换以简单的Tex格式编写的文件。它还使您可以创建以这些格式设计的自定义格式和排版文档。
+您目前不太可能要转换以除LaTeX以外的任何其他格式编写的TEX文件。但是，如果您出于某种原因正在学习Tex语言和/或内部语言，这是可能的。无论如何，**用于 Java 的 Aspose.TeX**允许您转换以简单的Tex格式编写的文件。它还使您可以创建以这些格式设计的自定义格式和排版文档。
 
 我们将从创建自定义格式开始。
 

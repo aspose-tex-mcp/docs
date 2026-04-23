@@ -5,15 +5,15 @@ linktitle: Come eseguire gli esempi
 title: Come eseguire gli esempi | Aspose.TeX per Python
 weight: 80
 url: /python-net/how-to-run-the-examples/
-description: Questa pagina fornisce tutti i requisiti e i passaggi necessari per eseguire gli esempi della soluzione Aspose.Tex per Python.
-lastmod: "2025-06-13"
+description: Questa pagina fornisce tutti i requisiti e i passaggi necessari per eseguire gli esempi della soluzione Aspose.TeX per Python.
+lastmod: "2026-04-20"
 ---
 
 {{<section overview>}}
 
 ## Prerequisiti
 
-Prima di procedere, assicurarsi che la cartella `aspose.tex -...` appaia nella cartella `[python_path] \ lib \ site-packages \` dopo l'installazione del pacchetto Aspose.TeX. Se hai installato Python 3.11, Aspose.TeX può essere installato nella cartella `[Python_Path] \ Site-Packages \`. In questo caso, è necessario copiare la cartella Aspose.Tex sulla cartella `[python_path] \ lib \ site-packages \`, come **pycharm** (almeno versione 23.1) cerca pacchetti installati esattamente in quella posizione.
+Prima di procedere, assicurarsi che la cartella `Aspose.TeX-...` appaia nella cartella `[python_path] \ lib \ site-packages \` dopo l'installazione del pacchetto Aspose.TeX. Se hai installato Python 3.11, Aspose.TeX può essere installato nella cartella `[Python_Path] \ Site-Packages \`. In questo caso, è necessario copiare la cartella Aspose.TeX sulla cartella `[python_path] \ lib \ site-packages \`, come **pycharm** (almeno versione 23.1) cerca pacchetti installati esattamente in quella posizione.
 
 ## Scarica da GitHub
 
@@ -29,11 +29,11 @@ Per eseguire un esempio, vai semplicemente al menu ***run*** e scegli ***eseguir
 
 ## Microsoft Visual Studio
 
-Assicurarsi che la funzione **Python Development** sia installata in Visual Studio. Apri Visual Studio e fai clic sul lato destro di ***Apri una cartella locale*** Articolo. Quindi, naviga sulla cartella del progetto Aspose.Tex Esempi. Visual Studio lo riconoscerà come un progetto Python e aprirà l'IDE Python. Una volta aperta la cartella, fare clic con il pulsante destro del mouse su "Run_Examples" nell'Explorer Solution e selezionare ***Imposta come elemento di avvio***
+Assicurarsi che la funzione **Python Development** sia installata in Visual Studio. Apri Visual Studio e fai clic sul lato destro di ***Apri una cartella locale*** Articolo. Quindi, naviga sulla cartella del progetto Aspose.TeX Esempi. Visual Studio lo riconoscerà come un progetto Python e aprirà l'IDE Python. Una volta aperta la cartella, fare clic con il pulsante destro del mouse su "Run_Examples" nell'Explorer Solution e selezionare ***Imposta come elemento di avvio***
 
 Per eseguire esempi, fai clic sul pulsante ***run_examples.py*** con la freccia verde nella barra degli strumenti nella finestra Visual Studio.
 
-## Contribuire ad aspose.tex per Python
+## Contribuire ad Aspose.TeX per Python
 
 Se desideri contribuire al progetto aggiungendo o migliorando un esempio, ti incoraggiamo fortemente a farlo. Tutti gli esempi e mostrano progetti in questo repository sono open-source e possono essere utilizzati liberamente nelle applicazioni.
 

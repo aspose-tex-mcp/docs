@@ -6,7 +6,7 @@ linktitle: Entwicklerhandbuch
 weight: 20
 url: /cpp/developer-guide/
 description: C++-API für Entwickler zum Bearbeiten und Verarbeiten von TeX- und LaTeX-Dateien. Erfahren Sie im Entwicklerhandbuch, wie Sie mit der Lösung arbeiten.
-lastmod: "2024-09-26"
+lastmod: "2026-04-20"
 ---
 
 {{<section overview>}}

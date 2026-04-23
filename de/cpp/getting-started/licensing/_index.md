@@ -6,7 +6,7 @@ linktitle: Lizenzierung
 weight: 70
 url: /cpp/licensing/
 description: Wenn Sie sich für die lizenzierte Version der Aspose.TeX-API-Lösung für C++ entschieden haben, erfahren Sie hier, wie Sie die Lizenz anwenden.
-lastmod: "2024-09-26"
+lastmod: "2026-04-20"
 ---
 
 {{<section overview>}}
@@ -47,10 +47,10 @@ Verwenden Sie die Methode [License::SetLicense](https://reference.aspose.com/tex
 
 Dieser Codeausschnitt initialisiert eine Lizenz, die in einer Datei oder einer eingebetteten Ressource gespeichert ist.
 
-{{< gist "aspose-com-gists""d3eef38ac5b929503e8edee25e0873ce""Aspose.TeX.Examples-LoadLicenseFromFile.cpp" >}}
+{{< gist "aspose-com-gists" "d3eef38ac5b929503e8edee25e0873ce" "Aspose.TeX.Examples-LoadLicenseFromFile.cpp" >}}
 
 #### Laden einer Lizenz aus einem Stream-Objekt
 
 Diese Codeausschnitte initialisieren die Lizenz aus dem Stream.
 
-{{< gist "aspose-com-gists""d3eef38ac5b929503e8edee25e0873ce""Aspose.TeX.Examples-LoadLicenseFromStream.cpp" >}}
+{{< gist "aspose-com-gists" "d3eef38ac5b929503e8edee25e0873ce" "Aspose.TeX.Examples-LoadLicenseFromStream.cpp" >}}

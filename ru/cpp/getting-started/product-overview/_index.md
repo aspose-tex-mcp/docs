@@ -6,7 +6,7 @@ linktitle: Обзор продукта
 weight: 10
 url: /cpp/product-overview/
 description: Aspose.TeX для C++ — библиотека для набора файлов TeX. С ее помощью вы также можете конвертировать или создавать свой собственный формат TeX.
-lastmod: "2024-09-24"
+lastmod: "2026-04-20"
 ---
 
 {{<section overview>}}

@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: Відтворення математичних формул LaTeX | .NET
@@ -6,7 +6,7 @@ linktitle: Відтворення математичних формул LaTeX
 weight: 10
 url: /net/latex-math-formula-rendering/
 description: У цій статті описано рішення Aspose.TeX API для відтворення математичних формул .NET LaTeX. Ознайомтеся з прикладами коду, як використовувати цю функцію.
-lastmod: "2025-06-13"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
@@ -16,7 +16,7 @@ lastmod: "2025-06-13"
 
 Довідковий розділ API, пов’язаний із цією темою, знаходиться [тут](https://reference.aspose.com/tex/net/aspose.tex.features/). Насправді, найпростіший спосіб продемонструвати функцію **відтворення математичних формул LaTeX** — це почати з прикладу. Ось воно:
 
-{{< gist "aspose-com-gists""cd0acc55d1634f17dcf42e02075ca005""Example-RenderMathToPNG.cs" >}}
+{{< gist "aspose-com-gists" "cd0acc55d1634f17dcf42e02075ca005" "Example-RenderMathToPNG.cs" >}}
 
 Перейдемо до деталей. Перш за все, ми створюємо екземпляр [параметри візуалізації](https://reference.aspose.com/tex/net/aspose.tex.features/mathrendereroptions/), подібний до набору TeX/LaTeX. Ми робимо це тут, одночасно вказуючи роздільну здатність вихідного зображення.
 
@@ -59,7 +59,7 @@ lastmod: "2025-06-13"
 
 Приблизно так само ми можемо відобразити математичну формулу LaTeX у форматі SVG.
 
-{{< gist "aspose-com-gists""cd0acc55d1634f17dcf42e02075ca005""Example-RenderMathToSVG.cs" >}}
+{{< gist "aspose-com-gists" "cd0acc55d1634f17dcf42e02075ca005" "Example-RenderMathToSVG.cs" >}}
 
 Відмінності:
 
@@ -71,4 +71,5 @@ lastmod: "2025-06-13"
 Ось результат:
 
 <a href="/tex/net/latex-math-formula-rendering/math-formula.svg">![Відтворення математичної формули LaTeX у SVG](/tex/images/net/math-formula.svg)</a>
+
 **Ви також можете переглянути безкоштовну [веб-програму](https://products.aspose.app/tex/equation-editor/svg), створену на основі функції, реалізованої в [Aspose.TeX для .NET API](https://products.aspose.com/tex/net/).**

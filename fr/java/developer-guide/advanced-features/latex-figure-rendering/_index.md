@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-java.md
 title: Rendu de figures LaTeX | Java
@@ -6,7 +6,7 @@ linktitle: Rendu de figures LaTeX
 weight: 20
 url: /java/latex-figure-rendering/
 description: Aspose.TeX pour le rendu des fragments Java LaTeX est décrite dans cet article. Découvrez les exemples de code sur la façon d’utiliser la fonctionnalité.
-lastmod: "2024-09-27"
+lastmod: "2026-04-21"
 ---
 
 {{<section overview>}}
@@ -17,7 +17,7 @@ Il peut arriver que vous souhaitiez extraire du contenu (un dessin, une écritur
 
 Et comme pour le rendu de formule, nous commencerons par un exemple. C'est ici:
 
-{{< gist "aspose-com-gists""67385c777283964d328086603f691ac9""Aspose.TeX.Examples-Features-PngLaTeXFigureRendering.java" >}}
+{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Features-PngLaTeXFigureRendering.java" >}}
 
 Tout d’abord, nous créons une instance [options de rendu](https://reference.aspose.com/tex/java/com.aspose.tex/PngFigureRendererOptions). Nous le faisons ici en spécifiant la résolution de l'image de sortie.
 
@@ -53,7 +53,7 @@ Il s'agit du cas d'utilisation le plus général de la fonctionnalité **Rendu d
 
 De la même manière, nous pouvons restituer une figure LaTeX au format SVG.
 
-{{< gist "aspose-com-gists""67385c777283964d328086603f691ac9""Aspose.TeX.Examples-Features-SvgLaTeXFigureRendering.java" >}}
+{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Features-SvgLaTeXFigureRendering.java" >}}
 
 Les différences sont :
 

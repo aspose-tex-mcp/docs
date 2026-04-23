@@ -6,7 +6,7 @@ linktitle: Feature List
 weight: 30
 url: /net/feature-list/
 description: Add the TeX files manipulation functionality to your own solution. Learn the features Aspose.TeX API solution for .NET offers to you.
-lastmod: "2024-09-20"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}

@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: Entwicklerhandbuch | Aspose.TeX für .NET
@@ -6,7 +6,7 @@ linktitle: Entwicklerhandbuch
 weight: 30
 url: /net/developer-guide/
 description: Hier wird Entwicklern die Funktionalität der Aspose.TeX-API-Lösung für .NET erläutert und ihnen Codebeispiele zur Verwaltung von TeX bereitgestellt.
-lastmod: "2024-09-26"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
@@ -19,7 +19,7 @@ Das Entwicklerhandbuch dient als umfassende Ressource für die effektive Nutzung
 - **[Externe LaTeX-Pakete](/tex/{{lang.url-fragment}}net/external-latex-packages/)** – ist eine Liste der am häufigsten benötigten externen Pakete mit Details dazu, wie diese Pakete der TeX-Engine der Bibliothek bereitgestellt werden.
 
 
-## Weitere nützliche Ressourcen für >NET-Entwickler:
+## Weitere nützliche Ressourcen für .NET-Entwickler:
 
 - [**Übersicht**](/tex/{{lang.url-fragment}}net/product-overview/) – bietet einen Überblick über die Software, das Framework oder die Technologie, einschließlich ihres Zwecks und der Vorteile dieser APIs für C# .NET.
 - [**Installation und Einrichtung**](/tex/{{lang.url-fragment}}net/installation/) – ist eine Schritt-für-Schritt-Anleitung zur Installation und Einrichtung der Entwicklungsumgebung. 
@@ -29,6 +29,6 @@ Das Entwicklerhandbuch dient als umfassende Ressource für die effektive Nutzung
 - [**Updates und Versionierung**](https://releases.aspose.com/tex/net/release-notes/) – enthält alle Versionen von Aspose.TeX für .NET API Solution chronologisch unterteilt.
 - [**Allgemeine Artikel zu LaTeX**](/tex/{{lang.url-fragment}}java/general-articles-latex/) – Bietet Ihnen grundlegende Informationen zu LaTeX, einschließlich Informationen zu Anwendungsfällen, zur Arbeit mit Schriftarten, Bildern, mathematischen Formeln und verschiedenen LaTeX-Paketen.
 - [**Einführung in TeX**](/tex/{{lang.url-fragment}}net/introduction-to-tex/). - Hier können Sie sich mit TeX und LaTeX vertraut machen, deren Besonderheiten, Dateistruktur, Vor- und Nachteile, eingebettete Pakete und vieles mehr verstehen.
-- [**Plattformübergreifende Aspose.Page-Apps**](https://products.aspose.app/tex/applications) – ermöglicht Ihnen das Konvertieren, Zusammenführen, Anzeigen von TeX- und LaTeX-Dateien, das Erstellen von LaTeX-Gleichungen, Tabellen, Diagrammen und Artikeln ohne Codierung und vermittelt Ihnen ein Verständnis dafür, wie das geht Sie können Ihre eigenen Anwendungen entwickeln.
+- [**Plattformübergreifende Aspose.TeX-Apps**](https://products.aspose.app/tex/applications) – ermöglicht Ihnen das Konvertieren, Zusammenführen, Anzeigen von TeX- und LaTeX-Dateien, das Erstellen von LaTeX-Gleichungen, Tabellen, Diagrammen und Artikeln ohne Codierung und vermittelt Ihnen ein Verständnis dafür, wie Sie Ihre eigenen Anwendungen entwickeln.
 - [**Aspose.TeX AI Agents**](https://products.aspose.ai/tex/) - Künstliche Intelligenz-Tools zur Bearbeitung von Dateien im `.tex`- und `.latex`-Format.
 

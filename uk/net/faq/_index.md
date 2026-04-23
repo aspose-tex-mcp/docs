@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: Часті запитання | Aspose.TeX для .NET
@@ -6,7 +6,7 @@ linktitle: FAQ
 weight: 80
 url: /net/faq/
 description: Отримайте відповіді на всі найпоширеніші запитання про Aspose.TeX для .NET, який є комплексним API для верстки та маніпулювання TeX і LaTeX.
-lastmod: "2025-06-13"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
@@ -32,7 +32,7 @@ lastmod: "2025-06-13"
 3. Ініціалізуйте параметри збереження для вихідного формату за допомогою класу SaveOptions (формат файлу).
 4. Перетворіть TeX за допомогою методу [Run()](https://reference.aspose.com/tex/net/aspose.tex/texjob/run/).
 
-Більше прикладів див. у посібниках [Convertion](/tex/{{lang.url-fragment}}net/conversion/).
+Більше прикладів див. у посібниках [Conversion](/tex/{{lang.url-fragment}}net/conversion/).
 <br><br>
 
 **З: Які зовнішні пакети LaTeX підтримує Aspose.TeX?**

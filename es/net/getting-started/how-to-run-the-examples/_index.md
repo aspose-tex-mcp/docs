@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 linktitle: Cómo ejecutar los ejemplos
@@ -6,7 +6,7 @@ title: Cómo ejecutar los ejemplos en C# | Aspose.TeX para .NET
 weight: 80
 url: /net/how-to-run-the-examples/
 description: En esta página, encontrará todos los requisitos y pasos que se deben seguir para ejecutar los ejemplos de la solución Aspose.TeX para .NET.
-lastmod: "2024-10-30"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
@@ -27,7 +27,7 @@ Todos los ejemplos de Aspose.TeX para .NET están alojados en [GitHub](https://G
 - El proyecto se crea en Visual Studio 2019, pero el archivo de solución es compatible con Visual Studio 2010 SP1 y superior.
 - Abra el archivo de la solución en Visual Studio y cree el proyecto.
 - Descargue la biblioteca desde la [página de descarga de Aspose.TeX para .NET](https://releases.aspose.com/tex/net).
-- Coloque Apose.TeX.dll en la carpeta **Aspose.TeX.Examples/libs**.
+- Coloque Aspose.TeX.dll en la carpeta **Aspose.TeX.Examples/libs**.
 - **Aspose.TeX.Examples/input** contiene archivos de entrada que utilizan ejemplos. Es necesario descargar la carpeta **input** junto con el proyecto de ejemplos.
 - Abra **RunExamples.cs**; Todos los ejemplos se llaman desde aquí.
 - Descomente los ejemplos que desea ejecutar desde dentro del proyecto.

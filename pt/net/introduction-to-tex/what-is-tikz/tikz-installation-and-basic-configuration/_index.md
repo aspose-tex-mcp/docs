@@ -7,7 +7,7 @@ weight: 18
 url: /net/tikz-installation-and-basic-configuration/
 keywords: instalar o TikZ, configurar o TikZ, configurar o TikZ
 description: Guia passo a passo sobre como instalar e configurar o TikZ para utilização nos seus documentos TeX e LaTeX.
-lastmod: "2025-06-29"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
@@ -79,16 +79,7 @@ O TikZ requer uma configuração mínima. No entanto, pode definir opções glob
   ```
 
 
-Include these commands in your document preamble to apply consistent styling.
-
-## Recommended Editors for TikZ
-
-For comfortable editing and real-time compilation, we recommend the following LaTeX editors:
-
-- **TeXstudio** – Free, feature-rich editor with integrated TikZ preview.
-- **Overleaf** – Cloud-based collaborative editor with excellent TikZ support.
-- **Visual Studio Code** with **LaTeX Workshop** extension – Modern, lightweight editor supporting TikZ.
-Inclua estes comandos no preâmbulo do seu documento para aplicar um estilo consistente.
+Inclua estes comandos no preâmbulo do seu documento para aplicar um stile consistente.
 
 ## Editores Recomendados para o TikZ
 

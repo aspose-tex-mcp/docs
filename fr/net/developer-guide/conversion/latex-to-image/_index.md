@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: LaTeX vers l'image | .NET
@@ -7,7 +7,7 @@ weight: 10
 url: /net/latex-to-image/
 keywords: latex à png, latex png, latex à image, image latex, latex à jpg, latex jpg, latex à jpeg, latex jpeg, latex à tiff, latex tiff, latex à bmp, latex bmp
 description: Pour convertir TeX en formats d'image à l'aide d'Aspose.TeX pour .NET, lisez cet article pour voir comment procéder et avec des exemples de code.
-lastmod: "2026-04-03"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
@@ -55,7 +55,7 @@ Nous retrouverons d'autres "fruits" du travail du moteur dans le dossier que nou
 
 Il existe une autre façon d'obtenir des données d'image sous forme de tableau de tableaux d'octets, chaque tableau de la deuxième dimension représente les données d'image d'une page distincte.
 
-**Ejemplo de conversión alternativo**
+**Exemple de conversion alternatif**
 
 El siguiente fragmento de C# muestra otra forma de obtener la salida PNG: escribir los datos de la imagen en un flujo de memoria en lugar de hacerlo directamente en el sistema de archivos. Este método es útil cuando se necesitan los bytes PNG generados en memoria para su posterior procesamiento, como enviarlos a través de una red, almacenarlos en una base de datos o realizar transformaciones adicionales antes de guardarlos.
 

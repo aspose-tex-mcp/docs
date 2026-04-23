@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: Grundlegendes zu LaTeX-Editoren und der Programmierebene LaTeX3 (expl3).
@@ -8,7 +8,7 @@ weight: 90
 url: /latex-editor/
 description: Eine prägnante Anleitung, die erklärt, was ein LaTeX-Editor macht, den typischen Arbeitsablauf, gängige Editorkategorien und die moderne LaTeX3-Programmierebene (expl3).
 keywords: LaTeX-Editor, LaTeX3, expl3, TeX, PDF-Kompilierung, Syntaxhervorhebung, Live-Vorschau, wissenschaftliches Schreiben, Paketentwicklung
-lastmod: "2025-12-03"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
@@ -118,8 +118,8 @@ Die Trennzeichen „\ExplSyntaxOn“ / „\ExplSyntaxOff“ schalten den expl3-S
 
 ---
 
-## Was ist mit Aspose?
-Aspose bietet eine Familie von APIs, die von LaTeX generierte PDFs programmgesteuert bearbeiten können.  Mithilfe einer Aspose-Bibliothek können Entwickler mit LaTeX erstellte PDFs zusammenführen, aufteilen oder in andere Formate (z. B. DOCX, HTML) konvertieren, ohne zur Laufzeit eine vollständige LaTeX-Distribution zu benötigen.
+## Was ist mit Aspose.TeX?
+Aspose.TeX bietet eine Familie von APIs, die von LaTeX generierte PDFs programmgesteuert bearbeiten können.  Mithilfe einer Aspose.TeX-Bibliothek können Entwickler mit LaTeX erstellte PDFs zusammenführen, aufteilen oder in andere Formate (z. B. DOCX, HTML) konvertieren, ohne zur Laufzeit eine vollständige LaTeX-Distribution zu benötigen.
 
 ---
 

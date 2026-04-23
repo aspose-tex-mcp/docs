@@ -6,7 +6,7 @@ linktitle: Other ways to provide the main TeX input file
 weight: 14
 url: /net/other-ways-of-main-input/
 description: Conversion functionality of Aspose.TeX API solution for .NET has a Constructor which accepts a stream as the first argument. Here are some code examples.
-lastmod: "2024-09-20"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}

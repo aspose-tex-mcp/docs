@@ -7,7 +7,7 @@ weight: 18
 url: /net/tikz-installation-and-basic-configuration/
 keywords: встановити tikz, налаштувати tikz, налаштувати tikz
 description: Покроковий посібник з встановлення та налаштування TikZ для використання у ваших документах TeX та LaTeX.
-lastmod: "2025-06-29"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}

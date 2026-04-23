@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: Системні вимоги | Aspose.TeX .NET
@@ -6,7 +6,7 @@ linktitle: Системні вимоги
 weight: 50
 url: /net/system-requirements/
 description: Рішення Aspose.TeX для .NET можна використовувати в будь-якому середовищі розробки, яке підтримує .NET, але є деякі середовища, які підтримуються явно.
-lastmod: "2025-06-13"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
@@ -15,14 +15,14 @@ lastmod: "2025-06-13"
 
 ### Windows
 
-* Microsoft Windows 2003 Server (x64, x86)
-* Microsoft Windows 2012 Server (x64, x86)
-* Microsoft Windows 2008 Server (x64, x86)
-* Microsoft Windows XP (x64, x86)
-* Microsoft Windows Vista (x64, x86)
-* Microsoft Windows 8, 8.1 (x64, x86)
-* Microsoft Windows 7 (x64, x86)
-* Microsoft Windows 10 (x64, x86)
+* Microsoft Windows 2003 Server ( x64, x86)
+* Microsoft Windows 2012 Server ( x64, x86)
+* Microsoft Windows 2008 Server ( x64, x86)
+* Microsoft Windows XP ( x64, x86)
+* Microsoft Windows Vista ( x64, x86)
+* Microsoft Windows 8, 8.1 ( x64, x86)
+* Microsoft Windows 7 ( x64, x86)
+* Microsoft Windows 10 ( x64, x86)
 * Windows Azure
 
 ## Середовища розробки

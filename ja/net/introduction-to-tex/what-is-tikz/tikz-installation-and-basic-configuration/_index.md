@@ -8,7 +8,7 @@ url: /net/tikz-installation-and-basic-configuration/
 aliases: /net/installation-and-basic-configuration/
 keywords: install tikz, configure tikz, setup tikz
 description: TikZ をインストールし、TeX および LaTeX ドキュメントで使用できるように構成するためのステップバイステップガイド。
-lastmod: "2026-02-26"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}

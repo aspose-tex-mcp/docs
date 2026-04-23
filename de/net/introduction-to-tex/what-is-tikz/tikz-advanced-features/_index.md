@@ -7,7 +7,7 @@ weight: 20
 url: /net/tikz-advanced-features/
 keywords: Advanced TikZ, TikZ-Pfade, TikZ-Diagramme, pgfplots, circuitikz, Tikz-3dplot
 description: Erlernen Sie fortgeschrittene TikZ-Techniken, darunter komplexe Pfade, Knotenpositionierung, Pfeile und Diagrammerstellung für professionelle Grafiken.
-lastmod: "2024-06-29"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}

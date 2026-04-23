@@ -7,7 +7,7 @@ weight: 18
 url: /net/tikz-installation-and-basic-configuration/
 keywords: instalar TikZ, configurar TikZ, configurar TikZ
 description: Guía paso a paso para instalar y configurar TikZ en tus documentos TeX y LaTeX.
-lastmod: "2025-06-29"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}

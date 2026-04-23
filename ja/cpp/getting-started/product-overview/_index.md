@@ -6,7 +6,7 @@ linktitle: 製品の概要
 weight: 10
 url: /cpp/product-overview/
 description: Aspose.TeXは、TEXファイルを植チ化するためのC ++ライブラリです。変換や独自のTex形式の作成などの豊富な機能を提供します。
-lastmod: "2025-06-09"
+lastmod: "2026-04-20"
 ---
 
 {{<section overview>}}

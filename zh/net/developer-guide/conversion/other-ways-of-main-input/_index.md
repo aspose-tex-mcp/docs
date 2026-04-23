@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: 提供主 TeX 输入文件的其他方式 | .NET
@@ -6,7 +6,7 @@ linktitle: 提供主 TeX 输入文件的其他方式
 weight: 14
 url: /net/other-ways-of-main-input/
 description: Aspose.TeX API 解决方案 for .NET 的转换功能提供了一个接受流作为第一个参数的构造函数。这儿有一些代码示例。
-lastmod: "2026-02-25"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}

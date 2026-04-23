@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: Cos'è il LaTeX? 
@@ -7,22 +7,22 @@ weight: 16
 url: /net/what-is-latex/
 keywords: Cos'è il LaTeX, LaTeX che cos'è
 description: Per rispondere alla domanda "Cos'è il LaTeX?" Vale la pena ricordare che una delle sue caratteristiche più impressionanti è il nuovo schema di selezione dei caratteri (NFSS).
-lastmod: "2025-06-13"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
 
 Allora, cos'è il LaTeX?
 
-Il LaTeX è il formato [tex](/tex/{{lang.url-fragment}}net/what-is-tex/), in breve.
+Il LaTeX è il formato [TeX](/tex/{{lang.url-fragment}}net/what-is-tex/), in breve.
 
-Latex (*lah-tekh o lay-tekh*, spesso stilizzato come LaTeX) è un sistema software per la preparazione del documento che è stato originariamente scritto nei primi anni '80 da <a href = "https://en.wikipedia.org/wiki/leslie_lamport" target = _blank rel = "nofollow"> leslie lamy </a> a <ai href = "https://en.wikipedia.org/wiki/sri_international" target = _blank rel = "nofollow"> sri internazionale </a>. Questo è ciò che <a href = "https://en.wikipedia.org/wiki/latex" target = _blank rel = "nofollow"> wikipedia </a> dice.
+LaTeX (*LAH-tekh or LAY-tekh*, spesso stilizzato come LaTeX) è un sistema software per la preparazione dei documenti che è stato originariamente scritto nei primi anni '80 da <a href="https://en.wikipedia.org/wiki/Leslie_Lamport" target=_blank rel="nofollow">Leslie Lamport</a> presso <a href="https://en.wikipedia.org/wiki/SRI_International" target=_blank rel="nofollow">SRI International</a>. Questo è ciò che <a href="https://en.wikipedia.org/wiki/LaTeX" target=_blank rel="nofollow">Wikipedia</a> dice.
 
 Rispondere alla domanda "Che cos'è il LaTeX?" Vorremmo menzionare alcune delle sue caratteristiche.
 
-Una delle caratteristiche più impressionanti del LaTeX è il nuovo schema di selezione dei caratteri (NFSS). È il sottosistema macro che consente di cambiare le singole proprietà dell'attuale carattere, piuttosto che definire un nuovo carattere nel suo insieme, poiché ha funzionato nel Tex originale (Plain Tex non ha offerto molto per questo). Ad esempio, hai l'attuale carattere che è un computer moderno di computer moderno e si desidera passare a un carattere audace lo stesso tipo che è fisico situato in un file di carattere diverso. In originale Tex è necessario controllare le sequenze mappate sui nomi dei file di carattere, per così dire, devi solo chiamare un altro comando. Ma il prezzo è troppe sequenze di controllo. In LaTeX è necessario chiedere al motore di cambiare il carattere tipografico. Selezionerà il carattere corrente appropriato per te.
+Una delle caratteristiche più impressionanti del LaTeX è il nuovo schema di selezione dei caratteri (NFSS). È il sottosistema macro che consente di cambiare le singole proprietà dell'attuale carattere, piuttosto che definire un nuovo carattere nel suo insieme, poiché ha funzionato nel TeX originale (Plain TeX non ha offerto molto per questo). Ad esempio, hai l'attuale carattere che è un computer moderno di computer moderno e si desidera passare a un carattere audace lo stesso tipo che è fisico situato in un file di carattere diverso. In originale TeX è necessario controllare le sequenze mappate sui nomi dei file di carattere, per così dire, devi solo chiamare un altro comando. Ma il prezzo è troppe sequenze di controllo. In LaTeX è necessario chiedere al motore di cambiare il carattere tipografico. Selezionerà il carattere corrente appropriato per te.
 
-Un'altra caratteristica è una serie di cosiddette classi di documenti. Questi sono file di input ausiliari che contengono i valori dei parametri interni di Tex corrispondenti a un tipo di documento specifico, come un libro, un articolo, una lettera o qualsiasi altra cosa.
+Un'altra caratteristica è una serie di cosiddette classi di documenti. Questi sono file di input ausiliari che contengono i valori dei parametri interni di TeX corrispondenti a un tipo di documento specifico, come un libro, un articolo, una lettera o qualsiasi altra cosa.
 
 Il LaTeX include anche il supporto per varie funzionalità che possono essere convenienti per un autore di documenti. Queste funzionalità sono generalmente raccolte in file di input ausiliari chiamati pacchetti. Nei pacchetti è possibile trovare strumenti avanzati per la composizione matematica, disegnare grafica, supporto per caratteri che non fanno parte della distribuzione del LaTeX, ecc. Anche per il disegno di formule chimiche 2D.
 

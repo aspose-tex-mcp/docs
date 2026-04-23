@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-java.md
 title: Другие выходные форматы преобразования TeX | Java
@@ -6,7 +6,7 @@ linktitle: Другие форматы TeX
 weight: 18
 url: /java/other-tex-formats/
 description: Функциональность преобразования решения Aspose.TeX API для Java позволяет конвертировать файлы LaTeX и ваши собственные файлы TeX.
-lastmod: "2024-09-24"
+lastmod: "2026-04-21"
 ---
 
 {{<section overview>}}
@@ -19,7 +19,7 @@ lastmod: "2024-09-24"
 
 Напомним, что файл формата представляет собой двоичный дамп внутреннего состояния движка TeX.
 
-{{< gist "aspose-com-gists""67385c777283964d328086603f691ac9""Aspose.TeX.Examples-CreateCustomTeXFormatFile.java" >}}
+{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-CreateCustomTeXFormatFile.java" >}}
 
 Как видите, код аналогичен коду конвертации файла TeX. Но есть несколько отличий.
 
@@ -33,7 +33,7 @@ lastmod: "2024-09-24"
 
 Теперь, когда у нас есть собственный формат TeX, мы хотим набрать файл TeX, написанный в этом формате. Вот код:
 
-{{< gist "aspose-com-gists""67385c777283964d328086603f691ac9""Aspose.TeX.Examples-TypesetWithCustomTeXFormat.java" >}}
+{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-TypesetWithCustomTeXFormat.java" >}}
 
 Очевидно, нам нужно как-то указать формат. Прежде всего, нам нужно создать экземпляр класса [FormatProvider](https://reference.aspose.com/tex/java/com.aspose.tex/FormatProvider). Затем в конструкторе параметров мы используем конфигурацию [TeXConfig.objectTeX()](https://reference.aspose.com/tex/java/com.aspose.tex/TeXConfig#objectTeX--), которая принимает нашего поставщика формата в качестве аргумента и загружает формат поверх «девственного» состояния движка.
 

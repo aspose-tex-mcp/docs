@@ -6,7 +6,7 @@ linktitle: Visão geral do produto
 weight: 10
 url: /java/product-overview/
 description: Aspose.TeX é uma biblioteca Java para digitar os arquivos Tex. Ele fornece a você a rica funcionalidade, como conversão ou criação de seu próprio formato Tex.
-lastmod: "2025-06-16"
+lastmod: "2026-04-21"
 ---
 
 {{<section overview>}}
@@ -26,7 +26,7 @@ Aspose.TeX é uma biblioteca Java para digitar os arquivos Tex. Ele pode apresen
 
 A Aspose fornece suporte técnico gratuito ilimitado para todos os seus produtos. O suporte está disponível para todos os usuários, incluindo avaliação.
 
-Se você precisar de ajuda com asppose.tex para java, [**visite o Aspose.forums**](https://forum.aspose.com/). Publique sua pergunta no fórum Aspose.TeX para Java e ela será respondida dentro de algumas horas. As perguntas são respondidas diretamente pelo Aspose.TeX for Java Support Team.
+Se você precisar de ajuda com Aspose.TeX para java, [**visite o Aspose.Forums**](https://forum.aspose.com/). Publique sua pergunta no fórum Aspose.TeX para Java e ela será respondida dentro de algumas horas. As perguntas são respondidas diretamente pelo Aspose.TeX for Java Support Team.
 
 Ao esperar uma resposta nos fóruns, permita as diferenças de fuso horário.
 
@@ -34,7 +34,7 @@ Se você tiver um problema com o Aspose.TeX para Java, siga estas etapas simples
 
 - Certifique -se de usar a versão mais recente do Aspose.TeX para Java antes de relatar o problema. Consulte a página de download [Aspose.TeX para java](https://releases.aspose.com/tex/java) para descobrir a versão mais recente.
 - Dê uma olhada nos fóruns, esta documentação, Wiki e [API Reference](https://reference.aspose.com/tex/java) para soluções antes de relatar o problema. Sua pergunta já pode ter uma resposta.
-- Ao relatar um problema, inclua o documento original e possivelmente um fragmento do código que causa o problema. Se você precisar anexar vários arquivos, entre em contato com eles. É seguro anexar seus documentos no Aspose.forums, já que somente você e os desenvolvedores da Aspose terão acesso aos arquivos anexados.
+- Ao relatar um problema, inclua o documento original e possivelmente um fragmento do código que causa o problema. Se você precisar anexar vários arquivos, entre em contato com eles. É seguro anexar seus documentos no Aspose.Forums, já que somente você e os desenvolvedores da Aspose terão acesso aos arquivos anexados.
 - Por favor, tente relatar um problema por thread. Se você tiver outro problema, relate -o em um thread separado.
 
 ## Recursos

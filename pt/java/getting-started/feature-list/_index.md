@@ -5,8 +5,8 @@ title: Lista de recursos | Aspose.TeX para Java
 linktitle: Lista de recursos
 weight: 30
 url: /java/feature-list/
-description: Adicione a funcionalidade de manipulação de arquivos TEX à sua própria solução. Aprenda os recursos Aspose.Tex API Solution for Java oferece a você.
-lastmod: "2025-06-16"
+description: Adicione a funcionalidade de manipulação de arquivos TEX à sua própria solução. Aprenda os recursos a solução Aspose.TeX API para Java oferece a você.
+lastmod: "2026-04-21"
 ---
 
 {{<section overview>}}
@@ -16,7 +16,7 @@ lastmod: "2025-06-16"
 
 **Operações suportadas**
 
-- Tex Entrada Typeatting
+- Tipografia de entrada TEX
 - Criação de formato tex personalizada
 
 **Suporte para vários formatos de arquivo de saída**

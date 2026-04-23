@@ -7,7 +7,7 @@ weight: 20
 url: /net/tikz-advanced-features/
 keywords: TikZ avançado, caminhos TikZ, diagramas TikZ, pgfplots, circuitikz, tikz-3dplot
 description: Aprenda técnicas avançadas de TikZ, incluindo caminhos complexos, posicionamento de nós, setas e criação de diagramas para gráficos com qualidade profissional.
-lastmod: "2025-07-11"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
@@ -28,7 +28,7 @@ Pode referenciar nós por nomes (`(A)` e `(B)`), facilitando a manipulação e a
 
 ## Caminhos e Intersecções Complexos
 
-O TikTok suporta caminhos complexos e deteção automática de interseções:
+TikZ suporta caminhos complexos e deteção automática de interseções:
 
 ```tex
 \draw[name path=line1] (0,0) -- (3,3);
@@ -40,7 +40,7 @@ Aqui, o ponto de intersecção `I` é calculado e marcado automaticamente.
 
 ## Setas e Fluxogramas
 
-O TikTok oferece estilos de setas sofisticados, ideais para diagramas e fluxogramas:
+TikZ oferece estilos de setas sofisticados, ideais para diagramas e fluxogramas:
 
 ```tex
 \tikzset{>={Stealth[round, length=4pt, width=6pt]}}

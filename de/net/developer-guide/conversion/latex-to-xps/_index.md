@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: LaTeX zu XPS | .NET
@@ -6,7 +6,7 @@ linktitle: LaTeX zu XPS
 weight: 12
 url: /net/latex-to-xps/
 description: Mit der Konvertierungsfunktion der Aspose.TeX-API-Lösung für .NET können Sie LaTeX-Dateien in das XPS-Format konvertieren.
-lastmod: "2026-04-03"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
@@ -26,8 +26,8 @@ Das folgende Beispiel zeigt, wie Sie eine LaTeX-Datei in wenigen Schritten in XP
 
 1. Erstellen Sie eine `TexDocument`-Instanz.
 2. Laden Sie die `.tex`-Quelldatei mit T`exDocument.Load`.
-3. (Optional) Konfigurieren Sie `XPSSaveOptions`, z. B. Komprimierungseinstellungen.
-4. Speichern Sie das Dokument in XPS, indem Sie document.Save mit einem `XPSDevice` aufrufen.
+3. (Optional) Konfigurieren Sie `XpsSaveOptions`, z. B. Komprimierungseinstellungen.
+4. Speichern Sie das Dokument in XPS, indem Sie document.Save mit einem `XpsDevice` aufrufen.
 
 Dieser Code demonstriert den direktesten Weg, eine XPS-Datei aus LaTeX zu erstellen.
 
@@ -43,7 +43,7 @@ Dieser Codeausschnitt demonstriert die Verwendung des Konstruktors `XpsDevice`, 
 
 1. Erstellen Sie ein `TexDocument` und laden Sie die LaTeX-Quelle.
 2. Erstellen Sie einen `MemoryStream` für die XPS-Ausgabe.
-3. Instanziieren Sie `XPSDevice` mit dem Stream.
+3. Instanziieren Sie `XpsDevice` mit dem Stream.
 4. Speichern Sie das Dokument auf dem Gerät. Anschließend können Sie den Stream verwenden (z. B. über ein Netzwerk senden oder in einer Datenbank speichern).
 
 Dieser Ansatz ist nützlich, wenn Sie die XPS-Daten im Speicher und nicht als Datei auf der Festplatte benötigen.

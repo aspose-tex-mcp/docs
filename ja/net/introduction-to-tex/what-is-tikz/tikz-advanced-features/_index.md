@@ -8,7 +8,7 @@ url: /net/tikz-advanced-features/
 aliases: /net/advanced-features/
 keywords: advanced tikz, tikz paths, tikz diagrams, pgfplots, circuitikz, tikz-3dplot
 description: 複雑なパス、ノード配置、矢印、図の作成など、プロフェッショナル品質のグラフィックのための高度な TikZ 技術を学びます。
-lastmod: "2026-02-26"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}

@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: LaTeX 转 XPS | .NET
@@ -8,7 +8,7 @@ url: /net/latex-to-xps/
 aliases: /net/other-target-formats/
 description: Aspose.TeX API 解决方案的 .NET 转换功能可以将 LaTeX 文件转换为 XPS 格式。以下是一些代码示例。
 keywords: latex 转 xps, aspose tex, .net 转换, xps 格式, tex 转 xps, 文档转换, aspose page, xpsdevice, xpssaveoptions, c# 示例
-lastmod: "2026-02-25"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}

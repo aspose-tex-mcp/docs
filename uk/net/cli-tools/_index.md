@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: Інструменти командного рядка LaTeX | Aspose.TeX для .NET
@@ -6,13 +6,13 @@ linktitle: Інструменти CLI для роботи з файлами TeX/
 weight: 70
 url: /net/cli-tools/
 description: Інструменти інтерфейсу командного рядка (CLI) Aspose.TeX для .NET дозволяють легко обробляти та редагувати TeX і LaTeX за допомогою простих команд.
-keywords: c# cli для документів tex, керування c# cli tex, кодування c# cli tex, документи tex c# cli
-lastmod: "2026-04-03"
+keywords: c# cli для документів TeX, керування c# cli TeX, кодування c# cli TeX, документи TeX c# cli
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
 
-# ПРОГРАМИ CLI для Aspose.TeX
+# Програми CLI для Aspose.TeX
 
 ## Вступ до інструментів CLI
 

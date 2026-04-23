@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: Configuration système requise | Aspose.TeX pour .NET
@@ -6,7 +6,7 @@ linktitle: Configuration système requise
 weight: 50
 url: /net/system-requirements/
 description: Aspose.TeX pour .NET peut être utilisé dans n'importe quel environnement prenant en charge .NET, mais ceux-ci sont explicitement pris en charge.
-lastmod: "2024-09-27"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
@@ -15,14 +15,14 @@ lastmod: "2024-09-27"
 
 ### Fenêtres
 
-* Serveur Microsoft Windows 2003 (x64, x86)
-* Serveur Microsoft Windows 2012 (x64, x86)
-* Serveur Microsoft Windows 2008 (x64, x86)
-* Microsoft Windows XP (x64, x86)
-* Microsoft Windows Vista (x64, x86)
-* Microsoft Windows 8, 8.1 (x64, x86)
-* Microsoft Windows 7 (x64, x86)
-* Microsoft Windows 10 (x64, x86)
+* Serveur Microsoft Windows 2003 ( x64, x86)
+* Serveur Microsoft Windows 2012 ( x64, x86)
+* Serveur Microsoft Windows 2008 ( x64, x86)
+* Microsoft Windows XP ( x64, x86)
+* Microsoft Windows Vista ( x64, x86)
+* Microsoft Windows 8, 8.1 ( x64, x86)
+* Microsoft Windows 7 ( x64, x86)
+* Microsoft Windows 10 ( x64, x86)
 * Windows Azur
 
 ## Environnements de développement

@@ -1,4 +1,4 @@
-﻿---
+---
 translation: true
 template: /templates/_template-net.md
 title: LaTeX-Figurenrendering | Aspose.TeX für .NET
@@ -7,7 +7,7 @@ weight: 20
 url: /net/latex-figure-rendering/
 description: Hier wird Aspose.TeX für .NET das Rendern von LaTeX-Fragmenten (Figuren) beschrieben. Erfahr anhand der Codebeispiele, wie kann man Funktionalität nutzen.
 keywords: Latexfigur, Latexfigurengröße, Latexbild, Latexbild, Latex-Einschlussfigur, Latexbild, Latexfigurenoptionen
-lastmod: "2024-09-26"
+lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
