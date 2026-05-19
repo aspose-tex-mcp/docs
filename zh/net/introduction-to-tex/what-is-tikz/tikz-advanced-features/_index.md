@@ -5,7 +5,6 @@ title: TikZ 高级功能 | Aspose.TeX .NET
 linktitle: TikZ 高级功能
 weight: 20
 url: /net/tikz-advanced-features/
-aliases: /net/advanced-features/
 keywords: advanced tikz, tikz paths, tikz diagrams, pgfplots, circuitikz, tikz-3dplot
 description: 了解高级 TikZ 技术，包括复杂路径、节点定位、箭头以及图表创建，以实现专业品质的图形。
 lastmod: "2026-04-22"
