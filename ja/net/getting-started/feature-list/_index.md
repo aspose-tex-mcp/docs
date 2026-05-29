@@ -5,8 +5,8 @@ title: 機能リスト| .NETのAspose.TeX
 linktitle: 機能リスト
 weight: 30
 url: /net/feature-list/
-description: TEXファイルの操作機能を独自のソリューションに追加します。 .NETオファー用のAspose.TeX APIソリューションを学習します。
-lastmod: "2026-04-22"
+description: .NET用のAspose.TeXの完全な機能セットを探索します。サポートされている入出力形式（PDF、XPS、PNG、SVG）、TeX拡張（LaTeX、ObjectTeX）、およびクロスプラットフォームの.NET Core/Standard機能を確認します。
+lastmod: "2026-05-28"
 ---
 
 {{<section overview>}}
@@ -17,6 +17,10 @@ lastmod: "2026-04-22"
 
 - TeX入力タイプセット
 - カスタムTeX形式の作成
+- TeX/LaTeX変換
+- LaTeXファイルへのグラフィックスの埋め込み
+- LaTeXファイル内での図形や複雑な数式の描画
+- LaTeXファイルの検証、構造化、および修復
 
 **さまざまな出力ファイル形式のサポート**
 
@@ -32,3 +36,9 @@ lastmod: "2026-04-22"
 - ファイルシステムディレクトリ
 - ZIPアーカイブ
 - メインのTeXファイルはストリームに渡すこともできます
+
+{{% alert color="primary" %}}
+
+従来のコマンドラインTeXユーティリティとは異なり、.NET用のAspose.TeXは100%管理されたスタンドアロンライブラリです。TeX Live、MiKTeX、またはその他の基礎となるネイティブ実行可能ファイルのローカルインストールは不要です。
+
+{{% /alert %}}

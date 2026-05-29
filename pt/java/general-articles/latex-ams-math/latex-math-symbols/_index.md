@@ -6,8 +6,8 @@ title: 9. Símbolos nas fórmulas matemáticas
 weight: 90
 url: /java/latex-math-symbols/
 keywords: AMS-LATEX, AMSMATH, AMSFONTS, AMSSyMB, Classes de Sybol Matemática de Latex, pacote StMaryrd, Fonte St Mary Road
-description: Aprenda a classificação dos símbolos de matemática no Tex e o acesso a símbolos de várias classes usando comandos do padrão Tex (LateX) e o pacote AMSSYMB.
-lastmod: "2025-06-16"
+description: Dicionário completo de símbolos matemáticos LaTeX. Aprenda a renderizar programaticamente letras gregas, operadores binários, relações e delimitadores utilizando comandos do TeX padrão (LaTeX) e do pacote amssymb.
+lastmod: "2026-05-29"
 ---
 
 {{<section overview>}}

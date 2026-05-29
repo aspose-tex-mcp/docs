@@ -1,13 +1,13 @@
 ---
 translation: true
 template: /templates/_template-java.md
-title: LaTeX embedded graphics | Aspose.TeX for Java
+title: Embedding external graphics in LaTeX | Aspose.TeX for Java
 linktitle: LaTeX embedded graphics
 weight: 18	
 url: /java/latex-graphics-embedding/
 keywords: includegraphics latex, latex embed base64 graphics, latex base64 encoded graphics, write18, shell-escape, latex shell command
-description: In this article, you will explore how to inject Base64-encoded images in the LaTeX source code and learn the \write18 feature that makes this possible.
-lastmod: "2024-09-20"
+description: Learn how to embed external images (PNG, JPEG, EPS) into LaTeX documents using Aspose.TeX for Java. Master graphics path resolution via custom memory and file system streams.
+lastmod: "2026-05-28"
 ---
 
 {{<section overview>}}

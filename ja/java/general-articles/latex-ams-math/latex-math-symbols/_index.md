@@ -6,8 +6,8 @@ title: 9. 数式における記号
 weight: 90
 url: /java/latex-math-symbols/
 keywords: ams-latex、amsmath、amsfonts、amssymb、LaTeX 数学記号クラス、stmaryrd パッケージ、st mary road フォント
-description: TeX における数式記号の分類を学び、標準 TeX（LaTeX）や amssymb パッケージのコマンドでさまざまなクラスの記号にアクセスできるようにします。
-lastmod: "2026-02-19"
+description: LaTeXの数式記号を網羅した辞書です。標準TeX（LaTeX）のコマンドとamssymbパッケージを使用して、ギリシャ文字、二項演算子、関係式、区切り文字をプログラムでレンダリングする方法を学びましょう。
+lastmod: "2026-05-29"
 ---
 
 {{<section overview>}}

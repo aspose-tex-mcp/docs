@@ -2,12 +2,12 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: Indice et indice
-title: 2. Indice et indice en LaTeX
+title: 2. Indices et Exposants en LaTeX
 weight: 20
 url: /java/latex-math-subscripts-superscripts/
-keywords: latex, formules mathématiques au latex, mathématiques au latex, indices mathématiques au latex, exposants mathématiques au latex
-description: Cet article explique comment créer des formules mathématiques contenant des indices et des exposants avec TeX et LaTeX.
-lastmod: "2024-09-27"
+keywords: formater indice exposant latex, formules mathématiques au latex, mathématiques au latex, indices mathématiques au latex, exposants mathématiques au latex, syntaxe mathématique latex
+description: Guide technique sur la gestion des indices (_) et exposants (^) en LaTeX. Apprenez à formater et rendre des formules mathématiques complexes sans TeX Live.
+lastmod: "2026-05-28"
 ---
 
 {{<section overview>}}

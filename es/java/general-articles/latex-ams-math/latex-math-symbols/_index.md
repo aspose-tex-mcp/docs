@@ -2,12 +2,12 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: Simbolo en LaTeX.
-title: 9. Símbolos en fórmulas matemáticas
+title: 9. Símbolos Matemáticos LaTeX
 weight: 90
 url: /java/latex-math-symbols/
-keywords: ams-latex, amsmath, amsfonts, amssymb, clases de símbolos matemáticos de LaTeX, paquete stmaryrd, fuente st mary road, simbolos en latex
-description: Clasificación de símbolos matematicos LaTeX y acceso a símbolos de varios tipos utilizando comandos estándar de TeX (LaTeX) y el paquete amssymb.
-lastmod: "2024-10-30"
+keywords: comandos latex simbolos matematicos, renderizar letras griegas latex, lista de operadores matematicos latex, como poner infinitos y raices en latex, clases de símbolos matemáticos de LaTeX, paquete stmaryrd, fuente st mary road, simbolos en latex
+description: Diccionario completo de comandos LaTeX para símbolos matemáticos en Java. Aprenda a renderizar letras griegas, operadores, relaciones y flechas con alta fidelidad.
+lastmod: "2026-05-28"
 ---
 
 {{<section overview>}}

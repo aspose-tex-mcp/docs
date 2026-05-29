@@ -6,8 +6,8 @@ title: 9. 公式中的符号
 weight: 90
 url: /java/latex-math-symbols/
 keywords: ams-latex、amsmath、amsfonts、amssymb、latex 数学符号类、stmaryrd 包、圣玛丽路字体
-description: 学习 TeX 中数学符号的分类，并使用标准 TeX（LaTeX）和 amssymb 包的命令访问各种类的符号。
-lastmod: "2026-02-19"
+description: LaTeX 数学符号综合词典。学习如何使用标准 TeX（LaTeX）命令和 amssymb 宏包以编程方式渲染希腊字母、二元运算符、关系式和分隔符。
+lastmod: "2026-05-29"
 ---
 
 {{<section overview>}}

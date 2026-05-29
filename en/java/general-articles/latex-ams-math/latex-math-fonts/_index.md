@@ -1,13 +1,13 @@
 ---
 translation: true
 template: /templates/_template-java.md
-linktitle: LaTeX math fonts 
+linktitle: LaTeX Math Fonts and Typefaces 
 title: 8. Fonts in math formulas 
 weight: 80
 url: /java/latex-math-fonts/
-keywords: ams-latex, amsmath, amsfonts, amssymb, latex math fonts, latex math alphabets, latex bm package, latex fonts, latex fonts math
-description: This article discusses handling math fonts by means of standard LaTeX, as well as using the amsmath and bm packages.
-lastmod: "2024-09-20"
+keywords: ams-latex, amsmath, amsfonts, amssymb, latex math fonts, latex math alphabets, latex bm package, latex fonts, latex fonts math, change math font latex
+description: Complete guide to changing mathematical fonts in LaTeX. Learn to use mathbb, mathbf, mathcal, and mathit styles with zero external dependencies.
+lastmod: "2026-05-28"
 ---
 
 {{<section overview>}}

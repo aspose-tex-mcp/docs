@@ -5,8 +5,8 @@ title: Liste des fonctionnalités | Aspose.TeX pour .NET
 linktitle: Liste des fonctionnalités
 weight: 30
 url: /net/feature-list/
-description: Ajoutez la fonctionnalité d'édition de fichiers TeX à votre solution. Découvrez les fonctionnalités offertes par Aspose.TeX pour .NET.
-lastmod: "2026-04-22"
+description: Découvrez l'ensemble des fonctionnalités d'Aspose.TeX pour .NET. Passez en revue les formats d'entrée/sortie pris en charge (PDF, XPS, PNG, SVG), les extensions TeX (LaTeX, ObjectTeX) et les capacités multiplateformes .NET Core/Standard.
+lastmod: "2026-05-28"
 ---
 
 {{<section overview>}}
@@ -17,6 +17,10 @@ lastmod: "2026-04-22"
 
 - Composition d'entrée TeX
 - Création de format TeX personnalisé
+- Conversion TeX/LaTeX
+- Intégration de graphiques dans des fichiers LaTeX
+- Dessin de figures et d'équations mathématiques complexes dans des fichiers LaTeX
+- Validation, structuration et réparation de fichiers LaTeX
 
 **Prise en charge de divers formats de fichiers de sortie**
 
@@ -32,4 +36,10 @@ lastmod: "2026-04-22"
 - Répertoire du système de fichiers
 - Archives ZIP
 - Le fichier TeX principal peut également être transmis via un flux
+
+{{% alert color="primary" %}}
+
+Contrairement aux utilitaires TeX en ligne de commande traditionnels, Aspose.TeX pour .NET est une bibliothèque autonome 100 % managée. Elle ne nécessite pas d'installation locale de TeX Live, de MiKTeX ou de tout autre exécutable natif sous-jacent.
+
+{{% /alert %}}
 

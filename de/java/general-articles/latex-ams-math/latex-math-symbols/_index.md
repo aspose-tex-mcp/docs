@@ -6,8 +6,8 @@ title: 9. Symbole in mathematischen Formeln
 weight: 90
 url: /java/latex-math-symbols/
 keywords: ams-latex, amsmath, amsfonts, amssymb, Latex-Mathe-Symbolklassen, Stmaryrd-Paket, St. Mary Road-Schriftart
-description: Lernen Sie die Klassifizierung mathematischer Symbole in TeX und den Zugriff auf Symbole Klassen mit Befehlen von Standard-TeX und dem Paket amssymb.
-lastmod: "2026-04-21"
+description: Umfassendes Wörterbuch der LaTeX-Mathematiksymbole. Lernen Sie, wie Sie griechische Buchstaben, binäre Operatoren, Relationen und Trennzeichen mithilfe von Befehlen des Standard-TeX (LaTeX) und des Pakets amssymb programmgesteuert darstellen.
+lastmod: "2026-05-29"
 ---
 
 {{<section overview>}}
@@ -30,7 +30,7 @@ Der Aufbau für Mathematik ordnet jedes Symbol einer dieser Klassen zu: *Ordinar
 
 ![Explizites Ändern der Symbolklasse](/tex/images/java/tutorial/latex-ams-math-9-1.png)
 
-Zusätzlich zu den oben genannten Klassen bilden bestimmte Unterformeln – vor allem Brüche und die durch `\left` und `\right` erzeugten – eine Klasse namens *Inner*, die explizit über den Befehl „\mathinner“ verfügbar ist.
+Zusätzlich zu den oben genannten Klassen bilden bestimmte Unterformeln – vor allem Brüche und die durch `\left` und `\right` erzeugten – eine Klasse namens *Inner*, die explizit über den Befehl `\mathinner` verfügbar ist.
 
 ![Symbolklassen und Abstand](/tex/images/java/tutorial/latex-ams-math-9-2.png)
 

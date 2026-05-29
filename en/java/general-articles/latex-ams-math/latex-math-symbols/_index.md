@@ -6,8 +6,8 @@ title: 9. Symbols in math formulas
 weight: 90
 url: /java/latex-math-symbols/
 keywords: ams-latex, amsmath, amsfonts, amssymb, latex math sybol classes, stmaryrd package, st mary road font
-description: Learn the classification of math symbols in TeX, and access to symbols of various classes using commands of standard TeX(LaTeX) and the amssymb package.
-lastmod: "2024-09-20"
+description: Comprehensive dictionary of LaTeX math symbols. Learn how to programmatically render Greek letters, binary operators, relations, and delimiters using commands of standard TeX(LaTeX) and the amssymb package. 
+lastmod: "2026-05-29"
 ---
 
 {{<section overview>}}

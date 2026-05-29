@@ -6,8 +6,8 @@ title: 9. Simboli nelle formule di matematica
 weight: 90
 url: /java/latex-math-symbols/
 keywords: ams-latex, amsmath, amsfonts, amssymb, classi di simboli matematici LaTeX, pacchetto stmaryrd, font St Mary Road
-description: Impara la classificazione dei simboli matematici in TeX e l'accesso a simboli di varie classi utilizzando i comandi di TeX standard (LaTeX) e il pacchetto amssymb.
-lastmod: "2026-03-30"
+description: Dizionario completo dei simboli matematici LaTeX. Impara a rappresentare programmaticamente lettere greche, operatori binari, relazioni e delimitatori utilizzando i comandi di TeX standard (LaTeX) e del pacchetto amssymb.
+lastmod: "2026-05-29"
 ---
 
 {{<section overview>}}
