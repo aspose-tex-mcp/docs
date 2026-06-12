@@ -6,7 +6,7 @@ linktitle: Reparatur von LaTeX-Dateien
 weight: 30
 url: /net/latex-repair/
 description: Im Artikel wird die Aspose.TeX-Lösung für die .NET LaTeX-Reparatur beschrieben. Erfahren Sie anhand der Codebeispiele, wie Sie die Funktionalität nutzen.
-lastmod: "2026-04-03"
+lastmod: "2026-06-12"
 ---
 
 {{<section overview>}}
@@ -80,5 +80,24 @@ Checking the repaired file...
 --------------------------------------------------------------------------------
 There are no critical errors in the fixed file.
 ```
+
+## Entwicklung eines KI-Agenten zur Korrektur mathematischer LaTeX-Formeln
+
+Dieser Workflow kombiniert die strukturelle Validierung der nativen Aspose.TeX-Reparatur-API mit der kontextuellen Inferenz eines LLM-Kerns, um eine fehlerfreie Rendering-Pipeline zu realisieren. Er kann als separater Agent zur Überprüfung und Korrektur von Fehlern in bestehenden LaTeX-Dateien oder als Teil des mathematischen Schreibprozesses eingesetzt werden.
+
+### Workflow-Architektur für einen KI-Agenten zur Korrektur der LaTeX-Syntax
+
+![Blockschema für den KI-Workflow zur LaTeX-Syntaxkorrektur](/tex/images/net/tutorial/blockscheme-for-math-repairing.png)
+
+1. Syntaxverarbeitung und Extraktion der mathematischen Intentionen (LLM-Schicht)
+Der Benutzer gibt Anweisungen in Form von Dialogen, unformatierten Textfragmenten, kopierten Formeln oder einer `.latex`-Datei an. Der Agent veranlasst den LLM, die mathematischen Kernintentionen zu extrahieren und einen fokussierten mathematischen LaTeX-Block auszugeben.
+
+2. Automatische Korrektur der nativen Struktur (Aspose.TeX-Reparatur)
+Der generierte mathematische Ausdruck durchläuft den nativen Aspose.TeX-Reparaturzyklus, um standardmäßige Strukturgrenzen zu erstellen, ohne dass Entwickler fest codierte Regex-Wrapper schreiben müssen.
+
+Der Agent erstellt eine LaTeXRepairer-Instanz im Hintergrund. Die Engine scannt die Datenströme, fängt Fehler ab und schreibt sicher `\begin{document}`- und `\end{document}`-Wrapper um die mathematischen Ausdrücke, um die Gültigkeit der Kompilierungspipeline zu gewährleisten.
+
+4. Ausführung und Asset-/Berichtsgenerierung (Rendering-Engine)
+Sobald der reparierte und verpackte Skriptstring erfolgreich kompiliert wurde, erstellt der Agent einen Bericht oder konvertiert die bereinigte Dateisystemausgabe in die gewünschten visuellen Formate.
 
 **Sie können sich auch unsere kostenlose Web-App [**AI LaTeX Repairer**](https://products.aspose.ai/tex/latex-repairer) ansehen, die auf der in [Aspose.TeX for .NET API](https://products.aspose.com/tex/net/) implementierten Funktion basiert und eine erweiterte Version beinhaltet Implementierung der Schnittstelle „IGuessPackageCallback“.**

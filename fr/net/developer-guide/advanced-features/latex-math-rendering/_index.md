@@ -6,7 +6,7 @@ linktitle: Rendu des formules mathématiques LaTeX
 weight: 10
 url: /net/latex-math-formula-rendering/
 description: La solution API Aspose.TeX pour le rendu des formules mathématiques .NET LaTeX est décrite dans cet article. Découvrez les exemples de code.
-lastmod: "2026-04-22"
+lastmod: "2026-06-11"
 ---
 
 {{<section overview>}}
@@ -66,8 +66,32 @@ Les différences sont :
 * Nous ne précisons pas la résolution.
 * Nous utilisons la classe [SvgMathRenderer](https://reference.aspose.com/tex/net/aspose.tex.features/svgmathrenderer/) au lieu de [PngMathRenderer](https://reference.aspose.com/tex/net/aspose.tex.features/pngmathrenderer/).
 
-
 Voici le résultat :
 
 <a href="/tex/net/latex-math-formula-rendering/math-formula.svg">![Rendu de formule mathématique LaTeX en SVG](/tex/images/net/math-formula.svg)</a>
+
+## Création d'un agent d'IA pour le rendu mathématique LaTeX avec Aspose.TeX
+
+Pour les développeurs souhaitant intégrer cette fonctionnalité dans un agent d'IA conversationnel ou programmatique, le principal défi technique passe de la simple exécution de code à la reconnaissance d'intention, la vérification de la structure et le traitement des erreurs d'exécution.
+
+Voici une proposition d'architecture pour le flux de travail de production d'un agent d'IA qui interprète les requêtes utilisateur, génère une syntaxe LaTeX valide et renvoie des composants visuels entièrement rendus.
+
+![Schéma de base pour le flux de travail de rendu mathématique LaTeX par IA](/tex/images/net/tutorial/blockscheme-for-ai-math-rendering.png)
+
+Comme vous pouvez le constater, l'agent d'IA pour le rendu mathématique doit fonctionner comme une boucle de rétroaction fermée composée de trois micro-couches :
+
+1. Acquisition des entrées et de la syntaxe (couche LLM)
+
+L'utilisateur saisit du langage naturel ou des expressions syntaxiques partielles (par exemple : « Affiche-moi la dérivée d'une multiplication matricielle »). L'agent transforme ces invites en structures mathématiques LaTeX valides au sein d'une charge utile JSON structurée, évitant ainsi les wrappers Markdown tels que `latex`.
+
+2. Validation et nettoyage de l'AST (Couche de validation)
+Avant d'acheminer les chaînes de caractères directement vers les pipelines d'exécution, l'agent logiciel valide les modèles de jetons afin de prévenir les injections de sécurité ou les ruptures de chaînes d'exécution.
+
+3. Pipeline d'exécution de l'API (Moteur Aspose.TeX)
+L'agent transmet le jeton nettoyé directement au framework de traitement backend en utilisant les règles d'exécution programmatiques.
+
+L'agent instancie `SvgMathRendererOptions` ou `PngMathRendererOptions` selon le contexte client (par exemple, si l'utilisateur est sur mobile ou sur le Web, le format SVG est utilisé pour une netteté optimale).
+
+4. Si la compilation Aspose.TeX échoue ou rencontre des avertissements de syntaxe, les diagnostics de journalisation standard sont directement redirigés vers un flux d'erreurs d'exécution. Au lieu de laisser tomber silencieusement ou de faire planter les interfaces utilisateur, l'agent intercepte les données de la trace de la pile, construit une boucle de contexte et invite le LLM à réécrire la charge utile de l'équation.
+
 **Vous pouvez également consulter l'[application Web](https://products.aspose.app/tex/equation-editor/svg) gratuite construite sur la base de la fonctionnalité implémentée dans [Aspose.TeX pour l'API .NET](https://products.aspose.com/tex/net/).**

@@ -7,7 +7,7 @@ weight: 20
 url: /net/latex-figure-rendering/
 description: Aspose.TeX pour le rendu des fragments .NET LaTeX est décrite dans cet article. Découvrez les exemples de code sur la façon d’utiliser la fonctionnalité.
 keywords: figurine en latex, taille de figurine en latex, image en latex, image en latex, figurine incluse en latex, photo en latex, options de figurine en latex
-lastmod: "2026-04-22"
+lastmod: "2026-06-12"
 ---
 
 {{<section overview>}}
@@ -64,7 +64,28 @@ Les différences sont :
 * Nous ne précisons pas la résolution.
 * Nous utilisons la classe [SvgFigureRenderer](https://reference.aspose.com/tex/net/aspose.tex.features/svgfigurerenderer/) au lieu de [PngFigureRenderer](https://reference.aspose.com/tex/net/aspose.tex.features/pngfigurerenderer/).
 
-
 Voici le résultat :
 
 <a href="/tex/net/latex-figure-rendering/text-and-formula.svg">![Rendu de figure LaTeX en SVG](/tex/images/net/text-and-formula.svg)</a>
+
+## Création d'un agent d'IA pour le rendu de figures LaTeX
+
+Si vous souhaitez créer votre propre agent d'IA pour le rendu de figures dans LaTeX à l'aide de l'API Aspose.TeX, voici une suggestion de flux de travail :
+
+![Schéma de blocs pour le flux de travail de rendu de figures LaTeX par IA](/tex/images/net/tutorial/blockscheme-ai-for-graphic-rendering.png)
+
+1. Couche d'ingestion (noyau LLM)
+
+Analyse les instructions en langage naturel non structurées ou désordonnées et les convertit en primitives mathématiques LaTeX et en environnements de figures propres et isolés (`\begin{picture}`, `\includegraphics`).
+
+2. Système de fichiers virtuel (couche d'E/S)
+
+Stocke en toute sécurité les dépendances graphiques externes (`.png`, `.jpg`) dans un répertoire `InputFileSystemDirectory` en mémoire ou isolé afin que le compilateur puisse résoudre instantanément les références de mise en page.
+
+3. Configuration
+
+Analyse les marqueurs de code structurel et ajoute automatiquement les pilotes, les dépendances (comme `graphicx` ou `pict2e`), les facteurs d'échelle et les états de transparence de l'arrière-plan.
+
+4. Nœud d'exécution unifié (moteur Aspose.TeX)
+
+Compile le fichier unifié et le transmet directement au `FigureRenderer` spécialisé pour calculer les marges précises du cadre de délimitation vectoriel et générer des fragments de canevas visuels réactifs (SVG ou PNG haute résolution).

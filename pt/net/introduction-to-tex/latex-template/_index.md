@@ -8,7 +8,7 @@ weight: 100
 url: /net/latex-templates/
 description: Aprenda o que são modelos LaTeX, como usá-los e criá-los, onde baixar os mais populares e um fluxo de trabalho rápido com trechos prontos para copiar.
 keywords: LaTeX, modelo, classe, estilo, Overleaf, CTAN, bibliografia, Beamer, tese, CV
-lastmod: "2026-04-22"
+lastmod: "2026-06-12"
 ---
 
 {{<section overview>}}
@@ -127,3 +127,31 @@ Obter?  → Overleaf Gallery, CTAN, GitHub, sites de universidades
 ```
 
 Feliz composição tipográfica!
+
+## Criação de um Agente de IA para Criação de Templates LaTeX
+
+Se pretende criar o seu próprio Agente de IA para a criação de templates LaTeX utilizando a API Aspose.TeX, aqui fica uma sugestão de workflow para tal agente:
+
+*O desafio de engenharia aqui é garantir que o template segue os mecanismos de compilação padrão das regras de layout do LaTeX2e sem gerar erros. *
+
+![Esquema de blocos para o fluxo de trabalho de renderização de figuras LaTeX com IA](/tex/images/net/tutorial/blockscheme-ai-for-latex-template-creation.png)
+
+1. Ingestão de requisitos de layout (camada de intenção LLM)
+O utilizador fornece restrições de design de alto nível ou instruções de formatação (por exemplo, "Criar um layout de periódico em duas colunas com margens de 1,5 cm, utilizando tipos de letra Times New Roman, cabeçalhos vermelhos e uma elegante caixa de autor no topo"). De seguida, o LLM mapeia estes detalhes visuais semânticos em requisitos programáticos estruturais.
+
+A matriz de intenções decide se o pedido requer um ficheiro de Classe (`. cls`) totalmente novo e independente para um tipo de documento personalizado ou apenas um invólucro de Estilo (`. sty`) adaptado que se integra em classes padrão como artigo ou relatório.
+
+2. Alinhamento da árvore de herança e geração de classes (Camada de estrutura)
+O agente constrói os blocos de código estruturais para o ficheiro `. cls` com base numa matriz estrutural rígida:
+- Insere automaticamente `\NeedsTeXFormat{LaTeX2e}` e um cabeçalho de metadados dinâmico `\ProvidesClass{...}[...]`.
+- Mapeia o arquétipo de design de destino para uma classe base através de `\LoadClass{...}`.
+- Converte componentes de linguagem natural em macros nativas (como transformar um pedido de "caixa de autor" num bloco de definição personalizado `\renewcommand{\maketitle}{...}`).
+
+3. Fábrica de pacotes e recolha de recursos (Camada de dependência)
+Dependendo das instruções de design extraídas no primeiro passo, o motor de layout necessitará de ferramentas de macro especializadas de terceiros (por exemplo, geometry para ajustes de margem, `xcolor` para cores de marca personalizadas ou `fontspec` para configurações de tipos de letra modernos).
+
+O Agente atua como um filtro de linting. Introduz dinamicamente as instruções `\RequirePackage{...}` necessárias no pacote de classes ou estilos.
+
+4. Verificação e validação (Nó de compilação Aspose.TeX)
+O agente cria dinamicamente um ficheiro de teste (`sample. tex`) que carrega o modelo.
+De seguida, o Agente inicia um `TeXJob` implícito através do Aspose.TeX para compilar o código do modelo. Se a compilação falhar, o agente lê os registos de saída de erro (`. log`) e envia os registos de rastreio de volta para o LLM para correção automática da sintaxe. Se a compilação for bem-sucedida, o pacote de recursos é verificado.

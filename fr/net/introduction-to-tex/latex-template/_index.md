@@ -8,7 +8,7 @@ weight: 100
 url: /net/latex-templates/
 description: Découvrez ce que sont les modèles LaTeX, comment les utiliser et les créer, où télécharger les plus populaires et un flux de travail rapide avec des extraits prêts à copier.
 keywords: LaTeX, modèle, cours, style, Overleaf, CTAN, bibliographie, Beamer, thèse, CV
-lastmod: "2026-04-22"
+lastmod: "2026-06-12"
 ---
 
 {{<section overview>}}
@@ -127,3 +127,34 @@ Top 10        → IEEEtran, llncs, elsarticle, modern-simple-cv,
 ```
 
 Bonne composition !
+
+
+## Création d'un agent IA pour la génération de modèles LaTeX
+
+Si vous souhaitez créer votre propre agent IA pour la génération de modèles LaTeX à l'aide de l'API Aspose.TeX, voici une suggestion de flux de travail :
+
+*Le défi technique consiste à garantir que le modèle respecte les mécanismes de compilation standard des règles de mise en page LaTeX2e sans générer d'erreurs.*
+
+![Schéma de blocs pour le flux de travail de rendu de figures LaTeX par IA](/tex/images/net/tutorial/blockscheme-ai-for-latex-template-creation.png)
+
+1. Ingestion des exigences de mise en page (couche d'intention LLM)
+
+L'utilisateur fournit des contraintes de conception générales ou des instructions de formatage (par exemple : « Créer une mise en page de type revue à deux colonnes avec des marges de 1,5 cm, en utilisant la police Times New Roman, des titres rouges et un encadré d'auteur élégant en haut »). Le LLM traduit ensuite ces détails visuels et sémantiques en exigences programmatiques structurelles.
+La matrice d'intention détermine si la requête nécessite un fichier de classe (.cls) entièrement nouveau et autonome pour un type de document personnalisé, ou simplement un wrapper de style (.sty) adapté qui s'intègre à des classes standard telles que article ou report.
+
+2. Alignement de l'arbre d'héritage et génération de classes (couche de structure)
+
+L'agent construit les blocs de code structurels du fichier .cls à partir d'une matrice structurelle rigide :
+- Insertion automatique de `\NeedsTeXFormat{LaTeX2e}` et d'un en-tête de métadonnées dynamique `\ProvidesClass{...}[...]`.
+- Association de l'archétype de conception cible à une classe de base via `\LoadClass{...}`.
+- Conversion des composants en langage naturel en macros natives (par exemple, transformation d'une requête de « boîte d'auteur » en un bloc de définition personnalisé `\renewcommand{\maketitle}{...}`).
+
+3. Création des packages et collecte des ressources (Couche de dépendances)
+
+Selon les instructions de conception extraites lors de la première étape, le moteur de mise en page aura besoin d'outils macro tiers spécialisés (par exemple, geometry pour les ajustements de marges, `xcolor` pour les couleurs de marque personnalisées ou `fontspec` pour les configurations de polices modernes).
+L'agent agit comme un filtre de linting. Il insère dynamiquement les instructions `\RequirePackage{...}` requises dans le bundle de classes ou de styles.
+
+4. Vérification et validation (Nœud de compilation Aspose.TeX)
+
+L'agent crée dynamiquement un fichier de test (`sample.tex`) qui charge le modèle.
+Ensuite, l'agent lance un `TeXJob` implicite via Aspose.TeX pour compiler le code du modèle. En cas d'échec de la compilation, l'agent lit les journaux d'erreurs (`.log`) et les transmet au LLM pour une correction syntaxique automatique. Si la compilation réussit, le bundle de ressources est vérifié.

@@ -6,7 +6,7 @@ linktitle: Riparazione dei file in LaTeX
 weight: 30
 url: /net/latex-repair/
 description: La soluzione API TeX per la riparazione del LaTeX .NET è descritta in questo articolo. Scopri gli esempi di codice su come utilizzare la funzionalità.
-lastmod: "2026-04-03"
+lastmod: "2026-06-12"
 ---
 
 {{<section overview>}}
@@ -27,7 +27,7 @@ Dopo aver assegnato le opzioni, eseguiamo semplicemente il processo!
 
 Allora, com'è il processo di controllo e riparazione? In primo luogo, l'API cerca il file di input per un occorrenza `\documentclass`. Se fallisce, presuppone che `\documentclass{article}` debba essere inserito all'inizio del file. Questo fatto si riflette nel file del rapporto di riparazione (`.log`).
 
-Quindi, inizia a scansionare il file di input regolato dall'inizio. Il motore TEX accusato del formato in LaTeX può lanciare un errore ad un certo punto, segnalando che finora non è stato trovato alcun `\begin{document}`, sebbene avrebbe già dovuto verificarsi. Pertanto, la posizione in cui `\inizio {documento} deve essere inserita viene definita e riflessa nel rapporto.
+Quindi, inizia a scansionare il file di input regolato dall'inizio. Il motore TEX accusato del formato in LaTeX può lanciare un errore ad un certo punto, segnalando che finora non è stato trovato alcun `\begin{document}`, sebbene avrebbe già dovuto verificarsi. Pertanto, la posizione in cui `\begin{document}`deve essere inserita viene definita e riflessa nel rapporto.
 
 Man mano che il motore scruta ulteriormente il file, potrebbe trovare comandi o ambienti indefiniti. L'API può fare ipotesi su [pacchetti richiesti incorporati](/tex/{{lang.url-fragment}}net/embedded-packages/) (quelli che definiscono i comandi e gli ambienti che non sono definiti fino a quando questi pacchetti non sono inclusi) per alcuni dei comandi e ambienti più comuni. Tuttavia, esiste un modo per fare tali ipotesi esternamente implementando l'interfaccia [IGUessPackageCallback](https://reference.aspose.com/tex/net/aspose.tex.features/iguesspackagecallback/). Un'istanza di tale classe dovrebbe essere assegnata all'opzione `Indovine.
 
@@ -78,5 +78,22 @@ Controllo del file riparato...
 --------------------------------------------------------------------------------
 Non ci sono errori critici nel file riparato.
 ```
+
+## Creazione di un agente IA per la riparazione di formule matematiche in LaTeX
+
+Questo flusso di lavoro combina la validazione strutturale dell'API di riparazione nativa di Aspose.TeX con l'inferenza contestuale di un LLM Core per ottenere una pipeline di rendering a prova di errore. Può essere un agente separato per controllare e correggere gli errori nei file LaTeX esistenti o parte del processo di scrittura di formule matematiche.
+
+### Architettura del flusso di lavoro per un agente IA che ripara la sintassi LaTeX
+
+![Schema a blocchi per il flusso di lavoro di riparazione LaTeX tramite IA](/tex/images/net/tutorial/blockscheme-for-math-repairing.png)
+
+1. Elaborazione sintattica ed estrazione dell'intento (livello LLM)
+L'utente fornisce istruzioni conversazionali, frammenti di testo grezzo, formule copiate o un file `.latex`. L'agente sollecita l'LLM a estrarre gli intenti matematici principali e produce un blocco matematico LaTeX mirato. 2. Correzione automatica della struttura nativa (riparatore Aspose.TeX)
+Il frammento matematico generato viene instradato attraverso il ciclo di vita di riparazione nativo di Aspose.TeX per creare i limiti strutturali standard senza che gli sviluppatori debbano scrivere wrapper regex hardcoded.
+
+L'agente crea un'istanza di LaTeXRepairer in background. Il motore analizza i flussi di dati, intercetta gli errori e scrive in modo sicuro i wrapper `\begin{document}` e `\end{document}` attorno alle stringhe matematiche per mantenere valida la pipeline di compilazione.
+
+4. Esecuzione e generazione di risorse/report (motore di rendering)
+Una volta che la stringa di script riparata e impacchettata è stata compilata correttamente, l'agente crea un report o converte l'output pulito del file system nei formati visivi di destinazione.
 
 **Puoi anche verificare la nostra app Web gratuita [** AI Latex Repair **](https://products.aspose.ai/tex/latex-repairer), che è costruita in base alla funzionalità implementata nell'interfaccia [Aspose.TeX per .NET API](https://products.aspose.com/tex/net/) e comporta un'implementazione più avanzata dell'interfaccia `IguesspackageCallback`.**
