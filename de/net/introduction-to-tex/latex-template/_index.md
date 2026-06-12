@@ -8,7 +8,7 @@ weight: 100
 url: /net/latex-templates/
 description: Erfahren Sie, was LaTeX-Vorlagen sind, wie Sie sie verwenden und erstellen, wo Sie die beliebtesten herunterladen können und einen schnellen Workflow mit kopierfertigen Snippets.
 keywords: LaTeX, Vorlage, Klasse, Stil, Overleaf, CTAN, Bibliographie, Beamer, Abschlussarbeit, Lebenslauf
-lastmod: "2026-04-22"
+lastmod: "2026-06-12"
 ---
 
 {{<section overview>}}
@@ -126,3 +126,33 @@ Top 10     → IEEEtran, llncs, elsarticle, modern‑simple‑cv,
 ```
 
 Viel Spaß beim Setzen!
+
+
+## Entwicklung eines KI-Agenten zur Erstellung von LaTeX-Vorlagen
+
+Wenn Sie einen eigenen KI-Agenten zur Erstellung von LaTeX-Vorlagen mithilfe der Aspose.TeX-API entwickeln möchten, finden Sie hier einen Vorschlag für einen möglichen Workflow:
+
+*Die technische Herausforderung besteht darin, sicherzustellen, dass die Vorlage den Standard-Kompilierungsmechanismen der LaTeX2e-Layoutregeln fehlerfrei entspricht.*
+
+![Blockschema für den KI-Workflow zur Darstellung von LaTeX-Abbildungen](/tex/images/net/tutorial/blockscheme-ai-for-latex-template-creation.png)
+
+1. Erfassung der Layoutanforderungen (LLM-Intent-Layer)
+Der Benutzer gibt allgemeine Designvorgaben oder Formatierungsanweisungen vor (z. B. „Erstellen Sie ein zweispaltiges Zeitschriftenlayout mit 1,5 cm Seitenrändern, Times New Roman-Schriftart, roten Überschriften und einem eleganten Autorenfeld am oberen Rand“). Anschließend ordnet der LLM diese semantischen visuellen Details strukturellen programmatischen Anforderungen zu.
+
+Die Intent-Matrix entscheidet, ob die Anfrage eine komplett neue, eigenständige Klassendatei (`.cls`) für einen benutzerdefinierten Dokumenttyp erfordert oder lediglich einen angepassten Style-Wrapper (`.sty`), der in Standardklassen wie Artikel oder Bericht eingebunden wird.
+
+2. Ausrichtung des Vererbungsbaums und Klassengenerierung (Strukturschicht)
+Der Agent erstellt die Strukturcodeblöcke für die `.cls`-Datei basierend auf einer starren Strukturmatrix:
+- Fügt automatisch `\NeedsTeXFormat{LaTeX2e}` und einen dynamischen Metadaten-Header `\ProvidesClass{...}[...]` ein.
+- Ordnet den Ziel-Designarchetyp über `\LoadClass{...}` einer Basisklasse zu.
+- Konvertiert natürlichsprachliche Komponenten in native Makros (z. B. die Umwandlung einer „Autorenbox“-Anfrage in einen benutzerdefinierten `\renewcommand{\maketitle}{...}`-Definitionsblock).
+
+3. Paketfabrik und Asset-Sammlung (Abhängigkeitsschicht)
+Abhängig von den im ersten Schritt extrahierten Designanweisungen benötigt die Layout-Engine spezielle Makro-Tools von Drittanbietern (z. B. `geometry` für Randanpassungen, `xcolor` für benutzerdefinierte Markenfarben oder `fontspec` für moderne Schriftkonfigurationen).
+
+Der Agent fungiert als Linting-Filter. Er fügt dynamisch die erforderlichen `\RequirePackage{...}`-Anweisungen in das Klassen- oder Stil-Bundle ein.
+
+4. Verifizierung und Validierung (Aspose.TeX-Kompilierungsknoten)
+Der Agent erstellt dynamisch eine Testdatei (`sample.tex`), die die Vorlage lädt.
+
+Anschließend startet der Agent über Aspose.TeX einen impliziten `TeXJob`, um den Vorlagencode zu kompilieren. Schlägt die Kompilierung fehl, liest der Agent die Fehlerprotokolle (`.log`) und leitet die Trace-Protokolle zur automatischen Syntaxkorrektur an den LLM zurück. Bei erfolgreicher Kompilierung wird das Asset-Bundle verifiziert.

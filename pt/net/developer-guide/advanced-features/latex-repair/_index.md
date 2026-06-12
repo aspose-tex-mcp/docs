@@ -79,4 +79,23 @@ A verificar o ficheiro reparado...
 Não existem erros críticos no ficheiro corrigido.
 ```
 
+## Construir um Agente de IA para Reparação de Sintaxe LaTeX
+
+Este fluxo de trabalho combina a validação estrutural da API de reparação nativa do Aspose.TeX com a inferência contextual de um núcleo LLM para alcançar um pipeline de renderização à prova de erros. Pode ser um Agente separado para verificar e corrigir erros em ficheiros LaTeX existentes ou parte do processo de escrita matemática.
+
+### Arquitetura de workflow para um Agente de IA que repara a sintaxe LaTeX
+
+![Esquema de blocos para o workflow de reparação de LaTeX com IA](/tex/images/net/tutorial/blockscheme-for-math-repairing.png)
+
+1. Processamento sintático e extração de intenções (camada LLM)
+O utilizador fornece instruções conversacionais, excertos de texto em bruto, fórmulas copiadas ou um ficheiro `.latex`. O Agente solicita ao LLM que extraia as intenções matemáticas principais e gera um bloco matemático LaTeX focado.
+
+2. Correção automática da estrutura nativa (reparador Aspose.TeX)
+O fragmento matemático gerado é encaminhado pelo ciclo de vida de reparação nativo do Aspose.TeX para construir limites estruturais padrão sem que os programadores tenham de escrever wrappers de expressões regulares codificados.
+
+O agente cria uma instância LaTeXRepairer em segundo plano. O motor examina os fluxos de dados, interceta falhas e escreve com segurança os wrappers `\begin{document}` e `\end{document}` em torno das strings matemáticas para manter o pipeline de compilação válido.
+
+4. Execução e geração de recursos/relatórios (mecanismo de renderização)
+Assim que a string de script reparada e empacotada é compilada com sucesso, o Agente cria um relatório ou converte a saída limpa do sistema de ficheiros em formatos visuais de destino.
+
 **Você também pode conferir nosso aplicativo Web GRATUITO [** AI LATEX **](https://products.aspose.ai/tex/latex-repairer), que é construído com base no recurso implementado no [Aspose.TeX para .NET API](https://products.aspose.com/tex/net/) e envolve uma implementação mais avançada da interface `iguesspackagecallback`.**

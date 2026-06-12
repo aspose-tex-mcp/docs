@@ -1,26 +1,26 @@
 ---
 translation: true
 template: /templates/_template-net.md
-title: LaTeX math formulas rendering | Aspose.TeX for .NET
-linktitle: LaTeX math formulas rendering
+title: Renderizado de fórmulas matemáticas en LaTeX | Aspose.TeX para .NET
+linktitle: Renderizado de fórmulas matemáticas en LaTeX
 weight: 10
 url: /net/latex-math-formula-rendering/
-description: Aspose.TeX API solution for .NET LaTeX math formulas rendering is described in this article. Learn the code examples on how to use the functionality.
-lastmod: "2026-04-22"
+description: En este artículo se describe la solución de la API de Aspose.TeX para el renderizado de fórmulas matemáticas en LaTeX para .NET. Aprenda sobre los ejemplos de código para usar esta funcionalidad.
+lastmod: "2026-06-11"
 ---
 
 {{<section overview>}}
 
 
-## How to render a LaTeX math formula to PNG
+## Cómo renderizar una fórmula matemática de LaTeX a PNG
 
-The API reference section related to this topic is [here](https://reference.aspose.com/tex/net/aspose.tex.features/). In fact, the easiest way to demonstrate the **LaTeX math formula rendering** feature is to start with the example. Here it is:
+La sección de referencia de la API relacionada con este tema se encuentra [aquí](https://reference.aspose.com/tex/net/aspose.tex.features/). De hecho, la forma más sencilla de demostrar la función de **renderizado de fórmulas matemáticas de LaTeX** es comenzar con el ejemplo. Aquí lo tiene:
 
 {{< gist "aspose-com-gists" "cd0acc55d1634f17dcf42e02075ca005" "Example-RenderMathToPNG.cs" >}}
 
-Let's get to the details. First of all, we create a [rendering options](https://reference.aspose.com/tex/net/aspose.tex.features/mathrendereroptions/) instance, similar to the TeX/LaTeX typesetting. We do it here simultaneously specifying the output image resolution.
+Veamos los detalles. En primer lugar, creamos una instancia de [opciones de renderizado](https://reference.aspose.com/tex/net/aspose.tex.features/mathrendereroptions/), similar a la composición tipográfica de TeX/LaTeX. Lo hacemos aquí especificando simultáneamente la resolución de la imagen de salida.
 
-Next, we specify the preamble. The default preamble is:
+A continuación, especificamos el preámbulo. El preámbulo predeterminado es:
 
 
 ```tex
@@ -29,46 +29,69 @@ Next, we specify the preamble. The default preamble is:
 \usepackage{amssymb}
 ```
 
-which provides slightly more advanced math formula support than basic LaTeX. You can, for example, add the `color` package if you want to use your own highlighting in the formula, as we showed in the code example.
+Esto proporciona una compatibilidad con fórmulas matemáticas ligeramente más avanzada que la de LaTeX básico. Por ejemplo, puede añadir el paquete `color` si desea utilizar su propio resaltado en la fórmula, como se muestra en el ejemplo de código.
 
-Then we instruct the renderer to scale the output by 300%.
+A continuación, indicamos al renderizador que escale la salida al 300 %.
 
-Next two options define the foreground and background colors. Those parts of the formula that are not covered ("colored") by the custom highlighting will be displayed in the `TextColor` color.
+Las dos opciones siguientes definen los colores de primer plano y de fondo. Las partes de la fórmula que no estén cubiertas ("coloreadas") por el resaltado personalizado se mostrarán con el color `TextColor`.
 
-The next line of the example doesn't make much sense. It just demonstrates that you can direct the log output to some stream.
+La siguiente línea del ejemplo no tiene mucho sentido. Simplemente demuestra que se puede dirigir la salida del registro a un flujo.
 
-And the last option `ShowTerminal` allows you to toggle writing the terminal output to the console.
+Y la última opción, `ShowTerminal`, permite alternar la visualización de la salida de la terminal en la consola.
 
-The method that actually performs the rendering is [MathRenderer.Render()](https://reference.aspose.com/tex/net/aspose.tex.features/mathrenderer/render/). It returns the size of the formula in points.
+El método que realiza la representación es `MathRenderer.Render()`. Este método devuelve el tamaño de la fórmula en puntos.
 
-The stream where the image is to be written is accepted by the method as the second argument. We create the stream next.
+El método acepta como segundo argumento el flujo donde se escribirá la imagen. A continuación, creamos el flujo.
 
-And finally, we call the `MathRenderer.Render()` method itself, passing options as the third argument. The LaTeX code of the formula is passed as the first argument.
+Finalmente, llamamos al método `MathRenderer.Render()`, pasando las opciones como tercer argumento. El código LaTeX de la fórmula se pasa como primer argumento.
 
-The last lines of the example print two artifacts of math formula rendering - the size of the formula and the brief error report (in case there are errors).
+Las últimas líneas del ejemplo imprimen dos elementos de la representación de la fórmula matemática: el tamaño de la fórmula y un breve informe de errores (en caso de que los haya).
 
-Here is the result of rendering.
+Este es el resultado de la representación.
 
-<a href="/tex/net/latex-math-formula-rendering/math-formula.png">![LaTeX Math Formula rendering to PNG](/tex/images/net/math-formula.png)</a>
+<a href="/tex/net/latex-math-formula-rendering/math-formula.png">![Renderizado de fórmulas matemáticas de LaTeX a PNG](/tex/images/net/math-formula.png)</a>
 
-This is the most general use case for the **LaTeX math formula rendering** feature.
+Este es el caso de uso más común para la función de **renderizado de fórmulas matemáticas de LaTeX**.
 
-**You may also check out the free [web app](https://products.aspose.app/tex/equation-editor/png) built based on the feature implemented within [Aspose.TeX for .NET API](https://products.aspose.com/tex/net/).**
+**También puede consultar la aplicación web gratuita [https://products.aspose.app/tex/equation-editor/png], basada en la función implementada en la API de Aspose.TeX para .NET [https://products.aspose.com/tex/net/].**
 
-## How to render a LaTeX math formula to SVG
+## Cómo renderizar una fórmula matemática de LaTeX a SVG
 
-In much the same way, we can render a LaTeX math formula to SVG format.
+De forma muy similar, podemos renderizar una fórmula matemática de LaTeX a formato SVG.
 
 {{< gist "aspose-com-gists" "cd0acc55d1634f17dcf42e02075ca005" "Example-RenderMathToSVG.cs" >}}
 
-The differences are:
+Las diferencias son:
 
-* We use [SvgMathRendererOptions](https://reference.aspose.com/tex/net/aspose.tex.features/svgmathrendereroptions/) class instead of [PngMathRendererOptions](https://reference.aspose.com/tex/net/aspose.tex.features/pngmathrendereroptions/).
-* We don't specify resolution.
-* We use [SvgMathRenderer](https://reference.aspose.com/tex/net/aspose.tex.features/svgmathrenderer/) class instead of [PngMathRenderer](https://reference.aspose.com/tex/net/aspose.tex.features/pngmathrenderer/).
- 
-Here is the result:
+* Usamos la clase [SvgMathRendererOptions](https://reference.aspose.com/tex/net/aspose.tex.features/svgmathrendereroptions/) en lugar de [PngMathRendererOptions](https://reference.aspose.com/tex/net/aspose.tex.features/pngmathrendereroptions/).
+* No especificamos la resolución.
+* Usamos la clase [SvgMathRenderer](https://reference.aspose.com/tex/net/aspose.tex.features/svgmathrenderer/) en lugar de [PngMathRenderer](https://reference.aspose.com/tex/net/aspose.tex.features/pngmathrenderer/).
 
-<a href="/tex/net/latex-math-formula-rendering/math-formula.svg">![LaTeX Math Formula rendering to SVG](/tex/images/net/math-formula.svg)</a>
+Este es el resultado:
 
-**You may also check out the free [web app](https://products.aspose.app/tex/equation-editor/svg) built based on the feature implemented within [Aspose.TeX for .NET API](https://products.aspose.com/tex/net/).**
+<a href="/tex/net/latex-math-formula-rendering/math-formula.svg">![Renderizado de fórmulas matemáticas de LaTeX a SVG](/tex/images/net/math-formula.svg)</a>
+
+## Creación de un agente de IA para la representación matemática en LaTeX con Aspose.TeX
+
+Para los desarrolladores que buscan integrar esta funcionalidad en un agente de IA conversacional o programático, el principal desafío de ingeniería pasa de la simple ejecución de código al reconocimiento de intenciones, la verificación de la estructura y el procesamiento de errores en tiempo de ejecución.
+
+A continuación, se presenta una propuesta de arquitectura de flujo de trabajo para un agente de IA que interpreta las solicitudes del usuario, genera sintaxis LaTeX válida y devuelve componentes visuales completamente renderizados.
+
+![Esquema de bloques para el flujo de trabajo de representación matemática en LaTeX con IA](/tex/images/net/tutorial/blockscheme-for-ai-math-rendering.png)
+
+Como se puede observar, el agente de IA para la representación matemática debe operar como un bucle de retroalimentación cerrado compuesto por tres microcapas:
+
+1. Entrada y recopilación de sintaxis (Capa LLM)
+El usuario escribe en lenguaje natural o expresiones de sintaxis parciales (por ejemplo, "Muéstrame la derivada de una ecuación de multiplicación de matrices"). El agente transforma estas indicaciones en estructuras matemáticas LaTeX válidas dentro de una carga útil JSON estructurada, evitando envoltorios de Markdown como ````latex`.
+
+2. Validación y saneamiento del AST (Capa de validación)
+Antes de enrutar las cadenas directamente a las canalizaciones de ejecución, el agente de software valida los patrones de tokens para prevenir inyecciones de seguridad o cadenas de ejecución rotas.
+
+3. Canalización de ejecución de la API (Motor Aspose.TeX)
+El agente pasa el token saneado directamente al marco de procesamiento de backend mediante las reglas de ejecución programática.
+
+El agente instancia `SvgMathRendererOptions` o `PngMathRendererOptions` según el contexto del cliente (por ejemplo, si el usuario está en un dispositivo móvil o web, usa SVG para una nitidez óptima).
+
+4. Si la compilación de Aspose.TeX falla o encuentra advertencias de sintaxis, envía diagnósticos de registro estándar directamente a un flujo de errores en tiempo de ejecución. En lugar de provocar fallos silenciosos o bloqueos en las interfaces de usuario, el agente intercepta los datos del rastreo de la pila, crea un bucle de contexto e incita al LLM a reescribir la carga útil de la ecuación.
+
+**También puede consultar la aplicación web gratuita [https://products.aspose.app/tex/equation-editor/svg], basada en la funcionalidad implementada en la API [Aspose.TeX para .NET](https://products.aspose.com/tex/net/).**

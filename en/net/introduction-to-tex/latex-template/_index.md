@@ -8,7 +8,7 @@ weight: 100
 url: /net/latex-templates/
 description: Learn what LaTeX templates are, how to use and create them, where to download the most popular ones, and a fast workflow with ready‑to‑copy snippets.
 keywords: LaTeX, template, class, style, Overleaf, CTAN, bibliography, Beamer, thesis, CV
-lastmod: "2026-04-22"
+lastmod: "2026-06-12"
 ---
 
 {{<section overview>}}
@@ -127,3 +127,30 @@ Hot 10  → IEEEtran, llncs, elsarticle, modern‑simple‑cv,
 ```
 
 Happy typesetting!
+
+## Building a LaTeX Template making AI Agent
+
+If you want to create your own AI Agent for LaTeX template creation using Aspose.TeX API, here is a suggestion for a possible workflow of such an agent:
+
+*The engineering challenge here is to ensure that the template will follow the standard compilation mechanics of LaTeX2e layout rules without producing errors.*
+
+![Blockscheme for AI LaTeX figure rendering workflow](/tex/images/net/tutorial/blockscheme-ai-for-latex-template-creation.png) 
+
+1. Layout requirements ingestion (LLM intent layer)
+The user provides high-level design constraints or formatting instructions (e.g., "Create a double-column journal layout with 1.5cm margins, using Times New Roman fonts, red headers, and an elegant author box at the top"). Then the LLM maps these semantic visual details into structural programmatic requirements.
+The intent matrix decides whether the request requires an entirely new standalone Class (`.cls`) file for a custom document type or just a tailored Style (`.sty`) wrapper that hooks into standard classes like article or report.
+
+2. Inheritance tree alignment and Class generation (Structure layer)
+The agent builds out the structural code blocks for the `.cls` file based on a rigid structural matrix:
+- Automatically inserts `\NeedsTeXFormat{LaTeX2e}` and a dynamic `\ProvidesClass{...}[...]` metadata header.
+- Maps the target design archetype to a base class via `\LoadClass{...}`.
+- Converts natural language components into native macros (such as transforming an "author box" request into a custom `\renewcommand{\maketitle}{...}` definition block).
+
+3. Package factory and asset gathering (Dependency layer)
+Depending on the design instructions extracted in the first step, the layout engine will need specialized third-party macro tools (e.g., geometry for margin adjustments, `xcolor` for custom branding colors, or `fontspec` for modern font configurations).
+The Agent acts as a linting filter. It dynamically inserts required `\RequirePackage{...}` statements into the class or style bundle.
+
+4. Verification and validation (Aspose.TeX compilation node)
+The agent dynamically creates a test file (`sample.tex`) that loads the template.
+Then the Agent spins up an implicit `TeXJob` via Aspose.TeX to compile the template code. If the compilation fails, the agent reads the error output logs (`.log`) and pipes the trace logs back to the LLM for automated syntax correction. If the compilation passes, the asset bundle is verified.
+

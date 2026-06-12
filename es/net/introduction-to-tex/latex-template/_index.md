@@ -8,7 +8,7 @@ weight: 100
 url: /net/latex-templates/
 description: Aprenda qué son las plantillas LaTeX, cómo usarlas y crearlas, dónde descargar las más populares y un flujo de trabajo rápido con fragmentos listos para copiar.
 keywords: LaTeX, plantilla, clase, estilo, Overleaf, CTAN, bibliografía, Beamer, tesis, CV
-lastmod: "2026-04-22"
+lastmod: "2026-06-12"
 ---
 
 {{<section overview>}}
@@ -127,3 +127,32 @@ Los 10 más populares → IEEEtran, llncs, elsarticle, modern-simple-cv,
 ```
 
 ¡Feliz tipografía!
+
+
+## Creación de un agente de IA para la creación de plantillas LaTeX
+
+Si desea crear su propio agente de IA para la creación de plantillas LaTeX utilizando la API de Aspose.TeX, aquí tiene una sugerencia para un posible flujo de trabajo:
+
+*El desafío de ingeniería consiste en asegurar que la plantilla siga la mecánica de compilación estándar de las reglas de diseño de LaTeX2e sin generar errores.*
+
+![Esquema de bloques para el flujo de trabajo de renderizado de figuras LaTeX con IA](/tex/images/net/tutorial/blockscheme-ai-for-latex-template-creation.png)
+
+1. Ingesta de requisitos de diseño (capa de intención LLM)
+El usuario proporciona restricciones de diseño de alto nivel o instrucciones de formato (por ejemplo, "Crear un diseño de revista a doble columna con márgenes de 1,5 cm, utilizando fuentes Times New Roman, encabezados rojos y un elegante recuadro de autor en la parte superior"). A continuación, el LLM transforma estos detalles visuales semánticos en requisitos programáticos estructurales.
+La matriz de intenciones determina si la solicitud requiere un archivo de clase independiente (`.cls`) completamente nuevo para un tipo de documento personalizado o simplemente un archivo de estilo (`.sty`) adaptado que se integra con clases estándar como `article` o `report`.
+
+2. Alineación del árbol de herencia y generación de clases (capa de estructura)
+El agente genera los bloques de código estructurales para el archivo `.cls` basándose en una matriz estructural rígida:
+- Inserta automáticamente `\NeedsTeXFormat{LaTeX2e}` y un encabezado de metadatos dinámico `\ProvidesClass{...}[...]`.
+- Asigna el arquetipo de diseño de destino a una clase base mediante `\LoadClass{...}`.
+- Convierte componentes de lenguaje natural en macros nativas (por ejemplo, transforma una solicitud de "cuadro de autor" en un bloque de definición personalizado `\renewcommand{\maketitle}{...}`).
+
+3. Fábrica de paquetes y recopilación de recursos (Capa de dependencias)
+Según las instrucciones de diseño extraídas en el primer paso, el motor de maquetación necesitará herramientas de macros especializadas de terceros (por ejemplo, geometría para ajustes de márgenes, `xcolor` para colores de marca personalizados o `fontspec` para configuraciones de fuentes modernas).
+
+El agente actúa como un filtro de análisis estático. Inserta dinámicamente las declaraciones `\RequirePackage{...}` necesarias en el paquete de clases o estilos.
+
+4. Verificación y validación (Nodo de compilación de Aspose.TeX)
+El agente crea dinámicamente un archivo de prueba (`sample.tex`) que carga la plantilla.
+
+Luego, el agente inicia un `TeXJob` implícito a través de Aspose.TeX para compilar el código de la plantilla. Si la compilación falla, el agente lee los registros de salida de errores (`.log`) y los envía al motor de maquetación para la corrección sintáctica automática. Si la compilación es exitosa, se verifica el paquete de recursos.

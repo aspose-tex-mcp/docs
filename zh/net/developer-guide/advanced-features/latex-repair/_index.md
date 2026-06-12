@@ -6,7 +6,7 @@ linktitle: LaTeX 文件修复
 weight: 30
 url: /net/latex-repair/
 description: 本文介绍 Aspose.TeX API 在 .NET 上的 LaTeX 修复解决方案。了解如何使用此功能的代码示例。
-lastmod: "2026-02-25"
+lastmod: "2026-06-12"
 ---
 
 {{<section overview>}}
@@ -78,5 +78,27 @@ Checking the repaired file...
 --------------------------------------------------------------------------------
 There are no critical errors in the fixed file.
 ```
+
+## 构建 LaTeX 数学公式修复 AI 代理
+
+此工作流程结合了 Aspose.TeX 原生修复 API 的结构验证和 LLM Core 的上下文推理，从而实现无错渲染流程。它可以作为独立的代理来检查和修复现有 LaTeX 文件中的错误，也可以作为数学公式编写流程的一部分。
+
+### 用于修复 LaTeX 语法的 AI 代理的工作流程架构
+
+![AI LaTeX 修复工作流程框图](/tex/images/net/tutorial/blockscheme-for-math-repairing.png)
+
+1. 语法处理和意图提取（LLM 层）
+
+用户提供对话式指令、原始文本片段、复制的公式或 `.latex` 文件。代理会引导 LLM 提取核心数学意图，并输出一个聚焦的 LaTeX 数学公式块。
+
+2. 原生结构自动纠错（Aspose.TeX 修复器）
+
+生成的数学片段会通过 Aspose.TeX 原生修复生命周期进行处理，从而构建标准结构边界，无需开发者编写硬编码的正则表达式包装器。
+
+代理程序会创建一个后台 LaTeXRepairer 实例。引擎会扫描数据流，拦截错误，并在数学字符串周围安全地写入 `\begin{document}` 和 `\end{document}` 包装器，以确保编译流程的有效性。
+
+4. 执行和资源/报告生成（渲染引擎）
+
+修复并打包后的脚本字符串成功编译后，代理程序会生成报告或将清理后的文件系统输出转换为目标视觉格式。
 
 您也可以查看我们的免费 [**AI LaTeX Repairer**](https://products.aspose.ai/tex/latex-repairer) 网络应用程序，该应用基于在 [Aspose.TeX for .NET API](https://products.aspose.com/tex/net/) 中实现的功能，并涉及更高级的 `IGuessPackageCallback` 接口实现。

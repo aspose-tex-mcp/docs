@@ -6,7 +6,7 @@ linktitle: Reparación de archivos LaTeX
 weight: 30
 url: /net/latex-repair/
 description: La solución Aspose.TeX para la reparación de .NET LaTeX se describe en este artículo. Conozca los ejemplos de código sobre cómo utilizar la funcionalidad.
-lastmod: "2026-04-03"
+lastmod: "2026-06-12"
 ---
 
 {{<section overview>}}
@@ -78,5 +78,24 @@ Checking the repaired file...
 --------------------------------------------------------------------------------
 There are no critical errors in the fixed file.
 ```
+
+## Creación de un agente de IA para la reparación de fórmulas matemáticas en LaTeX
+
+Este flujo de trabajo combina la validación estructural de la API de reparación nativa de Aspose.TeX con la inferencia contextual de un núcleo LLM para lograr un proceso de renderizado a prueba de errores. Puede ser un agente independiente para revisar y corregir errores en archivos LaTeX existentes o formar parte del proceso de escritura de fórmulas matemáticas.
+
+### Arquitectura del flujo de trabajo para un agente de IA que repara la sintaxis de LaTeX
+
+![Esquema de bloques para el flujo de trabajo de reparación de LaTeX con IA](/tex/images/net/tutorial/blockscheme-for-math-repairing.png)
+
+1. Procesamiento sintáctico y extracción de intenciones (capa LLM)
+El usuario proporciona instrucciones conversacionales, fragmentos de texto sin formato, fórmulas copiadas o un archivo `.latex`. El agente solicita al LLM que extraiga las intenciones matemáticas principales y genera un bloque matemático de LaTeX específico.
+
+2. Autocorrección de estructura nativa (Reparador de Aspose.TeX)
+El fragmento matemático generado se procesa mediante el ciclo de vida de reparación nativo de Aspose.TeX para establecer límites estructurales estándar sin que los desarrolladores tengan que escribir expresiones regulares predefinidas.
+
+El agente crea una instancia de LaTeXRepairer en segundo plano. El motor analiza los flujos de datos, detecta errores y escribe de forma segura las expresiones `\begin{document}` y `\end{document}` alrededor de las cadenas matemáticas para mantener la validez del proceso de compilación.
+
+4. Ejecución y generación de recursos/informes (Motor de renderizado)
+Una vez que la cadena de script reparada y empaquetada se compila correctamente, el agente crea un informe o convierte la salida limpia del sistema de archivos a los formatos visuales de destino.
 
 **También puede consultar nuestra aplicación web gratuita [**AI LaTeX Repairer**](https://products.aspose.ai/tex/latex-repairer), que se basa en la función implementada dentro de [Aspose.TeX para .NET API](https://products.aspose.com/tex/net/) e implica una versión más avanzada. implementación de la interfaz `IGuessPackageCallback`.**

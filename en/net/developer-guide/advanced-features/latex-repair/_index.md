@@ -6,7 +6,7 @@ linktitle: LaTeX file repair
 weight: 30
 url: /net/latex-repair/
 description: Aspose.TeX API solution for .NET LaTeX repair is described in this article. Learn the code examples on how to use the functionality.
-lastmod: "2024-09-20"
+lastmod: "2026-06-12"
 ---
 
 {{<section overview>}}
@@ -81,5 +81,23 @@ Checking the repaired file...
 --------------------------------------------------------------------------------
 There are no critical errors in the fixed file.
 ```
+
+## Building a LaTeX Math Repairing AI Agent
+
+This workflow combines the structural validation of the Aspose.TeX native repair API with the contextual inference of an LLM Core to achieve an error-proof rendering pipeline. It can be a separate Agent to check and fix errors in the existing LaTeX files or a part of the math writing process.
+
+### Workflow architecture for an AI Agent that repairs LaTeX syntaxis
+
+![Blockscheme for AI LaTeX repairing workflow](/tex/images/net/tutorial/blockscheme-for-math-repairing.png) 
+
+1. Syntactic processing and intent extraction (LLM layer)
+The user provides conversational instructions, raw text snippets, copied formulas, or a `.latex` file. The Agent urges the LLM to extract the core mathematical intents and outputs a focused LaTeX mathematical block.
+2. Native structure auto-correction (Aspose.TeX repairer)
+The generated math fragment is routed through the native Aspose.TeX repair lifecycle to build out standard structural boundaries without developers needing to write hardcoded regex wrappers.
+The agent creates a background LaTeXRepairer instance. The engine scans the data streams, intercepts faults, and safely writes \begin{document} and \end{document} wrappers around the math strings to keep the compilation pipeline valid.
+
+4. Execution and asset/report generation (Rendering engine)
+Once the repaired and packaged script string is successfully compiled, the Agent creates a report or converts the clean file system output into target visual formats.
+
 
 **You may also check out our free [**AI LaTeX Repairer**](https://products.aspose.ai/tex/latex-repairer) web app, which is built based on the feature implemented within [Aspose.TeX for .NET API](https://products.aspose.com/tex/net/) and involves a more advanced implementation of the `IGuessPackageCallback` interface.**

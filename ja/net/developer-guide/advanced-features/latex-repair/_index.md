@@ -6,7 +6,7 @@ linktitle: LaTeX ファイル修復
 weight: 30
 url: /net/latex-repair/
 description: Aspose.TeX API の .NET 用 LaTeX 修復ソリューションについて説明しています。機能の使用方法を示すコード例をご覧ください。
-lastmod: "2026-04-03"
+lastmod: "2026-06-12"
 ---
 
 {{<section overview>}}
@@ -78,5 +78,24 @@ Checking the repaired file...
 --------------------------------------------------------------------------------
 There are no critical errors in the fixed file.
 ```
+
+## LaTeX数式修復AIエージェントの構築
+
+このワークフローは、Aspose.TeXネイティブ修復APIの構造検証とLLMコアのコンテキスト推論を組み合わせることで、エラーのないレンダリングパイプラインを実現します。既存のLaTeXファイルのエラーをチェックして修正する独立したエージェントとして、または数式作成プロセスの一部として使用できます。
+
+### LaTeX構文を修復するAIエージェントのワークフローアーキテクチャ
+
+![AIによるLaTeX修復ワークフローのブロックスキーム](/tex/images/net/tutorial/blockscheme-for-math-repairing.png)
+
+1. 構文処理とインテント抽出（LLMレイヤー）
+ユーザーは、対話形式の指示、生のテキストスニペット、コピーした数式、または`.latex`ファイルを提供します。エージェントはLLMにコアとなる数式インテントを抽出するよう指示し、最適化されたLaTeX数式ブロックを出力します。
+
+2. ネイティブ構造の自動修正（Aspose.TeXリペアラー）
+生成された数式断片は、ネイティブのAspose.TeX修復ライフサイクルを通して処理され、開発者が正規表現ラッパーをハードコーディングすることなく、標準的な構造境界が構築されます。
+
+エージェントはバックグラウンドでLaTeXRepairerインスタンスを作成します。エンジンはデータストリームをスキャンし、エラーを検出し、コンパイルパイプラインの有効性を維持するために、数式文字列を`\begin{document}`と`\end{document}`で安全に囲みます。
+
+4. 実行とアセット/レポートの生成（レンダリングエンジン）
+修復されパッケージ化されたスクリプト文字列が正常にコンパイルされると、エージェントはレポートを作成するか、クリーンなファイルシステム出力をターゲットのビジュアル形式に変換します。
 
 **無料の **[**AI LaTeX Repairer**](https://products.aspose.ai/tex/latex-repairer)** ウェブアプリもぜひお試しください。このアプリは [Aspose.TeX for .NET API](https://products.aspose.com/tex/net/) の機能を基に構築されており、`IGuessPackageCallback` インターフェイスの高度な実装を取り入れています。**

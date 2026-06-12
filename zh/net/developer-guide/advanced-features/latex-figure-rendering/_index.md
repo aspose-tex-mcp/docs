@@ -7,7 +7,7 @@ weight: 20
 url: /net/latex-figure-rendering/
 description: Aspose.TeX API 为 .NET 提供的 LaTeX 片段（图形）渲染解决方案在本文中进行说明。了解如何使用该功能的代码示例。
 keywords: LaTeX 图形、LaTeX 图形大小、LaTeX 图片、LaTeX 图像、LaTeX 包含图形、LaTeX 图片、LaTeX 图形选项
-lastmod: "2026-04-22"
+lastmod: "2026-06-12"
 ---
 
 {{<section overview>}}
@@ -65,3 +65,26 @@ lastmod: "2026-04-22"
 以下是渲染结果：
 
 <a href="/tex/net/latex-figure-rendering/text-and-formula.svg">![LaTeX 图形渲染为 SVG](/tex/images/net/text-and-formula.svg)</a>
+
+
+## 构建 LaTeX 图形渲染 AI 代理
+
+如果您想使用 Aspose.TeX API 创建自己的 LaTeX 图形渲染 AI 代理，以下是一个可能的代理工作流程示例：
+
+![LaTeX 图形渲染 AI 工作流程框图](/tex/images/net/tutorial/blockscheme-ai-for-graphic-rendering.png)
+
+1. 导入层（LLM 核心）
+
+将非结构化或混乱的自然语言提示解析为干净、独立的 LaTeX 数学图元和图形环境（`\begin{picture}`、`\includegraphics`）。
+
+2. 虚拟文件系统（IO 层）
+
+将外部图形依赖项（`.png`、`.jpg`）安全地暂存到内存或沙盒化的 `InputFileSystemDirectory` 目录中，以便编译器可以立即解析布局引用。
+
+3. 配置
+
+分析结构代码标记，并自动添加驱动程序、依赖项（例如 `graphicx` 或 `pict2e`）、缩放因子和背景透明度状态。
+
+4. 统一执行节点（Aspose.TeX 引擎）
+
+编译统一文件，并将其直接传递给专用的 `FigureRenderer`，以计算精确的矢量边界框边距，并输出响应式可视化画布片段（SVG 或高分辨率 PNG）。

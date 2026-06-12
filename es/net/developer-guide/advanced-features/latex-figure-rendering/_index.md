@@ -7,7 +7,7 @@ weight: 20
 url: /net/latex-figure-rendering/
 description: Este artículo describe la representación de fragmentos de LaTeX (figuras) con Aspose.TeX para .NET. Consulte los ejemplos de código para esta función.
 keywords: figura de LaTeX, tamaño de figura de LaTeX, imagen de LaTeX, imagen de LaTeX, figura incluida de LaTeX, imagen de LaTeX, opciones de figura de LaTeX
-lastmod: "2026-04-22"
+lastmod: "2026-06-12"
 ---
 
 {{<section overview>}}
@@ -63,7 +63,24 @@ Las diferencias son:
 * No especificamos la resolución.
 * Usamos la clase [SvgFigureRenderer](https://reference.aspose.com/tex/net/aspose.tex.features/svgfigurerenderer/) en lugar de [PngFigureRenderer](https://reference.aspose.com/tex/net/aspose.tex.features/pngfigurerenderer/).
 
-
 Aquí está el resultado:
 
 <a href="/tex/net/latex-figure-rendering/text-and-formula.svg">![Representación de figuras LaTeX a SVG](/tex/images/net/text-and-formula.svg)</a>
+
+## Creación de un agente de IA para la representación de figuras en LaTeX
+
+Si desea crear su propio agente de IA para la representación de figuras en LaTeX utilizando la API de Aspose.TeX, aquí tiene una sugerencia para un posible flujo de trabajo:
+
+![Esquema de bloques para el flujo de trabajo de la IA en la representación de figuras en LaTeX](/tex/images/net/tutorial/blockscheme-ai-for-graphic-rendering.png)
+
+1. La capa de ingesta (núcleo LLM)
+Analiza indicaciones de lenguaje natural no estructuradas o desordenadas y las convierte en primitivas matemáticas de LaTeX y entornos de figuras limpios y aislados (`\begin{picture}`, `\includegraphics`).
+
+2. El sistema de archivos virtual (capa de E/S)
+Almacena de forma segura las dependencias gráficas externas (`.png`, `.jpg`) en un directorio `InputFileSystemDirectory` en memoria o en un entorno aislado, para que el compilador pueda resolver las referencias de diseño al instante.
+
+3. La configuración
+Analiza los marcadores de código estructural y añade automáticamente controladores, dependencias (como `graphicx` o `pict2e`), factores de escala y estados de transparencia del fondo.
+
+4. El nodo de ejecución unificado (motor Aspose.TeX)
+Compila el archivo unificado y lo pasa directamente al `FigureRenderer` especializado para calcular márgenes precisos de cuadros delimitadores vectoriales y generar fragmentos de lienzo visual adaptables (SVG o PNG de alta resolución).

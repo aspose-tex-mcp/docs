@@ -7,7 +7,7 @@ weight: 20
 url: /net/latex-figure-rendering/
 description: Hier wird Aspose.TeX für .NET das Rendern von LaTeX-Fragmenten (Figuren) beschrieben. Erfahr anhand der Codebeispiele, wie kann man Funktionalität nutzen.
 keywords: Latexfigur, Latexfigurengröße, Latexbild, Latexbild, Latex-Einschlussfigur, Latexbild, Latexfigurenoptionen
-lastmod: "2026-04-22"
+lastmod: "2026-06-12"
 ---
 
 {{<section overview>}}
@@ -23,7 +23,7 @@ Der API-Referenzabschnitt zu diesem Thema ist [hier](https://reference.aspose.co
 
 Zunächst erstellen wir eine [LaTeX-Figurenoptionen](https://reference.aspose.com/tex/net/aspose.tex.features/figurerendereroptions/)-Instanz. Wir tun dies hier und geben gleichzeitig die Ausgabebildauflösung an.
 
-Als nächstes spezifizieren wir die Präambel. Es gibt keine Standard-Präambel für das Rendern von LaTeX-Figuren. Wenn Sie also beispielsweise einige Grafiken rendern möchten, die mit dem LaTeX-Paket „pict2e“ geplottet wurden, müssen Sie dies in der Präambel angeben:
+Als nächstes spezifizieren wir die Präambel. Es gibt keine Standard-Präambel für das Rendern von LaTeX-Figuren. Wenn Sie also beispielsweise einige Grafiken rendern möchten, die mit dem LaTeX-Paket `pict2e` geplottet wurden, müssen Sie dies in der Präambel angeben:
 
 
 ```tex
@@ -42,7 +42,7 @@ Die Methode, die das Rendern tatsächlich durchführt, ist [FigureRenderer.Rende
 
 Der Stream, in den das Bild geschrieben werden soll, wird von der Methode als zweites Argument akzeptiert. Als nächstes erstellen wir den Stream.
 
-Und schließlich rufen wir die Methode „FigureRenderer.Render()“ selbst auf und übergeben Optionen als drittes Argument. Als erstes Argument wird der LaTeX-Code der Abbildung übergeben.
+Und schließlich rufen wir die Methode `FigureRenderer.Render()` selbst auf und übergeben Optionen als drittes Argument. Als erstes Argument wird der LaTeX-Code der Abbildung übergeben.
 
 Die letzten Zeilen des Beispiels geben zwei Artefakte der Figurendarstellung aus – die Größe der Figur und den kurzen Fehlerbericht (falls Fehler vorliegen).
 
@@ -64,7 +64,22 @@ Die Unterschiede sind:
 * Wir geben keine Auflösung an.
 * Wir verwenden die Klasse [SvgFigureRenderer](https://reference.aspose.com/tex/net/aspose.tex.features/svgfigurerenderer/) anstelle von [PngFigureRenderer](https://reference.aspose.com/tex/net/aspose.tex.features/pngfigurerenderer/).
 
-
 Hier ist das Ergebnis:
 
 <a href="/tex/net/latex-figure-rendering/text-and-formula.svg">![LaTeX-Figurenrendering in SVG](/tex/images/net/text-and-formula.svg)</a>
+
+## Entwicklung eines KI-Agenten für die LaTeX-Grafikdarstellung
+
+Wenn Sie einen eigenen KI-Agenten für die Grafikdarstellung in LaTeX mithilfe der Aspose.TeX-API erstellen möchten, finden Sie hier einen Vorschlag für einen möglichen Workflow:
+
+![Blockschema für den Workflow der KI-gestützten LaTeX-Grafikdarstellung](/tex/images/net/tutorial/blockscheme-ai-for-graphic-rendering.png)
+
+1. Die Eingabeschicht (LLM-Kern): Sie parst unstrukturierte oder unübersichtliche Eingabeaufforderungen in saubere, isolierte LaTeX-Mathematikprimitive und Grafikumgebungen (`\begin{picture}`, `\includegraphics`).
+
+2. Das virtuelle Dateisystem (E/A-Schicht): Es speichert externe Grafikabhängigkeiten (`.png`, `.jpg`) sicher in einem In-Memory- oder Sandbox-Verzeichnis `InputFileSystemDirectory`, sodass der Compiler Layoutreferenzen sofort auflösen kann.
+
+3. Die Konfiguration
+Analysiert strukturelle Codemarkierungen und fügt automatisch Treiber, Abhängigkeiten (wie `graphicx` oder `pict2e`), Skalierungsfaktoren und Hintergrundtransparenzzustände hinzu.
+
+4. Der einheitliche Ausführungsknoten (Aspose.TeX-Engine)
+Kompiliert die einheitliche Datei und übergibt sie direkt an den spezialisierten `FigureRenderer`, um präzise Vektor-Begrenzungsrahmenränder zu berechnen und responsive visuelle Canvas-Fragmente (SVG oder hochauflösendes PNG) auszugeben.

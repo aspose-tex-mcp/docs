@@ -8,7 +8,7 @@ weight: 100
 url: /net/latex-templates/
 description: Scopri cosa sono i modelli LaTeX, come utilizzarli e crearli, dove scaricare quelli più popolari e un flusso di lavoro veloce con snippet pronti da copiare.
 keywords: LaTeX, modello, classe, stile, Overleaf, CTAN, bibliografia, Beamer, tesi, CV
-lastmod: "2026-04-22"
+lastmod: "2026-06-12"
 ---
 
 {{<section overview>}}
@@ -127,3 +127,30 @@ Hot 10    → IEEEtran, llncs, elsarticle, modern-simple-cv,
 ```
 
 Buona composizione!
+
+## Creazione di un agente AI per la creazione di template LaTeX
+
+Se desideri creare il tuo agente AI per la creazione di template LaTeX utilizzando l'API Aspose.TeX, ecco un suggerimento per un possibile flusso di lavoro di tale agente:
+
+*La sfida ingegneristica consiste nel garantire che il template segua i meccanismi di compilazione standard delle regole di layout di LaTeX2e senza generare errori.*
+
+![Schema a blocchi per il flusso di lavoro di rendering delle figure LaTeX tramite AI](/tex/images/net/tutorial/blockscheme-ai-for-latex-template-creation.png)
+
+1. Acquisizione dei requisiti di layout (livello di intenti LLM)
+L'utente fornisce vincoli di progettazione di alto livello o istruzioni di formattazione (ad esempio, "Crea un layout di rivista a doppia colonna con margini di 1,5 cm, utilizzando il carattere Times New Roman, intestazioni rosse e un elegante riquadro autore in alto"). L'LLM mappa quindi questi dettagli visivi semantici in requisiti programmatici strutturali.
+La matrice degli intenti decide se la richiesta richiede un file di classe (`.cls`) completamente nuovo e autonomo per un tipo di documento personalizzato o semplicemente un wrapper di stile (`.sty`) personalizzato che si aggancia a classi standard come articolo o report.
+
+2. Allineamento dell'albero di ereditarietà e generazione delle classi (Livello struttura)
+L'agente crea i blocchi di codice strutturale per il file `.cls` basandosi su una matrice strutturale rigida:
+- Inserisce automaticamente `\NeedsTeXFormat{LaTeX2e}` e un'intestazione di metadati dinamica `\ProvidesClass{...}[...]`.
+- Mappa l'archetipo di progettazione di destinazione a una classe base tramite `\LoadClass{...}`.
+- Converte i componenti del linguaggio naturale in macro native (ad esempio, trasformando una richiesta di "casella autore" in un blocco di definizione personalizzato `\renewcommand{\maketitle}{...}`).
+
+
+3. Creazione del pacchetto e raccolta delle risorse (Livello di dipendenza)
+A seconda delle istruzioni di progettazione estratte nella prima fase, il motore di layout avrà bisogno di strumenti macro di terze parti specializzati (ad esempio, geometry per la regolazione dei margini, `xcolor` per i colori di branding personalizzati o `fontspec` per le configurazioni di font moderne).
+L'agente funge da filtro di linting. Inserisce dinamicamente le istruzioni `\RequirePackage{...}` necessarie nel bundle di classi o stili.
+
+4. Verifica e convalida (nodo di compilazione Aspose.TeX)
+L'agente crea dinamicamente un file di test (`sample.tex`) che carica il template.
+Quindi l'agente avvia un `TeXJob` implicito tramite Aspose.TeX per compilare il codice del template. Se la compilazione fallisce, l'agente legge i log di output degli errori (`.log`) e li invia al LLM per la correzione automatica della sintassi. Se la compilazione ha esito positivo, il bundle di risorse viene verificato.

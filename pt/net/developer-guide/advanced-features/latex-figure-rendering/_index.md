@@ -7,7 +7,7 @@ weight: 20
 url: /net/latex-figure-rendering/
 description: Solução da API do Aspose.TeX para a renderização do fragmento de LaTeX .NET (Figura) é descrito neste artigo. Aprenda os exemplos de código sobre como usar a funcionalidade.
 keywords: figura de LaTeX, tamanho da figura, imagem de LaTeX, imagem de LaTeX, imagem de LaTeX, figura de LaTeX, foto de LaTeX, opções de figura de LaTeX
-lastmod: "2026-04-22"
+lastmod: "2026-06-12"
 ---
 
 {{<section overview>}}
@@ -67,3 +67,21 @@ As diferenças são:
 Aqui está o resultado:
 
 <a href="/tex/net/latex-figure-rendering/text-and-formula.svg">![Figura de LaTeX renderização para SVG](/tex/images/net/text-and-formula.svg)</a>
+
+## Criação de um Agente de IA para Renderização de Figuras em LaTeX
+
+Se pretende criar o seu próprio Agente de IA para renderização de figuras em LaTeX utilizando a API Aspose.TeX, aqui fica uma sugestão de workflow para tal agente:
+
+![Esquema de blocos para o workflow de renderização de figuras em LaTeX com IA](/tex/images/net/tutorial/blockscheme-ai-for-graphic-rendering.png)
+
+1. A camada de ingestão (núcleo LLM)
+Analisa prompts de linguagem natural não estruturados ou desorganizados, convertendo-os em primitivas matemáticas LaTeX limpas e isoladas e ambientes de figuras (`\begin{picture}`, `\includegraphics`).
+
+2. O sistema de ficheiros virtual (camada de E/S)
+Armazena em segurança as dependências gráficas externas (`. png`, `. jpg`) num diretório `InputFileSystemDirectory` em memória ou em sandbox, para que o compilador possa resolver as referências de layout instantaneamente.
+
+3. A configuração
+Analisa marcadores de código estrutural e adiciona automaticamente drivers, dependências (como `graphicx` ou `pict2e`), fatores de escala e estados de transparência de fundo.
+
+4. O nó de execução unificado (mecanismo Aspose.TeX)
+Compila o ficheiro unificado e passa-o diretamente para o `FigureRenderer` especializado para calcular margens precisas de caixas delimitadoras vetoriais e gerar fragmentos de ecrã visual responsivos (SVG ou PNG de alta resolução).
