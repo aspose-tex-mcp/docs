@@ -7,7 +7,7 @@ weight: 20
 url: /net/external-latex-packages/
 description: Aspose.TeX API for .NET 允许使用外部包，即库本身未包含的包，如 fancybox 和 pgfplots 包。
 keywords: 外部 LaTeX 包、Aspose.TeX、.NET TeX、LaTeX 包、fancybox、pgfplots、必需输入目录、输入 zip 文件、自定义输入目录、TeX 转换
-lastmod: "2026-04-22"
+lastmod: "2026-06-17"
 ---
 
 {{<section overview>}}
@@ -137,3 +137,34 @@ using (Stream zipStream = File.Open("path-to-zip-with-pgfplots-sources", FileMod
 如果您的 LaTeX 文件所需的包是基于 *LaTeX3e* 内核开发的，则该包很可能无法与 **Aspose.TeX** 库一起工作，因为后者基于 *LaTeX2e* 内核。
 
 此外，如果您的 LaTeX 文件所需的包直接调用了 **Aspose.TeX** 的 *Object TeX* 引擎不支持的设备相关原语命令，则该包肯定无法工作。
+
+## 构建 LaTeX 嵌入式宏包优化 AI 代理
+
+如果您需要创建一个 AI 代理，在生成文档时无需进行缓慢的动态网络检索或文件系统搜索，即可针对内置宏包列表优化内容，您可以采用以下工作流程。
+
+该代理不会让 LLM 猜测哪些宏包安全或高效，而是针对特定的预编译宏包列表，以确保文档 100% 可靠地生成。
+
+![AI 代理嵌入式文档组装架构](/tex/images/net/tutorial/blockscheme-for-ai-latex-package-optimization.png)
+
+1. 版面意图提取（LLM 分析层）
+
+用户提供非结构化的多格式数据或对话式指令。LLM 将请求直接映射到 Aspose 嵌入式宏包列表（`colortbl` 用于行阴影，`geometry` 用于页边距，`hyperref` 用于字距调整，`tabularx` 用于可变宽度列）。
+
+2. AST 隔离和导言注入
+
+代理程序不会编写臃肿的包导入语句，而是会根据其预缓存的本地引擎清单检查代码需求。
+
+它会将结构优化路径直接写入代码导言字符串。
+
+3. 流沙箱和执行（Aspose.TeX Engine Node）
+
+编译后的标记流及其宏环境会被分派到沙箱化的工作节点中。系统使用优化的程序集配置文件（例如 `TeXConfig`.`ObjectLaTeX`）配置严格的 `TeXOptions` 应用程序运行时配置文件。它会在内存流缓冲区内安全地运行一个非阻塞的 `TeXJob` 执行管道。
+
+```tex
+\usepackage[a4paper,margin=0.5in]{geometry}
+\usepackage{amsmath,tabularx,colortbl,hyperref}
+```
+
+4. 资源序列化（输出渲染层）
+
+系统映射坐标目标并处理输出边界，利用矢量执行数组（`PdfDevice` 或 `SvgDevice`）将清晰的文档布局即时返回到客户端界面。

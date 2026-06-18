@@ -6,36 +6,36 @@ title: 许可| 通过 .NET 为 Python 提供 Aspose.TeX
 weight: 70
 url: /python-net/licensing/
 description: 如果您使用的是python的Aspose.TeX API解决方案的许可版本，则可以在此处学习如何应用许可证。
-lastmod: "2025-06-10"
+lastmod: "2026-06-18"
 ---
 
 {{<section overview>}}
 
 ## 评估aspose.tex
 
-要评估python的Aspose.TeX，您可以从[Aspose.TeX for Python下载页面]轻松下载产品(1)。评估版本与购买的版本相同。通过添加几行代码应用许可，评估版将获得许可。请参阅下载页以获取最新版本。
+要评估 Aspose.TeX for Python，您可以轻松地从 [Aspose.TeX for Python 下载页面](https://pypi.org/project/aspose-tex-net/) 下载该产品。评估版与购买版功能相同。只需添加几行代码应用许可证，评估版即可获得许可。请访问下载页面获取最新版本。
 
 ### 评估版本限制
 
-aspose.tex的评估版提供了完整的产品功能，但只能在输出文档中获得前四页。此外，这些页面将用评估模式水印盖章。
+Aspose.TeX 的评估版提供完整的产品功能，但输出文档仅包含前四页。此外，这四页会带有评估模式水印。
 
-如果您想在没有这些评估限制的情况下尝试Aspose.TeX，则可以[请求30天的临时许可](https://purchase.aspose.com/temporary-license/)，您将在购买产品之前对其进行测试。
+如果您想在不受评估版限制的情况下试用 Aspose.TeX，可以[申请 30 天临时许可证](https://purchase.aspose.com/temporary-license/)，这样您就可以在购买前测试产品的各个方面。
 
 ## 申请许可证
 
-完成 Aspose.TeX for Python 的评估并对其性能感到满意后，您可以通过 Aspose 网站的 [购买门户](http://www.aspose.com/purchase/default.aspx) 购买许可证。建议您在购买前熟悉不同的许可证类型。如有任何疑问或需要帮助，请随时[联系 Aspose 销售团队](http://www.aspose.com/corporate/contact/default.aspx)，他们将非常乐意为您提供帮助。
+完成 Aspose.TeX for Python 的评估并对其性能满意后，您可以通过 Aspose 网站的[购买门户](http://www.aspose.com/purchase/default.aspx)购买许可证。建议您在购买前先了解不同的许可证类型。如有任何疑问或需要帮助，请随时[联系 Aspose 销售团队](http://www.aspose.com/corporate/contact/default.aspx)，他们将竭诚为您服务。
 
-每个ASPOSE许可都包括一年的订阅，该订阅有权释放此期间发布的任何新版本或修复程序。我们还为许可和评估用户提供免费且无限的技术支持。
+每个 Aspose 许可证都包含一年的订阅期，在此期间您可以免费升级到任何新版本或修复程序。我们还为所有用户（包括已授权用户和评估用户）提供免费且无限制的技术支持。
 
-Aspose的许可证是一个纯文本XML文件，其中包含诸如产品名称，许可开发人员数量和订阅到期日期之类的信息。重要的是不要在数字签名时修改文件，即使添加额外的线路断路也会使其无效。
+Aspose 许可证是一个纯文本 XML 文件，其中包含产品名称、授权开发者数量和订阅到期日期等信息。请勿修改此文件，因为它经过数字签名，即使添加一个额外的换行符也会使其失效。
 
 ### 何时申请许可证
 
 请遵循以下准则：
 
-- 每个应用程序域只需要设置一次许可证。
-- 在使用任何其他aspose.tex类之前，请先设置许可证。
-- 多次调用“ setlicense”是有害的，而是废物处理器时间。
+- 每个应用程序域只需设置一次许可证。
+- 在使用任何其他 Aspose.TeX 类之前，请先设置许可证。
+- 多次调用 `SetLicense` 函数不会造成损害，但会浪费处理器时间。
 
 #### 从文件中加载许可证
 
@@ -51,8 +51,8 @@ Aspose的许可证是一个纯文本XML文件，其中包含诸如产品名称�
 
 ### 计量许可证
 
-aspose.tex提供了一种称为 *metered许可 *的替代许可机制，该机制允许客户根据其对API功能的使用来计费客户。应用 *计量许可证 *与应用一对密码键一样简单。有关更多信息，请参阅[计量许可常见问题解答部分](https://purchase.aspose.com/faqs/licensing/metered/)。
+Aspose.TeX 提供了一种名为“计量许可”的替代许可机制，允许客户根据其 API 功能的使用情况付费。应用“计量许可”非常简单，只需应用一对加密密钥即可。更多信息，请参阅[计量许可常见问题解答](https://purchase.aspose.com/faqs/licensing/metered/)。
 
-要设置计量许可证的公共和私钥，您可以使用[*metered*](https://reference.aspose.com/tex/python-net/aspose.tex/metered/)类的实例，如下所示：
+要设置计量许可的公钥和私钥，您可以使用[*Metered*](https://reference.aspose.com/tex/python-net/aspose.tex/metered/)类的实例，如下例所示：
 
 {{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-SetMeteredLicense.py" >}}

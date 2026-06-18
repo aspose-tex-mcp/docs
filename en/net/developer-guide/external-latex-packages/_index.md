@@ -7,7 +7,7 @@ weight: 20
 url: /net/external-latex-packages/
 description: Aspose.TeX API for .NET allows using external packages, i.e. the ones not included in the library itself like fancybox and pgfplots packages.
 keywords: external latex packages, aspose tex, .net tex, latex packages, fancybox, pgfplots, required input directory, input zip, custom input directory, tex conversion
-lastmod: "2026-04-22"
+lastmod: "2026-06-17"
 ---
 
 {{<section overview>}}
@@ -137,3 +137,28 @@ Below, we provide an illustrative example of a custom required input directory t
 It may happen that a package required by your LaTeX file is developed under the *LaTeX3e* kernel. Such a package will most likely not work with the **Aspose.TeX** library since the latter is based on the *LaTeX2e* kernel.
 
 It may also happen that a package required by your LaTeX file directly calls device-dependent primitive commands that are not supported by the **Aspose.TeX** library's *Object TeX* engine. Such a package, unfortunately, will not work for sure.
+
+## Building a LaTeX embedded packages optimization AI Agent
+
+If you need to create an AI agent that optimizes content for the built-in package inventory without sluggish dynamic network retrievals or file-system searches during generation, you can use the workflow described below.
+Instead of forcing an LLM to guess which packages are safe or fast to use, the agent targets this specific, pre-compiled package inventory to ensure 100% reliable document composition.
+
+![The AI Agent Embedded Document Assembly Architecture](/tex/images/net/tutorial/blockscheme-for-ai-latex-package-optimization.png) 
+
+1. Layout intention extraction (LLM analysis layer)
+The user supplies unstructured multi-format data or conversational directives. The LLM maps requests directly to the Aspose embedded package list (`colortbl` for row shading, `geometry` for margins, `hyperref` for tracking, and `tabularx` for variable-width columns).
+
+2. AST isolation and preamble injection 
+Rather than writing bloated package imports, the agent checks the code requirements against its pre-cached manifest of native engines.
+It writes structural optimization paths directly into the code preamble string.
+
+3. Stream sandboxing and execution (Aspose.TeX Engine Node)
+The compiled token stream along with its macro environments is dispatched into the sandboxed worker names. The system configures a strict TeXOptions application runtime profile using the optimized assembly profile (e.g., `TeXConfig.ObjectLaTeX`). It safely runs a non-blocking `TeXJob` execution pipeline entirely within the memory stream buffer.
+
+```tex
+\usepackage[a4paper,margin=0.5in]{geometry}
+\usepackage{amsmath,tabularx,colortbl,hyperref}
+```
+
+4. Asset serialization (Output rendering layer)
+The system maps coordinate targets and processes output boundaries, utilizing vector execution arrays (`PdfDevice` or `SvgDevice`) to return crisp documentation layouts instantly to the client interface.

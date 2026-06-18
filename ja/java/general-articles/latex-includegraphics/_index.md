@@ -135,4 +135,4 @@ lastmod: "2026-02-20"
 
 **Aspose.TeX** ライブラリは、TeX/LaTeX のコンテキスト外（例: Web ページ）で使用できるラスターや SVG の図を作成する手段を提供します。この機能は **LaTeX Figure Rendering** と呼ばれます。簡単に言えば、ページレイアウトに関係なく LaTeX ソースコードの断片を描画できる API です。詳細は、この記事 [article](/tex/{{lang.url-fragment}}java/latex-figure-rendering/) をご覧ください。
 
-外部 LaTeX パッケージの導入に関する記事 [/tex/{{lang.url-fragment}}java/external-latex-packages/] でも、LaTeX プロットから図を作成する手順のヒントが得られます。
+[外部 LaTeX パッケージの導入に関する記事](/tex/{{lang.url-fragment}}java/external-latex-packages/) でも、LaTeX プロットから図を作成する手順のヒントが得られます。
