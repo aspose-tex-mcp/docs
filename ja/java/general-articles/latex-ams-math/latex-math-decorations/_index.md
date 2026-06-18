@@ -171,7 +171,7 @@ Text: $\sum\nolimits_{n=1}^N$, $\int\limits_{-\infty}^\infty$, $\lim\displaylimi
 
 ## 4.4. モジュラー関係
 
-整数の同値類を表す「mod」表記は、特別な間隔規則に従います。これを扱うために、`amsmath` パッケージは `\mod`、`\bmod`、`\pmod`、`\pod` コマンドを提供しています。以下の例はそれらの使用例です。
+整数の同値類を表す`mod`表記は、特別な間隔規則に従います。これを扱うために、`amsmath` パッケージは `\mod`、`\bmod`、`\pmod`、`\pod` コマンドを提供しています。以下の例はそれらの使用例です。
 
 ```tex
 \usepackage{amsmath}

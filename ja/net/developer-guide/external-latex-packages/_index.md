@@ -7,7 +7,7 @@ weight: 20
 url: /net/external-latex-packages/
 description: Aspose.TeX API for .NET では、fancybox パッケージや pgfplots パッケージなど、ライブラリ自体に含まれていない外部パッケージを使用できます。
 keywords: 外部 LaTeX パッケージ、Aspose Tex、.NET Tex、LaTeX パッケージ、fancybox、pgfplots、必要な入力ディレクトリ、入力 zip、カスタム入力ディレクトリ、Tex 変換
-lastmod: "2026-04-22"
+lastmod: "2026-06-17"
 ---
 
 {{<section overview>}}
@@ -132,3 +132,30 @@ using (Stream zipStream = File.Open("path-to-zip-with-pgfplots-sources", FileMod
 LaTeX ファイルが *LaTeX3e* カーネル向けに開発されたパッケージを要求する場合、そのパッケージは **Aspose.TeX** ライブラリ（*LaTeX2e* カーネルに基づく）では動作しない可能性が高いです。
 
 また、LaTeX ファイルが直接デバイス依存のプリミティブコマンドを呼び出すパッケージを要求する場合、**Aspose.TeX** の *Object TeX* エンジンはそれらをサポートしていないため、該当パッケージは確実に動作しません。
+
+## LaTeX埋め込みパッケージ最適化AIエージェントの構築
+
+生成時にネットワークの動的取得やファイルシステム検索といった処理の遅延を伴わずに、組み込みパッケージインベントリに合わせてコンテンツを最適化するAIエージェントを作成する必要がある場合は、以下のワークフローをご利用ください。
+
+LLMにどのパッケージが安全かつ高速に使用できるかを推測させるのではなく、このエージェントは事前にコンパイルされた特定のパッケージインベントリをターゲットとすることで、100%信頼性の高いドキュメント構成を実現します。
+
+![AIエージェント埋め込みドキュメントアセンブリアーキテクチャ](/tex/images/net/tutorial/blockscheme-for-ai-latex-package-optimization.png)
+
+1. レイアウト意図の抽出（LLM分析レイヤー）
+ユーザーは、非構造化マルチフォーマットデータまたは対話型ディレクティブを提供します。LLMは、リクエストをAsposeの組み込みパッケージリスト（行の網掛けには`colortbl`、余白には`geometry`、トラッキングには`hyperref`、可変幅列には`tabularx`）に直接マッピングします。
+
+2. ASTの分離とプリアンブルの挿入
+エージェントは、肥大化したパッケージインポートを記述する代わりに、ネイティブエンジンの事前キャッシュされたマニフェストとコード要件を照合します。
+
+構造最適化パスをコードのプリアンブル文字列に直接書き込みます。
+
+3. ストリームのサンドボックス化と実行（Aspose.TeX Engine Node）
+コンパイルされたトークンストリームとそのマクロ環境は、サンドボックス化されたワーカー名にディスパッチされます。システムは、最適化されたアセンブリプロファイル（例：TeXConfig.ObjectLaTeX）を使用して、厳密なTeXOptionsアプリケーションランタイムプロファイルを構成します。メモリストリームバッファ内で、ノンブロッキングのTeXJob実行パイプラインを安全に実行します。
+
+```tex
+\usepackage[a4paper,margin=0.5in]{geometry}
+\usepackage{amsmath,tabularx,colortbl,hyperref}
+```
+
+4. アセットのシリアル化（出力レンダリング層）
+システムは座標ターゲットをマッピングし、出力境界を処理します。ベクトル実行配列（PdfDeviceまたはSvgDevice）を利用して、鮮明なドキュメントレイアウトをクライアントインターフェースに即座に返します。

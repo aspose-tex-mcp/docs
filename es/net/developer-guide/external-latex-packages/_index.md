@@ -7,7 +7,7 @@ weight: 20
 url: /net/external-latex-packages/
 description: Aspose.TeX para .NET permite utilizar paquetes externos, es decir, los que no están incluidos en la propia biblioteca, como los paquetes pgfplots.
 keywords: paquetes externos de LaTeX, Aspose TeX, .NET TeX, paquetes de LaTeX, FancyBox, pgfplots, directorio de entrada requerido, archivo zip de entrada, directorio de entrada personalizado, conversión de TeX
-lastmod: "2026-04-22"
+lastmod: "2026-06-17"
 ---
 
 {{<section overview>}}
@@ -133,3 +133,30 @@ A continuación, proporcionamos un ejemplo ilustrativo de un directorio de entra
 Puede suceder que un paquete requerido por su archivo LaTeX esté desarrollado bajo el kernel *LaTeX3e*. Lo más probable es que un paquete de este tipo no funcione con la biblioteca **Aspose.TeX** ya que esta última se basa en el kernel *LaTeX2e*.
 
 También puede suceder que un paquete requerido por su archivo LaTeX llame directamente a comandos primitivos dependientes del dispositivo que no son compatibles con el motor *Object TeX* de la biblioteca **Aspose.TeX**. Desafortunadamente, un paquete así no funcionará con seguridad.
+
+## Creación de un agente de IA para la optimización de paquetes integrados en LaTeX
+
+Si necesita crear un agente de IA que optimice el contenido para el inventario de paquetes integrado sin realizar lentas búsquedas dinámicas en la red ni en el sistema de archivos durante la generación, puede utilizar el flujo de trabajo que se describe a continuación.
+
+En lugar de obligar a un LLM a adivinar qué paquetes son seguros o rápidos de usar, el agente se centra en este inventario de paquetes precompilado específico para garantizar una composición de documentos 100 % fiable.
+
+![Arquitectura de ensamblaje de documentos integrados del agente de IA](/tex/images/net/tutorial/blockscheme-for-ai-latex-package-optimization.png)
+
+1. Extracción de la intención de diseño (capa de análisis del LLM)
+El usuario proporciona datos multiformato no estructurados o directivas conversacionales. El LLM asigna las solicitudes directamente a la lista de paquetes integrados de Aspose (`colortbl` para sombreado de filas, `geometry` para márgenes, `hyperref` para seguimiento y `tabularx` para columnas de ancho variable).
+
+2. Aislamiento del AST e inyección de preámbulo
+En lugar de escribir importaciones de paquetes voluminosas, el agente verifica los requisitos del código con su manifiesto de motores nativos prealmacenado.
+
+Escribe las rutas de optimización estructural directamente en la cadena del preámbulo del código.
+
+3. Aislamiento y ejecución de flujos (Nodo del motor Aspose.TeX)
+El flujo de tokens compilado, junto con sus entornos de macros, se distribuye a los nodos de trabajo aislados. El sistema configura un perfil de ejecución de aplicación TeXOptions estricto utilizando el perfil de ensamblaje optimizado (p. ej., TeXConfig.ObjectLaTeX). Ejecuta de forma segura una canalización de ejecución de TeXJob sin bloqueo, completamente dentro del búfer de flujo en memoria.
+
+```tex
+\usepackage[a4paper,margin=0.5in]{geometry}
+\usepackage{amsmath,tabularx,colortbl,hyperref}
+```
+
+4. Serialización de recursos (Capa de renderizado de salida)
+El sistema asigna coordenadas de destino y procesa los límites de salida, utilizando matrices de ejecución vectorial (PdfDevice o SvgDevice) para devolver diseños de documentación nítidos instantáneamente a la interfaz del cliente.
