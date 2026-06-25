@@ -55,7 +55,7 @@ C'è un altro costruttore della classe [PDFDEVICE](https://reference.aspose.com/
 
 {{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Conversion-LaTeXToPdf-Alternative.java" >}}
 
-Il file *Any-name.pdf* nella directory specificata sarà il nostro principale file PDF di output. Allo stesso tempo, a differenza di [output di immagini](/tex/{{lang.url-fragment}}java/latex-to-png/#an-alternative-way-to-write-main-output-png-files), non troveremo alcun file PDF nella directory di output definita dalle opzioni di conversione. Eccezione: *Any-name.pdf* si trova (dal suo percorso) nella stessa directory del file system assegnato all'opzione [outputworkingdirectory](https://reference.aspose.com/tex/java/com.aspose.tex/TeXOptions#getOutputWorkingDirectory--) utilizzando [outputfilesystemdirectory](https://reference.aspose.com/tex/java/com.aspose.tex/OutputFileSystemDirectory).
+Il file *Any-name.pdf* nella directory specificata sarà il nostro principale file PDF di output. Allo stesso tempo, a differenza di [output di immagini](/tex/{{lang.url-fragment}}java/latex-to-image/), non troveremo alcun file PDF nella directory di output definita dalle opzioni di conversione. Eccezione: *Any-name.pdf* si trova (dal suo percorso) nella stessa directory del file system assegnato all'opzione [outputworkingdirectory](https://reference.aspose.com/tex/java/com.aspose.tex/TeXOptions#getOutputWorkingDirectory--) utilizzando [outputfilesystemdirectory](https://reference.aspose.com/tex/java/com.aspose.tex/OutputFileSystemDirectory).
 
 ## Sulle opzioni di input
 

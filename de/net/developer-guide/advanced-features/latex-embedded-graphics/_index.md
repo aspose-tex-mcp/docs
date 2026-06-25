@@ -34,7 +34,7 @@ Fangen wir ganz von vorne an. Wie können wir unser Bild kodieren, um eine Zeich
 
 [**Base64**](https://en.wikipedia.org/wiki/Base64) ist eine Gruppe von Binär-zu-Text-Codierungsschemata, die Binärdaten in eine Folge druckbarer Zeichen umwandelt, die auf einen Satz von 64 eindeutigen Zeichen beschränkt ist. Genauer gesagt werden den binären Quelldaten jeweils 6 Bits entnommen, dann wird diese Gruppe von 6 Bits einem von 64 eindeutigen Zeichen zugeordnet. Wie alle Binär-zu-Text-Codierungsschemata ist **Base64** darauf ausgelegt, in Binärformaten gespeicherte Daten über Kanäle zu übertragen, die nur Textinhalte zuverlässig unterstützen.
 
-Aus dieser kurzen Erklärung können wir ersehen, dass **Base64** das ist, was wir brauchen. Um eine Bilddatei in **Base64** zu kodieren, können Sie ein Befehlszeilenprogramm (sofern auf Ihrem Betriebssystem verfügbar), Standard- oder Drittanbieterfunktionen fast jeder Programmiersprache oder Online-Tools wie [Base64.guru](verwenden.2) oder ähnlich.
+Aus dieser kurzen Erklärung können wir ersehen, dass **Base64** das ist, was wir brauchen. Um eine Bilddatei in **Base64** zu kodieren, können Sie ein Befehlszeilenprogramm (sofern auf Ihrem Betriebssystem verfügbar), Standard- oder Drittanbieterfunktionen fast jeder Programmiersprache oder Online-Tools wie [Base64.guru](https://products.aspose.app/font/base64) oder ähnlich.
 
 ## Platzieren des codierten Bildes in der LaTeX-Datei
 

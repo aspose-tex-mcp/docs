@@ -55,7 +55,7 @@ Transcript written on hello-world.log.
 
 {{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Conversion-LaTeXToPdf-Alternative.java" >}}
 
-指定目录中的 *any-name.pdf*文件将是我们的主要输出PDF文件。同时，与[图像输出](/tex/{{lang.url-fragment}}java/latex-to-png/#an-alternative-way-to-write-main-output-png-files)不同，我们在转换选项定义的输出目录中找不到任何PDF文件。异常： *any-name.pdf*位于同一文件系统目录中(通过其路径)，使用[outputfilesystemdirectory](https://reference.aspose.com/tex/java/com.aspose.tex/OutputFileSystemDirectory)分配给[outputWorkingDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/TeXOptions#getOutputWorkingDirectory--)选项。
+指定目录中的 *any-name.pdf*文件将是我们的主要输出PDF文件。同时，与[图像输出](/tex/{{lang.url-fragment}}java/latex-to-image/)不同，我们在转换选项定义的输出目录中找不到任何PDF文件。异常： *any-name.pdf*位于同一文件系统目录中(通过其路径)，使用[outputfilesystemdirectory](https://reference.aspose.com/tex/java/com.aspose.tex/OutputFileSystemDirectory)分配给[outputWorkingDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/TeXOptions#getOutputWorkingDirectory--)选项。
 
 ## 关于输入选项
 

@@ -86,7 +86,7 @@ Há outro construtor da classe [PDFDevice](https://reference.aspose.com/tex/net/
     }
 ```
 
-O arquivo *any-name.pdf* no diretório especificado será o nosso principal arquivo PDF de saída. Ao mesmo tempo, diferentemente do [saída de imagem](/tex/{{lang.url-fragment}}cpp/latex-to-png/#an-alternative-way-to-write-main-output-png-files), não encontraremos nenhum arquivo PDF no diretório de saída definido pelas opções de conversão. Exceção: *any-name.pdf* está localizado (por seu caminho) no mesmo diretório do sistema de arquivos atribuído à opção [outputWorkingDirectory](https://reference.aspose.com/tex/cpp/aspose.tex/texoptions/set_outputworkingdirectory/) usando [outputFilesystemDirectory](https://reference.aspose.com/tex/cpp/aspose.tex.io/outputfilesystemdirectory/).
+O arquivo *any-name.pdf* no diretório especificado será o nosso principal arquivo PDF de saída. Ao mesmo tempo, diferentemente do [saída de imagem](/tex/{{lang.url-fragment}}cpp/latex-to-image/), não encontraremos nenhum arquivo PDF no diretório de saída definido pelas opções de conversão. Exceção: *any-name.pdf* está localizado (por seu caminho) no mesmo diretório do sistema de arquivos atribuído à opção [outputWorkingDirectory](https://reference.aspose.com/tex/cpp/aspose.tex/texoptions/set_outputworkingdirectory/) usando [outputFilesystemDirectory](https://reference.aspose.com/tex/cpp/aspose.tex.io/outputfilesystemdirectory/).
 
 ## Sobre opções de entrada
 

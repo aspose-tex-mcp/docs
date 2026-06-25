@@ -56,7 +56,7 @@ Transcript written on hello-world.log.
 
 {{< gist "aspose-com-gists" "507170b996a1d0c39bb4374e888b3205" "Example-ConvertLaTeXToPDF-Alternative.cs" >}}
 
-Файл *any-name.pdf* в указанном каталоге будет нашим основным выходным PDF-файлом. В то же время, в отличие от [вывод изображения](/tex/{{lang.url-fragment}}net/latex-to-png/#an-alternative-way-to-write-main-output-png-files), мы не найдем никаких PDF-файлов в выходном каталоге, определенном параметрами преобразования. Исключение: *any-name.pdf* находится (по пути) в том же каталоге файловой системы, который назначен параметру [OutputWorkingDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/outputworkingdirectory/) с помощью [OutputFileSystemDirectory](https://reference.aspose.com/tex/net/aspose.tex.io/outputfilesystemdirectory/).
+Файл *any-name.pdf* в указанном каталоге будет нашим основным выходным PDF-файлом. В то же время, в отличие от [вывод изображения](/tex/{{lang.url-fragment}}net/latex-to-image/), мы не найдем никаких PDF-файлов в выходном каталоге, определенном параметрами преобразования. Исключение: *any-name.pdf* находится (по пути) в том же каталоге файловой системы, который назначен параметру [OutputWorkingDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/outputworkingdirectory/) с помощью [OutputFileSystemDirectory](https://reference.aspose.com/tex/net/aspose.tex.io/outputfilesystemdirectory/).
 
 ## О параметрах ввода
 

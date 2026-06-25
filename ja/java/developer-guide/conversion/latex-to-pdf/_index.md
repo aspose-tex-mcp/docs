@@ -55,7 +55,7 @@ Transcript written on hello-world.log.
 
 {{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Conversion-LaTeXToPdf-Alternative.java" >}}
 
-指定されたディレクトリの *any-name.pdf* ファイルは、メインの出力PDFファイルになります。同時に、[画像出力](/tex/{{lang.url-fragment}}java/latex-to-png/#an-alternative-way-to-write-main-output-png-files)とは異なり、変換オプションで定義された出力ディレクトリにPDFファイルは見つかりません。例外： *any-name.pdf* は、[outputFilesSystemDirectory](https://reference.aspose.com/tex/java/com.Aspose.TeX/OutputFileSystemDirectory)を使用して[outputWorkingDirectory](https://reference.aspose.com/tex/java/com.Aspose.TeX/TeXOptions#getOutputWorkingDirectory--)オプションに割り当てられている同じファイルシステムディレクトリに(そのパスで)配置されます。
+指定されたディレクトリの *any-name.pdf* ファイルは、メインの出力PDFファイルになります。同時に、[画像出力](/tex/{{lang.url-fragment}}java/latex-to-image/)とは異なり、変換オプションで定義された出力ディレクトリにPDFファイルは見つかりません。例外： *any-name.pdf* は、[outputFilesSystemDirectory](https://reference.aspose.com/tex/java/com.Aspose.TeX/OutputFileSystemDirectory)を使用して[outputWorkingDirectory](https://reference.aspose.com/tex/java/com.Aspose.TeX/TeXOptions#getOutputWorkingDirectory--)オプションに割り当てられている同じファイルシステムディレクトリに(そのパスで)配置されます。
 
 ## 入力オプションについて
 
