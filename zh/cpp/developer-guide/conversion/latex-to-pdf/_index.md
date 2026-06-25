@@ -85,7 +85,7 @@ Transcript written on hello-world.log.
     }
 ```
 
-指定目录中的 *any-name.pdf*文件将是我们的主要输出PDF文件。同时，与[图像输出](/tex/{{lang.url-fragment}}cpp/latex-to-png/#an-alternative-way-to-write-main-output-png-files)不同，我们在转换选项定义的输出目录中找不到任何PDF文件。异常： *any-name.pdf*位于同一文件系统目录中(通过其路径)，使用[outputfilesystemdirectory](https://reference.aspose.com/tex/cpp/aspose.tex.io/outputfilesystemdirectory/)分配给[outputWorkingDirectory](https://reference.aspose.com/tex/cpp/aspose.tex/texoptions/set_outputworkingdirectory/)选项。
+指定目录中的 *any-name.pdf*文件将是我们的主要输出PDF文件。同时，与[图像输出](/tex/{{lang.url-fragment}}cpp/latex-to-image/)不同，我们在转换选项定义的输出目录中找不到任何PDF文件。异常： *any-name.pdf*位于同一文件系统目录中(通过其路径)，使用[outputfilesystemdirectory](https://reference.aspose.com/tex/cpp/aspose.tex.io/outputfilesystemdirectory/)分配给[outputWorkingDirectory](https://reference.aspose.com/tex/cpp/aspose.tex/texoptions/set_outputworkingdirectory/)选项。
 
 ## 关于输入选项
 如果我们的主要输入文件需要依赖项，例如，这些依赖项不包含在基本乳胶系统和受支持的软件包中，则我们必须设置[requientInputDirectory](https://reference.aspose.com/tex/cpp/aspose.tex/texoptions/set_requiredinputdirectory)选项选项的类似方式，我们设置了[outputworkworkingDirectory](https://reference.aspose.com/tex/cpp/aspose.tex/texoptions/set_outputworkingdirectory/)选项并将依赖项放入该目录中。依赖项可以在子目录中任意组织。如果我们有自己的文件要在排版过程中包括，例如外部图形文件，我们还必须使用通往收集这些文件的位置的路径来设置[InputWorkingDirectory](https://reference.aspose.com/tex/cpp/aspose.tex/texoptions/set_inputworkingdirectory)。我们还可以将主输入文件放置在输入目录中的某个位置，并在`run()`方法中指定相对路径(或者如果主输入文件位于根中，则根本没有指定路径)。 [此处](/tex/{{lang.url-fragment}}cpp/aspose-tex-input/)是有关C ++ 的aspose.tex中输入目录概念的详细信息，并提供了实现。

@@ -4,41 +4,41 @@ template: /templates/_template-net.md
 title: Altri formati di output di conversione TeX | .NET
 linktitle: Altri formati TeX
 weight: 18
-url: /net/other-TeX-formats/
+url: /net/other-tex-formats/
 description: La funzionalità di conversione della soluzione API **Aspose.TeX** per .NET consente di convertire i file in LaTeX e i tuoi file TeX personalizzati. Ecco alcuni esempi di codice.
-lastmod: "2026-04-22"
+lastmod: "2026-04-03"
 ---
 
 {{<section overview>}}
 
-È altamente improbabile che tu voglia attualmente convertire un file TeX scritto in qualsiasi altro formato rispetto a LaTeX. Ma questo è possibile se stai studiando la lingua TeX e/o gli interni per qualche motivo. Ad ogni modo, **Aspose.TeX per .NET** ti consente di convertire i file scritti in semplice formato TeX. Inoltre, consente di creare formati personalizzati e documenti di composizione progettati in questi formati.
+È altamente improbabile che al momento tu voglia convertire un file TeX scritto in un formato diverso da LaTeX. Tuttavia, questo è possibile se stai studiando il linguaggio TeX e/o i suoi meccanismi interni per qualche motivo. Ad ogni modo, **Aspose.TeX per .NET** ti permette di convertire file scritti in formato Plain TeX. Ti permette anche di creare formati personalizzati e di impaginare documenti progettati in questi formati.
 
 Inizieremo con la creazione di un formato personalizzato.
 
 ## Creazione di un formato personalizzato
 
-Ricordiamo che il file di formato è una dump binaria dello stato interno del motore TeX.
+Ricordiamo che il file di formato è un dump binario dello stato interno del motore TeX.
 
 {{< gist "aspose-com-gists" "c0eb6cbcfb001b7e6355cafa4611afed" "Example-CreateCustomFormat.cs" >}}
 
-Come puoi vedere, il codice è simile al codice per la conversione di un file TeX. Ma ci sono alcune differenze.
+Come potete vedere, il codice è simile a quello per la conversione di un file TeX. Tuttavia, ci sono alcune differenze.
 
-Innanzitutto, qui utilizziamo la configurazione del lavoro [TeXConfig.ObjectIniTeX](https://reference.aspose.com/TeX/net/aspose.TeX/TeXconfig/objectiniTeX/). Questa è una configurazione speciale che lascia lo stato del motore "vergine", ovvero i parametri interni hanno i loro valori predefiniti e l'insieme di sequenze di controllo coincide con l'insieme di primitive. Nel nostro esempio, l'insieme di primitive è esteso nel senso menzionato [qui](/TeX/{{lang.url-fragment}}net/aspose-TeX-and-object-TeX/#object-TeX).
+Innanzitutto, qui utilizziamo la configurazione del job [TeXConfig.ObjectIniTeX](https://reference.aspose.com/tex/net/aspose.tex/texconfig/objectinitex/). Si tratta di una configurazione speciale che lascia il motore "invariato", ovvero i parametri interni mantengono i valori predefiniti e l'insieme delle sequenze di controllo coincide con l'insieme delle primitive. Nel nostro esempio, l'insieme delle primitive viene esteso nel senso descritto [qui](/tex/{{lang.url-fragment}}net/aspose-tex-and-object-tex/#object-tex).
 
-Successivamente, impostiamo le directory di lavoro input e output come al solito. La directory di lavoro input deve contenere il file di origine del formato principale e tutte le sue dipendenze.
+Successivamente, impostiamo le directory di lavoro di input e output come di consueto. La directory di lavoro di input deve contenere il file sorgente del formato principale e tutte le sue dipendenze.
 
-E la seconda differenza chiave è il modo in cui gestiamo il lavoro. Questa volta utilizziamo il metodo statico [CreateFormat()](https://reference.aspose.com/TeX/net/aspose.TeX/TeXjob/createformat/), che insieme alle opzioni prende il nome del file di origine principale, che deve essere uguale al nome del formato.
+La seconda differenza fondamentale riguarda la modalità di esecuzione del job. Questa volta utilizziamo il metodo statico [CreateFormat()](https://reference.aspose.com/tex/net/aspose.tex/texjob/createformat/), che insieme alle opzioni accetta il nome del file sorgente principale, che deve essere uguale al nome del formato.
 
-## Compromettere un file TeX nel tuo formato personalizzato
+## Impaginazione di un file TeX nel tuo formato personalizzato
 
-Ora che abbiamo il nostro formato TeX, vogliamo scrivere un file TeX scritto in questo formato. Ecco il codice:
+Ora che abbiamo il nostro formato TeX, vogliamo impaginare un file TeX scritto in questo formato. Ecco il codice:
 
 {{< gist "aspose-com-gists" "c0eb6cbcfb001b7e6355cafa4611afed" "Example-TypesetWithCustomFormat.cs" >}}
 
-Ovviamente, dobbiamo in qualche modo specificare il formato. Prima di tutto, dobbiamo creare un'istanza della classe [FormatProvider](https://reference.aspose.com/TeX/net/aspose.TeX.resourceproviders/formatprovider/). Quindi, nel costruttore di opzioni, utilizziamo la configurazione [TeXConfig.objectx()](https://reference.aspose.com/TeX/net/aspose.TeX/TeXconfig/objectTeX/), che prende il nostro fornitore di formato come argomento e carica il formato in cima allo stato "vergine" del motore.
+Ovviamente, dobbiamo specificare il formato in qualche modo. Innanzitutto, dobbiamo creare un'istanza della classe [FormatProvider](https://reference.aspose.com/tex/net/aspose.tex.resourceproviders/formatprovider/). Successivamente, nel costruttore delle opzioni, utilizziamo la configurazione [TeXConfig.ObjectTeX()](https://reference.aspose.com/tex/net/aspose.tex/texconfig/objecttex/), che accetta il nostro provider di formato come argomento e carica il formato sullo stato "vergine" del motore.
 
-Il resto del codice dovrebbe essere familiare a te. Utilizza le funzionalità discusse in precedenza in questa [guida](/TeX/{{lang.url-fragment}}net/conversion/).
+Il resto del codice dovrebbe esservi familiare. Utilizza le funzionalità discusse in precedenza in questa [guida](/tex/{{lang.url-fragment}}net/conversion/).
 
-## Testa di un file TeX in un formato TeX semplice
+## Composizione di un file TeX in formato TeX semplice
 
-Se gettiamo via il provider di formato dal codice appena dimostrato, il motore caricherà il formato predefinito, che è [Object TeX](/TeX/{{lang.url-fragment}}net/aspose-TeX-and-object-TeX/) nel suo quarto senso. Pertanto, se hai un file TeX scritto in un semplice formato TeX, in questo modo puoi convertirlo in qualsiasi formato target supportato.
+Se rimuoviamo il provider di formato dal codice appena mostrato, il motore caricherà il formato predefinito, ovvero [Object TeX](/tex/{{lang.url-fragment}}net/aspose-tex-and-object-tex/) nel suo quarto senso. Pertanto, se si dispone di un file TeX scritto in formato TeX semplice, in questo modo è possibile convertirlo in qualsiasi formato di destinazione supportato.

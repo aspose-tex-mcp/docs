@@ -55,7 +55,7 @@ Transcript written on hello-world.log.
 
 {{< gist "aspose-com-gists" "507170b996a1d0c39bb4374e888b3205" "Example-ConvertLaTeXToPDF-Alternative.cs" >}}
 
-指定ディレクトリ内の *any-name.pdf* ファイルがメインの出力 PDF ファイルとなります。同時に、[image output](/tex/{{lang.url-fragment}}net/latex-to-png/#an-alternative-way-to-write-main-output-png-files) と異なり、変換オプションで定義された出力ディレクトリには PDF ファイルは生成されません。例外として、*any-name.pdf* は [OutputWorkingDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/outputworkingdirectory/) オプションで [OutputFileSystemDirectory](https://reference.aspose.com/tex/net/aspose.tex.io/outputfilesystemdirectory/) を使用して割り当てた同じファイルシステムディレクトリ内に配置されます。
+指定ディレクトリ内の *any-name.pdf* ファイルがメインの出力 PDF ファイルとなります。同時に、[image output](/tex/{{lang.url-fragment}}net/latex-to-image/) と異なり、変換オプションで定義された出力ディレクトリには PDF ファイルは生成されません。例外として、*any-name.pdf* は [OutputWorkingDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/outputworkingdirectory/) オプションで [OutputFileSystemDirectory](https://reference.aspose.com/tex/net/aspose.tex.io/outputfilesystemdirectory/) を使用して割り当てた同じファイルシステムディレクトリ内に配置されます。
 
 ## 入力オプションについて
 

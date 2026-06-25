@@ -55,7 +55,7 @@ Transcript written on hello-world.log.
 
 {{< gist "aspose-com-gists" "507170b996a1d0c39bb4374e888b3205" "Example-ConvertLaTeXToPDF-Alternative.cs" >}}
 
-指定目录中的 *any-name.pdf* 文件即为我们的主输出 PDF 文件。与此同时，与 [图像输出](/tex/{{lang.url-fragment}}net/latex-to-png/#an-alternative-way-to-write-main-output-png-files) 不同，我们在由转换选项定义的输出目录中不会找到任何 PDF 文件。例外情况是，*any-name.pdf*（通过其路径）位于与 [OutputWorkingDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/outputworkingdirectory/) 选项相同的文件系统目录中，该目录是使用 [OutputFileSystemDirectory](https://reference.aspose.com/tex/net/aspose.tex.io/outputfilesystemdirectory/) 指定的。
+指定目录中的 *any-name.pdf* 文件即为我们的主输出 PDF 文件。与此同时，与 [图像输出](/tex/{{lang.url-fragment}}net/latex-to-image/) 不同，我们在由转换选项定义的输出目录中不会找到任何 PDF 文件。例外情况是，*any-name.pdf*（通过其路径）位于与 [OutputWorkingDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/outputworkingdirectory/) 选项相同的文件系统目录中，该目录是使用 [OutputFileSystemDirectory](https://reference.aspose.com/tex/net/aspose.tex.io/outputfilesystemdirectory/) 指定的。
 
 ## 关于输入选项
 

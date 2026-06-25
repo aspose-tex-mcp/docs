@@ -56,7 +56,7 @@ C'è un altro costruttore della classe [PdfDevice](https://reference.aspose.com/
 
 {{< gist "aspose-com-gists" "507170b996a1d0c39bb4374e888b3205" "Example-ConvertLaTeXToPDF-Alternative.cs" >}}
 
-Il file *Any-name.pdf* nella directory specificata sarà il nostro principale file PDF di output. Allo stesso tempo, a differenza di [output di immagini](/tex/{{lang.url-fragment}}net/latex-to-png/#an-alternative-way-to-write-main-output-png-files), non troveremo alcun file PDF nella directory di output definita dalle opzioni di conversione. Eccezione: *Any-name.pdf* si trova (dal suo percorso) nella stessa directory del file system assegnato all'opzione [OutputWorkingDirectory](https://reference.aspose.com/tex/net/aspose.tex/TeXOptions/OutputWorkingDirectory/) utilizzando [OutputFileSystemDirectory](https://reference.aspose.com/tex/net/aspose.tex.io/OutputFileSystemDirectory/).
+Il file *Any-name.pdf* nella directory specificata sarà il nostro principale file PDF di output. Allo stesso tempo, a differenza di [output di immagini](/tex/{{lang.url-fragment}}net/latex-to-image/), non troveremo alcun file PDF nella directory di output definita dalle opzioni di conversione. Eccezione: *Any-name.pdf* si trova (dal suo percorso) nella stessa directory del file system assegnato all'opzione [OutputWorkingDirectory](https://reference.aspose.com/tex/net/aspose.tex/TeXOptions/OutputWorkingDirectory/) utilizzando [OutputFileSystemDirectory](https://reference.aspose.com/tex/net/aspose.tex.io/OutputFileSystemDirectory/).
 
 ## Sulle opzioni di input
 

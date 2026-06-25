@@ -15,6 +15,6 @@ lastmod: "2026-04-21"
 
 このパートの章では、最も人気のあるターゲット形式の最も単純なユースケースから始めて、高度な微調整オプションで終了する**Aspose.TeX for java**の変換機能を案内します。 [ラテックスファイル](/tex/{{lang.url-fragment}}net/latex-io/#latex-file)が他の形式でTEXファイルよりも一般的であるという事実を考慮すると、後者の変換について話す時間を無駄にしません。代わりに、後で言及するだけです。
 
-この時点で、Aspose.TeXのLaTexサポートには、基本的なLATEXシステムのすべてのファイルと、 *amsmath*、 *Geometry*、 *Graphics*などの[最も一般的なパッケージ](/tex/{{lang.url-fragment}}net/embedded-packages/)のファイルが含まれていることに注意する必要があります。一般に、欠落しているパッケージに関するエラーが発生した場合、ケースは最も単純なパッケージよりも少し複雑です。 [ここ](/tex/{{lang.url-fragment}}java/latex-to-png/#about-input-options)ソリューションの手がかりを提供します。
+この時点で、Aspose.TeXのLaTexサポートには、基本的なLATEXシステムのすべてのファイルと、 *amsmath*、 *Geometry*、 *Graphics*などの[最も一般的なパッケージ](/tex/{{lang.url-fragment}}net/embedded-packages/)のファイルが含まれていることに注意する必要があります。一般に、欠落しているパッケージに関するエラーが発生した場合、ケースは最も単純なパッケージよりも少し複雑です。 [ここ](/tex/{{lang.url-fragment}}java/latex-to-image/)ソリューションの手がかりを提供します。
 
 **読んで楽しんでください！**
