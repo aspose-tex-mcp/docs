@@ -21,7 +21,7 @@ lastmod: "2026-04-21"
 
 ## ターミナルからメインTEX入力ファイルを入力します
 
-「Texjob`クラスにはさらに別の[コンストラクター](https://reference.aspose.com/tex/java/com.Aspose.TeX/TeXJob#TeXJob-com.Aspose.TeX.rendering.Device-com.Aspose.TeX.TeXOptions-)がありますが、入力をまったく指定することはできません。それで、そのようなTexの仕事は何を処理しようとしているのでしょうか？今回は入力端子が必要です。 Texエンジンは、端末からファイル名を入力するように依頼します。
+「Texjob`クラスにはさらに別の[コンストラクター](https://reference.aspose.com/tex/java/com.aspose.tex/texjob/#TeXJob-com.aspose.tex.rendering.Device-com.aspose.tex.TeXOptions-) がありますが、入力をまったく指定することはできません。それで、そのようなTexの仕事は何を処理しようとしているのでしょうか？今回は入力端子が必要です。 Texエンジンは、端末からファイル名を入力するように依頼します。
 
 これがコードです：
 

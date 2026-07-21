@@ -17,7 +17,7 @@ lastmod: "2026-02-27"
 
 {{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Features-PngLaTeXMathRendering.java" >}}
 
-让我们进入细节。首先，我们创建一个[渲染选项](https://reference.aspose.com/tex/java/com.aspose.tex/PngMathRendererOptions)实例，类似于 TeX/LaTeX 排版。我们在此同时指定输出图像的分辨率。
+让我们进入细节。首先，我们创建一个[渲染选项](https://reference.aspose.com/tex/java/com.aspose.tex/pngmathrendereroptions/)实例，类似于 TeX/LaTeX 排版。我们在此同时指定输出图像的分辨率。
 
 接下来，指定前导宏。默认前导宏为：
 
@@ -61,9 +61,9 @@ lastmod: "2026-02-27"
 
 区别如下：
 
-* 我们使用 [SvgMathRendererOptions](https://reference.aspose.com/tex/java/com.aspose.tex/SvgMathRendererOptions) 类，而不是 [PngMathRendererOptions](https://reference.aspose.com/tex/java/com.aspose.tex/PngMathRendererOptions)。
+* 我们使用 [SvgMathRendererOptions](https://reference.aspose.com/tex/java/com.aspose.tex/svgmathrendereroptions/) 类，而不是 [PngMathRendererOptions](https://reference.aspose.com/tex/java/com.aspose.tex/pngmathrendereroptions/)。
 * 我们不指定分辨率。
-* 我们使用 [SvgMathRenderer](https://reference.aspose.com/tex/java/com.aspose.tex/SvgMathRenderer) 类，而不是 [PngMathRenderer](https://reference.aspose.com/tex/java/com.aspose.tex/PngMathRenderer)。
+* 我们使用 [SvgMathRenderer](https://reference.aspose.com/tex/java/com.aspose.tex/svgmathrenderer/) 类，而不是 [PngMathRenderer](https://reference.aspose.com/tex/java/com.aspose.tex/pngmathrenderer/)。
 
 以下是结果：
 

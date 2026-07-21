@@ -17,7 +17,7 @@ lastmod: "2026-04-21"
 
 {{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Features-PngLaTeXMathRendering.java" >}}
 
-Перейдемо до деталей. Перш за все, ми створюємо екземпляр [параметри візуалізації](https://reference.aspose.com/tex/java/com.aspose.tex/PngMathRendererOptions), подібний до набору тексту TeX/LaTeX. Ми робимо це тут, одночасно вказуючи роздільну здатність вихідного зображення.
+Перейдемо до деталей. Перш за все, ми створюємо екземпляр [параметри візуалізації](https://reference.aspose.com/tex/java/com.aspose.tex/pngmathrendereroptions/), подібний до набору тексту TeX/LaTeX. Ми робимо це тут, одночасно вказуючи роздільну здатність вихідного зображення.
 
 Далі уточнюємо преамбулу. Типова преамбула:
 
@@ -62,9 +62,9 @@ lastmod: "2026-04-21"
 
 Відмінності:
 
-* Ми використовуємо клас [SvgMathRendererOptions](https://reference.aspose.com/tex/java/com.aspose.tex/SvgMathRendererOptions) замість [PngMathRendererOptions](https://reference.aspose.com/tex/java/com.aspose.tex/PngMathRendererOptions).
+* Ми використовуємо клас [SvgMathRendererOptions](https://reference.aspose.com/tex/java/com.aspose.tex/svgmathrendereroptions/) замість [PngMathRendererOptions](https://reference.aspose.com/tex/java/com.aspose.tex/pngmathrendereroptions/).
 * Ми не вказуємо роздільну здатність.
-* Ми використовуємо клас [SvgMathRenderer](https://reference.aspose.com/tex/java/com.aspose.tex/SvgMathRenderer) замість [PngMathRenderer](https://reference.aspose.com/tex/java/com.aspose.tex/PngMathRenderer).
+* Ми використовуємо клас [SvgMathRenderer](https://reference.aspose.com/tex/java/com.aspose.tex/svgmathrenderer/) замість [PngMathRenderer](https://reference.aspose.com/tex/java/com.aspose.tex/pngmathrenderer/).
 
 Ось результат:
 

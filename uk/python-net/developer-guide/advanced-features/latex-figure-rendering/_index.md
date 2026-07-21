@@ -36,7 +36,7 @@ lastmod: "2026-04-03"
 
 Останній параметр, `ShowTerminal`, дозволяє контролювати, чи слід відображати вихідні дані терміналу на консолі.
 
-Метод, відповідальний за рендеринг фігури, це [FigureRenderer.render()](https://reference.aspose.com/tex/python-net/aspose.tex.features/figurerenderer/render/#str-io.RawIOBase-aspose.tex.features.FigureRendererOptions). Він повертає розмір фігури в пунктах.
+Метод, відповідальний за рендеринг фігури, це [FigureRenderer.render()](https://reference.aspose.com/tex/python-net/aspose.tex.features/figurerenderer/render/#str-io.RawIOBase-aspose.tex.features.FigureRendererOptions) . Він повертає розмір фігури в пунктах.
 
 Метод приймає потік як другий аргумент, який є потоком, куди буде записано зображення. Ми створюємо потік у наступному рядку.
 

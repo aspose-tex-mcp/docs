@@ -20,7 +20,7 @@ Aspose.TeXの評価バージョン(ライセンスを指定しない)は、出�
 
 ### ファイルまたはストリームオブジェクトを使用してライセンスを適用します
 
-[License.setLicense](https://reference.aspose.com/tex/java/com.Aspose.TeX/License#setLicense-java.lang.String-)メソッドを使用して、コンポーネントをライセンスします。ライセンスを設定する最も簡単な方法は、ライセンスファイルを * Aspose.TeX.jar *と同じフォルダーに配置し、以下に示すようにパスなしでファイル名を指定することです。
+[License.setLicense](https://reference.aspose.com/tex/java/com.aspose.tex/license/#setLicense-java.lang.String-) メソッドを使用して、コンポーネントをライセンスします。ライセンスを設定する最も簡単な方法は、ライセンスファイルを * Aspose.TeX.jar *と同じフォルダーに配置し、以下に示すようにパスなしでファイル名を指定することです。
 
 #### ファイルからライセンスをロードします
 

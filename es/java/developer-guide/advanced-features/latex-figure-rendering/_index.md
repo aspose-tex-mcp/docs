@@ -19,7 +19,7 @@ Y al igual que con la representación de fórmulas, comenzaremos con un ejemplo.
 
 {{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Features-PngLaTeXFigureRendering.java" >}}
 
-En primer lugar, creamos una instancia de [opciones de renderizado](https://reference.aspose.com/tex/java/com.aspose.tex/PngFigureRendererOptions). Lo hacemos aquí junto con la especificación de la resolución de la imagen de salida.
+En primer lugar, creamos una instancia de [opciones de renderizado](https://reference.aspose.com/tex/java/com.aspose.tex/pngfigurerendereroptions/). Lo hacemos aquí junto con la especificación de la resolución de la imagen de salida.
 
 A continuación, especificamos el preámbulo. No hay un preámbulo predeterminado para la representación de figuras en LaTeX, por lo que si desea, por ejemplo, representar algunos gráficos trazados usando el paquete LaTeX `pict2e`, debe especificarlo en el preámbulo:
 
@@ -57,9 +57,9 @@ De la misma manera, podemos renderizar una figura de LaTeX al formato SVG.
 
 Las diferencias son:
 
- * Usamos la clase [SvgFigureRendererOptions](https://reference.aspose.com/tex/java/com.aspose.tex/SvgFigureRendererOptions) en lugar de [PngFigureRendererOptions](https://reference.aspose.com/tex/java/com.aspose.tex/PngFigureRendererOptions).
+ * Usamos la clase [SvgFigureRendererOptions](https://reference.aspose.com/tex/java/com.aspose.tex/svgfigurerendereroptions/) en lugar de [PngFigureRendererOptions](https://reference.aspose.com/tex/java/com.aspose.tex/pngfigurerendereroptions/).
  * No especificamos la resolución.
- * Usamos la clase [SvgFigureRenderer](https://reference.aspose.com/tex/java/com.aspose.tex/SvgFigureRenderer) en lugar de [PngFigureRenderer](https://reference.aspose.com/tex/java/com.aspose.tex/PngFigureRenderer).
+ * Usamos la clase [SvgFigureRenderer](https://reference.aspose.com/tex/java/com.aspose.tex/svgfigurerenderer/) en lugar de [PngFigureRenderer](https://reference.aspose.com/tex/java/com.aspose.tex/pngfigurerenderer/).
 
 
 Aquí está el resultado:

@@ -11,11 +11,11 @@ lastmod: "2026-04-21"
 
 {{<section overview>}}
 
-I/O実装の正式な定義については、Java **[API Reference](https://reference.aspose.com/tex/java/com.Aspose.TeX/package-frame)の** Aspose.TeXを参照してください。
+I/O実装の正式な定義については、Java **[API Reference](https://reference.aspose.com/tex/java/com.aspose.tex/)の** Aspose.TeXを参照してください。
 
 ## 入力ディレクトリの概念
 
-Tex言語のI/O Primitivesはファイル名のみを扱うことができるため、**Java** Aspose.TeXは、ディレクトリを名前とデータのバルクのマッピングとして定義します。データの大部分は、ファイル、ストリーム、配列などであるはずです。APIにより、入力および出力作業ディレクトリを個別に指定できます。一般的な[iinputworkingdirectory](https://reference.aspose.com/tex/java/com.Aspose.TeX/IInputWorkingDirectory)インターフェイスを提供します。これは、ユーザーが独自の目的で実装できる。また、独自の実装も提供します。これについては、以下で説明します。インターフェイスは[getFile()](https://reference.aspose.com/tex/java/com.Aspose.TeX/IInputWorkingDirectory#getFile-java.lang.String-java.lang.String:A-boolean-)メソッドを定義します。これは、データストリームを返してファイルのフルネームを決定しますが、仮説的に異なる名前を最初の引数として使用します。実際、マッピングキーです。
+Tex言語のI/O Primitivesはファイル名のみを扱うことができるため、**Java** Aspose.TeXは、ディレクトリを名前とデータのバルクのマッピングとして定義します。データの大部分は、ファイル、ストリーム、配列などであるはずです。APIにより、入力および出力作業ディレクトリを個別に指定できます。一般的な[iinputworkingdirectory](https://reference.aspose.com/tex/java/com.aspose.tex/iinputworkingdirectory/)インターフェイスを提供します。これは、ユーザーが独自の目的で実装できる。また、独自の実装も提供します。これについては、以下で説明します。インターフェイスは[getFile()](https://reference.aspose.com/tex/java/com.Aspose.TeX/IInputWorkingDirectory#getFile-java.lang.String-java.lang.String:A-boolean-)メソッドを定義します。これは、データストリームを返してファイルのフルネームを決定しますが、仮説的に異なる名前を最初の引数として使用します。実際、マッピングキーです。
 
 ### ディスクファイルシステムからファイル入力を取得します
 
@@ -31,15 +31,15 @@ Tex言語のI/O Primitivesはファイル名のみを扱うことができるた
 
 {{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Conversion-InputZipDirectory.java" >}}
 
-最初に、zipファイルを含むストリームを作成します。次に、変換オプションを作成した後、[inputzipdirectory](https://reference.aspose.com/tex/java/com.Aspose.TeX/InputZipDirectory)クラスのインスタンスになるように[inputWorkingDirectory](https://reference.aspose.com/tex/java/com.Aspose.TeX/TeXOptions#getInputWorkingDirectory--)オプションを設定します。コンストラクターの2番目の引数は、アーカイブ内のベースパスです。アーカイブ全体を入力ディレクトリにしたい場合は、空の文字列を渡す必要があります。 
+最初に、zipファイルを含むストリームを作成します。次に、変換オプションを作成した後、[inputzipdirectory](https://reference.aspose.com/tex/java/com.aspose.tex/inputzipdirectory/)クラスのインスタンスになるように[inputWorkingDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/texoptions/#getInputWorkingDirectory--)オプションを設定します。コンストラクターの2番目の引数は、アーカイブ内のベースパスです。アーカイブ全体を入力ディレクトリにしたい場合は、空の文字列を渡す必要があります。 
 
 ## 入力端子の概念
 
-次に、端子入力もあることを覚えておいてください。これに関しては、**Aspose.TeX for java**一般[iinputterminal](https://reference.aspose.com/tex/java/com.Aspose.TeX/IInputTerminal)インターフェイスを2つのメソッドがあると定義します。そのうちの1人は[BufferedReader](https://docs.oracle.com/javase/6/docs/api/java/io/BufferedReader.html)インスタンスを返します。別のメソッドは、[inputstream](https://docs.oracle.com/javase/6/docs/api/java/io/InputStream.html)を基礎となるストリームとして返します。インターフェイスの実装を以下で説明します。
+次に、端子入力もあることを覚えておいてください。これに関しては、**Aspose.TeX for java**一般[iinputterminal](https://reference.aspose.com/tex/java/com.aspose.tex/iinputterminal/)インターフェイスを2つのメソッドがあると定義します。そのうちの1人は[BufferedReader](https://docs.oracle.com/javase/6/docs/api/java/io/BufferedReader.html)インスタンスを返します。別のメソッドは、[inputstream](https://docs.oracle.com/javase/6/docs/api/java/io/InputStream.html)を基礎となるストリームとして返します。インターフェイスの実装を以下で説明します。
 
 ### コンソールから端子入力を取得します
 
-これを行うには、[inputConsoleterminal](https://reference.aspose.com/tex/java/com.Aspose.TeX/InputConsoleTerminal)クラスのインスタンスになるには、[Terminalin](https://reference.aspose.com/tex/java/com.Aspose.TeX/TeXOptions#getTerminalIn--)オプションを設定する必要があります。
+これを行うには、[inputConsoleterminal](https://reference.aspose.com/tex/java/com.aspose.tex/inputconsoleterminal/)クラスのインスタンスになるには、[Terminalin](https://reference.aspose.com/tex/java/com.aspose.tex/texoptions/#getTerminalIn--)オプションを設定する必要があります。
 
 {{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Conversion-InputConsoleTerminal.java" >}}
 

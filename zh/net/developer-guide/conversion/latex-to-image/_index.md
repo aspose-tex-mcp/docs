@@ -29,7 +29,7 @@ lastmod: "2026-04-22"
 
 第二个选项是一个 [SaveOptions](https://reference.aspose.com/tex/net/aspose.tex.presentation/saveoptions/) 类实例，用于控制将 [对象模型](/tex/{{lang.url-fragment}}net/aspose-tex-and-object-tex/#why-the-new-tex-is-object) 转换为目标格式的方式。因为我们要将 LaTeX 转换为 PNG，所以使用的是 [PngSaveOptions](https://reference.aspose.com/tex/net/aspose.tex.presentation.image/pngsaveoptions/) 类实例，它允许我们指定输出图像的分辨率。
 
-接下来我们需要创建一个 [TeXJob](https://reference.aspose.com/tex/net/aspose.tex/texjob/) 类的实例。想要转换存储在文件系统中的 LaTeX 文件时，我们使用 [此](https://reference.aspose.com/tex/net/aspose.tex/texjob/texjob/) 构造函数版本。我们需要指定文件的完整路径。否则，引擎会在当前目录（即 [CurrentDirectory](https://docs.microsoft.com/en-us/dotnet/api/system.environment.currentdirectory)）中查找，且很可能找不到。即使省略 *.tex* 扩展名，也会自动追加。构造函数的第二个参数是一个 [Device](https://reference.aspose.com/tex/net/aspose.tex.presentation/device/) 类实例。因为我们将 LaTeX 转换为 PNG，所以使用的是 [ImageDevice](https://reference.aspose.com/tex/net/aspose.tex.presentation.image/imagedevice/) 类实例，这对所有受支持的图像格式都是通用的。最后一个参数传入我们刚刚准备好的转换选项。
+接下来我们需要创建一个 [TeXJob](https://reference.aspose.com/tex/net/aspose.tex/texjob/) 类的实例。想要转换存储在文件系统中的 LaTeX 文件时，我们使用 [此](https://reference.aspose.com/tex/net/aspose.tex/texjob/texjob/) 构造函数版本。我们需要指定文件的完整路径。否则，引擎会在当前目录（即 [CurrentDirectory](https://learn.microsoft.com/en-us/dotnet/api/system.environment.currentdirectory?view=net-10.0)）中查找，且很可能找不到。即使省略 *.tex* 扩展名，也会自动追加。构造函数的第二个参数是一个 [Device](https://reference.aspose.com/tex/net/aspose.tex.presentation/device/) 类实例。因为我们将 LaTeX 转换为 PNG，所以使用的是 [ImageDevice](https://reference.aspose.com/tex/net/aspose.tex.presentation.image/imagedevice/) 类实例，这对所有受支持的图像格式都是通用的。最后一个参数传入我们刚刚准备好的转换选项。
 
 现在唯一剩下的事情就是 [run](https://reference.aspose.com/tex/net/aspose.tex/texjob/run/) 该作业。
 

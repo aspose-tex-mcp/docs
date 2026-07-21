@@ -11,11 +11,11 @@ lastmod: "2026-04-21"
 
 {{<section overview>}}
 
-Будь ласка, зверніться до **Aspose.TeX для Java** [посилання на API](https://reference.aspose.com/tex/java/com.aspose.tex/package-frame), щоб отримати формальні визначення реалізації введення/виведення.
+Будь ласка, зверніться до **Aspose.TeX для Java** [посилання на API](https://reference.aspose.com/tex/java/com.aspose.tex/), щоб отримати формальні визначення реалізації введення/виведення.
 
 ## Поняття вхідного каталогу
 
-Оскільки примітиви вводу-виводу мови TeX можуть працювати лише з іменами файлів, **Aspose.TeX для Java** визначає каталог як відображення між іменами та масивами даних. Маси даних мають бути файлами, потоками, масивами або будь-яким іншим. API дозволяє нам окремо вказувати вхідні та вихідні робочі каталоги. Він забезпечує загальний інтерфейс [IInputWorkingDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/IInputWorkingDirectory), який користувач може реалізувати для власних цілей. Він також надає власні реалізації, які будуть розглянуті нижче. Інтерфейс визначає метод [getFile()](https://reference.aspose.com/tex/java/com.aspose.tex/IInputWorkingDirectory#getFile-java.lang.String-java.lang.String:A-boolean-), який повертає потік даних і визначає повне ім'я файлу, при цьому в якості першого аргументу бере якесь, гіпотетично інше ім'я, яке, по суті, є ключем відображення .
+Оскільки примітиви вводу-виводу мови TeX можуть працювати лише з іменами файлів, **Aspose.TeX для Java** визначає каталог як відображення між іменами та масивами даних. Маси даних мають бути файлами, потоками, масивами або будь-яким іншим. API дозволяє нам окремо вказувати вхідні та вихідні робочі каталоги. Він забезпечує загальний інтерфейс [IInputWorkingDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/iinputworkingdirectory/), який користувач може реалізувати для власних цілей. Він також надає власні реалізації, які будуть розглянуті нижче. Інтерфейс визначає метод [getFile()](https://reference.aspose.com/tex/java/com.aspose.tex/IInputWorkingDirectory#getFile-java.lang.String-java.lang.String:A-boolean-), який повертає потік даних і визначає повне ім'я файлу, при цьому в якості першого аргументу бере якесь, гіпотетично інше ім'я, яке, по суті, є ключем відображення .
 
 ### Отримання вхідних файлів із файлової системи диска
 
@@ -31,15 +31,15 @@ lastmod: "2026-04-21"
 
 {{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Conversion-InputZipDirectory.java" >}}
 
-Спочатку ми створюємо потік, що містить ZIP-файл. Потім, після створення параметрів перетворення, ми встановлюємо параметр [InputWorkingDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/TeXOptions#getInputWorkingDirectory--) як екземпляр класу [InputZipDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/InputZipDirectory). Другим аргументом конструктора є базовий шлях всередині архіву. Якщо ми хочемо, щоб весь архів був вхідним каталогом, ми повинні передати порожній рядок. 
+Спочатку ми створюємо потік, що містить ZIP-файл. Потім, після створення параметрів перетворення, ми встановлюємо параметр [InputWorkingDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/texoptions/#getInputWorkingDirectory--) як екземпляр класу [InputZipDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/inputzipdirectory/). Другим аргументом конструктора є базовий шлях всередині архіву. Якщо ми хочемо, щоб весь архів був вхідним каталогом, ми повинні передати порожній рядок. 
 
 ## Поняття про вхідний термінал
 
-Тепер давайте згадаємо, що є також термінальний вхід. Що стосується цього, **Aspose.TeX для Java** визначає загальний інтерфейс [IInputTerminal](https://reference.aspose.com/tex/java/com.aspose.tex/IInputTerminal) як такий, що має два методи. Один із них повертає екземпляр [BufferedReader](https://docs.oracle.com/javase/6/docs/api/java/io/BufferedReader.html). Інший метод повертає [InputStream](https://docs.oracle.com/javase/6/docs/api/java/io/InputStream.html) як базовий потік. Надані реалізації інтерфейсу обговорюються нижче.
+Тепер давайте згадаємо, що є також термінальний вхід. Що стосується цього, **Aspose.TeX для Java** визначає загальний інтерфейс [IInputTerminal](https://reference.aspose.com/tex/java/com.aspose.tex/iinputterminal/) як такий, що має два методи. Один із них повертає екземпляр [BufferedReader](https://docs.oracle.com/javase/6/docs/api/java/io/BufferedReader.html). Інший метод повертає [InputStream](https://docs.oracle.com/javase/6/docs/api/java/io/InputStream.html) як базовий потік. Надані реалізації інтерфейсу обговорюються нижче.
 
 ### Отримання введення терміналу з консолі
 
-Для цього нам потрібно встановити опцію [TerminalIn](https://reference.aspose.com/tex/java/com.aspose.tex/TeXOptions#getTerminalIn--) як екземпляр класу [InputConsoleTerminal](https://reference.aspose.com/tex/java/com.aspose.tex/InputConsoleTerminal).
+Для цього нам потрібно встановити опцію [TerminalIn](https://reference.aspose.com/tex/java/com.aspose.tex/texoptions/#getTerminalIn--) як екземпляр класу [InputConsoleTerminal](https://reference.aspose.com/tex/java/com.aspose.tex/inputconsoleterminal/).
 
 {{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Conversion-InputConsoleTerminal.java" >}}
 

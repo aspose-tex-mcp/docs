@@ -20,7 +20,7 @@ Wenn Sie Aspose.TeX ohne Evaluierungseinschränkungen ausprobieren möchten, for
 
 ### Wenden Sie die Lizenz mithilfe einer Datei oder eines Stream-Objekts an
 
-Verwenden Sie die Methode [License.setLicense](https://reference.aspose.com/tex/java/com.aspose.tex/License#setLicense-java.lang.String-), um die Komponente zu lizenzieren. Der einfachste Weg, eine Lizenz festzulegen, besteht darin, die Lizenzdatei im selben Ordner wie *aspose.tex.jar* abzulegen und den Dateinamen ohne Pfad anzugeben, wie unten gezeigt.
+Verwenden Sie die Methode [License.setLicense](https://reference.aspose.com/tex/java/com.aspose.tex/license/#setLicense-java.lang.String-) , um die Komponente zu lizenzieren. Der einfachste Weg, eine Lizenz festzulegen, besteht darin, die Lizenzdatei im selben Ordner wie *aspose.tex.jar* abzulegen und den Dateinamen ohne Pfad anzugeben, wie unten gezeigt.
 
 #### Laden einer Lizenz aus einer Datei
 

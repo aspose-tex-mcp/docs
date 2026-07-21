@@ -11,10 +11,10 @@ lastmod: "2026-04-20"
 
 {{<section overview>}}
 
-Consulte **Aspose.TeX para C++** [referencia de API](https://reference.aspose.com/tex/cpp/namespace/aspose.te_x.i_o) para obtener definiciones formales de implementación de E/S.
+Consulte **Aspose.TeX para C++** [referencia de API](https://reference.aspose.com/tex/cpp/aspose.tex.io/) para obtener definiciones formales de implementación de E/S.
 
 ## El concepto del directorio de entrada.
-Dado que las primitivas de E/S del lenguaje TeX solo pueden tratar con nombres de archivos, **Aspose.TeX para C++** define un directorio como una asignación entre nombres y grandes cantidades de datos. Se supone que la gran cantidad de datos son archivos, secuencias, matrices o cualquier otra cosa. La API nos permite especificar los directorios de trabajo de entrada y salida por separado. Proporciona la interfaz general [IInputWorkingDirectory](https://reference.aspose.com/tex/cpp/aspose.tex.io/iinputworkingdirectory), que el usuario puede implementar para sus propios fines. También proporciona sus propias implementaciones, que se analizarán a continuación. La interfaz define el método [GetFile()](https://reference.aspose.com/tex/cpp/aspose.tex.io/iinputworkingdirectory#adc0d6f35f9a0c426ba010779d90b5cd6), que devuelve el flujo de datos y determina el nombre completo del archivo, mientras toma algún nombre, hipotéticamente diferente, como primer argumento, que, de hecho, es la clave de mapeo. .
+Dado que las primitivas de E/S del lenguaje TeX solo pueden tratar con nombres de archivos, **Aspose.TeX para C++** define un directorio como una asignación entre nombres y grandes cantidades de datos. Se supone que la gran cantidad de datos son archivos, secuencias, matrices o cualquier otra cosa. La API nos permite especificar los directorios de trabajo de entrada y salida por separado. Proporciona la interfaz general [IInputWorkingDirectory](https://reference.aspose.com/tex/cpp/aspose.tex.io/iinputworkingdirectory/), que el usuario puede implementar para sus propios fines. También proporciona sus propias implementaciones, que se analizarán a continuación. La interfaz define el método [GetFile()](https://reference.aspose.com/tex/cpp/aspose.tex.io/iinputworkingdirectory#adc0d6f35f9a0c426ba010779d90b5cd6), que devuelve el flujo de datos y determina el nombre completo del archivo, mientras toma algún nombre, hipotéticamente diferente, como primer argumento, que, de hecho, es la clave de mapeo. .
 
 ### Obtener entrada de archivos del sistema de archivos del disco
 
@@ -43,15 +43,15 @@ También podemos poner los archivos de entrada en un archivo ZIP y considerarlo 
     options->set_InputWorkingDirectory(System::MakeObject<InputZipDirectory>(inZipStream, u"in"));
 ```
 
-Primero, creamos la secuencia que contiene el archivo ZIP. Luego, después de crear las opciones de conversión, configuramos la opción [InputWorkingDirectory](https://reference.aspose.com/tex/cpp/aspose.tex/texoptions/set_inputworkingdirectory) para que sea una instancia de la clase [InputZipDirectory](https://reference.aspose.com/tex/cpp/aspose.tex.io/inputzipdirectory). El segundo argumento del constructor es la ruta base dentro del archivo. Si queremos que todo el archivo sea un directorio de entrada, debemos pasar la cadena vacía. 
+Primero, creamos la secuencia que contiene el archivo ZIP. Luego, después de crear las opciones de conversión, configuramos la opción [InputWorkingDirectory](https://reference.aspose.com/tex/cpp/aspose.tex/texoptions/set_inputworkingdirectory/) para que sea una instancia de la clase [InputZipDirectory](https://reference.aspose.com/tex/cpp/aspose.tex.io/inputzipdirectory/). El segundo argumento del constructor es la ruta base dentro del archivo. Si queremos que todo el archivo sea un directorio de entrada, debemos pasar la cadena vacía. 
 
 ## El concepto de terminal de entrada.
 
-Ahora toca recordar que también está la entrada del terminal. En cuanto a este, **Aspose.TeX para C++** define la interfaz general [IInputTerminal](https://reference.aspose.com/tex/cpp/aspose.tex.io/iinputterminal) que tiene solo una propiedad que devuelve una instancia de implementación [TextReader](https://reference.aspose.com/tex/cpp/class/system.i_o.text_reader). Las implementaciones proporcionadas se analizan a continuación.
+Ahora toca recordar que también está la entrada del terminal. En cuanto a este, **Aspose.TeX para C++** define la interfaz general [IInputTerminal](https://reference.aspose.com/tex/cpp/aspose.tex.io/iinputterminal/) que tiene solo una propiedad que devuelve una instancia de implementación [TextReader](https://reference.aspose.com/tex/cpp/system.io/textreader/). Las implementaciones proporcionadas se analizan a continuación.
 
 ### Obtener entrada de terminal desde la consola
 
-Para hacer esto, necesitamos configurar la opción [TerminalIn](https://reference.aspose.com/tex/cpp/aspose.tex/texoptions/set_terminalin) para que sea una instancia de la clase [InputConsoleTerminal](https://reference.aspose.com/tex/cpp/class/aspose.te_x.i_o.input_console_terminal).
+Para hacer esto, necesitamos configurar la opción [TerminalIn](https://reference.aspose.com/tex/cpp/aspose.tex/texoptions/set_terminalin/) para que sea una instancia de la clase [InputConsoleTerminal](https://reference.aspose.com/tex/cpp/aspose.tex.io/inputconsoleterminal/).
 
 ```C++
 // Create conversion options instance.

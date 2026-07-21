@@ -19,7 +19,7 @@ lastmod: "2026-02-27"
 
 {{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Features-PngLaTeXFigureRendering.java" >}}
 
-首先，我们创建一个 [渲染选项](https://reference.aspose.com/tex/java/com.aspose.tex/PngFigureRendererOptions) 实例。在这里同时指定输出图像的分辨率。
+首先，我们创建一个 [渲染选项](https://reference.aspose.com/tex/java/com.aspose.tex/pngfigurerendereroptions/) 实例。在这里同时指定输出图像的分辨率。
 
 接下来，我们指定前导代码（preamble）。LaTeX figure rendering 没有默认的前导代码，因此如果您想渲染使用 `pict2e` LaTeX 包绘制的图形，需要在前导代码中声明它：
 
@@ -57,9 +57,9 @@ lastmod: "2026-02-27"
 
 区别如下：
 
-* 我们使用 [SvgFigureRendererOptions](https://reference.aspose.com/tex/java/com.aspose.tex/SvgFigureRendererOptions) 类，而不是 [PngFigureRendererOptions](https://reference.aspose.com/tex/java/com.aspose.tex/PngFigureRendererOptions)。
+* 我们使用 [SvgFigureRendererOptions](https://reference.aspose.com/tex/java/com.aspose.tex/svgfigurerendereroptions/) 类，而不是 [PngFigureRendererOptions](https://reference.aspose.com/tex/java/com.aspose.tex/pngfigurerendereroptions/)。
 * 我们不指定分辨率。
-* 我们使用 [SvgFigureRenderer](https://reference.aspose.com/tex/java/com.aspose.tex/SvgFigureRenderer) 类，而不是 [PngFigureRenderer](https://reference.aspose.com/tex/java/com.aspose.tex/PngFigureRenderer)。
+* 我们使用 [SvgFigureRenderer](https://reference.aspose.com/tex/java/com.aspose.tex/svgfigurerenderer/) 类，而不是 [PngFigureRenderer](https://reference.aspose.com/tex/java/com.aspose.tex/pngfigurerenderer/)。
 
 以下是结果：
 

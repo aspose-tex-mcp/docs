@@ -13,7 +13,7 @@ lastmod: "2025-06-10"
 
 ## 使用流向Tex发动机提供主要输入文件
 
-到目前为止，我们只学会了如何将[主输入文件](/tex/{{lang.url-fragment}}net/tex-io/#tex-input)作为文件名提供给Tex引擎，无论是完整的形式还是以缩短形式，有或没有扩展名。但是，[Texjob](https://reference.aspose.com/tex/python-net/aspose.tex/texjob)类中可用[另一个构造函数](https://reference.aspose.com/tex/python-net/aspose.tex/texjob/__init__/#io.RawIOBase-aspose.tex.presentation.Device-aspose.tex.TeXOptions)接受流作为第一个参数。如果出于某种原因，主输入文件不在磁盘文件系统上的文件形式。这是如何实现它的示例：
+到目前为止，我们只学会了如何将[主输入文件](/tex/{{lang.url-fragment}}net/tex-io/#tex-input)作为文件名提供给Tex引擎，无论是完整的形式还是以缩短形式，有或没有扩展名。但是，[Texjob](https://reference.aspose.com/tex/python-net/aspose.tex/texjob/)类中可用[另一个构造函数](https://reference.aspose.com/tex/python-net/aspose.tex/texjob/__init__/#io.RawIOBase-aspose.tex.presentation.Device-aspose.tex.TeXOptions)接受流作为第一个参数。如果出于某种原因，主输入文件不在磁盘文件系统上的文件形式。这是如何实现它的示例：
 
 {{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Conversion-InputStream.py" >}}
 
@@ -21,7 +21,7 @@ lastmod: "2025-06-10"
 
 ## 通过终端输入主Tex输入文件
 
-[Texjob](https://reference.aspose.com/tex/python-net/aspose.tex/texjob)类中有[另一个构造函数](https://reference.aspose.com/tex/python-net/aspose.tex/texjob/__init__/#aspose.tex.presentation.Device-aspose.tex.TeXOptions)，它根本不允许我们指定输入。您可能想知道这样的Tex工作会发生什么。在这种情况下，我们需要使用输入终端。 TEX引擎将提示我们从终端输入文件名。
+[Texjob](https://reference.aspose.com/tex/python-net/aspose.tex/texjob/)类中有[另一个构造函数](https://reference.aspose.com/tex/python-net/aspose.tex/texjob/__init__/#aspose.tex.presentation.Device-aspose.tex.TeXOptions)，它根本不允许我们指定输入。您可能想知道这样的Tex工作会发生什么。在这种情况下，我们需要使用输入终端。 TEX引擎将提示我们从终端输入文件名。
 
 这是代码：
 

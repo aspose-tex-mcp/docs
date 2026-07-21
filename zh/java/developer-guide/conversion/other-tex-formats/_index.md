@@ -23,11 +23,11 @@ lastmod: "2026-04-21"
 
 如您所见，该代码类似于用于转换Tex文件的代码。但是有一些差异。
 
-首先，在这里，我们使用[TexConfig.ObigntInitex()](https://reference.aspose.com/tex/java/com.aspose.tex/TeXConfig#objectIniTeX--)作业配置。这是一种特殊的配置，它使引擎的状态“处女”，即内部参数具有其默认值，并且控制序列的集合与原始序列相吻合。在我们的示例中，从提到的意义上提到的[此处](/tex/{{lang.url-fragment}}net/aspose-tex-and-object-tex/#object-tex)的含义扩展了一组原语。
+首先，在这里，我们使用[TexConfig.ObigntInitex()](https://reference.aspose.com/tex/java/com.aspose.tex/texconfig/#objectIniTeX--) 作业配置。这是一种特殊的配置，它使引擎的状态“处女”，即内部参数具有其默认值，并且控制序列的集合与原始序列相吻合。在我们的示例中，从提到的意义上提到的[此处](/tex/{{lang.url-fragment}}net/aspose-tex-and-object-tex/#object-tex)的含义扩展了一组原语。
 
 接下来，我们照常设置输入和输出工作目录。输入工作目录需要包含主要格式源文件及其所有依赖项。
 
-第二个关键区别是我们运行工作的方式。这次，我们使用静态[createformat()](https://reference.aspose.com/tex/java/com.aspose.tex/TeXJob#createFormat-java.lang.String-com.aspose.tex.TeXOptions-)方法，该方法与选项一起使用主源文件的名称，该名称必须与格式名称相同。
+第二个关键区别是我们运行工作的方式。这次，我们使用静态[createformat()](https://reference.aspose.com/tex/java/com.aspose.tex/texjob/#createFormat-java.lang.String-com.aspose.tex.TeXOptions-) 方法，该方法与选项一起使用主源文件的名称，该名称必须与格式名称相同。
 
 ## 以您的自定义格式排版TEX文件
 
@@ -35,7 +35,7 @@ lastmod: "2026-04-21"
 
 {{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-TypesetWithCustomTeXFormat.java" >}}
 
-显然，我们必须以某种方式指定格式。首先，我们需要创建一个[formatprovider](https://reference.aspose.com/tex/java/com.aspose.tex/FormatProvider)类的实例。然后，在选项构造函数中，我们使用[TexConfig.Objecttex()](https://reference.aspose.com/tex/java/com.aspose.tex/TeXConfig#objectTeX--)配置，该配置将我们的格式提供程序作为参数，并将格式加载到引擎的“处女”状态之上。
+显然，我们必须以某种方式指定格式。首先，我们需要创建一个[formatprovider](https://reference.aspose.com/tex/java/com.aspose.tex/formatprovider/) 类的实例。然后，在选项构造函数中，我们使用[TexConfig.Objecttex()](https://reference.aspose.com/tex/java/com.aspose.tex/TeXConfig#objectTeX--)配置，该配置将我们的格式提供程序作为参数，并将格式加载到引擎的“处女”状态之上。
 
 代码的其余部分应该熟悉。它使用此[指南](/tex/{{lang.url-fragment}}java/conversion/)前面讨论的功能。
 

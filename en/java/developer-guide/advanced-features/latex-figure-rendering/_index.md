@@ -19,7 +19,7 @@ And as with formula rendering, we will start with an example. Here it is:
 
 {{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Features-PngLaTeXFigureRendering.java" >}}
 
-First of all, we create a [rendering options](https://reference.aspose.com/tex/java/com.aspose.tex/PngFigureRendererOptions) instance. We do it here along with specifying the output image resolution.
+First of all, we create a [rendering options](https://reference.aspose.com/tex/java/com.aspose.tex/pngfigurerendereroptions/) instance. We do it here along with specifying the output image resolution.
 
 Next, we specify the preamble. There's no default preamble for LaTeX figure rendering, so if you want, for instance, to render some graphics plotted using the `pict2e` LaTeX package, you need to specify it in the preamble:
 
@@ -57,9 +57,9 @@ In much the same way, we can render a LaTeX figure to SVG format.
 
 The differences are:
 
-* We use [SvgFigureRendererOptions](https://reference.aspose.com/tex/java/com.aspose.tex/SvgFigureRendererOptions) class instead of [PngFigureRendererOptions](https://reference.aspose.com/tex/java/com.aspose.tex/PngFigureRendererOptions).
+* We use [SvgFigureRendererOptions](https://reference.aspose.com/tex/java/com.aspose.tex/svgfigurerendereroptions/) class instead of [PngFigureRendererOptions](https://reference.aspose.com/tex/java/com.aspose.tex/pngfigurerendereroptions/).
 * We don't specify the resolution.
-* We use [SvgFigureRenderer](https://reference.aspose.com/tex/java/com.aspose.tex/SvgFigureRenderer) class instead of [PngFigureRenderer](https://reference.aspose.com/tex/java/com.aspose.tex/PngFigureRenderer).
+* We use [SvgFigureRenderer](https://reference.aspose.com/tex/java/com.aspose.tex/svgfigurerenderer/) class instead of [PngFigureRenderer](https://reference.aspose.com/tex/java/com.aspose.tex/pngfigurerenderer/).
  
 Here is the result:
 

@@ -11,7 +11,7 @@ lastmod: "2026-04-20"
 
 {{<section overview>}}
 
-Der API-Referenzabschnitt zu diesem Thema ist [hier](https://reference.aspose.com/tex/cpp/namespace/aspose.te_x.features). Tatsächlich lässt sich die LaTeX-Funktion zum Rendern mathematischer Formeln am einfachsten demonstrieren, indem man mit dem Beispiel beginnt. Hier ist es:
+Der API-Referenzabschnitt zu diesem Thema ist [hier](https://reference.aspose.com/tex/cpp/aspose.tex.features/). Tatsächlich lässt sich die LaTeX-Funktion zum Rendern mathematischer Formeln am einfachsten demonstrieren, indem man mit dem Beispiel beginnt. Hier ist es:
 
 ```C++
     // Create rendering options 
@@ -54,7 +54,7 @@ Der API-Referenzabschnitt zu diesem Thema ist [hier](https://reference.aspose.co
 
 ```
 
-Kommen wir zu den Details. Zunächst erstellen wir eine [rendering options](https://reference.aspose.com/tex/cpp/aspose.tex.features/mathrendereroptions)-Instanz, ähnlich dem TeX/LaTeX-Schriftsatz. Wir tun dies hier und geben gleichzeitig die Ausgabebildauflösung an.
+Kommen wir zu den Details. Zunächst erstellen wir eine [rendering options](https://reference.aspose.com/tex/cpp/aspose.tex.features/mathrendereroptions/)-Instanz, ähnlich dem TeX/LaTeX-Schriftsatz. Wir tun dies hier und geben gleichzeitig die Ausgabebildauflösung an.
 
 Als nächstes spezifizieren wir die Präambel. Die Standardpräambel lautet:
 
@@ -75,7 +75,7 @@ Die nächste Zeile des Beispiels ergibt wenig Sinn. Es zeigt lediglich, dass Sie
 
 Und mit der letzten Option „ShowTerminal“ können Sie das Schreiben der Terminalausgabe in die Konsole umschalten.
 
-Die Methode, die das Rendern tatsächlich durchführt, ist [MathRenderer.Render()](https://reference.aspose.com/tex/cpp/aspose.tex.features/mathrenderer/render). Es gibt die Größe der Formel in Punkten zurück.
+Die Methode, die das Rendern tatsächlich durchführt, ist [MathRenderer.Render()](https://reference.aspose.com/tex/cpp/aspose.tex.features/mathrenderer/render/). Es gibt die Größe der Formel in Punkten zurück.
 
 Der Stream, in den das Bild geschrieben werden soll, wird von der Methode als zweites Argument verwendet. Als nächstes erstellen wir den Stream.
 

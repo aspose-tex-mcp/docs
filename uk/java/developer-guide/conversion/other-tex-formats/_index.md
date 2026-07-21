@@ -23,11 +23,11 @@ lastmod: "2026-04-21"
 
 Як бачите, код схожий на код для перетворення файлу TeX. Але є кілька відмінностей.
 
-По-перше, тут ми використовуємо конфігурацію завдання [TeXConfig.objectIniTeX()](https://reference.aspose.com/tex/java/com.aspose.tex/TeXConfig#objectIniTeX--). Це спеціальна конфігурація, яка залишає стан двигуна «незайманим», тобто внутрішні параметри мають значення за замовчуванням, а набір керуючих послідовностей збігається з набором примітивів. У нашому прикладі набір примітивів розширено в сенсі, згаданому [тут](/tex/{{lang.url-fragment}}net/aspose-tex-and-object-tex/#object-tex).
+По-перше, тут ми використовуємо конфігурацію завдання [TeXConfig.objectIniTeX()](https://reference.aspose.com/tex/java/com.aspose.tex/texconfig/#objectIniTeX--) . Це спеціальна конфігурація, яка залишає стан двигуна «незайманим», тобто внутрішні параметри мають значення за замовчуванням, а набір керуючих послідовностей збігається з набором примітивів. У нашому прикладі набір примітивів розширено в сенсі, згаданому [тут](/tex/{{lang.url-fragment}}net/aspose-tex-and-object-tex/#object-tex).
 
 Далі ми налаштовуємо вхідні та вихідні робочі каталоги, як зазвичай. Вхідний робочий каталог має містити вихідний файл основного формату та всі його залежності.
 
-І друга ключова відмінність полягає в тому, як ми виконуємо роботу. Цього разу ми використовуємо статичний метод [createFormat()](https://reference.aspose.com/tex/java/com.aspose.tex/TeXJob#createFormat-java.lang.String-com.aspose.tex.TeXOptions-), який разом із параметрами отримує ім’я основного вихідного файлу, яке має збігатися з назвою формату.
+І друга ключова відмінність полягає в тому, як ми виконуємо роботу. Цього разу ми використовуємо статичний метод [createFormat()](https://reference.aspose.com/tex/java/com.aspose.tex/texjob/#createFormat-java.lang.String-com.aspose.tex.TeXOptions-) , який разом із параметрами отримує ім’я основного вихідного файлу, яке має збігатися з назвою формату.
 
 ## Набір файлу TeX у вашому спеціальному форматі
 
@@ -35,7 +35,7 @@ lastmod: "2026-04-21"
 
 {{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-TypesetWithCustomTeXFormat.java" >}}
 
-Вочевидь ми повинні якось визначити формат. Перш за все, нам потрібно створити екземпляр класу [FormatProvider](https://reference.aspose.com/tex/java/com.aspose.tex/FormatProvider). Потім у конструкторі параметрів ми використовуємо конфігурацію [TeXConfig.objectTeX()](https://reference.aspose.com/tex/java/com.aspose.tex/TeXConfig#objectTeX--), яка приймає наш провайдер формату як аргумент і завантажує формат поверх «незайманого» стану двигуна.
+Вочевидь ми повинні якось визначити формат. Перш за все, нам потрібно створити екземпляр класу [FormatProvider](https://reference.aspose.com/tex/java/com.aspose.tex/formatprovider/) . Потім у конструкторі параметрів ми використовуємо конфігурацію [TeXConfig.objectTeX()](https://reference.aspose.com/tex/java/com.aspose.tex/TeXConfig#objectTeX--), яка приймає наш провайдер формату як аргумент і завантажує формат поверх «незайманого» стану двигуна.
 
 Решта коду повинна бути вам знайома. Він використовує функції, розглянуті раніше в цьому [посібнику](/tex/{{lang.url-fragment}}java/conversion/).
 

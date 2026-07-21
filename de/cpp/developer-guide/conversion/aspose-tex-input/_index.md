@@ -11,10 +11,10 @@ lastmod: "2024-09-26"
 
 {{<section overview>}}
 
-Formale Definitionen der I/O-Implementierung finden Sie in **Aspose.TeX für C++** [API-Referenz](https://reference.aspose.com/tex/cpp/namespace/aspose.te_x.i_o).
+Formale Definitionen der I/O-Implementierung finden Sie in **Aspose.TeX für C++** [API-Referenz](https://reference.aspose.com/tex/cpp/aspose.tex.io/).
 
 ## Das Konzept des Eingabeverzeichnisses
-Da I/O-Grundelemente der TeX-Sprache nur Dateinamen verarbeiten können, definiert **Aspose.TeX für C++** ein Verzeichnis als Zuordnung zwischen Namen und Datenmengen. Die Datenmengen sollen Dateien, Streams, Arrays oder was auch immer sein. Mit der API können wir die Eingabe- und Ausgabearbeitsverzeichnisse separat angeben. Es stellt die allgemeine Schnittstelle [IInputWorkingDirectory](https://reference.aspose.com/tex/cpp/aspose.tex.io/iinputworkingdirectory) bereit, die der Benutzer für seine eigenen Zwecke implementieren kann. Es bietet auch eigene Implementierungen, die weiter unten besprochen werden. Die Schnittstelle definiert die Methode [GetFile()](https://reference.aspose.com/tex/cpp/aspose.tex.io/iinputworkingdirectory#adc0d6f35f9a0c426ba010779d90b5cd6), die den Datenstrom zurückgibt und den vollständigen Namen der Datei ermittelt, wobei als erstes Argument ein hypothetisch anderer Name verwendet wird, der tatsächlich der Zuordnungsschlüssel ist .
+Da I/O-Grundelemente der TeX-Sprache nur Dateinamen verarbeiten können, definiert **Aspose.TeX für C++** ein Verzeichnis als Zuordnung zwischen Namen und Datenmengen. Die Datenmengen sollen Dateien, Streams, Arrays oder was auch immer sein. Mit der API können wir die Eingabe- und Ausgabearbeitsverzeichnisse separat angeben. Es stellt die allgemeine Schnittstelle [IInputWorkingDirectory](https://reference.aspose.com/tex/cpp/aspose.tex.io/iinputworkingdirectory/) bereit, die der Benutzer für seine eigenen Zwecke implementieren kann. Es bietet auch eigene Implementierungen, die weiter unten besprochen werden. Die Schnittstelle definiert die Methode [GetFile()](https://reference.aspose.com/tex/cpp/aspose.tex.io/iinputworkingdirectory#adc0d6f35f9a0c426ba010779d90b5cd6), die den Datenstrom zurückgibt und den vollständigen Namen der Datei ermittelt, wobei als erstes Argument ein hypothetisch anderer Name verwendet wird, der tatsächlich der Zuordnungsschlüssel ist .
 
 ### Dateieingabe vom Festplattendateisystem abrufen
 
@@ -43,15 +43,15 @@ Wir können die Eingabedateien auch in ein ZIP-Archiv legen und es als Eingabeve
     options->set_InputWorkingDirectory(System::MakeObject<InputZipDirectory>(inZipStream, u"in"));
 ```
 
-Zuerst erstellen wir den Stream, der die ZIP-Datei enthält. Nachdem wir die Konvertierungsoptionen erstellt haben, legen wir dann die Option [InputWorkingDirectory](https://reference.aspose.com/tex/cpp/aspose.tex/texoptions/set_inputworkingdirectory) als Instanz der Klasse [InputZipDirectory](https://reference.aspose.com/tex/cpp/aspose.tex.io/inputzipdirectory) fest. Das zweite Argument des Konstruktors ist der Basispfad innerhalb des Archivs. Wenn wir möchten, dass das gesamte Archiv ein Eingabeverzeichnis ist, sollten wir die leere Zeichenfolge übergeben. 
+Zuerst erstellen wir den Stream, der die ZIP-Datei enthält. Nachdem wir die Konvertierungsoptionen erstellt haben, legen wir dann die Option [InputWorkingDirectory](https://reference.aspose.com/tex/cpp/aspose.tex/texoptions/set_inputworkingdirectory/) als Instanz der Klasse [InputZipDirectory](https://reference.aspose.com/tex/cpp/aspose.tex.io/inputzipdirectory/) fest. Das zweite Argument des Konstruktors ist der Basispfad innerhalb des Archivs. Wenn wir möchten, dass das gesamte Archiv ein Eingabeverzeichnis ist, sollten wir die leere Zeichenfolge übergeben. 
 
 ## Das Konzept des Eingabeterminals
 
-Jetzt ist es an der Zeit, sich daran zu erinnern, dass es auch die Terminaleingabe gibt. In diesem Fall definiert **Aspose.TeX für C++** die allgemeine [IInputTerminal](https://reference.aspose.com/tex/cpp/aspose.tex.io/iinputterminal)-Schnittstelle mit nur einer Eigenschaft, die eine [TextReader](https://reference.aspose.com/tex/cpp/class/system.i_o.text_reader)-Implementierungsinstanz zurückgibt. Die bereitgestellten Implementierungen werden im Folgenden erläutert.
+Jetzt ist es an der Zeit, sich daran zu erinnern, dass es auch die Terminaleingabe gibt. In diesem Fall definiert **Aspose.TeX für C++** die allgemeine [IInputTerminal](https://reference.aspose.com/tex/cpp/aspose.tex.io/iinputterminal/)-Schnittstelle mit nur einer Eigenschaft, die eine [TextReader](https://reference.aspose.com/tex/cpp/system.io/textreader/)-Implementierungsinstanz zurückgibt. Die bereitgestellten Implementierungen werden im Folgenden erläutert.
 
 ### Terminaleingabe von der Konsole abrufen
 
-Dazu müssen wir die Option [TerminalIn](https://reference.aspose.com/tex/cpp/aspose.tex/texoptions/set_terminalin) als Instanz der Klasse [InputConsoleTerminal](https://reference.aspose.com/tex/cpp/class/aspose.te_x.i_o.input_console_terminal) festlegen.
+Dazu müssen wir die Option [TerminalIn](https://reference.aspose.com/tex/cpp/aspose.tex/texoptions/set_terminalin/) als Instanz der Klasse [InputConsoleTerminal](https://reference.aspose.com/tex/cpp/aspose.tex.io/inputconsoleterminal/) festlegen.
 
 ```C++
 // Create conversion options instance.

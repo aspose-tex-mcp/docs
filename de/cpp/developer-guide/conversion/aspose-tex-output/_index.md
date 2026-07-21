@@ -11,15 +11,15 @@ lastmod: "2026-04-20"
 
 {{<section overview>}}
 
-Formale Definitionen der I/O-Implementierung finden Sie in **Aspose.TeX für C++** [API-Referenz](https://reference.aspose.com/tex/cpp/namespace/aspose.te_x.i_o).
+Formale Definitionen der I/O-Implementierung finden Sie in **Aspose.TeX für C++** [API-Referenz](https://reference.aspose.com/tex/cpp/aspose.tex.io/).
 
 ## Das Konzept des Ausgabeverzeichnisses
 
-Da I/O-Grundelemente der TeX-Sprache nur Dateinamen verarbeiten können, definiert Aspose.TeX ein Verzeichnis als Zuordnung zwischen Namen und Datenmengen. Die Datenmengen sollen Dateien, Streams, Arrays oder was auch immer sein. Mit der API können wir die Eingabe- und Ausgabearbeitsverzeichnisse separat angeben. Es stellt die allgemeine Schnittstelle [IOutputWorkingDirectory](https://reference.aspose.com/tex/cpp/aspose.tex.io/ioutputworkingdirectory) für die Ausgabe bereit, die der Benutzer für seine eigenen Zwecke implementieren kann. Es bietet auch eigene Implementierungen, die weiter unten besprochen werden. Die Schnittstelle erweitert [IInputWorkingDirectory](https://reference.aspose.com/tex/cpp/aspose.tex.io/iinputworkingdirectory), da die Engine zunächst eine Datei erstellen und schreiben und diese dann zurücklesen kann. Die eigene Methode der Schnittstelle [GetOutputFile()](https://reference.aspose.com/tex/cpp/aspose.tex.io/ioutputworkingdirectory/getoutputfile) gibt den Stream zurück, in den geschrieben werden soll, im Gegensatz zu dem Stream zum Lesen, der von [GetFile()](https://reference.aspose.com/tex/cpp/aspose.tex.io/iinputworkingdirectory#adc0d6f35f9a0c426ba010779d90b5cd6) zurückgegeben wird.
+Da I/O-Grundelemente der TeX-Sprache nur Dateinamen verarbeiten können, definiert Aspose.TeX ein Verzeichnis als Zuordnung zwischen Namen und Datenmengen. Die Datenmengen sollen Dateien, Streams, Arrays oder was auch immer sein. Mit der API können wir die Eingabe- und Ausgabearbeitsverzeichnisse separat angeben. Es stellt die allgemeine Schnittstelle [IOutputWorkingDirectory](https://reference.aspose.com/tex/cpp/aspose.tex.io/ioutputworkingdirectory/) für die Ausgabe bereit, die der Benutzer für seine eigenen Zwecke implementieren kann. Es bietet auch eigene Implementierungen, die weiter unten besprochen werden. Die Schnittstelle erweitert [IInputWorkingDirectory](https://reference.aspose.com/tex/cpp/aspose.tex.io/iinputworkingdirectory/), da die Engine zunächst eine Datei erstellen und schreiben und diese dann zurücklesen kann. Die eigene Methode der Schnittstelle [GetOutputFile()](https://reference.aspose.com/tex/cpp/aspose.tex.io/ioutputworkingdirectory/getoutputfile/) gibt den Stream zurück, in den geschrieben werden soll, im Gegensatz zu dem Stream zum Lesen, der von [GetFile()](https://reference.aspose.com/tex/cpp/aspose.tex.io/iinputworkingdirectory#adc0d6f35f9a0c426ba010779d90b5cd6) zurückgegeben wird.
 
 ### Schreiben der Dateiausgabe in das Festplattendateisystem
 
-Wie wir [oben](/tex/{{lang.url-fragment}}cpp/latex-to-image/) erwähnt haben, wäre der häufigste Wert für [OutputDirectory](https://reference.aspose.com/tex/cpp/aspose.tex/texoptions/set_outputworkingdirectory) wahrscheinlich eine Instanz der Klasse [OutputFileSystemDirectory](https://reference.aspose.com/tex/cpp/aspose.tex.io/outputfilesystemdirectory).
+Wie wir [oben](/tex/{{lang.url-fragment}}cpp/latex-to-image/) erwähnt haben, wäre der häufigste Wert für [OutputDirectory](https://reference.aspose.com/tex/cpp/aspose.tex/texoptions/set_outputworkingdirectory/) wahrscheinlich eine Instanz der Klasse [OutputFileSystemDirectory](https://reference.aspose.com/tex/cpp/aspose.tex.io/outputfilesystemdirectory/).
 
 So würden wir es einstellen:
 
@@ -45,15 +45,15 @@ Wir können auch eine Datei (oder einen Stream) erstellen und diese von der TeX-
     options->set_OutputWorkingDirectory(System::MakeObject<OutputZipDirectory>(outZipStream));
 ```
 
-Zuerst erstellen wir einen Ausgabestream für die ZIP-Datei. Nachdem wir die Konvertierungsoptionen erstellt haben, legen wir dann die Option [OutputWorkingDirectory](https://reference.aspose.com/tex/cpp/aspose.tex/texoptions/set_outputworkingdirectory) als Instanz der Klasse [OutputZipDirectory](https://reference.aspose.com/tex/cpp/aspose.tex.io/outputzipdirectory) fest.
+Zuerst erstellen wir einen Ausgabestream für die ZIP-Datei. Nachdem wir die Konvertierungsoptionen erstellt haben, legen wir dann die Option [OutputWorkingDirectory](https://reference.aspose.com/tex/cpp/aspose.tex/texoptions/set_outputworkingdirectory/) als Instanz der Klasse [OutputZipDirectory](https://reference.aspose.com/tex/cpp/aspose.tex.io/outputzipdirectory/) fest.
 
 ## Das Konzept des Ausgabeterminals
 
-Es gibt noch einen weiteren wichtigen Teil der Ausgabe: die Terminalausgabe. In diesem Fall definiert **Aspose.TeX für C++** die allgemeine Schnittstelle [IOutputTerminal](https://reference.aspose.com/tex/cpp/aspose.tex.io/ioutputterminal) mit nur einer Eigenschaft, die eine [TextWriter](https://reference.aspose.com/tex/cpp/system.io/textwriter)-Implementierungsinstanz zurückgibt. Die bereitgestellten Implementierungen werden im Folgenden erläutert.
+Es gibt noch einen weiteren wichtigen Teil der Ausgabe: die Terminalausgabe. In diesem Fall definiert **Aspose.TeX für C++** die allgemeine Schnittstelle [IOutputTerminal](https://reference.aspose.com/tex/cpp/aspose.tex.io/ioutputterminal/) mit nur einer Eigenschaft, die eine [TextWriter](https://reference.aspose.com/tex/cpp/system.io/textwriter/)-Implementierungsinstanz zurückgibt. Die bereitgestellten Implementierungen werden im Folgenden erläutert.
 
 ### Schreiben der Terminalausgabe in die Konsole
 
-Dazu müssen wir die Option [TerminalOut](https://reference.aspose.com/tex/cpp/aspose.tex/texoptions/set_terminalout) als Instanz der Klasse [OutputConsoleTerminal](https://reference.aspose.com/tex/cpp/aspose.tex.io/outputconsoleterminal) festlegen.
+Dazu müssen wir die Option [TerminalOut](https://reference.aspose.com/tex/cpp/aspose.tex/texoptions/set_terminalout/) als Instanz der Klasse [OutputConsoleTerminal](https://reference.aspose.com/tex/cpp/aspose.tex.io/outputconsoleterminal/) festlegen.
 
 
 ```C++
@@ -68,7 +68,7 @@ Auch hier handelt es sich um den Standardwert der Option, sodass keine wirkliche
 
 ### Terminalausgabe in eine Datei schreiben
 
-Im Gegensatz zum Eingabeterminal bietet **Aspose.TeX für C++** eine Implementierung von [IOutputTerminal](https://reference.aspose.com/tex/cpp/aspose.tex.io/ioutputterminal), die es uns ermöglicht, die Terminalausgabe in eine Datei in einem Ausgabeverzeichnis zu schreiben.
+Im Gegensatz zum Eingabeterminal bietet **Aspose.TeX für C++** eine Implementierung von [IOutputTerminal](https://reference.aspose.com/tex/cpp/aspose.tex.io/ioutputterminal/), die es uns ermöglicht, die Terminalausgabe in eine Datei in einem Ausgabeverzeichnis zu schreiben.
 
 ```C++
 // Create conversion options instance.
@@ -78,4 +78,4 @@ Im Gegensatz zum Eingabeterminal bietet **Aspose.TeX für C++** eine Implementie
 options->set_TerminalOut(System::MakeObject<OutputFileTerminal>(options->get_OutputWorkingDirectory()));
 ```
 
-Hier bitten wir die TeX-Engine, die Terminalausgabe in die Datei mit dem Namen [<job_name>](/tex/{{lang.url-fragment}}net/tex-io/#tex-output).trm zu schreiben, die im selben Ausgabeverzeichnis gespeichert wird, das wir für den Rest der Ausgabe angegeben haben. Dies ist jedoch nicht notwendig. Wir könnten genauso gut jede andere Instanz einer beliebigen Implementierung von [IOutputTerminal](https://reference.aspose.com/tex/cpp/aspose.tex.io/ioutputterminal) an den Konstruktor übergeben.
+Hier bitten wir die TeX-Engine, die Terminalausgabe in die Datei mit dem Namen [<job_name>](/tex/{{lang.url-fragment}}net/tex-io/#tex-output).trm zu schreiben, die im selben Ausgabeverzeichnis gespeichert wird, das wir für den Rest der Ausgabe angegeben haben. Dies ist jedoch nicht notwendig. Wir könnten genauso gut jede andere Instanz einer beliebigen Implementierung von [IOutputTerminal](https://reference.aspose.com/tex/cpp/aspose.tex.io/ioutputterminal/) an den Konstruktor übergeben.

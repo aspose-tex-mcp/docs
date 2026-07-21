@@ -17,7 +17,7 @@ lastmod: "2025-06-10"
 
 ## 如何将乳胶转换为XPS
 
-转换为XPS与[转换为栅格图像格式](/tex/{{lang.url-fragment}}cpp/latex-to-image/)一样简单，除了[SaveOptions](https://reference.aspose.com/tex/cpp/aspose.tex/texoptions/set_saveoptions)之外，我们还必须将设备更改为[XPSDEVICE](https://reference.aspose.com/tex/cpp/class/aspose.te_x.presentation.xps.xps_device)类的实例。
+转换为XPS与[转换为栅格图像格式](/tex/{{lang.url-fragment}}cpp/latex-to-image/)一样简单，除了[SaveOptions](https://reference.aspose.com/tex/cpp/aspose.tex/texoptions/set_saveoptions/)之外，我们还必须将设备更改为[XPSDEVICE](https://reference.aspose.com/tex/cpp/aspose.tex.presentation.xps/xpsdevice/)类的实例。
 
 ```C++
 ...
@@ -29,7 +29,7 @@ System::MakeObject<Aspose::TeX::TeXJob>(u"hello-world.ltx", System::MakeObject<X
 
 ### 编写主输出XPS文件的另一种方法
 
-[XPSDEVICE](https://reference.aspose.com/tex/cpp/class/aspose.te_x.presentation.xps.xps_device#aa24d2c38c5d134d90782b27ba090116a)类的另一个构造函数使我们可以以替代方式获取所得的XPS文件。
+[XPSDEVICE](https://reference.aspose.com/tex/cpp/aspose.tex.presentation.xps/xpsdevice/#aa24d2c38c5d134d90782b27ba090116a)类的另一个构造函数使我们可以以替代方式获取所得的XPS文件。
 
 ```C++
     // Create the stream to write the XPS file to.

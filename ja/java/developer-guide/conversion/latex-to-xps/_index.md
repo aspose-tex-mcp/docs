@@ -17,7 +17,7 @@ lastmod: "2026-04-21"
 [**Aspose.Page**](https://products.aspose.com/page/)ライブラリがあり、XPSドキュメントを操作するためのAPIを提供し、PDFおよびラスター画像形式に変換します。
 
 ## ラテックスをXPSに変換する方法
-XPSへの変換は、[saveoptions](https://reference.aspose.com/tex/java/com.Aspose.TeX/TeXOptions#getSaveOptions--)に加えて[xpsdevice](https://reference.aspose.com/tex/java/com.Aspose.TeX.rendering/XpsDevice)クラスのインスタンスを使用する必要があることを除いて、[ラスター画像形式への変換](/tex/{{lang.url-fragment}}java/latex-to-image/)と同じくらい簡単です。
+XPSへの変換は、[saveoptions](https://reference.aspose.com/tex/java/com.aspose.tex/texoptions/#getSaveOptions--)に加えて[xpsdevice](https://reference.aspose.com/tex/java/com.aspose.tex.rendering/xpsdevice/) クラスのインスタンスを使用する必要があることを除いて、[ラスター画像形式への変換](/tex/{{lang.url-fragment}}java/latex-to-image/)と同じくらい簡単です。
 
 {{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Conversion-LaTeXToXps-Simplest.java" >}}
 

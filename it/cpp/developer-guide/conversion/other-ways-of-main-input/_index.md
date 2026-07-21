@@ -31,7 +31,7 @@ Si noti che tutti i file di output avranno il nome *texput*. Questo perché il m
 
 ## Immettere il file di input tex principale dal terminale
 
-C'è ancora un altro [costruttore](https://reference.aspose.com/tex/cpp/class/aspose.te_x.te_x_job/main) della classe `Texjob`, che non ci consente affatto di specificare l'input. Allora, cosa sta per elaborare un lavoro del genere, potresti chiederti? Questa volta avremo bisogno di un terminale di input. Il motore Tex ci chiederà di inserire il nome del file dal terminale.
+C'è ancora un altro [costruttore](https://reference.aspose.com/tex/cpp/aspose.tex/texjob/) della classe `Texjob`, che non ci consente affatto di specificare l'input. Allora, cosa sta per elaborare un lavoro del genere, potresti chiederti? Questa volta avremo bisogno di un terminale di input. Il motore Tex ci chiederà di inserire il nome del file dal terminale.
 
 Ecco il codice:
 

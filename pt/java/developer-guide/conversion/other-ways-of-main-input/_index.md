@@ -21,7 +21,7 @@ Observe que todos os arquivos de saída terão o nome *texput*. Isso porque o mo
 
 ## Entrando no principal arquivo de entrada tex do terminal
 
-Há ainda outro [construtor](https://reference.aspose.com/tex/java/com.aspose.tex/TeXJob#TeXJob-com.aspose.tex.rendering.Device-com.aspose.tex.TeXOptions-) da classe `texjob`, que não nos permite especificar a entrada. Então, o que é um trabalho tão tex que vai processar, você pode se perguntar? Desta vez, precisaremos de um terminal de entrada. O mecanismo TEX nos pedirá para inserir o nome do arquivo no terminal.
+Há ainda outro [construtor](https://reference.aspose.com/tex/java/com.aspose.tex/texjob/#TeXJob-com.aspose.tex.rendering.Device-com.aspose.tex.TeXOptions-)  da classe `texjob`, que não nos permite especificar a entrada. Então, o que é um trabalho tão tex que vai processar, você pode se perguntar? Desta vez, precisaremos de um terminal de entrada. O mecanismo TEX nos pedirá para inserir o nome do arquivo no terminal.
 
 Aqui está o código:
 

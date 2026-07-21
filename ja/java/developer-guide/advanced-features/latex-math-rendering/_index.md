@@ -17,7 +17,7 @@ lastmod: "2026-02-27"
 
 {{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Features-PngLaTeXMathRendering.java" >}}
 
-詳細に入ります。まず、TeX/LaTeX の組版と同様に [rendering options](https://reference.aspose.com/tex/java/com.aspose.tex/PngMathRendererOptions) インスタンスを作成します。ここでは同時に出力画像の解像度も指定しています。
+詳細に入ります。まず、TeX/LaTeX の組版と同様に [rendering options](https://reference.aspose.com/tex/java/com.aspose.tex/pngmathrendereroptions/) インスタンスを作成します。ここでは同時に出力画像の解像度も指定しています。
 
 次に、プリアンブルを指定します。デフォルトのプリアンブルは次のとおりです:
 
@@ -62,9 +62,9 @@ lastmod: "2026-02-27"
 
 主な違いは以下の通りです:
 
-* [SvgMathRendererOptions](https://reference.aspose.com/tex/java/com.aspose.tex/SvgMathRendererOptions) クラスを使用し、[PngMathRendererOptions](https://reference.aspose.com/tex/java/com.aspose.tex/PngMathRendererOptions) の代わりに使用します。
+* [SvgMathRendererOptions](https://reference.aspose.com/tex/java/com.aspose.tex/svgmathrendereroptions/) クラスを使用し、[PngMathRendererOptions](https://reference.aspose.com/tex/java/com.aspose.tex/pngmathrendereroptions/) の代わりに使用します。
 * 解像度を指定しません。
-* [SvgMathRenderer](https://reference.aspose.com/tex/java/com.aspose.tex/SvgMathRenderer) クラスを使用し、[PngMathRenderer](https://reference.aspose.com/tex/java/com.aspose.tex/PngMathRenderer) の代わりに使用します。
+* [SvgMathRenderer](https://reference.aspose.com/tex/java/com.aspose.tex/svgmathrenderer/) クラスを使用し、[PngMathRenderer](https://reference.aspose.com/tex/java/com.aspose.tex/pngmathrenderer/) の代わりに使用します。
 
 以下が結果です:
 

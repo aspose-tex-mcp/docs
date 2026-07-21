@@ -13,7 +13,7 @@ lastmod: "2025-06-13"
 
 ## Fornire il file di input principale al motore TEX utilizzando un flusso
 
-Finora abbiamo imparato solo come fornire il [file di input principale](/tex/{{lang.url-fragment}}net/tex-io/#tex-input) al motore TEX come nome di file, sia nella sua forma completa che in una forma abbreviata, con o senza estensione. Tuttavia, è disponibile [un altro costruttore](https://reference.aspose.com/tex/python-net/aspose.tex/texjob/__init__/#io.RawIOBase-aspose.tex.presentation.Device-aspose.tex.TeXOptions) nella classe [Texjob](https://reference.aspose.com/tex/python-net/aspose.tex/texjob) che accetta un flusso come primo argomento. Ciò è utile se, per qualche motivo, il file di input principale non è sotto forma di un file sul file system del disco. Ecco un esempio di come può essere implementato:
+Finora abbiamo imparato solo come fornire il [file di input principale](/tex/{{lang.url-fragment}}net/tex-io/#tex-input) al motore TEX come nome di file, sia nella sua forma completa che in una forma abbreviata, con o senza estensione. Tuttavia, è disponibile [un altro costruttore](https://reference.aspose.com/tex/python-net/aspose.tex/texjob/__init__/#io.RawIOBase-aspose.tex.presentation.Device-aspose.tex.TeXOptions) nella classe [Texjob](https://reference.aspose.com/tex/python-net/aspose.tex/texjob/) che accetta un flusso come primo argomento. Ciò è utile se, per qualche motivo, il file di input principale non è sotto forma di un file sul file system del disco. Ecco un esempio di come può essere implementato:
 
 {{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Conversion-InputStream.py" >}}
 
@@ -21,7 +21,7 @@ Si noti che tutti i file di output verranno denominati `texput`. Questo perché 
 
 ## Inserimento del file di input tex principale tramite il terminale
 
-È disponibile [un altro costruttore](https://reference.aspose.com/tex/python-net/aspose.tex/texjob/__init__/#aspose.tex.presentation.Device-aspose.tex.TeXOptions) nella classe [Texjob](https://reference.aspose.com/tex/python-net/aspose.tex/texjob) che non ci consente di specificare affatto l'input. Potresti chiederti cosa avrebbe elaborato un lavoro del genere. In questo caso, dovremmo utilizzare un terminale di input. Il motore Tex ci spingerà a inserire il nome del file dal terminale.
+È disponibile [un altro costruttore](https://reference.aspose.com/tex/python-net/aspose.tex/texjob/__init__/#aspose.tex.presentation.Device-aspose.tex.TeXOptions) nella classe [Texjob](https://reference.aspose.com/tex/python-net/aspose.tex/texjob/) che non ci consente di specificare affatto l'input. Potresti chiederti cosa avrebbe elaborato un lavoro del genere. In questo caso, dovremmo utilizzare un terminale di input. Il motore Tex ci spingerà a inserire il nome del file dal terminale.
 
 Ecco il codice:
 

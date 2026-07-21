@@ -47,12 +47,12 @@ TikZ（发音为“tik-zee”）全称是 “TikZ ist kein Zeichenprogramm”（
 
 下面是本系列关于 TikZ 主题的概览：
 
-1. [安装和基本配置](/tex/net/tikz-installation-and-basic-configuration/)  
-2. [使用 TikZ 的基础知识](/tex/net/tikz-fundamentals-of-using-tikz/)  
+1. [安装和基本配置](/tex/net/tikz-installation-and-basic-configuration/) 
+2. [使用 TikZ 的基础知识](/tex/net/tikz-fundamentals-of-using-tikz/) 
 3. [高级功能](/tex/net/tikz-advanced-features)  
-4. [用于科学出版物的 TikZ](/tex/net/tikz-for-scientific-publications/)  
-5. [用于演示文稿和信息图表的 TikZ](/tex/net/tikz-for-presentations-and-infographics/)  
-6. [最佳实践和技巧](/tex/net/tikz-best-practices-and-tips/)  
+4. [用于科学出版物的 TikZ](/tex/net/tikz-for-scientific-publications/) 
+5. [用于演示文稿和信息图表的 TikZ](/tex/net/tikz-for-presentations-and-infographics/) 
+6. [最佳实践和技巧](/tex/net/tikz-best-practices-and-tips/) 
 
 浏览这些文章，掌握使用 TikZ 创建专业质量图形的技巧。
 

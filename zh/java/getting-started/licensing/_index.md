@@ -20,7 +20,7 @@ aspose.tex的评估版(未指定许可证)提供完整的产品功能，只是�
 
 ### 使用文件或流对象应用许可证
 
-使用[License.setLicense](https://reference.aspose.com/tex/java/com.aspose.tex/License#setLicense-java.lang.String-)方法来许可组件。设置许可证的最简单方法是将许可证文件与 *aspose.tex.jar* *相同的文件夹中，并指定没有路径的文件名，如下所示。
+使用[License.setLicense](https://reference.aspose.com/tex/java/com.aspose.tex/license/#setLicense-java.lang.String-) 方法来许可组件。设置许可证的最简单方法是将许可证文件与 *aspose.tex.jar* *相同的文件夹中，并指定没有路径的文件名，如下所示。
 
 #### 从文件中加载许可证
 

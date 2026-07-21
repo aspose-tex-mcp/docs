@@ -23,11 +23,11 @@ Recordemos que el archivo de formato es un volcado binario del estado interno de
 
 Como puede ver, el código es similar al código para convertir un archivo TeX. Pero hay algunas diferencias.
 
-Primero, aquí usamos la configuración del trabajo [TeXConfig.objectIniTeX()](https://reference.aspose.com/tex/java/com.aspose.tex/TeXConfig#objectIniTeX--). Se trata de una configuración especial que deja el estado del motor "virgen", es decir, los parámetros internos tienen sus valores por defecto y el conjunto de secuencias de control coincide con el conjunto de primitivas. En nuestro ejemplo, el conjunto de primitivas se amplía en el sentido mencionado [aquí](/tex/{{lang.url-fragment}}net/aspose-tex-and-object-tex/#object-tex).
+Primero, aquí usamos la configuración del trabajo [TeXConfig.objectIniTeX()](https://reference.aspose.com/tex/java/com.aspose.tex/texconfig/#objectIniTeX--) . Se trata de una configuración especial que deja el estado del motor "virgen", es decir, los parámetros internos tienen sus valores por defecto y el conjunto de secuencias de control coincide con el conjunto de primitivas. En nuestro ejemplo, el conjunto de primitivas se amplía en el sentido mencionado [aquí](/tex/{{lang.url-fragment}}net/aspose-tex-and-object-tex/#object-tex).
 
 A continuación, configuramos los directorios de trabajo de entrada y salida como de costumbre. El directorio de trabajo de entrada debe contener el archivo fuente del formato principal y todas sus dependencias.
 
-Y la segunda diferencia clave es la forma en que ejecutamos el trabajo. En esta ocasión usamos el método estático [createFormat()](https://reference.aspose.com/tex/java/com.aspose.tex/TeXJob#createFormat-java.lang.String-com.aspose.tex.TeXOptions-), que junto con las opciones toma el nombre del archivo fuente principal, que debe ser el mismo que el nombre del formato.
+Y la segunda diferencia clave es la forma en que ejecutamos el trabajo. En esta ocasión usamos el método estático [createFormat()](https://reference.aspose.com/tex/java/com.aspose.tex/texjob/#createFormat-java.lang.String-com.aspose.tex.TeXOptions-) , que junto con las opciones toma el nombre del archivo fuente principal, que debe ser el mismo que el nombre del formato.
 
 ## Componer un archivo TeX en su formato personalizado
 
@@ -35,7 +35,7 @@ Ahora que tenemos nuestro propio formato TeX, queremos componer un archivo TeX e
 
 {{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-TypesetWithCustomTeXFormat.java" >}}
 
-Obviamente, tenemos que especificar el formato de alguna manera. En primer lugar, necesitamos crear una instancia de la clase [FormatProvider](https://reference.aspose.com/tex/java/com.aspose.tex/FormatProvider). Luego, en el constructor de opciones, usamos la configuración [TeXConfig.objectTeX()](https://reference.aspose.com/tex/java/com.aspose.tex/TeXConfig#objectTeX--), que toma nuestro proveedor de formato como argumento y carga el formato encima del estado "virgen" del motor.
+Obviamente, tenemos que especificar el formato de alguna manera. En primer lugar, necesitamos crear una instancia de la clase [FormatProvider](https://reference.aspose.com/tex/java/com.aspose.tex/formatprovider/) . Luego, en el constructor de opciones, usamos la configuración [TeXConfig.objectTeX()](https://reference.aspose.com/tex/java/com.aspose.tex/TeXConfig#objectTeX--), que toma nuestro proveedor de formato como argumento y carga el formato encima del estado "virgen" del motor.
 
 El resto del código debería resultarle familiar. Utiliza las características analizadas anteriormente en esta [guía](/tex/{{lang.url-fragment}}java/conversion/).
 

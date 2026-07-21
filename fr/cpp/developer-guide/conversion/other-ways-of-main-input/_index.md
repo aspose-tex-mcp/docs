@@ -29,7 +29,7 @@ Notez que tous les fichiers de sortie porteront le nom *texput*. C'est parce que
 
 ## Saisie du fichier d'entrée principal TeX depuis le terminal
 
-Il existe encore un autre [constructeur](https://reference.aspose.com/tex/cpp/class/aspose.te_x.te_x_job/main) de la classe `TeXJob`, qui ne nous permet pas du tout de spécifier l'entrée. Alors, que va traiter un tel travail TeX, vous vous demandez peut-être ? Cette fois, nous aurons besoin d’un terminal d’entrée. Le moteur TeX nous demandera de saisir le nom du fichier depuis le terminal.
+Il existe encore un autre [constructeur](https://reference.aspose.com/tex/cpp/aspose.tex/texjob/) de la classe `TeXJob`, qui ne nous permet pas du tout de spécifier l'entrée. Alors, que va traiter un tel travail TeX, vous vous demandez peut-être ? Cette fois, nous aurons besoin d’un terminal d’entrée. Le moteur TeX nous demandera de saisir le nom du fichier depuis le terminal.
 
 Voici le code :
 

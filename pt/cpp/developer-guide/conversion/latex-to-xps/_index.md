@@ -17,7 +17,7 @@ Existe a biblioteca [**Aspose.page**](https://products.aspose.com/page/) que for
 
 ## Como converter LaTeX em xps
 
-A conversão em XPS é tão simples quanto a [conversão em formatos de imagem raster](/tex/{{lang.url-fragment}}cpp/latex-to-image/), exceto que, além das [SaveOptions](https://reference.aspose.com/tex/cpp/aspose.tex/texoptions/set_saveoptions), precisamos alterar o dispositivo para uma instância da classe [XPSDevice](https://reference.aspose.com/tex/cpp/class/aspose.te_x.presentation.xps.xps_device).
+A conversão em XPS é tão simples quanto a [conversão em formatos de imagem raster](/tex/{{lang.url-fragment}}cpp/latex-to-image/), exceto que, além das [SaveOptions](https://reference.aspose.com/tex/cpp/aspose.tex/texoptions/set_saveoptions/), precisamos alterar o dispositivo para uma instância da classe [XPSDevice](https://reference.aspose.com/tex/cpp/aspose.tex.presentation.xps/xpsdevice/).
 
 ```C++
 ...
@@ -29,7 +29,7 @@ System::MakeObject<Aspose::TeX::TeXJob>(u"hello-world.ltx", System::MakeObject<X
 
 ### Uma maneira alternativa de escrever o arquivo XPS de saída principal
 
-Há outro construtor da classe [XPSDevice](https://reference.aspose.com/tex/cpp/class/aspose.te_x.presentation.xps.xps_device#aa24d2c38c5d134d90782b27ba090116a), que permite obter o arquivo XPS resultante de uma maneira alternativa.
+Há outro construtor da classe [XPSDevice](https://reference.aspose.com/tex/cpp/aspose.tex.presentation.xps/xpsdevice/#aa24d2c38c5d134d90782b27ba090116a), que permite obter o arquivo XPS resultante de uma maneira alternativa.
 
 ```C++
     // Create the stream to write the XPS file to.

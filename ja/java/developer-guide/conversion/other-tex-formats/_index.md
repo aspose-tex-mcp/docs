@@ -23,11 +23,11 @@ lastmod: "2026-04-21"
 
 ご覧のとおり、コードはTEXファイルを変換するためのコードに似ています。しかし、いくつかの違いがあります。
 
-まず、[texconfig.objectinitex()](https://reference.aspose.com/tex/java/com.Aspose.TeX/TeXConfig#objectIniTeX--)ジョブ構成を使用します。これは、エンジンの状態「Virgin」を離れる特別な構成です。つまり、内部パラメーターにはデフォルト値があり、コントロールシーケンスのセットはプリミティブのセットと一致します。私たちの例では、プリミティブのセットは、[ここ](/tex/{{lang.url-fragment}}net/aspose-tex-and-object-tex/#object-tex)に言及された意味で拡張されます。
+まず、[texconfig.objectinitex()](https://reference.aspose.com/tex/java/com.aspose.tex/texconfig/#objectIniTeX--) ジョブ構成を使用します。これは、エンジンの状態「Virgin」を離れる特別な構成です。つまり、内部パラメーターにはデフォルト値があり、コントロールシーケンスのセットはプリミティブのセットと一致します。私たちの例では、プリミティブのセットは、[ここ](/tex/{{lang.url-fragment}}net/aspose-tex-and-object-tex/#object-tex)に言及された意味で拡張されます。
 
 次に、通常どおり、入力および出力作業ディレクトリを設定します。入力作業ディレクトリには、メイン形式のソースファイルとそのすべての依存関係を含める必要があります。
 
-そして、2番目の重要な違いは、私たちが仕事をする方法です。今回は、static [createformat()](https://reference.aspose.com/tex/java/com.Aspose.TeX/TeXJob#createFormat-java.lang.String-com.Aspose.TeX.TeXOptions-)メソッドを使用します。これは、オプションとともにメインソースファイルの名前を取得し、形式名と同じでなければなりません。
+そして、2番目の重要な違いは、私たちが仕事をする方法です。今回は、static [createformat()](https://reference.aspose.com/tex/java/com.aspose.tex/texjob/#createFormat-java.lang.String-com.aspose.tex.TeXOptions-) メソッドを使用します。これは、オプションとともにメインソースファイルの名前を取得し、形式名と同じでなければなりません。
 
 ## カスタム形式でTEXファイルを植林します
 
@@ -35,7 +35,7 @@ lastmod: "2026-04-21"
 
 {{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-TypesetWithCustomTeXFormat.java" >}}
 
-明らかに、形式を何らかの形で指定する必要があります。まず、[formatprovider](https://reference.aspose.com/tex/java/com.Aspose.TeX/FormatProvider)クラスのインスタンスを作成する必要があります。次に、オプションコンストラクターで[texconfig.objecttex()](https://reference.aspose.com/tex/java/com.Aspose.TeX/TeXConfig#objectTeX--)構成を使用します。これは、フォーマットプロバイダーを引数として受け取り、エンジンの「処女」状態の上に形式をロードします。
+明らかに、形式を何らかの形で指定する必要があります。まず、[formatprovider](https://reference.aspose.com/tex/java/com.aspose.tex/formatprovider/) クラスのインスタンスを作成する必要があります。次に、オプションコンストラクターで[texconfig.objecttex()](https://reference.aspose.com/tex/java/com.Aspose.TeX/TeXConfig#objectTeX--)構成を使用します。これは、フォーマットプロバイダーを引数として受け取り、エンジンの「処女」状態の上に形式をロードします。
 
 残りのコードはあなたに馴染みがあるはずです。この[ガイド](/tex/{{lang.url-fragment}}java/conversion/)で前述した機能を使用します。
 

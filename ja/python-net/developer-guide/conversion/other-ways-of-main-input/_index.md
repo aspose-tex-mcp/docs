@@ -13,7 +13,7 @@ lastmod: "2025-06-09"
 
 ## ストリームを使用してメイン入力ファイルをTexエンジンに提供する
 
-これまでのところ、[メイン入力ファイル](/tex/{{lang.url-fragment}}net/tex-io/#tex-input)をTEXエンジンにファイル名として提供する方法を学びました。ただし、最初の引数としてストリームを受け入れる[Texjob](https://reference.aspose.com/tex/python-net/Aspose.TeX/texjob)クラスで利用可能な[別のコンストラクター](https://reference.aspose.com/tex/python-net/Aspose.TeX/texjob/__init__/#io.RawIOBase-Aspose.TeX.presentation.Device-Aspose.TeX.TeXOptions)があります。これは、何らかの理由で、メインの入力ファイルがディスクファイルシステム上のファイルの形式でない場合に役立ちます。これがどのように実装できるかの例です。
+これまでのところ、[メイン入力ファイル](/tex/{{lang.url-fragment}}net/tex-io/#tex-input)をTEXエンジンにファイル名として提供する方法を学びました。ただし、最初の引数としてストリームを受け入れる[Texjob](https://reference.aspose.com/tex/python-net/aspose.tex/texjob/)クラスで利用可能な[別のコンストラクター](https://reference.aspose.com/tex/python-net/aspose.tex/texjob/__init__/#io.RawIOBase-aspose.tex.presentation.Device-aspose.tex.TeXOptions)があります。これは、何らかの理由で、メインの入力ファイルがディスクファイルシステム上のファイルの形式でない場合に役立ちます。これがどのように実装できるかの例です。
 
 {{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Conversion-InputStream.py" >}}
 
@@ -21,7 +21,7 @@ lastmod: "2025-06-09"
 
 ## 端末からメインのTEX入力ファイルを入力します
 
-[Texjob](https://reference.aspose.com/tex/python-net/Aspose.TeX/texjob)クラスで利用可能な[もう1つのコンストラクター](https://reference.aspose.com/tex/python-net/Aspose.TeX/texjob/__init__/#Aspose.TeX.presentation.Device-Aspose.TeX.TeXOptions)があり、入力をまったく指定できません。あなたはそのようなTexの仕事が何を処理するのか疑問に思っているかもしれません。この場合、入力端子を使用する必要があります。 TEXエンジンは、端末からファイル名を入力するように促します。
+[Texjob](https://reference.aspose.com/tex/python-net/aspose.tex/texjob/)クラスで利用可能な[もう1つのコンストラクター](https://reference.aspose.com/tex/python-net/Aspose.TeX/texjob/__init__/#Aspose.TeX.presentation.Device-Aspose.TeX.TeXOptions)があり、入力をまったく指定できません。あなたはそのようなTexの仕事が何を処理するのか疑問に思っているかもしれません。この場合、入力端子を使用する必要があります。 TEXエンジンは、端末からファイル名を入力するように促します。
 
 これがコードです：
 

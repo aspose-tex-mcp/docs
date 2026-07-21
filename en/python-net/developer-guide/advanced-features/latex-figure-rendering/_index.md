@@ -36,7 +36,7 @@ The following line in the example may not be particularly meaningful. It is simp
 
 The final option, `ShowTerminal`, enables you to control whether the terminal output should be displayed in the console.
 
-The method responsible for rendering the figure is [FigureRenderer.render()](https://reference.aspose.com/tex/python-net/aspose.tex.features/figurerenderer/render/#str-io.RawIOBase-aspose.tex.features.FigureRendererOptions). It returns the size of the figure in points.
+The method responsible for rendering the figure is [FigureRenderer.render()](https://reference.aspose.com/tex/python-net/aspose.tex.features/figurerenderer/render/#str-io.RawIOBase-aspose.tex.features.FigureRendererOptions) . It returns the size of the figure in points.
 
 The method accepts a stream as the second argument, which is the stream where the image will be written. We create the stream in the next line.
 

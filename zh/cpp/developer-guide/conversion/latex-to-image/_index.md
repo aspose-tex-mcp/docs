@@ -27,15 +27,15 @@ lastmod: "2026-04-20"
 {{</app/converter>}}
         
 
-因此，我们需要做的第一件事(有时不是第一件)是创建[Texoptions](https://reference.aspose.com/tex/cpp/aspose.tex/texoptions)类的实例。这样做的唯一静态方法是[consoleappoptions()](https://reference.aspose.com/tex/cpp/aspose.tex/texoptions/consoleappoptions)，因此不要被其名称的含义所困扰。该方法将[TexConfig](https://reference.aspose.com/tex/cpp/aspose.tex/texconfig/)类的[GET_OBJECTLATEX()实例](https://reference.aspose.com/tex/cpp/aspose.tex/texconfig/get_objectlatex/)进行，该类完全适合转换[latex file](/tex/{{lang.url-fragment}}net/latex-io/#latex-file)。该配置告诉对象Tex引擎加载对象乳胶格式并准备好接受乳胶文件。对象乳胶格式实际上只是[乳胶](/tex/{{lang.url-fragment}}net/what-is-latex/)格式，只是它使用[Object tex](/tex/{{lang.url-fragment}}net/aspose-tex-and-object-tex/#object-tex)特定的原始图来设置页面指标。
+因此，我们需要做的第一件事(有时不是第一件)是创建[Texoptions](https://reference.aspose.com/tex/cpp/aspose.tex/texoptions/)类的实例。这样做的唯一静态方法是[consoleappoptions()](https://reference.aspose.com/tex/cpp/aspose.tex/texoptions/consoleappoptions/)，因此不要被其名称的含义所困扰。该方法将[TexConfig](https://reference.aspose.com/tex/cpp/aspose.tex/texconfig/)类的[GET_OBJECTLATEX()实例](https://reference.aspose.com/tex/cpp/aspose.tex/texconfig/get_objectlatex/)进行，该类完全适合转换[latex file](/tex/{{lang.url-fragment}}net/latex-io/#latex-file)。该配置告诉对象Tex引擎加载对象乳胶格式并准备好接受乳胶文件。对象乳胶格式实际上只是[乳胶](/tex/{{lang.url-fragment}}net/what-is-latex/)格式，只是它使用[Object tex](/tex/{{lang.url-fragment}}net/aspose-tex-and-object-tex/#object-tex)特定的原始图来设置页面指标。
 
 所需的第一个选项是[outputWorkingDirectory](https://reference.aspose.com/tex/cpp/aspose.tex/texoptions/set_outputworkingdirectory/)，该选项定义了将编写Tex输出的空间或区域。 [此处](/tex/{{lang.url-fragment}}cpp/aspose-tex-output/)是有关C ++ **Aspose.TeX**中输出目录概念的详细信息。在此示例中，我们使用[OutputFileSystemDirectory](https://reference.aspose.com/tex/cpp/aspose.tex.io/outputfilesystemdirectory/)类，该类使我们能够将输出写入指定的目录或文件夹。
 
 第二个选项是[SaveOptions](https://reference.aspose.com/tex/cpp/aspose.tex.presentation/saveoptions/)类实例，它将控制[对象模型](/tex/{{lang.url-fragment}}net/aspose-tex-and-object-tex/#why-the-new-tex-is-object)对目标格式的转换。由于我们将乳胶转换为png，因此是[pngsaveoptions](https://reference.aspose.com/tex/cpp/aspose.tex.presentation.image/pngsaveoptions/)类实例，它使我们可以指定输出图像的分辨率。
 
-接下来，我们需要创建[Texjob](https://reference.aspose.com/tex/cpp/aspose.tex/texjob/)类的实例。要转换存储在文件系统中的乳胶文件，我们使用[this](https://reference.aspose.com/tex/cpp/aspose.tex/texjob/texjob/#texjobtexjobsystemstring-systemsharedptrpresentationdevice-systemsharedptrtexoptions-constructor)版本的构造函数。我们需要指定文件的完整路径。否则，发动机将在当前目录(即[CurrentDirectory](https://docs.microsoft.com/en-us/dotnet/api/system.environment.currentdirectory))中寻找它，并且很可能找不到它。但是，如果我们的文件具有 *.tex*一个，我们可能会省略扩展名。引擎将自动添加它。构造函数的第二个参数是[设备](https://reference.aspose.com/tex/cpp/class/aspose.te_x.presentation.device)类实例。由于我们将乳胶转换为png，因此它是[Imagedevice](https://reference.aspose.com/tex/cpp/class/aspose.te_x.presentation.image.image_device)类(对于所有受支持的图像格式)实例。作为最后一个论点，我们通过了最近准备的转换选项。
+接下来，我们需要创建[Texjob](https://reference.aspose.com/tex/cpp/aspose.tex/texjob/)类的实例。要转换存储在文件系统中的乳胶文件，我们使用[this](https://reference.aspose.com/tex/cpp/aspose.tex/texjob/texjob/#texjobtexjobsystemstring-systemsharedptrpresentationdevice-systemsharedptrtexoptions-constructor)版本的构造函数。我们需要指定文件的完整路径。否则，发动机将在当前目录(即[CurrentDirectory](https://learn.microsoft.com/en-us/dotnet/api/system.environment.currentdirectory?view=net-10.0))中寻找它，并且很可能找不到它。但是，如果我们的文件具有 *.tex*一个，我们可能会省略扩展名。引擎将自动添加它。构造函数的第二个参数是[设备](https://reference.aspose.com/tex/cpp/aspose.tex.presentation/device/)类实例。由于我们将乳胶转换为png，因此它是[Imagedevice](https://reference.aspose.com/tex/cpp/aspose.tex.presentation.image/imagedevice/)类(对于所有受支持的图像格式)实例。作为最后一个论点，我们通过了最近准备的转换选项。
 
-现在剩下要做的就是[运行](https://reference.aspose.com/tex/cpp/class/aspose.te_x.te_x_job#a0bc7f8b329ea1f19cbba84bf2060f6fb)工作。
+现在剩下要做的就是[运行](https://reference.aspose.com/tex/cpp/aspose.tex/texjob/#a0bc7f8b329ea1f19cbba84bf2060f6fb)工作。
 
 无论运行是否成功，我们都会看到的第一个结果将是终端输出。在成功的情况下，看起来像这样：
 
@@ -101,7 +101,7 @@ Transcript written on hello-world.log.
 
 **您还可以根据[Aspose.TeX for .NET](https://products.aspose.com/tex/net/) API 构建的免费乳胶转换 [Web App](https://products.aspose.app/tex/conversion/latex-to-png)。 [这里](https://products.aspose.com/tex/cpp/) 是 C++ 版本页。**
 
-下面，我们讨论乳胶转换为其他受支持的光栅图像格式。我们不会仅仅因为实际上没有任何细节而详细介绍。唯一的区别是转换选项中[SaveOptions](https://reference.aspose.com/tex/cpp/aspose.tex/texoptions/set_saveoptions)属性的类型。
+下面，我们讨论乳胶转换为其他受支持的光栅图像格式。我们不会仅仅因为实际上没有任何细节而详细介绍。唯一的区别是转换选项中[SaveOptions](https://reference.aspose.com/tex/cpp/aspose.tex/texoptions/set_saveoptions/)属性的类型。
 
 ## 如何将乳胶转换为jpeg
 

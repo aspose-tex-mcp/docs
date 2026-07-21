@@ -41,7 +41,7 @@ Segui queste semplici regole:
 
 ### Applicare la licenza utilizzando il file o lo streaming oggetto
 
-Utilizzare il metodo [Licenza :: SetLicense](https://reference.aspose.com/tex/cpp/class/aspose.te_x.license) per la licenza del componente. Il modo più semplice per impostare una licenza è mettere il file di licenza nella stessa cartella di Aspose.TeX.dll e specificare il nome file, senza un percorso, come mostrato di seguito.
+Utilizzare il metodo [Licenza :: SetLicense](https://reference.aspose.com/tex/cpp/aspose.tex/license/) per la licenza del componente. Il modo più semplice per impostare una licenza è mettere il file di licenza nella stessa cartella di Aspose.TeX.dll e specificare il nome file, senza un percorso, come mostrato di seguito.
 
 #### Caricamento di una licenza dal file
 

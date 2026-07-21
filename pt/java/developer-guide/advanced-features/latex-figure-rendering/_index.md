@@ -19,7 +19,7 @@ E, como na renderização de fórmula, começaremos com um exemplo. Aqui está:
 
 {{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Features-PngLaTeXFigureRendering.java" >}}
 
-Primeiro de tudo, criamos uma instância [de renderização](https://reference.aspose.com/tex/java/com.aspose.tex/PngFigureRendererOptions). Fazemos isso aqui, além de especificar a resolução da imagem de saída.
+Primeiro de tudo, criamos uma instância [de renderização](https://reference.aspose.com/tex/java/com.aspose.tex/pngfigurerendereroptions/). Fazemos isso aqui, além de especificar a resolução da imagem de saída.
 
 Em seguida, especificamos o preâmbulo. Não há preâmbulo padrão para renderização de figuras de LaTeX; portanto, se você quiser, por exemplo, renderizar alguns gráficos plotados usando o pacote `pict2e` LATEX, você precisa especificá -lo no preâmbulo:
 
@@ -57,9 +57,9 @@ Da mesma maneira, podemos renderizar uma figura de LaTeX ao formato SVG.
 
 As diferenças são:
 
-* Utilizamos a classe [SvgFigureRendererOptions](https://reference.aspose.com/tex/java/com.aspose.tex/SvgFigureRendererOptions) em vez de [PngFigureRendererOptions](https://reference.aspose.com/tex/java/com.aspose.tex/PngFigureRendererOptions).
+* Utilizamos a classe [SvgFigureRendererOptions](https://reference.aspose.com/tex/java/com.aspose.tex/svgfigurerendereroptions/) em vez de [PngFigureRendererOptions](https://reference.aspose.com/tex/java/com.aspose.tex/pngfigurerendereroptions/).
 * Não especificamos a resolução.
-* Usamos a classe [SvgFigureRenderer](https://reference.aspose.com/tex/java/com.aspose.tex/SvgFigureRenderer) em vez de [PngFigureRenderer](https://reference.aspose.com/tex/java/com.aspose.tex/PngFigureRenderer).
+* Usamos a classe [SvgFigureRenderer](https://reference.aspose.com/tex/java/com.aspose.tex/svgfigurerenderer/) em vez de [PngFigureRenderer](https://reference.aspose.com/tex/java/com.aspose.tex/pngfigurerenderer/).
  
 Aqui está o resultado:
 

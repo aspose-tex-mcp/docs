@@ -31,7 +31,7 @@ System::MakeObject<Aspose::TeX::TeXJob>(System::MakeObject<System::IO::MemoryStr
 
 ## ターミナルからメインTEX入力ファイルを入力します
 
-「Texjob」クラスにはさらに別の[コンストラクター](https://reference.aspose.com/tex/cpp/class/aspose.te_x.te_x_job/main)がありますが、入力をまったく指定できません。それで、そのようなTexの仕事は何を処理しようとしているのでしょうか？今回は入力端子が必要です。 Texエンジンは、端末からファイル名を入力するように依頼します。
+「Texjob」クラスにはさらに別の[コンストラクター](https://reference.aspose.com/tex/cpp/aspose.tex/texjob/)がありますが、入力をまったく指定できません。それで、そのようなTexの仕事は何を処理しようとしているのでしょうか？今回は入力端子が必要です。 Texエンジンは、端末からファイル名を入力するように依頼します。
 
 これがコードです：
 

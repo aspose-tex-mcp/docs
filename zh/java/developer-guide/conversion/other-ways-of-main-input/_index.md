@@ -21,7 +21,7 @@ lastmod: "2026-04-21"
 
 ## 从终端输入主TeX输入文件
 
-“ Texjob”类还有另一个[构造函数](https://reference.aspose.com/tex/java/com.aspose.tex/TeXJob#TeXJob-com.aspose.tex.rendering.Device-com.aspose.tex.TeXOptions-)，它根本不允许我们指定输入。那么，您可能会想知道什么是这样的TeX工作？这次我们将需要一个输入终端。 TeX引擎将要求我们从终端输入文件名。
+“ Texjob”类还有另一个[构造函数](https://reference.aspose.com/tex/java/com.aspose.tex/texjob/#TeXJob-com.aspose.tex.rendering.Device-com.aspose.tex.TeXOptions-) ，它根本不允许我们指定输入。那么，您可能会想知道什么是这样的TeX工作？这次我们将需要一个输入终端。 TeX引擎将要求我们从终端输入文件名。
 
 这是代码：
 

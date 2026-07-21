@@ -18,7 +18,7 @@ Esiste la libreria [**Aspose.Page**](https://products.aspose.com/page/) che forn
 
 ## Come convertire il LaTeX in XPS
 
-La conversione in XPS è semplice quanto la [conversione in formati di immagini raster](/tex/{{lang.url-fragment}}java/latex-to-image/), tranne che oltre ai [SaveOptions](https://reference.aspose.com/tex/java/com.aspose.tex/TeXOptions#getSaveOptions--), dobbiamo usare un'istanza della classe [XPSDevice](https://reference.aspose.com/tex/java/com.aspose.tex.rendering/XpsDevice).
+La conversione in XPS è semplice quanto la [conversione in formati di immagini raster](/tex/{{lang.url-fragment}}java/latex-to-image/), tranne che oltre ai [SaveOptions](https://reference.aspose.com/tex/java/com.aspose.tex/texoptions/#getSaveOptions--), dobbiamo usare un'istanza della classe [XPSDevice](https://reference.aspose.com/tex/java/com.aspose.tex.rendering/xpsdevice/) .
 
 {{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Conversion-LaTeXToXps-Simplest.java" >}}
 

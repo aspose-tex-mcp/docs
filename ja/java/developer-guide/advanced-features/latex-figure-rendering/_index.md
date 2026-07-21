@@ -19,7 +19,7 @@ LaTeX ファイルからコンテンツ（図形、文章、プロット等）�
 
 {{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Features-PngLaTeXFigureRendering.java" >}}
 
-まず、[レンダリング オプション](https://reference.aspose.com/tex/java/com.aspose.tex/PngFigureRendererOptions) インスタンスを作成します。ここで出力画像の解像度も指定します。
+まず、[レンダリング オプション](https://reference.aspose.com/tex/java/com.aspose.tex/pngfigurerendereroptions/) インスタンスを作成します。ここで出力画像の解像度も指定します。
 
 次に、前文（preamble）を指定します。LaTeX 図のレンダリングにはデフォルトの前文がありません。そのため、たとえば `pict2e` パッケージを使用したグラフを描画したい場合は、前文に以下のように記述する必要があります。
 
@@ -57,9 +57,9 @@ LaTeX ファイルからコンテンツ（図形、文章、プロット等）�
 
 相違点は次のとおりです。
 
-* [SvgFigureRendererOptions](https://reference.aspose.com/tex/java/com.aspose.tex/SvgFigureRendererOptions) クラスを、[PngFigureRendererOptions](https://reference.aspose.com/tex/java/com.aspose.tex/PngFigureRendererOptions) の代わりに使用します。
+* [SvgFigureRendererOptions](https://reference.aspose.com/tex/java/com.aspose.tex/svgfigurerendereroptions/) クラスを、[PngFigureRendererOptions](https://reference.aspose.com/tex/java/com.aspose.tex/pngfigurerendereroptions/) の代わりに使用します。
 * 解像度を指定しません。
-* [SvgFigureRenderer](https://reference.aspose.com/tex/java/com.aspose.tex/SvgFigureRenderer) クラスを、[PngFigureRenderer](https://reference.aspose.com/tex/java/com.aspose.tex/PngFigureRenderer) の代わりに使用します。
+* [SvgFigureRenderer](https://reference.aspose.com/tex/java/com.aspose.tex/svgfigurerenderer/) クラスを、[PngFigureRenderer](https://reference.aspose.com/tex/java/com.aspose.tex/pngfigurerenderer/) の代わりに使用します。
 
 結果は以下の通りです。
 

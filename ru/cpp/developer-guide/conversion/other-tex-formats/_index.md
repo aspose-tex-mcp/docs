@@ -36,7 +36,7 @@ options->get_TerminalOut()->get_Writer()->WriteLine();
 
 Как видите, код аналогичен коду конвертации файла TeX. Но есть несколько отличий.
 
-Во-первых, здесь мы используем конфигурацию задания [TeXConfig.ObjectIniTeX](https://reference.aspose.com/tex/cpp/class/aspose.te_x.te_x_config#aefa7bbdf2ed28d6499f2dc5d5ad2ca3e). Это специальная конфигурация, которая оставляет состояние движка «девственным», т. е. внутренние параметры имеют значения по умолчанию, а набор управляющих последовательностей совпадает с набором примитивов. В нашем примере набор примитивов расширен в смысле, упомянутом [здесь](/tex/{{lang.url-fragment}}net/aspose-tex-and-object-tex/#object-tex).
+Во-первых, здесь мы используем конфигурацию задания [TeXConfig.ObjectIniTeX](https://reference.aspose.com/tex/cpp/aspose.tex/texconfig/#aefa7bbdf2ed28d6499f2dc5d5ad2ca3e). Это специальная конфигурация, которая оставляет состояние движка «девственным», т. е. внутренние параметры имеют значения по умолчанию, а набор управляющих последовательностей совпадает с набором примитивов. В нашем примере набор примитивов расширен в смысле, упомянутом [здесь](/tex/{{lang.url-fragment}}net/aspose-tex-and-object-tex/#object-tex).
 
 Далее мы настраиваем рабочие каталоги ввода и вывода как обычно. Входной рабочий каталог должен содержать исходный файл основного формата и все его зависимости.
 
@@ -62,7 +62,7 @@ System::MakeObject<Aspose::TeX::TeXJob>(System::MakeObject<System::IO::MemoryStr
 options->get_TerminalOut()->get_Writer()->WriteLine();
 ```
 
-Очевидно, нам нужно как-то указать формат. Прежде всего, нам нужно создать экземпляр класса [FormatProvider](https://reference.aspose.com/tex/cpp/class/aspose.te_x.resource_providers.format_provider). Затем в конструкторе параметров мы используем конфигурацию [TeXConfig.ObjectTeX()](https://reference.aspose.com/tex/cpp/class/aspose.te_x.te_x_config#aefa7bbdf2ed28d6499f2dc5d5ad2ca3e), которая принимает нашего поставщика формата в качестве аргумента и загружает формат поверх «девственного» состояния движка.
+Очевидно, нам нужно как-то указать формат. Прежде всего, нам нужно создать экземпляр класса [FormatProvider](https://reference.aspose.com/tex/cpp/aspose.tex.resourceproviders/formatprovider/). Затем в конструкторе параметров мы используем конфигурацию [TeXConfig.ObjectTeX()](https://reference.aspose.com/tex/cpp/aspose.tex/texconfig/#aefa7bbdf2ed28d6499f2dc5d5ad2ca3e), которая принимает нашего поставщика формата в качестве аргумента и загружает формат поверх «девственного» состояния движка.
 
 Остальная часть кода должна быть вам знакома. Он использует функции, обсуждавшиеся ранее в этом [руководстве](/tex/{{lang.url-fragment}}cpp/conversion/).
 

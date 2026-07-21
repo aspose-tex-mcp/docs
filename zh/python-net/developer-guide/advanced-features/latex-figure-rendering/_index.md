@@ -36,7 +36,7 @@ lastmod: "2026-04-03"
 
 最后一个选项 `ShowTerminal` 允许您控制是否在控制台显示终端输出。
 
-负责渲染图形的方法是 [FigureRenderer.render()](https://reference.aspose.com/tex/python-net/aspose.tex.features/figurerenderer/render/#str-io.RawIOBase-aspose.tex.features.FigureRendererOptions)。该方法返回图形的点数大小。
+负责渲染图形的方法是 [FigureRenderer.render()](https://reference.aspose.com/tex/python-net/aspose.tex.features/figurerenderer/render/#str-io.RawIOBase-aspose.tex.features.FigureRendererOptions) 。该方法返回图形的点数大小。
 
 该方法接受第二个参数作为流，即图像将被写入的流。我们在下一行创建该流。
 

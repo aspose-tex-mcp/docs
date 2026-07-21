@@ -11,11 +11,11 @@ lastmod: "2026-04-21"
 
 {{<section overview>}}
 
-请参阅java **Aspose.TeX** [API参考](https://reference.aspose.com/tex/java/com.aspose.tex/package-frame)有关I/O实现的正式定义。
+请参阅java **Aspose.TeX** [API参考](https://reference.aspose.com/tex/java/com.aspose.tex/)有关I/O实现的正式定义。
 
 ## 输入目录的概念
 
-由于tex语言的I/O个性只能处理文件名，因此**用于 Java 的 Aspose.TeX**将目录定义为名称和大部分数据之间的映射。大部分数据应该是文件，流，数组或其他任何数据。API允许我们分别指定输入和输出工作目录。它提供了常规[iInputworkingDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/IInputWorkingDirectory)接口，用户可以为其自己的目的实现。它还提供了自己的实现，将在下面讨论。该接口定义了[getfile()](https://reference.aspose.com/tex/java/com.aspose.tex/IInputWorkingDirectory#getFile-java.lang.String-java.lang.String:A-boolean-)方法，该方法返回数据流并确定文件的全名，同时以假设为不同的名称为第一个参数，实际上是映射密钥。
+由于tex语言的I/O个性只能处理文件名，因此**用于 Java 的 Aspose.TeX**将目录定义为名称和大部分数据之间的映射。大部分数据应该是文件，流，数组或其他任何数据。API允许我们分别指定输入和输出工作目录。它提供了常规[iInputworkingDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/iinputworkingdirectory/)接口，用户可以为其自己的目的实现。它还提供了自己的实现，将在下面讨论。该接口定义了[getfile()](https://reference.aspose.com/tex/java/com.aspose.tex/IInputWorkingDirectory#getFile-java.lang.String-java.lang.String:A-boolean-)方法，该方法返回数据流并确定文件的全名，同时以假设为不同的名称为第一个参数，实际上是映射密钥。
 
 ### 从磁盘文件系统获取文件输入
 
@@ -31,15 +31,15 @@ lastmod: "2026-04-21"
 
 {{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Conversion-InputZipDirectory.java" >}}
 
-首先，我们创建包含zip文件的流。然后，在创建转换选项后，我们将[InputWorkingDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/TeXOptions#getInputWorkingDirectory--)选项设置为[InputzipDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/InputZipDirectory)类的实例。构造函数的第二个论点是存档内部的基本路径。如果我们希望整个存档成为输入目录，则应传递空字符串。 
+首先，我们创建包含zip文件的流。然后，在创建转换选项后，我们将[InputWorkingDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/texoptions/#getInputWorkingDirectory--)选项设置为[InputzipDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/inputzipdirectory/)类的实例。构造函数的第二个论点是存档内部的基本路径。如果我们希望整个存档成为输入目录，则应传递空字符串。 
 
 ## 输入终端的概念
 
-现在，让我们记住，还有终端输入。至于这个，java的**Aspose.TeX**将常规[iinputterminal](https://reference.aspose.com/tex/java/com.aspose.tex/IInputTerminal)接口定义为具有两种方法。其中一个返回[BufferedReader](https://docs.oracle.com/javase/6/docs/api/java/io/BufferedReader.html)实例。另一种方法将[InputStream](https://docs.oracle.com/javase/6/docs/api/java/io/InputStream.html)作为基础流返回。提供的接口的实现将在下面讨论。
+现在，让我们记住，还有终端输入。至于这个，java的**Aspose.TeX**将常规[iinputterminal](https://reference.aspose.com/tex/java/com.aspose.tex/iinputterminal/)接口定义为具有两种方法。其中一个返回[BufferedReader](https://docs.oracle.com/javase/6/docs/api/java/io/BufferedReader.html)实例。另一种方法将[InputStream](https://docs.oracle.com/javase/6/docs/api/java/io/InputStream.html)作为基础流返回。提供的接口的实现将在下面讨论。
 
 ### 从控制台获取终端输入
 
-为此，我们需要将[终端素](https://reference.aspose.com/tex/java/com.aspose.tex/TeXOptions#getTerminalIn--)选项设置为[InputConsoleterminal](https://reference.aspose.com/tex/java/com.aspose.tex/InputConsoleTerminal)类的实例。
+为此，我们需要将[终端素](https://reference.aspose.com/tex/java/com.aspose.tex/texoptions/#getTerminalIn--)选项设置为[InputConsoleterminal](https://reference.aspose.com/tex/java/com.aspose.tex/inputconsoleterminal/)类的实例。
 
 {{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Conversion-InputConsoleTerminal.java" >}}
 

@@ -11,7 +11,7 @@ lastmod: "2026-04-20"
 
 {{<section overview>}}
 
-La section de référence de l'API liée à ce sujet est [ici](https://reference.aspose.com/tex/cpp/namespace/aspose.te_x.features). En fait, le moyen le plus simple de démontrer la fonctionnalité de rendu des formules mathématiques LaTeX est de commencer par l’exemple. C'est ici:
+La section de référence de l'API liée à ce sujet est [ici](https://reference.aspose.com/tex/cpp/aspose.tex.features/). En fait, le moyen le plus simple de démontrer la fonctionnalité de rendu des formules mathématiques LaTeX est de commencer par l’exemple. C'est ici:
 
 ```C++
     // Create rendering options 
@@ -54,7 +54,7 @@ La section de référence de l'API liée à ce sujet est [ici](https://reference
 
 ```
 
-Passons aux détails. Tout d'abord, nous créons une instance [options de rendu](https://reference.aspose.com/tex/cpp/aspose.tex.features/mathrendereroptions), similaire à la composition TeX/LaTeX. Nous le faisons ici simultanément en spécifiant la résolution de l’image de sortie.
+Passons aux détails. Tout d'abord, nous créons une instance [options de rendu](https://reference.aspose.com/tex/cpp/aspose.tex.features/mathrendereroptions/), similaire à la composition TeX/LaTeX. Nous le faisons ici simultanément en spécifiant la résolution de l’image de sortie.
 
 Ensuite, nous précisons le préambule. Le préambule par défaut est :
 
@@ -73,7 +73,7 @@ La ligne suivante de l'exemple n'a pas beaucoup de sens. Cela démontre simpleme
 
 Et la dernière option « ShowTerminal » vous permet d'écrire la sortie du terminal sur la console.
 
-La méthode qui effectue réellement le rendu est [MathRenderer.Render()](https://reference.aspose.com/tex/cpp/aspose.tex.features/mathrenderer/render). Il renvoie la taille de la formule en points.
+La méthode qui effectue réellement le rendu est [MathRenderer.Render()](https://reference.aspose.com/tex/cpp/aspose.tex.features/mathrenderer/render/). Il renvoie la taille de la formule en points.
 
 Le flux dans lequel l’image doit être écrite est pris par la méthode comme deuxième argument. Nous créons ensuite le flux.
 

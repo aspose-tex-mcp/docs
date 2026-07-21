@@ -11,10 +11,10 @@ lastmod: "2024-09-24"
 
 {{<section overview>}}
 
-Пожалуйста, обратитесь к **Aspose.TeX for C++** [ссылка на API](https://reference.aspose.com/tex/cpp/namespace/aspose.te_x.i_o) для формальных определений реализации ввода-вывода.
+Пожалуйста, обратитесь к **Aspose.TeX for C++** [ссылка на API](https://reference.aspose.com/tex/cpp/aspose.tex.io/) для формальных определений реализации ввода-вывода.
 
 ## Концепция входного каталога
-Поскольку примитивы ввода-вывода языка TeX могут работать только с именами файлов, **Aspose.TeX для C++** определяет каталог как сопоставление между именами и объемами данных. Предполагается, что основная часть данных представляет собой файлы, потоки, массивы или что-то еще. API позволяет нам отдельно указывать входные и выходные рабочие каталоги. Он предоставляет общий интерфейс [IInputWorkingDirectory](https://reference.aspose.com/tex/cpp/aspose.tex.io/iinputworkingdirectory), который пользователь может реализовать в своих целях. Он также предоставляет свои собственные реализации, которые будут обсуждаться ниже. В интерфейсе определен метод [GetFile()](https://reference.aspose.com/tex/cpp/aspose.tex.io/iinputworkingdirectory#adc0d6f35f9a0c426ba010779d90b5cd6), который возвращает поток данных и определяет полное имя файла, при этом в качестве первого аргумента принимает какое-то, гипотетически другое, имя, которое, по сути, и является ключом сопоставления. .
+Поскольку примитивы ввода-вывода языка TeX могут работать только с именами файлов, **Aspose.TeX для C++** определяет каталог как сопоставление между именами и объемами данных. Предполагается, что основная часть данных представляет собой файлы, потоки, массивы или что-то еще. API позволяет нам отдельно указывать входные и выходные рабочие каталоги. Он предоставляет общий интерфейс [IInputWorkingDirectory](https://reference.aspose.com/tex/cpp/aspose.tex.io/iinputworkingdirectory/), который пользователь может реализовать в своих целях. Он также предоставляет свои собственные реализации, которые будут обсуждаться ниже. В интерфейсе определен метод [GetFile()](https://reference.aspose.com/tex/cpp/aspose.tex.io/iinputworkingdirectory#adc0d6f35f9a0c426ba010779d90b5cd6), который возвращает поток данных и определяет полное имя файла, при этом в качестве первого аргумента принимает какое-то, гипотетически другое, имя, которое, по сути, и является ключом сопоставления. .
 
 ### Получение входных файлов из файловой системы диска
 
@@ -44,15 +44,15 @@ options->set_InputWorkingDirectory(System::MakeObject<InputFileSystemDirectory>(
     options->set_InputWorkingDirectory(System::MakeObject<InputZipDirectory>(inZipStream, u"in"));
 ```
 
-Сначала мы создаем поток, содержащий ZIP-файл. Затем, после создания параметров преобразования, мы устанавливаем параметр [InputWorkingDirectory](https://reference.aspose.com/tex/cpp/aspose.tex/texoptions/set_inputworkingdirectory) как экземпляр класса [InputZipDirectory](https://reference.aspose.com/tex/cpp/aspose.tex.io/inputzipdirectory). Второй аргумент конструктора — базовый путь внутри архива. Если мы хотим, чтобы весь архив был входным каталогом, нам следует передать пустую строку. 
+Сначала мы создаем поток, содержащий ZIP-файл. Затем, после создания параметров преобразования, мы устанавливаем параметр [InputWorkingDirectory](https://reference.aspose.com/tex/cpp/aspose.tex/texoptions/set_inputworkingdirectory/) как экземпляр класса [InputZipDirectory](https://reference.aspose.com/tex/cpp/aspose.tex.io/inputzipdirectory/). Второй аргумент конструктора — базовый путь внутри архива. Если мы хотим, чтобы весь архив был входным каталогом, нам следует передать пустую строку. 
 
 ## Концепция входного терминала
 
-Теперь пора вспомнить, что есть еще и терминальный вход. Что касается этого, **Aspose.TeX для C++** определяет общий интерфейс [IInputTerminal](https://reference.aspose.com/tex/cpp/aspose.tex.io/iinputterminal), имеющий только одно свойство, которое возвращает экземпляр реализации [TextReader](https://reference.aspose.com/tex/cpp/class/system.i_o.text_reader). Предоставленные реализации обсуждаются ниже.
+Теперь пора вспомнить, что есть еще и терминальный вход. Что касается этого, **Aspose.TeX для C++** определяет общий интерфейс [IInputTerminal](https://reference.aspose.com/tex/cpp/aspose.tex.io/iinputterminal/), имеющий только одно свойство, которое возвращает экземпляр реализации [TextReader](https://reference.aspose.com/tex/cpp/system.io/textreader/). Предоставленные реализации обсуждаются ниже.
 
 ### Получение терминального ввода с консоли
 
-Для этого нам нужно установить опцию [TerminalIn](https://reference.aspose.com/tex/cpp/aspose.tex/texoptions/set_terminalin) как экземпляр класса [InputConsoleTerminal](https://reference.aspose.com/tex/cpp/class/aspose.te_x.i_o.input_console_terminal).
+Для этого нам нужно установить опцию [TerminalIn](https://reference.aspose.com/tex/cpp/aspose.tex/texoptions/set_terminalin/) как экземпляр класса [InputConsoleTerminal](https://reference.aspose.com/tex/cpp/aspose.tex.io/inputconsoleterminal/).
 
 ```C++
 // Create conversion options instance.

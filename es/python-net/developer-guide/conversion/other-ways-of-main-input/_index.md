@@ -13,7 +13,7 @@ lastmod: "2024-10-30"
 
 ## Proporcionar el archivo de entrada principal al motor TeX mediante una secuencia
 
-Hasta ahora, sólo hemos aprendido cómo proporcionar el [archivo de entrada principal](/tex/{{lang.url-fragment}}net/tex-io/#tex-input) al motor TeX como un nombre de archivo, ya sea en su forma completa o abreviada, con o sin extensión. Sin embargo, hay [otro constructor](https://reference.aspose.com/tex/python-net/aspose.tex/texjob/__init__/#io.RawIOBase-aspose.tex.presentation.Device-aspose.tex.TeXOptions) disponible en la clase [TeXJob](https://reference.aspose.com/tex/python-net/aspose.tex/texjob) que acepta una secuencia como primer argumento. Esto es útil si, por alguna razón, el archivo de entrada principal no tiene la forma de un archivo en el sistema de archivos del disco. A continuación se muestra un ejemplo de cómo se puede implementar:
+Hasta ahora, sólo hemos aprendido cómo proporcionar el [archivo de entrada principal](/tex/{{lang.url-fragment}}net/tex-io/#tex-input) al motor TeX como un nombre de archivo, ya sea en su forma completa o abreviada, con o sin extensión. Sin embargo, hay [otro constructor](https://reference.aspose.com/tex/python-net/aspose.tex/texjob/__init__/#io.RawIOBase-aspose.tex.presentation.Device-aspose.tex.TeXOptions) disponible en la clase [TeXJob](https://reference.aspose.com/tex/python-net/aspose.tex/texjob/) que acepta una secuencia como primer argumento. Esto es útil si, por alguna razón, el archivo de entrada principal no tiene la forma de un archivo en el sistema de archivos del disco. A continuación se muestra un ejemplo de cómo se puede implementar:
 
 {{< gist "aspose-com-gists""68d217858f0be40062562ce2bb2cd908""Aspose.TeX.Examples-Conversion-InputStream.py" >}}
 
@@ -21,7 +21,7 @@ Tenga en cuenta que todos los archivos de salida se denominarán "texput". Esto 
 
 ## Ingresando el archivo de entrada TeX principal a través del terminal
 
-Hay [un constructor más](https://reference.aspose.com/tex/python-net/aspose.tex/texjob/__init__/#aspose.tex.presentation.Device-aspose.tex.TeXOptions) disponible en la clase [TeXJob](https://reference.aspose.com/tex/python-net/aspose.tex/texjob) que no nos permite especificar la entrada en absoluto. Quizás se pregunte qué procesaría un trabajo TeX de este tipo. En este caso, necesitaríamos utilizar un terminal de entrada. El motor TeX nos solicitará que ingresemos el nombre del archivo desde la terminal.
+Hay [un constructor más](https://reference.aspose.com/tex/python-net/aspose.tex/texjob/__init__/#aspose.tex.presentation.Device-aspose.tex.TeXOptions) disponible en la clase [TeXJob](https://reference.aspose.com/tex/python-net/aspose.tex/texjob/) que no nos permite especificar la entrada en absoluto. Quizás se pregunte qué procesaría un trabajo TeX de este tipo. En este caso, necesitaríamos utilizar un terminal de entrada. El motor TeX nos solicitará que ingresemos el nombre del archivo desde la terminal.
 
 Aquí está el código:
 

@@ -27,7 +27,7 @@ lastmod: "2025-06-09"
 
 それに続いて、通常どおり、入力および出力作業ディレクトリのセットアップを進めます。入力作業ディレクトリには、メイン形式のソースファイルとそのすべての依存関係を含める必要があります。
 
-2番目の大きな違いは、ジョブを実行する方法です。この場合、static [create_format()](https://reference.aspose.com/tex/python-net/Aspose.TeX/texjob/create_format/#str-Aspose.TeX.TeXOptions)メソッドを使用します。これは、オプションと併せて、メインソースファイルの名前が形式名と同一であることを要求します。
+2番目の大きな違いは、ジョブを実行する方法です。この場合、static [create_format()](https://reference.aspose.com/tex/python-net/aspose.tex/texjob/create_format/#str-aspose.tex.TeXOptions)メソッドを使用します。これは、オプションと併せて、メインソースファイルの名前が形式名と同一であることを要求します。
 
 ## カスタム形式でTEXファイルを植林します
 
@@ -35,7 +35,7 @@ lastmod: "2025-06-09"
 
 {{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-TypesetWithCustomTeXFormat.py" >}}
 
-形式を指定するには、[formatprovider](https://reference.aspose.com/tex/python-net/aspose.tex.resourceproviders/formatprovider/)クラスのインスタンスを作成する必要があります。 Options Constructorでは、[texconfig.object_tex()](https://reference.aspose.com/tex/python-net/Aspose.TeX/texconfig/object_tex/#Aspose.TeX.resourceproviders.FormatProvider)構成を使用します。これは、フォーマットプロバイダーが引数として必要で、エンジンの「処女」状態の上に形式をロードします。
+形式を指定するには、[formatprovider](https://reference.aspose.com/tex/python-net/aspose.tex.resourceproviders/formatprovider/)クラスのインスタンスを作成する必要があります。 Options Constructorでは、[texconfig.object_tex()](https://reference.aspose.com/tex/python-net/aspose.tex/texconfig/object_tex/#aspose.tex.resourceproviders.FormatProvider)構成を使用します。これは、フォーマットプロバイダーが引数として必要で、エンジンの「処女」状態の上に形式をロードします。
 
 残りのコードは、この[ガイド](/tex/{{lang.url-fragment}}net/conversion/)で前述した機能を利用しているため、おなじみのものでなければなりません。
 

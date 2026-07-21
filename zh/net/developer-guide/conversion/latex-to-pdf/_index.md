@@ -25,7 +25,7 @@ lastmod: "2026-04-22"
 
 第二个选项是 [SaveOptions](https://reference.aspose.com/tex/net/aspose.tex.presentation/saveoptions/) 类的实例，它将控制将 [对象模型](/tex/{{lang.url-fragment}}net/aspose-tex-and-object-tex/#why-the-new-tex-is-object) 转换为目标格式的方式。由于我们要将 LaTeX 转换为 PDF，使用的就是 [PdfSaveOptions](https://reference.aspose.com/tex/net/aspose.tex.presentation.pdf/pdfsaveoptions/) 类的实例。
 
-接下来需要创建一个 [TeXJob](https://reference.aspose.com/tex/net/aspose.tex/texjob/) 类的实例。若要转换存储在文件系统中的 LaTeX 文件，我们使用该构造函数的 [此](https://reference.aspose.com/tex/net/aspose.tex/texjob/texjob/) 版本。必须指定文件的完整路径。否则，引擎会在当前目录（即 [CurrentDirectory](https://docs.microsoft.com/en-us/dotnet/api/system.environment.currentdirectory)）中查找，通常找不到。即使文件没有 *.tex* 扩展名，也可以省略，引擎会自动追加。构造函数的第二个参数是一个 [Device](https://reference.aspose.com/tex/net/aspose.tex.presentation/device/) 类的实例。因为我们要将 LaTeX 转换为 PDF，所以这里使用的是 [PdfDevice](https://reference.aspose.com/tex/net/aspose.tex.presentation.pdf/pdfdevice/) 类的实例。最后一个参数则是我们刚才准备好的转换选项。
+接下来需要创建一个 [TeXJob](https://reference.aspose.com/tex/net/aspose.tex/texjob/) 类的实例。若要转换存储在文件系统中的 LaTeX 文件，我们使用该构造函数的 [此](https://reference.aspose.com/tex/net/aspose.tex/texjob/texjob/) 版本。必须指定文件的完整路径。否则，引擎会在当前目录（即 [CurrentDirectory](https://learn.microsoft.com/en-us/dotnet/api/system.environment.currentdirectory?view=net-10.0)）中查找，通常找不到。即使文件没有 *.tex* 扩展名，也可以省略，引擎会自动追加。构造函数的第二个参数是一个 [Device](https://reference.aspose.com/tex/net/aspose.tex.presentation/device/) 类的实例。因为我们要将 LaTeX 转换为 PDF，所以这里使用的是 [PdfDevice](https://reference.aspose.com/tex/net/aspose.tex.presentation.pdf/pdfdevice/) 类的实例。最后一个参数则是我们刚才准备好的转换选项。
 
 剩下的唯一工作就是调用 [run](https://reference.aspose.com/tex/net/aspose.tex/texjob/run/) 方法启动任务。
 

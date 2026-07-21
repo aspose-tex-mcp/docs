@@ -41,7 +41,7 @@ C ++のAspose.TeXの評価に満足したら、Aspose Webサイトでライセ�
 
 ### ファイルまたはストリームオブジェクトを使用してライセンスを適用します
 
-[License::SetLicense](https://reference.aspose.com/tex/cpp/class/aspose.te_x.license)メソッドを使用して、コンポーネントをライセンスします。ライセンスを設定する最も簡単な方法は、ライセンスファイルをAspose.TeX.dllと同じフォルダーに配置し、以下に示すようにパスなしでファイル名を指定することです。
+[License::SetLicense](https://reference.aspose.com/tex/cpp/aspose.tex/license/)メソッドを使用して、コンポーネントをライセンスします。ライセンスを設定する最も簡単な方法は、ライセンスファイルをAspose.TeX.dllと同じフォルダーに配置し、以下に示すようにパスなしでファイル名を指定することです。
 
 #### ファイルからライセンスをロードします
 

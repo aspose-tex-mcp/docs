@@ -11,7 +11,7 @@ lastmod: "2026-04-20"
 
 {{<section overview>}}
 
-La sezione di riferimento API relativa a questo argomento è [qui](https://reference.aspose.com/tex/cpp/namespace/aspose.te_x.features). In effetti, il modo più semplice per dimostrare la funzione di rendering della formula matematica in LaTeX è iniziare con l'esempio. Ecco qui:
+La sezione di riferimento API relativa a questo argomento è [qui](https://reference.aspose.com/tex/cpp/aspose.tex.features/). In effetti, il modo più semplice per dimostrare la funzione di rendering della formula matematica in LaTeX è iniziare con l'esempio. Ecco qui:
 
 ```C++
     // Create rendering options 
@@ -54,7 +54,7 @@ La sezione di riferimento API relativa a questo argomento è [qui](https://refer
 
 ```
 
-Arriviamo ai dettagli. Prima di tutto, creiamo un'istanza di [rendering options](https://reference.aspose.com/tex/cpp/aspose.tex.features/mathrendereroptions), simile alla composizione Tex/Latex. Lo facciamo qui contemporaneamente specificando la risoluzione dell'immagine di output.
+Arriviamo ai dettagli. Prima di tutto, creiamo un'istanza di [rendering options](https://reference.aspose.com/tex/cpp/aspose.tex.features/mathrendereroptions/), simile alla composizione Tex/Latex. Lo facciamo qui contemporaneamente specificando la risoluzione dell'immagine di output.
 
 Successivamente, specifichiamo il preambolo. Il preambolo predefinito è:
 
@@ -75,7 +75,7 @@ La riga successiva dell'esempio non ha molto senso. Dimostra solo che è possibi
 
 E l'ultima opzione `showterminal` consente di attivare la scrittura dell'output del terminale sulla console.
 
-Il metodo che esegue effettivamente il rendering è [mathrender.render()](https://reference.aspose.com/tex/cpp/aspose.tex.features/mathrenderer/render). Restituisce le dimensioni della formula in punti.
+Il metodo che esegue effettivamente il rendering è [mathrender.render()](https://reference.aspose.com/tex/cpp/aspose.tex.features/mathrenderer/render/). Restituisce le dimensioni della formula in punti.
 
 Il flusso in cui l'immagine deve essere scritta viene preso con il metodo come secondo argomento. Creiamo il flusso dopo.
 

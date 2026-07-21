@@ -18,7 +18,7 @@ lastmod: "2026-04-21"
 
 ## 如何将LaTeX转换为XPS
 
-转换为XPS与[转换为栅格图像格式](/tex/{{lang.url-fragment}}java/latex-to-image/)一样简单，除了[SaveOptions](https://reference.aspose.com/tex/java/com.aspose.tex/TeXOptions#getSaveOptions--)之外，我们必须使用[XPSDEVICE](https://reference.aspose.com/tex/java/com.aspose.tex.rendering/XpsDevice)类的实例。
+转换为XPS与[转换为栅格图像格式](/tex/{{lang.url-fragment}}java/latex-to-image/)一样简单，除了[SaveOptions](https://reference.aspose.com/tex/java/com.aspose.tex/texoptions/#getSaveOptions--)之外，我们必须使用[XPSDEVICE](https://reference.aspose.com/tex/java/com.aspose.tex.rendering/xpsdevice/) 类的实例。
 
 {{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Conversion-LaTeXToXps-Simplest.java" >}}
 

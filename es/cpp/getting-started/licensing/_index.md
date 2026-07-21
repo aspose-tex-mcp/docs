@@ -41,7 +41,7 @@ Siga estas sencillas reglas:
 
 ### Aplicar la licencia utilizando un archivo o un objeto de secuencia
 
-Utilice el método [License::SetLicense](https://reference.aspose.com/tex/cpp/class/aspose.te_x.license) para obtener la licencia del componente. La forma más sencilla de configurar una licencia es colocar el archivo de licencia en la misma carpeta que Aspose.TeX.dll y especificar el nombre del archivo, sin una ruta, como se muestra a continuación.
+Utilice el método [License::SetLicense](https://reference.aspose.com/tex/cpp/aspose.tex/license/) para obtener la licencia del componente. La forma más sencilla de configurar una licencia es colocar el archivo de licencia en la misma carpeta que Aspose.TeX.dll y especificar el nombre del archivo, sin una ruta, como se muestra a continuación.
 
 #### Cargando una licencia desde un archivo
 

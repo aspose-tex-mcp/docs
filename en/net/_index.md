@@ -39,6 +39,6 @@ Following are the links to some useful resources you may need to accomplish your
 
 {{% alert color="primary" %}}
 
-Also give a try to our new AI driven [**Aspose.TeX AI Agents**](https://products.aspose.ai/tex/)   -  tools useful for anyone who works with `.tex` and `.latex` formats.
+Also give a try to our new AI driven [**Aspose.TeX AI Agents**](https://products.aspose.ai/tex/)  -  tools useful for anyone who works with `.tex` and `.latex` formats.
 
 {{% /alert %}}

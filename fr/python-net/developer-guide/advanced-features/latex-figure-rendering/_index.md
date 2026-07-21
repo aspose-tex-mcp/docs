@@ -36,7 +36,7 @@ La ligne suivante dans l'exemple n'est peut-être pas particulièrement signific
 
 La dernière option, `ShowTerminal`, vous permet de contrôler si la sortie du terminal doit être affichée dans la console.
 
-La méthode responsable du rendu de la figure est [FigureRenderer.render()](https://reference.aspose.com/tex/python-net/aspose.tex.features/figurerenderer/render/#str-io.RawIOBase-aspose.tex.features.FigureRendererOptions). Il renvoie la taille de la figure en points.
+La méthode responsable du rendu de la figure est [FigureRenderer.render()](https://reference.aspose.com/tex/python-net/aspose.tex.features/figurerenderer/render/#str-io.RawIOBase-aspose.tex.features.FigureRendererOptions) . Il renvoie la taille de la figure en points.
 
 La méthode accepte un flux comme deuxième argument, qui est le flux dans lequel l'image sera écrite. Nous créons le flux dans la ligne suivante.
 

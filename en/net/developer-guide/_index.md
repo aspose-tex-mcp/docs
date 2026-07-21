@@ -30,4 +30,4 @@ Developer Guide serves as a comprehensive resource for effectively utilizing the
 - [**General articles on LaTeX**](/tex/{{lang.url-fragment}}java/general-articles-latex/) - Provides you with the basic information about LaTeX including information on use cases, how to work with fonts, images, math formulas, and different LaTeX packages.
 - [**Introduction to TeX**](/tex/{{lang.url-fragment}}net/introduction-to-tex/). - Here you can get accustomed to TeX and LaTeX, understand their peculiarities, file structure, pros and cons, embedded packages, and many more.
 - [**Aspose.TeX cross-platform apps**](https://products.aspose.app/tex/applications) - will let you convert, merge, view TeX and LaTeX files, create LaTeX equations, tables, graphs, and articles without coding and give you an understanding of how you can develop your own applications.
-- [**Aspose.TeX AI Agents**](https://products.aspose.ai/tex/)  -  Artificial Intelligence tools created to process files of `.tex` and `.latex` formats.
+- [**Aspose.TeX AI Agents**](https://products.aspose.ai/tex/) -  Artificial Intelligence tools created to process files of `.tex` and `.latex` formats.

@@ -11,11 +11,11 @@ lastmod: "2026-04-20"
 
 {{<section overview>}}
 
-I/O実装の正式な定義については、**C++ 用の Aspose.TeX** [api参照](https://reference.aspose.com/tex/cpp/namespace/aspose.te_x.i_o)を参照してください。
+I/O実装の正式な定義については、**C++ 用の Aspose.TeX** [api参照](https://reference.aspose.com/tex/cpp/aspose.tex.io/)を参照してください。
 
 ## 入力ディレクトリの概念
 
-Tex言語のI/O Primitivesはファイル名のみを扱うことができるため、**C++ 用の Aspose.TeX**は、ディレクトリを名前とデータのバルクのマッピングとして定義します。データの大部分は、ファイル、ストリーム、配列などであるはずです。APIにより、入力および出力作業ディレクトリを個別に指定できます。一般的な[iinputworkingdirectory](https://reference.aspose.com/tex/cpp/aspose.tex.io/iinputworkingdirectory)インターフェイスを提供します。これは、ユーザーが独自の目的で実装できる。また、独自の実装も提供します。これについては、以下で説明します。インターフェイスは[getFile()](https://reference.aspose.com/tex/cpp/aspose.tex.io/iinputworkingdirectory/getfile)メソッドを定義します。これは、データストリームを返してファイルのフルネームを決定しますが、仮説的に異なる名前を最初の引数として使用します。実際、マッピングキーです。
+Tex言語のI/O Primitivesはファイル名のみを扱うことができるため、**C++ 用の Aspose.TeX**は、ディレクトリを名前とデータのバルクのマッピングとして定義します。データの大部分は、ファイル、ストリーム、配列などであるはずです。APIにより、入力および出力作業ディレクトリを個別に指定できます。一般的な[iinputworkingdirectory](https://reference.aspose.com/tex/cpp/aspose.tex.io/iinputworkingdirectory/)インターフェイスを提供します。これは、ユーザーが独自の目的で実装できる。また、独自の実装も提供します。これについては、以下で説明します。インターフェイスは[getFile()](https://reference.aspose.com/tex/cpp/aspose.tex.io/iinputworkingdirectory/getfile/)メソッドを定義します。これは、データストリームを返してファイルのフルネームを決定しますが、仮説的に異なる名前を最初の引数として使用します。実際、マッピングキーです。
 
 ### ディスクファイルシステムからファイル入力を取得します
 
@@ -45,15 +45,15 @@ options->set_InputWorkingDirectory(System::MakeObject<InputFileSystemDirectory>(
     options->set_InputWorkingDirectory(System::MakeObject<InputZipDirectory>(inZipStream, u"in"));
 ```
 
-最初に、zipファイルを含むストリームを作成します。次に、変換オプションを作成した後、[inputzipdirectory](https://reference.aspose.com/tex/cpp/aspose.tex.io/inputzipdirectory)クラスのインスタンスになるように[inputWorkingDirectory](https://reference.aspose.com/tex/cpp/Aspose.TeX/texoptions/set_inputworkingdirectory)オプションを設定します。コンストラクターの2番目の引数は、アーカイブ内のベースパスです。アーカイブ全体を入力ディレクトリにしたい場合は、空の文字列を渡す必要があります。 
+最初に、zipファイルを含むストリームを作成します。次に、変換オプションを作成した後、[inputzipdirectory](https://reference.aspose.com/tex/cpp/aspose.tex.io/inputzipdirectory/)クラスのインスタンスになるように[inputWorkingDirectory](https://reference.aspose.com/tex/cpp/aspose.tex/texoptions/set_inputworkingdirectory/)オプションを設定します。コンストラクターの2番目の引数は、アーカイブ内のベースパスです。アーカイブ全体を入力ディレクトリにしたい場合は、空の文字列を渡す必要があります。 
 
 ## 入力端子の概念
 
-さて、端子入力もあることを覚えておく時が来ました。これについては、**C++ 用の Aspose.TeX**は、[textreader](https://reference.aspose.com/tex/cpp/class/system.i_o.text_reader)実装インスタンスを返すプロパティが1つだけある一般[iinputterminal](https://reference.aspose.com/tex/cpp/aspose.tex.io/iinputterminal)インターフェイスを定義します。実装を以下で説明します。
+さて、端子入力もあることを覚えておく時が来ました。これについては、**C++ 用の Aspose.TeX**は、[textreader](https://reference.aspose.com/tex/cpp/system.io/textreader/)実装インスタンスを返すプロパティが1つだけある一般[iinputterminal](https://reference.aspose.com/tex/cpp/aspose.tex.io/iinputterminal/)インターフェイスを定義します。実装を以下で説明します。
 
 ### コンソールから端子入力を取得します
 
-これを行うには、[inputConsoleterminal](https://reference.aspose.com/tex/cpp/class/aspose.te_x.i_o.input_console_terminal)クラスのインスタンスになるには、[Terminalin](https://reference.aspose.com/tex/cpp/Aspose.TeX/texoptions/set_terminalin)オプションを設定する必要があります。
+これを行うには、[inputConsoleterminal](https://reference.aspose.com/tex/cpp/aspose.tex.io/inputconsoleterminal/)クラスのインスタンスになるには、[Terminalin](https://reference.aspose.com/tex/cpp/aspose.tex/texoptions/set_terminalin/)オプションを設定する必要があります。
 
 ```C++
 // Create conversion options instance.

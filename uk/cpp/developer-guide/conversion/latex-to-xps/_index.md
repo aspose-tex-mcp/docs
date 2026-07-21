@@ -17,7 +17,7 @@ lastmod: "2025-06-13"
 
 ## Як конвертувати LaTeX у XPS
 
-Перетворення на XPS таке ж просте, як і [перетворення на растрові формати зображень](/tex/{{lang.url-fragment}}cpp/latex-to-image/), за винятком того, що на додаток до [SaveOptions](https://reference.aspose.com/tex/cpp/aspose.tex/texoptions/set_saveoptions), ми маємо змінити пристрій на екземпляр [XpsDevice](https://reference.aspose.com/tex/cpp/class/aspose.te_x.presentation.xps.xps_device) клас.
+Перетворення на XPS таке ж просте, як і [перетворення на растрові формати зображень](/tex/{{lang.url-fragment}}cpp/latex-to-image/), за винятком того, що на додаток до [SaveOptions](https://reference.aspose.com/tex/cpp/aspose.tex/texoptions/set_saveoptions/), ми маємо змінити пристрій на екземпляр [XpsDevice](https://reference.aspose.com/tex/cpp/aspose.tex.presentation.xps/xpsdevice/) клас.
 
 ```C++
 ...
@@ -29,7 +29,7 @@ System::MakeObject<Aspose::TeX::TeXJob>(u"hello-world.ltx", System::MakeObject<X
 
 ### Альтернативний спосіб запису основного вихідного файлу XPS
 
-Є ще один конструктор класу [XpsDevice](https://reference.aspose.com/tex/cpp/class/aspose.te_x.presentation.xps.xps_device#aa24d2c38c5d134d90782b27ba090116a), який дозволяє нам отримати кінцевий файл XPS альтернативним способом.
+Є ще один конструктор класу [XpsDevice](https://reference.aspose.com/tex/cpp/aspose.tex.presentation.xps/xpsdevice/#aa24d2c38c5d134d90782b27ba090116a), який дозволяє нам отримати кінцевий файл XPS альтернативним способом.
 
 ```C++
     // Create the stream to write the XPS file to.
