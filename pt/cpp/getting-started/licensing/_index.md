@@ -41,7 +41,7 @@ Siga estas regras simples:
 
 ### Aplique a licença usando o arquivo ou o objeto de fluxo
 
-Use o método [License :: setLicense](https://reference.aspose.com/tex/cpp/class/aspose.te_x.license) para licenciar o componente. A maneira mais fácil de definir uma licença é colocar o arquivo de licença na mesma pasta que o Aspose.TeX.dll e especificar o nome do arquivo, sem um caminho, como mostrado abaixo.
+Use o método [License :: setLicense](https://reference.aspose.com/tex/cpp/aspose.tex/license/) para licenciar o componente. A maneira mais fácil de definir uma licença é colocar o arquivo de licença na mesma pasta que o Aspose.TeX.dll e especificar o nome do arquivo, sem um caminho, como mostrado abaixo.
 
 #### Carregando uma licença do arquivo
 

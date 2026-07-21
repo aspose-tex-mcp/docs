@@ -21,7 +21,7 @@ lastmod: "2026-04-21"
 
 ## Введення основного вхідного файлу TeX з терміналу
 
-Існує ще один [конструктор](https://reference.aspose.com/tex/java/com.aspose.tex/TeXJob#TeXJob-com.aspose.tex.rendering.Device-com.aspose.tex.TeXOptions-) класу `TeXJob`, який взагалі не дозволяє нам вказати вхідні дані. Ви можете запитати, що таке завдання TeX буде обробляти? Цього разу нам знадобиться термінал введення. Механізм TeX попросить нас ввести назву файлу з терміналу.
+Існує ще один [конструктор](https://reference.aspose.com/tex/java/com.aspose.tex/texjob/#TeXJob-com.aspose.tex.rendering.Device-com.aspose.tex.TeXOptions-)  класу `TeXJob`, який взагалі не дозволяє нам вказати вхідні дані. Ви можете запитати, що таке завдання TeX буде обробляти? Цього разу нам знадобиться термінал введення. Механізм TeX попросить нас ввести назву файлу з терміналу.
 
 Ось код:
 

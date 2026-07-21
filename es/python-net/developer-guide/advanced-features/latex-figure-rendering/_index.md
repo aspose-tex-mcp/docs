@@ -36,7 +36,7 @@ Es posible que la siguiente línea del ejemplo no sea particularmente significat
 
 La última opción, `ShowTerminal`, le permite controlar si la salida del terminal debe mostrarse en la consola.
 
-El método responsable de renderizar la figura es [FigureRenderer.render()](https://reference.aspose.com/tex/python-net/aspose.tex.features/figurerenderer/render/#str-io.RawIOBase-aspose.tex.features.FigureRendererOptions). Devuelve el tamaño de la figura en puntos.
+El método responsable de renderizar la figura es [FigureRenderer.render()](https://reference.aspose.com/tex/python-net/aspose.tex.features/figurerenderer/render/#str-io.RawIOBase-aspose.tex.features.FigureRendererOptions) . Devuelve el tamaño de la figura en puntos.
 
 El método acepta una secuencia como segundo argumento, que es la secuencia donde se escribirá la imagen. Creamos la secuencia en la siguiente línea.
 

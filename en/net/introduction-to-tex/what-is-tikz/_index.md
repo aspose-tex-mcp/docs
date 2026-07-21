@@ -49,12 +49,12 @@ This example produces a simple triangle connecting three points.
 
 Below is an overview of topics covered in this series on TikZ:
 
-1. [Installation and Basic Configuration](/tex/net/tikz-installation-and-basic-configuration/)  
-2. [Fundamentals of Using TikZ](/tex/net/tikz-fundamentals-of-using-tikz/)  
+1. [Installation and Basic Configuration](/tex/net/tikz-installation-and-basic-configuration/) 
+2. [Fundamentals of Using TikZ](/tex/net/tikz-fundamentals-of-using-tikz/) 
 3. [Advanced Features](/tex/net/tikz-advanced-features)  
-4. [TikZ for Scientific Publications](/tex/net/tikz-for-scientific-publications/)  
-5. [TikZ for Presentations and Infographics](/tex/net/tikz-for-presentations-and-infographics/)  
-6. [Best Practices and Tips](/tex/net/tikz-best-practices-and-tips/)  
+4. [TikZ for Scientific Publications](/tex/net/tikz-for-scientific-publications/) 
+5. [TikZ for Presentations and Infographics](/tex/net/tikz-for-presentations-and-infographics/) 
+6. [Best Practices and Tips](/tex/net/tikz-best-practices-and-tips/) 
 
 Explore these articles to become proficient in creating professional-quality graphics with TikZ.
 

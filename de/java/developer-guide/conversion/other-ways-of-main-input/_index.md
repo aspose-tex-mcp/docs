@@ -21,7 +21,7 @@ Beachten Sie, dass alle Ausgabedateien den Namen *texput* haben. Das liegt daran
 
 ## Eingabe der Haupt-TeX-Eingabedatei über das Terminal
 
-Es gibt noch einen weiteren [Konstruktor](https://reference.aspose.com/tex/java/com.aspose.tex/TeXJob#TeXJob-com.aspose.tex.rendering.Device-com.aspose.tex.TeXOptions-) der Klasse „TeXJob“, der es uns überhaupt nicht erlaubt, die Eingabe anzugeben. Sie fragen sich vielleicht, was ein solcher TeX-Job verarbeiten wird? Dieses Mal benötigen wir ein Eingabeterminal. Die TeX-Engine fordert uns auf, den Dateinamen vom Terminal einzugeben.
+Es gibt noch einen weiteren [Konstruktor](https://reference.aspose.com/tex/java/com.aspose.tex/texjob/#TeXJob-com.aspose.tex.rendering.Device-com.aspose.tex.TeXOptions-)  der Klasse „TeXJob“, der es uns überhaupt nicht erlaubt, die Eingabe anzugeben. Sie fragen sich vielleicht, was ein solcher TeX-Job verarbeiten wird? Dieses Mal benötigen wir ein Eingabeterminal. Die TeX-Engine fordert uns auf, den Dateinamen vom Terminal einzugeben.
 
 Hier ist der Code:
 

@@ -17,7 +17,7 @@ lastmod: "2025-06-09"
 
 ## ラテックスをXPSに変換する方法
 
-XPSへの変換は、[saveoptions](https://reference.aspose.com/tex/cpp/Aspose.TeX/texoptions/set_saveoptions)に加えて、[xpsdevice](https://reference.aspose.com/tex/cpp/class/aspose.te_x.presentation.xps.xps_device)クラスのインスタンスにデバイスを変更する必要があることを除いて、[ラスター画像形式への変換](/tex/{{lang.url-fragment}}cpp/latex-to-image/)と同じくらい簡単です。
+XPSへの変換は、[saveoptions](https://reference.aspose.com/tex/cpp/aspose.tex/texoptions/set_saveoptions/)に加えて、[xpsdevice](https://reference.aspose.com/tex/cpp/aspose.tex.presentation.xps/xpsdevice/)クラスのインスタンスにデバイスを変更する必要があることを除いて、[ラスター画像形式への変換](/tex/{{lang.url-fragment}}cpp/latex-to-image/)と同じくらい簡単です。
 
 ```C++
 ...
@@ -29,7 +29,7 @@ System::MakeObject<Aspose::TeX::TeXJob>(u"hello-world.ltx", System::MakeObject<X
 
 ### メイン出力XPSファイルを書き込む代替方法
 
-[XPSDevice](https://reference.aspose.com/tex/cpp/class/aspose.te_x.presentation.xps.xps_device#aa24d2c38c5d134d90782b27ba090116a)クラスの別のコンストラクターがあります。これにより、結果のXPSファイルを別の方法で取得できます。
+[XPSDevice](https://reference.aspose.com/tex/cpp/aspose.tex.presentation.xps/xpsdevice/#aa24d2c38c5d134d90782b27ba090116a)クラスの別のコンストラクターがあります。これにより、結果のXPSファイルを別の方法で取得できます。
 
 ```C++
     // Create the stream to write the XPS file to.

@@ -11,7 +11,7 @@ lastmod: "2025-06-16"
 
 {{<section overview>}}
 
-A seção de referência da API relacionada a este tópico é [aqui](https://reference.aspose.com/tex/cpp/namespace/aspose.te_x.features). De fato, a maneira mais fácil de demonstrar o recurso de renderização de fórmula matemática do LATEX é começar com o exemplo. Aqui está:
+A seção de referência da API relacionada a este tópico é [aqui](https://reference.aspose.com/tex/cpp/aspose.tex.features/). De fato, a maneira mais fácil de demonstrar o recurso de renderização de fórmula matemática do LATEX é começar com o exemplo. Aqui está:
 
 ```C++
     // Create rendering options 
@@ -54,7 +54,7 @@ A seção de referência da API relacionada a este tópico é [aqui](https://ref
 
 ```
 
-Vamos até os detalhes. Primeiro de tudo, criamos uma instância [de renderização](https://reference.aspose.com/tex/cpp/aspose.tex.features/mathrendereroptions), semelhante à digitação Tex/Latex. Fazemos isso aqui especificando simultaneamente a resolução da imagem de saída.
+Vamos até os detalhes. Primeiro de tudo, criamos uma instância [de renderização](https://reference.aspose.com/tex/cpp/aspose.tex.features/mathrendereroptions/), semelhante à digitação Tex/Latex. Fazemos isso aqui especificando simultaneamente a resolução da imagem de saída.
 
 Em seguida, especificamos o preâmbulo. O preâmbulo padrão é:
 
@@ -75,7 +75,7 @@ A próxima linha do exemplo não faz muito sentido. Ele apenas demonstra que voc
 
 E a última opção `showterminal` permite alternar a gravação da saída do terminal no console.
 
-O método que realmente executa a renderização é [MathRenderer.render()](https://reference.aspose.com/tex/cpp/aspose.tex.features/mathrenderer/render). Ele retorna o tamanho da fórmula em pontos.
+O método que realmente executa a renderização é [MathRenderer.render()](https://reference.aspose.com/tex/cpp/aspose.tex.features/mathrenderer/render/). Ele retorna o tamanho da fórmula em pontos.
 
 O fluxo em que a imagem deve ser escrito é tomada pelo método como o segundo argumento. Criamos o fluxo a seguir.
 

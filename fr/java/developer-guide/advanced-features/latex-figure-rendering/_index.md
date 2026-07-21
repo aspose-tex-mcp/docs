@@ -19,7 +19,7 @@ Et comme pour le rendu de formule, nous commencerons par un exemple. C'est ici:
 
 {{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Features-PngLaTeXFigureRendering.java" >}}
 
-Tout d’abord, nous créons une instance [options de rendu](https://reference.aspose.com/tex/java/com.aspose.tex/PngFigureRendererOptions). Nous le faisons ici en spécifiant la résolution de l'image de sortie.
+Tout d’abord, nous créons une instance [options de rendu](https://reference.aspose.com/tex/java/com.aspose.tex/pngfigurerendereroptions/). Nous le faisons ici en spécifiant la résolution de l'image de sortie.
 
 Ensuite, nous précisons le préambule. Il n'y a pas de préambule par défaut pour le rendu des figures LaTeX, donc si vous souhaitez, par exemple, restituer certains graphiques tracés à l'aide du package LaTeX `pict2e`, vous devez le spécifier dans le préambule :
 
@@ -57,9 +57,9 @@ De la même manière, nous pouvons restituer une figure LaTeX au format SVG.
 
 Les différences sont :
 
- * Nous utilisons la classe [SvgFigureRendererOptions](https://reference.aspose.com/tex/java/com.aspose.tex/SvgFigureRendererOptions) au lieu de [PngFigureRendererOptions](https://reference.aspose.com/tex/java/com.aspose.tex/PngFigureRendererOptions).
+ * Nous utilisons la classe [SvgFigureRendererOptions](https://reference.aspose.com/tex/java/com.aspose.tex/svgfigurerendereroptions/) au lieu de [PngFigureRendererOptions](https://reference.aspose.com/tex/java/com.aspose.tex/pngfigurerendereroptions/).
  * Nous ne précisons pas la résolution.
- * Nous utilisons la classe [SvgFigureRenderer](https://reference.aspose.com/tex/java/com.aspose.tex/SvgFigureRenderer) au lieu de [PngFigureRenderer](https://reference.aspose.com/tex/java/com.aspose.tex/PngFigureRenderer).
+ * Nous utilisons la classe [SvgFigureRenderer](https://reference.aspose.com/tex/java/com.aspose.tex/svgfigurerenderer/) au lieu de [PngFigureRenderer](https://reference.aspose.com/tex/java/com.aspose.tex/pngfigurerenderer/).
 
 Voici le résultat :
 

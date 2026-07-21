@@ -11,11 +11,11 @@ lastmod: "2024-09-20"
 
 {{<section overview>}}
 
-Please, refer to **Aspose.TeX for C++** [API reference](https://reference.aspose.com/tex/cpp/namespace/aspose.te_x.i_o) for formal definitions of I/O implementation.
+Please, refer to **Aspose.TeX for C++** [API reference](https://reference.aspose.com/tex/cpp/aspose.tex.io/) for formal definitions of I/O implementation.
 
 ## The concept of the input directory
 
-Since I/O primitives of the TeX language can only deal with file names, **Aspose.TeX for C++** defines a directory as a mapping between names and bulks of data. The bulks of data are supposed to be files, streams, arrays, or whatever else.The API allows us to specify the input and output working directories separately. It provides the general [IInputWorkingDirectory](https://reference.aspose.com/tex/cpp/aspose.tex.io/iinputworkingdirectory) interface, which the user can implement for their own purposes. It also provides its own implementations, which will be discussed below. The interface defines the [GetFile()](https://reference.aspose.com/tex/cpp/aspose.tex.io/iinputworkingdirectory/getfile) method, which returns the data stream and determines the full name of the file, while taking some, hypothetically different, name as the first argument, which, in fact, is the mapping key.
+Since I/O primitives of the TeX language can only deal with file names, **Aspose.TeX for C++** defines a directory as a mapping between names and bulks of data. The bulks of data are supposed to be files, streams, arrays, or whatever else.The API allows us to specify the input and output working directories separately. It provides the general [IInputWorkingDirectory](https://reference.aspose.com/tex/cpp/aspose.tex.io/iinputworkingdirectory/) interface, which the user can implement for their own purposes. It also provides its own implementations, which will be discussed below. The interface defines the [GetFile()](https://reference.aspose.com/tex/cpp/aspose.tex.io/iinputworkingdirectory/getfile/) method, which returns the data stream and determines the full name of the file, while taking some, hypothetically different, name as the first argument, which, in fact, is the mapping key.
 
 ### Getting file input from the disk file system
 
@@ -45,15 +45,15 @@ We can also put the input files in a ZIP archive and consider it an input direct
     options->set_InputWorkingDirectory(System::MakeObject<InputZipDirectory>(inZipStream, u"in"));
 ```
 
-First, we create the stream containing the ZIP file. Then, after creating the conversion options, we set the [InputWorkingDirectory](https://reference.aspose.com/tex/cpp/aspose.tex/texoptions/set_inputworkingdirectory) option to be an instance of the [InputZipDirectory](https://reference.aspose.com/tex/cpp/aspose.tex.io/inputzipdirectory) class. The second argument of the constructor is the base path inside the archive. If we want the entire archive to be an input directory, we should pass the empty string. 
+First, we create the stream containing the ZIP file. Then, after creating the conversion options, we set the [InputWorkingDirectory](https://reference.aspose.com/tex/cpp/aspose.tex/texoptions/set_inputworkingdirectory/) option to be an instance of the [InputZipDirectory](https://reference.aspose.com/tex/cpp/aspose.tex.io/inputzipdirectory/) class. The second argument of the constructor is the base path inside the archive. If we want the entire archive to be an input directory, we should pass the empty string. 
 
 ## The concept of the input terminal
 
-Now it's time to remember that there is also the terminal input. As for this one, **Aspose.TeX for C++** defines the general [IInputTerminal](https://reference.aspose.com/tex/cpp/aspose.tex.io/iinputterminal) interface having only one property that returns a  [TextReader](https://reference.aspose.com/tex/cpp/class/system.i_o.text_reader) implementation instance. Provided implementations are discussed below.
+Now it's time to remember that there is also the terminal input. As for this one, **Aspose.TeX for C++** defines the general [IInputTerminal](https://reference.aspose.com/tex/cpp/aspose.tex.io/iinputterminal/) interface having only one property that returns a  [TextReader](https://reference.aspose.com/tex/cpp/system.io/textreader/) implementation instance. Provided implementations are discussed below.
 
 ### Getting terminal input from the console
 
-To do this, we need to set the [TerminalIn](https://reference.aspose.com/tex/cpp/aspose.tex/texoptions/set_terminalin) option to be an instance of the [InputConsoleTerminal](https://reference.aspose.com/tex/cpp/class/aspose.te_x.i_o.input_console_terminal) class.
+To do this, we need to set the [TerminalIn](https://reference.aspose.com/tex/cpp/aspose.tex/texoptions/set_terminalin/) option to be an instance of the [InputConsoleTerminal](https://reference.aspose.com/tex/cpp/aspose.tex.io/inputconsoleterminal/) class.
 
 ```C++
 // Create conversion options instance.

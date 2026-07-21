@@ -20,7 +20,7 @@ If you want to try Aspose.TeX out without evaluation limitations, request a 30-d
 
 ### Apply the License using File or Stream Object
 
-Use the [License.setLicense](https://reference.aspose.com/tex/java/com.aspose.tex/License#setLicense-java.lang.String-) method to licensing the component. The easiest way to set a license is to put the license file in the same folder as the *aspose.tex.jar* and specify the filename, without a path, as shown below.
+Use the [License.setLicense](https://reference.aspose.com/tex/java/com.aspose.tex/license/#setLicense-java.lang.String-)  method to licensing the component. The easiest way to set a license is to put the license file in the same folder as the *aspose.tex.jar* and specify the filename, without a path, as shown below.
 
 #### Loading a License from File
 

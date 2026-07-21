@@ -21,7 +21,7 @@ Si noti che tutti i file di output avranno il nome *texput*. Questo perché il m
 
 ## Immettere il file di input tex principale dal terminale
 
-C'è ancora un altro [costruttore](https://reference.aspose.com/tex/java/com.aspose.tex/TeXJob#TeXJob-com.aspose.tex.rendering.Device-com.aspose.tex.TeXOptions-) della classe `Texjob`, che non ci consente di specificare affatto l'input. Allora, cosa sta per elaborare un lavoro del genere, potresti chiederti? Questa volta avremo bisogno di un terminale di input. Il motore Tex ci chiederà di inserire il nome del file dal terminale.
+C'è ancora un altro [costruttore](https://reference.aspose.com/tex/java/com.aspose.tex/texjob/#TeXJob-com.aspose.tex.rendering.Device-com.aspose.tex.TeXOptions-)  della classe `Texjob`, che non ci consente di specificare affatto l'input. Allora, cosa sta per elaborare un lavoro del genere, potresti chiederti? Questa volta avremo bisogno di un terminale di input. Il motore Tex ci chiederà di inserire il nome del file dal terminale.
 
 Ecco il codice:
 

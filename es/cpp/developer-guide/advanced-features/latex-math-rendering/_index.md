@@ -11,7 +11,7 @@ lastmod: "2026-04-20"
 
 {{<section overview>}}
 
-La sección de referencia de API relacionada con este tema está [aquí](https://reference.aspose.com/tex/cpp/namespace/aspose.te_x.features). De hecho, la forma más sencilla de demostrar la función de representación de fórmulas matemáticas de LaTeX es comenzar con el ejemplo. Aquí lo tienes:
+La sección de referencia de API relacionada con este tema está [aquí](https://reference.aspose.com/tex/cpp/aspose.tex.features/). De hecho, la forma más sencilla de demostrar la función de representación de fórmulas matemáticas de LaTeX es comenzar con el ejemplo. Aquí lo tienes:
 
 ```C++
     // Create rendering options 
@@ -54,7 +54,7 @@ La sección de referencia de API relacionada con este tema está [aquí](https:/
 
 ```
 
-Vayamos a los detalles. En primer lugar, creamos una instancia de [opciones de renderizado](https://reference.aspose.com/tex/cpp/aspose.tex.features/mathrendereroptions), similar a la composición tipográfica TeX/LaTeX. Lo hacemos aquí especificando simultáneamente la resolución de la imagen de salida.
+Vayamos a los detalles. En primer lugar, creamos una instancia de [opciones de renderizado](https://reference.aspose.com/tex/cpp/aspose.tex.features/mathrendereroptions/), similar a la composición tipográfica TeX/LaTeX. Lo hacemos aquí especificando simultáneamente la resolución de la imagen de salida.
 
 A continuación, especificamos el preámbulo. El preámbulo predeterminado es:
 
@@ -74,7 +74,7 @@ La siguiente línea del ejemplo no tiene mucho sentido. Simplemente demuestra qu
 
 Y la última opción `ShowTerminal` le permite alternar la escritura de la salida del terminal en la consola.
 
-El método que realmente realiza la renderización es [MathRenderer.Render()](https://reference.aspose.com/tex/cpp/aspose.tex.features/mathrenderer/render). Devuelve el tamaño de la fórmula en puntos.
+El método que realmente realiza la renderización es [MathRenderer.Render()](https://reference.aspose.com/tex/cpp/aspose.tex.features/mathrenderer/render/). Devuelve el tamaño de la fórmula en puntos.
 
 El método toma la secuencia donde se escribirá la imagen como segundo argumento. Creamos la secuencia a continuación.
 

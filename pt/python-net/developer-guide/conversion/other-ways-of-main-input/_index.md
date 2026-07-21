@@ -13,7 +13,7 @@ lastmod: "2025-06-16"
 
 ## Fornecendo o arquivo de entrada principal ao mecanismo TEX usando um fluxo
 
-Até agora, aprendemos apenas a fornecer o [arquivo de entrada principal](/tex/{{lang.url-fragment}}net/tex-io/#tex-input) ao mecanismo TEX como nome de arquivo, seja em sua forma completa ou em uma forma reduzida, com ou sem uma extensão. No entanto, existe [outro construtor](https://reference.aspose.com/tex/python-net/aspose.tex/texjob/__init__/#io.RawIOBase-aspose.tex.presentation.Device-aspose.tex.TeXOptions) disponível na classe [TeXJob](https://reference.aspose.com/tex/python-net/aspose.tex/texjob) que aceita um fluxo como o primeiro argumento. Isso é útil se, por algum motivo, o principal arquivo de entrada não estiver na forma de um arquivo no sistema de arquivos de disco. Aqui está um exemplo de como ele pode ser implementado:
+Até agora, aprendemos apenas a fornecer o [arquivo de entrada principal](/tex/{{lang.url-fragment}}net/tex-io/#tex-input) ao mecanismo TEX como nome de arquivo, seja em sua forma completa ou em uma forma reduzida, com ou sem uma extensão. No entanto, existe [outro construtor](https://reference.aspose.com/tex/python-net/aspose.tex/texjob/__init__/#io.RawIOBase-aspose.tex.presentation.Device-aspose.tex.TeXOptions) disponível na classe [TeXJob](https://reference.aspose.com/tex/python-net/aspose.tex/texjob/) que aceita um fluxo como o primeiro argumento. Isso é útil se, por algum motivo, o principal arquivo de entrada não estiver na forma de um arquivo no sistema de arquivos de disco. Aqui está um exemplo de como ele pode ser implementado:
 
 {{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Conversion-InputStream.py" >}}
 
@@ -21,7 +21,7 @@ Observe que todos os arquivos de saída serão nomeados `Texput`. Isso ocorre po
 
 ## Entrando o principal arquivo de entrada Tex através do terminal
 
-Há [mais um construtor](https://reference.aspose.com/tex/python-net/aspose.tex/texjob/__init__/#aspose.tex.presentation.Device-aspose.tex.TeXOptions) disponível na classe [Texjob](https://reference.aspose.com/tex/python-net/aspose.tex/texjob) que não nos permite especificar a entrada. Você pode estar se perguntando o que esse trabalho de Tex processaria. Nesse caso, precisaríamos usar um terminal de entrada. O mecanismo TEX nos levará a inserir o nome do arquivo no terminal.
+Há [mais um construtor](https://reference.aspose.com/tex/python-net/aspose.tex/texjob/__init__/#aspose.tex.presentation.Device-aspose.tex.TeXOptions) disponível na classe [Texjob](https://reference.aspose.com/tex/python-net/aspose.tex/texjob/) que não nos permite especificar a entrada. Você pode estar se perguntando o que esse trabalho de Tex processaria. Nesse caso, precisaríamos usar um terminal de entrada. O mecanismo TEX nos levará a inserir o nome do arquivo no terminal.
 
 Aqui está o código:
 

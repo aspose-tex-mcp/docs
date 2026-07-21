@@ -29,7 +29,7 @@ Tenga en cuenta que todos los archivos de salida tendrán el nombre *texput*. Es
 
 ## Ingresando el archivo de entrada TeX principal desde la terminal
 
-Hay otro [constructor](https://reference.aspose.com/tex/cpp/class/aspose.te_x.te_x_job/main) de la clase `TeXJob`, que no nos permite especificar la entrada en absoluto. Entonces, ¿qué va a procesar un trabajo TeX de este tipo?, te preguntarás. Esta vez necesitaremos un terminal de entrada. El motor TeX nos pedirá que introduzcamos el nombre del archivo desde la terminal.
+Hay otro [constructor](https://reference.aspose.com/tex/cpp/aspose.tex/texjob/) de la clase `TeXJob`, que no nos permite especificar la entrada en absoluto. Entonces, ¿qué va a procesar un trabajo TeX de este tipo?, te preguntarás. Esta vez necesitaremos un terminal de entrada. El motor TeX nos pedirá que introduzcamos el nombre del archivo desde la terminal.
 
 Aquí está el código:
 

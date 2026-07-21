@@ -11,7 +11,7 @@ lastmod: "2026-04-20"
 
 {{<section overview>}}
 
-与本主题相关的 API 参考章节位于[此处](https://reference.aspose.com/tex/cpp/namespace/aspose.te_x.features)。事实上，演示 LaTeX 数学公式渲染功能最简单的方式是从示例开始。示例代码如下：
+与本主题相关的 API 参考章节位于[此处](https://reference.aspose.com/tex/cpp/aspose.tex.features/)。事实上，演示 LaTeX 数学公式渲染功能最简单的方式是从示例开始。示例代码如下：
 
 ```C++
     // Create rendering options 
@@ -54,7 +54,7 @@ lastmod: "2026-04-20"
 
 ```
 
-让我们进入细节。首先，我们创建一个[渲染选项](https://reference.aspose.com/tex/cpp/aspose.tex.features/mathrendereroptions)实例，类似于 TeX/LaTeX 排版。在这里我们同时指定输出图像的分辨率。
+让我们进入细节。首先，我们创建一个[渲染选项](https://reference.aspose.com/tex/cpp/aspose.tex.features/mathrendereroptions/)实例，类似于 TeX/LaTeX 排版。在这里我们同时指定输出图像的分辨率。
 
 接下来，指定前置段（preamble）。默认的前置段如下：
 
@@ -74,7 +74,7 @@ lastmod: "2026-04-20"
 
 最后一个选项 `ShowTerminal` 允许您切换是否在控制台上显示终端输出。
 
-实际执行渲染的方法是[MathRenderer.Render()](https://reference.aspose.com/tex/cpp/aspose.tex.features/mathrenderer/render)。它返回公式的点数大小。
+实际执行渲染的方法是[MathRenderer.Render()](https://reference.aspose.com/tex/cpp/aspose.tex.features/mathrenderer/render/)。它返回公式的点数大小。
 
 图像写入的流作为第二个参数由该方法获取。我们随后创建该流。
 

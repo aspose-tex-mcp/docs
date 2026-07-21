@@ -29,7 +29,7 @@ System::MakeObject<Aspose::TeX::TeXJob>(System::MakeObject<System::IO::MemoryStr
 
 ## 从终端输入主Tex输入文件
 
-“ Texjob”类还有另一个[构造函数](https://reference.aspose.com/tex/cpp/class/aspose.te_x.te_x_job/main)，它根本不允许我们指定输入。那么，您可能会想知道什么是这样的TEX工作？这次我们将需要一个输入终端。 Tex发动机将要求我们从终端输入文件名。
+“ Texjob”类还有另一个[构造函数](https://reference.aspose.com/tex/cpp/aspose.tex/texjob/)，它根本不允许我们指定输入。那么，您可能会想知道什么是这样的TEX工作？这次我们将需要一个输入终端。 Tex发动机将要求我们从终端输入文件名。
 
 这是代码：
 

@@ -123,7 +123,7 @@ If you want to try Aspose.TeX out without evaluation limitations, request a 30-d
 
 **A:** Check our [web solutions](https://products.aspose.app/tex/applications) to convert, view, merge, and edit TeX and LaTeX files and create mathematical equations. They are the brightest examples you can use the API for developing your own products.
 
-Check also [Aspose.TeX AI Agents**](https://products.aspose.ai/tex/)  - a combination of our experience in developing API for TeX and LaTeX files processing API and Artificial Intelligence.
+Check also [Aspose.TeX AI Agents**](https://products.aspose.ai/tex/) - a combination of our experience in developing API for TeX and LaTeX files processing API and Artificial Intelligence.
 <br><br>
 
 

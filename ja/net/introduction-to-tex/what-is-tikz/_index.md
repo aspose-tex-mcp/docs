@@ -47,12 +47,12 @@ TikZを始めるには、TeXディストリビューションにインストー�
 
 以下は、このシリーズで扱う TikZ のトピック概要です。
 
-1. [インストールと基本設定](/tex/net/tikz-installation-and-basic-configuration/)  
-2. [TikZの基本](/tex/net/tikz-fundamentals-of-using-tikz/)  
+1. [インストールと基本設定](/tex/net/tikz-installation-and-basic-configuration/) 
+2. [TikZの基本](/tex/net/tikz-fundamentals-of-using-tikz/) 
 3. [高度な機能](/tex/net/tikz-advanced-features)  
-4. [科学出版のためのTikZ](/tex/net/tikz-for-scientific-publications/)  
-5. [プレゼンテーションとインフォグラフィックのためのTikZ](/tex/net/tikz-for-presentations-and-infographics/)  
-6. [ベストプラクティスとヒント](/tex/net/tikz-best-practices-and-tips/)  
+4. [科学出版のためのTikZ](/tex/net/tikz-for-scientific-publications/) 
+5. [プレゼンテーションとインフォグラフィックのためのTikZ](/tex/net/tikz-for-presentations-and-infographics/) 
+6. [ベストプラクティスとヒント](/tex/net/tikz-best-practices-and-tips/) 
 
 これらの記事を参照し、TikZ を用いてプロフェッショナル品質のグラフィックを作成するスキルを身につけてください。
 

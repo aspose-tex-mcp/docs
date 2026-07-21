@@ -36,7 +36,7 @@ lastmod: "2026-04-03"
 
 Последняя опция, ShowTerminal, позволяет вам контролировать, должен ли вывод терминала отображаться в консоли.
 
-Метод, отвечающий за рендеринг фигуры, — [FigureRenderer.render()](https://reference.aspose.com/tex/python-net/aspose.tex.features/figurerenderer/render/#str-io.RawIOBase-aspose.tex.features.FigureRendererOptions). Возвращает размер фигуры в пунктах.
+Метод, отвечающий за рендеринг фигуры, — [FigureRenderer.render()](https://reference.aspose.com/tex/python-net/aspose.tex.features/figurerenderer/render/#str-io.RawIOBase-aspose.tex.features.FigureRendererOptions) . Возвращает размер фигуры в пунктах.
 
 В качестве второго аргумента метод принимает поток, который является потоком, в который будет записано изображение. Мы создаем поток в следующей строке.
 

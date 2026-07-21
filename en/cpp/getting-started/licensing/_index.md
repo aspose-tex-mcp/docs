@@ -42,7 +42,7 @@ Follow these simple rules:
 
 ### Apply the License using File or Stream Object
 
-Use the [License::SetLicense](https://reference.aspose.com/tex/cpp/class/aspose.te_x.license) method to licensing the component. The easiest way to set a license is to put the license file in the same folder as the Aspose.TeX.dll and specify the filename, without a path, as shown below.
+Use the [License::SetLicense](https://reference.aspose.com/tex/cpp/aspose.tex/license/) method to licensing the component. The easiest way to set a license is to put the license file in the same folder as the Aspose.TeX.dll and specify the filename, without a path, as shown below.
 
 #### Loading a License from File
 

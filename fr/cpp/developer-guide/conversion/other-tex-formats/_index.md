@@ -36,7 +36,7 @@ options->get_TerminalOut()->get_Writer()->WriteLine();
 
 Comme vous pouvez le voir, le code est similaire au code de conversion d'un fichier TeX. Mais il existe quelques différences.
 
-Tout d'abord, nous utilisons ici la configuration du travail [TeXConfig.ObjectIniTeX](https://reference.aspose.com/tex/cpp/class/aspose.te_x.te_x_config#aefa7bbdf2ed28d6499f2dc5d5ad2ca3e). Il s'agit d'une configuration spéciale qui laisse l'état du moteur « vierge », c'est-à-dire que les paramètres internes ont leurs valeurs par défaut et que l'ensemble des séquences de contrôle coïncide avec l'ensemble des primitives. Dans notre exemple, l'ensemble des primitives est étendu dans le sens mentionné [ici](/tex/{{lang.url-fragment}}net/aspose-tex-and-object-tex/#object-tex).
+Tout d'abord, nous utilisons ici la configuration du travail [TeXConfig.ObjectIniTeX](https://reference.aspose.com/tex/cpp/aspose.tex/texconfig/#aefa7bbdf2ed28d6499f2dc5d5ad2ca3e). Il s'agit d'une configuration spéciale qui laisse l'état du moteur « vierge », c'est-à-dire que les paramètres internes ont leurs valeurs par défaut et que l'ensemble des séquences de contrôle coïncide avec l'ensemble des primitives. Dans notre exemple, l'ensemble des primitives est étendu dans le sens mentionné [ici](/tex/{{lang.url-fragment}}net/aspose-tex-and-object-tex/#object-tex).
 
 Ensuite, nous configurons les répertoires de travail d’entrée et de sortie comme d’habitude. Le répertoire de travail d'entrée doit contenir le fichier source du format principal et toutes ses dépendances.
 
@@ -62,7 +62,7 @@ System::MakeObject<Aspose::TeX::TeXJob>(System::MakeObject<System::IO::MemoryStr
 options->get_TerminalOut()->get_Writer()->WriteLine();
 ```
 
-Évidemment, nous devons préciser le format d’une manière ou d’une autre. Tout d’abord, nous devons créer une instance de la classe [FormatProvider](https://reference.aspose.com/tex/cpp/class/aspose.te_x.resource_providers.format_provider). Ensuite, dans le constructeur d'options, nous utilisons la configuration [TeXConfig.ObjectTeX()](https://reference.aspose.com/tex/cpp/class/aspose.te_x.te_x_config#aefa7bbdf2ed28d6499f2dc5d5ad2ca3e), qui prend notre fournisseur de format comme argument et charge le format au-dessus de l'état "vierge" du moteur.
+Évidemment, nous devons préciser le format d’une manière ou d’une autre. Tout d’abord, nous devons créer une instance de la classe [FormatProvider](https://reference.aspose.com/tex/cpp/aspose.tex.resourceproviders/formatprovider/). Ensuite, dans le constructeur d'options, nous utilisons la configuration [TeXConfig.ObjectTeX()](https://reference.aspose.com/tex/cpp/aspose.tex/texconfig/#aefa7bbdf2ed28d6499f2dc5d5ad2ca3e), qui prend notre fournisseur de format comme argument et charge le format au-dessus de l'état "vierge" du moteur.
 
 Le reste du code devrait vous être familier. Il utilise les fonctionnalités évoquées plus haut dans ce [guide](/tex/{{lang.url-fragment}}cpp/conversion/).
 

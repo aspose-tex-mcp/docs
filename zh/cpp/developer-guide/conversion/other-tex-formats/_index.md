@@ -35,7 +35,7 @@ options->get_TerminalOut()->get_Writer()->WriteLine();
 ```
 如您所见，该代码类似于用于转换Tex文件的代码。但是有一些差异。
 
-首先，在这里我们使用[TexConfig.ObigntInitex](https://reference.aspose.com/tex/cpp/class/aspose.te_x.te_x_config#aefa7bbdf2ed28d6499f2dc5d5ad2ca3e)作业配置。这是一种特殊的配置，它使引擎的状态“处女”，即内部参数具有其默认值，并且控制序列的集合与原始序列相吻合。在我们的示例中，从提到的意义上提到的[此处](/tex/{{lang.url-fragment}}net/aspose-tex-and-object-tex/#object-tex)的含义扩展了一组原语。
+首先，在这里我们使用[TexConfig.ObigntInitex](https://reference.aspose.com/tex/cpp/aspose.tex/texconfig/#aefa7bbdf2ed28d6499f2dc5d5ad2ca3e)作业配置。这是一种特殊的配置，它使引擎的状态“处女”，即内部参数具有其默认值，并且控制序列的集合与原始序列相吻合。在我们的示例中，从提到的意义上提到的[此处](/tex/{{lang.url-fragment}}net/aspose-tex-and-object-tex/#object-tex)的含义扩展了一组原语。
 
 接下来，我们照常设置输入和输出工作目录。输入工作目录需要包含主要格式源文件及其所有依赖项。
 
@@ -61,7 +61,7 @@ System::MakeObject<Aspose::TeX::TeXJob>(System::MakeObject<System::IO::MemoryStr
 options->get_TerminalOut()->get_Writer()->WriteLine();
 ```
 
-显然，我们必须以某种方式指定格式。首先，我们需要创建一个[formatprovider](https://reference.aspose.com/tex/cpp/class/aspose.te_x.resource_providers.format_provider)类的实例。然后，在选项构造函数中，我们使用[TexConfig.Objecttex()](https://reference.aspose.com/tex/cpp/class/aspose.te_x.te_x_config#aefa7bbdf2ed28d6499f2dc5d5ad2ca3e)配置，该配置将我们的格式提供程序作为参数，并将格式加载到引擎的“处女”状态之上。
+显然，我们必须以某种方式指定格式。首先，我们需要创建一个[formatprovider](https://reference.aspose.com/tex/cpp/aspose.tex.resourceproviders/formatprovider/)类的实例。然后，在选项构造函数中，我们使用[TexConfig.Objecttex()](https://reference.aspose.com/tex/cpp/aspose.tex/texconfig/#aefa7bbdf2ed28d6499f2dc5d5ad2ca3e)配置，该配置将我们的格式提供程序作为参数，并将格式加载到引擎的“处女”状态之上。
 
 代码的其余部分应该熟悉。它使用此[指南](/tex/{{lang.url-fragment}}cpp/conversion/)前面讨论的功能。
 

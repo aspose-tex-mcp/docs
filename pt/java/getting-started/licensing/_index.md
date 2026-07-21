@@ -20,7 +20,7 @@ Se você deseja tentar o Aspose.TeX sem limitações de avaliação, solicite um
 
 ### Aplique a licença usando o arquivo ou o objeto de fluxo
 
-Use o método [License.setLicense](https://reference.aspose.com/tex/java/com.aspose.tex/License#setLicense-java.lang.String-) para licenciar o componente. A maneira mais fácil de definir uma licença é colocar o arquivo de licença na mesma pasta que o * aspose.tex.jar * e especificar o nome do arquivo, sem um caminho, como mostrado abaixo.
+Use o método [License.setLicense](https://reference.aspose.com/tex/java/com.aspose.tex/license/#setLicense-java.lang.String-)  para licenciar o componente. A maneira mais fácil de definir uma licença é colocar o arquivo de licença na mesma pasta que o * aspose.tex.jar * e especificar o nome do arquivo, sem um caminho, como mostrado abaixo.
 
 #### Carregando uma licença do arquivo
 

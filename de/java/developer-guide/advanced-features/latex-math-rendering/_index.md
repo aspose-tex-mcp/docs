@@ -17,7 +17,7 @@ Tatsächlich lässt sich die Renderfunktion für **LaTeX-Matheformeln** am einfa
 
 {{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Features-PngLaTeXMathRendering.java" >}}
 
-Kommen wir zu den Details. Zunächst erstellen wir eine [rendering options](https://reference.aspose.com/tex/java/com.aspose.tex/PngMathRendererOptions)-Instanz, ähnlich dem TeX/LaTeX-Schriftsatz. Wir tun dies hier und geben gleichzeitig die Ausgabebildauflösung an.
+Kommen wir zu den Details. Zunächst erstellen wir eine [rendering options](https://reference.aspose.com/tex/java/com.aspose.tex/pngmathrendereroptions/)-Instanz, ähnlich dem TeX/LaTeX-Schriftsatz. Wir tun dies hier und geben gleichzeitig die Ausgabebildauflösung an.
 
 Als nächstes spezifizieren wir die Präambel. Die Standardpräambel lautet:
 
@@ -61,9 +61,9 @@ Auf die gleiche Weise können wir eine LaTeX-Matheformel in das SVG-Format rende
 
 Die Unterschiede sind:
 
-* Wir verwenden die Klasse [SvgMathRendererOptions](https://reference.aspose.com/tex/java/com.aspose.tex/SvgMathRendererOptions) anstelle von [PngMathRendererOptions](https://reference.aspose.com/tex/java/com.aspose.tex/PngMathRendererOptions).
+* Wir verwenden die Klasse [SvgMathRendererOptions](https://reference.aspose.com/tex/java/com.aspose.tex/svgmathrendereroptions/) anstelle von [PngMathRendererOptions](https://reference.aspose.com/tex/java/com.aspose.tex/pngmathrendereroptions/).
 * Wir geben keine Auflösung an.
-* Wir verwenden die Klasse [SvgMathRenderer](https://reference.aspose.com/tex/java/com.aspose.tex/SvgMathRenderer) anstelle von [PngMathRenderer](https://reference.aspose.com/tex/java/com.aspose.tex/PngMathRenderer).
+* Wir verwenden die Klasse [SvgMathRenderer](https://reference.aspose.com/tex/java/com.aspose.tex/svgmathrenderer/) anstelle von [PngMathRenderer](https://reference.aspose.com/tex/java/com.aspose.tex/pngmathrenderer/).
 
 Hier ist das Ergebnis:
 

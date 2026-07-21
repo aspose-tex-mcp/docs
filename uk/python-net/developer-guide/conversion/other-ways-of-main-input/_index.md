@@ -13,7 +13,7 @@ lastmod: "2026-04-20"
 
 ## Постачання основного вхідного файлу механізму TeX за допомогою потоку
 
-Поки що ми навчилися лише надавати [основний вхідний файл](/tex/{{lang.url-fragment}}net/tex-io/#tex-input) механізму TeX як ім’я файлу, чи то в його повній формі, чи то в скороченій формі, з розширенням або без нього. Однак у класі [TeXJob](https://reference.aspose.com/tex/python-net/aspose.tex/texjob) доступний [інший конструктор](https://reference.aspose.com/tex/python-net/aspose.tex/texjob/__init__/#io.RawIOBase-aspose.tex.presentation.Device-aspose.tex.TeXOptions), який приймає потік як перший аргумент. Це корисно, якщо з якоїсь причини основний вхідний файл не має форми файлу у файловій системі диска. Ось приклад того, як це можна реалізувати:
+Поки що ми навчилися лише надавати [основний вхідний файл](/tex/{{lang.url-fragment}}net/tex-io/#tex-input) механізму TeX як ім’я файлу, чи то в його повній формі, чи то в скороченій формі, з розширенням або без нього. Однак у класі [TeXJob](https://reference.aspose.com/tex/python-net/aspose.tex/texjob/) доступний [інший конструктор](https://reference.aspose.com/tex/python-net/aspose.tex/texjob/__init__/#io.RawIOBase-aspose.tex.presentation.Device-aspose.tex.TeXOptions), який приймає потік як перший аргумент. Це корисно, якщо з якоїсь причини основний вхідний файл не має форми файлу у файловій системі диска. Ось приклад того, як це можна реалізувати:
 
 {{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Conversion-InputStream.py" >}}
 
@@ -21,7 +21,7 @@ lastmod: "2026-04-20"
 
 ## Введення основного вхідного файлу TeX через термінал
 
-У класі [TeXJob](https://reference.aspose.com/tex/python-net/aspose.tex/texjob) доступний [ще один конструктор](https://reference.aspose.com/tex/python-net/aspose.tex/texjob/__init__/#aspose.tex.presentation.Device-aspose.tex.TeXOptions), який взагалі не дозволяє вказати вхідні дані. Вам може бути цікаво, що таке завдання TeX оброблятиме. У цьому випадку нам знадобиться використовувати вхідний термінал. Механізм TeX запропонує нам ввести назву файлу з терміналу.
+У класі [TeXJob](https://reference.aspose.com/tex/python-net/aspose.tex/texjob/) доступний [ще один конструктор](https://reference.aspose.com/tex/python-net/aspose.tex/texjob/__init__/#aspose.tex.presentation.Device-aspose.tex.TeXOptions), який взагалі не дозволяє вказати вхідні дані. Вам може бути цікаво, що таке завдання TeX оброблятиме. У цьому випадку нам знадобиться використовувати вхідний термінал. Механізм TeX запропонує нам ввести назву файлу з терміналу.
 
 Ось код:
 

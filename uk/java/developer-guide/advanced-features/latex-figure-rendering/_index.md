@@ -19,7 +19,7 @@ lastmod: "2026-04-21"
 
 {{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Features-PngLaTeXFigureRendering.java" >}}
 
-Перш за все, ми створюємо екземпляр [параметри візуалізації](https://reference.aspose.com/tex/java/com.aspose.tex/PngFigureRendererOptions). Ми робимо це тут разом із визначенням роздільної здатності вихідного зображення.
+Перш за все, ми створюємо екземпляр [параметри візуалізації](https://reference.aspose.com/tex/java/com.aspose.tex/pngfigurerendereroptions/). Ми робимо це тут разом із визначенням роздільної здатності вихідного зображення.
 
 Далі уточнюємо преамбулу. Немає преамбули за замовчуванням для візуалізації фігур LaTeX, тому, якщо ви хочете, наприклад, відобразити деяку графіку, намальовану за допомогою пакета `pict2e` LaTeX, вам потрібно вказати це у преамбулі:
 
@@ -57,9 +57,9 @@ lastmod: "2026-04-21"
 
 Відмінності:
 
- * Ми використовуємо клас [SvgFigureRendererOptions](https://reference.aspose.com/tex/java/com.aspose.tex/SvgFigureRendererOptions) замість [PngFigureRendererOptions](https://reference.aspose.com/tex/java/com.aspose.tex/PngFigureRendererOptions).
+ * Ми використовуємо клас [SvgFigureRendererOptions](https://reference.aspose.com/tex/java/com.aspose.tex/svgfigurerendereroptions/) замість [PngFigureRendererOptions](https://reference.aspose.com/tex/java/com.aspose.tex/pngfigurerendereroptions/).
  * Ми не вказуємо роздільну здатність.
- * Ми використовуємо клас [SvgFigureRenderer](https://reference.aspose.com/tex/java/com.aspose.tex/SvgFigureRenderer) замість [PngFigureRenderer](https://reference.aspose.com/tex/java/com.aspose.tex/PngFigureRenderer).
+ * Ми використовуємо клас [SvgFigureRenderer](https://reference.aspose.com/tex/java/com.aspose.tex/svgfigurerenderer/) замість [PngFigureRenderer](https://reference.aspose.com/tex/java/com.aspose.tex/pngfigurerenderer/).
  
 Ось результат:
 

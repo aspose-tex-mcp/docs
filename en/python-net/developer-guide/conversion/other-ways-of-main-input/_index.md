@@ -13,7 +13,7 @@ lastmod: "2024-09-20"
 
 ## Supplying the main input file to the TeX engine using a stream
 
-So far, we have only learned how to provide the [main input file](/tex/{{lang.url-fragment}}net/tex-io/#tex-input) to the TeX engine as a file name, whether in its full form or in a shortened form, with or without an extension. However, there is [another constructor](https://reference.aspose.com/tex/python-net/aspose.tex/texjob/__init__/#io.RawIOBase-aspose.tex.presentation.Device-aspose.tex.TeXOptions) available in the [TeXJob](https://reference.aspose.com/tex/python-net/aspose.tex/texjob) class that accepts a stream as the first argument. This is useful if, for some reason, the main input file is not in the form of a file on the disk file system. Here is an example of how it can be implemented:
+So far, we have only learned how to provide the [main input file](/tex/{{lang.url-fragment}}net/tex-io/#tex-input) to the TeX engine as a file name, whether in its full form or in a shortened form, with or without an extension. However, there is [another constructor](https://reference.aspose.com/tex/python-net/aspose.tex/texjob/__init__/#io.RawIOBase-aspose.tex.presentation.Device-aspose.tex.TeXOptions) available in the [TeXJob](https://reference.aspose.com/tex/python-net/aspose.tex/texjob/) class that accepts a stream as the first argument. This is useful if, for some reason, the main input file is not in the form of a file on the disk file system. Here is an example of how it can be implemented:
 
 {{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Conversion-InputStream.py" >}}
 
@@ -21,7 +21,7 @@ Note that all output files will be named `texput`. This is because the engine do
 
 ## Inputting the main TeX input file through the terminal
 
-There is [one more constructor](https://reference.aspose.com/tex/python-net/aspose.tex/texjob/__init__/#aspose.tex.presentation.Device-aspose.tex.TeXOptions) available in the [TeXJob](https://reference.aspose.com/tex/python-net/aspose.tex/texjob) class that does not allow us to specify the input at all. You might be wondering what such a TeX job would process. In this case, we would need to use an input terminal. The TeX engine will prompt us to enter the file name from the terminal.
+There is [one more constructor](https://reference.aspose.com/tex/python-net/aspose.tex/texjob/__init__/#aspose.tex.presentation.Device-aspose.tex.TeXOptions) available in the [TeXJob](https://reference.aspose.com/tex/python-net/aspose.tex/texjob/) class that does not allow us to specify the input at all. You might be wondering what such a TeX job would process. In this case, we would need to use an input terminal. The TeX engine will prompt us to enter the file name from the terminal.
 
 Here is the code:
 

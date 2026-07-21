@@ -36,7 +36,7 @@ lastmod: "2026-04-03"
 
 最後のオプション `ShowTerminal` は、ターミナル出力をコンソールに表示するかどうかを制御できます。
 
-図のレンダリングを担当するメソッドは [FigureRenderer.render()](https://reference.aspose.com/tex/python-net/aspose.tex.features/FigureRenderer/render/#str-io.RawIOBase-aspose.tex.features.FigureRendererOptions) です。ポイント単位で図のサイズを返します。
+図のレンダリングを担当するメソッドは [FigureRenderer.render()](https://reference.aspose.com/tex/python-net/aspose.tex.features/figurerenderer/render/#str-io.RawIOBase-aspose.tex.features.FigureRendererOptions)  です。ポイント単位で図のサイズを返します。
 
 このメソッドは第2引数としてストリームを受け取ります。画像が書き込まれるストリームです。次の行でストリームを作成します。
 

@@ -41,7 +41,7 @@ aspose.tex的评估版(未指定许可证)提供完整的产品功能，只是�
 
 ### 使用文件或流对象应用许可证
 
-使用[许可证:: setlicense](https://reference.aspose.com/tex/cpp/class/aspose.te_x.license)方法来许可组件。设置许可证的最简单方法是将许可证文件放在与Aspose.TeX.dll同一文件夹中，并指定文件名，没有路径，如下所示。
+使用[许可证:: setlicense](https://reference.aspose.com/tex/cpp/aspose.tex/license/)方法来许可组件。设置许可证的最简单方法是将许可证文件放在与Aspose.TeX.dll同一文件夹中，并指定文件名，没有路径，如下所示。
 
 #### 从文件中加载许可证
 

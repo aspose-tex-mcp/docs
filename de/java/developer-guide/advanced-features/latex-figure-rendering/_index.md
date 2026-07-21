@@ -19,7 +19,7 @@ Und wie bei der Formeldarstellung beginnen wir mit einem Beispiel. Hier ist es:
 
 {{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Features-PngLaTeXFigureRendering.java" >}}
 
-Zunächst erstellen wir eine [rendering options](https://reference.aspose.com/tex/java/com.aspose.tex/PngFigureRendererOptions)-Instanz. Wir tun dies hier zusammen mit der Angabe der Ausgabebildauflösung.
+Zunächst erstellen wir eine [rendering options](https://reference.aspose.com/tex/java/com.aspose.tex/pngfigurerendereroptions/)-Instanz. Wir tun dies hier zusammen mit der Angabe der Ausgabebildauflösung.
 
 Als nächstes spezifizieren wir die Präambel. Es gibt keine Standard-Präambel für die Darstellung von LaTeX-Figuren. Wenn Sie also beispielsweise einige Grafiken rendern möchten, die mit dem LaTeX-Paket „pict2e“ geplottet wurden, müssen Sie dies in der Präambel angeben:
 
@@ -57,9 +57,9 @@ Auf die gleiche Weise können wir eine LaTeX-Figur in das SVG-Format rendern.
 
 Die Unterschiede sind:
 
- * Wir verwenden die Klasse [SvgFigureRendererOptions](https://reference.aspose.com/tex/java/com.aspose.tex/SvgFigureRendererOptions) anstelle von [PngFigureRendererOptions](https://reference.aspose.com/tex/java/com.aspose.tex/PngFigureRendererOptions).
+ * Wir verwenden die Klasse [SvgFigureRendererOptions](https://reference.aspose.com/tex/java/com.aspose.tex/svgfigurerendereroptions/) anstelle von [PngFigureRendererOptions](https://reference.aspose.com/tex/java/com.aspose.tex/pngfigurerendereroptions/).
  * Wir geben keine Auflösung an.
- * Wir verwenden die Klasse [SvgFigureRenderer](https://reference.aspose.com/tex/java/com.aspose.tex/SvgFigureRenderer) anstelle von [PngFigureRenderer](https://reference.aspose.com/tex/java/com.aspose.tex/PngFigureRenderer).
+ * Wir verwenden die Klasse [SvgFigureRenderer](https://reference.aspose.com/tex/java/com.aspose.tex/svgfigurerenderer/) anstelle von [PngFigureRenderer](https://reference.aspose.com/tex/java/com.aspose.tex/pngfigurerenderer/).
 
  
 Hier ist das Ergebnis:

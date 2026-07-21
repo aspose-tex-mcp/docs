@@ -41,7 +41,7 @@ Befolgen Sie diese einfachen Regeln:
 
 ### Wenden Sie die Lizenz mithilfe einer Datei oder eines Stream-Objekts an
 
-Verwenden Sie die Methode [License::SetLicense](https://reference.aspose.com/tex/cpp/class/aspose.te_x.license), um die Komponente zu lizenzieren. Der einfachste Weg, eine Lizenz festzulegen, besteht darin, die Lizenzdatei im selben Ordner wie die Aspose.TeX.dll abzulegen und den Dateinamen ohne Pfad anzugeben, wie unten gezeigt.
+Verwenden Sie die Methode [License::SetLicense](https://reference.aspose.com/tex/cpp/aspose.tex/license/), um die Komponente zu lizenzieren. Der einfachste Weg, eine Lizenz festzulegen, besteht darin, die Lizenzdatei im selben Ordner wie die Aspose.TeX.dll abzulegen und den Dateinamen ohne Pfad anzugeben, wie unten gezeigt.
 
 #### Laden einer Lizenz aus einer Datei
 

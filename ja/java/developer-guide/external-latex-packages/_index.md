@@ -13,7 +13,7 @@ lastmod: "2025-06-09"
 
 ## 外部ラテックスパッケージ
 
-Javaの**Aspose.TeX**ライブラリには、[一般的なラテックスパッケージ](/tex/{{lang.url-fragment}}net/embedded-packages/)が含まれています。したがって、これらのパッケージをライブラリのTexエンジンに提供する方法に注意する必要はありません。しかし、(おそらく)ラテックスファイルには、パッケージの「ネイティブにサポートされている「バンドル」を超えたパッケージが必要になる場合があります。この場合、[setRequiredInputDirectory()](https://reference.aspose.com/tex/java/com.Aspose.TeX/texoptions/#setRequiredInputDirectory-com.Aspose.TeX.IInputWorkingDirectory-)[texoptions](https://reference.aspose.com/tex/java/com.Aspose.TeX/texoptions/)クラスインスタンスのメソッドを使用して、必要な入力、つまり必要なパッケージのソースファイルを提供することを試みることができます。これが2つの例でどのように機能するかを確認します。
+Javaの**Aspose.TeX**ライブラリには、[一般的なラテックスパッケージ](/tex/{{lang.url-fragment}}net/embedded-packages/)が含まれています。したがって、これらのパッケージをライブラリのTexエンジンに提供する方法に注意する必要はありません。しかし、(おそらく)ラテックスファイルには、パッケージの「ネイティブにサポートされている「バンドル」を超えたパッケージが必要になる場合があります。この場合、[setRequiredInputDirectory()](https://reference.aspose.com/tex/java/com.aspose.tex/texoptions/#setRequiredInputDirectory-com.Aspose.TeX.IInputWorkingDirectory-)[texoptions](https://reference.aspose.com/tex/java/com.aspose.tex/texoptions/)クラスインスタンスのメソッドを使用して、必要な入力、つまり必要なパッケージのソースファイルを提供することを試みることができます。これが2つの例でどのように機能するかを確認します。
 
 ### 未解決の必要な入力(`fancybox`パッケージ)
 

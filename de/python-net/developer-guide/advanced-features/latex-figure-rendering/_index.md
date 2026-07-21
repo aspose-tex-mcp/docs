@@ -36,7 +36,7 @@ Die folgende Zeile im Beispiel ist möglicherweise nicht besonders aussagekräft
 
 Mit der letzten Option „ShowTerminal“ können Sie steuern, ob die Terminalausgabe in der Konsole angezeigt werden soll.
 
-Die für das Rendern der Figur verantwortliche Methode ist [FigureRenderer.render()](https://reference.aspose.com/tex/python-net/aspose.tex.features/figurerenderer/render/#str-io.RawIOBase-aspose.tex.features.FigureRendererOptions). Es gibt die Größe der Figur in Punkten zurück.
+Die für das Rendern der Figur verantwortliche Methode ist [FigureRenderer.render()](https://reference.aspose.com/tex/python-net/aspose.tex.features/figurerenderer/render/#str-io.RawIOBase-aspose.tex.features.FigureRendererOptions) . Es gibt die Größe der Figur in Punkten zurück.
 
 Die Methode akzeptiert einen Stream als zweites Argument. Dabei handelt es sich um den Stream, in den das Bild geschrieben wird. Den Stream erstellen wir in der nächsten Zeile.
 

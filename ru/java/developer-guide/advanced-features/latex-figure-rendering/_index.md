@@ -19,7 +19,7 @@ lastmod: "2026-04-21"
 
 {{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Features-PngLaTeXFigureRendering.java" >}}
 
-Прежде всего, мы создаем экземпляр [параметры рендеринга](https://reference.aspose.com/tex/java/com.aspose.tex/PngFigureRendererOptions). Мы делаем это здесь вместе с указанием разрешения выходного изображения.
+Прежде всего, мы создаем экземпляр [параметры рендеринга](https://reference.aspose.com/tex/java/com.aspose.tex/pngfigurerendereroptions/). Мы делаем это здесь вместе с указанием разрешения выходного изображения.
 
 Далее уточняем преамбулу. Для рендеринга фигур LaTeX нет преамбулы по умолчанию, поэтому, если вы хотите, например, визуализировать некоторую графику, построенную с использованием пакета LaTeX `pict2e`, вам необходимо указать ее в преамбуле:
 
@@ -57,9 +57,9 @@ lastmod: "2026-04-21"
 
 Отличия заключаются в следующем:
 
- * Мы используем класс [SvgFigureRendererOptions](https://reference.aspose.com/tex/java/com.aspose.tex/SvgFigureRendererOptions) вместо [PngFigureRendererOptions](https://reference.aspose.com/tex/java/com.aspose.tex/PngFigureRendererOptions).
+ * Мы используем класс [SvgFigureRendererOptions](https://reference.aspose.com/tex/java/com.aspose.tex/svgfigurerendereroptions/) вместо [PngFigureRendererOptions](https://reference.aspose.com/tex/java/com.aspose.tex/pngfigurerendereroptions/).
  * Разрешение не указываем.
- * Мы используем класс [SvgFigureRenderer](https://reference.aspose.com/tex/java/com.aspose.tex/SvgFigureRenderer) вместо [PngFigureRenderer](https://reference.aspose.com/tex/java/com.aspose.tex/PngFigureRenderer).
+ * Мы используем класс [SvgFigureRenderer](https://reference.aspose.com/tex/java/com.aspose.tex/svgfigurerenderer/) вместо [PngFigureRenderer](https://reference.aspose.com/tex/java/com.aspose.tex/pngfigurerenderer/).
 
  
 Вот результат:

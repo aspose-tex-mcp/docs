@@ -20,7 +20,7 @@ lastmod: "2025-06-13"
 
 ### Застосуйте ліцензію за допомогою File або Stream Object
 
-Використовуйте метод [License.setLicense](https://reference.aspose.com/tex/java/com.aspose.tex/License#setLicense-java.lang.String-), щоб ліцензувати компонент. Найпростіший спосіб встановити ліцензію — помістити файл ліцензії в ту саму теку, що й *aspose.tex.jar*, і вказати назву файлу без шляху, як показано нижче.
+Використовуйте метод [License.setLicense](https://reference.aspose.com/tex/java/com.aspose.tex/license/#setLicense-java.lang.String-) , щоб ліцензувати компонент. Найпростіший спосіб встановити ліцензію — помістити файл ліцензії в ту саму теку, що й *aspose.tex.jar*, і вказати назву файлу без шляху, як показано нижче.
 
 #### Завантаження ліцензії з файлу
 
