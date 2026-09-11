@@ -23,7 +23,7 @@ Wenn Sie Aspose.TeX ohne Evaluierungseinschränkungen ausprobieren möchten, for
 
 ## Anwenden einer Lizenz
 
-Wenn Sie mit Ihrer Evaluierung von Aspose.TeX für C++ zufrieden sind, kaufen Sie eine Lizenz auf der Aspose-Website: [Purchase Portal](http://www.aspose.com/purchase/default.aspx). Machen Sie sich mit den verschiedenen verfügbaren Lizenztypen vertraut. Wenn Sie Fragen haben, [kontaktieren Sie das Aspose-Verkaufsteam](http://www.aspose.com/corporate/contact/default.aspx) und es hilft Ihnen gerne weiter.
+Wenn Sie mit Ihrer Evaluierung von Aspose.TeX für C++ zufrieden sind, kaufen Sie eine Lizenz auf der Aspose-Website: [Purchase Portal](https://purchase.aspose.com/pricing?). Machen Sie sich mit den verschiedenen verfügbaren Lizenztypen vertraut. Wenn Sie Fragen haben, [kontaktieren Sie das Aspose-Verkaufsteam](https://consulting.aspose.com/) und es hilft Ihnen gerne weiter.
 
 Zu jeder Aspose-Lizenz gehört ein einjähriges Abonnement für kostenlose Upgrades auf alle neuen Versionen oder Fixes, die in diesem Zeitraum herauskommen. Wir bieten sowohl lizenzierten als auch Testbenutzern kostenlosen und unbegrenzten technischen Support.
 

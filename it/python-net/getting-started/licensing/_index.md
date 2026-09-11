@@ -23,7 +23,7 @@ Se desideri provare Aspose.Tex senza queste limitazioni di valutazione, è possi
 
 ## Applicazione di una licenza
 
-Dopo aver completato la valutazione di Aspose.TeX per Python e sei soddisfatto delle sue prestazioni, puoi acquistare una licenza tramite il sito Web Aspose presso il [Portale di acquisto](http://www.aspose.com/purchase/default.aspx). Si consiglia di familiarizzare con i diversi tipi di licenza disponibili prima di effettuare un acquisto. Se hai domande o hai bisogno di assistenza, non esitare a [contattare il team di vendita aspirato](http://www.aspose.com/corporate/contact/default.aspx), poiché saranno più che felici di aiutarti.
+Dopo aver completato la valutazione di Aspose.TeX per Python e sei soddisfatto delle sue prestazioni, puoi acquistare una licenza tramite il sito Web Aspose presso il [Portale di acquisto](https://purchase.aspose.com/pricing?). Si consiglia di familiarizzare con i diversi tipi di licenza disponibili prima di effettuare un acquisto. Se hai domande o hai bisogno di assistenza, non esitare a [contattare il team di vendita aspirato](https://consulting.aspose.com/), poiché saranno più che felici di aiutarti.
 
 Ogni licenza aspirante include un abbonamento di un anno che dà diritto a aggiornare gratuitamente qualsiasi nuova versioni o correzioni rilasciate durante quel periodo. Offriamo anche supporto tecnico gratuito e illimitato sia agli utenti autorizzati che alla valutazione.
 

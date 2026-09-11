@@ -23,7 +23,7 @@ Aspose.TeXの評価バージョン(ライセンスを指定しない)は、出�
 
 ## ライセンスの適用
 
-.NETのAspose.TeXの評価に満足したら、Aspose Webサイトでライセンスを購入します：[Purchase Portal](http://www.aspose.com/purchase/default.aspx)。利用可能なさまざまなライセンスタイプに精通してください。ご質問がある場合は、[Aspose Sales Teamに連絡してください](http://www.aspose.com/corporate/contact/default.aspx)、喜んでお手伝いします。
+.NETのAspose.TeXの評価に満足したら、Aspose Webサイトでライセンスを購入します：[Purchase Portal](https://purchase.aspose.com/pricing?)。利用可能なさまざまなライセンスタイプに精通してください。ご質問がある場合は、[Aspose Sales Teamに連絡してください](https://consulting.aspose.com/)、喜んでお手伝いします。
 
 すべてのAsposeライセンスには、この期間中に出てくる新しいバージョンまたは修正に無料のアップグレードのために1年間のサブスクリプションが搭載されています。ライセンスユーザーと評価ユーザーの両方に無料で無制限のテクニカルサポートを提供しています。
 

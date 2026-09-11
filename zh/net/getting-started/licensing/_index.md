@@ -23,7 +23,7 @@ aspose.tex的评估版(未指定许可证)提供完整的产品功能，只是�
 
 ## 申请许可证
 
-一旦您对.net的aspose.tex评估感到满意，请在Aspose网站上购买许可证：[购买门户](http://www.aspose.com/purchase/default.aspx)。让自己熟悉可用的不同许可类型。如果您有任何疑问，请[与Aspose销售团队联系](http://www.aspose.com/corporate/contact/default.aspx)，他们很乐意为您提供帮助。
+一旦您对.net的aspose.tex评估感到满意，请在Aspose网站上购买许可证：[购买门户](https://purchase.aspose.com/pricing?)。让自己熟悉可用的不同许可类型。如果您有任何疑问，请[与Aspose销售团队联系](https://consulting.aspose.com/)，他们很乐意为您提供帮助。
 
 每个ASPOSE许可证都可以免费升级为期一年的订阅，以便在此期间出现的任何新版本或修复程序。我们为许可和评估用户提供免费且无限的技术支持。
 

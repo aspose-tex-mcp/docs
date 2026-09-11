@@ -23,7 +23,7 @@ Se você deseja tentar o Aspose.TeX sem limitações de avaliação, solicite um
 
 ## Aplicando uma licença
 
-Quando estiver satisfeito com a sua avaliação do Aspose.TeX para .NET, adquira uma licença no site da Aspose: [Portal de Compras](http://www.aspose.com/purchase/default.aspx). Familiarize-se com os diferentes tipos de licença disponíveis. Em caso de dúvidas, [contacte a equipa de vendas da Aspose](http://www.aspose.com/corporate/contact/default.aspx) e eles terão todo o gosto em ajudar.
+Quando estiver satisfeito com a sua avaliação do Aspose.TeX para .NET, adquira uma licença no site da Aspose: [Portal de Compras](https://purchase.aspose.com/pricing?). Familiarize-se com os diferentes tipos de licença disponíveis. Em caso de dúvidas, [contacte a equipa de vendas da Aspose](https://consulting.aspose.com/) e eles terão todo o gosto em ajudar.
 
 Cada licença Aspose possui uma assinatura de um ano para atualizações gratuitas para novas versões ou correções que serão lançadas durante esse período. Fornecemos suporte técnico gratuito e ilimitado aos usuários licenciados e de avaliação.
 

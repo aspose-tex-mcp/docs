@@ -23,7 +23,7 @@ Aspose.TeX 的评估版提供完整的产品功能，但输出文档仅包含前
 
 ## 申请许可证
 
-完成 Aspose.TeX for Python 的评估并对其性能满意后，您可以通过 Aspose 网站的[购买门户](http://www.aspose.com/purchase/default.aspx)购买许可证。建议您在购买前先了解不同的许可证类型。如有任何疑问或需要帮助，请随时[联系 Aspose 销售团队](http://www.aspose.com/corporate/contact/default.aspx)，他们将竭诚为您服务。
+完成 Aspose.TeX for Python 的评估并对其性能满意后，您可以通过 Aspose 网站的[购买门户](https://purchase.aspose.com/pricing?)购买许可证。建议您在购买前先了解不同的许可证类型。如有任何疑问或需要帮助，请随时[联系 Aspose 销售团队](https://consulting.aspose.com/)，他们将竭诚为您服务。
 
 每个 Aspose 许可证都包含一年的订阅期，在此期间您可以免费升级到任何新版本或修复程序。我们还为所有用户（包括已授权用户和评估用户）提供免费且无限制的技术支持。
 
