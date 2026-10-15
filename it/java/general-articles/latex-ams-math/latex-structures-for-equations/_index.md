@@ -433,20 +433,9 @@ using (Stream stream = File.Open("your-file-name-and-path", FileMode.Create))
 Come potete vedere, l'API è anche in grado di convertire un'equazione LaTeX in un file SVG. Questo era un esempio di utilizzo di Aspose.TeX for .NET. Di seguito è riportato il codice equivalente per la versione Java.
 
 
-```java
-String equation = "\\begin{equation} (a-b)^2 = a^2-2ab+b^2 \\end{equation}\r\n" +
-		"\\[ \\cos2\\eta = \\cos^2\\eta-\\sin^2\\eta \\]";
-Size2D size = new Size2D.Float();
-com.aspose.tex.PngMathRendererOptions options = new com.aspose.tex.PngMathRendererOptions();
-final OutputStream stream = new FileOutputStream(Helper.getOutputFile(Path.combine(getCurrentPath(), "doc.png")));
-try
-{
-    new com.aspose.tex.PngMathRenderer().render(equation, stream, options, size);
-}
-finally {
-    stream.close();
-}
-```
+Impostare `outputFile` su un `java.nio.file.Path` in una cartella esistente, ad esempio `Paths.get(outputDirectory, "equations.png")`. Importare le classi utilizzate di `com.aspose.tex`, `java.awt.Color`, `java.io.ByteArrayOutputStream`, `java.io.OutputStream`, `java.nio.file.Files` e `java.nio.file.Paths`; gestire o dichiarare le eccezioni. L’esempio esegue il rendering delle due equazioni a 150 DPI su sfondo bianco, conservando il numero della prima. Il metodo `render()` con tre argomenti restituisce `Size2D`. I log vengono acquisiti in memoria e i due flussi vengono chiusi al termine.
+
+{{< gist "aspose-com-gists" "fc74664c51175ac402729283d0450d44" "Example-RenderEquationsToPNG.java" >}}
 
 È possibile trovare dettagli sull'uso delle opzioni di rendering nell'articolo sulla resa delle formule matematiche LaTeX con [Aspose.TeX per .NET](/tex/{{lang.url-fragment}}net/latex-math-formula-rendering/) o [Aspose.TeX per Java](/tex/{{lang.url-fragment}}java/latex-math-formula-rendering/). Tuttavia, un'opzione è particolarmente importante per noi qui. Tramite questa opzione, è possibile specificare il preambolo del documento LaTeX necessario per ottenere il risultato desiderato. (Di seguito, presenteremo solo la versione C# del codice sorgente.)
 

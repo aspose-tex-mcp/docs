@@ -32,17 +32,9 @@ lastmod: "2025-06-10"
 
 **A:**这很简单。让我们在Tex到PDF转换示例中进行描述！ 
 
-```Java
-// Create conversion options for Object LaTeX format on Object TeX engine extension
-TeXOptions options = TeXOptions.consoleAppOptions(TeXConfig.objectLaTeX());
-// Specify the file system working directory for the output
-options.setOutputWorkingDirectory(new OutputFileSystemDirectory(Utils.getOutputDirectory()));
-// Initialize the options
-options.setSaveOptions(new PdfSaveOptions());
+将 `inputFile` 设置为 LaTeX 文件的完整路径，将 `outputDirectory` 设置为现有输出文件夹。导入示例使用的 Aspose.TeX 类，并在调用方法中处理或声明异常。PDF 设备和输出目录在转换后释放或关闭。
 
-// Run the conversion
-new TeXJob(Utils.getInputDirectory() + "hello-world.tex", new PdfDevice(), options).run();
-```
+{{< gist "aspose-com-gists" "a30f406f6b8ace1b7d15c68a1df75c6d" "Example-ConvertLaTeXToPDF-Simplest.java" >}}
 
 有关更多示例，请访问[转换](/tex/{{lang.url-fragment}}java/conversion/)指南。
 <br> <br>

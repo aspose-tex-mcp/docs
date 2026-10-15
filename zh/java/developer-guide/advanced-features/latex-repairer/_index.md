@@ -17,9 +17,9 @@ lastmod: "2026-02-27"
 
 首先，需要注意的是，该示例文件似乎使用了 TeX 语法，但缺少 LaTeX 所需的结构。正如您所知，LaTeX 文件必须包含以 \documentclass 命令开头的导言区，以及位于 document 环境中的主体，即介于 \begin{document} 和 \end{document} 之间。
 
-现在让我们来看一下 Java 代码示例。
+将 `inputFile` 设置为 `invalid-latex.tex` 的完整路径，将 `outputDirectory` 设置为现有输出文件夹，将 `packagesDirectory` 设置为包含 `fancyhdr.sty` 及其依赖文件的文件夹。将下面的回调连同 import 语句保存为 `PackageGuesser.java`，并在修复前创建 `PackageGuesser packageGuesser = new PackageGuesser()`。导入所用的 Aspose.TeX 类，处理或声明异常，并按照[许可指南](/tex/{{lang.url-fragment}}java/licensing/)应用许可证。输入和输出目录在修复结束前保持打开，随后关闭。
 
-{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Features-LaTeXRepairer.java" >}}
+{{< gist "aspose-com-gists" "e17f869aabed3881c74973f5e875d539" "Example-LaTeXRepairer.java" >}}
 
 类似于普通的 TeX 作业，我们首先创建一个对象来保存即将运行的过程的选项。这些选项大多与普通 TeX 作业相同。实际上，调用 [setInputWorkingDirectory()](https://reference.aspose.com/tex/java/com.aspose.tex.features/latexrepaireroptions/#setInputWorkingDirectory-com.aspose.tex.IInputWorkingDirectory-) 方法时，我们指定输入文件应读取的目录。然而在本例中我们并未使用它，因为我们在文件系统中提供了主输入文件的完整路径，并且主输入文件中不需要包含任何自定义文件。接下来，调用 [setOutputWorkingDirectory()](https://reference.aspose.com/tex/java/com.aspose.tex.features/latexrepaireroptions/#setOutputWorkingDirectory-com.aspose.tex.IOutputWorkingDirectory-) 方法以指定输出文件应写入的目录。如果调用了 [setRequiredInputDirectory()](https://reference.aspose.com/tex/java/com.aspose.tex.features/latexrepaireroptions/#setRequiredInputDirectory-com.aspose.tex.IInputWorkingDirectory-) 方法，则选项会指向您可以存放未嵌入 Aspose.TeX 库的 LaTeX 包的目录。最后，将在后文讨论 [setGuessPackageCallback()](https://reference.aspose.com/tex/java/com.aspose.tex.features/latexrepaireroptions/#setGuessPackageCallback-com.aspose.tex.features.IGuessPackageCallback-) 方法。
 
@@ -31,15 +31,15 @@ lastmod: "2026-02-27"
 
 在进一步扫描文件时，引擎可能会遇到未定义的命令或环境。在这种情况下，API 可以对一些最常见的命令和环境作出关于 [embedded required packages](/tex/{{lang.url-fragment}}net/embedded-packages/)（这些包定义了在未包含相应包时未定义的命令和环境）的假设。然而，也可以通过实现 [IGuessPackageCallback](https://reference.aspose.com/tex/java/com.aspose.tex.features/iguesspackagecallback/) 接口的类在外部作出此类假设。开发好此类后，应通过调用 `setGuessPackageCallback()` 方法将其实例传递给过程。
 
-下面是一个基本示例，它仅将 `\head` 命令映射到 `fancyhdr` 包：
+此示例将 `\lhead` 命令映射到 `fancyhdr` 包。回调接收不含开头反斜杠的命令名，并为未知命令和环境返回空字符串：
 
-{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Features-LaTeXRepairer-PackageGuessingCallback.java" >}}
+{{< gist "aspose-com-gists" "e17f869aabed3881c74973f5e875d539" "Example-PackageGuessingCallback.java" >}}
 
-对于示例文件，引擎首先遇到 `\chapter` 命令，该命令在 `article` 文档类中未定义，但在 `book` 文档类中定义。API 会调整文档类，使修复后文件的最终版本以 `\documentclass{book}` 开头。随后，引擎发现前述的 `\lhead` 命令，并确定必须在导言区插入 `\usepackage{fancyhdr}`。文件后续出现的 `\href` 和 `\includegraphics` 命令导致 Repairer 分别在导言区插入 `\usepackage{hyperref}` 和 `\usepackage{graphics}`。这些决定基于 API 的内部映射。与之前一样，所有这些修复都会记录在报告文件中。
+对于示例文件，引擎首先遇到 `\chapter` 命令，该命令在 `article` 文档类中未定义，但在 `book` 文档类中定义。API 会调整文档类，使修复后文件的最终版本以 `\documentclass{book}` 开头。随后，引擎发现前述的 `\lhead` 命令，并确定必须在导言区插入 `\usepackage{fancyhdr}`。文件后续出现的 `\href` 和 `\includegraphics` 命令导致 Repairer 分别在导言区插入 `\usepackage{hyperref}` 和 `\usepackage{graphicx}`。这些决定基于 API 的内部映射。与之前一样，所有这些修复都会记录在报告文件中。
 
 最后，由于缺少 LaTeX 文档的正确结束，引擎异常终止。于是 Repairer 在文件末尾追加 `\end{document}`，并将此信息写入报告。
 
-在创建了原文件的修复版本后，Repairer 会对其执行一次 TeX 作业以进行最终验证。在我们的示例中，此次运行未检测到任何关键错误，因此修复后的版本基本可以按预期进行排版。
+修复后，Repairer 运行 TeX 作业进行最终验证。本例的最终报告没有关键错误。`run()` 的返回值可能反映原始扫描的状态，因此请检查修复报告和修复后的 `.tex` 文件。修复不会提供缺失的外部资源。例如，示例引用的 `Figures/uet_logo.pdf` 必须另行提供才能完成排版。
 
 以下是完整的报告：
 

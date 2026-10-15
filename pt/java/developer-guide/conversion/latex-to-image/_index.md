@@ -18,7 +18,9 @@ lastmod: "2026-04-21"
 
 Vamos dar uma olhada no código Java, fornecendo a maneira mais simples de converter o LATEX para o formato PNG.
 
-{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Conversion-LaTeXToPng-Simplest.java" >}}
+Defina `inputFile` como o caminho completo do arquivo LaTeX, como `hello-world.ltx`, e `outputDirectory` como uma pasta de saída existente. Importe as classes de `com.aspose.tex` e `com.aspose.tex.rendering` usadas no trecho. O método que faz a chamada deve tratar ou declarar as exceções. Aplique uma licença conforme o [guia de licenciamento](/tex/{{lang.url-fragment}}java/licensing/) para evitar as restrições de avaliação. O exemplo utiliza processamento não interativo e fecha seus recursos de saída. O exemplo PNG utiliza uma resolução de 300 DPI. Para a entrada de uma página `hello-world.ltx`, os arquivos de saída automáticos são `hello-world.png`, `hello-world.jpg`, `hello-world.tif`, `hello-world.bmp` ou `hello-world.svg`, conforme o formato selecionado.
+
+{{< gist "aspose-com-gists" "9d6b3df9df43d8caf00a0d519c504cf5" "Example-ConvertLaTeXToPNG-Simplest.java" >}}
 
 Portanto, a primeira coisa que precisamos fazer (às vezes não é a primeira, como descobriremos mais tarde) é criar uma instância da classe [Texoptions](https://reference.aspose.com/tex/java/com.aspose.tex/texoptions/). O único método estático que faz isso é [consoleAppOptions()](https://reference.aspose.com/tex/java/com.aspose.tex/texoptions/#consoleAppOptions-com.aspose.tex.TeXConfig-), então não vamos nos incomodar com o significado de seu nome. O método pega a instância [objectLaTeX()](https://reference.aspose.com/tex/java/com.aspose.tex/texconfig/#objectLaTeX--) da classe [texconfig](https://reference.aspose.com/tex/java/com.aspose.tex/texconfig/), que é exatamente adequada para converter um [arquivo de LaTeX](/tex/{{lang.url-fragment}}net/latex-io/#latex-file). Esta configuração instrui o mecanismo Tex do objeto a carregar o formato de LaTeX de objeto e estar pronto para aceitar o arquivo LATEX. O formato LATEX do Object é na verdade apenas o formato [LATEX](/tex/{{lang.url-fragment}}net/what-is-latex/), exceto que ele usa as primitivas específicas [Object tex](/tex/{{lang.url-fragment}}net/aspose-tex-and-object-tex/#object-tex) para configurar as métricas da página.
 
@@ -54,13 +56,13 @@ Encontraremos outros produtos da execução do mecanismo na pasta que especifica
 
 Há outra maneira de obter dados da imagem como uma matriz de matrizes de bytes, cada matriz na segunda dimensão representa dados de imagem para uma página separada.
 
-{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Conversion-LaTeXToPng-Alternative.java" >}}
+{{< gist "aspose-com-gists" "9d6b3df9df43d8caf00a0d519c504cf5" "Example-ConvertLaTeXToPNG-Alternative.java" >}}
 
-Os arquivos * "página-n.png" * serão gravados em qualquer caminho que especifique. Ao contrário de [saída em PDF](/tex/{{lang.url-fragment}}java/latex-to-pdf/#an-alternative-way-to-write-main-output-pdf-file), eles duplicarão os arquivos PNG de saída gravados no diretório de saída.
+O exemplo manual também requer `java.nio.file.Files` e `java.nio.file.Paths`. Ele salva os dados das páginas de `ImageDevice.getResult()` como `page-1.png`, `page-2.png` e assim por diante. Como define `deviceWritesImages(false)`, a saída PNG automática é desativada e as páginas salvas manualmente não são duplicadas no diretório de saída. Isso difere da [saída PDF por fluxo](/tex/{{lang.url-fragment}}java/latex-to-pdf/#uma-maneira-alternativa-de-escrever-o-arquivo-pdf-de-saída-principal), em que o fluxo define o destino de um único documento PDF.
 
 ## Sobre opções de entrada
 
-Caso nosso arquivo de entrada principal exija dependências, por exemplo, pacotes, que não estão incluídos no sistema de LaTeX básico e pacotes suportados, devemos definir a opção [requerirInputDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/texoptions/#getRequiredInputDirectory--) da maneira semelhante a definir a opção [OutputWorkingDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/texoptions/#getOutputWorkingDirectory--) e colocar as dependências nesse diretório. As dependências podem ser organizadas arbitrariamente em subdiretos. Caso tenhamos nossos próprios arquivos a serem incluídos ao longo do processo de composição, digamos arquivos gráficos externos, também devemos definir o [InputWorkingDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/texoptions/#getInputWorkingDirectory--) usando o caminho para o local onde esses arquivos são coletados. Também podemos colocar o arquivo de entrada principal em algum lugar dentro do diretório de entrada e especificar o caminho relativo no método `run()` (ou especificar nenhum caminho se o arquivo de entrada principal estiver na raiz). [Aqui](/tex/{{lang.url-fragment}}java/aspose-tex-input/) são os detalhes sobre o conceito de diretório de entrada em **aspose.tex para java** e fornecem implementações.
+Caso nosso arquivo de entrada principal exija dependências, por exemplo, pacotes, que não estão incluídos no sistema de LaTeX básico e pacotes suportados, devemos definir a opção [requerirInputDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/texoptions/#getRequiredInputDirectory--) da maneira semelhante a definir a opção [OutputWorkingDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/texoptions/#getOutputWorkingDirectory--) e colocar as dependências nesse diretório. As dependências podem ser organizadas arbitrariamente em subdiretos. Caso tenhamos nossos próprios arquivos a serem incluídos ao longo do processo de composição, digamos arquivos gráficos externos, também devemos definir o [InputWorkingDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/texoptions/#getInputWorkingDirectory--) usando o caminho para o local onde esses arquivos são coletados. Também podemos colocar o arquivo de entrada principal em algum lugar dentro do diretório de entrada e passar o caminho relativo ao construtor de `TeXJob` (ou especificar nenhum caminho se o arquivo de entrada principal estiver na raiz). [Aqui](/tex/{{lang.url-fragment}}java/aspose-tex-input/) são os detalhes sobre o conceito de diretório de entrada em **aspose.tex para java** e fornecem implementações.
 
 Outras opções de trabalho Tex são discutidas [aqui](/tex/{{lang.url-fragment}}java/other-options/).
 
@@ -70,19 +72,19 @@ Abaixo, discutimos a conversão de LaTeX para outros formatos de imagem raster s
 
 ## Como converter LaTeX em jpg
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-LaTeXToJpeg.cs" >}}
+{{< gist "aspose-com-gists" "9d6b3df9df43d8caf00a0d519c504cf5" "Example-ConvertLaTeXToJPEG.java" >}}
 
 **Você também pode conferir a conversão LATEX-JPG GRATUITA [aplicativo da Web](https://products.aspose.app/tex/conversion/latex-to-jpg) construído com base na API [Aspose.TeX para .NET](https://products.aspose.com/tex/net/). [Aqui](https://products.aspose.com/tex/java/) é a página da versão Java.**
 
 ## Como converter LaTeX para TIFF
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-LaTeXToTiff.cs" >}}
+{{< gist "aspose-com-gists" "9d6b3df9df43d8caf00a0d519c504cf5" "Example-ConvertLaTeXToTIFF.java" >}}
 
 **Você também pode conferir a conversão LATEX-TIFF GRATUITA [aplicativo da web](https://products.aspose.app/tex/conversion/latex-to-tiff) construído com base na API [Aspose.TeX para .NET](https://products.aspose.com/tex/net/). [Aqui](https://products.aspose.com/tex/java/) é a página da versão Java.**
 
 ## Como converter LaTeX para BMP
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-LaTeXToBmp.cs" >}}
+{{< gist "aspose-com-gists" "9d6b3df9df43d8caf00a0d519c504cf5" "Example-ConvertLaTeXToBMP.java" >}}
 
 **Você também pode conferir a conversão LATEX-BMP GRATUITA [aplicativo da Web](https://products.aspose.app/tex/conversion/latex-to-bmp) construído com base na API [Aspose.TeX para .NET](https://products.aspose.com/tex/net/). [Aqui](https://products.aspose.com/tex/java/) é a página da versão Java.**
 
@@ -97,6 +99,6 @@ Além disso, existe a biblioteca [**Aspose.svg**](https://products.aspose.com/sv
 
 A conversão para SVG é tão simples quanto a [conversão em formatos de imagem raster](/tex/{{lang.url-fragment}}java/latex-to-image/), exceto que, além das [saveOptions](https://reference.aspose.com/tex/java/com.aspose.tex/texoptions/#getSaveOptions--), precisamos alterar o dispositivo para uma instância da classe [svgDevice](https://reference.aspose.com/tex/java/com.aspose.tex.rendering/SvgDevice).
 
-{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Conversion-LaTeXToSvg-Simplest.java" >}}
+{{< gist "aspose-com-gists" "9d6b3df9df43d8caf00a0d519c504cf5" "Example-ConvertLaTeXToSVG-Simplest.java" >}}
 
 **Você também pode conferir a conversão LATEX-SVG GRATUITA [aplicativo da Web](https://products.aspose.app/tex/conversion/latex-to-svg) construído com base no [Aspose.TeX para .NET](https://products.aspose.com/tex/net/). [Aqui](https://products.aspose.com/tex/java/) é a página da versão Java.**

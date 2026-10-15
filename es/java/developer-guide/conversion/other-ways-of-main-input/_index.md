@@ -13,19 +13,23 @@ lastmod: "2026-04-21"
 
 ## Proporcionar el archivo de entrada principal al motor TeX como una secuencia
 
-Hasta este punto, sólo sabíamos cómo pasar el [archivo de entrada principal](/tex/{{lang.url-fragment}}net/tex-io/#tex-input) al motor TeX como un nombre de archivo, ya sea completamente especificado o en formato corto, con o sin extensión. Pero hay otro [constructor](https://reference.aspose.com/tex/java/com.aspose.tex/TeXJob#TeXJob-java.io.InputStream-com.aspose.tex.rendering.Device-com.aspose.tex.TeXOptions-) de la clase `TeXJob`, que acepta una secuencia como primer argumento. Esto es conveniente si por alguna razón tenemos el archivo de entrada principal en un formato que no sea un archivo en el sistema de archivos del disco. Así es como podemos afrontarlo:
+Hasta este punto, sólo sabíamos cómo pasar el [archivo de entrada principal](/tex/{{lang.url-fragment}}net/tex-io/#tex-input) al motor TeX como un nombre de archivo, ya sea completamente especificado o en formato corto, con o sin extensión. Pero hay otro [constructor](https://reference.aspose.com/tex/java/com.aspose.tex/texjob/#TeXJob-java.io.InputStream-com.aspose.tex.rendering.Device-com.aspose.tex.TeXOptions-) de la clase `TeXJob`, que acepta una secuencia como primer argumento. Esto es conveniente si por alguna razón tenemos el archivo de entrada principal en un formato que no sea un archivo en el sistema de archivos del disco. Así es como podemos afrontarlo:
 
-{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Conversion-InputStream.java" >}}
+Establezca `outputDirectory` en una carpeta de salida existente. Importe las clases Aspose.TeX usadas en los ejemplos, `com.aspose.tex.rendering.XpsDevice`, `com.aspose.tex.rendering.XpsSaveOptions` y, para la entrada mediante flujo, `java.io.ByteArrayInputStream` y `java.nio.charset.StandardCharsets`. El método que llama al ejemplo debe gestionar o declarar las excepciones. Aplique una licencia según la [guía de licencias](/tex/{{lang.url-fragment}}java/licensing/) para evitar las restricciones de evaluación. El ejemplo de flujo contiene un documento LaTeX completo, por lo que no necesita un directorio de trabajo de entrada. Los flujos y dispositivos permanecen abiertos hasta que termina el trabajo y después se cierran o liberan.
 
-Tenga en cuenta que todos los archivos de salida tendrán el nombre *texput*. Esto se debe a que el motor no puede recibir ningún otro nombre en ninguna parte. *texput* es el nombre del trabajo predeterminado. Consulte [aquí](/tex/{{lang.url-fragment}}net/tex-io/#tex-output) y [aquí](/tex/{{lang.url-fragment}}java/other-options/#how-to-set-the-job-name) para obtener detalles sobre los nombres de los trabajos.
+{{< gist "aspose-com-gists" "889663554934c807ebc90e12d08bc8d0" "Example-StreamInput-LaTeX.java" >}}
+
+Cuando la entrada mediante flujo no tiene un nombre de trabajo asignado explícitamente, el motor usa el nombre predeterminado *texput*. Este ejemplo crea `texput.xps` y `texput.log`. Use `options.setJobName(...)` para elegir otro nombre de trabajo. Consulte [aquí](/tex/{{lang.url-fragment}}net/tex-io/#tex-output) y [aquí](/tex/{{lang.url-fragment}}java/other-options/#how-to-set-the-job-name) para obtener detalles sobre los nombres de trabajo.
 
 ## Ingresando el archivo de entrada TeX principal desde la terminal
 
 Hay otro [constructor](https://reference.aspose.com/tex/java/com.aspose.tex/texjob/#TeXJob-com.aspose.tex.rendering.Device-com.aspose.tex.TeXOptions-)  de la clase `TeXJob`, que no nos permite especificar la entrada en absoluto. Entonces, ¿qué va a procesar un trabajo TeX de este tipo?, te preguntarás. Esta vez necesitaremos un terminal de entrada. El motor TeX nos pedirá que introduzcamos el nombre del archivo desde la terminal.
 
+Establezca `inputDirectory` en una carpeta con un documento LaTeX completo llamado `hello-world.ltx`, y `outputDirectory` en una carpeta de salida existente. Ejecute el ejemplo en una consola, introduzca `hello-world.ltx` en el indicador `**` y pulse Enter. Crea `hello-world.xps` y escribe la salida del terminal en la consola. Ambos ejemplos usan `NonstopMode` para el procesamiento, pero el constructor del terminal sigue necesitando el nombre de archivo inicial. Para la ejecución desatendida, proporcione una implementación de `IInputTerminal` o use entrada mediante archivo o flujo.
+
 Aquí está el código:
 
-{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Conversion-MainInputTerminal.java" >}}
+{{< gist "aspose-com-gists" "889663554934c807ebc90e12d08bc8d0" "Example-MainInputTerminal.java" >}}
 
 Nada más ejecutarlo el motor se queda esperando a que introduzcamos el nombre del archivo (con o sin ruta, con o sin extensión):
 

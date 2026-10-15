@@ -66,7 +66,7 @@ iVBORw0KGgoAAAANSUhEUgAAAPgAAABdCAYAAAH/B5vAAAAAGXRFWHRTb2Z0d2FyZQBBZ......
 
 Як правило, існує три рівні доступності: вимкнено, увімкнено з обмеженнями та повністю ввімкнено.
 
-У **Aspose.TeX** є параметр завдання TeX під назвою `ShellMode`, який може приймати одне з двох можливих значень: `NoShellEscape` і `ShellRestricted`. Значення NoShellEscape вказує на те, що функцію вимкнено. Останнє значення означає, що будь-яка команда, яка потребує виконання, має бути реалізована користувачем як розширення класу `Executable`. Ми не будемо вдаватися в особливості таких реалізацій тут, але важливо зазначити, що емуляція команди `base64` вже реалізована в Aspose.TeX і включена за замовчуванням у властивість колекції `Executables` класу `TeXOptions` екземпляр.
+У **Aspose.TeX** є параметр завдання TeX під назвою `ShellMode`, який може приймати одне з двох можливих значень: `NoShellEscape` і `ShellRestricted`. Значення NoShellEscape вказує на те, що функцію вимкнено. Останнє значення означає, що будь-яка команда, яка потребує виконання, має бути реалізована користувачем як розширення класу `Executable`. Ми не будемо вдаватися в особливості таких реалізацій тут, але важливо зазначити, що емуляція команди `base64` вже реалізована в Aspose.TeX і включена за замовчуванням у властивість колекції `Executables` класу `TeXOptions` екземпляр. Вбудована емуляція `base64` виконується всередині Aspose.TeX і не потребує утиліти Base64 операційної системи.
 
 ### Декодування даних у кодуванні Base64
 
@@ -99,23 +99,24 @@ base64 -d  FILE1 > FILE2
 \includegraphics[options]{sample-image.png}
 ```
 
-Отже, повний (майже) файл LaTeX може виглядати так:
+Наступний приклад показує структуру документа. Замініть скорочений рядок Base64 повними даними зображення: крапки є заповнювачем і не можуть бути декодовані:
 
 
 ```tex
 \documentclass{article}
+\usepackage{graphicx}
 \begin{filecontents*}[overwrite]{sample-image.64}
 iVBORw0KGgoAAAANSUhEUgAAAPgAAABdCAYAAAH/B5vAAAAAGXRFWHRTb2Z0d2FyZQBBZ......
 \end{filecontents*}
 \begin{document}
-  \write18{base64 -d  sample-image.64 > sample-image.png}
-  \includegraphics[options]{sample-image.png}
+  \immediate\write18{base64 -d sample-image.64 > sample-image.png}
+  \includegraphics[width=\textwidth]{sample-image.png}
 \end{document}
 ```
 
-І код Java, який використовує API **Aspose.TeX**, подібний до того, що можна знайти в інших статтях, за винятком визначення параметра режиму оболонки:
+Приклад Java перетворює повний документ `embedded-base64-image.tex` на PDF. Задайте в `inputFile` повний шлях до вхідного файлу, а в `outputDirectory` — наявну папку виводу. Імпортуйте використані класи `com.aspose.tex`, `com.aspose.tex.rendering.PdfDevice` та `com.aspose.tex.rendering.PdfSaveOptions`. Обробіть або оголосіть винятки й застосуйте ліцензію відповідно до [посібника з ліцензування](/tex/{{lang.url-fragment}}java/licensing/). Приклад вмикає `ShellRestricted` для вбудованої команди Base64, працює без взаємодії з користувачем і зберігає вивід термінала в пам’яті. Пристрій PDF та вихідний каталог звільняються або закриваються після завершення завдання. Папка містить `sample-image.64`, декодоване зображення `sample-image.png`, PDF та журнал TeX:
 
-{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Conversion-EmbeddedBase64EncodedImage.java" >}}
+{{< gist "aspose-com-gists" "e17f869aabed3881c74973f5e875d539" "Example-EmbeddedBase64Image.java" >}}
 
 І тепер **Крок 5** завершено. Щоб отримати справді вичерпні приклади, перегляньте наш [Приклад проекту](https://github.com/aspose-tex/Aspose.TeX-for-Java).
 

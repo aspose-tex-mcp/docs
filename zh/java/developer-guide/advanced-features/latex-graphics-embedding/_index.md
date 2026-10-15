@@ -66,7 +66,7 @@ LaTeX 处理器会将环境中的字符字符串写入名为 `sample-image.64` �
 
 通常，有三种访问级别：禁用、受限启用和完全启用。
 
-在 **Aspose.TeX** 中，有一个 TeX 作业选项叫做 `ShellMode`，它可以取两个可能的值：`NoShellEscape` 和 `ShellRestricted`。`NoShellEscape` 表示该特性被禁用。`ShellRestricted` 则意味着任何需要执行的命令必须由用户实现为 `Executable` 类的扩展。这里我们不详细讨论此类实现，但需要注意的是，`base64` 命令的模拟已经在 Aspose.TeX 中实现，并默认包含在 `TeXOptions` 类实例的 `Executables` 集合属性中。
+在 **Aspose.TeX** 中，有一个 TeX 作业选项叫做 `ShellMode`，它可以取两个可能的值：`NoShellEscape` 和 `ShellRestricted`。`NoShellEscape` 表示该特性被禁用。`ShellRestricted` 则意味着任何需要执行的命令必须由用户实现为 `Executable` 类的扩展。这里我们不详细讨论此类实现，但需要注意的是，`base64` 命令的模拟已经在 Aspose.TeX 中实现，并默认包含在 `TeXOptions` 类实例的 `Executables` 集合属性中。 内置的 `base64` 模拟在 Aspose.TeX 内部运行，不需要操作系统的 Base64 工具。
 
 ### 解码 Base64 编码的数据
 
@@ -96,22 +96,23 @@ base64 -d  FILE1 > FILE2
 \includegraphics[options]{sample-image.png}
 ```
 
-因此，完整的（几乎）LaTeX 文件可能如下所示：
+以下示例展示文档结构。请将缩短的 Base64 行替换为完整图像数据；省略点是占位符，无法解码：
 
 ```tex
 \documentclass{article}
+\usepackage{graphicx}
 \begin{filecontents*}[overwrite]{sample-image.64}
 iVBORw0KGgoAAAANSUhEUgAAAPgAAABdCAYAAAH/B5vAAAAAGXRFWHRTb2Z0d2FyZQBBZ......
 \end{filecontents*}
 \begin{document}
-  \write18{base64 -d  sample-image.64 > sample-image.png}
-  \includegraphics[options]{sample-image.png}
+  \immediate\write18{base64 -d sample-image.64 > sample-image.png}
+  \includegraphics[width=\textwidth]{sample-image.png}
 \end{document}
 ```
 
-以下 Java 代码使用 **Aspose.TeX** API 与其他文章类似，只是在指定 shell 模式选项时有所不同：
+Java 示例将完整的 `embedded-base64-image.tex` 文档转换为 PDF。将 `inputFile` 设置为输入文件的完整路径，将 `outputDirectory` 设置为现有输出文件夹。导入所用的 `com.aspose.tex` 类、`com.aspose.tex.rendering.PdfDevice` 和 `com.aspose.tex.rendering.PdfSaveOptions`，处理或声明异常，并按照[许可指南](/tex/{{lang.url-fragment}}java/licensing/)应用许可证。示例为内置 Base64 命令启用 `ShellRestricted`，以非交互方式处理，并将终端输出保存在内存中。PDF 设备和输出目录在作业完成后释放或关闭。输出文件夹包含 `sample-image.64`、解码后的 `sample-image.png`、PDF 和 TeX 日志：
 
-{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Conversion-EmbeddedBase64EncodedImage.java" >}}
+{{< gist "aspose-com-gists" "e17f869aabed3881c74973f5e875d539" "Example-EmbeddedBase64Image.java" >}}
 
 现在 **步骤 5** 完成。欲获取更完整的示例，请查看我们的 [示例项目](https://github.com/aspose-tex/Aspose.TeX-for-Java)。
 

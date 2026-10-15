@@ -15,6 +15,8 @@ lastmod: "2024-09-27"
 
 Il existe un certain nombre de [packages LaTeX courants](/tex/{{lang.url-fragment}}net/embedded-packages/) inclus dans la bibliothèque **Aspose.TeX** pour Java. Vous n'avez donc pas à vous soucier de la manière de fournir ces packages au moteur TeX de la bibliothèque. Mais parfois (peut-être souvent) votre fichier LaTeX peut nécessiter un package au-delà du « bundle » de packages pris en charge « nativement ». Dans ce cas, vous pouvez essayer de fournir l'entrée requise, c'est-à-dire les fichiers source du package requis, en utilisant la méthode [setRequiredInputDirectory()](https://reference.aspose.com/tex/java/com.aspose.tex/texoptions/#setRequiredInputDirectory-com.aspose.tex.IInputWorkingDirectory-) de l'instance de classe [TeXOptions](https://reference.aspose.com/tex/java/com.aspose.tex/texoptions/). Nous verrons comment cela fonctionne avec deux exemples.
 
+Définissez `inputFile` sur le chemin complet du document LaTeX correspondant et `outputDirectory` sur un dossier de sortie existant. Les deux exemples de conversion produisent un PNG à 150 DPI. Importez les classes Aspose.TeX utilisées dans l’exemple choisi, `com.aspose.tex.rendering.ImageDevice`, `com.aspose.tex.rendering.PngSaveOptions` et, pour l’entrée ZIP, `java.io.InputStream` et `java.nio.file.Files`. Gérez ou déclarez les exceptions dans la méthode appelante. Appliquez une licence conformément au [guide des licences](/tex/{{lang.url-fragment}}java/licensing/).
+
 ### Entrée requise décompressée (package `fancybox`)
 
 Disons que nous avons le fichier LaTeX simple suivant, qui est `required-input-fs.tex` de notre [exemple de solution](https://GitHub.com/aspose-tex/Aspose.TeX-for-Java) :
@@ -33,7 +35,7 @@ Test: \fbox{
 }
 \par\bigskip
 Test: \fbox{
-  \begin{Beqnarray}[t]
+  \begin{Beqnarray}
   y & = & x^2 \\
   a^2 + 2ab + b^2 & = & (a + b)^2 \\
   \int_0^\infty e^{-ax} dx & = & \frac{1}{a}
@@ -42,19 +44,13 @@ Test: \fbox{
 \end{document}
 ```
 
-Sur la 3ème ligne, nous voyons que le fichier nécessite le package `fancybox`, qui n'est pas supporté "nativement". Nous supposons également que nous disposons du fichier source du package `fancybox`. Il s’agit d’un package simple, il ne consiste donc en réalité que d’un seul fichier. Nous pouvons placer ce fichier n'importe où dans notre système de fichiers et spécifier le chemin du répertoire simplement comme suit :
-
-```Java
-options.setRequiredInputDirectory(new InputFileSystemDirectory("path-to-directory-where-fancybox.sty-located"));
-```
-
-Après avoir exécuté un travail TeX avec cette option (n'oubliez pas d'ajuster les autres options si nécessaire), nous obtenons le document de sortie (c'est-à-dire une image PNG).
+La troisième ligne nécessite le package externe `fancybox`. Définissez `packagesDirectory` sur un dossier local contenant `fancybox.sty` et ses dépendances. L’exemple complet ci-dessous affecte ce dossier à `RequiredInputDirectory` et produit une image PNG. Le périphérique et les répertoires de travail restent ouverts jusqu’à la fin du travail, puis sont libérés ou fermés.
 
 ![Document de sortie](/tex/images/java/Conversion-RequiredInputFs.png)
 
 Voici le code source complet de l'exemple :
 
-{{< gist "aspose-com-gists""67385c777283964d328086603f691ac9""Aspose.TeX.Examples-Conversion-RequiredInput-FileSystem.java" >}}
+{{< gist "aspose-com-gists" "be002eee5d3f1f880cf1b77424b754e1" "Example-RequiredInput-FileSystem.java" >}}
 
 ### Entrée requise archivée (package `pgfplots`)
 
@@ -96,28 +92,13 @@ Sur la 3ème ligne, nous voyons que le fichier nécessite le package `pgfplots`,
 
 ![mise en page de l'archive](/tex/images/java/pgfplots-zip-layout.png)
 
-Et voici comment nous spécifions l'accès à ces fichiers sources :
-
-```Java
-final Stream zipStream = File.Open("path-to-zip-with-pgfplots-sources"), FileMode.Open))
-try {
-    ...
-    options.setRequiredInputDirectory(new InputZipDirectory(zipStream));
-    ...
-} finally {
-    if (zipStream != null)
-        zipStream.close();
-}
-
-```
-
-Après avoir exécuté un travail TeX avec cette option, nous obtenons le document de sortie :
+Définissez `packagesZip` sur un `java.nio.file.Path` vers l’archive contenant les sources génériques et LaTeX du package. L’exemple Java complet ci-dessous l’ouvre avec `Files.newInputStream(...)` et affecte un `InputZipDirectory` à `RequiredInputDirectory`. L’argument de chemin de base vide sélectionne toute l’archive. Gardez le flux ZIP et le répertoire ouverts jusqu’à la fin du travail TeX, puis fermez-les. Le résultat est une image PNG avec les deux graphiques.
 
 ![Document de sortie](/tex/images/java/Conversion-RequiredInputZip.png)
 
 Voici le code source complet de l'exemple :
 
-{{< gist "aspose-com-gists""67385c777283964d328086603f691ac9""Aspose.TeX.Examples-Conversion-RequiredInput-Zip.java" >}}
+{{< gist "aspose-com-gists" "be002eee5d3f1f880cf1b77424b754e1" "Example-RequiredInput-Zip.java" >}}
 
 > **_REMARQUE :_** Le résultat a été vérifié à l'aide du package `pgfplots` version 1.18.1. La version du package `pfg` inclus dans la bibliothèque **Aspose.TeX** est la 3.1.9a.
 
@@ -126,9 +107,9 @@ Voici le code source complet de l'exemple :
 En règle générale, les distributions LaTeX sont livrées avec une sélection de polices par défaut pouvant être utilisées pour la composition. En plus de ces polices, **Aspose.TeX** propose plusieurs packages de polices non standard, tels que `amsfonts`, `eurosym` et `wasysym`. Comme mentionné précédemment, **Aspose.TeX** prend également en charge l'utilisation de packages externes, même si nous nous sommes principalement concentrés sur les packages qui n'incluent pas de polices.
 L'extension du moteur *Object TeX* dans **Aspose.TeX** nécessite des cartes de polices, qui sont des fichiers texte avec l'extension `.map` qui spécifient les polices physiques correspondant au nom de police interne de chaque TeX. Ces cartes de polices doivent être chargées dans la mémoire de TeX pendant la phase d'initialisation et doivent être incluses dans les fichiers du package. Étant donné que le moteur ne connaît pas les noms de toutes les cartes de polices, il recherche tous les fichiers portant l'extension « .map ». Par conséquent, l'implémentation de l'interface [IInputWorkingDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/iinputworkingdirectory/) utilisée comme valeur de l'option [RequiredInputDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/texoptions/#getRequiredInputDirectory--) doit fournir un moyen d'accéder à des collections de noms de fichiers en fonction de leur extension. Plus précisément, cette implémentation doit également implémenter l'interface [IFileCollector](https://reference.aspose.com/tex/java/com.aspose.tex/ifilecollector/). Les implémentations standards, [InputFileSystemDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/inputfilesystemdirectory/) et [InputZipDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/inputzipdirectory/), remplissent déjà cette exigence.
 
-Ci-dessous, nous présentons un exemple de répertoire d'entrée requis personnalisé qui implémente également l'interface [IFileCollector](https://reference.aspose.com/tex/java/com.aspose.tex/ifilecollector/). Notre objectif principal est de rassembler les noms de fichiers en fonction de leur extension, et nous omettons intentionnellement les détails du stockage et de la récupération des fichiers.
+Le `RequiredInputDirectory` personnalisé ci-dessous implémente les deux interfaces et lit les fichiers locaux explicitement enregistrés. Enregistrez-le sous `RequiredInputDirectory.java` avec ses imports inclus. Enregistrez chaque fichier avec `storeFileName(...)`, affectez l’instance avec `options.setRequiredInputDirectory(...)` et fermez-la après le travail. Il s’agit d’un registre plat : les noms de fichier doivent être uniques lorsqu’ils sont demandés sans chemin complet. Les extensions sont comparées sans tenir compte de la casse ; le chemin de collecte facultatif sélectionne un répertoire du système de fichiers. Enregistrez tous les fichiers de package, de correspondance de polices, de métriques et de polices physiques nécessaires. La collecte rend les fichiers de correspondance détectables, mais ne fournit pas les données de polices manquantes.
 
-{{< gist "aspose-com-gists""67385c777283964d328086603f691ac9""Aspose.TeX.Examples-Conversion-RequiredInputDirectory.java" >}}
+{{< gist "aspose-com-gists" "be002eee5d3f1f880cf1b77424b754e1" "Example-RequiredInputDirectory.java" >}}
 
 ### Restrictions
 

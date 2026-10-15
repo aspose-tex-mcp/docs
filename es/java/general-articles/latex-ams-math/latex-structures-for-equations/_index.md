@@ -418,20 +418,9 @@ using (Stream stream = File.Open("your-file-name-and-path", FileMode.Create))
 Como puede ver, la API también es capaz de convertir una ecuación LaTeX en un archivo SVG. Y ese fue un ejemplo del uso de Aspose.TeX para .NET. A continuación se muestra el código equivalente para la versión Java.
 
 
-```java
-String equation = "\\begin{equation} (a-b)^2 = a^2-2ab+b^2 \\end{equation}\r\n" +
-		"\\[ \\cos2\\eta = \\cos^2\\eta-\\sin^2\\eta \\]";
-Size2D size = new Size2D.Float();
-com.aspose.tex.PngMathRendererOptions options = new com.aspose.tex.PngMathRendererOptions();
-final OutputStream stream = new FileOutputStream(Helper.getOutputFile(Path.combine(getCurrentPath(), "doc.png")));
-try
-{
-    new com.aspose.tex.PngMathRenderer().render(equation, stream, options, size);
-}
-finally {
-    stream.close();
-}
-```
+Asigne a `outputFile` un `java.nio.file.Path` en una carpeta existente, por ejemplo `Paths.get(outputDirectory, "equations.png")`. Importe las clases utilizadas de `com.aspose.tex`, `java.awt.Color`, `java.io.ByteArrayOutputStream`, `java.io.OutputStream`, `java.nio.file.Files` y `java.nio.file.Paths`; gestione o declare las excepciones. El ejemplo renderiza ambas ecuaciones a 150 DPI sobre fondo blanco y conserva el número de la primera. El método `render()` con tres argumentos devuelve `Size2D`. Los registros se capturan en memoria y ambos flujos se cierran al terminar.
+
+{{< gist "aspose-com-gists" "fc74664c51175ac402729283d0450d44" "Example-RenderEquationsToPNG.java" >}}
 
 Puede encontrar detalles sobre el uso de opciones de renderizado en el artículo sobre renderizado de fórmulas matemáticas de LaTeX con [Aspose.TeX para .NET](/tex/{{lang.url-fragment}}net/latex-math-formula-rendering/) o [Aspose.TeX para Java](/tex/{{lang.url-fragment}}java/latex-math-formula-rendering/). Pero uno de ellos es importante para nosotros aquí. Con esta opción, puede especificar el preámbulo del documento LaTeX que necesitaría para obtener el resultado que desea. (A partir de ahora, presentaremos sólo la versión C# del código fuente).
 

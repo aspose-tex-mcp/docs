@@ -20,24 +20,24 @@ aspose.tex的评估版(未指定许可证)提供完整的产品功能，只是�
 
 ### 使用文件或流对象应用许可证
 
-使用[License.setLicense](https://reference.aspose.com/tex/java/com.aspose.tex/license/#setLicense-java.lang.String-) 方法来许可组件。设置许可证的最简单方法是将许可证文件与 *aspose.tex.jar* *相同的文件夹中，并指定没有路径的文件名，如下所示。
+使用 [License.setLicense](https://reference.aspose.com/tex/java/com.aspose.tex/license/#setLicense-java.lang.String-) 方法为组件应用许可证。在以下示例中，将 `licenseFilePath` 设置为许可证文件的完整路径。调用方法必须处理或声明 `Exception`。
 
 #### 从文件中加载许可证
 
-此代码段将在文件或嵌入式资源中存储的许可初始化。
+此代码片段应用存储在文件中的许可证。
 
-{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-LoadLicenseFromFile.java" >}}
+{{< gist "aspose-com-gists" "2a6bdc66eff2968d36c7580d02721b14" "Example-SetLicenseFromFile.java" >}}
 
 #### 从流对象加载许可证
 
 这些代码片段从流中初始化许可证。
 
-{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-LoadLicenseFromStream.java" >}}
+{{< gist "aspose-com-gists" "2a6bdc66eff2968d36c7580d02721b14" "Example-SetLicenseFromStream.java" >}}
 
 ### 计量许可证
 
 aspose.tex具有一种替代许可机制，称为 *metered许可 *。如果客户希望根据API功能的使用来计费，则可以应用 *Metered许可证 *，这实际上与应用加密密钥对一样简单。有关更多详细信息，请参阅[计量许可常见问题解答部分](https://purchase.aspose.com/faqs/licensing/metered/)。
 
-可以使用[*Metered*](https://reference.aspose.com/tex/net/aspose.tex/metered/)类的实例设置计量许可证的公共和私钥，如下所示： 
+可以使用[*Metered*](https://reference.aspose.com/tex/java/com.aspose.tex/metered/)类的实例设置计量许可证的公共和私钥，如下所示：
 
-{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-SetMeteredLicense.java" >}}
+{{< gist "aspose-com-gists" "2a6bdc66eff2968d36c7580d02721b14" "Example-SetMeteredLicense.java" >}}

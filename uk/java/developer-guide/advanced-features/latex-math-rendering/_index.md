@@ -15,7 +15,9 @@ lastmod: "2026-04-21"
 
 Фактично, найпростіший спосіб продемонструвати функцію візуалізації **LaTeX math formula** — це почати з прикладу. Ось воно:
 
-{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Features-PngLaTeXMathRendering.java" >}}
+Задайте `outputFile` як `java.nio.file.Path` у наявній папці: наприклад, `Paths.get(outputDirectory, "math-formula.png")` для PNG або `Paths.get(outputDirectory, "math-formula.svg")` для SVG. Імпортуйте використані класи рендерерів, параметрів і `Size2D` з Aspose.TeX, а також `java.awt.Color`, `java.io.ByteArrayOutputStream`, `java.io.OutputStream`, `java.nio.file.Files`, `java.nio.file.Path`, `java.nio.file.Paths`. Метод, що викликає цей код, має обробляти або оголошувати винятки. Застосуйте ліцензію згідно з [посібником із ліцензування](/tex/{{lang.url-fragment}}java/licensing/), щоб уникнути обмежень ознайомлювальної версії.
+
+{{< gist "aspose-com-gists" "fc74664c51175ac402729283d0450d44" "Example-RenderMathToPNG.java" >}}
 
 Перейдемо до деталей. Перш за все, ми створюємо екземпляр [параметри візуалізації](https://reference.aspose.com/tex/java/com.aspose.tex/pngmathrendereroptions/), подібний до набору тексту TeX/LaTeX. Ми робимо це тут, одночасно вказуючи роздільну здатність вихідного зображення.
 
@@ -32,17 +34,17 @@ lastmod: "2026-04-21"
 
 Потім ми наказуємо рендереру масштабувати вихід на 300%.
 
-Наступні два параметри визначають кольори переднього плану та фону. Ті частини формули, які не охоплені («забарвлені») спеціальним виділенням, відображатимуться кольором «Колір тексту».
+Два параметри задають кольори переднього плану та фону. Частини формули без спеціального виділення відображаються кольором, заданим через `setTextColor()`.
 
-Наступний рядок прикладу не має особливого сенсу. Це просто демонструє, що ви можете спрямувати вихід журналу в якийсь потік.
+Приклад спрямовує журнал рендерингу в `ByteArrayOutputStream` за допомогою `setLogStream()`. Потоки журналу й зображення автоматично закриваються після рендерингу.
 
-І остання опція `ShowTerminal` дозволяє вам перемикати запис виводу терміналу на консоль.
+`showTerminal()` керує виводом термінала в консоль. У прикладах задано `false`; установіть `true`, щоб показувати вивід.
 
-Метод, який фактично виконує візуалізацію, це [MathRenderer.render()](https://reference.aspose.com/tex/java/com.aspose.tex/mathrenderer/#render-java.lang.String-java.io.OutputStream-com.aspose.tex.MathRendererOptions-). Він повертає розмір формули в пунктах.
+[MathRenderer.render()](https://reference.aspose.com/tex/java/com.aspose.tex/mathrenderer/#render-java.lang.String-java.io.OutputStream-com.aspose.tex.MathRendererOptions-) викликається на екземплярі `PngMathRenderer` або `SvgMathRenderer` і повертає розміри формули в пунктах як `Size2D`.
 
-Потік, у який буде записано зображення, приймається методом як другий аргумент. Далі створюємо потік.
+Метод приймає потік виводу зображення другим аргументом. Приклад відкриває його в блоці try-with-resources, який закриває потік після рендерингу.
 
-І, нарешті, ми викликаємо сам метод `MathRenderer.render()`, передаючи параметри як третій аргумент. Код LaTeX формули передається як перший аргумент.
+Далі викликається `render()` на екземплярі рендерера: перший аргумент — формула LaTeX, другий — потік виводу зображення, третій — параметри рендерингу.
 
 Останні рядки прикладу друкують два артефакти відтворення математичної формули - розмір формули та короткий звіт про помилку (якщо помилки були).
 
@@ -58,7 +60,7 @@ lastmod: "2026-04-21"
 
 Приблизно так само ми можемо відобразити математичну формулу LaTeX у форматі SVG.
 
-{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Features-SvgLaTeXMathRendering.java" >}}
+{{< gist "aspose-com-gists" "fc74664c51175ac402729283d0450d44" "Example-RenderMathToSVG.java" >}}
 
 Відмінності:
 

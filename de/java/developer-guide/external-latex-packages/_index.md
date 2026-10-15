@@ -15,6 +15,8 @@ lastmod: "2024-09-26"
 
 In der **Aspose.TeX**-Bibliothek für Java sind eine Reihe [gängiger LaTeX-Pakete](/tex/{{lang.url-fragment}}net/embedded-packages/) enthalten. Sie müssen sich also nicht darum kümmern, wie Sie diese Pakete der TeX-Engine der Bibliothek bereitstellen. Aber manchmal (vielleicht oft) erfordert Ihre LaTeX-Datei möglicherweise ein Paket, das über das „nativ“ unterstützte „Paketpaket“ hinausgeht. In diesem Fall können Sie versuchen, die erforderliche Eingabe, d. h. die Quelldateien des erforderlichen Pakets, mithilfe der Methode [setRequiredInputDirectory()](https://reference.aspose.com/tex/java/com.aspose.tex/texoptions/#setRequiredInputDirectory-com.aspose.tex.IInputWorkingDirectory-) der Klasseninstanz [TeXOptions](https://reference.aspose.com/tex/java/com.aspose.tex/texoptions/) bereitzustellen. Wir werden anhand von zwei Beispielen sehen, wie das funktioniert.
 
+Setzen Sie `inputFile` auf den vollständigen Pfad des entsprechenden LaTeX-Dokuments und `outputDirectory` auf einen vorhandenen Ausgabeordner. Beide Konvertierungsbeispiele erzeugen PNG mit 150 DPI. Importieren Sie die Aspose.TeX-Klassen aus dem gewählten Beispiel, `com.aspose.tex.rendering.ImageDevice`, `com.aspose.tex.rendering.PngSaveOptions` und für ZIP-Eingaben `java.io.InputStream` und `java.nio.file.Files`. Behandeln oder deklarieren Sie Ausnahmen in der aufrufenden Methode. Wenden Sie eine Lizenz gemäß dem [Lizenzleitfaden](/tex/{{lang.url-fragment}}java/licensing/) an.
+
 ### Entpackte erforderliche Eingabe („fancybox“-Paket)
 
 Nehmen wir an, wir haben die folgende einfache LaTeX-Datei, die „required-input-fs.tex“ aus unserer [Beispiellösung](https://GitHub.com/aspose-tex/Aspose.TeX-for-Java) ist:
@@ -33,7 +35,7 @@ Test: \fbox{
 }
 \par\bigskip
 Test: \fbox{
-  \begin{Beqnarray}[t]
+  \begin{Beqnarray}
   y & = & x^2 \\
   a^2 + 2ab + b^2 & = & (a + b)^2 \\
   \int_0^\infty e^{-ax} dx & = & \frac{1}{a}
@@ -42,19 +44,13 @@ Test: \fbox{
 \end{document}
 ```
 
-In der dritten Zeile sehen wir, dass die Datei das Paket „fancybox“ erfordert, das nicht „nativ“ unterstützt wird. Wir gehen außerdem davon aus, dass wir über die Quelldatei des Pakets „fancybox“ verfügen. Da es sich um ein einfaches Paket handelt, besteht es eigentlich nur aus einer Datei. Wir können diese Datei an einer beliebigen Stelle in unserem Dateisystem platzieren und den Verzeichnispfad einfach wie folgt angeben:
-
-```Java
-options.setRequiredInputDirectory(new InputFileSystemDirectory("path-to-directory-where-fancybox.sty-located"));
-```
-
-Nachdem wir einen TeX-Job mit dieser Option ausgeführt haben (vergessen Sie nicht, die anderen Optionen nach Bedarf anzupassen), erhalten wir das Ausgabedokument (d. h. ein PNG-Bild).
+Die dritte Zeile benötigt das externe Paket `fancybox`. Setzen Sie `packagesDirectory` auf einen lokalen Ordner mit `fancybox.sty` und dessen Abhängigkeiten. Das vollständige Beispiel unten weist diesen Ordner `RequiredInputDirectory` zu und erzeugt ein PNG-Bild. Gerät und Arbeitsverzeichnisse bleiben bis zum Ende des Auftrags offen und werden danach freigegeben oder geschlossen.
 
 ![Ausgabedokument](/tex/images/java/Conversion-RequiredInputFs.png)
 
 Hier ist der vollständige Quellcode für das Beispiel:
 
-{{< gist "aspose-com-gists""67385c777283964d328086603f691ac9""Aspose.TeX.Examples-Conversion-RequiredInput-FileSystem.java" >}}
+{{< gist "aspose-com-gists" "be002eee5d3f1f880cf1b77424b754e1" "Example-RequiredInput-FileSystem.java" >}}
 
 ### Archivierte erforderliche Eingabe (Paket „pgfplots“)
 
@@ -96,28 +92,13 @@ In der dritten Zeile sehen wir, dass die Datei das Paket „pgfplots“ erforder
 
 ![Archivlayout](/tex/images/java/pgfplots-zip-layout.png)
 
-Und so legen wir den Zugriff auf diese Quelldateien fest:
-
-```Java
-final Stream zipStream = File.Open("path-to-zip-with-pgfplots-sources"), FileMode.Open))
-try {
-    ...
-    options.setRequiredInputDirectory(new InputZipDirectory(zipStream));
-    ...
-} finally {
-    if (zipStream != null)
-        zipStream.close();
-}
-
-```
-
-Nachdem wir einen TeX-Job mit dieser Option ausgeführt haben, erhalten wir das Ausgabedokument:
+Setzen Sie `packagesZip` auf einen `java.nio.file.Path` zum Archiv mit den generischen und LaTeX-Paketquellen. Das vollständige Java-Beispiel unten öffnet es mit `Files.newInputStream(...)` und weist `RequiredInputDirectory` ein `InputZipDirectory` zu. Das leere Basispfadargument wählt das gesamte Archiv. Halten Sie ZIP-Stream und Verzeichnis bis zum Ende des TeX-Auftrags offen und schließen Sie sie danach. Das Ergebnis ist ein PNG-Bild mit beiden Diagrammen.
 
 ![Ausgabedokument](/tex/images/java/Conversion-RequiredInputZip.png)
 
 Hier ist der vollständige Quellcode für das Beispiel:
 
-{{< gist "aspose-com-gists""67385c777283964d328086603f691ac9""Aspose.TeX.Examples-Conversion-RequiredInput-Zip.java" >}}
+{{< gist "aspose-com-gists" "be002eee5d3f1f880cf1b77424b754e1" "Example-RequiredInput-Zip.java" >}}
 
 > **_HINWEIS:_** Das Ergebnis wurde mit dem Paket `pgfplots`, Version 1.18.1, überprüft. Die Version des `pfg`-Pakets, das in der **Aspose.TeX**-Bibliothek enthalten ist, ist 3.1.9a.
 
@@ -126,9 +107,9 @@ Hier ist der vollständige Quellcode für das Beispiel:
 In der Regel enthalten LaTeX-Distributionen eine Auswahl an Standardschriftarten, die für den Schriftsatz verwendet werden können. Zusätzlich zu diesen Schriftarten bietet **Aspose.TeX** mehrere nicht standardmäßige Schriftartenpakete wie „amsfonts“, `Eurosym` und „wasysym“. Wie bereits erwähnt, unterstützt **Aspose.TeX** auch die Verwendung externer Pakete, obwohl unser Fokus hauptsächlich auf Paketen lag, die keine Schriftarten enthalten.
 Die *Object TeX*-Engine-Erweiterung in **Aspose.TeX** erfordert Schriftartenzuordnungen, bei denen es sich um Textdateien mit der Erweiterung „.map“ handelt, die die physischen Schriftarten angeben, die dem internen Schriftartennamen jedes TeX entsprechen. Diese Schriftartenzuordnungen müssen während der Initialisierungsphase in den Speicher von TeX geladen und in den Paketdateien enthalten sein. Da die Engine nicht die Namen aller Schriftartenkarten kennt, sucht sie nach Dateien mit der Erweiterung „.map“. Daher muss die Implementierung der Schnittstelle [IInputWorkingDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/iinputworkingdirectory/), die als Wert der Option [RequiredInputDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/texoptions/#getRequiredInputDirectory--) verwendet wird, eine Möglichkeit bieten, auf Sammlungen von Dateinamen basierend auf ihrer Erweiterung zuzugreifen. Insbesondere muss diese Implementierung auch die Schnittstelle [IFileCollector](https://reference.aspose.com/tex/java/com.aspose.tex/ifilecollector/) implementieren. Die Standardimplementierungen [InputFileSystemDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/inputfilesystemdirectory/) und [InputZipDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/inputzipdirectory/) erfüllen diese Anforderung bereits.
 
-Nachfolgend stellen wir ein Beispiel für ein benutzerdefiniertes erforderliches Eingabeverzeichnis vor, das auch die Schnittstelle [IFileCollector](https://reference.aspose.com/tex/java/com.aspose.tex/ifilecollector/) implementiert. Unser Hauptaugenmerk liegt auf der Erfassung von Dateinamen anhand ihrer Erweiterung, und wir lassen die Details zum Speichern und Abrufen von Dateien bewusst weg.
+Das folgende benutzerdefinierte `RequiredInputDirectory` implementiert beide Schnittstellen und liest ausdrücklich registrierte lokale Dateien. Speichern Sie es mit den enthaltenen Importen als `RequiredInputDirectory.java`. Registrieren Sie jede Datei mit `storeFileName(...)`, weisen Sie die Instanz mit `options.setRequiredInputDirectory(...)` zu und schließen Sie sie nach dem Auftrag. Es ist ein flaches Register: Dateinamen müssen bei Anfragen ohne vollständigen Pfad eindeutig sein. Erweiterungen werden ohne Beachtung der Groß-/Kleinschreibung verglichen; der optionale Sammlungspfad wählt ein Dateisystemverzeichnis. Registrieren Sie alle erforderlichen Paket-, Fontmap-, Metrik- und physischen Schriftdateien. Die Dateisammlung macht Fontmaps auffindbar, stellt aber keine fehlenden Schriftdaten bereit.
 
-{{< gist "aspose-com-gists""67385c777283964d328086603f691ac9""Aspose.TeX.Examples-Conversion-RequiredInputDirectory.java" >}}
+{{< gist "aspose-com-gists" "be002eee5d3f1f880cf1b77424b754e1" "Example-RequiredInputDirectory.java" >}}
 
 ### Einschränkungen
 

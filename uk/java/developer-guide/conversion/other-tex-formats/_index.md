@@ -19,7 +19,9 @@ lastmod: "2026-04-21"
 
 Давайте пам’ятаємо, що файл формату є двійковим дампом внутрішнього стану механізму TeX.
 
-{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-CreateCustomTeXFormatFile.java" >}}
+Укажіть у `inputDirectory` папку з файлом `customtex.tex` і його залежностями, а в `outputDirectory` — наявну папку виведення. Вихідний файл формату має закінчуватися командою `\dump`; приклад створює в папці виведення файл `customtex.fmt`. Імпортуйте класи Aspose.TeX, використані в прикладах, а для набору тексту також `com.aspose.tex.rendering.XpsDevice`, `java.io.ByteArrayInputStream` і `java.nio.charset.StandardCharsets`. Метод виклику має обробляти або оголошувати винятки. Застосуйте ліцензію згідно з [посібником із ліцензування](/tex/{{lang.url-fragment}}java/licensing/), щоб уникнути обмежень ознайомлювальної версії.
+
+{{< gist "aspose-com-gists" "d21a098d3848236e0c258661f5bbc0ae" "Example-CreateCustomTeXFormat.java" >}}
 
 Як бачите, код схожий на код для перетворення файлу TeX. Але є кілька відмінностей.
 
@@ -33,12 +35,14 @@ lastmod: "2026-04-21"
 
 Тепер, коли у нас є власний формат TeX, ми хочемо набрати файл TeX, написаний у цьому форматі. Ось код:
 
-{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-TypesetWithCustomTeXFormat.java" >}}
+Укажіть у `formatDirectory` папку з раніше створеним файлом `customtex.fmt`, а в `outputDirectory` — наявну папку виведення. Приклад набирає самодостатній текстовий потік у `typeset-with-custom-format.xps`, тому робоча папка введення не потрібна. Задайте її, якщо основні вхідні дані мають залежності, наприклад зображення.
 
-Вочевидь ми повинні якось визначити формат. Перш за все, нам потрібно створити екземпляр класу [FormatProvider](https://reference.aspose.com/tex/java/com.aspose.tex/formatprovider/) . Потім у конструкторі параметрів ми використовуємо конфігурацію [TeXConfig.objectTeX()](https://reference.aspose.com/tex/java/com.aspose.tex/TeXConfig#objectTeX--), яка приймає наш провайдер формату як аргумент і завантажує формат поверх «незайманого» стану двигуна.
+{{< gist "aspose-com-gists" "d21a098d3848236e0c258661f5bbc0ae" "Example-TypesetWithCustomTeXFormat.java" >}}
 
-Решта коду повинна бути вам знайома. Він використовує функції, розглянуті раніше в цьому [посібнику](/tex/{{lang.url-fragment}}java/conversion/).
+Вочевидь ми повинні якось визначити формат. Перш за все, нам потрібно створити екземпляр класу [FormatProvider](https://reference.aspose.com/tex/java/com.aspose.tex/formatprovider/) . Потім у конструкторі параметрів ми використовуємо конфігурацію [TeXConfig.objectTeX(FormatProvider)](https://reference.aspose.com/tex/java/com.aspose.tex/texconfig/#objectTeX-com.aspose.tex.FormatProvider-), яка приймає наш провайдер формату як аргумент і завантажує формат поверх «незайманого» стану двигуна.
+
+Обидва приклади виконуються без взаємодії з користувачем і зберігають виведення термінала в пам’яті. Після виконання завдання приклад набору закриває вхідний потік, звільняє пристрій XPS і закриває робочу папку та постачальника формату. Ці можливості розглянуто раніше в цьому [посібнику](/tex/{{lang.url-fragment}}java/conversion/).
 
 ## Набір файлу TeX у форматі Plain TeX
 
-Якщо ми викинемо постачальника формату з щойно продемонстрованого коду, механізм завантажить формат за замовчуванням, яким є [Object TeX](/tex/{{lang.url-fragment}}net/aspose-tex-and-object-tex/) у його четвертому значенні. Таким чином, якщо у вас є файл TeX, написаний у форматі Plain TeX, таким чином ви можете перетворити його в будь-який підтримуваний цільовий формат.
+Якщо ми використаємо `TeXConfig.objectTeX()` без постачальника формату, механізм завантажить формат за замовчуванням, яким є [Object TeX](/tex/{{lang.url-fragment}}net/aspose-tex-and-object-tex/) у його четвертому значенні. Таким чином, якщо у вас є файл TeX, написаний у форматі Plain TeX, таким чином ви можете перетворити його в будь-який підтримуваний цільовий формат.

@@ -66,7 +66,7 @@ Les implémentations TeX plus récentes, telles que PDF TeX, permettent l'utilis
 
 En règle générale, il existe trois niveaux d'accessibilité : désactivé, activé avec des restrictions et entièrement activé.
 
-Dans **Aspose.TeX**, il existe une option de travail TeX appelée « ShellMode », qui peut prendre l'une des deux valeurs possibles : « NoShellEscape » et « ShellRestricted ». La valeur `NoShellEscape` indique que la fonctionnalité est désactivée. Cette dernière valeur signifie que toute commande nécessitant une exécution doit être implémentée par l'utilisateur en tant qu'extension de la classe `Executable`. Nous n'entrerons pas ici dans les détails de telles implémentations, mais il est important de noter que l'émulation de commande `base64` est déjà implémentée dans Aspose.TeX et est incluse par défaut dans la propriété de collection `Executables` de la classe `TeXOptions`. exemple.
+Dans **Aspose.TeX**, il existe une option de travail TeX appelée « ShellMode », qui peut prendre l'une des deux valeurs possibles : « NoShellEscape » et « ShellRestricted ». La valeur `NoShellEscape` indique que la fonctionnalité est désactivée. Cette dernière valeur signifie que toute commande nécessitant une exécution doit être implémentée par l'utilisateur en tant qu'extension de la classe `Executable`. Nous n'entrerons pas ici dans les détails de telles implémentations, mais il est important de noter que l'émulation de commande `base64` est déjà implémentée dans Aspose.TeX et est incluse par défaut dans la propriété de collection `Executables` de la classe `TeXOptions`. exemple. L’émulation intégrée de `base64` s’exécute dans Aspose.TeX et ne nécessite aucun utilitaire Base64 du système d’exploitation.
 
 ### Décodage des données codées en Base64
 
@@ -99,23 +99,24 @@ Comme nous l'avons noté au début de l'article, pour inclure l'image décodée,
 \includegraphics[options]{sample-image.png}
 ```
 
-Ainsi, le fichier LaTeX complet (presque) pourrait apparaître comme suit :
+L’exemple suivant illustre la structure du document. Remplacez la ligne Base64 abrégée par les données complètes de l’image ; les points sont un espace réservé et ne peuvent pas être décodés :
 
 
 ```tex
 \documentclass{article}
+\usepackage{graphicx}
 \begin{filecontents*}[overwrite]{sample-image.64}
 iVBORw0KGgoAAAANSUhEUgAAAPgAAABdCAYAAAH/B5vAAAAAGXRFWHRTb2Z0d2FyZQBBZ......
 \end{filecontents*}
 \begin{document}
-  \write18{base64 -d  sample-image.64 > sample-image.png}
-  \includegraphics[options]{sample-image.png}
+  \immediate\write18{base64 -d sample-image.64 > sample-image.png}
+  \includegraphics[width=\textwidth]{sample-image.png}
 \end{document}
 ```
 
-Et le code Java utilisant l'API **Aspose.TeX** est similaire à ce que l'on peut trouver dans d'autres articles, à l'exception de la spécification de l'option de mode shell :
+L’exemple Java convertit le document complet `embedded-base64-image.tex` en PDF. Définissez `inputFile` comme le chemin complet du fichier et `outputDirectory` comme un dossier de sortie existant. Importez les classes utilisées de `com.aspose.tex`, `com.aspose.tex.rendering.PdfDevice` et `com.aspose.tex.rendering.PdfSaveOptions`. Gérez ou déclarez les exceptions et appliquez une licence conformément au [guide des licences](/tex/{{lang.url-fragment}}java/licensing/). L’exemple active `ShellRestricted` pour la commande Base64 intégrée, fonctionne sans interaction et capture la sortie du terminal en mémoire. Le périphérique PDF et le répertoire de sortie sont libérés ou fermés après la tâche. Le dossier contient `sample-image.64`, l’image décodée `sample-image.png`, le PDF et le journal TeX :
 
-{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Conversion-EmbeddedBase64EncodedImage.java" >}}
+{{< gist "aspose-com-gists" "e17f869aabed3881c74973f5e875d539" "Example-EmbeddedBase64Image.java" >}}
 
 Et maintenant, l'**étape 5** est terminée. Pour des exemples vraiment complets, explorez notre [Exemple de projet](https://github.com/aspose-tex/Aspose.TeX-for-Java).
 

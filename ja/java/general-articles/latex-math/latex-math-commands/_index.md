@@ -27,6 +27,7 @@ lastmod: "2026-04-21"
 
 ```tex
 $\sqrt{\mathstrut a} + \sqrt{\mathstrut d} + \sqrt{\mathstrut y}$.
+```
 
 
 `\mathstrut` は目に見えない幅0のボックスです。その高さと深さは左括弧 '(' の高さと深さと同じです。したがって、`\mathstrut` を含む部分式は、添字や上付き文字のようなより複雑な構造を含まない限り、常に同じ高さと深さを持ちます。

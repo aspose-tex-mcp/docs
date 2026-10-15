@@ -66,7 +66,7 @@ PDFTeX などの新しい実装では `\write18` が使用可能で、`<token li
 
 通常、以下の 3 つのアクセスレベルが提供されます：無効、制限付き有効、完全に有効。
 
-**Aspose.TeX** では `ShellMode` という TeX ジョブオプションがあり、`NoShellEscape` と `ShellRestricted` の 2 つの値を取ります。`NoShellEscape` は機能が無効であることを示し、`ShellRestricted` はユーザーが `Executable` クラスの拡張としてコマンドを実装する必要があることを示します。`base64` コマンドのエミュレーションはすでに Aspose.TeX に実装されており、`TeXOptions` の `Executables` コレクションにデフォルトで含まれています。
+**Aspose.TeX** では `ShellMode` という TeX ジョブオプションがあり、`NoShellEscape` と `ShellRestricted` の 2 つの値を取ります。`NoShellEscape` は機能が無効であることを示し、`ShellRestricted` はユーザーが `Executable` クラスの拡張としてコマンドを実装する必要があることを示します。`base64` コマンドのエミュレーションはすでに Aspose.TeX に実装されており、`TeXOptions` の `Executables` コレクションにデフォルトで含まれています。 組み込みの `base64` エミュレーションは Aspose.TeX 内で実行されるため、OS の Base64 ユーティリティは不要です。
 
 ### Base64 データのデコード
 
@@ -96,22 +96,23 @@ base64 -d  FILE1 > FILE2
 \includegraphics[options]{sample-image.png}
 ```
 
-以上をまとめると、ほぼ完成した LaTeX ファイルは次のようになります。
+次の例は文書の構造を示します。省略した Base64 行を完全な画像データに置き換えてください。点はプレースホルダーであり、デコードできません。
 
 ```tex
 \documentclass{article}
+\usepackage{graphicx}
 \begin{filecontents*}[overwrite]{sample-image.64}
 iVBORw0KGgoAAAANSUhEUgAAAPgAAABdCAYAAAH/B5vAAAAAGXRFWHRTb2Z0d2FyZQBBZ......
 \end{filecontents*}
 \begin{document}
-  \write18{base64 -d  sample-image.64 > sample-image.png}
-  \includegraphics[options]{sample-image.png}
+  \immediate\write18{base64 -d sample-image.64 > sample-image.png}
+  \includegraphics[width=\textwidth]{sample-image.png}
 \end{document}
 ```
 
-以下は **Aspose.TeX** API を使用した Java コードの例で、他の記事と同様ですがシェルモードオプションを指定しています。
+Java の例は完全な `embedded-base64-image.tex` 文書を PDF に変換します。`inputFile` に入力の完全パス、`outputDirectory` に既存の出力フォルダーを指定します。使用する `com.aspose.tex` クラス、`com.aspose.tex.rendering.PdfDevice`、`com.aspose.tex.rendering.PdfSaveOptions` をインポートし、例外を処理または宣言してください。[ライセンスガイド](/tex/{{lang.url-fragment}}java/licensing/)に従ってライセンスを適用します。組み込み Base64 コマンド用に `ShellRestricted` を有効にし、対話なしで処理して端末出力をメモリに保存します。PDF デバイスと出力ディレクトリはジョブ終了後に解放または閉じます。出力フォルダーには `sample-image.64`、デコードした `sample-image.png`、PDF、TeX ログが生成されます。
 
-{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Conversion-EmbeddedBase64EncodedImage.java" >}}
+{{< gist "aspose-com-gists" "e17f869aabed3881c74973f5e875d539" "Example-EmbeddedBase64Image.java" >}}
 
 これで **ステップ 5** が完了です。さらに詳しいサンプルは、[Example project](https://github.com/aspose-tex/Aspose.TeX-for-Java) をご覧ください。
 

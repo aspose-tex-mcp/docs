@@ -19,7 +19,9 @@ lastmod: "2026-04-21"
 
 让我们记住，格式文件是Tex发动机内部状态的二进制文件。
 
-{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-CreateCustomTeXFormatFile.java" >}}
+将 `inputDirectory` 设置为包含 `customtex.tex` 及其依赖文件的文件夹，将 `outputDirectory` 设置为现有的输出文件夹。格式源文件必须以 `\dump` 结束；此示例在输出文件夹中创建 `customtex.fmt`。导入示例中使用的 Aspose.TeX 类，以及排版所需的 `com.aspose.tex.rendering.XpsDevice`、`java.io.ByteArrayInputStream` 和 `java.nio.charset.StandardCharsets`。调用方法必须处理或声明异常。按照[许可指南](/tex/{{lang.url-fragment}}java/licensing/)应用许可证，以避免评估版限制。
+
+{{< gist "aspose-com-gists" "d21a098d3848236e0c258661f5bbc0ae" "Example-CreateCustomTeXFormat.java" >}}
 
 如您所见，该代码类似于用于转换Tex文件的代码。但是有一些差异。
 
@@ -33,12 +35,14 @@ lastmod: "2026-04-21"
 
 现在，我们已经拥有自己的TEX格式，我们想在以这种格式写下Tex文件。这是代码：
 
-{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-TypesetWithCustomTeXFormat.java" >}}
+将 `formatDirectory` 设置为包含已创建的 `customtex.fmt` 的文件夹，将 `outputDirectory` 设置为现有的输出文件夹。此示例将独立的文本流排版为 `typeset-with-custom-format.xps`，因此无需输入工作目录。如果主输入有图像等依赖文件，请设置输入工作目录。
 
-显然，我们必须以某种方式指定格式。首先，我们需要创建一个[formatprovider](https://reference.aspose.com/tex/java/com.aspose.tex/formatprovider/) 类的实例。然后，在选项构造函数中，我们使用[TexConfig.Objecttex()](https://reference.aspose.com/tex/java/com.aspose.tex/TeXConfig#objectTeX--)配置，该配置将我们的格式提供程序作为参数，并将格式加载到引擎的“处女”状态之上。
+{{< gist "aspose-com-gists" "d21a098d3848236e0c258661f5bbc0ae" "Example-TypesetWithCustomTeXFormat.java" >}}
 
-代码的其余部分应该熟悉。它使用此[指南](/tex/{{lang.url-fragment}}java/conversion/)前面讨论的功能。
+显然，我们必须以某种方式指定格式。首先，我们需要创建一个[formatprovider](https://reference.aspose.com/tex/java/com.aspose.tex/formatprovider/) 类的实例。然后，在选项构造函数中，我们使用[TeXConfig.objectTeX(FormatProvider)](https://reference.aspose.com/tex/java/com.aspose.tex/texconfig/#objectTeX-com.aspose.tex.FormatProvider-)配置，该配置将我们的格式提供程序作为参数，并将格式加载到引擎的“处女”状态之上。
+
+两个示例均以非交互方式运行，并将终端输出保存在内存中。排版示例在作业完成后关闭输入流，释放 XPS 设备，并关闭工作目录和格式提供程序。这些功能已在此[指南](/tex/{{lang.url-fragment}}java/conversion/)中介绍。
 
 ## 以普通Tex格式排版Tex文件
 
-如果我们从刚刚演示的代码中丢弃格式提供商，则引擎将加载默认格式，即[Object Tex](/tex/{{lang.url-fragment}}net/aspose-tex-and-object-tex/)在其第四种意义上。因此，如果您有一个以普通Tex格式编写的TEX文件，则可以将其转换为任何受支持的目标格式。
+如果我们使用不带格式提供程序的 `TeXConfig.objectTeX()`，则引擎将加载默认格式，即[Object Tex](/tex/{{lang.url-fragment}}net/aspose-tex-and-object-tex/)在其第四种意义上。因此，如果您有一个以普通Tex格式编写的TEX文件，则可以将其转换为任何受支持的目标格式。

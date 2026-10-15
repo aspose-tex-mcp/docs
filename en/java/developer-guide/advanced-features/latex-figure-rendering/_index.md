@@ -17,7 +17,9 @@ It may happen that you want to extract some content (a drawing, a writing, a plo
 
 And as with formula rendering, we will start with an example. Here it is:
 
-{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Features-PngLaTeXFigureRendering.java" >}}
+Set `outputFile` to a `java.nio.file.Path` in an existing folder, for example `Paths.get(outputDirectory, "text-and-formula.png")` for PNG or `Paths.get(outputDirectory, "text-and-formula.svg")` for SVG. Import the Aspose.TeX renderer, options and `Size2D` classes used in the snippet, plus `java.awt.Color`, `java.io.ByteArrayOutputStream`, `java.io.OutputStream`, `java.nio.file.Files`, `java.nio.file.Path`, and `java.nio.file.Paths`. The calling method must handle or declare exceptions. Apply a license as described in the [licensing guide](/tex/{{lang.url-fragment}}java/licensing/) to avoid evaluation restrictions.
+
+{{< gist "aspose-com-gists" "4598064edf58fab0b87d9543a4a88234" "Example-RenderFigureToPNG.java" >}}
 
 First of all, we create a [rendering options](https://reference.aspose.com/tex/java/com.aspose.tex/pngfigurerendereroptions/) instance. We do it here along with specifying the output image resolution.
 
@@ -27,19 +29,19 @@ Next, we specify the preamble. There's no default preamble for LaTeX figure rend
 \usepackage{pict2e}
 ```
 
-Then we instruct the renderer to scale the output by 300%.
+Then we instruct the renderer to scale the output by 300%. The examples also set a 5-point margin with `setMargin(5)` to leave space around the figure. The PNG example uses a resolution of 150 DPI.
 
 The next option defines the background color. Unlike with math formula rendering, we don't specify a foreground color since we assume that the colors are entirely under the control of the LaTeX code. In fact, so is the background color, so this is just a convenience option.
 
-The next line of the example doesn't make much sense. It just demonstrates that you can direct the log output to some stream.
+The example directs rendering logs to a `ByteArrayOutputStream` using `setLogStream()`. The log and image output streams are closed automatically after rendering.
 
-And the last option `ShowTerminal` allows you to toggle writing the terminal output to the console.
+The `showTerminal()` option controls terminal output on the console. The examples set it to `false`; set it to `true` to display terminal output.
 
-The method that actually performs the rendering is [FigureRenderer.render()](https://reference.aspose.com/tex/java/com.aspose.tex/figurerenderer/#render-java.lang.String-java.io.OutputStream-com.aspose.tex.FigureRendererOptions-). It returns the size of the figure in points.
+The method that actually performs the rendering is [FigureRenderer.render()](https://reference.aspose.com/tex/java/com.aspose.tex/figurerenderer/#render-java.lang.String-java.io.OutputStream-com.aspose.tex.FigureRendererOptions-), called on a `PngFigureRenderer` or `SvgFigureRenderer` instance. It returns a `Size2D` with the figure dimensions in points.
 
-The stream where the image is to be written is accepted by the method as the second argument. We create the stream next.
+The method accepts the image output stream as its second argument. The example opens this stream in a try-with-resources block so it is closed after rendering.
 
-And finally, we call the `FigureRenderer.render()` method itself, passing options as the third argument. The LaTeX code of the figure is passed as the first argument.
+Finally, we call `render()` on the renderer instance, passing the LaTeX figure as the first argument, the image output stream as the second, and the rendering options as the third.
 
 The last lines of the example print two artifacts of figure rendering - the size of the figure and the brief error report (in case there are errors).
 
@@ -53,7 +55,7 @@ This is the most general use case for the **LaTeX figure rendering** feature.
 
 In much the same way, we can render a LaTeX figure to SVG format.
 
-{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Features-SvgLaTeXFigureRendering.java" >}}
+{{< gist "aspose-com-gists" "4598064edf58fab0b87d9543a4a88234" "Example-RenderFigureToSVG.java" >}}
 
 The differences are:
 

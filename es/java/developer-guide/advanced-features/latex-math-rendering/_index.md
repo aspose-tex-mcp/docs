@@ -15,7 +15,9 @@ lastmod: "2026-04-21"
 
 De hecho, la forma más sencilla de demostrar la función de representación de **fórmula matemática LaTeX** es comenzar con el ejemplo. Aquí lo tienes:
 
-{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Features-PngLaTeXMathRendering.java" >}}
+Establezca `outputFile` en un `java.nio.file.Path` dentro de una carpeta existente, por ejemplo `Paths.get(outputDirectory, "math-formula.png")` para PNG o `Paths.get(outputDirectory, "math-formula.svg")` para SVG. Importe las clases de renderizador, opciones y `Size2D` de Aspose.TeX utilizadas, además de `java.awt.Color`, `java.io.ByteArrayOutputStream`, `java.io.OutputStream`, `java.nio.file.Files`, `java.nio.file.Path`, `java.nio.file.Paths`. El método que realiza la llamada debe capturar o declarar las excepciones. Aplique una licencia según la [guía de licencias](/tex/{{lang.url-fragment}}java/licensing/) para evitar las restricciones de evaluación.
+
+{{< gist "aspose-com-gists" "fc74664c51175ac402729283d0450d44" "Example-RenderMathToPNG.java" >}}
 
 Vayamos a los detalles. En primer lugar, creamos una instancia de [opciones de renderizado](https://reference.aspose.com/tex/java/com.aspose.tex/pngmathrendereroptions/), similar a la composición tipográfica TeX/LaTeX. Lo hacemos aquí especificando simultáneamente la resolución de la imagen de salida.
 
@@ -31,17 +33,17 @@ que proporciona un soporte de fórmulas matemáticas ligeramente más avanzado q
 
 Luego le indicamos al renderizador que escale la salida en un 300%.
 
-Las siguientes dos opciones definen los colores de primer plano y de fondo. Aquellas partes de la fórmula que no estén cubiertas ("coloreadas") por el resaltado personalizado se mostrarán en el color "TextColor".
+Las dos opciones definen los colores de primer plano y fondo. Las partes de la fórmula sin resaltado personalizado utilizan el color establecido por `setTextColor()`.
 
-La siguiente línea del ejemplo no tiene mucho sentido. Simplemente demuestra que puede dirigir la salida del registro a alguna secuencia.
+El ejemplo dirige los registros de renderización a un `ByteArrayOutputStream` mediante `setLogStream()`. Los flujos del registro y de la imagen se cierran automáticamente después de renderizar.
 
-Y la última opción `ShowTerminal` le permite alternar la escritura de la salida del terminal en la consola.
+`showTerminal()` controla la salida del terminal en la consola. Los ejemplos utilizan `false`; establezca `true` para mostrarla.
 
-El método que realmente realiza la renderización es [MathRenderer.render()](https://reference.aspose.com/tex/java/com.aspose.tex/mathrenderer/#render-java.lang.String-java.io.OutputStream-com.aspose.tex.MathRendererOptions-). Devuelve el tamaño de la fórmula en puntos.
+[MathRenderer.render()](https://reference.aspose.com/tex/java/com.aspose.tex/mathrenderer/#render-java.lang.String-java.io.OutputStream-com.aspose.tex.MathRendererOptions-) se llama en una instancia de `PngMathRenderer` o `SvgMathRenderer` y devuelve las dimensiones de la fórmula en puntos como un `Size2D`.
 
-El método acepta la secuencia donde se escribirá la imagen como segundo argumento. Creamos la secuencia a continuación.
+El método acepta el flujo de salida de la imagen como segundo argumento. El ejemplo lo abre en un bloque try-with-resources, que lo cierra después de renderizar.
 
-Y finalmente, llamamos al método `MathRenderer.render()`, pasando opciones como tercer argumento. El código LaTeX de la fórmula se pasa como primer argumento.
+Finalmente, llamamos a `render()` en la instancia del renderizador: la fórmula LaTeX es el primer argumento, el flujo de la imagen el segundo y las opciones de renderización el tercero.
 
 Las últimas líneas del ejemplo imprimen dos artefactos de la representación de fórmulas matemáticas: el tamaño de la fórmula y el breve informe de errores (en caso de que haya errores).
 
@@ -57,7 +59,7 @@ Este es el caso de uso más general para la representación de **fórmulas matem
 
 De la misma manera, podemos representar una fórmula matemática de LaTeX en formato SVG.
 
-{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Features-SvgLaTeXMathRendering.java" >}}
+{{< gist "aspose-com-gists" "fc74664c51175ac402729283d0450d44" "Example-RenderMathToSVG.java" >}}
 
 Las diferencias son:
 

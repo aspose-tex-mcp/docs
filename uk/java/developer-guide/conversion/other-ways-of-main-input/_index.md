@@ -13,19 +13,23 @@ lastmod: "2026-04-21"
 
 ## Надання основного вхідного файлу механізму TeX у вигляді потоку
 
-До цього моменту ми лише знали, як передати [основний вхідний файл](/tex/{{lang.url-fragment}}net/tex-io/#tex-input) механізму TeX як ім’я файлу, повністю вказане чи у короткій формі, з розширенням чи без нього. Але є інший [конструктор](https://reference.aspose.com/tex/java/com.aspose.tex/TeXJob#TeXJob-java.io.InputStream-com.aspose.tex.rendering.Device-com.aspose.tex.TeXOptions-) класу `TeXJob`, який приймає потік як перший аргумент. Це зручно, якщо з якоїсь причини ми маємо основний вхідний файл у формі, відмінній від файлу у файловій системі диска. Ось як ми можемо з цим впоратися:
+До цього моменту ми лише знали, як передати [основний вхідний файл](/tex/{{lang.url-fragment}}net/tex-io/#tex-input) механізму TeX як ім’я файлу, повністю вказане чи у короткій формі, з розширенням чи без нього. Але є інший [конструктор](https://reference.aspose.com/tex/java/com.aspose.tex/texjob/#TeXJob-java.io.InputStream-com.aspose.tex.rendering.Device-com.aspose.tex.TeXOptions-) класу `TeXJob`, який приймає потік як перший аргумент. Це зручно, якщо з якоїсь причини ми маємо основний вхідний файл у формі, відмінній від файлу у файловій системі диска. Ось як ми можемо з цим впоратися:
 
-{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Conversion-InputStream.java" >}}
+Укажіть у `outputDirectory` наявну папку виведення. Імпортуйте класи Aspose.TeX із прикладів, `com.aspose.tex.rendering.XpsDevice`, `com.aspose.tex.rendering.XpsSaveOptions`, а для введення з потоку — `java.io.ByteArrayInputStream` і `java.nio.charset.StandardCharsets`. Метод виклику має обробляти або оголошувати винятки. Застосуйте ліцензію згідно з [посібником із ліцензування](/tex/{{lang.url-fragment}}java/licensing/), щоб уникнути обмежень ознайомлювальної версії. Приклад потоку містить повний документ LaTeX, тому робоча папка введення не потрібна. Потоки й пристрої залишаються відкритими до завершення завдання, потім закриваються або звільняються.
 
-Зауважте, що всі вихідні файли матимуть назву *textput*. Це тому, що двигун ніде не може отримати іншу назву. *textput* — назва завдання за умовчанням. Дивіться [тут](/tex/{{lang.url-fragment}}net/tex-io/#tex-output) і [тут](/tex/{{lang.url-fragment}}java/other-options/#how-to-set-the-job-name), щоб дізнатися більше про назви посад.
+{{< gist "aspose-com-gists" "889663554934c807ebc90e12d08bc8d0" "Example-StreamInput-LaTeX.java" >}}
+
+Якщо для введення з потоку ім’я завдання не задано явно, механізм використовує ім’я за замовчуванням *texput*. Цей приклад створює `texput.xps` і `texput.log`. Для вибору іншого імені завдання використайте `options.setJobName(...)`. Докладніше про імена завдань див. [тут](/tex/{{lang.url-fragment}}net/tex-io/#tex-output) і [тут](/tex/{{lang.url-fragment}}java/other-options/#how-to-set-the-job-name).
 
 ## Введення основного вхідного файлу TeX з терміналу
 
 Існує ще один [конструктор](https://reference.aspose.com/tex/java/com.aspose.tex/texjob/#TeXJob-com.aspose.tex.rendering.Device-com.aspose.tex.TeXOptions-)  класу `TeXJob`, який взагалі не дозволяє нам вказати вхідні дані. Ви можете запитати, що таке завдання TeX буде обробляти? Цього разу нам знадобиться термінал введення. Механізм TeX попросить нас ввести назву файлу з терміналу.
 
+Укажіть у `inputDirectory` папку з повним документом LaTeX під назвою `hello-world.ltx`, а в `outputDirectory` — наявну папку виведення. Запустіть приклад у консолі, введіть `hello-world.ltx` у відповідь на запрошення `**` і натисніть Enter. Він створює `hello-world.xps` і записує виведення термінала в консоль. Обидва приклади використовують `NonstopMode` для обробки, але термінальному конструктору все одно потрібне початкове ім’я файлу. Для запуску без участі користувача надайте реалізацію `IInputTerminal` або використайте введення з файлу чи потоку.
+
 Ось код:
 
-{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Conversion-MainInputTerminal.java" >}}
+{{< gist "aspose-com-gists" "889663554934c807ebc90e12d08bc8d0" "Example-MainInputTerminal.java" >}}
 
 Як тільки він запускається, движок зависає, чекаючи, поки ми введемо ім’я файлу (зі шляхом чи без, із розширенням чи без):
 

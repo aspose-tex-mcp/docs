@@ -17,7 +17,9 @@ Può succedere che tu voglia estrarre alcuni contenuti (un disegno, una scrittur
 
 E come per il rendering della formula, inizieremo con un esempio. Ecco qui:
 
-{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Features-PngLaTeXFigureRendering.java" >}}
+Impostare `outputFile` su un `java.nio.file.Path` in una cartella esistente, ad esempio `Paths.get(outputDirectory, "text-and-formula.png")` per PNG o `Paths.get(outputDirectory, "text-and-formula.svg")` per SVG. Importare le classi Aspose.TeX del renderer, delle opzioni e `Size2D` utilizzate, oltre a `java.awt.Color`, `java.io.ByteArrayOutputStream`, `java.io.OutputStream`, `java.nio.file.Files`, `java.nio.file.Path`, `java.nio.file.Paths`. Il metodo chiamante deve gestire o dichiarare le eccezioni. Applicare una licenza secondo la [guida alle licenze](/tex/{{lang.url-fragment}}java/licensing/) per evitare le limitazioni della versione di valutazione.
+
+{{< gist "aspose-com-gists" "4598064edf58fab0b87d9543a4a88234" "Example-RenderFigureToPNG.java" >}}
 
 Prima di tutto, creiamo un'istanza di [rendering options](https://reference.aspose.com/tex/java/com.aspose.tex/pngfigurerendereroptions/). Lo facciamo qui insieme a specificare la risoluzione dell'immagine di output.
 
@@ -27,19 +29,19 @@ Successivamente, specifichiamo il preambolo. Non esiste un preambolo predefinito
 \usepackage{pict2e}
 ```
 
-Quindi istruiamo il rendering di ridimensionare l'output del 300%.
+Quindi istruiamo il rendering di ridimensionare l'output del 300%. Gli esempi impostano anche un margine di 5 punti con `setMargin(5)` intorno alla figura. L'esempio PNG utilizza 150 DPI.
 
 L'opzione successiva definisce il colore di sfondo. A differenza del rendering della formula matematica, non specifichiamo un colore in primo piano poiché supponiamo che i colori siano interamente sotto il controllo del codice LaTeX. In effetti, così è il colore di sfondo, quindi questa è solo un'opzione di convenienza.
 
-La riga successiva dell'esempio non ha molto senso. Dimostra solo che è possibile indirizzare l'output del registro su un flusso.
+L'esempio indirizza i log di rendering a un `ByteArrayOutputStream` con `setLogStream()`. I flussi del log e dell'immagine vengono chiusi automaticamente dopo il rendering.
 
-E l'ultima opzione `showterminal` consente di attivare la scrittura dell'output del terminale sulla console.
+`showTerminal()` controlla l'output del terminale sulla console. Gli esempi utilizzano `false`; impostare `true` per visualizzarlo.
 
-Il metodo che esegue effettivamente il rendering è [FigureRender.Render()](https://reference.aspose.com/tex/java/com.aspose.tex/figurerenderer/#render-java.lang.String-java.io.OutputStream-com.aspose.tex.FigureRendererOptions-). Restituisce le dimensioni della figura in punti.
+[FigureRenderer.render()](https://reference.aspose.com/tex/java/com.aspose.tex/figurerenderer/#render-java.lang.String-java.io.OutputStream-com.aspose.tex.FigureRendererOptions-) viene chiamato su un'istanza di `PngFigureRenderer` o `SvgFigureRenderer` e restituisce le dimensioni della figura in punti come `Size2D`.
 
-Il flusso in cui l'immagine deve essere scritta è accettato dal metodo come secondo argomento. Creiamo il flusso dopo.
+Il metodo accetta il flusso di output dell'immagine come secondo argomento. L'esempio lo apre in un blocco try-with-resources, che lo chiude dopo il rendering.
 
-E infine, chiamiamo il metodo `figurerender.render()`, passando le opzioni come terzo argomento. Il codice in LaTeX della figura viene approvato come primo argomento.
+Infine, chiamiamo `render()` sull'istanza del renderer: la figura LaTeX è il primo argomento, il flusso dell'immagine il secondo e le opzioni di rendering il terzo.
 
 Le ultime righe dell'esempio stampano due artefatti del rendering della figura: la dimensione della figura e il breve rapporto di errore (nel caso in cui vi siano errori).
 
@@ -53,7 +55,7 @@ Questo è il caso d'uso più generale per la funzione **Latex Figure**.
 
 Allo stesso modo, possiamo rendere una figura in LaTeX al formato SVG.
 
-{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Features-SvgLaTeXFigureRendering.java" >}}
+{{< gist "aspose-com-gists" "4598064edf58fab0b87d9543a4a88234" "Example-RenderFigureToSVG.java" >}}
 
 Le differenze sono:
 

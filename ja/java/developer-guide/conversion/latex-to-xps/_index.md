@@ -19,14 +19,18 @@ lastmod: "2026-04-21"
 ## ラテックスをXPSに変換する方法
 XPSへの変換は、[saveoptions](https://reference.aspose.com/tex/java/com.aspose.tex/texoptions/#getSaveOptions--)に加えて[xpsdevice](https://reference.aspose.com/tex/java/com.aspose.tex.rendering/xpsdevice/) クラスのインスタンスを使用する必要があることを除いて、[ラスター画像形式への変換](/tex/{{lang.url-fragment}}java/latex-to-image/)と同じくらい簡単です。
 
-{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Conversion-LaTeXToXps-Simplest.java" >}}
+`inputFile` に LaTeX ファイル（例：`hello-world.ltx`）のフルパスを設定し、`outputDirectory` に既存の出力フォルダーを設定してください。スニペットで使用する `com.aspose.tex` と `com.aspose.tex.rendering` のクラスをインポートします。呼び出し元のメソッドでは、例外を処理するか、スローする例外として宣言する必要があります。評価版の制限を避けるには、[ライセンスガイド](/tex/{{lang.url-fragment}}java/licensing/)に従ってライセンスを適用してください。この例では非対話モードで処理し、出力リソースを閉じます。 外部ファイルに依存しない入力ファイル `hello-world.ltx` の既定の出力は `hello-world.xps` です。
+
+{{< gist "aspose-com-gists" "1d90376049c44b97cffb85e4ac382a5b" "Example-ConvertLaTeXToXPS-Simplest.java" >}}
 
 ### メイン出力XPSファイルを書き込む代替方法
 
-[XPSDevice](https://reference.aspose.com/tex/java/com.Aspose.TeX.rendering/XpsDevice#XpsDevice-java.io.OutputStream-)クラスの別のコンストラクターがあります。これにより、結果のXPSファイルを別の方法で取得できます。
+[XPSDevice](https://reference.aspose.com/tex/java/com.aspose.tex.rendering/xpsdevice/#XpsDevice-java.io.OutputStream-)クラスの別のコンストラクターがあります。これにより、結果のXPSファイルを別の方法で取得できます。
 
-{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Conversion-LaTeXToXps-Alternative.java" >}}
+上記と同じ `inputFile` と `outputDirectory` の値を使用してください。`xpsFile` に `java.nio.file.Path` を設定します（例：`Paths.get(outputDirectory, "any-name.xps")`）。Aspose.TeX のクラスに加えて、`java.io.OutputStream`、`java.nio.file.Files`、`java.nio.file.Path`、`java.nio.file.Paths` をインポートしてください。 ストリームで XPS ファイルの出力先を指定します。補助ファイルは引き続き `outputDirectory` に書き込まれます。
 
-効果は[ここ](/tex/{{lang.url-fragment}}java/latex-to-pdf/#an-alternative-way-to-write-main-output-pdf-file)と同じです。
+{{< gist "aspose-com-gists" "1d90376049c44b97cffb85e4ac382a5b" "Example-ConvertLaTeXToXPS-Alternative.java" >}}
+
+効果は[ここ](/tex/{{lang.url-fragment}}java/latex-to-pdf/#メイン出力pdfファイルを書き込む代替方法)と同じです。
 
 **[.NETのAsops.Tex](https://products.aspose.com/tex/net/)APIに基づいて構築された無料のLaTex-to-XPS変換[Webアプリ](https://products.aspose.app/tex/conversion/latex-to-xps)をチェックアウトすることもできます。 [ここ](https://products.aspose.com/tex/java/)はJavaバージョンページです。**

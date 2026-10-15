@@ -13,6 +13,8 @@ lastmod: "2026-04-21"
 
 Пожалуйста, обратитесь к **Aspose.TeX for Java** [ссылка на API](https://reference.aspose.com/tex/java/com.aspose.tex/) для формальных определений реализации ввода-вывода.
 
+Примеры файловой системы, ZIP и терминалов выполняют набор `hello-world.tex` в XPS. Укажите в `inputDirectory` папку с файлом TeX, а в `outputDirectory` — существующую папку вывода. Для вывода в ZIP задайте `outputZip` как `java.nio.file.Path` в существующей папке. Импортируйте классы Aspose.TeX из выбранного примера, `com.aspose.tex.rendering.XpsDevice` и необходимые классы `java.io` и `java.nio.file`. Вызывающий метод должен обрабатывать или объявлять исключения. Примените лицензию согласно [руководству по лицензированию](/tex/{{lang.url-fragment}}java/licensing/), чтобы избежать ограничений ознакомительной версии.
+
 ## Концепция выходного каталога
 
 Поскольку примитивы ввода-вывода языка TeX могут работать только с именами файлов, Aspose.TeX определяет каталог как сопоставление между именами и объемами данных. Предполагается, что основная часть данных представляет собой файлы, потоки, массивы или что-то еще. API позволяет нам отдельно указывать входные и выходные рабочие каталоги. Он предоставляет общий интерфейс [IOutputWorkingDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/ioutputworkingdirectory/) для вывода, который пользователь может реализовать в своих целях. Он также предоставляет свои собственные реализации, которые будут обсуждаться ниже. Интерфейс расширяет [IInputWorkingDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/iinputworkingdirectory/), поскольку механизм может сначала создать и записать файл, а затем прочитать его обратно. Собственный метод интерфейса [getOuputFile()](https://reference.aspose.com/tex/java/com.aspose.tex/ioutputworkingdirectory/#getOutputFile-java.lang.String-java.lang.String:A-) возвращает поток для записи, в отличие от потока для чтения, возвращаемого [getFile()](https://reference.aspose.com/tex/java/com.aspose.tex/IInputWorkingDirectory#getFile-java.lang.String-java.lang.String:A-boolean-).
@@ -23,7 +25,7 @@ lastmod: "2026-04-21"
 
 Вот как мы это установим:
 
-{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Conversion-OutputFileSystemDirectory.java" >}}
+{{< gist "aspose-com-gists" "41e7e83784a6856ab3955f319608ef96" "Example-OutputFileSystemDirectory.java" >}}
 
 Этот вариант использования достаточно прост, поэтому мы не будем на нем долго останавливаться.
 
@@ -31,9 +33,9 @@ lastmod: "2026-04-21"
 
 Мы также можем создать файл (или поток) и позволить движку TeX использовать его в качестве ZIP-архива для хранения выходных файлов. Вот:
 
-{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Conversion-OutputZipDirectory.java" >}}
+{{< gist "aspose-com-gists" "41e7e83784a6856ab3955f319608ef96" "Example-OutputZipDirectory.java" >}}
 
-Сначала мы создаем выходной поток для ZIP-файла. Затем, после создания параметров преобразования, мы устанавливаем параметр [OutputWorkingDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/texoptions/#getOutputWorkingDirectory--) как экземпляр класса [OutputZipDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/outputzipdirectory/).
+Сначала мы создаем выходной поток для ZIP-файла. Затем, после создания параметров преобразования, мы устанавливаем параметр [OutputWorkingDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/texoptions/#getOutputWorkingDirectory--) как экземпляр класса [OutputZipDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/outputzipdirectory/). Пример сохраняет `hello-world.xps` и `hello-world.log` в архиве. После задания вызовите `finish()` для папки вывода до закрытия потока ZIP-архива. Примеры держат потоки и рабочие папки открытыми до завершения задания, затем закрывают их.
 
 ## Концепция выходного терминала
 
@@ -43,14 +45,14 @@ lastmod: "2026-04-21"
 
 Для этого нам нужно установить опцию [TerminalOut](https://reference.aspose.com/tex/java/com.aspose.tex/texoptions/#getTerminalOut--) как экземпляр класса [OutputConsoleTerminal](https://reference.aspose.com/tex/java/com.aspose.tex/outputconsoleterminal/).
 
-{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Conversion-OutputConsoleTerminal.java" >}}
+{{< gist "aspose-com-gists" "41e7e83784a6856ab3955f319608ef96" "Example-OutputConsoleTerminal.java" >}}
 
-Опять же, это значение параметра по умолчанию, поэтому нет необходимости его указывать. В связи с этим данный раздел служит только демонстрационным целям.
+`OutputConsoleTerminal` — значение этого параметра по умолчанию. Пример явно выбирает его и записывает вывод терминала в консоль во время преобразования. Все четыре примера выполняются без взаимодействия с пользователем; примеры файловой системы и ZIP сохраняют вывод терминала в памяти.
 
 ### Запись вывода терминала в файл
 
 В отличие от терминала ввода, **Aspose.TeX for Java** предоставляет реализацию [IOutputTerminal](https://reference.aspose.com/tex/java/com.aspose.tex/ioutputterminal/), которая позволяет нам записывать вывод терминала в файл в некотором выходном каталоге.
 
-{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Conversion-OutputFileTerminal.java" >}} 
+{{< gist "aspose-com-gists" "41e7e83784a6856ab3955f319608ef96" "Example-OutputFileTerminal.java" >}}
 
-Здесь мы просим движок TeX записать вывод терминала в файл с именем [<job_name>](/tex/{{lang.url-fragment}}net/tex-io/#tex-output).trm, который будет храниться в том же выходном каталоге, который мы указали для остальной части вывода. Но это не обязательно. С таким же успехом мы могли бы передать в конструктор любой другой экземпляр любой реализации [IOutputTerminal](https://reference.aspose.com/tex/java/com.aspose.tex/ioutputterminal/).
+Задайте рабочую папку вывода до создания `OutputFileTerminal`. Он записывает вывод терминала в [<job_name>](/tex/{{lang.url-fragment}}net/tex-io/#tex-output).trm, в этом примере — `hello-world.trm`, в указанной папке. Этот файл терминала отделён от журнала TeX `hello-world.log`. Для записи вывода терминала в другое место передайте конструктору другую реализацию [IOutputWorkingDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/ioutputworkingdirectory/).

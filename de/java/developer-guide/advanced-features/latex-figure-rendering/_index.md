@@ -17,7 +17,9 @@ Es kann vorkommen, dass Sie Inhalte (eine Zeichnung, eine Schrift, einen Plot us
 
 Und wie bei der Formeldarstellung beginnen wir mit einem Beispiel. Hier ist es:
 
-{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Features-PngLaTeXFigureRendering.java" >}}
+Setzen Sie `outputFile` auf einen `java.nio.file.Path` in einem vorhandenen Ordner, beispielsweise `Paths.get(outputDirectory, "text-and-formula.png")` für PNG oder `Paths.get(outputDirectory, "text-and-formula.svg")` für SVG. Importieren Sie die verwendeten Aspose.TeX-Renderer-, Options- und `Size2D`-Klassen sowie `java.awt.Color`, `java.io.ByteArrayOutputStream`, `java.io.OutputStream`, `java.nio.file.Files`, `java.nio.file.Path`, `java.nio.file.Paths`. Die aufrufende Methode muss Ausnahmen behandeln oder deklarieren. Wenden Sie gemäß der [Lizenzierungsanleitung](/tex/{{lang.url-fragment}}java/licensing/) eine Lizenz an, um Evaluierungseinschränkungen zu vermeiden.
+
+{{< gist "aspose-com-gists" "4598064edf58fab0b87d9543a4a88234" "Example-RenderFigureToPNG.java" >}}
 
 Zunächst erstellen wir eine [rendering options](https://reference.aspose.com/tex/java/com.aspose.tex/pngfigurerendereroptions/)-Instanz. Wir tun dies hier zusammen mit der Angabe der Ausgabebildauflösung.
 
@@ -27,19 +29,19 @@ Als nächstes spezifizieren wir die Präambel. Es gibt keine Standard-Präambel 
 \usepackage{pict2e}
 ```
 
-Dann weisen wir den Renderer an, die Ausgabe um 300 % zu skalieren.
+Dann weisen wir den Renderer an, die Ausgabe um 300 % zu skalieren. Die Beispiele setzen außerdem mit `setMargin(5)` einen Rand von 5 Punkten um die Figur. Das PNG-Beispiel verwendet 150 DPI.
 
 Die nächste Option definiert die Hintergrundfarbe. Anders als beim Rendern mathematischer Formeln geben wir keine Vordergrundfarbe an, da wir davon ausgehen, dass die Farben vollständig vom LaTeX-Code gesteuert werden. Tatsächlich gilt dies auch für die Hintergrundfarbe, es handelt sich also lediglich um eine praktische Option.
 
-Die nächste Zeile des Beispiels ergibt wenig Sinn. Es zeigt lediglich, dass Sie die Protokollausgabe an einen Stream weiterleiten können.
+Das Beispiel leitet Rendering-Protokolle mit `setLogStream()` an einen `ByteArrayOutputStream` weiter. Protokoll- und Bildausgabestream werden nach dem Rendern automatisch geschlossen.
 
-Und mit der letzten Option „ShowTerminal“ können Sie das Schreiben der Terminalausgabe in die Konsole umschalten.
+`showTerminal()` steuert die Terminalausgabe in der Konsole. Die Beispiele verwenden `false`; setzen Sie `true`, um die Ausgabe anzuzeigen.
 
-Die Methode, die das Rendern tatsächlich durchführt, ist [FigureRenderer.render()](https://reference.aspose.com/tex/java/com.aspose.tex/figurerenderer/#render-java.lang.String-java.io.OutputStream-com.aspose.tex.FigureRendererOptions-). Es gibt die Größe der Figur in Punkten zurück.
+[FigureRenderer.render()](https://reference.aspose.com/tex/java/com.aspose.tex/figurerenderer/#render-java.lang.String-java.io.OutputStream-com.aspose.tex.FigureRendererOptions-) wird auf einer `PngFigureRenderer`- oder `SvgFigureRenderer`-Instanz aufgerufen und gibt die Figurgröße in Punkten als `Size2D` zurück.
 
-Der Stream, in den das Bild geschrieben werden soll, wird von der Methode als zweites Argument akzeptiert. Als nächstes erstellen wir den Stream.
+Die Methode akzeptiert den Bildausgabestream als zweites Argument. Das Beispiel öffnet ihn in einem try-with-resources-Block, der ihn nach dem Rendern schließt.
 
-Und schließlich rufen wir die Methode „FigureRenderer.render()“ selbst auf und übergeben Optionen als drittes Argument. Als erstes Argument wird der LaTeX-Code der Abbildung übergeben.
+Schließlich rufen wir `render()` auf der Renderer-Instanz auf: Die LaTeX-Figur ist das erste Argument, der Bildausgabestream das zweite und die Rendering-Optionen das dritte.
 
 Die letzten Zeilen des Beispiels geben zwei Artefakte der Figurendarstellung aus – die Größe der Figur und den kurzen Fehlerbericht (falls Fehler vorliegen).
 
@@ -53,7 +55,7 @@ Dies ist der allgemeinste Anwendungsfall für die Funktion **LaTeX-Figurenrender
 
 Auf die gleiche Weise können wir eine LaTeX-Figur in das SVG-Format rendern.
 
-{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Features-SvgLaTeXFigureRendering.java" >}}
+{{< gist "aspose-com-gists" "4598064edf58fab0b87d9543a4a88234" "Example-RenderFigureToSVG.java" >}}
 
 Die Unterschiede sind:
 

@@ -433,20 +433,9 @@ using (Stream stream = File.Open("your-file-name-and-path", FileMode.Create))
 Como você pode ver, a API também é capaz de converter uma equação de LaTeX em um arquivo SVG. E esse foi um exemplo de uso do Aspose.TeX para .Net. Abaixo está o código equivalente para a versão Java.
 
 
-```java
-String equation = "\\begin{equation} (a-b)^2 = a^2-2ab+b^2 \\end{equation}\r\n" +
-		"\\[ \\cos2\\eta = \\cos^2\\eta-\\sin^2\\eta \\]";
-Size2D size = new Size2D.Float();
-com.aspose.tex.PngMathRendererOptions options = new com.aspose.tex.PngMathRendererOptions();
-final OutputStream stream = new FileOutputStream(Helper.getOutputFile(Path.combine(getCurrentPath(), "doc.png")));
-try
-{
-    new com.aspose.tex.PngMathRenderer().render(equation, stream, options, size);
-}
-finally {
-    stream.close();
-}
-```
+Defina `outputFile` como um `java.nio.file.Path` em uma pasta existente, por exemplo `Paths.get(outputDirectory, "equations.png")`. Importe as classes utilizadas de `com.aspose.tex`, `java.awt.Color`, `java.io.ByteArrayOutputStream`, `java.io.OutputStream`, `java.nio.file.Files` e `java.nio.file.Paths`; trate ou declare as exceções. O exemplo renderiza as duas equações a 150 DPI sobre fundo branco, preservando o número da primeira. O método `render()` com três argumentos retorna `Size2D`. Os registros são capturados na memória e os dois fluxos são fechados após a renderização.
+
+{{< gist "aspose-com-gists" "fc74664c51175ac402729283d0450d44" "Example-RenderEquationsToPNG.java" >}}
 
 Você pode encontrar detalhes sobre o uso de opções de renderizador no artigo sobre a renderização de fórmulas de matemática do LaTeX com [Aspose.TeX para .NET](/tex/{{lang.url-fragment}}net/latex-math-formula-rendering/) ou [Aspose.TeX para java](/tex/{{lang.url-fragment}}java/latex-math-formula-rendering/). Mas um deles é importante para nós aqui. Usando esta opção, você pode especificar o preâmbulo do documento LATEX que precisaria obter o resultado desejado. (Daqui em diante, apresentaremos apenas a versão C# do código -fonte.)
 

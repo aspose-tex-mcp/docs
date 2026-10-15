@@ -20,14 +20,18 @@ lastmod: "2026-04-21"
 
 转换为XPS与[转换为栅格图像格式](/tex/{{lang.url-fragment}}java/latex-to-image/)一样简单，除了[SaveOptions](https://reference.aspose.com/tex/java/com.aspose.tex/texoptions/#getSaveOptions--)之外，我们必须使用[XPSDEVICE](https://reference.aspose.com/tex/java/com.aspose.tex.rendering/xpsdevice/) 类的实例。
 
-{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Conversion-LaTeXToXps-Simplest.java" >}}
+将 `inputFile` 设置为 LaTeX 文件（例如 `hello-world.ltx`）的完整路径，将 `outputDirectory` 设置为现有输出文件夹。导入代码片段中使用的 `com.aspose.tex` 和 `com.aspose.tex.rendering` 类。调用方法必须处理或声明异常。请按照[许可指南](/tex/{{lang.url-fragment}}java/licensing/)应用许可证，以避免评估版限制。此示例采用非交互式处理，并关闭输出资源。 对于无需外部文件的输入文件 `hello-world.ltx`，默认输出文件为 `hello-world.xps`。
+
+{{< gist "aspose-com-gists" "1d90376049c44b97cffb85e4ac382a5b" "Example-ConvertLaTeXToXPS-Simplest.java" >}}
 
 ### 编写主输出XPS文件的另一种方法
 
-[XPSDevice](https://reference.aspose.com/tex/java/com.aspose.tex.rendering/XpsDevice#XpsDevice-java.io.OutputStream-)类的另一个构造函数使我们能够以替代方式获取生成的XPS文件。
+[XPSDevice](https://reference.aspose.com/tex/java/com.aspose.tex.rendering/xpsdevice/#XpsDevice-java.io.OutputStream-)类的另一个构造函数使我们能够以替代方式获取生成的XPS文件。
 
-{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Conversion-LaTeXToXps-Alternative.java" >}}
+使用与上文相同的 `inputFile` 和 `outputDirectory` 值。将 `xpsFile` 设置为 `java.nio.file.Path`，例如 `Paths.get(outputDirectory, "any-name.xps")`。除 Aspose.TeX 类外，还需导入 `java.io.OutputStream`、`java.nio.file.Files`、`java.nio.file.Path` 和 `java.nio.file.Paths`。 流决定 XPS 文件的输出位置；辅助文件仍写入 `outputDirectory`。
 
-效果与我们得到[这里](/tex/{{lang.url-fragment}}java/latex-to-pdf/#an-alternative-way-to-write-main-output-pdf-file)相同。
+{{< gist "aspose-com-gists" "1d90376049c44b97cffb85e4ac382a5b" "Example-ConvertLaTeXToXPS-Alternative.java" >}}
+
+效果与我们得到[这里](/tex/{{lang.url-fragment}}java/latex-to-pdf/#编写主输出pdf文件的另一种方法)相同。
 
 **您还可以查看基于 [Aspose.TeX for .NET](https://products.aspose.com/tex/net/) API 构建的免费 LaTeX 到 XPS 转换 [网页应用](https://products.aspose.app/tex/conversion/latex-to-xps)。[此处](https://products.aspose.com/tex/java/) 是 Java 版本页面。**

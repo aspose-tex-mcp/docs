@@ -19,7 +19,9 @@ Wir beginnen mit der Erstellung eines benutzerdefinierten Formats.
 
 Denken Sie daran, dass die Formatdatei ein binärer Speicherauszug des internen Zustands der TeX-Engine ist.
 
-{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-CreateCustomTeXFormatFile.java" >}}
+Setzen Sie `inputDirectory` auf einen Ordner mit `customtex.tex` und dessen Abhängigkeiten und `outputDirectory` auf einen vorhandenen Ausgabeordner. Die Formatquelle muss mit `\dump` enden; dieses Beispiel erstellt dort `customtex.fmt`. Importieren Sie die in den Beispielen verwendeten Aspose.TeX-Klassen sowie für den Textsatz `com.aspose.tex.rendering.XpsDevice`, `java.io.ByteArrayInputStream` und `java.nio.charset.StandardCharsets`. Die aufrufende Methode muss Ausnahmen behandeln oder deklarieren. Wenden Sie eine Lizenz gemäß dem [Lizenzleitfaden](/tex/{{lang.url-fragment}}java/licensing/) an, um Einschränkungen der Evaluierung zu vermeiden.
+
+{{< gist "aspose-com-gists" "d21a098d3848236e0c258661f5bbc0ae" "Example-CreateCustomTeXFormat.java" >}}
 
 Wie Sie sehen, ähnelt der Code dem Code zum Konvertieren einer TeX-Datei. Aber es gibt ein paar Unterschiede.
 
@@ -33,12 +35,14 @@ Und der zweite wesentliche Unterschied ist die Art und Weise, wie wir den Job au
 
 Da wir nun über unser eigenes TeX-Format verfügen, möchten wir eine in diesem Format geschriebene TeX-Datei setzen. Hier ist der Code:
 
-{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-TypesetWithCustomTeXFormat.java" >}}
+Setzen Sie `formatDirectory` auf den Ordner mit der zuvor erstellten Datei `customtex.fmt` und `outputDirectory` auf einen vorhandenen Ausgabeordner. Das Beispiel setzt einen eigenständigen Textstrom in `typeset-with-custom-format.xps`, daher ist kein Eingabearbeitsverzeichnis erforderlich. Legen Sie ein Eingabearbeitsverzeichnis fest, wenn die Haupteingabe Abhängigkeiten wie Bilder hat.
 
-Natürlich müssen wir das Format irgendwie festlegen. Zunächst müssen wir eine Instanz der Klasse [FormatProvider](https://reference.aspose.com/tex/java/com.aspose.tex/formatprovider/) erstellen. Dann verwenden wir im Optionskonstruktor die Konfiguration [TeXConfig.objectTeX()](https://reference.aspose.com/tex/java/com.aspose.tex/TeXConfig#objectTeX--), die unseren Formatanbieter als Argument verwendet und das Format über den „jungfräulichen“ Zustand der Engine lädt.
+{{< gist "aspose-com-gists" "d21a098d3848236e0c258661f5bbc0ae" "Example-TypesetWithCustomTeXFormat.java" >}}
 
-Der Rest des Codes sollte Ihnen bekannt sein. Es nutzt die zuvor in diesem [Leitfaden](/tex/{{lang.url-fragment}}java/conversion/) besprochenen Funktionen.
+Natürlich müssen wir das Format irgendwie festlegen. Zunächst müssen wir eine Instanz der Klasse [FormatProvider](https://reference.aspose.com/tex/java/com.aspose.tex/formatprovider/) erstellen. Dann verwenden wir im Optionskonstruktor die Konfiguration [TeXConfig.objectTeX(FormatProvider)](https://reference.aspose.com/tex/java/com.aspose.tex/texconfig/#objectTeX-com.aspose.tex.FormatProvider-), die unseren Formatanbieter als Argument verwendet und das Format über den „jungfräulichen“ Zustand der Engine lädt.
+
+Beide Beispiele werden ohne Benutzerinteraktion ausgeführt und erfassen die Terminalausgabe im Speicher. Das Textsatzbeispiel schließt nach dem Auftrag den Eingabestrom, gibt das XPS-Gerät frei und schließt das Arbeitsverzeichnis und den Formatanbieter. Diese Funktionen werden zuvor in diesem [Leitfaden](/tex/{{lang.url-fragment}}java/conversion/) erläutert.
 
 ## Textsatz einer TeX-Datei im Plain-TeX-Format
 
-Wenn wir den Formatanbieter aus dem gerade gezeigten Code weglassen, lädt die Engine das Standardformat, das im vierten Sinne [Object TeX](/tex/{{lang.url-fragment}}net/aspose-tex-and-object-tex/) ist. Wenn Sie also eine TeX-Datei im einfachen TeX-Format geschrieben haben, können Sie sie auf diese Weise in jedes unterstützte Zielformat konvertieren.
+Wenn wir `TeXConfig.objectTeX()` ohne Formatanbieter verwenden, lädt die Engine das Standardformat, das im vierten Sinne [Object TeX](/tex/{{lang.url-fragment}}net/aspose-tex-and-object-tex/) ist. Wenn Sie also eine TeX-Datei im einfachen TeX-Format geschrieben haben, können Sie sie auf diese Weise in jedes unterstützte Zielformat konvertieren.

@@ -15,7 +15,9 @@ lastmod: "2026-04-21"
 
 In effetti, il modo più semplice per dimostrare la funzione di rendering della formula di matematica ** Latex è iniziare con l'esempio. Ecco qui:
 
-{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Features-PngLaTeXMathRendering.java" >}}
+Impostare `outputFile` su un `java.nio.file.Path` in una cartella esistente, ad esempio `Paths.get(outputDirectory, "math-formula.png")` per PNG o `Paths.get(outputDirectory, "math-formula.svg")` per SVG. Importare le classi Aspose.TeX del renderer, delle opzioni e `Size2D` utilizzate, oltre a `java.awt.Color`, `java.io.ByteArrayOutputStream`, `java.io.OutputStream`, `java.nio.file.Files`, `java.nio.file.Path`, `java.nio.file.Paths`. Il metodo chiamante deve gestire o dichiarare le eccezioni. Applicare una licenza secondo la [guida alle licenze](/tex/{{lang.url-fragment}}java/licensing/) per evitare le limitazioni della versione di valutazione.
+
+{{< gist "aspose-com-gists" "fc74664c51175ac402729283d0450d44" "Example-RenderMathToPNG.java" >}}
 
 Arriviamo ai dettagli. Prima di tutto, creiamo un'istanza di [rendering options](https://reference.aspose.com/tex/java/com.aspose.tex/pngmathrendereroptions/), simile alla composizione Tex/Latex. Lo facciamo qui contemporaneamente specificando la risoluzione dell'immagine di output.
 
@@ -31,17 +33,17 @@ che fornisce supporto per la formula matematica leggermente più avanzata rispet
 
 Quindi istruiamo il rendering di ridimensionare l'output del 300%.
 
-Le prossime due opzioni definiscono il primo piano e i colori di sfondo. Quelle parti della formula che non sono coperte ("colorate") dall'evidenziazione personalizzata verranno visualizzate nel colore `TextColor`.
+Le due opzioni definiscono i colori di primo piano e sfondo. Le parti della formula senza evidenziazione personalizzata utilizzano il colore impostato con `setTextColor()`.
 
-La riga successiva dell'esempio non ha molto senso. Dimostra solo che è possibile indirizzare l'output del registro su un flusso.
+L'esempio indirizza i log di rendering a un `ByteArrayOutputStream` con `setLogStream()`. I flussi del log e dell'immagine vengono chiusi automaticamente dopo il rendering.
 
-E l'ultima opzione `showterminal` consente di attivare la scrittura dell'output del terminale sulla console.
+`showTerminal()` controlla l'output del terminale sulla console. Gli esempi utilizzano `false`; impostare `true` per visualizzarlo.
 
-Il metodo che esegue effettivamente il rendering è [MathRender.Render()](https://reference.aspose.com/tex/java/com.aspose.tex/mathrenderer/#render-java.lang.String-java.io.OutputStream-com.aspose.tex.MathRendererOptions-). Restituisce le dimensioni della formula in punti.
+[MathRenderer.render()](https://reference.aspose.com/tex/java/com.aspose.tex/mathrenderer/#render-java.lang.String-java.io.OutputStream-com.aspose.tex.MathRendererOptions-) viene chiamato su un'istanza di `PngMathRenderer` o `SvgMathRenderer` e restituisce le dimensioni della formula in punti come `Size2D`.
 
-Il flusso in cui l'immagine deve essere scritta è accettato dal metodo come secondo argomento. Creiamo il flusso dopo.
+Il metodo accetta il flusso di output dell'immagine come secondo argomento. L'esempio lo apre in un blocco try-with-resources, che lo chiude dopo il rendering.
 
-E infine, chiamiamo il metodo `mathrenderer.render()`, passando le opzioni come terzo argomento. Il codice LaTeX della formula viene approvato come primo argomento.
+Infine, chiamiamo `render()` sull'istanza del renderer: la formula LaTeX è il primo argomento, il flusso dell'immagine il secondo e le opzioni di rendering il terzo.
 
 Le ultime righe dell'esempio stampano due artefatti del rendering della formula matematica: le dimensioni della formula e il breve rapporto di errore (nel caso in cui vi fossero errori).
 
@@ -57,7 +59,7 @@ Questo è il caso d'uso più generale per il rendering **Latex Math Formula**.
 
 Allo stesso modo, possiamo rendere una formula matematica in LaTeX al formato SVG.
 
-{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Features-SvgLaTeXMathRendering.java" >}}
+{{< gist "aspose-com-gists" "fc74664c51175ac402729283d0450d44" "Example-RenderMathToSVG.java" >}}
 
 Le differenze sono:
 
