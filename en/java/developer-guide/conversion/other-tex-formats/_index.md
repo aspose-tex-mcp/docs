@@ -19,7 +19,9 @@ We will start with creating a custom format.
 
 Let's remember that the format file is a binary dump of the TeX engine's internal state.
 
-{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-CreateCustomTeXFormatFile.java" >}}
+Set `inputDirectory` to a folder containing `customtex.tex` and its dependencies, and `outputDirectory` to an existing output folder. The format source must end with `\dump`; this example creates `customtex.fmt` in the output folder. Import the Aspose.TeX classes used in the snippets and, for typesetting, `com.aspose.tex.rendering.XpsDevice`, `java.io.ByteArrayInputStream` and `java.nio.charset.StandardCharsets`. The calling method must handle or declare exceptions. Apply a license as described in the [licensing guide](/tex/{{lang.url-fragment}}java/licensing/) to avoid evaluation restrictions.
+
+{{< gist "aspose-com-gists" "d21a098d3848236e0c258661f5bbc0ae" "Example-CreateCustomTeXFormat.java" >}}
 
 As you can see, the code is similar to the code for converting a TeX file. But there are a few differences.
 
@@ -33,12 +35,14 @@ And the second key difference is the way we run the job. This time we use the st
 
 Now that we have our own TeX format, we want to typeset a TeX file written in this format. Here is the code:
 
-{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-TypesetWithCustomTeXFormat.java" >}}
+Set `formatDirectory` to the folder containing the previously created `customtex.fmt`, and `outputDirectory` to an existing output folder. The example typesets a self-contained text stream to `typeset-with-custom-format.xps`, so no input working directory is needed. Set an input working directory when the main input has dependencies, such as images.
 
-Obviously, we have to specify the format somehow. First of all, we need to create an instance of the [FormatProvider](https://reference.aspose.com/tex/java/com.aspose.tex/formatprovider/) class. Then, in the options constructor, we use the [TeXConfig.objectTeX()](https://reference.aspose.com/tex/java/com.aspose.tex/TeXConfig#objectTeX--) configuration, which takes our format provider as an argument and loads the format on top of the "virgin" state of the engine.
+{{< gist "aspose-com-gists" "d21a098d3848236e0c258661f5bbc0ae" "Example-TypesetWithCustomTeXFormat.java" >}}
 
-The rest of the code should be familiar to you. It uses the features discussed earlier in this [guide](/tex/{{lang.url-fragment}}java/conversion/).
+Obviously, we have to specify the format somehow. First of all, we need to create an instance of the [FormatProvider](https://reference.aspose.com/tex/java/com.aspose.tex/formatprovider/) class. Then, in the options constructor, we use the [TeXConfig.objectTeX(FormatProvider)](https://reference.aspose.com/tex/java/com.aspose.tex/texconfig/#objectTeX-com.aspose.tex.FormatProvider-) configuration, which takes our format provider as an argument and loads the format on top of the "virgin" state of the engine.
+
+Both examples use noninteractive execution and capture terminal output in memory. The typesetting example closes the input stream, disposes the XPS device and closes the working directory and format provider after the job. These features are discussed earlier in this [guide](/tex/{{lang.url-fragment}}java/conversion/).
 
 ## Typesetting a TeX file in Plain TeX format
 
-If we throw away the format provider from the code just demonstrated, the engine will load the default format, which is [Object TeX](/tex/{{lang.url-fragment}}net/aspose-tex-and-object-tex/) in its fourth sense. Thus, if you have a TeX file written in Plain TeX format, this way you may convert it to any supported target format.
+If we use `TeXConfig.objectTeX()` without a format provider, the engine will load the default format, which is [Object TeX](/tex/{{lang.url-fragment}}net/aspose-tex-and-object-tex/) in its fourth sense. Thus, if you have a TeX file written in Plain TeX format, this way you may convert it to any supported target format.

@@ -17,7 +17,9 @@ lastmod: "2026-04-21"
 
 Як і у випадку з відтворенням формул, ми почнемо з прикладу. Ось воно:
 
-{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Features-PngLaTeXFigureRendering.java" >}}
+Задайте `outputFile` як `java.nio.file.Path` у наявній папці: наприклад, `Paths.get(outputDirectory, "text-and-formula.png")` для PNG або `Paths.get(outputDirectory, "text-and-formula.svg")` для SVG. Імпортуйте використані класи рендерерів, параметрів і `Size2D` з Aspose.TeX, а також `java.awt.Color`, `java.io.ByteArrayOutputStream`, `java.io.OutputStream`, `java.nio.file.Files`, `java.nio.file.Path`, `java.nio.file.Paths`. Метод, що викликає цей код, має обробляти або оголошувати винятки. Застосуйте ліцензію згідно з [посібником із ліцензування](/tex/{{lang.url-fragment}}java/licensing/), щоб уникнути обмежень ознайомлювальної версії.
+
+{{< gist "aspose-com-gists" "4598064edf58fab0b87d9543a4a88234" "Example-RenderFigureToPNG.java" >}}
 
 Перш за все, ми створюємо екземпляр [параметри візуалізації](https://reference.aspose.com/tex/java/com.aspose.tex/pngfigurerendereroptions/). Ми робимо це тут разом із визначенням роздільної здатності вихідного зображення.
 
@@ -27,19 +29,19 @@ lastmod: "2026-04-21"
 \usepackage{pict2e}
 ```
 
-Потім ми наказуємо рендереру масштабувати вихід на 300%.
+Потім ми наказуємо рендереру масштабувати вихід на 300%. Приклади також задають відступ у 5 пунктів навколо фігури через `setMargin(5)`. У PNG-прикладі використовується роздільна здатність 150 DPI.
 
 Наступний параметр визначає колір фону. На відміну від відтворення математичних формул, ми не вказуємо колір переднього плану, оскільки припускаємо, що кольори повністю контролюються кодом LaTeX. Власне, фоновий колір також, тому це лише зручний варіант.
 
-Наступний рядок прикладу не має особливого сенсу. Це просто демонструє, що ви можете спрямувати вихід журналу в якийсь потік.
+Приклад спрямовує журнал рендерингу в `ByteArrayOutputStream` за допомогою `setLogStream()`. Потоки журналу й зображення автоматично закриваються після рендерингу.
 
-І остання опція `ShowTerminal` дозволяє вам перемикати запис виводу терміналу на консоль.
+`showTerminal()` керує виводом термінала в консоль. У прикладах задано `false`; установіть `true`, щоб показувати вивід.
 
-Метод, який фактично виконує візуалізацію, це [FigureRenderer.render()](https://reference.aspose.com/tex/java/com.aspose.tex/figurerenderer/#render-java.lang.String-java.io.OutputStream-com.aspose.tex.FigureRendererOptions-). Він повертає розмір фігури в пунктах.
+[FigureRenderer.render()](https://reference.aspose.com/tex/java/com.aspose.tex/figurerenderer/#render-java.lang.String-java.io.OutputStream-com.aspose.tex.FigureRendererOptions-) викликається на екземплярі `PngFigureRenderer` або `SvgFigureRenderer` і повертає розміри фігури в пунктах як `Size2D`.
 
-Потік, у який буде записано зображення, приймається методом як другий аргумент. Далі створюємо потік.
+Метод приймає потік виводу зображення другим аргументом. Приклад відкриває його в блоці try-with-resources, який закриває потік після рендерингу.
 
-І, нарешті, ми викликаємо сам метод `FigureRenderer.render()`, передаючи параметри як третій аргумент. Код LaTeX фігури передається як перший аргумент.
+Далі викликається `render()` на екземплярі рендерера: перший аргумент — фігура LaTeX, другий — потік виводу зображення, третій — параметри рендерингу.
 
 Останні рядки прикладу друкують два артефакти відтворення фігури - розмір фігури та короткий звіт про помилку (якщо помилки є).
 
@@ -53,7 +55,7 @@ lastmod: "2026-04-21"
 
 Приблизно так само ми можемо відобразити фігуру LaTeX у форматі SVG.
 
-{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Features-SvgLaTeXFigureRendering.java" >}}
+{{< gist "aspose-com-gists" "4598064edf58fab0b87d9543a4a88234" "Example-RenderFigureToSVG.java" >}}
 
 Відмінності:
 

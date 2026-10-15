@@ -19,7 +19,9 @@ lastmod: "2026-04-21"
 
 フォーマットファイルは、TEXエンジンの内部状態のバイナリダンプであることを覚えておいてください。
 
-{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-CreateCustomTeXFormatFile.java" >}}
+`inputDirectory` に `customtex.tex` とその依存ファイルを含むフォルダーを、`outputDirectory` に既存の出力フォルダーを指定します。形式のソースは `\dump` で終わる必要があり、この例では出力フォルダーに `customtex.fmt` を作成します。例で使用する Aspose.TeX クラスと、組版に必要な `com.aspose.tex.rendering.XpsDevice`、`java.io.ByteArrayInputStream`、`java.nio.charset.StandardCharsets` をインポートします。呼び出し元のメソッドは例外を処理するか宣言する必要があります。評価版の制限を避けるため、[ライセンスガイド](/tex/{{lang.url-fragment}}java/licensing/)に従ってライセンスを適用してください。
+
+{{< gist "aspose-com-gists" "d21a098d3848236e0c258661f5bbc0ae" "Example-CreateCustomTeXFormat.java" >}}
 
 ご覧のとおり、コードはTEXファイルを変換するためのコードに似ています。しかし、いくつかの違いがあります。
 
@@ -33,12 +35,14 @@ lastmod: "2026-04-21"
 
 独自のTex形式ができたので、この形式で記述されたTexファイルを整形したいと考えています。これがコードです：
 
-{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-TypesetWithCustomTeXFormat.java" >}}
+`formatDirectory` に作成済みの `customtex.fmt` を含むフォルダーを、`outputDirectory` に既存の出力フォルダーを指定します。この例は自己完結したテキストストリームを `typeset-with-custom-format.xps` に組版するため、入力作業ディレクトリは不要です。主入力が画像などの依存ファイルを参照する場合は、入力作業ディレクトリを設定します。
 
-明らかに、形式を何らかの形で指定する必要があります。まず、[formatprovider](https://reference.aspose.com/tex/java/com.aspose.tex/formatprovider/) クラスのインスタンスを作成する必要があります。次に、オプションコンストラクターで[texconfig.objecttex()](https://reference.aspose.com/tex/java/com.Aspose.TeX/TeXConfig#objectTeX--)構成を使用します。これは、フォーマットプロバイダーを引数として受け取り、エンジンの「処女」状態の上に形式をロードします。
+{{< gist "aspose-com-gists" "d21a098d3848236e0c258661f5bbc0ae" "Example-TypesetWithCustomTeXFormat.java" >}}
 
-残りのコードはあなたに馴染みがあるはずです。この[ガイド](/tex/{{lang.url-fragment}}java/conversion/)で前述した機能を使用します。
+明らかに、形式を何らかの形で指定する必要があります。まず、[formatprovider](https://reference.aspose.com/tex/java/com.aspose.tex/formatprovider/) クラスのインスタンスを作成する必要があります。次に、オプションコンストラクターで[TeXConfig.objectTeX(FormatProvider)](https://reference.aspose.com/tex/java/com.aspose.tex/texconfig/#objectTeX-com.aspose.tex.FormatProvider-)構成を使用します。これは、フォーマットプロバイダーを引数として受け取り、エンジンの「処女」状態の上に形式をロードします。
+
+両方の例は対話なしで実行され、端末出力をメモリに保存します。組版の例では、ジョブ終了後に入力ストリームを閉じ、XPS デバイスを解放し、作業ディレクトリと形式プロバイダーを閉じます。これらの機能は、この[ガイド](/tex/{{lang.url-fragment}}java/conversion/)で前述しています。
 
 ## Plain Tex形式でTexファイルを植林します
 
-実証されたコードからフォーマットプロバイダーを捨てると、エンジンはデフォルト形式をロードします。これは[オブジェクトTex](/tex/{{lang.url-fragment}}net/aspose-tex-and-object-tex/)である4番目の意味でです。したがって、Plain Tex形式でTexファイルが書かれている場合、この方法では、サポートされているターゲット形式に変換できます。
+形式プロバイダーを指定せずに `TeXConfig.objectTeX()` を使用すると、エンジンはデフォルト形式をロードします。これは[オブジェクトTex](/tex/{{lang.url-fragment}}net/aspose-tex-and-object-tex/)である4番目の意味でです。したがって、Plain Tex形式でTexファイルが書かれている場合、この方法では、サポートされているターゲット形式に変換できます。

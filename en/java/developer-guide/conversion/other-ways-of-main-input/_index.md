@@ -13,19 +13,23 @@ lastmod: "2024-09-20"
 
 ## Providing the main input file to the TeX engine as a stream
 
-Up to this point, we only knew how to pass the [main input file](/tex/{{lang.url-fragment}}net/tex-io/#tex-input) to the TeX engine as a file name, whether fully specified or in short form, whether with an extension or without it. But there's another [constructor](https://reference.aspose.com/tex/java/com.aspose.tex/TeXJob#TeXJob-java.io.InputStream-com.aspose.tex.rendering.Device-com.aspose.tex.TeXOptions-) of the `TeXJob` class, which accepts a stream as the first argument. This is convenient if for some reason we have the main input file in a form other than a file on the disk file system. Here's how we can deal with it:
+Up to this point, we only knew how to pass the [main input file](/tex/{{lang.url-fragment}}net/tex-io/#tex-input) to the TeX engine as a file name, whether fully specified or in short form, whether with an extension or without it. But there's another [constructor](https://reference.aspose.com/tex/java/com.aspose.tex/texjob/#TeXJob-java.io.InputStream-com.aspose.tex.rendering.Device-com.aspose.tex.TeXOptions-) of the `TeXJob` class, which accepts a stream as the first argument. This is convenient if for some reason we have the main input file in a form other than a file on the disk file system. Here's how we can deal with it:
 
-{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Conversion-InputStream.java" >}}
+Set `outputDirectory` to an existing output folder. Import the Aspose.TeX classes used in the snippets, `com.aspose.tex.rendering.XpsDevice`, `com.aspose.tex.rendering.XpsSaveOptions` and, for stream input, `java.io.ByteArrayInputStream` and `java.nio.charset.StandardCharsets`. The calling method must handle or declare exceptions. Apply a license as described in the [licensing guide](/tex/{{lang.url-fragment}}java/licensing/) to avoid evaluation restrictions. The stream example contains a complete LaTeX document, so it needs no input working directory. Streams and devices remain open until the job finishes and are closed or disposed afterward.
 
-Note that all output files will have the name *texput*. That's because the engine can't get any other name anywhere. *texput* is the default job name. See [here](/tex/{{lang.url-fragment}}net/tex-io/#tex-output) and [here](/tex/{{lang.url-fragment}}java/other-options/#how-to-set-the-job-name) for details about job names.
+{{< gist "aspose-com-gists" "889663554934c807ebc90e12d08bc8d0" "Example-StreamInput-LaTeX.java" >}}
+
+When stream input has no explicitly assigned job name, the engine uses the default name *texput*. This example creates `texput.xps` and `texput.log`. Set `options.setJobName(...)` to choose another job name. See [here](/tex/{{lang.url-fragment}}net/tex-io/#tex-output) and [here](/tex/{{lang.url-fragment}}java/other-options/#how-to-set-the-job-name) for details about job names.
 
 ## Entering the main TeX input file from the terminal
 
 There's yet another [constructor](https://reference.aspose.com/tex/java/com.aspose.tex/texjob/#TeXJob-com.aspose.tex.rendering.Device-com.aspose.tex.TeXOptions-)  of the `TeXJob` class, which doesn't allow us to specify the input at all. So what is such a TeX job going to process, you may wonder? This time we will need an input terminal. The TeX engine will ask us to enter the file name from the terminal.
 
+Set `inputDirectory` to a folder containing a complete LaTeX document named `hello-world.ltx`, and `outputDirectory` to an existing output folder. Run this example in a console, enter `hello-world.ltx` at the `**` prompt and press Enter. It creates `hello-world.xps` and writes terminal output to the console. Both examples use `NonstopMode` for processing, but the terminal constructor still needs the initial filename. For unattended execution, provide an `IInputTerminal` implementation or use file/stream input.
+
 Here is the code:
 
-{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Conversion-MainInputTerminal.java" >}}
+{{< gist "aspose-com-gists" "889663554934c807ebc90e12d08bc8d0" "Example-MainInputTerminal.java" >}}
 
 As soon as it is run, the engine sticks, waiting for us to enter the file name (with or without a path, with or without an extension):
 

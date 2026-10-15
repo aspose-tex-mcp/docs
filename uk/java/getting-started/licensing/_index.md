@@ -20,24 +20,24 @@ lastmod: "2025-06-13"
 
 ### Застосуйте ліцензію за допомогою File або Stream Object
 
-Використовуйте метод [License.setLicense](https://reference.aspose.com/tex/java/com.aspose.tex/license/#setLicense-java.lang.String-) , щоб ліцензувати компонент. Найпростіший спосіб встановити ліцензію — помістити файл ліцензії в ту саму теку, що й *aspose.tex.jar*, і вказати назву файлу без шляху, як показано нижче.
+Використовуйте метод [License.setLicense](https://reference.aspose.com/tex/java/com.aspose.tex/license/#setLicense-java.lang.String-), щоб ліцензувати компонент. У наведених нижче прикладах задайте в `licenseFilePath` повний шлях до файлу ліцензії. Метод, що викликає цей код, має обробляти або оголошувати `Exception`.
 
 #### Завантаження ліцензії з файлу
 
-Цей фрагмент коду ініціалізує ліцензію, що зберігається у файлі або вбудованому ресурсі.
+Цей фрагмент коду застосовує ліцензію, що зберігається у файлі.
 
-{{< gist "aspose-com-gists""67385c777283964d328086603f691ac9""Aspose.TeX.Examples-LoadLicenseFromFile.java" >}}
+{{< gist "aspose-com-gists" "2a6bdc66eff2968d36c7580d02721b14" "Example-SetLicenseFromFile.java" >}}
 
 #### Завантаження ліцензії з потокового об’єкта
 
 Ці фрагменти коду ініціалізують ліцензію з потоку.
 
-{{< gist "aspose-com-gists""67385c777283964d328086603f691ac9""Aspose.TeX.Examples-LoadLicenseFromStream.java" >}}
+{{< gist "aspose-com-gists" "2a6bdc66eff2968d36c7580d02721b14" "Example-SetLicenseFromStream.java" >}}
 
 ### Ліцензія з виміром
 
 Aspose.TeX має альтернативний механізм ліцензування під назвою *Metered Licensing*. Якщо клієнт бажає виставляти рахунок на основі використання функцій API, він може застосувати *Metered License*, що насправді так само просто, як застосувати пару криптографічних ключів. Щоб отримати докладнішу інформацію, зверніться до [розділу поширених запитань щодо обмеженого ліцензування](https://purchase.aspose.com/faqs/licensing/metered/).
 
-Відкритий і закритий ключі обмеженої ліцензії можна встановити за допомогою екземпляра класу [*Metered*](https://reference.aspose.com/tex/net/aspose.tex/metered/), як показано нижче: 
+Відкритий і закритий ключі обмеженої ліцензії можна встановити за допомогою екземпляра класу [*Metered*](https://reference.aspose.com/tex/java/com.aspose.tex/metered/), як показано нижче:
 
-{{< gist "aspose-com-gists""67385c777283964d328086603f691ac9""Aspose.TeX.Examples-SetMeteredLicense.java" >}}
+{{< gist "aspose-com-gists" "2a6bdc66eff2968d36c7580d02721b14" "Example-SetMeteredLicense.java" >}}

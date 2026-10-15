@@ -15,7 +15,9 @@ lastmod: "2026-02-27"
 
 実際、**LaTeX 数式** レンダリング機能を示す最も簡単な方法はサンプルから始めることです。こちらがその例です:
 
-{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Features-PngLaTeXMathRendering.java" >}}
+`outputFile` に、既存フォルダー内の `java.nio.file.Path` を設定してください。例：PNG は `Paths.get(outputDirectory, "math-formula.png")`、SVG は `Paths.get(outputDirectory, "math-formula.svg")`。使用する Aspose.TeX のレンダラー、オプション、`Size2D` のクラスと `java.awt.Color`, `java.io.ByteArrayOutputStream`, `java.io.OutputStream`, `java.nio.file.Files`, `java.nio.file.Path`, `java.nio.file.Paths` をインポートします。呼び出し元のメソッドでは例外を処理するか、スローする例外として宣言してください。評価版の制限を避けるには、[ライセンスガイド](/tex/{{lang.url-fragment}}java/licensing/)に従ってライセンスを適用します。
+
+{{< gist "aspose-com-gists" "fc74664c51175ac402729283d0450d44" "Example-RenderMathToPNG.java" >}}
 
 詳細に入ります。まず、TeX/LaTeX の組版と同様に [rendering options](https://reference.aspose.com/tex/java/com.aspose.tex/pngmathrendereroptions/) インスタンスを作成します。ここでは同時に出力画像の解像度も指定しています。
 
@@ -32,17 +34,17 @@ lastmod: "2026-02-27"
 
 続いて、レンダラに出力を 300% に拡大するよう指示します。
 
-次の 2 つのオプションは前景色と背景色を定義します。カスタムハイライトで「色付け」されていない数式の部分は `TextColor` の色で表示されます。
+2 つのオプションで前景色と背景色を設定します。独自のハイライトを適用していない数式の部分には、`setTextColor()` で設定した色が使われます。
 
-例の次の行はあまり意味がありませんが、ログ出力を任意のストリームにリダイレクトできることを示しています。
+この例では `setLogStream()` を使い、レンダリングのログを `ByteArrayOutputStream` に書き込みます。ログと画像の出力ストリームはレンダリング後に自動的に閉じられます。
 
-最後のオプション `ShowTerminal` はターミナル出力をコンソールに書き込むかどうかを切り替えます。
+`showTerminal()` はコンソールへのターミナル出力を制御します。例では `false` に設定しています。表示するには `true` に設定してください。
 
-実際にレンダリングを行うメソッドは [MathRenderer.render()](https://reference.aspose.com/tex/java/com.aspose.tex/mathrenderer/#render-java.lang.String-java.io.OutputStream-com.aspose.tex.MathRendererOptions-) です。式のサイズ（ポイント単位）を返します。
+[MathRenderer.render()](https://reference.aspose.com/tex/java/com.aspose.tex/mathrenderer/#render-java.lang.String-java.io.OutputStream-com.aspose.tex.MathRendererOptions-) は `PngMathRenderer` または `SvgMathRenderer` のインスタンスで呼び出し、数式の寸法をポイント単位の `Size2D` として返します。
 
-画像を書き込むストリームはメソッドの第 2 引数として受け取ります。次にストリームを作成します。
+メソッドの第 2 引数には画像の出力ストリームを渡します。この例では try-with-resources ブロックで開き、レンダリング後に閉じます。
 
-そして最後に、`MathRenderer.render()` メソッド自体を呼び出し、オプションを第 3 引数として渡します。式の LaTeX コードは第 1 引数として渡されます。
+最後にレンダラーのインスタンスで `render()` を呼び出します。第 1 引数は LaTeX 数式、第 2 引数は画像の出力ストリーム、第 3 引数はレンダリングオプションです。
 
 例の最後の行は、数式レンダリングの成果物である式のサイズと簡易エラーレポート（エラーがあった場合）を出力します。
 
@@ -58,7 +60,7 @@ lastmod: "2026-02-27"
 
 ほぼ同様の手順で、LaTeX 数式を SVG 形式でレンダリングできます。
 
-{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Features-SvgLaTeXMathRendering.java" >}}
+{{< gist "aspose-com-gists" "fc74664c51175ac402729283d0450d44" "Example-RenderMathToSVG.java" >}}
 
 主な違いは以下の通りです:
 

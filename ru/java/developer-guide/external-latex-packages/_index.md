@@ -15,6 +15,8 @@ lastmod: "2024-09-24"
 
 Существует ряд [общих пакетов LaTeX](/tex/{{lang.url-fragment}}net/embedded-packages/), включенных в библиотеку **Aspose.TeX** для Java. Таким образом, вам не нужно заботиться о том, как предоставить эти пакеты движку TeX библиотеки. Но иногда (возможно, часто) вашему файлу LaTeX может потребоваться пакет, выходящий за рамки «изначально» поддерживаемого «пакета» пакетов. В этом случае вы можете попытаться предоставить требуемые входные данные, то есть исходные файлы требуемого пакета, используя метод [setRequiredInputDirectory()](https://reference.aspose.com/tex/java/com.aspose.tex/texoptions/#setRequiredInputDirectory-com.aspose.tex.IInputWorkingDirectory-) экземпляра класса [TeXOptions](https://reference.aspose.com/tex/java/com.aspose.tex/texoptions/). Мы увидим, как это работает, на двух примерах.
 
+Укажите в `inputFile` полный путь к соответствующему документу LaTeX, а в `outputDirectory` — существующую папку вывода. Оба примера преобразования создают PNG с разрешением 150 DPI. Импортируйте классы Aspose.TeX из выбранного примера, `com.aspose.tex.rendering.ImageDevice`, `com.aspose.tex.rendering.PngSaveOptions`, а для ввода из ZIP — `java.io.InputStream` и `java.nio.file.Files`. Обрабатывайте или объявляйте исключения в вызывающем методе. Примените лицензию согласно [руководству по лицензированию](/tex/{{lang.url-fragment}}java/licensing/).
+
 ### Распакованный требуемый ввод (пакет «fancybox»)
 
 Допустим, у нас есть следующий простой файл LaTeX, который называется `required-input-fs.tex` из нашего [примера решения](https://GitHub.com/aspose-tex/Aspose.TeX-for-Java):
@@ -33,7 +35,7 @@ Test: \fbox{
 }
 \par\bigskip
 Test: \fbox{
-  \begin{Beqnarray}[t]
+  \begin{Beqnarray}
   y & = & x^2 \\
   a^2 + 2ab + b^2 & = & (a + b)^2 \\
   \int_0^\infty e^{-ax} dx & = & \frac{1}{a}
@@ -42,19 +44,13 @@ Test: \fbox{
 \end{document}
 ```
 
-В третьей строке мы видим, что для файла требуется пакет «fancybox», который «изначально» не поддерживается. Мы также предполагаем, что у нас есть исходный файл пакета «fancybox». Это простой пакет, поэтому он состоит всего из одного файла. Мы можем разместить этот файл в любом месте нашей файловой системы и указать путь к каталогу следующим образом:
-
-```Java
-options.setRequiredInputDirectory(new InputFileSystemDirectory("path-to-directory-where-fancybox.sty-located"));
-```
-
-После запуска задания TeX с этой опцией (не забудьте настроить другие параметры по мере необходимости) мы получим выходной документ (т. е. изображение PNG).
+Третья строка требует внешний пакет `fancybox`. Укажите в `packagesDirectory` локальную папку с `fancybox.sty` и его зависимостями. Полный пример ниже назначает эту папку параметру `RequiredInputDirectory` и создаёт изображение PNG. Устройство и рабочие папки остаются открытыми до завершения задания, затем освобождаются или закрываются.
 
 ![Выходной документ](/tex/images/java/Conversion-RequiredInputFs.png)
 
 Вот полный исходный код примера:
 
-{{< gist "aspose-com-gists""67385c777283964d328086603f691ac9""Aspose.TeX.Examples-Conversion-RequiredInput-FileSystem.java" >}}
+{{< gist "aspose-com-gists" "be002eee5d3f1f880cf1b77424b754e1" "Example-RequiredInput-FileSystem.java" >}}
 
 ### Заархивированные необходимые данные (пакет pgfplots)
 
@@ -96,28 +92,13 @@ First example is 2D and 3D math expressions plotted side-by-side.
 
 ![макет архива](/tex/images/java/pgfplots-zip-layout.png)
 
-И вот как мы указываем доступ к этим исходным файлам:
-
-```Java
-final Stream zipStream = File.Open("path-to-zip-with-pgfplots-sources"), FileMode.Open))
-try {
-    ...
-    options.setRequiredInputDirectory(new InputZipDirectory(zipStream));
-    ...
-} finally {
-    if (zipStream != null)
-        zipStream.close();
-}
-
-```
-
-После запуска задания TeX с этой опцией мы получим выходной документ:
+Укажите в `packagesZip` значение `java.nio.file.Path`, указывающее на архив с generic- и LaTeX-исходниками пакета. Полный Java-пример ниже открывает его через `Files.newInputStream(...)` и назначает `InputZipDirectory` параметру `RequiredInputDirectory`. Пустой аргумент базового пути выбирает весь архив. Держите ZIP-поток и папку открытыми до завершения задания TeX, затем закройте их. Результат — изображение PNG с двумя графиками.
 
 ![Выходной документ](/tex/images/java/Conversion-RequiredInputZip.png)
 
 Вот полный исходный код примера:
 
-{{< gist "aspose-com-gists""67385c777283964d328086603f691ac9""Aspose.TeX.Examples-Conversion-RequiredInput-Zip.java" >}}
+{{< gist "aspose-com-gists" "be002eee5d3f1f880cf1b77424b754e1" "Example-RequiredInput-Zip.java" >}}
 
 > **_NOTE:_** The result was verified using the `pgfplots` package version 1.18.1. While the version of the `pfg` package included in the **Aspose.TeX** library is 3.1.9a.
 
@@ -126,9 +107,9 @@ try {
 Обычно дистрибутивы LaTeX поставляются с набором шрифтов по умолчанию, которые можно использовать для набора текста. В дополнение к этим шрифтам **Aspose.TeX** предлагает несколько нестандартных пакетов шрифтов, таких как «amsfonts», «eurosym» и «wasysym». Как упоминалось ранее, **Aspose.TeX** также поддерживает использование внешних пакетов, хотя мы в основном фокусировались на пакетах, не включающих шрифты.
 Расширение движка *Object TeX* в **Aspose.TeX** требует карт шрифтов, которые представляют собой текстовые файлы с расширением `.map`, которые определяют физические шрифты, соответствующие внутреннему имени шрифта каждого TeX. Эти карты шрифтов необходимо загрузить в память TeX на этапе инициализации и включить в файлы пакета. Поскольку движку неизвестны названия всех карт шрифтов, он ищет любые файлы с расширением `.map`. Следовательно, реализация интерфейса [IInputWorkingDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/iinputworkingdirectory/), используемого в качестве значения опции [RequiredInputDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/texoptions/#getRequiredInputDirectory--), должна предоставлять способ доступа к коллекциям имен файлов на основе их расширения. В частности, эта реализация также должна реализовывать интерфейс [IFileCollector](https://reference.aspose.com/tex/java/com.aspose.tex/ifilecollector/). Стандартные реализации [InputFileSystemDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/inputfilesystemdirectory/) и [InputZipDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/inputzipdirectory/) уже удовлетворяют этому требованию.
 
-Ниже мы представляем пример пользовательского обязательного входного каталога, который также реализует интерфейс [IFileCollector](https://reference.aspose.com/tex/java/com.aspose.tex/ifilecollector/). Наш основной акцент делается на сборе имен файлов на основе их расширения, и мы намеренно опускаем детали хранения и поиска файлов.
+Следующий пользовательский `RequiredInputDirectory` реализует оба интерфейса и читает явно зарегистрированные локальные файлы. Сохраните его как `RequiredInputDirectory.java` вместе с включёнными импортами. Зарегистрируйте каждый файл через `storeFileName(...)`, назначьте экземпляр через `options.setRequiredInputDirectory(...)` и закройте его после задания. Это плоский реестр: имена файлов должны быть уникальными при запросе без полного пути. Расширения сравниваются без учёта регистра; необязательный путь сбора выбирает папку файловой системы. Зарегистрируйте все необходимые файлы пакета, карты шрифтов, метрики и физические файлы шрифтов. Сбор файлов делает карты доступными для обнаружения, но не предоставляет недостающие данные шрифтов.
 
-{{< gist "aspose-com-gists""67385c777283964d328086603f691ac9""Aspose.TeX.Examples-Conversion-RequiredInputDirectory.java" >}}
+{{< gist "aspose-com-gists" "be002eee5d3f1f880cf1b77424b754e1" "Example-RequiredInputDirectory.java" >}}
 
 ### Ограничения
 

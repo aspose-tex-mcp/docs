@@ -19,7 +19,9 @@ Comenzaremos creando un formato personalizado.
 
 Recordemos que el archivo de formato es un volcado binario del estado interno del motor TeX.
 
-{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-CreateCustomTeXFormatFile.java" >}}
+Establezca `inputDirectory` en una carpeta que contenga `customtex.tex` y sus dependencias, y `outputDirectory` en una carpeta de salida existente. El archivo fuente del formato debe terminar con `\dump`; este ejemplo crea allí `customtex.fmt`. Importe las clases de Aspose.TeX utilizadas en los ejemplos y, para la composición, `com.aspose.tex.rendering.XpsDevice`, `java.io.ByteArrayInputStream` y `java.nio.charset.StandardCharsets`. El método que llama al ejemplo debe gestionar o declarar las excepciones. Aplique una licencia según la [guía de licencias](/tex/{{lang.url-fragment}}java/licensing/) para evitar las restricciones de evaluación.
+
+{{< gist "aspose-com-gists" "d21a098d3848236e0c258661f5bbc0ae" "Example-CreateCustomTeXFormat.java" >}}
 
 Como puede ver, el código es similar al código para convertir un archivo TeX. Pero hay algunas diferencias.
 
@@ -33,12 +35,14 @@ Y la segunda diferencia clave es la forma en que ejecutamos el trabajo. En esta 
 
 Ahora que tenemos nuestro propio formato TeX, queremos componer un archivo TeX escrito en este formato. Aquí está el código:
 
-{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-TypesetWithCustomTeXFormat.java" >}}
+Establezca `formatDirectory` en la carpeta que contiene el archivo `customtex.fmt` creado anteriormente, y `outputDirectory` en una carpeta de salida existente. El ejemplo compone un flujo de texto autónomo en `typeset-with-custom-format.xps`, por lo que no necesita un directorio de trabajo de entrada. Establezca uno cuando la entrada principal tenga dependencias, como imágenes.
 
-Obviamente, tenemos que especificar el formato de alguna manera. En primer lugar, necesitamos crear una instancia de la clase [FormatProvider](https://reference.aspose.com/tex/java/com.aspose.tex/formatprovider/) . Luego, en el constructor de opciones, usamos la configuración [TeXConfig.objectTeX()](https://reference.aspose.com/tex/java/com.aspose.tex/TeXConfig#objectTeX--), que toma nuestro proveedor de formato como argumento y carga el formato encima del estado "virgen" del motor.
+{{< gist "aspose-com-gists" "d21a098d3848236e0c258661f5bbc0ae" "Example-TypesetWithCustomTeXFormat.java" >}}
 
-El resto del código debería resultarle familiar. Utiliza las características analizadas anteriormente en esta [guía](/tex/{{lang.url-fragment}}java/conversion/).
+Obviamente, tenemos que especificar el formato de alguna manera. En primer lugar, necesitamos crear una instancia de la clase [FormatProvider](https://reference.aspose.com/tex/java/com.aspose.tex/formatprovider/) . Luego, en el constructor de opciones, usamos la configuración [TeXConfig.objectTeX(FormatProvider)](https://reference.aspose.com/tex/java/com.aspose.tex/texconfig/#objectTeX-com.aspose.tex.FormatProvider-), que toma nuestro proveedor de formato como argumento y carga el formato encima del estado "virgen" del motor.
+
+Ambos ejemplos se ejecutan sin interacción y capturan la salida del terminal en memoria. Tras el trabajo, el ejemplo de composición cierra el flujo de entrada, libera el dispositivo XPS y cierra el directorio de trabajo y el proveedor de formato. Estas funciones se explican anteriormente en esta [guía](/tex/{{lang.url-fragment}}java/conversion/).
 
 ## Composición tipográfica de un archivo TeX en formato Plain TeX
 
-Si descartamos el proveedor de formato del código que acabamos de demostrar, el motor cargará el formato predeterminado, que es [Object TeX](/tex/{{lang.url-fragment}}net/aspose-tex-and-object-tex/) en su cuarto sentido. Por lo tanto, si tiene un archivo TeX escrito en formato Plain TeX, de esta manera puede convertirlo a cualquier formato de destino compatible.
+Si utilizamos `TeXConfig.objectTeX()` sin un proveedor de formato, el motor cargará el formato predeterminado, que es [Object TeX](/tex/{{lang.url-fragment}}net/aspose-tex-and-object-tex/) en su cuarto sentido. Por lo tanto, si tiene un archivo TeX escrito en formato Plain TeX, de esta manera puede convertirlo a cualquier formato de destino compatible.

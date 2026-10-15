@@ -434,20 +434,9 @@ using (Stream stream = File.Open("your-file-name-and-path", FileMode.Create))
 Comme vous pouvez le constater, l'API est également capable de convertir une équation LaTeX en fichier SVG. Et c'était un exemple d'utilisation d'Aspose.TeX pour .NET. Vous trouverez ci-dessous le code équivalent pour la version Java.
 
 
-```java
-String equation = "\\begin{equation} (a-b)^2 = a^2-2ab+b^2 \\end{equation}\r\n" +
-		"\\[ \\cos2\\eta = \\cos^2\\eta-\\sin^2\\eta \\]";
-Size2D size = new Size2D.Float();
-com.aspose.tex.PngMathRendererOptions options = new com.aspose.tex.PngMathRendererOptions();
-final OutputStream stream = new FileOutputStream(Helper.getOutputFile(Path.combine(getCurrentPath(), "doc.png")));
-try
-{
-    new com.aspose.tex.PngMathRenderer().render(equation, stream, options, size);
-}
-finally {
-    stream.close();
-}
-```
+Définissez `outputFile` comme un `java.nio.file.Path` dans un dossier existant, par exemple `Paths.get(outputDirectory, "equations.png")`. Importez les classes utilisées de `com.aspose.tex`, `java.awt.Color`, `java.io.ByteArrayOutputStream`, `java.io.OutputStream`, `java.nio.file.Files` et `java.nio.file.Paths` ; gérez ou déclarez les exceptions. Cet exemple rend les deux équations à 150 DPI sur fond blanc en conservant le numéro de la première. La méthode `render()` à trois arguments renvoie `Size2D`. Les journaux sont capturés en mémoire et les deux flux sont fermés après le rendu.
+
+{{< gist "aspose-com-gists" "fc74664c51175ac402729283d0450d44" "Example-RenderEquationsToPNG.java" >}}
 
 Vous pouvez trouver des détails sur l'utilisation des options du moteur de rendu dans l'article sur le rendu des formules mathématiques LaTeX avec [Aspose.TeX pour .NET](/tex/{{lang.url-fragment}}net/latex-math-formula-rendering/) ou [Aspose.TeX pour Java](/tex/{{lang.url-fragment}}java/latex-math-formula-rendering/). Mais l’un d’eux est important pour nous ici. En utilisant cette option, vous pouvez spécifier le préambule du document LaTeX dont vous auriez besoin pour obtenir le résultat souhaité. (Ci-après, nous présenterons uniquement la version C# du code source.)
 

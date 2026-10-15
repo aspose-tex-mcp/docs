@@ -15,7 +15,9 @@ lastmod: "2024-09-20"
 
 In fact, the easiest way to demonstrate the **LaTeX math formula** rendering feature is to start with the example. Here it is:
 
-{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Features-PngLaTeXMathRendering.java" >}}
+Set `outputFile` to a `java.nio.file.Path` in an existing folder, for example `Paths.get(outputDirectory, "math-formula.png")` for PNG or `Paths.get(outputDirectory, "math-formula.svg")` for SVG. Import the Aspose.TeX renderer, options and `Size2D` classes used in the snippet, plus `java.awt.Color`, `java.io.ByteArrayOutputStream`, `java.io.OutputStream`, `java.nio.file.Files`, `java.nio.file.Path`, and `java.nio.file.Paths`. The calling method must handle or declare exceptions. Apply a license as described in the [licensing guide](/tex/{{lang.url-fragment}}java/licensing/) to avoid evaluation restrictions.
+
+{{< gist "aspose-com-gists" "fc74664c51175ac402729283d0450d44" "Example-RenderMathToPNG.java" >}}
 
 Let's get to the details. First of all, we create a [rendering options](https://reference.aspose.com/tex/java/com.aspose.tex/pngmathrendereroptions/) instance, similar to the TeX/LaTeX typesetting. We do it here simultaneously specifying the output image resolution.
 
@@ -32,17 +34,17 @@ which provides slightly more advanced math formula support than basic LaTeX. You
 
 Then we instruct the renderer to scale the output by 300%.
 
-Next two options define the foreground and background colors. Those parts of the formula that are not covered ("colored") by the custom highlighting will be displayed in the `TextColor` color.
+Next two options define the foreground and background colors. Those parts of the formula that are not covered ("colored") by the custom highlighting will be displayed in the color set by `setTextColor()`.
 
-The next line of the example doesn't make much sense. It just demonstrates that you can direct the log output to some stream.
+The example directs rendering logs to a `ByteArrayOutputStream` using `setLogStream()`. The log and image output streams are closed automatically after rendering.
 
-And the last option `ShowTerminal` allows you to toggle writing the terminal output to the console.
+The `showTerminal()` option controls terminal output on the console. The examples set it to `false`; set it to `true` to display terminal output.
 
-The method that actually performs the rendering is [MathRenderer.render()](https://reference.aspose.com/tex/java/com.aspose.tex/mathrenderer/#render-java.lang.String-java.io.OutputStream-com.aspose.tex.MathRendererOptions-). It returns the size of the formula in points.
+The method that actually performs the rendering is [MathRenderer.render()](https://reference.aspose.com/tex/java/com.aspose.tex/mathrenderer/#render-java.lang.String-java.io.OutputStream-com.aspose.tex.MathRendererOptions-), called on a `PngMathRenderer` or `SvgMathRenderer` instance. It returns a `Size2D` with the formula dimensions in points.
 
-The stream where the image is to be written is accepted by the method as the second argument. We create the stream next.
+The method accepts the image output stream as its second argument. The example opens this stream in a try-with-resources block so it is closed after rendering.
 
-And finally, we call the `MathRenderer.render()` method itself, passing options as the third argument. The LaTeX code of the formula is passed as the first argument.
+Finally, we call `render()` on the renderer instance, passing the LaTeX formula as the first argument, the image output stream as the second, and the rendering options as the third.
 
 The last lines of the example print two artifacts of math formula rendering - the size of the formula and the brief error report (in case there were errors).
 
@@ -58,7 +60,7 @@ This is the most general use case for **LaTeX math formula** rendering.
 
 In much the same way, we can render a LaTeX math formula to SVG format.
 
-{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Features-SvgLaTeXMathRendering.java" >}}
+{{< gist "aspose-com-gists" "fc74664c51175ac402729283d0450d44" "Example-RenderMathToSVG.java" >}}
 
 The differences are:
 

@@ -19,7 +19,9 @@ Inizieremo con la creazione di un formato personalizzato.
 
 Ricordiamo che il file di formato è una dump binaria dello stato interno del motore Tex.
 
-{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-CreateCustomTeXFormatFile.java" >}}
+Impostare `inputDirectory` su una cartella contenente `customtex.tex` e le sue dipendenze e `outputDirectory` su una cartella di output esistente. Il sorgente del formato deve terminare con `\dump`; l’esempio crea qui `customtex.fmt`. Importare le classi Aspose.TeX utilizzate negli esempi e, per la composizione, `com.aspose.tex.rendering.XpsDevice`, `java.io.ByteArrayInputStream` e `java.nio.charset.StandardCharsets`. Il metodo chiamante deve gestire o dichiarare le eccezioni. Applicare una licenza come descritto nella [guida alle licenze](/tex/{{lang.url-fragment}}java/licensing/) per evitare le limitazioni della versione di valutazione.
+
+{{< gist "aspose-com-gists" "d21a098d3848236e0c258661f5bbc0ae" "Example-CreateCustomTeXFormat.java" >}}
 
 Come puoi vedere, il codice è simile al codice per la conversione di un file Tex. Ma ci sono alcune differenze.
 
@@ -33,12 +35,14 @@ E la seconda differenza chiave è il modo in cui gestiamo il lavoro. Questa volt
 
 Ora che abbiamo il nostro formato tex, vogliamo scrivere un file Tex scritto in questo formato. Ecco il codice:
 
-{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-TypesetWithCustomTeXFormat.java" >}}
+Impostare `formatDirectory` sulla cartella contenente il file `customtex.fmt` creato in precedenza e `outputDirectory` su una cartella di output esistente. L’esempio compone un flusso di testo autonomo in `typeset-with-custom-format.xps`, quindi non richiede una directory di lavoro di input. Impostarla se l’input principale ha dipendenze, come immagini.
 
-Ovviamente, dobbiamo in qualche modo specificare il formato. Prima di tutto, dobbiamo creare un'istanza della classe [FormatProvider](https://reference.aspose.com/tex/java/com.aspose.tex/formatprovider/) . Quindi, nel costruttore di opzioni, utilizziamo la configurazione [TexConfig.objectx()](https://reference.aspose.com/tex/java/com.aspose.tex/TeXConfig#objectTeX--), che prende il nostro fornitore di formato come argomento e carica il formato in cima allo stato "vergine" del motore.
+{{< gist "aspose-com-gists" "d21a098d3848236e0c258661f5bbc0ae" "Example-TypesetWithCustomTeXFormat.java" >}}
 
-Il resto del codice dovrebbe essere familiare a te. Utilizza le funzionalità discusse in precedenza in questa [guida](/tex/{{lang.url-fragment}}java/conversion/).
+Ovviamente, dobbiamo in qualche modo specificare il formato. Prima di tutto, dobbiamo creare un'istanza della classe [FormatProvider](https://reference.aspose.com/tex/java/com.aspose.tex/formatprovider/) . Quindi, nel costruttore di opzioni, utilizziamo la configurazione [TeXConfig.objectTeX(FormatProvider)](https://reference.aspose.com/tex/java/com.aspose.tex/texconfig/#objectTeX-com.aspose.tex.FormatProvider-), che prende il nostro fornitore di formato come argomento e carica il formato in cima allo stato "vergine" del motore.
+
+Entrambi gli esempi vengono eseguiti senza interazione e acquisiscono l’output del terminale in memoria. Dopo il lavoro, l’esempio di composizione chiude il flusso di input, rilascia il dispositivo XPS e chiude la directory di lavoro e il provider del formato. Queste funzionalità sono illustrate in precedenza in questa [guida](/tex/{{lang.url-fragment}}java/conversion/).
 
 ## Testa di un file tex in un formato Tex semplice
 
-Se gettiamo via il provider di formato dal codice appena dimostrato, il motore caricherà il formato predefinito, che è [Object Tex](/tex/{{lang.url-fragment}}net/aspose-tex-and-object-tex/) nel suo quarto senso. Pertanto, se hai un file Tex scritto in un semplice formato Tex, in questo modo puoi convertirlo in qualsiasi formato target supportato.
+Se utilizziamo `TeXConfig.objectTeX()` senza un provider di formato, il motore caricherà il formato predefinito, che è [Object Tex](/tex/{{lang.url-fragment}}net/aspose-tex-and-object-tex/) nel suo quarto senso. Pertanto, se hai un file Tex scritto in un semplice formato Tex, in questo modo puoi convertirlo in qualsiasi formato target supportato.

@@ -20,24 +20,24 @@ Si vous souhaitez essayer Aspose.TeX sans limitations d'évaluation, demandez un
 
 ### Appliquer la licence à l'aide d'un objet fichier ou flux
 
-Utilisez la méthode [License.setLicense](https://reference.aspose.com/tex/java/com.aspose.tex/license/#setLicense-java.lang.String-)  pour obtenir une licence pour le composant. Le moyen le plus simple de définir une licence consiste à placer le fichier de licence dans le même dossier que *aspose.tex.jar* et à spécifier le nom du fichier, sans chemin, comme indiqué ci-dessous.
+Utilisez la méthode [License.setLicense](https://reference.aspose.com/tex/java/com.aspose.tex/license/#setLicense-java.lang.String-) pour appliquer une licence au composant. Dans les exemples ci-dessous, définissez `licenseFilePath` sur le chemin complet de votre fichier de licence. La méthode appelante doit gérer ou déclarer `Exception`.
 
 #### Chargement d'une licence à partir d'un fichier
 
-Cet extrait de code initialise une licence stockée dans un fichier ou dans une ressource embarquée.
+Cet extrait de code applique une licence stockée dans un fichier.
 
-{{< gist "aspose-com-gists""67385c777283964d328086603f691ac9""Aspose.TeX.Examples-LoadLicenseFromFile.java" >}}
+{{< gist "aspose-com-gists" "2a6bdc66eff2968d36c7580d02721b14" "Example-SetLicenseFromFile.java" >}}
 
 #### Chargement d'une licence à partir d'un objet Stream
 
 Ces extraits de code initialisent la licence à partir du flux.
 
-{{< gist "aspose-com-gists""67385c777283964d328086603f691ac9""Aspose.TeX.Examples-LoadLicenseFromStream.java" >}}
+{{< gist "aspose-com-gists" "2a6bdc66eff2968d36c7580d02721b14" "Example-SetLicenseFromStream.java" >}}
 
 ### Licence mesurée
 
 Aspose.TeX dispose d'un mécanisme de licence alternatif appelé *Metered Licensing*. Si un client souhaite être facturé en fonction de l'utilisation des fonctionnalités de l'API, il peut appliquer une *Licence mesurée*, ce qui est en fait aussi simple que d'appliquer une paire de clés cryptographiques. Pour plus de détails, veuillez vous référer à la [Section FAQ sur les licences mesurées](https://purchase.aspose.com/faqs/licensing/metered/).
 
-Les clés publiques et privées d'une licence mesurée peuvent être définies à l'aide d'une instance de la classe [*Metered*](https://reference.aspose.com/tex/net/aspose.tex/metered/), comme indiqué ci-dessous : 
+Les clés publiques et privées d'une licence mesurée peuvent être définies à l'aide d'une instance de la classe [*Metered*](https://reference.aspose.com/tex/java/com.aspose.tex/metered/), comme indiqué ci-dessous :
 
-{{< gist "aspose-com-gists""67385c777283964d328086603f691ac9""Aspose.TeX.Examples-SetMeteredLicense.java" >}}
+{{< gist "aspose-com-gists" "2a6bdc66eff2968d36c7580d02721b14" "Example-SetMeteredLicense.java" >}}

@@ -17,7 +17,9 @@ lastmod: "2026-02-27"
 
 正如公式渲染一样，我们将从一个示例开始。示例如下：
 
-{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Features-PngLaTeXFigureRendering.java" >}}
+将 `outputFile` 设置为现有文件夹中的 `java.nio.file.Path`，例如 PNG 使用 `Paths.get(outputDirectory, "text-and-formula.png")`，SVG 使用 `Paths.get(outputDirectory, "text-and-formula.svg")`。导入使用的 Aspose.TeX 渲染器、选项和 `Size2D` 类，以及 `java.awt.Color`, `java.io.ByteArrayOutputStream`, `java.io.OutputStream`, `java.nio.file.Files`, `java.nio.file.Path`, `java.nio.file.Paths`。调用方法必须处理或声明异常。请按照[许可指南](/tex/{{lang.url-fragment}}java/licensing/)应用许可证，以避免评估版限制。
+
+{{< gist "aspose-com-gists" "4598064edf58fab0b87d9543a4a88234" "Example-RenderFigureToPNG.java" >}}
 
 首先，我们创建一个 [渲染选项](https://reference.aspose.com/tex/java/com.aspose.tex/pngfigurerendereroptions/) 实例。在这里同时指定输出图像的分辨率。
 
@@ -27,19 +29,19 @@ lastmod: "2026-02-27"
 \usepackage{pict2e}
 ```
 
-然后，我们指示渲染器将输出按 300% 缩放。
+然后，我们指示渲染器将输出按 300% 缩放。 示例还通过 `setMargin(5)` 在图形周围设置 5 点的边距。PNG 示例使用 150 DPI。
 
 下一个选项定义背景颜色。与数学公式渲染不同，我们不指定前景色，因为我们假设颜色完全由 LaTeX 代码控制。事实上，背景色也是如此，这只是一个便利选项。
 
-示例中的下一行并没有太大意义。它仅演示您可以将日志输出定向到某个流。
+示例通过 `setLogStream()` 将渲染日志写入 `ByteArrayOutputStream`。日志和图像输出流在渲染后自动关闭。
 
-最后一个选项 `ShowTerminal` 允许您切换是否将终端输出写入控制台。
+`showTerminal()` 控制是否将终端输出写入控制台。示例设置为 `false`；设置为 `true` 即可显示输出。
 
-实际执行渲染的方法是 [FigureRenderer.render()](https://reference.aspose.com/tex/java/com.aspose.tex/figurerenderer/#render-java.lang.String-java.io.OutputStream-com.aspose.tex.FigureRendererOptions-)。它返回图形的点数大小。
+[FigureRenderer.render()](https://reference.aspose.com/tex/java/com.aspose.tex/figurerenderer/#render-java.lang.String-java.io.OutputStream-com.aspose.tex.FigureRendererOptions-) 在 `PngFigureRenderer` 或 `SvgFigureRenderer` 实例上调用，并以 `Size2D` 返回以点为单位的图形尺寸。
 
-方法的第二个参数接受用于写入图像的流。我们随后创建该流。
+方法的第二个参数是图像输出流。示例在 try-with-resources 块中打开它，并在渲染后关闭。
 
-最后，我们调用 `FigureRenderer.render()` 方法本身，将选项作为第三个参数传入。图形的 LaTeX 代码作为第一个参数传入。
+最后在渲染器实例上调用 `render()`：第一个参数是 LaTeX 图形，第二个参数是图像输出流，第三个参数是渲染选项。
 
 示例的最后几行打印了图形渲染的两个结果——图形大小以及简要的错误报告（如果有错误）。
 
@@ -53,7 +55,7 @@ lastmod: "2026-02-27"
 
 以类似的方式，我们可以将 LaTeX figure 渲染为 SVG 格式。
 
-{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Features-SvgLaTeXFigureRendering.java" >}}
+{{< gist "aspose-com-gists" "4598064edf58fab0b87d9543a4a88234" "Example-RenderFigureToSVG.java" >}}
 
 区别如下：
 

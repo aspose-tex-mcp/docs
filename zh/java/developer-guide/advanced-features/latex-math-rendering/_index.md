@@ -15,7 +15,9 @@ lastmod: "2026-02-27"
 
 事实上，演示 **LaTeX数学公式** 渲染功能的最简单方法是从示例开始。如下所示：
 
-{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Features-PngLaTeXMathRendering.java" >}}
+将 `outputFile` 设置为现有文件夹中的 `java.nio.file.Path`，例如 PNG 使用 `Paths.get(outputDirectory, "math-formula.png")`，SVG 使用 `Paths.get(outputDirectory, "math-formula.svg")`。导入使用的 Aspose.TeX 渲染器、选项和 `Size2D` 类，以及 `java.awt.Color`, `java.io.ByteArrayOutputStream`, `java.io.OutputStream`, `java.nio.file.Files`, `java.nio.file.Path`, `java.nio.file.Paths`。调用方法必须处理或声明异常。请按照[许可指南](/tex/{{lang.url-fragment}}java/licensing/)应用许可证，以避免评估版限制。
+
+{{< gist "aspose-com-gists" "fc74664c51175ac402729283d0450d44" "Example-RenderMathToPNG.java" >}}
 
 让我们进入细节。首先，我们创建一个[渲染选项](https://reference.aspose.com/tex/java/com.aspose.tex/pngmathrendereroptions/)实例，类似于 TeX/LaTeX 排版。我们在此同时指定输出图像的分辨率。
 
@@ -31,17 +33,17 @@ lastmod: "2026-02-27"
 
 然后我们指示渲染器将输出放大 300%。
 
-接下来两个选项定义前景色和背景色。公式中未被自定义高亮覆盖（“着色”）的部分将使用 `TextColor` 颜色显示。
+两个选项设置前景色和背景色。未应用自定义高亮的公式部分使用 `setTextColor()` 设置的颜色。
 
-示例中的下一行并没有太大意义。它仅演示您可以将日志输出定向到某个流。
+示例通过 `setLogStream()` 将渲染日志写入 `ByteArrayOutputStream`。日志和图像输出流在渲染后自动关闭。
 
-最后一个选项 `ShowTerminal` 允许您切换是否将终端输出写入控制台。
+`showTerminal()` 控制是否将终端输出写入控制台。示例设置为 `false`；设置为 `true` 即可显示输出。
 
-实际执行渲染的方法是[MathRenderer.render()](https://reference.aspose.com/tex/java/com.aspose.tex/mathrenderer/#render-java.lang.String-java.io.OutputStream-com.aspose.tex.MathRendererOptions-)。它返回公式的点数大小。
+[MathRenderer.render()](https://reference.aspose.com/tex/java/com.aspose.tex/mathrenderer/#render-java.lang.String-java.io.OutputStream-com.aspose.tex.MathRendererOptions-) 在 `PngMathRenderer` 或 `SvgMathRenderer` 实例上调用，并以 `Size2D` 返回以点为单位的公式尺寸。
 
-图像写入的流作为第二个参数传递给该方法。我们随后创建该流。
+方法的第二个参数是图像输出流。示例在 try-with-resources 块中打开它，并在渲染后关闭。
 
-最后，我们调用 `MathRenderer.render()` 方法本身，将选项作为第三个参数传入。公式的 LaTeX 代码作为第一个参数传入。
+最后在渲染器实例上调用 `render()`：第一个参数是 LaTeX 公式，第二个参数是图像输出流，第三个参数是渲染选项。
 
 示例的最后几行打印了两个渲染产物——公式的大小以及简要的错误报告（如果有错误的话）。
 
@@ -57,7 +59,7 @@ lastmod: "2026-02-27"
 
 以相同的方式，我们可以将 LaTeX 数学公式渲染为 SVG 格式。
 
-{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Features-SvgLaTeXMathRendering.java" >}}
+{{< gist "aspose-com-gists" "fc74664c51175ac402729283d0450d44" "Example-RenderMathToSVG.java" >}}
 
 区别如下：
 

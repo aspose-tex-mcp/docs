@@ -17,7 +17,9 @@ Puede suceder que desee extraer algún contenido (un dibujo, un escrito, una tra
 
 Y al igual que con la representación de fórmulas, comenzaremos con un ejemplo. Aquí lo tienes:
 
-{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Features-PngLaTeXFigureRendering.java" >}}
+Establezca `outputFile` en un `java.nio.file.Path` dentro de una carpeta existente, por ejemplo `Paths.get(outputDirectory, "text-and-formula.png")` para PNG o `Paths.get(outputDirectory, "text-and-formula.svg")` para SVG. Importe las clases de renderizador, opciones y `Size2D` de Aspose.TeX utilizadas, además de `java.awt.Color`, `java.io.ByteArrayOutputStream`, `java.io.OutputStream`, `java.nio.file.Files`, `java.nio.file.Path`, `java.nio.file.Paths`. El método que realiza la llamada debe capturar o declarar las excepciones. Aplique una licencia según la [guía de licencias](/tex/{{lang.url-fragment}}java/licensing/) para evitar las restricciones de evaluación.
+
+{{< gist "aspose-com-gists" "4598064edf58fab0b87d9543a4a88234" "Example-RenderFigureToPNG.java" >}}
 
 En primer lugar, creamos una instancia de [opciones de renderizado](https://reference.aspose.com/tex/java/com.aspose.tex/pngfigurerendereroptions/). Lo hacemos aquí junto con la especificación de la resolución de la imagen de salida.
 
@@ -27,19 +29,19 @@ A continuación, especificamos el preámbulo. No hay un preámbulo predeterminad
 \usepackage{pict2e}
 ```
 
-Luego le indicamos al renderizador que escale la salida en un 300%.
+Luego le indicamos al renderizador que escale la salida en un 300%. Los ejemplos también establecen un margen de 5 puntos con `setMargin(5)` alrededor de la figura. El ejemplo PNG utiliza 150 DPI.
 
 La siguiente opción define el color de fondo. A diferencia de la representación de fórmulas matemáticas, no especificamos un color de primer plano ya que asumimos que los colores están completamente bajo el control del código LaTeX. De hecho, también lo es el color de fondo, por lo que esta es solo una opción conveniente.
 
-La siguiente línea del ejemplo no tiene mucho sentido. Simplemente demuestra que puede dirigir la salida del registro a alguna secuencia.
+El ejemplo dirige los registros de renderización a un `ByteArrayOutputStream` mediante `setLogStream()`. Los flujos del registro y de la imagen se cierran automáticamente después de renderizar.
 
-Y la última opción `ShowTerminal` le permite alternar la escritura de la salida del terminal en la consola.
+`showTerminal()` controla la salida del terminal en la consola. Los ejemplos utilizan `false`; establezca `true` para mostrarla.
 
-El método que realmente realiza el renderizado es [FigureRenderer.render()](https://reference.aspose.com/tex/java/com.aspose.tex/figurerenderer/#render-java.lang.String-java.io.OutputStream-com.aspose.tex.FigureRendererOptions-). Devuelve el tamaño de la figura en puntos.
+[FigureRenderer.render()](https://reference.aspose.com/tex/java/com.aspose.tex/figurerenderer/#render-java.lang.String-java.io.OutputStream-com.aspose.tex.FigureRendererOptions-) se llama en una instancia de `PngFigureRenderer` o `SvgFigureRenderer` y devuelve las dimensiones de la figura en puntos como un `Size2D`.
 
-El método acepta la secuencia donde se escribirá la imagen como segundo argumento. Creamos la secuencia a continuación.
+El método acepta el flujo de salida de la imagen como segundo argumento. El ejemplo lo abre en un bloque try-with-resources, que lo cierra después de renderizar.
 
-Y finalmente, llamamos al método `FigureRenderer.render()`, pasando opciones como tercer argumento. El código LaTeX de la figura se pasa como primer argumento.
+Finalmente, llamamos a `render()` en la instancia del renderizador: la figura LaTeX es el primer argumento, el flujo de la imagen el segundo y las opciones de renderización el tercero.
 
 Las últimas líneas del ejemplo imprimen dos artefactos de la representación de la figura: el tamaño de la figura y el breve informe de errores (en caso de que haya errores).
 
@@ -53,7 +55,7 @@ Este es el caso de uso más general para la función **Representación de figura
 
 De la misma manera, podemos renderizar una figura de LaTeX al formato SVG.
 
-{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Features-SvgLaTeXFigureRendering.java" >}}
+{{< gist "aspose-com-gists" "4598064edf58fab0b87d9543a4a88234" "Example-RenderFigureToSVG.java" >}}
 
 Las diferencias son:
 

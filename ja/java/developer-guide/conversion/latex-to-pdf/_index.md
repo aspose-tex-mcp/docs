@@ -17,7 +17,9 @@ lastmod: "2026-04-21"
 
 LaTexをPDF形式に変換する最も簡単な方法を提供するJavaコードを詳しく見てみましょう。
 
-{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Conversion-LaTeXToPdf-Simplest.java" >}}
+`inputFile` に LaTeX ファイル（例：`hello-world.ltx`）のフルパスを設定し、`outputDirectory` に既存の出力フォルダーを設定してください。スニペットで使用する `com.aspose.tex` と `com.aspose.tex.rendering` のクラスをインポートします。呼び出し元のメソッドでは、例外を処理するか、スローする例外として宣言する必要があります。評価版の制限を避けるには、[ライセンスガイド](/tex/{{lang.url-fragment}}java/licensing/)に従ってライセンスを適用してください。この例では非対話モードで処理し、出力リソースを閉じます。
+
+{{< gist "aspose-com-gists" "a30f406f6b8ace1b7d15c68a1df75c6d" "Example-ConvertLaTeXToPDF-Simplest.java" >}}
 
 したがって、最初に行う必要があることは(後でわかったように、最初にそうではない場合があります)、[Texoptions](https://reference.aspose.com/tex/java/com.aspose.tex/texoptions/)クラスのインスタンスを作成することです。これを行う唯一の静的方法は[consoleappoptions()](https://reference.aspose.com/tex/java/com.aspose.tex/texoptions/#consoleAppOptions-com.Aspose.TeX.TeXConfig-)です。そのため、その名前の意味を悩ませないでください。このメソッドは、[TexConfig](https://reference.aspose.com/tex/java/com.aspose.tex/texconfig/)クラスの[インスタンス](https://reference.aspose.com/tex/java/com.aspose.tex/texconfig/#objectLaTeX--)を取ります。これは[LaTexファイル](/tex/{{lang.url-fragment}}net/latex-io/#latex-file)の変換に正確に適しています。この構成は、オブジェクトTex Engineにオブジェクトラテックス形式をロードし、LaTexファイルを受け入れる準備ができるように指示します。オブジェクトラテックス形式は、[Object Tex](/tex/{{lang.url-fragment}}net/aspose-tex-and-object-tex/#object-tex)特定のプリミティブを使用してページメトリックをセットアップすることを除いて、[LaTex](/tex/{{lang.url-fragment}}net/what-is-latex/)形式にすぎません。
 
@@ -53,13 +55,15 @@ Transcript written on hello-world.log.
 
 [pdfdevice](https://reference.aspose.com/tex/java/com.Aspose.TeX.rendering/PdfDevice#PdfDevice-java.io.OutputStream-)クラスの別のコンストラクターがあります。これにより、結果のPDFファイルを代替方法で取得できます。
 
-{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Conversion-LaTeXToPdf-Alternative.java" >}}
+上記と同じ `inputFile` と `outputDirectory` の値を使用してください。`pdfFile` に `java.nio.file.Path` を設定します（例：`Paths.get(outputDirectory, "any-name.pdf")`）。Aspose.TeX のクラスに加えて、`java.io.OutputStream`、`java.nio.file.Files`、`java.nio.file.Path`、`java.nio.file.Paths` をインポートしてください。
+
+{{< gist "aspose-com-gists" "a30f406f6b8ace1b7d15c68a1df75c6d" "Example-ConvertLaTeXToPDF-Alternative.java" >}}
 
 指定されたディレクトリの *any-name.pdf* ファイルは、メインの出力PDFファイルになります。同時に、[画像出力](/tex/{{lang.url-fragment}}java/latex-to-image/)とは異なり、変換オプションで定義された出力ディレクトリにPDFファイルは見つかりません。例外： *any-name.pdf* は、[outputFilesSystemDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/outputfilesystemdirectory/)を使用して[outputWorkingDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/texoptions/#getOutputWorkingDirectory--)オプションに割り当てられている同じファイルシステムディレクトリに(そのパスで)配置されます。
 
 ## 入力オプションについて
 
-メイン入力ファイルに、基本的なラテックスシステムに含まれておらず、サポートされているパッケージに含まれていないパッケージなどの依存関係が必要な場合は、[rebyputWorkingDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/texoptions/#getOutputWorkingDirectory--)オプションを設定し、そのディレクトリに依存関係を設定し、[rebysputDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/texoptions/#getRequiredInputDirectory--)オプションを設定する必要があります。依存関係は、サブディレクトリで任意に組織される場合があります。タイプセットプロセス、たとえば外部グラフィックファイルに沿って含める独自のファイルがある場合は、それらのファイルが収集される場所へのパスを使用して[inputWorkingDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/texoptions/#getInputWorkingDirectory--)を設定する必要があります。また、入力ディレクトリ内のどこかにメイン入力ファイルを配置し、 `run()`メソッドの相対パスを指定することもできます(または、メイン入力ファイルがルートにある場合はパスをまったく指定しません)。 [ここ](/tex/{{lang.url-fragment}}java/aspose-tex-input/)は、Java **の** Aspose.TeXの入力ディレクトリの概念の詳細であり、実装を提供しています。
+メイン入力ファイルに、基本的なラテックスシステムに含まれておらず、サポートされているパッケージに含まれていないパッケージなどの依存関係が必要な場合は、[rebyputWorkingDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/texoptions/#getOutputWorkingDirectory--)オプションを設定し、そのディレクトリに依存関係を設定し、[rebysputDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/texoptions/#getRequiredInputDirectory--)オプションを設定する必要があります。依存関係は、サブディレクトリで任意に組織される場合があります。タイプセットプロセス、たとえば外部グラフィックファイルに沿って含める独自のファイルがある場合は、それらのファイルが収集される場所へのパスを使用して[inputWorkingDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/texoptions/#getInputWorkingDirectory--)を設定する必要があります。また、入力ディレクトリ内のどこかにメイン入力ファイルを配置し、 相対パスを `TeXJob` コンストラクターに渡すこともできます(または、メイン入力ファイルがルートにある場合はパスをまったく指定しません)。 [ここ](/tex/{{lang.url-fragment}}java/aspose-tex-input/)は、Java **の** Aspose.TeXの入力ディレクトリの概念の詳細であり、実装を提供しています。
 
 他のTEXジョブオプションについて説明します[ここ](/tex/{{lang.url-fragment}}java/other-options/)。
 

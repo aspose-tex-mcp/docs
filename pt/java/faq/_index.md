@@ -32,17 +32,9 @@ lastmod: "2025-06-16"
 
 **A:** É bem simples. Vamos descrevê -lo no exemplo de conversão Tex para PDF! 
 
-```Java
-// Create conversion options for Object LaTeX format on Object TeX engine extension
-TeXOptions options = TeXOptions.consoleAppOptions(TeXConfig.objectLaTeX());
-// Specify the file system working directory for the output
-options.setOutputWorkingDirectory(new OutputFileSystemDirectory(Utils.getOutputDirectory()));
-// Initialize the options
-options.setSaveOptions(new PdfSaveOptions());
+Defina `inputFile` como o caminho completo do arquivo LaTeX e `outputDirectory` como uma pasta de saída existente. Importe as classes Aspose.TeX utilizadas e trate ou declare as exceções no método chamador. O dispositivo PDF e o diretório de saída são liberados ou fechados após a conversão.
 
-// Run the conversion
-new TeXJob(Utils.getInputDirectory() + "hello-world.tex", new PdfDevice(), options).run();
-```
+{{< gist "aspose-com-gists" "a30f406f6b8ace1b7d15c68a1df75c6d" "Example-ConvertLaTeXToPDF-Simplest.java" >}}
 
 Para mais exemplos, visite [Converção](/tex/{{lang.url-fragment}}java/conversion/) Guias.
 <br> <br>

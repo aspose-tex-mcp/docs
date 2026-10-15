@@ -13,6 +13,8 @@ lastmod: "2025-06-13"
 
 Si prega di fare riferimento a **Aspose.TeX per java** [riferimento API](https://reference.aspose.com/tex/java/com.aspose.tex/) per definizioni formali di implementazione I/O.
 
+Gli esempi del file system, ZIP e terminale compongono `hello-world.tex` in XPS. Impostare `inputDirectory` su una cartella con il file TeX e `outputDirectory` su una cartella di output esistente. Per l’output ZIP, `outputZip` deve essere un `java.nio.file.Path` in una cartella esistente. Importare le classi Aspose.TeX utilizzate nell’esempio scelto, `com.aspose.tex.rendering.XpsDevice` e le classi necessarie di `java.io` e `java.nio.file`. Il metodo chiamante deve gestire o dichiarare le eccezioni. Applicare una licenza come descritto nella [guida alle licenze](/tex/{{lang.url-fragment}}java/licensing/) per evitare le limitazioni della versione di valutazione.
+
 ## Il concetto della directory di output
 
 Poiché i primitivi I/O della lingua tex possono solo affrontare i nomi dei file, Aspose.Tex definisce una directory come una mappatura tra nomi e numeri di dati. I BUSI DEI DATI dovrebbero essere file, flussi, array o qualsiasi altra cosa. L'API ci consente di specificare separatamente le directory di lavoro input e output. Fornisce l'interfaccia generale [IoutputworkingDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/ioutputworkingdirectory/) per l'output, che l'utente può implementare per i propri scopi. Fornisce inoltre le proprie implementazioni, che saranno discusse di seguito. L'interfaccia estende [IinputWorkingDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/iinputworkingdirectory/), poiché il motore può prima creare e scrivere un file, quindi riatterlo. Il metodo dell'interfaccia [getouputfile()](https://reference.aspose.com/tex/java/com.aspose.tex/ioutputworkingdirectory/#getOutputFile-java.lang.String-java.lang.String:A-) restituisce il flusso in cui scrivere, al contrario del flusso da leggere restituito da [getFile()](https://reference.aspose.com/tex/java/com.aspose.tex/IInputWorkingDirectory#getFile-java.lang.String-java.lang.String:A-boolean-).
@@ -23,7 +25,7 @@ Come accennato [sopra](/tex/{{lang.url-fragment}}/java/conversion/), il valore p
 
 Ecco come lo imposteremmo:
 
-{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Conversion-OutputFileSystemDirectory.java" >}}
+{{< gist "aspose-com-gists" "41e7e83784a6856ab3955f319608ef96" "Example-OutputFileSystemDirectory.java" >}}
 
 Questo caso d'uso è abbastanza semplice, quindi non ci soffermeremo da molto tempo.
 
@@ -31,9 +33,9 @@ Questo caso d'uso è abbastanza semplice, quindi non ci soffermeremo da molto te
 
 Possiamo anche creare un file (o streaming) e lasciare che il motore TEX lo utilizzi come archivio zip per archiviare i file di output. Ecco qui:
 
-{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Conversion-OutputZipDirectory.java" >}}
+{{< gist "aspose-com-gists" "41e7e83784a6856ab3955f319608ef96" "Example-OutputZipDirectory.java" >}}
 
-Innanzitutto, creiamo un flusso di output per il file zip. Quindi, dopo aver creato le opzioni di conversione, impostiamo l'opzione [OutputWorkingDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/texoptions/#getOutputWorkingDirectory--) per essere un'istanza della classe [OutputzipDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/outputzipdirectory/).
+Innanzitutto, creiamo un flusso di output per il file zip. Quindi, dopo aver creato le opzioni di conversione, impostiamo l'opzione [OutputWorkingDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/texoptions/#getOutputWorkingDirectory--) per essere un'istanza della classe [OutputzipDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/outputzipdirectory/). L’esempio memorizza `hello-world.xps` e `hello-world.log` nell’archivio. Dopo il lavoro, chiamare `finish()` sulla directory di output prima di chiudere il flusso sottostante. Gli esempi mantengono aperti i flussi e le directory di lavoro fino al termine del lavoro, quindi li chiudono.
 
 ## Il concetto del terminale di output
 
@@ -43,14 +45,14 @@ C'è un'altra parte importante dell'uscita --- l'output del terminale. Per quant
 
 Per fare ciò, dobbiamo impostare l'opzione [terminale](https://reference.aspose.com/tex/java/com.aspose.tex/texoptions/#getTerminalOut--) per essere un'istanza della classe [outputConsoleterminal](https://reference.aspose.com/tex/java/com.aspose.tex/outputconsoleterminal/).
 
-{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Conversion-OutputConsoleTerminal.java" >}}
+{{< gist "aspose-com-gists" "41e7e83784a6856ab3955f319608ef96" "Example-OutputConsoleTerminal.java" >}}
 
-Ancora una volta, questo è il valore predefinito dell'opzione, quindi non è necessario specificarlo. Per questo motivo, questa sezione ha solo scopi dimostrativi.
+`OutputConsoleTerminal` è il valore predefinito di questa opzione. L’esempio lo seleziona esplicitamente e scrive l’output del terminale nella console durante la conversione. Tutti e quattro gli esempi vengono eseguiti senza interazione; gli esempi del file system e ZIP acquisiscono l’output del terminale in memoria.
 
 ### Scrivere l'output del terminale in un file
 
 A differenza del terminale di input, **Aspose.TeX per java** fornisce un'implementazione di [IoutPutterminal](https://reference.aspose.com/tex/java/com.aspose.tex/ioutputterminal/), che ci consente di scrivere l'output del terminale in un file in una directory di output.
 
-{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Conversion-OutputFileTerminal.java" >}} 
+{{< gist "aspose-com-gists" "41e7e83784a6856ab3955f319608ef96" "Example-OutputFileTerminal.java" >}}
 
-Qui chiediamo al motore TEX di scrivere l'output del terminale nel file con il nome [<job_name>](/tex/{{lang.url-fragment}}net/tex-io/#tex-output) .trm, che verrà archiviato nella stessa directory di output che abbiamo specificato per il resto dell'output. Ma questo non è necessario. Potremmo anche passare qualsiasi altra istanza di qualsiasi implementazione di [IoutPutterminal](https://reference.aspose.com/tex/java/com.aspose.tex/ioutputterminal/) al costruttore.
+Impostare la directory di lavoro di output prima di creare `OutputFileTerminal`. Scrive l’output del terminale in [<job_name>](/tex/{{lang.url-fragment}}net/tex-io/#tex-output).trm, qui `hello-world.trm`, in tale directory. Questo file del terminale è distinto dalla trascrizione TeX `hello-world.log`. Per scrivere l’output del terminale altrove, passare al costruttore un’altra implementazione di [IOutputWorkingDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/ioutputworkingdirectory/).

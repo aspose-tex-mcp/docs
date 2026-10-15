@@ -66,7 +66,7 @@ Le nuove implementazioni Tex, come PDF Tex, consentono l'uso di `\write18`. In q
 
 In genere, ci sono tre livelli di accessibilità: disabili, abilitati con restrizioni e completamente abilitato.
 
-In **aspose.tex**, esiste un'opzione di lavoro tex chiamata `shellmode`, che può prendere uno dei due possibili valori:`noshellescape` e `shellrestricted`. Il valore `NoshelleScape` indica che la funzione è disabilitata. Quest'ultimo valore significa che qualsiasi comando che richiede l'esecuzione deve essere implementato dall'utente come estensione della classe `eseguibile`. Non entreremo nei dettagli di tali implementazioni qui, ma è importante notare che l'emulazione del comando `Base64` è già implementata in Aspose.TeX ed è inclusa per impostazione predefinita nella proprietà della raccolta` `eseguibili 'dell'istanza di classe` Texoptions'.
+In **aspose.tex**, esiste un'opzione di lavoro tex chiamata `shellmode`, che può prendere uno dei due possibili valori:`noshellescape` e `shellrestricted`. Il valore `NoshelleScape` indica che la funzione è disabilitata. Quest'ultimo valore significa che qualsiasi comando che richiede l'esecuzione deve essere implementato dall'utente come estensione della classe `eseguibile`. Non entreremo nei dettagli di tali implementazioni qui, ma è importante notare che l'emulazione del comando `Base64` è già implementata in Aspose.TeX ed è inclusa per impostazione predefinita nella proprietà della raccolta` `eseguibili 'dell'istanza di classe` Texoptions'. L’emulazione integrata di `base64` viene eseguita all’interno di Aspose.TeX e non richiede un programma Base64 del sistema operativo.
 
 ### Decodifica dati codificati da base64
 
@@ -99,23 +99,24 @@ Come abbiamo notato all'inizio dell'articolo, per includere l'immagine decodific
 \includegraphics[options]{sample-image.png}
 ```
 
-Quindi, il file completo (quasi) LaTeX potrebbe apparire come segue:
+Il seguente esempio illustra la struttura del documento. Sostituire la riga Base64 abbreviata con i dati completi dell’immagine; i punti sono un segnaposto e non possono essere decodificati:
 
 
 ```tex
 \documentclass{article}
+\usepackage{graphicx}
 \begin{filecontents*}[overwrite]{sample-image.64}
 iVBORw0KGgoAAAANSUhEUgAAAPgAAABdCAYAAAH/B5vAAAAAGXRFWHRTb2Z0d2FyZQBBZ......
 \end{filecontents*}
 \begin{document}
-  \write18{base64 -d  sample-image.64 > sample-image.png}
-  \includegraphics[options]{sample-image.png}
+  \immediate\write18{base64 -d sample-image.64 > sample-image.png}
+  \includegraphics[width=\textwidth]{sample-image.png}
 \end{document}
 ```
 
-E il codice Java che utilizza l'API **aspose.tex** è simile a quello che può essere trovato in altri articoli, ad eccezione di specificare l'opzione della modalità shell:
+L’esempio Java converte il documento completo `embedded-base64-image.tex` in PDF. Impostare `inputFile` sul percorso completo del file e `outputDirectory` su una cartella di output esistente. Importare le classi utilizzate di `com.aspose.tex`, `com.aspose.tex.rendering.PdfDevice` e `com.aspose.tex.rendering.PdfSaveOptions`. Gestire o dichiarare le eccezioni e applicare una licenza secondo la [guida alle licenze](/tex/{{lang.url-fragment}}java/licensing/). L’esempio abilita `ShellRestricted` per il comando Base64 integrato, elabora senza interazione e acquisisce l’output del terminale in memoria. Il dispositivo PDF e la directory di output vengono rilasciati o chiusi al termine del processo. La cartella contiene `sample-image.64`, l’immagine decodificata `sample-image.png`, il PDF e il registro TeX:
 
-{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Conversion-EmbeddedBase64EncodedImage.java" >}}
+{{< gist "aspose-com-gists" "e17f869aabed3881c74973f5e875d539" "Example-EmbeddedBase64Image.java" >}}
 
 E ora **il passaggio 5** è completo. Per esempi davvero completi, esplora il nostro [esempio di esempio](https://github.com/aspose-tex/Aspose.TeX-for-Java).
 

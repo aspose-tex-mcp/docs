@@ -417,20 +417,9 @@ using (Stream stream = File.Open("your-file-name-and-path", FileMode.Create))
 
 如你所见，API 同样能够将 LaTeX 方程转换为 SVG 文件。以上示例展示了在 .NET 环境中使用 Aspose.TeX 的方式。下面是等效的 Java 代码。
 
-```java
-String equation = "\\begin{equation} (a-b)^2 = a^2-2ab+b^2 \\end{equation}\r\n" +
-		"\\[ \\cos2\\eta = \\cos^2\\eta-\\sin^2\\eta \\]";
-Size2D size = new Size2D.Float();
-com.aspose.tex.PngMathRendererOptions options = new com.aspose.tex.PngMathRendererOptions();
-final OutputStream stream = new FileOutputStream(Helper.getOutputFile(Path.combine(getCurrentPath(), "doc.png")));
-try
-{
-    new com.aspose.tex.PngMathRenderer().render(equation, stream, options, size);
-}
-finally {
-    stream.close();
-}
-```
+将 `outputFile` 设置为现有文件夹中的 `java.nio.file.Path`，例如 `Paths.get(outputDirectory, "equations.png")`。导入所用的 `com.aspose.tex` 类以及 `java.awt.Color`、`java.io.ByteArrayOutputStream`、`java.io.OutputStream`、`java.nio.file.Files` 和 `java.nio.file.Paths`，并处理或声明异常。示例以 150 DPI 在白色背景上渲染两个公式，保留第一个公式的编号。三个参数的 `render()` 方法返回 `Size2D`。日志保存在内存中，两个流在渲染后关闭。
+
+{{< gist "aspose-com-gists" "fc74664c51175ac402729283d0450d44" "Example-RenderEquationsToPNG.java" >}}
 
 你可以在 [Aspose.TeX for .NET](/tex/{{lang.url-fragment}}net/latex-math-formula-rendering/) 或 [Aspose.TeX for Java](/tex/{{lang.url-fragment}}java/latex-math-formula-rendering/) 的文章中找到有关渲染选项的详细信息。但这里我们关注的是其中的一个重要选项：使用该选项可以指定 LaTeX 文档前言，以获得所需的渲染结果。（此后，我们仅展示 C# 版本的源码。）
 

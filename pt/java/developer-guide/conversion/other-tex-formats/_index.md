@@ -19,7 +19,9 @@ Começaremos com a criação de um formato personalizado.
 
 Lembre -se de que o arquivo de formato é um depósito binário do estado interno do mecanismo Tex.
 
-{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-CreateCustomTeXFormatFile.java" >}}
+Defina `inputDirectory` como uma pasta que contenha `customtex.tex` e suas dependências, e `outputDirectory` como uma pasta de saída existente. O arquivo fonte do formato deve terminar com `\dump`; este exemplo cria `customtex.fmt` nessa pasta. Importe as classes Aspose.TeX usadas nos exemplos e, para a composição, `com.aspose.tex.rendering.XpsDevice`, `java.io.ByteArrayInputStream` e `java.nio.charset.StandardCharsets`. O método chamador deve tratar ou declarar as exceções. Aplique uma licença conforme o [guia de licenciamento](/tex/{{lang.url-fragment}}java/licensing/) para evitar as restrições de avaliação.
+
+{{< gist "aspose-com-gists" "d21a098d3848236e0c258661f5bbc0ae" "Example-CreateCustomTeXFormat.java" >}}
 
 Como você pode ver, o código é semelhante ao código para converter um arquivo tex. Mas existem algumas diferenças.
 
@@ -33,12 +35,14 @@ E a segunda diferença importante é a maneira como executamos o trabalho. Desta
 
 Agora que temos nosso próprio formato Tex, queremos digitar um arquivo tex escrito neste formato. Aqui está o código:
 
-{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-TypesetWithCustomTeXFormat.java" >}}
+Defina `formatDirectory` como a pasta que contém o arquivo `customtex.fmt` criado anteriormente, e `outputDirectory` como uma pasta de saída existente. O exemplo compõe um fluxo de texto independente em `typeset-with-custom-format.xps`, sem precisar de um diretório de trabalho de entrada. Defina um quando a entrada principal tiver dependências, como imagens.
 
-Obviamente, temos que especificar o formato de alguma forma. Primeiro de tudo, precisamos criar uma instância da classe [FormatProvider](https://reference.aspose.com/tex/java/com.aspose.tex/formatprovider/) . Em seguida, no construtor de opções, usamos a configuração [TeXConfig.ObjectIniTeX](https://reference.aspose.com/tex/java/com.aspose.tex/TeXConfig#objectTeX--), que toma nosso provedor de formato como um argumento e carrega o formato no topo do estado "virgem" do motor.
+{{< gist "aspose-com-gists" "d21a098d3848236e0c258661f5bbc0ae" "Example-TypesetWithCustomTeXFormat.java" >}}
 
-O restante do código deve ser familiar para você. Ele usa os recursos discutidos anteriormente neste [guia](/tex/{{lang.url-fragment}}java/conversion/).
+Obviamente, temos que especificar o formato de alguma forma. Primeiro de tudo, precisamos criar uma instância da classe [FormatProvider](https://reference.aspose.com/tex/java/com.aspose.tex/formatprovider/) . Em seguida, no construtor de opções, usamos a configuração [TeXConfig.objectTeX(FormatProvider)](https://reference.aspose.com/tex/java/com.aspose.tex/texconfig/#objectTeX-com.aspose.tex.FormatProvider-), que toma nosso provedor de formato como um argumento e carrega o formato no topo do estado "virgem" do motor.
+
+Ambos os exemplos são executados sem interação e capturam a saída do terminal na memória. Após o trabalho, o exemplo de composição fecha o fluxo de entrada, libera o dispositivo XPS e fecha o diretório de trabalho e o provedor de formato. Esses recursos são explicados anteriormente neste [guia](/tex/{{lang.url-fragment}}java/conversion/).
 
 ## Tipando um arquivo tex no formato PLAin Tex
 
-Se jogarmos fora o provedor de formato do código que acabamos de demonstrar, o motor carregará o formato padrão, que é [objeto tex](/tex/{{lang.url-fragment}}net/aspose-tex-and-object-tex/) em seu quarto sentido. Assim, se você tiver um arquivo tex escrito no formato PLAIN TEX, dessa maneira poderá convertê -lo em qualquer formato de destino suportado.
+Se usarmos `TeXConfig.objectTeX()` sem um provedor de formato, o motor carregará o formato padrão, que é [objeto tex](/tex/{{lang.url-fragment}}net/aspose-tex-and-object-tex/) em seu quarto sentido. Assim, se você tiver um arquivo tex escrito no formato PLAIN TEX, dessa maneira poderá convertê -lo em qualquer formato de destino suportado.

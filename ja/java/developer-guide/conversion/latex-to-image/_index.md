@@ -17,7 +17,9 @@ lastmod: "2026-04-21"
 
 LaTexをPNG形式に変換する最も簡単な方法を提供するJavaコードを詳しく見てみましょう。
 
-{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Conversion-LaTeXToPng-Simplest.java" >}}
+`inputFile` に LaTeX ファイル（例：`hello-world.ltx`）のフルパスを設定し、`outputDirectory` に既存の出力フォルダーを設定してください。スニペットで使用する `com.aspose.tex` と `com.aspose.tex.rendering` のクラスをインポートします。呼び出し元のメソッドでは、例外を処理するか、スローする例外として宣言する必要があります。評価版の制限を避けるには、[ライセンスガイド](/tex/{{lang.url-fragment}}java/licensing/)に従ってライセンスを適用してください。この例では非対話モードで処理し、出力リソースを閉じます。 PNG の例では解像度を 300 DPI に設定します。1 ページの入力ファイル `hello-world.ltx` に対して、自動出力ファイルは選択した形式に応じて `hello-world.png`、`hello-world.jpg`、`hello-world.tif`、`hello-world.bmp`、または `hello-world.svg` になります。
+
+{{< gist "aspose-com-gists" "9d6b3df9df43d8caf00a0d519c504cf5" "Example-ConvertLaTeXToPNG-Simplest.java" >}}
 
 したがって、最初に行う必要があることは(後でわかったように、最初にそうではない場合があります)、[Texoptions](https://reference.aspose.com/tex/java/com.aspose.tex/texoptions/)クラスのインスタンスを作成することです。これを行う唯一の静的方法は[consoleappoptions()](https://reference.aspose.com/tex/java/com.aspose.tex/texoptions/#consoleAppOptions-com.Aspose.TeX.TeXConfig-)です。そのため、その名前の意味を悩ませないでください。このメソッドは、[TexConfig](https://reference.aspose.com/tex/java/com.aspose.tex/texconfig/)クラスの[ObjectLatex()インスタンス](https://reference.aspose.com/tex/java/com.aspose.tex/texconfig/#objectLaTeX--)を取得します。この構成は、オブジェクトTex Engineにオブジェクトラテックス形式をロードし、LaTexファイルを受け入れる準備ができるように指示します。オブジェクトラテックス形式は、実際には[latex](/tex/{{lang.url-fragment}}net/what-is-latex/)形式にすぎませんが、[オブジェクトTex](/tex/{{lang.url-fragment}}net/aspose-tex-and-object-tex/#object-tex)特定のプリミティブを使用してページメトリックをセットアップすることを除きます。
 
@@ -54,13 +56,13 @@ Transcript written on hello-world.log.
 
 画像データをバイト配列の配列として取得する別の方法があり、2番目のディメンションの各配列は別のページの画像データを表します。
 
-{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Conversion-LaTeXToPng-Alternative.java" >}}
+{{< gist "aspose-com-gists" "9d6b3df9df43d8caf00a0d519c504cf5" "Example-ConvertLaTeXToPNG-Alternative.java" >}}
 
-* "page-n.png" *ファイルは、指定する任意のパスに書き込まれます。 [PDF出力](/tex/{{lang.url-fragment}}java/latex-to-pdf/#an-alternative-way-to-write-main-output-pdf-file)とは異なり、それらは出力ディレクトリに書き込まれた出力PNGファイルを複製します。
+手動保存の例では、`java.nio.file.Files` と `java.nio.file.Paths` も必要です。`ImageDevice.getResult()` から取得したページデータを `page-1.png`、`page-2.png` などの名前で保存します。`deviceWritesImages(false)` を設定するため、自動 PNG 出力は無効になり、手動で保存したページが出力ディレクトリに重複して作成されることはありません。これは、ストリームで単一の PDF ドキュメントの出力先を指定する [PDF ストリーム出力](/tex/{{lang.url-fragment}}java/latex-to-pdf/#メイン出力pdfファイルを書き込む代替方法)とは異なります。
 
 ## 入力オプションについて
 
-メイン入力ファイルに、基本的なラテックスシステムに含まれておらず、サポートされているパッケージに含まれていないパッケージなどの依存関係が必要な場合は、[RequiredInputDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/texoptions/#getRequiredInputDirectory--)オプションを設定する必要があります。依存関係は、サブディレクトリで任意に組織される場合があります。タイプセットプロセス、たとえば外部グラフィックファイルに沿って含める独自のファイルがある場合は、それらのファイルが収集される場所へのパスを使用して[inputWorkingDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/texoptions/#getInputWorkingDirectory--)を設定する必要があります。また、入力ディレクトリ内のどこかにメイン入力ファイルを配置し、 `run()`メソッドの相対パスを指定することもできます(または、メイン入力ファイルがルートにある場合はパスをまったく指定しません)。 [ここ](/tex/{{lang.url-fragment}}java/aspose-tex-input/)は、Java **の** Aspose.TeXの入力ディレクトリの概念の詳細であり、実装を提供しています。
+メイン入力ファイルに、基本的なラテックスシステムに含まれておらず、サポートされているパッケージに含まれていないパッケージなどの依存関係が必要な場合は、[RequiredInputDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/texoptions/#getRequiredInputDirectory--)オプションを設定する必要があります。依存関係は、サブディレクトリで任意に組織される場合があります。タイプセットプロセス、たとえば外部グラフィックファイルに沿って含める独自のファイルがある場合は、それらのファイルが収集される場所へのパスを使用して[inputWorkingDirectory](https://reference.aspose.com/tex/java/com.aspose.tex/texoptions/#getInputWorkingDirectory--)を設定する必要があります。また、入力ディレクトリ内のどこかにメイン入力ファイルを配置し、 相対パスを `TeXJob` コンストラクターに渡すこともできます(または、メイン入力ファイルがルートにある場合はパスをまったく指定しません)。 [ここ](/tex/{{lang.url-fragment}}java/aspose-tex-input/)は、Java **の** Aspose.TeXの入力ディレクトリの概念の詳細であり、実装を提供しています。
 
 他のTEXジョブオプションについて説明します[ここ](/tex/{{lang.url-fragment}}java/other-options/)。
 
@@ -70,19 +72,19 @@ Transcript written on hello-world.log.
 
 ## ラテックスをJPGに変換する方法
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-LaTeXToJpeg.cs" >}}
+{{< gist "aspose-com-gists" "9d6b3df9df43d8caf00a0d519c504cf5" "Example-ConvertLaTeXToJPEG.java" >}}
 
 **[.NETのAspose.TeX](https://products.aspose.com/tex/net/)APIに基づいて構築された無料のLaTex-to-JPGコンバージョン[Webアプリ](https://products.aspose.app/tex/conversion/latex-to-jpg)をチェックアウトすることもできます。 [ここ](https://products.aspose.com/tex/java/)はJavaバージョンページです。**
 
 ## ラテックスをTIFFに変換する方法
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-LaTeXToTiff.cs" >}}
+{{< gist "aspose-com-gists" "9d6b3df9df43d8caf00a0d519c504cf5" "Example-ConvertLaTeXToTIFF.java" >}}
 
 **[.netのAspose.TeX](https://products.aspose.com/tex/net/)APIに基づいて構築された無料のラテックス間変換[Webアプリ](https://products.aspose.app/tex/conversion/latex-to-tiff)をチェックアウトすることもできます。 [ここ](https://products.aspose.com/tex/java/)はJavaバージョンページです。**
 
 ## ラテックスをBMPに変換する方法
 
-{{< gist "aspose-com-gists" "76c7e5770ac8b3f6d409f6ec60f02030" "Aspose.TeX.Examples-Conversion-LaTeXToBmp.cs" >}}
+{{< gist "aspose-com-gists" "9d6b3df9df43d8caf00a0d519c504cf5" "Example-ConvertLaTeXToBMP.java" >}}
 
 **[.NETのAspose.TeX](https://products.aspose.com/tex/net/)APIに基づいて構築された無料のラテックスからBMPへの変換[Webアプリ](https://products.aspose.app/tex/conversion/latex-to-bmp)をチェックアウトすることもできます。 [ここ](https://products.aspose.com/tex/java/)はJavaバージョンページです。**
 
@@ -97,6 +99,6 @@ Transcript written on hello-world.log.
 
 SVGへの変換は、[saveoptions](https://reference.aspose.com/tex/java/com.aspose.tex/texoptions/#getSaveOptions--)に加えて、[SVGDevice](https://reference.aspose.com/tex/java/com.Aspose.TeX.rendering/SvgDevice)クラスのインスタンスにデバイスを変更する必要があることを除いて、[ラスター画像形式への変換](/tex/{{lang.url-fragment}}java/latex-to-image/)と同じくらい簡単です。
 
-{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Conversion-LaTeXToSvg-Simplest.java" >}}
+{{< gist "aspose-com-gists" "9d6b3df9df43d8caf00a0d519c504cf5" "Example-ConvertLaTeXToSVG-Simplest.java" >}}
 
 **[.NETのAspose.TeX](https://products.aspose.com/tex/net/)に基づいて構築された無料のラテックスからSVGへの変換[Webアプリ](https://products.aspose.app/tex/conversion/latex-to-svg)をチェックアウトすることもできます。 [ここ](https://products.aspose.com/tex/java/)はJavaバージョンページです。**

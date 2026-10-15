@@ -20,24 +20,24 @@ Se você deseja tentar o Aspose.TeX sem limitações de avaliação, solicite um
 
 ### Aplique a licença usando o arquivo ou o objeto de fluxo
 
-Use o método [License.setLicense](https://reference.aspose.com/tex/java/com.aspose.tex/license/#setLicense-java.lang.String-)  para licenciar o componente. A maneira mais fácil de definir uma licença é colocar o arquivo de licença na mesma pasta que o * aspose.tex.jar * e especificar o nome do arquivo, sem um caminho, como mostrado abaixo.
+Use o método [License.setLicense](https://reference.aspose.com/tex/java/com.aspose.tex/license/#setLicense-java.lang.String-) para licenciar o componente. Nos exemplos abaixo, defina `licenseFilePath` como o caminho completo do arquivo de licença. O método que faz a chamada deve tratar ou declarar `Exception`.
 
 #### Carregando uma licença do arquivo
 
-Este snippet de código inicializa uma licença armazenada em um arquivo ou em um recurso incorporado.
+Este trecho de código aplica uma licença armazenada em um arquivo.
 
-{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-LoadLicenseFromFile.java" >}}
+{{< gist "aspose-com-gists" "2a6bdc66eff2968d36c7580d02721b14" "Example-SetLicenseFromFile.java" >}}
 
 #### Carregando uma licença de um objeto de fluxo
 
 Esses trechos de código inicializam a licença do fluxo.
 
-{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-LoadLicenseFromStream.java" >}}
+{{< gist "aspose-com-gists" "2a6bdc66eff2968d36c7580d02721b14" "Example-SetLicenseFromStream.java" >}}
 
 ### Licença medida
 
 Aspose.TeX possui um mecanismo de licenciamento alternativo chamado *licenciamento medido*. Se um cliente deseja ser cobrado com base no uso dos recursos da API, ele pode aplicar uma *licença medida *, que é realmente tão simples quanto aplicar um par de chaves criptográficas. Para mais detalhes, consulte a [seção de perguntas frequentes de licenciamento medido](https://purchase.aspose.com/faqs/licensing/metered/).
 
-As chaves públicas e privadas de uma licença medida podem ser definidas usando uma instância da classe [*medida*](https://reference.aspose.com/tex/net/aspose.tex/metered/), como mostrado abaixo: 
+As chaves públicas e privadas de uma licença medida podem ser definidas usando uma instância da classe [*medida*](https://reference.aspose.com/tex/java/com.aspose.tex/metered/), como mostrado abaixo:
 
-{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-SetMeteredLicense.java" >}}
+{{< gist "aspose-com-gists" "2a6bdc66eff2968d36c7580d02721b14" "Example-SetMeteredLicense.java" >}}

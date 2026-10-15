@@ -15,7 +15,9 @@ lastmod: "2026-04-21"
 
 De fato, a maneira mais fácil de demonstrar o recurso de renderização **de fórmula de matemática** ** é começar com o exemplo. Aqui está:
 
-{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Features-PngLaTeXMathRendering.java" >}}
+Defina `outputFile` como um `java.nio.file.Path` em uma pasta existente, por exemplo `Paths.get(outputDirectory, "math-formula.png")` para PNG ou `Paths.get(outputDirectory, "math-formula.svg")` para SVG. Importe as classes de renderizador, opções e `Size2D` de Aspose.TeX usadas, além de `java.awt.Color`, `java.io.ByteArrayOutputStream`, `java.io.OutputStream`, `java.nio.file.Files`, `java.nio.file.Path`, `java.nio.file.Paths`. O método que faz a chamada deve tratar ou declarar as exceções. Aplique uma licença conforme o [guia de licenciamento](/tex/{{lang.url-fragment}}java/licensing/) para evitar as restrições de avaliação.
+
+{{< gist "aspose-com-gists" "fc74664c51175ac402729283d0450d44" "Example-RenderMathToPNG.java" >}}
 
 Vamos até os detalhes. Primeiro de tudo, criamos uma instância [de renderização](https://reference.aspose.com/tex/java/com.aspose.tex/pngmathrendereroptions/), semelhante à digitação Tex/LaTex. Fazemos isso aqui especificando simultaneamente a resolução da imagem de saída.
 
@@ -32,17 +34,17 @@ que fornece suporte a fórmula matemática um pouco mais avançado do que o LaTe
 
 Em seguida, instruímos o renderizador a escalar a saída em 300%.
 
-As próximas duas opções definem as cores de primeiro plano e fundo. As partes da fórmula que não são cobertas ("coloridas") pelo destaque personalizado serão exibidas na cor `textColor`.
+As duas opções definem as cores de primeiro plano e fundo. As partes da fórmula sem destaque personalizado usam a cor definida por `setTextColor()`.
 
-A próxima linha do exemplo não faz muito sentido. Ele apenas demonstra que você pode direcionar a saída de log para algum fluxo.
+O exemplo direciona os logs de renderização a um `ByteArrayOutputStream` com `setLogStream()`. Os fluxos do log e da imagem são fechados automaticamente após a renderização.
 
-E a última opção `showterminal` permite alternar a gravação da saída do terminal no console.
+`showTerminal()` controla a saída do terminal no console. Os exemplos usam `false`; defina `true` para exibi-la.
 
-O método que realmente executa a renderização é [MathRenderer.render()](https://reference.aspose.com/tex/java/com.aspose.tex/mathrenderer/#render-java.lang.String-java.io.OutputStream-com.aspose.tex.MathRendererOptions-). Ele retorna o tamanho da fórmula em pontos.
+[MathRenderer.render()](https://reference.aspose.com/tex/java/com.aspose.tex/mathrenderer/#render-java.lang.String-java.io.OutputStream-com.aspose.tex.MathRendererOptions-) é chamado em uma instância de `PngMathRenderer` ou `SvgMathRenderer` e retorna as dimensões da fórmula em pontos como um `Size2D`.
 
-O fluxo em que a imagem deve ser escrito é aceito pelo método como o segundo argumento. Criamos o fluxo a seguir.
+O método aceita o fluxo de saída da imagem como segundo argumento. O exemplo o abre em um bloco try-with-resources, que o fecha após a renderização.
 
-E, finalmente, chamamos o próprio método de `MathRenderer.render()`, passando as opções como o terceiro argumento. O código do LATEX da fórmula é aprovado como o primeiro argumento.
+Por fim, chamamos `render()` na instância do renderizador: a fórmula LaTeX é o primeiro argumento, o fluxo da imagem o segundo e as opções de renderização o terceiro.
 
 As últimas linhas do exemplo imprimem dois artefatos de renderização de fórmula matemática - o tamanho da fórmula e o breve relatório de erro (caso haja erros).
 
@@ -58,7 +60,7 @@ Este é o caso de uso mais geral para **fórmula de matemática de LaTeX** rende
 
 Da mesma maneira, podemos renderizar uma fórmula matemática de LaTeX ao formato SVG.
 
-{{< gist "aspose-com-gists" "67385c777283964d328086603f691ac9" "Aspose.TeX.Examples-Features-SvgLaTeXMathRendering.java" >}}
+{{< gist "aspose-com-gists" "fc74664c51175ac402729283d0450d44" "Example-RenderMathToSVG.java" >}}
 
 As diferenças são:
 
