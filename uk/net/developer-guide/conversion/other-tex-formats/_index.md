@@ -19,7 +19,7 @@ lastmod: "2026-04-22"
 
 Давайте пам’ятаємо, що файл формату є двійковим дампом внутрішнього стану механізму TeX.
 
-{{< gist "aspose-com-gists" "c0eb6cbcfb001b7e6355cafa4611afed" "Example-CreateCustomFormat.cs" >}}
+{{< gist "aspose-com-gists" "deadfd7c29ffe40024a9b6d12f0ed18a" "Example-CreateCustomFormat.cs" >}}
 
 Як бачите, код схожий на код для перетворення файлу TeX. Але є кілька відмінностей.
 
@@ -33,7 +33,7 @@ lastmod: "2026-04-22"
 
 Тепер, коли у нас є власний формат TeX, ми хочемо набрати файл TeX, написаний у цьому форматі. Ось код:
 
-{{< gist "aspose-com-gists" "c0eb6cbcfb001b7e6355cafa4611afed" "Example-TypesetWithCustomFormat.cs" >}}
+{{< gist "aspose-com-gists" "deadfd7c29ffe40024a9b6d12f0ed18a" "Example-TypesetWithCustomFormat.cs" >}}
 
 Вочевидь ми повинні якось визначити формат. Перш за все, нам потрібно створити екземпляр класу [FormatProvider](https://reference.aspose.com/tex/net/aspose.tex.resourceproviders/formatprovider/). Потім у конструкторі параметрів ми використовуємо конфігурацію [TeXConfig.ObjectTeX()](https://reference.aspose.com/tex/net/aspose.tex/texconfig/objecttex/), яка приймає наш провайдер формату як аргумент і завантажує формат поверх «незайманого» стану двигуна.
 

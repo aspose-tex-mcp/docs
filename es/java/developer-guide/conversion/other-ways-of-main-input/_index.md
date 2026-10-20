@@ -17,7 +17,7 @@ Hasta este punto, sólo sabíamos cómo pasar el [archivo de entrada principal](
 
 Establezca `outputDirectory` en una carpeta de salida existente. Importe las clases Aspose.TeX usadas en los ejemplos, `com.aspose.tex.rendering.XpsDevice`, `com.aspose.tex.rendering.XpsSaveOptions` y, para la entrada mediante flujo, `java.io.ByteArrayInputStream` y `java.nio.charset.StandardCharsets`. El método que llama al ejemplo debe gestionar o declarar las excepciones. Aplique una licencia según la [guía de licencias](/tex/{{lang.url-fragment}}java/licensing/) para evitar las restricciones de evaluación. El ejemplo de flujo contiene un documento LaTeX completo, por lo que no necesita un directorio de trabajo de entrada. Los flujos y dispositivos permanecen abiertos hasta que termina el trabajo y después se cierran o liberan.
 
-{{< gist "aspose-com-gists" "889663554934c807ebc90e12d08bc8d0" "Example-StreamInput-LaTeX.java" >}}
+{{< gist "aspose-com-gists" "41e7e83784a6856ab3955f319608ef96" "Example-StreamInput-LaTeX.java" >}}
 
 Cuando la entrada mediante flujo no tiene un nombre de trabajo asignado explícitamente, el motor usa el nombre predeterminado *texput*. Este ejemplo crea `texput.xps` y `texput.log`. Use `options.setJobName(...)` para elegir otro nombre de trabajo. Consulte [aquí](/tex/{{lang.url-fragment}}net/tex-io/#tex-output) y [aquí](/tex/{{lang.url-fragment}}java/other-options/#how-to-set-the-job-name) para obtener detalles sobre los nombres de trabajo.
 
@@ -29,7 +29,7 @@ Establezca `inputDirectory` en una carpeta con un documento LaTeX completo llama
 
 Aquí está el código:
 
-{{< gist "aspose-com-gists" "889663554934c807ebc90e12d08bc8d0" "Example-MainInputTerminal.java" >}}
+{{< gist "aspose-com-gists" "41e7e83784a6856ab3955f319608ef96" "Example-MainInputTerminal.java" >}}
 
 Nada más ejecutarlo el motor se queda esperando a que introduzcamos el nombre del archivo (con o sin ruta, con o sin extensión):
 

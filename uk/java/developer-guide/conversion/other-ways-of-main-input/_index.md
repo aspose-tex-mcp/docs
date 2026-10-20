@@ -17,7 +17,7 @@ lastmod: "2026-04-21"
 
 Укажіть у `outputDirectory` наявну папку виведення. Імпортуйте класи Aspose.TeX із прикладів, `com.aspose.tex.rendering.XpsDevice`, `com.aspose.tex.rendering.XpsSaveOptions`, а для введення з потоку — `java.io.ByteArrayInputStream` і `java.nio.charset.StandardCharsets`. Метод виклику має обробляти або оголошувати винятки. Застосуйте ліцензію згідно з [посібником із ліцензування](/tex/{{lang.url-fragment}}java/licensing/), щоб уникнути обмежень ознайомлювальної версії. Приклад потоку містить повний документ LaTeX, тому робоча папка введення не потрібна. Потоки й пристрої залишаються відкритими до завершення завдання, потім закриваються або звільняються.
 
-{{< gist "aspose-com-gists" "889663554934c807ebc90e12d08bc8d0" "Example-StreamInput-LaTeX.java" >}}
+{{< gist "aspose-com-gists" "41e7e83784a6856ab3955f319608ef96" "Example-StreamInput-LaTeX.java" >}}
 
 Якщо для введення з потоку ім’я завдання не задано явно, механізм використовує ім’я за замовчуванням *texput*. Цей приклад створює `texput.xps` і `texput.log`. Для вибору іншого імені завдання використайте `options.setJobName(...)`. Докладніше про імена завдань див. [тут](/tex/{{lang.url-fragment}}net/tex-io/#tex-output) і [тут](/tex/{{lang.url-fragment}}java/other-options/#how-to-set-the-job-name).
 
@@ -29,7 +29,7 @@ lastmod: "2026-04-21"
 
 Ось код:
 
-{{< gist "aspose-com-gists" "889663554934c807ebc90e12d08bc8d0" "Example-MainInputTerminal.java" >}}
+{{< gist "aspose-com-gists" "41e7e83784a6856ab3955f319608ef96" "Example-MainInputTerminal.java" >}}
 
 Як тільки він запускається, движок зависає, чекаючи, поки ми введемо ім’я файлу (зі шляхом чи без, із розширенням чи без):
 

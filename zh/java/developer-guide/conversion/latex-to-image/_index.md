@@ -19,7 +19,7 @@ lastmod: "2026-04-21"
 
 将 `inputFile` 设置为 LaTeX 文件（例如 `hello-world.ltx`）的完整路径，将 `outputDirectory` 设置为现有输出文件夹。导入代码片段中使用的 `com.aspose.tex` 和 `com.aspose.tex.rendering` 类。调用方法必须处理或声明异常。请按照[许可指南](/tex/{{lang.url-fragment}}java/licensing/)应用许可证，以避免评估版限制。此示例采用非交互式处理，并关闭输出资源。 PNG 示例将分辨率设置为 300 DPI。对于单页输入文件 `hello-world.ltx`，自动输出文件根据所选格式命名为 `hello-world.png`、`hello-world.jpg`、`hello-world.tif`、`hello-world.bmp` 或 `hello-world.svg`。
 
-{{< gist "aspose-com-gists" "9d6b3df9df43d8caf00a0d519c504cf5" "Example-ConvertLaTeXToPNG-Simplest.java" >}}
+{{< gist "aspose-com-gists" "a30f406f6b8ace1b7d15c68a1df75c6d" "Example-ConvertLaTeXToPNG-Simplest.java" >}}
 
 因此，我们需要做的第一件事(有时不是第一件事，正如我们稍后会发现的那样)是创建[Texoptions](https://reference.aspose.com/tex/java/com.aspose.tex/texoptions/)类的实例。这样做的唯一静态方法是[consoleappoptions()](https://reference.aspose.com/tex/java/com.aspose.tex/texoptions/#consoleAppOptions-com.aspose.tex.TeXConfig-)，因此，我们不要理会其名称的含义。该方法将[TexConfig](https://reference.aspose.com/tex/java/com.aspose.tex/texconfig/)类的[Objectlatex()实例](https://reference.aspose.com/tex/java/com.aspose.tex/texconfig/#objectLaTeX--)进行，该类完全适合转换[latex file](/tex/{{lang.url-fragment}}net/latex-io/#latex-file)。此配置指示对象TeX引擎加载对象LaTeX格式并准备好接受LaTeX文件。对象LaTeX格式实际上只是[LaTeX](/tex/{{lang.url-fragment}}net/what-is-latex/)格式，只是它使用[Object tex](/tex/{{lang.url-fragment}}net/aspose-tex-and-object-tex/#object-tex)特定的原始图来设置页面指标。
 
@@ -56,7 +56,7 @@ Transcript written on hello-world.log.
 
 还有另一种将图像数据作为字节数组数组的方法，第二维中的每个数组代表单独的页面的图像数据。
 
-{{< gist "aspose-com-gists" "9d6b3df9df43d8caf00a0d519c504cf5" "Example-ConvertLaTeXToPNG-Alternative.java" >}}
+{{< gist "aspose-com-gists" "a30f406f6b8ace1b7d15c68a1df75c6d" "Example-ConvertLaTeXToPNG-Alternative.java" >}}
 
 手动保存示例还需要 `java.nio.file.Files` 和 `java.nio.file.Paths`。它将 `ImageDevice.getResult()` 返回的页面数据保存为 `page-1.png`、`page-2.png` 等。由于设置了 `deviceWritesImages(false)`，自动 PNG 输出被禁用，手动保存的页面不会在输出目录中重复生成。这与[通过流输出 PDF](/tex/{{lang.url-fragment}}java/latex-to-pdf/#编写主输出pdf文件的另一种方法)不同，后者由流指定单个 PDF 文档的输出位置。
 
@@ -72,20 +72,20 @@ Transcript written on hello-world.log.
 
 ## 如何将LaTeX转换为JPG
 
-{{< gist "aspose-com-gists" "9d6b3df9df43d8caf00a0d519c504cf5" "Example-ConvertLaTeXToJPEG.java" >}}
+{{< gist "aspose-com-gists" "a30f406f6b8ace1b7d15c68a1df75c6d" "Example-ConvertLaTeXToJPEG.java" >}}
 
 **您也可以查看基于[Aspose.TeX for .NET](https://products.aspose.com/tex/net/)API构建的免费LaTeX转换[Web App](https://products.aspose.app/tex/conversion/latex-to-jpg)。 [这里](https://products.aspose.com/tex/java/)是Java版本页。**
 
 ## 如何将LaTeX转换为TIFF
 
-{{< gist "aspose-com-gists" "9d6b3df9df43d8caf00a0d519c504cf5" "Example-ConvertLaTeXToTIFF.java" >}}
+{{< gist "aspose-com-gists" "a30f406f6b8ace1b7d15c68a1df75c6d" "Example-ConvertLaTeXToTIFF.java" >}}
 
 
 **您还可以根据[Aspose.TeX for .NET](https://products.aspose.com/tex/net/)API构建的免费LaTeX转换[Web App](https://products.aspose.app/tex/conversion/latex-to-tiff)。 [这里](https://products.aspose.com/tex/java/)是Java版本页。**
 
 ## 如何将LaTeX转换为BMP
 
-{{< gist "aspose-com-gists" "9d6b3df9df43d8caf00a0d519c504cf5" "Example-ConvertLaTeXToBMP.java" >}}
+{{< gist "aspose-com-gists" "a30f406f6b8ace1b7d15c68a1df75c6d" "Example-ConvertLaTeXToBMP.java" >}}
 
 **您还可以根据[Aspose.TeX for .NET](https://products.aspose.com/tex/net/)API构建的免费LaTeX到BMP转换[Web App](https://products.aspose.app/tex/conversion/latex-to-bmp)。 [这里](https://products.aspose.com/tex/java/)是Java版本页。**
 
@@ -100,6 +100,6 @@ Transcript written on hello-world.log.
 
 向SVG的转换与[转换为栅格图像格式](/tex/{{lang.url-fragment}}java/latex-to-image/)一样简单，除了[SaveOptions](https://reference.aspose.com/tex/java/com.aspose.tex/texoptions/#getSaveOptions--)之外，我们还必须将设备更改为[SVGDEVICE](https://reference.aspose.com/tex/java/com.aspose.tex.rendering/SvgDevice)类的实例。
 
-{{< gist "aspose-com-gists" "9d6b3df9df43d8caf00a0d519c504cf5" "Example-ConvertLaTeXToSVG-Simplest.java" >}}
+{{< gist "aspose-com-gists" "a30f406f6b8ace1b7d15c68a1df75c6d" "Example-ConvertLaTeXToSVG-Simplest.java" >}}
 
 **您也可以检查基于[Aspose.TeX for .NET](https://products.aspose.com/tex/net/)构建的免费LaTeX转换[Web App](https://products.aspose.app/tex/conversion/latex-to-svg)。 [这里](https://products.aspose.com/tex/java/)是Java版本页。**

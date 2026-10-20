@@ -50,7 +50,7 @@ La tercera línea requiere el paquete externo `fancybox`. Establezca `packagesDi
 
 Aquí está el código fuente completo del ejemplo:
 
-{{< gist "aspose-com-gists" "be002eee5d3f1f880cf1b77424b754e1" "Example-RequiredInput-FileSystem.java" >}}
+{{< gist "aspose-com-gists" "68af8199308bda28d9e6fa4670c0ba12" "Example-RequiredInput-FileSystem.java" >}}
 
 ### Entrada requerida archivada (paquete `pgfplots`)
 
@@ -97,7 +97,7 @@ Establezca `packagesZip` en un `java.nio.file.Path` al archivo que contiene las 
 
 Aquí está el código fuente completo del ejemplo:
 
-{{< gist "aspose-com-gists" "be002eee5d3f1f880cf1b77424b754e1" "Example-RequiredInput-Zip.java" >}}
+{{< gist "aspose-com-gists" "68af8199308bda28d9e6fa4670c0ba12" "Example-RequiredInput-Zip.java" >}}
 
 > **_NOTA:_** El resultado se verificó utilizando la versión 1.18.1 del paquete `pgfplots`. Mientras que la versión del paquete `pfg` incluida en la biblioteca **Aspose.TeX** es la 3.1.9a.
 
@@ -108,7 +108,7 @@ La extensión del motor *Object TeX* en **Aspose.TeX** requiere mapas de fuentes
 
 El siguiente `RequiredInputDirectory` personalizado implementa ambas interfaces y lee archivos locales registrados explícitamente. Guárdelo como `RequiredInputDirectory.java` con sus importaciones incluidas. Registre cada archivo con `storeFileName(...)`, asigne la instancia con `options.setRequiredInputDirectory(...)` y ciérrela después del trabajo. Es un registro plano: los nombres de archivo deben ser únicos cuando se solicitan sin ruta completa. Las extensiones no distinguen mayúsculas de minúsculas; la ruta de recopilación opcional selecciona un directorio del sistema de archivos. Registre todos los archivos de paquete, mapas de fuentes, métricas y fuentes físicas necesarios. La recopilación permite encontrar los mapas, pero no proporciona datos de fuentes que falten.
 
-{{< gist "aspose-com-gists" "be002eee5d3f1f880cf1b77424b754e1" "Example-RequiredInputDirectory.java" >}}
+{{< gist "aspose-com-gists" "68af8199308bda28d9e6fa4670c0ba12" "Example-RequiredInputDirectory.java" >}}
 
 ### Restricciones
 

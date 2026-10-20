@@ -19,7 +19,7 @@ Começaremos com a criação de um formato personalizado.
 
 Lembre -se de que o arquivo de formato é um depósito binário do estado interno do mecanismo TeX.
 
-{{< gist "aspose-com-gists" "c0eb6cbcfb001b7e6355cafa4611afed" "Example-CreateCustomFormat.cs" >}}
+{{< gist "aspose-com-gists" "deadfd7c29ffe40024a9b6d12f0ed18a" "Example-CreateCustomFormat.cs" >}}
 
 Como você pode ver, o código é semelhante ao código para converter um arquivo TeX. Mas existem algumas diferenças.
 
@@ -33,7 +33,7 @@ E a segunda diferença importante é a maneira como executamos o trabalho. Desta
 
 Agora que temos nosso próprio formato TeX, queremos compor um arquivo TeX escrito neste formato. Aqui está o código:
 
-{{< gist "aspose-com-gists" "c0eb6cbcfb001b7e6355cafa4611afed" "Example-TypesetWithCustomFormat.cs" >}}
+{{< gist "aspose-com-gists" "deadfd7c29ffe40024a9b6d12f0ed18a" "Example-TypesetWithCustomFormat.cs" >}}
 
 Obviamente, temos que especificar o formato de alguma forma. Primeiro de tudo, precisamos criar uma instância da classe [FormatProvider](https://reference.aspose.com/TeX/net/aspose.TeX.resourceproviders/formatprovider/). Em seguida, no construtor de opções, usamos a configuração [TeXConfig.ObjectTeX()](https://reference.aspose.com/TeX/net/aspose.TeX/TeXconfig/objectTeX/), que toma nosso provedor de formato como um argumento e carrega o formato no topo do estado "virgem" do motor.
 

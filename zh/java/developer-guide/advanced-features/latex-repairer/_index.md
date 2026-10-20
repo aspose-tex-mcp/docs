@@ -19,7 +19,7 @@ lastmod: "2026-02-27"
 
 将 `inputFile` 设置为 `invalid-latex.tex` 的完整路径，将 `outputDirectory` 设置为现有输出文件夹，将 `packagesDirectory` 设置为包含 `fancyhdr.sty` 及其依赖文件的文件夹。将下面的回调连同 import 语句保存为 `PackageGuesser.java`，并在修复前创建 `PackageGuesser packageGuesser = new PackageGuesser()`。导入所用的 Aspose.TeX 类，处理或声明异常，并按照[许可指南](/tex/{{lang.url-fragment}}java/licensing/)应用许可证。输入和输出目录在修复结束前保持打开，随后关闭。
 
-{{< gist "aspose-com-gists" "e17f869aabed3881c74973f5e875d539" "Example-LaTeXRepairer.java" >}}
+{{< gist "aspose-com-gists" "68af8199308bda28d9e6fa4670c0ba12" "Example-LaTeXRepairer.java" >}}
 
 类似于普通的 TeX 作业，我们首先创建一个对象来保存即将运行的过程的选项。这些选项大多与普通 TeX 作业相同。实际上，调用 [setInputWorkingDirectory()](https://reference.aspose.com/tex/java/com.aspose.tex.features/latexrepaireroptions/#setInputWorkingDirectory-com.aspose.tex.IInputWorkingDirectory-) 方法时，我们指定输入文件应读取的目录。然而在本例中我们并未使用它，因为我们在文件系统中提供了主输入文件的完整路径，并且主输入文件中不需要包含任何自定义文件。接下来，调用 [setOutputWorkingDirectory()](https://reference.aspose.com/tex/java/com.aspose.tex.features/latexrepaireroptions/#setOutputWorkingDirectory-com.aspose.tex.IOutputWorkingDirectory-) 方法以指定输出文件应写入的目录。如果调用了 [setRequiredInputDirectory()](https://reference.aspose.com/tex/java/com.aspose.tex.features/latexrepaireroptions/#setRequiredInputDirectory-com.aspose.tex.IInputWorkingDirectory-) 方法，则选项会指向您可以存放未嵌入 Aspose.TeX 库的 LaTeX 包的目录。最后，将在后文讨论 [setGuessPackageCallback()](https://reference.aspose.com/tex/java/com.aspose.tex.features/latexrepaireroptions/#setGuessPackageCallback-com.aspose.tex.features.IGuessPackageCallback-) 方法。
 
@@ -33,7 +33,7 @@ lastmod: "2026-02-27"
 
 此示例将 `\lhead` 命令映射到 `fancyhdr` 包。回调接收不含开头反斜杠的命令名，并为未知命令和环境返回空字符串：
 
-{{< gist "aspose-com-gists" "e17f869aabed3881c74973f5e875d539" "Example-PackageGuessingCallback.java" >}}
+{{< gist "aspose-com-gists" "68af8199308bda28d9e6fa4670c0ba12" "Example-PackageGuessingCallback.java" >}}
 
 对于示例文件，引擎首先遇到 `\chapter` 命令，该命令在 `article` 文档类中未定义，但在 `book` 文档类中定义。API 会调整文档类，使修复后文件的最终版本以 `\documentclass{book}` 开头。随后，引擎发现前述的 `\lhead` 命令，并确定必须在导言区插入 `\usepackage{fancyhdr}`。文件后续出现的 `\href` 和 `\includegraphics` 命令导致 Repairer 分别在导言区插入 `\usepackage{hyperref}` 和 `\usepackage{graphicx}`。这些决定基于 API 的内部映射。与之前一样，所有这些修复都会记录在报告文件中。
 

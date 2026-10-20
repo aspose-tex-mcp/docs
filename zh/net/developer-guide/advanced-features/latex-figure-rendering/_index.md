@@ -18,7 +18,7 @@ lastmod: "2026-06-12"
 
 与本主题相关的 API 参考部分位于[此处](https://reference.aspose.com/tex/net/aspose.tex.features/)。与公式渲染一样，我们将从示例开始。代码如下：
 
-{{< gist "aspose-com-gists" "79be6a0d7a31aa5deb213ba4ca81cb1b" "Example-RenderFigureToPNG.cs" >}}
+{{< gist "aspose-com-gists" "cd0acc55d1634f17dcf42e02075ca005" "Example-RenderFigureToPNG.cs" >}}
 
 首先，我们创建一个[LaTeX figure options](https://reference.aspose.com/tex/net/aspose.tex.features/figurerendereroptions/)实例，并在此同时指定输出图像的分辨率。
 
@@ -54,7 +54,7 @@ lastmod: "2026-06-12"
 
 以类似的方式，我们可以将 LaTeX 图形渲染为 SVG 格式。
 
-{{< gist "aspose-com-gists" "79be6a0d7a31aa5deb213ba4ca81cb1b" "Example-RenderFigureToSVG.cs" >}}
+{{< gist "aspose-com-gists" "cd0acc55d1634f17dcf42e02075ca005" "Example-RenderFigureToSVG.cs" >}}
 
 区别如下：
 

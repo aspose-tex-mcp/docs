@@ -19,7 +19,7 @@ lastmod: "2026-06-12"
 
 Давайте тепер розглянемо зразок коду C#.
 
-{{< gist "aspose-com-gists""7f54d335270200ebf5987d071bad028a""Examples_LaTeXRepairerExample" >}}
+{{< gist "aspose-com-gists" "deadfd7c29ffe40024a9b6d12f0ed18a" "Examples_LaTeXRepairerExample" >}}
 
 Як і у випадку зі звичайним завданням TeX, ми спочатку створюємо об’єкт, який містить параметри процесу, який ми збираємося запустити. Більшість із них такі самі, як і параметри звичайної роботи TeX. Дійсно, [InputWorkingDirectory](https://reference.aspose.com/tex/net/aspose.tex.features/latexrepaireroptions/inputworkingdirectory/) — це простір, з якого слід читати вхідні файли. Ми не використовуємо його тут, тому що ми надаємо повний шлях до основного вхідного файлу у файловій системі, і жодні спеціальні файли не повинні включатися в головний вхідний файл. Тоді [OutputWorkingDirectory](https://reference.aspose.com/tex/net/aspose.tex.features/latexrepaireroptions/outputworkingdirectory/) — це простір, куди мають бути записані вихідні файли. [RequiredInputDirectory](https://reference.aspose.com/tex/net/aspose.tex.features/latexrepaireroptions/requiredinputdirectory/), якщо його призначено, вказує на простір, де ви можете зберігати пакети LaTeX, які не вбудовані в бібліотеку Aspose.TeX. Властивість [GuessPackageCallback](https://reference.aspose.com/tex/net/aspose.tex.features/latexrepaireroptions/guesspackagecallback/) буде обговорено пізніше.
 
@@ -34,7 +34,7 @@ lastmod: "2026-06-12"
 Ось дуже простий приклад, який просто відображає команду `\head` на пакет `fancyhdr`:
 
 
-{{< gist "aspose-com-gists""7f54d335270200ebf5987d071bad028a""Examples_PackageGuessingCallback" >}}
+{{< gist "aspose-com-gists" "deadfd7c29ffe40024a9b6d12f0ed18a" "Examples_PackageGuessingCallback" >}}
 
 Що стосується файлу зразка, система спочатку зустрічає команду `\chapter`, яка не визначена в класі документа `article`, але визначена в класі документа `book`. API налаштовує клас документа так, щоб остаточна версія фіксованого файлу починалася з `\documentclass{book}`. Потім механізм знаходить вищезгадану команду `\lhead` і вирішує, що `\usepackage{fancyhdr}` потрібно вставити в преамбулу. Команди `\href` і `\includegraphics`, які з’являються пізніше, змушують Repairer вставляти `\usepackage{hyperref}` і `\usepackage{graphics}` у преамбулі відповідно. Ці рішення ґрунтуються на внутрішніх зіставленнях API. Знову ж таки, усі такі виправлення реєструються у файлі звіту.
 

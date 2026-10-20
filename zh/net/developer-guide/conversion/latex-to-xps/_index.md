@@ -33,7 +33,7 @@ LaTeX 到 XPS 的转换和[转换为光栅图像格式](/tex/{{lang.url-fragment
 
 此代码展示了从 LaTeX 生成 XPS 文件的最直接方式。
 
-{{< gist "aspose-com-gists" "1d10927e18d23e49096c91ce726e9d6f" "Example-ConvertLaTeXToXPS-Simplest.cs" >}}
+{{< gist "aspose-com-gists" "507170b996a1d0c39bb4374e888b3205" "Example-ConvertLaTeXToXPS-Simplest.cs" >}}
 
 ### 以另一种方式写入主输出 XPS 文件
 
@@ -50,7 +50,7 @@ LaTeX 到 XPS 的转换和[转换为光栅图像格式](/tex/{{lang.url-fragment
 
 当需要将 XPS 数据保存在内存中而非磁盘文件时，这种方式非常有用。
 
-{{< gist "aspose-com-gists" "1d10927e18d23e49096c91ce726e9d6f" "Example-ConvertLaTeXToXPS-Alternative.cs" >}}
+{{< gist "aspose-com-gists" "507170b996a1d0c39bb4374e888b3205" "Example-ConvertLaTeXToXPS-Alternative.cs" >}}
 
 效果与我们在[此处](/tex/{{lang.url-fragment}}net/latex-to-pdf/#an-alternative-way-to-write-main-output-pdf-file)得到的相同。
 

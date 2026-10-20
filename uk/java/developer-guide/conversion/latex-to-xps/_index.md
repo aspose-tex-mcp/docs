@@ -22,7 +22,7 @@ lastmod: "2026-04-21"
 
 Задайте в `inputFile` повний шлях до файлу LaTeX, наприклад `hello-world.ltx`, а в `outputDirectory` — наявну папку виводу. Імпортуйте використані в прикладі класи з `com.aspose.tex` і `com.aspose.tex.rendering`. Метод, що викликає цей код, має обробляти або оголошувати винятки. Застосуйте ліцензію згідно з [посібником із ліцензування](/tex/{{lang.url-fragment}}java/licensing/), щоб уникнути обмежень ознайомлювальної версії. Приклад використовує неінтерактивний режим і закриває ресурси виводу. Для самодостатнього вхідного файлу `hello-world.ltx` вихідний файл за замовчуванням — `hello-world.xps`.
 
-{{< gist "aspose-com-gists" "1d90376049c44b97cffb85e4ac382a5b" "Example-ConvertLaTeXToXPS-Simplest.java" >}}
+{{< gist "aspose-com-gists" "a30f406f6b8ace1b7d15c68a1df75c6d" "Example-ConvertLaTeXToXPS-Simplest.java" >}}
 
 ### Альтернативний спосіб запису основного вихідного файлу XPS
 
@@ -30,7 +30,7 @@ lastmod: "2026-04-21"
 
 Використовуйте ті самі значення `inputFile` і `outputDirectory`, що й вище. Задайте `xpsFile` як `java.nio.file.Path`, наприклад `Paths.get(outputDirectory, "any-name.xps")`. Окрім класів Aspose.TeX, імпортуйте `java.io.OutputStream`, `java.nio.file.Files`, `java.nio.file.Path` і `java.nio.file.Paths`. Потік визначає шлях вихідного XPS-файлу; допоміжні файли й надалі записуються в `outputDirectory`.
 
-{{< gist "aspose-com-gists" "1d90376049c44b97cffb85e4ac382a5b" "Example-ConvertLaTeXToXPS-Alternative.java" >}}
+{{< gist "aspose-com-gists" "a30f406f6b8ace1b7d15c68a1df75c6d" "Example-ConvertLaTeXToXPS-Alternative.java" >}}
 
 Ефект такий самий, як ми отримуємо [тут](/tex/{{lang.url-fragment}}java/latex-to-pdf/#альтернативний-спосіб-запису-основного-вихідного-файлу-pdf).
 

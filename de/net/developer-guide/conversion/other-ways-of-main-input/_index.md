@@ -15,7 +15,7 @@ lastmod: "2026-04-22"
 
 Bisher wussten wir nur, wie man die [Haupteingabedatei](/tex/{{lang.url-fragment}}net/tex-io/#tex-input) als Dateinamen an die TeX-Engine übergibt, egal ob vollständig angegeben oder in Kurzform, ob mit oder ohne Erweiterung. Aber es gibt noch einen anderen [Konstruktor](https://reference.aspose.com/tex/net/aspose.tex/texjob/texjob/) der Klasse „TeXJob“, der einen Stream als erstes Argument akzeptiert. Dies ist praktisch, wenn wir aus irgendeinem Grund die Haupteingabedatei in einer anderen Form als einer Datei im Dateisystem der Festplatte haben. So lässt es sich umsetzen:
 
-{{< gist "aspose-com-gists" "4e3bae6ecbe041bcb411e0cf4c98dc71" "Example-StreamInput-LaTeX.cs" >}}
+{{< gist "aspose-com-gists" "0fbd18cd8c28d5ed12e19cd52634ebd4" "Example-StreamInput-LaTeX.cs" >}}
 
 Beachten Sie, dass alle Ausgabedateien den Namen *texput* haben. Das liegt daran, dass die Engine nirgendwo einen anderen Namen bekommen kann. *texput* ist der Standard-Jobname. [Hier](/tex/{{lang.url-fragment}}net/tex-io/#tex-output) und [hier](/tex/{{lang.url-fragment}}net/other-options/#how-to-set-the-job-name) finden Sie Details zu Jobnamen.
 
@@ -25,7 +25,7 @@ Es gibt noch einen weiteren [Konstruktor](https://reference.aspose.com/tex/net/a
 
 Hier ist der Code:
 
-{{< gist "aspose-com-gists" "4e3bae6ecbe041bcb411e0cf4c98dc71" "Example-MainInputTerminal.cs" >}}
+{{< gist "aspose-com-gists" "0fbd18cd8c28d5ed12e19cd52634ebd4" "Example-MainInputTerminal.cs" >}}
 
 Sobald es ausgeführt wird, bleibt die Engine hängen und wartet darauf, dass wir den Dateinamen eingeben (mit oder ohne Pfad, mit oder ohne Erweiterung):
 

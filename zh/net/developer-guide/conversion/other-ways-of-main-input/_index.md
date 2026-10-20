@@ -15,7 +15,7 @@ lastmod: "2026-04-22"
 
 到目前为止，我们只知道如何将[主输入文件](/tex/{{lang.url-fragment}}net/tex-io/#tex-input)以文件名的形式传递给 TeX 引擎，无论是完整路径还是简写形式，无论是否带扩展名。但还有另一个[构造函数](https://reference.aspose.com/tex/net/aspose.tex/texjob/texjob/) `TeXJob` 类，它接受一个流作为第一个参数。如果因某种原因我们拥有的主输入文件不是磁盘文件系统中的文件，这将非常方便。下面是实现方式：
 
-{{< gist "aspose-com-gists" "4e3bae6ecbe041bcb411e0cf4c98dc71" "Example-StreamInput-LaTeX.cs" >}}
+{{< gist "aspose-com-gists" "0fbd18cd8c28d5ed12e19cd52634ebd4" "Example-StreamInput-LaTeX.cs" >}}
 
 需要注意的是，所有输出文件的名称都会是 *texput*。因为引擎在任何地方都无法获取其他名称。*texput* 是默认的作业名称。[这里](/tex/{{lang.url-fragment}}net/tex-io/#tex-output)和[这里](/tex/{{lang.url-fragment}}net/other-options/#how-to-set-the-job-name)提供了有关作业名称的详细信息。
 
@@ -25,7 +25,7 @@ lastmod: "2026-04-22"
 
 下面是代码示例：
 
-{{< gist "aspose-com-gists" "4e3bae6ecbe041bcb411e0cf4c98dc71" "Example-MainInputTerminal.cs" >}}
+{{< gist "aspose-com-gists" "0fbd18cd8c28d5ed12e19cd52634ebd4" "Example-MainInputTerminal.cs" >}}
 
 一运行它，引擎就会卡住，等待我们输入文件名（可以带路径，也可以不带，带扩展名或不带）：
 

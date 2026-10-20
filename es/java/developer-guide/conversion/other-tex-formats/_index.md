@@ -21,7 +21,7 @@ Recordemos que el archivo de formato es un volcado binario del estado interno de
 
 Establezca `inputDirectory` en una carpeta que contenga `customtex.tex` y sus dependencias, y `outputDirectory` en una carpeta de salida existente. El archivo fuente del formato debe terminar con `\dump`; este ejemplo crea allí `customtex.fmt`. Importe las clases de Aspose.TeX utilizadas en los ejemplos y, para la composición, `com.aspose.tex.rendering.XpsDevice`, `java.io.ByteArrayInputStream` y `java.nio.charset.StandardCharsets`. El método que llama al ejemplo debe gestionar o declarar las excepciones. Aplique una licencia según la [guía de licencias](/tex/{{lang.url-fragment}}java/licensing/) para evitar las restricciones de evaluación.
 
-{{< gist "aspose-com-gists" "d21a098d3848236e0c258661f5bbc0ae" "Example-CreateCustomTeXFormat.java" >}}
+{{< gist "aspose-com-gists" "68af8199308bda28d9e6fa4670c0ba12" "Example-CreateCustomTeXFormat.java" >}}
 
 Como puede ver, el código es similar al código para convertir un archivo TeX. Pero hay algunas diferencias.
 
@@ -37,7 +37,7 @@ Ahora que tenemos nuestro propio formato TeX, queremos componer un archivo TeX e
 
 Establezca `formatDirectory` en la carpeta que contiene el archivo `customtex.fmt` creado anteriormente, y `outputDirectory` en una carpeta de salida existente. El ejemplo compone un flujo de texto autónomo en `typeset-with-custom-format.xps`, por lo que no necesita un directorio de trabajo de entrada. Establezca uno cuando la entrada principal tenga dependencias, como imágenes.
 
-{{< gist "aspose-com-gists" "d21a098d3848236e0c258661f5bbc0ae" "Example-TypesetWithCustomTeXFormat.java" >}}
+{{< gist "aspose-com-gists" "68af8199308bda28d9e6fa4670c0ba12" "Example-TypesetWithCustomTeXFormat.java" >}}
 
 Obviamente, tenemos que especificar el formato de alguna manera. En primer lugar, necesitamos crear una instancia de la clase [FormatProvider](https://reference.aspose.com/tex/java/com.aspose.tex/formatprovider/) . Luego, en el constructor de opciones, usamos la configuración [TeXConfig.objectTeX(FormatProvider)](https://reference.aspose.com/tex/java/com.aspose.tex/texconfig/#objectTeX-com.aspose.tex.FormatProvider-), que toma nuestro proveedor de formato como argumento y carga el formato encima del estado "virgen" del motor.
 

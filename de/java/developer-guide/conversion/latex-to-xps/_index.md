@@ -22,7 +22,7 @@ Die Konvertierung in XPS ist genauso einfach wie die [Konvertierung in Rasterbil
 
 Setzen Sie `inputFile` auf den vollständigen Pfad Ihrer LaTeX-Datei, beispielsweise `hello-world.ltx`, und `outputDirectory` auf einen vorhandenen Ausgabeordner. Importieren Sie die im Beispiel verwendeten Klassen aus `com.aspose.tex` und `com.aspose.tex.rendering`. Die aufrufende Methode muss Ausnahmen behandeln oder deklarieren. Wenden Sie eine Lizenz gemäß der [Lizenzierungsanleitung](/tex/{{lang.url-fragment}}java/licensing/) an, um Evaluierungseinschränkungen zu vermeiden. Das Beispiel verwendet einen nichtinteraktiven Modus und schließt seine Ausgaberessourcen. Für die eigenständige Eingabedatei `hello-world.ltx` lautet die Standardausgabe `hello-world.xps`.
 
-{{< gist "aspose-com-gists" "1d90376049c44b97cffb85e4ac382a5b" "Example-ConvertLaTeXToXPS-Simplest.java" >}}
+{{< gist "aspose-com-gists" "a30f406f6b8ace1b7d15c68a1df75c6d" "Example-ConvertLaTeXToXPS-Simplest.java" >}}
 
 ### Eine alternative Möglichkeit, die XPS-Hauptausgabedatei zu schreiben
 
@@ -30,7 +30,7 @@ Es gibt einen weiteren Konstruktor der Klasse [XpsDevice](https://reference.aspo
 
 Verwenden Sie dieselben Werte für `inputFile` und `outputDirectory` wie oben. Setzen Sie `xpsFile` auf einen `java.nio.file.Path`, beispielsweise `Paths.get(outputDirectory, "any-name.xps")`. Importieren Sie zusätzlich zu den Aspose.TeX-Klassen `java.io.OutputStream`, `java.nio.file.Files`, `java.nio.file.Path` und `java.nio.file.Paths`. Der Stream bestimmt das Ziel der XPS-Datei; Hilfsdateien werden weiterhin in `outputDirectory` geschrieben.
 
-{{< gist "aspose-com-gists" "1d90376049c44b97cffb85e4ac382a5b" "Example-ConvertLaTeXToXPS-Alternative.java" >}}
+{{< gist "aspose-com-gists" "a30f406f6b8ace1b7d15c68a1df75c6d" "Example-ConvertLaTeXToXPS-Alternative.java" >}}
 
 Der Effekt ist derselbe, den wir [hier](/tex/{{lang.url-fragment}}java/latex-to-pdf/#eine-alternative-möglichkeit-die-hauptausgabe-pdf-datei-zu-schreiben) erhalten.
 

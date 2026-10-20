@@ -22,7 +22,7 @@ lastmod: "2024-09-24"
 
 Вот как мы это сделаем:
 
-{{< gist "aspose-com-gists""0fbd18cd8c28d5ed12e19cd52634ebd4""Example-InputFileSystemDirectory.cs" >}}
+{{< gist "aspose-com-gists" "0fbd18cd8c28d5ed12e19cd52634ebd4" "Example-InputFileSystemDirectory.cs" >}}
 
 Этот вариант использования довольно прост, поэтому больше нет необходимости на нем зацикливаться.
 
@@ -30,7 +30,7 @@ lastmod: "2024-09-24"
 
 Мы также можем поместить входные файлы в ZIP-архив и считать его входным каталогом. В этом случае нам следует поступить следующим образом:
 
-{{< gist "aspose-com-gists""0fbd18cd8c28d5ed12e19cd52634ebd4""Example-InputZipDirectory.cs" >}}
+{{< gist "aspose-com-gists" "0fbd18cd8c28d5ed12e19cd52634ebd4" "Example-InputZipDirectory.cs" >}}
 
 Сначала мы создаем поток, содержащий ZIP-файл. Затем, после создания параметров преобразования, мы устанавливаем параметр [InputWorkingDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/inputworkingdirectory/) как экземпляр класса [InputZipDirectory](https://reference.aspose.com/tex/net/aspose.tex.io/inputzipdirectory/). Второй аргумент конструктора — базовый путь внутри архива. Если мы хотим, чтобы весь архив был входным каталогом, нам следует передать пустую строку. 
 
@@ -42,7 +42,7 @@ lastmod: "2024-09-24"
 
 Для этого нам нужно установить опцию [TerminalIn](https://reference.aspose.com/tex/net/aspose.tex/texoptions/terminalin/) как экземпляр класса [InputConsoleTerminal](https://reference.aspose.com/tex/net/aspose.tex.io/inputconsoleterminal/).
 
-{{< gist "aspose-com-gists""0fbd18cd8c28d5ed12e19cd52634ebd4""Example-InputConsoleTerminal.cs" >}}
+{{< gist "aspose-com-gists" "0fbd18cd8c28d5ed12e19cd52634ebd4" "Example-InputConsoleTerminal.cs" >}}
 
 Но, по правде говоря, это значение параметра по умолчанию, поэтому указывать его нет особой необходимости. В связи с этим и до тех пор, пока нет других реализаций, данный раздел служит только демонстрационным целям.
 

@@ -57,7 +57,7 @@ Dopo aver eseguito un TeX job con questa opzione (non dimenticare di regolare le
 
 Ecco il codice sorgente completo per l'esempio:
 
-{{< gist "aspose-com-gists" "03f720960e15bd497ed26ce2eb9c03b2" "Example-RequiredInput-FileSystem.cs" >}}
+{{< gist "aspose-com-gists" "deadfd7c29ffe40024a9b6d12f0ed18a" "Example-RequiredInput-FileSystem.cs" >}}
 
 ### Input richiesto archiviato (pacchetto `pgfplots`)
 
@@ -118,7 +118,7 @@ Dopo aver eseguito un TeX job con questa opzione, otteniamo il documento di outp
 
 Ecco il codice sorgente completo per l'esempio:
 
-{{< gist "aspose-com-gists" "03f720960e15bd497ed26ce2eb9c03b2" "Example-RequiredInput-Zip.cs" >}}
+{{< gist "aspose-com-gists" "deadfd7c29ffe40024a9b6d12f0ed18a" "Example-RequiredInput-Zip.cs" >}}
 
 > **_NOTA:_** Il risultato è stato verificato utilizzando il pacchetto `pgfplots` versione 1.18.1. Mentre la versione del pacchetto `pfg` inclusa nella libreria **Aspose.TeX** è la 3.1.9a.
 
@@ -129,7 +129,7 @@ Di norma, le distribuzioni in LaTeX forniscono una serie di caratteri predefinit
 
 Di seguito, forniamo un esempio illustrativo di una directory di input richiesta personalizzata che implementa anche l'interfaccia [IFileCollector](https://reference.aspose.com/tex/net/Aspose.TeX.io/ifilecollector/). Mentre ci concentriamo sulla raccolta dei nomi dei file per estensione, omettiamo intenzionalmente i dettagli di archiviazione e recupero dei file.
 
-{{< gist "aspose-com-gists" "03f720960e15bd497ed26ce2eb9c03b2" "Example-RequiredInputDirectory.cs" >}}
+{{< gist "aspose-com-gists" "deadfd7c29ffe40024a9b6d12f0ed18a" "Example-RequiredInputDirectory.cs" >}}
 
 
 ### Restrizioni

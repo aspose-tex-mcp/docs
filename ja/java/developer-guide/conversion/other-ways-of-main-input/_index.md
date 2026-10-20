@@ -17,7 +17,7 @@ lastmod: "2026-04-21"
 
 `outputDirectory` に既存の出力フォルダーを指定します。例で使用する Aspose.TeX クラス、`com.aspose.tex.rendering.XpsDevice`、`com.aspose.tex.rendering.XpsSaveOptions`、ストリーム入力用の `java.io.ByteArrayInputStream` と `java.nio.charset.StandardCharsets` をインポートします。呼び出し元のメソッドは例外を処理するか宣言する必要があります。評価版の制限を避けるため、[ライセンスガイド](/tex/{{lang.url-fragment}}java/licensing/)に従ってライセンスを適用してください。ストリームの例には完全な LaTeX 文書が含まれるため、入力作業ディレクトリは不要です。ストリームとデバイスはジョブ終了まで開いたままにし、その後に閉じるか解放します。
 
-{{< gist "aspose-com-gists" "889663554934c807ebc90e12d08bc8d0" "Example-StreamInput-LaTeX.java" >}}
+{{< gist "aspose-com-gists" "41e7e83784a6856ab3955f319608ef96" "Example-StreamInput-LaTeX.java" >}}
 
 ストリーム入力でジョブ名を明示的に指定しない場合、エンジンはデフォルト名 *texput* を使用します。この例は `texput.xps` と `texput.log` を作成します。別のジョブ名を選ぶには `options.setJobName(...)` を使用します。ジョブ名の詳細は [ここ](/tex/{{lang.url-fragment}}net/tex-io/#tex-output) と [here](/tex/{{lang.url-fragment}}java/other-options/#how-to-set-the-job-name) を参照してください。
 
@@ -29,7 +29,7 @@ lastmod: "2026-04-21"
 
 これがコードです：
 
-{{< gist "aspose-com-gists" "889663554934c807ebc90e12d08bc8d0" "Example-MainInputTerminal.java" >}}
+{{< gist "aspose-com-gists" "41e7e83784a6856ab3955f319608ef96" "Example-MainInputTerminal.java" >}}
 
 実行されるとすぐに、エンジンがスティックし、ファイル名を入力するのを待っています(パスの有無にかかわらず、拡張機能の有無にかかわらず)：
 

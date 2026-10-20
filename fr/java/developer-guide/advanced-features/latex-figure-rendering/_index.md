@@ -19,7 +19,7 @@ Et comme pour le rendu de formule, nous commencerons par un exemple. C'est ici:
 
 Définissez `outputFile` comme un `java.nio.file.Path` dans un dossier existant, par exemple `Paths.get(outputDirectory, "text-and-formula.png")` pour PNG ou `Paths.get(outputDirectory, "text-and-formula.svg")` pour SVG. Importez les classes de moteur de rendu, d'options et `Size2D` d'Aspose.TeX utilisées, ainsi que `java.awt.Color`, `java.io.ByteArrayOutputStream`, `java.io.OutputStream`, `java.nio.file.Files`, `java.nio.file.Path`, `java.nio.file.Paths`. La méthode appelante doit gérer ou déclarer les exceptions. Appliquez une licence selon le [guide des licences](/tex/{{lang.url-fragment}}java/licensing/) pour éviter les restrictions d'évaluation.
 
-{{< gist "aspose-com-gists" "4598064edf58fab0b87d9543a4a88234" "Example-RenderFigureToPNG.java" >}}
+{{< gist "aspose-com-gists" "fc74664c51175ac402729283d0450d44" "Example-RenderFigureToPNG.java" >}}
 
 Tout d’abord, nous créons une instance [options de rendu](https://reference.aspose.com/tex/java/com.aspose.tex/pngfigurerendereroptions/). Nous le faisons ici en spécifiant la résolution de l'image de sortie.
 
@@ -55,7 +55,7 @@ Il s'agit du cas d'utilisation le plus général de la fonctionnalité **Rendu d
 
 De la même manière, nous pouvons restituer une figure LaTeX au format SVG.
 
-{{< gist "aspose-com-gists" "4598064edf58fab0b87d9543a4a88234" "Example-RenderFigureToSVG.java" >}}
+{{< gist "aspose-com-gists" "fc74664c51175ac402729283d0450d44" "Example-RenderFigureToSVG.java" >}}
 
 Les différences sont :
 

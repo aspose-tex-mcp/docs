@@ -19,7 +19,7 @@ E come per il rendering della formula, inizieremo con un esempio. Ecco qui:
 
 Impostare `outputFile` su un `java.nio.file.Path` in una cartella esistente, ad esempio `Paths.get(outputDirectory, "text-and-formula.png")` per PNG o `Paths.get(outputDirectory, "text-and-formula.svg")` per SVG. Importare le classi Aspose.TeX del renderer, delle opzioni e `Size2D` utilizzate, oltre a `java.awt.Color`, `java.io.ByteArrayOutputStream`, `java.io.OutputStream`, `java.nio.file.Files`, `java.nio.file.Path`, `java.nio.file.Paths`. Il metodo chiamante deve gestire o dichiarare le eccezioni. Applicare una licenza secondo la [guida alle licenze](/tex/{{lang.url-fragment}}java/licensing/) per evitare le limitazioni della versione di valutazione.
 
-{{< gist "aspose-com-gists" "4598064edf58fab0b87d9543a4a88234" "Example-RenderFigureToPNG.java" >}}
+{{< gist "aspose-com-gists" "fc74664c51175ac402729283d0450d44" "Example-RenderFigureToPNG.java" >}}
 
 Prima di tutto, creiamo un'istanza di [rendering options](https://reference.aspose.com/tex/java/com.aspose.tex/pngfigurerendereroptions/). Lo facciamo qui insieme a specificare la risoluzione dell'immagine di output.
 
@@ -55,7 +55,7 @@ Questo è il caso d'uso più generale per la funzione **Latex Figure**.
 
 Allo stesso modo, possiamo rendere una figura in LaTeX al formato SVG.
 
-{{< gist "aspose-com-gists" "4598064edf58fab0b87d9543a4a88234" "Example-RenderFigureToSVG.java" >}}
+{{< gist "aspose-com-gists" "fc74664c51175ac402729283d0450d44" "Example-RenderFigureToSVG.java" >}}
 
 Le differenze sono:
 

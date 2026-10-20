@@ -21,7 +21,7 @@ lastmod: "2026-04-21"
 
 Укажіть у `inputDirectory` папку з файлом `customtex.tex` і його залежностями, а в `outputDirectory` — наявну папку виведення. Вихідний файл формату має закінчуватися командою `\dump`; приклад створює в папці виведення файл `customtex.fmt`. Імпортуйте класи Aspose.TeX, використані в прикладах, а для набору тексту також `com.aspose.tex.rendering.XpsDevice`, `java.io.ByteArrayInputStream` і `java.nio.charset.StandardCharsets`. Метод виклику має обробляти або оголошувати винятки. Застосуйте ліцензію згідно з [посібником із ліцензування](/tex/{{lang.url-fragment}}java/licensing/), щоб уникнути обмежень ознайомлювальної версії.
 
-{{< gist "aspose-com-gists" "d21a098d3848236e0c258661f5bbc0ae" "Example-CreateCustomTeXFormat.java" >}}
+{{< gist "aspose-com-gists" "68af8199308bda28d9e6fa4670c0ba12" "Example-CreateCustomTeXFormat.java" >}}
 
 Як бачите, код схожий на код для перетворення файлу TeX. Але є кілька відмінностей.
 
@@ -37,7 +37,7 @@ lastmod: "2026-04-21"
 
 Укажіть у `formatDirectory` папку з раніше створеним файлом `customtex.fmt`, а в `outputDirectory` — наявну папку виведення. Приклад набирає самодостатній текстовий потік у `typeset-with-custom-format.xps`, тому робоча папка введення не потрібна. Задайте її, якщо основні вхідні дані мають залежності, наприклад зображення.
 
-{{< gist "aspose-com-gists" "d21a098d3848236e0c258661f5bbc0ae" "Example-TypesetWithCustomTeXFormat.java" >}}
+{{< gist "aspose-com-gists" "68af8199308bda28d9e6fa4670c0ba12" "Example-TypesetWithCustomTeXFormat.java" >}}
 
 Вочевидь ми повинні якось визначити формат. Перш за все, нам потрібно створити екземпляр класу [FormatProvider](https://reference.aspose.com/tex/java/com.aspose.tex/formatprovider/) . Потім у конструкторі параметрів ми використовуємо конфігурацію [TeXConfig.objectTeX(FormatProvider)](https://reference.aspose.com/tex/java/com.aspose.tex/texconfig/#objectTeX-com.aspose.tex.FormatProvider-), яка приймає наш провайдер формату як аргумент і завантажує формат поверх «незайманого» стану двигуна.
 

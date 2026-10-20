@@ -57,7 +57,7 @@ Nachdem wir einen TeX-Job mit dieser Option ausgeführt haben (vergessen Sie nic
 
 Hier ist der vollständige Quellcode für das Beispiel:
 
-{{< gist "aspose-com-gists" "03f720960e15bd497ed26ce2eb9c03b2" "Example-RequiredInput-FileSystem.cs" >}}
+{{< gist "aspose-com-gists" "deadfd7c29ffe40024a9b6d12f0ed18a" "Example-RequiredInput-FileSystem.cs" >}}
 
 ### Archivierte erforderliche Eingabe (Paket „pgfplots“)
 
@@ -118,7 +118,7 @@ Nachdem wir einen TeX-Job mit dieser Option ausgeführt haben, erhalten wir das 
 
 Hier ist der vollständige Quellcode für das Beispiel:
 
-{{< gist "aspose-com-gists" "03f720960e15bd497ed26ce2eb9c03b2" "Example-RequiredInput-Zip.cs" >}}
+{{< gist "aspose-com-gists" "deadfd7c29ffe40024a9b6d12f0ed18a" "Example-RequiredInput-Zip.cs" >}}
 
 > **_HINWEIS:_** Das Ergebnis wurde mit dem Paket `pgfplots`, Version 1.18.1, überprüft. Die Version des `pfg`-Pakets, das in der **Aspose.TeX**-Bibliothek enthalten ist, ist 3.1.9a.
 
@@ -130,7 +130,7 @@ Die *Object TeX*-Engine-Erweiterung von **Aspose.TeX** benötigt Schriftartenzuo
 
 Nachfolgend stellen wir ein anschauliches Beispiel für ein benutzerdefiniertes erforderliches Eingabeverzeichnis bereit, das auch die Schnittstelle [IFileCollector](https://reference.aspose.com/tex/net/aspose.tex.io/ifilecollector/) implementiert. Während wir uns auf das Sammeln von Dateinamen nach Erweiterung konzentrieren, lassen wir die Details zum Speichern und Abrufen von Dateien bewusst weg.
 
-{{< gist "aspose-com-gists" "03f720960e15bd497ed26ce2eb9c03b2" "Example-RequiredInputDirectory.cs" >}}
+{{< gist "aspose-com-gists" "deadfd7c29ffe40024a9b6d12f0ed18a" "Example-RequiredInputDirectory.cs" >}}
 
 ### Einschränkungen
 

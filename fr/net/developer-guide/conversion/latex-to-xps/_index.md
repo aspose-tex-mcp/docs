@@ -31,7 +31,7 @@ L'exemple ci-dessous montre comment convertir un fichier LaTeX en XPS en quelque
 
 Ce code illustre la méthode la plus directe pour générer un fichier XPS à partir de LaTeX.
 
-{{< gist "aspose-com-gists" "1d10927e18d23e49096c91ce726e9d6f" "Example-ConvertLaTeXToXPS-Simplest.cs" >}}
+{{< gist "aspose-com-gists" "507170b996a1d0c39bb4374e888b3205" "Example-ConvertLaTeXToXPS-Simplest.cs" >}}
 
 ### Une autre façon d'écrire le fichier XPS de sortie principal
 
@@ -48,7 +48,7 @@ Cet extrait de code illustre l'utilisation du constructeur `XpsDevice` qui accep
 
 Cette approche est utile lorsque vous avez besoin des données XPS en mémoire plutôt que sous forme de fichier sur disque.
 
-{{< gist "aspose-com-gists" "1d10927e18d23e49096c91ce726e9d6f" "Example-ConvertLaTeXToXPS-Alternative.cs" >}}
+{{< gist "aspose-com-gists" "507170b996a1d0c39bb4374e888b3205" "Example-ConvertLaTeXToXPS-Alternative.cs" >}}
 
 L’effet est le même que celui que nous obtenons [ici](/tex/{{lang.url-fragment}}net/latex-to-pdf/#an-alternative-way-to-write-main-output-pdf-file).
 

@@ -21,7 +21,7 @@ lastmod: "2026-04-21"
 
 `inputDirectory` に `customtex.tex` とその依存ファイルを含むフォルダーを、`outputDirectory` に既存の出力フォルダーを指定します。形式のソースは `\dump` で終わる必要があり、この例では出力フォルダーに `customtex.fmt` を作成します。例で使用する Aspose.TeX クラスと、組版に必要な `com.aspose.tex.rendering.XpsDevice`、`java.io.ByteArrayInputStream`、`java.nio.charset.StandardCharsets` をインポートします。呼び出し元のメソッドは例外を処理するか宣言する必要があります。評価版の制限を避けるため、[ライセンスガイド](/tex/{{lang.url-fragment}}java/licensing/)に従ってライセンスを適用してください。
 
-{{< gist "aspose-com-gists" "d21a098d3848236e0c258661f5bbc0ae" "Example-CreateCustomTeXFormat.java" >}}
+{{< gist "aspose-com-gists" "68af8199308bda28d9e6fa4670c0ba12" "Example-CreateCustomTeXFormat.java" >}}
 
 ご覧のとおり、コードはTEXファイルを変換するためのコードに似ています。しかし、いくつかの違いがあります。
 
@@ -37,7 +37,7 @@ lastmod: "2026-04-21"
 
 `formatDirectory` に作成済みの `customtex.fmt` を含むフォルダーを、`outputDirectory` に既存の出力フォルダーを指定します。この例は自己完結したテキストストリームを `typeset-with-custom-format.xps` に組版するため、入力作業ディレクトリは不要です。主入力が画像などの依存ファイルを参照する場合は、入力作業ディレクトリを設定します。
 
-{{< gist "aspose-com-gists" "d21a098d3848236e0c258661f5bbc0ae" "Example-TypesetWithCustomTeXFormat.java" >}}
+{{< gist "aspose-com-gists" "68af8199308bda28d9e6fa4670c0ba12" "Example-TypesetWithCustomTeXFormat.java" >}}
 
 明らかに、形式を何らかの形で指定する必要があります。まず、[formatprovider](https://reference.aspose.com/tex/java/com.aspose.tex/formatprovider/) クラスのインスタンスを作成する必要があります。次に、オプションコンストラクターで[TeXConfig.objectTeX(FormatProvider)](https://reference.aspose.com/tex/java/com.aspose.tex/texconfig/#objectTeX-com.aspose.tex.FormatProvider-)構成を使用します。これは、フォーマットプロバイダーを引数として受け取り、エンジンの「処女」状態の上に形式をロードします。
 

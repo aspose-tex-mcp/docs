@@ -21,7 +21,7 @@ lastmod: "2026-04-21"
 
 将 `inputDirectory` 设置为包含 `customtex.tex` 及其依赖文件的文件夹，将 `outputDirectory` 设置为现有的输出文件夹。格式源文件必须以 `\dump` 结束；此示例在输出文件夹中创建 `customtex.fmt`。导入示例中使用的 Aspose.TeX 类，以及排版所需的 `com.aspose.tex.rendering.XpsDevice`、`java.io.ByteArrayInputStream` 和 `java.nio.charset.StandardCharsets`。调用方法必须处理或声明异常。按照[许可指南](/tex/{{lang.url-fragment}}java/licensing/)应用许可证，以避免评估版限制。
 
-{{< gist "aspose-com-gists" "d21a098d3848236e0c258661f5bbc0ae" "Example-CreateCustomTeXFormat.java" >}}
+{{< gist "aspose-com-gists" "68af8199308bda28d9e6fa4670c0ba12" "Example-CreateCustomTeXFormat.java" >}}
 
 如您所见，该代码类似于用于转换Tex文件的代码。但是有一些差异。
 
@@ -37,7 +37,7 @@ lastmod: "2026-04-21"
 
 将 `formatDirectory` 设置为包含已创建的 `customtex.fmt` 的文件夹，将 `outputDirectory` 设置为现有的输出文件夹。此示例将独立的文本流排版为 `typeset-with-custom-format.xps`，因此无需输入工作目录。如果主输入有图像等依赖文件，请设置输入工作目录。
 
-{{< gist "aspose-com-gists" "d21a098d3848236e0c258661f5bbc0ae" "Example-TypesetWithCustomTeXFormat.java" >}}
+{{< gist "aspose-com-gists" "68af8199308bda28d9e6fa4670c0ba12" "Example-TypesetWithCustomTeXFormat.java" >}}
 
 显然，我们必须以某种方式指定格式。首先，我们需要创建一个[formatprovider](https://reference.aspose.com/tex/java/com.aspose.tex/formatprovider/) 类的实例。然后，在选项构造函数中，我们使用[TeXConfig.objectTeX(FormatProvider)](https://reference.aspose.com/tex/java/com.aspose.tex/texconfig/#objectTeX-com.aspose.tex.FormatProvider-)配置，该配置将我们的格式提供程序作为参数，并将格式加载到引擎的“处女”状态之上。
 

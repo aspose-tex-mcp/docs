@@ -19,7 +19,7 @@ Inizieremo con la creazione di un formato personalizzato.
 
 Ricordiamo che il file di formato è un dump binario dello stato interno del motore TeX.
 
-{{< gist "aspose-com-gists" "c0eb6cbcfb001b7e6355cafa4611afed" "Example-CreateCustomFormat.cs" >}}
+{{< gist "aspose-com-gists" "deadfd7c29ffe40024a9b6d12f0ed18a" "Example-CreateCustomFormat.cs" >}}
 
 Come potete vedere, il codice è simile a quello per la conversione di un file TeX. Tuttavia, ci sono alcune differenze.
 
@@ -33,7 +33,7 @@ La seconda differenza fondamentale riguarda la modalità di esecuzione del job. 
 
 Ora che abbiamo il nostro formato TeX, vogliamo impaginare un file TeX scritto in questo formato. Ecco il codice:
 
-{{< gist "aspose-com-gists" "c0eb6cbcfb001b7e6355cafa4611afed" "Example-TypesetWithCustomFormat.cs" >}}
+{{< gist "aspose-com-gists" "deadfd7c29ffe40024a9b6d12f0ed18a" "Example-TypesetWithCustomFormat.cs" >}}
 
 Ovviamente, dobbiamo specificare il formato in qualche modo. Innanzitutto, dobbiamo creare un'istanza della classe [FormatProvider](https://reference.aspose.com/tex/net/aspose.tex.resourceproviders/formatprovider/). Successivamente, nel costruttore delle opzioni, utilizziamo la configurazione [TeXConfig.ObjectTeX()](https://reference.aspose.com/tex/net/aspose.tex/texconfig/objecttex/), che accetta il nostro provider di formato come argomento e carica il formato sullo stato "vergine" del motore.
 

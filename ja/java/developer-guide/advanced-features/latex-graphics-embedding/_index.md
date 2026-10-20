@@ -112,7 +112,7 @@ iVBORw0KGgoAAAANSUhEUgAAAPgAAABdCAYAAAH/B5vAAAAAGXRFWHRTb2Z0d2FyZQBBZ......
 
 Java の例は完全な `embedded-base64-image.tex` 文書を PDF に変換します。`inputFile` に入力の完全パス、`outputDirectory` に既存の出力フォルダーを指定します。使用する `com.aspose.tex` クラス、`com.aspose.tex.rendering.PdfDevice`、`com.aspose.tex.rendering.PdfSaveOptions` をインポートし、例外を処理または宣言してください。[ライセンスガイド](/tex/{{lang.url-fragment}}java/licensing/)に従ってライセンスを適用します。組み込み Base64 コマンド用に `ShellRestricted` を有効にし、対話なしで処理して端末出力をメモリに保存します。PDF デバイスと出力ディレクトリはジョブ終了後に解放または閉じます。出力フォルダーには `sample-image.64`、デコードした `sample-image.png`、PDF、TeX ログが生成されます。
 
-{{< gist "aspose-com-gists" "e17f869aabed3881c74973f5e875d539" "Example-EmbeddedBase64Image.java" >}}
+{{< gist "aspose-com-gists" "68af8199308bda28d9e6fa4670c0ba12" "Example-EmbeddedBase64Image.java" >}}
 
 これで **ステップ 5** が完了です。さらに詳しいサンプルは、[Example project](https://github.com/aspose-tex/Aspose.TeX-for-Java) をご覧ください。
 

@@ -21,7 +21,7 @@ Set `inputFile` to the full path of `invalid-latex.tex`, `outputDirectory` to an
 
 The input and output directories remain open until the repair process finishes and are closed afterward. Let's now look at the Java code sample.
 
-{{< gist "aspose-com-gists" "e17f869aabed3881c74973f5e875d539" "Example-LaTeXRepairer.java" >}}
+{{< gist "aspose-com-gists" "68af8199308bda28d9e6fa4670c0ba12" "Example-LaTeXRepairer.java" >}}
 
 Similar to a regular TeX job, we start by creating an object that holds the options for the process we are about to run. Most of these options are the same as those for a regular TeX job. Indeed, calling the [setInputWorkingDirectory()](https://reference.aspose.com/tex/java/com.aspose.tex.features/latexrepaireroptions/#setInputWorkingDirectory-com.aspose.tex.IInputWorkingDirectory-) method, we specify the space from which the input files should be read. However, in this example, we don't use it here because we provide the full path to the main input file in the file system, and no custom files are to be included in the main input file. Next, we call the [setOutputWorkingDirectory()](https://reference.aspose.com/tex/java/com.aspose.tex.features/latexrepaireroptions/#setOutputWorkingDirectory-com.aspose.tex.IOutputWorkingDirectory-) method to specify the space where the output files should be written. If called, the [setRequiredInputDirectory()](https://reference.aspose.com/tex/java/com.aspose.tex.features/latexrepaireroptions/#setRequiredInputDirectory-com.aspose.tex.IInputWorkingDirectory-) method makes options point to the space where you may store LaTeX packages that are not embedded in the Aspose.TeX library. Finally, the [setGuessPackageCallback()](https://reference.aspose.com/tex/java/com.aspose.tex.features/latexrepaireroptions/#setGuessPackageCallback-com.aspose.tex.features.IGuessPackageCallback-) method will be discussed later on.
 
@@ -35,7 +35,7 @@ While further scanning the file, the engine may come across undefined commands o
 
 Here is a basic example that maps the `\lhead` command to the `fancyhdr` package. The command name passed to the callback has no leading backslash; unknown commands and environments return an empty string:
 
-{{< gist "aspose-com-gists" "e17f869aabed3881c74973f5e875d539" "Example-PackageGuessingCallback.java" >}}
+{{< gist "aspose-com-gists" "68af8199308bda28d9e6fa4670c0ba12" "Example-PackageGuessingCallback.java" >}}
 
 As for the sample file, the engine first encounters the `\chapter` command, which is not defined in the `article` document class but is defined in the `book` document class. The API adjusts the document class so that the final version of the repaired file will begin with `\documentclass{book}`. Then, the engine finds the aforementioned `\lhead` command and determines that `\usepackage{fancyhdr}` must be inserted in the preamble. The `\href` and `\includegraphics` commands that occur later in the file make the Repairer insert `\usepackage{hyperref}` and `\usepackage{graphicx}` in the preamble, respectively. These decisions are made based on the API's internal mappings. As before, all these repairs are logged in the report file.
 

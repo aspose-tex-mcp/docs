@@ -115,7 +115,7 @@ iVBORw0KGgoAAAANSUhEUgAAAPgAAABdCAYAAAH/B5vAAAAAGXRFWHRTb2Z0d2FyZQBBZ......
 
 E il codice C# usando l'API **aspose.tex** è simile a quello in altri articoli, ad eccezione della specifica dell'opzione `shellmode`:
 
-{{< gist "aspose-com-gists" "7f54d335270200ebf5987d071bad028a" "Examples_LaTeXEmbeddedBase64EncodedImage" >}}
+{{< gist "aspose-com-gists" "deadfd7c29ffe40024a9b6d12f0ed18a" "Examples_LaTeXEmbeddedBase64EncodedImage" >}}
 
 E ora abbiamo finito con il **passaggio 5**. Per esempi davvero completi, esplora il nostro [Progetto Esempio](https://github.com/aspose-tex/Aspose.TeX-for-.NET).
 

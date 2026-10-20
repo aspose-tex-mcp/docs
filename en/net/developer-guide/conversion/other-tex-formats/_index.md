@@ -19,7 +19,7 @@ We will start with creating a custom format.
 
 Let's remember that the format file is a binary dump of the TeX engine's internal state.
 
-{{< gist "aspose-com-gists" "c0eb6cbcfb001b7e6355cafa4611afed" "Example-CreateCustomFormat.cs" >}}
+{{< gist "aspose-com-gists" "deadfd7c29ffe40024a9b6d12f0ed18a" "Example-CreateCustomFormat.cs" >}}
 
 As you can see, the code is similar to the code for converting a TeX file. But there are a few differences.
 
@@ -33,7 +33,7 @@ And the second key difference is the way we run the job. This time we use the st
 
 Now that we have our own TeX format, we want to typeset a TeX file written in this format. Here is the code:
 
-{{< gist "aspose-com-gists" "c0eb6cbcfb001b7e6355cafa4611afed" "Example-TypesetWithCustomFormat.cs" >}}
+{{< gist "aspose-com-gists" "deadfd7c29ffe40024a9b6d12f0ed18a" "Example-TypesetWithCustomFormat.cs" >}}
 
 Obviously, we have to specify the format somehow. First of all, we need to create an instance of the [FormatProvider](https://reference.aspose.com/tex/net/aspose.tex.resourceproviders/formatprovider/) class. Then, in the options constructor, we use the [TeXConfig.ObjectTeX()](https://reference.aspose.com/tex/net/aspose.tex/texconfig/objecttex/) configuration, which takes our format provider as an argument and loads the format on top of the "virgin" state of the engine.
 

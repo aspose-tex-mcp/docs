@@ -50,7 +50,7 @@ Test: \fbox{
 
 Ось повний вихідний код прикладу:
 
-{{< gist "aspose-com-gists" "be002eee5d3f1f880cf1b77424b754e1" "Example-RequiredInput-FileSystem.java" >}}
+{{< gist "aspose-com-gists" "68af8199308bda28d9e6fa4670c0ba12" "Example-RequiredInput-FileSystem.java" >}}
 
 ### Архівований необхідний вхід (пакет `pgfplots`)
 
@@ -98,7 +98,7 @@ First example is 2D and 3D math expressions plotted side-by-side.
 
 Ось повний вихідний код прикладу:
 
-{{< gist "aspose-com-gists" "be002eee5d3f1f880cf1b77424b754e1" "Example-RequiredInput-Zip.java" >}}
+{{< gist "aspose-com-gists" "68af8199308bda28d9e6fa4670c0ba12" "Example-RequiredInput-Zip.java" >}}
 
 > **_NOTE:_** The result was verified using the `pgfplots` package version 1.18.1. While the version of the `pfg` package included in the **Aspose.TeX** library is 3.1.9a.
 
@@ -109,7 +109,7 @@ First example is 2D and 3D math expressions plotted side-by-side.
 
 Наступний користувацький `RequiredInputDirectory` реалізує обидва інтерфейси та читає явно зареєстровані локальні файли. Збережіть його як `RequiredInputDirectory.java` разом із включеними імпортами. Зареєструйте кожен файл через `storeFileName(...)`, призначте екземпляр через `options.setRequiredInputDirectory(...)` і закрийте його після завдання. Це плоский реєстр: імена файлів мають бути унікальними під час запиту без повного шляху. Розширення порівнюються без урахування регістру; необов’язковий шлях збирання вибирає папку файлової системи. Зареєструйте всі потрібні файли пакета, карти шрифтів, метрики та фізичні файли шрифтів. Збирання файлів робить карти доступними для виявлення, але не надає відсутніх даних шрифтів.
 
-{{< gist "aspose-com-gists" "be002eee5d3f1f880cf1b77424b754e1" "Example-RequiredInputDirectory.java" >}}
+{{< gist "aspose-com-gists" "68af8199308bda28d9e6fa4670c0ba12" "Example-RequiredInputDirectory.java" >}}
 
 ### Обмеження
 

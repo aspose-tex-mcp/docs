@@ -50,7 +50,7 @@ La terza riga richiede il pacchetto esterno `fancybox`. Impostare `packagesDirec
 
 Ecco il codice sorgente completo per l'esempio:
 
-{{< gist "aspose-com-gists" "be002eee5d3f1f880cf1b77424b754e1" "Example-RequiredInput-FileSystem.java" >}}
+{{< gist "aspose-com-gists" "68af8199308bda28d9e6fa4670c0ba12" "Example-RequiredInput-FileSystem.java" >}}
 
 ### Input richiesto archiviato (pacchetto `pgfplots`)
 
@@ -98,7 +98,7 @@ Impostare `packagesZip` su un `java.nio.file.Path` all’archivio contenente i s
 
 Ecco il codice sorgente completo per l'esempio:
 
-{{< gist "aspose-com-gists" "be002eee5d3f1f880cf1b77424b754e1" "Example-RequiredInput-Zip.java" >}}
+{{< gist "aspose-com-gists" "68af8199308bda28d9e6fa4670c0ba12" "Example-RequiredInput-Zip.java" >}}
 
 > **_NOTA:_** Il risultato è stato verificato utilizzando il pacchetto `pgfplots` versione 1.18.1. Mentre la versione del pacchetto `pfg` inclusa nella libreria **Aspose.TeX** è la 3.1.9a.
 
@@ -110,7 +110,7 @@ L'estensione del motore *Object TeX* in **Aspose.TeX** richiede mappe di font, o
 
 Il `RequiredInputDirectory` personalizzato seguente implementa entrambe le interfacce e legge file locali registrati esplicitamente. Salvarlo come `RequiredInputDirectory.java` con gli import inclusi. Registrare ogni file con `storeFileName(...)`, assegnare l’istanza con `options.setRequiredInputDirectory(...)` e chiuderla dopo il lavoro. È un registro piatto: i nomi dei file devono essere univoci quando richiesti senza un percorso completo. Le estensioni vengono confrontate senza distinguere maiuscole e minuscole; il percorso di raccolta facoltativo seleziona una directory del file system. Registrare tutti i file necessari di pacchetti, mappe dei font, metriche e font fisici. La raccolta rende individuabili le mappe, ma non fornisce dati dei font mancanti.
 
-{{< gist "aspose-com-gists" "be002eee5d3f1f880cf1b77424b754e1" "Example-RequiredInputDirectory.java" >}}
+{{< gist "aspose-com-gists" "68af8199308bda28d9e6fa4670c0ba12" "Example-RequiredInputDirectory.java" >}}
 
 ### Restrizioni
 

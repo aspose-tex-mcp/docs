@@ -21,7 +21,7 @@ lastmod: "2026-04-21"
 
 Укажите в `inputDirectory` папку с файлом `customtex.tex` и его зависимостями, а в `outputDirectory` — существующую папку вывода. Исходный файл формата должен заканчиваться командой `\dump`; пример создаёт в папке вывода файл `customtex.fmt`. Импортируйте классы Aspose.TeX, используемые в примерах, а для набора текста также `com.aspose.tex.rendering.XpsDevice`, `java.io.ByteArrayInputStream` и `java.nio.charset.StandardCharsets`. Вызывающий метод должен обрабатывать или объявлять исключения. Примените лицензию согласно [руководству по лицензированию](/tex/{{lang.url-fragment}}java/licensing/), чтобы избежать ограничений ознакомительной версии.
 
-{{< gist "aspose-com-gists" "d21a098d3848236e0c258661f5bbc0ae" "Example-CreateCustomTeXFormat.java" >}}
+{{< gist "aspose-com-gists" "68af8199308bda28d9e6fa4670c0ba12" "Example-CreateCustomTeXFormat.java" >}}
 
 Как видите, код аналогичен коду конвертации файла TeX. Но есть несколько отличий.
 
@@ -37,7 +37,7 @@ lastmod: "2026-04-21"
 
 Укажите в `formatDirectory` папку с ранее созданным файлом `customtex.fmt`, а в `outputDirectory` — существующую папку вывода. Пример выполняет набор из самодостаточного текстового потока в `typeset-with-custom-format.xps`, поэтому рабочая папка ввода не требуется. Задайте её, если основной ввод содержит зависимости, например изображения.
 
-{{< gist "aspose-com-gists" "d21a098d3848236e0c258661f5bbc0ae" "Example-TypesetWithCustomTeXFormat.java" >}}
+{{< gist "aspose-com-gists" "68af8199308bda28d9e6fa4670c0ba12" "Example-TypesetWithCustomTeXFormat.java" >}}
 
 Очевидно, нам нужно как-то указать формат. Прежде всего, нам нужно создать экземпляр класса [FormatProvider](https://reference.aspose.com/tex/java/com.aspose.tex/formatprovider/) . Затем в конструкторе параметров мы используем конфигурацию [TeXConfig.objectTeX(FormatProvider)](https://reference.aspose.com/tex/java/com.aspose.tex/texconfig/#objectTeX-com.aspose.tex.FormatProvider-), которая принимает нашего поставщика формата в качестве аргумента и загружает формат поверх «девственного» состояния движка.
 

@@ -21,7 +21,7 @@ lastmod: "2026-04-22"
 
 让我们详细查看 C# 代码，了解将 LaTeX 转换为 PNG 格式的最简方法。
 
-{{< gist "aspose-com-gists" "58d1c43acd187f1cde7917fa9a430281" "Example-ConvertLaTeXToPNG-Simplest.cs" >}}
+{{< gist "aspose-com-gists" "507170b996a1d0c39bb4374e888b3205" "Example-ConvertLaTeXToPNG-Simplest.cs" >}}
 
 因此，我们需要做的第一件事（有时不是第一件事）是创建一个 [TeXOptions](https://reference.aspose.com/tex/net/aspose.tex/texoptions/) 类的实例。唯一的静态方法是 [ConsoleAppOptions()](https://reference.aspose.com/tex/net/aspose.tex/texoptions/consoleappoptions/)，所以不要被其名称困惑。该方法接受 [ObjectLaTeX 实例](https://reference.aspose.com/tex/net/aspose.tex/texconfig/objectlatex/)（属于 [TeXConfig](https://reference.aspose.com/tex/net/aspose.tex/texconfig/) 类），该实例正好适用于转换 [LaTeX 文件](/tex/{{lang.url-fragment}}net/latex-io/#latex-file)。此配置告诉 Object TeX 引擎加载 Object LaTeX 格式，并准备接受 LaTeX 文件。Object LaTeX 格式实际上就是 [LaTeX](/tex/{{lang.url-fragment}}net/what-is-latex/) 格式，只是使用了 [Object TeX](/tex/{{lang.url-fragment}}net/aspose-tex-and-object-tex/#object-tex) 特定的原语来设置页面度量。
 
@@ -61,7 +61,7 @@ Transcript written on hello-world.log.
 
 下面的 C# 代码片段演示了另一种通过写入内存流而不是直接写入文件系统来获取 PNG 输出的方法。此方法在需要将生成的 PNG 字节保存在内存中以便进一步处理（例如通过网络发送、存入数据库或在保存前进行其他转换）时非常有用。
 
-{{< gist "aspose-com-gists" "58d1c43acd187f1cde7917fa9a430281" "Example-ConvertLaTeXToPNG-Alternative.cs" >}}
+{{< gist "aspose-com-gists" "507170b996a1d0c39bb4374e888b3205" "Example-ConvertLaTeXToPNG-Alternative.cs" >}}
 
 *"page-n.png"* 文件将写入我们指定的任何路径。与 [PDF 输出](/tex/{{lang.url-fragment}}net/latex-to-pdf/#an-alternative-way-to-write-main-output-pdf-file) 不同，它们会复制写入输出目录的 PNG 文件。
 
@@ -77,19 +77,19 @@ Transcript written on hello-world.log.
 
 ## 如何将 LaTeX 转换为 JPG
 
-{{< gist "aspose-com-gists" "58d1c43acd187f1cde7917fa9a430281" "Example-ConvertLaTeXToJPEG.cs" >}}
+{{< gist "aspose-com-gists" "507170b996a1d0c39bb4374e888b3205" "Example-ConvertLaTeXToJPEG.cs" >}}
 
 **您还可以查看基于 [Aspose.TeX for .NET API](https://products.aspose.com/tex/net/) 构建的免费 LaTeX 转 JPG 转换 [网络应用](https://products.aspose.app/tex/conversion/latex-to-jpg)。**
 
 ## 如何将 LaTeX 转换为 TIFF
 
-{{< gist "aspose-com-gists" "58d1c43acd187f1cde7917fa9a430281" "Example-ConvertLaTeXToTIFF.cs" >}}
+{{< gist "aspose-com-gists" "507170b996a1d0c39bb4374e888b3205" "Example-ConvertLaTeXToTIFF.cs" >}}
 
 **您还可以查看基于 [Aspose.TeX for .NET API](https://products.aspose.com/tex/net/) 构建的免费 LaTeX 转 TIFF 转换 [网络应用](https://products.aspose.app/tex/conversion/latex-to-tiff)。**
 
 ## 如何将 LaTeX 转换为 BMP
 
-{{< gist "aspose-com-gists" "58d1c43acd187f1cde7917fa9a430281" "Example-ConvertLaTeXToBMP.cs" >}}
+{{< gist "aspose-com-gists" "507170b996a1d0c39bb4374e888b3205" "Example-ConvertLaTeXToBMP.cs" >}}
 
 **您还可以查看基于 [Aspose.TeX for .NET API](https://products.aspose.com/tex/net/) 构建的免费 LaTeX 转 BMP 转换 [网络应用](https://products.aspose.app/tex/conversion/latex-to-bmp)。**
 
@@ -103,6 +103,6 @@ Transcript written on hello-world.log.
 
 LaTeX 转 SVG 的转换同样像[转换为光栅图像格式](/tex/{{lang.url-fragment}}net/latex-to-image/) 那样简单，只是需要将 [SaveOptions](https://reference.aspose.com/tex/net/aspose.tex/texoptions/saveoptions/) 设置为 [SvgSaveOptions](https://reference.aspose.com/tex/net/aspose.tex.presentation.svg/svgsaveoptions/) 类实例，并且必须把设备更改为 [SvgDevice](https://reference.aspose.com/tex/net/aspose.tex.presentation.svg/svgdevice/) 类的实例。
 
-{{< gist "aspose-com-gists" "58d1c43acd187f1cde7917fa9a430281" "Example-ConvertLaTeXToSVG-Simplest.cs" >}}
+{{< gist "aspose-com-gists" "507170b996a1d0c39bb4374e888b3205" "Example-ConvertLaTeXToSVG-Simplest.cs" >}}
 
 **您还可以查看基于 [Aspose.TeX for .NET API](https://products.aspose.com/tex/net/) 构建的免费 LaTeX 转 SVG 转换 [网络应用](https://products.aspose.app/tex/conversion/latex-to-svg)。**

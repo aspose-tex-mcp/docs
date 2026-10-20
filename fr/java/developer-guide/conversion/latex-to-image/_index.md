@@ -20,7 +20,7 @@ Examinons de plus près le code Java fournissant le moyen le plus simple de conv
 
 Définissez `inputFile` sur le chemin complet de votre fichier LaTeX, par exemple `hello-world.ltx`, et `outputDirectory` sur un dossier de sortie existant. Importez les classes de `com.aspose.tex` et `com.aspose.tex.rendering` utilisées dans l'extrait. La méthode appelante doit gérer ou déclarer les exceptions. Appliquez une licence comme décrit dans le [guide des licences](/tex/{{lang.url-fragment}}java/licensing/) pour éviter les restrictions d'évaluation. L'exemple utilise un traitement non interactif et ferme ses ressources de sortie. L'exemple PNG utilise une résolution de 300 DPI. Pour l'entrée d'une page `hello-world.ltx`, les fichiers de sortie automatiques sont `hello-world.png`, `hello-world.jpg`, `hello-world.tif`, `hello-world.bmp` ou `hello-world.svg`, selon le format sélectionné.
 
-{{< gist "aspose-com-gists" "9d6b3df9df43d8caf00a0d519c504cf5" "Example-ConvertLaTeXToPNG-Simplest.java" >}}
+{{< gist "aspose-com-gists" "a30f406f6b8ace1b7d15c68a1df75c6d" "Example-ConvertLaTeXToPNG-Simplest.java" >}}
 
 Ainsi, la première chose que nous devons faire (parfois pas la toute première, comme nous le découvrirons plus tard) est de créer une instance de la classe [TeXOptions](https://reference.aspose.com/tex/java/com.aspose.tex/texoptions/). La seule méthode statique qui fait cela est [consoleAppOptions()](https://reference.aspose.com/tex/java/com.aspose.tex/texoptions/#consoleAppOptions-com.aspose.tex.TeXConfig-), alors ne nous soucions pas de la signification de son nom. La méthode prend l'[instance objectLaTeX()](https://reference.aspose.com/tex/java/com.aspose.tex/texconfig/#objectLaTeX--) de la classe [TeXConfig](https://reference.aspose.com/tex/java/com.aspose.tex/texconfig/), qui convient parfaitement à la conversion d'un [fichier LaTeX](/tex/{{lang.url-fragment}}net/latex-io/#latex-file). Cette configuration demande au moteur Object TeX de charger le format Object LaTeX et d'être prêt à accepter le fichier LaTeX. Le format Object LaTeX n'est en fait que le format [LaTeX](/tex/{{lang.url-fragment}}net/what-is-latex/), sauf qu'il utilise des primitives spécifiques à [Object TeX](/tex/{{lang.url-fragment}}net/aspose-tex-and-object-tex/#object-tex) pour configurer les métriques de la page.
 
@@ -56,7 +56,7 @@ Nous trouverons d'autres produits du moteur dans le dossier que nous avons spéc
 
 Il existe une autre façon d'obtenir des données d'image sous forme de tableau de tableaux d'octets, chaque tableau de la deuxième dimension représente les données d'image d'une page distincte.
 
-{{< gist "aspose-com-gists" "9d6b3df9df43d8caf00a0d519c504cf5" "Example-ConvertLaTeXToPNG-Alternative.java" >}}
+{{< gist "aspose-com-gists" "a30f406f6b8ace1b7d15c68a1df75c6d" "Example-ConvertLaTeXToPNG-Alternative.java" >}}
 
 L'exemple manuel nécessite aussi `java.nio.file.Files` et `java.nio.file.Paths`. Il enregistre les données des pages de `ImageDevice.getResult()` sous les noms `page-1.png`, `page-2.png`, etc. Comme il définit `deviceWritesImages(false)`, la sortie PNG automatique est désactivée et les pages enregistrées manuellement ne sont pas dupliquées dans le répertoire de sortie. Cela diffère de la [sortie PDF via un flux](/tex/{{lang.url-fragment}}java/latex-to-pdf/#une-autre-façon-décrire-le-fichier-pdf-de-sortie-principal), où le flux définit la destination d'un seul document PDF.
 
@@ -72,19 +72,19 @@ Ci-dessous, nous discutons de la conversion de LaTeX vers d'autres formats d'ima
 
 ## Comment convertir LaTeX en JPG
 
-{{< gist "aspose-com-gists" "9d6b3df9df43d8caf00a0d519c504cf5" "Example-ConvertLaTeXToJPEG.java" >}}
+{{< gist "aspose-com-gists" "a30f406f6b8ace1b7d15c68a1df75c6d" "Example-ConvertLaTeXToJPEG.java" >}}
 
 **Vous pouvez également consulter la conversion gratuite LaTeX vers JPG [application Web](https://products.aspose.app/tex/conversion/latex-to-jpg) construite sur la base de l'API [Aspose.TeX for .NET](https://products.aspose.com/tex/net/). [Ici](https://products.aspose.com/tex/java/) est la page de la version Java.**
 
 ## Comment convertir LaTeX en TIFF
 
-{{< gist "aspose-com-gists" "9d6b3df9df43d8caf00a0d519c504cf5" "Example-ConvertLaTeXToTIFF.java" >}}
+{{< gist "aspose-com-gists" "a30f406f6b8ace1b7d15c68a1df75c6d" "Example-ConvertLaTeXToTIFF.java" >}}
 
 **Vous pouvez également consulter la conversion gratuite LaTeX vers TIFF [application Web](https://products.aspose.app/tex/conversion/latex-to-tiff) construite sur la base de l'API [Aspose.TeX for .NET](https://products.aspose.com/tex/net/). [Ici](https://products.aspose.com/tex/java/) est la page de la version Java.**
 
 ## Comment convertir LaTeX en BMP
 
-{{< gist "aspose-com-gists" "9d6b3df9df43d8caf00a0d519c504cf5" "Example-ConvertLaTeXToBMP.java" >}}
+{{< gist "aspose-com-gists" "a30f406f6b8ace1b7d15c68a1df75c6d" "Example-ConvertLaTeXToBMP.java" >}}
 
 **Vous pouvez également consulter la conversion gratuite LaTeX vers BMP [application Web](https://products.aspose.app/tex/conversion/latex-to-bmp) construite sur la base de l'API [Aspose.TeX for .NET](https://products.aspose.com/tex/net/). [Ici](https://products.aspose.com/tex/java/) est la page de la version Java.**
 
@@ -99,6 +99,6 @@ Il existe également la bibliothèque [**Aspose.SVG**](https://products.aspose.c
 
 La conversion en SVG est aussi simple que la [conversion aux formats d'image raster](/tex/{{lang.url-fragment}}java/latex-to-image/), sauf qu'en plus des [SaveOptions](https://reference.aspose.com/tex/java/com.aspose.tex/texoptions/#getSaveOptions--), nous devons changer le périphérique en une instance du [SvgDevice](https://reference.aspose.com/tex/java/com.aspose.tex.rendering/svgdevice/) classe.
 
-{{< gist "aspose-com-gists" "9d6b3df9df43d8caf00a0d519c504cf5" "Example-ConvertLaTeXToSVG-Simplest.java" >}}
+{{< gist "aspose-com-gists" "a30f406f6b8ace1b7d15c68a1df75c6d" "Example-ConvertLaTeXToSVG-Simplest.java" >}}
 
 **Vous pouvez également consulter la conversion gratuite LaTeX vers SVG [application Web](https://products.aspose.app/tex/conversion/latex-to-svg) construite sur la base de [Aspose.TeX pour .NET](https://products.aspose.com/tex/net/). [Ici](https://products.aspose.com/tex/java/) est la page de la version Java.**
