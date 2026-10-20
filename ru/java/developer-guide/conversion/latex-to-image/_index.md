@@ -19,7 +19,7 @@ lastmod: "2026-04-21"
 
 Задайте в `inputFile` полный путь к файлу LaTeX, например `hello-world.ltx`, а в `outputDirectory` — существующую папку вывода. Импортируйте используемые в примере классы из `com.aspose.tex` и `com.aspose.tex.rendering`. Вызывающий метод должен обрабатывать или объявлять исключения. Примените лицензию согласно [руководству по лицензированию](/tex/{{lang.url-fragment}}java/licensing/), чтобы избежать ограничений ознакомительной версии. Пример использует неинтерактивный режим и закрывает ресурсы вывода. В PNG-примере задано разрешение 300 DPI. Для одностраничного файла `hello-world.ltx` автоматически создаётся `hello-world.png`, `hello-world.jpg`, `hello-world.tif`, `hello-world.bmp` или `hello-world.svg` в зависимости от выбранного формата.
 
-{{< gist "aspose-com-gists" "9d6b3df9df43d8caf00a0d519c504cf5" "Example-ConvertLaTeXToPNG-Simplest.java" >}}
+{{< gist "aspose-com-gists" "a30f406f6b8ace1b7d15c68a1df75c6d" "Example-ConvertLaTeXToPNG-Simplest.java" >}}
 
 Итак, первое, что нам нужно сделать (иногда не самое первое, как мы узнаем позже) — это создать экземпляр класса [TeXOptions](https://reference.aspose.com/tex/java/com.aspose.tex/texoptions/). Единственный статический метод, который это делает, — [consoleAppOptions()](https://reference.aspose.com/tex/java/com.aspose.tex/texoptions/#consoleAppOptions-com.aspose.tex.TeXConfig-), поэтому не будем заморачиваться над значением его имени. Метод принимает экземпляр [objectLaTeX()](https://reference.aspose.com/tex/java/com.aspose.tex/texconfig/#objectLaTeX--) класса [TeXConfig](https://reference.aspose.com/tex/java/com.aspose.tex/texconfig/), который точно подходит для преобразования [файла LaTeX](/tex/{{lang.url-fragment}}net/latex-io/#latex-file). Эта конфигурация предписывает механизму Object TeX загрузить формат Object LaTeX и быть готовым принять файл LaTeX. Формат Object LaTeX на самом деле представляет собой формат [LaTeX](/tex/{{lang.url-fragment}}net/what-is-latex/), за исключением того, что он использует специальные примитивы [Object TeX](/tex/{{lang.url-fragment}}net/aspose-tex-and-object-tex/#object-tex) для настройки показателей страницы.
 
@@ -56,7 +56,7 @@ Transcript written on hello-world.log.
 
 Есть еще один способ получить данные изображения в виде массива байтовых массивов: каждый массив во втором измерении представляет данные изображения для отдельной страницы.
 
-{{< gist "aspose-com-gists" "9d6b3df9df43d8caf00a0d519c504cf5" "Example-ConvertLaTeXToPNG-Alternative.java" >}}
+{{< gist "aspose-com-gists" "a30f406f6b8ace1b7d15c68a1df75c6d" "Example-ConvertLaTeXToPNG-Alternative.java" >}}
 
 Пример ручного сохранения также требует `java.nio.file.Files` и `java.nio.file.Paths`. Он сохраняет данные страниц из `ImageDevice.getResult()` как `page-1.png`, `page-2.png` и так далее. Поскольку задано `deviceWritesImages(false)`, автоматическая запись PNG отключена и вручную сохранённые страницы не дублируются в выходном каталоге. Это отличается от [записи PDF в поток](/tex/{{lang.url-fragment}}java/latex-to-pdf/#альтернативный-способ-записи-основного-выходного-pdf-файла), где поток задаёт путь вывода одного PDF-документа.
 
@@ -72,19 +72,19 @@ Transcript written on hello-world.log.
 
 ## Как конвертировать LaTeX в JPG
 
-{{< gist "aspose-com-gists" "9d6b3df9df43d8caf00a0d519c504cf5" "Example-ConvertLaTeXToJPEG.java" >}}
+{{< gist "aspose-com-gists" "a30f406f6b8ace1b7d15c68a1df75c6d" "Example-ConvertLaTeXToJPEG.java" >}}
 
 **Вы также можете ознакомиться с бесплатным [веб-приложением](https://products.aspose.app/tex/conversion/latex-to-jpg) для преобразования LaTeX в JPG, созданным на основе API [Aspose.TeX for .NET](https://products.aspose.com/tex/net/). [Здесь](https://products.aspose.com/tex/java/) — страница версии Java.**
 
 ## Как конвертировать LaTeX в TIFF
 
-{{< gist "aspose-com-gists" "9d6b3df9df43d8caf00a0d519c504cf5" "Example-ConvertLaTeXToTIFF.java" >}}
+{{< gist "aspose-com-gists" "a30f406f6b8ace1b7d15c68a1df75c6d" "Example-ConvertLaTeXToTIFF.java" >}}
 
 **Вы также можете ознакомиться с бесплатным преобразованием LaTeX в TIFF [веб-приложение](https://products.aspose.app/tex/conversion/latex-to-tiff), созданным на основе API [Aspose.TeX for .NET](https://products.aspose.com/tex/net/). [Здесь](https://products.aspose.com/tex/java/) — страница версии Java.**
 
 ## Как конвертировать LaTeX в BMP
 
-{{< gist "aspose-com-gists" "9d6b3df9df43d8caf00a0d519c504cf5" "Example-ConvertLaTeXToBMP.java" >}}
+{{< gist "aspose-com-gists" "a30f406f6b8ace1b7d15c68a1df75c6d" "Example-ConvertLaTeXToBMP.java" >}}
 
 **Вы также можете ознакомиться с бесплатным [веб-приложением](https://products.aspose.app/tex/conversion/latex-to-bmp) для преобразования LaTeX в BMP, созданным на основе API [Aspose.TeX for .NET](https://products.aspose.com/tex/net/). [Здесь](https://products.aspose.com/tex/java/) — страница версии Java.**
 
@@ -99,6 +99,6 @@ Transcript written on hello-world.log.
 
 Преобразование в SVG так же просто, как и [преобразование в форматы растровых изображений](/tex/{{lang.url-fragment}}java/latex-to-image/), за исключением того, что в дополнение к [SaveOptions](https://reference.aspose.com/tex/java/com.aspose.tex/texoptions/#getSaveOptions--) нам нужно изменить устройство на экземпляр [SvgDevice](https://reference.aspose.com/tex/java/com.aspose.tex.rendering/SvgDevice).
 
-{{< gist "aspose-com-gists" "9d6b3df9df43d8caf00a0d519c504cf5" "Example-ConvertLaTeXToSVG-Simplest.java" >}}
+{{< gist "aspose-com-gists" "a30f406f6b8ace1b7d15c68a1df75c6d" "Example-ConvertLaTeXToSVG-Simplest.java" >}}
 
 **Вы также можете ознакомиться с бесплатным преобразованием LaTeX в SVG [веб-приложение](https://products.aspose.app/tex/conversion/latex-to-svg), созданным на основе [Aspose.TeX for .NET](https://products.aspose.com/tex/net/). [Здесь](https://products.aspose.com/tex/java/) — страница версии Java.**

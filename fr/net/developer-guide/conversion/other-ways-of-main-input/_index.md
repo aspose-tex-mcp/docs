@@ -15,7 +15,7 @@ lastmod: "2026-04-22"
 
 Jusqu'à présent, nous savions seulement comment transmettre le [fichier d'entrée principal](/tex/{{lang.url-fragment}}net/tex-io/#tex-input) au moteur TeX sous forme de nom de fichier, qu'il soit entièrement spécifié ou sous forme abrégée, avec ou sans extension. Mais il existe un autre [constructeur](https://reference.aspose.com/tex/net/aspose.tex/texjob/texjob/) de la classe `TeXJob`, qui prend un flux comme premier argument. Ceci est pratique si, pour une raison quelconque, nous avons le fichier d'entrée principal sous une forme autre qu'un fichier sur le système de fichiers du disque. Voici comment cela peut être mis en œuvre :
 
-{{< gist "aspose-com-gists" "4e3bae6ecbe041bcb411e0cf4c98dc71" "Example-StreamInput-LaTeX.cs" >}}
+{{< gist "aspose-com-gists" "0fbd18cd8c28d5ed12e19cd52634ebd4" "Example-StreamInput-LaTeX.cs" >}}
 
 Notez que tous les fichiers de sortie porteront le nom *texput*. C'est parce que le moteur ne peut trouver aucun autre nom nulle part. *texput* est le nom du travail par défaut. [Ici](/tex/{{lang.url-fragment}}net/tex-io/#tex-output) et [ici](/tex/{{lang.url-fragment}}net/other-options/#how-to-set-the-job-name) sont des détails sur les noms de tâches.
 
@@ -25,7 +25,7 @@ Il existe encore un autre [constructeur](https://reference.aspose.com/tex/net/as
 
 Voici le code :
 
-{{< gist "aspose-com-gists" "4e3bae6ecbe041bcb411e0cf4c98dc71" "Example-MainInputTerminal.cs" >}}
+{{< gist "aspose-com-gists" "0fbd18cd8c28d5ed12e19cd52634ebd4" "Example-MainInputTerminal.cs" >}}
 
 Dès qu'il est lancé, le moteur bloque, attendant que nous saisissions le nom du fichier (avec ou sans chemin, avec ou sans extension) :
 

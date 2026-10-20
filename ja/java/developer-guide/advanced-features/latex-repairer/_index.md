@@ -19,7 +19,7 @@ lastmod: "2026-02-27"
 
 `inputFile` に `invalid-latex.tex` の完全パス、`outputDirectory` に既存の出力フォルダー、`packagesDirectory` に `fancyhdr.sty` と依存ファイルを含むフォルダーを指定します。以下のコールバックを import 文とともに `PackageGuesser.java` として保存し、修復処理の前に `PackageGuesser packageGuesser = new PackageGuesser()` を作成します。使用する Aspose.TeX クラスをインポートし、例外を処理または宣言してください。[ライセンスガイド](/tex/{{lang.url-fragment}}java/licensing/)に従ってライセンスを適用します。入出力ディレクトリは修復が終わるまで開いたままにし、その後閉じます。
 
-{{< gist "aspose-com-gists" "e17f869aabed3881c74973f5e875d539" "Example-LaTeXRepairer.java" >}}
+{{< gist "aspose-com-gists" "68af8199308bda28d9e6fa4670c0ba12" "Example-LaTeXRepairer.java" >}}
 
 通常の TeX ジョブと同様に、まず処理に必要なオプションを保持するオブジェクトを作成します。これらのオプションは通常の TeX ジョブとほぼ同じです。たとえば、[setInputWorkingDirectory()](https://reference.aspose.com/tex/java/com.aspose.tex.features/latexrepaireroptions/#setInputWorkingDirectory-com.aspose.tex.IInputWorkingDirectory-) メソッドで入力ファイルを読むディレクトリを指定しますが、この例ではファイルシステム上のメイン入力ファイルへのフルパスを直接渡すため使用していません。次に、[setOutputWorkingDirectory()](https://reference.aspose.com/tex/java/com.aspose.tex.features/latexrepaireroptions/#setOutputWorkingDirectory-com.aspose.tex.IOutputWorkingDirectory-) メソッドで出力ファイルを書き込むディレクトリを指定します。必要に応じて、[setRequiredInputDirectory()](https://reference.aspose.com/tex/java/com.aspose.tex.features/latexrepaireroptions/#setRequiredInputDirectory-com.aspose.tex.IInputWorkingDirectory-) メソッドで、Aspose.TeX ライブラリに組み込まれていない LaTeX パッケージを格納できるディレクトリを指すことができます。最後に、[setGuessPackageCallback()](https://reference.aspose.com/tex/java/com.aspose.tex.features/latexrepaireroptions/#setGuessPackageCallback-com.aspose.tex.features.IGuessPackageCallback-) メソッドについては後述します。
 
@@ -33,7 +33,7 @@ lastmod: "2026-02-27"
 
 この例は `\lhead` コマンドを `fancyhdr` パッケージに対応付けます。コールバックには先頭のバックスラッシュを除いた名前が渡され、未知のコマンドや環境には空文字列を返します。
 
-{{< gist "aspose-com-gists" "e17f869aabed3881c74973f5e875d539" "Example-PackageGuessingCallback.java" >}}
+{{< gist "aspose-com-gists" "68af8199308bda28d9e6fa4670c0ba12" "Example-PackageGuessingCallback.java" >}}
 
 サンプルファイルについて説明すると、エンジンは最初に `\chapter` コマンドに出会います。これは `article` クラスには定義されていませんが、`book` クラスには定義されています。そのため API はドキュメントクラスを `\documentclass{book}` に変更します。次に `\lhead` コマンドが見つかり、プリアンブルに `\usepackage{fancyhdr}` を挿入すべきと判断します。さらにファイル後半で `\href` と `\includegraphics` が現れたため、Repairer はそれぞれ `\usepackage{hyperref}` と `\usepackage{graphicx}` をプリアンブルに追加します。これらの判断は API の内部マッピングに基づいて行われ、すべての修復内容はレポートファイルに記録されます。
 

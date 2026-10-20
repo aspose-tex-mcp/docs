@@ -19,7 +19,7 @@ Primeiro de tudo, vale a pena mencionar que, embora o arquivo de amostra pareça
 
 Agora vamos olhar para o exemplo de código C#.
 
-{{< gist "aspose-com-gists" "7f54d335270200ebf5987d071bad028a" "Examples_LaTeXRepairerExample" >}}
+{{< gist "aspose-com-gists" "deadfd7c29ffe40024a9b6d12f0ed18a" "Examples_LaTeXRepairerExample" >}}
 
 Assim como em um trabalho de TEX regular, primeiro criamos um objeto que contém as opções do processo que estamos prestes a executar. A maioria deles é a mesma que as opções de um trabalho regular de Tex. De fato, o [inputworkingDirectory](https://reference.aspose.com/tex/net/aspose.tex.features/latexrepaireroptions/inputworkingdirectory/) é o espaço do qual os arquivos de entrada devem ser lidos. Não o usamos aqui porque fornecemos o caminho completo para o arquivo de entrada principal no sistema de arquivos, e nenhum arquivo personalizado deve ser incluído no arquivo de entrada principal. Em seguida, [outputworkingDirectory](https://reference.aspose.com/tex/net/aspose.tex.features/latexrepaireroptions/outputworkingdirectory/) é o espaço onde os arquivos de saída devem ser gravados. [RequeriringInputDirectory](https://reference.aspose.com/tex/net/aspose.tex.features/latexrepaireroptions/requiredinputdirectory/), se atribuído, aponta para o espaço onde você pode armazenar pacotes de LaTeX que não estão incorporados na biblioteca Aspose.TeX. A propriedade [adivinhepackageCallback](https://reference.aspose.com/tex/net/aspose.tex.features/latexrepaireroptions/guesspackagecallback/) será discutida posteriormente.
 
@@ -33,7 +33,7 @@ Em seguida, ele começa a digitalizar o arquivo de entrada ajustado desde o iní
 
 Aqui está um exemplo muito simples que apenas mapeia o comando `\head` para o pacote` FancyHdr`:
 
-{{< gist "aspose-com-gists" "7f54d335270200ebf5987d071bad028a" "Examples_PackageGuessingCallback" >}}
+{{< gist "aspose-com-gists" "deadfd7c29ffe40024a9b6d12f0ed18a" "Examples_PackageGuessingCallback" >}}
 
 Quanto ao arquivo de amostra, o mecanismo encontra primeiro o comando `\ Capítulo`, que não está definido na classe de documentos`artigo`, mas é definido na classe de documentos `book`. A API ajusta a classe Document para que a versão final do arquivo fixo seja iniciado com `\documentclass {Book}`. Em seguida, o motor encontra o comando `\lhead` mencionado acima e decide que`\usepackage {FancyHdr} `deve ser inserido no preâmbulo. Os comandos `\href` e `\incluemGraphics` que ocorrem mais tarde para fazer o reparador inserir `\usepackage {hyperref}` e `\usepackage {gráficos}` no preâmbulo, respectivamente. Essas decisões são baseadas nos mapeamentos internos da API. Novamente, todas essas correções são registradas no arquivo de relatório.
 

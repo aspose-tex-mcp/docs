@@ -50,7 +50,7 @@ La troisième ligne nécessite le package externe `fancybox`. Définissez `packa
 
 Voici le code source complet de l'exemple :
 
-{{< gist "aspose-com-gists" "be002eee5d3f1f880cf1b77424b754e1" "Example-RequiredInput-FileSystem.java" >}}
+{{< gist "aspose-com-gists" "68af8199308bda28d9e6fa4670c0ba12" "Example-RequiredInput-FileSystem.java" >}}
 
 ### Entrée requise archivée (package `pgfplots`)
 
@@ -98,7 +98,7 @@ Définissez `packagesZip` sur un `java.nio.file.Path` vers l’archive contenant
 
 Voici le code source complet de l'exemple :
 
-{{< gist "aspose-com-gists" "be002eee5d3f1f880cf1b77424b754e1" "Example-RequiredInput-Zip.java" >}}
+{{< gist "aspose-com-gists" "68af8199308bda28d9e6fa4670c0ba12" "Example-RequiredInput-Zip.java" >}}
 
 > **_REMARQUE :_** Le résultat a été vérifié à l'aide du package `pgfplots` version 1.18.1. La version du package `pfg` inclus dans la bibliothèque **Aspose.TeX** est la 3.1.9a.
 
@@ -109,7 +109,7 @@ L'extension du moteur *Object TeX* dans **Aspose.TeX** nécessite des cartes de 
 
 Le `RequiredInputDirectory` personnalisé ci-dessous implémente les deux interfaces et lit les fichiers locaux explicitement enregistrés. Enregistrez-le sous `RequiredInputDirectory.java` avec ses imports inclus. Enregistrez chaque fichier avec `storeFileName(...)`, affectez l’instance avec `options.setRequiredInputDirectory(...)` et fermez-la après le travail. Il s’agit d’un registre plat : les noms de fichier doivent être uniques lorsqu’ils sont demandés sans chemin complet. Les extensions sont comparées sans tenir compte de la casse ; le chemin de collecte facultatif sélectionne un répertoire du système de fichiers. Enregistrez tous les fichiers de package, de correspondance de polices, de métriques et de polices physiques nécessaires. La collecte rend les fichiers de correspondance détectables, mais ne fournit pas les données de polices manquantes.
 
-{{< gist "aspose-com-gists" "be002eee5d3f1f880cf1b77424b754e1" "Example-RequiredInputDirectory.java" >}}
+{{< gist "aspose-com-gists" "68af8199308bda28d9e6fa4670c0ba12" "Example-RequiredInputDirectory.java" >}}
 
 ### Restrictions
 

@@ -116,7 +116,7 @@ iVBORw0KGgoAAAANSUhEUgAAAPgAAABdCAYAAAH/B5vAAAAAGXRFWHRTb2Z0d2FyZQBBZ......
 
 对应的 C# 代码使用 **Aspose.TeX** API 与其他文章基本相同，只是多了 `ShellMode` 选项的指定：
 
-{{< gist "aspose-com-gists" "7f54d335270200ebf5987d071bad028a" "Examples_LaTeXEmbeddedBase64EncodedImage" >}}
+{{< gist "aspose-com-gists" "deadfd7c29ffe40024a9b6d12f0ed18a" "Examples_LaTeXEmbeddedBase64EncodedImage" >}}
 
 至此，第 **5 步** 完成。想要获取更完整的示例，请浏览我们的 [Example project](https://github.com/aspose-tex/Aspose.TeX-for-.NET)。
 

@@ -50,7 +50,7 @@ The third line requires the external `fancybox` package. Set `packagesDirectory`
 
 Here is the complete source code for the example:
 
-{{< gist "aspose-com-gists" "be002eee5d3f1f880cf1b77424b754e1" "Example-RequiredInput-FileSystem.java" >}}
+{{< gist "aspose-com-gists" "68af8199308bda28d9e6fa4670c0ba12" "Example-RequiredInput-FileSystem.java" >}}
 
 ### Archived required input (`pgfplots` package)
 
@@ -98,7 +98,7 @@ Set `packagesZip` to a `java.nio.file.Path` pointing to the archive containing b
 
 Here is the complete source code for the example:
 
-{{< gist "aspose-com-gists" "be002eee5d3f1f880cf1b77424b754e1" "Example-RequiredInput-Zip.java" >}}
+{{< gist "aspose-com-gists" "68af8199308bda28d9e6fa4670c0ba12" "Example-RequiredInput-Zip.java" >}}
 
 > **_NOTE:_** The result was verified using the `pgfplots` package version 1.18.1. While the version of the `pfg` package included in the **Aspose.TeX** library is 3.1.9a.
 
@@ -110,7 +110,7 @@ The *Object TeX* engine extension in **Aspose.TeX** requires font maps, which ar
 
 The following custom `RequiredInputDirectory` implements both interfaces and reads explicitly registered local files. Save it as `RequiredInputDirectory.java` with its included imports. Register each file with `storeFileName(...)`, then assign the instance using `options.setRequiredInputDirectory(...)` and close it after the job. It is a flat registry: filenames must be unique when requested without a full path. Extension matching is case-insensitive; the optional collection path selects a file-system directory. Register all required package, font-map, metric and physical font files. File collection makes maps discoverable; it does not supply missing font data.
 
-{{< gist "aspose-com-gists" "be002eee5d3f1f880cf1b77424b754e1" "Example-RequiredInputDirectory.java" >}}
+{{< gist "aspose-com-gists" "68af8199308bda28d9e6fa4670c0ba12" "Example-RequiredInputDirectory.java" >}}
 
 ### Restrictions
 

@@ -17,7 +17,7 @@ Bisher wussten wir nur, wie man die [Haupteingabedatei](/tex/{{lang.url-fragment
 
 Setzen Sie `outputDirectory` auf einen vorhandenen Ausgabeordner. Importieren Sie die in den Beispielen verwendeten Aspose.TeX-Klassen, `com.aspose.tex.rendering.XpsDevice`, `com.aspose.tex.rendering.XpsSaveOptions` und für Streameingaben `java.io.ByteArrayInputStream` und `java.nio.charset.StandardCharsets`. Die aufrufende Methode muss Ausnahmen behandeln oder deklarieren. Wenden Sie eine Lizenz gemäß dem [Lizenzleitfaden](/tex/{{lang.url-fragment}}java/licensing/) an, um Einschränkungen der Evaluierung zu vermeiden. Das Streambeispiel enthält ein vollständiges LaTeX-Dokument und benötigt daher kein Eingabearbeitsverzeichnis. Streams und Geräte bleiben bis zum Ende des Auftrags offen und werden danach geschlossen oder freigegeben.
 
-{{< gist "aspose-com-gists" "889663554934c807ebc90e12d08bc8d0" "Example-StreamInput-LaTeX.java" >}}
+{{< gist "aspose-com-gists" "41e7e83784a6856ab3955f319608ef96" "Example-StreamInput-LaTeX.java" >}}
 
 Wenn für die Streameingabe kein Jobname ausdrücklich festgelegt wurde, verwendet die Engine den Standardnamen *texput*. Dieses Beispiel erstellt `texput.xps` und `texput.log`. Verwenden Sie `options.setJobName(...)`, um einen anderen Jobnamen auszuwählen. Einzelheiten zu Jobnamen finden Sie unter [hier](/tex/{{lang.url-fragment}}net/tex-io/#tex-output) und [hier](/tex/{{lang.url-fragment}}java/other-options/#how-to-set-the-job-name).
 
@@ -29,7 +29,7 @@ Setzen Sie `inputDirectory` auf einen Ordner mit einem vollständigen LaTeX-Doku
 
 Hier ist der Code:
 
-{{< gist "aspose-com-gists" "889663554934c807ebc90e12d08bc8d0" "Example-MainInputTerminal.java" >}}
+{{< gist "aspose-com-gists" "41e7e83784a6856ab3955f319608ef96" "Example-MainInputTerminal.java" >}}
 
 Sobald es ausgeführt wird, bleibt die Engine hängen und wartet darauf, dass wir den Dateinamen eingeben (mit oder ohne Pfad, mit oder ohne Erweiterung):
 

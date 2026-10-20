@@ -50,7 +50,7 @@ Test: \fbox{
 
 これが例の完全なソースコードです。
 
-{{< gist "aspose-com-gists" "be002eee5d3f1f880cf1b77424b754e1" "Example-RequiredInput-FileSystem.java" >}}
+{{< gist "aspose-com-gists" "68af8199308bda28d9e6fa4670c0ba12" "Example-RequiredInput-FileSystem.java" >}}
 
 ### 必要な入力( `pgfplots`パッケージ)アーカイブ
 
@@ -98,7 +98,7 @@ First example is 2D and 3D math expressions plotted side-by-side.
 
 これが例の完全なソースコードです。
 
-{{< gist "aspose-com-gists" "be002eee5d3f1f880cf1b77424b754e1" "Example-RequiredInput-Zip.java" >}}
+{{< gist "aspose-com-gists" "68af8199308bda28d9e6fa4670c0ba12" "Example-RequiredInput-Zip.java" >}}
 
 > **_注意:_** この結果は `pgfplots` パッケージのバージョン 1.18.1 を使用して検証されました。**Aspose.TeX** ライブラリに含まれる `pfg` パッケージのバージョンは 3.1.9a です。
 
@@ -110,7 +110,7 @@ First example is 2D and 3D math expressions plotted side-by-side.
 
 以下のカスタム `RequiredInputDirectory` は両方のインターフェースを実装し、明示的に登録されたローカルファイルを読み込みます。含まれる import とともに `RequiredInputDirectory.java` として保存します。各ファイルを `storeFileName(...)` で登録し、`options.setRequiredInputDirectory(...)` でインスタンスを設定して、ジョブ終了後に閉じます。階層を持たないレジストリなので、完全なパスを指定せずに要求するファイル名は一意である必要があります。拡張子の比較は大文字と小文字を区別せず、任意の収集パスでファイルシステムのディレクトリを選択できます。必要なパッケージ、フォントマップ、メトリック、実際のフォントファイルをすべて登録します。ファイル収集によりマップを検出できますが、不足するフォントデータは提供されません。
 
-{{< gist "aspose-com-gists" "be002eee5d3f1f880cf1b77424b754e1" "Example-RequiredInputDirectory.java" >}}
+{{< gist "aspose-com-gists" "68af8199308bda28d9e6fa4670c0ba12" "Example-RequiredInputDirectory.java" >}}
 
 ### 制限
 

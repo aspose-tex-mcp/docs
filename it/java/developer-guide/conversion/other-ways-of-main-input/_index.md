@@ -17,7 +17,7 @@ Fino a questo punto, sapevamo solo come passare il [file di input principale](/t
 
 Impostare `outputDirectory` su una cartella di output esistente. Importare le classi Aspose.TeX utilizzate negli esempi, `com.aspose.tex.rendering.XpsDevice`, `com.aspose.tex.rendering.XpsSaveOptions` e, per l’input tramite flusso, `java.io.ByteArrayInputStream` e `java.nio.charset.StandardCharsets`. Il metodo chiamante deve gestire o dichiarare le eccezioni. Applicare una licenza come descritto nella [guida alle licenze](/tex/{{lang.url-fragment}}java/licensing/) per evitare le limitazioni della versione di valutazione. L’esempio del flusso contiene un documento LaTeX completo e non richiede quindi una directory di lavoro di input. I flussi e i dispositivi rimangono aperti fino al termine del lavoro, quindi vengono chiusi o rilasciati.
 
-{{< gist "aspose-com-gists" "889663554934c807ebc90e12d08bc8d0" "Example-StreamInput-LaTeX.java" >}}
+{{< gist "aspose-com-gists" "41e7e83784a6856ab3955f319608ef96" "Example-StreamInput-LaTeX.java" >}}
 
 Se all’input tramite flusso non viene assegnato esplicitamente un nome di lavoro, il motore utilizza il nome predefinito *texput*. Questo esempio crea `texput.xps` e `texput.log`. Usare `options.setJobName(...)` per scegliere un altro nome di lavoro. Vedere [qui](/tex/{{lang.url-fragment}}net/tex-io/#tex-output) e [qui](/tex/{{lang.url-fragment}}java/other-options/#how-to-set-the-job-name) per i dettagli sui nomi dei lavori.
 
@@ -29,7 +29,7 @@ Impostare `inputDirectory` su una cartella contenente un documento LaTeX complet
 
 Ecco il codice:
 
-{{< gist "aspose-com-gists" "889663554934c807ebc90e12d08bc8d0" "Example-MainInputTerminal.java" >}}
+{{< gist "aspose-com-gists" "41e7e83784a6856ab3955f319608ef96" "Example-MainInputTerminal.java" >}}
 
 Non appena viene eseguito, il motore si attacca, aspettando che inseriamo il nome del file (con o senza percorso, con o senza estensione):
 

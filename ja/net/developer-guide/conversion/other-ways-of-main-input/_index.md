@@ -15,7 +15,7 @@ lastmod: "2026-04-22"
 
 これまで、[メイン入力ファイル](/tex/{{lang.url-fragment}}net/tex-io/#tex-input) をフルパスでも短縮形でも、拡張子の有無に関わらず、ファイル名として TeX エンジンに渡す方法しか知りませんでした。しかし、`TeXJob` クラスには別の[コンストラクタ](https://reference.aspose.com/tex/net/aspose.tex/texjob/texjob/) があり、最初の引数としてストリームを受け取ります。ディスク上のファイル以外の形でメイン入力ファイルを保持している場合に便利です。実装例は次のとおりです:
 
-{{< gist "aspose-com-gists" "4e3bae6ecbe041bcb411e0cf4c98dc71" "Example-StreamInput-LaTeX.cs" >}}
+{{< gist "aspose-com-gists" "0fbd18cd8c28d5ed12e19cd52634ebd4" "Example-StreamInput-LaTeX.cs" >}}
 
 すべての出力ファイルは名前 *texput* になります。これはエンジンが他の名前を取得できないためです。*texput* はデフォルトのジョブ名です。[ここ](/tex/{{lang.url-fragment}}net/tex-io/#tex-output) と[ここ](/tex/{{lang.url-fragment}}net/other-options/#how-to-set-the-job-name) にジョブ名に関する詳細があります。
 
@@ -23,7 +23,7 @@ lastmod: "2026-04-22"
 
 `TeXJob` クラスの別の[コンストラクタ](https://reference.aspose.com/tex/net/aspose.tex/texjob/texjob/) は、入力を全く指定できません。では、こうした TeX ジョブは何を処理するのかと疑問に思うかもしれません。この場合、入力ターミナルが必要です。TeX エンジンはターミナルからファイル名の入力を求めます。
 
-{{< gist "aspose-com-gists" "4e3bae6ecbe041bcb411e0cf4c98dc71" "Example-MainInputTerminal.cs" >}}
+{{< gist "aspose-com-gists" "0fbd18cd8c28d5ed12e19cd52634ebd4" "Example-MainInputTerminal.cs" >}}
 
 実行すると、エンジンはファイル名の入力（パスの有無、拡張子の有無）を待機します。
 

@@ -19,7 +19,7 @@ lastmod: "2026-04-22"
 
 フォーマットファイルは、TeXエンジンの内部状態のバイナリダンプであることを覚えておいてください。
 
-{{< gist "aspose-com-gists" "c0eb6cbcfb001b7e6355cafa4611afed" "Example-CreateCustomFormat.cs" >}}
+{{< gist "aspose-com-gists" "deadfd7c29ffe40024a9b6d12f0ed18a" "Example-CreateCustomFormat.cs" >}}
 
 ご覧のとおり、コードはTeXファイルを変換するためのコードに似ています。しかし、いくつかの違いがあります。
 
@@ -33,7 +33,7 @@ lastmod: "2026-04-22"
 
 独自のTeX形式ができたので、この形式で記述されたTeXファイルを組版したいと考えています。これがコードです：
 
-{{< gist "aspose-com-gists" "c0eb6cbcfb001b7e6355cafa4611afed" "Example-TypesetWithCustomFormat.cs" >}}
+{{< gist "aspose-com-gists" "deadfd7c29ffe40024a9b6d12f0ed18a" "Example-TypesetWithCustomFormat.cs" >}}
 
 明らかに、形式を何らかの形で指定する必要があります。まず、[FormatProvider](https://reference.aspose.com/tex/net/aspose.tex.resourceproviders/FormatProvider/)クラスのインスタンスを作成する必要があります。次に、オプションコンストラクターで[TeXConfig.ObjectTeX()](https://reference.aspose.com/tex/net/Aspose.TeX/texconfig/objecttex/)構成を使用します。これは、フォーマットプロバイダーを引数として受け取り、エンジンの「処女」状態の上に形式をロードします。
 

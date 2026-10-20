@@ -117,7 +117,7 @@ The Java example converts the complete `embedded-base64-image.tex` document to P
 
 The example enables `ShellRestricted` for the built-in Base64 command, uses noninteractive processing and captures terminal output in memory. The PDF device and output directory remain open until the job finishes and are then disposed or closed. The output folder contains `sample-image.64`, the decoded `sample-image.png`, the PDF and the TeX transcript:
 
-{{< gist "aspose-com-gists" "e17f869aabed3881c74973f5e875d539" "Example-EmbeddedBase64Image.java" >}}
+{{< gist "aspose-com-gists" "68af8199308bda28d9e6fa4670c0ba12" "Example-EmbeddedBase64Image.java" >}}
 
 And now **Step 5** is complete. For truly comprehensive examples, explore our [Example project](https://github.com/aspose-tex/Aspose.TeX-for-Java).
 

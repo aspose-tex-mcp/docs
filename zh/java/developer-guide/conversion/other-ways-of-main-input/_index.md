@@ -17,7 +17,7 @@ lastmod: "2026-04-21"
 
 将 `outputDirectory` 设置为现有的输出文件夹。导入示例使用的 Aspose.TeX 类、`com.aspose.tex.rendering.XpsDevice`、`com.aspose.tex.rendering.XpsSaveOptions`，以及流输入所需的 `java.io.ByteArrayInputStream` 和 `java.nio.charset.StandardCharsets`。调用方法必须处理或声明异常。按照[许可指南](/tex/{{lang.url-fragment}}java/licensing/)应用许可证，以避免评估版限制。流示例包含完整的 LaTeX 文档，因此无需输入工作目录。流和设备在作业结束前保持打开，随后关闭或释放。
 
-{{< gist "aspose-com-gists" "889663554934c807ebc90e12d08bc8d0" "Example-StreamInput-LaTeX.java" >}}
+{{< gist "aspose-com-gists" "41e7e83784a6856ab3955f319608ef96" "Example-StreamInput-LaTeX.java" >}}
 
 如果流输入没有显式指定作业名称，引擎会使用默认名称 *texput*。此示例创建 `texput.xps` 和 `texput.log`。使用 `options.setJobName(...)` 可以选择其他作业名称。有关作业名称的详细信息，请参见 [此处](/tex/{{lang.url-fragment}}net/tex-io/#tex-output) 和 [此处](/tex/{{lang.url-fragment}}java/other-options/#how-to-set-the-job-name)。
 
@@ -29,7 +29,7 @@ lastmod: "2026-04-21"
 
 这是代码：
 
-{{< gist "aspose-com-gists" "889663554934c807ebc90e12d08bc8d0" "Example-MainInputTerminal.java" >}}
+{{< gist "aspose-com-gists" "41e7e83784a6856ab3955f319608ef96" "Example-MainInputTerminal.java" >}}
 
 一旦运行，发动机都会粘贴，等待我们输入文件名(有或没有路径，有或没有扩展的情况)：
 

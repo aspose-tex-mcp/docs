@@ -19,7 +19,7 @@ lastmod: "2026-06-12"
 
 A seção de referência da API relacionada a este tópico é [aqui](https://reference.aspose.com/tex/net/aspose.tex.features/). E, como na renderização de fórmula, começaremos com um exemplo. Aqui está:
 
-{{< gist "aspose-com-gists" "79be6a0d7a31aa5deb213ba4ca81cb1b" "Example-RenderFigureToPNG.cs" >}}
+{{< gist "aspose-com-gists" "cd0acc55d1634f17dcf42e02075ca005" "Example-RenderFigureToPNG.cs" >}}
 
 Primeiro de tudo, criamos uma instância de [opções de figura LaTeX](https://reference.aspose.com/tex/net/aspose.tex.features/figurerendereroptions/). Fazemos isso aqui especificando simultaneamente a resolução da imagem de saída.
 
@@ -56,7 +56,7 @@ Este é o caso de uso mais geral para o recurso **de renderização de figuras**
 
 Da mesma maneira, podemos renderizar uma figura de LaTeX no formato SVG.
 
-{{< gist "aspose-com-gists" "79be6a0d7a31aa5deb213ba4ca81cb1b" "Example-RenderFigureToSVG.cs" >}}
+{{< gist "aspose-com-gists" "cd0acc55d1634f17dcf42e02075ca005" "Example-RenderFigureToSVG.cs" >}}
 
 As diferenças são:
 

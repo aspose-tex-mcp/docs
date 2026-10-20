@@ -19,7 +19,7 @@ lastmod: "2026-04-21"
 
 Задайте `outputFile` як `java.nio.file.Path` у наявній папці: наприклад, `Paths.get(outputDirectory, "text-and-formula.png")` для PNG або `Paths.get(outputDirectory, "text-and-formula.svg")` для SVG. Імпортуйте використані класи рендерерів, параметрів і `Size2D` з Aspose.TeX, а також `java.awt.Color`, `java.io.ByteArrayOutputStream`, `java.io.OutputStream`, `java.nio.file.Files`, `java.nio.file.Path`, `java.nio.file.Paths`. Метод, що викликає цей код, має обробляти або оголошувати винятки. Застосуйте ліцензію згідно з [посібником із ліцензування](/tex/{{lang.url-fragment}}java/licensing/), щоб уникнути обмежень ознайомлювальної версії.
 
-{{< gist "aspose-com-gists" "4598064edf58fab0b87d9543a4a88234" "Example-RenderFigureToPNG.java" >}}
+{{< gist "aspose-com-gists" "fc74664c51175ac402729283d0450d44" "Example-RenderFigureToPNG.java" >}}
 
 Перш за все, ми створюємо екземпляр [параметри візуалізації](https://reference.aspose.com/tex/java/com.aspose.tex/pngfigurerendereroptions/). Ми робимо це тут разом із визначенням роздільної здатності вихідного зображення.
 
@@ -55,7 +55,7 @@ lastmod: "2026-04-21"
 
 Приблизно так само ми можемо відобразити фігуру LaTeX у форматі SVG.
 
-{{< gist "aspose-com-gists" "4598064edf58fab0b87d9543a4a88234" "Example-RenderFigureToSVG.java" >}}
+{{< gist "aspose-com-gists" "fc74664c51175ac402729283d0450d44" "Example-RenderFigureToSVG.java" >}}
 
 Відмінності:
 

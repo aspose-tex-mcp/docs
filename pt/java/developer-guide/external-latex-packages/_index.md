@@ -50,7 +50,7 @@ A terceira linha requer o pacote externo `fancybox`. Defina `packagesDirectory` 
 
 Aqui está o código -fonte completo para o exemplo:
 
-{{< gist "aspose-com-gists" "be002eee5d3f1f880cf1b77424b754e1" "Example-RequiredInput-FileSystem.java" >}}
+{{< gist "aspose-com-gists" "68af8199308bda28d9e6fa4670c0ba12" "Example-RequiredInput-FileSystem.java" >}}
 
 ### Entrada necessária arquivada (pacote `pgfplots`)
 
@@ -98,7 +98,7 @@ Defina `packagesZip` como um `java.nio.file.Path` para o arquivo contendo os fon
 
 Aqui está o código -fonte completo para o exemplo:
 
-{{< gist "aspose-com-gists" "be002eee5d3f1f880cf1b77424b754e1" "Example-RequiredInput-Zip.java" >}}
+{{< gist "aspose-com-gists" "68af8199308bda28d9e6fa4670c0ba12" "Example-RequiredInput-Zip.java" >}}
 
 > **_NOTA:_** O resultado foi verificado através do pacote `pgfplots` versão 1.18.1. Quanto à versão do pacote `pfg` incluída na biblioteca **Aspose.TeX** é a 3.1.9a.
 
@@ -109,7 +109,7 @@ A extensão*Object Tex*Engine em **Aspose.TeX** requer mapas de fonte, que são 
 
 O `RequiredInputDirectory` personalizado abaixo implementa ambas as interfaces e lê arquivos locais registrados explicitamente. Salve-o como `RequiredInputDirectory.java` com os imports incluídos. Registre cada arquivo com `storeFileName(...)`, atribua a instância com `options.setRequiredInputDirectory(...)` e feche-a após o trabalho. É um registro plano: os nomes dos arquivos devem ser únicos quando solicitados sem um caminho completo. As extensões são comparadas sem diferenciar maiúsculas e minúsculas; o caminho de coleta opcional seleciona um diretório do sistema de arquivos. Registre todos os arquivos necessários de pacotes, mapas de fontes, métricas e fontes físicas. A coleta torna os mapas detectáveis, mas não fornece dados de fontes ausentes.
 
-{{< gist "aspose-com-gists" "be002eee5d3f1f880cf1b77424b754e1" "Example-RequiredInputDirectory.java" >}}
+{{< gist "aspose-com-gists" "68af8199308bda28d9e6fa4670c0ba12" "Example-RequiredInputDirectory.java" >}}
 
 ### Restrições
 

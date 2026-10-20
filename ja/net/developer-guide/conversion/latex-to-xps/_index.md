@@ -32,7 +32,7 @@ LaTeX から XPS への変換は、[ラスタ画像形式への変換](/tex/{{la
 
 このコードは、LaTeX から XPS ファイルを生成する最も直接的な方法を示しています。
 
-{{< gist "aspose-com-gists" "1d10927e18d23e49096c91ce726e9d6f" "Example-ConvertLaTeXToXPS-Simplest.cs" >}}
+{{< gist "aspose-com-gists" "507170b996a1d0c39bb4374e888b3205" "Example-ConvertLaTeXToXPS-Simplest.cs" >}}
 
 ### メイン出力 XPS ファイルを書き込む別の方法
 
@@ -49,7 +49,7 @@ LaTeX から XPS への変換は、[ラスタ画像形式への変換](/tex/{{la
 
 このアプローチは、ファイルとしてではなくメモリ上で XPS データが必要な場合に便利です。
 
-{{< gist "aspose-com-gists" "1d10927e18d23e49096c91ce726e9d6f" "Example-ConvertLaTeXToXPS-Alternative.cs" >}}
+{{< gist "aspose-com-gists" "507170b996a1d0c39bb4374e888b3205" "Example-ConvertLaTeXToXPS-Alternative.cs" >}}
 
 この効果は、[こちら](/tex/{{lang.url-fragment}}net/latex-to-pdf/#an-alternative-way-to-write-main-output-pdf-file) で確認できます。
 

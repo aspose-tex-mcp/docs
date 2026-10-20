@@ -19,7 +19,7 @@ lastmod: "2026-04-21"
 
 Задайте в `inputFile` повний шлях до `invalid-latex.tex`, у `outputDirectory` — наявну папку виводу, а в `packagesDirectory` — папку з `fancyhdr.sty` та його залежностями. Збережіть наведений нижче callback разом з імпортом як `PackageGuesser.java` і перед відновленням створіть `PackageGuesser packageGuesser = new PackageGuesser()`. Імпортуйте використані класи Aspose.TeX та обробіть або оголосіть винятки. Застосуйте ліцензію відповідно до [посібника з ліцензування](/tex/{{lang.url-fragment}}java/licensing/). Вхідний і вихідний каталоги залишаються відкритими до завершення відновлення, після чого закриваються.
 
-{{< gist "aspose-com-gists" "e17f869aabed3881c74973f5e875d539" "Example-LaTeXRepairer.java" >}}
+{{< gist "aspose-com-gists" "68af8199308bda28d9e6fa4670c0ba12" "Example-LaTeXRepairer.java" >}}
 
 Подібно до звичайного завдання TeX, ми починаємо зі створення об’єкта, який містить параметри процесу, який ми збираємося запустити. Більшість із цих параметрів такі самі, як і для звичайної роботи TeX. Дійсно, викликаючи метод [setInputWorkingDirectory()](https://reference.aspose.com/tex/java/com.aspose.tex.features/latexrepaireroptions/#setInputWorkingDirectory-com.aspose.tex.IInputWorkingDirectory-), ми вказуємо простір, з якого слід читати вхідні файли. Однак у цьому прикладі ми не використовуємо його тут, оскільки ми надаємо повний шлях до основного вхідного файлу у файловій системі, і жодні спеціальні файли не повинні включатися в основний вхідний файл. Далі ми викликаємо метод [setOutputWorkingDirectory()](https://reference.aspose.com/tex/java/com.aspose.tex.features/latexrepaireroptions/#setOutputWorkingDirectory-com.aspose.tex.IOutputWorkingDirectory-), щоб вказати простір, куди повинні бути записані вихідні файли. Якщо викликати метод [setRequiredInputDirectory()](https://reference.aspose.com/tex/java/com.aspose.tex.features/latexrepaireroptions/#setRequiredInputDirectory-com.aspose.tex.IInputWorkingDirectory-), параметри вказують на простір, де ви можете зберігати пакети LaTeX, які не вбудовані в бібліотеку Aspose.TeX. Нарешті, метод [setGuessPackageCallback()](https://reference.aspose.com/tex/java/com.aspose.tex.features/latexrepaireroptions/#setGuessPackageCallback-com.aspose.tex.features.IGuessPackageCallback-) буде обговорено пізніше.
 
@@ -33,7 +33,7 @@ lastmod: "2026-04-21"
 
 Цей приклад зіставляє команду `\lhead` з пакетом `fancyhdr`. Callback отримує ім’я без початкової зворотної скісної риски та повертає порожній рядок для невідомих команд і оточень:
 
-{{< gist "aspose-com-gists" "e17f869aabed3881c74973f5e875d539" "Example-PackageGuessingCallback.java" >}}
+{{< gist "aspose-com-gists" "68af8199308bda28d9e6fa4670c0ba12" "Example-PackageGuessingCallback.java" >}}
 
 Що стосується файлу зразка, система спочатку зустрічає команду `\chapter`, яка не визначена в класі документа `article`, але визначена в класі документа `book`. API налаштовує клас документа так, щоб остаточна версія виправленого файлу починалася з `\documentclass{book}`. Потім механізм знаходить вищезгадану команду `\lhead` і визначає, що `\usepackage{fancyhdr}` потрібно вставити в преамбулу. Команди `\href` і `\includegraphics`, які з’являються пізніше у файлі, змушують Repairer вставляти `\usepackage{hyperref}` і `\usepackage{graphicx}` у преамбулі відповідно. Ці рішення приймаються на основі внутрішніх зіставлень API. Як і раніше, усі ці ремонти реєструються у файлі звіту.
 

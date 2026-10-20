@@ -19,7 +19,7 @@ LaTeX ファイルからコンテンツ（図形、文章、プロット等）�
 
 `outputFile` に、既存フォルダー内の `java.nio.file.Path` を設定してください。例：PNG は `Paths.get(outputDirectory, "text-and-formula.png")`、SVG は `Paths.get(outputDirectory, "text-and-formula.svg")`。使用する Aspose.TeX のレンダラー、オプション、`Size2D` のクラスと `java.awt.Color`, `java.io.ByteArrayOutputStream`, `java.io.OutputStream`, `java.nio.file.Files`, `java.nio.file.Path`, `java.nio.file.Paths` をインポートします。呼び出し元のメソッドでは例外を処理するか、スローする例外として宣言してください。評価版の制限を避けるには、[ライセンスガイド](/tex/{{lang.url-fragment}}java/licensing/)に従ってライセンスを適用します。
 
-{{< gist "aspose-com-gists" "4598064edf58fab0b87d9543a4a88234" "Example-RenderFigureToPNG.java" >}}
+{{< gist "aspose-com-gists" "fc74664c51175ac402729283d0450d44" "Example-RenderFigureToPNG.java" >}}
 
 まず、[レンダリング オプション](https://reference.aspose.com/tex/java/com.aspose.tex/pngfigurerendereroptions/) インスタンスを作成します。ここで出力画像の解像度も指定します。
 
@@ -55,7 +55,7 @@ LaTeX ファイルからコンテンツ（図形、文章、プロット等）�
 
 ほぼ同様の手順で、LaTeX 図を SVG 形式にレンダリングできます。
 
-{{< gist "aspose-com-gists" "4598064edf58fab0b87d9543a4a88234" "Example-RenderFigureToSVG.java" >}}
+{{< gist "aspose-com-gists" "fc74664c51175ac402729283d0450d44" "Example-RenderFigureToSVG.java" >}}
 
 相違点は次のとおりです。
 

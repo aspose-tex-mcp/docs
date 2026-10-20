@@ -17,7 +17,7 @@ Up to this point, we only knew how to pass the [main input file](/tex/{{lang.url
 
 Set `outputDirectory` to an existing output folder. Import the Aspose.TeX classes used in the snippets, `com.aspose.tex.rendering.XpsDevice`, `com.aspose.tex.rendering.XpsSaveOptions` and, for stream input, `java.io.ByteArrayInputStream` and `java.nio.charset.StandardCharsets`. The calling method must handle or declare exceptions. Apply a license as described in the [licensing guide](/tex/{{lang.url-fragment}}java/licensing/) to avoid evaluation restrictions. The stream example contains a complete LaTeX document, so it needs no input working directory. Streams and devices remain open until the job finishes and are closed or disposed afterward.
 
-{{< gist "aspose-com-gists" "889663554934c807ebc90e12d08bc8d0" "Example-StreamInput-LaTeX.java" >}}
+{{< gist "aspose-com-gists" "41e7e83784a6856ab3955f319608ef96" "Example-StreamInput-LaTeX.java" >}}
 
 When stream input has no explicitly assigned job name, the engine uses the default name *texput*. This example creates `texput.xps` and `texput.log`. Set `options.setJobName(...)` to choose another job name. See [here](/tex/{{lang.url-fragment}}net/tex-io/#tex-output) and [here](/tex/{{lang.url-fragment}}java/other-options/#how-to-set-the-job-name) for details about job names.
 
@@ -29,7 +29,7 @@ Set `inputDirectory` to a folder containing a complete LaTeX document named `hel
 
 Here is the code:
 
-{{< gist "aspose-com-gists" "889663554934c807ebc90e12d08bc8d0" "Example-MainInputTerminal.java" >}}
+{{< gist "aspose-com-gists" "41e7e83784a6856ab3955f319608ef96" "Example-MainInputTerminal.java" >}}
 
 As soon as it is run, the engine sticks, waiting for us to enter the file name (with or without a path, with or without an extension):
 

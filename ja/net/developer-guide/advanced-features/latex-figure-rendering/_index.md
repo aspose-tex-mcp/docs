@@ -19,7 +19,7 @@ lastmod: "2026-06-12"
 
 このトピックに関する API リファレンスセクションは [こちら](https://reference.aspose.com/tex/net/aspose.tex.features/) です。数式レンダリングと同様に、例から始めます。以下が例です：
 
-{{< gist "aspose-com-gists" "79be6a0d7a31aa5deb213ba4ca81cb1b" "Example-RenderFigureToPNG.cs" >}}
+{{< gist "aspose-com-gists" "cd0acc55d1634f17dcf42e02075ca005" "Example-RenderFigureToPNG.cs" >}}
 
 まず、[LaTeX 図オプション](https://reference.aspose.com/tex/net/aspose.tex.features/figurerendereroptions/) のインスタンスを作成します。ここで出力画像の解像度も同時に指定します。
 
@@ -55,7 +55,7 @@ lastmod: "2026-06-12"
 
 同様の方法で、LaTeX 図を SVG 形式でレンダリングできます。
 
-{{< gist "aspose-com-gists" "79be6a0d7a31aa5deb213ba4ca81cb1b" "Example-RenderFigureToSVG.cs" >}}
+{{< gist "aspose-com-gists" "cd0acc55d1634f17dcf42e02075ca005" "Example-RenderFigureToSVG.cs" >}}
 
 相違点は次のとおりです：
 

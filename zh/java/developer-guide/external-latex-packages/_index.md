@@ -50,7 +50,7 @@ Test: \fbox{
 
 这是该示例的完整源代码：
 
-{{< gist "aspose-com-gists" "be002eee5d3f1f880cf1b77424b754e1" "Example-RequiredInput-FileSystem.java" >}}
+{{< gist "aspose-com-gists" "68af8199308bda28d9e6fa4670c0ba12" "Example-RequiredInput-FileSystem.java" >}}
 
 ### 存档所需的输入(`pgfplots`软件包)
 
@@ -98,7 +98,7 @@ First example is 2D and 3D math expressions plotted side-by-side.
 
 这是该示例的完整源代码：
 
-{{< gist "aspose-com-gists" "be002eee5d3f1f880cf1b77424b754e1" "Example-RequiredInput-Zip.java" >}}
+{{< gist "aspose-com-gists" "68af8199308bda28d9e6fa4670c0ba12" "Example-RequiredInput-Zip.java" >}}
 
 > **_注意：_** 结果是使用 `pgfplots` 软件包版本 1.18.1 验证的。而 **Aspose.TeX** 库中包含的 `pfg` 软件包版本为 3.1.9a。
 
@@ -109,7 +109,7 @@ First example is 2D and 3D math expressions plotted side-by-side.
 
 下面的自定义 `RequiredInputDirectory` 实现两个接口，并读取显式注册的本地文件。将它连同所含的导入保存为 `RequiredInputDirectory.java`。使用 `storeFileName(...)` 注册每个文件，通过 `options.setRequiredInputDirectory(...)` 设置实例，并在作业结束后关闭它。这是一个扁平注册表：不使用完整路径请求文件时，文件名必须唯一。扩展名匹配不区分大小写；可选的收集路径选择文件系统目录。注册所有必要的软件包、字体映射、度量和实际字体文件。文件收集使映射可被发现，但不会提供缺失的字体数据。
 
-{{< gist "aspose-com-gists" "be002eee5d3f1f880cf1b77424b754e1" "Example-RequiredInputDirectory.java" >}}
+{{< gist "aspose-com-gists" "68af8199308bda28d9e6fa4670c0ba12" "Example-RequiredInputDirectory.java" >}}
 
 ### 限制
 

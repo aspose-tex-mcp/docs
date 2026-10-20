@@ -57,7 +57,7 @@ options.RequiredInputDirectory = new InputFileSystemDirectory("path-to-directory
 
 以下是该示例的完整源代码：
 
-{{< gist "aspose-com-gists" "03f720960e15bd497ed26ce2eb9c03b2" "Example-RequiredInput-FileSystem.cs" >}}
+{{< gist "aspose-com-gists" "deadfd7c29ffe40024a9b6d12f0ed18a" "Example-RequiredInput-FileSystem.cs" >}}
 
 ### 已归档的必需输入（`pgfplots` 包）
 
@@ -118,7 +118,7 @@ using (Stream zipStream = File.Open("path-to-zip-with-pgfplots-sources", FileMod
 
 以下是该示例的完整源代码：
 
-{{< gist "aspose-com-gists" "03f720960e15bd497ed26ce2eb9c03b2" "Example-RequiredInput-Zip.cs" >}}
+{{< gist "aspose-com-gists" "deadfd7c29ffe40024a9b6d12f0ed18a" "Example-RequiredInput-Zip.cs" >}}
 
 > **_注意：_** 结果已使用 `pgfplots` 包版本 1.18.1 验证。**Aspose.TeX** 库中包含的 `pfg` 包版本为 3.1.9a。
 
@@ -130,7 +130,7 @@ using (Stream zipStream = File.Open("path-to-zip-with-pgfplots-sources", FileMod
 
 下面提供一个自定义必需输入目录的示例，该示例同样实现了 [IFileCollector](https://reference.aspose.com/tex/net/aspose.tex.io/ifilecollector/) 接口。示例侧重于按扩展名收集文件名，省略了文件存储和检索的细节。
 
-{{< gist "aspose-com-gists" "03f720960e15bd497ed26ce2eb9c03b2" "Example-RequiredInputDirectory.cs" >}}
+{{< gist "aspose-com-gists" "deadfd7c29ffe40024a9b6d12f0ed18a" "Example-RequiredInputDirectory.cs" >}}
 
 ### 限制
 

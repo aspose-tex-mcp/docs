@@ -21,7 +21,7 @@ XPSへの変換は、[saveoptions](https://reference.aspose.com/tex/java/com.asp
 
 `inputFile` に LaTeX ファイル（例：`hello-world.ltx`）のフルパスを設定し、`outputDirectory` に既存の出力フォルダーを設定してください。スニペットで使用する `com.aspose.tex` と `com.aspose.tex.rendering` のクラスをインポートします。呼び出し元のメソッドでは、例外を処理するか、スローする例外として宣言する必要があります。評価版の制限を避けるには、[ライセンスガイド](/tex/{{lang.url-fragment}}java/licensing/)に従ってライセンスを適用してください。この例では非対話モードで処理し、出力リソースを閉じます。 外部ファイルに依存しない入力ファイル `hello-world.ltx` の既定の出力は `hello-world.xps` です。
 
-{{< gist "aspose-com-gists" "1d90376049c44b97cffb85e4ac382a5b" "Example-ConvertLaTeXToXPS-Simplest.java" >}}
+{{< gist "aspose-com-gists" "a30f406f6b8ace1b7d15c68a1df75c6d" "Example-ConvertLaTeXToXPS-Simplest.java" >}}
 
 ### メイン出力XPSファイルを書き込む代替方法
 
@@ -29,7 +29,7 @@ XPSへの変換は、[saveoptions](https://reference.aspose.com/tex/java/com.asp
 
 上記と同じ `inputFile` と `outputDirectory` の値を使用してください。`xpsFile` に `java.nio.file.Path` を設定します（例：`Paths.get(outputDirectory, "any-name.xps")`）。Aspose.TeX のクラスに加えて、`java.io.OutputStream`、`java.nio.file.Files`、`java.nio.file.Path`、`java.nio.file.Paths` をインポートしてください。 ストリームで XPS ファイルの出力先を指定します。補助ファイルは引き続き `outputDirectory` に書き込まれます。
 
-{{< gist "aspose-com-gists" "1d90376049c44b97cffb85e4ac382a5b" "Example-ConvertLaTeXToXPS-Alternative.java" >}}
+{{< gist "aspose-com-gists" "a30f406f6b8ace1b7d15c68a1df75c6d" "Example-ConvertLaTeXToXPS-Alternative.java" >}}
 
 効果は[ここ](/tex/{{lang.url-fragment}}java/latex-to-pdf/#メイン出力pdfファイルを書き込む代替方法)と同じです。
 
