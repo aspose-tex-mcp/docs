@@ -6,7 +6,7 @@ linktitle: FAQ
 weight: 80
 url: /net/introduction-to-tex/faq/
 description:  Get answers to all the most frequent questions about TeX and LaTeX, their structure, usage and peculiarities.
-lastmod: "2026-04-22"
+lastmod: 2026-10-21
 ---
 
 {{<section overview>}}
@@ -132,4 +132,24 @@ However, if you are a student or professional in a STEM field, or if you regular
 **A:** Packages are files with a `.sty`extension. To use them, you include their name in the preamble of your LaTeX document using the `\usepackage` command. For example, to use the graphicx package you need to add this line to your preamble:
 
 `\usepackage{graphicx}`
+<br><br>
+
+**Q: Do I need to install TeX Live, MiKTeX, or any external binaries on my server to use Aspose.TeX for .NET?**
+
+**A:** No. Aspose.TeX for .NET is a standalone, fully managed class library written in C#. It does not require installing any external TeX distributions, native executables, or command-line runtimes on your host machine or cloud environment.
+<br><br>
+
+**Q: How can I process a LaTeX document stored in memory without reading or writing files to the disk?**
+
+**A:** You can leverage Aspose.TeX’s pluggable I/O architecture. By using `InputMemoryDirectory` or memory streams along with `OutputMemoryDirectory`, you can supply input source data directly from byte arrays or strings and capture the resulting PDF or image outputs entirely in memory.
+<br><br>
+
+**Q: How does Aspose.TeX handle missing packages or custom .sty files?**
+
+**A:** Core standard packages (such as `graphics`, `graphicx`, and standard AMS packages) are pre-embedded in the engine. For custom or third-party packages and class files (`.sty`, `.cls`), you can place them in your input working directory or bundle them into an `InputZipDirectory` so the engine can resolve them dynamically during compilation.
+<br><br>
+
+**Q: Is Aspose.TeX for .NET thread-safe for high-concurrency web applications?**
+
+**A:** Job executions (`TeXJob`) and configuration options (`TeXOptions`) are designed to be instantiated per-job, making them naturally suited for multi-threaded and asynchronous server environments. However, ensure that separate document or options instances are used for concurrent background threads to prevent cross-contamination of execution states.
 <br><br>

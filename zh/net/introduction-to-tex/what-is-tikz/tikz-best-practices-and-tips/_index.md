@@ -8,7 +8,7 @@ url: /net/tikz-best-practices-and-tips/
 aliases: /net/best-practices-and-tips/
 keywords: tikz 最佳实践, tikz 技巧, tikz 性能优化
 description: 了解在 TeX 和 LaTeX 文档中高效、有效使用 TikZ 的最佳实践和有用技巧。
-lastmod: "2026-04-22"
+lastmod: 2026-10-23
 ---
 
 {{<section overview>}}
@@ -35,6 +35,7 @@ TikZ 可能计算量大。以下是加快编译速度的技巧：
 清晰且易于维护的代码至关重要，尤其在协作环境中。请遵循以下指南：
 
 - **使用描述性的节点名称和坐标**:
+
 ```tex
   \node (server) at (0,0) {Server};
   \node (client) at (4,0) {Client};
@@ -59,6 +60,7 @@ TikZ 可能计算量大。以下是加快编译速度的技巧：
 ```
 
 - **通过宏复用和模块化**:
+
 ```tex
   \newcommand{\myrectangle}[2]{
     \draw (#1,#2) rectangle ++(2,1);
@@ -107,6 +109,78 @@ TikZ 可能计算量大。以下是加快编译速度的技巧：
 
 - **Overleaf 示例**  
   实用的 TikZ 示例和模板可在 [Overleaf](https://www.overleaf.com/learn/latex/TikZ_package) 上获取。
+
+## .NET 中的错误处理与诊断
+
+在自动化的服务器端 .NET 应用程序中，如果需要处理由用户提供或动态生成的 TikZ 代码，则必须采用防御性编程。当 Aspose.TeX 引擎遇到无效的 LaTeX 或 TikZ 语法时，会抛出托管的 `TeXException` 异常。
+
+为确保应用程序的稳健性并获取可用于排查问题的诊断信息，请遵循以下错误处理实践：
+
+1. 捕获并记录 `TeXException`
+务必将 `TeXJob.Run()` 的执行过程置于 `try-catch` 块中，并专门捕获 `TeXException`。这样可以将排版失败的情况与应用程序中其他类型的错误区分开来。
+
+2. 检查终端输出与诊断日志
+当编译失败时，终端输出以及任务执行过程中生成的 `.log` 文件会提供精确的行号，并显示 TikZ 解析器出错位置的宏展开追踪信息。您可以通过 `TeXOptions` 来捕获或重定向终端输出，从而辅助调试。
+
+以下展示了开发人员如何在 C# 中实现一种安全且具备错误容错能力的编译方法，用于处理 TikZ 图形：
+
+```csharp
+using System;
+using System.IO;
+using Aspose.TeX;
+using Aspose.TeX.Configuration;
+using Aspose.TeX.Presentation.Pdf;
+using Aspose.TeX.IO;
+
+public class TikZCompilerService
+{
+    public bool TryCompileTikZDocument(string inputFilePath, string outputDirectory, out string errorMessage)
+    {
+        errorMessage = string.Empty;
+
+        // 配置标准的 LaTeX 作业选项
+        TeXOptions options = TeXOptions.ConsoleAppRunSettings(
+            TeXConfig.LaTeX, 
+            Path.GetDirectoryName(inputFilePath), 
+            outputDirectory
+        );
+
+        // 启用终端输出重定向，以便在需要时捕获诊断详情
+        options.ShowTerminal = true;
+        options.SaveOptions = new PdfSaveOptions();
+
+        try
+        {
+            // 执行排版作业
+            new TeXJob(inputFilePath, new PdfDevice(), options).Run();
+            return true;
+        }
+        catch (TeXException texEx)
+        {
+            // 处理特定的 TeX 语法、宏包或宏展开错误（例如：格式错误的 TikZ 路径）
+            errorMessage = $"TeX Engine Compilation Error: {texEx.Message}";
+            // TODO：将异常详情记录到企业的日志框架中（例如 NLog、Serilog）
+            return false;
+        }
+        catch (IOException ioEx)
+        {
+            // 处理文件访问或磁盘权限问题
+            errorMessage = $"I/O Error during compilation: {ioEx.Message}";
+            return false;
+        }
+        catch (Exception ex)
+        {
+            // 处理意外的运行时错误
+            errorMessage = $"Unexpected error: {ex.Message}";
+            return false;
+        }
+    }
+}
+```
+
+通过捕获 `TeXException`，当生成的 TikZ 脚本格式有误时，您的应用程序可以向客户端返回明确的 `HTTP 400 Bad Request` 响应或包含具体信息的错误提示，从而避免触发服务器端的 500 错误。
+
+如果您的 .NET 应用程序会将用户数据动态注入到 TikZ 的坐标或节点字符串中，请务必进行适当的清理（Sanitization），以防止意外破坏语法结构（例如，未转义的特殊字符，如 `%`、`&` 或 `#`）。
 
 ---
 

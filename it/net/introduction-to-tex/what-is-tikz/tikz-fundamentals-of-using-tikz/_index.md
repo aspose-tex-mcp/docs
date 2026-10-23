@@ -7,7 +7,7 @@ weight: 19
 url: /net/tikz-fundamentals-of-using-tikz/
 keywords: basi di tikz, fondamenti tikz, tutorial tikz
 description: Esplora i principi fondamentali e i comandi di base di TikZ per creare grafiche per i tuoi documenti TeX e LaTeX.
-lastmod: "2026-04-22"
+lastmod: 2026-10-22
 ---
 
 {{<section overview>}}
@@ -21,16 +21,27 @@ Le grafiche TikZ sono create utilizzando le coordinate. Le coordinate definiscon
 - **Coordinate cartesiane (x,y)**:
 
 ```tex
-\draw (0,0) -- (2,2);
+\documentclass{article}
+\usepackage{tikz}
+\begin{document}
+\begin{tikzpicture}
+    \draw (0,0) -- (2,2);
+\end{tikzpicture}
+\end{document}
 ```
 
 - **Coordinate polari (angolo:raggio)**:
 
 ```tex
-\draw (0,0) -- (45:2);
+    \draw (0,0) -- (45:2);
 ```
 
 Le coordinate possono essere combinate liberamente in un disegno per ottenere il risultato grafico desiderato.
+
+*Una breve nota sugli scostamenti relativi (relative offsets):
+
+- (0,0) -- ++(1,1) si sposta in (0,0), traccia una linea fino a (1,1) e imposta il nuovo punto corrente su (1,1).
+- (0,0) -- +(1,1) traccia una linea fino a (1,1) rispetto a (0,0), ma lascia il punto corrente invariato in (0,0).*
 
 ## Disegnare forme semplici
 
@@ -38,21 +49,22 @@ TikZ consente di creare facilmente forme geometriche semplici:
 
 - **Linee e polilinee**:
 
+
 ```tex
-\draw (0,0) -- (1,1) -- (2,0);
+    \draw (0,0) -- (1,1) -- (2,0);
 ```
 
 - **Rettangoli**:
 
 ```tex
-\draw (0,0) rectangle (2,1);
+    \draw (0,0) rectangle (2,1);
 ```
 
 - **Cerchi ed ellissi**:
 
 ```tex
-\draw (1,1) circle (0.5);
-\draw (3,1) ellipse (1 and 0.5);
+   \draw (1,1) circle (0.5);
+    \draw (3,1) ellipse (1 and 0.5);
 ```
 
 ## Colori e modelli di riempimento
@@ -60,8 +72,8 @@ TikZ consente di creare facilmente forme geometriche semplici:
 I colori e i riempimenti migliorano significativamente la chiarezza visiva. È possibile specificare i colori direttamente o utilizzare nomi predefiniti:
 
 ```tex
-\draw[red, thick] (0,0) rectangle (1,1);
-\draw[fill=blue!20] (2,0) circle (0.5);
+   \draw[red, thick] (0,0) rectangle (1,1);
+   \draw[fill=blue!20] (2,0) circle (0.5);
 ```
 
 La sintassi `blue!20` indica un colore blu con un'intensità del 20%.
@@ -73,15 +85,15 @@ TikZ consente di modificare gli stili e lo spessore delle linee per migliorare l
 - **Spessore della linea**:
 
 ```tex
-\draw[ultra thick] (0,0) -- (1,1);
-\draw[thin] (1,0) -- (2,1);
+   \draw[ultra thick] (0,0) -- (1,1);
+   \draw[thin] (1,0) -- (2,1);
 ```
 
 - **Linee tratteggiate e punteggiate**:
 
 ```tex
-\draw[dashed] (0,0) -- (2,2);
-\draw[dotted] (2,0) -- (4,2);
+   \draw[dashed] (0,0) -- (2,2);
+   \draw[dotted] (2,0) -- (4,2);
 ```
 
 ## Nodi ed etichette
@@ -89,7 +101,7 @@ TikZ consente di modificare gli stili e lo spessore delle linee per migliorare l
 I nodi consentono di aggiungere facilmente annotazioni testuali:
 
 ```tex
-\draw (0,0) -- (1,1) node[midway, above] {label};
+   \draw (0,0) -- (1,1) 
 ```
 
 È possibile posizionare le etichette con precisione rispetto ai propri elementi grafici, migliorandone la leggibilità.
@@ -99,7 +111,7 @@ I nodi consentono di aggiungere facilmente annotazioni testuali:
 I percorsi TikZ possono essere linee rette o curve. Le curve vengono create utilizzando una sintassi semplice:
 
 ```tex
-\draw (0,0) .. controls (1,2) and (3,-1) .. (4,1);
+   \draw (0,0) .. controls (1,2) and (3,-1) .. (4,1);
 ```
 
 I punti di controllo modellano la curvatura in modo intuitivo.
@@ -120,5 +132,63 @@ Gli elementi all'interno dello `scope` vengono ruotati e ridimensionati insieme,
 ---
 
 La padronanza di questi concetti e comandi TikZ fondamentali fornirà una solida base per la creazione di grafiche sofisticate per i tuoi documenti.
+
+## Esempio programmatico per l'elaborazione di disegni TikZ tramite Aspose.TeX
+
+Di seguito viene proposta una guida dettagliata, corredata da un'implementazione del codice, che illustra come gli sviluppatori possano compilare un documento `.tex` contenente disegni TikZ, ottenendo direttamente un output vettoriale (PDF) ad alta fedeltà all'interno di un'applicazione .NET gestita.
+
+```csharp
+using System;
+using System.IO;
+using Aspose.TeX;
+using Aspose.TeX.Configuration;
+using Aspose.TeX.Presentation.Pdf;
+using Aspose.TeX.IO;
+
+namespace AsposeTexTikzDemo
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // Definire le directory di input e output utilizzando le astrazioni di I/O di Aspose.TeX
+            string dataDir = @"C:\DocumentSamples\TikzInput";
+            string outputDir = @"C:\DocumentSamples\TikzOutput";
+
+            // Assicurarsi che la directory di output esista
+            Directory.CreateDirectory(outputDir);
+            Directory.CreateDirectory(outputDir);
+
+            // Inizializzare le opzioni TeX per un'operazione standard di elaborazione di documenti LaTeX
+            // TeXConfig.LaTeX configura il motore con i pacchetti standard pre-inclusi (inclusi tikz/pgf)
+            TeXOptions options = TeXOptions.ConsoleAppRunSettings(TeXConfig.LaTeX, dataDir, outputDir);
+
+            // Impostare il nome del file di input principale contenente l'ambiente TikZ
+            options.JobName = "tikz-fundamentals";
+
+            // Configurare le opzioni di salvataggio dell'output per eseguire il rendering direttamente in formato PDF
+            options.SaveOptions = new PdfSaveOptions();
+
+            // Istanziare ed eseguire il TeXJob, collegando il file sorgente, il dispositivo di output e le opzioni
+            try
+            {
+                Console.WriteLine("Starting TikZ compilation job...");
+                
+                new TeXJob(
+                    Path.Combine(dataDir, "tikz-fundamentals.tex"), 
+                    new PdfDevice(), 
+                    options
+                ).Run();
+
+                Console.WriteLine($"TikZ graphic successfully compiled to PDF at: {outputDir}");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Compilation failed: {ex.Message}");
+            }
+        }
+    }
+}
+```
 
 **Inoltre, scopri la nostra applicazione web gratuita basata sull'[API Aspose.TeX per .NET](https://products.aspose.com/tex/net/) per conversioni TeX rapide e facili.**

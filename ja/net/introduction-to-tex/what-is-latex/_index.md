@@ -7,7 +7,7 @@ weight: 16
 url: /net/what-is-latex/
 keywords: LaTeXとは何か, LaTeXとは, LaTeXについて
 description: 「LaTeXとは何か？」という質問に答えるには、その最も印象的な機能のひとつである New Font Selection Scheme (NFSS) に言及する価値があります。
-lastmod: "2026-04-22"
+lastmod: 2026-10-20
 ---
 
 {{<section overview>}}
@@ -138,3 +138,25 @@ left justified & center & right justified \\ \hline
 当然ながら「LaTeXとは何か？」という質問に対して完全な答えを用意できるわけではありません。情報量が多く、LaTeX ファイルを書くことはプログラミングに近い作業ですので、習熟するにはある程度の時間が必要です。必要かどうかはご自身で判断してください。
 
 **また、[Aspose.TeX for .NET API](https://products.aspose.com/tex/net/) を基に構築された無料の[ウェブアプリ](https://products.aspose.app/tex/conversion/latex/)もご確認ください。**
+
+## 論理マークアップと直接的な書式設定
+
+コンテンツの作成と視覚的なスタイル設定を同時に行う従来のWYSIWYG（見たままが得られる）型デスクトップパブリッシングツールとは異なり、LaTeXでは、コンテンツ（内容）とプレゼンテーション（見た目）を明確に分離することが求められます。
+
+LaTeXで執筆する際、作成者は「見た目」を気にするのではなく、セマンティック（意味論的）なマークアップを使用して、各要素が何であるか（例: `\section{Introduction}`、`\begin{equation}`）を定義します。基盤となる組版エンジンが、複雑なレイアウト規則、カーニング（文字間隔の調整）、改行、ページ番号の付与、数式の配置などを自動的に処理します。これにより、大規模で複雑な技術文書や科学論文全体にわたって、タイポグラフィの一貫性が完全に保証され、開発者や研究者は、煩雑な手作業による書式設定から解放されます。
+
+## 主な機能
+
+以下は、標準的なLaTeXの機能がAspose.TeX内でどのようにプログラム的に処理されるかを示した比較表です。
+
+| **機能/システム** | **標準的なTeXディストリビューション (CLI)** | **Aspose.TeX for .NET エンジン** |
+| :- | :- | :- |
+| **数式の組版** | `amsmath` / `amssymb` を使用して処理 | ネイティブに解析され、ベクター形式やラスター形式で出力 |
+| **ドキュメントクラス** | ディスク上のローカルな `.cls` ファイルが必要 | カスタムまたは仮想の `IInputWorkingDirectory` を介して読み込み |
+| **相互参照および目次 (TOC)** | コマンドラインで複数回の実行（パス）が必要 | 設定可能なプログラム実行プロセス内で管理 |
+| **出力形式** | 別のツールを介して DVI、PS、または PDF を生成 | PDF、XPS、PNG、JPEG、BMP、TIFF への直接的な単一ステップ変換 |
+
+**詳細はこちら:**
+
+- [TeX 入出力 (tex-io)](/tex/{{lang.url-fragment}}net/tex-io/): `IInputWorkingDirectory` および `IOutputWorkingDirectory` が、どのようにストリームやディスクリソースを扱うかについて解説しています。
+- [LaTeX グラフィックス (latex-graphics)](/tex/{{lang.url-fragment}}net/latex-graphics/): `graphicx` パッケージを使用して、`\includegraphics` で外部画像を取り込む方法について解説しています。 - [Aspose.TeX と Object TeX](/tex/{{lang.url-fragment}}net/aspose-tex-and-object-tex/): 基盤となるマネージド・オブジェクト・モデルを理解する。

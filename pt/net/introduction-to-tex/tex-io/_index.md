@@ -6,7 +6,7 @@ linktitle: Tex E/S.
 weight: 12
 url: /net/tex-io/
 description: Fundamentos de trabalho com Tex como formato de saída ou entrada dentro da API Aspose.TeX. TEX Job é executado em um arquivo explicitamente especificado.
-lastmod: "2026-04-22"
+lastmod: 2026-10-20
 ---
 
 {{<section overview>}}
@@ -56,3 +56,25 @@ Um trabalho de Tex pode estar em execução em um dos quatro modos de interaçã
 * `\errorstopmode`. O motor para em todas as oportunidades para interagir.
 
 O Aspose.TeX nos permite especificar o modo de interação como uma opção de emprego TEX quando seu objeto está sendo criado. Esse modo será definido no estado interno do mecanismo imediatamente após o carregamento do formato Tex (se algum formato for carregado) e será alterado para outro modo assim que o mecanismo encontrar um dos quatro comandos. O valor padrão desta opção preservará o modo de interação definido pelo formato Tex. Quando nenhum formato é carregado, o modo de interação é o mesmo definido pelo comando `\errorstopmode`.
+
+## O papel da abstracção de interfaces (`IInputWorkingDirectory` e `IOutputWorkingDirectory`)
+
+Os motores TeX tradicionais estão inerentemente acoplados ao sistema de ficheiros do sistema operativo local, tratando os ficheiros como caminhos absolutos ou relativos no disco. O Aspose.TeX rompe com esta limitação legada introduzindo uma camada de abstração robusta construída em torno de duas interfaces principais: `IInputWorkingDirectory` e `IOutputWorkingDirectory`. Este desacoplamento permite:
+
+- Processar documentos inteiramente em memória utilizando armazenamento baseado em fluxo.
+
+- Lidar diretamente com ficheiros comprimidos, lendo dos fluxos ZIP sem os extrair primeiro para o disco.
+
+- Garantir a segurança de threads em aplicações de servidor multi-tenant, isolando cada tarefa de composição tipográfica na sua própria instância de diretório de trabalho virtual.
+
+- ### Porque é que a abstração de interfaces é importante para os desenvolvedores
+
+Nas aplicações empresariais modernas — como microsserviços na nuvem ou filas de tarefas em segundo plano — depender de caminhos físicos em disco apresenta estrangulamentos severos:
+
+- Vários threads a ler ou escrever no mesmo directório físico irão colidir ou sobrescrever os ficheiros temporários `. aux`, `. log` ou de saída uns dos outros.
+
+- Escrever recursos intermédios ou strings dinâmicas de base de dados em disco apenas para que um mecanismo de composição tipográfica os leia degrada o desempenho.
+
+- Os ambientes na nuvem (como contentores Docker ou funções sem servidor) possuem frequentemente sistemas de ficheiros de leitura apenas ou acesso restrito ao armazenamento.
+
+Ao abstrair a entrada e a saída através de interfaces, o Aspose.TeX permite aos programadores redirecionar as operações de ficheiros para fluxos de memória, ficheiros ZIP, bases de dados ou sistemas de ficheiros virtuais personalizados sem qualquer alteração na lógica principal de composição tipográfica.

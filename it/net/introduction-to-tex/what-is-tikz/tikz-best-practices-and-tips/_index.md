@@ -7,7 +7,7 @@ weight: 23
 url: /net/tikz-best-practices-and-tips/
 keywords: migliori pratiche tikz, consigli tikz, ottimizzazione prestazioni tikz
 description: Scopri le migliori pratiche e i consigli utili per un uso efficiente ed efficace di TikZ nei tuoi documenti TeX e LaTeX.
-lastmod: "2026-04-22"
+lastmod: 2026-10-23
 ---
 
 {{<section overview>}}
@@ -109,6 +109,79 @@ Espandi la tua conoscenza di TikZ con queste eccellenti risorse:
 
 - **Esempi di Overleaf**
   Esempi pratici e modelli di TikZ sono disponibili su [Overleaf](https://www.overleaf.com/learn/latex/TikZ_package).
+
+## Gestione degli errori e diagnostica in .NET
+
+Nelle applicazioni .NET automatizzate lato server, l'utilizzo di codice TikZ fornito dall'utente o generato dinamicamente richiede una programmazione difensiva. Quando il motore Aspose.TeX rileva una sintassi LaTeX o TikZ non valida, genera un'eccezione gestita di tipo `TeXException`.
+
+Per garantire che l'applicazione rimanga resiliente e fornisca informazioni diagnostiche utili, è opportuno adottare le seguenti pratiche di gestione degli errori:
+
+1. Intercettazione e registrazione di `TeXException`
+È necessario racchiudere sempre l'esecuzione di `TeXJob.Run()` all'interno di un blocco `try-catch` specifico per `TeXException`. In questo modo, gli errori di composizione tipografica vengono isolati dagli altri tipi di errori dell'applicazione.
+
+2. Analisi dell'output del terminale e dei log di diagnostica
+In caso di errore durante la compilazione, l'output del terminale e i file `.log` generati nel corso dell'operazione indicano il numero di riga esatto e le tracce di espansione delle macro nel punto in cui il parser TikZ ha riscontrato un problema. È possibile acquisire o reindirizzare l'output del terminale tramite `TeXOptions` per facilitare le attività di debug.
+
+Di seguito viene illustrato come gli sviluppatori possano implementare un metodo di compilazione sicuro e resiliente agli errori in C# per l'elaborazione di diagrammi TikZ:
+
+
+```csharp
+using System;
+using System.IO;
+using Aspose.TeX;
+using Aspose.TeX.Configuration;
+using Aspose.TeX.Presentation.Pdf;
+using Aspose.TeX.IO;
+
+public class TikZCompilerService
+{
+    public bool TryCompileTikZDocument(string inputFilePath, string outputDirectory, out string errorMessage)
+    {
+        errorMessage = string.Empty;
+
+        // Configura le opzioni standard per il processo LaTeX
+        TeXOptions options = TeXOptions.ConsoleAppRunSettings(
+            TeXConfig.LaTeX, 
+            Path.GetDirectoryName(inputFilePath), 
+            outputDirectory
+        );
+
+        // Abilita il reindirizzamento dell'output da terminale per catturare dettagli diagnostici, se necessario
+        options.ShowTerminal = true;
+        options.SaveOptions = new PdfSaveOptions();
+
+        try
+        {
+            // Esegue il processo di composizione tipografica
+            new TeXJob(inputFilePath, new PdfDevice(), options).Run();
+            return true;
+        }
+        catch (TeXException texEx)
+        {
+            // Gestisce errori specifici relativi alla sintassi TeX, ai pacchetti o all'espansione di macro (ad esempio, un percorso TikZ malformato)
+            errorMessage = $"TeX Engine Compilation Error: {texEx.Message}";
+            // TODO: Registra i dettagli dell'eccezione nel sistema di logging aziendale (es. NLog, Serilog)
+            return false;
+        }
+        catch (IOException ioEx)
+        {
+            // Gestisce problemi di accesso ai file o di permessi sul disco
+            errorMessage = $"I/O Error during compilation: {ioEx.Message}";
+            return false;
+        }
+        catch (Exception ex)
+        {
+            // Gestisce errori di runtime imprevisti
+            errorMessage = $"Unexpected error: {ex.Message}";
+            return false;
+        }
+    }
+}
+```
+
+Intercettare l'eccezione `TeXException` consente all'applicazione di restituire al client un codice di stato `HTTP 400 Bad Request` (o un messaggio di errore informativo) nel caso in cui uno script TikZ generato risulti malformato, evitando così che si verifichi un errore lato server di tipo 500.
+
+Se la tua applicazione .NET inserisce dinamicamente dati forniti dall'utente all'interno di stringhe che definiscono coordinate o nodi TikZ, assicurati di eseguire un'adeguata sanificazione per prevenire la rottura accidentale della sintassi (causata, ad esempio, da caratteri speciali non sottoposti a escape, come `%`, `&` o `#`).
 
 ---
 

@@ -6,7 +6,7 @@ linktitle: Графіка LaTeX
 weight: 18
 url: /net/latex-graphics/
 description: Про включення графіки в TeX варто згадати. Коли мова йде про це, перше, що спадає на думку, це команда `\includegraphics`.
-lastmod: "2026-04-22"
+lastmod: 2026-10-19
 ---
 
 {{<section overview>}}
@@ -15,7 +15,6 @@ lastmod: "2026-04-22"
 
  * векторна графіка, описана безпосередньо за допомогою команд LaTeX/TeX і,
  * включення зовнішньої графіки, описаної за допомогою зовнішніх форматів, наприклад EPS, PDF або растрових PNG і PDF.
-
 
 
 Перший має обмежену підтримку в оригінальному LaTeX та його пакетах. Це реалізовано за допомогою вертикальних і горизонтальних правил TeX. Це тому, що оригінальний LaTeX базується на оригінальному движку TeX, який створює основний вихід у форматі *DVI*, який не підходить для опису ліній і кривих або даних бінарного растрового зображення. Але двигуни, які можуть виводити у формати, що підтримують графіку (наприклад, pdfTeX у PDF), також можуть працювати з графікою за допомогою залежних від формату пакетів або функцій пакетів. Остання графіка не підтримується в базовому LaTeX з тієї ж причини. Ми обговоримо функції включення графіки нижче.
@@ -75,7 +74,7 @@ lastmod: "2026-04-22"
 
 
 ```tex
-\resizebox{10mm}{!}{\includegraphics{sample-image.png}} % changes the width to 10mm preserving the proprtions
+\resizebox{10mm}{!}{\includegraphics{sample-image.png}} % changes the width to 10mm preserving the proportions
 \resizebox{20mm}{10mm}{\includegraphics{sample-image.png}} % changes both width and height independently
 ```
 
@@ -101,7 +100,7 @@ lastmod: "2026-04-22"
 
 ```tex
 \includegraphics[viewport=10 10 280 220]{sample-image.png} % sets the viewport with the lower left corner
-                                                           % at the point (10, 10) (coinsides with (0, 0)
+                                                           % at the point (10, 10) (coincides with (0, 0)
                                                            % of the box) and dimensions 280x220pt
 \includegraphics[viewport=10 10 250 220,clip]{sample-image.png} % the same, but the image is clipped by the viewport
 ```
@@ -115,7 +114,7 @@ lastmod: "2026-04-22"
 ### Зміна розміру графіки
 
 ```tex
-\includegraphics[width=15mm]{sample-image.png} % changes the width to 15mm preserving the proprtions
+\includegraphics[width=15mm]{sample-image.png} % changes the width to 15mm preserving the proportions
 \includegraphics[height=15mm,width=25mm]{sample-image.png} % changes both width and height independently
 ```
 
@@ -129,3 +128,33 @@ lastmod: "2026-04-22"
 [тут](http://mirrors.ctan.org/macros/latex/required/graphics/graphics.pdf).
 
 **Ви також можете ознайомитися з безкоштовним [веб-додатком](https://products.aspose.app/tex/conversion/latex/) перетворення, створеним на основі [Aspose.TeX для .NET API](https://products.aspose.com/tex/net/).**
+
+## Традиційний пакет `graphics` проти сучасного `graphicx`
+
+Хоча обидва пакети базуються на спільному внутрішньому механізмі, вони представляють принципово різні підходи до роботи з графічним вмістом у LaTeX.
+
+- Пакет `graphics` використовує вкладені команди-обгортки та позиційні аргументи. Це змушує користувача розміщувати макроси для вставлення зображень усередині окремих функцій-трансформаторів (наприклад, вкладати `\includegraphics` усередину `\scalebox`).
+
+- Пакет `graphicx` пропонує зручний інтерфейс «ключ-значення», який можна розширювати; він використовується безпосередньо в необов’язкових аргументах команди `\includegraphics`. Це дозволяє задавати кілька перетворень в одному зрозумілому блоці.
+
+| **Операція** | **Традиційний пакет `graphics`** | **Сучасний пакет `graphicx`** |
+| :- | :- | :- |
+| Базове вставлення зображення | `\includegraphics{sample-image.png}` | `\includegraphics{sample-image.png}` |
+| Рівномірне масштабування | `\scalebox{0.5}{\includegraphics{sample-image.png}}` | `\includegraphics[scale=0.5]{sample-image.png}` |
+| Нерівномірне масштабування (незалежно для X та Y) | `\scalebox{0.5}[1.5]{\includegraphics{sample-image.png}}` | (Потребує вкладених обгорток або додаткових пакетів) |
+| Зміна розміру за одним виміром | `\resizebox{10mm}{!}{\includegraphics{sample-image.png}}` | `\includegraphics[width=10mm]{sample-image.png}` |
+| Зміна розміру за обома вимірами незалежно | `\resizebox{20mm}{10mm}{\includegraphics{sample-image.png}}` | `\includegraphics[width=25mm, height=15mm]{sample-image.png}` |
+| Поворот | `\rotatebox{25}{\includegraphics{sample-image.png}}` | `\includegraphics[angle=25]{sample-image.png}` |
+| Обрізання за вікном перегляду (viewport) | Вимагає перевизначення обмежувального прямокутника (bounding box) на нижчому рівні |`\includegraphics[viewport=10 10 280 220, clip]{sample-image.png}`|
+
+
+### Переваги підходу «ключ-значення» в пакеті `graphicx`
+
+1. Вбудована підтримка кількох перетворень одночасно:
+За допомогою `graphicx` можна одночасно застосовувати масштабування, обертання та обрізання в межах однієї команди, не вдаючись до вкладених макросів.
+
+2. Збереження пропорцій:
+Використання параметра `keepaspectratio=true` разом із чітко заданими обмеженнями ширини або висоти дозволяє уникнути спотворення зображення, позбавляючи необхідності вручну розраховувати коефіцієнти масштабування.
+
+3. Зручність супроводу при автоматизованій генерації:
+Під час розробки програм або скриптів (наприклад, на базі Aspose.TeX for .NET), які динамічно створюють або аналізують вихідні файли LaTeX, формування структурованих рядків властивостей у форматі «ключ-значення» є значно надійнішим підходом, ніж розбір і вбудовування вкладених макросів.

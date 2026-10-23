@@ -6,7 +6,7 @@ linktitle: LaTeX-Grafiken
 weight: 18
 url: /net/latex-graphics/
 description: Erwähnenswert ist die Einbindung von Grafiken in TeX. Wenn man darüber spricht, fällt mir als Erstes der Befehl `\includegraphics` ein.
-lastmod: "2026-04-22"
+lastmod: 2026-10-19
 ---
 
 {{<section overview>}}
@@ -28,7 +28,6 @@ Wenn man über die Einbindung von LaTeX-Grafiken spricht, fällt einem als Erste
 
 Wenn Ihr Satzsystem beispielsweise nicht standardmäßig für die Verwendung von pdfTeX konfiguriert ist, sollten Sie die entsprechende Option angeben, die das Paket dazu zwingt, die erforderliche „Treiber“-Datei zu verwenden:
 
-
 ```tex
 \usepackage[pdftex]{graphics}
 ```
@@ -36,7 +35,6 @@ Wenn Ihr Satzsystem beispielsweise nicht standardmäßig für die Verwendung von
 Eine „Treiber“-Datei ist Teil eines Pakets, das die Schnittstelle zwischen Paketbefehlen und formatabhängigen Low-Level-TeX-Erweiterungsprimitiven implementiert. Die LaTeX-Grafikunterstützung von Aspose.TeX ist für die Verwendung eines eigenen Treibers konfiguriert, sodass Sie die Treiberoption nicht angeben müssen.
 
 Der einfachste Weg, beispielsweise ein PNG-Bild einzubinden, besteht darin, Folgendes einzugeben:
-
 
 ```tex
 \includegraphics{sample-image.png}
@@ -54,7 +52,6 @@ Sie können den vollständigen Dateinamen auch mit einem absoluten oder relative
 
 Eine andere Möglichkeit, den/die Speicherort(e) der Grafikdateien anzugeben, besteht darin, eine Liste alternativer Pfade mit dem Befehl `\graphicspath` zu definieren, bevor `\includegraphics` aufgerufen wird:
 
-
 ```tex
 \graphicspath{{d:/img}{c:/img}{d:/work/img}}
 ```
@@ -62,7 +59,6 @@ Eine andere Möglichkeit, den/die Speicherort(e) der Grafikdateien anzugeben, be
 ### Skalieren der Grafiken
 
 Das LaTeX-Grafikpaket bietet Befehle zum Bearbeiten des Inhalts. Sie können also die enthaltenen Grafiken (eigentlich alles, was durch TeX/LaTeX-Code beschrieben wird) wie folgt skalieren:
-
 
 ```tex
 \scalebox{.5}{\includegraphics{sample-image.png}} % scales both width and height by 0.5
@@ -73,9 +69,8 @@ Das LaTeX-Grafikpaket bietet Befehle zum Bearbeiten des Inhalts. Sie können als
 
 Es ähnelt der Skalierung, aber Sie geben die erforderliche Größe anstelle eines oder mehrerer Skalierungsfaktoren an:
 
-
 ```tex
-\resizebox{10mm}{!}{\includegraphics{sample-image.png}} % changes the width to 10mm preserving the proprtions
+\resizebox{10mm}{!}{\includegraphics{sample-image.png}} % changes the width to 10mm preserving the proportions
 \resizebox{20mm}{10mm}{\includegraphics{sample-image.png}} % changes both width and height independently
 ```
 
@@ -89,7 +84,6 @@ Es ähnelt der Skalierung, aber Sie geben die erforderliche Größe anstelle ein
 
 Das LaTeX-Paket „graphicx“ stellt die Schnittstelle „key=value“ für Inhaltstransformationen bereit. Um seine Funktionen zu aktivieren, sollten Sie es in der Präambel erwähnen:
 
-
 ```tex
 \usepackage{graphicx}
 \usepackage[pdftex]{graphicx} % with the driver option
@@ -98,9 +92,10 @@ Das LaTeX-Paket „graphicx“ stellt die Schnittstelle „key=value“ für Inh
 Sie können jede der folgenden Optionen kombinieren, beachten Sie jedoch, dass die Reihenfolge wichtig ist.
 
 ### Grafikansichtsfenster
+
 ```tex
 \includegraphics[viewport=10 10 280 220]{sample-image.png} % sets the viewport with the lower left corner
-                                                           % at the point (10, 10) (coinsides with (0, 0)
+                                                           % at the point (10, 10) (coincides with (0, 0)
                                                            % of the box) and dimensions 280x220pt
 \includegraphics[viewport=10 10 250 220,clip]{sample-image.png} % the same, but the image is clipped by the viewport
 ```
@@ -114,7 +109,7 @@ Sie können jede der folgenden Optionen kombinieren, beachten Sie jedoch, dass d
 ### Größenänderung von Grafiken
 
 ```tex
-\includegraphics[width=15mm]{sample-image.png} % changes the width to 15mm preserving the proprtions
+\includegraphics[width=15mm]{sample-image.png} % changes the width to 15mm preserving the proportions
 \includegraphics[height=15mm,width=25mm]{sample-image.png} % changes both width and height independently
 ```
 
@@ -128,3 +123,33 @@ Weitere Informationen zu den Funktionen des `Grafik`-Paketpakets finden Sie in d
 [hier](http://mirrors.ctan.org/macros/latex/required/graphics/graphics.pdf).
 
 **Sie können sich auch die kostenlose Konvertierungs-[Web-App](https://products.aspose.app/tex/conversion/latex/) ansehen, die auf der Grundlage von [Aspose.TeX für .NET API](https://products.aspose.com/tex/net/) erstellt wurde.**
+
+## Traditionelle `graphics`-Syntax vs. moderne `graphicx`-Syntax
+
+Obwohl beide Pakete auf demselben zugrunde liegenden Kern basieren, repräsentieren sie grundlegend unterschiedliche Paradigmen für die Arbeit mit LaTeX-Inhalten.
+
+- Das `graphics`-Paket setzt auf verschachtelte Befehls-Wrapper und positionsabhängige Argumente. Dies erfordert, dass Einbindungsbefehle in separate Transformationsfunktionen eingebettet werden (z. B. das Verschachteln von `\includegraphics` innerhalb von `\scalebox`).
+
+- Das `graphicx`-Paket führt eine übersichtliche, erweiterbare Schlüssel-Wert-Schnittstelle ein, die direkt in den optionalen Argumenten von `\includegraphics` genutzt wird. Dadurch lassen sich mehrere Transformationen in einem einzigen, gut lesbaren Block definieren.
+
+| **Operation** | **Traditionelles `graphics`-Paket** | **Modernes `graphicx`-Paket** |
+| :- | :- | :- |
+| Einfache Bildeinbindung | `\includegraphics{sample-image.png}` | `\includegraphics{sample-image.png}` |
+| Gleichmäßige Skalierung | `\scalebox{0.5}{\includegraphics{sample-image.png}}` | `\includegraphics[scale=0.5]{sample-image.png}` |
+| Ungleichmäßige Skalierung (unabhängig für X/Y) | `\scalebox{0.5}[1.5]{\includegraphics{sample-image.png}}` | (Erfordert Verschachtelung oder zusätzliche Pakete) |
+| Größenanpassung nach Dimension | `\resizebox{10mm}{!}{\includegraphics{sample-image.png}}` | `\includegraphics[width=10mm]{sample-image.png}` |
+| Unabhängige Größenanpassung beider Dimensionen | `\resizebox{20mm}{10mm}{\includegraphics{sample-image.png}}` | `\includegraphics[width=25mm, height=15mm]{sample-image.png}` |
+| Rotation | `\rotatebox{25}{\includegraphics{sample-image.png}}` | `\includegraphics[angle=25]{sample-image.png}` |
+| Ausschnitt festlegen (Clipping) | Erfordert „Bounding Box“-Überschreibungen auf niedrigerer Ebene |`\includegraphics[viewport=10 10 280 220, clip]{sample-image.png}`|
+
+
+### Vorteile des Schlüssel-Wert-Ansatzes von `graphicx`
+
+1. Native Kombination mehrerer Transformationen:
+Mit `graphicx` lassen sich Skalierung, Drehung und das Zuschneiden (Clipping) gleichzeitig in einem einzigen Befehl anwenden, ohne dass Makros ineinander verschachtelt werden müssen.
+
+2. Klare Beibehaltung des Seitenverhältnisses:
+Durch die Verwendung des Parameters `keepaspectratio=true` in Verbindung mit expliziten Breiten- oder Höhenvorgaben wird eine Verzerrung des Bildes vermieden, ohne dass Skalierungsfaktoren manuell berechnet werden müssen.
+
+3. Bessere Wartbarkeit bei automatisierter Erstellung:
+Beim Schreiben von Programmen oder Skripten (etwa auf Basis von Aspose.TeX für .NET), die LaTeX-Quelldateien dynamisch generieren oder parsen, ist das Erstellen strukturierter Schlüssel-Wert-Zeichenfolgen deutlich weniger fehleranfällig als das Parsen und Einfügen verschachtelter Makro-Konstrukte.

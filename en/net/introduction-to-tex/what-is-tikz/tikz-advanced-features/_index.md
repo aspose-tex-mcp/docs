@@ -7,7 +7,7 @@ weight: 20
 url: /net/tikz-advanced-features/
 keywords: advanced tikz, tikz paths, tikz diagrams, pgfplots, circuitikz, tikz-3dplot
 description: Learn advanced TikZ techniques including complex paths, node positioning, arrows, and diagram creation for professional-quality graphics.
-lastmod: "2026-04-22"
+lastmod: 2026-10-22
 ---
 
 {{<section overview>}}
@@ -93,6 +93,28 @@ TikZ includes dedicated graphing libraries (`graphs` and `graphdrawing`) for han
 
 This automatically generates visually appealing layouts of complex graphs.
 
+## Loops (`\foreach`)
+
+Generate repetitive structures or grids programmatically:
+
+```tex
+\foreach \x in {1,2,3}
+    \draw (\x,0) circle (0.4);
+```
+
+## Coordinate Calculations (`calc` library)
+
+Here is the example of midpoint calculations or projections.
+
+```tex
+\usetikzlibrary{calc}
+\draw (0,0) coordinate (A) -- (4,2) coordinate (B);
+\draw [red] (A) -- ($(A)!0.5!(B)!1cm!90:(B)$); 
+```
+
+*% Calculating perpendicular offsets*
+
+
 ## External Libraries and Customization
 
 Extend TikZ functionality with external libraries to meet specialized requirements:
@@ -108,8 +130,19 @@ To use an external library, simply include it:
 \pgfplotsset{compat=1.18}
 ```
 
----
+## Performance and Resource Management
 
-These advanced TikZ features allow you to build sophisticated, publication-quality graphics efficiently. Mastering them will greatly enhance your LaTeX documents.
+Unlike raster images that are loaded directly into memory, TikZ drawings are dynamically computed by the TeX macro interpreter at runtime. Each path, intersection, and geometric transformation is evaluated sequentially through macro expansion before final vector rendering occurs.
+
+When processing documents with high-complexity vector diagrams in server-side .NET applications, consider the following performance guidelines to optimize CPU utilization and prevent thread starvation:
+
+|  | **Challenge** | **Best Practice** |
+|---|---|---|
+|**Macro Expansion and CPU Overhead**|TikZ relies heavily on TeX's macro expansion engine, which is interpretive. Deeply nested loops or complex geometric equations (e.g., algorithmic plot rendering) can significantly increase CPU cycles per job|Keep procedural generation within TikZ lightweight where possible. If generating thousands of repetitive elements, consider whether data-driven templating or pre-calculating coordinates outside the TeX source can reduce macro evaluation depth|
+|**Memory Footprint and Garbage Collection**|Large multi-page documents containing extensive TikZ vector paths build up large internal object trees within the managed .NET heap during the typesetting pass|Isolate typesetting jobs into short-lived scopes or use dedicated worker instances so that the garbage collector can efficiently reclaim memory once the output stream (PDF, XPS, or image) is flushed|
+|**Caching Static Diagrams in Web Applications**|Recompiling a complex TikZ diagram on every HTTP request in a high-traffic web service will quickly saturate server CPU cores|If the underlying graphic is static or semi-static (such as an administrative dashboard chart or standard architectural schema), compile the `.tex` snippet once, cache the resulting PDF or vector stream in memory (e.g., via `IMemoryCache`), and serve the cached asset directly|
+|**Managing Asynchronous Processing and Timeouts**|Unoptimized or malformed recursive macros inside complex diagrams can occasionally cause infinite loops or prolonged execution blocks|When executing TeXJob runs in background worker services (such as Hangfire, Azure Functions, or ASP.NET Core background tasks), always wrap compilation calls in asynchronous wrappers with explicit timeout boundaries|
+
+---
 
 **Additionally, explore our free [web app](https://products.aspose.app/tex/conversion/latex/) based on [Aspose.TeX for .NET API](https://products.aspose.com/tex/net/) for quick and easy TeX conversions.**

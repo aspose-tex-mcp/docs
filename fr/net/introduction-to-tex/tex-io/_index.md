@@ -6,7 +6,7 @@ linktitle: E/S TeX
 weight: 12
 url: /net/tex-io/
 description: Principes fondamentaux du travail avec TeX comme format de sortie ou d'entrée dans. Le travail TeX s'exécute sur un fichier spécifié spécifié.
-lastmod: "2026-04-22"
+lastmod: 2026-10-20
 ---
 
 {{<section overview>}}
@@ -55,3 +55,21 @@ Une tâche TeX peut s'exécuter dans l'un des quatre modes d'interaction à tout
 * `\errorstopmode`. Le moteur s'arrête à chaque occasion d'interagir.
 
 Aspose.TeX nous permet de spécifier le mode d'interaction comme option de travail TeX lors de la création de son objet. Ce mode sera défini dans l'état interne du moteur immédiatement après le chargement du format TeX (si un format est censé être chargé), et passera à un autre mode dès que le moteur rencontrera l'une des quatre commandes. La valeur par défaut de cette option conservera le mode d'interaction défini par le format TeX. Lorsqu'aucun format n'est chargé, le mode d'interaction est le même que celui défini par la commande `\errorstopmode`.
+
+## Le rôle de l'abstraction par interfaces (`IInputWorkingDirectory` et `IOutputWorkingDirectory`)
+
+Les moteurs TeX traditionnels sont intrinsèquement étroitement liés au système de fichiers du système d'exploitation local ; ils traitent les fichiers comme des chemins absolus ou relatifs sur le disque. Aspose.TeX s'affranchit de cette contrainte héritée du passé en introduisant une couche d'abstraction robuste, articulée autour de deux interfaces principales : `IInputWorkingDirectory` et `IOutputWorkingDirectory`. Ce découplage vous permet de :
+
+- Traiter des documents entièrement en mémoire, en utilisant un stockage basé sur des flux (streams).
+- Gérer directement des archives groupées en lisant des flux ZIP, sans avoir à les extraire préalablement sur le disque.
+- Garantir la sécurité des threads (thread safety) dans les applications serveur multi-utilisateurs (multi-tenant), en isolant chaque tâche de composition typographique dans sa propre instance de répertoire de travail virtuel.
+
+### Pourquoi l'abstraction par interfaces est cruciale pour les développeurs
+
+Dans les applications d'entreprise modernes — telles que les microservices dans le cloud ou les files d'attente de tâches en arrière-plan — le recours aux chemins d'accès sur disque physique entraîne des goulots d'étranglement majeurs :
+
+- Plusieurs threads lisant ou écrivant dans le même répertoire physique risquent d'entrer en conflit ou d'écraser mutuellement leurs fichiers temporaires (comme les fichiers `.aux`, `.log` ou les fichiers de sortie).
+- Écrire des ressources intermédiaires ou des données dynamiques issues d'une base de données sur le disque, uniquement pour qu'un moteur de composition typographique puisse les lire, nuit aux performances.
+- Les environnements cloud (comme les conteneurs Docker ou les fonctions « serverless ») disposent souvent de systèmes de fichiers en lecture seule ou d'un accès au stockage restreint.
+
+En faisant abstraction des entrées et des sorties via des interfaces, Aspose.TeX permet aux développeurs de rediriger les opérations sur les fichiers vers des flux en mémoire, des archives ZIP, des bases de données ou des systèmes de fichiers virtuels personnalisés, sans aucune modification de la logique fondamentale de composition typographique.

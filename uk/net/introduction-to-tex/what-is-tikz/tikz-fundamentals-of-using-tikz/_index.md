@@ -7,7 +7,7 @@ weight: 19
 url: /net/tikz-fundamentals-of-using-tikz/
 keywords: основи tikz, основи tikz, навчальний посібник з tikz
 description: Дослідіть фундаментальні принципи та основні команди TikZ для створення графіки для ваших документів TeX та LaTeX.
-lastmod: "2026-04-22"
+lastmod: 2026-10-22
 ---
 
 {{<section overview>}}
@@ -21,16 +21,27 @@ lastmod: "2026-04-22"
 - **Декартові координати (x,y)**:
 
 ```tex
-\draw (0,0) -- (2,2);
+\documentclass{article}
+\usepackage{tikz}
+\begin{document}
+\begin{tikzpicture}
+    \draw (0,0) -- (2,2);
+\end{tikzpicture}
+\end{document}
 ```
 
 - **Полярні координати (кут:радіус)**:
 
 ```tex
-\draw (0,0) -- (45:2);
+    \draw (0,0) -- (45:2);
 ```
 
 Координати можна вільно змішувати в кресленні для досягнення бажаного графічного результату.
+
+*Коротке зауваження щодо відносних зміщень:
+
+- (0,0) -- ++(1,1) переміщується в точку (0,0), проводить лінію до (1,1) і встановлює нову поточну точку в (1,1).
+- (0,0) -- +(1,1) проводить лінію до (1,1) відносно точки (0,0), але залишає поточну точку незмінною — у (0,0).*
 
 ## Малювання основних фігур
 
@@ -38,21 +49,22 @@ TikZ дозволяє легко створювати основні геоме�
 
 - **Лінії та полілінії**:
 
+
 ```tex
-\draw (0,0) -- (1,1) -- (2,0);
+    \draw (0,0) -- (1,1) -- (2,0);
 ```
 
 - **Прямокутники**:
 
 ```tex
-\draw (0,0) rectangle (2,1);
+    \draw (0,0) rectangle (2,1);
 ```
 
 - **Кола та еліпси**:
 
 ```tex
-\draw (1,1) circle (0.5);
-\draw (3,1) ellipse (1 and 0.5);
+   \draw (1,1) circle (0.5);
+    \draw (3,1) ellipse (1 and 0.5);
 ```
 
 ## Кольори та візерунки заливки
@@ -60,8 +72,8 @@ TikZ дозволяє легко створювати основні геоме�
 Кольори та заливки значно покращують візуальну чіткість. Ви можете вказати кольори безпосередньо або використовувати попередньо визначені назви:
 
 ```tex
-\draw[red, thick] (0,0) rectangle (1,1);
-\draw[fill=blue!20] (2,0) circle (0.5);
+   \draw[red, thick] (0,0) rectangle (1,1);
+   \draw[fill=blue!20] (2,0) circle (0.5);
 ```
 
 Синтаксис `blue!20` означає синій колір з інтенсивністю 20%.
@@ -73,15 +85,15 @@ TikZ дозволяє змінювати стилі та товщину ліні
 - **Товщина лінії**:
 
 ```tex
-\draw[ultra thick] (0,0) -- (1,1);
-\draw[thin] (1,0) -- (2,1);
+   \draw[ultra thick] (0,0) -- (1,1);
+   \draw[thin] (1,0) -- (2,1);
 ```
 
 - **Пунктирні та пунктирні лінії**:
 
 ```tex
-\draw[dashed] (0,0) -- (2,2);
-\draw[dotted] (2,0) -- (4,2);
+   \draw[dashed] (0,0) -- (2,2);
+   \draw[dotted] (2,0) -- (4,2);
 ```
 
 ## Вузли та мітки
@@ -89,7 +101,7 @@ TikZ дозволяє змінювати стилі та товщину ліні
 Вузли дозволяють легко додавати будь-які текстові анотації:
 
 ```tex
-\draw (0,0) -- (1,1) node[midway, above] {label};
+   \draw (0,0) -- (1,1) 
 ```
 
 Ви можете точно розташовувати підписи відносно ваших графічних елементів, покращуючи читабельність.
@@ -99,7 +111,7 @@ TikZ дозволяє змінювати стилі та товщину ліні
 Контури TikZ можуть бути прямими лініями або кривими. Криві створюються за допомогою простого синтаксису:
 
 ```tex
-\draw (0,0) .. controls (1,2) and (3,-1) .. (4,1);
+   \draw (0,0) .. controls (1,2) and (3,-1) .. (4,1);
 ```
 
 Контрольні точки інтуїтивно формують кривизну.
@@ -120,5 +132,63 @@ TikZ дозволяє змінювати стилі та товщину ліні
 ---
 
 Опанування цих фундаментальних концепцій та команд TikZ закладе міцну основу для створення складної графіки для ваших документів.
+
+## Приклад програмної обробки малюнків TikZ за допомогою Aspose.TeX
+
+Нижче наведено детальний опис процесу та приклад коду, що демонструє, як розробники можуть компілювати документ `.tex`, який містить малюнки TikZ, безпосередньо у високоякісний векторний формат (PDF) у межах керованого .NET-застосунку.
+
+```csharp
+using System;
+using System.IO;
+using Aspose.TeX;
+using Aspose.TeX.Configuration;
+using Aspose.TeX.Presentation.Pdf;
+using Aspose.TeX.IO;
+
+namespace AsposeTexTikzDemo
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // Визначення вхідної та вихідної директорій за допомогою абстракцій введення-виведення (I/O) Aspose.TeX
+            string dataDir = @"C:\DocumentSamples\TikzInput";
+            string outputDir = @"C:\DocumentSamples\TikzOutput";
+
+            // Перевірка наявності вихідної директорії
+            Directory.CreateDirectory(outputDir);
+            Directory.CreateDirectory(outputDir);
+
+            // Ініціалізація параметрів TeX для стандартної обробки документа LaTeX
+            // TeXConfig.LaTeX налаштовує рушій зі стандартними попередньо завантаженими пакетами (зокрема tikz/pgf)
+            TeXOptions options = TeXOptions.ConsoleAppRunSettings(TeXConfig.LaTeX, dataDir, outputDir);
+
+            // Встановлення імені основного вхідного файлу, що містить середовище TikZ
+            options.JobName = "tikz-fundamentals";
+
+            // Налаштування параметрів збереження для виведення результату безпосередньо у форматі PDF
+            options.SaveOptions = new PdfSaveOptions();
+
+            // Створення екземпляра та виконання TeXJob, що пов’язує вихідний файл, пристрій виведення та параметри
+            try
+            {
+                Console.WriteLine("Starting TikZ compilation job...");
+                
+                new TeXJob(
+                    Path.Combine(dataDir, "tikz-fundamentals.tex"), 
+                    new PdfDevice(), 
+                    options
+                ).Run();
+
+                Console.WriteLine($"TikZ graphic successfully compiled to PDF at: {outputDir}");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Compilation failed: {ex.Message}");
+            }
+        }
+    }
+}
+```
 
 **Крім того, ознайомтеся з нашим безкоштовним [веб-додатком](https://products.aspose.app/tex/conversion/latex/) на основі [Aspose.TeX for .NET API](https://products.aspose.com/tex/net/) для швидкого та легкого перетворення TeX.**

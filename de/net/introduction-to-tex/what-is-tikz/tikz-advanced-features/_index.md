@@ -7,7 +7,7 @@ weight: 20
 url: /net/tikz-advanced-features/
 keywords: Advanced TikZ, TikZ-Pfade, TikZ-Diagramme, pgfplots, circuitikz, Tikz-3dplot
 description: Erlernen Sie fortgeschrittene TikZ-Techniken, darunter komplexe Pfade, Knotenpositionierung, Pfeile und Diagrammerstellung für professionelle Grafiken.
-lastmod: "2026-04-22"
+lastmod: 2026-10-22
 ---
 
 {{<section overview>}}
@@ -93,6 +93,27 @@ TikZ enthält spezielle Grafikbibliotheken („graphs“ und „graphdrawing“)
 
 Dadurch werden automatisch optisch ansprechende Layouts komplexer Diagramme erstellt.
 
+## Schleifen (`\foreach`)
+
+Erzeugen Sie wiederkehrende Strukturen oder Raster programmgesteuert:
+
+```tex
+\foreach \x in {1,2,3}
+  \draw (\x,0) circle (0.4);
+```
+
+## Koordinatenberechnungen (`calc`-Bibliothek)
+
+Hier ein Beispiel für die Berechnung von Mittelpunkten oder Projektionen.
+
+```tex
+\usetikzlibrary{calc}
+\draw (0,0) coordinate (A) -- (4,2) coordinate (B);
+\draw [red] (A) -- ($(A)!0.5!(B)!1cm!90:(B)$);
+```
+
+*% Berechnung von senkrechten Abständen*
+
 ## Externe Bibliotheken und Anpassung
 
 Erweitern Sie die TikZ-Funktionalität mit externen Bibliotheken, um spezielle Anforderungen zu erfüllen:
@@ -108,8 +129,18 @@ Um eine externe Bibliothek zu verwenden, binden Sie sie einfach ein:
 \pgfplotsset{compat=1.18}
 ```
 
----
+## Performance und Ressourcenmanagement
 
-Mit diesen erweiterten TikZ-Funktionen erstellen Sie effizient anspruchsvolle Grafiken in Publikationsqualität. Die Beherrschung dieser Funktionen wird Ihre LaTeX-Dokumente deutlich verbessern.
+Im Gegensatz zu Rastergrafiken, die direkt in den Arbeitsspeicher geladen werden, werden TikZ-Zeichnungen zur Laufzeit dynamisch vom TeX-Makro-Interpreter berechnet. Jeder Pfad, jeder Schnittpunkt und jede geometrische Transformation wird durch Makro-Expansion nacheinander ausgewertet, bevor die finale Vektor-Darstellung erfolgt.
+
+Bei der Verarbeitung von Dokumenten mit hochkomplexen Vektordiagrammen in serverseitigen .NET-Anwendungen sollten die folgenden Performance-Richtlinien beachtet werden, um die CPU-Auslastung zu optimieren und ein „Thread-Starvation“ (Erschöpfung der verfügbaren Threads) zu vermeiden:
+
+| | **Herausforderung** | **Best Practice** |
+|---|---|---|
+|**Makro-Expansion und CPU-Last**|TikZ stützt sich stark auf die interpretative Makro-Expansions-Engine von TeX. Tief verschachtelte Schleifen oder komplexe geometrische Gleichungen (z. B. algorithmische Plot-Erstellung) können den CPU-Bedarf pro Vorgang erheblich steigern.|Halten Sie die prozedurale Generierung innerhalb von TikZ so schlank wie möglich. Wenn Tausende wiederkehrender Elemente erzeugt werden müssen, prüfen Sie, ob datengestützte Vorlagen oder eine Vorab-Berechnung der Koordinaten außerhalb des TeX-Quellcodes die Tiefe der Makro-Auswertung reduzieren können.|
+|**Speicherbedarf und Garbage Collection**|Umfangreiche, mehrseitige Dokumente mit komplexen TikZ-Vektorpfaden erzeugen während des Satzvorgangs große interne Objektstrukturen im verwalteten .NET-Heap.|Kapseln Sie Satzvorgänge in kurzlebige Gültigkeitsbereiche (Scopes) oder verwenden Sie dedizierte Worker-Instanzen, damit der Garbage Collector den Arbeitsspeicher effizient freigeben kann, sobald der Ausgabe-Stream (PDF, XPS oder Bild) vollständig geschrieben wurde.|
+|**Caching statischer Diagramme in Webanwendungen**|Das wiederholte Kompilieren komplexer TikZ-Diagramme bei jeder HTTP-Anfrage in einem Webdienst mit hohem Aufkommen führt schnell zur Überlastung der CPU-Kerne.|Wenn die zugrunde liegende Grafik statisch oder semi-statisch ist (z. B. Diagramme in einem Dashboard oder standardisierte architektonische Schemata), kompilieren Sie das `.tex`-Fragment nur einmal, speichern Sie das resultierende PDF oder den Vektor-Stream im Arbeitsspeicher (z. B. mittels `IMemoryCache`) und liefern Sie das zwischengespeicherte Asset direkt aus.| |**Verwaltung asynchroner Verarbeitung und Timeouts**|Nicht optimierte oder fehlerhaft strukturierte rekursive Makros innerhalb komplexer Diagramme können gelegentlich Endlosschleifen oder lang andauernde Ausführungsblockaden verursachen.|Wenn TeXJob-Aufträge in Hintergrunddiensten (wie Hangfire, Azure Functions oder ASP.NET Core-Hintergrundaufgaben) ausgeführt werden, sollten Kompilierungsaufrufe stets in asynchrone Wrapper mit explizit definierten Timeouts eingebettet werden.|
+
+---
 
 **Entdecken Sie außerdem unsere kostenlose [Web-App](https://products.aspose.app/tex/conversion/latex/) basierend auf der [Aspose.TeX für .NET API](https://products.aspose.com/tex/net/) für schnelle und einfache TeX-Konvertierungen.**

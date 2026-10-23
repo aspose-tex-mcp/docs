@@ -6,7 +6,7 @@ linktitle: TeX I/O
 weight: 12
 url: /net/tex-io/
 description: Fundamentals of working with TeX as an output or input format within Aspose.TeX API. TeX job runs on an explicitly specified file. 
-lastmod: "2026-04-22"
+lastmod: 2026-10-19
 ---
 
 {{<section overview>}}
@@ -56,3 +56,22 @@ A TeX job may be running in one of four interaction modes at any given time. The
 * `\errorstopmode`. The engine stops at every opportunity to interact.
 
 Aspose.TeX allows us to specify the interaction mode as a TeX job option when its object is being created. This mode will be set in the internal state of the engine immediately after loading TeX format (if any format is supposed to be loaded at all), and will be switched to another mode as soon as the engine encounters one of the four commands. The default value of this option will preserve the interaction mode defined by the TeX format. When no format is loaded, the interaction mode is the same as set by the `\errorstopmode` command.
+
+
+## The role of interface abstraction (`IInputWorkingDirectory` and `IOutputWorkingDirectory`)
+
+Traditional TeX engines are inherently tightly coupled to the local operating system's file system, treating files as absolute or relative paths on disk. Aspose.TeX breaks away from this legacy limitation by introducing a robust abstraction layer built around two primary interfaces: `IInputWorkingDirectory` and `IOutputWorkingDirectory`. This decoupling enables you to:
+
+- Process documents entirely in memory using stream-based storage.
+- Handle bundled archives directly by reading from ZIP streams without extracting them to disk first.
+- Ensure thread safety in multi-tenant server applications by isolating each typesetting job into its own virtual working directory instance.
+
+### Why Interface Abstraction Matters for developers
+
+In modern enterprise applications - such as cloud microservices or background worker queues - relying on physical disk paths has severe bottlenecks:
+
+- Multiple threads reading or writing to the same physical directory will collide or overwrite each other's temporary `.aux`, `.log`, or output files.
+- Writing intermediate assets or dynamic database strings to disk just to let a typesetting engine read them degrades performance.
+- Cloud environments (like Docker containers or serverless functions) often have read-only file systems or restricted storage access.
+
+By abstracting input and output behind interfaces, Aspose.TeX allows developers to redirect file operations to memory streams, ZIP archives, databases, or custom virtual file systems with zero changes to the core typesetting logic.

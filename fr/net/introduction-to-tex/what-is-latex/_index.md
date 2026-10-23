@@ -7,7 +7,7 @@ weight: 16
 url: /net/what-is-latex/
 keywords: qu'est-ce que le latex, qu'est-ce que le latex
 description: Pour répondre à la question « Qu'est-ce que LaTeX ? », découvrez sa fonctionnalité la plus impressionnante - le nouveau système de sélection de polices.
-lastmod: "2026-04-22"
+lastmod: 2026-10-20
 ---
 
 {{<section overview>}}
@@ -137,3 +137,26 @@ Et voici deux pages de sortie :
 Naturellement, nous ne prétendons pas avoir de réponse complète à la question « Qu'est-ce que LaTeX ? », car il s'agit d'une quantité d'informations assez importante. Étant donné que l'écriture d'un fichier LaTeX relève toujours de la programmation, vous devrez y consacrer du temps si vous souhaitez mieux le connaître. Tu le veux ou pas.
 
 **Vous pouvez également consulter l'[application Web](https://products.aspose.app/tex/conversion/latex/) gratuite construite sur la base de [Aspose.TeX pour l'API .NET](https://products.aspose.com/tex/net/).**
+
+
+## Balisage logique et formatage direct
+
+Contrairement aux logiciels de PAO (publication assistée par ordinateur) de type WYSIWYG (« ce que vous voyez est ce que vous obtenez ») — où la création de contenu et la mise en forme visuelle s'effectuent simultanément — LaTeX impose une séparation stricte entre le contenu et la présentation.
+
+Lorsqu'ils rédigent en LaTeX, les auteurs utilisent un balisage sémantique pour définir la nature des éléments (`\section{Introduction}`, `\begin{equation}`), sans se préoccuper de leur apparence. Le moteur de composition sous-jacent gère automatiquement des règles de mise en page complexes, l'espacement entre les caractères (crénage), les sauts de ligne, la numérotation des pages et l'alignement des formules mathématiques. Cela garantit une cohérence typographique absolue dans des documents techniques volumineux et complexes ou des articles scientifiques, libérant ainsi les développeurs et les chercheurs des tâches fastidieuses de formatage manuel.
+
+## Fonctionnalités clés
+
+Voici un tableau comparatif détaillant la manière dont les fonctionnalités standard de LaTeX sont prises en charge par Aspose.TeX :
+
+| **Fonctionnalité/Système** | **Distribution TeX standard (CLI)** | **Moteur Aspose.TeX pour .NET** |
+| :- | :- | :- |
+| **Composition mathématique** | Gérée via `amsmath`/`amssymb` | Analysée et rendue nativement vers des formats vectoriels ou matriciels |
+| **Classes de documents** | Nécessite des fichiers `.cls` locaux sur le disque | Chargées via une interface personnalisée/virtuelle `IInputWorkingDirectory` |
+| **Renvois et table des matières** | Nécessite plusieurs passes en ligne de commande | Gérés au sein de passes d'exécution configurables |
+| **Formats de sortie** | Génère des fichiers DVI, PS ou PDF via des outils distincts | Conversion directe en une seule étape vers PDF, XPS, PNG, JPEG, BMP ou TIFF |
+
+**Pour aller plus loin :**
+
+- [Entrées/Sorties TeX (tex-io)](/tex/{{lang.url-fragment}}net/tex-io/) : découvrez comment `IInputWorkingDirectory` et `IOutputWorkingDirectory` gèrent les ressources (flux de données et fichiers sur disque).
+- [Graphiques LaTeX (latex-graphics)](/tex/{{lang.url-fragment}}net/latex-graphics/) : intégration d'images externes via `\includegraphics` en utilisant le paquet `graphicx`. - [Aspose.TeX et Object TeX](/tex/{{lang.url-fragment}}net/aspose-tex-and-object-tex/) : Comprendre le modèle d'objets managés sous-jacent.

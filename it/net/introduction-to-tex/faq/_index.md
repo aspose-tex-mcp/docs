@@ -6,7 +6,7 @@ linktitle: FAQ
 weight: 80
 url: /net/introduction-to-tex/faq/
 description: Ottieni risposte a tutte le domande più frequenti su TeX e LaTeX, la loro struttura, l'uso e le peculiarità.
-lastmod: "2026-04-22"
+lastmod: 2026-10-21
 ---
 
 {{<section overview>}}
@@ -132,3 +132,23 @@ Tuttavia, se sei uno studente o un professionista in un campo STEM o se scrivi r
 
 `\usepackage{graphicx}`
 <br> <br>
+
+**Q: È necessario installare TeX Live, MiKTeX o altri binari esterni sul server per utilizzare Aspose.TeX per .NET?**
+
+**A:** No. Aspose.TeX per .NET è una libreria di classi autonoma e completamente gestita, scritta in C#. Non richiede l'installazione di distribuzioni TeX esterne, eseguibili nativi o runtime da riga di comando sulla macchina host o nell'ambiente cloud.
+<br><br>
+
+**Q: Come posso elaborare un documento LaTeX memorizzato in memoria, senza leggere o scrivere file su disco?**
+
+**A:** È possibile sfruttare l'architettura di I/O modulare di Aspose.TeX. Utilizzando `InputMemoryDirectory` o flussi di memoria (memory stream) insieme a `OutputMemoryDirectory`, è possibile fornire i dati di input direttamente da array di byte o stringhe e ottenere l'output (PDF o immagini) interamente in memoria.
+<br><br>
+
+**Q: In che modo Aspose.TeX gestisce i pacchetti mancanti o i file `.sty` personalizzati?**
+
+**A:** I pacchetti standard principali (come `graphics`, `graphicx` e i pacchetti AMS standard) sono già integrati nel motore. Per quanto riguarda pacchetti personalizzati o di terze parti e file di classe (`.sty`, `.cls`), è possibile inserirli nella directory di lavoro di input o includerli in un `InputZipDirectory`, consentendo così al motore di individuarli dinamicamente durante la compilazione.
+<br><br>
+
+**Q: Aspose.TeX per .NET è thread-safe per applicazioni web ad alta concorrenza?**
+
+**A:** L'esecuzione dei job (`TeXJob`) e le opzioni di configurazione (`TeXOptions`) sono progettate per essere istanziate per singolo job; ciò le rende ideali per ambienti server multi-thread e asincroni. Tuttavia, è necessario assicurarsi che, in caso di thread in background concorrenti, vengano utilizzate istanze distinte per i documenti o le opzioni, al fine di evitare interferenze tra gli stati di esecuzione.
+<br><br>

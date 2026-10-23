@@ -6,7 +6,7 @@ linktitle: TeX-E/A
 weight: 12
 url: /net/tex-io/
 description: Grundlagen der Arbeit mit TeX als Ausgabe- oder Eingabeformat innerhalb der Aspose.TeX-API. Der TeX-Job wird für eine explizit angegebene Datei ausgeführt.
-lastmod: "2026-04-22"
+lastmod: 2026-10-20
 ---
 
 {{<section overview>}}
@@ -39,8 +39,6 @@ Darüber hinaus verfügt TeX über drei Grundelemente im Zusammenhang mit der Hi
 * `\openout<4-bit-number>=<Dateiname>` erfordert einen Dateinamen, öffnet eine Datei und ordnet sie einer Zahl von 0 bis 15 zu.
 * `\write<Nummer>{Token-Liste}` erfordert die Nummer, der eine Datei zugeordnet ist, und schreibt die „Token-Liste“ in die Datei.
 * `\closeout<4-bit-number>` schließt die der Nummer zugeordnete Datei.
-
-
  
 Die Dateien, deren Namen an die `\openout`-Befehle übergeben werden, sind auch in der TeX-Ausgabe enthalten, und wir nennen sie *Hilfsausgabedateien*.
 
@@ -57,3 +55,21 @@ Ein TeX-Job kann jederzeit in einem von vier Interaktionsmodi ausgeführt werden
 * `\errorstopmode`. Der Motor stoppt bei jeder Gelegenheit zur Interaktion.
 
 Aspose.TeX ermöglicht es uns, den Interaktionsmodus als TeX-Joboption anzugeben, wenn sein Objekt erstellt wird. Dieser Modus wird im internen Zustand der Engine unmittelbar nach dem Laden des TeX-Formats eingestellt (sofern überhaupt ein Format geladen werden soll) und in einen anderen Modus umgeschaltet, sobald die Engine auf einen der vier Befehle trifft. Der Standardwert dieser Option behält den durch das TeX-Format definierten Interaktionsmodus bei. Wenn kein Format geladen ist, ist der Interaktionsmodus derselbe, der durch den Befehl „\errorstopmode“ festgelegt wurde.
+
+## Die Rolle der Schnittstellenabstraktion (`IInputWorkingDirectory` und `IOutputWorkingDirectory`)
+
+Herkömmliche TeX-Engines sind von Natur aus eng an das Dateisystem des lokalen Betriebssystems gekoppelt; sie behandeln Dateien als absolute oder relative Pfade auf dem Datenträger. Aspose.TeX überwindet diese Einschränkung durch eine robuste Abstraktionsschicht, die auf zwei zentralen Schnittstellen basiert: `IInputWorkingDirectory` und `IOutputWorkingDirectory`. Diese Entkopplung ermöglicht es Ihnen:
+
+- Dokumente vollständig im Arbeitsspeicher (in-memory) mithilfe von Stream-basierten Speichermethoden zu verarbeiten.
+- Archivdateien direkt zu verarbeiten, indem sie aus ZIP-Streams gelesen werden, ohne dass eine vorherige Entpackung auf den Datenträger erforderlich ist.
+- In Multi-Tenant-Serveranwendungen Threadsicherheit zu gewährleisten, indem jeder Satzvorgang in eine eigene virtuelle Arbeitsverzeichnis-Instanz isoliert wird.
+
+### Warum Schnittstellenabstraktion für Entwickler wichtig ist
+
+In modernen Unternehmensanwendungen – etwa bei Cloud-Microservices oder Hintergrundprozessen (Worker Queues) – führt die Abhängigkeit von physischen Dateipfaden zu erheblichen Engpässen:
+
+- Wenn mehrere Threads auf dasselbe physische Verzeichnis zugreifen (lesen oder schreiben), kommt es zu Konflikten oder zum gegenseitigen Überschreiben von temporären `.aux`-, `.log`- oder Ausgabedateien.
+- Das Schreiben von Zwischenergebnissen oder dynamischen Daten (z. B. aus Datenbanken) auf den Datenträger, nur damit die Satz-Engine sie anschließend wieder einlesen kann, beeinträchtigt die Performance.
+- Cloud-Umgebungen (wie Docker-Container oder Serverless-Funktionen) verfügen häufig über schreibgeschützte Dateisysteme oder einen eingeschränkten Zugriff auf den Speicher.
+
+Durch die Abstraktion von Ein- und Ausgabevorgängen über Schnittstellen ermöglicht Aspose.TeX Entwicklern, Dateizugriffe auf Arbeitsspeicher-Streams, ZIP-Archive, Datenbanken oder benutzerdefinierte virtuelle Dateisysteme umzuleiten – ohne dass Änderungen an der eigentlichen Satzlogik erforderlich sind.

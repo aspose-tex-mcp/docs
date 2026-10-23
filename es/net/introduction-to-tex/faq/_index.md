@@ -6,7 +6,7 @@ linktitle: Preguntas frecuentes
 weight: 80
 url: /net/introduction-to-tex/faq/
 description: Obtenga respuestas a todas las preguntas más frecuentes sobre TeX y LaTeX, su estructura, uso y peculiaridades.
-lastmod: "2026-04-22"
+lastmod: 2026-10-21
 ---
 
 {{<section overview>}}
@@ -132,3 +132,23 @@ Sin embargo, si usted es un estudiante o profesional en un campo STEM, o si escr
 
 `\usepackage{graphicx}`
 <br> <br>
+
+**P: ¿Necesito instalar TeX Live, MiKTeX o cualquier binario externo en mi servidor para utilizar Aspose.TeX para .NET?**
+
+**A:** No. Aspose.TeX para .NET es una biblioteca de clases independiente y totalmente gestionada, escrita en C#. No requiere la instalación de distribuciones de TeX externas, ejecutables nativos ni entornos de ejecución de línea de comandos en su máquina anfitriona o entorno en la nube.
+<br><br>
+
+**P: ¿Cómo puedo procesar un documento LaTeX almacenado en memoria sin leer ni escribir archivos en el disco?**
+
+**A:** Puede aprovechar la arquitectura de entrada/salida (E/S) conectable de Aspose.TeX. Mediante el uso de `InputMemoryDirectory` o flujos de memoria (memory streams) junto con `OutputMemoryDirectory`, puede proporcionar los datos de origen directamente desde matrices de bytes o cadenas de texto, y capturar los resultados (PDF o imágenes) completamente en la memoria.
+<br><br>
+
+**P: ¿Cómo gestiona Aspose.TeX los paquetes faltantes o los archivos `.sty` personalizados?**
+
+**A:** Los paquetes estándar fundamentales (como `graphics`, `graphicx` y los paquetes AMS estándar) ya están integrados en el motor. En el caso de paquetes personalizados o de terceros, así como archivos de clase (`.sty`, `.cls`), puede colocarlos en su directorio de trabajo de entrada o incluirlos en un `InputZipDirectory` para que el motor pueda resolverlos dinámicamente durante la compilación.
+<br><br>
+
+**P: ¿Es Aspose.TeX para .NET seguro para su uso en aplicaciones web con alta concurrencia?**
+
+**A:** Las ejecuciones de tareas (`TeXJob`) y las opciones de configuración (`TeXOptions`) están diseñadas para instanciarse por cada tarea, lo que las hace idóneas para entornos de servidor multihilo y asíncronos. No obstante, asegúrese de utilizar instancias independientes de documentos u opciones para los hilos en segundo plano que se ejecuten de forma concurrente, a fin de evitar la interferencia entre los estados de ejecución.
+<br><br>

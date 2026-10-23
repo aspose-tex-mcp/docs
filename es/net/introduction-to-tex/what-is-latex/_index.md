@@ -7,7 +7,7 @@ weight: 16
 url: /net/what-is-latex/
 keywords: ¿Qué es el LaTeX? ¿Qué es el LaTeX?
 description: Para responder a la pregunta “¿Qué es LaTeX?” recuerde que una de sus características más impresionantes es el Nuevo Esquema de Selección de Fuentes(NFSS).
-lastmod: "2026-04-22"
+lastmod: 2026-10-20
 ---
 
 {{<section overview>}}
@@ -137,3 +137,26 @@ Y aquí hay dos páginas de resultados:
 Naturalmente, no pretendemos tener una respuesta completa a la pregunta "¿Qué es LaTeX?", ya que se trata de una cantidad de información bastante grande. Dado que escribir un archivo LaTeX sigue siendo programación, tendrás que dedicar algo de tiempo si quieres familiarizarte mejor con él. ¿Lo quieres o no?
 
 **También puede consultar la [aplicación web](https://products.aspose.app/tex/conversion/latex/) gratuita creada en base a [Aspose.TeX para .NET API](https://products.aspose.com/tex/net/).**
+
+
+## Marcado lógico frente a formato directo
+
+A diferencia de los programas de autoedición tradicionales de tipo WYSIWYG («lo que ves es lo que obtienes»), en los que la creación de contenido y el estilo visual ocurren simultáneamente, LaTeX impone una separación estricta entre el contenido y la presentación.
+
+Al escribir en LaTeX, los autores utilizan un marcado semántico para definir qué son los elementos (`\section{Introduction}`, `\begin{equation}`), en lugar de preocuparse por su apariencia. El motor de composición subyacente gestiona automáticamente reglas complejas de diseño, espaciado entre caracteres (*kerning*), saltos de línea, numeración de páginas y alineación de fórmulas matemáticas. Esto garantiza una coherencia tipográfica absoluta en documentos técnicos extensos y complejos o en artículos científicos, liberando a desarrolladores e investigadores de la tediosa tarea de dar formato manualmente.
+
+## Características principales
+
+A continuación, se presenta una tabla comparativa que detalla cómo se gestionan mediante programación las funciones estándar de LaTeX dentro de Aspose.TeX:
+
+| **Característica/Sistema** | **Distribución TeX estándar (CLI)** | **Motor Aspose.TeX para .NET** |
+| :- | :- | :- |
+| **Composición matemática** | Gestionada mediante `amsmath`/`amssymb` | Analizada y renderizada de forma nativa en formatos vectoriales o de mapa de bits (*raster*) |
+| **Clases de documento** | Requiere archivos `.cls` locales en el disco | Se cargan mediante una interfaz personalizada/virtual `IInputWorkingDirectory` |
+| **Referencias cruzadas e índice (TOC)** | Requiere múltiples pasadas desde la línea de comandos | Gestionadas mediante pasadas de ejecución configurables |
+| **Formatos de salida** | Genera DVI, PS o PDF mediante herramientas independientes | Conversión directa en un solo paso a PDF, XPS, PNG, JPEG, BMP o TIFF |
+
+**Para profundizar más:**
+
+- [Entrada/Salida en TeX (tex-io)](/tex/{{lang.url-fragment}}net/tex-io/): Descubre cómo `IInputWorkingDirectory` e `IOutputWorkingDirectory` gestionan los recursos en flujos de datos (*streams*) y en el disco.
+- [Gráficos en LaTeX (latex-graphics)](/tex/{{lang.url-fragment}}net/latex-graphics/): Inclusión de imágenes externas mediante `\includegraphics` utilizando el paquete `graphicx`. - [Aspose.TeX y Object TeX](/tex/{{lang.url-fragment}}net/aspose-tex-and-object-tex/): Comprensión del modelo de objetos gestionados subyacente.

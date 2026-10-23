@@ -6,7 +6,7 @@ linktitle: Graphiques LaTeX
 weight: 18
 url: /net/latex-graphics/
 description: L'inclusion de graphiques dans TeX mérite d'être mentionnée. Quand on en parle, la première chose qui vient à l'esprit est la commande `\includegraphics`.
-lastmod: "2026-04-22"
+lastmod: 2026-10-19
 ---
 
 {{<section overview>}}
@@ -36,14 +36,12 @@ Un fichier « pilote » fait partie d'un package qui implémente l'interface ent
 
 Maintenant, le moyen le plus simple d'inclure, par exemple, une image PNG est de taper :
 
-
 ```tex
 \includegraphics{sample-image.png}
 ```
 où `sample-image.png` est le nom du fichier que vous souhaitez inclure. Vous pouvez même omettre l'extension. Le package `graphics` contient la liste des définitions des formats pris en charge. Lors de la recherche d'un fichier, il parcourt cette liste et inclut le premier fichier correspondant trouvé.
 
 Vous pouvez également spécifier le nom complet du fichier à l'aide d'un chemin absolu ou relatif :
-
 
 ```tex
 \includegraphics{d:/sample-image.png} % absolute path
@@ -53,7 +51,6 @@ Vous pouvez également spécifier le nom complet du fichier à l'aide d'un chemi
 
 Une autre façon de spécifier le(s) emplacement(s) des fichiers graphiques consiste à définir une liste de chemins alternatifs à l'aide de la commande `\graphicspath` avant d'appeler `\includegraphics` :
 
-
 ```tex
 \graphicspath{{d:/img}{c:/img}{d:/work/img}}
 ```
@@ -61,7 +58,6 @@ Une autre façon de spécifier le(s) emplacement(s) des fichiers graphiques cons
 ### Mise à l'échelle des graphiques
 
 Le package LaTeX `graphics` fournit des commandes pour manipuler le contenu. Vous pouvez donc mettre à l'échelle les graphiques inclus (en fait, tout ce qui est décrit par le code TeX/LaTeX) comme suit :
-
 
 ```tex
 \scalebox{.5}{\includegraphics{sample-image.png}} % scales both width and height by 0.5
@@ -72,9 +68,8 @@ Le package LaTeX `graphics` fournit des commandes pour manipuler le contenu. Vou
 
 C'est similaire à la mise à l'échelle, mais vous spécifiez la taille requise au lieu d'un ou plusieurs facteurs de mise à l'échelle :
 
-
 ```tex
-\resizebox{10mm}{!}{\includegraphics{sample-image.png}} % changes the width to 10mm preserving the proprtions
+\resizebox{10mm}{!}{\includegraphics{sample-image.png}} % changes the width to 10mm preserving the proportions
 \resizebox{20mm}{10mm}{\includegraphics{sample-image.png}} % changes both width and height independently
 ```
 
@@ -88,7 +83,6 @@ C'est similaire à la mise à l'échelle, mais vous spécifiez la taille requise
 
 Le package LaTeX `graphicx` fournit l'interface `key=value` pour les transformations de contenu. Pour activer ses fonctionnalités, vous devez le mentionner en préambule :
 
-
 ```tex
 \usepackage{graphicx}
 \usepackage[pdftex]{graphicx} % with the driver option
@@ -100,7 +94,7 @@ Vous pouvez combiner n’importe laquelle des options suivantes, mais gardez à 
 
 ```tex
 \includegraphics[viewport=10 10 280 220]{sample-image.png} % sets the viewport with the lower left corner
-                                                           % at the point (10, 10) (coinsides with (0, 0)
+                                                           % at the point (10, 10) (coincides with (0, 0)
                                                            % of the box) and dimensions 280x220pt
 \includegraphics[viewport=10 10 250 220,clip]{sample-image.png} % the same, but the image is clipped by the viewport
 ```
@@ -114,7 +108,7 @@ Vous pouvez combiner n’importe laquelle des options suivantes, mais gardez à 
 ### Redimensionner les graphiques
 
 ```tex
-\includegraphics[width=15mm]{sample-image.png} % changes the width to 15mm preserving the proprtions
+\includegraphics[width=15mm]{sample-image.png} % changes the width to 15mm preserving the proportions
 \includegraphics[height=15mm,width=25mm]{sample-image.png} % changes both width and height independently
 ```
 
@@ -128,3 +122,33 @@ Pour en savoir plus sur les fonctionnalités du package `graphics`, consultez la
 [ici](http://mirrors.ctan.org/macros/latex/required/graphics/graphics.pdf).
 
 **Vous pouvez également consulter la conversion gratuite [application Web](https://products.aspose.app/tex/conversion/latex/) construite sur la base de [Aspose.TeX pour l'API .NET](https://products.aspose.com/tex/net/).**
+
+## Syntaxe traditionnelle (`graphics`) vs moderne (`graphicx`)
+
+Bien que ces deux extensions reposent sur les mêmes mécanismes fondamentaux, elles proposent des approches radicalement différentes pour la gestion des contenus dans LaTeX.
+
+- L'extension `graphics` repose sur des commandes imbriquées et des arguments positionnels. Cela oblige l'utilisateur à encapsuler les macros d'insertion d'images dans des fonctions de transformation distinctes (par exemple, en plaçant `\includegraphics` à l'intérieur de `\scalebox`).
+
+- L'extension `graphicx` introduit une interface « clé-valeur » claire et extensible, intégrée directement aux arguments optionnels de `\includegraphics`. Il est ainsi possible de définir plusieurs transformations au sein d'un bloc unique et lisible.
+
+| **Opération** | **Extension traditionnelle `graphics`** | **Extension moderne `graphicx`** |
+| :- | :- | :- |
+| Insertion d'image simple | `\includegraphics{sample-image.png}` | `\includegraphics{sample-image.png}` |
+| Mise à l'échelle uniforme | `\scalebox{0.5}{\includegraphics{sample-image.png}}` | `\includegraphics[scale=0.5]{sample-image.png}` |
+| Mise à l'échelle non uniforme (X/Y indépendants) | `\scalebox{0.5}[1.5]{\includegraphics{sample-image.png}}` | (Nécessite une imbrication ou des extensions supplémentaires) |
+| Redimensionnement selon une dimension | `\resizebox{10mm}{!}{\includegraphics{sample-image.png}}` | `\includegraphics[width=10mm]{sample-image.png}` |
+| Redimensionnement indépendant des deux dimensions | `\resizebox{20mm}{10mm}{\includegraphics{sample-image.png}}` | `\includegraphics[width=25mm, height=15mm]{sample-image.png}` |
+| Rotation | `\rotatebox{25}{\includegraphics{sample-image.png}}` | `\includegraphics[angle=25]{sample-image.png}` |
+| Découpage (viewport/rognage) | Nécessite des redéfinitions de la boîte englobante (bounding box) |`\includegraphics[viewport=10 10 280 220, clip]{sample-image.png}`|
+
+
+### Avantages de l'approche par paires clé-valeur de `graphicx`
+
+1. Combinaison native de plusieurs transformations :
+Avec `graphicx`, vous pouvez appliquer simultanément une mise à l'échelle, une rotation et un découpage (clipping) au sein d'une seule commande, sans avoir à imbriquer des macros.
+
+2. Préservation explicite des proportions :
+En utilisant le paramètre `keepaspectratio=true` conjointement avec des contraintes explicites de largeur ou de hauteur, on évite toute déformation de l'image, sans avoir à calculer manuellement les facteurs d'échelle.
+
+3. Meilleure maintenabilité dans le cadre d'une génération automatisée :
+Lors de l'élaboration de programmes ou de scripts (tels que ceux reposant sur Aspose.TeX pour .NET) qui génèrent ou analysent dynamiquement des fichiers sources LaTeX, la construction de chaînes de propriétés structurées sous forme de paires clé-valeur est nettement moins sujette aux erreurs que l'analyse et l'insertion de macros imbriquées.
