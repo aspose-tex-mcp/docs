@@ -7,7 +7,7 @@ weight: 16
 url: /net/what-is-latex/
 keywords: 什么是 latex, latex 是什么
 description: 要回答“什么是 LaTeX？”这个问题，值得一提的是其最令人印象深刻的特性之一是新字体选择方案（NFSS）。
-lastmod: "2026-04-22"
+lastmod: 2026-10-20
 ---
 
 {{<section overview>}}
@@ -138,3 +138,25 @@ left justified & center & right justified \\ \hline
 自然地，我们并不假装对 “什么是 LaTeX？” 这个问题有完整的答案，因为这涉及的信息量相当大。由于编写 LaTeX 文件仍然是一种编程活动，如果您想更好地熟悉它，需要花一些时间。您想不想了解都由您自行决定。
 
 **您也可以查看基于 [Aspose.TeX for .NET API](https://products.aspose.com/tex/net/) 构建的免费 [Web 应用](https://products.aspose.app/tex/conversion/latex/)。**
+
+## 逻辑标记与直接格式化
+
+与传统的“所见即所得”（WYSIWYG）桌面排版软件（在这些软件中，内容创建与视觉样式设计是同步进行的）不同，LaTeX 强制要求将内容与表现形式彻底分离。
+
+在使用 LaTeX 撰写文档时，作者只需通过语义标记来定义元素（例如 `\section{Introduction}`、`\begin{equation}`），而无需操心这些元素最终呈现出的外观。底层的排版引擎会自动处理复杂的布局规则、字距调整、换行、页码编排以及数学公式对齐。这确保了大型、复杂的科技文档或科学论文在排版上具有绝对的一致性，从而将开发者和研究人员从繁琐的手动格式化工作中解放出来。
+
+## 核心功能
+
+下表详细对比了标准 LaTeX 功能在 Aspose.TeX 中的程序化处理方式：
+
+| **功能/系统** | **标准 TeX 发行版 (CLI)** | **Aspose.TeX for .NET 引擎** |
+| :- | :- | :- |
+| **数学排版** | 通过 `amsmath`/`amssymb` 处理 | 原生解析并渲染为矢量或位图输出 |
+| **文档类 (Document classes)** | 需依赖本地磁盘上的 `.cls` 文件 | 通过自定义或虚拟的 `IInputWorkingDirectory` 加载 |
+| **交叉引用与目录 (TOC)** | 需要多次命令行运行（Passes） | 在可配置的程序执行流程中自动管理 |
+| **输出格式** | 需借助外部工具生成 DVI、PS 或 PDF | 可直接一步转换为 PDF、XPS、PNG、JPEG、BMP 或 TIFF |
+
+**深入了解：**
+
+- [TeX 输入/输出 (tex-io)](/tex/{{lang.url-fragment}}net/tex-io/)：了解 `IInputWorkingDirectory` 和 `IOutputWorkingDirectory` 如何处理数据流及磁盘资源。
+- [LaTeX 图形 (latex-graphics)](/tex/{{lang.url-fragment}}net/latex-graphics/)：了解如何使用 `graphicx` 宏包及 `\includegraphics` 命令插入外部图像。 - [Aspose.TeX 与对象 TeX (Object TeX)](/tex/{{lang.url-fragment}}net/aspose-tex-and-object-tex/)：了解底层的托管对象模型。

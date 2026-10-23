@@ -7,7 +7,7 @@ weight: 16
 url: /net/what-is-latex/
 keywords: what is latex, latex what is it
 description: To answer the question  "What is LaTeX?" it is worth mentioning that one of its most impressive features is the New Font Selection Scheme (NFSS).
-lastmod: "2026-04-22"
+lastmod: 2026-10-20
 ---
 
 {{<section overview>}}
@@ -135,7 +135,29 @@ And here are two pages of output:
 <a href="/tex/net/what-is-latex/example-page-1.png" style="display:inline-block;width:49%;" aria-label="Example Page 1">![Example Page 1](/tex/images/net/tutorial/example-page-1.png)</a>
 <a href="/tex/net/what-is-latex/example-page-2.png" style="display:inline-block;width:49%;" aria-label="Example Page 2">![Example Page 2](/tex/images/net/tutorial/example-page-2.png)</a>
 
-
 Naturally, we do not pretend to have any complete answer to the question "What is LaTeX?", since this is quite a large amount of information. Since writing a LaTeX file is still programming, you will have to spend some time if you want to get better acquainted with it. Do you want it or not.
 
 **You may also check out the free [web app](https://products.aspose.app/tex/conversion/latex/) built based on [Aspose.TeX for .NET API](https://products.aspose.com/tex/net/).**
+
+## Logical markup vs. direct formatting
+
+Unlike traditional WYSIWYG (What You See Is What You Get) desktop publishers—where content creation and visual styling happen simultaneously—LaTeX enforces a strict separation of concerns between content and presentation.
+
+When writing in LaTeX, authors use semantic markup to define what elements are (`\section{Introduction}`, `\begin{equation}`), rather than worrying about how they look. The underlying typesetting engine automatically handles complex layout rules, kerning, line-breaking, page numbering, and mathematical alignment. This guarantees absolute typographical consistency across large, complex technical documents or scientific papers, freeing developers and researchers from tedious manual formatting.
+
+## Key features
+
+Here ia a comparison table detailing what standard LaTeX features are handled programmatically within Aspose.TeX:
+
+| **Feature/System**| **Standard TeX distribution (CLI)**|**Aspose.TeX for .NET engine** |
+| :- | :- |:- |
+| **Mathematical typesetting** | Handled via `amsmath`/`amssymb` |Natively parsed and rendered to vector/raster outputs |
+| **Document classes** | Requires local `.cls` files on disk|Loaded via custom/virtual `IInputWorkingDirectory` |
+| **Cross-referencing and TOC** | Requires multiple command-line passes |Managed within configurable program execution passes |
+| **Output formats** | Generates DVI, PS, or PDF via separate tools |Direct single-step conversion to PDF, XPS, PNG, JPEG, BMP, TIFF |
+
+**To dive deeper:**
+
+- [TeX Input/Output(tex-io)](/tex/{{lang.url-fragment}}net/tex-io/): Learn how `IInputWorkingDirectory` and IOutputWorkingDirectory handle stream and disk resources.
+- [LaTeX Graphics (latex-graphics)](/tex/{{lang.url-fragment}}net/latex-graphics/): Including external images with `\includegraphics` using the graphicx package.
+- [Aspose.TeX and Object TeX](/tex/{{lang.url-fragment}}net/aspose-tex-and-object-tex/): Understanding the underlying managed object model.

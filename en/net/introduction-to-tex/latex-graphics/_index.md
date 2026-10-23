@@ -6,7 +6,7 @@ linktitle: Includegraphics LaTeX
 weight: 18	
 url: /net/latex-graphics/
 description: The inclusion of graphics in TeX is a matter worth mentioning. When talking about it, the first thing that comes to mind is the `\includegraphics` command.
-lastmod: "2026-04-22"
+lastmod: 2026-10-19
 ---
 
 {{<section overview>}}
@@ -42,7 +42,7 @@ Now, the simplest way to include, say, a PNG image is to type:
 \includegraphics{sample-image.png}
 ```
 
-where `sample-image.png` is the name of the file you want to include. You may even ommit the extension. The `graphics` package contains the list of definitions of supported formats. When looking for a file, it traverses that list and includes the first matching file found.
+where `sample-image.png` is the name of the file you want to include. You may even omit the extension. The `graphics` package contains the list of definitions of supported formats. When looking for a file, it traverses that list and includes the first matching file found.
 
 You can also specify the full file name using an absolute or relative path:
 
@@ -74,7 +74,7 @@ It's similar to scaling, but you specify the required size instead of a scaling 
 
 
 ```tex
-\resizebox{10mm}{!}{\includegraphics{sample-image.png}} % changes the width to 10mm preserving the proprtions
+\resizebox{10mm}{!}{\includegraphics{sample-image.png}} % changes the width to 10mm preserving the proportions
 \resizebox{20mm}{10mm}{\includegraphics{sample-image.png}} % changes both width and height independently
 ```
 
@@ -97,9 +97,10 @@ The LaTeX `graphicx` package provides the `key=value` interface to content trans
 You can combine any of the following options, but keep in mind that the order is important.
 
 ### Graphics viewport
+
 ```tex
 \includegraphics[viewport=10 10 280 220]{sample-image.png} % sets the viewport with the lower left corner
-                                                           % at the point (10, 10) (coinsides with (0, 0)
+                                                           % at the point (10, 10) (coincides with (0, 0)
                                                            % of the box) and dimensions 280x220pt
 \includegraphics[viewport=10 10 250 220,clip]{sample-image.png} % the same, but the image is clipped by the viewport
 ```
@@ -113,7 +114,7 @@ You can combine any of the following options, but keep in mind that the order is
 ### Resizing graphics
 
 ```tex
-\includegraphics[width=15mm]{sample-image.png} % changes the width to 15mm preserving the proprtions
+\includegraphics[width=15mm]{sample-image.png} % changes the width to 15mm preserving the proportions
 \includegraphics[height=15mm,width=25mm]{sample-image.png} % changes both width and height independently
 ```
 
@@ -127,3 +128,33 @@ To learn more about the `graphics` package bundle features, see the documentatio
 [here](http://mirrors.ctan.org/macros/latex/required/graphics/graphics.pdf).
 
 **You may also check out the free conversion [web app](https://products.aspose.app/tex/conversion/latex/) built based on [Aspose.TeX for .NET API](https://products.aspose.com/tex/net/).**
+
+## Traditional `graphics` vs. modern `graphicx` syntax
+
+While both packages share underlying engine kernels, they represent fundamentally different paradigms for maintaining LaTeX content.
+
+- The `graphics` package relies on nested command wrappers and positional arguments. This requires developers to wrap inclusion macros inside separate transformer functions (e.g., nesting `\includegraphics` inside `\scalebox`).
+
+- The `graphicx` package introduces a clean, extensible key-value interface directly inside the optional arguments of `\includegraphics`. This allows multiple transformations to be declared in a single, readable block.
+
+| **Operation**| **Traditional graphics package**|**Modern graphicx package** |
+| :- | :- |:- |
+| Basic image inclusion | `\includegraphics{sample-image.png}` |`\includegraphics{sample-image.png}` |
+| Uniform scaling | `\scalebox{0.5}{\includegraphics{sample-image.png}}` |`\includegraphics[scale=0.5]{sample-image.png}` |
+| Non-uniform scaling (independent X/Y) | `\scalebox{0.5}[1.5]{\includegraphics{sample-image.png}}` |(Requires nested wrapping or extended packages) |
+| Resizing by dimension | `\resizebox{10mm}{!}{\includegraphics{sample-image.png}}` |`\includegraphics[width=10mm]{sample-image.png}` |
+| Resizing both dimensions independently | `\resizebox{20mm}{10mm}{\includegraphics{sample-image.png}}` |`\includegraphics[width=25mm, height=15mm]{sample-image.png}` |
+| Rotation | `\rotatebox{25}{\includegraphics{sample-image.png}}` |`\includegraphics[angle=25]{sample-image.png}` |
+|Viewport clipping | Requires lower-level bounding box overrides |`\includegraphics[viewport=10 10 280 220, clip]{sample-image.png}`|
+
+
+### Advantages of the `graphicx` key-value approach
+
+1. Combines multiple transformations natively:
+With `graphicx`, you can apply scaling, rotation, and clipping simultaneously in a single command without nesting macros.
+
+2. Saves aspect ratios clearly:
+By utilizing the `keepaspectratio=true` parameter alongside explicit width or height constraints, developers prevent image distortion without calculating scale factors manually.
+
+3. Improved maintainability for automated generation:
+When writing programs or scripts (such as those powered by Aspose.TeX for .NET) that dynamically generate or parse LaTeX source files, building structured key-value property strings is significantly less error-prone than parsing and injecting nested macro wrappers.

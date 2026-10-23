@@ -8,7 +8,7 @@ url: /net/tikz-fundamentals-of-using-tikz/
 aliases: /net/fundamentals-of-using-tikz/
 keywords: tikz の基礎, tikz の基本, tikz チュートリアル
 description: TikZ の基本原理と基本コマンドを学び、TeX および LaTeX 文書用のグラフィックを作成しましょう。
-lastmod: "2026-04-22"
+lastmod: 2026-10-22
 ---
 
 {{<section overview>}}
@@ -20,35 +20,49 @@ lastmod: "2026-04-22"
 TikZ のグラフィックは座標を使用して作成されます。座標は描画内の位置を定義し、さまざまな方法で指定できます。
 
 - **デカルト座標 (x,y)**:
+
 ```tex
-\draw (0,0) -- (2,2);
+\documentclass{article}
+\usepackage{tikz}
+\begin{document}
+\begin{tikzpicture}
+    \draw (0,0) -- (2,2);
+\end{tikzpicture}
+\end{document}
 ```
 
 - **極座標 (角度:半径)**:
+
 ```tex
-\draw (0,0) -- (45:2);
+    \draw (0,0) -- (45:2);
 ```
 
 座標は描画内で自由に混在させることができ、希望するグラフィック結果を得られます。
+
+*相対オフセットに関する補足：
+
+- (0,0) -- ++(1,1) は、(0,0) へ移動し、(1,1) まで線を描画し、現在の点を (1,1) に更新します。
+- (0,0) -- +(1,1) は、(0,0) を基準として (1,1) まで線を描画しますが、現在の点は (0,0) のまま変わりません。*
 
 ## 基本形状の描画
 
 TikZ を使用すると、基本的な幾何形状を簡単に作成できます。
 
 - **直線と折れ線**:
+
 ```tex
-\draw (0,0) -- (1,1) -- (2,0);
+    \draw (0,0) -- (1,1) -- (2,0);
 ```
 
 - **矩形**:
 ```tex
-\draw (0,0) rectangle (2,1);
+    \draw (0,0) rectangle (2,1);
 ```
 
 - **円と楕円**:
 ```tex
-\draw (1,1) circle (0.5);
-\draw (3,1) ellipse (1 and 0.5);
+   \draw (1,1) circle (0.5);
+    \draw (3,1) ellipse (1 and 0.5);
 ```
 
 ## 色と塗りパターン
@@ -56,8 +70,8 @@ TikZ を使用すると、基本的な幾何形状を簡単に作成できます
 色と塗りは視覚的な明瞭さを大幅に向上させます。色は直接指定するか、事前定義された名前を使用できます。
 
 ```tex
-\draw[red, thick] (0,0) rectangle (1,1);
-\draw[fill=blue!20] (2,0) circle (0.5);
+   \draw[red, thick] (0,0) rectangle (1,1);
+   \draw[fill=blue!20] (2,0) circle (0.5);
 ```
 
 構文 `blue!20` は、20% の強さの青色を意味します。
@@ -68,14 +82,14 @@ TikZ では、線のスタイルと太さを変更してグラフィックの表
 
 - **線の太さ**:
 ```tex
-\draw[ultra thick] (0,0) -- (1,1);
-\draw[thin] (1,0) -- (2,1);
+   \draw[ultra thick] (0,0) -- (1,1);
+   \draw[thin] (1,0) -- (2,1);
 ```
 
 - **破線と点線**:
 ```tex
-\draw[dashed] (0,0) -- (2,2);
-\draw[dotted] (2,0) -- (4,2);
+   \draw[dashed] (0,0) -- (2,2);
+   \draw[dotted] (2,0) -- (4,2);
 ```
 
 ## ノードとラベル
@@ -83,7 +97,7 @@ TikZ では、線のスタイルと太さを変更してグラフィックの表
 ノードを使用すると、テキスト注釈を簡単に追加できます。
 
 ```tex
-\draw (0,0) -- (1,1) node[midway, above] {label};
+   \draw (0,0) -- (1,1) 
 ```
 
 ラベルをグラフィック要素に対して正確に配置でき、可読性が向上します。
@@ -93,7 +107,7 @@ TikZ では、線のスタイルと太さを変更してグラフィックの表
 TikZ のパスは直線または曲線にすることができます。曲線はシンプルな構文で作成します。
 
 ```tex
-\draw (0,0) .. controls (1,2) and (3,-1) .. (4,1);
+   \draw (0,0) .. controls (1,2) and (3,-1) .. (4,1);
 ```
 
 制御点は曲率を直感的に形作ります。
@@ -114,5 +128,63 @@ TikZ のパスは直線または曲線にすることができます。曲線は
 ---
 
 これらの基本的な TikZ の概念とコマンドを習得することで、文書向けの高度なグラフィックを作成するための強固な基盤が築かれます。
+
+## Aspose.TeX を使用した TikZ 図のプログラムによる処理
+
+以下では、開発者が TikZ 図を含む `.tex` ドキュメントを、マネージド .NET アプリケーション内で直接コンパイルし、高精細なベクター形式（PDF）として出力する方法について、詳細な手順とコード実装例を紹介します。
+
+```csharp
+using System;
+using System.IO;
+using Aspose.TeX;
+using Aspose.TeX.Configuration;
+using Aspose.TeX.Presentation.Pdf;
+using Aspose.TeX.IO;
+
+namespace AsposeTexTikzDemo
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // Aspose.TeX の入出力抽象化機能を使用して、入出力ディレクトリを定義する
+            string dataDir = @"C:\DocumentSamples\TikzInput";
+            string outputDir = @"C:\DocumentSamples\TikzOutput";
+
+            // 出力ディレクトリが存在することを確認する
+            Directory.CreateDirectory(outputDir);
+            Directory.CreateDirectory(outputDir);
+
+            // 標準的な LaTeX ドキュメント処理ジョブに向けて TeX オプションを初期化する
+            // TeXConfig.LaTeX を使用すると、標準的なパッケージ（tikz/pgf を含む）が組み込まれた状態でエンジンが構成される
+            TeXOptions options = TeXOptions.ConsoleAppRunSettings(TeXConfig.LaTeX, dataDir, outputDir);
+
+            // TikZ 環境を含むメインの入力ファイル名を指定する
+            options.JobName = "tikz-fundamentals";
+
+            // PDF 形式で直接出力されるように、保存オプションを設定する
+            options.SaveOptions = new PdfSaveOptions();
+
+            // ソースファイル、出力デバイス、およびオプションを関連付けた TeXJob をインスタンス化し、実行する
+            try
+            {
+                Console.WriteLine("Starting TikZ compilation job...");
+                
+                new TeXJob(
+                    Path.Combine(dataDir, "tikz-fundamentals.tex"), 
+                    new PdfDevice(), 
+                    options
+                ).Run();
+
+                Console.WriteLine($"TikZ graphic successfully compiled to PDF at: {outputDir}");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Compilation failed: {ex.Message}");
+            }
+        }
+    }
+}
+```
 
 **さらに、[Aspose.TeX for .NET API](https://products.aspose.com/tex/net/) をベースにした無料の [Web アプリ](https://products.aspose.app/tex/conversion/latex/) で、迅速かつ簡単な TeX 変換を体験してください。**

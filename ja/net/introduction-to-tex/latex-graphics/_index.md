@@ -6,7 +6,7 @@ linktitle: グラフィックス LaTeX を含める
 weight: 18	
 url: /net/latex-graphics/
 description: TeX におけるグラフィックスの挿入は言及すべき重要な項目です。これについて語るとき、まず頭に浮かぶのは `\includegraphics` コマンドです。
-lastmod: "2026-04-22"
+lastmod: 2026-10-19
 ---
 
 {{<section overview>}}
@@ -70,7 +70,7 @@ LaTeX `graphics` パッケージはコンテンツを操作するコマンドを
 拡大縮小と似ていますが、拡大率ではなく必要なサイズを指定します。
 
 ```tex
-\resizebox{10mm}{!}{\includegraphics{sample-image.png}} % changes the width to 10mm preserving the proprtions
+\resizebox{10mm}{!}{\includegraphics{sample-image.png}} % changes the width to 10mm preserving the proportions
 \resizebox{20mm}{10mm}{\includegraphics{sample-image.png}} % changes both width and height independently
 ```
 
@@ -96,7 +96,7 @@ LaTeX `graphicx` パッケージは `key=value` インターフェイスを提�
 
 ```tex
 \includegraphics[viewport=10 10 280 220]{sample-image.png} % sets the viewport with the lower left corner
-                                                           % at the point (10, 10) (coinsides with (0, 0)
+                                                           % at the point (10, 10) (coincides with (0, 0)
                                                            % of the box) and dimensions 280x220pt
 \includegraphics[viewport=10 10 250 220,clip]{sample-image.png} % the same, but the image is clipped by the viewport
 ```
@@ -109,7 +109,7 @@ LaTeX `graphicx` パッケージは `key=value` インターフェイスを提�
 ### グラフィックのサイズ変更
 
 ```tex
-\includegraphics[width=15mm]{sample-image.png} % changes the width to 15mm preserving the proprtions
+\includegraphics[width=15mm]{sample-image.png} % changes the width to 15mm preserving the proportions
 \includegraphics[height=15mm,width=25mm]{sample-image.png} % changes both width and height independently
 ```
 
@@ -122,3 +122,33 @@ LaTeX `graphicx` パッケージは `key=value` インターフェイスを提�
 `graphics` パッケージのバンドル機能の詳細については、ドキュメント [here](https://ctan.org/pkg/graphics) と [here](http://mirrors.ctan.org/macros/latex/required/graphics/graphics.pdf) を参照してください。
 
 **[Aspose.TeX for .NET API](https://products.aspose.com/tex/net/) に基づいて構築された無料の変換 [Web アプリ](https://products.aspose.app/tex/conversion/latex/) も確認することができます。**
+
+## 従来の `graphics` パッケージと現代的な `graphicx` パッケージの構文比較
+
+両パッケージは共通の基盤エンジン（カーネル）を使用していますが、LaTeX コンテンツを管理する上では、根本的に異なるパラダイムに基づいています。
+
+- `graphics` パッケージは、コマンドの入れ子構造と位置指定引数に依存しています。そのため、画像を取り込むマクロを別の変換用関数で囲む（例：`\includegraphics` を `\scalebox` の内側に配置する）といった記述が必要になります。
+
+- `graphicx` パッケージは、`\includegraphics` のオプション引数内で直接利用できる、すっきりと拡張性の高い「キー・値（key-value）」形式のインターフェースを導入しています。これにより、複数の変換処理を単一の読みやすいブロック内で指定できるようになります。
+
+| **操作** | **従来の `graphics` パッケージ** | **現代的な `graphicx` パッケージ** |
+| :- | :- | :- |
+| 基本的な画像の取り込み | `\includegraphics{sample-image.png}` | `\includegraphics{sample-image.png}` |
+| 等倍拡大・縮小 | `\scalebox{0.5}{\includegraphics{sample-image.png}}` | `\includegraphics[scale=0.5]{sample-image.png}` |
+| 非等倍拡大・縮小（X軸・Y軸個別） | `\scalebox{0.5}[1.5]{\includegraphics{sample-image.png}}` | （入れ子構造にするか、拡張パッケージが必要） |
+| 寸法指定によるリサイズ | `\resizebox{10mm}{!}{\includegraphics{sample-image.png}}` | `\includegraphics[width=10mm]{sample-image.png}` |
+| 各寸法を個別に指定したリサイズ | `\resizebox{20mm}{10mm}{\includegraphics{sample-image.png}}` | `\includegraphics[width=25mm, height=15mm]{sample-image.png}` |
+| 回転 | `\rotatebox{25}{\includegraphics{sample-image.png}}` | `\includegraphics[angle=25]{sample-image.png}` |
+| ビューポートによる切り抜き（クリッピング） |より低レベルなバウンディングボックスのオーバーライドが必要な場合：|`\includegraphics[viewport=10 10 280 220, clip]{sample-image.png}`|
+
+
+### `graphicx`パッケージのキー・値（key-value）方式の利点
+
+1. 複数の変換をネイティブに統合可能：
+`graphicx`を使用すれば、マクロを入れ子にすることなく、拡大・縮小、回転、クリッピングといった操作を単一のコマンドで同時に適用できます。
+
+2. アスペクト比を明確に維持：
+`keepaspectratio=true`パラメータを、幅や高さの明示的な指定と併用することで、拡大・縮小率を手動で計算することなく、画像の歪みを防ぐことができます。
+
+3. 自動生成における保守性の向上：
+LaTeXソースファイルを動的に生成または解析するプログラムやスクリプト（Aspose.TeX for .NETなどを使用するもの）を作成する際、構造化された「キー・値」形式のプロパティ文字列を構築する方が、マクロの入れ子構造を解析して挿入する手法よりも、エラーが発生しにくくなります。

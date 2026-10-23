@@ -7,7 +7,7 @@ weight: 20
 url: /net/tikz-advanced-features/
 keywords: tikz avanzato, percorsi tikz, diagrammi tikz, pgfplots, circuitikz, tikz-3dplot
 description: Scopri le tecniche avanzate di TikZ, inclusi percorsi complessi, posizionamento dei nodi, frecce e creazione di diagrammi per grafiche di qualità professionale.
-lastmod: "2026-04-22"
+lastmod: 2026-10-22
 ---
 
 {{<section overview>}}
@@ -93,6 +93,27 @@ TikZ include librerie grafiche dedicate (`graphs` e `graphdrawing`) per la gesti
 
 Ciò genera automaticamente layout visivamente accattivanti di grafici complessi.
 
+## Cicli (`\foreach`)
+
+Generazione programmatica di strutture ripetitive o griglie:
+
+```tex
+\foreach \x in {1,2,3}
+  \draw (\x,0) circle (0.4);
+```
+
+## Calcoli sulle coordinate (libreria `calc`)
+
+Ecco un esempio di calcolo di punti medi o proiezioni.
+
+```tex
+\usetikzlibrary{calc}
+\draw (0,0) coordinate (A) -- (4,2) coordinate (B);
+\draw [red] (A) -- ($(A)!0.5!(B)!1cm!90:(B)$);
+```
+
+*% Calcolo di scostamenti perpendicolari*
+
 ## Librerie esterne e personalizzazione
 
 Estendi le funzionalità di TikZ con librerie esterne per soddisfare requisiti specifici:
@@ -107,6 +128,18 @@ Pour utiliser une bibliothèque externe, il suffit de l'inclure :
 \usepackage{pgfplots}
 \pgfplotsset{compat=1.18}
 ```
+
+## Prestazioni e gestione delle risorse
+
+A differenza delle immagini raster, che vengono caricate direttamente in memoria, i disegni TikZ vengono calcolati dinamicamente dall'interprete di macro di TeX durante l'esecuzione. Ogni tracciato, intersezione e trasformazione geometrica viene valutato sequenzialmente tramite l'espansione delle macro, prima che avvenga il rendering vettoriale finale.
+
+Quando si elaborano documenti contenenti diagrammi vettoriali ad alta complessità all'interno di applicazioni .NET lato server, è opportuno seguire queste linee guida per ottimizzare l'utilizzo della CPU ed evitare il fenomeno del "thread starvation" (esaurimento dei thread):
+
+| | **Sfida** | **Best practice** |
+|---|---|---|
+|**Espansione delle macro e sovraccarico della CPU**|TikZ si affida pesantemente al motore di espansione delle macro di TeX, che è di tipo interpretativo. Cicli annidati in profondità o equazioni geometriche complesse (ad esempio, il rendering di grafici algoritmici) possono aumentare significativamente i cicli di CPU richiesti per ogni operazione.|Mantenere la generazione procedurale all'interno di TikZ il più leggera possibile. Se si devono generare migliaia di elementi ripetitivi, valutare l'uso di template basati su dati o il pre-calcolo delle coordinate all'esterno del codice sorgente TeX, per ridurre la profondità di valutazione delle macro.|
+|**Occupazione di memoria e Garbage Collection**|Documenti estesi, composti da più pagine e contenenti numerosi tracciati vettoriali TikZ, portano alla creazione di ampi alberi di oggetti all'interno dell'heap gestito di .NET durante la fase di composizione.|Isolare le operazioni di composizione in ambiti (scope) di breve durata o utilizzare istanze di lavoro dedicate; in questo modo, il garbage collector potrà recuperare efficacemente la memoria una volta che il flusso di output (PDF, XPS o immagine) è stato completato e rilasciato.|
+|**Caching di diagrammi statici nelle applicazioni web**|La ricompilazione di un diagramma TikZ complesso a ogni richiesta HTTP, in un servizio web ad alto traffico, porterà rapidamente alla saturazione dei core della CPU del server.|Se il grafico sottostante è statico o semi-statico (come nel caso di un grafico in una dashboard amministrativa o di uno schema architettonico standard), compilare il frammento `.tex` una sola volta, memorizzare nella cache il PDF o il flusso vettoriale risultante (ad esempio tramite `IMemoryCache`) e fornire direttamente la risorsa memorizzata.| |**Gestione dell'elaborazione asincrona e dei timeout**|Macro ricorsive non ottimizzate o malformate all'interno di diagrammi complessi possono talvolta causare cicli infiniti o blocchi prolungati dell'esecuzione|Quando si eseguono processi TeXJob all'interno di servizi in background (come Hangfire, Azure Functions o attività in background di ASP.NET Core), è necessario racchiudere sempre le chiamate di compilazione in wrapper asincroni che prevedano limiti di timeout espliciti|
 
 ---
 

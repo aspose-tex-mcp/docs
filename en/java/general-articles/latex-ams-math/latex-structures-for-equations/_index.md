@@ -217,7 +217,7 @@ C (E, \theta, r) \equiv \bigcup_{e \in E} c (e, \theta, r)
 \end{gather}
 ```
 
-![Equation group with ommited tags](/tex/images/java/tutorial/latex-ams-math-2-10.png)
+![Equation group with omited tags](/tex/images/java/tutorial/latex-ams-math-2-10.png)
 
 ## 2.6. Equation groups with simple alignment
 

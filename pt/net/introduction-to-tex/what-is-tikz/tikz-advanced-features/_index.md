@@ -7,7 +7,7 @@ weight: 20
 url: /net/tikz-advanced-features/
 keywords: TikZ avançado, caminhos TikZ, diagramas TikZ, pgfplots, circuitikz, tikz-3dplot
 description: Aprenda técnicas avançadas de TikZ, incluindo caminhos complexos, posicionamento de nós, setas e criação de diagramas para gráficos com qualidade profissional.
-lastmod: "2026-04-22"
+lastmod: 2026-10-22
 ---
 
 {{<section overview>}}
@@ -93,6 +93,25 @@ O TikZ inclui bibliotecas dedicadas de gráficos (`graphs` e `graphdrawing`) par
 
 Isto gera automaticamente layouts visualmente atraentes de gráficos complexos.
 
+## Loops (`\foreach`)
+
+Gere estruturas repetitivas ou grelhas programaticamente:
+
+```tex
+\foreach \x in {1,2,3}
+    \draw (\x,0) circle (0.4);
+```
+
+## Cálculos de Coordenadas (biblioteca `calc`)
+
+Eis um exemplo de cálculos de ponto médio ou projeções.
+
+```tex
+\usetikzlibrary{calc}
+\draw (0,0) coordinate (A) -- (4,2) coordinate (B);
+\draw [red] (A) -- ($(A)!0.5!(B)!1cm!90:(B)$);
+```
+
 ## Bibliotecas Externas e Personalização
 
 Amplie a funcionalidade do TikZ com bibliotecas externas para satisfazer requisitos específicos:
@@ -107,6 +126,18 @@ Para utilizar uma biblioteca externa, basta incluí-la:
 \usepackage{pgfplots}
 \pgfplotsset{compat=1.18}
 ```
+## Desempenho e Gestão de Recursos
+
+Ao contrário das imagens raster, que são carregadas diretamente para a memória, os desenhos do TikZ são computados dinamicamente pelo interpretador de macros do TeX em tempo de execução. Cada caminho, interseção e transformação geométrica é avaliado sequencialmente através da expansão de macros antes da renderização vetorial final.
+
+Ao processar documentos com diagramas vetoriais de elevada complexidade em aplicações . NET do lado do servidor, considere as seguintes diretrizes de desempenho para otimizar a utilização da CPU e evitar a falta de threads:
+
+| | **Desafio** | **Melhor Prática** |
+|---|---|---|
+|**Expansão de Macros e Sobrecarga do CPU**|O TikZ depende muito do mecanismo de expansão de macros do TeX, que é interpretativo. Loops profundamente aninhados ou equações geométricas complexas (por exemplo, renderização algorítmica de gráficos) podem aumentar significativamente os ciclos de CPU por tarefa.|Mantenha a geração procedimental no TikZ o mais leve possível. Se gerar milhares de elementos repetitivos, considere se a modelação orientada a dados ou o pré-cálculo de coordenadas fora do código-fonte TeX podem reduzir a profundidade de avaliação de macros.|
+|**Utilização de memória e recolha de lixo** |Documentos grandes com várias páginas, contendo extensos caminhos de vetores TikZ, acumulam grandes árvores de objetos internas no heap gerido do .NET durante a fase de composição tipográfica.| Isole os trabalhos de composição tipográfica em escopos de curta duração ou utilize instâncias de trabalho dedicadas para que o coletor de lixo possa recuperar a memória de forma eficiente assim que o fluxo de saída (PDF, XPS ou imagem) for libertado.|
+|**Armazenamento em cache de diagramas estáticos em aplicações Web** Recompilar um diagrama TikZ complexo a cada pedido HTTP num serviço Web de alto tráfego irá rapidamente saturar os núcleos da CPU do servidor. |Se o gráfico subjacente for estático ou semi-estático (como um gráfico de painel administrativo ou um esquema arquitetónico padrão), compile o trecho `. tex` uma vez, armazene em cache o PDF ou o fluxo de vetores resultante na memória (por exemplo, através de `IMemoryCache`) e sirva o recurso em cache diretamente. |
+|**Gerir Processamento Assíncrono e Tempos Limite**|Macros recursivas não otimizadas ou malformadas em diagramas complexos podem ocasionalmente causar loops infinitos ou bloqueios de execução prolongados|Ao executar tarefas TeXJob em serviços de segundo plano (como Hangfire, Azure Functions ou tarefas de fundo ASP.NET Core), envolva sempre as chamadas de compilação em wrappers assíncronos com limites de tempo limite explícitos|
 
 ---
 

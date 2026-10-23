@@ -6,7 +6,7 @@ linktitle: Includegraphics LaTeX
 weight: 18
 url: /net/latex-graphics/
 description: A inclusão de gráficos em TeX é uma questão que vale a pena mencionar. Ao falar sobre isso, a primeira coisa que vem à mente é o comando `\includegraphics`.
-lastmod: "2026-04-22"
+lastmod: 2026-10-19
 ---
 
 {{<section overview>}}
@@ -16,7 +16,7 @@ Na verdade, existem dois aspectos dos gráficos de LaTeX que valem a pena mencio
 * Gráficos vetoriais descritos diretamente por meio de comandos LaTeX/TeX e,
 * Inclusão de gráficos externos descritos por meio de formatos externos, como EPS, PDF ou Raster PNG e PDF.
 
-O primeiro tem apoio limitado no LaTeX original e em seus pacotes. É implementado com a ajuda das regras verticais e horizontais da TEX. Isso ocorre porque o LaTeX original é baseado no mecanismo TeX original, que produz a saída principal no formato * DVI *, que não é adequado para descrever linhas e curvas ou dados de imagem de varredura binária. Mas os mecanismos capazes de produzir para formatos de suporte a gráficos (como o PDFTEX para PDF) também podem lidar com gráficos usando pacotes ou recursos de pacote dependentes de formato. Os últimos gráficos não são suportados no LaTeX básico pelo mesmo motivo. Discutiremos os recursos de inclusão gráfica abaixo.
+O primeiro tem apoio limitado no LaTeX original e em seus pacotes. É implementado com a ajuda das regras verticais e horizontais da TEX. Isso ocorre porque o LaTeX original é baseado no mecanismo TeX original, que produz a saída principal no formato *DVI*, que não é adequado para descrever linhas e curvas ou dados de imagem de varredura binária. Mas os mecanismos capazes de produzir para formatos de suporte a gráficos (como o PDFTEX para PDF) também podem lidar com gráficos usando pacotes ou recursos de pacote dependentes de formato. Os últimos gráficos não são suportados no LaTeX básico pelo mesmo motivo. Discutiremos os recursos de inclusão gráfica abaixo.
 
 ## O pacote de LaTeX `graphics` e `\includegraphics`
 
@@ -74,7 +74,7 @@ O pacote LATEX `graphics` fornece comandos para manipular o conteúdo. Assim, vo
 
 
 ```tex
-\resizebox{10mm}{!}{\includegraphics{sample-image.png}} % changes the width to 10mm preserving the proprtions
+\resizebox{10mm}{!}{\includegraphics{sample-image.png}} % changes the width to 10mm preserving the proportions
 \resizebox{20mm}{10mm}{\includegraphics{sample-image.png}} % changes both width and height independently
 ```
 
@@ -100,7 +100,7 @@ Você pode combinar qualquer uma das seguintes opções, mas lembre -se de que a
 
 ```tex
 \includegraphics[viewport=10 10 280 220]{sample-image.png} % sets the viewport with the lower left corner
-                                                           % at the point (10, 10) (coinsides with (0, 0)
+                                                           % at the point (10, 10) (coincides with (0, 0)
                                                            % of the box) and dimensions 280x220pt
 \includegraphics[viewport=10 10 250 220,clip]{sample-image.png} % the same, but the image is clipped by the viewport
 ```
@@ -114,7 +114,7 @@ Você pode combinar qualquer uma das seguintes opções, mas lembre -se de que a
 ### Redimensionando gráficos
 
 ```tex
-\includegraphics[width=15mm]{sample-image.png} % changes the width to 15mm preserving the proprtions
+\includegraphics[width=15mm]{sample-image.png} % changes the width to 15mm preserving the proportions
 \includegraphics[height=15mm,width=25mm]{sample-image.png} % changes both width and height independently
 ```
 
@@ -128,3 +128,32 @@ Para saber mais sobre os recursos de pacote de pacote `graphics`, consulte a doc
 [aqui](http://mirrors.ctan.org/macros/latex/required/graphics/graphics.pdf).
 
 **Você também pode conferir a conversão gratuita [aplicativo da web](https://products.aspose.app/tex/conversion/latex/) construído com base em [Aspose.TeX para .NET API](https://products.aspose.com/tex/net/).**
+
+## Sintaxe tradicional do `graphics` vs. sintaxe moderna do `graphicx`
+
+Embora ambos os pacotes partilhem kernels de motores subjacentes, representam paradigmas fundamentalmente diferentes para a manutenção de conteúdos LaTeX.
+
+- O pacote `graphics` depende de wrappers de comandos aninhados e de argumentos posicionais. Isto exige que os programadores encapsulem macros de inclusão dentro de funções transformadoras separadas (por exemplo, aninhando `\includegraphics` dentro de `\scalebox`).
+
+- O pacote `graphicx` introduz uma interface chave-valor limpa e extensível directamente nos argumentos opcionais de `\includegraphics`. Isto permite que múltiplas transformações sejam declaradas num único bloco legível.
+
+| **Operação** | **Pacote `graphics` tradicional** | **Pacote `graphicx` moderno** |
+| :- | :- |:- |
+| Inclusão básica de imagem | `\includegraphics{sample-image.png}` |`\includegraphics{sample-image.png}` |
+| Escala uniforme | `\scalebox{0.5}{\includegraphics{sample-image.png}}` |`\includegraphics[scale=0.5]{sample-image.png}` |
+| Escala não uniforme (X/Y independentes) | `\scalebox{0.5}[1.5]{\includegraphics{sample-image.png}}` |(Requer encapsulamento aninhado ou pacotes estendidos) |
+| Redimensionamento por dimensão | `\resizebox{10mm}{!}{\includegraphics{sample-image.png}}` |`\includegraphics[width=10mm]{sample-image.png}` |
+| Redimensionamento de ambas as dimensões independentemente | `\resizebox{20mm}{10mm}{\includegraphics{sample-image.png}}` |`\includegraphics[width=25mm, height=15mm]{sample-image.png}` |
+| Rotação | `\rotatebox{25}{\includegraphics{sample-image.png}}` |`\includegraphics[angle=25]{sample-image.png}` |
+| Recorte da janela de visualização | Requer substituições de caixa delimitadora de nível inferior |`\includegraphics[viewport=10 10 280 220, clip]{sample-image.png}`|
+
+### Vantagens da abordagem chave-valor do `graphicx`
+
+1. Combina múltiplas transformações nativamente:
+Com o `graphicx`, pode aplicar escala, rotação e recorte simultaneamente num único comando, sem aninhar macros.
+
+2.º Preserva claramente as proporções:
+Ao utilizar o parâmetro `keepaspectratio=true` juntamente com restrições explícitas de largura ou altura, os programadores evitam a distorção da imagem sem terem de calcular manualmente os fatores de escala.
+
+3. Melhoria na manutenção para geração automatizada:
+Ao escrever programas ou scripts (como os que utilizam o Aspose.TeX para .NET) que geram ou analisam dinamicamente ficheiros de origem LaTeX, a criação de strings de propriedades estruturadas de chave-valor é significativamente menos propensa a erros do que a análise e injeção de wrappers de macros aninhados.

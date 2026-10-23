@@ -7,7 +7,7 @@ weight: 21
 url: /net/tikz-introduction/
 keywords: ¿Qué es TikZ?, Introducción a TikZ, Fundamentos de TikZ
 description: Introducción a TikZ, una potente extensión para crear gráficos de alta calidad en documentos LaTeX.
-lastmod: "2026-04-22"
+lastmod: 2026-10-22
 aliases: /net/what-is-tikz/
 ---
 
@@ -30,21 +30,34 @@ TikZ ofrece varias ventajas sobre las herramientas tradicionales de creación de
 Para empezar a usar TikZ, asegúrate de que esté instalado con tu distribución de TeX (normalmente se incluye en instalaciones estándar como TeX Live o MiKTeX). Aquí tienes un ejemplo sencillo de "Hola Mundo" que ilustra la sintaxis básica de TikZ:
 
 ```tex  
-\\documentclass{article}  
-\\usepackage{tikz}  
+\documentclass{article}
+\usepackage{tikz}
 
-\\begin{document}
+\begin{document}
 
-\\begin{tikzpicture}  
-\\draw (0,0) -- (1,1) -- (1,0) -- cycle;  
-\\end{tikzpicture}
+\begin{tikzpicture}
+\draw (0,0) -- (1,1) -- (1,0) -- cycle;
+\end{tikzpicture}
 
-\\end{document}  
+\end{document}
 ```
+
+Explicación de los comandos
+- `\documentclass{article}` — especifica el tipo de documento.
+- `\usepackage{tikz}` — carga el paquete de gráficos TikZ.
+- `\begin{tikzpicture}` — inicia un entorno de dibujo TikZ.
+- `\draw (0,0) -- (1,1) -- (1,0) -- cycle;` — dibuja tres segmentos de recta conectados y cierra el trazado para formar un triángulo.
+- `\end{tikzpicture}` — finaliza el entorno de dibujo.
 
 Este ejemplo produce un triángulo simple que conecta tres puntos.
 
-## Contenido
+## Procesamiento de TikZ con Aspose.TeX para .NET
+
+En los entornos académicos o de escritorio tradicionales, la renderización de gráficos TikZ requiere una distribución de TeX local completamente configurada (como TeX Live o MiKTeX), junto con controladores externos o utilidades de línea de comandos.
+
+Dado que Aspose.TeX para .NET analiza y compila de forma nativa los paquetes estándar de LaTeX —incluida la biblioteca TikZ y su motor subyacente, PGF—, los documentos que contienen entornos complejos `\begin{tikzpicture}` pueden compilarse directamente dentro de su aplicación .NET. El motor de composición tipográfica procesa los datos de trazados vectoriales mediante programación, renderizando formas geométricas, curvas y diagramas matemáticos directamente en formatos vectoriales de alta fidelidad (como PDF o XPS) o en imágenes de mapa de bits (PNG, JPEG, BMP), sin necesidad de software externo en el servidor anfitrión.
+
+## Explore la serie de guías sobre TikZ
 
 A continuación, se presenta un resumen de los temas tratados en esta serie sobre TikZ:
 

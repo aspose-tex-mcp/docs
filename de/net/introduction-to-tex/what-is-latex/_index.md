@@ -7,7 +7,7 @@ weight: 16
 url: /net/what-is-latex/
 keywords: Was ist Latex, Latex was ist das?
 description: Zur Beantwortung der Frage „Was ist LaTeX?“ Es ist erwähnenswert, dass eines der beeindruckendsten Features das New Font Selection Scheme (NFSS) ist.
-lastmod: "2026-04-22"
+lastmod: 2026-10-20
 ---
 
 {{<section overview>}}
@@ -138,3 +138,25 @@ Und hier sind zwei Ausgabeseiten:
 Natürlich erheben wir keinen Anspruch darauf, eine vollständige Antwort auf die Frage „Was ist LaTeX?“ zu haben, da es sich hierbei um eine recht große Menge an Informationen handelt. Da das Schreiben einer LaTeX-Datei immer noch Programmierarbeit ist, müssen Sie einige Zeit aufwenden, wenn Sie sich besser damit vertraut machen möchten. Willst du es oder nicht?
 
 **Sie können sich auch die kostenlose [Web-App](https://products.aspose.app/tex/conversion/latex/) ansehen, die auf der Grundlage von [Aspose.TeX für .NET API](https://products.aspose.com/tex/net/) erstellt wurde.**
+
+## Logisches Markup vs. direkte Formatierung
+
+Im Gegensatz zu herkömmlichen WYSIWYG-Desktop-Publishing-Programmen („What You See Is What You Get“), bei denen die Erstellung von Inhalten und die visuelle Gestaltung gleichzeitig erfolgen, erzwingt LaTeX eine strikte Trennung von Inhalt und Darstellung.
+
+Beim Schreiben in LaTeX verwenden Autoren semantisches Markup, um zu definieren, worum es sich bei den jeweiligen Elementen handelt (z. B. `\section{Introduction}`, `\begin{equation}`), anstatt sich Gedanken über deren visuelle Gestaltung zu machen. Die zugrunde liegende Satz-Engine übernimmt automatisch komplexe Layout-Regeln, Zeichenabstände (Kerning), Zeilenumbrüche, Seitennummerierungen sowie die mathematische Ausrichtung. Dies garantiert eine absolute typografische Konsistenz in umfangreichen, komplexen technischen Dokumenten oder wissenschaftlichen Arbeiten und entlastet Entwickler sowie Forschende von mühsamer manueller Formatierung.
+
+## Hauptmerkmale
+
+Die folgende Vergleichstabelle zeigt, wie standardmäßige LaTeX-Funktionen innerhalb von Aspose.TeX verarbeitet werden:
+
+| **Funktion/System** | **Standard-TeX-Distribution (CLI)** | **Aspose.TeX für .NET-Engine** |
+| :- | :- | :- |
+| **Mathematischer Satz** | Erfolgt über `amsmath`/`amssymb` | Wird nativ geparst und in Vektor- oder Rasterformate gerendert |
+| **Dokumentklassen** | Erfordert lokale `.cls`-Dateien auf dem Datenträger | Werden über ein benutzerdefiniertes/virtuelles `IInputWorkingDirectory` geladen |
+| **Querverweise und Inhaltsverzeichnis** | Erfordern mehrere Durchläufe über die Befehlszeile | Werden innerhalb konfigurierbarer Programmdurchläufe verwaltet |
+| **Ausgabeformate** | Erzeugen DVI, PS oder PDF über separate Werkzeuge | Direkte Konvertierung in einem Schritt in PDF, XPS, PNG, JPEG, BMP oder TIFF |
+
+**Weitere Informationen:**
+
+- [TeX-Ein-/Ausgabe (tex-io)](/tex/{{lang.url-fragment}}net/tex-io/): Erfahren Sie, wie `IInputWorkingDirectory` und `IOutputWorkingDirectory` mit Datenströmen (Streams) und Dateisystemressourcen umgehen.
+- [LaTeX-Grafiken (latex-graphics)](/tex/{{lang.url-fragment}}net/latex-graphics/): Einbindung externer Bilder mittels `\includegraphics` unter Verwendung des `graphicx`-Pakets. - [Aspose.TeX und Object TeX](/tex/{{lang.url-fragment}}net/aspose-tex-and-object-tex/): Verständnis des zugrunde liegenden verwalteten Objektmodells.

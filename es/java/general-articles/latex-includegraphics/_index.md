@@ -92,11 +92,11 @@ Es similar al escalado, pero usted especifica el tamaño requerido en lugar de u
 
 ```tex
 % graphics examples
-\resizebox{10mm}{!}{\includegraphics{sample-image.png}} % changes the width to 10mm preserving the proprtions
+\resizebox{10mm}{!}{\includegraphics{sample-image.png}} % changes the width to 10mm preserving the proportions
 \resizebox{20mm}{10mm}{\includegraphics{sample-image.png}} % changes both width and height independently
 
 % graphicx examples
-\includegraphics[width=15mm]{sample-image.png} % changes the width to 15mm preserving the proprtions
+\includegraphics[width=15mm]{sample-image.png} % changes the width to 15mm preserving the proportions
 \includegraphics[height=15mm,width=25mm]{sample-image.png} % changes both width and height independently
 ```
 
@@ -117,7 +117,7 @@ Es similar al escalado, pero usted especifica el tamaño requerido en lugar de u
 
 % graphicx example
 \includegraphics[viewport=10 10 280 220]{sample-image.png} % sets the viewport with the lower left corner
-                                                           % at the point (10, 10) (coinsides with (0, 0)
+                                                           % at the point (10, 10) (coincides with (0, 0)
                                                            % of the box) and dimensions 280x220pt
 \includegraphics[viewport=10 10 250 220,clip]{sample-image.png} % the same, but the image is clipped by the viewport
 ```

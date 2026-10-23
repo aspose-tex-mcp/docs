@@ -7,7 +7,7 @@ weight: 21
 url: /net/tikz-introduction/
 keywords: 什么是 TikZ, TikZ 介绍, TikZ 基础
 description: TikZ 介绍，强大的扩展，用于在 LaTeX 文档中创建高质量图形。
-lastmod: "2026-04-22"
+lastmod: 2026-10-22
 aliases: /net/what-is-tikz/
 ---
 
@@ -29,21 +29,34 @@ TikZ（发音为“tik-zee”）全称是 “TikZ ist kein Zeichenprogramm”（
 要开始使用 TikZ，请确保它已随您的 TeX 发行版一起安装（通常在标准安装如 TeX Live 或 MiKTeX 中已包含）。下面是一个简单的 “Hello, World” 示例，展示基本的 TikZ 语法：
 
 ```tex  
-\\documentclass{article}  
-\\usepackage{tikz}  
+\documentclass{article}
+\usepackage{tikz}
 
-\\begin{document}
+\begin{document}
 
-\\begin{tikzpicture}  
-\\draw (0,0) -- (1,1) -- (1,0) -- cycle;  
-\\end{tikzpicture}
+\begin{tikzpicture}
+\draw (0,0) -- (1,1) -- (1,0) -- cycle;
+\end{tikzpicture}
 
-\\end{document}  
+\end{document}
 ```
+
+命令说明
+- `\documentclass{article}` — 指定文档类型。
+- `\usepackage{tikz}` — 加载 TikZ 绘图宏包。
+- `\begin{tikzpicture}` — 开启 TikZ 绘图环境。
+- `\draw (0,0) -- (1,1) -- (1,0) -- cycle;` — 绘制三条相连的线段，并闭合路径以构成一个三角形。
+- `\end{tikzpicture}` — 结束绘图环境。
 
 此示例生成一个连接三个点的简单三角形。
 
-## 内容
+## 使用 Aspose.TeX for .NET 处理 TikZ
+
+在传统的学术或桌面环境中，渲染 TikZ 图形通常需要配置完整的本地 TeX 发行版（如 TeX Live 或 MiKTeX），并配合外部驱动程序或 Shell 工具。
+
+由于 Aspose.TeX for .NET 能够原生解析并编译标准的 LaTeX 宏包（包括 TikZ 库及其底层的 PGF 引擎），因此包含复杂 `\begin{tikzpicture}` 环境的文档，可以直接在您的 .NET 托管应用程序中进行编译。其排版引擎以编程方式处理矢量路径数据，能够将几何图形、曲线和数学图表直接渲染为高保真矢量格式（如 PDF 或 XPS）或光栅图像（如 PNG、JPEG、BMP），且无需在宿主服务器上安装任何外部软件。
+
+## 探索 TikZ 指南系列
 
 下面是本系列关于 TikZ 主题的概览：
 

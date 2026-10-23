@@ -6,7 +6,7 @@ linktitle: Tex i/o
 weight: 12
 url: /net/tex-io/
 description: Fondamenti di lavoro con Tex come output o formato di input all'interno di API Aspose.Tex. Tex Job si svolge su un file esplicitamente specificato.
-lastmod: "2026-04-22"
+lastmod: 2026-10-20
 ---
 
 {{<section overview>}}
@@ -55,3 +55,21 @@ Un lavoro Tex può essere eseguito in una delle quattro modalità di interazione
 * `\errorstopmode`. Il motore si ferma ad ogni opportunità di interagire.
 
 Aspose.Tex ci consente di specificare la modalità di interazione come opzione di lavoro Tex quando viene creato il suo oggetto. Questa modalità verrà impostata nello stato interno del motore immediatamente dopo il caricamento del formato TEX (se si suppone che un formato dovrebbe essere caricato) e verrà trasferito in un'altra modalità non appena il motore incontra uno dei quattro comandi. Il valore predefinito di questa opzione preserverà la modalità di interazione definita dal formato Tex. Quando non viene caricato alcun formato, la modalità di interazione è la stessa impostata dal comando `\errorstopmode`.
+
+## Il ruolo dell'astrazione tramite interfacce (`IInputWorkingDirectory` e `IOutputWorkingDirectory`)
+
+I motori TeX tradizionali sono intrinsecamente legati al file system del sistema operativo locale, trattando i file come percorsi assoluti o relativi sul disco. Aspose.TeX supera questo limite ereditato dal passato introducendo un solido strato di astrazione, basato su due interfacce principali: `IInputWorkingDirectory` e `IOutputWorkingDirectory`. Questo disaccoppiamento consente di:
+
+- Elaborare i documenti interamente in memoria, utilizzando uno storage basato su flussi di dati (stream).
+- Gestire archivi compressi leggendo direttamente dai flussi ZIP, senza doverli prima estrarre su disco.
+- Garantire la sicurezza dei thread (thread safety) in applicazioni server multi-tenant, isolando ogni operazione di composizione tipografica all'interno della propria istanza di directory di lavoro virtuale.
+
+### Perché l'astrazione tramite interfacce è importante per gli sviluppatori
+
+Nelle moderne applicazioni aziendali — come i microservizi in cloud o le code di elaborazione in background — fare affidamento sui percorsi fisici del disco comporta notevoli criticità:
+
+- Più thread che leggono o scrivono nella stessa directory fisica possono entrare in conflitto, sovrascrivendo i file temporanei (come i file `.aux`, `.log` o i file di output) generati dagli altri thread.
+- Scrivere su disco risorse intermedie o stringhe dinamiche provenienti da un database, solo per permettere al motore di composizione di leggerle, comporta un calo delle prestazioni.
+- Gli ambienti cloud (come i container Docker o le funzioni serverless) presentano spesso file system in sola lettura o limitazioni nell'accesso allo storage.
+
+Astrarre le operazioni di input e output tramite interfacce permette agli sviluppatori di reindirizzare tali operazioni verso flussi in memoria, archivi ZIP, database o file system virtuali personalizzati, senza dover apportare alcuna modifica alla logica fondamentale del motore di composizione.

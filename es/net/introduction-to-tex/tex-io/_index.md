@@ -6,7 +6,7 @@ linktitle: E/S de TeX
 weight: 12
 url: /net/tex-io/
 description: Trabajar con TeX como formato de salida o entrada dentro de la API Aspose.TeX. El trabajo TeX se ejecuta en un archivo especificado explícitamente.
-lastmod: "2026-04-22"
+lastmod: 2026-10-20
 ---
 
 {{<section overview>}}
@@ -55,3 +55,21 @@ Un trabajo TeX puede estar ejecutándose en uno de los cuatro modos de interacci
 * `\modoparadaerror`. El motor se detiene en cada oportunidad de interactuar.
 
 Aspose.TeX nos permite especificar el modo de interacción como una opción de trabajo TeX cuando se crea su objeto. Este modo se establecerá en el estado interno del motor inmediatamente después de cargar el formato TeX (si se supone que se carga algún formato) y cambiará a otro modo tan pronto como el motor encuentre uno de los cuatro comandos. El valor predeterminado de esta opción preservará el modo de interacción definido por el formato TeX. Cuando no se carga ningún formato, el modo de interacción es el mismo que el establecido por el comando `\errorstopmode`.
+
+## El papel de la abstracción mediante interfaces (`IInputWorkingDirectory` e `IOutputWorkingDirectory`)
+
+Los motores TeX tradicionales están intrínsecamente vinculados al sistema de archivos del sistema operativo local, tratando los archivos como rutas absolutas o relativas en el disco. Aspose.TeX supera esta limitación heredada mediante la introducción de una capa de abstracción robusta, estructurada en torno a dos interfaces principales: `IInputWorkingDirectory` e `IOutputWorkingDirectory`. Este desacoplamiento permite:
+
+- Procesar documentos completamente en memoria mediante el uso de almacenamiento basado en flujos de datos (*streams*).
+- Gestionar archivos empaquetados directamente, leyendo desde flujos ZIP sin necesidad de extraerlos previamente al disco.
+- Garantizar la seguridad en entornos multihilo (*thread safety*) dentro de aplicaciones de servidor multiusuario, aislando cada tarea de composición tipográfica en su propia instancia de directorio de trabajo virtual.
+
+### ¿Por qué es importante la abstracción mediante interfaces para los desarrolladores?
+
+En las aplicaciones empresariales modernas —como los microservicios en la nube o las colas de procesamiento en segundo plano—, depender de rutas físicas en el disco genera importantes cuellos de botella:
+
+- Si varios hilos de ejecución leen o escriben en el mismo directorio físico, se producirán conflictos o sobrescrituras de archivos temporales (como los archivos `.aux`, `.log` o los archivos de salida).
+- Escribir recursos intermedios o cadenas de datos dinámicas provenientes de una base de datos en el disco, solo para que el motor de composición tipográfica los lea posteriormente, degrada el rendimiento.
+- Los entornos en la nube (como los contenedores Docker o las funciones *serverless*) suelen contar con sistemas de archivos de solo lectura o con un acceso al almacenamiento muy restringido.
+
+Al abstraer las operaciones de entrada y salida mediante interfaces, Aspose.TeX permite a los desarrolladores redirigir dichas operaciones hacia flujos en memoria, archivos ZIP, bases de datos o sistemas de archivos virtuales personalizados, todo ello sin necesidad de modificar la lógica central de composición tipográfica.

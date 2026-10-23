@@ -6,7 +6,7 @@ linktitle: Perguntas frequentes
 weight: 80
 url: /net/introduction-to-tex/faq/
 description: Obtenha respostas para todas as perguntas mais frequentes sobre TeX e LaTeX, sua estrutura, uso e peculiaridades.
-lastmod: "2026-04-22"
+lastmod: 2026-10-21
 ---
 
 {{<section overview>}}
@@ -132,3 +132,27 @@ No entanto, se você é um estudante ou profissional em um campo STEM, ou se esc
 
 `\usepackage{graphicx}`
 <br> <br>
+
+**P: Preciso de instalar o TeX Live, o MiKTeX ou quaisquer binários externos no meu servidor para utilizar o Aspose.TeX para .NET?**
+
+**A:** Não. O Aspose.TeX para .NET é uma biblioteca de classes independente e totalmente gerida, escrita em C#. Não requer a instalação de qualquer distribuição externa do TeX, executáveis ​​nativos ou ambientes de linha de comando na sua máquina host ou ambiente de cloud.
+
+<br><br>
+
+**P: Como posso processar um documento LaTeX armazenado na memória sem ler ou escrever ficheiros para o disco?**
+
+**A:** Pode tirar partido da arquitetura de E/S plugável do Aspose.TeX. Utilizando `InputMemoryDirectory` ou fluxos de memória juntamente com `OutputMemoryDirectory`, pode fornecer dados de entrada directamente a partir de arrays de bytes ou strings e capturar as saídas em PDF ou imagem resultantes inteiramente na memória.
+
+<br><br>
+
+**P: Como é que o Aspose.TeX lida com pacotes em falta ou ficheiros .sty personalizados?**
+
+**A:** Os pacotes padrão principais (como `graphics`, `graphicx` e pacotes AMS padrão) já estão incorporados no motor. Para pacotes e ficheiros de classes personalizados ou de terceiros (`. sty`, `. cls`), pode colocá-los no diretório de trabalho de entrada ou agrupá-los num `InputZipDirectory` para que o motor possa resolvê-los dinamicamente durante a compilação.
+
+<br><br>
+
+**P: O Aspose.TeX para .NET é thread-safe para aplicações web de elevada concorrência?**
+
+**A:** As execuções de tarefas (`TeXJob`) e as opções de configuração (`TeXOptions`) são concebidas para serem instanciadas por tarefa, tornando-as naturalmente adequadas para ambientes de servidor multithread e assíncronos. No entanto, certifique-se de que são utilizadas instâncias separadas de documentos ou opções para threads de segundo plano concorrentes, de modo a evitar a contaminação cruzada dos estados de execução.
+
+<br><br>

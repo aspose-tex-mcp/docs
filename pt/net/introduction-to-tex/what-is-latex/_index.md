@@ -7,7 +7,7 @@ weight: 16
 url: /net/what-is-latex/
 keywords: o que é LaTeX, LaTeX o que é
 description: Para responder à pergunta "O que é LaTeX?" Vale ressaltar que um de seus recursos mais impressionantes é o novo esquema de seleção de fontes (NFSS).
-lastmod: "2026-04-22"
+lastmod: 2026-10-20
 ---
 
 {{<section overview>}}
@@ -139,3 +139,26 @@ E aqui estão duas páginas de saída:
 Naturalmente, não pretendemos ter uma resposta completa para a pergunta "O que é LaTeX?", Como essa é uma quantidade bastante grande de informações. Como escrever um arquivo de LaTeX ainda está programando, você precisará gastar algum tempo se quiser se familiarizar com ele. Você quer ou não.
 
 **Você também pode conferir o [aplicativo da web](https://products.aspose.app/tex) gratuito construído com base em [Aspose.TeX para .NET API](https://products.aspose.com/tex/net/).**
+
+## Marcação lógica vs. formatação direta
+
+Ao contrário dos editores de desktop WYSIWYG (O que vê é o que obtém) tradicionais — em que a criação de conteúdos e o estilo visual acontecem em simultâneo — o LaTeX impõe uma separação estrita de responsabilidades entre o conteúdo e a apresentação.
+
+Quando escrevem em LaTeX, os autores utilizam a marcação semântica para definir o que são os elementos (`\section{Introdução}`, `\begin{equação}`), em vez de se preocuparem com a sua aparência. O mecanismo de composição tipográfica subjacente lida automaticamente com regras complexas de layout, espaçamento entre letras, quebra de linha, numeração de páginas e alinhamento matemático. Isto garante uma consistência tipográfica absoluta em documentos técnicos ou artigos científicos extensos e complexos, libertando os desenvolvedores e investigadores da fastidiosa formatação manual.
+
+## Principais características
+
+Segue-se uma tabela comparativa detalhando quais as características padrão do LaTeX que são tratadas programaticamente no Aspose.TeX:
+
+| **Característica/Sistema** | **Distribuição padrão do TeX (CLI)** | **Mecanismo Aspose.TeX para .NET** |
+| :- | :- |:- |
+| **Composição tipográfica matemática** | Gerida via `amsmath`/`amssymb` | Analisada e renderizada nativamente para saídas vetoriais/raster |
+| **Classes de documentos** | Requer ficheiros `. cls` locais no disco | Carregados através de `IInputWorkingDirectory` personalizado/virtual |
+| **Referências cruzadas e sumário** | Requer múltiplas passagens pela linha de comandos | Gerido em passagens de execução de programas configuráveis ​​​​|
+| **Formatos de saída** | Gera DVI, PS ou PDF através de ferramentas separadas | Conversão direta num único passo para PDF, XPS, PNG, JPEG, BMP, TIFF |
+
+**Para aprofundar o assunto:**
+
+- [Entrada/Saída TeX (tex-io)](/tex/{{lang.url-fragment}}net/tex-io/): Aprenda como o `IInputWorkingDirectory` e o `IOutputWorkingDirectory` gerem os recursos de fluxo e de disco.
+- [Gráficos LaTeX (latex-graphics)](/tex/{{lang.url-fragment}}net/latex-graphics/): Incluindo imagens externas com `\includegraphics` utilizando o pacote graphicx.
+- [Aspose.TeX e Object TeX](/tex/{{lang.url-fragment}}net/aspose-tex-and-object-tex/): Compreensão do modelo de objeto gerido subjacente.

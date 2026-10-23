@@ -7,7 +7,7 @@ weight: 20
 url: /net/tikz-advanced-features/
 keywords: TikZ avancé, chemins TikZ, diagrammes TikZ, pgfplots, circuitikz, tikz-3dplot
 description: Apprenez les techniques avancées de TikZ, notamment les chemins complexes, le positionnement des nœuds, les flèches et la création de diagrammes pour des graphiques de qualité professionnelle.
-lastmod: "2026-04-22"
+lastmod: 2026-10-22
 ---
 
 {{<section overview>}}
@@ -93,6 +93,27 @@ TikZ inclut des bibliothèques graphiques dédiées (« graphs » et « graph
 
 Cela génère automatiquement des mises en page visuellement attrayantes de graphiques complexes.
 
+## Boucles (`\foreach`)
+
+Générez des structures répétitives ou des grilles par programmation :
+
+```tex
+\foreach \x in {1,2,3}
+\draw (\x,0) circle (0.4);
+```
+
+## Calculs de coordonnées (bibliothèque `calc`)
+
+Voici un exemple de calcul de points médians ou de projections.
+
+```tex
+\usetikzlibrary{calc}
+\draw (0,0) coordinate (A) -- (4,2) coordinate (B);
+\draw [red] (A) -- ($(A)!0.5!(B)!1cm!90:(B)$);
+```
+
+*% Calcul de décalages perpendiculaires*
+
 ## Bibliothèques externes et personnalisation
 
 Étendez les fonctionnalités de TikZ avec des bibliothèques externes pour répondre à des besoins spécifiques :
@@ -107,6 +128,18 @@ Pour utiliser une bibliothèque externe, il suffit de l'inclure :
 \usepackage{pgfplots}
 \pgfplotsset{compat=1.18}
 ```
+
+## Performance et gestion des ressources
+
+Contrairement aux images matricielles (raster) chargées directement en mémoire, les dessins TikZ sont calculés dynamiquement par l'interpréteur de macros TeX lors de l'exécution. Chaque tracé, intersection et transformation géométrique est évalué séquentiellement par le biais de l'expansion des macros, avant le rendu vectoriel final.
+
+Lors du traitement de documents contenant des diagrammes vectoriels très complexes au sein d'applications .NET côté serveur, tenez compte des recommandations suivantes pour optimiser l'utilisation du processeur (CPU) et éviter l'épuisement des threads :
+
+| | **Défi** | **Bonne pratique** |
+|---|---|---|
+|**Expansion des macros et surcharge CPU**|TikZ repose fortement sur le moteur d'expansion des macros de TeX, qui fonctionne par interprétation. Des boucles profondément imbriquées ou des équations géométriques complexes (par exemple, le rendu de tracés algorithmiques) peuvent augmenter considérablement le nombre de cycles CPU requis par tâche.|Maintenez la génération procédurale au sein de TikZ aussi légère que possible. Si vous devez générer des milliers d'éléments répétitifs, déterminez si l'utilisation de modèles basés sur des données ou le pré-calcul des coordonnées en dehors du code source TeX permettrait de réduire la profondeur d'évaluation des macros.|
+|**Empreinte mémoire et récupération de mémoire (Garbage Collection)**|Les documents volumineux comportant de nombreux tracés vectoriels TikZ génèrent des arborescences d'objets internes complexes au sein du tas (heap) géré par .NET durant la phase de composition.|Isolez les tâches de composition dans des portées (scopes) à durée de vie limitée ou utilisez des instances de traitement dédiées ; cela permet au récupérateur de mémoire (garbage collector) de libérer efficacement les ressources une fois le flux de sortie (PDF, XPS ou image) généré.|
+|**Mise en cache des diagrammes statiques dans les applications web**|Recompiler un diagramme TikZ complexe à chaque requête HTTP, dans le cadre d'un service web à fort trafic, entraînera rapidement une saturation des cœurs CPU du serveur.|Si le graphique sous-jacent est statique ou semi-statique (comme un graphique dans un tableau de bord administratif ou un schéma architectural standard), compilez le fragment `.tex` une seule fois, mettez en cache le PDF ou le flux vectoriel résultant en mémoire (par exemple, via `IMemoryCache`), puis servez directement cet élément mis en cache.| |**Gestion du traitement asynchrone et des délais d'attente (timeouts)**|Des macros récursives non optimisées ou mal formées au sein de diagrammes complexes peuvent parfois entraîner des boucles infinies ou des temps d'exécution excessivement longs.|Lors de l'exécution de tâches TeXJob via des services d'arrière-plan (tels que Hangfire, Azure Functions ou les tâches en arrière-plan ASP.NET Core), veillez toujours à encapsuler les appels de compilation dans des structures asynchrones assorties de limites de temps explicites.|
 
 ---
 

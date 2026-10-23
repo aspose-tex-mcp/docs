@@ -31,21 +31,27 @@ TikZ bietet gegenüber herkömmlichen Grafiktools mehrere Vorteile:
 Um TikZ zu verwenden, stellen Sie sicher, dass es mit Ihrer TeX-Distribution installiert ist (normalerweise in Standardinstallationen wie TeX Live oder MiKTeX enthalten). Hier ist ein einfaches „Hallo Welt“-Beispiel, das die grundlegende TikZ-Syntax veranschaulicht:
 
 ```tex  
-\\documentclass{article}  
-\\usepackage{tikz}  
+\documentclass{article}
+\usepackage{tikz}
 
-\\begin{document}
+\begin{document}
 
-\\begin{tikzpicture}  
-\\draw (0,0) -- (1,1) -- (1,0) -- cycle;  
-\\end{tikzpicture}
+\begin{tikzpicture}
+\draw (0,0) -- (1,1) -- (1,0) -- cycle;
+\end{tikzpicture}
 
-\\end{document}  
+\end{document}
 ```
 
 Dieses Beispiel erzeugt ein einfaches Dreieck, das drei Punkte verbindet.
 
-## Inhalt
+## Verarbeitung von TikZ mit Aspose.TeX für .NET
+
+In herkömmlichen akademischen oder Desktop-Umgebungen erfordert das Rendern von TikZ-Grafiken eine vollständig konfigurierte lokale TeX-Distribution (wie TeX Live oder MiKTeX) sowie externe Treiber oder Shell-Dienstprogramme.
+
+Da Aspose.TeX für .NET standardmäßige LaTeX-Pakete – einschließlich der TikZ-Bibliothek und der zugrunde liegenden PGF-Engine – nativ parst und kompiliert, können Dokumente, die komplexe `\begin{tikzpicture}`-Umgebungen enthalten, direkt innerhalb Ihrer .NET-Anwendung verarbeitet werden. Die Satz-Engine verarbeitet Vektorpfad-Daten programmgesteuert und rendert geometrische Formen, Kurven und mathematische Diagramme direkt in hochwertige Vektorformate (wie PDF oder XPS) oder Rastergrafiken (PNG, JPEG, BMP) – ganz ohne Abhängigkeiten von externer Software auf dem Host-Server.
+
+## Entdecken Sie die TikZ-Anleitungsreihe
 
 Die folgenden Themen dieser TikZ-Reihe im Überblick:
 

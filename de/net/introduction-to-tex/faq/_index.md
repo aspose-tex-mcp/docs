@@ -6,7 +6,7 @@ linktitle: FAQ
 weight: 80
 url: /net/introduction-to-tex/faq/
 description: Holen Sie sich Antworten auf die häufigsten Fragen zu Tex und Latex, ihre Struktur, Verwendung und Besonderheiten.
-lastmod: "2026-04-22"
+lastmod: 2026-10-21
 ---
 
 {{<section overview>}}
@@ -132,3 +132,23 @@ Wenn Sie jedoch Student oder Profi in einem STEM -Bereich sind oder regelmäßig
 
 `\usepackage{graphicx}`
 <br> <br>
+
+**F: Muss ich TeX Live, MiKTeX oder andere externe Binärdateien auf meinem Server installieren, um Aspose.TeX für .NET nutzen zu können?**
+
+**A:** Nein. Aspose.TeX für .NET ist eine eigenständige, vollständig verwaltete Klassenbibliothek, die in C# geschrieben wurde. Es ist keine Installation von externen TeX-Distributionen, nativen ausführbaren Dateien oder Befehlszeilen-Laufzeitumgebungen auf Ihrem Host-System oder in Ihrer Cloud-Umgebung erforderlich.
+<br><br>
+
+**F: Wie kann ich ein im Arbeitsspeicher (Memory) gespeichertes LaTeX-Dokument verarbeiten, ohne Dateien auf die Festplatte zu schreiben oder von dort zu lesen?**
+
+**A:** Sie können die flexible I/O-Architektur von Aspose.TeX nutzen. Durch die Verwendung von `InputMemoryDirectory` oder Memory-Streams in Kombination mit `OutputMemoryDirectory` können Sie Eingabedaten direkt aus Byte-Arrays oder Strings bereitstellen und die resultierenden PDF- oder Bildausgaben vollständig im Arbeitsspeicher verarbeiten.
+<br><br>
+
+**F: Wie geht Aspose.TeX mit fehlenden Paketen oder benutzerdefinierten .sty-Dateien um?**
+
+**A:** Die wichtigsten Standardpakete (wie `graphics`, `graphicx` und gängige AMS-Pakete) sind bereits in die Engine integriert. Benutzerdefinierte Pakete oder Pakete von Drittanbietern sowie Klassendateien (`.sty`, `.cls`) können in Ihrem Arbeitsverzeichnis abgelegt oder in einem `InputZipDirectory` zusammengefasst werden, sodass die Engine diese während der Kompilierung dynamisch einbinden kann.
+<br><br>
+
+**F: Ist Aspose.TeX für .NET threadsicher und für Webanwendungen mit hoher Parallelität geeignet?**
+
+**A:** Job-Ausführungen (`TeXJob`) und Konfigurationsoptionen (`TeXOptions`) sind so konzipiert, dass sie pro Job instanziiert werden. Dadurch eignen sie sich hervorragend für Multithreading- und asynchrone Serverumgebungen. Achten Sie jedoch darauf, für gleichzeitige Hintergrund-Threads jeweils eigene Instanzen für Dokumente oder Optionen zu verwenden, um eine gegenseitige Beeinflussung der Ausführungszustände zu vermeiden.
+<br><br>

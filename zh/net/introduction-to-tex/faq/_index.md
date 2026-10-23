@@ -6,7 +6,7 @@ linktitle: 常问问题
 weight: 80
 url: /net/introduction-to-tex/faq/
 description: 获取有关TeX和LaTeX的所有最常见问题的答案，它们的结构，用法和特点。
-lastmod: "2026-04-22"
+lastmod: 2026-10-21
 ---
 
 {{<section overview>}}
@@ -132,4 +132,24 @@ LaTeX 是一个更加用户友好的高级文档创建系统。LaTeX 可以自�
 **A:**  包是带有 `.sty` 扩展名的文件。要使用它们，您需要使用 `\usepackage` 命令将其名称添加到 LaTeX 文档的序言中。例如，要使用 graphicx 包，您需要在序言中添加以下行：
 
 `\usepackage{graphicx}`
+<br><br>
+
+**Q：使用 Aspose.TeX for .NET 时，是否需要在服务器上安装 TeX Live、MiKTeX 或其他外部二进制程序？**
+
+**A：** 不需要。Aspose.TeX for .NET 是一个完全托管的独立类库，采用 C# 编写。它无需在您的主机或云环境中安装任何外部 TeX 发行版、原生可执行文件或命令行运行时。
+<br><br>
+
+**Q：如何处理存储在内存中的 LaTeX 文档，而无需进行磁盘读写操作？**
+
+**A：** 您可以利用 Aspose.TeX 的可插拔式 I/O 架构。通过使用 `InputMemoryDirectory`（或内存流）配合 `OutputMemoryDirectory`，您可以直接从字节数组或字符串提供输入源数据，并将生成的 PDF 或图像结果完全保存在内存中。
+<br><br>
+
+**Q：Aspose.TeX 如何处理缺失的宏包或自定义的 `.sty` 文件？**
+
+**A：** 核心标准宏包（如 `graphics`、`graphicx` 以及标准的 AMS 宏包）已预先内置于引擎中。对于自定义或第三方宏包及类文件（`.sty`、`.cls`），您可以将其放置在输入工作目录中，或打包进 `InputZipDirectory`，以便引擎在编译过程中能够动态加载它们。
+<br><br>
+
+**Q：Aspose.TeX for .NET 是否支持高并发 Web 应用中的线程安全？**
+
+**A：** 任务执行（`TeXJob`）和配置选项（`TeXOptions`）均设计为“每个任务对应一个实例”，这使其非常适合多线程及异步服务器环境。不过，在并发后台线程中，请务必确保使用独立的文档或配置选项实例，以防止执行状态发生相互干扰。
 <br><br>

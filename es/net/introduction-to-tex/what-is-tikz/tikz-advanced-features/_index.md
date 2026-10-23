@@ -7,7 +7,7 @@ weight: 20
 url: /net/tikz-advanced-features/
 keywords: TikZ avanzado, rutas TikZ, diagramas TikZ, pgfplots, circuitikz, tikz-3dplot
 description: Aprenda técnicas avanzadas de TikZ, incluyendo rutas complejas, posicionamiento de nodos, flechas y creación de diagramas para obtener gráficos de calidad profesional.
-lastmod: "2026-04-22"
+lastmod: 2026-10-22
 ---
 
 {{<section overview>}}
@@ -93,6 +93,27 @@ TikZ incluye bibliotecas de gráficos dedicadas (`graphs` y `graphdrawing`) para
 
 Esto genera automáticamente diseños visualmente atractivos de gráficos complejos.
 
+## Bucles (`\foreach`)
+
+Genera estructuras repetitivas o rejillas mediante programación:
+
+```tex
+\foreach \x in {1,2,3}
+  \draw (\x,0) circle (0.4);
+```
+
+## Cálculos de coordenadas (librería `calc`)
+
+A continuación, un ejemplo de cálculo de puntos medios o proyecciones.
+
+```tex
+\usetikzlibrary{calc}
+\draw (0,0) coordinate (A) -- (4,2) coordinate (B);
+\draw [red] (A) -- ($(A)!0.5!(B)!1cm!90:(B)$);
+```
+
+*% Cálculo de desplazamientos perpendiculares*
+
 ## Bibliotecas externas y personalización
 
 Amplíe la funcionalidad de TikZ con bibliotecas externas para satisfacer requisitos específicos:
@@ -107,6 +128,18 @@ Para usar una biblioteca externa, simplemente inclúyala:
 \usepackage{pgfplots}
 \pgfplotsset{compat=1.18}
 ```
+
+## Rendimiento y gestión de recursos
+
+A diferencia de las imágenes ráster, que se cargan directamente en la memoria, los dibujos de TikZ son calculados dinámicamente por el intérprete de macros de TeX durante la ejecución. Cada trazado, intersección y transformación geométrica se evalúa de forma secuencial mediante la expansión de macros antes de realizarse el renderizado vectorial final.
+
+Al procesar documentos que contienen diagramas vectoriales de alta complejidad en aplicaciones .NET del lado del servidor, tenga en cuenta las siguientes directrices de rendimiento para optimizar el uso de la CPU y evitar el agotamiento de hilos (*thread starvation*):
+
+| | **Desafío** | **Mejor práctica** |
+|---|---|---|
+|**Expansión de macros y sobrecarga de CPU**|TikZ depende en gran medida del motor de expansión de macros de TeX, que funciona mediante interpretación. Los bucles profundamente anidados o las ecuaciones geométricas complejas (por ejemplo, el renderizado de gráficos algorítmicos) pueden aumentar considerablemente los ciclos de CPU necesarios para cada tarea.|Mantenga la generación procedimental dentro de TikZ lo más ligera posible. Si necesita generar miles de elementos repetitivos, evalúe si el uso de plantillas basadas en datos o el cálculo previo de coordenadas —fuera del código fuente de TeX— pueden reducir la profundidad de la evaluación de macros.|
+|**Consumo de memoria y recolección de basura**|Los documentos extensos de varias páginas que contienen numerosos trazados vectoriales de TikZ generan grandes árboles de objetos internos en el *heap* gestionado de .NET durante el proceso de composición.|Aísle las tareas de composición en ámbitos (*scopes*) de corta duración o utilice instancias de procesamiento dedicadas; esto permite que el recolector de basura (*garbage collector*) recupere la memoria de manera eficiente una vez que el flujo de salida (PDF, XPS o imagen) se haya volcado por completo.|
+|**Almacenamiento en caché de diagramas estáticos en aplicaciones web**|Recompilar un diagrama complejo de TikZ ante cada solicitud HTTP en un servicio web de alto tráfico saturará rápidamente los núcleos de la CPU del servidor.|Si el gráfico subyacente es estático o semiestático (como un gráfico en un panel de control administrativo o un esquema arquitectónico estándar), compile el fragmento de código `.tex` una sola vez, almacene en caché el PDF o el flujo vectorial resultante (por ejemplo, mediante `IMemoryCache`) y sirva el recurso almacenado directamente.| |**Gestión del procesamiento asíncrono y los tiempos de espera (timeouts)**|Las macros recursivas no optimizadas o mal formadas dentro de diagramas complejos pueden, en ocasiones, provocar bucles infinitos o bloqueos de ejecución prolongados.|Al ejecutar procesos TeXJob en servicios en segundo plano (como Hangfire, Azure Functions o tareas en segundo plano de ASP.NET Core), envuelva siempre las llamadas de compilación en estructuras asíncronas que incluyan límites de tiempo de espera explícitos.|
 
 ---
 

@@ -7,7 +7,7 @@ weight: 23
 url: /net/tikz-best-practices-and-tips/
 keywords: лучшие практики по TikZ, советы по TikZ, оптимизация производительности TikZ
 description: Ознакомьтесь с лучшими практиками и полезными советами по эффективному использованию TikZ в документах TeX и LaTeX.
-lastmod: "2026-04-22"
+lastmod: 2026-10-23
 ---
 
 {{<section overview>}}
@@ -119,6 +119,78 @@ TikZ может экстернизировать изображения, что 
 - **Примеры Overleaf**
 
 Практические примеры и шаблоны TikZ доступны на [Overleaf](https://www.overleaf.com/learn/latex/TikZ_package).
+
+## Обработка ошибок и диагностика в .NET
+
+При разработке автоматизированных серверных приложений на платформе .NET, использующих код TikZ (предоставленный пользователем или сгенерированный динамически), необходимо применять методы защитного программирования. Если движок Aspose.TeX обнаруживает некорректный синтаксис LaTeX или TikZ, он генерирует исключение `TeXException`.
+
+Чтобы обеспечить устойчивость приложения и получить информативные диагностические данные, следуйте этим рекомендациям по обработке ошибок:
+
+1. Перехват и протоколирование `TeXException`
+Всегда заключайте вызов `TeXJob.Run()` в блок `try-catch`, настроенный на перехват исключения `TeXException`. Это позволит отделить ошибки верстки от общих сбоев в работе приложения.
+
+2. Анализ вывода в терминале и диагностических логов
+В случае сбоя компиляции вывод в терминале и файлы журналов (`.log`), создаваемые в процессе выполнения задачи, содержат точные номера строк и трассировку раскрытия макросов — именно там, где произошла ошибка парсинга TikZ. Для упрощения отладки можно перехватывать или перенаправлять вывод терминала с помощью настроек `TeXOptions`.
+
+Ниже приведен пример того, как разработчики могут реализовать безопасный и устойчивый к ошибкам метод компиляции на языке C# при обработке диаграмм TikZ:
+
+```csharp
+using System;
+using System.IO;
+using Aspose.TeX;
+using Aspose.TeX.Configuration;
+using Aspose.TeX.Presentation.Pdf;
+using Aspose.TeX.IO;
+
+public class TikZCompilerService
+{
+    public bool TryCompileTikZDocument(string inputFilePath, string outputDirectory, out string errorMessage)
+    {
+        errorMessage = string.Empty;
+
+        // Настройка стандартных параметров для задачи LaTeX
+        TeXOptions options = TeXOptions.ConsoleAppRunSettings(
+            TeXConfig.LaTeX, 
+            Path.GetDirectoryName(inputFilePath), 
+            outputDirectory
+        );
+
+        // Включение перенаправления вывода в терминал для сбора диагностических данных (при необходимости)
+        options.ShowTerminal = true;
+        options.SaveOptions = new PdfSaveOptions();
+
+        try
+        {
+            // Выполнение задачи по набору текста
+            new TeXJob(inputFilePath, new PdfDevice(), options).Run();
+            return true;
+        }
+        catch (TeXException texEx)
+        {
+            // Обработка ошибок, связанных с синтаксисом TeX, пакетами или раскрытием макросов (например, некорректно заданный путь в TikZ)
+            errorMessage = $"TeX Engine Compilation Error: {texEx.Message}";
+            // TODO: Логирование подробностей исключения в корпоративную систему журналирования (например, NLog, Serilog)
+            return false;
+        }
+        catch (IOException ioEx)
+        {
+            // Обработка проблем с доступом к файлам или прав доступа к диску
+            errorMessage = $"I/O Error during compilation: {ioEx.Message}";
+            return false;
+        }
+        catch (Exception ex)
+        {
+            // Обработка непредвиденных ошибок во время выполнения
+            errorMessage = $"Unexpected error: {ex.Message}";
+            return false;
+        }
+    }
+}
+```
+
+Перехват исключения `TeXException` позволяет приложению вернуть клиенту корректный ответ `HTTP 400 Bad Request` (или информативное сообщение об ошибке) в случае, если сгенерированный код TikZ содержит синтаксические ошибки. Это предотвращает возникновение серверной ошибки `500 Internal Server Error`.
+
+Если ваше .NET-приложение динамически вставляет пользовательские данные в строки координат или узлов TikZ, обязательно выполняйте их предварительную очистку (санитизацию). Это поможет избежать случайного нарушения синтаксиса (например, из-за наличия неэкранированных специальных символов, таких как `%`, `&` или `#`).
 
 ---
 

@@ -6,7 +6,7 @@ linktitle: FAQ
 weight: 80
 url: /net/introduction-to-tex/faq/
 description: Obtenez des réponses à toutes les questions les plus fréquentes sur le TeX et le LaTeX, leur structure, leur utilisation et leurs particularités.
-lastmod: "2026-04-22"
+lastmod: 2026-10-21
 ---
 
 {{<section overview>}}
@@ -132,3 +132,24 @@ Cependant, si vous êtes étudiant ou professionnel dans un domaine STEM, ou si 
 
 `\usepackage{graphicx}`
 <br> <br>
+
+
+**Q : Dois-je installer TeX Live, MiKTeX ou d'autres binaires externes sur mon serveur pour utiliser Aspose.TeX pour .NET ?**
+
+**A :** Non. Aspose.TeX pour .NET est une bibliothèque de classes autonome et entièrement gérée, écrite en C#. Elle ne nécessite l'installation d'aucune distribution TeX externe, d'exécutables natifs ou d'environnements d'exécution en ligne de commande sur votre machine hôte ou votre environnement cloud.
+<br><br>
+
+**Q : Comment puis-je traiter un document LaTeX stocké en mémoire, sans lire ni écrire de fichiers sur le disque ?**
+
+**A :** Vous pouvez tirer parti de l'architecture d'entrée/sortie (I/O) modulable d'Aspose.TeX. En utilisant `InputMemoryDirectory` ou des flux mémoire (memory streams) conjointement avec `OutputMemoryDirectory`, vous pouvez fournir les données sources directement à partir de tableaux d'octets ou de chaînes de caractères, et récupérer les résultats (PDF ou images) entièrement en mémoire.
+<br><br>
+
+**Q : Comment Aspose.TeX gère-t-il les paquets manquants ou les fichiers `.sty` personnalisés ?**
+
+**A :** Les paquets standard essentiels (tels que `graphics`, `graphicx` et les paquets AMS courants) sont déjà intégrés au moteur. Pour les paquets personnalisés ou tiers, ainsi que pour les fichiers de classe (`.sty`, `.cls`), vous pouvez les placer dans votre répertoire de travail d'entrée ou les regrouper dans un `InputZipDirectory` ; le moteur pourra ainsi les résoudre dynamiquement lors de la compilation.
+<br><br>
+
+**Q : Aspose.TeX pour .NET est-il « thread-safe » (sûr pour une utilisation multithread) dans le cadre d'applications web à forte concurrence ?**
+
+**A :** L'exécution des tâches (`TeXJob`) et les options de configuration (`TeXOptions`) sont conçues pour être instanciées par tâche, ce qui les rend parfaitement adaptées aux environnements serveur multithread et asynchrones. Veillez toutefois à utiliser des instances distinctes pour chaque document ou ensemble d'options au sein des threads d'arrière-plan concurrents, afin d'éviter toute interférence entre les états d'exécution.
+<br><br>
