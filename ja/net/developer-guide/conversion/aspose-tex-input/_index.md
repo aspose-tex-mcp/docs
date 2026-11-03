@@ -6,8 +6,8 @@ linktitle: Aspose.TeX の入力インターフェイス
 weight: 15
 url: /net/aspose-tex-input/
 description: Aspose.TeX API ソリューションの .NET 用変換機能で、TeX を入力形式として使用する方法をコード例とともに説明します。
-keywords: aspose.tex 入力、.net tex、入力ディレクトリ、入力 zip、入力コンソール、tex オプション、iinputworkingdirectory、inputzipdirectory、inputterminal、tex 変換
-lastmod: "2026-02-25"
+keywords: aspose.tex 入力、.net tex、入力ディレクトリ、入力 zip、入力コンソール、tex オプション、iinputworkingdirectory、inputzipdirectory、inputterminal、tex 変換, searchcurrentdirectory
+lastmod: "2026-11-03"
 aliases: 
 - /cpp/typesetting-tex-input/
 - /cpp/creating-custom-tex-format/
@@ -36,6 +36,14 @@ TeX 言語の I/O プリミティブはファイル名しか扱えないため�
 {{< gist "aspose-com-gists" "0fbd18cd8c28d5ed12e19cd52634ebd4" "Example-InputZipDirectory.cs" >}}
 
 まず、ZIP ファイルを含むストリームを作成します。その後、変換オプションを作成し、[InputWorkingDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/inputworkingdirectory/) オプションに [InputZipDirectory](https://reference.aspose.com/tex/net/aspose.tex.io/inputzipdirectory/) クラスのインスタンスを設定します。コンストラクタの第 2 引数はアーカイブ内のベースパスです。アーカイブ全体を入力ディレクトリとして使用したい場合は空文字列を渡します。
+
+### 作業ディレクトリでのみ入力ファイルを検索する {#looking-for-input-files-only-in-the-working-directories}
+
+既定では、TeX エンジンは相対名の入力ファイルが必要になると、まずプロセスのカレント ディレクトリとメイン入力ファイルのディレクトリでファイルを探します。その後で初めて [InputWorkingDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/inputworkingdirectory/)、[RequiredInputDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/requiredinputdirectory/)、[OutputWorkingDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/outputworkingdirectory/) を探します。これは単純なコンソール アプリケーションには便利ですが、結果がプロセスを起動した場所や、そこにたまたま置かれているファイルに左右される可能性があることも意味します。指定したディレクトリからのみ入力を取得したい場合は、[SearchCurrentDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/searchcurrentdirectory/) オプションを `false` に設定します。
+
+{{< gist "aspose-com-gists" "0fbd18cd8c28d5ed12e19cd52634ebd4" "Example-SearchCurrentDirectory.cs" >}}
+
+絶対名のファイルは、このオプションに関係なく直接開かれます。同じオプションは、[数式と図のレンダリング](https://reference.aspose.com/tex/net/aspose.tex.features/figurerendereroptions/searchcurrentdirectory/)および [LaTeX の修復](https://reference.aspose.com/tex/net/aspose.tex.features/latexrepaireroptions/searchcurrentdirectory/) でも使用できます。
 
 ## The concept of the input terminal
 
