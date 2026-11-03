@@ -6,7 +6,7 @@ linktitle: LaTeX в XPS
 weight: 12
 url: /net/latex-to-xps/
 description: Функциональность преобразования решения Aspose.TeX API для .NET позволяет конвертировать файлы LaTeX в формат XPS.
-lastmod: "2026-04-22"
+lastmod: "2026-11-02"
 ---
 
 {{<section overview>}}
@@ -24,10 +24,10 @@ lastmod: "2026-04-22"
 
 В примере ниже показано, как преобразовать файл LaTeX в XPS за несколько шагов:
 
-1. Создайте экземпляр `TexDocument`.
-2. Загрузите исходный файл `.tex` с помощью `TexDocument.Load`.
-3. (Необязательно) настройте `XpsSaveOptions`, например, параметры сжатия.
-4. Сохраните документ в XPS, вызвав `document.Save` с `XpsDevice`.
+1. Создайте `TeXOptions` для формата ObjectLaTeX с помощью `TeXOptions.ConsoleAppOptions(TeXConfig.ObjectLaTeX)`.
+2. Укажите выходной рабочий каталог, например `OutputFileSystemDirectory`.
+3. Присвойте `SaveOptions` экземпляр `XpsSaveOptions`.
+4. Запустите `TeXJob` для исходного файла `.tex` с `XpsDevice`. Файл XPS записывается в выходной рабочий каталог.
 
 Этот код демонстрирует самый простой способ создания XPS-файла из LaTeX.
 
@@ -41,15 +41,14 @@ lastmod: "2026-04-22"
 
 В этом фрагменте кода показано использование конструктора `XpsDevice`, принимающего `Stream`. Шаги следующие:
 
-1. Создайте `TexDocument` и загрузите исходный файл LaTeX.
-2. Создайте `MemoryStream` для хранения выходных данных XPS.
-3. Создайте экземпляр `XpsDevice` с потоком.
-4. Сохраните документ на устройстве, после чего вы сможете использовать поток (например, отправить его по сети или сохранить в базе данных).
+1. Откройте поток, в который будет записан документ XPS (здесь — файловый поток; `MemoryStream` работает так же).
+2. Создайте `TeXOptions`, укажите выходной рабочий каталог и присвойте `SaveOptions` экземпляр `XpsSaveOptions`, как в предыдущем примере.
+3. Запустите `TeXJob` с `XpsDevice`, созданным с этим потоком. Документ XPS записывается в поток; остальные выходные файлы, например протокол, по-прежнему записываются в выходной рабочий каталог.
 
-Этот подход полезен, когда данные XPS нужны в памяти, а не в виде файла на диске.
+Этот подход полезен, когда документ XPS нужно записать в выбранный вами поток, например чтобы хранить его в памяти или отправить по сети.
 
 {{< gist "aspose-com-gists" "507170b996a1d0c39bb4374e888b3205" "Example-ConvertLaTeXToXPS-Alternative.cs" >}}
 
-Эффект тот же, что мы получаем [здесь](/tex/{{lang.url-fragment}}net/latex-to-pdf/#an-alternative-way-to-write-main-output-pdf-file).
+Эффект тот же, что мы получаем [здесь](/tex/{{lang.url-fragment}}net/latex-to-pdf/#an-alternative-way-to-write-the-main-output-pdf-file).
 
 **Вы также можете ознакомиться с бесплатным преобразованием LaTeX в XPS [веб-приложение](https://products.aspose.app/tex/conversion/latex-to-xps), созданным на основе [Aspose.TeX for .NET API](https://products.aspose.com/tex/net/).**

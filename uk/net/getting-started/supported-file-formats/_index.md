@@ -6,7 +6,7 @@ linktitle: Підтримувані формати файлів
 weight: 20
 url: /net/supported-file-formats/
 description: Це рішення для роботи з TeX для .NET підтримує файли TeX для введення та різноманітні вихідні формати, такі як XPS, PDF, PNG, JPEG, TIFF і BMP.
-lastmod: "2026-04-22"
+lastmod: "2026-11-02"
 ---
 
 {{<section overview>}}
@@ -20,6 +20,7 @@ lastmod: "2026-04-22"
 |Звичайний текст|Файл TeX|{{< emoticons/tick >}}|{{< emoticons/tick >}}| Лише для виведення повідомлень трасування.|
 |XPS|Набір документів XPS| |{{< emoticons/tick >}}| |
 |PDF|Документ у форматі PDF| |{{< emoticons/tick >}}| |
+|SVG|Зображення SVG сторінок зверстаного документа| |{{< emoticons/tick >}}| |
 |PNG|Зображення PNG набірного документа| |{{< emoticons/tick >}}| |
 |JPEG|Зображення JPEG набірного документа| |{{< emoticons/tick >}}| |
 |TIFF|Зображення TIFF набірного документа| |{{< emoticons/tick >}}| |

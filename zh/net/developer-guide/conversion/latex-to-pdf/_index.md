@@ -49,7 +49,7 @@ Transcript written on hello-world.log.
 
 我们可以在指定的输出目录中找到引擎工作的“成果”。其中包括转录文件以及 **就在这里！** 的主输出 PDF 文件。
 
-## 以另一种方式写入主输出 PDF 文件
+## 以另一种方式写入主输出 PDF 文件 {#an-alternative-way-to-write-the-main-output-pdf-file}
 
 [PdfDevice](https://reference.aspose.com/tex/net/aspose.tex.presentation.pdf/pdfdevice/pdfdevice/) 类还有另一个构造函数，允许我们以另一种方式获取生成的 PDF 文件。
 

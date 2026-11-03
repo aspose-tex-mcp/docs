@@ -6,10 +6,29 @@ title: 安装 | .NET的Aspose.TeX
 weight: 60
 url: /net/installation/
 description: 通过单击“下载软件包”，可以在下载的ZIP软件包或从Nuget Gallery中找到.NET的Aspose.TeX API文档。
-lastmod: "2026-04-22"
+lastmod: "2026-11-02"
 ---
 
 {{<section overview>}}
+
+## 选择包
+
+Aspose.TeX for .NET 以两个 API 相同的 NuGet 包提供：
+
+- [Aspose.TeX](https://www.nuget.org/packages/Aspose.TeX) 使用 `System.Drawing.Common`，在 Windows 上运行。
+- [Aspose.TeX.Drawing](https://www.nuget.org/packages/Aspose.TeX.Drawing) 使用内置的图形后端 Aspose.Drawing，在 Windows、Linux 和 macOS（包括 Docker 容器）上运行。
+
+只能引用其中一个包。要使用 .NET CLI 安装包，请在项目文件夹中运行以下命令之一：
+
+```bash
+dotnet add package Aspose.TeX
+```
+
+```bash
+dotnet add package Aspose.TeX.Drawing
+```
+
+有关 `Aspose.TeX.Drawing` 的详细信息，请参阅 [Linux、macOS 和 Docker](/tex/{{lang.url-fragment}}net/linux-and-containers/)。本页其余部分介绍在 Visual Studio 中的安装，适用于两个包。
 
 ## 通过NuGet安装.net的aspose.tex
 

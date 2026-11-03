@@ -6,10 +6,29 @@ title: Installazione | Aspose.TeX per .NET
 weight: 60
 url: /net/installation/
 description: Aspose.TeX Documentazione API per .NET è disponibile nel pacchetto ZIP scaricato o Get dalla Nuget Gallery, facendo clic sul "pacchetto di download".
-lastmod: "2026-04-22"
+lastmod: "2026-11-02"
 ---
 
 {{<section overview>}}
+
+## Scegliere un pacchetto
+
+Aspose.TeX per .NET è disponibile come due pacchetti NuGet con la stessa API:
+
+- [Aspose.TeX](https://www.nuget.org/packages/Aspose.TeX) usa `System.Drawing.Common` e funziona su Windows.
+- [Aspose.TeX.Drawing](https://www.nuget.org/packages/Aspose.TeX.Drawing) usa il backend grafico incorporato Aspose.Drawing e funziona su Windows, Linux e macOS, inclusi i container Docker.
+
+Fare riferimento a uno solo dei due. Per installare un pacchetto con la CLI di .NET, eseguire uno dei seguenti comandi nella cartella del progetto:
+
+```bash
+dotnet add package Aspose.TeX
+```
+
+```bash
+dotnet add package Aspose.TeX.Drawing
+```
+
+Per i dettagli su `Aspose.TeX.Drawing`, vedere [Linux, macOS e Docker](/tex/{{lang.url-fragment}}net/linux-and-containers/). Il resto di questa pagina descrive l'installazione in Visual Studio e vale per entrambi i pacchetti.
 
 ## Installazione Aspose.TeX per .NET tramite NuGet
 

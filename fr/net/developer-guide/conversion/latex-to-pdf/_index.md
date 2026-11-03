@@ -50,7 +50,7 @@ Transcript written on hello-world.log.
 
 Nous retrouverons d'autres "fruits" du travail du moteur dans le dossier que nous avons spécifié comme répertoire de sortie. Ce seront le fichier de transcription et, **le voici !**, le fichier PDF de sortie principal.
 
-## Une autre façon d'écrire le fichier PDF de sortie principal
+## Une autre façon d'écrire le fichier PDF de sortie principal {#an-alternative-way-to-write-the-main-output-pdf-file}
 
 Il existe un autre constructeur de la classe [PdfDevice](https://reference.aspose.com/tex/net/aspose.tex.presentation.pdf/pdfdevice/pdfdevice/), qui nous permet d'obtenir le fichier PDF résultant d'une manière alternative.
 

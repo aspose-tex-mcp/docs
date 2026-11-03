@@ -8,7 +8,7 @@ url: /net/latex-to-xps/
 aliases: /net/other-target-formats/
 description: Aspose.TeX API 解决方案的 .NET 转换功能可以将 LaTeX 文件转换为 XPS 格式。以下是一些代码示例。
 keywords: latex 转 xps, aspose tex, .net 转换, xps 格式, tex 转 xps, 文档转换, aspose page, xpsdevice, xpssaveoptions, c# 示例
-lastmod: "2026-04-22"
+lastmod: "2026-11-02"
 ---
 
 {{<section overview>}}
@@ -26,10 +26,10 @@ LaTeX 到 XPS 的转换和[转换为光栅图像格式](/tex/{{lang.url-fragment
 
 下面的示例演示了如何在几步操作中将 LaTeX 文件转换为 XPS：
 
-1. 创建 `TexDocument` 实例。  
-2. 使用 `TexDocument.Load` 加载源 `.tex` 文件。  
-3. （可选）配置 `XpsSaveOptions`，例如压缩设置。  
-4. 通过调用 `document.Save` 并传入 `XpsDevice` 将文档保存为 XPS。
+1. 使用 `TeXOptions.ConsoleAppOptions(TeXConfig.ObjectLaTeX)` 为 ObjectLaTeX 格式创建 `TeXOptions`。
+2. 指定输出工作目录，例如 `OutputFileSystemDirectory`。
+3. 将 `SaveOptions` 设置为 `XpsSaveOptions` 实例。
+4. 使用 `XpsDevice` 为源 `.tex` 文件运行 `TeXJob`。XPS 文件会写入输出工作目录。
 
 此代码展示了从 LaTeX 生成 XPS 文件的最直接方式。
 
@@ -43,15 +43,14 @@ LaTeX 到 XPS 的转换和[转换为光栅图像格式](/tex/{{lang.url-fragment
 
 此代码片段演示了使用接受 `Stream` 的 `XpsDevice` 构造函数。步骤如下：
 
-1. 创建 `TexDocument` 并加载 LaTeX 源。  
-2. 创建 `MemoryStream` 用于保存 XPS 输出。  
-3. 使用该流实例化 `XpsDevice`。  
-4. 将文档保存到设备，然后可以使用该流（例如，发送到网络或存储到数据库）。
+1. 打开用于写入 XPS 文档的流（这里是文件流；`MemoryStream` 的用法相同）。
+2. 与上一个示例一样，创建 `TeXOptions`，指定输出工作目录，并将 `SaveOptions` 设置为 `XpsSaveOptions` 实例。
+3. 使用以该流创建的 `XpsDevice` 运行 `TeXJob`。XPS 文档会写入该流；其他输出文件（例如记录文件）仍写入输出工作目录。
 
-当需要将 XPS 数据保存在内存中而非磁盘文件时，这种方式非常有用。
+当需要将 XPS 文档写入自选的流时（例如保存在内存中或通过网络发送），这种方式非常有用。
 
 {{< gist "aspose-com-gists" "507170b996a1d0c39bb4374e888b3205" "Example-ConvertLaTeXToXPS-Alternative.cs" >}}
 
-效果与我们在[此处](/tex/{{lang.url-fragment}}net/latex-to-pdf/#an-alternative-way-to-write-main-output-pdf-file)得到的相同。
+效果与我们在[此处](/tex/{{lang.url-fragment}}net/latex-to-pdf/#an-alternative-way-to-write-the-main-output-pdf-file)得到的相同。
 
 **您也可以尝试基于 [Aspose.TeX for .NET API](https://products.aspose.com/tex/net/) 构建的免费 LaTeX 转 XPS 转换[网页应用](https://products.aspose.app/tex/conversion/latex-to-xps)。**

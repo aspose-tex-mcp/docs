@@ -7,7 +7,7 @@ weight: 10
 url: /net/latex-to-image/
 keywords: латех в png, латех png, латех в изображение, латехное изображение, латех в jpg, латех jpg, латех в jpeg, латех jpeg, латех в tiff, латех tiff, латех в bmp, латех bmp
 description: Чтобы преобразовать TeX в форматы изображений с помощью решения Aspose.TeX для .NET, изучите эту статью, чтобы увидеть, как это сделать, и примеры кода.
-lastmod: "2026-04-22"
+lastmod: "2026-11-02"
 ---
 
 {{<section overview>}}
@@ -61,7 +61,7 @@ Transcript written on hello-world.log.
 
 {{< gist "aspose-com-gists" "507170b996a1d0c39bb4374e888b3205" "Example-ConvertLaTeXToPNG-Alternative.cs" >}}
 
-Файл(ы) *"page-n.png"* будут записаны по любому указанному нами пути. В отличие от [Вывод PDF](/tex/{{lang.url-fragment}}net/latex-to-pdf/#an-alternative-way-to-write-main-output-pdf-file), они будут дублировать выходные файлы PNG, записанные в выходной каталог.
+Файл(ы) *"page-n.png"* будут записаны по любому указанному нами пути. В отличие от [Вывод PDF](/tex/{{lang.url-fragment}}net/latex-to-pdf/#an-alternative-way-to-write-the-main-output-pdf-file), они будут дублировать выходные файлы PNG, записанные в выходной каталог.
 
 ## О параметрах ввода
 
@@ -82,6 +82,10 @@ Transcript written on hello-world.log.
 ## Как конвертировать LaTeX в TIFF
 
 {{< gist "aspose-com-gists" "507170b996a1d0c39bb4374e888b3205" "Example-ConvertLaTeXToTIFF.cs" >}}
+
+{{% alert color="primary" %}}
+Пакет `Aspose.TeX.Drawing` пока не умеет сохранять многостраничные файлы TIFF: если `TiffSaveOptions.Multipage` равно `true`, файл TIFF содержит только первую страницу. Установите `Multipage` в `false`, чтобы получить отдельное изображение TIFF для каждой страницы. См. [Linux, macOS и Docker](/tex/{{lang.url-fragment}}net/linux-and-containers/#known-limitations).
+{{% /alert %}}
 
 **Вы также можете ознакомиться с бесплатным преобразованием LaTeX в TIFF [веб-приложение](https://products.aspose.app/tex/conversion/latex-to-tiff), созданным на основе [Aspose.TeX for .NET API](https://products.aspose.com/tex/net/).**
 

@@ -6,7 +6,7 @@ linktitle: サポートされているファイル形式
 weight: 20
 url: /net/supported-file-formats/
 description: .NET用のこのTeX操作ソリューションは、入力用のTeXファイルと、XPS、PDF, PNG、JPEG、TIFF、BMPなどのさまざまな出力形式をサポートしています。
-lastmod: "2026-04-22"
+lastmod: "2026-11-02"
 ---
 
 {{<section overview>}}
@@ -20,6 +20,7 @@ lastmod: "2026-04-22"
 |プレーンテキスト|TeX ファイル|{{< emoticons/tick >}}|{{< emoticons/tick >}}| トレース メッセージの出力のみ。|
 |XPS|タイプセットされた XPS ドキュメント| |{{< emoticons/tick >}}| |
 |PDF|タイプセットされた PDF ドキュメント| |{{< emoticons/tick >}}| |
+|SVG|タイプセットされたドキュメントのページの SVG 画像| |{{< emoticons/tick >}}| |
 |PNG|タイプセットされたドキュメントの PNG 画像| |{{< emoticons/tick >}}| |
 |JPEG|タイプセットされたドキュメントの JPEG 画像| |{{< emoticons/tick >}}| |
 |TIFF|タイプセットされたドキュメントの TIFF 画像| |{{< emoticons/tick >}}| |

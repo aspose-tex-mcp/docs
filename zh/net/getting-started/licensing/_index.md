@@ -6,7 +6,7 @@ title: 许可 | .NET的Aspose.TeX
 weight: 70
 url: /net/licensing/
 description: 当您停止使用Aspose.TeX API解决方案的.NET的许可版本时，您会发现如何应用许可证。
-lastmod: "2026-04-22"
+lastmod: "2026-11-02"
 ---
 
 {{<section overview>}}
@@ -18,6 +18,8 @@ lastmod: "2026-04-22"
 ### 评估版本限制
 
 aspose.tex的评估版(未指定许可证)提供完整的产品功能，只是在输出文档中只能获得多达四个第一页。另外，这些页面将用评估模式水印盖章。
+
+如果使用 `Aspose.TeX.Drawing` 包，评估模式下的光栅输出（PNG、JPEG、BMP、TIFF）还会带有内置图形后端的“Evaluation only Aspose.Drawing”水印。Aspose.TeX 许可证会同时去除这两个水印；不需要单独的 Aspose.Drawing 许可证。请参阅 [Linux、macOS 和 Docker](/tex/{{lang.url-fragment}}net/linux-and-containers/#licensing)。
 
 如果您想在没有评估限制的情况下尝试Aspose.TeX，请申请30天的临时许可。请参阅[如何获得临时许可证？](https://purchase.aspose.com/temporary-license/)有关更多信息。
 

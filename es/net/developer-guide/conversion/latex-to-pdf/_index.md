@@ -49,7 +49,7 @@ Transcript written on hello-world.log.
 
 Encontraremos otros "frutos" del trabajo del motor en la carpeta que especificamos como directorio de salida. Ese será el archivo de transcripción y, **¡aquí está!**, el archivo PDF de salida principal.
 
-## Una forma alternativa de escribir el archivo PDF de salida principal
+## Una forma alternativa de escribir el archivo PDF de salida principal {#an-alternative-way-to-write-the-main-output-pdf-file}
 
 Hay otro constructor de la clase [PdfDevice](https://reference.aspose.com/tex/net/aspose.tex.presentation.pdf/pdfdevice/pdfdevice/), que nos permite obtener el archivo PDF resultante de una forma alternativa.
 
