@@ -6,8 +6,8 @@ linktitle: Interface de saisie d'Aspose.TeX
 weight: 15
 url: /net/aspose-tex-input/
 description: De conversion de la solution API Aspose.TeX pour .NET avec TeX, en tant que format d'entrée, est expliquée ici avec les exemples de code.
-keywords: entrée tex aspose, .net tex, répertoire d'entrée, zip d'entrée, console d'entrée, options tex, répertoire de travail iinput, répertoirezip d'entrée, terminal d'entrée, conversion tex
-lastmod: "2024-09-27"
+keywords: entrée tex aspose, .net tex, répertoire d'entrée, zip d'entrée, console d'entrée, options tex, répertoire de travail iinput, répertoirezip d'entrée, terminal d'entrée, conversion tex, searchcurrentdirectory
+lastmod: "2026-11-03"
 ---
 
 {{<section overview>}}
@@ -33,6 +33,14 @@ Nous pouvons également mettre les fichiers d'entrée dans une archive ZIP et la
 {{< gist "aspose-com-gists" "0fbd18cd8c28d5ed12e19cd52634ebd4" "Example-InputZipDirectory.cs" >}}
 
 Tout d'abord, nous créons le flux contenant le fichier ZIP. Ensuite, après avoir créé les options de conversion, nous définissons l'option [InputWorkingDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/inputworkingdirectory/) comme étant une instance de la classe [InputZipDirectory](https://reference.aspose.com/tex/net/aspose.tex.io/inputzipdirectory/). Le deuxième argument du constructeur est le chemin de base à l'intérieur de l'archive. Si nous voulons que l'archive entière soit un répertoire d'entrée, nous devons transmettre la chaîne vide. 
+
+### Rechercher les fichiers d'entrée uniquement dans les répertoires de travail {#looking-for-input-files-only-in-the-working-directories}
+
+Par défaut, lorsque le moteur TeX a besoin d'un fichier d'entrée portant un nom relatif, il le recherche d'abord dans le répertoire courant du processus et dans le répertoire du fichier d'entrée principal. Ce n'est qu'ensuite qu'il le recherche dans [InputWorkingDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/inputworkingdirectory/), [RequiredInputDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/requiredinputdirectory/) et [OutputWorkingDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/outputworkingdirectory/). C'est pratique pour les applications console simples, mais cela signifie aussi que le résultat peut dépendre de l'endroit où le processus a été lancé et des fichiers qui s'y trouvent par hasard. Si nous voulons que l'entrée provienne strictement des répertoires que nous avons indiqués, nous devons définir l'option [SearchCurrentDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/searchcurrentdirectory/) sur `false` :
+
+{{< gist "aspose-com-gists" "0fbd18cd8c28d5ed12e19cd52634ebd4" "Example-SearchCurrentDirectory.cs" >}}
+
+Les fichiers aux noms absolus sont ouverts directement, quelle que soit cette option. La même option existe aussi pour le [rendu des formules et des figures](https://reference.aspose.com/tex/net/aspose.tex.features/figurerendereroptions/searchcurrentdirectory/) et pour la [réparation LaTeX](https://reference.aspose.com/tex/net/aspose.tex.features/latexrepaireroptions/searchcurrentdirectory/).
 
 ## Le concept du terminal d'entrée
 

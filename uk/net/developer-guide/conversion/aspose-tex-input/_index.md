@@ -6,8 +6,8 @@ linktitle: Інтерфейс введення Aspose.TeX
 weight: 15
 url: /net/aspose-tex-input/
 description: Функціональність перетворення рішення Aspose.TeX API для .NET із TeX як формат введення пояснюється тут із прикладами коду.
-keywords: вхідні дані aspose tex, .net tex, каталог вхідних даних, zip-архів вхідних даних, консоль введення, параметри tex, iinputworkingdirectory, inputzipdirectory, inputterminal, перетворення tex
-lastmod: "2025-06-13"
+keywords: вхідні дані aspose tex, .net tex, каталог вхідних даних, zip-архів вхідних даних, консоль введення, параметри tex, iinputworkingdirectory, inputzipdirectory, inputterminal, перетворення tex, searchcurrentdirectory
+lastmod: "2026-11-03"
 ---
 
 {{<section overview>}}
@@ -33,6 +33,14 @@ lastmod: "2025-06-13"
 {{< gist "aspose-com-gists" "0fbd18cd8c28d5ed12e19cd52634ebd4" "Example-InputZipDirectory.cs" >}}
 
 Спочатку ми створюємо потік, що містить ZIP-файл. Потім, після створення параметрів перетворення, ми встановлюємо параметр [InputWorkingDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/inputworkingdirectory/) як екземпляр класу [InputZipDirectory](https://reference.aspose.com/tex/net/aspose.tex.io/inputzipdirectory/). Другим аргументом конструктора є базовий шлях всередині архіву. Якщо ми хочемо, щоб весь архів був вхідним каталогом, ми повинні передати порожній рядок. 
+
+### Пошук вхідних файлів лише в робочих каталогах {#looking-for-input-files-only-in-the-working-directories}
+
+За замовчуванням, коли рушію TeX потрібен вхідний файл із відносним іменем, він спочатку шукає його в поточному каталозі процесу та в каталозі основного вхідного файлу. Лише після цього він шукає в [InputWorkingDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/inputworkingdirectory/), [RequiredInputDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/requiredinputdirectory/) та [OutputWorkingDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/outputworkingdirectory/). Це зручно для простих консольних застосунків, але означає також, що результат може залежати від того, де було запущено процес і які файли випадково там опинилися. Якщо ми хочемо, щоб вхідні дані бралися суворо з указаних нами каталогів, потрібно встановити параметр [SearchCurrentDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/searchcurrentdirectory/) у `false`:
+
+{{< gist "aspose-com-gists" "0fbd18cd8c28d5ed12e19cd52634ebd4" "Example-SearchCurrentDirectory.cs" >}}
+
+Файли з абсолютними іменами відкриваються безпосередньо незалежно від цього параметра. Той самий параметр є і для [відтворення формул і рисунків](https://reference.aspose.com/tex/net/aspose.tex.features/figurerendereroptions/searchcurrentdirectory/), і для [виправлення LaTeX](https://reference.aspose.com/tex/net/aspose.tex.features/latexrepaireroptions/searchcurrentdirectory/).
 
 ## Поняття про вхідний термінал
 

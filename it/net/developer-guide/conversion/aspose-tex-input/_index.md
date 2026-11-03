@@ -6,8 +6,8 @@ linktitle: Aspose.TeX's Input Interface
 weight: 15
 url: /net/aspose-tex-input/
 description: Funzionalità di conversione della soluzione API Aspose.TeX per .NET con Tex, come un formato di input viene spiegato qui con gli esempi di codice.
-keywords: input aspose tex, .net tex, directory di input, zip di input, console di input, opzioni tex, iinputworkingdirectory, inputzipdirectory, inputterminal, conversione tex
-lastmod: "2025-06-13"
+keywords: input aspose tex, .net tex, directory di input, zip di input, console di input, opzioni tex, iinputworkingdirectory, inputzipdirectory, inputterminal, conversione tex, searchcurrentdirectory
+lastmod: "2026-11-03"
 ---
 
 {{<section overview>}}
@@ -33,6 +33,14 @@ Possiamo anche mettere i file di input in un archivio ZIP e considerarlo una dir
 {{< gist "aspose-com-gists" "0fbd18cd8c28d5ed12e19cd52634ebd4" "Example-InputZipDirectory.cs" >}}
 
 Innanzitutto, creiamo il flusso contenente il file zip. Quindi, dopo aver creato le opzioni di conversione, impostiamo l'opzione [InputWorkingDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/inputworkingdirectory/) per essere un'istanza della classe [InputZipDirectory](https://reference.aspose.com/tex/net/aspose.tex.io/inputzipdirectory/). Il secondo argomento del costruttore è il percorso di base all'interno dell'archivio. Se vogliamo che l'intero archivio sia una directory di input, dovremmo passare la stringa vuota. 
+
+### Cercare i file di input solo nelle directory di lavoro {#looking-for-input-files-only-in-the-working-directories}
+
+Per impostazione predefinita, quando il motore TeX ha bisogno di un file di input con un nome relativo, lo cerca prima nella directory corrente del processo e nella directory del file di input principale. Solo dopo lo cerca in [InputWorkingDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/inputworkingdirectory/), [RequiredInputDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/requiredinputdirectory/) e [OutputWorkingDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/outputworkingdirectory/). Questo è comodo per le semplici applicazioni console, ma significa anche che il risultato può dipendere da dove è stato avviato il processo e da quali file vi si trovano per caso. Se vogliamo che l'input provenga esclusivamente dalle directory che abbiamo specificato, dobbiamo impostare l'opzione [SearchCurrentDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/searchcurrentdirectory/) su `false`:
+
+{{< gist "aspose-com-gists" "0fbd18cd8c28d5ed12e19cd52634ebd4" "Example-SearchCurrentDirectory.cs" >}}
+
+I file con nomi assoluti vengono aperti direttamente, indipendentemente da questa opzione. La stessa opzione è disponibile anche per il [rendering di formule e figure](https://reference.aspose.com/tex/net/aspose.tex.features/figurerendereroptions/searchcurrentdirectory/) e per la [riparazione di LaTeX](https://reference.aspose.com/tex/net/aspose.tex.features/latexrepaireroptions/searchcurrentdirectory/).
 
 ## Il concetto del terminale di input
 

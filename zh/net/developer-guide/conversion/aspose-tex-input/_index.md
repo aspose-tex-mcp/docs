@@ -6,8 +6,8 @@ linktitle: Aspose.TeX的输入接口
 weight: 15
 url: /net/aspose-tex-input/
 description: 这里解释了 Aspose.TeX API 解决方案在 .NET 中将 TeX 作为输入格式进行转换的功能，并附有代码示例。
-keywords: aspose.tex 输入、.net tex、输入目录、输入压缩包、输入控制台、tex 选项、输入工作目录、输入压缩目录、输入终端、tex 转换
-lastmod: "2026-02-25"
+keywords: aspose.tex 输入、.net tex、输入目录、输入压缩包、输入控制台、tex 选项、输入工作目录、输入压缩目录、输入终端、tex 转换, searchcurrentdirectory
+lastmod: "2026-11-03"
 aliases: 
 - /cpp/typesetting-tex-input/
 - /cpp/creating-custom-tex-format/
@@ -36,6 +36,14 @@ aliases:
 {{< gist "aspose-com-gists" "0fbd18cd8c28d5ed12e19cd52634ebd4" "Example-InputZipDirectory.cs" >}}
 
 首先，创建包含 ZIP 文件的流。随后，在创建转换选项后，我们将 [InputWorkingDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/inputworkingdirectory/) 选项设置为 [InputZipDirectory](https://reference.aspose.com/tex/net/aspose.tex.io/inputzipdirectory/) 类的实例。构造函数的第二个参数是存档内部的基路径。如果希望整个存档成为输入目录，则应传入空字符串。
+
+### 仅在工作目录中查找输入文件 {#looking-for-input-files-only-in-the-working-directories}
+
+默认情况下，当 TeX 引擎需要一个使用相对名称的输入文件时，它会先在进程的当前目录和主输入文件所在的目录中查找。之后才会在 [InputWorkingDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/inputworkingdirectory/)、[RequiredInputDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/requiredinputdirectory/) 和 [OutputWorkingDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/outputworkingdirectory/) 中查找。这对简单的控制台应用程序很方便，但也意味着结果可能取决于进程的启动位置以及那里碰巧存在哪些文件。如果希望输入严格来自我们指定的目录，应将 [SearchCurrentDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/searchcurrentdirectory/) 选项设置为 `false`：
+
+{{< gist "aspose-com-gists" "0fbd18cd8c28d5ed12e19cd52634ebd4" "Example-SearchCurrentDirectory.cs" >}}
+
+使用绝对名称的文件不受此选项影响，会被直接打开。同一选项也可用于[公式和图形渲染](https://reference.aspose.com/tex/net/aspose.tex.features/figurerendereroptions/searchcurrentdirectory/)以及 [LaTeX 修复](https://reference.aspose.com/tex/net/aspose.tex.features/latexrepaireroptions/searchcurrentdirectory/)。
 
 ## 输入终端的概念
 

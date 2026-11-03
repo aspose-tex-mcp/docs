@@ -6,8 +6,8 @@ linktitle: Die Eingabeschnittstelle von Aspose.TeX
 weight: 15
 url: /net/aspose-tex-input/
 description: Die Konvertierungsfunktionalität der Aspose.TeX-API-Lösung für .NET mit TeX als Eingabeformat wird hier anhand der Codebeispiele erläutert.
-keywords: Aspose Tex-Eingabe, .net Tex, Eingabeverzeichnis, Eingabe-Zip, Eingabekonsole, Tex-Optionen, iinputworkingdirectory, inputzipdirectory, inputterminal, Tex-Konvertierung
-lastmod: "2024-09-26"
+keywords: Aspose Tex-Eingabe, .net Tex, Eingabeverzeichnis, Eingabe-Zip, Eingabekonsole, Tex-Optionen, iinputworkingdirectory, inputzipdirectory, inputterminal, Tex-Konvertierung, searchcurrentdirectory
+lastmod: "2026-11-03"
 ---
 
 {{<section overview>}}
@@ -33,6 +33,14 @@ Wir können die Eingabedateien auch in ein ZIP-Archiv legen und es als Eingabeve
 {{< gist "aspose-com-gists" "0fbd18cd8c28d5ed12e19cd52634ebd4" "Example-InputZipDirectory.cs" >}}
 
 Zuerst erstellen wir den Stream, der die ZIP-Datei enthält. Nachdem wir die Konvertierungsoptionen erstellt haben, legen wir dann die Option [InputWorkingDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/inputworkingdirectory/) als Instanz der Klasse [InputZipDirectory](https://reference.aspose.com/tex/net/aspose.tex.io/inputzipdirectory/) fest. Das zweite Argument des Konstruktors ist der Basispfad innerhalb des Archivs. Wenn wir möchten, dass das gesamte Archiv ein Eingabeverzeichnis ist, sollten wir die leere Zeichenfolge übergeben. 
+
+### Eingabedateien nur in den Arbeitsverzeichnissen suchen {#looking-for-input-files-only-in-the-working-directories}
+
+Wenn die TeX-Engine eine Eingabedatei mit einem relativen Namen benötigt, sucht sie standardmäßig zuerst im aktuellen Verzeichnis des Prozesses und im Verzeichnis der Haupteingabedatei. Erst danach sucht sie in [InputWorkingDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/inputworkingdirectory/), [RequiredInputDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/requiredinputdirectory/) und [OutputWorkingDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/outputworkingdirectory/). Das ist für einfache Konsolenanwendungen praktisch, bedeutet aber auch, dass das Ergebnis davon abhängen kann, wo der Prozess gestartet wurde und welche Dateien dort zufällig liegen. Wenn die Eingabe ausschließlich aus den von uns angegebenen Verzeichnissen stammen soll, setzen wir die Option [SearchCurrentDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/searchcurrentdirectory/) auf `false`:
+
+{{< gist "aspose-com-gists" "0fbd18cd8c28d5ed12e19cd52634ebd4" "Example-SearchCurrentDirectory.cs" >}}
+
+Dateien mit absoluten Namen werden unabhängig von dieser Option direkt geöffnet. Dieselbe Option gibt es auch für das [Rendern von Formeln und Abbildungen](https://reference.aspose.com/tex/net/aspose.tex.features/figurerendereroptions/searchcurrentdirectory/) und für die [LaTeX-Reparatur](https://reference.aspose.com/tex/net/aspose.tex.features/latexrepaireroptions/searchcurrentdirectory/).
 
 ## Das Konzept des Eingabeterminals
 
