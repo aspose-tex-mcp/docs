@@ -10,7 +10,7 @@ aliases:
 - /net/latex-to-svg/
 keywords: latex to png, latex png, latex to image, latex image, latex to jpg, latex jpg, latex to jpeg, latex jpeg, latex to tiff, latex tiff, latex to bmp, latex bmp
 description: To convert TeX to image formats using Aspose.TeX API solution for .NET learn this article to see that describes how to do this and the code examples.
-lastmod: "2024-09-20"
+lastmod: "2026-11-02"
 ---
 
 {{<section overview>}}
@@ -64,7 +64,7 @@ The following C# snippet demonstrates another way to obtain the PNG output by wr
 
 {{< gist "aspose-com-gists" "507170b996a1d0c39bb4374e888b3205" "Example-ConvertLaTeXToPNG-Alternative.cs" >}}
 
-The *"page-n.png"* file(s) will be written to any path we specify. Unlike [PDF output](/tex/{{lang.url-fragment}}net/latex-to-pdf/#an-alternative-way-to-write-main-output-pdf-file), they will duplicate the output PNG files written to the output directory.
+The *"page-n.png"* file(s) will be written to any path we specify. Unlike [PDF output](/tex/{{lang.url-fragment}}net/latex-to-pdf/#an-alternative-way-to-write-the-main-output-pdf-file), they will duplicate the output PNG files written to the output directory.
 
 ## About input options
 
@@ -85,6 +85,10 @@ Below, we discuss the LaTeX conversion to other supported raster image formats w
 ## How to convert LaTeX to TIFF
 
 {{< gist "aspose-com-gists" "507170b996a1d0c39bb4374e888b3205" "Example-ConvertLaTeXToTIFF.cs" >}}
+
+{{% alert color="primary" %}}
+The `Aspose.TeX.Drawing` package cannot save multipage TIFF files yet: with `TiffSaveOptions.Multipage` set to `true`, the TIFF file contains only the first page. Set `Multipage` to `false` to get a separate TIFF image for each page. See [Linux, macOS and Docker](/tex/{{lang.url-fragment}}net/linux-and-containers/#known-limitations).
+{{% /alert %}}
 
 **You may also check out the free LaTeX-to-TIFF conversion [web app](https://products.aspose.app/tex/conversion/latex-to-tiff) built based on [Aspose.TeX for .NET API](https://products.aspose.com/tex/net/).**
 

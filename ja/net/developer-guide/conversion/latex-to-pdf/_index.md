@@ -49,7 +49,7 @@ Transcript written on hello-world.log.
 
 出力ディレクトリとして指定したフォルダー内に、エンジンの成果物としての他の「成果物」があります。それはトランスクリプトファイルと、**こちらです！** メインの出力 PDF ファイルです。
 
-## メイン出力 PDF ファイルを書き出す別の方法
+## メイン出力 PDF ファイルを書き出す別の方法 {#an-alternative-way-to-write-the-main-output-pdf-file}
 
 [PdfDevice](https://reference.aspose.com/tex/net/aspose.tex.presentation.pdf/pdfdevice/pdfdevice/) クラスの別のコンストラクタがあり、結果の PDF ファイルを別の方法で取得できます。
 

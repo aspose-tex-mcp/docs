@@ -6,7 +6,7 @@ linktitle: 常问问题
 weight: 80
 url: /net/faq/
 description: 获取有关Aspose.TeX的所有最常见问题的答案，这是用于排版和操纵Tex和乳胶的全面API。
-lastmod: "2026-04-22"
+lastmod: "2026-11-02"
 ---
 
 {{<section overview>}}
@@ -116,8 +116,13 @@ lastmod: "2026-04-22"
 
 **Q：Aspose.TeX API解决方案如何确保跨平台兼容性？**
 
-**A:** Aspose.TeX API解决方案设计为无独立的平台，使开发人员能够构建在不同操作系统和环境之间持续工作的功能。 
+**A:** Aspose.TeX API解决方案设计为无独立的平台，使开发人员能够构建在不同操作系统和环境之间持续工作的功能。在 Windows 上，可以使用 NuGet 包 `Aspose.TeX` 或 `Aspose.TeX.Drawing`。在 Linux、macOS 和 Docker 容器中，请使用不依赖 `System.Drawing.Common` 的 `Aspose.TeX.Drawing`。请参阅 [Linux、macOS 和 Docker](/tex/{{lang.url-fragment}}net/linux-and-containers/)。
 <br> <br>
+
+**Q：为什么会出现“PlatformNotSupportedException: System.Drawing.Common is not supported on this platform”错误？**
+
+**A:** 应用程序在 Linux 或 macOS 上使用了 `Aspose.TeX` 包。该包依赖 `System.Drawing.Common`，而从 .NET 6 开始，Microsoft 仅在 Windows 上支持它。请将其替换为 API 相同的 `Aspose.TeX.Drawing` 包。有关详细信息，请参阅 [Linux、macOS 和 Docker](/tex/{{lang.url-fragment}}net/linux-and-containers/)。
+<br><br>
 
 **Q：我在哪里可以看到在Web应用程序中实现的此API解决方案的功能？**
 

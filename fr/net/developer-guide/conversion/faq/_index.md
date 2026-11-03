@@ -6,126 +6,115 @@ linktitle: FAQ
 type: docs
 weight: 90
 url: /net/conversion/faq/
-description: Questions fréquemment posées sur Aspose.TeX pour .NET couvrant les formats pris en charge, les exemples de conversion, les licences, le traitement par lots, les options d'image, etc.
-keywords: Aspose.TeX, .NET, FAQ, conversion LaTeX, PDF, Word, HTML, exportation d'images, licences, conversion par lots, API, documentation
-lastmod: "2026-04-22"
+description: Questions fréquentes sur la conversion de fichiers TeX et LaTeX avec Aspose.TeX pour .NET, notamment les formats pris en charge, le code de conversion, la sortie vers des flux, les options d'image, les packages, le mode d'évaluation et la configuration requise.
+keywords: Aspose.TeX, .NET, FAQ, conversion LaTeX, LaTeX en PDF, LaTeX en XPS, LaTeX en SVG, LaTeX en PNG, TeXJob, licence, Linux
+lastmod: "2026-11-02"
 ---
 
 {{<section overview>}}
 
 <br><br>
 
-**Q : Quels formats de source et de sortie Aspose.TeX pour .NET prend-il en charge ?**  
+**Q : Quels formats d'entrée et de sortie Aspose.TeX pour .NET prend-il en charge ?**
 
-**R :** Aspose.TeX peut lire les fichiers sources LaTeX (`*.tex`), les extraits de texte LaTeX en texte brut et les mathématiques en ligne (`$$…$$`, `\(...\)`, `\[…\]`). Il peut générer des fichiers au format PDF, XPS, SVG, PNG, JPEG, BMP, TIFF, DOCX, ODT, HTML‑5 (avec CSS) et EPUB (via PDF → EPUB).  
+**R :** Aspose.TeX compose des documents TeX et LaTeX. Le fichier d'entrée principal peut provenir d'un fichier, d'un flux ou d'un terminal ; les fichiers qu'il inclut peuvent provenir d'un dossier ou d'une archive ZIP. Des API distinctes effectuent le rendu d'une seule formule mathématique LaTeX ou d'un fragment LaTeX. Les formats de sortie sont PDF, XPS, SVG, PNG, JPEG, BMP et TIFF. Voir [Formats de fichiers pris en charge](/tex/{{lang.url-fragment}}net/supported-file-formats/).
 <br><br>
 
-**Q : Comment convertir un fichier `.tex` en PDF en C# ?**  
+**Q : Aspose.TeX peut-il convertir du LaTeX en Word (DOCX) ou en HTML ?**
 
-**R :** 
-```csharp
-using Aspose.TeX;
-
-// Load LaTeX source
-var tex = new TexDocument(@"C:\Input\sample.tex");
-
-// Convert to PDF
-using (var pdf = tex.ToPdf())
-{
-    pdf.Save(@"C:\Output\sample.pdf");
-}
-```  
+**R :** Non. Aspose.TeX produit uniquement du PDF, du XPS, du SVG et des images raster. Si vous avez besoin d'un autre format, convertissez la sortie PDF avec une bibliothèque qui le prend en charge.
 <br><br>
 
-**Q : Puis-je convertir directement LaTeX en Word (DOC/DOCX) ou HTML ?**  
+**Q : Comment convertir un fichier LaTeX en PDF en C# ?**
 
-**R :** Oui. Utilisez `TexDocument.ToWord()` pour DOC/DOCX et `TexDocument.ToHtml()` pour une sortie HTML‑5 propre (les styles sont intégrés par défaut).  
+**R :** Créez `TeXOptions` pour le format ObjectLaTeX, définissez le répertoire de sortie et `PdfSaveOptions`, puis exécutez un `TeXJob` avec un `PdfDevice` :
+
+{{< gist "aspose-com-gists" "507170b996a1d0c39bb4374e888b3205" "Example-ConvertLaTeXToPDF-Simplest.cs" >}}
+
+Le résultat est écrit dans le répertoire de travail de sortie sous le nom de la tâche. Voir [LaTeX en PDF](/tex/{{lang.url-fragment}}net/latex-to-pdf/).
 <br><br>
 
-**Q : Les équations mathématiques sont-elles rendues avec précision ?**  
+**Q : Comment choisir le format de sortie ?**
 
-**R :** L'analyseur mathématique LaTeX intégré restitue les équations sous forme de graphiques vectoriels de haute qualité au format PDF/SVG ou sous forme de bitmaps anticrénelés au format PNG/JPEG. Une prise en charge complète est fournie pour les environnements complexes tels que « align », « eqnarray », « amsmath » et « tikz ».  
+**R :** Définissez `TeXOptions.SaveOptions` et transmettez le périphérique correspondant à `TeXJob` :
+
+| Format | Options d'enregistrement | Périphérique |
+|---|---|---|
+| PDF | `PdfSaveOptions` | `PdfDevice` |
+| XPS | `XpsSaveOptions` | `XpsDevice` |
+| SVG | `SvgSaveOptions` | `SvgDevice` |
+| PNG, JPEG, BMP, TIFF | `PngSaveOptions`, `JpegSaveOptions`, `BmpSaveOptions`, `TiffSaveOptions` | `ImageDevice` |
+
+Voir [LaTeX vers XPS](/tex/{{lang.url-fragment}}net/latex-to-xps/) et [LaTeX en image](/tex/{{lang.url-fragment}}net/latex-to-image/).
 <br><br>
 
-**Q : Ai-je besoin d'une installation LaTeX (par exemple, MiKTeX) sur le serveur ?**  
+**Q : Puis-je obtenir le résultat en mémoire plutôt que dans un fichier ?**
 
-**R :** Non. Aspose.TeX est une bibliothèque .NET entièrement autonome et ne nécessite aucune distribution TeX externe.  
+**R :** Oui. `PdfDevice` et `XpsDevice` ont des constructeurs qui acceptent un `Stream` dans lequel le document est écrit. `ImageDevice` conserve les pages rendues dans sa propriété `Result` sous forme de tableau de tableaux d'octets, un par page. Pour lire l'entrée principale depuis un flux, transmettez le flux au constructeur de `TeXJob`. Voir [LaTeX en PDF](/tex/{{lang.url-fragment}}net/latex-to-pdf/#an-alternative-way-to-write-the-main-output-pdf-file) et [Autres façons de fournir le fichier d'entrée TeX principal](/tex/{{lang.url-fragment}}net/other-ways-of-main-input/).
 <br><br>
 
-**Q : Quelles sont les exigences d'exécution ?**  
+**Q : Comment contrôler la résolution et la qualité des images ?**
 
-**R :** 
+**R :** Utilisez les propriétés des options d'enregistrement d'images :
 
-• .NET Framework 4.6 ou version ultérieure **ou** .NET Core 2.1+/.NET 5+.
-• Windows x64/x86, Linux (glibc 2.12+), macOS (Catalyst).
-• Aucun binaire natif supplémentaire n'est nécessaire.  
+- `Resolution` — résolution de l'image en DPI.
+- `SmoothingMode` et `InterpolationMode` — qualité du rendu.
+- `TiffSaveOptions.Compression` et `TiffSaveOptions.Multipage` — compression TIFF et enregistrement de toutes les pages dans un seul fichier (le TIFF multipage n'est pas encore pris en charge par le package `Aspose.TeX.Drawing`).
+
+Par exemple, `new PngSaveOptions { Resolution = 300 }` produit des images PNG à 300 DPI. Voir [LaTeX en image](/tex/{{lang.url-fragment}}net/latex-to-image/).
 <br><br>
 
-**Q : Comment puis-je contrôler la résolution et la qualité de la sortie de l'image ?**  
+**Q : Comment savoir si la conversion a réussi ?**
 
-**R :** 
-```csharp
-var opts = new ImageSaveOptions
-{
-    Resolution = 300,   // DPI
-    Quality = 95        // JPEG quality (0‑100)
-};
-var img = tex.ToPng(opts);
-img.Save(@"C:\Output\sample.png");
-```  
+**R :** `TeXJob.Run()` renvoie une valeur `TeXJobResult` : `Spotless`, `WarningIssued`, `ErrorMessageIssued` ou `FatalErrorStop`. Les détails sont écrits dans le fichier de transcription (`.log`) du répertoire de sortie et dans le terminal de sortie. Voir [Interface de sortie d'Aspose.TeX](/tex/{{lang.url-fragment}}net/aspose-tex-output/).
 <br><br>
 
-**Q : Existe-t-il une version d'essai ou d'évaluation gratuite ?**  
+**Q : Ai-je besoin d'une installation LaTeX (par exemple MiKTeX) sur le serveur ?**
 
-**R :** Une DLL d'évaluation de 30 jours est disponible sur le site Web Aspose. Il inclut l'ensemble complet des fonctionnalités mais limite chaque conversion à 500 Ko d'entrée. Aucune clé de licence n'est requise pour la version d'essai.  
+**R :** Non. Aspose.TeX est une bibliothèque .NET autonome dotée de son propre moteur TeX, de son format LaTeX et de ses polices. Elle ne nécessite aucune distribution TeX externe.
 <br><br>
 
-**Q : Comment les licences sont-elles gérées dans le code ?**  
+**Q : Quels packages LaTeX puis-je utiliser ?**
 
-**R :** 
+**R :** Aspose.TeX inclut un ensemble de packages LaTeX intégrés ; voir [Packages LaTeX intégrés](/tex/{{lang.url-fragment}}net/embedded-packages/). Pour utiliser d'autres packages, placez leurs fichiers dans un dossier ou une archive ZIP et indiquez-le dans `TeXOptions.RequiredInputDirectory` ; voir [Packages LaTeX externes](/tex/{{lang.url-fragment}}net/external-latex-packages/).
+<br><br>
+
+**Q : Puis-je effectuer le rendu d'une seule formule ou d'un fragment LaTeX au lieu d'un document entier ?**
+
+**R :** Oui. Utilisez `PngMathRenderer` ou `SvgMathRenderer` pour les formules mathématiques et `PngFigureRenderer` ou `SvgFigureRenderer` pour les fragments LaTeX arbitraires. Ils renvoient la taille de l'image rendue. Voir [Rendu des formules mathématiques LaTeX](/tex/{{lang.url-fragment}}net/latex-math-formula-rendering/) et [Rendu des figures LaTeX](/tex/{{lang.url-fragment}}net/latex-figure-rendering/).
+<br><br>
+
+**Q : Quelle est la configuration requise pour l'exécution ?**
+
+**R :**
+
+- Package `Aspose.TeX` : Windows (x64/x86) ; .NET Framework 4.0 ou ultérieur, .NET Standard 2.0, .NET 6 ou ultérieur.
+- Package `Aspose.TeX.Drawing` : Windows, Linux et macOS (x64/Arm64) ; .NET Framework 4.7.2 ou ultérieur, .NET 7 ou ultérieur.
+- Aucune bibliothèque native supplémentaire n'est nécessaire. Sous Linux, la sortie XPS et SVG nécessite ICU. Voir [Configuration système requise](/tex/{{lang.url-fragment}}net/system-requirements/) et [Linux, macOS et Docker](/tex/{{lang.url-fragment}}net/linux-and-containers/).
+<br><br>
+
+**Q : Quelles sont les limitations de la version d'évaluation ?**
+
+**R :** Sans licence, Aspose.TeX fonctionne en mode d'évaluation : il produit au maximum quatre pages d'un document, et ces pages portent un filigrane d'évaluation. La version d'évaluation est le même package ; pour l'évaluer sans limitations, demandez une [licence temporaire de 30 jours](https://purchase.aspose.com/temporary-license/). Voir [Licence](/tex/{{lang.url-fragment}}net/licensing/).
+<br><br>
+
+**Q : Comment appliquer une licence dans le code ?**
+
+**R :** Appliquez la licence une seule fois, avant la première conversion :
+
 ```csharp
 Aspose.TeX.License license = new Aspose.TeX.License();
 license.SetLicense(@"C:\License\Aspose.TeX.lic");
-```  
+```
+
+Vous pouvez aussi charger la licence depuis un flux ou utiliser une licence au compteur (metered). Voir [Licence](/tex/{{lang.url-fragment}}net/licensing/). Pour les tarifs, consultez la [page des tarifs d'Aspose.TeX](https://purchase.aspose.com/pricing/tex/).
 <br><br>
 
-**Q : Puis-je effectuer des conversions par lots (plusieurs fichiers `.tex`) efficacement ?** 
+**Q : Où trouver la documentation de l'API, des exemples et de l'assistance ?**
 
-**R :** Oui. Créez un « TexDocument » par fichier ou réutilisez une seule instance pour plusieurs fragments. La bibliothèque est thread-safe pour les opérations en lecture seule, vous pouvez donc paralléliser le travail avec « Parallel.ForEach ».  
-<br><br>
+**R :**
 
-**Q : Puis-je bénéficier d'une assistance pour les packages personnalisés ou les macros définies par l'utilisateur ?**  
-
-**R :** La prise en charge principale inclut les packages courants tels que `amsmath`, `amssymb`, `graphicx`, `hyperref`, `tikz`, etc. Pour les packages non pris en charge, vous pouvez prétraiter LaTeX vous-même ou utiliser l'API `ExternalPackageResolver` pour charger des fichiers `.sty` personnalisés au moment de l'exécution.  
-<br><br>
-
-**Q : Comment ajouter des filigranes ou des numéros de page au PDF généré ?**  
-
-**R :** Après la conversion, vous pouvez traiter le résultat comme un `Aspose.Pdf.PdfDocument`. Exemple :  
-```csharp
-var pdf = tex.ToPdf();
-pdf.AddWatermarkText("Confidential");
-pdf.AddPageNumbers();
-pdf.Save(@"C:\Output\sample.pdf");
-```  
-Les deux bibliothèques Aspose partagent la même hiérarchie d'espaces de noms, ce qui rend l'interopérabilité transparente.  
-<br><br>
-
-**Q : Quel est le modèle de tarification ?**  
-
-**R :** 
-
-• Développeur Petite Entreprise : 999 $/an (jusqu'à 5 développeurs).  
-• Développeur OEM : licence perpétuelle à partir de 3 499 $/an (inclut le code source).
-
-Des remises sur volume et des licences de site sont disponibles sur demande.  
-<br><br>
-
-**Q : Où puis-je trouver une documentation détaillée et des exemples sur l'API ?**  
-<br>
-**R :** 
-
-• [Documents officiels](https://docs.aspose.com/tex/net/)
-• [Exemples GitHub](https://github.com/aspose-tex/Aspose.TeX-net) 
-• [Forum communautaire](https://forum.aspose.com/c/tex/31)  
+- [Guide du développeur](https://docs.aspose.com/tex/net/)
+- [Référence de l'API](https://reference.aspose.com/tex/net/)
+- [Forum de la communauté](https://forum.aspose.com/c/tex/)
 <br><br>

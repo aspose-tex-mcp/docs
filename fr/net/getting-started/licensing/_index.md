@@ -6,7 +6,7 @@ title: Licences | Aspose.TeX pour .NET
 weight: 70
 url: /net/licensing/
 description: Lorsque vous vous êtes arrêté sur la version sous licence de la solution API Aspose.TeX pour .NET, vous découvrez ici comment appliquer la licence.
-lastmod: "2026-04-22"
+lastmod: "2026-11-02"
 ---
 
 {{<section overview>}}
@@ -18,6 +18,8 @@ Vous pouvez facilement télécharger le produit Aspose.TeX pour .NET à des fins
 ### Limites de la version d'évaluation
 
 La version d'évaluation d'Aspose.TeX (sans licence spécifiée) fournit toutes les fonctionnalités du produit, sauf que seules quatre premières pages peuvent être obtenues dans le document de sortie. De plus, ces pages seront estampillées d’un filigrane en mode évaluation.
+
+Si vous utilisez le package `Aspose.TeX.Drawing`, la sortie raster (PNG, JPEG, BMP, TIFF) en mode d'évaluation porte également un filigrane « Evaluation only Aspose.Drawing » du moteur graphique intégré. La licence Aspose.TeX supprime les deux filigranes ; aucune licence Aspose.Drawing distincte n'est nécessaire. Voir [Linux, macOS et Docker](/tex/{{lang.url-fragment}}net/linux-and-containers/#licensing).
 
 Si vous souhaitez essayer Aspose.TeX sans limitations d'évaluation, demandez une licence temporaire de 30 jours. Veuillez vous référer à [Comment obtenir une licence temporaire ?](https://purchase.aspose.com/temporary-license/) pour plus d'informations.
 

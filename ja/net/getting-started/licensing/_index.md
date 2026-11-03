@@ -6,7 +6,7 @@ title: ライセンス| .NETのAspose.TeX
 weight: 70
 url: /net/licensing/
 description: ライセンスバージョンのAspose.TeX APIソリューションの.NETで停止した場合、ここでライセンスの適用方法を見つけます。
-lastmod: "2026-04-22"
+lastmod: "2026-11-02"
 ---
 
 {{<section overview>}}
@@ -18,6 +18,8 @@ Aspose.TeX for .NET 製品は、評価目的で簡単にダウンロードでき
 ### 評価バージョンの制限
 
 Aspose.TeXの評価バージョン(ライセンスを指定しない)は、出力ドキュメントで最大4つの最初のページのみを取得できることを除いて、完全な製品機能を提供します。また、これらのページには、評価モードの透かしが刻印されます。
+
+`Aspose.TeX.Drawing` パッケージを使用する場合、評価モードのラスター出力 (PNG、JPEG、BMP、TIFF) には、組み込みのグラフィックス バックエンドによる「Evaluation only Aspose.Drawing」という透かしも入ります。Aspose.TeX のライセンスを適用すると両方の透かしが消えます。Aspose.Drawing のライセンスを別途用意する必要はありません。[Linux、macOS、Docker](/tex/{{lang.url-fragment}}net/linux-and-containers/#licensing)を参照してください。
 
 評価の制限なしにAspose.TeXを試してみたい場合は、30日間の一時ライセンスを要求します。詳細については、[一時ライセンスの取得方法？](https://purchase.aspose.com/temporary-license/)を参照してください。
 

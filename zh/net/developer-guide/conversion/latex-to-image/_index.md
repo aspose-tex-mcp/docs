@@ -10,7 +10,7 @@ aliases:
 - /net/latex-to-svg/
 keywords: latex to png, latex png, latex to image, latex image, latex to jpg, latex jpg, latex to jpeg, latex jpeg, latex to tiff, latex tiff, latex to bmp, latex bmp
 description: 通过 Aspose.TeX API 将 TeX 转换为图像格式（适用于 .NET）的解决方案，请阅读本文了解如何操作以及代码示例。
-lastmod: "2026-04-22"
+lastmod: "2026-11-02"
 ---
 
 {{<section overview>}}
@@ -63,7 +63,7 @@ Transcript written on hello-world.log.
 
 {{< gist "aspose-com-gists" "507170b996a1d0c39bb4374e888b3205" "Example-ConvertLaTeXToPNG-Alternative.cs" >}}
 
-*"page-n.png"* 文件将写入我们指定的任何路径。与 [PDF 输出](/tex/{{lang.url-fragment}}net/latex-to-pdf/#an-alternative-way-to-write-main-output-pdf-file) 不同，它们会复制写入输出目录的 PNG 文件。
+*"page-n.png"* 文件将写入我们指定的任何路径。与 [PDF 输出](/tex/{{lang.url-fragment}}net/latex-to-pdf/#an-alternative-way-to-write-the-main-output-pdf-file) 不同，它们会复制写入输出目录的 PNG 文件。
 
 ## 关于输入选项
 
@@ -84,6 +84,10 @@ Transcript written on hello-world.log.
 ## 如何将 LaTeX 转换为 TIFF
 
 {{< gist "aspose-com-gists" "507170b996a1d0c39bb4374e888b3205" "Example-ConvertLaTeXToTIFF.cs" >}}
+
+{{% alert color="primary" %}}
+`Aspose.TeX.Drawing` 包目前还无法保存多页 TIFF 文件：当 `TiffSaveOptions.Multipage` 设置为 `true` 时，TIFF 文件只包含第一页。将 `Multipage` 设置为 `false`，即可为每一页获取单独的 TIFF 图像。请参阅 [Linux、macOS 和 Docker](/tex/{{lang.url-fragment}}net/linux-and-containers/#known-limitations)。
+{{% /alert %}}
 
 **您还可以查看基于 [Aspose.TeX for .NET API](https://products.aspose.com/tex/net/) 构建的免费 LaTeX 转 TIFF 转换 [网络应用](https://products.aspose.app/tex/conversion/latex-to-tiff)。**
 

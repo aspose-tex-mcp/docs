@@ -5,55 +5,51 @@ title: システム要件| .NETのAspose.TeX
 linktitle: システム要件
 weight: 50
 url: /net/system-requirements/
-description: .NET用のAspose.TeXソリューションは、.NETをサポートする任意の開発環境で使用できますが、いくつかの環境が明示的にサポートされています。
-lastmod: "2026-04-22"
+description: NuGet パッケージ Aspose.TeX と Aspose.TeX.Drawing がサポートするオペレーティング システム、.NET のバージョン、開発環境。
+lastmod: "2026-11-02"
 ---
 
 {{<section overview>}}
 
-## サポートされているオペレーティングシステム
+Aspose.TeX for .NET は、API が同じ 2 つの NuGet パッケージとして提供されています。使用するグラフィックス バックエンドが異なるため、システム要件も異なります。
 
-### Windows
+| | `Aspose.TeX` | `Aspose.TeX.Drawing` |
+|---|---|---|
+| グラフィックス バックエンド | `System.Drawing.Common` (GDI+) | Aspose.Drawing (パッケージに組み込み) |
+| オペレーティング システム | Windows | Windows、Linux、macOS |
+| パッケージのターゲット フレームワーク | .NET Framework 4.0、.NET Standard 2.0、.NET 6.0、.NET 7.0 | .NET Standard 2.0、.NET 7.0 |
 
-* Microsoft Windows 2003 Server ( x64, x86)
-* Microsoft Windows 2008 Server ( x64, x86)
-* Microsoft Windows 2012 Server ( x64, x86)
-* Microsoft Windows XP ( x64, x86)
-* Microsoft Windows Vista ( x64, x86)
-* Microsoft Windows 7 ( x64, x86)
-* Microsoft Windows 8, 8.1 ( x64, x86)
-* Microsoft Windows 10 ( x64, x86)
-* Windows Azure
+## サポートされているオペレーティング システム
+
+### Aspose.TeX
+
+* Microsoft Windows のデスクトップ エディションとサーバー エディション (x64、x86)
+* Microsoft Azure (Windows ベースのサービス)
+
+.NET 6 以降、Microsoft は、このパッケージが依存する `System.Drawing.Common` を Windows でのみサポートしています。
+
+### Aspose.TeX.Drawing
+
+* Microsoft Windows のデスクトップ エディションとサーバー エディション (x64、x86)
+* Linux (x64、Arm64)、Docker コンテナーを含む
+* macOS
+
+`libgdiplus` や `fontconfig` などのネイティブ ライブラリやインストール済みフォントは必要ありません。Linux では、XPS と SVG の出力に ICU が必要ですが、一部のコンテナー イメージには含まれていません。[Linux、macOS、Docker](/tex/{{lang.url-fragment}}net/linux-and-containers/)を参照してください。
+
+## サポートされている .NET のバージョン
+
+### Aspose.TeX
+
+* .NET Framework 4.0 以降
+* .NET 6 以降
+* .NET Standard 2.0 のその他の実装 (.NET Core 2.0 以降など)
+
+### Aspose.TeX.Drawing
+
+* .NET 7 以降 (.NET 8、.NET 9、.NET 10 を含む)
+* .NET Framework 4.7.2 以降 (.NET Standard 2.0 経由)
+* .NET Standard 2.0 のその他の実装 (.NET Core 2.0 以降など)
 
 ## 開発環境
 
-.NETのAspose.TeXを使用して、.NETプラットフォームをターゲットにする任意の開発環境でアプリケーションを開発できますが、次の環境は明示的にサポートされています。
-
-* Microsoft Visual Studio 2010
-* Microsoft Visual Studio 2011
-* Microsoft Visual Studio 2012
-* Microsoft Visual Studio 2013
-* Microsoft Visual Studio 2015
-* Microsoft Visual Studio 2017
-* Microsoft Visual Studio 2019
-
-## サポートされている.NETフレームワークバージョン
-
-次の.NETフレームワークバージョンがサポートされています。
-
-* .NETフレームワーク2.0
-* .NETフレームワーク3.5
-* .NETフレームワーク3.5_ClientProfile
-* .NETフレームワーク4.0
-* .NETフレームワーク4.0_ClientProfile
-* .NETフレームワーク4.5.0
-* .NETフレームワーク4.5.1
-* .NETフレームワーク4.5.2
-* .NETフレームワーク4.6.0
-* .NETフレームワーク4.6.2
-* .NETフレームワーク4.7.0
-* .NETフレームワーク4.7.1
-* .NETフレームワーク4.7.2
-* .NETフレームワーク4.8
-* .NET標準2.0
-* .NET標準2.1
+Aspose.TeX for .NET は、Microsoft Visual Studio、Visual Studio Code、JetBrains Rider など、.NET プラットフォームを対象とする任意の開発環境で使用できます。.NET CLI でも使用できます。

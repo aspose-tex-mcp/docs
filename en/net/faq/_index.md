@@ -6,7 +6,7 @@ linktitle: FAQ
 weight: 80
 url: /net/faq/
 description:  Get answers to all the most frequent questions about Aspose.TeX for .NET, which is a comprehensive API for typesetting and manipulating TeX and LaTeX.
-lastmod: "2026-04-22"
+lastmod: "2026-11-02"
 ---
 
 {{<section overview>}}
@@ -116,7 +116,12 @@ If you want to try Aspose.TeX out without evaluation limitations, request a 30-d
 
 **Q: How does Aspose.TeX API Solution ensure cross-platform compatibility?**
 
-**A:** Aspose.TeX API Solution is designed to be platform-independent, allowing developers to build functionalities that work consistently across different operating systems and environments. 
+**A:** Aspose.TeX API Solution is designed to be platform-independent, allowing developers to build functionalities that work consistently across different operating systems and environments. On Windows, you can use either the `Aspose.TeX` or the `Aspose.TeX.Drawing` NuGet package. On Linux, macOS and in Docker containers, use `Aspose.TeX.Drawing`, which does not depend on `System.Drawing.Common`. See [Linux, macOS and Docker](/tex/{{lang.url-fragment}}net/linux-and-containers/).
+<br><br>
+
+**Q: Why do I get "PlatformNotSupportedException: System.Drawing.Common is not supported on this platform"?**
+
+**A:** Your application uses the `Aspose.TeX` package on Linux or macOS. This package depends on `System.Drawing.Common`, which Microsoft supports only on Windows starting with .NET 6. Replace it with the `Aspose.TeX.Drawing` package, which has the same API. See [Linux, macOS and Docker](/tex/{{lang.url-fragment}}net/linux-and-containers/) for details.
 <br><br>
 
 **Q: Where can I see the functionality of this API Solution implemented in web applications?**

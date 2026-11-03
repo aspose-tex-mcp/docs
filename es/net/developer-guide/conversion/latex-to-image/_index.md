@@ -7,7 +7,7 @@ weight: 10
 url: /net/latex-to-image/
 keywords: LaTeX a png, LaTeX png, LaTeX a imagen, imagen de LaTeX, LaTeX a jpg, LaTeX jpg, LaTeX a jpeg, LaTeX jpeg, LaTeX a tiff, LaTeX tiff, LaTeX a bmp, LaTeX bmp
 description: Para convertir TeX a formatos de imagen usando la Aspose.TeX para .NET, lea este artículo para ver que describe cómo hacer esto y los ejemplos de código.
-lastmod: "2026-04-22"
+lastmod: "2026-11-02"
 ---
 
 {{<section overview>}}
@@ -60,7 +60,7 @@ El siguiente fragmento de C# muestra otra forma de obtener la salida PNG: escrib
 
 {{< gist "aspose-com-gists" "507170b996a1d0c39bb4374e888b3205" "Example-ConvertLaTeXToPNG-Alternative.cs" >}}
 
-Los archivos *"page-n.png"* se escribirán en cualquier ruta que especifiquemos. A diferencia de [Salida PDF](/tex/{{lang.url-fragment}}net/latex-to-pdf/#an-alternative-way-to-write-main-output-pdf-file), duplicarán los archivos PNG de salida escritos en el directorio de salida.
+Los archivos *"page-n.png"* se escribirán en cualquier ruta que especifiquemos. A diferencia de [Salida PDF](/tex/{{lang.url-fragment}}net/latex-to-pdf/#an-alternative-way-to-write-the-main-output-pdf-file), duplicarán los archivos PNG de salida escritos en el directorio de salida.
 
 ## Acerca de las opciones de entrada
 
@@ -81,6 +81,10 @@ A continuación, analizamos la conversión de LaTeX a otros formatos de imágene
 ## Cómo convertir LaTeX a TIFF
 
 {{< gist "aspose-com-gists" "507170b996a1d0c39bb4374e888b3205" "Example-ConvertLaTeXToTIFF.cs" >}}
+
+{{% alert color="primary" %}}
+El paquete `Aspose.TeX.Drawing` todavía no puede guardar archivos TIFF de varias páginas: con `TiffSaveOptions.Multipage` establecido en `true`, el archivo TIFF contiene solo la primera página. Establezca `Multipage` en `false` para obtener una imagen TIFF independiente por página. Consulte [Linux, macOS y Docker](/tex/{{lang.url-fragment}}net/linux-and-containers/#known-limitations).
+{{% /alert %}}
 
 **También puede consultar la [aplicación web](https://products.aspose.app/tex/conversion/latex-to-tiff) gratuita de conversión de LaTeX a TIFF creada en base a [Aspose.TeX para .NET API](https://products.aspose.com/tex/net/).**
 

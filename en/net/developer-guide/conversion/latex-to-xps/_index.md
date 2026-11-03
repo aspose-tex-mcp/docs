@@ -8,7 +8,7 @@ url: /net/latex-to-xps/
 aliases: /net/other-target-formats/
 description: Conversion functionality of Aspose.TeX API solution for .NET lets convert LaTeX files to XPS format. Here are some code examples.
 keywords: latex to xps, aspose tex, .net conversion, xps format, tex to xps, document conversion, aspose page, xpsdevice, xpssaveoptions, c# example
-lastmod: "2026-04-03"
+lastmod: "2026-11-02"
 ---
 
 {{<section overview>}}
@@ -26,10 +26,10 @@ The LaTeX to XPS conversion is just as simple as the [conversion to raster image
 
 The example below shows how to convert a LaTeX file to XPS in a few steps:
 
-1. Create a `TexDocument` instance.
-2. Load the source `.tex` file using `TexDocument.Load`.
-3. (Optional) Configure `XpsSaveOptions` such as compression settings.
-4. Save the document to XPS by calling `document.Save` with an `XpsDevice`.
+1. Create `TeXOptions` for the ObjectLaTeX format with `TeXOptions.ConsoleAppOptions(TeXConfig.ObjectLaTeX)`.
+2. Specify the output working directory, for example, an `OutputFileSystemDirectory`.
+3. Set `SaveOptions` to an `XpsSaveOptions` instance.
+4. Run a `TeXJob` for the source `.tex` file with an `XpsDevice`. The XPS file is written to the output working directory.
 
 This code demonstrates the most direct way to produce an XPS file from LaTeX.
 
@@ -43,15 +43,14 @@ There's another constructor of the [XpsDevice](https://reference.aspose.com/tex/
 
 This snippet demonstrates using the `XpsDevice` constructor that accepts a `Stream`. The steps are:
 
-1. Create a `TexDocument` and load the LaTeX source.
-2. Create a `MemoryStream` to hold the XPS output.
-3. Instantiate `XpsDevice` with the stream.
-4. Save the document to the device, then you can use the stream (e.g., send it over a network or store it in a database).
+1. Open the stream to write the XPS document to (here, a file stream; a `MemoryStream` works the same way).
+2. Create `TeXOptions`, specify the output working directory and set `SaveOptions` to an `XpsSaveOptions` instance, as in the previous example.
+3. Run a `TeXJob` with an `XpsDevice` created with the stream. The XPS document is written to the stream; other output files, such as the transcript, still go to the output working directory.
 
-This approach is useful when you need the XPS data in memory rather than as a file on disk.
+This approach is useful when you need to write the XPS document to a stream of your choice, for example, to keep it in memory or send it over a network.
 
 {{< gist "aspose-com-gists" "507170b996a1d0c39bb4374e888b3205" "Example-ConvertLaTeXToXPS-Alternative.cs" >}}
 
-The effect is the same as we get [here](/tex/{{lang.url-fragment}}net/latex-to-pdf/#an-alternative-way-to-write-main-output-pdf-file).
+The effect is the same as we get [here](/tex/{{lang.url-fragment}}net/latex-to-pdf/#an-alternative-way-to-write-the-main-output-pdf-file).
 
 **You may also check out the free LaTeX-to-XPS conversion [web app](https://products.aspose.app/tex/conversion/latex-to-xps) built based on [Aspose.TeX for .NET API](https://products.aspose.com/tex/net/).**

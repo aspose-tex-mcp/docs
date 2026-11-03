@@ -8,7 +8,7 @@ url: /net/latex-to-xps/
 aliases: /net/other-target-formats/
 description: Aspose.TeX API ソリューション for .NET の変換機能を使用すると、LaTeX ファイルを XPS 形式に変換できます。以下にコード例を示します。
 keywords: LaTeXからXPS、Aspose Tex、.NET変換、XPS形式、TexからXPS、ドキュメント変換、Aspose Page、XPSデバイス、XPS保存オプション、C#の例
-lastmod: "2026-04-22"
+lastmod: "2026-11-02"
 ---
 
 {{<section overview>}}
@@ -25,10 +25,10 @@ LaTeX から XPS への変換は、[ラスタ画像形式への変換](/tex/{{la
 
 以下の例は、数ステップで LaTeX ファイルを XPS に変換する方法を示しています。
 
-1. `TexDocument` インスタンスを作成します。  
-2. `TexDocument.Load` を使用してソース `.tex` ファイルをロードします。  
-3. （オプション）圧縮設定などの `XpsSaveOptions` を構成します。  
-4. `document.Save` に `XpsDevice` を渡してドキュメントを XPS に保存します。
+1. `TeXOptions.ConsoleAppOptions(TeXConfig.ObjectLaTeX)` を使用して、ObjectLaTeX 形式の `TeXOptions` を作成します。
+2. 出力作業ディレクトリ (`OutputFileSystemDirectory` など) を指定します。
+3. `SaveOptions` に `XpsSaveOptions` のインスタンスを設定します。
+4. ソース `.tex` ファイルに対して、`XpsDevice` を指定した `TeXJob` を実行します。XPS ファイルは出力作業ディレクトリに書き込まれます。
 
 このコードは、LaTeX から XPS ファイルを生成する最も直接的な方法を示しています。
 
@@ -42,15 +42,14 @@ LaTeX から XPS への変換は、[ラスタ画像形式への変換](/tex/{{la
 
 このスニペットは `Stream` を受け取る `XpsDevice` コンストラクタの使用例です。手順は次のとおりです。
 
-1. `TexDocument` を作成し、LaTeX ソースをロードします。  
-2. XPS 出力を保持するための `MemoryStream` を作成します。  
-3. ストリームを渡して `XpsDevice` をインスタンス化します。  
-4. デバイスにドキュメントを保存し、その後ストリームを使用できます（例：ネットワーク経由で送信したり、データベースに保存したり）。
+1. XPS ドキュメントの書き込み先となるストリームを開きます (ここではファイル ストリームですが、`MemoryStream` でも同様に動作します)。
+2. 前の例と同様に、`TeXOptions` を作成し、出力作業ディレクトリを指定して、`SaveOptions` に `XpsSaveOptions` のインスタンスを設定します。
+3. ストリームを渡して作成した `XpsDevice` を指定して `TeXJob` を実行します。XPS ドキュメントはストリームに書き込まれます。トランスクリプトなどのその他の出力ファイルは、引き続き出力作業ディレクトリに書き込まれます。
 
-このアプローチは、ファイルとしてではなくメモリ上で XPS データが必要な場合に便利です。
+このアプローチは、XPS ドキュメントを任意のストリームに書き込む必要がある場合 (メモリ上に保持する場合やネットワーク経由で送信する場合など) に便利です。
 
 {{< gist "aspose-com-gists" "507170b996a1d0c39bb4374e888b3205" "Example-ConvertLaTeXToXPS-Alternative.cs" >}}
 
-この効果は、[こちら](/tex/{{lang.url-fragment}}net/latex-to-pdf/#an-alternative-way-to-write-main-output-pdf-file) で確認できます。
+この効果は、[こちら](/tex/{{lang.url-fragment}}net/latex-to-pdf/#an-alternative-way-to-write-the-main-output-pdf-file) で確認できます。
 
 **無料の LaTeX から XPS への変換 [Web アプリ](https://products.aspose.app/tex/conversion/latex-to-xps) もご利用いただけます（[Aspose.TeX for .NET API](https://products.aspose.com/tex/net/) に基づいて構築）**

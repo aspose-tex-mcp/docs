@@ -6,7 +6,7 @@ linktitle: LaTeX zu XPS
 weight: 12
 url: /net/latex-to-xps/
 description: Mit der Konvertierungsfunktion der Aspose.TeX-API-Lösung für .NET können Sie LaTeX-Dateien in das XPS-Format konvertieren.
-lastmod: "2026-04-22"
+lastmod: "2026-11-02"
 ---
 
 {{<section overview>}}
@@ -24,10 +24,10 @@ Die Konvertierung von LaTeX in XPS ist genauso einfach wie die [Konvertierung in
 
 Das folgende Beispiel zeigt, wie Sie eine LaTeX-Datei in wenigen Schritten in XPS konvertieren:
 
-1. Erstellen Sie eine `TexDocument`-Instanz.
-2. Laden Sie die `.tex`-Quelldatei mit T`exDocument.Load`.
-3. (Optional) Konfigurieren Sie `XpsSaveOptions`, z. B. Komprimierungseinstellungen.
-4. Speichern Sie das Dokument in XPS, indem Sie document.Save mit einem `XpsDevice` aufrufen.
+1. Erstellen Sie `TeXOptions` für das Format ObjectLaTeX mit `TeXOptions.ConsoleAppOptions(TeXConfig.ObjectLaTeX)`.
+2. Legen Sie das Ausgabearbeitsverzeichnis fest, zum Beispiel ein `OutputFileSystemDirectory`.
+3. Setzen Sie `SaveOptions` auf eine `XpsSaveOptions`-Instanz.
+4. Führen Sie einen `TeXJob` für die `.tex`-Quelldatei mit einem `XpsDevice` aus. Die XPS-Datei wird in das Ausgabearbeitsverzeichnis geschrieben.
 
 Dieser Code demonstriert den direktesten Weg, eine XPS-Datei aus LaTeX zu erstellen.
 
@@ -41,15 +41,14 @@ Es gibt einen weiteren Konstruktor der Klasse [XpsDevice](https://reference.aspo
 
 Dieser Codeausschnitt demonstriert die Verwendung des Konstruktors `XpsDevice`, der einen `Stream` akzeptiert. Die Schritte sind:
 
-1. Erstellen Sie ein `TexDocument` und laden Sie die LaTeX-Quelle.
-2. Erstellen Sie einen `MemoryStream` für die XPS-Ausgabe.
-3. Instanziieren Sie `XpsDevice` mit dem Stream.
-4. Speichern Sie das Dokument auf dem Gerät. Anschließend können Sie den Stream verwenden (z. B. über ein Netzwerk senden oder in einer Datenbank speichern).
+1. Öffnen Sie den Stream, in den das XPS-Dokument geschrieben werden soll (hier ein Dateistream; ein `MemoryStream` funktioniert genauso).
+2. Erstellen Sie `TeXOptions`, legen Sie das Ausgabearbeitsverzeichnis fest und setzen Sie `SaveOptions` auf eine `XpsSaveOptions`-Instanz, wie im vorherigen Beispiel.
+3. Führen Sie einen `TeXJob` mit einem `XpsDevice` aus, das mit dem Stream erstellt wurde. Das XPS-Dokument wird in den Stream geschrieben; andere Ausgabedateien, etwa das Protokoll, landen weiterhin im Ausgabearbeitsverzeichnis.
 
-Dieser Ansatz ist nützlich, wenn Sie die XPS-Daten im Speicher und nicht als Datei auf der Festplatte benötigen.
+Dieser Ansatz ist nützlich, wenn Sie das XPS-Dokument in einen Stream Ihrer Wahl schreiben müssen, zum Beispiel um es im Speicher zu halten oder über ein Netzwerk zu senden.
 
 {{< gist "aspose-com-gists" "507170b996a1d0c39bb4374e888b3205" "Example-ConvertLaTeXToXPS-Alternative.cs" >}}
 
-Der Effekt ist derselbe, den wir [hier](/tex/{{lang.url-fragment}}net/latex-to-pdf/#an-alternative-way-to-write-main-output-pdf-file) erhalten.
+Der Effekt ist derselbe, den wir [hier](/tex/{{lang.url-fragment}}net/latex-to-pdf/#an-alternative-way-to-write-the-main-output-pdf-file) erhalten.
 
 **Sie können sich auch die kostenlose LaTeX-zu-XPS-Konvertierung [Web-App](https://products.aspose.app/tex/conversion/latex-to-xps) ansehen, die auf der Grundlage von [Aspose.TeX für .NET API](https://products.aspose.com/tex/net/) erstellt wurde.**

@@ -50,7 +50,7 @@ Transcript written on hello-world.log.
 
 Weitere „Früchte“ der Engine-Arbeit finden wir in dem Ordner, den wir als Ausgabeverzeichnis angegeben haben. Dabei handelt es sich um die Transkriptdatei und, **hier ist sie!**, die Hauptausgabe-PDF-Datei.
 
-## Eine alternative Möglichkeit, die Hauptausgabe-PDF-Datei zu schreiben
+## Eine alternative Möglichkeit, die Hauptausgabe-PDF-Datei zu schreiben {#an-alternative-way-to-write-the-main-output-pdf-file}
 
 Es gibt einen weiteren Konstruktor der Klasse [PdfDevice](https://reference.aspose.com/tex/net/aspose.tex.presentation.pdf/pdfdevice/pdfdevice/), mit dem wir die resultierende PDF-Datei auf alternative Weise erhalten können.
 

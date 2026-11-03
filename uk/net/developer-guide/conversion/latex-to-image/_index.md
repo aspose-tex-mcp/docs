@@ -7,7 +7,7 @@ weight: 10
 url: /net/latex-to-image/
 keywords: латекс у png, латекс png, латекс у зображення, латексне зображення, латекс у jpg, латекс у jpg, латекс у jpeg, латекс у jpeg, латекс у tiff, латекс у tiff, латекс у bmp, латекс bmp
 description: Щоб перетворити TeX у формати зображень за допомогою Aspose.TeX API для .NET, ознайомтеся з цією статтею, щоб побачити, як це зробити, і приклади коду.
-lastmod: "2026-04-22"
+lastmod: "2026-11-02"
 ---
 
 {{<section overview>}}
@@ -61,7 +61,7 @@ Transcript written on hello-world.log.
 
 {{< gist "aspose-com-gists" "507170b996a1d0c39bb4374e888b3205" "Example-ConvertLaTeXToPNG-Alternative.cs" >}}
 
-Файл(и) *"page-n.png"* буде записаний у будь-який шлях, який ми вкажемо. На відміну від [PDF output](/tex/{{lang.url-fragment}}net/latex-to-pdf/#an-alternative-way-to-write-main-output-pdf-file), вони дублюватимуть вихідні файли PNG, записані у вихідний каталог.
+Файл(и) *"page-n.png"* буде записаний у будь-який шлях, який ми вкажемо. На відміну від [PDF output](/tex/{{lang.url-fragment}}net/latex-to-pdf/#an-alternative-way-to-write-the-main-output-pdf-file), вони дублюватимуть вихідні файли PNG, записані у вихідний каталог.
 
 ## Про параметри введення
 
@@ -82,6 +82,10 @@ Transcript written on hello-world.log.
 ## Як конвертувати LaTeX у TIFF
 
 {{< gist "aspose-com-gists" "507170b996a1d0c39bb4374e888b3205" "Example-ConvertLaTeXToTIFF.cs" >}}
+
+{{% alert color="primary" %}}
+Пакет `Aspose.TeX.Drawing` поки що не вміє зберігати багатосторінкові файли TIFF: якщо `TiffSaveOptions.Multipage` дорівнює `true`, файл TIFF містить лише першу сторінку. Встановіть `Multipage` у `false`, щоб отримати окреме зображення TIFF для кожної сторінки. Див. [Linux, macOS і Docker](/tex/{{lang.url-fragment}}net/linux-and-containers/#known-limitations).
+{{% /alert %}}
 
 **Ви також можете ознайомитися з безкоштовним [веб-програмою] для перетворення LaTeX у TIFF (31), створеним на основі [Aspose.TeX для .NET API](https://products.aspose.com/tex/net/).**
 

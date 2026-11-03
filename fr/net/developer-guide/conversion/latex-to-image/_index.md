@@ -7,7 +7,7 @@ weight: 10
 url: /net/latex-to-image/
 keywords: latex à png, latex png, latex à image, image latex, latex à jpg, latex jpg, latex à jpeg, latex jpeg, latex à tiff, latex tiff, latex à bmp, latex bmp
 description: Pour convertir TeX en formats d'image à l'aide d'Aspose.TeX pour .NET, lisez cet article pour voir comment procéder et avec des exemples de code.
-lastmod: "2026-04-22"
+lastmod: "2026-11-02"
 ---
 
 {{<section overview>}}
@@ -61,7 +61,7 @@ El siguiente fragmento de C# muestra otra forma de obtener la salida PNG: escrib
 
 {{< gist "aspose-com-gists" "507170b996a1d0c39bb4374e888b3205" "Example-ConvertLaTeXToPNG-Alternative.cs" >}}
 
-Le(s) fichier(s) *"page-n.png"* seront écrits dans n'importe quel chemin que nous spécifions. Contrairement à [Sortie PDF](/tex/{{lang.url-fragment}}net/latex-to-pdf/#an-alternative-way-to-write-main-output-pdf-file), ils dupliqueront les fichiers PNG de sortie écrits dans le répertoire de sortie.
+Le(s) fichier(s) *"page-n.png"* seront écrits dans n'importe quel chemin que nous spécifions. Contrairement à [Sortie PDF](/tex/{{lang.url-fragment}}net/latex-to-pdf/#an-alternative-way-to-write-the-main-output-pdf-file), ils dupliqueront les fichiers PNG de sortie écrits dans le répertoire de sortie.
 
 ## À propos des options de saisie
 
@@ -82,6 +82,10 @@ Ci-dessous, nous discutons de la conversion de LaTeX vers d'autres formats d'ima
 ## Comment convertir LaTeX en TIFF
 
 {{< gist "aspose-com-gists" "507170b996a1d0c39bb4374e888b3205" "Example-ConvertLaTeXToTIFF.cs" >}}
+
+{{% alert color="primary" %}}
+Le package `Aspose.TeX.Drawing` ne peut pas encore enregistrer de fichiers TIFF multipages : lorsque `TiffSaveOptions.Multipage` vaut `true`, le fichier TIFF ne contient que la première page. Définissez `Multipage` sur `false` pour obtenir une image TIFF distincte par page. Voir [Linux, macOS et Docker](/tex/{{lang.url-fragment}}net/linux-and-containers/#known-limitations).
+{{% /alert %}}
 
 **Vous pouvez également consulter la conversion gratuite LaTeX vers TIFF [application Web](https://products.aspose.app/tex/conversion/latex-to-tiff) construite sur la base de [Aspose.TeX pour l'API .NET](https://products.aspose.com/tex/net/).**
 

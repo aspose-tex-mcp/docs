@@ -50,7 +50,7 @@ Transcript written on hello-world.log.
 
 Інші «плоди» праці движка ми знайдемо в папці, яку ми вказали як вихідний каталог. Це буде файл стенограми та, **ось він!**, основний вихідний PDF-файл.
 
-## Альтернативний спосіб запису основного вихідного файлу PDF
+## Альтернативний спосіб запису основного вихідного файлу PDF {#an-alternative-way-to-write-the-main-output-pdf-file}
 
 Є ще один конструктор класу [PdfDevice](https://reference.aspose.com/tex/net/aspose.tex.presentation.pdf/pdfdevice/pdfdevice/), який дозволяє нам отримати кінцевий PDF-файл альтернативним способом.
 

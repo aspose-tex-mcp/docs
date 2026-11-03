@@ -6,7 +6,7 @@ linktitle: Formatos de arquivo suportados
 weight: 20
 url: /net/supported-file-formats/
 description: Esta solução de manipulação TeX para .NET suporta arquivos TeX para entrada e uma variedade de formatos de saída como XPS, PDF, PNG, JPEG, TIFF e BMP.
-lastmod: "2026-04-22"
+lastmod: "2026-11-02"
 ---
 
 {{<section overview>}}
@@ -20,6 +20,7 @@ A tabela a seguir indica os formatos de arquivo que Aspose.TeX para .NET podem c
 |Texto simples|Ficheiro TeX|{{< emoticons/tick >}}|{{< emoticons/tick >}}| Apenas para saída de mensagens de rastreio.|
 |XPS|Documento XPS tipográfico| |{{< emoticons/tick >}}| |
 |PDF|Documento PDF tipográfico| |{{< emoticons/tick >}}| |
+|SVG|Imagens SVG das páginas do documento composto| |{{< emoticons/tick >}}| |
 |PNG|Imagens PNG do documento tipográfico| |{{< emoticons/tick >}}| |
 |JPEG|Imagens JPEG do documento tipográfico| |{{< emoticons/tick >}}| |
 |TIFF|Imagens TIFF do documento tipográfico| |{{< emoticons/tick >}}| |

@@ -6,7 +6,7 @@ linktitle: LaTeX vers XPS
 weight: 12
 url: /net/latex-to-xps/
 description: De conversion de la solution API Aspose.TeX pour .NET permet de convertir les fichiers LaTeX au format XPS.
-lastmod: "2026-04-22"
+lastmod: "2026-11-02"
 ---
 
 {{<section overview>}}
@@ -24,10 +24,10 @@ La conversion LaTeX en XPS est tout aussi simple que la [conversion aux formats 
 
 L'exemple ci-dessous montre comment convertir un fichier LaTeX en XPS en quelques étapes :
 
-1. Créez une instance `TexDocument`.
-2. Chargez le fichier source `.tex` à l'aide de `TexDocument.Load`.
-3. (Facultatif) Configurez `XpsSaveOptions`, comme les paramètres de compression.
-4. Enregistrez le document au format XPS en appelant `document.Save` avec un `XpsDevice`.
+1. Créez `TeXOptions` pour le format ObjectLaTeX avec `TeXOptions.ConsoleAppOptions(TeXConfig.ObjectLaTeX)`.
+2. Indiquez le répertoire de travail de sortie, par exemple un `OutputFileSystemDirectory`.
+3. Affectez à `SaveOptions` une instance de `XpsSaveOptions`.
+4. Exécutez un `TeXJob` pour le fichier source `.tex` avec un `XpsDevice`. Le fichier XPS est écrit dans le répertoire de travail de sortie.
 
 Ce code illustre la méthode la plus directe pour générer un fichier XPS à partir de LaTeX.
 
@@ -41,15 +41,14 @@ Il existe un autre constructeur de la classe [XpsDevice](https://reference.aspos
 
 Cet extrait de code illustre l'utilisation du constructeur `XpsDevice` qui accepte un `Stream`. Les étapes sont les suivantes :
 
-1. Créez un `TexDocument` et chargez la source LaTeX.
-2. Créez un `MemoryStream` pour stocker la sortie XPS.
-3. Instanciez `XpsDevice` avec le flux.
-4. Enregistrez le document sur l'appareil, puis utilisez le flux (par exemple, envoyez-le sur un réseau ou stockez-le dans une base de données).
+1. Ouvrez le flux dans lequel écrire le document XPS (ici, un flux de fichier ; un `MemoryStream` fonctionne de la même manière).
+2. Créez `TeXOptions`, indiquez le répertoire de travail de sortie et affectez à `SaveOptions` une instance de `XpsSaveOptions`, comme dans l'exemple précédent.
+3. Exécutez un `TeXJob` avec un `XpsDevice` créé avec le flux. Le document XPS est écrit dans le flux ; les autres fichiers de sortie, comme la transcription, sont toujours écrits dans le répertoire de travail de sortie.
 
-Cette approche est utile lorsque vous avez besoin des données XPS en mémoire plutôt que sous forme de fichier sur disque.
+Cette approche est utile lorsque vous devez écrire le document XPS dans un flux de votre choix, par exemple pour le conserver en mémoire ou l'envoyer sur un réseau.
 
 {{< gist "aspose-com-gists" "507170b996a1d0c39bb4374e888b3205" "Example-ConvertLaTeXToXPS-Alternative.cs" >}}
 
-L’effet est le même que celui que nous obtenons [ici](/tex/{{lang.url-fragment}}net/latex-to-pdf/#an-alternative-way-to-write-main-output-pdf-file).
+L’effet est le même que celui que nous obtenons [ici](/tex/{{lang.url-fragment}}net/latex-to-pdf/#an-alternative-way-to-write-the-main-output-pdf-file).
 
 **Vous pouvez également consulter la conversion gratuite LaTeX vers XPS [application Web](https://products.aspose.app/tex/conversion/latex-to-xps) construite sur la base de [Aspose.TeX pour l'API .NET](https://products.aspose.com/tex/net/).**

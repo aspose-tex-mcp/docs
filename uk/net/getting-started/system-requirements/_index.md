@@ -5,56 +5,51 @@ title: Системні вимоги | Aspose.TeX .NET
 linktitle: Системні вимоги
 weight: 50
 url: /net/system-requirements/
-description: Рішення Aspose.TeX для .NET можна використовувати в будь-якому середовищі розробки, яке підтримує .NET, але є деякі середовища, які підтримуються явно.
-lastmod: "2026-04-22"
+description: Підтримувані операційні системи, версії .NET і середовища розробки для пакетів NuGet Aspose.TeX і Aspose.TeX.Drawing.
+lastmod: "2026-11-02"
 ---
 
 {{<section overview>}}
 
+Aspose.TeX для .NET випускається у вигляді двох пакетів NuGet з однаковим API. Системні вимоги до них відрізняються, оскільки вони використовують різні графічні підсистеми.
+
+| | `Aspose.TeX` | `Aspose.TeX.Drawing` |
+|---|---|---|
+| Графічна підсистема | `System.Drawing.Common` (GDI+) | Aspose.Drawing, вбудована в пакет |
+| Операційні системи | Windows | Windows, Linux, macOS |
+| Цільові платформи пакета | .NET Framework 4.0, .NET Standard 2.0, .NET 6.0, .NET 7.0 | .NET Standard 2.0, .NET 7.0 |
+
 ## Підтримувані операційні системи
 
-### Windows
+### Aspose.TeX
 
-* Microsoft Windows 2003 Server ( x64, x86)
-* Microsoft Windows 2012 Server ( x64, x86)
-* Microsoft Windows 2008 Server ( x64, x86)
-* Microsoft Windows XP ( x64, x86)
-* Microsoft Windows Vista ( x64, x86)
-* Microsoft Windows 8, 8.1 ( x64, x86)
-* Microsoft Windows 7 ( x64, x86)
-* Microsoft Windows 10 ( x64, x86)
-* Windows Azure
+* Настільні та серверні випуски Microsoft Windows (x64, x86)
+* Microsoft Azure (служби на основі Windows)
+
+Починаючи з .NET 6, Microsoft підтримує `System.Drawing.Common`, від якої залежить цей пакет, лише у Windows.
+
+### Aspose.TeX.Drawing
+
+* Настільні та серверні випуски Microsoft Windows (x64, x86)
+* Linux (x64, Arm64), зокрема Docker-контейнери
+* macOS
+
+Нативні бібліотеки, такі як `libgdiplus` або `fontconfig`, і встановлені шрифти не потрібні. У Linux для виведення в XPS і SVG потрібна ICU, якої немає в деяких образах контейнерів. Див. [Linux, macOS і Docker](/tex/{{lang.url-fragment}}net/linux-and-containers/).
+
+## Підтримувані версії .NET
+
+### Aspose.TeX
+
+* .NET Framework 4.0 або новіша версія
+* .NET 6 або новіша версія
+* Будь-яка інша реалізація .NET Standard 2.0, наприклад .NET Core 2.0 або новіша версія
+
+### Aspose.TeX.Drawing
+
+* .NET 7 або новіша версія, зокрема .NET 8, .NET 9 і .NET 10
+* .NET Framework 4.7.2 або новіша версія (через .NET Standard 2.0)
+* Будь-яка інша реалізація .NET Standard 2.0, наприклад .NET Core 2.0 або новіша версія
 
 ## Середовища розробки
 
-Ви можете використовувати Aspose.TeX для .NET для розробки програм у будь-якому середовищі розробки, націленому на платформу .NET, але явно підтримуються такі середовища:
-
-* Microsoft Visual Studio 2010
-* Microsoft Visual Studio 2011
-* Microsoft Visual Studio 2012
-* Microsoft Visual Studio 2013
-* Microsoft Visual Studio 2015
-* Microsoft Visual Studio 2017
-* Microsoft Visual Studio 2019
-
-## Підтримувані версії .NET Framework
-
-Підтримуються такі версії .NET Framework:
-
-* .NET Framework 2.0
-* .NET Framework 3.5
-* .NET Framework 3.5_ClientProfile
-* .NET Framework 4.0
-* .NET Framework 4.0_ClientProfile
-* .NET Framework 4.5.0
-* .NET Framework 4.5.1
-* .NET Framework 4.5.2
-* .NET Framework 4.6.0
-* .NET Framework 4.6.2
-* .NET Framework 4.7.0
-* .NET Framework 4.7.1
-* .NET Framework 4.7.2
-* .NET Framework 4.8
-* .NET Standard 2.0
-* .NET Standard 2.1
-
+Aspose.TeX для .NET можна використовувати в будь-якому середовищі розробки для платформи .NET, наприклад у Microsoft Visual Studio, Visual Studio Code або JetBrains Rider, а також із .NET CLI.

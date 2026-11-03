@@ -6,7 +6,7 @@ linktitle: Látex para XPS
 weight: 12
 url: /net/latex-to-xps/
 description: Funcionalidade de conversão do Aspose. Aqui estão alguns exemplos de código.
-lastmod: "2026-04-22"
+lastmod: "2026-11-02"
 ---
 
 {{<section overview>}}
@@ -24,10 +24,10 @@ A conversão de LaTeX para XPS é tão simples quanto a [conversão em formatos 
 
 O exemplo abaixo mostra como converter um arquivo LaTeX para XPS em poucos passos:
 
-1. Crie uma instância `TexDocument`.
-2. Carregue o arquivo de origem `. tex` utilizando `TexDocument. Load`.
-3. (Opcional) Configure `XpsSaveOptions`, como definições de compressão.
-4.  Guarde o documento em XPS chamando `document. Save` com um `XpsDevice`.
+1. Crie `TeXOptions` para o formato ObjectLaTeX com `TeXOptions.ConsoleAppOptions(TeXConfig.ObjectLaTeX)`.
+2. Especifique o diretório de trabalho de saída, por exemplo, um `OutputFileSystemDirectory`.
+3. Defina `SaveOptions` como uma instância de `XpsSaveOptions`.
+4. Execute um `TeXJob` para o arquivo de origem `.tex` com um `XpsDevice`. O arquivo XPS é gravado no diretório de trabalho de saída.
 
 Este código demonstra a forma mais direta de produzir um arquivo XPS a partir do LaTeX.
 
@@ -41,15 +41,14 @@ Há outro construtor da classe [XpsDevice](https://reference.aspose.com/tex/net/
 
 Este excerto demonstra a utilização do construtor `XpsDevice` que aceita um `Stream`. Os passos são:
 
-1. Crie um `TexDocument` e carregue o código-fonte LaTeX.
-2. Crie um `MemoryStream` para armazenar a saída XPS.
-3. Instancie `XpsDevice` com o fluxo.
-4. Guarde o documento no dispositivo e depois poderá utilizar o fluxo (por exemplo, enviá-lo pela rede ou armazená-lo numa base de dados).
+1. Abra o fluxo no qual o documento XPS será gravado (aqui, um fluxo de arquivo; um `MemoryStream` funciona da mesma forma).
+2. Crie `TeXOptions`, especifique o diretório de trabalho de saída e defina `SaveOptions` como uma instância de `XpsSaveOptions`, como no exemplo anterior.
+3. Execute um `TeXJob` com um `XpsDevice` criado com o fluxo. O documento XPS é gravado no fluxo; os outros arquivos de saída, como a transcrição, continuam sendo gravados no diretório de trabalho de saída.
 
-Esta abordagem é útil quando necessita dos dados XPS na memória em vez de como um arquivo em disco.
+Esta abordagem é útil quando você precisa gravar o documento XPS em um fluxo de sua escolha, por exemplo, para mantê-lo na memória ou enviá-lo pela rede.
 
 {{< gist "aspose-com-gists" "507170b996a1d0c39bb4374e888b3205" "Example-ConvertLaTeXToXPS-Alternative.cs" >}}
 
-O efeito é o mesmo que chegamos [aqui](/tex/{{lang.url-fragment}}net/latex-to-pdf/#an-alternative-way-to-write-main-output-pdf-file).
+O efeito é o mesmo que chegamos [aqui](/tex/{{lang.url-fragment}}net/latex-to-pdf/#an-alternative-way-to-write-the-main-output-pdf-file).
 
 **Você também pode conferir a conversão LATEX-XPS GRATUITA [aplicativo da Web](https://products.aspose.app/tex/conversion/latex-to-xps) construído com base em [Aspose.TeX para .NET API](https://products.aspose.com/tex/net/).**
