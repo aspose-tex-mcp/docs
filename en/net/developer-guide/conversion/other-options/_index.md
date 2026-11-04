@@ -19,7 +19,7 @@ As we mentioned [here](/tex/{{lang.url-fragment}}net/tex-io/#tex-interaction-mod
 
 ## How to set the job name
 
-When we pass the main input file as a file name, we get output files with the same name, although with other extensions. The TeX engine calls the input file's name the *job name* and uses it for output files, except in cases when auxiliary files with explicitly specified other names are written. When we pass the main input file as a [stream](/tex/{{lang.url-fragment}}net/other-ways-of-main-input/#providing-the-main-input-file-as-a-stream), the TeX engine uses the default job name, which is *texput*.
+When we pass the main input file as a file name, we get output files with the same name, although with other extensions. The TeX engine calls the input file's name the *job name* and uses it for output files, except in cases when auxiliary files with explicitly specified other names are written. When we pass the main input file as a [stream](/tex/{{lang.url-fragment}}net/other-ways-of-main-input/#providing-the-main-input-file-to-the-tex-engine-as-a-stream), the TeX engine uses the default job name, which is *texput*.
 In both cases, we can override the job name by assigning the appropriate conversion option.
 
 {{< gist "aspose-com-gists" "deadfd7c29ffe40024a9b6d12f0ed18a" "Example-JobName.cs" >}}
@@ -44,7 +44,7 @@ Normally, the TeX engine builds ligatures for certain pairs of characters if the
 
 ## How to repeat the job
 
-As we have mentioned [above](/tex/{{lang.url-fragment}}net/latex-io/#latex-input) regarding labels and references, there are cases when we would like to run the same job twice. Here is how it can be done:
+As we have mentioned [above](/tex/{{lang.url-fragment}}net/latex-io/#latex-output-file) regarding labels and references, there are cases when we would like to run the same job twice. Here is how it can be done:
 
 {{< gist "aspose-com-gists" "deadfd7c29ffe40024a9b6d12f0ed18a" "Example-Repeat.cs" >}}
 

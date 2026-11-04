@@ -11,7 +11,7 @@ lastmod: "2026-04-22"
 
 {{<section overview>}}
 
-## Fornire il file di input principale al motore TeX come flusso
+## Fornire il file di input principale al motore TeX come flusso {#providing-the-main-input-file-to-the-tex-engine-as-a-stream}
 
 Fino a questo punto, sapevamo solo come passare il [file di input principale](/tex/{{lang.url-fragment}}net/tex-io/#tex-input) al motore TeX come nome di un file, sia completamente specificato che in breve, sia con un'estensione che senza di essa. Ma c'è un altro [costruttore](https://reference.aspose.com/tex/net/aspose.tex/texjob/texjob/) della classe `TeXJob`, che prende un flusso come primo argomento. Questo è conveniente se per qualche motivo abbiamo il file di input principale in un modulo diverso da un file sul file system disco. Ecco come può essere implementato:
 

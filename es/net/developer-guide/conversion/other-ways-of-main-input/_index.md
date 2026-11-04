@@ -11,7 +11,7 @@ lastmod: "2026-04-22"
 
 {{<section overview>}}
 
-## Proporcionar el archivo de entrada principal al motor TeX como una secuencia
+## Proporcionar el archivo de entrada principal al motor TeX como una secuencia {#providing-the-main-input-file-to-the-tex-engine-as-a-stream}
 
 Hasta este punto, sólo sabíamos cómo pasar el [archivo de entrada principal](/tex/{{lang.url-fragment}}net/tex-io/#tex-input) al motor TeX como un nombre de archivo, ya sea completamente especificado o en formato corto, con o sin extensión. Pero hay otro [constructor](https://reference.aspose.com/tex/net/aspose.tex/texjob/texjob/) de la clase `TeXJob`, que toma una secuencia como primer argumento. Esto es conveniente si por alguna razón tenemos el archivo de entrada principal en un formato que no sea un archivo en el sistema de archivos del disco. Así es como se puede implementar:
 

@@ -131,7 +131,7 @@ using (Stream zipStream = File.Open("path-to-zip-with-pgfplots-sources"), FileMo
 
 {{< gist "aspose-com-gists" "deadfd7c29ffe40024a9b6d12f0ed18a" "Example-RequiredInputDirectory.cs" >}}
 
-### Ограничения
+### Ограничения {#restrictions}
 
 Может случиться так, что пакет, необходимый для вашего файла LaTeX, разработан под ядром *LaTeX3e*. Такой пакет, скорее всего, не будет работать с библиотекой **Aspose.TeX**, поскольку последняя основана на ядре *LaTeX2e*.
 

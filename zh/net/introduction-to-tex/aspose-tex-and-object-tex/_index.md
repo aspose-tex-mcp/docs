@@ -25,7 +25,7 @@ lastmod: "2026-11-04"
 
 Aspose.TeX只是Object TeX系统的API。
 
-## 为什么新的TeX是Object？
+## 为什么新的TeX是Object？ {#why-the-new-tex-is-object}
 
 那么，为什么我们在系统的名称中使用“对象”呢？原因是Object TeX引擎的实际输出不是输出格式的文件，而是某些中间 *对象 *模型，然后将其转换为目标格式。
 

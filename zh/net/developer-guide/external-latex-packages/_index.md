@@ -132,7 +132,7 @@ using (Stream zipStream = File.Open("path-to-zip-with-pgfplots-sources", FileMod
 
 {{< gist "aspose-com-gists" "deadfd7c29ffe40024a9b6d12f0ed18a" "Example-RequiredInputDirectory.cs" >}}
 
-### 限制
+### 限制 {#restrictions}
 
 如果您的 LaTeX 文件所需的包是基于 *LaTeX3e* 内核开发的，则该包很可能无法与 **Aspose.TeX** 库一起工作，因为后者基于 *LaTeX2e* 内核。
 

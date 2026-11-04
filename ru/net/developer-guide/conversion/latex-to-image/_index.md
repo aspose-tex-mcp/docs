@@ -63,7 +63,7 @@ Transcript written on hello-world.log.
 
 Файл(ы) *"page-n.png"* будут записаны по любому указанному нами пути. Поскольку параметр `DeviceWritesImages` равен `false`, само устройство не записывает файлы PNG в выходной каталог.
 
-## О параметрах ввода
+## О параметрах ввода {#about-input-options}
 
 Если наш основной входной файл требует зависимостей, например, пакетов, которые не включены в базовую систему LaTeX и поддерживаемых пакетов, мы ДОЛЖНЫ установить параметр [RequiredInputDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/requiredinputdirectory/) аналогично тому, как мы устанавливаем параметр [OutputWorkingDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/outputworkingdirectory/). и поместите зависимости в этот каталог. Зависимости могут быть произвольно организованы в подкаталогах. Если у нас есть собственные файлы, которые нужно включить в процесс верстки, скажем, внешние графические файлы, мы ДОЛЖНЫ также установить [InputWorkingDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/inputworkingdirectory/), используя путь к месту, где собраны эти файлы. Мы также можем поместить основной входной файл где-нибудь внутри входного каталога и указать относительный путь в методе `run()` (или вообще не указывать путь, если основной входной файл находится в корне). [Здесь](/tex/{{lang.url-fragment}}net/aspose-tex-input/) приведены подробные сведения о концепции входного каталога в **Aspose.TeX for .NET** и предоставленных реализациях.
 

@@ -17,9 +17,9 @@ Comme nous l'avons mentionné [ici](/tex/{{lang.url-fragment}}net/tex-io/#tex-in
 
 {{< gist "aspose-com-gists" "deadfd7c29ffe40024a9b6d12f0ed18a" "Example-InteractionMode.cs" >}}
 
-## Comment définir le nom du travail
+## Comment définir le nom du travail {#how-to-set-the-job-name}
 
-Lorsque nous transmettons le fichier d'entrée principal comme nom de fichier, nous obtenons des fichiers de sortie portant le même nom, mais avec d'autres extensions. Le moteur TeX appelle le nom du fichier d'entrée *nom du travail* et l'utilise pour les fichiers de sortie, sauf dans les cas où des fichiers auxiliaires avec d'autres noms explicitement spécifiés sont écrits. Lorsque nous transmettons le fichier d'entrée principal en tant que [stream](/tex/{{lang.url-fragment}}net/other-ways-of-main-input/#providing-the-main-input-file-as-a-stream), le moteur TeX utilise le nom de travail par défaut, qui est *texput*.
+Lorsque nous transmettons le fichier d'entrée principal comme nom de fichier, nous obtenons des fichiers de sortie portant le même nom, mais avec d'autres extensions. Le moteur TeX appelle le nom du fichier d'entrée *nom du travail* et l'utilise pour les fichiers de sortie, sauf dans les cas où des fichiers auxiliaires avec d'autres noms explicitement spécifiés sont écrits. Lorsque nous transmettons le fichier d'entrée principal en tant que [stream](/tex/{{lang.url-fragment}}net/other-ways-of-main-input/#providing-the-main-input-file-to-the-tex-engine-as-a-stream), le moteur TeX utilise le nom de travail par défaut, qui est *texput*.
 Dans les deux cas, nous pouvons remplacer le nom du travail en attribuant l'option de conversion appropriée.
 
 {{< gist "aspose-com-gists" "deadfd7c29ffe40024a9b6d12f0ed18a" "Example-JobName.cs" >}}
@@ -42,9 +42,9 @@ Normalement, le moteur TeX crée des ligatures pour certaines paires de caractè
 
 {{< gist "aspose-com-gists" "deadfd7c29ffe40024a9b6d12f0ed18a" "Example-NoLigatures.cs" >}}
 
-## Comment répéter le travail
+## Comment répéter le travail {#how-to-repeat-the-job}
 
-Comme nous l'avons mentionné [ci-dessus](/tex/{{lang.url-fragment}}net/latex-io/#latex-input) concernant les étiquettes et les références, il existe des cas où nous souhaiterions exécuter deux fois le même travail. Voici comment procéder :
+Comme nous l'avons mentionné [ci-dessus](/tex/{{lang.url-fragment}}net/latex-io/#latex-output-file) concernant les étiquettes et les références, il existe des cas où nous souhaiterions exécuter deux fois le même travail. Voici comment procéder :
 
 {{< gist "aspose-com-gists" "deadfd7c29ffe40024a9b6d12f0ed18a" "Example-Repeat.cs" >}}
 

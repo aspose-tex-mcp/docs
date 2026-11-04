@@ -11,11 +11,11 @@ lastmod: 2026-10-20
 
 {{<section overview>}}
 
-## File tex
+## File tex {#tex-file}
 
 Tecnicamente, qualsiasi file può essere un file tex. Non ha nemmeno bisogno di avere l'estensione *.tex*. Un motore TEX legge il byte di input per byte che cerca di riconoscere i comandi ad esso conosciuti (cioè quelli che sono nel suo stato interno). Segnala semplicemente errori sui comandi non riconosciuti e/o richiede correzioni sul terminale (se è in esecuzione in una modalità [interattiva](/tex/{{lang.url-fragment}}net/tex-io/#tex-interaction-modes)). Ma se ti aspetti di vedere qualcosa come un documento ben composto, l'input dovrebbe seguire la sintassi di Tex e, idealmente, contenere solo comandi noti al motore.
 
-## Input tex
+## Input tex {#tex-input}
 
 Un lavoro Tex funziona su un file TEX esplicitamente specificato. Quindi, includiamo questo file nell'input di un determinato lavoro Tex. Inoltre, Tex ha quattro primitive relative all'input ausiliario:
 
@@ -45,7 +45,7 @@ I file i cui nomi sono passati ai comandi `\Open` sono anche inclusi nell'output
 Poiché il motore TEX esegue l'input, può produrre alcune informazioni di debug al file* o *trascript*,. Includeremo questo file nell'output Tex.
 Contemporaneamente alla scrittura nel file di registro, il motore TEX può fornire informazioni meno dettagliate al terminale. E questo è l'ultimo modo in cui il motore Tex scrive l'output che chiameremo l'output *del terminale *.
 
-## Modalità di interazione tex
+## Modalità di interazione tex {#tex-interaction-modes}
 
 Un lavoro Tex può essere eseguito in una delle quattro modalità di interazione in qualsiasi momento. Queste modalità sono cambiate dai seguenti primitivi Tex:
 

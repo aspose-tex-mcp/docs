@@ -12,7 +12,7 @@ lastmod: "2026-04-22"
 
 {{<section overview>}}
 
-## LaTeX-Datei
+## LaTeX-Datei {#latex-file}
 
 Wenn wir eine [TeX-Datei](/tex/{{lang.url-fragment}}net/tex-io/#tex-file) haben, die die folgende Struktur hat, dann nennen wir diese Datei eine *LaTeX-Datei*:
 
@@ -33,7 +33,7 @@ Um ehrlich zu sein, können Sie vor `\documentclass{}` primitive Kontrollsequenz
 
 Im Zusammenhang mit der Arbeit mit LaTeX-Dateien gibt es einige erwähnenswerte Dinge zu TeX [input](/tex/{{lang.url-fragment}}net/tex-io/#tex-input) und [output](/tex/{{lang.url-fragment}}net/tex-io/#tex-output).
 
-## LaTeX-Ausgabedatei
+## LaTeX-Ausgabedatei {#latex-output-file}
 
 Ein typischer LaTeX-Job erstellt eine Hilfsausgabedatei mit dem Namen [Jobname](/tex/{{lang.url-fragment}}net/tex-io/#tex-output) und der Erweiterung *.aux*. Diese Datei enthält normalerweise Referenzdaten, die die Engine während der Jobausführung sammelt, wenn Sie beispielsweise Beschriftungen für mathematische Formeln (Gleichungen) festlegen und dann irgendwo im Text darauf verweisen. Falls Sie nichts dergleichen verwenden, enthält diese Datei nur die Steuersequenz `\relax` (eines der TeX-Grundelemente). Seien Sie also nicht überrascht.
 

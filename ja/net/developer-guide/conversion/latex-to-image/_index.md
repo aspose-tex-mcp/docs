@@ -65,7 +65,7 @@ Transcript written on hello-world.log.
 
 *"page-n.png"* ファイルは、指定した任意のパスに書き込まれます。`DeviceWritesImages` オプションが `false` に設定されているため、デバイス自体は出力ディレクトリに PNG ファイルを書き込みません。
 
-## 入力オプションについて
+## 入力オプションについて {#about-input-options}
 
 メインの入力ファイルが依存関係（例: パッケージ）を必要とし、基本的な LaTeX システムやサポートされているパッケージに含まれていない場合は、[RequiredInputDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/requiredinputdirectory/) オプションを [OutputWorkingDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/outputworkingdirectory/) と同様の方法で設定し、依存ファイルをそのディレクトリに配置する必要があります。依存ファイルはサブディレクトリに自由に整理できます。タイプセットプロセス中に外部画像ファイルなど独自のファイルを含める必要がある場合は、[InputWorkingDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/inputworkingdirectory/) を設定し、ファイルが収集されている場所へのパスを指定してください。`run()` メソッドで相対パスを指定するか、メイン入力ファイルがルートにある場合はパスを省略することもできます。[ここ](/tex/{{lang.url-fragment}}net/aspose-tex-input/) に **Aspose.TeX for .NET** の入力ディレクトリ概念に関する詳細があります。
 

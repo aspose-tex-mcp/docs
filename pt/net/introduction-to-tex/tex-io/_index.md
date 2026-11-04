@@ -11,11 +11,11 @@ lastmod: 2026-10-20
 
 {{<section overview>}}
 
-## Arquivo tex
+## Arquivo tex {#tex-file}
 
 Tecnicamente, qualquer arquivo pode ser um arquivo tex. Nem precisa ter a extensão *.tex*. Um mecanismo TEX lê o byte de entrada por byte tentando reconhecer comandos conhecidos por ele (ou seja, aqueles que estão em seu estado interno). Ele simplesmente relata erros sobre comandos não reconhecidos e/ou solicita correções no terminal (se estiver em execução em um [modo interativo](/tex/{{lang.url-fragment}}net/tex-io/#tex-interaction-modes)). Mas se você espera ver algo como um documento bem -sucedido, a entrada deve seguir a sintaxe Tex e, idealmente, conter apenas comandos conhecidos pelo mecanismo.
 
-## Entrada tex
+## Entrada tex {#tex-input}
 
 Um trabalho de Tex é executado em um arquivo tex explicitamente especificado. Portanto, incluímos esse arquivo na entrada de um determinado trabalho de Tex. Além disso, o TEX possui quatro primitivas relacionadas à entrada auxiliar:
 
@@ -30,7 +30,7 @@ Os quatro comandos podem ocorrer no arquivo de entrada principal ou em um arquiv
 
 Ao executar em um [modo interativo](/tex/{{lang.url-fragment}}net/tex-io/#tex-interaction-modes), em caso de qualquer erro, o mecanismo TEX solicita uma correção no terminal. Neste ponto, convém substituir o comando errôneo por um novo. E isso será outra e a última maneira de fornecer informações para a TEX, que chamaremos de entrada *do terminal*.
 
-## Saída Tex
+## Saída Tex {#tex-output}
 
 Como mencionamos [acima](/tex/{{lang.url-fragment}}net/tex-io/#tex-input), um trabalho de Tex é executado em um arquivo explicitamente especificado. O arquivo não pode conter nenhum dados para o TypeT. Pode haver apenas sequências de controle que não produzem caracteres para digitar. Mas normalmente ele conterá esses dados, para que obtenhamos um arquivo no formato de destino que deve conter nosso texto com o tipógrafo (ou qualquer outra coisa permitida pelo mecanismo e pelo formato, se forem estendidos para ajustar recursos extras de um determinado formato de destino). O arquivo terá o mesmo nome que o arquivo especificado como a entrada. Chamaremos esse arquivo do arquivo *principal de saída*. Como mencionamos [acima](/tex/{{lang.url-fragment}}net/aspose-tex-and-object-tex/#object-tex), para o Tex original, este será um arquivo no formato DVI. Chamaremos o nome dos arquivos de entrada e saída sem extensão do *nome da tarefa*.
 
@@ -46,7 +46,7 @@ Os arquivos cujos nomes são passados ​​para os comandos `\openout` também 
 
 Simultaneamente com a gravação no arquivo de log, o mecanismo TEX pode gerar informações menos detalhadas para o terminal. E esta é a última maneira que o mecanismo Tex grava a saída que chamaremos de saída *do terminal*.
 
-## Modos de interação Tex
+## Modos de interação Tex {#tex-interaction-modes}
 
 Um trabalho de Tex pode estar em execução em um dos quatro modos de interação a qualquer momento. Esses modos são alterados pelas seguintes primitivas TEX:
 

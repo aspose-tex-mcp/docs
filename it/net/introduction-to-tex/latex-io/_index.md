@@ -12,7 +12,7 @@ lastmod: "2026-04-22"
 
 {{<section overview>}}
 
-## File LaTeX
+## File LaTeX {#latex-file}
 
 Se abbiamo un [file tex](/tex/{{lang.url-fragment}}net/tex-io/#tex-file) che ha la seguente struttura, chiameremo questo file un *file LaTeX *:
 
@@ -33,7 +33,7 @@ Ad essere onesti, è possibile inserire sequenze di controllo primitive prima di
 
 Ci sono alcune cose che vale la pena notare su TeX [input](/tex/{{lang.url-fragment}}net/tex-io/#tex-input) e [output](/tex/{{lang.url-fragment}}net/tex-io/#tex-output) nel contesto di lavorare con i file in LaTeX.
 
-## File di output in LaTeX
+## File di output in LaTeX {#latex-output-file}
 
 Un tipico lavoro in LaTeX crea un file di output ausiliario con il [nome del lavoro](/tex/{{lang.url-fragment}}net/tex-io/#tex-output) come nome ed estensione *.aux *. Questo file di solito contiene dati di riferimento che il motore raccoglie lungo il lavoro, se si dice, imposta etichette per le formule di matematica (equazioni) e quindi fai riferimento a loro da qualche parte nel testo. Nel caso in cui non usi nulla di questo tipo, questo file contiene solo la sequenza di controllo `\Relax` (che è una delle primitive TeX). Quindi non essere sorpreso.
 

@@ -25,7 +25,7 @@ Da ist die vierte Hand. Das Object TeX-Format ist ebenfalls ein auf Plain TeX ba
 
 Und Aspose.TeX ist nur eine API zum Object TeX-System.
 
-## Warum ist das neue TeX Object?
+## Warum ist das neue TeX Object? {#why-the-new-tex-is-object}
 
 Warum haben wir also „Object“ im Namen des Systems verwendet? Der Grund dafür ist, dass die eigentliche Ausgabe der Object TeX-Engine keine Datei im Ausgabeformat ist, sondern ein Zwischenmodell *Objekt*, das dann in ein Zielformat umgewandelt wird.
 

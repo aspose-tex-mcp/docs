@@ -11,11 +11,11 @@ lastmod: 2026-10-20
 
 {{<section overview>}}
 
-## Archivo TeX
+## Archivo TeX {#tex-file}
 
 Técnicamente, cualquier archivo puede ser un archivo TeX. Ni siquiera necesita tener la extensión *.tex*. Un motor TeX lee la entrada byte a byte tratando de reconocer los comandos que conoce (es decir, aquellos que están en su estado interno). Simplemente informa errores sobre comandos no reconocidos y/o solicita correcciones en el terminal (si se está ejecutando en [modo interactivo](/tex/{{lang.url-fragment}}net/tex-io/#tex-interaction-modes)). Pero si espera ver algo así como un documento bien compuesto, la entrada debe seguir la sintaxis TeX e, idealmente, contener sólo comandos conocidos por el motor.
 
-## entrada de texto
+## entrada de texto {#tex-input}
 
 Un trabajo TeX se ejecuta en un archivo TeX especificado explícitamente. Entonces, incluimos este archivo en la entrada de un determinado trabajo TeX. Además, TeX tiene cuatro primitivas relacionadas con la entrada auxiliar:
 
@@ -30,7 +30,7 @@ Los cuatro comandos pueden ocurrir en el archivo de entrada principal o en un ar
 
 Cuando se ejecuta en un [modo interactivo](/tex/{{lang.url-fragment}}net/tex-io/#tex-interaction-modes), en caso de cualquier error, el motor TeX solicita una corrección en el terminal. En este punto, es posible que desees reemplazar el comando erróneo por uno nuevo. Y esta será otra y última forma de proporcionar entrada a TeX que llamaremos *entrada de terminal*.
 
-## salida de texto
+## salida de texto {#tex-output}
 
 Como mencionamos [arriba](/tex/{{lang.url-fragment}}net/tex-io/#tex-input), un trabajo TeX se ejecuta en un archivo especificado explícitamente. Es posible que el archivo no contenga ningún dato para componer. Puede que sólo haya secuencias de control que no produzcan caracteres para escribir. Pero normalmente contendrá dichos datos, de modo que obtendremos un archivo en el formato de destino que debería contener nuestro texto tipográfico (o cualquier otra cosa permitida por el motor y el formato, si se amplían para adaptarse a características adicionales de un determinado formato de destino). . El archivo tendrá el mismo nombre que el archivo especificado como entrada. Llamaremos a este archivo el archivo *salida principal*. Como mencionamos [arriba](/tex/{{lang.url-fragment}}net/aspose-tex-and-object-tex/#object-tex), para el TeX original, este será un archivo en formato DVI. Llamaremos al nombre de los archivos de entrada y de salida sin extensión *nombre del trabajo*.
 
@@ -45,7 +45,7 @@ Los archivos cuyos nombres se pasan a los comandos `\openout` también se incluy
 A medida que el motor TeX ejecuta la entrada, puede generar información de depuración en el archivo *log* o *trascript*. Incluiremos este archivo en la salida TeX.
 Simultáneamente con la escritura en el archivo de registro, el motor TeX puede enviar información menos detallada al terminal. Y esta es la última forma en que el motor TeX escribe la salida que llamaremos *salida de terminal*.
 
-## Modos de interacción TeX
+## Modos de interacción TeX {#tex-interaction-modes}
 
 Un trabajo TeX puede estar ejecutándose en uno de los cuatro modos de interacción en un momento dado. Estos modos se cambian mediante las siguientes primitivas TeX:
 

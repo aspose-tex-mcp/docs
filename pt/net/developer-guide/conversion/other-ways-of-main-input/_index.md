@@ -11,13 +11,13 @@ lastmod: "2026-04-22"
 
 {{<section overview>}}
 
-## Fornecendo o arquivo de entrada principal para o mecanismo TeX como um fluxo
+## Fornecendo o arquivo de entrada principal para o mecanismo TeX como um fluxo {#providing-the-main-input-file-to-the-tex-engine-as-a-stream}
 
-Até este ponto, sabíamos apenas como passar o [arquivo de entrada principal](/tex/{{lang.url-fragment}}net/tex-io/#TeX-input) para o mecanismo TeX como nome de arquivo, totalmente especificado ou de curta forma, seja com uma extensão ou sem ele. Mas há outro [construtor](https://reference.aspose.com/tex/net/aspose.tex/TeXJob/TeXJob/) da classe `TeXJob`, que leva um fluxo como o primeiro argumento. Isso é conveniente se, por algum motivo, tivermos o arquivo de entrada principal em um formulário que não seja um arquivo no sistema de arquivos de disco. Veja como pode ser implementado:
+Até este ponto, sabíamos apenas como passar o [arquivo de entrada principal](/tex/{{lang.url-fragment}}net/tex-io/#tex-input) para o mecanismo TeX como nome de arquivo, totalmente especificado ou de curta forma, seja com uma extensão ou sem ele. Mas há outro [construtor](https://reference.aspose.com/tex/net/aspose.tex/TeXJob/TeXJob/) da classe `TeXJob`, que leva um fluxo como o primeiro argumento. Isso é conveniente se, por algum motivo, tivermos o arquivo de entrada principal em um formulário que não seja um arquivo no sistema de arquivos de disco. Veja como pode ser implementado:
 
 {{< gist "aspose-com-gists" "0fbd18cd8c28d5ed12e19cd52634ebd4" "Example-StreamInput-LaTeX.cs" >}}
 
-Observe que todos os arquivos de saída terão o nome *texput*. Isso porque o motor não pode obter nenhum outro nome em nenhum lugar. *texput* é o nome da tarefa padrão. [Aqui](/tex/{{lang.url-fragment}}net/tex-io/#TeX-output) e [aqui](/tex/{{lang.url-fragment}}net/other-options/#how-to-set-the-job-name) são detalhes sobre nomes de trabalho.
+Observe que todos os arquivos de saída terão o nome *texput*. Isso porque o motor não pode obter nenhum outro nome em nenhum lugar. *texput* é o nome da tarefa padrão. [Aqui](/tex/{{lang.url-fragment}}net/tex-io/#tex-output) e [aqui](/tex/{{lang.url-fragment}}net/other-options/#how-to-set-the-job-name) são detalhes sobre nomes de trabalho.
 
 ## Entrando no principal arquivo de entrada TeX do terminal
 

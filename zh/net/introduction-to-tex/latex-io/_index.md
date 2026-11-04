@@ -12,7 +12,7 @@ lastmod: "2026-04-22"
 
 {{<section overview>}}
 
-## LaTeX 文件
+## LaTeX 文件 {#latex-file}
 
 如果我们有一个 [TeX 文件](/tex/{{lang.url-fragment}}net/tex-io/#tex-file) 并且它具有以下结构，那么我们将此文件称为 *LaTeX 文件*：
 
@@ -33,7 +33,7 @@ lastmod: "2026-04-22"
 
 关于在处理 LaTeX 文件时 TeX 的 [input](/tex/{{lang.url-fragment}}net/tex-io/#tex-input) 和 [output](/tex/{{lang.url-fragment}}net/tex-io/#tex-output) 有几件值得注意的事情。
 
-## LaTeX 输出文件
+## LaTeX 输出文件 {#latex-output-file}
 
 典型的 LaTeX 作业会创建一个辅助输出文件，文件名为 [job name](/tex/{{lang.url-fragment}}net/tex-io/#tex-output)，扩展名为 *.aux*。如果你为数学公式（方程）设置了标签并在正文中引用，它通常会包含引擎在作业运行过程中收集的引用数据。若你没有使用此类功能，该文件仅包含 `\relax` 控制序列（TeX 原始指令之一），所以不要感到惊讶。
 

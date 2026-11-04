@@ -128,7 +128,7 @@ A continuación, proporcionamos un ejemplo ilustrativo de un directorio de entra
 
 {{< gist "aspose-com-gists" "deadfd7c29ffe40024a9b6d12f0ed18a" "Example-RequiredInputDirectory.cs" >}}
 
-### Restricciones
+### Restricciones {#restrictions}
 
 Puede suceder que un paquete requerido por su archivo LaTeX esté desarrollado bajo el kernel *LaTeX3e*. Lo más probable es que un paquete de este tipo no funcione con la biblioteca **Aspose.TeX** ya que esta última se basa en el kernel *LaTeX2e*.
 

@@ -15,7 +15,7 @@ lastmod: "2026-11-02"
 
 Você pode fazer o download facilmente do Aspose.TeX para o .NET Product para fins de avaliação. Consulte a página [Aspose.TeX para .NET Download](https://www.nuget.org/packages/Aspose.TeX/) para descobrir a versão mais recente. O download da avaliação é o mesmo que o download adquirido. A versão de avaliação simplesmente fica licenciada quando você adiciona algumas linhas de código para aplicar a licença.
 
-### Limitações da versão de avaliação
+### Limitações da versão de avaliação {#evaluation-version-limitations}
 
 A versão de avaliação do Aspose.TeX (sem uma licença especificada) fornece funcionalidade completa do produto, exceto que apenas até quatro primeiras páginas podem ser obtidas no documento de saída. Além disso, essas páginas serão carimbadas com uma marca d'água no modo de avaliação.
 
