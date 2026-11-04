@@ -23,11 +23,11 @@ lastmod: "2026-04-22"
 
 ご覧のとおり、コードはTeXファイルを変換するためのコードに似ています。しかし、いくつかの違いがあります。
 
-まず、[TeXConfig.ObjectIniTeX](https://reference.aspose.com/tex/net/Aspose.TeX/texconfig/objectinitex/)ジョブ構成を使用します。これは、エンジンの状態「Virgin」を離れる特別な構成です。つまり、内部パラメーターにはデフォルト値があり、コントロールシーケンスのセットはプリミティブのセットと一致します。私たちの例では、プリミティブのセットは、[ここ](/tex/{{lang.url-fragment}}net/aspose-tex-and-object-tex/#object-tex)に言及された意味で拡張されます。
+まず、[TeXConfig.ObjectIniTeX](https://reference.aspose.com/tex/net/aspose.tex/texconfig/objectinitex/)ジョブ構成を使用します。これは、エンジンの状態「Virgin」を離れる特別な構成です。つまり、内部パラメーターにはデフォルト値があり、コントロールシーケンスのセットはプリミティブのセットと一致します。私たちの例では、プリミティブのセットは、[ここ](/tex/{{lang.url-fragment}}net/aspose-tex-and-object-tex/#object-tex)に言及された意味で拡張されます。
 
 次に、通常どおり、入力および出力作業ディレクトリを設定します。入力作業ディレクトリには、メイン形式のソースファイルとそのすべての依存関係を含める必要があります。
 
-そして、2番目の重要な違いは、私たちが仕事をする方法です。今回は、static [CreateFormat()](https://reference.aspose.com/tex/net/Aspose.TeX/texjob/createformat/)メソッドを使用します。これは、オプションとともにメインソースファイルの名前を取得し、形式名と同じでなければなりません。
+そして、2番目の重要な違いは、私たちが仕事をする方法です。今回は、static [CreateFormat()](https://reference.aspose.com/tex/net/aspose.tex/texjob/createformat/)メソッドを使用します。これは、オプションとともにメインソースファイルの名前を取得し、形式名と同じでなければなりません。
 
 ## カスタム形式でTeXファイルを組版します
 
@@ -35,7 +35,7 @@ lastmod: "2026-04-22"
 
 {{< gist "aspose-com-gists" "deadfd7c29ffe40024a9b6d12f0ed18a" "Example-TypesetWithCustomFormat.cs" >}}
 
-明らかに、形式を何らかの形で指定する必要があります。まず、[FormatProvider](https://reference.aspose.com/tex/net/aspose.tex.resourceproviders/FormatProvider/)クラスのインスタンスを作成する必要があります。次に、オプションコンストラクターで[TeXConfig.ObjectTeX()](https://reference.aspose.com/tex/net/Aspose.TeX/texconfig/objecttex/)構成を使用します。これは、フォーマットプロバイダーを引数として受け取り、エンジンの「処女」状態の上に形式をロードします。
+明らかに、形式を何らかの形で指定する必要があります。まず、[FormatProvider](https://reference.aspose.com/tex/net/aspose.tex.resourceproviders/formatprovider/)クラスのインスタンスを作成する必要があります。次に、オプションコンストラクターで[TeXConfig.ObjectTeX()](https://reference.aspose.com/tex/net/aspose.tex/texconfig/objecttex/)構成を使用します。これは、フォーマットプロバイダーを引数として受け取り、エンジンの「処女」状態の上に形式をロードします。
 
 残りのコードはあなたに馴染みがあるはずです。この[ガイド](/tex/{{lang.url-fragment}}net/conversion/)で前述した機能を使用します。
 

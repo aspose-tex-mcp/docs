@@ -18,7 +18,7 @@ lastmod: "2026-11-04"
 
 ### アンパックされた必須入力（`fancybox` パッケージ）
 
-次のシンプルな LaTeX ファイル（例のソリューションからの `required-input-fs.tex`）があるとします。
+次のシンプルな LaTeX ファイル（[例のソリューション](https://GitHub.com/aspose-tex/Aspose.TeX-for-.NET)からの `required-input-fs.tex`）があるとします。
 
 ```tex
 \documentclass{article}

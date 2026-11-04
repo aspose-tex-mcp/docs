@@ -64,4 +64,4 @@ Transcript written on hello-world.log.
 
 Інші варіанти завдань TeX обговорюються [тут](/tex/{{lang.url-fragment}}net/other-options/).
 
-**Ви також можете ознайомитися з безкоштовною [веб-програмою] для перетворення LaTeX у PDF (29), створеною на основі [Aspose.TeX для .NET API](https://products.aspose.com/tex/net/).**
+**Ви також можете ознайомитися з безкоштовною [веб-програмою](https://products.aspose.app/tex/conversion/latex-to-pdf) для перетворення LaTeX у PDF, створеною на основі [Aspose.TeX для .NET API](https://products.aspose.com/tex/net/).**

@@ -25,14 +25,14 @@ Aspose.TeX是一个.NET库，用于排版TeX文件。它可以以各种图形格
 
 Aspose为其所有产品提供无限的免费技术支持。支持所有用户都可以使用，包括评估。
 
-如果您需要有关 Aspose.TeX for .NET 的帮助，请访问 Aspose.Forums。请在 Aspose.TeX for .NET 论坛中发布您的问题，我们将在几小时内为您解答。这些问题将由 Aspose.TeX for .NET 支持团队直接解答。
+如果您需要有关 Aspose.TeX for .NET 的帮助，[**请访问 Aspose.Forums**](https://forum.aspose.com/)。请在 Aspose.TeX for .NET 论坛中发布您的问题，我们将在几小时内为您解答。这些问题将由 Aspose.TeX for .NET 支持团队直接解答。
 
 当期望论坛上的答复时，请允许时区差异。
 
 如果您对.net有Aspose.TeX的问题，请按照以下简单步骤确保以最有效的方式解决它：
 
 - 在报告问题之前，请确保使用最新的Aspose.TeX用于.NET版本。请参阅[ASPOSE.TEX的.NET下载页](https://www.nuget.org/packages/Aspose.TeX/)以了解最新版本。
-- 在报告问题之前，请查看论坛，本文档，Wiki和[API参考](https://reference.aspose.com/tex/net/)(3)。您的问题可能已经有了答案。
+- 在报告问题之前，请查看论坛，本文档，Wiki和[API参考](https://reference.aspose.com/tex/net/)。您的问题可能已经有了答案。
 - 报告问题时，请包括原始文档，并可能是导致问题的代码片段。如果您需要附加多个文件，请将它们划入一个文件中。可以安全地将您的文档附加在Aspose.forums中，因为只有您和Aspose开发人员才能访问附件的文件。
 - 请尝试报告每个线程的一个问题。如果您有另一个问题，请在单独的线程中报告。
 

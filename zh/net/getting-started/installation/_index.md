@@ -36,7 +36,7 @@ NuGet是一个免费的，开源开发人员的包装管理系统，用于.NET�
 
 ### 引用aspose.tex .net
 
-利用这一出色的功能，我们将[Aspose.TeX for .NET]捆绑在一起(1)库中的NuGet软件包，然后将其上传到NuGet存储库中。使用此选项，您可以从不在系统上安装此组件的情况下使用aspose.tex。 NuGet在Visual Studio 2010和更高版本，Visual Web Developer 2010和Windows Phone Developer工具7.1中运行。在我们的测试中，我们使用Visual Studio 2015 Ultimate进行了测试。
+利用这一出色的功能，我们将 [Aspose.TeX for .NET](https://www.nuget.org/packages/Aspose.TeX) 库打包为 NuGet 软件包，然后将其上传到 NuGet 存储库中。使用此选项，您可以从不在系统上安装此组件的情况下使用aspose.tex。 NuGet在Visual Studio 2010和更高版本，Visual Web Developer 2010和Windows Phone Developer工具7.1中运行。在我们的测试中，我们使用Visual Studio 2015 Ultimate进行了测试。
 
 开始：
 

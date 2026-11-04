@@ -30,7 +30,7 @@ lastmod: "2026-11-02"
 1. Inicie a classe [TeXOptions](https://reference.aspose.com/tex/net/aspose.tex/texoptions/).
 2. Especifique o diretório de trabalho do sistema de arquivos para a saída, configurando a propriedade [OutputWorkingDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/outputworkingdirectory/).
 3. Inicialize as opções de salvar para o formato de saída usando a classe (formato de arquivo).
-4. Converta TeX usando o método [Run()](https://reference.aspose.com/tex/net/aspose.tex/TeXJob/run/).
+4. Converta TeX usando o método [Run()](https://reference.aspose.com/tex/net/aspose.tex/texjob/run/).
 
 Para mais exemplos, visite [Conversão](/tex/{{lang.url-fragment}}net/conversion/) Guias.
 <br> <br>
@@ -106,7 +106,7 @@ Para mais exemplos, visite [LATEX MATH FORMULAS Renderização](/tex/{{lang.url-
 
 **A:** Sim, você pode fazer o download facilmente do Aspose.TeX para o .NET Product para fins de avaliação. A versão de avaliação do Aspose.TeX (sem uma licença especificada) fornece funcionalidade completa do produto, exceto algumas [limitações de avaliação](/tex/{{lang.url-fragment}}net/licensing/#evaluation-version-limitations).
 
-Se você deseja tentar Aspose.TeX sem limitações de avaliação, solicite uma [licença temporária] de 30 dias (11).
+Se você deseja tentar Aspose.TeX sem limitações de avaliação, solicite uma [licença temporária](https://purchase.aspose.com/temporary-license/) de 30 dias.
 <br> <br>
 
 **Q: Onde posso obter ajuda se houver algum problema com a solução enfrentada?**

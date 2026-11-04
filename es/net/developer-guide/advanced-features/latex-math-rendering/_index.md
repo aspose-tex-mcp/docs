@@ -39,7 +39,7 @@ La siguiente línea del ejemplo no tiene mucho sentido. Simplemente demuestra qu
 
 Y la última opción, `ShowTerminal`, permite alternar la visualización de la salida de la terminal en la consola.
 
-El método que realiza la representación es `MathRenderer.Render()`. Este método devuelve el tamaño de la fórmula en puntos.
+El método que realiza la representación es [MathRenderer.Render()](https://reference.aspose.com/tex/net/aspose.tex.features/mathrenderer/render/). Este método devuelve el tamaño de la fórmula en puntos.
 
 El método acepta como segundo argumento el flujo donde se escribirá la imagen. A continuación, creamos el flujo.
 
@@ -53,7 +53,7 @@ Este es el resultado de la representación.
 
 Este es el caso de uso más común para la función de **renderizado de fórmulas matemáticas de LaTeX**.
 
-**También puede consultar la aplicación web gratuita [https://products.aspose.app/tex/equation-editor/png], basada en la función implementada en la API de Aspose.TeX para .NET [https://products.aspose.com/tex/net/].**
+**También puede consultar la [aplicación web](https://products.aspose.app/tex/equation-editor/png) gratuita, basada en la función implementada en la [API de Aspose.TeX para .NET](https://products.aspose.com/tex/net/).**
 
 ## Cómo renderizar una fórmula matemática de LaTeX a SVG
 
@@ -95,3 +95,5 @@ El agente instancia `SvgMathRendererOptions` o `PngMathRendererOptions` según e
 4. Aspose.TeX no lanza una excepción cuando una fórmula contiene un error de TeX. Guarda el primer error en la opción `ErrorReport` y escribe el registro completo en el flujo `LogStream`, si se ha asignado uno.
 
 En lugar de fallar en silencio o bloquear las interfaces de usuario, el agente comprueba `ErrorReport` después de cada llamada a `Render()`, crea un bucle de contexto y pide al LLM que reescriba la ecuación. La salida por sí sola no es una señal fiable: según el error, la imagen puede generarse igualmente o quedar vacía.
+
+**También puede consultar la [aplicación web](https://products.aspose.app/tex/equation-editor/svg) gratuita, basada en la función implementada en la [API de Aspose.TeX para .NET](https://products.aspose.com/tex/net/).**

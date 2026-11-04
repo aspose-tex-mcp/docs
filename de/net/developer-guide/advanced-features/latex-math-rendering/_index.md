@@ -94,3 +94,5 @@ Der Agent instanziiert je nach Clientkontext entweder `SvgMathRendererOptions` o
 4. Aspose.TeX löst keine Ausnahme aus, wenn eine Formel einen TeX-Fehler enthält. Der erste Fehler wird in der Option `ErrorReport` gespeichert, und das vollständige Protokoll wird in den Stream `LogStream` geschrieben, sofern einer zugewiesen ist.
 
 Anstatt unbemerkt fehlzuschlagen oder Benutzeroberflächen abstürzen zu lassen, prüft der Agent nach jedem Aufruf von `Render()` die Option `ErrorReport`, baut eine Kontextschleife auf und fordert das LLM auf, die Formel neu zu schreiben. Die Ausgabe allein ist kein zuverlässiges Signal: Je nach Fehler wird das Bild trotzdem erzeugt oder es bleibt leer.
+
+**Sie können sich auch die kostenlose [Web-App](https://products.aspose.app/tex/equation-editor/svg) ansehen, die auf der in [Aspose.TeX for .NET API](https://products.aspose.com/tex/net/) implementierten Funktion basiert.**

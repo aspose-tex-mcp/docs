@@ -105,7 +105,7 @@ Pour plus d'exemples, veuillez consulter les guides [Rendu des formules mathéma
 
 **R :** Oui, vous pouvez facilement télécharger le produit Aspose.TeX pour .NET à des fins d'évaluation. La version d'évaluation d'Aspose.TeX (sans licence spécifiée) fournit toutes les fonctionnalités du produit, à l'exception de certaines [limitations d'évaluation](/tex/{{lang.url-fragment}}net/licensing/#evaluation-version-limitations).
 
-Si vous souhaitez essayer Aspose.TeX sans limitations d'évaluation, demandez une [licence temporaire] de 30 jours (11).
+Si vous souhaitez essayer Aspose.TeX sans limitations d'évaluation, demandez une [licence temporaire](https://purchase.aspose.com/temporary-license/) de 30 jours.
 <br><br>
 
 **Q : Où puis-je obtenir de l'aide en cas de problème avec la solution ?**

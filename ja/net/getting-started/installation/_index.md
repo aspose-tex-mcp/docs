@@ -36,7 +36,7 @@ NuGetは、開発中にサードパーティライブラリを.NETアプリケ�
 
 ### .netのAspose.TeXを参照してください
 
-この素晴らしい機能の利益を得て、[.NET用のAspose.TeX](https://www.NuGet.org/packages/Aspose.TeX)ライブラリをNuGetパッケージにバンドルし、NuGetリポジトリにアップロードしました。このオプションを使用すると、システムにこのコンポーネントをインストールせずに、.NETにAspose.TeXを使用することでメリットがあります。 NuGetは、Visual Studio 2010およびHigherバージョン、Visual Web Developer 2010、およびWindows Phone Developer Tools 7.1で実行されます。テストでは、Visual Studio 2015 Ultimateでテストしました。
+この素晴らしい機能の利益を得て、[.NET用のAspose.TeX](https://www.nuget.org/packages/Aspose.TeX)ライブラリをNuGetパッケージにバンドルし、NuGetリポジトリにアップロードしました。このオプションを使用すると、システムにこのコンポーネントをインストールせずに、.NETにAspose.TeXを使用することでメリットがあります。 NuGetは、Visual Studio 2010およびHigherバージョン、Visual Web Developer 2010、およびWindows Phone Developer Tools 7.1で実行されます。テストでは、Visual Studio 2015 Ultimateでテストしました。
 
 開始するために：
 

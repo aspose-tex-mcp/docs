@@ -29,7 +29,7 @@ lastmod: "2026-11-04"
 
 次に、調整された入力ファイルの先頭からスキャンを開始します。LaTeX 形式で動作する TeX エンジンは、途中で `\begin{document}` が見つからないことを示すエラーを出すことがあります。その場合、`\begin{document}` を挿入すべき位置が決定され、レポートに反映されます。
 
-エンジンがファイルをさらに走査すると、未定義のコマンドや環境が見つかることがあります。API は、最も一般的なコマンドや環境に対して、[埋め込み必須パッケージ](/tex/{{lang.url-fragment}}net/embedded-packages/)（これらのコマンドや環境を定義するパッケージ）を推測できます。ただし、外部から `IGuessPackageCallback` インターフェイスを実装してその推測ロジックを提供することも可能です。`GuessPackageCallback` オプションにそのクラスのインスタンスを割り当てます。
+エンジンがファイルをさらに走査すると、未定義のコマンドや環境が見つかることがあります。API は、最も一般的なコマンドや環境に対して、[埋め込み必須パッケージ](/tex/{{lang.url-fragment}}net/embedded-packages/)（これらのコマンドや環境を定義するパッケージ）を推測できます。ただし、外部から [IGuessPackageCallback](https://reference.aspose.com/tex/net/aspose.tex.features/iguesspackagecallback/) インターフェイスを実装してその推測ロジックを提供することも可能です。`GuessPackageCallback` オプションにそのクラスのインスタンスを割り当てます。
 
 以下は、`\lhead` コマンドを `fancyhdr` パッケージにマッピングする非常にシンプルな例です。
 

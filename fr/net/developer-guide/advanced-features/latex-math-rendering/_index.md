@@ -95,3 +95,5 @@ L'agent instancie `SvgMathRendererOptions` ou `PngMathRendererOptions` selon le 
 4. Aspose.TeX ne lève pas d'exception lorsqu'une formule contient une erreur TeX. Il enregistre la première erreur dans l'option `ErrorReport` et écrit le journal complet dans le flux `LogStream`, si celui-ci est affecté.
 
 Au lieu d'échouer silencieusement ou de faire planter les interfaces utilisateur, l'agent vérifie `ErrorReport` après chaque appel à `Render()`, crée une boucle de contexte et demande au LLM de réécrire l'équation. La sortie seule n'est pas un signal fiable : selon l'erreur, l'image peut quand même être produite ou rester vide.
+
+**Vous pouvez également consulter l'[application Web](https://products.aspose.app/tex/equation-editor/svg) gratuite créée sur la base de la fonctionnalité implémentée dans [Aspose.TeX for .NET API](https://products.aspose.com/tex/net/).**

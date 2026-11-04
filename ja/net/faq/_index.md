@@ -27,10 +27,10 @@ lastmod: "2026-11-02"
 
 **A:**とても簡単です。ほんの数歩を踏み出す必要があります！ 
 
-1. [TeXOptions](https://reference.aspose.com/tex/net/Aspose.TeX/texoptions/)クラスを開始します。
-2. [OutputWorkingDirectory](https://reference.aspose.com/tex/net/Aspose.TeX/texoptions/outputworkingdirectory/)プロパティを設定して、出力のファイルシステム作業ディレクトリを指定します。
+1. [TeXOptions](https://reference.aspose.com/tex/net/aspose.tex/texoptions/)クラスを開始します。
+2. [OutputWorkingDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/outputworkingdirectory/)プロパティを設定して、出力のファイルシステム作業ディレクトリを指定します。
 3. (ファイル形式)saveoptionsクラスを使用して、出力形式の保存オプションを初期化します。
-4. [Run()](https://reference.aspose.com/tex/net/Aspose.TeX/TeXJob/run/)メソッドを使用してTexを変換します。
+4. [Run()](https://reference.aspose.com/tex/net/aspose.tex/texjob/run/)メソッドを使用してTexを変換します。
 
 その他の例については、[Conversion](/tex/{{lang.url-fragment}}net/conversion/)ガイドをご覧ください。
 <br> <br>
@@ -42,7 +42,7 @@ lastmod: "2026-11-02"
 
 **Q：どのパッケージがAspose.TeX apiソリューションに埋め込まれていますか？**
 
-**A:** [Aspose.TeX埋め込みラテックスパッケージ](https://purchase.aspose.com/temporary-license/)のリストによるとそれらは次のとおりです。 
+**A:** [Aspose.TeX埋め込みラテックスパッケージ](/tex/{{lang.url-fragment}}net/embedded-packages/)のリストによるとそれらは次のとおりです。 
 
 - eurosym
 - geometry
@@ -106,7 +106,7 @@ lastmod: "2026-11-02"
 
 **A:**はい、評価のために.NET製品用のAspose.TeXを簡単にダウンロードできます。 Aspose.TeXの評価バージョン(ライセンスを指定しない)は、[評価制限](/tex/{{lang.url-fragment}}net/licensing/#evaluation-version-limitations)を除き、完全な製品機能を提供します。
 
-評価の制限なしにAspose.TeXを試してみたい場合は、30日間の[一時ライセンス]を要求します(11)。
+評価の制限なしにAspose.TeXを試してみたい場合は、30日間の[一時ライセンス](https://purchase.aspose.com/temporary-license/)を要求します(11)。
 <br> <br>
 
 **Q：ソリューションに問題がある場合、どこでヘルプを得ることができますか？**

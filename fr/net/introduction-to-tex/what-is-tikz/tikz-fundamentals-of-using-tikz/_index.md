@@ -187,4 +187,4 @@ namespace AsposeTexTikzDemo
 }
 ```
 
-**De plus, découvrez notre application web gratuite basée sur l'API Aspose.TeX pour .NET pour des conversions TeX rapides et faciles.**
+**De plus, découvrez notre [application web](https://products.aspose.app/tex/conversion/latex/) gratuite basée sur l'[API Aspose.TeX pour .NET](https://products.aspose.com/tex/net/) pour des conversions TeX rapides et faciles.**
