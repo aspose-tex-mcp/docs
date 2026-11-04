@@ -17,9 +17,9 @@ Come abbiamo già detto [qui](/tex/{{lang.url-fragment}}net/tex-io/#tex-interact
 
 {{< gist "aspose-com-gists" "deadfd7c29ffe40024a9b6d12f0ed18a" "Example-InteractionMode.cs" >}}
 
-## Come impostare il nome del lavoro
+## Come impostare il nome del lavoro {#how-to-set-the-job-name}
 
-Quando passiamo il file di input principale come nome di un file, otteniamo file di output con lo stesso nome, sebbene con altre estensioni. Il motore TeX chiama il nome del file di input il * nome del lavoro * e lo utilizza per i file di output, tranne nei casi in cui vengono scritti file ausiliari con altri nomi esplicitamente specificati. Quando passiamo il file di input principale come [stream](/tex/{{lang.url-fragment}}net/other-ways-of-main-input/#providing-the-main-input-file-as-a-stream), il motore TeX utilizza il nome del lavoro predefinito, che è *texput*.
+Quando passiamo il file di input principale come nome di un file, otteniamo file di output con lo stesso nome, sebbene con altre estensioni. Il motore TeX chiama il nome del file di input il * nome del lavoro * e lo utilizza per i file di output, tranne nei casi in cui vengono scritti file ausiliari con altri nomi esplicitamente specificati. Quando passiamo il file di input principale come [stream](/tex/{{lang.url-fragment}}net/other-ways-of-main-input/#providing-the-main-input-file-to-the-tex-engine-as-a-stream), il motore TeX utilizza il nome del lavoro predefinito, che è *texput*.
 In entrambi i casi, possiamo sovrascrivere il nome del lavoro assegnando l'opzione di conversione appropriata.
 
 {{< gist "aspose-com-gists" "deadfd7c29ffe40024a9b6d12f0ed18a" "Example-JobName.cs" >}}
@@ -42,9 +42,9 @@ Normalmente, il motore TeX crea ligati per determinate coppie di caratteri se il
 
 {{< gist "aspose-com-gists" "deadfd7c29ffe40024a9b6d12f0ed18a" "Example-NoLigatures.cs" >}}
 
-## Come ripetere il lavoro
+## Come ripetere il lavoro {#how-to-repeat-the-job}
 
-Come abbiamo detto [sopra](/tex/{{lang.url-fragment}}net/latex-io/#latex-input) per quanto riguarda etichette e riferimenti, ci sono casi in cui vorremmo eseguire lo stesso lavoro due volte. Ecco come può essere fatto:
+Come abbiamo detto [sopra](/tex/{{lang.url-fragment}}net/latex-io/#latex-output-file) per quanto riguarda etichette e riferimenti, ci sono casi in cui vorremmo eseguire lo stesso lavoro due volte. Ecco come può essere fatto:
 
 {{< gist "aspose-com-gists" "deadfd7c29ffe40024a9b6d12f0ed18a" "Example-Repeat.cs" >}}
 

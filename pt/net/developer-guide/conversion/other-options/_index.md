@@ -17,9 +17,9 @@ Como mencionamos [aqui](/tex/{{lang.url-fragment}}net/tex-io/#tex-interaction-mo
 
 {{< gist "aspose-com-gists" "deadfd7c29ffe40024a9b6d12f0ed18a" "Example-InteractionMode.cs" >}}
 
-## Como definir o nome do trabalho
+## Como definir o nome do trabalho {#how-to-set-the-job-name}
 
-Quando passamos o arquivo de entrada principal como um nome de arquivo, obtemos arquivos de saída com o mesmo nome, embora com outras extensões. O mecanismo TeX chama o nome do arquivo de entrada de * nome do trabalho * e o usa para arquivos de saída, exceto nos casos em que os arquivos auxiliares com outros nomes especificados explicitamente são gravados. Quando passamos pelo arquivo de entrada principal como um [Stream](/tex/{{lang.url-fragment}}net/other-ways-of-main-input/#providing-the-main-input-file-as-a-stream), o mecanismo TeX usa o nome da tarefa padrão, que é *texput*.
+Quando passamos o arquivo de entrada principal como um nome de arquivo, obtemos arquivos de saída com o mesmo nome, embora com outras extensões. O mecanismo TeX chama o nome do arquivo de entrada de * nome do trabalho * e o usa para arquivos de saída, exceto nos casos em que os arquivos auxiliares com outros nomes especificados explicitamente são gravados. Quando passamos pelo arquivo de entrada principal como um [Stream](/tex/{{lang.url-fragment}}net/other-ways-of-main-input/#providing-the-main-input-file-to-the-tex-engine-as-a-stream), o mecanismo TeX usa o nome da tarefa padrão, que é *texput*.
 Nos dois casos, podemos substituir o nome do trabalho atribuindo a opção de conversão apropriada.
 
 {{< gist "aspose-com-gists" "deadfd7c29ffe40024a9b6d12f0ed18a" "Example-JobName.cs" >}}
@@ -42,9 +42,9 @@ Normalmente, o mecanismo TeX cria ligações para certos pares de caracteres se 
 
 {{< gist "aspose-com-gists" "deadfd7c29ffe40024a9b6d12f0ed18a" "Example-NoLigatures.cs" >}}
 
-## Como repetir o trabalho
+## Como repetir o trabalho {#how-to-repeat-the-job}
 
-Como mencionamos [acima](/tex/{{lang.url-fragment}}net/latex-io/#latex-input) em relação a rótulos e referências, há casos em que gostaríamos de executar o mesmo trabalho duas vezes. Aqui está como isso pode ser feito:
+Como mencionamos [acima](/tex/{{lang.url-fragment}}net/latex-io/#latex-output-file) em relação a rótulos e referências, há casos em que gostaríamos de executar o mesmo trabalho duas vezes. Aqui está como isso pode ser feito:
 
 {{< gist "aspose-com-gists" "deadfd7c29ffe40024a9b6d12f0ed18a" "Example-Repeat.cs" >}}
 

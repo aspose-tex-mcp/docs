@@ -11,7 +11,7 @@ lastmod: "2026-04-22"
 
 {{<section overview>}}
 
-## TeX エンジンへのメイン入力ファイルをストリームとして提供する
+## TeX エンジンへのメイン入力ファイルをストリームとして提供する {#providing-the-main-input-file-to-the-tex-engine-as-a-stream}
 
 これまで、[メイン入力ファイル](/tex/{{lang.url-fragment}}net/tex-io/#tex-input) をフルパスでも短縮形でも、拡張子の有無に関わらず、ファイル名として TeX エンジンに渡す方法しか知りませんでした。しかし、`TeXJob` クラスには別の[コンストラクタ](https://reference.aspose.com/tex/net/aspose.tex/texjob/texjob/) があり、最初の引数としてストリームを受け取ります。ディスク上のファイル以外の形でメイン入力ファイルを保持している場合に便利です。実装例は次のとおりです:
 

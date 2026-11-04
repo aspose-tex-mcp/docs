@@ -132,7 +132,7 @@ Di seguito, forniamo un esempio illustrativo di una directory di input richiesta
 {{< gist "aspose-com-gists" "deadfd7c29ffe40024a9b6d12f0ed18a" "Example-RequiredInputDirectory.cs" >}}
 
 
-### Restrizioni
+### Restrizioni {#restrictions}
 
 Può succedere che un pacchetto richiesto dal tuo file LaTeX sia sviluppato sotto il kernel *LaTeX3e*. Molto probabilmente tale pacchetto non funzionerà con la libreria **Aspose.TeX** poiché quest'ultima si basa sul kernel*LaTeX2e*.
 

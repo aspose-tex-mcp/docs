@@ -17,9 +17,9 @@ lastmod: "2026-04-22"
 
 {{< gist "aspose-com-gists" "deadfd7c29ffe40024a9b6d12f0ed18a" "Example-InteractionMode.cs" >}}
 
-## 如何设置工作名称
+## 如何设置工作名称 {#how-to-set-the-job-name}
 
-当我们将主要输入文件作为文件名传递时，我们将获得具有相同名称的输出文件，尽管其他扩展名。 TeX引擎将输入文件的名称称为 *作业名称*，并将其用于输出文件，除非在编写具有明确指定其他名称的辅助文件的情况下。当我们以[流](/tex/{{lang.url-fragment}}net/other-ways-of-main-input/#providing-the-main-input-file-as-a-stream)为单位的主要输入文件时，TeX引擎使用默认的作业名称，即 *texput*。
+当我们将主要输入文件作为文件名传递时，我们将获得具有相同名称的输出文件，尽管其他扩展名。 TeX引擎将输入文件的名称称为 *作业名称*，并将其用于输出文件，除非在编写具有明确指定其他名称的辅助文件的情况下。当我们以[流](/tex/{{lang.url-fragment}}net/other-ways-of-main-input/#providing-the-main-input-file-to-the-tex-engine-as-a-stream)为单位的主要输入文件时，TeX引擎使用默认的作业名称，即 *texput*。
 在这两种情况下，我们都可以通过分配适当的转换选项来覆盖作业名称。
 
 {{< gist "aspose-com-gists" "deadfd7c29ffe40024a9b6d12f0ed18a" "Example-JobName.cs" >}}
@@ -43,9 +43,9 @@ LaTeX具有从序言中的某些定义中自动生成标题的功能。此标题
 
 {{< gist "aspose-com-gists" "deadfd7c29ffe40024a9b6d12f0ed18a" "Example-NoLigatures.cs" >}}
 
-## 如何重复工作
+## 如何重复工作 {#how-to-repeat-the-job}
 
-正如我们已经提到的[上文](/tex/{{lang.url-fragment}}net/latex-io/#latex-input)有关标签和参考文献的情况，在某些情况下，我们想两次运行相同的工作。这是可以做到的：
+正如我们已经提到的[上文](/tex/{{lang.url-fragment}}net/latex-io/#latex-output-file)有关标签和参考文献的情况，在某些情况下，我们想两次运行相同的工作。这是可以做到的：
 
 {{< gist "aspose-com-gists" "deadfd7c29ffe40024a9b6d12f0ed18a" "Example-Repeat.cs" >}}
 

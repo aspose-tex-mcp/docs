@@ -63,7 +63,7 @@ O trecho de código C# a seguir demonstra outra maneira de obter a saída PNG: o
 
 Os arquivos *"page-n.png"* serão gravados em qualquer caminho que especificarmos. Como a opção `DeviceWritesImages` está definida como `false`, o próprio dispositivo não grava arquivos PNG no diretório de saída.
 
-## Sobre opções de entrada
+## Sobre opções de entrada {#about-input-options}
 
 Caso nosso arquivo de entrada principal exija dependências, por exemplo, pacotes, que não estão incluídos no sistema de LaTeX básico e pacotes suportados, devemos definir a opção [RequiredInputDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/requiredinputdirectory/) da maneira semelhante a definir a opção [OutputWorkingDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/outputworkingdirectory/) e colocar as dependências nesse diretório. As dependências podem ser organizadas arbitrariamente em subdiretos. Caso tenhamos nossos próprios arquivos a serem incluídos ao longo do processo de composição, digamos arquivos gráficos externos, também devemos definir o [InputWorkingDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/inputworkingdirectory/) usando o caminho para o local onde esses arquivos são coletados. Também podemos colocar o arquivo de entrada principal em algum lugar dentro do diretório de entrada e especificar o caminho relativo no método `run()` (ou especificar nenhum caminho se o arquivo de entrada principal estiver na raiz). [Aqui](/tex/{{lang.url-fragment}}net/aspose-tex-input/) são os detalhes sobre o conceito de diretório de entrada em **Aspose.TeX para .NET** e fornecem implementações.
 

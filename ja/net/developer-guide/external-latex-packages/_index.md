@@ -127,7 +127,7 @@ using (Stream zipStream = File.Open("path-to-zip-with-pgfplots-sources", FileMod
 
 {{< gist "aspose-com-gists" "deadfd7c29ffe40024a9b6d12f0ed18a" "Example-RequiredInputDirectory.cs" >}}
 
-### 制限事項
+### 制限事項 {#restrictions}
 
 LaTeX ファイルが *LaTeX3e* カーネル向けに開発されたパッケージを要求する場合、そのパッケージは **Aspose.TeX** ライブラリ（*LaTeX2e* カーネルに基づく）では動作しない可能性が高いです。
 

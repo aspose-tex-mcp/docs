@@ -11,7 +11,7 @@ lastmod: "2026-04-22"
 
 {{<section overview>}}
 
-## Bereitstellung der Haupteingabedatei als Stream für die TeX-Engine
+## Bereitstellung der Haupteingabedatei als Stream für die TeX-Engine {#providing-the-main-input-file-to-the-tex-engine-as-a-stream}
 
 Bisher wussten wir nur, wie man die [Haupteingabedatei](/tex/{{lang.url-fragment}}net/tex-io/#tex-input) als Dateinamen an die TeX-Engine übergibt, egal ob vollständig angegeben oder in Kurzform, ob mit oder ohne Erweiterung. Aber es gibt noch einen anderen [Konstruktor](https://reference.aspose.com/tex/net/aspose.tex/texjob/texjob/) der Klasse „TeXJob“, der einen Stream als erstes Argument akzeptiert. Dies ist praktisch, wenn wir aus irgendeinem Grund die Haupteingabedatei in einer anderen Form als einer Datei im Dateisystem der Festplatte haben. So lässt es sich umsetzen:
 

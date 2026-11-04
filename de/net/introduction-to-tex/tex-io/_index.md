@@ -11,11 +11,11 @@ lastmod: 2026-10-20
 
 {{<section overview>}}
 
-## TeX-Datei
+## TeX-Datei {#tex-file}
 
 Technisch gesehen kann jede Datei eine TeX-Datei sein. Es muss nicht einmal die Erweiterung *.tex* vorhanden sein. Eine TeX-Engine liest die Eingabe Byte für Byte und versucht, ihr bekannte Befehle (d. h. solche, die sich in ihrem internen Zustand befinden) zu erkennen. Es meldet lediglich Fehler über nicht erkannte Befehle und/oder fordert Korrekturen auf dem Terminal an (sofern es in einem [interaktiven Modus](/tex/{{lang.url-fragment}}net/tex-io/#tex-interaction-modes) läuft). Wenn Sie jedoch ein gut gesetztes Dokument erwarten, sollte die Eingabe der TeX-Syntax folgen und im Idealfall nur Befehle enthalten, die der Engine bekannt sind.
 
-## TeX-Eingabe
+## TeX-Eingabe {#tex-input}
 
 Ein TeX-Job wird auf einer explizit angegebenen TeX-Datei ausgeführt. Daher schließen wir diese Datei in die Eingabe eines bestimmten TeX-Jobs ein. Darüber hinaus verfügt TeX über vier Grundelemente im Zusammenhang mit der Hilfseingabe:
 
@@ -30,7 +30,7 @@ Die vier Befehle können entweder in der Haupteingabedatei oder in einer Hilfsei
 
 Im [interaktiven Modus](/tex/{{lang.url-fragment}}net/tex-io/#tex-interaction-modes) fordert die TeX-Engine im Falle eines Fehlers eine Korrektur auf dem Terminal an. An dieser Stelle möchten Sie möglicherweise den fehlerhaften Befehl durch einen neuen ersetzen. Und dies wird eine weitere und letzte Möglichkeit sein, Eingaben für TeX bereitzustellen, die wir als *Terminaleingabe* bezeichnen.
 
-## TeX-Ausgabe
+## TeX-Ausgabe {#tex-output}
 
 Wie wir [oben](/tex/{{lang.url-fragment}}net/tex-io/#tex-input) erwähnt haben, wird ein TeX-Job für eine explizit angegebene Datei ausgeführt. Die Datei darf keine zu setzenden Daten enthalten. Möglicherweise gibt es nur Steuersequenzen, die keine einzugebenden Zeichen erzeugen. Aber normalerweise wird es solche Daten enthalten, sodass wir eine Datei im Zielformat erhalten, die unseren gesetzten Text enthalten sollte (oder was auch immer die Engine und das Format sonst noch zulassen, wenn sie um zusätzliche Funktionen eines bestimmten Zielformats erweitert werden). . Die Datei hat denselben Namen wie die als Eingabe angegebene Datei. Wir nennen diese Datei die *Hauptausgabedatei*. Wie wir [oben](/tex/{{lang.url-fragment}}net/aspose-tex-and-object-tex/#object-tex) erwähnt haben, handelt es sich für das Original-TeX um eine Datei im DVI-Format. Wir nennen den Namen der Eingabe- und Ausgabedateien ohne Erweiterung *Jobname*.
 
@@ -45,7 +45,7 @@ Die Dateien, deren Namen an die `\openout`-Befehle übergeben werden, sind auch 
 Während die TeX-Engine die Eingabe durchläuft, gibt sie möglicherweise einige Debuginformationen in die *log*- oder *transcript*-Datei aus. Wir werden diese Datei in die TeX-Ausgabe einbinden.
 Gleichzeitig mit dem Schreiben in die Protokolldatei gibt die TeX-Engine möglicherweise weniger detaillierte Informationen an das Terminal aus. Und dies ist die letzte Art und Weise, wie die TeX-Engine die Ausgabe schreibt, die wir als *Terminalausgabe* bezeichnen.
 
-## TeX-Interaktionsmodi
+## TeX-Interaktionsmodi {#tex-interaction-modes}
 
 Ein TeX-Job kann jederzeit in einem von vier Interaktionsmodi ausgeführt werden. Diese Modi werden durch die folgenden TeX-Grundelemente umgeschaltet:
 

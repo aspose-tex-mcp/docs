@@ -17,9 +17,9 @@ Wie wir [hier](/tex/{{lang.url-fragment}}net/tex-io/#tex-interaction-modes) erw�
 
 {{< gist "aspose-com-gists" "deadfd7c29ffe40024a9b6d12f0ed18a" "Example-InteractionMode.cs" >}}
 
-## So legen Sie den Jobnamen fest
+## So legen Sie den Jobnamen fest {#how-to-set-the-job-name}
 
-Wenn wir die Haupteingabedatei als Dateinamen übergeben, erhalten wir Ausgabedateien mit demselben Namen, allerdings mit anderen Erweiterungen. Die TeX-Engine nennt den Namen der Eingabedatei den *Jobnamen* und verwendet ihn für Ausgabedateien, außer in Fällen, in denen Hilfsdateien mit explizit angegebenen anderen Namen geschrieben werden. Wenn wir die Haupteingabedatei als [stream](/tex/{{lang.url-fragment}}net/other-ways-of-main-input/#providing-the-main-input-file-as-a-stream) übergeben, verwendet die TeX-Engine den Standard-Jobnamen, der *texput* ist.
+Wenn wir die Haupteingabedatei als Dateinamen übergeben, erhalten wir Ausgabedateien mit demselben Namen, allerdings mit anderen Erweiterungen. Die TeX-Engine nennt den Namen der Eingabedatei den *Jobnamen* und verwendet ihn für Ausgabedateien, außer in Fällen, in denen Hilfsdateien mit explizit angegebenen anderen Namen geschrieben werden. Wenn wir die Haupteingabedatei als [stream](/tex/{{lang.url-fragment}}net/other-ways-of-main-input/#providing-the-main-input-file-to-the-tex-engine-as-a-stream) übergeben, verwendet die TeX-Engine den Standard-Jobnamen, der *texput* ist.
 In beiden Fällen können wir den Jobnamen überschreiben, indem wir die entsprechende Konvertierungsoption zuweisen.
 
 {{< gist "aspose-com-gists" "deadfd7c29ffe40024a9b6d12f0ed18a" "Example-JobName.cs" >}}
@@ -42,9 +42,9 @@ Normalerweise erstellt die TeX-Engine Ligaturen für bestimmte Zeichenpaare, wen
 
 {{< gist "aspose-com-gists" "deadfd7c29ffe40024a9b6d12f0ed18a" "Example-NoLigatures.cs" >}}
 
-## So wiederholen Sie den Job
+## So wiederholen Sie den Job {#how-to-repeat-the-job}
 
-Wie wir [oben](/tex/{{lang.url-fragment}}net/latex-io/#latex-input) in Bezug auf Etiketten und Referenzen erwähnt haben, gibt es Fälle, in denen wir denselben Job gerne zweimal ausführen möchten. So kann es gemacht werden:
+Wie wir [oben](/tex/{{lang.url-fragment}}net/latex-io/#latex-output-file) in Bezug auf Etiketten und Referenzen erwähnt haben, gibt es Fälle, in denen wir denselben Job gerne zweimal ausführen möchten. So kann es gemacht werden:
 
 {{< gist "aspose-com-gists" "deadfd7c29ffe40024a9b6d12f0ed18a" "Example-Repeat.cs" >}}
 

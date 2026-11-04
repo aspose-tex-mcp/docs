@@ -11,7 +11,7 @@ lastmod: "2026-04-22"
 
 {{<section overview>}}
 
-## Fournir le fichier d'entrée principal au moteur TeX sous forme de flux
+## Fournir le fichier d'entrée principal au moteur TeX sous forme de flux {#providing-the-main-input-file-to-the-tex-engine-as-a-stream}
 
 Jusqu'à présent, nous savions seulement comment transmettre le [fichier d'entrée principal](/tex/{{lang.url-fragment}}net/tex-io/#tex-input) au moteur TeX sous forme de nom de fichier, qu'il soit entièrement spécifié ou sous forme abrégée, avec ou sans extension. Mais il existe un autre [constructeur](https://reference.aspose.com/tex/net/aspose.tex/texjob/texjob/) de la classe `TeXJob`, qui prend un flux comme premier argument. Ceci est pratique si, pour une raison quelconque, nous avons le fichier d'entrée principal sous une forme autre qu'un fichier sur le système de fichiers du disque. Voici comment cela peut être mis en œuvre :
 

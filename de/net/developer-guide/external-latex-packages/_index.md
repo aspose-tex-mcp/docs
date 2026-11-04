@@ -132,7 +132,7 @@ Nachfolgend stellen wir ein anschauliches Beispiel für ein benutzerdefiniertes 
 
 {{< gist "aspose-com-gists" "deadfd7c29ffe40024a9b6d12f0ed18a" "Example-RequiredInputDirectory.cs" >}}
 
-### Einschränkungen
+### Einschränkungen {#restrictions}
 
 Es kann vorkommen, dass ein für Ihre LaTeX-Datei erforderliches Paket unter dem *LaTeX3e*-Kernel entwickelt wird. Ein solches Paket wird höchstwahrscheinlich nicht mit der **Aspose.TeX**-Bibliothek funktionieren, da letztere auf dem *LaTeX2e*-Kernel basiert.
 

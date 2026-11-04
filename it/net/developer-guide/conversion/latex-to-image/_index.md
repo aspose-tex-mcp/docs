@@ -63,7 +63,7 @@ Il seguente frammento di codice C# mostra un altro modo per ottenere l'output PN
 
 I file *"page-n.png"* verranno scritti in qualsiasi percorso specificato. Poiché l'opzione `DeviceWritesImages` è impostata su `false`, il dispositivo stesso non scrive file PNG nella directory di output.
 
-## Sulle opzioni di input
+## Sulle opzioni di input {#about-input-options}
 
 Nel caso in cui il nostro file di input principale richieda dipendenze, ad esempio pacchetti, che non sono inclusi nel sistema di LaTeX di base e nei pacchetti supportati, dobbiamo impostare l'opzione [RecomeinputDirectory](https://reference.aspose.com/tex/net/aspose.tex/TeXOptions/requiredinputdirectory/) nel modo simile che impostiamo l'opzione [OutputWorkingDirectory](https://reference.aspose.com/tex/net/aspose.tex/TeXOptions/outputworkingdirectory/) e mettere le dipendenze in quella directory. Le dipendenze possono essere organizzate arbitrariamente nelle sottodirectory. Nel caso in cui abbiamo i nostri file da includere lungo il processo di composizione, ad esempio file di grafica esterna, dobbiamo anche impostare [InputWorkingDirectory](https://reference.aspose.com/tex/net/aspose.tex/TeXOptions/inputworkingdirectory/) utilizzando il percorso per la posizione in cui tali file vengono raccolti. Possiamo anche posizionare il file di input principale da qualche parte all'interno della directory di input e specificare il percorso relativo nel metodo `run()` (o specificare nessun percorso se il file di input principale è nella radice). [Qui](/tex/{{lang.url-fragment}}net/aspose-tex-input/) sono i dettagli sul concetto di directory di input in **Aspose.TeX per .net** e hanno fornito implementazioni.
 

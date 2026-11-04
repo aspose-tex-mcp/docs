@@ -12,7 +12,7 @@ lastmod: "2026-04-22"
 
 {{<section overview>}}
 
-## archivo LaTeX
+## archivo LaTeX {#latex-file}
 
 Si tenemos un [archivo TeX](/tex/{{lang.url-fragment}}net/tex-io/#tex-file) que tiene la siguiente estructura, entonces llamaremos a este archivo *archivo LaTeX*:
 
@@ -32,7 +32,7 @@ Para ser honesto, puede insertar secuencias de control primitivas antes de `\doc
 
 Hay algunas cosas que vale la pena destacar sobre TeX [entrada](/tex/{{lang.url-fragment}}net/tex-io/#tex-input) y [salida](/tex/{{lang.url-fragment}}net/tex-io/#tex-output) en el contexto de trabajar con archivos LaTeX.
 
-## Archivo de salida LaTeX
+## Archivo de salida LaTeX {#latex-output-file}
 
 Un trabajo típico de LaTeX crea un archivo de salida auxiliar con [nombre del trabajo](/tex/{{lang.url-fragment}}net/tex-io/#tex-output) como nombre y extensión *.aux*. Este archivo generalmente contiene datos de referencia que el motor recopila a lo largo de la ejecución del trabajo, si, por ejemplo, establece etiquetas para fórmulas matemáticas (ecuaciones) y luego hace referencia a ellas en algún lugar del texto. En caso de que no utilice nada de este tipo, este archivo contiene sólo la secuencia de control `\relax` (que es una de las primitivas TeX). Así que no te sorprendas.
 

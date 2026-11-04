@@ -15,7 +15,7 @@ lastmod: "2026-11-02"
 
 您可以轻松下载.net产品的aspose.tex，以进行评估。请参阅[Aspose.TeX的.NET下载页](https://www.nuget.org/packages/Aspose.TeX/)以查找最新版本。评估下载与购买的下载相同。当您添加几行代码应用许可证时，评估版本就会获得许可。
 
-### 评估版本限制
+### 评估版本限制 {#evaluation-version-limitations}
 
 aspose.tex的评估版(未指定许可证)提供完整的产品功能，只是在输出文档中只能获得多达四个第一页。另外，这些页面将用评估模式水印盖章。
 

@@ -65,7 +65,7 @@ Transcript written on hello-world.log.
 
 *"page-n.png"* 文件将写入我们指定的任意路径。由于 `DeviceWritesImages` 选项设置为 `false`，设备本身不会将 PNG 文件写入输出目录。
 
-## 关于输入选项
+## 关于输入选项 {#about-input-options}
 
 如果我们的主输入文件需要依赖项（例如未包含在基本 LaTeX 系统和支持的宏包中的宏包），我们必须以类似设置 [OutputWorkingDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/outputworkingdirectory/) 的方式设置 [RequiredInputDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/requiredinputdirectory/) 选项，并将依赖项放入该目录。依赖项可以任意组织在子目录中。如果我们有自己的文件需要在排版过程中包含，例如外部图形文件，还必须使用指向这些文件所在位置的路径设置 [InputWorkingDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/inputworkingdirectory/) 选项。我们也可以将主输入文件放在输入目录的某个子路径下，并在 `run()` 方法中指定相对路径（如果主输入文件位于根目录，则可以不指定路径）。[这里](/tex/{{lang.url-fragment}}net/aspose-tex-input/) 有关于 **Aspose.TeX for .NET** 中输入目录概念的详细信息以及相应实现。
 

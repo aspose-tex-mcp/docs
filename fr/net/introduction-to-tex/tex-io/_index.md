@@ -11,11 +11,11 @@ lastmod: 2026-10-20
 
 {{<section overview>}}
 
-## Fichier TeX
+## Fichier TeX {#tex-file}
 
 Techniquement, n'importe quel fichier peut être un fichier TeX. Il n'est même pas nécessaire d'avoir l'extension *.tex*. Un moteur TeX lit l'entrée octet par octet en essayant de reconnaître les commandes qu'il connaît (c'est-à-dire celles qui sont dans son état interne). Il signale simplement les erreurs concernant les commandes non reconnues et/ou demande des corrections sur le terminal (s'il fonctionne en [mode interactif](/tex/{{lang.url-fragment}}net/tex-io/#tex-interaction-modes)). Mais si vous vous attendez à voir quelque chose comme un document joliment composé, l'entrée doit suivre la syntaxe TeX et, idéalement, contenir uniquement les commandes connues du moteur.
 
-## Entrée TeX
+## Entrée TeX {#tex-input}
 
 Un travail TeX s'exécute sur un fichier TeX explicitement spécifié. Nous incluons donc ce fichier dans l'entrée d'un certain travail TeX. De plus, TeX dispose de quatre primitives liées à l'entrée auxiliaire :
 
@@ -30,7 +30,7 @@ Les quatre commandes peuvent apparaître soit dans le fichier d'entrée principa
 
 Lors de l'exécution en [mode interactif](/tex/{{lang.url-fragment}}net/tex-io/#tex-interaction-modes), en cas d'erreur, le moteur TeX demande une correction sur le terminal. À ce stade, vous souhaiterez peut-être remplacer la commande erronée par une nouvelle. Et ce sera une autre et dernière façon de fournir une entrée à TeX que nous appellerons l'*entrée terminal*.
 
-## Sortie TeX
+## Sortie TeX {#tex-output}
 
 Comme nous l'avons mentionné [ci-dessus](/tex/{{lang.url-fragment}}net/tex-io/#tex-input), un travail TeX s'exécute sur un fichier explicitement spécifié. Le fichier ne peut contenir aucune donnée à composer. Il ne peut y avoir que des séquences de contrôle ne produisant aucun caractère à saisir. Mais normalement, il contiendra de telles données, de sorte que nous obtiendrons un fichier au format cible qui devrait contenir notre texte composé (ou tout ce qui est autorisé par le moteur et le format, s'ils sont étendus pour s'adapter aux fonctionnalités supplémentaires d'un certain format cible) . Le fichier aura le même nom que le fichier spécifié en entrée. Nous appellerons ce fichier le fichier *sortie principale*. Comme nous l'avons mentionné [ci-dessus](/tex/{{lang.url-fragment}}net/aspose-tex-and-object-tex/#object-tex), pour le TeX original, ce sera un fichier au format DVI. Nous appellerons le nom des fichiers d'entrée et de sortie sans extension le *nom du travail*.
 
@@ -45,7 +45,7 @@ Les fichiers dont les noms sont passés aux commandes `\openout` sont également
 Au fur et à mesure que le moteur TeX exécute l'entrée, il peut générer des informations de débogage dans le fichier *log* ou *trascript*. Nous inclurons ce fichier dans la sortie TeX.
 Simultanément à l'écriture dans le fichier journal, le moteur TeX peut fournir des informations moins détaillées au terminal. Et c'est la dernière façon dont le moteur TeX écrit la sortie que nous appellerons la *sortie du terminal*.
 
-## Modes d'interaction TeX
+## Modes d'interaction TeX {#tex-interaction-modes}
 
 Une tâche TeX peut s'exécuter dans l'un des quatre modes d'interaction à tout moment. Ces modes sont commutés par les primitives TeX suivantes :
 

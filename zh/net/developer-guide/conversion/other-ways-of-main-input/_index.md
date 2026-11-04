@@ -11,7 +11,7 @@ lastmod: "2026-04-22"
 
 {{<section overview>}}
 
-## 将主输入文件作为流提供给 TeX 引擎
+## 将主输入文件作为流提供给 TeX 引擎 {#providing-the-main-input-file-to-the-tex-engine-as-a-stream}
 
 到目前为止，我们只知道如何将[主输入文件](/tex/{{lang.url-fragment}}net/tex-io/#tex-input)以文件名的形式传递给 TeX 引擎，无论是完整路径还是简写形式，无论是否带扩展名。但还有另一个[构造函数](https://reference.aspose.com/tex/net/aspose.tex/texjob/texjob/) `TeXJob` 类，它接受一个流作为第一个参数。如果因某种原因我们拥有的主输入文件不是磁盘文件系统中的文件，这将非常方便。下面是实现方式：
 

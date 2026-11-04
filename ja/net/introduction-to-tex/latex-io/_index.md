@@ -12,7 +12,7 @@ lastmod: "2026-04-22"
 
 {{<section overview>}}
 
-## LaTeX ファイル
+## LaTeX ファイル {#latex-file}
 
 もし、次の構造を持つ[TeX ファイル](/tex/{{lang.url-fragment}}net/tex-io/#tex-file)がある場合、このファイルを *LaTeX ファイル* と呼びます:
 
@@ -33,7 +33,7 @@ lastmod: "2026-04-22"
 
 LaTeX ファイルを扱う際の TeX の[入力](/tex/{{lang.url-fragment}}net/tex-io/#tex-input)および[出力](/tex/{{lang.url-fragment}}net/tex-io/#tex-output)について、いくつか留意すべき点があります。
 
-## LaTeX 出力ファイル
+## LaTeX 出力ファイル {#latex-output-file}
 
 典型的な LaTeX ジョブは、[ジョブ名](/tex/{{lang.url-fragment}}net/tex-io/#tex-output) をファイル名とし、拡張子 *.aux* を持つ補助出力ファイルを作成します。このファイルには、エンジンがジョブ実行中に収集する参照データが含まれ、例えば数式（方程式）のラベルを設定し、テキスト中で参照した場合などです。もしこのようなデータを使用しない場合、このファイルには `\relax` 制御シーケンス（TeX のプリミティブの一つ）だけが含まれます。したがって驚かないでください。
 

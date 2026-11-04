@@ -17,9 +17,9 @@ lastmod: "2026-04-22"
 
 {{< gist "aspose-com-gists" "deadfd7c29ffe40024a9b6d12f0ed18a" "Example-InteractionMode.cs" >}}
 
-## ジョブ名を設定する方法
+## ジョブ名を設定する方法 {#how-to-set-the-job-name}
 
-メイン入力ファイルをファイル名として渡すと、他の拡張機能ではありますが、同じ名前の出力ファイルが取得されます。 TeXエンジンは、入力ファイルの名前を *ジョブ名 *を呼び出し、出力ファイルに使用します。メイン入力ファイルを[ストリーム](/tex/{{lang.url-fragment}}net/other-ways-of-main-input/#providing-the-main-input-file-as-a-stream)として渡すと、Texエンジンはデフォルトのジョブ名、つまり *texput*を使用します。
+メイン入力ファイルをファイル名として渡すと、他の拡張機能ではありますが、同じ名前の出力ファイルが取得されます。 TeXエンジンは、入力ファイルの名前を *ジョブ名 *を呼び出し、出力ファイルに使用します。メイン入力ファイルを[ストリーム](/tex/{{lang.url-fragment}}net/other-ways-of-main-input/#providing-the-main-input-file-to-the-tex-engine-as-a-stream)として渡すと、Texエンジンはデフォルトのジョブ名、つまり *texput*を使用します。
 どちらの場合も、適切な変換オプションを割り当てることにより、ジョブ名をオーバーライドできます。
 
 {{< gist "aspose-com-gists" "deadfd7c29ffe40024a9b6d12f0ed18a" "Example-JobName.cs" >}}
@@ -42,9 +42,9 @@ LaTeXには、Preambleのいくつかの定義からタイトルを自動的に�
 
 {{< gist "aspose-com-gists" "deadfd7c29ffe40024a9b6d12f0ed18a" "Example-NoLigatures.cs" >}}
 
-## 仕事を繰り返す方法
+## 仕事を繰り返す方法 {#how-to-repeat-the-job}
 
-ラベルと参照に関して[上記](/tex/{{lang.url-fragment}}net/latex-io/#latex-input)を述べたように、同じジョブを2回実行したい場合があります。これがどのように行われるかは次のとおりです。
+ラベルと参照に関して[上記](/tex/{{lang.url-fragment}}net/latex-io/#latex-output-file)を述べたように、同じジョブを2回実行したい場合があります。これがどのように行われるかは次のとおりです。
 
 {{< gist "aspose-com-gists" "deadfd7c29ffe40024a9b6d12f0ed18a" "Example-Repeat.cs" >}}
 

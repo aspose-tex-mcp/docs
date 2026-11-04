@@ -25,7 +25,7 @@ Aí está a quarta mão. O formato Object TeX também é um formato baseado no P
 
 E Aspose.TeX é apenas uma API para o sistema Object TeX.
 
-## Por que o novo TeX é Object?
+## Por que o novo TeX é Object? {#why-the-new-tex-is-object}
 
 Então, por que usamos "objeto" em nome do sistema? O motivo é que a saída real do mecanismo TeX objeto não é um arquivo no formato de saída, mas algum modelo intermediário *objeto*, que é então transformado em um formato de destino.
 
