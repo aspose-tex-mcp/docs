@@ -27,10 +27,10 @@ lastmod: "2026-11-02"
 
 **R:** Es muy sencillo. ¡Solo necesitas dar unos pocos pasos! 
 
-1. Inicie la clase [TeXOptions](https://reference.aspose.com/tex/net/Aspose.TeX/texoptions/).
-2. Especifique el directorio de trabajo del sistema de archivos para la salida configurando la propiedad [OutputWorkingDirectory](https://reference.aspose.com/tex/net/Aspose.TeX/texoptions/outputworkingdirectory/).
+1. Inicie la clase [TeXOptions](https://reference.aspose.com/tex/net/aspose.tex/texoptions/).
+2. Especifique el directorio de trabajo del sistema de archivos para la salida configurando la propiedad [OutputWorkingDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/outputworkingdirectory/).
 3. Inicialice las opciones de guardado para el formato de salida utilizando la clase SaveOptions (formato de archivo).
-4. Convierta TeX usando el método [Run()](https://reference.aspose.com/tex/net/Aspose.TeX/texjob/run/).
+4. Convierta TeX usando el método [Run()](https://reference.aspose.com/tex/net/aspose.tex/texjob/run/).
 
 Para obtener más ejemplos, visite las guías de [Conversión](/tex/{{lang.url-fragment}}net/conversion/).
 <br><br>
@@ -104,7 +104,7 @@ Para obtener más ejemplos, visite las guías [representación de fórmulas mate
 
 **R:** Sí, puede descargar fácilmente el producto Aspose.TeX para .NET con fines de evaluación. La versión de evaluación de Aspose.TeX (sin una licencia especificada) proporciona la funcionalidad completa del producto, excepto algunas [limitaciones de evaluación](/tex/{{lang.url-fragment}}net/licensing/#evaluation-version-limitations).
 
-Si desea probar Aspose.TeX sin limitaciones de evaluación, solicite una [licencia temporal] de 30 días (11).
+Si desea probar Aspose.TeX sin limitaciones de evaluación, solicite una [licencia temporal](https://purchase.aspose.com/temporary-license/) de 30 días.
 <br><br>
 
 **P: ¿Dónde puedo obtener ayuda si tengo algún problema con la solución?**

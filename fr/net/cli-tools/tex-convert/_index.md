@@ -32,7 +32,7 @@ L'utilisation de l'outil Aspose.TeX Convert offre plusieurs avantages :
 
 ## Licence
 
-Bien que l'application Aspose.TeX Convert elle-même soit gratuite, la conversion de documents nécessite une [licence] Aspose.TeX valide (2). Vous pouvez acheter une licence ou utiliser Aspose.TeX en mode d'essai à des fins d'évaluation.
+Bien que l'application Aspose.TeX Convert elle-même soit gratuite, la conversion de documents nécessite une [licence](/tex/{{lang.url-fragment}}net/licensing/) Aspose.TeX valide. Vous pouvez acheter une licence ou utiliser Aspose.TeX en mode d'essai à des fins d'évaluation.
 
 ## Comment installer le convertisseur de ligne de commande TeX ?
 

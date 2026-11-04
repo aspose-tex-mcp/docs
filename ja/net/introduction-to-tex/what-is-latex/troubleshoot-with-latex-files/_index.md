@@ -352,7 +352,7 @@ PDFLaTeX では `mathptmx`（Times）や `helvet`（Helvetica）などを利用�
 
 ### 数式の整列 ###
 
-複雑な数式や多数の式を整列させるのは容易ではありません。`amsmath` パッケージ（[/tex/{{lang.url-fragment}}java/what-is-ams-latex/]）が提供する環境を活用してください。詳細は [Typesetting math formulas with standard LaTeX](/tex/{{lang.url-fragment}}java/latex-math/) を参照。
+複雑な数式や多数の式を整列させるのは容易ではありません。[`amsmath` パッケージ](/tex/{{lang.url-fragment}}java/what-is-ams-latex/)が提供する環境を活用してください。詳細は [Typesetting math formulas with standard LaTeX](/tex/{{lang.url-fragment}}java/latex-math/) を参照。
 
 #### 余白・ページレイアウトの設定 ####
 

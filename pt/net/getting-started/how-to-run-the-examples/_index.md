@@ -21,7 +21,7 @@ Certifique -se de atender aos seguintes requisitos antes de baixar e executar os
 
 Todos os exemplos de Aspose.TeX para .NET são hospedados no [GitHub](https://GitHub.com/aspose-TeX/Aspose.TeX-for-.NET).
 
-- Você pode clonar o repositório usando seu cliente GitHub favorito ou baixar o arquivo ZIP de [aqui](https://GitHub.com/aspose-TeX/Aspose.TeX-for-.NET/archive/master.ZIP).
+- Você pode clonar o repositório usando seu cliente GitHub favorito ou baixar o arquivo ZIP de [aqui](https://GitHub.com/aspose-TeX/Aspose.TeX-for-.NET/archive/master.zip).
 - Extraia o conteúdo do arquivo ZIP para qualquer pasta do seu computador. Todos os exemplos estão localizados na pasta **Aspose.TeX.Examples**.
 - Há um arquivo de solução do Visual Studio para C#.
 - O projeto é criado no Visual Studio 2019, mas o arquivo de solução é compatível com o Visual Studio 2010 SP1 e superior.

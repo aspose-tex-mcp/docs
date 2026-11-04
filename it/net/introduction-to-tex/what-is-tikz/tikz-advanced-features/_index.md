@@ -146,4 +146,4 @@ Quando si elaborano documenti contenenti diagrammi vettoriali ad alta complessit
 
 Queste funzionalità avanzate di TikZ ti consentono di creare in modo efficiente grafiche sofisticate e di qualità professionale. Padroneggiarle migliorerà notevolmente i tuoi documenti LaTeX.
 
-**Inoltre, scopri la nostra applicazione web gratuita basata sull'[API Aspose.TeX per .NET](https://products.aspose.com/tex/net/) per conversioni TeX rapide e facili.**
+**Inoltre, scopri la nostra [applicazione web](https://products.aspose.app/tex/conversion/latex/) gratuita basata sull'[API Aspose.TeX per .NET](https://products.aspose.com/tex/net/) per conversioni TeX rapide e facili.**

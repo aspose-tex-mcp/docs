@@ -27,10 +27,10 @@ lastmod: "2026-11-02"
 
 **A:**非常简单。您只需要采取几步！ 
 
-1. 启动[TeXOptions](https://reference.aspose.com/tex/net/Aspose.TeX/texoptions/)类。
-2. 通过设置[OutputWorkingDirectory](https://reference.aspose.com/tex/net/Aspose.TeX/texoptions/outputworkingdirectory/)属性，指定输出的文件系统工作目录。
+1. 启动[TeXOptions](https://reference.aspose.com/tex/net/aspose.tex/texoptions/)类。
+2. 通过设置[OutputWorkingDirectory](https://reference.aspose.com/tex/net/aspose.tex/texoptions/outputworkingdirectory/)属性，指定输出的文件系统工作目录。
 3. 使用(文件格式)SaveOptions类初始化输出格式的保存选项。
-4. 使用[Run()](https://reference.aspose.com/tex/net/Aspose.TeX/texjob/run/)方法转换TEX。
+4. 使用[Run()](https://reference.aspose.com/tex/net/aspose.tex/texjob/run/)方法转换TEX。
 
 有关更多示例，请访问[转换](/tex/{{lang.url-fragment}}net/conversion/)指南。
 <br> <br>

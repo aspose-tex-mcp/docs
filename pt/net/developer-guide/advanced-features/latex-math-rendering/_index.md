@@ -52,7 +52,7 @@ Aqui está o resultado da renderização.
 
 Este é o caso de uso mais geral para o recurso **de fórmula matemática**.
 
-**Você também pode conferir o [aplicativo web](https://products.aspose.app/tex) gratuito construído com base no recurso implementado em [Aspose.TeX para .NET API](https://products.aspose.com/tex/net/).**
+**Você também pode conferir o [aplicativo web](https://products.aspose.app/tex/equation-editor/png) gratuito construído com base no recurso implementado em [Aspose.TeX para .NET API](https://products.aspose.com/tex/net/).**
 
 ## Como renderizar uma fórmula de matemática de LaTeX para SVG
 
@@ -94,4 +94,4 @@ O agente instancia `SvgMathRendererOptions` ou `PngMathRendererOptions` dependen
 4. O Aspose.TeX não lança uma exceção quando uma fórmula contém um erro de TeX. Ele armazena o primeiro erro na opção `ErrorReport` e grava o log completo no fluxo `LogStream`, se houver um atribuído.
 Em vez de falhar silenciosamente ou travar as interfaces de usuário, o agente verifica `ErrorReport` após cada chamada de `Render()`, cria um ciclo de contexto e solicita ao LLM que reescreva a equação. A saída por si só não é um sinal confiável: dependendo do erro, a imagem ainda pode ser gerada ou pode ficar vazia.
 
-**Você também pode conferir o [aplicativo web] gratuito (12) construído com base no recurso implementado em [Aspose.TeX para .NET API](https://products.aspose.com/tex/net/).**
+**Você também pode conferir o [aplicativo web](https://products.aspose.app/tex/equation-editor/svg) gratuito construído com base no recurso implementado em [Aspose.TeX para .NET API](https://products.aspose.com/tex/net/).**

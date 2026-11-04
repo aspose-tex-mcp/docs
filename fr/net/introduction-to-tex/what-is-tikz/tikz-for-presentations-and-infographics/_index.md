@@ -118,4 +118,4 @@ Lors de la création d'infographies ou de diapositives de présentation :
 
 L'utilisation de TikZ pour les présentations et les infographies permet une communication visuelle claire, attrayante et professionnelle, améliorant ainsi la compréhension et la fidélisation du public.
 
-**De plus, découvrez notre application web gratuite basée sur l'API Aspose.TeX pour .NET pour des conversions TeX rapides et faciles.**
+**De plus, découvrez notre [application web](https://products.aspose.app/tex/conversion/latex/) gratuite basée sur l'[API Aspose.TeX pour .NET](https://products.aspose.com/tex/net/) pour des conversions TeX rapides et faciles.**

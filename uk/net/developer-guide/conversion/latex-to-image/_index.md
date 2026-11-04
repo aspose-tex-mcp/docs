@@ -69,7 +69,7 @@ Transcript written on hello-world.log.
 
 Інші варіанти завдань TeX обговорюються [тут](/tex/{{lang.url-fragment}}net/other-options/).
 
-**Ви також можете ознайомитися з безкоштовною [веб-програмою] для перетворення LaTeX у PNG (26), створеною на основі [Aspose.TeX для .NET API](https://products.aspose.com/tex/net/).**
+**Ви також можете ознайомитися з безкоштовною [веб-програмою](https://products.aspose.app/tex/conversion/latex-to-png) для перетворення LaTeX у PNG, створеною на основі [Aspose.TeX для .NET API](https://products.aspose.com/tex/net/).**
 
 Нижче ми обговорюємо перетворення LaTeX в інші підтримувані формати растрових зображень, не занурюючись у деталі, оскільки деталей насправді немає. Єдина відмінність полягає в типі властивості [SaveOptions](https://reference.aspose.com/tex/net/aspose.tex/texoptions/saveoptions/) у параметрах перетворення.
 
@@ -77,7 +77,7 @@ Transcript written on hello-world.log.
 
 {{< gist "aspose-com-gists" "507170b996a1d0c39bb4374e888b3205" "Example-ConvertLaTeXToJPEG.cs" >}}
 
-**Ви також можете ознайомитися з безкоштовною [веб-програмою] для перетворення LaTeX на JPG (29), створеною на основі [Aspose.TeX для .NET API](https://products.aspose.com/tex/net/).**
+**Ви також можете ознайомитися з безкоштовною [веб-програмою](https://products.aspose.app/tex/conversion/latex-to-jpg) для перетворення LaTeX на JPG, створеною на основі [Aspose.TeX для .NET API](https://products.aspose.com/tex/net/).**
 
 ## Як конвертувати LaTeX у TIFF
 
@@ -87,13 +87,13 @@ Transcript written on hello-world.log.
 Пакет `Aspose.TeX.Drawing` поки що не вміє зберігати багатосторінкові файли TIFF: якщо `TiffSaveOptions.Multipage` дорівнює `true`, файл TIFF містить лише першу сторінку. Встановіть `Multipage` у `false`, щоб отримати окреме зображення TIFF для кожної сторінки. Див. [Linux, macOS і Docker](/tex/{{lang.url-fragment}}net/linux-and-containers/#known-limitations).
 {{% /alert %}}
 
-**Ви також можете ознайомитися з безкоштовним [веб-програмою] для перетворення LaTeX у TIFF (31), створеним на основі [Aspose.TeX для .NET API](https://products.aspose.com/tex/net/).**
+**Ви також можете ознайомитися з безкоштовним [веб-програмою](https://products.aspose.app/tex/conversion/latex-to-tiff) для перетворення LaTeX у TIFF, створеним на основі [Aspose.TeX для .NET API](https://products.aspose.com/tex/net/).**
 
 ## Як конвертувати LaTeX у BMP
 
 {{< gist "aspose-com-gists" "507170b996a1d0c39bb4374e888b3205" "Example-ConvertLaTeXToBMP.cs" >}}
 
-**Ви також можете ознайомитися з безкоштовною [веб-програмою] для перетворення LaTeX у BMP (33), створеною на основі [Aspose.TeX для .NET API](https://products.aspose.com/tex/net/).**
+**Ви також можете ознайомитися з безкоштовною [веб-програмою](https://products.aspose.app/tex/conversion/latex-to-bmp) для перетворення LaTeX у BMP, створеною на основі [Aspose.TeX для .NET API](https://products.aspose.com/tex/net/).**
 
 ## Як конвертувати LaTeX у SVG
 
@@ -107,4 +107,4 @@ Transcript written on hello-world.log.
 
 {{< gist "aspose-com-gists" "507170b996a1d0c39bb4374e888b3205" "Example-ConvertLaTeXToSVG-Simplest.cs" >}}
 
-**Ви також можете ознайомитися з безкоштовною [веб-програмою] для перетворення LaTeX у SVG (41), створеною на основі [Aspose.TeX для .NET API](https://products.aspose.com/tex/net/).**
+**Ви також можете ознайомитися з безкоштовною [веб-програмою](https://products.aspose.app/tex/conversion/latex-to-svg) для перетворення LaTeX у SVG, створеною на основі [Aspose.TeX для .NET API](https://products.aspose.com/tex/net/).**

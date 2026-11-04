@@ -61,7 +61,7 @@ Diese Codeausschnitte initialisieren die Lizenz aus dem Stream.
 
 ### Gemessene Lizenz
 
-Aspose.TeX verfügt über einen alternativen Lizenzierungsmechanismus. Kunden, die eine Abrechnung auf Basis der Nutzung der API-Funktionen wünschen, können *Metered Licensing* nutzen. Das Anwenden einer *Metered License* ist eigentlich so einfach wie das Anwenden eines Paares kryptografischer Schlüssel. Weitere Einzelheiten finden Sie im Abschnitt „FAQ zur zählerbasierten Lizenzierung“ (6).
+Aspose.TeX verfügt über einen alternativen Lizenzierungsmechanismus. Kunden, die eine Abrechnung auf Basis der Nutzung der API-Funktionen wünschen, können *Metered Licensing* nutzen. Das Anwenden einer *Metered License* ist eigentlich so einfach wie das Anwenden eines Paares kryptografischer Schlüssel. Weitere Einzelheiten finden Sie im Abschnitt [FAQ zur zählerbasierten Lizenzierung](https://purchase.aspose.com/faqs/licensing/metered/).
 
 Die öffentlichen und privaten Schlüssel einer gemessenen Lizenz werden mithilfe einer Instanz der Klasse [*Metered*](https://reference.aspose.com/tex/net/aspose.tex/metered/) festgelegt, wie im folgenden Beispiel gezeigt: 
 

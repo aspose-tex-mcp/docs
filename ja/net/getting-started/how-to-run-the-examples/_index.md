@@ -21,12 +21,12 @@ lastmod: "2026-04-22"
 
 .NETのAspose.TeXのすべての例は、[GitHub](https://GitHub.com/aspose-TeX/Aspose.TeX-for-.NET)でホストされています。
 
-- お気に入りのGitHubクライアントを使用してリポジトリをクローンするか、[こちら](https://GitHub.com/aspose-TeX/Aspose.TeX-for-.NET/archive/master.ZIP)からZIPファイルをダウンロードできます。
+- お気に入りのGitHubクライアントを使用してリポジトリをクローンするか、[こちら](https://GitHub.com/aspose-TeX/Aspose.TeX-for-.NET/archive/master.zip)からZIPファイルをダウンロードできます。
 - ZIPファイルの内容をコンピューター上の任意のフォルダーに抽出します。すべての例は、**Aspose.TeX.Examples**フォルダーにあります。
 - C＃用のVisual Studioソリューションファイルが1つあります。
 - このプロジェクトはVisual Studio 2019で作成されていますが、ソリューションファイルはVisual Studio 2010 SP1以上と互換性があります。
 - Visual Studioでソリューションファイルを開き、プロジェクトを構築します。
-- .netダウンロードページの[Aspose.TeX]からライブラリをダウンロードします(3)。
+- [Aspose.TeX for .NET ダウンロード ページ](https://releases.aspose.com/tex/net)からライブラリをダウンロードします。
 - Aspose.TeX.dllを**Aspose.TeX.Examples/libs**フォルダーに配置します。
 - **Aspose.TeX.Examples/input**使用する例が含まれています。 **入力**フォルダーとExamplesプロジェクトをダウンロードする必要があります。
 - **RunExamples.cs**を開きます。すべての例はここから呼び出されます。

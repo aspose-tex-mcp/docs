@@ -95,4 +95,4 @@ Choisissez un éditeur en fonction de vos préférences et de vos exigences en m
 
 En suivant ces instructions, vous aurez configuré TikZ avec succès et serez prêt à créer de superbes graphismes pour vos documents TeX et LaTeX.
 
-**De plus, découvrez notre application web gratuite basée sur l'API Aspose.TeX pour .NET pour des conversions TeX rapides et faciles.**
+**De plus, découvrez notre [application web](https://products.aspose.app/tex/conversion/latex/) gratuite basée sur l'[API Aspose.TeX pour .NET](https://products.aspose.com/tex/net/) pour des conversions TeX rapides et faciles.**

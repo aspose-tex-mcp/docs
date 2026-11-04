@@ -138,7 +138,7 @@ E aqui estão duas páginas de saída:
 
 Naturalmente, não pretendemos ter uma resposta completa para a pergunta "O que é LaTeX?", Como essa é uma quantidade bastante grande de informações. Como escrever um arquivo de LaTeX ainda está programando, você precisará gastar algum tempo se quiser se familiarizar com ele. Você quer ou não.
 
-**Você também pode conferir o [aplicativo da web](https://products.aspose.app/tex) gratuito construído com base em [Aspose.TeX para .NET API](https://products.aspose.com/tex/net/).**
+**Você também pode conferir o [aplicativo da web](https://products.aspose.app/tex/conversion/latex/) gratuito construído com base em [Aspose.TeX para .NET API](https://products.aspose.com/tex/net/).**
 
 ## Marcação lógica vs. formatação direta
 

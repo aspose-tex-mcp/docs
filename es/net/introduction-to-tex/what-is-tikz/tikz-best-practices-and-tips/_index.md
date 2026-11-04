@@ -97,7 +97,7 @@ Utilice la posición de los nodos y los puntos de anclaje con cuidado para evita
   \node[right=of A.east, anchor=west] {B};
 ```
 
-Recursos útiles para un mayor aprendizaje
+## Recursos útiles para un mayor aprendizaje
 
 Amplía tus conocimientos de TikZ con estos excelentes recursos:
 

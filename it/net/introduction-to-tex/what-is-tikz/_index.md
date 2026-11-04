@@ -71,4 +71,4 @@ Ecco una panoramica degli argomenti trattati in questa serie su TikZ:
 
 Esplora questi articoli per padroneggiare la creazione di immagini di qualità professionale con TikZ.
 
-**Inoltre, scopri la nostra applicazione web gratuita basata sull'[API Aspose.TeX per .NET](https://products.aspose.com/tex/net/) per conversioni TeX rapide e facili.**
+**Inoltre, scopri la nostra [applicazione web](https://products.aspose.app/tex/conversion/latex/) gratuita basata sull'[API Aspose.TeX per .NET](https://products.aspose.com/tex/net/) per conversioni TeX rapide e facili.**

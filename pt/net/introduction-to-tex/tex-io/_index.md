@@ -67,7 +67,7 @@ Os motores TeX tradicionais estão inerentemente acoplados ao sistema de ficheir
 
 - Garantir a segurança de threads em aplicações de servidor multi-tenant, isolando cada tarefa de composição tipográfica na sua própria instância de diretório de trabalho virtual.
 
-- ### Porque é que a abstração de interfaces é importante para os desenvolvedores
+### Porque é que a abstração de interfaces é importante para os desenvolvedores
 
 Nas aplicações empresariais modernas — como microsserviços na nuvem ou filas de tarefas em segundo plano — depender de caminhos físicos em disco apresenta estrangulamentos severos:
 
