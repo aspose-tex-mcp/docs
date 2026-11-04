@@ -8,7 +8,7 @@ url: /net/tikz-best-practices-and-tips/
 aliases: /net/best-practices-and-tips/
 keywords: tikz best practices, tikz tips, tikz performance optimization
 description: TikZ を TeX と LaTeX ドキュメントで効率的かつ効果的に使用するためのベストプラクティスと有用なヒントを学びましょう。
-lastmod: 2026-10-23
+lastmod: "2026-11-04"
 ---
 
 {{<section overview>}}
@@ -110,12 +110,12 @@ TikZ を使用する際に遭遇しがちな典型的な問題とその解決策
 
 ## .NETにおけるエラー処理と診断
 
-サーバーサイドで自動実行される.NETアプリケーションにおいて、ユーザーから提供されたコードや動的に生成されたTikZコードを扱う場合は、防御的プログラミングが不可欠です。Aspose.TeXエンジンは、無効なLaTeXやTikZの構文を検出すると、マネージ例外である`TeXException`をスローします。
+サーバーサイドで自動実行される.NETアプリケーションにおいて、ユーザーから提供されたコードや動的に生成されたTikZコードを扱う場合は、防御的プログラミングが不可欠です。Aspose.TeX エンジンは、無効な LaTeX または TikZ の構文を検出しても例外をスローしません。問題は `TeXJob.Run()` が返す `TeXJobResult` 値で報告されます。
 
 アプリケーションの堅牢性を維持し、問題解決に役立つ診断情報を提供するために、以下のエラー処理プラクティスに従ってください。
 
-1. `TeXException`の捕捉とログ記録
-`TeXJob.Run()`の実行は、必ず`TeXException`を対象としたtry-catchブロックで囲んでください。これにより、組版処理の失敗を、アプリケーション全体で発生するその他のエラーと切り分けて扱うことができます。
+1. ジョブの結果を確認する
+`TeXJob.Run()` の戻り値を必ず確認してください。`ErrorMessageIssued` と `FatalErrorStop` はドキュメントにエラーが含まれていることを示し、`FatalErrorStop` で終了したジョブは出力を生成しない場合があります。ジョブがユーザー入力を待機しないように、`Interaction` オプションを `NonstopMode` に設定します。`try-catch` ブロックは、I/O エラーなどの一般的なアプリケーション エラーにのみ使用します。
 
 2. ターミナル出力および診断ログの確認
 コンパイルに失敗した場合、ターミナル出力やジョブ実行時に生成される`.log`ファイルには、TikZパーサーが失敗した正確な行番号や、マクロ展開の過程が記録されています。デバッグを容易にするため、`TeXOptions`を使用してターミナル出力を取得したり、別の出力先へリダイレクトしたりすることが可能です。
@@ -123,12 +123,10 @@ TikZ を使用する際に遭遇しがちな典型的な問題とその解決策
 以下に、C#でTikZ図を処理する際、安全かつエラーに強いコンパイル手法を実装する方法を示します。
 
 ```csharp
-using System;
 using System.IO;
 using Aspose.TeX;
-using Aspose.TeX.Configuration;
-using Aspose.TeX.Presentation.Pdf;
 using Aspose.TeX.IO;
+using Aspose.TeX.Presentation.Pdf;
 
 public class TikZCompilerService
 {
@@ -136,47 +134,41 @@ public class TikZCompilerService
     {
         errorMessage = string.Empty;
 
-        // 標準的なLaTeXジョブオプションを設定する
-        TeXOptions options = TeXOptions.ConsoleAppRunSettings(
-            TeXConfig.LaTeX, 
-            Path.GetDirectoryName(inputFilePath), 
-            outputDirectory
-        );
+        // 標準の LaTeX ジョブ オプションを構成します
+        TeXOptions options = TeXOptions.ConsoleAppOptions(TeXConfig.ObjectLaTeX);
+        options.InputWorkingDirectory = new InputFileSystemDirectory(Path.GetDirectoryName(inputFilePath));
+        options.OutputWorkingDirectory = new OutputFileSystemDirectory(outputDirectory);
 
-        // 必要に応じて診断情報を取得できるよう、ターミナル出力をリダイレクトする
-        options.ShowTerminal = true;
+        // ターミナル出力を取得し、ユーザー入力を待機しないようにします
+        options.TerminalOut = new OutputMemoryTerminal();
+        options.Interaction = Interaction.NonstopMode;
         options.SaveOptions = new PdfSaveOptions();
 
         try
         {
-            // 組版ジョブを実行する
-            new TeXJob(inputFilePath, new PdfDevice(), options).Run();
+            // 組版ジョブを実行します
+            TeXJobResult result = new TeXJob(inputFilePath, new PdfDevice(), options).Run();
+
+            // TeX 構文、パッケージ、マクロ展開のエラー (不正な TikZ パスなど) を処理します
+            if (result >= TeXJobResult.ErrorMessageIssued)
+            {
+                errorMessage = $"TeX job failed with {result}. See the .log file in {outputDirectory}.";
+                return false;
+            }
+
             return true;
-        }
-        catch (TeXException texEx)
-        {
-            // 特定のTeX構文、パッケージ、またはマクロ展開の失敗（例：不正なTikZパスなど）を処理する
-            errorMessage = $"TeX Engine Compilation Error: {texEx.Message}";
-            // TODO: 例外の詳細をエンタープライズ向けログフレームワーク（NLog、Serilogなど）に記録する
-            return false;
         }
         catch (IOException ioEx)
         {
-            // ファイルアクセスやディスクの権限に関する問題を処理する
-            errorMessage = $"I/O Error during compilation: {ioEx.Message}";
-            return false;
-        }
-        catch (Exception ex)
-        {
-            // 予期せぬ実行時の障害を処理する
-            errorMessage = $"Unexpected error: {ex.Message}";
+            // ファイル アクセスやディスクのアクセス許可の問題を処理します
+            errorMessage = $"I/O error during compilation: {ioEx.Message}";
             return false;
         }
     }
 }
 ```
 
-`TeXException` を捕捉することで、生成されたTikZスクリプトに不備がある場合でも、サーバー側で「500 Internal Server Error」を発生させるのではなく、クライアントに対して適切な「HTTP 400 Bad Request」や、状況を説明するエラーメッセージを返すことが可能になります。
+ジョブの結果を確認することで、生成された TikZ スクリプトが不正な場合に、500 サーバー エラーを発生させるのではなく、適切な `HTTP 400 Bad Request` 応答やわかりやすいエラー メッセージをクライアントに返すことができます。
 
 .NETアプリケーションにおいて、ユーザーデータをTikZの座標やノード文字列に動的に挿入する場合は、構文が意図せず壊れてしまわないよう、適切なサニタイズ（無害化）処理を行ってください（`%`、`&`、`#` といった特殊文字がエスケープされずに含まれると、構文エラーの原因となります）。
 

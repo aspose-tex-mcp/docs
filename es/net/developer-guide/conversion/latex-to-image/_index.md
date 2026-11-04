@@ -7,7 +7,7 @@ weight: 10
 url: /net/latex-to-image/
 keywords: LaTeX a png, LaTeX png, LaTeX a imagen, imagen de LaTeX, LaTeX a jpg, LaTeX jpg, LaTeX a jpeg, LaTeX jpeg, LaTeX a tiff, LaTeX tiff, LaTeX a bmp, LaTeX bmp
 description: Para convertir TeX a formatos de imagen usando la Aspose.TeX para .NET, lea este artículo para ver que describe cómo hacer esto y los ejemplos de código.
-lastmod: "2026-11-02"
+lastmod: "2026-11-04"
 ---
 
 {{<section overview>}}
@@ -56,11 +56,11 @@ Hay otra forma de obtener datos de imagen como una matriz de matrices de bytes; 
 
 **Ejemplo de conversión alternativo**
 
-El siguiente fragmento de C# muestra otra forma de obtener la salida PNG: escribir los datos de la imagen en un flujo de memoria en lugar de hacerlo directamente en el sistema de archivos. Este método es útil cuando se necesitan los bytes PNG generados en memoria para su posterior procesamiento, como enviarlos a través de una red, almacenarlos en una base de datos o realizar transformaciones adicionales antes de guardarlos.
+El siguiente fragmento de C# muestra otra forma de obtener la salida PNG: el dispositivo conserva los datos de imagen en memoria como matrices de bytes en lugar de escribirlos en el sistema de archivos. Este enfoque es útil cuando necesita los bytes PNG generados para procesarlos posteriormente, por ejemplo, para enviarlos por una red, almacenarlos en una base de datos o realizar transformaciones adicionales antes de guardarlos.
 
 {{< gist "aspose-com-gists" "507170b996a1d0c39bb4374e888b3205" "Example-ConvertLaTeXToPNG-Alternative.cs" >}}
 
-Los archivos *"page-n.png"* se escribirán en cualquier ruta que especifiquemos. A diferencia de [Salida PDF](/tex/{{lang.url-fragment}}net/latex-to-pdf/#an-alternative-way-to-write-the-main-output-pdf-file), duplicarán los archivos PNG de salida escritos en el directorio de salida.
+Los archivos *"page-n.png"* se escribirán en cualquier ruta que especifiquemos. Como la opción `DeviceWritesImages` está establecida en `false`, el propio dispositivo no escribe archivos PNG en el directorio de salida.
 
 ## Acerca de las opciones de entrada
 

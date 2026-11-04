@@ -7,7 +7,7 @@ weight: 19
 url: /net/tikz-fundamentals-of-using-tikz/
 keywords: Principes fondamentaux de TikZ, Principes fondamentaux de TikZ, Tutoriel TikZ
 description: Explorez les principes fondamentaux et les commandes de base de TikZ pour créer des graphiques pour vos documents TeX et LaTeX.
-lastmod: 2026-10-22
+lastmod: "2026-11-04"
 ---
 
 {{<section overview>}}
@@ -141,9 +141,8 @@ Vous trouverez ci-dessous une présentation détaillée ainsi qu'un exemple de c
 using System;
 using System.IO;
 using Aspose.TeX;
-using Aspose.TeX.Configuration;
-using Aspose.TeX.Presentation.Pdf;
 using Aspose.TeX.IO;
+using Aspose.TeX.Presentation.Pdf;
 
 namespace AsposeTexTikzDemo
 {
@@ -151,41 +150,38 @@ namespace AsposeTexTikzDemo
     {
         static void Main(string[] args)
         {
-            // Définir les répertoires d'entrée et de sortie en utilisant les abstractions d'E/S d'Aspose.TeX
+            // Définir les répertoires d'entrée et de sortie
             string dataDir = @"C:\DocumentSamples\TikzInput";
             string outputDir = @"C:\DocumentSamples\TikzOutput";
 
             // S'assurer que le répertoire de sortie existe
             Directory.CreateDirectory(outputDir);
-            Directory.CreateDirectory(outputDir);
 
-            // Initialiser les options TeX pour une tâche de traitement de document LaTeX standard
-            // TeXConfig.LaTeX configure le moteur avec des packages standard pré-intégrés (y compris tikz/pgf)
-            TeXOptions options = TeXOptions.ConsoleAppRunSettings(TeXConfig.LaTeX, dataDir, outputDir);
+            // Initialiser les options TeX pour une tâche standard de traitement de document LaTeX
+            // TeXConfig.ObjectLaTeX configure le moteur avec les packages intégrés (dont tikz/pgf)
+            TeXOptions options = TeXOptions.ConsoleAppOptions(TeXConfig.ObjectLaTeX);
+            options.InputWorkingDirectory = new InputFileSystemDirectory(dataDir);
+            options.OutputWorkingDirectory = new OutputFileSystemDirectory(outputDir);
 
-            // Définir le nom du fichier d'entrée principal contenant l'environnement TikZ
+            // Définir le nom de la tâche, utilisé pour les fichiers de sortie
             options.JobName = "tikz-fundamentals";
 
-            // Configurer les options d'enregistrement de la sortie pour générer directement un fichier au format PDF
+            // Configurer les options d'enregistrement pour un rendu direct au format PDF
             options.SaveOptions = new PdfSaveOptions();
 
-            // Instancier et exécuter le TeXJob en reliant le fichier source, le périphérique de sortie et les options
-            try
-            {
-                Console.WriteLine("Starting TikZ compilation job...");
-                
-                new TeXJob(
-                    Path.Combine(dataDir, "tikz-fundamentals.tex"), 
-                    new PdfDevice(), 
-                    options
-                ).Run();
+            // Créer et exécuter le TeXJob avec le fichier source, le périphérique de sortie et les options
+            Console.WriteLine("Starting TikZ compilation job...");
 
+            TeXJobResult result = new TeXJob(
+                Path.Combine(dataDir, "tikz-fundamentals.tex"),
+                new PdfDevice(),
+                options
+            ).Run();
+
+            if (result < TeXJobResult.ErrorMessageIssued)
                 Console.WriteLine($"TikZ graphic successfully compiled to PDF at: {outputDir}");
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"Compilation failed: {ex.Message}");
-            }
+            else
+                Console.WriteLine($"Compilation failed with {result}. See the .log file in {outputDir}.");
         }
     }
 }

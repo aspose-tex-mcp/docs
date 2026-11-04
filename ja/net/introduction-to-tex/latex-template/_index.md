@@ -8,7 +8,7 @@ weight: 100
 url: /net/latex-templates/
 description: LaTeX テンプレートとは何か、使用方法と作成方法、人気のあるテンプレートのダウンロード先、すぐにコピーできるスニペットを使った高速ワークフローを学びましょう。
 keywords: LaTeX, テンプレート, クラス, スタイル, Overleaf, CTAN, 文献管理, Beamer, 論文, 履歴書
-lastmod: "2026-06-12"
+lastmod: "2026-11-04"
 ---
 
 {{<section overview>}}
@@ -57,8 +57,6 @@ LaTeX テンプレートは **class**（`.cls`）や **style**（`.sty`）に加
 % ---- custom settings ----
 \RequirePackage{geometry}
 \geometry{margin=2cm}
-\RequirePackage{fontspec}
-\setmainfont{Latin Modern Roman}
 
 % ---- user‑level commands ----
 \newcommand\mytitle[1]{\centerline{\LARGE\bfseries #1}}
@@ -109,11 +107,11 @@ LaTeX テンプレートは **class**（`.cls`）や **style**（`.sty`）に加
 
 ## Aspose について
 
-.NET、Java、Python アプリケーションで LaTeX から生成された PDF を操作（結合、透かし、他フォーマットへの変換）したい場合、**Aspose.TeX** のようなライブラリが LaTeX ツールチェーンを不要にし、PDF を直接扱える言語非依存 API を提供します。
+LaTeX テンプレートに基づくドキュメントを .NET アプリケーションで組版するには、**Aspose.TeX for .NET** を使用できます。TeX ディストリビューションなしで LaTeX を PDF、XPS、SVG、ラスター画像に変換します。テンプレートの `.cls` ファイルと `.sty` ファイルは入力ディレクトリに配置します。ライブラリに[埋め込まれていない](/tex/{{lang.url-fragment}}net/embedded-packages/)パッケージは、[外部 LaTeX パッケージ](/tex/{{lang.url-fragment}}net/external-latex-packages/)として提供できます。
 
 ---
 
-### TL;DR ハイシート
+### TL;DR チートシート
 
 ```text
 What?   → Pre‑built layout (class+style+assets)
@@ -121,7 +119,7 @@ Use?    → \documentclass{mytemplate} + follow README
 Create? → Write .cls or .sty → pack assets → zip/GitHub
 Get?    → Overleaf Gallery, CTAN, GitHub, university sites
 Hot 10  → IEEEtran, llncs, elsarticle, modern‑simple‑cv,
-          classicthesis, beamer, a0poster, UNICAMP thesis,
+          classicthesis, beamer, a0poster, 大学の学位論文,
           aa.cls, Basic Academic Journal Article
 ```
 
@@ -137,7 +135,7 @@ Aspose.TeX APIを使用してLaTeXテンプレートを作成する独自のAI�
 ![Blockscheme for AI LaTeX図レンダリングワークフロー](/tex/images/net/tutorial/blockscheme-ai-for-latex-template-creation.png)
 
 1. レイアウト要件の取り込み（LLMインテントレイヤー）
-ユーザーは、高レベルのデザイン制約または書式設定指示（例：「Times New Romanフォント、赤いヘッダー、上部に洗練された著者ボックスを使用した、余白1.5cmの2段組ジャーナルレイアウトを作成してください」）を指定します。次に、LLMはこれらの意味的な視覚的詳細を構造的なプログラム要件にマッピングします。
+ユーザーは、高レベルのデザイン制約または書式設定指示（例：「赤いヘッダー、上部に洗練された著者ボックスを使用した、余白1.5cmの2段組ジャーナルレイアウトを作成してください」）を指定します。次に、LLMはこれらの意味的な視覚的詳細を構造的なプログラム要件にマッピングします。
 インテントマトリックスは、リクエストがカスタムドキュメントタイプ用の全く新しいスタンドアロンクラスファイル（`.cls`）を必要とするのか、それとも記事やレポートなどの標準クラスにフックするカスタマイズされたスタイルファイル（`.sty`）ラッパーだけで済むのかを判断します。
 
 2. 継承ツリーのアライメントとクラス生成（構造レイヤー）
@@ -148,10 +146,10 @@ Aspose.TeX APIを使用してLaTeXテンプレートを作成する独自のAI�
 
 
 3. パッケージファクトリとアセット収集（依存関係レイヤー）
-最初のステップで抽出された設計指示に応じて、レイアウトエンジンは専用のサードパーティ製マクロツール（例えば、マージン調整用のジオメトリ、カスタムブランディングカラー用の`xcolor`、最新のフォント設定用の`fontspec`など）を必要とします。
+最初のステップで抽出した設計指示に応じて、レイアウト エンジンには専用のサードパーティ製マクロ ツール (余白調整用の `geometry`、ブランド カラー用の `xcolor` など) が必要になります。`fontspec` のように XeTeX または LuaTeX を必要とするパッケージは、Aspose.TeX では使用できません。
 エージェントはリンティングフィルターとして機能し、必要な`\RequirePackage{...}`ステートメントをクラスバンドルまたはスタイルバンドルに動的に挿入します。
 
 4. 検証と妥当性確認（Aspose.TeXコンパイルノード）
 エージェントは、テンプレートを読み込むテストファイル（`sample.tex`）を動的に作成します。
 
-次に、エージェントはAspose.TeXを介して暗黙的な`TeXJob`を起動し、テンプレートコードをコンパイルします。コンパイルが失敗した場合、エージェントはエラー出力ログ（`.log`）を読み取り、トレースログをLLMにパイプして自動構文修正を行います。コンパイルが成功した場合、アセットバンドルが検証されます。
+次に、エージェントは `TeXJob` を実行してテンプレート コードをコンパイルします。`TeXJob.Run()` が `ErrorMessageIssued` または `FatalErrorStop` を返した場合、エージェントはエラー出力ログ (`.log`) を読み取り、トレース ログを LLM に戻して構文を自動修正します。それ以外の場合、アセット バンドルは検証済みとなります。

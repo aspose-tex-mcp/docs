@@ -7,7 +7,7 @@ weight: 20
 url: /net/tikz-advanced-features/
 keywords: advanced tikz, tikz paths, tikz diagrams, pgfplots, circuitikz, tikz-3dplot
 description: Learn advanced TikZ techniques including complex paths, node positioning, arrows, and diagram creation for professional-quality graphics.
-lastmod: 2026-10-22
+lastmod: "2026-11-04"
 ---
 
 {{<section overview>}}
@@ -141,7 +141,7 @@ When processing documents with high-complexity vector diagrams in server-side .N
 |**Macro Expansion and CPU Overhead**|TikZ relies heavily on TeX's macro expansion engine, which is interpretive. Deeply nested loops or complex geometric equations (e.g., algorithmic plot rendering) can significantly increase CPU cycles per job|Keep procedural generation within TikZ lightweight where possible. If generating thousands of repetitive elements, consider whether data-driven templating or pre-calculating coordinates outside the TeX source can reduce macro evaluation depth|
 |**Memory Footprint and Garbage Collection**|Large multi-page documents containing extensive TikZ vector paths build up large internal object trees within the managed .NET heap during the typesetting pass|Isolate typesetting jobs into short-lived scopes or use dedicated worker instances so that the garbage collector can efficiently reclaim memory once the output stream (PDF, XPS, or image) is flushed|
 |**Caching Static Diagrams in Web Applications**|Recompiling a complex TikZ diagram on every HTTP request in a high-traffic web service will quickly saturate server CPU cores|If the underlying graphic is static or semi-static (such as an administrative dashboard chart or standard architectural schema), compile the `.tex` snippet once, cache the resulting PDF or vector stream in memory (e.g., via `IMemoryCache`), and serve the cached asset directly|
-|**Managing Asynchronous Processing and Timeouts**|Unoptimized or malformed recursive macros inside complex diagrams can occasionally cause infinite loops or prolonged execution blocks|When executing TeXJob runs in background worker services (such as Hangfire, Azure Functions, or ASP.NET Core background tasks), always wrap compilation calls in asynchronous wrappers with explicit timeout boundaries|
+|**Managing Asynchronous Processing and Timeouts**|Unoptimized or malformed recursive macros inside complex diagrams can occasionally cause infinite loops or prolonged execution blocks|When executing TeXJob runs in background worker services (such as Hangfire, Azure Functions, or ASP.NET Core background tasks), run them in a separate worker process that can be terminated on timeout, because `TeXJob.Run()` is synchronous and cannot be cancelled|
 
 ---
 

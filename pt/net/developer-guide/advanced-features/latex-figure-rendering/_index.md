@@ -7,7 +7,7 @@ weight: 20
 url: /net/latex-figure-rendering/
 description: Solução da API do Aspose.TeX para a renderização do fragmento de LaTeX .NET (Figura) é descrito neste artigo. Aprenda os exemplos de código sobre como usar a funcionalidade.
 keywords: figura de LaTeX, tamanho da figura, imagem de LaTeX, imagem de LaTeX, imagem de LaTeX, figura de LaTeX, foto de LaTeX, opções de figura de LaTeX
-lastmod: "2026-06-12"
+lastmod: "2026-11-04"
 ---
 
 {{<section overview>}}
@@ -78,10 +78,10 @@ Se pretende criar o seu próprio Agente de IA para renderização de figuras em 
 Analisa prompts de linguagem natural não estruturados ou desorganizados, convertendo-os em primitivas matemáticas LaTeX limpas e isoladas e ambientes de figuras (`\begin{picture}`, `\includegraphics`).
 
 2. O sistema de ficheiros virtual (camada de E/S)
-Armazena em segurança as dependências gráficas externas (`. png`, `. jpg`) num diretório `InputFileSystemDirectory` em memória ou em sandbox, para que o compilador possa resolver as referências de layout instantaneamente.
+Coloca com segurança as dependências gráficas externas (`.png`, `.jpg`) no diretório atribuído à opção `RequiredInputDirectory` para que o compilador possa resolver as referências de layout. Pode ser um `InputFileSystemDirectory` ou, para manter os arquivos na memória, um `InputZipDirectory` sobre um `MemoryStream`.
 
 3. A configuração
 Analisa marcadores de código estrutural e adiciona automaticamente drivers, dependências (como `graphicx` ou `pict2e`), fatores de escala e estados de transparência de fundo.
 
 4. O nó de execução unificado (mecanismo Aspose.TeX)
-Compila o ficheiro unificado e passa-o diretamente para o `FigureRenderer` especializado para calcular margens precisas de caixas delimitadoras vetoriais e gerar fragmentos de ecrã visual responsivos (SVG ou PNG de alta resolução).
+Passa o fragmento LaTeX e o preâmbulo para `PngFigureRenderer` ou `SvgFigureRenderer`, que compõe o fragmento e gera a figura, com a margem definida pela opção `Margin`, como SVG ou PNG de alta resolução.

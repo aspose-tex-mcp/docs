@@ -7,7 +7,7 @@ weight: 21
 url: /net/tikz-introduction/
 keywords: what is tikz, tikz introduction, tikz basics
 description: Introduction to TikZ, a powerful extension for creating high-quality graphics in LaTeX documents.
-lastmod: 2026-10-22
+lastmod: "2026-11-04"
 aliases: /net/what-is-tikz/
 ---
 
@@ -42,13 +42,6 @@ To get started with TikZ, ensure it is installed with your TeX distribution (typ
 
 \end{document}
 ```
-
-Erläuterung der Befehle
-- `\documentclass{article}` — legt den Dokumenttyp fest.
-- `\usepackage{tikz}` — lädt das Grafikpaket TikZ.
-- `\begin{tikzpicture}` — startet eine TikZ-Zeichenumgebung.
-- `\draw (0,0) -- (1,1) -- (1,0) -- cycle;` — zeichnet drei miteinander verbundene Liniensegmente und schließt den Pfad zu einem Dreieck.
-- `\end{tikzpicture}` — beendet die Zeichenumgebung.
 
 Explanation of the commands
 - `\documentclass{article}` — specifies the document type.

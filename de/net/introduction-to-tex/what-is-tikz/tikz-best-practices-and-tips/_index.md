@@ -7,7 +7,7 @@ weight: 23
 url: /net/tikz-best-practices-and-tips/
 keywords: TikZ Best Practices, TikZ Tipps, TikZ Performance-Optimierung
 description: Erfahren Sie Best Practices und nützliche Tipps für die effiziente und effektive Nutzung von TikZ in Ihren TeX- und LaTeX-Dokumenten.
-lastmod: 2026-10-23
+lastmod: "2026-11-04"
 ---
 
 {{<section overview>}}
@@ -112,12 +112,12 @@ Praktische TikZ-Beispiele und -Vorlagen finden Sie unter [Overleaf](https://www.
 
 ## Fehlerbehandlung und Diagnose in .NET
 
-Bei automatisierten, serverseitigen .NET-Anwendungen, die auf vom Benutzer bereitgestellten oder dynamisch generierten TikZ-Code angewiesen sind, ist eine defensive Programmierung erforderlich. Wenn die Aspose.TeX-Engine auf ungültige LaTeX- oder TikZ-Syntax stößt, löst sie eine `TeXException` aus.
+Bei automatisierten, serverseitigen .NET-Anwendungen, die auf vom Benutzer bereitgestellten oder dynamisch generierten TikZ-Code angewiesen sind, ist eine defensive Programmierung erforderlich. Wenn die Aspose.TeX-Engine auf ungültige LaTeX- oder TikZ-Syntax stößt, löst sie keine Ausnahme aus. Sie meldet das Problem über den von `TeXJob.Run()` zurückgegebenen Wert `TeXJobResult`.
 
 Um sicherzustellen, dass Ihre Anwendung robust bleibt und aussagekräftige Diagnoseinformationen liefert, sollten Sie die folgenden Vorgehensweisen zur Fehlerbehandlung anwenden:
 
-1. Abfangen und Protokollieren von `TeXException`
-Umschließen Sie den Aufruf von `TeXJob.Run()` stets mit einem `try-catch`-Block, der gezielt auf `TeXException` ausgerichtet ist. Auf diese Weise lassen sich Fehler beim Satzvorgang von allgemeinen Anwendungsfehlern unterscheiden.
+1. Das Jobergebnis prüfen
+Prüfen Sie immer den von `TeXJob.Run()` zurückgegebenen Wert. `ErrorMessageIssued` und `FatalErrorStop` bedeuten, dass das Dokument Fehler enthält, und ein Job, der mit `FatalErrorStop` endet, erzeugt möglicherweise keine Ausgabe. Setzen Sie die Option `Interaction` auf `NonstopMode`, damit der Job nicht auf Benutzereingaben wartet. Verwenden Sie einen `try-catch`-Block nur für allgemeine Anwendungsfehler wie E/A-Fehler.
 
 2. Auswertung von Terminalausgaben und Diagnoseprotokollen
 Schlägt eine Kompilierung fehl, liefern die Terminalausgabe sowie die während des Vorgangs erstellten `.log`-Dateien präzise Zeilennummern und Informationen zur Makroexpansion – genau dort, wo der TikZ-Parser auf ein Problem gestoßen ist. Mithilfe von `TeXOptions` können Sie die Terminalausgabe erfassen oder umleiten, um die Fehlersuche (Debugging) zu erleichtern.
@@ -125,12 +125,10 @@ Schlägt eine Kompilierung fehl, liefern die Terminalausgabe sowie die während 
 Im Folgenden erfahren Entwickler, wie sie bei der Verarbeitung von TikZ-Diagrammen in C# eine sichere und fehlertolerante Kompilierungsmethode implementieren können:
 
 ```csharp
-using System;
 using System.IO;
 using Aspose.TeX;
-using Aspose.TeX.Configuration;
-using Aspose.TeX.Presentation.Pdf;
 using Aspose.TeX.IO;
+using Aspose.TeX.Presentation.Pdf;
 
 public class TikZCompilerService
 {
@@ -138,47 +136,41 @@ public class TikZCompilerService
     {
         errorMessage = string.Empty;
 
-        // Configure standard LaTeX job options
-        TeXOptions options = TeXOptions.ConsoleAppRunSettings(
-            TeXConfig.LaTeX, 
-            Path.GetDirectoryName(inputFilePath), 
-            outputDirectory
-        );
+        // Standardoptionen für den LaTeX-Job konfigurieren
+        TeXOptions options = TeXOptions.ConsoleAppOptions(TeXConfig.ObjectLaTeX);
+        options.InputWorkingDirectory = new InputFileSystemDirectory(Path.GetDirectoryName(inputFilePath));
+        options.OutputWorkingDirectory = new OutputFileSystemDirectory(outputDirectory);
 
-        // Enable terminal output redirection to capture diagnostic details if needed
-        options.ShowTerminal = true;
+        // Terminalausgabe erfassen und nie auf Benutzereingaben warten
+        options.TerminalOut = new OutputMemoryTerminal();
+        options.Interaction = Interaction.NonstopMode;
         options.SaveOptions = new PdfSaveOptions();
 
         try
         {
-            // Execute the typesetting job
-            new TeXJob(inputFilePath, new PdfDevice(), options).Run();
+            // Satzjob ausführen
+            TeXJobResult result = new TeXJob(inputFilePath, new PdfDevice(), options).Run();
+
+            // Fehler bei TeX-Syntax, Paketen oder Makroexpansion behandeln (z. B. fehlerhafter TikZ-Pfad)
+            if (result >= TeXJobResult.ErrorMessageIssued)
+            {
+                errorMessage = $"TeX job failed with {result}. See the .log file in {outputDirectory}.";
+                return false;
+            }
+
             return true;
-        }
-        catch (TeXException texEx)
-        {
-            // Handle specific TeX syntax, package, or macro expansion failures (e.g., malformed TikZ path)
-            errorMessage = $"TeX Engine Compilation Error: {texEx.Message}";
-            // TODO: Log exception details to your enterprise logging framework (e.g., NLog, Serilog)
-            return false;
         }
         catch (IOException ioEx)
         {
-            // Handle file access or disk permission issues
-            errorMessage = $"I/O Error during compilation: {ioEx.Message}";
-            return false;
-        }
-        catch (Exception ex)
-        {
-            // Handle unexpected runtime failures
-            errorMessage = $"Unexpected error: {ex.Message}";
+            // Probleme beim Dateizugriff oder bei Datenträgerberechtigungen behandeln
+            errorMessage = $"I/O error during compilation: {ioEx.Message}";
             return false;
         }
     }
 }
 ```
 
-Durch das Abfangen einer `TeXException` kann Ihre Anwendung dem Client bei einem fehlerhaften TikZ-Skript einen sauberen `HTTP 400 Bad Request`-Status oder eine aussagekräftige Fehlermeldung zurückgeben, anstatt einen 500-Serverfehler zu verursachen.
+Durch die Prüfung des Jobergebnisses kann Ihre Anwendung eine saubere Antwort `HTTP 400 Bad Request` oder eine aussagekräftige Fehlermeldung an den Client zurückgeben, wenn ein generiertes TikZ-Skript fehlerhaft ist, anstatt einen Serverfehler 500 auftreten zu lassen.
 
 Wenn Ihre .NET-Anwendung Benutzerdaten dynamisch in TikZ-Koordinaten- oder Knoten-Strings einfügt, stellen Sie eine sorgfältige Bereinigung (Sanitization) sicher, um eine versehentliche Zerstörung der Syntax zu vermeiden (etwa durch nicht maskierte Sonderzeichen wie `%`, `&` oder `#`).
 

@@ -7,7 +7,7 @@ weight: 16
 url: /net/what-is-latex/
 keywords: Was ist Latex, Latex was ist das?
 description: Zur Beantwortung der Frage „Was ist LaTeX?“ Es ist erwähnenswert, dass eines der beeindruckendsten Features das New Font Selection Scheme (NFSS) ist.
-lastmod: 2026-10-20
+lastmod: "2026-11-04"
 ---
 
 {{<section overview>}}
@@ -153,8 +153,8 @@ Die folgende Vergleichstabelle zeigt, wie standardmäßige LaTeX-Funktionen inne
 | :- | :- | :- |
 | **Mathematischer Satz** | Erfolgt über `amsmath`/`amssymb` | Wird nativ geparst und in Vektor- oder Rasterformate gerendert |
 | **Dokumentklassen** | Erfordert lokale `.cls`-Dateien auf dem Datenträger | Werden über ein benutzerdefiniertes/virtuelles `IInputWorkingDirectory` geladen |
-| **Querverweise und Inhaltsverzeichnis** | Erfordern mehrere Durchläufe über die Befehlszeile | Werden innerhalb konfigurierbarer Programmdurchläufe verwaltet |
-| **Ausgabeformate** | Erzeugen DVI, PS oder PDF über separate Werkzeuge | Direkte Konvertierung in einem Schritt in PDF, XPS, PNG, JPEG, BMP oder TIFF |
+| **Querverweise und Inhaltsverzeichnis** | Erfordern mehrere Durchläufe über die Befehlszeile | Ein zweiter Durchlauf wird durch die Option `TeXOptions.Repeat` aktiviert |
+| **Ausgabeformate** | Erzeugen DVI, PS oder PDF über separate Werkzeuge | Direkte Konvertierung in einem Schritt in PDF, XPS, SVG, PNG, JPEG, BMP oder TIFF |
 
 **Weitere Informationen:**
 

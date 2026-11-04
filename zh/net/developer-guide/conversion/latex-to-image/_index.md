@@ -10,7 +10,7 @@ aliases:
 - /net/latex-to-svg/
 keywords: latex to png, latex png, latex to image, latex image, latex to jpg, latex jpg, latex to jpeg, latex jpeg, latex to tiff, latex tiff, latex to bmp, latex bmp
 description: 通过 Aspose.TeX API 将 TeX 转换为图像格式（适用于 .NET）的解决方案，请阅读本文了解如何操作以及代码示例。
-lastmod: "2026-11-02"
+lastmod: "2026-11-04"
 ---
 
 {{<section overview>}}
@@ -59,11 +59,11 @@ Transcript written on hello-world.log.
 
 **替代转换示例**  
 
-下面的 C# 代码片段演示了另一种通过写入内存流而不是直接写入文件系统来获取 PNG 输出的方法。此方法在需要将生成的 PNG 字节保存在内存中以便进一步处理（例如通过网络发送、存入数据库或在保存前进行其他转换）时非常有用。
+以下 C# 代码片段演示了获取 PNG 输出的另一种方法：设备将图像数据以字节数组的形式保存在内存中，而不是写入文件系统。如果您需要将生成的 PNG 字节用于后续处理，例如通过网络发送、存储到数据库或在保存前执行其他转换，这种方法非常有用。
 
 {{< gist "aspose-com-gists" "507170b996a1d0c39bb4374e888b3205" "Example-ConvertLaTeXToPNG-Alternative.cs" >}}
 
-*"page-n.png"* 文件将写入我们指定的任何路径。与 [PDF 输出](/tex/{{lang.url-fragment}}net/latex-to-pdf/#an-alternative-way-to-write-the-main-output-pdf-file) 不同，它们会复制写入输出目录的 PNG 文件。
+*"page-n.png"* 文件将写入我们指定的任意路径。由于 `DeviceWritesImages` 选项设置为 `false`，设备本身不会将 PNG 文件写入输出目录。
 
 ## 关于输入选项
 

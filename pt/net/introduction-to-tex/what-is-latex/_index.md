@@ -7,7 +7,7 @@ weight: 16
 url: /net/what-is-latex/
 keywords: o que é LaTeX, LaTeX o que é
 description: Para responder à pergunta "O que é LaTeX?" Vale ressaltar que um de seus recursos mais impressionantes é o novo esquema de seleção de fontes (NFSS).
-lastmod: 2026-10-20
+lastmod: "2026-11-04"
 ---
 
 {{<section overview>}}
@@ -154,8 +154,8 @@ Segue-se uma tabela comparativa detalhando quais as características padrão do 
 | :- | :- |:- |
 | **Composição tipográfica matemática** | Gerida via `amsmath`/`amssymb` | Analisada e renderizada nativamente para saídas vetoriais/raster |
 | **Classes de documentos** | Requer ficheiros `. cls` locais no disco | Carregados através de `IInputWorkingDirectory` personalizado/virtual |
-| **Referências cruzadas e sumário** | Requer múltiplas passagens pela linha de comandos | Gerido em passagens de execução de programas configuráveis ​​​​|
-| **Formatos de saída** | Gera DVI, PS ou PDF através de ferramentas separadas | Conversão direta num único passo para PDF, XPS, PNG, JPEG, BMP, TIFF |
+| **Referências cruzadas e sumário** | Requer múltiplas passagens pela linha de comandos | Uma segunda passagem é ativada pela opção `TeXOptions.Repeat` |
+| **Formatos de saída** | Gera DVI, PS ou PDF através de ferramentas separadas | Conversão direta num único passo para PDF, XPS, SVG, PNG, JPEG, BMP, TIFF |
 
 **Para aprofundar o assunto:**
 

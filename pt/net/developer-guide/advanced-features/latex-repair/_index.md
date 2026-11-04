@@ -6,7 +6,7 @@ linktitle: Reparo de arquivo de LaTeX
 weight: 30
 url: /net/latex-repair/
 description: Solução da API do Aspose.TeX para reparo de LaTeX .NET é descrito neste artigo. Aprenda os exemplos de código sobre como usar a funcionalidade.
-lastmod: "2026-04-03"
+lastmod: "2026-11-04"
 ---
 
 {{<section overview>}}
@@ -31,7 +31,7 @@ Em seguida, ele começa a digitalizar o arquivo de entrada ajustado desde o iní
 
 À medida que o motor verifica o arquivo, ele pode encontrar comandos ou ambientes indefinidos. A API pode fazer suposições em [pacotes necessários incorporados](/tex/{{lang.url-fragment}}net/embedded-packages/) (aqueles que definem os comandos e ambientes que não são definidos até que esses pacotes estejam incluídos) para alguns dos comandos e ambientes mais comuns. No entanto, existe uma maneira de fazer essas suposições externamente, implementando a interface [iguesspackageCallback](https://reference.aspose.com/tex/net/aspose.tex.features/iguesspackagecallback/). Uma instância dessa classe deve ser atribuída à opção `adivinhepackageCallback`.
 
-Aqui está um exemplo muito simples que apenas mapeia o comando `\head` para o pacote` FancyHdr`:
+Aqui está um exemplo muito simples que apenas mapeia o comando `\lhead` para o pacote` FancyHdr`:
 
 {{< gist "aspose-com-gists" "deadfd7c29ffe40024a9b6d12f0ed18a" "Examples_PackageGuessingCallback" >}}
 
@@ -93,9 +93,9 @@ O utilizador fornece instruções conversacionais, excertos de texto em bruto, f
 2. Correção automática da estrutura nativa (reparador Aspose.TeX)
 O fragmento matemático gerado é encaminhado pelo ciclo de vida de reparação nativo do Aspose.TeX para construir limites estruturais padrão sem que os programadores tenham de escrever wrappers de expressões regulares codificados.
 
-O agente cria uma instância LaTeXRepairer em segundo plano. O motor examina os fluxos de dados, interceta falhas e escreve com segurança os wrappers `\begin{document}` e `\end{document}` em torno das strings matemáticas para manter o pipeline de compilação válido.
+O agente salva o fragmento em um arquivo e executa `LaTeXRepairer` nele. O Repairer insere os `\documentclass`, `\begin{document}` e `\end{document}` ausentes e grava o arquivo corrigido (`-fixed.tex`) e o relatório (`.log`) no diretório de saída. Ele não muda para o modo matemático, portanto a fórmula já deve estar entre delimitadores matemáticos, como `$...$`.
 
-4. Execução e geração de recursos/relatórios (mecanismo de renderização)
-Assim que a string de script reparada e empacotada é compilada com sucesso, o Agente cria um relatório ou converte a saída limpa do sistema de ficheiros em formatos visuais de destino.
+3. Execução e geração de recursos/relatórios (mecanismo de renderização)
+`LaTeXRepairer.Run()` retorna o resultado do arquivo original, portanto o agente lê a verificação do arquivo corrigido no relatório. Se não houver erros críticos, o agente cria um relatório ou converte o arquivo corrigido nos formatos visuais de destino executando um `TeXJob`.
 
 **Você também pode conferir nosso aplicativo Web GRATUITO [** AI LATEX **](https://products.aspose.ai/tex/latex-repairer), que é construído com base no recurso implementado no [Aspose.TeX para .NET API](https://products.aspose.com/tex/net/) e envolve uma implementação mais avançada da interface `iguesspackagecallback`.**

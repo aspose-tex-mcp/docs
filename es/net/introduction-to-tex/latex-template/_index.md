@@ -8,7 +8,7 @@ weight: 100
 url: /net/latex-templates/
 description: Aprenda qué son las plantillas LaTeX, cómo usarlas y crearlas, dónde descargar las más populares y un flujo de trabajo rápido con fragmentos listos para copiar.
 keywords: LaTeX, plantilla, clase, estilo, Overleaf, CTAN, bibliografía, Beamer, tesis, CV
-lastmod: "2026-06-12"
+lastmod: "2026-11-04"
 ---
 
 {{<section overview>}}
@@ -57,8 +57,6 @@ Compile con `pdflatex`, `latexmk -pdf` o el botón “Recompilar” de Overleaf.
 % ---- custom settings ----
 \RequirePackage{geometry}
 \geometry{margin=2cm}
-\RequirePackage{fontspec}
-\setmainfont{Latin Modern Roman}
 
 % ---- user‑level commands ----
 \newcommand\mytitle[1]{\centerline{\LARGE\bfseries #1}}
@@ -110,7 +108,7 @@ Compile con `pdflatex`, `latexmk -pdf` o el botón “Recompilar” de Overleaf.
 
 ## ¿Qué pasa con Aspose?
 
-Cuando necesita manipular los archivos PDF generados a partir de LaTeX (fusionarlos, marcarlos o convertirlos a otros formatos) en una aplicación .NET, Java o Python, bibliotecas como **Aspose.TeX** proporcionan una API independiente del idioma para trabajar con archivos PDF sin necesidad de una cadena de herramientas LaTeX completa.
+Para componer un documento basado en una plantilla de LaTeX en una aplicación .NET, puede usar **Aspose.TeX para .NET**. Convierte LaTeX a PDF, XPS, SVG e imágenes rasterizadas sin necesidad de una distribución de TeX. Coloque los archivos `.cls` y `.sty` de la plantilla en el directorio de entrada. Los paquetes que no están [integrados](/tex/{{lang.url-fragment}}net/embedded-packages/) en la biblioteca pueden proporcionarse como [paquetes externos de LaTeX](/tex/{{lang.url-fragment}}net/external-latex-packages/).
 
 ---
 
@@ -122,7 +120,7 @@ Cuando necesita manipular los archivos PDF generados a partir de LaTeX (fusionar
 ¿Crear?              → Escribir .cls o .sty → empaquetar recursos → zip/GitHub
 ¿Obtener?            → Galería Overleaf, CTAN, GitHub, sitios universitarios
 Los 10 más populares → IEEEtran, llncs, elsarticle, modern-simple-cv,
-                      classicthesis, beamer, a0poster, tesis UNICAMP,
+                      classicthesis, beamer, a0poster, tesis universitaria,
                       aa.cls, artículo básico de revista académica
 ```
 
@@ -138,7 +136,7 @@ Si desea crear su propio agente de IA para la creación de plantillas LaTeX util
 ![Esquema de bloques para el flujo de trabajo de renderizado de figuras LaTeX con IA](/tex/images/net/tutorial/blockscheme-ai-for-latex-template-creation.png)
 
 1. Ingesta de requisitos de diseño (capa de intención LLM)
-El usuario proporciona restricciones de diseño de alto nivel o instrucciones de formato (por ejemplo, "Crear un diseño de revista a doble columna con márgenes de 1,5 cm, utilizando fuentes Times New Roman, encabezados rojos y un elegante recuadro de autor en la parte superior"). A continuación, el LLM transforma estos detalles visuales semánticos en requisitos programáticos estructurales.
+El usuario proporciona restricciones de diseño de alto nivel o instrucciones de formato (por ejemplo, "Crear un diseño de revista a doble columna con márgenes de 1,5 cm, encabezados rojos y un elegante recuadro de autor en la parte superior"). A continuación, el LLM transforma estos detalles visuales semánticos en requisitos programáticos estructurales.
 La matriz de intenciones determina si la solicitud requiere un archivo de clase independiente (`.cls`) completamente nuevo para un tipo de documento personalizado o simplemente un archivo de estilo (`.sty`) adaptado que se integra con clases estándar como `article` o `report`.
 
 2. Alineación del árbol de herencia y generación de clases (capa de estructura)
@@ -148,11 +146,11 @@ El agente genera los bloques de código estructurales para el archivo `.cls` bas
 - Convierte componentes de lenguaje natural en macros nativas (por ejemplo, transforma una solicitud de "cuadro de autor" en un bloque de definición personalizado `\renewcommand{\maketitle}{...}`).
 
 3. Fábrica de paquetes y recopilación de recursos (Capa de dependencias)
-Según las instrucciones de diseño extraídas en el primer paso, el motor de maquetación necesitará herramientas de macros especializadas de terceros (por ejemplo, geometría para ajustes de márgenes, `xcolor` para colores de marca personalizados o `fontspec` para configuraciones de fuentes modernas).
+Según las instrucciones de diseño extraídas en el primer paso, el motor de diseño necesitará herramientas de macros especializadas de terceros (p. ej., `geometry` para ajustar los márgenes o `xcolor` para colores de marca personalizados). Los paquetes que requieren XeTeX o LuaTeX, como `fontspec`, no se pueden usar con Aspose.TeX.
 
 El agente actúa como un filtro de análisis estático. Inserta dinámicamente las declaraciones `\RequirePackage{...}` necesarias en el paquete de clases o estilos.
 
 4. Verificación y validación (Nodo de compilación de Aspose.TeX)
 El agente crea dinámicamente un archivo de prueba (`sample.tex`) que carga la plantilla.
 
-Luego, el agente inicia un `TeXJob` implícito a través de Aspose.TeX para compilar el código de la plantilla. Si la compilación falla, el agente lee los registros de salida de errores (`.log`) y los envía al motor de maquetación para la corrección sintáctica automática. Si la compilación es exitosa, se verifica el paquete de recursos.
+A continuación, el agente ejecuta un `TeXJob` para compilar el código de la plantilla. Si `TeXJob.Run()` devuelve `ErrorMessageIssued` o `FatalErrorStop`, el agente lee los registros de errores (`.log`) y envía los registros de seguimiento al LLM para la corrección automática de la sintaxis. En caso contrario, el paquete de recursos queda verificado.

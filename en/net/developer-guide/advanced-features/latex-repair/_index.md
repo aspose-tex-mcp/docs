@@ -6,7 +6,7 @@ linktitle: LaTeX file repair
 weight: 30
 url: /net/latex-repair/
 description: Aspose.TeX API solution for .NET LaTeX repair is described in this article. Learn the code examples on how to use the functionality.
-lastmod: "2026-06-12"
+lastmod: "2026-11-04"
 ---
 
 {{<section overview>}}
@@ -31,13 +31,13 @@ Then, it starts scanning the adjusted input file from the very beginning. The Te
 
 As the engine scans the file further, it may find undefined commands or environments. The API can make assumptions on [embedded required packages](/tex/{{lang.url-fragment}}net/embedded-packages/) (those that define the commands and environments that are not defined until these packages are included) for some of the most common commands and environments. However, there is a way to make such assumptions externally by implementing the [IGuessPackageCallback](https://reference.aspose.com/tex/net/aspose.tex.features/iguesspackagecallback/) interface. An instance of such a class should be assigned to the `GuessPackageCallback` option.
 
-Here is a very simple example that just maps the `\head` command to the `fancyhdr` package:
+Here is a very simple example that just maps the `\lhead` command to the `fancyhdr` package:
 
 
 {{< gist "aspose-com-gists" "deadfd7c29ffe40024a9b6d12f0ed18a" "Examples_PackageGuessingCallback" >}}
 
 
-As for the sample file, the engine first encounters the `\chapter` command, which is not defined in the `article` document class but is defined in the `book` document class. The API adjusts the document class so that the final version of the fixed file will start with `\documentclass{book}`. Then, the engine finds the aforementioned `\lhead` command and decides that `\usepackage{fancyhdr}` must be inserted in the preamble. The `\href` and `\includegraphics` commands that occur later on make the Repairer insert `\usepackage{hyperref}` and `\usepackage{graphics}` in the preamble, respectively. These decisions are based on the API's internal mappings. Again, all such fixes are logged in the report file.
+As for the sample file, the engine first encounters the `\chapter` command, which is not defined in the `article` document class but is defined in the `book` document class. The API adjusts the document class so that the final version of the fixed file will start with `\documentclass{book}`. Then, the engine finds the aforementioned `\lhead` command and decides that `\usepackage{fancyhdr}` must be inserted in the preamble. The `\href` and `\includegraphics` commands that occur later on make the Repairer insert `\usepackage{hyperref}` and `\usepackage{graphicx}` in the preamble, respectively. These decisions are based on the API's internal mappings. Again, all such fixes are logged in the report file.
 
 Finally, the engine abnormally terminates since the normal ending of a LaTeX document is missing. This makes the Repairer append `\end{document}` to the end of the file and reflect this fact in the report.
 
@@ -86,7 +86,7 @@ There are no critical errors in the fixed file.
 
 This workflow combines the structural validation of the Aspose.TeX native repair API with the contextual inference of an LLM Core to achieve an error-proof rendering pipeline. It can be a separate Agent to check and fix errors in the existing LaTeX files or a part of the math writing process.
 
-### Workflow architecture for an AI Agent that repairs LaTeX syntaxis
+### Workflow architecture for an AI Agent that repairs LaTeX syntax
 
 ![Blockscheme for AI LaTeX repairing workflow](/tex/images/net/tutorial/blockscheme-for-math-repairing.png) 
 
@@ -94,10 +94,10 @@ This workflow combines the structural validation of the Aspose.TeX native repair
 The user provides conversational instructions, raw text snippets, copied formulas, or a `.latex` file. The Agent urges the LLM to extract the core mathematical intents and outputs a focused LaTeX mathematical block.
 2. Native structure auto-correction (Aspose.TeX repairer)
 The generated math fragment is routed through the native Aspose.TeX repair lifecycle to build out standard structural boundaries without developers needing to write hardcoded regex wrappers.
-The agent creates a background LaTeXRepairer instance. The engine scans the data streams, intercepts faults, and safely writes \begin{document} and \end{document} wrappers around the math strings to keep the compilation pipeline valid.
+The agent saves the fragment to a file and runs `LaTeXRepairer` on it. The Repairer inserts the missing `\documentclass`, `\begin{document}`, and `\end{document}`, and writes the fixed file (`-fixed.tex`) and the report (`.log`) to the output directory. It does not switch to math mode, so the formula must already be enclosed in math delimiters such as `$...$`.
 
-4. Execution and asset/report generation (Rendering engine)
-Once the repaired and packaged script string is successfully compiled, the Agent creates a report or converts the clean file system output into target visual formats.
+3. Execution and asset/report generation (Rendering engine)
+`LaTeXRepairer.Run()` returns the result for the original file, so the agent reads the check of the fixed file from the report. If there are no critical errors, the Agent creates a report or converts the fixed file into target visual formats by running a `TeXJob`.
 
 
 **You may also check out our free [**AI LaTeX Repairer**](https://products.aspose.ai/tex/latex-repairer) web app, which is built based on the feature implemented within [Aspose.TeX for .NET API](https://products.aspose.com/tex/net/) and involves a more advanced implementation of the `IGuessPackageCallback` interface.**

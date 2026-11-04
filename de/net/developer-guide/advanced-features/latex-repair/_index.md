@@ -6,7 +6,7 @@ linktitle: Reparatur von LaTeX-Dateien
 weight: 30
 url: /net/latex-repair/
 description: Im Artikel wird die Aspose.TeX-Lösung für die .NET LaTeX-Reparatur beschrieben. Erfahren Sie anhand der Codebeispiele, wie Sie die Funktionalität nutzen.
-lastmod: "2026-06-12"
+lastmod: "2026-11-04"
 ---
 
 {{<section overview>}}
@@ -31,12 +31,12 @@ Anschließend wird die angepasste Eingabedatei von Anfang an gescannt. Die mit d
 
 Während die Engine die Datei weiter durchsucht, findet sie möglicherweise undefinierte Befehle oder Umgebungen. Die API kann für einige der häufigsten Befehle und Umgebungen Annahmen zu [eingebetteten erforderlichen Paketen](/tex/{{lang.url-fragment}}net/embedded-packages/) treffen (solche, die die Befehle und Umgebungen definieren, die erst definiert werden, wenn diese Pakete enthalten sind). Es gibt jedoch eine Möglichkeit, solche Annahmen extern zu treffen, indem die Schnittstelle [IGuessPackageCallback](https://reference.aspose.com/tex/net/aspose.tex.features/iguesspackagecallback/) implementiert wird. Eine Instanz einer solchen Klasse sollte der Option „GuessPackageCallback“ zugewiesen werden.
 
-Hier ist ein sehr einfaches Beispiel, das lediglich den Befehl „\head“ dem Paket „fancyhdr“ zuordnet:
+Hier ist ein sehr einfaches Beispiel, das lediglich den Befehl „\lhead“ dem Paket „fancyhdr“ zuordnet:
 
 
 {{< gist "aspose-com-gists" "deadfd7c29ffe40024a9b6d12f0ed18a" "Examples_PackageGuessingCallback" >}}
 
-Was die Beispieldatei betrifft, stößt die Engine zunächst auf den Befehl `\chapter`, der nicht in der Dokumentklasse „article“, sondern in der Dokumentklasse „book“ definiert ist. Die API passt die Dokumentklasse so an, dass die endgültige Version der korrigierten Datei mit `\documentclass{book}` beginnt. Dann findet die Engine den oben genannten `\lhead`-Befehl und entscheidet, dass `\usepackage{fancyhdr}` in die Präambel eingefügt werden muss. Die Befehle `\href` und `\includegraphics`, die später auftreten, veranlassen den Repairer, `\usepackage{hyperref}` bzw. `\usepackage{graphics}` in die Präambel einzufügen. Diese Entscheidungen basieren auf den internen Zuordnungen der API. Auch hier werden alle derartigen Korrekturen in der Berichtsdatei protokolliert.
+Was die Beispieldatei betrifft, stößt die Engine zunächst auf den Befehl `\chapter`, der nicht in der Dokumentklasse „article“, sondern in der Dokumentklasse „book“ definiert ist. Die API passt die Dokumentklasse so an, dass die endgültige Version der korrigierten Datei mit `\documentclass{book}` beginnt. Dann findet die Engine den oben genannten `\lhead`-Befehl und entscheidet, dass `\usepackage{fancyhdr}` in die Präambel eingefügt werden muss. Die Befehle `\href` und `\includegraphics`, die später auftreten, veranlassen den Repairer, `\usepackage{hyperref}` bzw. `\usepackage{graphicx}` in die Präambel einzufügen. Diese Entscheidungen basieren auf den internen Zuordnungen der API. Auch hier werden alle derartigen Korrekturen in der Berichtsdatei protokolliert.
 
 Schließlich wird die Engine abnormal beendet, da die normale Endung eines LaTeX-Dokuments fehlt. Dadurch hängt der Reparateur `\end{document}` an das Ende der Datei an und spiegelt diese Tatsache im Bericht wider.
 
@@ -95,9 +95,9 @@ Der Benutzer gibt Anweisungen in Form von Dialogen, unformatierten Textfragmente
 2. Automatische Korrektur der nativen Struktur (Aspose.TeX-Reparatur)
 Der generierte mathematische Ausdruck durchläuft den nativen Aspose.TeX-Reparaturzyklus, um standardmäßige Strukturgrenzen zu erstellen, ohne dass Entwickler fest codierte Regex-Wrapper schreiben müssen.
 
-Der Agent erstellt eine LaTeXRepairer-Instanz im Hintergrund. Die Engine scannt die Datenströme, fängt Fehler ab und schreibt sicher `\begin{document}`- und `\end{document}`-Wrapper um die mathematischen Ausdrücke, um die Gültigkeit der Kompilierungspipeline zu gewährleisten.
+Der Agent speichert das Fragment in einer Datei und führt `LaTeXRepairer` dafür aus. Der Repairer fügt fehlendes `\documentclass`, `\begin{document}` und `\end{document}` ein und schreibt die korrigierte Datei (`-fixed.tex`) und den Bericht (`.log`) in das Ausgabeverzeichnis. In den Mathematikmodus wechselt er nicht, daher muss die Formel bereits in Mathematik-Begrenzer wie `$...$` eingeschlossen sein.
 
-4. Ausführung und Asset-/Berichtsgenerierung (Rendering-Engine)
-Sobald der reparierte und verpackte Skriptstring erfolgreich kompiliert wurde, erstellt der Agent einen Bericht oder konvertiert die bereinigte Dateisystemausgabe in die gewünschten visuellen Formate.
+3. Ausführung und Asset-/Berichtsgenerierung (Rendering-Engine)
+`LaTeXRepairer.Run()` gibt das Ergebnis für die Originaldatei zurück, daher liest der Agent die Prüfung der korrigierten Datei aus dem Bericht. Wenn keine kritischen Fehler vorliegen, erstellt der Agent einen Bericht oder konvertiert die korrigierte Datei mit einem `TeXJob` in die visuellen Zielformate.
 
 **Sie können sich auch unsere kostenlose Web-App [**AI LaTeX Repairer**](https://products.aspose.ai/tex/latex-repairer) ansehen, die auf der in [Aspose.TeX for .NET API](https://products.aspose.com/tex/net/) implementierten Funktion basiert und eine erweiterte Version beinhaltet Implementierung der Schnittstelle „IGuessPackageCallback“.**

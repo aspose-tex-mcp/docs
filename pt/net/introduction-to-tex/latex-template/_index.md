@@ -8,7 +8,7 @@ weight: 100
 url: /net/latex-templates/
 description: Aprenda o que são modelos LaTeX, como usá-los e criá-los, onde baixar os mais populares e um fluxo de trabalho rápido com trechos prontos para copiar.
 keywords: LaTeX, modelo, classe, estilo, Overleaf, CTAN, bibliografia, Beamer, tese, CV
-lastmod: "2026-06-12"
+lastmod: "2026-11-04"
 ---
 
 {{<section overview>}}
@@ -57,8 +57,6 @@ Compile com `pdflatex`, `latexmk -pdf` ou o botão “Recompilar” Overleaf.
 % ---- custom settings ----
 \RequirePackage{geometry}
 \geometry{margin=2cm}
-\RequirePackage{fontspec}
-\setmainfont{Latin Modern Roman}
 
 % ---- user‑level commands ----
 \newcommand\mytitle[1]{\centerline{\LARGE\bfseries #1}}
@@ -110,7 +108,7 @@ Use-o com `\documentclass{mytemplate}` no seu documento.
 
 ## E o Aspose?
 
-Quando você precisa manipular os PDFs gerados a partir do LaTeX (mesclagem, marca d'água ou conversão para outros formatos) em um aplicativo .NET, Java ou Python, bibliotecas como **Aspose.TeX** fornecem uma API independente de linguagem para trabalhar com arquivos PDF sem exigir uma cadeia de ferramentas LaTeX completa.
+Para compor um documento baseado em um modelo LaTeX em um aplicativo .NET, você pode usar o **Aspose.TeX para .NET**. Ele converte LaTeX em PDF, XPS, SVG e imagens rasterizadas sem exigir uma distribuição TeX. Coloque os arquivos `.cls` e `.sty` do modelo no diretório de entrada. Pacotes que não estão [incorporados](/tex/{{lang.url-fragment}}net/embedded-packages/) à biblioteca podem ser fornecidos como [pacotes LaTeX externos](/tex/{{lang.url-fragment}}net/external-latex-packages/).
 
 ---
 
@@ -122,7 +120,7 @@ Usar?   → \documentclass{mytemplate} + seguir o README
 Criar?  → Escrever . cls ou . sty → comprimir recursos → zip/GitHub
 Obter?  → Overleaf Gallery, CTAN, GitHub, sites de universidades
 10 mais populares → IEEEtran, llncs, elsarticle, modern-simple-cv,
-        classicthesis, beamer, a0poster, tese UNICAMP,
+        classicthesis, beamer, a0poster, tese universitária,
         aa.cls, Artigo de revista académica básica
 ```
 
@@ -137,7 +135,7 @@ Se pretende criar o seu próprio Agente de IA para a criação de templates LaTe
 ![Esquema de blocos para o fluxo de trabalho de renderização de figuras LaTeX com IA](/tex/images/net/tutorial/blockscheme-ai-for-latex-template-creation.png)
 
 1. Ingestão de requisitos de layout (camada de intenção LLM)
-O utilizador fornece restrições de design de alto nível ou instruções de formatação (por exemplo, "Criar um layout de periódico em duas colunas com margens de 1,5 cm, utilizando tipos de letra Times New Roman, cabeçalhos vermelhos e uma elegante caixa de autor no topo"). De seguida, o LLM mapeia estes detalhes visuais semânticos em requisitos programáticos estruturais.
+O utilizador fornece restrições de design de alto nível ou instruções de formatação (por exemplo, "Criar um layout de periódico em duas colunas com margens de 1,5 cm, cabeçalhos vermelhos e uma elegante caixa de autor no topo"). De seguida, o LLM mapeia estes detalhes visuais semânticos em requisitos programáticos estruturais.
 
 A matriz de intenções decide se o pedido requer um ficheiro de Classe (`. cls`) totalmente novo e independente para um tipo de documento personalizado ou apenas um invólucro de Estilo (`. sty`) adaptado que se integra em classes padrão como artigo ou relatório.
 
@@ -148,10 +146,10 @@ O agente constrói os blocos de código estruturais para o ficheiro `. cls` com 
 - Converte componentes de linguagem natural em macros nativas (como transformar um pedido de "caixa de autor" num bloco de definição personalizado `\renewcommand{\maketitle}{...}`).
 
 3. Fábrica de pacotes e recolha de recursos (Camada de dependência)
-Dependendo das instruções de design extraídas no primeiro passo, o motor de layout necessitará de ferramentas de macro especializadas de terceiros (por exemplo, geometry para ajustes de margem, `xcolor` para cores de marca personalizadas ou `fontspec` para configurações de tipos de letra modernos).
+Dependendo das instruções de design extraídas na primeira etapa, o mecanismo de layout precisará de ferramentas de macro especializadas de terceiros (por exemplo, `geometry` para ajustes de margem ou `xcolor` para cores de marca personalizadas). Pacotes que exigem XeTeX ou LuaTeX, como `fontspec`, não podem ser usados com o Aspose.TeX.
 
 O Agente atua como um filtro de linting. Introduz dinamicamente as instruções `\RequirePackage{...}` necessárias no pacote de classes ou estilos.
 
 4. Verificação e validação (Nó de compilação Aspose.TeX)
 O agente cria dinamicamente um ficheiro de teste (`sample. tex`) que carrega o modelo.
-De seguida, o Agente inicia um `TeXJob` implícito através do Aspose.TeX para compilar o código do modelo. Se a compilação falhar, o agente lê os registos de saída de erro (`. log`) e envia os registos de rastreio de volta para o LLM para correção automática da sintaxe. Se a compilação for bem-sucedida, o pacote de recursos é verificado.
+Em seguida, o agente executa um `TeXJob` para compilar o código do modelo. Se `TeXJob.Run()` retornar `ErrorMessageIssued` ou `FatalErrorStop`, o agente lê os logs de erro (`.log`) e envia os logs de rastreamento de volta ao LLM para correção automática da sintaxe. Caso contrário, o pacote de recursos é considerado verificado.

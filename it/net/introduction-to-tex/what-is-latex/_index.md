@@ -7,7 +7,7 @@ weight: 16
 url: /net/what-is-latex/
 keywords: Cos'è il LaTeX, LaTeX che cos'è
 description: Per rispondere alla domanda "Cos'è il LaTeX?" Vale la pena ricordare che una delle sue caratteristiche più impressionanti è il nuovo schema di selezione dei caratteri (NFSS).
-lastmod: 2026-10-20
+lastmod: "2026-11-04"
 ---
 
 {{<section overview>}}
@@ -154,8 +154,8 @@ Di seguito è riportata una tabella comparativa che illustra come le funzionalit
 | :- | :- | :- |
 | **Composizione matematica** | Gestita tramite `amsmath`/`amssymb` | Analizzata e renderizzata nativamente in formati vettoriali o raster |
 | **Classi di documento** | Richiede file `.cls` presenti localmente sul disco | Caricate tramite `IInputWorkingDirectory` personalizzate o virtuali |
-| **Riferimenti incrociati e indice (TOC)** | Richiede passaggi multipli da riga di comando | Gestiti all'interno di cicli di esecuzione configurabili |
-| **Formati di output** | Genera DVI, PS o PDF tramite strumenti separati | Conversione diretta in un unico passaggio verso PDF, XPS, PNG, JPEG, BMP, TIFF |
+| **Riferimenti incrociati e indice (TOC)** | Richiede passaggi multipli da riga di comando | Un secondo passaggio viene attivato dall'opzione `TeXOptions.Repeat` |
+| **Formati di output** | Genera DVI, PS o PDF tramite strumenti separati | Conversione diretta in un unico passaggio verso PDF, XPS, SVG, PNG, JPEG, BMP, TIFF |
 
 **Per approfondire:**
 

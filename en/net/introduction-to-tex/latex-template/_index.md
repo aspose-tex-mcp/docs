@@ -8,7 +8,7 @@ weight: 100
 url: /net/latex-templates/
 description: Learn what LaTeX templates are, how to use and create them, where to download the most popular ones, and a fast workflow with ready‑to‑copy snippets.
 keywords: LaTeX, template, class, style, Overleaf, CTAN, bibliography, Beamer, thesis, CV
-lastmod: "2026-06-12"
+lastmod: "2026-11-04"
 ---
 
 {{<section overview>}}
@@ -57,8 +57,6 @@ Compile with `pdflatex`, `latexmk -pdf`, or the Overleaf “Recompile” button.
 % ---- custom settings ----
 \RequirePackage{geometry}
 \geometry{margin=2cm}
-\RequirePackage{fontspec}
-\setmainfont{Latin Modern Roman}
 
 % ---- user‑level commands ----
 \newcommand\mytitle[1]{\centerline{\LARGE\bfseries #1}}
@@ -110,11 +108,11 @@ Use it with `\documentclass{mytemplate}` in your document.
 
 ## What about Aspose?
 
-When you need to manipulate the PDFs generated from LaTeX (merge, watermark, or convert to other formats) in a .NET, Java, or Python application, libraries such as **Aspose.TeX** provide a language‑agnostic API for working with PDF files without requiring a full LaTeX toolchain.
+To typeset a document based on a LaTeX template in a .NET application, you can use **Aspose.TeX for .NET**. It converts LaTeX to PDF, XPS, SVG, and raster images without requiring a TeX distribution. Put the `.cls` and `.sty` files of the template in the input directory. Packages that are not [embedded](/tex/{{lang.url-fragment}}net/embedded-packages/) in the library can be supplied as [external LaTeX packages](/tex/{{lang.url-fragment}}net/external-latex-packages/).
 
 ---
 
-### TL;DR heat sheet
+### TL;DR cheat sheet
 
 ```text
 What?   → Pre‑built layout (class+style+assets)
@@ -122,7 +120,7 @@ Use?    → \documentclass{mytemplate} + follow README
 Create? → Write .cls or .sty → pack assets → zip/GitHub
 Get?    → Overleaf Gallery, CTAN, GitHub, university sites
 Hot 10  → IEEEtran, llncs, elsarticle, modern‑simple‑cv,
-          classicthesis, beamer, a0poster, UNICAMP thesis,
+          classicthesis, beamer, a0poster, university thesis,
           aa.cls, Basic Academic Journal Article
 ```
 
@@ -137,7 +135,7 @@ If you want to create your own AI Agent for LaTeX template creation using Aspose
 ![Blockscheme for AI LaTeX figure rendering workflow](/tex/images/net/tutorial/blockscheme-ai-for-latex-template-creation.png) 
 
 1. Layout requirements ingestion (LLM intent layer)
-The user provides high-level design constraints or formatting instructions (e.g., "Create a double-column journal layout with 1.5cm margins, using Times New Roman fonts, red headers, and an elegant author box at the top"). Then the LLM maps these semantic visual details into structural programmatic requirements.
+The user provides high-level design constraints or formatting instructions (e.g., "Create a double-column journal layout with 1.5cm margins, red headers, and an elegant author box at the top"). Then the LLM maps these semantic visual details into structural programmatic requirements.
 The intent matrix decides whether the request requires an entirely new standalone Class (`.cls`) file for a custom document type or just a tailored Style (`.sty`) wrapper that hooks into standard classes like article or report.
 
 2. Inheritance tree alignment and Class generation (Structure layer)
@@ -147,10 +145,10 @@ The agent builds out the structural code blocks for the `.cls` file based on a r
 - Converts natural language components into native macros (such as transforming an "author box" request into a custom `\renewcommand{\maketitle}{...}` definition block).
 
 3. Package factory and asset gathering (Dependency layer)
-Depending on the design instructions extracted in the first step, the layout engine will need specialized third-party macro tools (e.g., geometry for margin adjustments, `xcolor` for custom branding colors, or `fontspec` for modern font configurations).
+Depending on the design instructions extracted in the first step, the layout engine will need specialized third-party macro tools (e.g., `geometry` for margin adjustments or `xcolor` for custom branding colors). Packages that require XeTeX or LuaTeX, such as `fontspec`, cannot be used with Aspose.TeX.
 The Agent acts as a linting filter. It dynamically inserts required `\RequirePackage{...}` statements into the class or style bundle.
 
 4. Verification and validation (Aspose.TeX compilation node)
 The agent dynamically creates a test file (`sample.tex`) that loads the template.
-Then the Agent spins up an implicit `TeXJob` via Aspose.TeX to compile the template code. If the compilation fails, the agent reads the error output logs (`.log`) and pipes the trace logs back to the LLM for automated syntax correction. If the compilation passes, the asset bundle is verified.
+Then the Agent runs a `TeXJob` to compile the template code. If `TeXJob.Run()` returns `ErrorMessageIssued` or `FatalErrorStop`, the agent reads the error output logs (`.log`) and pipes the trace logs back to the LLM for automated syntax correction. Otherwise, the asset bundle is verified.
 

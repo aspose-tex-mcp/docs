@@ -7,7 +7,7 @@ weight: 20
 url: /net/latex-figure-rendering/
 description: Aspose.TeX API solution for .NET LaTeX fragment (figure) rendering is described in this article. Learn the code examples on how to use the functionality.
 keywords: latex figure, figure size latex, latex picture, latex image, latex include figure, latex pic, latex figure options
-lastmod: "2026-06-12"
+lastmod: "2026-11-04"
 ---
 
 {{<section overview>}}
@@ -79,10 +79,10 @@ If you want to create your own AI Agent for figure rendering within LaTeX using 
 Parses unstructured or messy natural language prompts into clean, isolated LaTeX math primitives and figure environments (`\begin{picture}`, `\includegraphics`).
 
 2. The virtual file system (IO layer)
-Safely stages external graphic dependencies (`.png`, `.jpg`) into an in-memory or sandboxed `InputFileSystemDirectory` directory so the compiler can resolve layout references instantly.
+Safely stages external graphic dependencies (`.png`, `.jpg`) into the directory assigned to the `RequiredInputDirectory` option so the compiler can resolve layout references. It can be an `InputFileSystemDirectory` or, to keep the files in memory, an `InputZipDirectory` over a `MemoryStream`.
 
 3. The configuration
 Analyzes structural code markers and automatically adds drivers, dependencies (like `graphicx` or `pict2e`), scale factors, and background transparency states.
 
 4. The unified execution node (Aspose.TeX engine)
-Compiles the unified file and passes it directly to the specialized `FigureRenderer` to compute precise vector bounding box margins and output responsive visual canvas fragments (SVG or high-DPI PNG).
+Passes the LaTeX fragment and the preamble to `PngFigureRenderer` or `SvgFigureRenderer`, which typesets the fragment and outputs the figure, with the margin set by the `Margin` option, as SVG or high-DPI PNG.

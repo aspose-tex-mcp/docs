@@ -6,7 +6,7 @@ linktitle: LaTeX 文件修复
 weight: 30
 url: /net/latex-repair/
 description: 本文介绍 Aspose.TeX API 在 .NET 上的 LaTeX 修复解决方案。了解如何使用此功能的代码示例。
-lastmod: "2026-06-12"
+lastmod: "2026-11-04"
 ---
 
 {{<section overview>}}
@@ -31,11 +31,11 @@ lastmod: "2026-06-12"
 
 当引擎进一步扫描文件时，可能会发现未定义的命令或环境。API 可以对[嵌入的必需包](/tex/{{lang.url-fragment}}net/embedded-packages/)（即那些在包含这些包之前未定义的命令和环境）做出假设，针对一些最常见的命令和环境提供映射。然而，也可以通过实现 [IGuessPackageCallback](https://reference.aspose.com/tex/net/aspose.tex.features/iguesspackagecallback/) 接口在外部进行此类假设。应将此类类的实例分配给 `GuessPackageCallback` 选项。
 
-下面是一个非常简单的示例，仅将 `\head` 命令映射到 `fancyhdr` 包：
+下面是一个非常简单的示例，仅将 `\lhead` 命令映射到 `fancyhdr` 包：
 
 {{< gist "aspose-com-gists" "deadfd7c29ffe40024a9b6d12f0ed18a" "Examples_PackageGuessingCallback" >}}
 
-对于示例文件，引擎首先遇到 `\chapter` 命令，该命令在 `article` 文档类中未定义，但在 `book` 文档类中定义。API 会调整文档类，使修复后的文件开头为 `\documentclass{book}`。随后，引擎发现前述的 `\lhead` 命令，并决定在导言区插入 `\usepackage{fancyhdr}`。随后出现的 `\href` 和 `\includegraphics` 命令分别导致 Repairer 在导言区插入 `\usepackage{hyperref}` 和 `\usepackage{graphics}`。这些决定基于 API 的内部映射。同样，所有此类修复都会记录在报告文件中。
+对于示例文件，引擎首先遇到 `\chapter` 命令，该命令在 `article` 文档类中未定义，但在 `book` 文档类中定义。API 会调整文档类，使修复后的文件开头为 `\documentclass{book}`。随后，引擎发现前述的 `\lhead` 命令，并决定在导言区插入 `\usepackage{fancyhdr}`。随后出现的 `\href` 和 `\includegraphics` 命令分别导致 Repairer 在导言区插入 `\usepackage{hyperref}` 和 `\usepackage{graphicx}`。这些决定基于 API 的内部映射。同样，所有此类修复都会记录在报告文件中。
 
 最后，由于缺少 LaTeX 文档的正常结尾，引擎异常终止。这导致 Repairer 在文件末尾追加 `\end{document}` 并在报告中反映此情况。
 
@@ -95,10 +95,10 @@ There are no critical errors in the fixed file.
 
 生成的数学片段会通过 Aspose.TeX 原生修复生命周期进行处理，从而构建标准结构边界，无需开发者编写硬编码的正则表达式包装器。
 
-代理程序会创建一个后台 LaTeXRepairer 实例。引擎会扫描数据流，拦截错误，并在数学字符串周围安全地写入 `\begin{document}` 和 `\end{document}` 包装器，以确保编译流程的有效性。
+代理将片段保存到文件中，并对其运行 `LaTeXRepairer`。Repairer 会插入缺失的 `\documentclass`、`\begin{document}` 和 `\end{document}`，并将修复后的文件（`-fixed.tex`）和报告（`.log`）写入输出目录。它不会切换到数学模式，因此公式必须已包含在 `$...$` 等数学定界符中。
 
-4. 执行和资源/报告生成（渲染引擎）
+3. 执行和资源/报告生成（渲染引擎）
 
-修复并打包后的脚本字符串成功编译后，代理程序会生成报告或将清理后的文件系统输出转换为目标视觉格式。
+`LaTeXRepairer.Run()` 返回的是原始文件的结果，因此代理需要从报告中读取修复后文件的检查结果。如果没有严重错误，代理将创建报告，或运行 `TeXJob` 将修复后的文件转换为目标可视格式。
 
 您也可以查看我们的免费 [**AI LaTeX Repairer**](https://products.aspose.ai/tex/latex-repairer) 网络应用程序，该应用基于在 [Aspose.TeX for .NET API](https://products.aspose.com/tex/net/) 中实现的功能，并涉及更高级的 `IGuessPackageCallback` 接口实现。

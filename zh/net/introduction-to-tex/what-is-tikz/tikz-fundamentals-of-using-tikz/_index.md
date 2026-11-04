@@ -8,7 +8,7 @@ url: /net/tikz-fundamentals-of-using-tikz/
 aliases: /net/fundamentals-of-using-tikz/
 keywords: tikz 基础, tikz 入门, tikz 教程
 description: 探索 TikZ 的基本原理和命令，以在您的 TeX 和 LaTeX 文档中创建图形。
-lastmod: 2026-10-22
+lastmod: "2026-11-04"
 ---
 
 {{<section overview>}}
@@ -136,9 +136,8 @@ TikZ 的路径可以是直线也可以是曲线。曲线通过简洁的语法创
 using System;
 using System.IO;
 using Aspose.TeX;
-using Aspose.TeX.Configuration;
-using Aspose.TeX.Presentation.Pdf;
 using Aspose.TeX.IO;
+using Aspose.TeX.Presentation.Pdf;
 
 namespace AsposeTexTikzDemo
 {
@@ -146,41 +145,38 @@ namespace AsposeTexTikzDemo
     {
         static void Main(string[] args)
         {
-            // 使用 Aspose.TeX 的 I/O 抽象定义输入和输出目录
+            // 定义输入和输出目录
             string dataDir = @"C:\DocumentSamples\TikzInput";
             string outputDir = @"C:\DocumentSamples\TikzOutput";
 
             // 确保输出目录存在
             Directory.CreateDirectory(outputDir);
-            Directory.CreateDirectory(outputDir);
 
-            // 初始化用于标准 LaTeX 文档处理任务的 TeX 选项
-            // TeXConfig.LaTeX 会配置引擎并加载标准的预置宏包（包括 tikz/pgf）
-            TeXOptions options = TeXOptions.ConsoleAppRunSettings(TeXConfig.LaTeX, dataDir, outputDir);
+            // 为标准 LaTeX 文档处理作业初始化 TeX 选项
+            // TeXConfig.ObjectLaTeX 使用嵌入的宏包（包括 tikz/pgf）配置引擎
+            TeXOptions options = TeXOptions.ConsoleAppOptions(TeXConfig.ObjectLaTeX);
+            options.InputWorkingDirectory = new InputFileSystemDirectory(dataDir);
+            options.OutputWorkingDirectory = new OutputFileSystemDirectory(outputDir);
 
-            // 设置包含 TikZ 环境的主输入文件名
+            // 设置作业名称，该名称用于输出文件
             options.JobName = "tikz-fundamentals";
 
-            // 配置输出保存选项，以便直接渲染为 PDF 格式
+            // 配置保存选项，以直接渲染为 PDF 格式
             options.SaveOptions = new PdfSaveOptions();
 
-            // 实例化并执行 TeXJob，将源文件、输出设备和选项关联起来
-            try
-            {
-                Console.WriteLine("Starting TikZ compilation job...");
-                
-                new TeXJob(
-                    Path.Combine(dataDir, "tikz-fundamentals.tex"), 
-                    new PdfDevice(), 
-                    options
-                ).Run();
+            // 使用源文件、输出设备和选项创建并执行 TeXJob
+            Console.WriteLine("Starting TikZ compilation job...");
 
+            TeXJobResult result = new TeXJob(
+                Path.Combine(dataDir, "tikz-fundamentals.tex"),
+                new PdfDevice(),
+                options
+            ).Run();
+
+            if (result < TeXJobResult.ErrorMessageIssued)
                 Console.WriteLine($"TikZ graphic successfully compiled to PDF at: {outputDir}");
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"Compilation failed: {ex.Message}");
-            }
+            else
+                Console.WriteLine($"Compilation failed with {result}. See the .log file in {outputDir}.");
         }
     }
 }

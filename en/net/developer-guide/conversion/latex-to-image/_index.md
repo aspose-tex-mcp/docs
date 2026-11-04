@@ -10,7 +10,7 @@ aliases:
 - /net/latex-to-svg/
 keywords: latex to png, latex png, latex to image, latex image, latex to jpg, latex jpg, latex to jpeg, latex jpeg, latex to tiff, latex tiff, latex to bmp, latex bmp
 description: To convert TeX to image formats using Aspose.TeX API solution for .NET learn this article to see that describes how to do this and the code examples.
-lastmod: "2026-11-02"
+lastmod: "2026-11-04"
 ---
 
 {{<section overview>}}
@@ -60,11 +60,11 @@ There is another way to get image data as an array of byte arrays, each array in
 
 **Alternative conversion example**  
 
-The following C# snippet demonstrates another way to obtain the PNG output by writing the image data to a memory stream instead of directly to the file system. This approach is useful when you need the generated PNG bytes in memory for further processing, such as sending them over a network, storing them in a database, or performing additional transformations before saving.
+The following C# snippet demonstrates another way to obtain the PNG output: the device keeps the image data in memory as byte arrays instead of writing it to the file system. This approach is useful when you need the generated PNG bytes for further processing, such as sending them over a network, storing them in a database, or performing additional transformations before saving.
 
 {{< gist "aspose-com-gists" "507170b996a1d0c39bb4374e888b3205" "Example-ConvertLaTeXToPNG-Alternative.cs" >}}
 
-The *"page-n.png"* file(s) will be written to any path we specify. Unlike [PDF output](/tex/{{lang.url-fragment}}net/latex-to-pdf/#an-alternative-way-to-write-the-main-output-pdf-file), they will duplicate the output PNG files written to the output directory.
+The *"page-n.png"* file(s) will be written to any path we specify. Since the `DeviceWritesImages` option is set to `false`, the device itself does not write PNG files to the output directory.
 
 ## About input options
 

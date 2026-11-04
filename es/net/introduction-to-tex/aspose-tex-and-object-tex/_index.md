@@ -6,7 +6,7 @@ title: Aspose.TeX y Object TeX
 weight: 11
 url: /net/aspose-tex-and-object-tex/
 description: TeX es un formato de entrada y salida de esta solución API, por lo que aquí vamos a explicar el Object TeX y cómo se transforma en un formato de destino.
-lastmod: 2026-10-19
+lastmod: "2026-11-04"
 ---
 
 {{<section overview>}}
@@ -56,7 +56,8 @@ A continuación, se presenta una comparación entre las limitaciones de los moto
 
 **Flexibilidad en el entorno gestionado de Aspose.TeX:**
 
-- Al ejecutarse completamente dentro del entorno de ejecución (*runtime*) de .NET, Aspose.TeX detecta los problemas de compilación y los errores por dependencias faltantes, lanzando excepciones gestionadas estándar (`TeXException`). - El procesamiento en segundo plano seguro garantiza que las funciones en la nube, los microservicios y las colas de tareas en segundo plano puedan gestionar documentos mal formados de manera adecuada, registrar errores y devolver códigos de estado HTTP o mensajes de error pertinentes, todo ello sin bloquear los hilos (threads) del servidor.
+- Al ejecutarse íntegramente dentro del entorno de .NET, Aspose.TeX informa de los problemas de compilación y de las dependencias que faltan mediante el valor `TeXJobResult` que devuelve `TeXJob.Run()`, y escribe los detalles en la transcripción (`.log`) y en el terminal de salida.
+- Con la opción `Interaction` establecida en `NonstopMode` o `BatchMode`, un trabajo no espera la entrada del usuario, por lo que las funciones en la nube, los microservicios y las colas de trabajo en segundo plano pueden gestionar correctamente los documentos mal formados, registrar errores y devolver los códigos de estado HTTP o los mensajes de error adecuados sin bloquear los subprocesos del servidor.
 
 3. Concurrencia y seguridad en entornos multihilo (thread safety)
 

@@ -7,7 +7,7 @@ weight: 20
 url: /net/external-latex-packages/
 description: Aspose.TeX für .NET ermöglicht die Verwendung externer Pakete, d. h. derjenigen, die nicht in der Bibliothek enthalten sind, wie etwa die Pakete pgfplots.
 keywords: externe Latex-Pakete, Aspose Tex, .net Tex, Latex-Pakete, Fancybox, pgfplots, erforderliches Eingabeverzeichnis, Eingabe-Zip, benutzerdefiniertes Eingabeverzeichnis, Tex-Konvertierung
-lastmod: "2026-06-17"
+lastmod: "2026-11-04"
 ---
 
 {{<section overview>}}
@@ -140,22 +140,22 @@ Es kann auch vorkommen, dass ein von Ihrer LaTeX-Datei benötigtes Paket direkt 
 
 ## Entwicklung eines KI-Agenten zur Optimierung eingebetteter LaTeX-Pakete
 
-Wenn Sie einen KI-Agenten benötigen, der Inhalte für die integrierte Paketliste optimiert, ohne während der Generierung langsame dynamische Netzwerkabfragen oder Dateisystemsuchen durchzuführen, können Sie den unten beschriebenen Workflow verwenden. Anstatt ein LaTeX-LaTeX-Management-System (LLM) raten zu lassen, welche Pakete sicher oder schnell zu verwenden sind, greift der Agent auf diese spezifische, vorkompilierte Paketliste zu, um eine 100% zuverlässige Dokumenterstellung zu gewährleisten.
+Wenn Sie einen KI-Agenten benötigen, der Inhalte für die integrierte Paketliste optimiert, ohne während der Generierung langsame dynamische Netzwerkabfragen oder Dateisystemsuchen durchzuführen, können Sie den unten beschriebenen Workflow verwenden. Anstatt ein LLM raten zu lassen, welche Pakete sicher oder schnell zu verwenden sind, greift der Agent auf diese spezifische, vorkompilierte Paketliste zu, um Fehler durch fehlende Pakete zu vermeiden.
 
 ![Architektur des KI-Agenten für die eingebettete Dokumenterstellung](/tex/images/net/tutorial/blockscheme-for-ai-latex-package-optimization.png)
 
 1. Extraktion der Layoutabsicht (LLM-Analyseebene)
-Der Benutzer gibt unstrukturierte Daten in verschiedenen Formaten oder Dialoganweisungen ein. Das LLM ordnet die Anfragen direkt der Aspose-Paketliste zu (`colortbl` für Zeilenschattierung, `geometry` für Ränder, `hyperref` für Laufweite und `tabularx` für Spalten mit variabler Breite).
+Der Benutzer liefert unstrukturierte Daten in mehreren Formaten oder Dialoganweisungen. Das LLM ordnet die Anfragen direkt der Liste der in Aspose eingebetteten Pakete zu (`colortbl` für die Zeilenschattierung, `geometry` für Ränder und `multirow` für Zellen, die sich über mehrere Zeilen erstrecken).
 
 2. AST-Isolation und Präambel-Injektion
-Anstatt aufgeblähte Paketimporte zu schreiben, prüft der Agent die Codeanforderungen anhand seines vorab zwischengespeicherten Manifests nativer Engines. Strukturelle Optimierungspfade werden direkt in die Code-Präambel geschrieben.
+Anstatt aufgeblähte Paketimporte zu schreiben, prüft der Agent die Codeanforderungen anhand der Liste der eingebetteten Pakete. Er schreibt nur die erforderlichen `\usepackage`-Befehle in die Präambel.
 
 3. Stream-Sandboxing und -Ausführung (Aspose.TeX Engine Node)
-Der kompilierte Token-Stream wird zusammen mit seinen Makroumgebungen an die isolierten Worker-Namen verteilt. Das System konfiguriert ein striktes TeXOptions-Anwendungslaufzeitprofil mithilfe des optimierten Assembly-Profils (z. B. TeXConfig.ObjectLaTeX). Es führt eine nicht-blockierende TeXJob-Ausführungspipeline vollständig innerhalb des Speicherstream-Puffers sicher aus.
+Der LaTeX-Quellcode wird als Stream an einen `TeXJob` übergeben, und `TeXOptions` wird für `TeXConfig.ObjectLaTeX` erstellt. `TeXJob.Run()` läuft synchron, daher führt der Agent es in einem Hintergrund-Worker aus.
 
 ```tex
 \usepackage[a4paper,margin=0.5in]{geometry}
-\usepackage{amsmath,tabularx,colortbl,hyperref}
+\usepackage{amsmath,multirow,colortbl}
 ```
 4. Asset-Serialisierung (Ausgabe-Rendering-Ebene)
-Das System ordnet Koordinatenziele zu und verarbeitet Ausgabegrenzen. Dabei werden Vektor-Ausführungsarrays (PdfDevice oder SvgDevice) verwendet, um gestochen scharfe Dokumentationslayouts direkt an die Benutzeroberfläche zurückzugeben.
+Der Job schreibt das Ergebnis mit einem Ausgabegerät wie `PdfDevice` oder `SvgDevice`, und der Agent gibt es an den Client zurück.

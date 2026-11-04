@@ -7,7 +7,7 @@ weight: 23
 url: /net/tikz-best-practices-and-tips/
 keywords: melhores práticas para o TikZ, dicas para o TikZ, otimização de desempenho para o TikZ
 description: Aprenda as melhores práticas e dicas úteis para a utilização eficiente e eficaz do TikZ nos seus documentos TeX e LaTeX.
-lastmod: 2026-10-23
+lastmod: "2026-11-04"
 ---
 
 {{<section overview>}}
@@ -112,23 +112,21 @@ Exemplos e modelos práticos do TikZ disponíveis em [Overleaf](https://www.over
 
 ## Tratamento de erros e diagnósticos em .NET
 
-Nas aplicações . NET automatizadas do lado do servidor, a dependência de código TikZ fornecido pelo utilizador ou gerado dinamicamente exige uma programação defensiva. Quando o motor Aspose.TeX encontra sintaxe LaTeX ou TikZ inválida, lança uma exceção TeXException gerida.
+Nas aplicações . NET automatizadas do lado do servidor, a dependência de código TikZ fornecido pelo utilizador ou gerado dinamicamente exige uma programação defensiva. Quando o mecanismo Aspose.TeX encontra sintaxe LaTeX ou TikZ inválida, ele não lança uma exceção. Ele informa o problema pelo valor `TeXJobResult` retornado por `TeXJob.Run()`.
 
 Para garantir que a sua aplicação se mantém resiliente e fornece diagnósticos acionáveis, siga estas práticas de tratamento de erros:
 
-1. Capturando e registando TeXException
-Envolva sempre a execução de `TeXJob. Run()` num bloco try-catch direcionado especificamente para `TeXException`. Isto isola as falhas de composição tipográfica dos erros gerais da aplicação.
+1. Verificar o resultado do trabalho
+Sempre verifique o valor retornado por `TeXJob.Run()`. `ErrorMessageIssued` e `FatalErrorStop` significam que o documento contém erros, e um trabalho que termina com `FatalErrorStop` pode não gerar nenhuma saída. Defina a opção `Interaction` como `NonstopMode` para que o trabalho não aguarde a entrada do usuário. Use o bloco `try-catch` apenas para erros gerais do aplicativo, como falhas de E/S.
 
 2. Inspecionando o terminal e os registos de diagnóstico
 Quando uma compilação falha, a saída do terminal e os ficheiros `. log` gerados durante a tarefa fornecem os números de linha exatos e os rastreios de expansão de macros onde o analisador TikZ falhou. Pode capturar ou redireccionar a saída do terminal utilizando `TeXOptions` para auxiliar na depuração. Veja como os programadores podem implementar um método de compilação seguro e tolerante a erros em C# ao processar diagramas TikZ:
 
 ```csharp
-using System;
 using System.IO;
 using Aspose.TeX;
-using Aspose.TeX.Configuration;
-using Aspose.TeX.Presentation.Pdf;
 using Aspose.TeX.IO;
+using Aspose.TeX.Presentation.Pdf;
 
 public class TikZCompilerService
 {
@@ -136,47 +134,41 @@ public class TikZCompilerService
     {
         errorMessage = string.Empty;
 
-        // Configurar opções padrão de tarefas LaTeX
-        TeXOptions options = TeXOptions.ConsoleAppRunSettings(
-            TeXConfig.LaTeX, 
-            Path.GetDirectoryName(inputFilePath), 
-            outputDirectory
-        );
+        // Configurar as opções padrão do trabalho LaTeX
+        TeXOptions options = TeXOptions.ConsoleAppOptions(TeXConfig.ObjectLaTeX);
+        options.InputWorkingDirectory = new InputFileSystemDirectory(Path.GetDirectoryName(inputFilePath));
+        options.OutputWorkingDirectory = new OutputFileSystemDirectory(outputDirectory);
 
-        // Ativar o redireccionamento da saída do terminal para capturar detalhes de diagnóstico, se necessário
-        options.ShowTerminal = true;
+        // Capturar a saída do terminal e nunca aguardar entrada do usuário
+        options.TerminalOut = new OutputMemoryTerminal();
+        options.Interaction = Interaction.NonstopMode;
         options.SaveOptions = new PdfSaveOptions();
 
         try
         {
-            // Executar a tarefa de composição tipográfica
-            new TeXJob(inputFilePath, new PdfDevice(), options).Run();
+            // Executar o trabalho de composição
+            TeXJobResult result = new TeXJob(inputFilePath, new PdfDevice(), options).Run();
+
+            // Tratar erros de sintaxe TeX, de pacotes ou de expansão de macros (por exemplo, um caminho TikZ malformado)
+            if (result >= TeXJobResult.ErrorMessageIssued)
+            {
+                errorMessage = $"TeX job failed with {result}. See the .log file in {outputDirectory}.";
+                return false;
+            }
+
             return true;
-        }
-        catch (TeXException texEx)
-        {
-            // Lidar com falhas específicas de sintaxe TeX, pacotes ou expansão de macros (por exemplo, caminho TikZ malformado)
-            errorMessage = $"TeX Engine Compilation Error: {texEx.Message}";
-            // TODO: Registar os detalhes da exceção na sua estrutura de registo empresarial (por exemplo, NLog, Serilog)
-            return false;
         }
         catch (IOException ioEx)
         {
-            // Lidar com problemas de acesso a ficheiros ou permissões de disco
-            errorMessage = $"I/O Error during compilation: {ioEx.Message}";
-            return false;
-        }
-        catch (Exception ex)
-        {
-            // Lidar com falhas inesperadas em tempo de execução
-            errorMessage = $"Unexpected error: {ex.Message}";
+            // Tratar problemas de acesso a arquivos ou de permissões de disco
+            errorMessage = $"I/O error during compilation: {ioEx.Message}";
             return false;
         }
     }
 }
 ```
 
-A captura `TeXException` permite que a sua aplicação devolva um erro limpo `HTTP 400 Bad Request` ou uma mensagem de erro informativa ao cliente quando um script TikZ gerado está mal formado, em vez de permitir que ocorra um erro 500 do servidor.
+Verificar o resultado do trabalho permite que seu aplicativo retorne ao cliente uma resposta limpa `HTTP 400 Bad Request` ou uma mensagem de erro informativa quando um script TikZ gerado estiver malformado, em vez de deixar ocorrer um erro de servidor 500.
 
 Se a sua aplicação . NET injeta dados do utilizador dinamicamente em strings de coordenadas ou nós TikZ, assegure-se de realizar a sanitização adequada para evitar quebras acidentais de sintaxe (como caracteres especiais não escapados, como `%`, `&` ou `#`).
 

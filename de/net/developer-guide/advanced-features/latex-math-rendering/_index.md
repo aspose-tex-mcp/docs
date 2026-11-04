@@ -6,7 +6,7 @@ linktitle: Rendern von LaTeX-Matheformeln
 weight: 10
 url: /net/latex-math-formula-rendering/
 description: Hier wird Aspose.TeX für .NET die Darstellung math Formeln in LaTeX beschrieben. Erfahr anhand der Codebeispiele, wie kann man Funktionalität nutzen.
-lastmod: "2026-06-11"
+lastmod: "2026-11-04"
 ---
 
 {{<section overview>}}
@@ -81,7 +81,7 @@ Im Folgenden finden Sie einen Vorschlag für die Architektur des Produktionswork
 
 ![Blockscheme für den KI-gestützten LaTeX-Mathematik-Rendering-Workflow](/tex/images/net/tutorial/blockscheme-for-ai-math-rendering.png) 
 
-Wie Sie sehen, arbeitet der KI-Agent für die mathematische Darstellung als geschlossener Regelkreis mit drei Mikroschichten:
+Wie Sie sehen, sollte ein KI-Agent für das Rendern mathematischer Formeln als geschlossener Feedback-Kreislauf arbeiten, der aus vier Ebenen besteht:
 
 1. Eingabe- und Syntaxerfassung (LLM-Schicht): Der Benutzer gibt natürliche Sprache oder partielle Syntaxausdrücke ein (z. B. „Zeig mir die Ableitung einer Matrixmultiplikationsgleichung“). Der Agent wandelt diese Eingaben in gültige LaTeX-Mathematikstrukturen innerhalb einer strukturierten JSON-Nutzlast um und vermeidet dabei Markdown-Wrapper wie ````latex`.
 
@@ -91,6 +91,6 @@ Wie Sie sehen, arbeitet der KI-Agent für die mathematische Darstellung als gesc
 
 Der Agent instanziiert je nach Clientkontext entweder `SvgMathRendererOptions` oder `PngMathRendererOptions` (z. B. SVG für optimale Darstellung bei mobilen Geräten oder im Web).
 
-4. Schlägt die Aspose.TeX-Kompilierung fehl oder treten Syntaxwarnungen auf, werden die Standard-Logdiagnosen direkt in einen Laufzeitfehlerstrom geleitet. Anstatt Benutzeroberflächen stillschweigend zum Absturz zu bringen, fängt der Agent die Stack-Trace-Daten ab, erstellt eine Kontextschleife und veranlasst den LLM, die Gleichungsnutzlast neu zu schreiben.
+4. Aspose.TeX löst keine Ausnahme aus, wenn eine Formel einen TeX-Fehler enthält. Der erste Fehler wird in der Option `ErrorReport` gespeichert, und das vollständige Protokoll wird in den Stream `LogStream` geschrieben, sofern einer zugewiesen ist.
 
-**Sie können sich auch die kostenlose [Web-App](https://products.aspose.app/tex/equation-editor/svg) ansehen, die auf der in [Aspose.TeX for .NET API](https://products.aspose.com/tex/net/) implementierten Funktion basiert.**
+Anstatt unbemerkt fehlzuschlagen oder Benutzeroberflächen abstürzen zu lassen, prüft der Agent nach jedem Aufruf von `Render()` die Option `ErrorReport`, baut eine Kontextschleife auf und fordert das LLM auf, die Formel neu zu schreiben. Die Ausgabe allein ist kein zuverlässiges Signal: Je nach Fehler wird das Bild trotzdem erzeugt oder es bleibt leer.

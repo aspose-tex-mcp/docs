@@ -6,7 +6,7 @@ linktitle: よくある質問
 weight: 80
 url: /net/introduction-to-tex/faq/
 description: TeXとLaTeX、それらの構造、使用、特異性に関する最も頻繁な質問への回答を取得します。
-lastmod: 2026-10-21
+lastmod: "2026-11-04"
 ---
 
 {{<section overview>}}
@@ -141,7 +141,7 @@ LaTeX文書内から直接Pythonコードを使用し、出力を挿入するこ
 
 **Q: ディスクへのファイルの読み書きを行わずに、メモリ上に保持された LaTeX ドキュメントを処理することはできますか？**
 
-**A:** Aspose.TeX のプラグ可能な入出力（I/O）アーキテクチャを活用することで可能です。`InputMemoryDirectory` やメモリ・ストリームを `OutputMemoryDirectory` と組み合わせて使用​​することで、バイト配列や文字列から直接入力データを供給し、生成された PDF や画像などの出力をすべてメモリ上で取得することができます。
+**A:** メイン入力を `Stream` として `TeXJob` のコンストラクターに渡します。結果をメモリ内で取得するには、`Stream` を受け取る `PdfDevice` または `XpsDevice` のコンストラクターを使用するか、レンダリングされたページを `ImageDevice` の `Result` プロパティから読み取ります。インクルードするファイルやトランスクリプトなどのその他の入出力ファイルは、`InputZipDirectory` と `OutputZipDirectory` を使用して、ストリーム内の ZIP アーカイブに保持できます。
 <br><br>
 
 **Q: Aspose.TeX では、不足しているパッケージやカスタムの .sty ファイルはどのように扱われますか？**

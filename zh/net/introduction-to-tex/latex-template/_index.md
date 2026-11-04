@@ -8,7 +8,7 @@ weight: 100
 url: /net/latex-templates/
 description: 了解 LaTeX 模板是什么，如何使用和创建它们，在哪里下载最流行的模板，以及使用可直接复制的代码片段的快速工作流。
 keywords: LaTeX, 模板, 类, 样式, Overleaf, CTAN, 参考文献, Beamer, 论文, 简历
-lastmod: "2026-06-12"
+lastmod: "2026-11-04"
 ---
 
 {{<section overview>}}
@@ -57,8 +57,6 @@ LaTeX 模板包含一个**类**（`.cls`）、**样式**（`.sty`）、示例 `.
 % ---- custom settings ----
 \RequirePackage{geometry}
 \geometry{margin=2cm}
-\RequirePackage{fontspec}
-\setmainfont{Latin Modern Roman}
 
 % ---- user‑level commands ----
 \newcommand\mytitle[1]{\centerline{\LARGE\bfseries #1}}
@@ -111,7 +109,7 @@ LaTeX 模板包含一个**类**（`.cls`）、**样式**（`.sty`）、示例 `.
 
 ## Aspose 怎么样？
 
-文件（合并、添加水印或转换为其他格式）时，诸如 **Aspose.TeX** 之类的库提供了一个与语言无关的 API，用于处理 PDF 文件，而无需完整的 LaTeX 工具链。
+要在 .NET 应用程序中排版基于 LaTeX 模板的文档，可以使用 **Aspose.TeX for .NET**。它可以将 LaTeX 转换为 PDF、XPS、SVG 和光栅图像，无需 TeX 发行版。请将模板的 `.cls` 和 `.sty` 文件放入输入目录。未[嵌入](/tex/{{lang.url-fragment}}net/embedded-packages/)库中的宏包可以作为[外部 LaTeX 宏包](/tex/{{lang.url-fragment}}net/external-latex-packages/)提供。
 ---
 
 ### TL;DR 快速概览
@@ -122,7 +120,7 @@ Use?    → \documentclass{mytemplate} + 按 README 操作
 Create? → 编写 .cls 或 .sty → 打包资源 → zip/GitHub
 Get?    → Overleaf Gallery、CTAN、GitHub、大学站点
 Hot 10  → IEEEtran、llncs、elsarticle、modern‑simple‑cv、
-          classicthesis、beamer、a0poster、UNICAMP 论文、
+          classicthesis、beamer、a0poster、大学学位论文、
           aa.cls、基础学术期刊文章
 ```
 
@@ -138,7 +136,7 @@ Hot 10  → IEEEtran、llncs、elsarticle、modern‑simple‑cv、
 
 1. 布局需求导入（LLM 意图层）
 
-用户提供高级设计约束或格式说明（例如，“创建一个双栏期刊布局，1.5 厘米页边距，使用 Times New Roman 字体，红色标题，并在顶部添加一个美观的作者信息框”）。然后，LLM 将这些语义视觉细节映射到结构化的程序需求。
+用户提供高级设计约束或格式说明（例如，“创建一个双栏期刊布局，1.5 厘米页边距，红色标题，并在顶部添加一个美观的作者信息框”）。然后，LLM 将这些语义视觉细节映射到结构化的程序需求。
 
 意图矩阵决定请求是需要一个全新的独立类 (.cls) 文件来定义自定义文档类型，还是只需要一个定制的样式 (.sty) 包装器来挂钩到诸如文章或报告之类的标准类。
 
@@ -154,7 +152,7 @@ Hot 10  → IEEEtran、llncs、elsarticle、modern‑simple‑cv、
 
 3. 包工厂和资源收集（依赖层）
 
-根据第一步提取的设计指令，布局引擎需要一些专门的第三方宏工具（例如，用于边距调整的 geometry、用于自定义品牌颜色的 `xcolor` 或用于现代字体配置的 `fontspec`）。
+根据第一步提取的设计指令，布局引擎需要专门的第三方宏工具（例如用于调整页边距的 `geometry` 或用于自定义品牌颜色的 `xcolor`）。需要 XeTeX 或 LuaTeX 的宏包（例如 `fontspec`）不能与 Aspose.TeX 一起使用。
 
 代理程序充当代码检查过滤器。它会将所需的 `\RequirePackage{...}` 语句动态插入到类或样式包中。
 
@@ -162,4 +160,4 @@ Hot 10  → IEEEtran、llncs、elsarticle、modern‑simple‑cv、
 
 代理程序会动态创建一个加载模板的测试文件（`sample.tex`）。
 
-然后，代理程序会通过 Aspose.TeX 启动一个隐式的 `TeXJob` 来编译模板代码。如果编译失败，代理程序会读取错误输出日志（`.log`），并将跟踪日志发送回 LLM 进行自动语法纠错。如果编译成功，则会验证资源包。
+然后，代理运行 `TeXJob` 来编译模板代码。如果 `TeXJob.Run()` 返回 `ErrorMessageIssued` 或 `FatalErrorStop`，代理将读取错误输出日志（`.log`），并将跟踪日志传回 LLM 以自动修正语法。否则，资产包即通过验证。

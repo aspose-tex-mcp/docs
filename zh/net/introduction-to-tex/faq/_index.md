@@ -6,7 +6,7 @@ linktitle: 常问问题
 weight: 80
 url: /net/introduction-to-tex/faq/
 description: 获取有关TeX和LaTeX的所有最常见问题的答案，它们的结构，用法和特点。
-lastmod: 2026-10-21
+lastmod: "2026-11-04"
 ---
 
 {{<section overview>}}
@@ -141,7 +141,7 @@ LaTeX 是一个更加用户友好的高级文档创建系统。LaTeX 可以自�
 
 **Q：如何处理存储在内存中的 LaTeX 文档，而无需进行磁盘读写操作？**
 
-**A：** 您可以利用 Aspose.TeX 的可插拔式 I/O 架构。通过使用 `InputMemoryDirectory`（或内存流）配合 `OutputMemoryDirectory`，您可以直接从字节数组或字符串提供输入源数据，并将生成的 PDF 或图像结果完全保存在内存中。
+**A：** 将主输入以 `Stream` 的形式传递给 `TeXJob` 构造函数。要在内存中获取结果，请使用接受 `Stream` 的 `PdfDevice` 或 `XpsDevice` 构造函数，或者从 `ImageDevice` 的 `Result` 属性读取渲染后的页面。其他输入和输出文件（例如被包含的文件和记录文件）可以通过 `InputZipDirectory` 和 `OutputZipDirectory` 保存在流中的 ZIP 存档里。
 <br><br>
 
 **Q：Aspose.TeX 如何处理缺失的宏包或自定义的 `.sty` 文件？**

@@ -7,7 +7,7 @@ weight: 23
 url: /net/tikz-best-practices-and-tips/
 keywords: найкращі практики TikZ, поради TikZ, оптимізація продуктивності TikZ
 description: Дізнайтеся про найкращі практики та корисні поради для ефективного та результативного використання TikZ у ваших документах TeX та LaTeX.
-lastmod: 2026-10-23
+lastmod: "2026-11-04"
 ---
 
 {{<section overview>}}
@@ -115,12 +115,12 @@ TikZ може екстерналізація зображень значно с�
 
 ## Обробка помилок і діагностика в .NET
 
-В автоматизованих серверних застосунках .NET використання коду TikZ, наданого користувачем або згенерованого динамічно, вимагає застосування методів «захисного програмування». Якщо рушій Aspose.TeX стикається з некоректним синтаксисом LaTeX або TikZ, він генерує виняток `TeXException`.
+В автоматизованих серверних застосунках .NET використання коду TikZ, наданого користувачем або згенерованого динамічно, вимагає застосування методів «захисного програмування». Якщо рушій Aspose.TeX виявляє некоректний синтаксис LaTeX або TikZ, він не викидає виняток. Про проблему повідомляє значення `TeXJobResult`, яке повертає `TeXJob.Run()`.
 
 Щоб забезпечити стійкість застосунку та отримати діагностичну інформацію, необхідну для вирішення проблем, дотримуйтеся наведених нижче рекомендацій щодо обробки помилок:
 
-1. Перехоплення та реєстрація `TeXException`
-Завжди розміщуйте виклик `TeXJob.Run()` у блоці `try-catch`, налаштованому на перехоплення саме `TeXException`. Це дозволяє відокремити помилки верстки від загальних помилок застосунку.
+1. Перевірка результату завдання
+Завжди перевіряйте значення, яке повертає `TeXJob.Run()`. `ErrorMessageIssued` і `FatalErrorStop` означають, що документ містить помилки, а завдання, що завершилося з `FatalErrorStop`, може не створити вихідних даних. Установіть параметр `Interaction` у `NonstopMode`, щоб завдання не чекало на введення користувача. Блок `try-catch` залишайте лише для загальних помилок застосунку, наприклад збоїв введення-виведення.
 
 2. Аналіз виводу в терміналі та діагностичних лог-файлів
 У разі невдалої компіляції вивід у терміналі та файли `.log`, що створюються під час виконання завдання, містять точні номери рядків і трасування розгортання макросів — саме там, де стався збій у роботі парсера TikZ. Для полегшення налагодження ви можете перехоплювати або перенаправляти вивід терміналу за допомогою `TeXOptions`.
@@ -128,12 +128,10 @@ TikZ може екстерналізація зображень значно с�
 Нижче показано, як розробники можуть реалізувати безпечний і стійкий до помилок метод компіляції на C# під час обробки діаграм TikZ:
 
 ```csharp
-using System;
 using System.IO;
 using Aspose.TeX;
-using Aspose.TeX.Configuration;
-using Aspose.TeX.Presentation.Pdf;
 using Aspose.TeX.IO;
+using Aspose.TeX.Presentation.Pdf;
 
 public class TikZCompilerService
 {
@@ -142,46 +140,40 @@ public class TikZCompilerService
         errorMessage = string.Empty;
 
         // Налаштування стандартних параметрів завдання LaTeX
-        TeXOptions options = TeXOptions.ConsoleAppRunSettings(
-            TeXConfig.LaTeX, 
-            Path.GetDirectoryName(inputFilePath), 
-            outputDirectory
-        );
+        TeXOptions options = TeXOptions.ConsoleAppOptions(TeXConfig.ObjectLaTeX);
+        options.InputWorkingDirectory = new InputFileSystemDirectory(Path.GetDirectoryName(inputFilePath));
+        options.OutputWorkingDirectory = new OutputFileSystemDirectory(outputDirectory);
 
-        // Увімкнення перенаправлення виводу з термінала для отримання діагностичних даних (за потреби)
-        options.ShowTerminal = true;
+        // Перехоплення виводу термінала без очікування введення користувача
+        options.TerminalOut = new OutputMemoryTerminal();
+        options.Interaction = Interaction.NonstopMode;
         options.SaveOptions = new PdfSaveOptions();
 
         try
         {
-            // Виконання завдання з верстки
-            new TeXJob(inputFilePath, new PdfDevice(), options).Run();
+            // Виконання завдання верстання
+            TeXJobResult result = new TeXJob(inputFilePath, new PdfDevice(), options).Run();
+
+            // Обробка помилок синтаксису TeX, пакетів або розгортання макросів (наприклад, некоректний шлях TikZ)
+            if (result >= TeXJobResult.ErrorMessageIssued)
+            {
+                errorMessage = $"TeX job failed with {result}. See the .log file in {outputDirectory}.";
+                return false;
+            }
+
             return true;
-        }
-        catch (TeXException texEx)
-        {
-            // Обробка помилок, пов’язаних із синтаксисом TeX, пакетами або розгортанням макросів (наприклад, некоректно сформований шлях TikZ)
-            errorMessage = $"TeX Engine Compilation Error: {texEx.Message}";
-            // TODO: Записувати деталі винятку в корпоративну систему логування (наприклад, NLog, Serilog)
-            return false;
         }
         catch (IOException ioEx)
         {
-            // Обробка проблем із доступом до файлів або прав доступу до диска
-            errorMessage = $"I/O Error during compilation: {ioEx.Message}";
-            return false;
-        }
-        catch (Exception ex)
-        {
-            // Обробка непередбачуваних помилок під час виконання
-            errorMessage = $"Unexpected error: {ex.Message}";
+            // Обробка проблем доступу до файлів або дозволів на диску
+            errorMessage = $"I/O error during compilation: {ioEx.Message}";
             return false;
         }
     }
 }
 ```
 
-Перехоплення винятку `TeXException` дозволяє вашому застосунку повернути клієнту коректну відповідь `HTTP 400 Bad Request` або інформативне повідомлення про помилку у випадках, коли згенерований скрипт TikZ містить синтаксичні помилки — замість того, щоб допускати виникнення помилки сервера `500`.
+Перевірка результату завдання дає змогу застосунку повернути клієнту коректну відповідь `HTTP 400 Bad Request` (або інформативне повідомлення про помилку), якщо згенерований код TikZ містить синтаксичні помилки. Це запобігає виникненню серверної помилки `500 Internal Server Error`.
 
 Якщо ваш .NET-застосунок динамічно вставляє дані користувача в рядки координат або вузлів TikZ, переконайтеся в належній санітизації (очищенні) цих даних. Це допоможе запобігти випадковому порушенню синтаксису (наприклад, через наявність спеціальних символів, таких як `%`, `&` або `#`, які не були екрановані).
 

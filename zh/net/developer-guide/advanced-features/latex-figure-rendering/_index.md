@@ -7,7 +7,7 @@ weight: 20
 url: /net/latex-figure-rendering/
 description: Aspose.TeX API 为 .NET 提供的 LaTeX 片段（图形）渲染解决方案在本文中进行说明。了解如何使用该功能的代码示例。
 keywords: LaTeX 图形、LaTeX 图形大小、LaTeX 图片、LaTeX 图像、LaTeX 包含图形、LaTeX 图片、LaTeX 图形选项
-lastmod: "2026-06-12"
+lastmod: "2026-11-04"
 ---
 
 {{<section overview>}}
@@ -79,7 +79,7 @@ lastmod: "2026-06-12"
 
 2. 虚拟文件系统（IO 层）
 
-将外部图形依赖项（`.png`、`.jpg`）安全地暂存到内存或沙盒化的 `InputFileSystemDirectory` 目录中，以便编译器可以立即解析布局引用。
+将外部图形依赖文件（`.png`、`.jpg`）安全地放入分配给 `RequiredInputDirectory` 选项的目录，以便编译器解析布局引用。该目录可以是 `InputFileSystemDirectory`；如果要将文件保留在内存中，可以使用基于 `MemoryStream` 的 `InputZipDirectory`。
 
 3. 配置
 
@@ -87,4 +87,4 @@ lastmod: "2026-06-12"
 
 4. 统一执行节点（Aspose.TeX 引擎）
 
-编译统一文件，并将其直接传递给专用的 `FigureRenderer`，以计算精确的矢量边界框边距，并输出响应式可视化画布片段（SVG 或高分辨率 PNG）。
+将 LaTeX 片段和导言传递给 `PngFigureRenderer` 或 `SvgFigureRenderer`，由其排版该片段，并按 `Margin` 选项设置的边距将图形输出为 SVG 或高 DPI PNG。

@@ -7,7 +7,7 @@ weight: 20
 url: /net/tikz-advanced-features/
 keywords: Advanced TikZ, TikZ-Pfade, TikZ-Diagramme, pgfplots, circuitikz, Tikz-3dplot
 description: Erlernen Sie fortgeschrittene TikZ-Techniken, darunter komplexe Pfade, Knotenpositionierung, Pfeile und Diagrammerstellung für professionelle Grafiken.
-lastmod: 2026-10-22
+lastmod: "2026-11-04"
 ---
 
 {{<section overview>}}
@@ -139,7 +139,8 @@ Bei der Verarbeitung von Dokumenten mit hochkomplexen Vektordiagrammen in server
 |---|---|---|
 |**Makro-Expansion und CPU-Last**|TikZ stützt sich stark auf die interpretative Makro-Expansions-Engine von TeX. Tief verschachtelte Schleifen oder komplexe geometrische Gleichungen (z. B. algorithmische Plot-Erstellung) können den CPU-Bedarf pro Vorgang erheblich steigern.|Halten Sie die prozedurale Generierung innerhalb von TikZ so schlank wie möglich. Wenn Tausende wiederkehrender Elemente erzeugt werden müssen, prüfen Sie, ob datengestützte Vorlagen oder eine Vorab-Berechnung der Koordinaten außerhalb des TeX-Quellcodes die Tiefe der Makro-Auswertung reduzieren können.|
 |**Speicherbedarf und Garbage Collection**|Umfangreiche, mehrseitige Dokumente mit komplexen TikZ-Vektorpfaden erzeugen während des Satzvorgangs große interne Objektstrukturen im verwalteten .NET-Heap.|Kapseln Sie Satzvorgänge in kurzlebige Gültigkeitsbereiche (Scopes) oder verwenden Sie dedizierte Worker-Instanzen, damit der Garbage Collector den Arbeitsspeicher effizient freigeben kann, sobald der Ausgabe-Stream (PDF, XPS oder Bild) vollständig geschrieben wurde.|
-|**Caching statischer Diagramme in Webanwendungen**|Das wiederholte Kompilieren komplexer TikZ-Diagramme bei jeder HTTP-Anfrage in einem Webdienst mit hohem Aufkommen führt schnell zur Überlastung der CPU-Kerne.|Wenn die zugrunde liegende Grafik statisch oder semi-statisch ist (z. B. Diagramme in einem Dashboard oder standardisierte architektonische Schemata), kompilieren Sie das `.tex`-Fragment nur einmal, speichern Sie das resultierende PDF oder den Vektor-Stream im Arbeitsspeicher (z. B. mittels `IMemoryCache`) und liefern Sie das zwischengespeicherte Asset direkt aus.| |**Verwaltung asynchroner Verarbeitung und Timeouts**|Nicht optimierte oder fehlerhaft strukturierte rekursive Makros innerhalb komplexer Diagramme können gelegentlich Endlosschleifen oder lang andauernde Ausführungsblockaden verursachen.|Wenn TeXJob-Aufträge in Hintergrunddiensten (wie Hangfire, Azure Functions oder ASP.NET Core-Hintergrundaufgaben) ausgeführt werden, sollten Kompilierungsaufrufe stets in asynchrone Wrapper mit explizit definierten Timeouts eingebettet werden.|
+|**Caching statischer Diagramme in Webanwendungen**|Das wiederholte Kompilieren komplexer TikZ-Diagramme bei jeder HTTP-Anfrage in einem Webdienst mit hohem Aufkommen führt schnell zur Überlastung der CPU-Kerne.|Wenn die zugrunde liegende Grafik statisch oder semi-statisch ist (z. B. Diagramme in einem Dashboard oder standardisierte architektonische Schemata), kompilieren Sie das `.tex`-Fragment nur einmal, speichern Sie das resultierende PDF oder den Vektor-Stream im Arbeitsspeicher (z. B. mittels `IMemoryCache`) und liefern Sie das zwischengespeicherte Asset direkt aus.|
+|**Verwaltung asynchroner Verarbeitung und Timeouts**|Nicht optimierte oder fehlerhaft strukturierte rekursive Makros innerhalb komplexer Diagramme können gelegentlich Endlosschleifen oder lang andauernde Ausführungsblockaden verursachen.|Wenn Sie `TeXJob`-Läufe in Hintergrunddiensten ausführen (wie Hangfire, Azure Functions oder ASP.NET Core-Hintergrundaufgaben), starten Sie sie in einem separaten Worker-Prozess, der bei einer Zeitüberschreitung beendet werden kann, denn `TeXJob.Run()` läuft synchron und kann nicht abgebrochen werden|
 
 ---
 

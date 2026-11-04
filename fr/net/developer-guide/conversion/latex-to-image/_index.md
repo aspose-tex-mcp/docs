@@ -7,7 +7,7 @@ weight: 10
 url: /net/latex-to-image/
 keywords: latex à png, latex png, latex à image, image latex, latex à jpg, latex jpg, latex à jpeg, latex jpeg, latex à tiff, latex tiff, latex à bmp, latex bmp
 description: Pour convertir TeX en formats d'image à l'aide d'Aspose.TeX pour .NET, lisez cet article pour voir comment procéder et avec des exemples de code.
-lastmod: "2026-11-02"
+lastmod: "2026-11-04"
 ---
 
 {{<section overview>}}
@@ -57,11 +57,11 @@ Il existe une autre façon d'obtenir des données d'image sous forme de tableau 
 
 **Exemple de conversion alternatif**
 
-El siguiente fragmento de C# muestra otra forma de obtener la salida PNG: escribir los datos de la imagen en un flujo de memoria en lugar de hacerlo directamente en el sistema de archivos. Este método es útil cuando se necesitan los bytes PNG generados en memoria para su posterior procesamiento, como enviarlos a través de una red, almacenarlos en una base de datos o realizar transformaciones adicionales antes de guardarlos.
+L'extrait de code C# suivant montre une autre façon d'obtenir la sortie PNG : le périphérique conserve les données d'image en mémoire sous forme de tableaux d'octets au lieu de les écrire dans le système de fichiers. Cette approche est utile lorsque vous avez besoin des octets PNG générés pour un traitement ultérieur, par exemple pour les envoyer sur un réseau, les stocker dans une base de données ou effectuer des transformations supplémentaires avant l'enregistrement.
 
 {{< gist "aspose-com-gists" "507170b996a1d0c39bb4374e888b3205" "Example-ConvertLaTeXToPNG-Alternative.cs" >}}
 
-Le(s) fichier(s) *"page-n.png"* seront écrits dans n'importe quel chemin que nous spécifions. Contrairement à [Sortie PDF](/tex/{{lang.url-fragment}}net/latex-to-pdf/#an-alternative-way-to-write-the-main-output-pdf-file), ils dupliqueront les fichiers PNG de sortie écrits dans le répertoire de sortie.
+Le ou les fichiers *"page-n.png"* seront écrits dans le chemin que nous indiquons. Comme l'option `DeviceWritesImages` est définie sur `false`, le périphérique lui-même n'écrit pas de fichiers PNG dans le répertoire de sortie.
 
 ## À propos des options de saisie
 

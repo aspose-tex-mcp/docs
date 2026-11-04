@@ -7,7 +7,7 @@ weight: 10
 url: /net/latex-to-image/
 keywords: Latex zu PNG, Latex PNG, Latex zu Bild, Latex Bild, Latex zu JPG, Latex JPG, Latex zu JPEG, Latex JPEG, Latex zu TIFF, Latex TIFF, Latex zu BMP, Latex BMP
 description: Um TeX mit der Aspose.TeX für .NET in Bildformate zu konvertieren, lesen Sie diesen Artikel, in dem die Vorgehensweise beschrieben werden.
-lastmod: "2026-11-02"
+lastmod: "2026-11-04"
 ---
 
 {{<section overview>}}
@@ -57,11 +57,11 @@ Es gibt eine andere Möglichkeit, Bilddaten als Array von Byte-Arrays abzurufen.
 
 **Alternatives Konvertierungsbeispiel**
 
-Der folgende C#-Ausschnitt zeigt eine weitere Möglichkeit, die PNG-Ausgabe zu erhalten, indem die Bilddaten in einen Speicherstream statt direkt in das Dateisystem geschrieben werden. Dieser Ansatz ist nützlich, wenn Sie die generierten PNG-Bytes im Speicher für die weitere Verarbeitung benötigen, z. B. zum Senden über ein Netzwerk, zum Speichern in einer Datenbank oder für zusätzliche Transformationen vor dem Speichern.
+Der folgende C#-Codeausschnitt zeigt eine weitere Möglichkeit, die PNG-Ausgabe zu erhalten: Das Gerät hält die Bilddaten als Byte-Arrays im Speicher, anstatt sie in das Dateisystem zu schreiben. Dieser Ansatz ist nützlich, wenn Sie die generierten PNG-Bytes für die weitere Verarbeitung benötigen, etwa zum Senden über ein Netzwerk, zum Speichern in einer Datenbank oder für zusätzliche Transformationen vor dem Speichern.
 
 {{< gist "aspose-com-gists" "507170b996a1d0c39bb4374e888b3205" "Example-ConvertLaTeXToPNG-Alternative.cs" >}}
 
-Die *"page-n.png"*-Datei(en) werden in jeden von uns angegebenen Pfad geschrieben. Im Gegensatz zu [PDF-Ausgabe](/tex/{{lang.url-fragment}}net/latex-to-pdf/#an-alternative-way-to-write-the-main-output-pdf-file) duplizieren sie die ausgegebenen PNG-Dateien, die in das Ausgabeverzeichnis geschrieben werden.
+Die *"page-n.png"*-Datei(en) werden in einen beliebigen von uns angegebenen Pfad geschrieben. Da die Option `DeviceWritesImages` auf `false` gesetzt ist, schreibt das Gerät selbst keine PNG-Dateien in das Ausgabeverzeichnis.
 
 ## Über Eingabemöglichkeiten
 

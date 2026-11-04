@@ -6,7 +6,7 @@ title: Aspose.TeX和Object TeX
 weight: 11
 url: /net/aspose-tex-and-object-tex/
 description: TeX是此API解决方案的输入和输出格式，因此我们可以在这里解释Object TeX以及如何将其转换为目标格式。
-lastmod: 2026-10-19
+lastmod: "2026-11-04"
 ---
 
 {{<section overview>}}
@@ -56,7 +56,8 @@ Aspose.TeX只是Object TeX系统的API。
 
 **Aspose.TeX 的托管灵活性：**
 
-- 由于完全在 .NET 运行时（runtime）中运行，Aspose.TeX 能够捕获编译问题及依赖项缺失等错误，并抛出标准的托管异常（`TeXException`）。 - 安全的后台处理机制确保云函数、微服务及后台任务队列在遇到格式错误的文档时，能够妥善应对——即记录错误并返回相应的 HTTP 状态码或错误信息，且不会导致服务器线程被阻塞。
+- Aspose.TeX 完全在 .NET 运行时中运行，它通过 `TeXJob.Run()` 返回的 `TeXJobResult` 值报告编译问题和缺失的依赖项，详细信息写入记录文件（`.log`）和输出终端。
+- 将 `Interaction` 选项设置为 `NonstopMode` 或 `BatchMode` 后，作业不会等待用户输入，因此云函数、微服务和后台工作队列可以妥善处理格式错误的文档、记录错误并返回相应的 HTTP 状态码或错误消息，而不会锁定服务器线程。
 
 3. 并发与线程安全
 
