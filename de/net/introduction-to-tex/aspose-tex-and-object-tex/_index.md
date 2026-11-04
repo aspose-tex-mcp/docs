@@ -6,7 +6,7 @@ title: Aspose.TeX und Object TeX
 weight: 11
 url: /net/aspose-tex-and-object-tex/
 description: TeX ist ein Eingabe- und Ausgabeformat dieser API-Lösung. Daher erklären wir hier das Object TeX und wie es in ein Zielformat umgewandelt wird.
-lastmod: 2026-10-19
+lastmod: "2026-11-04"
 ---
 
 {{<section overview>}}
@@ -56,7 +56,8 @@ Im Folgenden werden die Einschränkungen nativer TeX-Engines der Flexibilität e
 
 **Flexibilität durch Aspose.TeX:**
 
-- Da Aspose.TeX vollständig innerhalb der .NET-Laufzeitumgebung ausgeführt wird, werden Kompilierungsfehler oder Probleme mit fehlenden Abhängigkeiten abgefangen und als Standard-Exceptions (`TeXException`) ausgegeben. - Eine sichere Hintergrundverarbeitung stellt sicher, dass Cloud-Funktionen, Microservices und Hintergrund-Warteschlangen (Background Worker Queues) auch bei fehlerhaften Dokumenten stabil bleiben: Sie können Fehler protokollieren sowie entsprechende HTTP-Statuscodes oder Fehlermeldungen zurückgeben, ohne dabei Server-Threads zu blockieren.
+- Da Aspose.TeX vollständig innerhalb der .NET-Laufzeitumgebung läuft, meldet es Kompilierungsprobleme und fehlende Abhängigkeiten über den von `TeXJob.Run()` zurückgegebenen Wert `TeXJobResult`. Die Details werden in das Protokoll (`.log`) und das Ausgabeterminal geschrieben.
+- Wenn die Option `Interaction` auf `NonstopMode` oder `BatchMode` gesetzt ist, wartet ein Job nicht auf Benutzereingaben. So können Cloud-Funktionen, Microservices und Hintergrund-Warteschlangen fehlerhafte Dokumente sauber behandeln, Fehler protokollieren und passende HTTP-Statuscodes oder Fehlermeldungen zurückgeben, ohne Server-Threads zu blockieren.
 
 3. Nebenläufigkeit und Threadsicherheit
 

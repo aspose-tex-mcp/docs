@@ -6,7 +6,7 @@ linktitle: Embedded LaTeX packages
 weight: 20
 url: /net/embedded-packages/
 description: Here is a list of packages embedded into the Aspose.TeX library along with their descriptions and versions used.
-lastmod: 2026-10-20
+lastmod: "2026-11-04"
 ---
 
 {{<section overview>}}
@@ -39,8 +39,8 @@ Developers often wonder which macro packages are built directly into the Aspose.
 
 **Learn more:**
 
-- [TeX Input/Output(tex-io)](/tex/{{lang.url-fragment}}net/tex-io/): Learn how `IInputWorkingDirectory` and IOutputWorkingDirectory handle stream and disk resources.
-- [What is LaTeX)](/tex/{{lang.url-fragment}}net/what-is-latex/)
+- [TeX Input/Output(tex-io)](/tex/{{lang.url-fragment}}net/tex-io/): Learn how `IInputWorkingDirectory` and `IOutputWorkingDirectory` handle stream and disk resources.
+- [What is LaTeX](/tex/{{lang.url-fragment}}net/what-is-latex/)
 - [Aspose.TeX and Object TeX](/tex/{{lang.url-fragment}}net/aspose-tex-and-object-tex/): Understanding the underlying managed object model.
 
 Inevitably, enterprise documents require specialized or third-party `.sty`/`.cls` files that are not pre-embedded in the engine. [Working with external LaTeX packages](/tex/{{lang.url-fragment}}net/external-latex-packages/) is also supported by Aspose.

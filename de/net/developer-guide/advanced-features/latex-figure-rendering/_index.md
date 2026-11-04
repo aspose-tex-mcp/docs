@@ -7,7 +7,7 @@ weight: 20
 url: /net/latex-figure-rendering/
 description: Hier wird Aspose.TeX für .NET das Rendern von LaTeX-Fragmenten (Figuren) beschrieben. Erfahr anhand der Codebeispiele, wie kann man Funktionalität nutzen.
 keywords: Latexfigur, Latexfigurengröße, Latexbild, Latexbild, Latex-Einschlussfigur, Latexbild, Latexfigurenoptionen
-lastmod: "2026-06-12"
+lastmod: "2026-11-04"
 ---
 
 {{<section overview>}}
@@ -76,10 +76,10 @@ Wenn Sie einen eigenen KI-Agenten für die Grafikdarstellung in LaTeX mithilfe d
 
 1. Die Eingabeschicht (LLM-Kern): Sie parst unstrukturierte oder unübersichtliche Eingabeaufforderungen in saubere, isolierte LaTeX-Mathematikprimitive und Grafikumgebungen (`\begin{picture}`, `\includegraphics`).
 
-2. Das virtuelle Dateisystem (E/A-Schicht): Es speichert externe Grafikabhängigkeiten (`.png`, `.jpg`) sicher in einem In-Memory- oder Sandbox-Verzeichnis `InputFileSystemDirectory`, sodass der Compiler Layoutreferenzen sofort auflösen kann.
+Stellt externe Grafikabhängigkeiten (`.png`, `.jpg`) sicher in dem Verzeichnis bereit, das der Option `RequiredInputDirectory` zugewiesen ist, damit der Compiler Layoutverweise auflösen kann. Das kann ein `InputFileSystemDirectory` sein oder, um die Dateien im Speicher zu halten, ein `InputZipDirectory` über einem `MemoryStream`.
 
 3. Die Konfiguration
 Analysiert strukturelle Codemarkierungen und fügt automatisch Treiber, Abhängigkeiten (wie `graphicx` oder `pict2e`), Skalierungsfaktoren und Hintergrundtransparenzzustände hinzu.
 
 4. Der einheitliche Ausführungsknoten (Aspose.TeX-Engine)
-Kompiliert die einheitliche Datei und übergibt sie direkt an den spezialisierten `FigureRenderer`, um präzise Vektor-Begrenzungsrahmenränder zu berechnen und responsive visuelle Canvas-Fragmente (SVG oder hochauflösendes PNG) auszugeben.
+Übergibt das LaTeX-Fragment und die Präambel an `PngFigureRenderer` oder `SvgFigureRenderer`. Der Renderer setzt das Fragment und gibt die Abbildung mit dem durch die Option `Margin` festgelegten Rand als SVG oder hochauflösendes PNG aus.

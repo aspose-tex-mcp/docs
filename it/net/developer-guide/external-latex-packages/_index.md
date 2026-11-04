@@ -7,7 +7,7 @@ weight: 20
 url: /net/external-latex-packages/
 description: API Aspose.TeX per .NET consente l'utilizzo di pacchetti esterni, ovvero quelli non inclusi nella libreria stessa come pacchetti FancyBox e PGFPLOTS.
 keywords: pacchetti latex esterni, aspose tex, .net tex, pacchetti latex, fancybox, pgfplots, directory di input richiesta, zip di input, directory di input personalizzata, conversione tex
-lastmod: "2026-06-17"
+lastmod: "2026-11-04"
 ---
 
 {{<section overview>}}
@@ -142,24 +142,24 @@ Può anche succedere che un pacchetto richiesto dal file LaTeX chiami direttamen
 
 Se è necessario creare un agente AI che ottimizzi il contenuto per l'inventario di pacchetti integrato senza lente ricerche dinamiche di rete o nel file system durante la generazione, è possibile utilizzare il flusso di lavoro descritto di seguito.
 
-Invece di costringere un LLM a indovinare quali pacchetti siano sicuri o veloci da usare, l'agente si concentra su questo specifico inventario di pacchetti precompilato per garantire una composizione del documento affidabile al 100%.
+Invece di costringere un LLM a indovinare quali pacchetti siano sicuri o veloci da usare, l'agente si basa su questo specifico inventario di pacchetti precompilati per evitare errori dovuti a pacchetti mancanti.
 
 ![Architettura di assemblaggio del documento con agente AI incorporato](/tex/images/net/tutorial/blockscheme-for-ai-latex-package-optimization.png)
 
 1. Estrazione dell'intento di layout (livello di analisi LLM)
-L'utente fornisce dati non strutturati in diversi formati o direttive conversazionali. L'LLM mappa le richieste direttamente all'elenco dei pacchetti incorporati di Aspose (`colortbl` per l'ombreggiatura delle righe, `geometry` per i margini, `hyperref` per il tracciamento e `tabularx` per le colonne a larghezza variabile).
+L'utente fornisce dati non strutturati in più formati o direttive conversazionali. L'LLM associa direttamente le richieste all'elenco dei pacchetti incorporati di Aspose (`colortbl` per l'ombreggiatura delle righe, `geometry` per i margini e `multirow` per le celle che occupano più righe).
 
 2. Isolamento AST e iniezione del preambolo
-Anziché scrivere importazioni di pacchetti ingombranti, l'agente verifica i requisiti del codice rispetto al suo manifesto pre-cache dei motori nativi.
-Scrive i percorsi di ottimizzazione strutturale direttamente nella stringa del preambolo del codice.
+Anziché scrivere importazioni di pacchetti ingombranti, l'agente verifica i requisiti del codice rispetto all'elenco dei pacchetti incorporati.
+Scrive nel preambolo solo i comandi `\usepackage` necessari.
 
 3. Sandboxing ed esecuzione dello stream (nodo motore Aspose.TeX)
-Lo stream di token compilato, insieme ai relativi ambienti macro, viene inviato ai worker in ambiente sandbox. Il sistema configura un profilo di runtime dell'applicazione TeXOptions rigoroso utilizzando il profilo assembly ottimizzato (ad esempio, TeXConfig.ObjectLaTeX). Esegue in modo sicuro una pipeline di esecuzione TeXJob non bloccante interamente all'interno del buffer di stream in memoria.
+Il codice sorgente LaTeX viene passato a un `TeXJob` come flusso, con `TeXOptions` creato per `TeXConfig.ObjectLaTeX`. `TeXJob.Run()` è sincrono, quindi l'agente lo esegue in un worker in background.
 
 ```tex
 \usepackage[a4paper,margin=0.5in]{geometry}
-\usepackage{amsmath,tabularx,colortbl,hyperref}
+\usepackage{amsmath,multirow,colortbl}
 ```
 
 4. Serializzazione delle risorse (Livello di rendering dell'output)
-Il sistema mappa i target delle coordinate ed elabora i limiti dell'output, utilizzando array di esecuzione vettoriale (PdfDevice o SvgDevice) per restituire immediatamente layout di documentazione nitidi all'interfaccia client.
+Il processo scrive il risultato con un dispositivo di output, come `PdfDevice` o `SvgDevice`, e l'agente lo restituisce al client.

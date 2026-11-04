@@ -6,7 +6,7 @@ title: Aspose.TeX and Object TeX
 weight: 11
 url: /net/aspose-tex-and-object-tex/
 description: TeX is an input and output format of this API solution so here we go with explaining the Object TeX and how it is transformed into a target format.
-lastmod: 2026-10-19
+lastmod: "2026-11-04"
 ---
 
 {{<section overview>}}
@@ -33,7 +33,7 @@ So why did we use "Object" in the name of the system? The reason is that the act
 
 When transitioning from traditional, command-line TeX distributions (such as TeX Live or MiKTeX) to a managed .NET library like Aspose.TeX, developers face a fundamental shift from file-system-bound, process-driven execution to a flexible, object-oriented architecture.
 
-Here is a ccomparison of native engine limitations with the managed flexibility offered by Aspose.TeX, structured for technical documentation and developer guides.
+Here is a comparison of native engine limitations with the managed flexibility offered by Aspose.TeX, structured for technical documentation and developer guides.
 
 1. File system and I/O architecture
 
@@ -52,12 +52,12 @@ Here is a ccomparison of native engine limitations with the managed flexibility 
 
 **Native TeX limitations:**
 
-- If a traditional TeX compiler feces a missing font, an undefined macro, or a syntax error, it doesn't just crash—it often pauses execution and drops into an interactive prompt. This causes background web applications or worker services to hang indefinitely.
+- If a traditional TeX compiler faces a missing font, an undefined macro, or a syntax error, it doesn't just crash—it often pauses execution and drops into an interactive prompt. This causes background web applications or worker services to hang indefinitely.
 
 **Aspose.TeX managed flexibility:**
 
-- Running entirely within the .NET runtime, Aspose.TeX catches compilation issues and missing dependency errors, throwing standard managed exceptions (`TeXException`).
-- Safe background processing  ensures that cloud functions, microservices, and background worker queues can handle malformed documents gracefully, log errors, and return appropriate HTTP status codes or error messages without locking up server threads.
+- Running entirely within the .NET runtime, Aspose.TeX reports compilation issues and missing dependency errors through the `TeXJobResult` value returned by `TeXJob.Run()`, with the details written to the transcript (`.log`) and the output terminal.
+- With the `Interaction` option set to `NonstopMode` or `BatchMode`, a job does not wait for user input, so cloud functions, microservices, and background worker queues can handle malformed documents gracefully, log errors, and return appropriate HTTP status codes or error messages without locking up server threads.
 
 3. Concurrency and thread safety
 

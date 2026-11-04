@@ -8,7 +8,7 @@ weight: 100
 url: /net/latex-templates/
 description: Erfahren Sie, was LaTeX-Vorlagen sind, wie Sie sie verwenden und erstellen, wo Sie die beliebtesten herunterladen können und einen schnellen Workflow mit kopierfertigen Snippets.
 keywords: LaTeX, Vorlage, Klasse, Stil, Overleaf, CTAN, Bibliographie, Beamer, Abschlussarbeit, Lebenslauf
-lastmod: "2026-06-12"
+lastmod: "2026-11-04"
 ---
 
 {{<section overview>}}
@@ -57,8 +57,6 @@ Nur zusätzliche Makros oder Formatierungen | **Stil** (`.sty`) | – |
 % ---- custom settings ----
 \RequirePackage{geometry}
 \geometry{margin=2cm}
-\RequirePackage{fontspec}
-\setmainfont{Latin Modern Roman}
 
 % ---- user‑level commands ----
 \newcommand\mytitle[1]{\centerline{\LARGE\bfseries #1}}
@@ -110,7 +108,7 @@ Verwenden Sie es mit „\documentclass{mytemplate}“ in Ihrem Dokument.
 
 ## Was ist mit Aspose?
 
-Wenn Sie die aus LaTeX generierten PDFs in einer .NET-, Java- oder Python-Anwendung bearbeiten müssen (zusammenführen, mit Wasserzeichen versehen oder in andere Formate konvertieren), bieten Bibliotheken wie **Aspose.TeX** eine sprachunabhängige API für die Arbeit mit PDF-Dateien, ohne dass eine vollständige LaTeX-Toolchain erforderlich ist.
+Um ein Dokument auf Basis einer LaTeX-Vorlage in einer .NET-Anwendung zu setzen, können Sie **Aspose.TeX für .NET** verwenden. Die Bibliothek konvertiert LaTeX in PDF, XPS, SVG und Rasterbilder, ohne dass eine TeX-Distribution erforderlich ist. Legen Sie die `.cls`- und `.sty`-Dateien der Vorlage im Eingabeverzeichnis ab. Pakete, die nicht in die Bibliothek [eingebettet](/tex/{{lang.url-fragment}}net/embedded-packages/) sind, können als [externe LaTeX-Pakete](/tex/{{lang.url-fragment}}net/external-latex-packages/) bereitgestellt werden.
 
 ---
 
@@ -122,7 +120,7 @@ Verwenden? → \documentclass{mytemplate} + README befolgen
 Erstellen? → .cls- oder .sty-Datei schreiben → Assets packen → zip/GitHub
 Beziehen?  → Overleaf-Galerie, CTAN, GitHub, Universitätsseiten
 Top 10     → IEEEtran, llncs, elsarticle, modern‑simple‑cv,
-             classicthesis, beamer, a0poster, UNICAMP thesis, aa.cls, Basic Academic Journal Article
+             classicthesis, beamer, a0poster, Universitätsarbeit, aa.cls, Basic Academic Journal Article
 ```
 
 Viel Spaß beim Setzen!
@@ -137,7 +135,7 @@ Wenn Sie einen eigenen KI-Agenten zur Erstellung von LaTeX-Vorlagen mithilfe der
 ![Blockschema für den KI-Workflow zur Darstellung von LaTeX-Abbildungen](/tex/images/net/tutorial/blockscheme-ai-for-latex-template-creation.png)
 
 1. Erfassung der Layoutanforderungen (LLM-Intent-Layer)
-Der Benutzer gibt allgemeine Designvorgaben oder Formatierungsanweisungen vor (z. B. „Erstellen Sie ein zweispaltiges Zeitschriftenlayout mit 1,5 cm Seitenrändern, Times New Roman-Schriftart, roten Überschriften und einem eleganten Autorenfeld am oberen Rand“). Anschließend ordnet der LLM diese semantischen visuellen Details strukturellen programmatischen Anforderungen zu.
+Der Benutzer gibt allgemeine Designvorgaben oder Formatierungsanweisungen vor (z. B. „Erstellen Sie ein zweispaltiges Zeitschriftenlayout mit 1,5 cm Seitenrändern, roten Überschriften und einem eleganten Autorenfeld am oberen Rand“). Anschließend ordnet der LLM diese semantischen visuellen Details strukturellen programmatischen Anforderungen zu.
 
 Die Intent-Matrix entscheidet, ob die Anfrage eine komplett neue, eigenständige Klassendatei (`.cls`) für einen benutzerdefinierten Dokumenttyp erfordert oder lediglich einen angepassten Style-Wrapper (`.sty`), der in Standardklassen wie Artikel oder Bericht eingebunden wird.
 
@@ -148,11 +146,11 @@ Der Agent erstellt die Strukturcodeblöcke für die `.cls`-Datei basierend auf e
 - Konvertiert natürlichsprachliche Komponenten in native Makros (z. B. die Umwandlung einer „Autorenbox“-Anfrage in einen benutzerdefinierten `\renewcommand{\maketitle}{...}`-Definitionsblock).
 
 3. Paketfabrik und Asset-Sammlung (Abhängigkeitsschicht)
-Abhängig von den im ersten Schritt extrahierten Designanweisungen benötigt die Layout-Engine spezielle Makro-Tools von Drittanbietern (z. B. `geometry` für Randanpassungen, `xcolor` für benutzerdefinierte Markenfarben oder `fontspec` für moderne Schriftkonfigurationen).
+Abhängig von den im ersten Schritt ermittelten Designanweisungen benötigt die Layout-Engine spezielle Makrowerkzeuge von Drittanbietern (z. B. `geometry` für Randanpassungen oder `xcolor` für individuelle Markenfarben). Pakete, die XeTeX oder LuaTeX erfordern, wie `fontspec`, können mit Aspose.TeX nicht verwendet werden.
 
 Der Agent fungiert als Linting-Filter. Er fügt dynamisch die erforderlichen `\RequirePackage{...}`-Anweisungen in das Klassen- oder Stil-Bundle ein.
 
 4. Verifizierung und Validierung (Aspose.TeX-Kompilierungsknoten)
 Der Agent erstellt dynamisch eine Testdatei (`sample.tex`), die die Vorlage lädt.
 
-Anschließend startet der Agent über Aspose.TeX einen impliziten `TeXJob`, um den Vorlagencode zu kompilieren. Schlägt die Kompilierung fehl, liest der Agent die Fehlerprotokolle (`.log`) und leitet die Trace-Protokolle zur automatischen Syntaxkorrektur an den LLM zurück. Bei erfolgreicher Kompilierung wird das Asset-Bundle verifiziert.
+Anschließend führt der Agent einen `TeXJob` aus, um den Vorlagencode zu kompilieren. Wenn `TeXJob.Run()` den Wert `ErrorMessageIssued` oder `FatalErrorStop` zurückgibt, liest der Agent die Fehlerprotokolle (`.log`) und leitet die Trace-Protokolle zur automatischen Syntaxkorrektur an das LLM zurück. Andernfalls gilt das Asset-Paket als geprüft.

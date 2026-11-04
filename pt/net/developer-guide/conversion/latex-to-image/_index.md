@@ -7,7 +7,7 @@ weight: 10
 url: /net/latex-to-image/
 keywords: Latex para PNG, LATEX PNG, LATEX para imagem, imagem LATEX, LATEX para JPG, LATEX JPG, LATEX para JPEG, LATEX JPEG, LATEX para TIFF, LATEX TIFF, LATEX para BMP, LATEX BMP
 description: Para converter os formatos Tex em imagem usando a solução da API Aspose.TeX para .NET Aprenda este artigo para ver que descreve como fazer isso e os exemplos de código.
-lastmod: "2026-11-02"
+lastmod: "2026-11-04"
 ---
 
 {{<section overview>}}
@@ -57,11 +57,11 @@ Há outra maneira de obter dados da imagem como uma matriz de matrizes de bytes,
 
 **Exemplo de conversão alternativo**
 
-O seguinte trecho de código em C# demonstra outra forma de obter a saída PNG escrevendo os dados da imagem num fluxo de memória em vez de diretamente no sistema de ficheiros. Esta abordagem é útil quando necessita dos bytes PNG gerados na memória para processamento posterior, como enviá-los pela rede, armazená-los numa base de dados ou realizar transformações adicionais antes de guardar.
+O trecho de código C# a seguir demonstra outra maneira de obter a saída PNG: o dispositivo mantém os dados da imagem na memória como matrizes de bytes em vez de gravá-los no sistema de arquivos. Essa abordagem é útil quando você precisa dos bytes PNG gerados para processamento adicional, como enviá-los por uma rede, armazená-los em um banco de dados ou realizar transformações adicionais antes de salvar.
 
 {{< gist "aspose-com-gists" "507170b996a1d0c39bb4374e888b3205" "Example-ConvertLaTeXToPNG-Alternative.cs" >}}
 
-Os arquivos *"página-n.png"* serão gravados em qualquer caminho que especifique. Ao contrário de [saída em PDF](/tex/{{lang.url-fragment}}net/latex-to-pdf/#an-alternative-way-to-write-the-main-output-pdf-file), eles duplicarão os arquivos PNG de saída gravados no diretório de saída.
+Os arquivos *"page-n.png"* serão gravados em qualquer caminho que especificarmos. Como a opção `DeviceWritesImages` está definida como `false`, o próprio dispositivo não grava arquivos PNG no diretório de saída.
 
 ## Sobre opções de entrada
 

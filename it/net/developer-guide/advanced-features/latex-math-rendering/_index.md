@@ -6,7 +6,7 @@ linktitle: Formule matematiche in LaTeX rendering
 weight: 10
 url: /net/latex-math-formula-rendering/
 description: La soluzione API Aspose.TeX per il rendering di formule matematiche LaTeX per .NET è descritta in questo articolo. Scopri gli esempi di codice su come utilizzare la funzionalità.
-lastmod: "2026-06-11"
+lastmod: "2026-11-04"
 ---
 
 {{<section overview>}}
@@ -78,7 +78,7 @@ Di seguito viene proposta l'architettura del flusso di lavoro di produzione per 
 
 ![Schema a blocchi per il flusso di lavoro di rendering di formule matematiche LaTeX tramite AI](/tex/images/net/tutorial/blockscheme-for-ai-math-rendering.png)
 
-Come si può vedere, un agente AI per il rendering di formule matematiche dovrebbe operare come un ciclo di feedback chiuso composto da tre micro-livelli:
+Come si può vedere, un agente di IA per il rendering matematico dovrebbe funzionare come un ciclo di feedback chiuso composto da quattro livelli:
 
 1. Acquisizione di input e sintassi (Livello LLM)
 L'utente digita espressioni in linguaggio naturale o sintassi parziale (ad esempio, "Mostrami la derivata di un'equazione di moltiplicazione di matrici"). 1. L'agente trasforma questi prompt in strutture matematiche LaTeX valide all'interno di un payload JSON strutturato, evitando wrapper Markdown come ````latex`.
@@ -91,6 +91,6 @@ L'agente passa il token sanificato direttamente al framework di elaborazione bac
 
 L'agente istanzia `SvgMathRendererOptions` o `PngMathRendererOptions` a seconda del contesto del client (ad esempio, se l'utente si trova su un dispositivo mobile o sul web, utilizza SVG per una nitidezza ottimale).
 
-4. Se la compilazione di Aspose.TeX fallisce o rileva avvisi di sintassi, invia i dati diagnostici standard del log direttamente a un flusso di errori di runtime.
+4. Aspose.TeX non genera un'eccezione quando una formula contiene un errore TeX. Memorizza il primo errore nell'opzione `ErrorReport` e scrive il log completo nel flusso `LogStream`, se ne è stato assegnato uno.
 
-**Puoi anche controllare la [app Web](https://products.aspose.app/tex/equation-editor/svg) gratuita in base alla funzionalità implementata all'interno di [Aspose.TeX per API .NET](https://products.aspose.com/tex/net/).**
+Invece di fallire silenziosamente o bloccare le interfacce utente, l'agente controlla `ErrorReport` dopo ogni chiamata a `Render()`, crea un ciclo di contesto e chiede all'LLM di riscrivere l'equazione. L'output da solo non è un segnale affidabile: a seconda dell'errore, l'immagine può essere prodotta comunque oppure risultare vuota.

@@ -7,7 +7,7 @@ weight: 16
 url: /net/what-is-latex/
 keywords: 什么是 latex, latex 是什么
 description: 要回答“什么是 LaTeX？”这个问题，值得一提的是其最令人印象深刻的特性之一是新字体选择方案（NFSS）。
-lastmod: 2026-10-20
+lastmod: "2026-11-04"
 ---
 
 {{<section overview>}}
@@ -153,8 +153,8 @@ left justified & center & right justified \\ \hline
 | :- | :- | :- |
 | **数学排版** | 通过 `amsmath`/`amssymb` 处理 | 原生解析并渲染为矢量或位图输出 |
 | **文档类 (Document classes)** | 需依赖本地磁盘上的 `.cls` 文件 | 通过自定义或虚拟的 `IInputWorkingDirectory` 加载 |
-| **交叉引用与目录 (TOC)** | 需要多次命令行运行（Passes） | 在可配置的程序执行流程中自动管理 |
-| **输出格式** | 需借助外部工具生成 DVI、PS 或 PDF | 可直接一步转换为 PDF、XPS、PNG、JPEG、BMP 或 TIFF |
+| **交叉引用与目录 (TOC)** | 需要多次命令行运行（Passes） | 通过 `TeXOptions.Repeat` 选项启用第二遍运行 |
+| **输出格式** | 需借助外部工具生成 DVI、PS 或 PDF | 可直接一步转换为 PDF、XPS、SVG、PNG、JPEG、BMP 或 TIFF |
 
 **深入了解：**
 

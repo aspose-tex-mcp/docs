@@ -6,7 +6,7 @@ linktitle: Perguntas frequentes
 weight: 80
 url: /net/introduction-to-tex/faq/
 description: Obtenha respostas para todas as perguntas mais frequentes sobre TeX e LaTeX, sua estrutura, uso e peculiaridades.
-lastmod: 2026-10-21
+lastmod: "2026-11-04"
 ---
 
 {{<section overview>}}
@@ -141,7 +141,7 @@ No entanto, se você é um estudante ou profissional em um campo STEM, ou se esc
 
 **P: Como posso processar um documento LaTeX armazenado na memória sem ler ou escrever ficheiros para o disco?**
 
-**A:** Pode tirar partido da arquitetura de E/S plugável do Aspose.TeX. Utilizando `InputMemoryDirectory` ou fluxos de memória juntamente com `OutputMemoryDirectory`, pode fornecer dados de entrada directamente a partir de arrays de bytes ou strings e capturar as saídas em PDF ou imagem resultantes inteiramente na memória.
+**A:** Passe a entrada principal para o construtor de `TeXJob` como um `Stream`. Para obter o resultado na memória, use o construtor de `PdfDevice` ou `XpsDevice` que aceita um `Stream`, ou leia as páginas renderizadas na propriedade `Result` de `ImageDevice`. Outros arquivos de entrada e saída, como arquivos incluídos e a transcrição, podem ser mantidos em arquivos ZIP armazenados em fluxos usando `InputZipDirectory` e `OutputZipDirectory`.
 
 <br><br>
 

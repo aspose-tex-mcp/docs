@@ -6,7 +6,7 @@ linktitle: Preguntas frecuentes
 weight: 80
 url: /net/introduction-to-tex/faq/
 description: Obtenga respuestas a todas las preguntas más frecuentes sobre TeX y LaTeX, su estructura, uso y peculiaridades.
-lastmod: 2026-10-21
+lastmod: "2026-11-04"
 ---
 
 {{<section overview>}}
@@ -140,7 +140,7 @@ Sin embargo, si usted es un estudiante o profesional en un campo STEM, o si escr
 
 **P: ¿Cómo puedo procesar un documento LaTeX almacenado en memoria sin leer ni escribir archivos en el disco?**
 
-**A:** Puede aprovechar la arquitectura de entrada/salida (E/S) conectable de Aspose.TeX. Mediante el uso de `InputMemoryDirectory` o flujos de memoria (memory streams) junto con `OutputMemoryDirectory`, puede proporcionar los datos de origen directamente desde matrices de bytes o cadenas de texto, y capturar los resultados (PDF o imágenes) completamente en la memoria.
+**A:** Pase la entrada principal al constructor de `TeXJob` como un `Stream`. Para obtener el resultado en memoria, use el constructor de `PdfDevice` o `XpsDevice` que acepta un `Stream`, o lea las páginas renderizadas de la propiedad `Result` de `ImageDevice`. Los demás archivos de entrada y salida, como los archivos incluidos y la transcripción, pueden guardarse en archivos ZIP contenidos en flujos mediante `InputZipDirectory` y `OutputZipDirectory`.
 <br><br>
 
 **P: ¿Cómo gestiona Aspose.TeX los paquetes faltantes o los archivos `.sty` personalizados?**

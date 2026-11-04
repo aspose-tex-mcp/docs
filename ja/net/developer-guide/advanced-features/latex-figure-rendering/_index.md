@@ -7,7 +7,7 @@ weight: 20
 url: /net/latex-figure-rendering/
 description: この記事では、.NET LaTeX フラグメント（図）レンダリングのための Aspose.TeX API ソリューションについて説明します。コード例を用いて、この機能の使用方法をご確認ください。
 keywords: LaTeX 図、LaTeX 図サイズ、LaTeX 画像、LaTeX 画像、LaTeX include figure、LaTeX 画像、LaTeX 図オプション
-lastmod: "2026-06-12"
+lastmod: "2026-11-04"
 ---
 
 {{<section overview>}}
@@ -77,10 +77,10 @@ Aspose.TeX APIを使用してLaTeX内で図レンダリングを行う独自のA
 構造化されていない、または乱雑な自然言語プロンプトを解析し、クリーンで独立したLaTeX数式プリミティブと図環境（`\begin{picture}`、`\includegraphics`）に変換します。
 
 2. 仮想ファイルシステム（IOレイヤー）
-外部グラフィック依存関係（`.png`、`.jpg`）をメモリ内またはサンドボックス化された`InputFileSystemDirectory`ディレクトリに安全にステージングし、コンパイラがレイアウト参照を即座に解決できるようにします。
+外部のグラフィック依存ファイル (`.png`、`.jpg`) を `RequiredInputDirectory` オプションに割り当てたディレクトリに安全に配置し、コンパイラがレイアウト参照を解決できるようにします。これには `InputFileSystemDirectory` を使用できます。ファイルをメモリ内に保持する場合は、`MemoryStream` 上の `InputZipDirectory` を使用します。
 
 3. 設定
 構造コードマーカーを解析し、ドライバ、依存関係（`graphicx`や`pict2e`など）、スケールファクター、背景の透明度状態を自動的に追加します。
 
 4. 統合実行ノード（Aspose.TeXエンジン）
-統合ファイルをコンパイルし、専用の`FigureRenderer`に直接渡して、正確なベクターバウンディングボックスのマージンを計算し、レスポンシブなビジュアルキャンバスフラグメント（SVGまたは高解像度PNG）を出力します。
+LaTeX フラグメントとプリアンブルを `PngFigureRenderer` または `SvgFigureRenderer` に渡します。レンダラーはフラグメントを組版し、`Margin` オプションで設定した余白を付けて、図を SVG または高 DPI の PNG として出力します。

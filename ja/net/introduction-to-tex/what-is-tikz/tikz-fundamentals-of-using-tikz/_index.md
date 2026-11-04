@@ -8,7 +8,7 @@ url: /net/tikz-fundamentals-of-using-tikz/
 aliases: /net/fundamentals-of-using-tikz/
 keywords: tikz の基礎, tikz の基本, tikz チュートリアル
 description: TikZ の基本原理と基本コマンドを学び、TeX および LaTeX 文書用のグラフィックを作成しましょう。
-lastmod: 2026-10-22
+lastmod: "2026-11-04"
 ---
 
 {{<section overview>}}
@@ -137,9 +137,8 @@ TikZ のパスは直線または曲線にすることができます。曲線は
 using System;
 using System.IO;
 using Aspose.TeX;
-using Aspose.TeX.Configuration;
-using Aspose.TeX.Presentation.Pdf;
 using Aspose.TeX.IO;
+using Aspose.TeX.Presentation.Pdf;
 
 namespace AsposeTexTikzDemo
 {
@@ -147,41 +146,38 @@ namespace AsposeTexTikzDemo
     {
         static void Main(string[] args)
         {
-            // Aspose.TeX の入出力抽象化機能を使用して、入出力ディレクトリを定義する
+            // 入力ディレクトリと出力ディレクトリを定義します
             string dataDir = @"C:\DocumentSamples\TikzInput";
             string outputDir = @"C:\DocumentSamples\TikzOutput";
 
-            // 出力ディレクトリが存在することを確認する
-            Directory.CreateDirectory(outputDir);
+            // 出力ディレクトリが存在することを確認します
             Directory.CreateDirectory(outputDir);
 
-            // 標準的な LaTeX ドキュメント処理ジョブに向けて TeX オプションを初期化する
-            // TeXConfig.LaTeX を使用すると、標準的なパッケージ（tikz/pgf を含む）が組み込まれた状態でエンジンが構成される
-            TeXOptions options = TeXOptions.ConsoleAppRunSettings(TeXConfig.LaTeX, dataDir, outputDir);
+            // 標準の LaTeX ドキュメント処理ジョブ用に TeX オプションを初期化します
+            // TeXConfig.ObjectLaTeX は、埋め込みパッケージ (tikz/pgf を含む) を使用してエンジンを構成します
+            TeXOptions options = TeXOptions.ConsoleAppOptions(TeXConfig.ObjectLaTeX);
+            options.InputWorkingDirectory = new InputFileSystemDirectory(dataDir);
+            options.OutputWorkingDirectory = new OutputFileSystemDirectory(outputDir);
 
-            // TikZ 環境を含むメインの入力ファイル名を指定する
+            // 出力ファイルに使用するジョブ名を設定します
             options.JobName = "tikz-fundamentals";
 
-            // PDF 形式で直接出力されるように、保存オプションを設定する
+            // PDF 形式に直接レンダリングするように保存オプションを構成します
             options.SaveOptions = new PdfSaveOptions();
 
-            // ソースファイル、出力デバイス、およびオプションを関連付けた TeXJob をインスタンス化し、実行する
-            try
-            {
-                Console.WriteLine("Starting TikZ compilation job...");
-                
-                new TeXJob(
-                    Path.Combine(dataDir, "tikz-fundamentals.tex"), 
-                    new PdfDevice(), 
-                    options
-                ).Run();
+            // ソース ファイル、出力デバイス、オプションを指定して TeXJob を作成し、実行します
+            Console.WriteLine("Starting TikZ compilation job...");
 
+            TeXJobResult result = new TeXJob(
+                Path.Combine(dataDir, "tikz-fundamentals.tex"),
+                new PdfDevice(),
+                options
+            ).Run();
+
+            if (result < TeXJobResult.ErrorMessageIssued)
                 Console.WriteLine($"TikZ graphic successfully compiled to PDF at: {outputDir}");
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"Compilation failed: {ex.Message}");
-            }
+            else
+                Console.WriteLine($"Compilation failed with {result}. See the .log file in {outputDir}.");
         }
     }
 }

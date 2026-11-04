@@ -7,7 +7,7 @@ weight: 16
 url: /net/what-is-latex/
 keywords: LaTeXとは何か, LaTeXとは, LaTeXについて
 description: 「LaTeXとは何か？」という質問に答えるには、その最も印象的な機能のひとつである New Font Selection Scheme (NFSS) に言及する価値があります。
-lastmod: 2026-10-20
+lastmod: "2026-11-04"
 ---
 
 {{<section overview>}}
@@ -153,8 +153,8 @@ LaTeXで執筆する際、作成者は「見た目」を気にするのではな
 | :- | :- | :- |
 | **数式の組版** | `amsmath` / `amssymb` を使用して処理 | ネイティブに解析され、ベクター形式やラスター形式で出力 |
 | **ドキュメントクラス** | ディスク上のローカルな `.cls` ファイルが必要 | カスタムまたは仮想の `IInputWorkingDirectory` を介して読み込み |
-| **相互参照および目次 (TOC)** | コマンドラインで複数回の実行（パス）が必要 | 設定可能なプログラム実行プロセス内で管理 |
-| **出力形式** | 別のツールを介して DVI、PS、または PDF を生成 | PDF、XPS、PNG、JPEG、BMP、TIFF への直接的な単一ステップ変換 |
+| **相互参照および目次 (TOC)** | コマンドラインで複数回の実行（パス）が必要 | 2 回目のパスは `TeXOptions.Repeat` オプションで有効化 |
+| **出力形式** | 別のツールを介して DVI、PS、または PDF を生成 | PDF、XPS、SVG、PNG、JPEG、BMP、TIFF への直接的な単一ステップ変換 |
 
 **詳細はこちら:**
 

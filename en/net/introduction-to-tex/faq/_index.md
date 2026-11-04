@@ -6,7 +6,7 @@ linktitle: FAQ
 weight: 80
 url: /net/introduction-to-tex/faq/
 description:  Get answers to all the most frequent questions about TeX and LaTeX, their structure, usage and peculiarities.
-lastmod: 2026-10-21
+lastmod: "2026-11-04"
 ---
 
 {{<section overview>}}
@@ -141,7 +141,7 @@ However, if you are a student or professional in a STEM field, or if you regular
 
 **Q: How can I process a LaTeX document stored in memory without reading or writing files to the disk?**
 
-**A:** You can leverage Aspose.TeX’s pluggable I/O architecture. By using `InputMemoryDirectory` or memory streams along with `OutputMemoryDirectory`, you can supply input source data directly from byte arrays or strings and capture the resulting PDF or image outputs entirely in memory.
+**A:** Pass the main input to the `TeXJob` constructor as a `Stream`. To get the result in memory, use the `PdfDevice` or `XpsDevice` constructor that accepts a `Stream`, or read the rendered pages from the `Result` property of `ImageDevice`. Other input and output files, such as included files and the transcript, can be kept in ZIP archives held in streams by using `InputZipDirectory` and `OutputZipDirectory`.
 <br><br>
 
 **Q: How does Aspose.TeX handle missing packages or custom .sty files?**

@@ -7,7 +7,7 @@ weight: 16
 url: /net/what-is-latex/
 keywords: what is latex, latex what is it
 description: To answer the question  "What is LaTeX?" it is worth mentioning that one of its most impressive features is the New Font Selection Scheme (NFSS).
-lastmod: 2026-10-20
+lastmod: "2026-11-04"
 ---
 
 {{<section overview>}}
@@ -147,17 +147,17 @@ When writing in LaTeX, authors use semantic markup to define what elements are (
 
 ## Key features
 
-Here ia a comparison table detailing what standard LaTeX features are handled programmatically within Aspose.TeX:
+Here is a comparison table detailing what standard LaTeX features are handled programmatically within Aspose.TeX:
 
 | **Feature/System**| **Standard TeX distribution (CLI)**|**Aspose.TeX for .NET engine** |
 | :- | :- |:- |
 | **Mathematical typesetting** | Handled via `amsmath`/`amssymb` |Natively parsed and rendered to vector/raster outputs |
 | **Document classes** | Requires local `.cls` files on disk|Loaded via custom/virtual `IInputWorkingDirectory` |
-| **Cross-referencing and TOC** | Requires multiple command-line passes |Managed within configurable program execution passes |
-| **Output formats** | Generates DVI, PS, or PDF via separate tools |Direct single-step conversion to PDF, XPS, PNG, JPEG, BMP, TIFF |
+| **Cross-referencing and TOC** | Requires multiple command-line passes |A second pass is enabled by the `TeXOptions.Repeat` option |
+| **Output formats** | Generates DVI, PS, or PDF via separate tools |Direct single-step conversion to PDF, XPS, SVG, PNG, JPEG, BMP, TIFF |
 
 **To dive deeper:**
 
-- [TeX Input/Output(tex-io)](/tex/{{lang.url-fragment}}net/tex-io/): Learn how `IInputWorkingDirectory` and IOutputWorkingDirectory handle stream and disk resources.
+- [TeX Input/Output(tex-io)](/tex/{{lang.url-fragment}}net/tex-io/): Learn how `IInputWorkingDirectory` and `IOutputWorkingDirectory` handle stream and disk resources.
 - [LaTeX Graphics (latex-graphics)](/tex/{{lang.url-fragment}}net/latex-graphics/): Including external images with `\includegraphics` using the graphicx package.
 - [Aspose.TeX and Object TeX](/tex/{{lang.url-fragment}}net/aspose-tex-and-object-tex/): Understanding the underlying managed object model.

@@ -7,7 +7,7 @@ weight: 20
 url: /net/latex-figure-rendering/
 description: La soluzione API Aspose.TeX per il rendering di frammenti LaTeX (figure) per .NET è descritta in questo articolo. Scopri gli esempi di codice su come utilizzare la funzionalità.
 keywords: figura in LaTeX, dimensione della figura LaTeX, immagine in LaTeX, immagine in LaTeX, LaTeX includono figura, latex pic, opzioni di figura in LaTeX
-lastmod: "2026-06-12"
+lastmod: "2026-11-04"
 ---
 
 {{<section overview>}}
@@ -78,10 +78,10 @@ Se desideri creare un tuo agente AI per il rendering di figure in LaTeX utilizza
 Analizza i prompt in linguaggio naturale non strutturati o disordinati e li converte in primitive matematiche LaTeX e ambienti per figure puliti e isolati (`\begin{picture}`, `\includegraphics`).
 
 2. File system virtuale (livello I/O)
-Gestisce in modo sicuro le dipendenze grafiche esterne (`.png`, `.jpg`) in una directory in memoria o in un ambiente sandbox `InputFileSystemDirectory` in modo che il compilatore possa risolvere immediatamente i riferimenti al layout.
+Colloca in modo sicuro le dipendenze grafiche esterne (`.png`, `.jpg`) nella directory assegnata all'opzione `RequiredInputDirectory`, in modo che il compilatore possa risolvere i riferimenti di layout. Può essere un `InputFileSystemDirectory` oppure, per mantenere i file in memoria, un `InputZipDirectory` su un `MemoryStream`.
 
 3. La configurazione
 Analizza i marcatori strutturali del codice e aggiunge automaticamente driver, dipendenze (come `graphicx` o `pict2e`), fattori di scala e stati di trasparenza dello sfondo.
 
 4. Il nodo di esecuzione unificato (motore Aspose.TeX)
-Compila il file unificato e lo passa direttamente al `FigureRenderer` specializzato per calcolare i margini precisi del riquadro di delimitazione vettoriale e generare frammenti di canvas visivo responsivi (SVG o PNG ad alta risoluzione).
+Passa il frammento LaTeX e il preambolo a `PngFigureRenderer` o `SvgFigureRenderer`, che compone il frammento e produce la figura, con il margine impostato dall'opzione `Margin`, in formato SVG o PNG ad alta risoluzione.

@@ -6,7 +6,7 @@ linktitle: 乳胶数学公式渲染
 weight: 10
 url: /net/latex-math-formula-rendering/
 description: Aspose.TeX API解决方案用于.NET乳胶数学公式渲染。了解有关如何使用功能的代码示例。
-lastmod: "2026-06-11"
+lastmod: "2026-11-04"
 ---
 
 {{<section overview>}}
@@ -79,7 +79,7 @@ lastmod: "2026-06-11"
 
 ![AI LaTeX 数学渲染工作流程框图](/tex/images/net/tutorial/blockscheme-for-ai-math-rendering.png)
 
-如您所见，用于数学渲染的 AI 代理应作为一个由三个微层组成的闭环反馈回路运行：
+如您所见，用于数学公式渲染的 AI 代理应作为一个闭环反馈系统运行，该系统由四个层组成：
 
 1. 输入和语法采集（LLM 层）
 
@@ -94,8 +94,8 @@ lastmod: "2026-06-11"
 代理程序使用程序化执行规则将清理后的令牌直接传递给后端处理框架。
 代理程序会根据客户端上下文实例化 `SvgMathRendererOptions` 或 `PngMathRendererOptions`（例如，如果用户在移动设备或 Web 上，则使用 SVG 以获得最佳清晰度）。
 
-4. 如果 Aspose.TeX 编译失败或遇到语法警告，它会将标准日志诊断信息直接输出到运行时错误流中。
+4. 当公式包含 TeX 错误时，Aspose.TeX 不会抛出异常。它将第一个错误存储在 `ErrorReport` 选项中，如果分配了 `LogStream` 流，则将完整日志写入该流。
 
-代理不会静默地失败或崩溃用户界面，而是拦截堆栈跟踪数据，构建上下文循环，并提示 LLM 重写方程有效负载。
+代理不会静默失败或使用户界面崩溃，而是在每次调用 `Render()` 后检查 `ErrorReport`，构建上下文循环，并提示 LLM 重写公式。仅凭输出结果并不可靠：根据错误的不同，图像可能仍会生成，也可能为空。
 
 **您还可以查看基于 [Aspose.TeX for .NET API](https://products.aspose.com/tex/net/) 中实现的功能构建的免费 [web 应用程序](https://products.aspose.app/tex/equation-editor/svg)。**

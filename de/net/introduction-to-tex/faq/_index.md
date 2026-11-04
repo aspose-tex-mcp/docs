@@ -6,7 +6,7 @@ linktitle: FAQ
 weight: 80
 url: /net/introduction-to-tex/faq/
 description: Holen Sie sich Antworten auf die häufigsten Fragen zu Tex und Latex, ihre Struktur, Verwendung und Besonderheiten.
-lastmod: 2026-10-21
+lastmod: "2026-11-04"
 ---
 
 {{<section overview>}}
@@ -140,7 +140,7 @@ Wenn Sie jedoch Student oder Profi in einem STEM -Bereich sind oder regelmäßig
 
 **F: Wie kann ich ein im Arbeitsspeicher (Memory) gespeichertes LaTeX-Dokument verarbeiten, ohne Dateien auf die Festplatte zu schreiben oder von dort zu lesen?**
 
-**A:** Sie können die flexible I/O-Architektur von Aspose.TeX nutzen. Durch die Verwendung von `InputMemoryDirectory` oder Memory-Streams in Kombination mit `OutputMemoryDirectory` können Sie Eingabedaten direkt aus Byte-Arrays oder Strings bereitstellen und die resultierenden PDF- oder Bildausgaben vollständig im Arbeitsspeicher verarbeiten.
+**A:** Übergeben Sie die Haupteingabe als `Stream` an den Konstruktor von `TeXJob`. Um das Ergebnis im Speicher zu erhalten, verwenden Sie den Konstruktor von `PdfDevice` oder `XpsDevice`, der einen `Stream` akzeptiert, oder lesen Sie die gerenderten Seiten aus der Eigenschaft `Result` von `ImageDevice`. Andere Ein- und Ausgabedateien, etwa eingebundene Dateien und das Protokoll, können mit `InputZipDirectory` und `OutputZipDirectory` in ZIP-Archiven in Streams gehalten werden.
 <br><br>
 
 **F: Wie geht Aspose.TeX mit fehlenden Paketen oder benutzerdefinierten .sty-Dateien um?**

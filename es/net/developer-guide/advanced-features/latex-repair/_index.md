@@ -6,7 +6,7 @@ linktitle: Reparación de archivos LaTeX
 weight: 30
 url: /net/latex-repair/
 description: La solución Aspose.TeX para la reparación de .NET LaTeX se describe en este artículo. Conozca los ejemplos de código sobre cómo utilizar la funcionalidad.
-lastmod: "2026-06-12"
+lastmod: "2026-11-04"
 ---
 
 {{<section overview>}}
@@ -31,11 +31,11 @@ Luego, comienza a escanear el archivo de entrada ajustado desde el principio. El
 
 A medida que el motor analiza más el archivo, puede encontrar comandos o entornos no definidos. La API puede hacer suposiciones sobre [paquetes incorporados requeridos](/tex/{{lang.url-fragment}}net/embedded-packages/) (aquellos que definen los comandos y entornos que no se definen hasta que se incluyen estos paquetes) para algunos de los comandos y entornos más comunes. Sin embargo, existe una manera de hacer tales suposiciones externamente implementando la interfaz [IGuessPackageCallback](https://reference.aspose.com/tex/net/aspose.tex.features/iguesspackagecallback/). Se debe asignar una instancia de dicha clase a la opción "GuessPackageCallback".
 
-Aquí hay un ejemplo muy simple que simplemente asigna el comando `\head` al paquete `fancyhdr`:
+Aquí hay un ejemplo muy simple que simplemente asigna el comando `\lhead` al paquete `fancyhdr`:
 
 {{< gist "aspose-com-gists" "deadfd7c29ffe40024a9b6d12f0ed18a" "Examples_PackageGuessingCallback" >}}
 
-En cuanto al archivo de muestra, el motor encuentra primero el comando `\chapter`, que no está definido en la clase de documento `article` pero sí en la clase de documento `book`. La API ajusta la clase de documento para que la versión final del archivo arreglado comience con `\documentclass{book}`. Luego, el motor encuentra el comando `\lhead` antes mencionado y decide que `\usepackage{fancyhdr}` debe insertarse en el preámbulo. Los comandos `\href` e `\includegraphics` que aparecen más adelante hacen que el reparador inserte `\usepackage{hyperref}` y `\usepackage{graphics}` en el preámbulo, respectivamente. Estas decisiones se basan en las asignaciones internas de la API. Nuevamente, todas estas correcciones se registran en el archivo del informe.
+En cuanto al archivo de muestra, el motor encuentra primero el comando `\chapter`, que no está definido en la clase de documento `article` pero sí en la clase de documento `book`. La API ajusta la clase de documento para que la versión final del archivo arreglado comience con `\documentclass{book}`. Luego, el motor encuentra el comando `\lhead` antes mencionado y decide que `\usepackage{fancyhdr}` debe insertarse en el preámbulo. Los comandos `\href` e `\includegraphics` que aparecen más adelante hacen que el reparador inserte `\usepackage{hyperref}` y `\usepackage{graphicx}` en el preámbulo, respectivamente. Estas decisiones se basan en las asignaciones internas de la API. Nuevamente, todas estas correcciones se registran en el archivo del informe.
 
 Finalmente, el motor finaliza de forma anormal porque falta el final normal de un documento LaTeX. Esto hace que el reparador agregue `\end{document}` al final del archivo y refleje este hecho en el informe.
 
@@ -93,9 +93,9 @@ El usuario proporciona instrucciones conversacionales, fragmentos de texto sin f
 2. Autocorrección de estructura nativa (Reparador de Aspose.TeX)
 El fragmento matemático generado se procesa mediante el ciclo de vida de reparación nativo de Aspose.TeX para establecer límites estructurales estándar sin que los desarrolladores tengan que escribir expresiones regulares predefinidas.
 
-El agente crea una instancia de LaTeXRepairer en segundo plano. El motor analiza los flujos de datos, detecta errores y escribe de forma segura las expresiones `\begin{document}` y `\end{document}` alrededor de las cadenas matemáticas para mantener la validez del proceso de compilación.
+El agente guarda el fragmento en un archivo y ejecuta `LaTeXRepairer` sobre él. El Repairer inserta los `\documentclass`, `\begin{document}` y `\end{document}` que faltan, y escribe el archivo corregido (`-fixed.tex`) y el informe (`.log`) en el directorio de salida. No cambia al modo matemático, por lo que la fórmula ya debe estar encerrada entre delimitadores matemáticos como `$...$`.
 
-4. Ejecución y generación de recursos/informes (Motor de renderizado)
-Una vez que la cadena de script reparada y empaquetada se compila correctamente, el agente crea un informe o convierte la salida limpia del sistema de archivos a los formatos visuales de destino.
+3. Ejecución y generación de recursos/informes (Motor de renderizado)
+`LaTeXRepairer.Run()` devuelve el resultado del archivo original, por lo que el agente lee la comprobación del archivo corregido en el informe. Si no hay errores críticos, el agente crea un informe o convierte el archivo corregido a los formatos visuales de destino ejecutando un `TeXJob`.
 
 **También puede consultar nuestra aplicación web gratuita [**AI LaTeX Repairer**](https://products.aspose.ai/tex/latex-repairer), que se basa en la función implementada dentro de [Aspose.TeX para .NET API](https://products.aspose.com/tex/net/) e implica una versión más avanzada. implementación de la interfaz `IGuessPackageCallback`.**

@@ -7,7 +7,7 @@ weight: 19
 url: /net/tikz-fundamentals-of-using-tikz/
 keywords: основы tikz, основы tikz, руководство по tikz
 description: Изучите основные принципы и основные команды TikZ для создания графики для документов TeX и LaTeX.
-lastmod: 2026-10-22
+lastmod: "2026-11-04"
 ---
 
 {{<section overview>}}
@@ -142,9 +142,8 @@ TikZ позволяет изменять стили и толщину линий
 using System;
 using System.IO;
 using Aspose.TeX;
-using Aspose.TeX.Configuration;
-using Aspose.TeX.Presentation.Pdf;
 using Aspose.TeX.IO;
+using Aspose.TeX.Presentation.Pdf;
 
 namespace AsposeTexTikzDemo
 {
@@ -152,41 +151,38 @@ namespace AsposeTexTikzDemo
     {
         static void Main(string[] args)
         {
-            // Определение входных и выходных каталогов с использованием абстракций ввода-вывода Aspose.TeX
+            // Определение входного и выходного каталогов
             string dataDir = @"C:\DocumentSamples\TikzInput";
             string outputDir = @"C:\DocumentSamples\TikzOutput";
 
             // Проверка наличия выходного каталога
             Directory.CreateDirectory(outputDir);
-            Directory.CreateDirectory(outputDir);
 
-            // Инициализация параметров TeX для стандартной обработки LaTeX-документа
-            // TeXConfig.LaTeX настраивает движок с использованием стандартных встроенных пакетов (включая tikz/pgf)
-            TeXOptions options = TeXOptions.ConsoleAppRunSettings(TeXConfig.LaTeX, dataDir, outputDir);
+            // Инициализация параметров TeX для стандартного задания обработки документа LaTeX
+            // TeXConfig.ObjectLaTeX настраивает движок со встроенными пакетами (включая tikz/pgf)
+            TeXOptions options = TeXOptions.ConsoleAppOptions(TeXConfig.ObjectLaTeX);
+            options.InputWorkingDirectory = new InputFileSystemDirectory(dataDir);
+            options.OutputWorkingDirectory = new OutputFileSystemDirectory(outputDir);
 
-            // Указание имени основного входного файла, содержащего среду TikZ
+            // Установка имени задания, которое используется для выходных файлов
             options.JobName = "tikz-fundamentals";
 
-            // Настройка параметров сохранения для вывода документа непосредственно в формате PDF
+            // Настройка параметров сохранения для вывода непосредственно в формат PDF
             options.SaveOptions = new PdfSaveOptions();
 
-            // Создание и выполнение задачи TeXJob, связывающей исходный файл, устройство вывода и параметры
-            try
-            {
-                Console.WriteLine("Starting TikZ compilation job...");
-                
-                new TeXJob(
-                    Path.Combine(dataDir, "tikz-fundamentals.tex"), 
-                    new PdfDevice(), 
-                    options
-                ).Run();
+            // Создание и выполнение TeXJob с исходным файлом, устройством вывода и параметрами
+            Console.WriteLine("Starting TikZ compilation job...");
 
+            TeXJobResult result = new TeXJob(
+                Path.Combine(dataDir, "tikz-fundamentals.tex"),
+                new PdfDevice(),
+                options
+            ).Run();
+
+            if (result < TeXJobResult.ErrorMessageIssued)
                 Console.WriteLine($"TikZ graphic successfully compiled to PDF at: {outputDir}");
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"Compilation failed: {ex.Message}");
-            }
+            else
+                Console.WriteLine($"Compilation failed with {result}. See the .log file in {outputDir}.");
         }
     }
 }

@@ -7,7 +7,7 @@ weight: 16
 url: /net/what-is-latex/
 keywords: qu'est-ce que le latex, qu'est-ce que le latex
 description: Pour répondre à la question « Qu'est-ce que LaTeX ? », découvrez sa fonctionnalité la plus impressionnante - le nouveau système de sélection de polices.
-lastmod: 2026-10-20
+lastmod: "2026-11-04"
 ---
 
 {{<section overview>}}
@@ -153,8 +153,8 @@ Voici un tableau comparatif détaillant la manière dont les fonctionnalités st
 | :- | :- | :- |
 | **Composition mathématique** | Gérée via `amsmath`/`amssymb` | Analysée et rendue nativement vers des formats vectoriels ou matriciels |
 | **Classes de documents** | Nécessite des fichiers `.cls` locaux sur le disque | Chargées via une interface personnalisée/virtuelle `IInputWorkingDirectory` |
-| **Renvois et table des matières** | Nécessite plusieurs passes en ligne de commande | Gérés au sein de passes d'exécution configurables |
-| **Formats de sortie** | Génère des fichiers DVI, PS ou PDF via des outils distincts | Conversion directe en une seule étape vers PDF, XPS, PNG, JPEG, BMP ou TIFF |
+| **Renvois et table des matières** | Nécessite plusieurs passes en ligne de commande | Une seconde passe est activée par l'option `TeXOptions.Repeat` |
+| **Formats de sortie** | Génère des fichiers DVI, PS ou PDF via des outils distincts | Conversion directe en une seule étape vers PDF, XPS, SVG, PNG, JPEG, BMP ou TIFF |
 
 **Pour aller plus loin :**
 

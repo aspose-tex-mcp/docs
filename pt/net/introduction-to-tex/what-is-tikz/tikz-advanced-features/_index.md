@@ -7,7 +7,7 @@ weight: 20
 url: /net/tikz-advanced-features/
 keywords: TikZ avançado, caminhos TikZ, diagramas TikZ, pgfplots, circuitikz, tikz-3dplot
 description: Aprenda técnicas avançadas de TikZ, incluindo caminhos complexos, posicionamento de nós, setas e criação de diagramas para gráficos com qualidade profissional.
-lastmod: 2026-10-22
+lastmod: "2026-11-04"
 ---
 
 {{<section overview>}}
@@ -136,8 +136,8 @@ Ao processar documentos com diagramas vetoriais de elevada complexidade em aplic
 |---|---|---|
 |**Expansão de Macros e Sobrecarga do CPU**|O TikZ depende muito do mecanismo de expansão de macros do TeX, que é interpretativo. Loops profundamente aninhados ou equações geométricas complexas (por exemplo, renderização algorítmica de gráficos) podem aumentar significativamente os ciclos de CPU por tarefa.|Mantenha a geração procedimental no TikZ o mais leve possível. Se gerar milhares de elementos repetitivos, considere se a modelação orientada a dados ou o pré-cálculo de coordenadas fora do código-fonte TeX podem reduzir a profundidade de avaliação de macros.|
 |**Utilização de memória e recolha de lixo** |Documentos grandes com várias páginas, contendo extensos caminhos de vetores TikZ, acumulam grandes árvores de objetos internas no heap gerido do .NET durante a fase de composição tipográfica.| Isole os trabalhos de composição tipográfica em escopos de curta duração ou utilize instâncias de trabalho dedicadas para que o coletor de lixo possa recuperar a memória de forma eficiente assim que o fluxo de saída (PDF, XPS ou imagem) for libertado.|
-|**Armazenamento em cache de diagramas estáticos em aplicações Web** Recompilar um diagrama TikZ complexo a cada pedido HTTP num serviço Web de alto tráfego irá rapidamente saturar os núcleos da CPU do servidor. |Se o gráfico subjacente for estático ou semi-estático (como um gráfico de painel administrativo ou um esquema arquitetónico padrão), compile o trecho `. tex` uma vez, armazene em cache o PDF ou o fluxo de vetores resultante na memória (por exemplo, através de `IMemoryCache`) e sirva o recurso em cache diretamente. |
-|**Gerir Processamento Assíncrono e Tempos Limite**|Macros recursivas não otimizadas ou malformadas em diagramas complexos podem ocasionalmente causar loops infinitos ou bloqueios de execução prolongados|Ao executar tarefas TeXJob em serviços de segundo plano (como Hangfire, Azure Functions ou tarefas de fundo ASP.NET Core), envolva sempre as chamadas de compilação em wrappers assíncronos com limites de tempo limite explícitos|
+|**Armazenamento em cache de diagramas estáticos em aplicações Web**|Recompilar um diagrama TikZ complexo a cada pedido HTTP num serviço Web de alto tráfego irá rapidamente saturar os núcleos da CPU do servidor. |Se o gráfico subjacente for estático ou semi-estático (como um gráfico de painel administrativo ou um esquema arquitetónico padrão), compile o trecho `.tex` uma vez, armazene em cache o PDF ou o fluxo de vetores resultante na memória (por exemplo, através de `IMemoryCache`) e sirva o recurso em cache diretamente. |
+|**Gerir Processamento Assíncrono e Tempos Limite**|Macros recursivas não otimizadas ou malformadas em diagramas complexos podem ocasionalmente causar loops infinitos ou bloqueios de execução prolongados|Ao executar trabalhos `TeXJob` em serviços em segundo plano (como Hangfire, Azure Functions ou tarefas em segundo plano do ASP.NET Core), execute-os em um processo de trabalho separado que possa ser encerrado por tempo limite, porque `TeXJob.Run()` é síncrono e não pode ser cancelado|
 
 ---
 

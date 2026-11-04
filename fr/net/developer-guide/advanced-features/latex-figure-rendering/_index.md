@@ -7,7 +7,7 @@ weight: 20
 url: /net/latex-figure-rendering/
 description: Aspose.TeX pour le rendu des fragments .NET LaTeX est décrite dans cet article. Découvrez les exemples de code sur la façon d’utiliser la fonctionnalité.
 keywords: figurine en latex, taille de figurine en latex, image en latex, image en latex, figurine incluse en latex, photo en latex, options de figurine en latex
-lastmod: "2026-06-12"
+lastmod: "2026-11-04"
 ---
 
 {{<section overview>}}
@@ -80,7 +80,7 @@ Analyse les instructions en langage naturel non structurées ou désordonnées e
 
 2. Système de fichiers virtuel (couche d'E/S)
 
-Stocke en toute sécurité les dépendances graphiques externes (`.png`, `.jpg`) dans un répertoire `InputFileSystemDirectory` en mémoire ou isolé afin que le compilateur puisse résoudre instantanément les références de mise en page.
+Place en toute sécurité les dépendances graphiques externes (`.png`, `.jpg`) dans le répertoire affecté à l'option `RequiredInputDirectory` afin que le compilateur puisse résoudre les références de mise en page. Il peut s'agir d'un `InputFileSystemDirectory` ou, pour conserver les fichiers en mémoire, d'un `InputZipDirectory` sur un `MemoryStream`.
 
 3. Configuration
 
@@ -88,4 +88,4 @@ Analyse les marqueurs de code structurel et ajoute automatiquement les pilotes, 
 
 4. Nœud d'exécution unifié (moteur Aspose.TeX)
 
-Compile le fichier unifié et le transmet directement au `FigureRenderer` spécialisé pour calculer les marges précises du cadre de délimitation vectoriel et générer des fragments de canevas visuels réactifs (SVG ou PNG haute résolution).
+Transmet le fragment LaTeX et le préambule à `PngFigureRenderer` ou `SvgFigureRenderer`, qui compose le fragment et produit la figure, avec la marge définie par l'option `Margin`, au format SVG ou PNG haute résolution.

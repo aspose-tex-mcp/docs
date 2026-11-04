@@ -7,7 +7,7 @@ weight: 10
 url: /net/latex-to-image/
 keywords: LaTeX a PNG, LaTeX PNG, LaTeX all'immagine, Image Latex, LaTeX a JPG, LaTeX JPG, LaTeX a JPEG, LaTeX JPEG, LaTeX a TIFF, LaTeX Tiff, LaTeX a BMP, LaTeX BMP
 description: Per convertire i formati di TEX in immagine usando la soluzione API Aspose.TeX per .NET Impara questo articolo per vedere che descrive come fare questo e gli esempi di codice.
-lastmod: "2026-11-02"
+lastmod: "2026-11-04"
 ---
 
 {{<section overview>}}
@@ -57,11 +57,11 @@ Esiste un altro modo per ottenere i dati dell'immagine come un matrice di array 
 
 **Esempio di conversione alternativo**
 
-Il seguente frammento di codice C# illustra un altro modo per ottenere l'output PNG scrivendo i dati dell'immagine in un flusso di memoria anziché direttamente nel file system. Questo approccio è utile quando i byte PNG generati necessitano di essere salvati in memoria per ulteriori elaborazioni, ad esempio per inviarli in rete, memorizzarli in un database o eseguire ulteriori trasformazioni prima del salvataggio.
+Il seguente frammento di codice C# mostra un altro modo per ottenere l'output PNG: il dispositivo conserva i dati dell'immagine in memoria come array di byte anziché scriverli nel file system. Questo approccio è utile quando i byte PNG generati servono per ulteriori elaborazioni, ad esempio per inviarli in rete, memorizzarli in un database o eseguire trasformazioni aggiuntive prima del salvataggio.
 
 {{< gist "aspose-com-gists" "507170b996a1d0c39bb4374e888b3205" "Example-ConvertLaTeXToPNG-Alternative.cs" >}}
 
-I file *"Page-n.png"* saranno scritti su qualsiasi percorso che specificiamo. A differenza di [Output PDF](/tex/{{lang.url-fragment}}net/latex-to-pdf/#an-alternative-way-to-write-the-main-output-pdf-file), duplicheranno i file PNG di output scritti nella directory di output.
+I file *"page-n.png"* verranno scritti in qualsiasi percorso specificato. Poiché l'opzione `DeviceWritesImages` è impostata su `false`, il dispositivo stesso non scrive file PNG nella directory di output.
 
 ## Sulle opzioni di input
 

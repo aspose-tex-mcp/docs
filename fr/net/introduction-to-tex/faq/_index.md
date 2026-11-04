@@ -6,7 +6,7 @@ linktitle: FAQ
 weight: 80
 url: /net/introduction-to-tex/faq/
 description: Obtenez des réponses à toutes les questions les plus fréquentes sur le TeX et le LaTeX, leur structure, leur utilisation et leurs particularités.
-lastmod: 2026-10-21
+lastmod: "2026-11-04"
 ---
 
 {{<section overview>}}
@@ -141,7 +141,7 @@ Cependant, si vous êtes étudiant ou professionnel dans un domaine STEM, ou si 
 
 **Q : Comment puis-je traiter un document LaTeX stocké en mémoire, sans lire ni écrire de fichiers sur le disque ?**
 
-**A :** Vous pouvez tirer parti de l'architecture d'entrée/sortie (I/O) modulable d'Aspose.TeX. En utilisant `InputMemoryDirectory` ou des flux mémoire (memory streams) conjointement avec `OutputMemoryDirectory`, vous pouvez fournir les données sources directement à partir de tableaux d'octets ou de chaînes de caractères, et récupérer les résultats (PDF ou images) entièrement en mémoire.
+**A :** Transmettez l'entrée principale au constructeur de `TeXJob` sous forme de `Stream`. Pour obtenir le résultat en mémoire, utilisez le constructeur de `PdfDevice` ou `XpsDevice` qui accepte un `Stream`, ou lisez les pages rendues dans la propriété `Result` de `ImageDevice`. Les autres fichiers d'entrée et de sortie, tels que les fichiers inclus et la transcription, peuvent être conservés dans des archives ZIP placées dans des flux à l'aide de `InputZipDirectory` et `OutputZipDirectory`.
 <br><br>
 
 **Q : Comment Aspose.TeX gère-t-il les paquets manquants ou les fichiers `.sty` personnalisés ?**

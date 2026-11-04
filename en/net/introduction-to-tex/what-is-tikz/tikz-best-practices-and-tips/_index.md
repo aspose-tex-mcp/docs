@@ -8,7 +8,7 @@ url: /net/tikz-best-practices-and-tips/
 aliases: /net/best-practices-and-tips/
 keywords: tikz best practices, tikz tips, tikz performance optimization
 description: Learn best practices and useful tips for efficient and effective use of TikZ in your TeX and LaTeX documents.
-lastmod: 2026-10-23
+lastmod: "2026-11-04"
 --- 
 
 {{<section overview>}}
@@ -111,12 +111,12 @@ Expand your TikZ knowledge with these excellent resources:
 
 ## Error Handling and Diagnostics in .NET
 
-In automated server-side .NET applications, relying on user-supplied or dynamically generated TikZ code requires defensive programming. When the Aspose.TeX engine encounters invalid LaTeX or TikZ syntax, it throws a managed TeXException.
+In automated server-side .NET applications, relying on user-supplied or dynamically generated TikZ code requires defensive programming. When the Aspose.TeX engine encounters invalid LaTeX or TikZ syntax, it does not throw an exception. It reports the problem through the `TeXJobResult` value returned by `TeXJob.Run()`.
 
 To ensure your application remains resilient and provides actionable diagnostics, follow these error-handling practices:
 
-1. Catching and Logging TeXException
-Always wrap your `TeXJob.Run()` execution in a try-catch block specifically targeting `TeXException`. This isolates typesetting failures from general application errors.
+1. Checking the job result
+Always check the value returned by `TeXJob.Run()`. `ErrorMessageIssued` and `FatalErrorStop` mean that the document contains errors, and a job that ends with `FatalErrorStop` may produce no output. Set the `Interaction` option to `NonstopMode` so that the job does not wait for user input. Keep a `try-catch` block only for general application errors, such as I/O failures.
 
 2. Inspecting the Terminal and Diagnostic Logs
 When a compilation fails, the terminal output and `.log` files generated during the job provide exact line numbers and macro expansion traces where the TikZ parser failed. You can capture or redirect terminal output using `TeXOptions` to assist with debugging.
@@ -124,12 +124,10 @@ When a compilation fails, the terminal output and `.log` files generated during 
 Here is how developers can implement a safe, error-resilient compilation method in C# when processing TikZ diagrams:
 
 ```csharp
-using System;
 using System.IO;
 using Aspose.TeX;
-using Aspose.TeX.Configuration;
-using Aspose.TeX.Presentation.Pdf;
 using Aspose.TeX.IO;
+using Aspose.TeX.Presentation.Pdf;
 
 public class TikZCompilerService
 {
@@ -138,46 +136,40 @@ public class TikZCompilerService
         errorMessage = string.Empty;
 
         // Configure standard LaTeX job options
-        TeXOptions options = TeXOptions.ConsoleAppRunSettings(
-            TeXConfig.LaTeX, 
-            Path.GetDirectoryName(inputFilePath), 
-            outputDirectory
-        );
+        TeXOptions options = TeXOptions.ConsoleAppOptions(TeXConfig.ObjectLaTeX);
+        options.InputWorkingDirectory = new InputFileSystemDirectory(Path.GetDirectoryName(inputFilePath));
+        options.OutputWorkingDirectory = new OutputFileSystemDirectory(outputDirectory);
 
-        // Enable terminal output redirection to capture diagnostic details if needed
-        options.ShowTerminal = true;
+        // Capture the terminal output and never wait for user input
+        options.TerminalOut = new OutputMemoryTerminal();
+        options.Interaction = Interaction.NonstopMode;
         options.SaveOptions = new PdfSaveOptions();
 
         try
         {
             // Execute the typesetting job
-            new TeXJob(inputFilePath, new PdfDevice(), options).Run();
+            TeXJobResult result = new TeXJob(inputFilePath, new PdfDevice(), options).Run();
+
+            // Handle TeX syntax, package, or macro expansion failures (e.g., malformed TikZ path)
+            if (result >= TeXJobResult.ErrorMessageIssued)
+            {
+                errorMessage = $"TeX job failed with {result}. See the .log file in {outputDirectory}.";
+                return false;
+            }
+
             return true;
-        }
-        catch (TeXException texEx)
-        {
-            // Handle specific TeX syntax, package, or macro expansion failures (e.g., malformed TikZ path)
-            errorMessage = $"TeX Engine Compilation Error: {texEx.Message}";
-            // TODO: Log exception details to your enterprise logging framework (e.g., NLog, Serilog)
-            return false;
         }
         catch (IOException ioEx)
         {
             // Handle file access or disk permission issues
-            errorMessage = $"I/O Error during compilation: {ioEx.Message}";
-            return false;
-        }
-        catch (Exception ex)
-        {
-            // Handle unexpected runtime failures
-            errorMessage = $"Unexpected error: {ex.Message}";
+            errorMessage = $"I/O error during compilation: {ioEx.Message}";
             return false;
         }
     }
 }
 ```
 
-Catching `TeXException` allows your application to return a clean `HTTP 400 Bad Request` or an informative error message to the client when a generated TikZ script is malformed, rather than letting a 500 server error occur.
+Checking the job result allows your application to return a clean `HTTP 400 Bad Request` or an informative error message to the client when a generated TikZ script is malformed, rather than letting a 500 server error occur.
 
 If your .NET application dynamically injects user data into TikZ coordinate or node strings, ensure proper sanitization to prevent accidental syntax breakage (such as unescaped special characters like `%`, `&`, or `#`).
 
