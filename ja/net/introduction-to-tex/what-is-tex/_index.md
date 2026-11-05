@@ -1,7 +1,7 @@
 ---
 translation: true
 template: /templates/_template-net.md
-title: TeXとは何ですか？
+title: TeX とは？ TeX の概要 | Aspose.TeX チュートリアル
 linktitle: TeXとは何ですか？
 weight: 10
 url: /net/what-is-tex/

@@ -13,7 +13,6 @@ lastmod: "2026-04-22"
 
 {{<section overview>}}
 
-# LaTeX-Editoren und der Leitfaden zur Programmierebene LaTeX3 (expl3).
 
 ##  Was ist ein LaTeX-Editor?
 

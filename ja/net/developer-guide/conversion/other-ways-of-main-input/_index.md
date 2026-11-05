@@ -1,7 +1,7 @@
 ---
 translation: true
 template: /templates/_template-net.md
-title: メイン TeX 入力ファイルを提供するその他の方法 | .NET
+title: メイン TeX 入力ファイルを提供するその他の方法 | Aspose.TeX for .NET 開発者ガイド
 linktitle: メイン TeX 入力ファイルを提供するその他の方法
 weight: 14
 url: /net/other-ways-of-main-input/

@@ -13,7 +13,6 @@ lastmod: "2026-11-04"
 
 {{<section overview>}}
 
-# Guía de plantillas LaTeX
 
 ## ¿Qué es una plantilla LaTeX?
 

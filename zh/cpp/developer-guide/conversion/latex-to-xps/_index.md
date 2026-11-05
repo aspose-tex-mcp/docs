@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-cpp.md
-title: 乳胶到XPS | C++的Aspose.TeX
+title: 乳胶到XPS | Aspose.TeX for C++ 开发指南
 linktitle: 乳胶到XPS
 weight: 12
 url: /cpp/latex-to-xps/

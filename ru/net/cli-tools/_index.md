@@ -1,7 +1,7 @@
 ---
 translation: true
 template: /templates/_template-net.md
-title: Инструменты командной строки LaTeX | Aspose.TeX для .NET
+title: Инструменты командной строки LaTeX | CLI для Aspose.TeX
 linktitle: Инструменты CLI для управления файлами TeX/LaTeX
 weight: 70
 url: /net/cli-tools/
@@ -11,8 +11,6 @@ lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
-
-# Приложения CLI для Aspose.TeX
 
 ## Введение в инструменты CLI
 

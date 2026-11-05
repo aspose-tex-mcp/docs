@@ -1,7 +1,7 @@
 ---
 translation: true
 template: /templates/_template-net.md
-title: LaTeX コマンドラインツール | Aspose.TeX for .NET
+title: LaTeX コマンドラインツール | Aspose.TeX の CLI アプリ
 linktitle: TeX/LaTeX ファイルを操作する CLI ツール
 weight: 70
 url: /net/cli-tools/
@@ -12,7 +12,6 @@ lastmod: "2026-04-22"
 
 {{<section overview>}}
 
-# Aspose.TeX の CLI アプリ
 
 ## CLI ツールの紹介
 

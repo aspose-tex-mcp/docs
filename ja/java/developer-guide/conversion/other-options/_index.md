@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-title: TEXオプションの他の管理| Java
+title: TEXオプションの他の管理| Aspose.TeX for Java 開発者ガイド
 linktitle: その他のオプション
 weight: 17
 url: /java/other-options/

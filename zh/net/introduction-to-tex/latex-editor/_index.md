@@ -13,7 +13,6 @@ lastmod: "2026-04-22"
 
 {{<section overview>}}
 
-# LaTeX 编辑器和 LaTeX 3 (expl3) 编程层指南
 
 ## 什么是 LaTeX 编辑器？
 

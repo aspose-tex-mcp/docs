@@ -1,7 +1,7 @@
 ---
 translation: true
 template: /templates/_template-net.md
-title: 製品の概要| .NETのAspose.TeX
+title: 製品の概要| Aspose.TeX for .NET 入門
 linktitle: 製品の概要
 weight: 10
 url: /net/product-overview/

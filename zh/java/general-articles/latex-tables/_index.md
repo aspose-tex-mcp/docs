@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: LaTeX 表格
-title:  Tables in LaTeX
+title:  在 LaTeX 中创建和操作表格
 weight: 50
 url: /java/latex-tables/
 keywords: LaTeX 表格、表格环境、LaTeX 表格设计、LaTeX 表格格式设置、LaTeX 表格排版、LaTeX 表格布局、LaTeX 表格间距、自定义 LaTeX 表格、LaTeX 表格对齐方式、LaTeX 表格中的多行多列

@@ -1,7 +1,7 @@
 ---
 translation: true
 template: /templates/_template-net.md
-title: TikZとは
+title: TikZ 拡張機能の紹介
 linktitle: TikZとは
 weight: 21
 url: /net/tikz-introduction/

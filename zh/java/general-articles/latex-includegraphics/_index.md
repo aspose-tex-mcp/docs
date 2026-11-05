@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: 包含图形
-title: LaTeX 包含图形
+title: LaTeX 包含图形 | Aspose.TeX 教程
 weight: 10
 url: /java/latex-includegraphics/
 keywords: LaTeX 包含图形、LaTeX 插入图像、LaTeX GraphicX、LaTeX 插入图像、LaTeX 包含图形宏包、LaTeX 绘制输入/输出、LaTeX 包含图形宽度、包含图形宽度、LaTeX 图形缩放

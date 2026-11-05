@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-cpp.md
-title: 開発者ガイド| C++のAspose.TeX
+title: 開発者ガイド| Aspose.TeX for C++ 入門
 linktitle: 開発者ガイド
 weight: 20
 url: /cpp/developer-guide/

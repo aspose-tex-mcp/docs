@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-title: LaTeX 嵌入式图形 | Aspose.TeX for Java
+title: LaTeX 嵌入式图形 | Aspose.TeX for Java 开发指南
 linktitle: LaTeX 嵌入式图形
 weight: 18	
 url: /java/latex-graphics-embedding/

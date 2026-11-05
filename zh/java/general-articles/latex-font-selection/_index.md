@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: 字体选择方案
-title: LaTeX 字体选择方案
+title: LaTeX 字体选择方案 | Aspose.TeX 教程
 weight: 60
 url: /java/latex-font-selection/
 keywords: latex、latex 字体、latex 字体选择、nfss

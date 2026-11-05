@@ -1,7 +1,7 @@
 ---
 translation: true
 template: /templates/_template-java.md
-title: 入门 | Java的Aspose.TeX
+title: 入门 | Aspose.TeX for Java 入门
 linktitle: 入门
 weight: 10
 url: /java/getting-started/

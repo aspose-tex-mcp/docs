@@ -1,7 +1,7 @@
 ---
 translation: true
 template: /templates/_template-net.md
-title: Aspose.TeX 的输出接口 | .NET
+title: Aspose.TeX 的输出接口 | Aspose.TeX for .NET 开发指南
 linktitle: Aspose.TeX 的输出接口
 weight: 16
 url: /net/aspose-tex-output/

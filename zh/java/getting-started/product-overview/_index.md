@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-title: 产品概述| Java的Aspose.TeX
+title: 产品概述| Aspose.TeX for Java 入门
 linktitle: 产品概述
 weight: 10
 url: /java/product-overview/

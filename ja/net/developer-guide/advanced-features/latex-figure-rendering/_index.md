@@ -1,7 +1,7 @@
 ---
 translation: true
 template: /templates/_template-net.md
-title: LaTeX 図レンダリング | Aspose.TeX for .NET
+title: LaTeX 図レンダリング | Aspose.TeX for .NET 開発者ガイド
 linktitle: LaTeX 図の追加
 weight: 20
 url: /net/latex-figure-rendering/

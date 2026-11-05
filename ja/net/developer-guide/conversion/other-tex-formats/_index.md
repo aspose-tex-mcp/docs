@@ -1,7 +1,7 @@
 ---
 translation: true
 template: /templates/_template-net.md
-title: その他のTeX変換出力形式| .NET
+title: その他のTeX変換出力形式| Aspose.TeX for .NET 開発者ガイド
 linktitle: その他のTeX形式
 weight: 18
 url: /net/other-tex-formats/

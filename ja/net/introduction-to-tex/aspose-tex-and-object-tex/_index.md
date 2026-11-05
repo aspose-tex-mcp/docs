@@ -1,7 +1,7 @@
 ---
 translation: true
 template: /templates/_template-net.md
-linktitle: Object TeX
+linktitle: Object TeX | Aspose.TeX チュートリアル
 title: Aspose.TeXおよびObject TeX
 weight: 11
 url: /net/aspose-tex-and-object-tex/

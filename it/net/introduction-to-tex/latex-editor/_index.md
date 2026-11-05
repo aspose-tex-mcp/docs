@@ -13,7 +13,6 @@ lastmod: "2026-04-22"
 
 {{<section overview>}}
 
-# Editor LaTeX e guida al livello di programmazione LaTeX3 (expl3).
 
 ##  Cos'è un editor LaTeX?
 

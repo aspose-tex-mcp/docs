@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-net.md
 linktitle: TeX简介
-title: TeX简介 | .NET的Aspose.TeX
+title: TeX简介 | Aspose.TeX for .NET 开发指南
 weight: 10
 url: /net/introduction-to-tex/
 description: TeX基本术语和概念的说明。 TeX是一种格式，如何使用TeX文件，什么是LaTeX，还有更多问题得到回答。

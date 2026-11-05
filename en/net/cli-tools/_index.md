@@ -1,7 +1,7 @@
 ---
 translation: true
 template: /templates/_template-net.md
-title: LaTeX Command Line Tools | Aspose.TeX for .NET
+title: LaTeX Command Line Tools | CLI APPS for Aspose.TeX
 linktitle: CLI Tools to manipulate TeX/LaTeX files
 weight: 70
 url: /net/cli-tools/
@@ -12,7 +12,6 @@ lastmod: "2026-04-03"
 
 {{<section overview>}}
 
-# CLI APPS for Aspose.TeX
 
 ## Introduction to CLI Tools
 

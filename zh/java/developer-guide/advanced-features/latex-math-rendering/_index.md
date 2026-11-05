@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-title: LaTeX数学公式渲染 | Aspose.TeX for Java
+title: LaTeX数学公式渲染 | Aspose.TeX for Java 开发指南
 linktitle: LaTeX数学公式渲染
 weight: 10
 url: /java/latex-math-formula-rendering/

@@ -1,7 +1,7 @@
 ---
 translation: true
 template: /templates/_template-net.md
-title: 入门 | .NET的Aspose.TeX
+title: 入门 | Aspose.TeX for .NET 入门
 linktitle: 入门
 weight: 20
 url: /net/getting-started/

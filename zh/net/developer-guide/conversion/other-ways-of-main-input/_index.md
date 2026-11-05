@@ -1,7 +1,7 @@
 ---
 translation: true
 template: /templates/_template-net.md
-title: 提供主 TeX 输入文件的其他方式 | .NET
+title: 提供主 TeX 输入文件的其他方式 | Aspose.TeX for .NET 开发指南
 linktitle: 提供主 TeX 输入文件的其他方式
 weight: 14
 url: /net/other-ways-of-main-input/

@@ -13,7 +13,6 @@ lastmod: "2026-11-04"
 
 {{<section overview>}}
 
-# Guide des modèles LaTeX
 
 ## Qu'est-ce qu'un modèle LaTeX ?
 

@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-cpp.md
-title: 安装| C++的Aspose.TeX
+title: 安装| Aspose.TeX for Java 入门
 linktitle: 安装
 weight: 60
 url: /cpp/installation/

@@ -1,7 +1,7 @@
 ---
 translation: true
 template: /templates/_template-net.md
-title: 機能リスト| .NETのAspose.TeX
+title: 機能リスト| Aspose.TeX for .NET 入門
 linktitle: 機能リスト
 weight: 30
 url: /net/feature-list/

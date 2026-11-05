@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: フォント選択スキーム
-title: LaTeX フォント選択スキーム
+title: LaTeX フォント選択スキーム | Aspose.TeX チュートリアル
 weight: 60
 url: /java/latex-font-selection/
 keywords: latex、latex フォント、latex フォント選択、nfss

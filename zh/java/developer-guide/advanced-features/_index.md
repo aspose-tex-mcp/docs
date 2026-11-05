@@ -1,7 +1,7 @@
 ---
 translation: true
 template: /templates/_template-java.md
-title: 高级功能| Java的Aspose.TeX
+title: 高级功能| Aspose.TeX for Java 入门
 linktitle: 高级功能
 weight: 20
 url: /java/advanced-features/

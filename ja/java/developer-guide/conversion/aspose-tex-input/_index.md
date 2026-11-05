@@ -1,7 +1,7 @@
 ---
 translation: true
 template: /templates/_template-java.md
-title: Aspose.TeXの入力インターフェイス| Java
+title: Aspose.TeXの入力インターフェイス| Aspose.TeX for Java 開発者ガイド
 linktitle: Aspose.TeXの入力インターフェイス
 weight: 15
 url: /java/aspose-tex-input/

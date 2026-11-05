@@ -1,7 +1,7 @@
 ---
 translation: true
 template: /templates/_template-net.md
-title: TeXについてのよくある質問
+title: TeXについてのよくある質問 | Aspose.TeX チュートリアル
 linktitle: よくある質問
 weight: 80
 url: /net/introduction-to-tex/faq/

@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: LaTeX tablas
-title: Tablas LaTeX
+title: Creación y manipulación de tablas en LaTeX
 weight: 50
 url: /java/latex-tables/
 keywords: Tablas LaTeX, entorno tabular, diseño de tablas LaTeX, formato de tablas en LaTeX, composición tipográfica de tablas en LaTeX, diseño de tablas LaTeX, espaciado de tablas LaTeX, personalización de tablas LaTeX, alineación de tablas LaTeX, varias filas y columnas en tablas LaTeX

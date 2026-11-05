@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-conversion-cpp.md
-title: 乳胶到PDF| C++的Aspose.TeX
+title: 乳胶到PDF| Aspose.TeX for C++ 开发指南
 linktitle: 乳胶到PDF
 weight: 11
 url: /cpp/latex-to-pdf/

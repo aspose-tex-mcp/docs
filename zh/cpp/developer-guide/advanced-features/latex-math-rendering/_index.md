@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-cpp.md
-title: LaTeX 数学公式渲染 | C++
+title: LaTeX 数学公式渲染 | Aspose.TeX for C++ 开发指南
 linktitle: LaTeX 数学公式渲染
 weight: 10
 url: /cpp/latex-math-formula-rendering/

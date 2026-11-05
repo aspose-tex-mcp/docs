@@ -12,7 +12,6 @@ lastmod: "2026-02-19"
 
 {{<section overview>}}
 
-# 最も人気のある LaTeX 数学記号
 
 ## LaTeX の総和記号
 

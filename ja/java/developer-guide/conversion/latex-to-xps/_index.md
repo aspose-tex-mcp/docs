@@ -1,7 +1,7 @@
 ---
 translation: true
 template: /templates/_template-java.md
-title: ラテックスからXPS | Java
+title: ラテックスからXPS | Aspose.TeX for Java 開発者ガイド
 linktitle: ラテックスからXPS
 weight: 12
 url: /java/latex-to-xps/

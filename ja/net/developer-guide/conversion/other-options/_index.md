@@ -1,7 +1,7 @@
 ---
 translation: true
 template: /templates/_template-net.md
-title: TeXオプションの他の管理| .NET
+title: TeXオプションの他の管理| Aspose.TeX for .NET 開発者ガイド
 linktitle: その他のオプション
 weight: 17
 url: /net/other-options/

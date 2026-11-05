@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: LaTeX Tableaux
-title: Tableaux LaTeX
+title: Création et manipulation de tableaux en LaTeX
 weight: 50
 url: /java/latex-tables/
 keywords: Tableaux LaTeX, environnement tabulaire, conception de tableaux LaTeX, formatage des tableaux dans LaTeX, composition des tableaux dans LaTeX, disposition des tableaux LaTeX, espacement des tableaux LaTeX, personnalisation des tableaux LaTeX, alignement des tableaux LaTeX, multilignes et multicolonnes dans les tableaux LaTeX
