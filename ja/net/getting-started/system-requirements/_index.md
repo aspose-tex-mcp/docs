@@ -1,7 +1,7 @@
 ---
 translation: true
 template: /templates/_template-net.md
-title: システム要件| .NETのAspose.TeX
+title: システム要件| Aspose.TeX for .NET 入門
 linktitle: システム要件
 weight: 50
 url: /net/system-requirements/

@@ -13,8 +13,6 @@ lastmod: "2026-11-04"
 
 {{<section overview>}}
 
-# Leitfaden zu LaTeX-Vorlagen
-
 ## Was ist eine LaTeX-Vorlage?
 
 Eine LaTeX-Vorlage bündelt eine **Klasse** (`.cls`), einen **Stil** (`.sty`), Beispiel-`.tex`-Dateien und unterstützende Assets (Logos, Bibliografiedateien usw.), die das Layout, die Typografie und die Struktur für einen bestimmten Dokumenttyp definieren – Zeitschriftenartikel, Abschlussarbeit, Lebenslauf, Poster, Foliensatz und mehr.

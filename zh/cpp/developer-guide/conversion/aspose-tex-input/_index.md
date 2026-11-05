@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-cpp.md
-title: Aspose.TeX的输入接口| C++的Aspose.TeX
+title: Aspose.TeX的输入接口| Aspose.TeX for C++ 开发指南
 linktitle: Aspose.TeX的输入接口
 weight: 15
 url: /cpp/aspose-tex-input/

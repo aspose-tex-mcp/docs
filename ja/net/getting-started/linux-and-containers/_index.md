@@ -1,7 +1,7 @@
 ---
 translation: true
 template: /templates/_template-net.md
-title: Linux、macOS、Docker | .NETのAspose.TeX
+title: Linux、macOS、Docker | Aspose.TeX for .NET 入門
 linktitle: Linux、macOS、Docker
 weight: 55
 url: /net/linux-and-containers/

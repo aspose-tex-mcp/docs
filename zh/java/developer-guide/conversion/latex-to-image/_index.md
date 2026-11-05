@@ -1,7 +1,7 @@
 ---
 translation: true
 template: /templates/_template-java.md
-title: LaTeX转图像 | Java
+title: LaTeX转图像 | Aspose.TeX for Java 开发指南
 linktitle: LaTeX转图像
 weight: 10
 url: /java/latex-to-image/

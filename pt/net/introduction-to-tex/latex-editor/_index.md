@@ -13,7 +13,6 @@ lastmod: "2026-04-22"
 
 {{<section overview>}}
 
-# Editores LaTeX e o guia da camada de programação LaTeX3 (expl3)
 
 ##  O que é um editor LaTeX?
 

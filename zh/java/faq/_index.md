@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-title: 常见问题| Java的Aspose.TeX
+title: 常见问题| Aspose.TeX for Java 入门
 linktitle: 常问问题
 weight: 80
 url: /java/faq/

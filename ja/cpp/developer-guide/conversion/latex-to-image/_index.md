@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-conversion-cpp.md
-title: イメージへのラテックス| C++
+title: イメージへのラテックス| Aspose.TeX for C++ 開発者ガイド
 linktitle: 画像からラテックス
 weight: 10
 url: /cpp/latex-to-image/

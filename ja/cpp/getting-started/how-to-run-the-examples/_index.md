@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-cpp.md
-title: C ++で例を実行する方法
+title: C ++で例を実行する方法 | Aspose.TeX for C++ 入門
 linktitle: 例を実行する方法
 weight: 80
 url: /cpp/how-to-run-the-examples/

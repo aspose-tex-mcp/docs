@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: Tabellen in LaTeX
-title: LaTeX-Tabellen 
+title: Erstellen und Bearbeiten von Tabellen in LaTeX
 weight: 50
 url: /java/latex-tables/
 keywords: LaTeX-Tabellen, tabellarische Umgebung, LaTeX-Tabellendesign, Tabellenformatierung in LaTeX, Satztabellen in LaTeX, LaTeX-Tabellenlayout, LaTeX-Tabellenabstand, Anpassen von LaTeX-Tabellen, LaTeX-Tabellenausrichtung, mehrzeilig und mehrspaltig in LaTeX-Tabellen

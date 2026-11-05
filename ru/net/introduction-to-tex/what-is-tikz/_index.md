@@ -1,7 +1,7 @@
 ---
 translation: true
 template: /templates/_template-net.md
-title: Что такое TikZ
+title: Введение в расширение TikZ
 linktitle: Введение в TikZ
 weight: 21
 url: /net/tikz-introduction/

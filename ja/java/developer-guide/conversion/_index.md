@@ -1,7 +1,7 @@
 ---
 translation: true
 template: /templates/_template-java.md
-title: 変換機能| Java用のAspose.TeX
+title: 変換機能| Aspose.TeX for Java 開発者ガイド
 linktitle: 変換
 weight: 10
 url: /java/conversion/

@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: AMS的乳胶包装
-title: 用AMS的乳胶包装建造数学
+title: 用AMS的乳胶包装建造数学 | Aspose.TeX 教程
 weight: 40
 url: /java/what-is-ams-latex/
 keywords: AMS-LATEX，AMS乳胶，乳胶数学，乳胶配方，乳胶AMS，乳胶方程，乳胶数学表达式

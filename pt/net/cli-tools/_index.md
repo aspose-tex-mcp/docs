@@ -1,7 +1,7 @@
 ---
 translation: true
 template: /templates/_template-net.md
-title: Ferramentas da linha de comando do LaTeX | Aspose.TeX para .NET
+title: Ferramentas da linha de comando do LaTeX | CLI para Aspose.TeX
 linktitle: Ferramentas da CLI para manipular arquivos TeX/LaTeX
 weight: 70
 url: /net/cli-tools/
@@ -12,7 +12,6 @@ lastmod: "2026-04-22"
 
 {{<section overview>}}
 
-# Aplicativos da CLI para Aspose.TeX
 
 ## Introdução às ferramentas da CLI
 

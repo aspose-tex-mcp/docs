@@ -12,7 +12,6 @@ lastmod: "2024-10-30"
 
 {{<section overview>}}
 
-# Los símbolos matemáticos de LaTeX más populares
 
 ## El símbolo de suma de LaTeX
 

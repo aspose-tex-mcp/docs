@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-cpp.md
-title: 许可| C++的Aspose.TeX
+title: 许可| Aspose.TeX for Java 入门
 linktitle: 许可
 weight: 70
 url: /cpp/licensing/

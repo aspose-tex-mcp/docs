@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-title: LaTeX 图形渲染 | Aspose.TeX for Java
+title: LaTeX 图形渲染 | Aspose.TeX for Java 开发指南
 linktitle: LaTeX 图形渲染
 weight: 20
 url: /java/latex-figure-rendering/

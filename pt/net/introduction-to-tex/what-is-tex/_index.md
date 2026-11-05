@@ -1,7 +1,7 @@
 ---
 translation: true
 template: /templates/_template-net.md
-title: O que é TeX? 
+title: O que é o TeX? Introdução ao TeX
 linktitle: O que é TeX?
 weight: 10
 url: /net/what-is-tex/

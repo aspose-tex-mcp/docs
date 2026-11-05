@@ -1,7 +1,7 @@
 ---
 translation: true
 template: /templates/_template-net.md
-title: LaTeX 命令行工具 | Aspose.TeX for .NET
+title: LaTeX 命令行工具 | Aspose.TeX 的 CLI 应用
 linktitle: CLI 工具 用于 操作 TeX/LaTeX 文件
 weight: 70
 url: /net/cli-tools/
@@ -11,8 +11,6 @@ lastmod: "2026-04-22"
 ---
 
 {{<section overview>}}
-
-# Aspose.TeX 的 CLI 应用
 
 ## CLI 工具简介
 

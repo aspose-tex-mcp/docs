@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-title: LaTeX 埋め込み画像 | Aspose.TeX for .NET
+title: LaTeX 埋め込み画像 | Aspose.TeX for .NET 開発者ガイド
 linktitle: LaTeX 埋め込み画像
 weight: 18	
 url: /net/latex-embedded-graphics/

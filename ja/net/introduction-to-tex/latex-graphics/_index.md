@@ -1,7 +1,7 @@
 ---
 translation: true
 template: /templates/_template-net.md
-title: LaTeX グラフィックス | \includegraphics コマンド
+title: LaTeX グラフィックス | \includegraphics コマンド | Aspose.TeX チュートリアル
 linktitle: グラフィックス LaTeX を含める
 weight: 18	
 url: /net/latex-graphics/

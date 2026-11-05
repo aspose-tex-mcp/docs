@@ -1,7 +1,7 @@
 ---
 translation: true
 template: /templates/_template-java.md
-title: Aspose.TeXの出力インターフェイス| Java
+title: Aspose.TeXの出力インターフェイス| Aspose.TeX for Java 開発者ガイド
 linktitle: Aspose.TeXの出力インターフェイス
 weight: 16
 url: /java/aspose-tex-output/

@@ -13,7 +13,6 @@ lastmod: "2026-11-04"
 
 {{<section overview>}}
 
-# Руководство по шаблонам LaTeX
 
 ## Что такое шаблон LaTeX?
 

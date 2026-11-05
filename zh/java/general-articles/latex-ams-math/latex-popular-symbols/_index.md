@@ -12,7 +12,6 @@ lastmod: "2026-02-19"
 
 {{<section overview>}}
 
-# 最受欢迎的 LaTeX 数学符号
 
 ## LaTeX 求和符号
 

@@ -1,7 +1,7 @@
 ---
 translation: true
 template: /templates/_template-net.md
-title: LaTeX ファイルの一般的な問題とその解決方法
+title: LaTeX ファイルの一般的な問題とその解決方法 | Aspose.TeX チュートリアル
 linktitle: LaTeX ファイルのトラブルシューティング
 weight: 10
 url: /net/troubleshoot-with-latex-files/

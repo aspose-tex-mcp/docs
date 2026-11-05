@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-net.md
 linktitle: 例を実行する方法
-title: C＃で例を実行する方法| .NETのAspose.TeX
+title: C＃で例を実行する方法| Aspose.TeX for .NET 入門
 weight: 80
 url: /net/how-to-run-the-examples/
 description: このページには、.NET用のAspose.TeXソリューションの例を実行するために実行される必要があるすべての要件と手順があります。

@@ -1,7 +1,7 @@
 ---
 translation: true
 template: /templates/_template-net.md
-title: LaTeX-Befehlszeilentools | Aspose.TeX für .NET
+title: LaTeX-Befehlszeilentools | CLI-APPS für Aspose.TeX
 linktitle: CLI-Tools zum Bearbeiten von TeX/LaTeX-Dateien
 weight: 70
 url: /net/cli-tools/
@@ -12,7 +12,6 @@ lastmod: "2026-04-22"
 
 {{<section overview>}}
 
-# CLI-APPS für Aspose.TeX
 
 ## Einführung in CLI-Tools
 

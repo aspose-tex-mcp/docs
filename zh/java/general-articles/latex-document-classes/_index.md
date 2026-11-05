@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: LaTeX 文档类
-title: LaTeX 文档类
+title: LaTeX 文档类 | Aspose.TeX 教程
 weight: 20
 url: /java/latex-document-classes/
 keywords: LaTeX 文章类、LaTeX 文档类、LaTeX 文档模板、LaTeX 文章、LaTeX 书籍、LaTeX 幻灯片、LaTeX 报告、LaTeX 信函、LaTeX 中的文档类

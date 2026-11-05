@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-cpp.md
-title: 製品の概要| C++のAspose.TeX
+title: 製品の概要| Aspose.TeX for C++ 入門
 linktitle: 製品の概要
 weight: 10
 url: /cpp/product-overview/

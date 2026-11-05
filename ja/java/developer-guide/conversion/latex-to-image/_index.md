@@ -1,7 +1,7 @@
 ---
 translation: true
 template: /templates/_template-java.md
-title: イメージへのラテックス| Java
+title: イメージへのラテックス| Aspose.TeX for Java 開発者ガイド
 linktitle: 画像からラテックス
 weight: 10
 url: /java/latex-to-image/

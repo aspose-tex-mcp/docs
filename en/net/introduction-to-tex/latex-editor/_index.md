@@ -13,7 +13,6 @@ lastmod: "2026-04-22"
 
 {{<section overview>}}
 
-# LaTeX editors and the LaTeX 3 (expl3) programming layer guide
 
 ##  What is a LaTeX editor?
 

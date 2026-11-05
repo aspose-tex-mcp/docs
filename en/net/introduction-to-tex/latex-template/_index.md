@@ -13,7 +13,6 @@ lastmod: "2026-11-04"
 
 {{<section overview>}}
 
-# Guide to LaTeX templates
 
 ## What is a LaTeX template?
 

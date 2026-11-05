@@ -1,7 +1,7 @@
 ---
 translation: true
 template: /templates/_template-net.md
-title: Що таке TeX? 
+title: Що таке TeX? Вступ до TeX
 linktitle: Що таке TeX?
 weight: 10
 url: /net/what-is-tex/

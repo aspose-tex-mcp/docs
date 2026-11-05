@@ -1,7 +1,7 @@
 ---
 translation: true
 template: /templates/_template-net.md
-title: 什么是 TeX？
+title: 什么是 TeX？TeX 简介
 linktitle: 什么是 TeX？
 weight: 10
 url: /net/what-is-tex/

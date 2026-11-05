@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: 排版数学公式
-title: 用标准乳胶的排版数学公式
+title: 用标准乳胶的排版数学公式 | Aspose.TeX 教程
 weight: 30
 url: /java/latex-math/
 keywords: 乳胶，乳胶数学公式，乳胶数学，乳胶公式，乳胶方程，乳胶数学表达式

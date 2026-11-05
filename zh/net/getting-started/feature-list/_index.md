@@ -1,7 +1,7 @@
 ---
 translation: true
 template: /templates/_template-net.md
-title: 功能列表| .NET的Aspose.TeX
+title: 功能列表| Aspose.TeX for .NET 入门
 linktitle: 功能列表
 weight: 30
 url: /net/feature-list/

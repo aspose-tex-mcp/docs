@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-title: 支持的文件格式| Java的Aspose.TeX
+title: 支持的文件格式| Aspose.TeX for Java 入门
 linktitle: 支持的文件格式
 weight: 20
 url: /java/supported-file-formats/

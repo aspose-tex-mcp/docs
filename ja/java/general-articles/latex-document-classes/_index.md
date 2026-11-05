@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-linktitle: LaTeX 文書クラス
+linktitle: LaTeX 文書クラス | Aspose.TeX チュートリアル
 title: LaTeX 文書クラス
 weight: 20
 url: /java/latex-document-classes/

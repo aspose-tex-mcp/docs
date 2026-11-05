@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-title: LaTeX ファイルの修復 | Aspose.TeX for Java
+title: LaTeX ファイルの修復 | Aspose.TeX for Java 開発者ガイド
 linktitle: LaTeX ファイルの修復
 weight: 30
 url: /java/latex-repair/

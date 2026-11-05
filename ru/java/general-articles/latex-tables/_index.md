@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: LaTeX Таблицы
-title: Создание и рендеринг таблиц LaTeX
+title: Создание таблиц в LaTeX и работа с ними
 weight: 50
 url: /java/latex-tables/
 keywords: делать таблицу в latex, табличная среда tabular, дизайн таблиц LaTeX, форматирование таблиц в LaTeX, верстка таблиц в LaTeX, макет таблицы LaTeX, интервал между таблицами LaTeX, настройка таблиц LaTeX, выравнивание таблиц LaTeX, многострочная и многостолбцовая структура в таблицах LaTeX

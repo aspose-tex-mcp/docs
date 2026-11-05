@@ -1,7 +1,7 @@
 ---
 translation: true
 template: /templates/_template-java.md
-title: 开发人员指南| Java的Aspose.TeX
+title: 开发人员指南| Aspose.TeX for Java 开发指南
 linktitle: 开发人员指南
 weight: 20
 url: /java/developer-guide/

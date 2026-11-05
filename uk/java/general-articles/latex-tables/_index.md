@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: LaTeX Таблиці
-title: Таблиці LaTeX | Aspose.TeX для Java
+title: Створення таблиць у LaTeX та робота з ними
 weight: 50
 url: /java/latex-tables/
 keywords: Таблиці в LaTeX, табличне середовище, дизайн таблиці LaTeX, форматування таблиці в LaTeX, таблиці верстки в LaTeX, макет таблиці LaTeX, інтервал у таблиці LaTeX, налаштування таблиць LaTeX, вирівнювання таблиці LaTeX, багаторядковий і багатостовпцевий у таблицях LaTeX

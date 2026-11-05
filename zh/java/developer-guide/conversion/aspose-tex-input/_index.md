@@ -1,7 +1,7 @@
 ---
 translation: true
 template: /templates/_template-java.md
-title: Aspose.TeX 的输入接口 | Java
+title: Aspose.TeX 的输入接口 | Aspose.TeX for Java 开发指南
 linktitle: Aspose.TeX 的输入接口
 weight: 15
 url: /java/aspose-tex-input/

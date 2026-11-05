@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: ラテックスに関する一般記事
-title: ラテックスに関する一般的な記事| Java用のAspose.TeX
+title: ラテックスに関する一般的な記事| Aspose.TeX for Java 入門
 weight: 10
 url: /java/general-articles-latex/
 description: JavaでLaTeXを扱うためのガイドをご覧ください。マクロ定義、ドキュメントのライフサイクル、外部依存関係なしでの自動組版の扱い方を学びましょう。

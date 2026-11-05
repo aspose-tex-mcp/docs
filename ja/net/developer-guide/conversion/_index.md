@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-net.md
-title: 変換機能| .NETのAspose.TeX
+title: 変換機能| Aspose.TeX for .NET 開発者ガイド
 linktitle: 変換
 weight: 10
 url: /net/conversion/

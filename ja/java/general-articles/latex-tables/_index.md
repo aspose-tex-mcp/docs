@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: LaTeX テーブル
-title: LaTeX の表
+title: LaTeX での表の作成と操作
 weight: 50
 url: /java/latex-tables/
 keywords: LaTeX 表、表形式環境、LaTeX 表のデザイン、LaTeX での表の書式設定、LaTeX 表の組版、LaTeX 表のレイアウト、LaTeX 表の間隔、LaTeX 表のカスタマイズ、LaTeX 表の配置、LaTeX 表における複数行と複数列

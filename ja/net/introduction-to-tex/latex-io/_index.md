@@ -1,7 +1,7 @@
 ---
 translation: true
 template: /templates/_template-net.md
-title: LaTeX 入出力  
+title: LaTeX 入出力 | Aspose.TeX チュートリアル
 linktitle: LaTeX I/O 
 weight: 17
 url: /net/latex-io/

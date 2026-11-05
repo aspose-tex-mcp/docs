@@ -1,7 +1,7 @@
 ---
 translation: true
 template: /templates/_template-net.md
-title: 常见问题| .NET的Aspose.TeX
+title: 常见问题| Aspose.TeX for .NET 开发指南
 linktitle: 常问问题
 weight: 80
 url: /net/faq/

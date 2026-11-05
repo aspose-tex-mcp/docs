@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-cpp.md
-title: 提供主Tex输入文件的其他方法| C++的Aspose.TeX
+title: 提供主Tex输入文件的其他方法| Aspose.TeX for C++ 开发指南
 linktitle: 提供主Tex输入文件的其他方法
 weight: 14
 url: /cpp/other-ways-of-main-input/

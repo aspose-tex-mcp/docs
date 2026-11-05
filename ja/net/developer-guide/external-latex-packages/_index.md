@@ -1,7 +1,7 @@
 ---
 translation: true
 template: /templates/_template-net.md
-title: 外部 LaTeX パッケージ | Aspose.TeX for .NET
+title: 外部 LaTeX パッケージ | Aspose.TeX for .NET 開発者ガイド
 linktitle: 外部 LaTeX パッケージ
 weight: 20
 url: /net/external-latex-packages/

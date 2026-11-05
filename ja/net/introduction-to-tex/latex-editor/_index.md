@@ -13,7 +13,6 @@ lastmod: "2026-04-22"
 
 {{<section overview>}}
 
-# LaTeX エディタと LaTeX 3 (expl3) プログラミング層ガイド
 
 ## LaTeX エディタとは？
 

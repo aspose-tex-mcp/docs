@@ -2,7 +2,7 @@
 translation: true
 template: /templates/_template-java.md
 linktitle: 乳胶的一般文章
-title: 有关乳胶的一般文章| Java的Aspose.TeX
+title: 有关乳胶的一般文章| Aspose.TeX 教程
 weight: 10
 url: /java/general-articles-latex/
 description: 探索在 Java 中使用 LaTeX 的指南。学习如何处理宏定义、文档生命周期以及在不依赖外部组件的情况下实现自动排版。

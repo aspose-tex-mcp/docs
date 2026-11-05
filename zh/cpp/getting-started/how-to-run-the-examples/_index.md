@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-cpp.md
-title: 如何运行示例| C++的Aspose.TeX
+title: 如何运行示例| Aspose.TeX for Java 入门
 linktitle: 如何运行示例
 weight: 80
 url: /cpp/how-to-run-the-examples/

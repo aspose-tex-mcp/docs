@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-java.md
-title: 功能列表| Java的Aspose.TeX
+title: 功能列表| Aspose.TeX for Java 入门
 linktitle: 功能列表
 weight: 30
 url: /java/feature-list/

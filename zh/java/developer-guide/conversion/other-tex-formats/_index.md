@@ -1,7 +1,7 @@
 ---
 translation: true
 template: /templates/_template-java.md
-title: 其他TeX转换输出格式 | Java
+title: 其他TeX转换输出格式 | Aspose.TeX for Java 开发指南
 linktitle: 其他TeX格式
 weight: 18
 url: /java/other-tex-formats/

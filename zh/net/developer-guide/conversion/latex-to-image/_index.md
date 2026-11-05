@@ -1,7 +1,7 @@
 ---
 translation: true
 template: /templates/_template-net.md
-title: LaTeX 转图像 | .NET
+title: LaTeX 转图像 | Aspose.TeX for .NET 开发指南
 linktitle: LaTeX 转图像
 weight: 10
 url: /net/latex-to-image/

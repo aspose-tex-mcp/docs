@@ -1,7 +1,7 @@
 ﻿---
 translation: true
 template: /templates/_template-cpp.md
-title: 常见问题| C++的Aspose.TeX
+title: 常见问题| Aspose.TeX for C++ 开发指南
 linktitle: 常问问题
 weight: 80
 url: /cpp/faq/
