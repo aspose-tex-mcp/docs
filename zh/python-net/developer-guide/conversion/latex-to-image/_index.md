@@ -18,7 +18,9 @@ lastmod: "2025-06-10"
 
 现在，让我们研究Python代码，该代码提供了将乳胶转换为PNG格式的最直接方法。
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Conversion-LaTeXToPng-Simplest.py" >}}
+将 `ASPOSE_TEX_INPUT_FILE` 设置为 LaTeX 文件路径，将 `ASPOSE_TEX_OUTPUT_DIR` 设置为输出目录，或修改示例中的路径。默认值为 `hello-world.ltx` 和 `output`。请先应用许可证。示例在主文档所在目录查找其他输入文件，并以非交互方式处理。 [许可证](/tex/zh/python-net/licensing/)
+
+{{< gist "aspose-com-gists" "3616f5e300517031e6a4ae4158e24776" "Aspose.TeX.Examples-Conversion-LaTeXToPng-Simplest.py" >}}
 
 首先，我们需要使用[console_app_options()](https://reference.aspose.com/tex/python-net/aspose.tex/texoptions/console_app_options/#aspose.tex.TeXConfig)  方法创建[Texoptions](https://reference.aspose.com/tex/python-net/aspose.tex/texoptions/)类的实例。不用担心名称，这只是创建实例的静态方法。此方法将[TexConfig](https://reference.aspose.com/tex/python-net/aspose.tex/texconfig/)类的[Object_Latex](https://reference.aspose.com/tex/python-net/aspose.tex/texconfig/object_latex/)实例，它非常适合转换[latex文件](/tex/{{lang.url-fragment}}net/latex-io/#latex-file)。此配置设置了对象Tex引擎以加载对象乳胶格式并准备好处理乳胶文件。对象乳胶格式基本与[乳胶格式](/tex/{{lang.url-fragment}}net/what-is-latex/)相同，但是它使用[Object tex](/tex/{{lang.url-fragment}}net/aspose-tex-and-object-tex/#object-tex)特定基本来定义页面指标。
 
@@ -30,8 +32,7 @@ lastmod: "2025-06-10"
 
 现在，剩下的就是[运行](https://reference.aspose.com/tex/python-net/aspose.tex/texjob/run/#)工作。
 
-执行作业后，无论其成功或失败如何，我们将遇到的第一个输出是终端输出。在成功运行的情况下，输出将类似于以下内容：
-
+示例将终端输出保存在 `OutputMemoryTerminal` 中。输出目录还包含 `.log` 日志。转换成功时，日志类似如下内容；版本信息可能不同：
 
 ```text
 This is ObjectTeX, Version 3.1415926-1.0 (Aspose.TeX 21.8)
@@ -55,13 +56,13 @@ Transcript written on hello-world.log.
 
 还有一种替代方法可以将图像数据作为字节数组的数组获取，其中第二维中的每个数组代表单独的页面的图像数据。
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Conversion-LaTeXToPng-Alternative.py" >}}
+{{< gist "aspose-com-gists" "3616f5e300517031e6a4ae4158e24776" "Aspose.TeX.Examples-Conversion-LaTeXToPng-Alternative.py" >}}
 
-“ Page-n.png”文件可以写入任何指定的路径。与[PDF输出](/tex/{{lang.url-fragment}}python-net/latex-to-pdf/#an-alternative-way-to-write-the-main-output-pdf-file)不同，这些PNG文件将复制写入输出目录的输出PNG文件。
+示例先在 `PngSaveOptions` 上设置 `device_writes_images = False`，再将其赋给 `options.save_options`。返回的各页字节数据分别保存为 `page-1.png`、`page-2.png` 等，因此设备不会生成重复的 PNG 文件。
 
 ## 关于输入选项
 
-如果我们的主输入文件需要依赖项，例如基本 LaTeX 系统或受支持的软件包中未包含的软件包，我们需要设置 [required_input_directory](https://reference.aspose.com/tex/python-net/aspose.tex/texoptions/required_input_directory/) 选项，设置方式类似于设置 *output_working_directory* 选项，并将依赖项放置在该目录中。依赖项可以根据需要组织到子目录中。如果我们需要在排版过程中包含文件，例如外部图形文件，我们还需要将 [input_working_directory](https://reference.aspose.com/tex/python-net/aspose.tex/texoptions/input_working_directory/) 设置为这些文件的存储位置。我们还可以将主输入文件放置在输入目录中，并在 `run()` 方法中指定相对路径；如果主输入文件位于根目录中，则无需指定任何路径。还有关于 **Aspose.TeX** 中的 [输入目录概念](/tex/{{lang.url-fragment}}python-net/aspose-tex-input/) 的更多详细信息以及所提供的实现描述。
+如果我们的主输入文件需要依赖项，例如基本 LaTeX 系统或受支持的软件包中未包含的软件包，我们需要设置 [required_input_directory](https://reference.aspose.com/tex/python-net/aspose.tex/texoptions/required_input_directory/) 选项，设置方式类似于设置 *output_working_directory* 选项，并将依赖项放置在该目录中。依赖项可以根据需要组织到子目录中。如果我们需要在排版过程中包含文件，例如外部图形文件，我们还需要将 [input_working_directory](https://reference.aspose.com/tex/python-net/aspose.tex/texoptions/input_working_directory/) 设置为这些文件的存储位置。我们还可以将主输入文件放置在输入目录中，并向 `TeXJob` 构造函数传入相对路径；如果主输入文件位于根目录中，则无需指定任何路径。还有关于 **Aspose.TeX** 中的 [输入目录概念](/tex/{{lang.url-fragment}}python-net/aspose-tex-input/) 的更多详细信息以及所提供的实现描述。
 
 还可以在这里学习[其他TEX职位选项](/tex/{{lang.url-fragment}}python-net/other-options/)。
 
@@ -71,19 +72,19 @@ Transcript written on hello-world.log.
 
 ## 将乳胶转换为JPG
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Conversion-LaTeXToJpeg.py" >}}
+{{< gist "aspose-com-gists" "3616f5e300517031e6a4ae4158e24776" "Aspose.TeX.Examples-Conversion-LaTeXToJpeg.py" >}}
 
 **您还可以探索免费的[用于 LaTeX 到 TIFF 转换的 Web 应用程序](https://products.aspose.app/tex/conversion/latex-to-tiff)，它是使用 [Aspose.TeX for .NET API](https://products.aspose.com/tex/net/) 开发的。**
 
 ## 将乳胶转换为tiff
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Conversion-LaTeXToTiff.py" >}}
+{{< gist "aspose-com-gists" "3616f5e300517031e6a4ae4158e24776" "Aspose.TeX.Examples-Conversion-LaTeXToTiff.py" >}}
 
 **您还可以探索免费的[用于 LaTeX 到 TIFF 转换的 Web 应用程序](https://products.aspose.app/tex/conversion/latex-to-tiff)，它是使用 [Aspose.TeX for .NET API](https://products.aspose.com/tex/net/) 开发的。**
 
 ## 将乳胶转换为BMP
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Conversion-LaTeXToBmp.py" >}}
+{{< gist "aspose-com-gists" "3616f5e300517031e6a4ae4158e24776" "Aspose.TeX.Examples-Conversion-LaTeXToBmp.py" >}}
 
 **您还可以探索免费的[用于 LaTeX 到 BMP 转换的 Web 应用程序](https://products.aspose.app/tex/conversion/latex-to-bmp)，它是使用 [Aspose.TeX for .NET API](https://products.aspose.com/tex/net/) 开发的。**
 
@@ -98,6 +99,6 @@ Transcript written on hello-world.log.
 
 将乳胶转换为SVG与[转换为栅格图像格式](/tex/{{lang.url-fragment}}python-net/latex-to-image/)一样简单，唯一的区别是[save_options](https://reference.aspose.com/tex/python-net/aspose.tex/texoptions/save_options/)必须设置为[svgsaveoptions](https://reference.aspose.com/tex/python-net/aspose.tex.presentation.svg/svgsaveoptions/)类的实例，并且必须将设备更改为svgdevice。
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Conversion-LaTeXToSvg-Simplest.py" >}}
+{{< gist "aspose-com-gists" "3616f5e300517031e6a4ae4158e24776" "Aspose.TeX.Examples-Conversion-LaTeXToSvg-Simplest.py" >}}
 
 **您还可以探索免费的[用于 LaTeX 到 SVG 转换的 Web 应用程序](https://products.aspose.app/tex/conversion/latex-to-svg)，它是使用 [Aspose.TeX for .NET API](https://products.aspose.com/tex/net/) 开发的。**

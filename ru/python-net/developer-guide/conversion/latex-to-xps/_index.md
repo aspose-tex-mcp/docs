@@ -19,14 +19,16 @@ lastmod: "2024-09-24"
 
 Процесс преобразования LaTeX в XPS столь же прост, как и [преобразование в форматы растровых изображений](/tex/{{lang.url-fragment}}python-net/latex-to-image/). Однако для этого необходимо установить [save_options](https://reference.aspose.com/tex/python-net/aspose.tex/texoptions/save_options/) на экземпляр класса [XpsSaveOptions](https://reference.aspose.com/tex/python-net/aspose.tex.presentation.xps/xpssaveoptions/) (по умолчанию или явно) и изменить устройство на экземпляр класса [XpsDevice](https://reference.aspose.com/tex/python-net/aspose.tex.presentation.xps/xpsdevice/).
 
-{{< gist "aspose-com-gists""68d217858f0be40062562ce2bb2cd908""Aspose.TeX.Examples-Conversion-LaTeXToXps-Simplest.py" >}}
+Укажите путь к файлу LaTeX в `ASPOSE_TEX_INPUT_FILE`, а выходной каталог — в `ASPOSE_TEX_OUTPUT_DIR`, либо измените пути в примере. По умолчанию используются `hello-world.ltx` и `output`. Предварительно примените лицензию. Дополнительные входные файлы ищутся рядом с основным документом; обработка выполняется без интерактивного ввода. [Лицензирование](/tex/ru/python-net/licensing/)
+
+{{< gist "aspose-com-gists" "3616f5e300517031e6a4ae4158e24776" "Aspose.TeX.Examples-Conversion-LaTeXToXps-Simplest.py" >}}
 
 ### Альтернативный способ записи основного выходного файла XPS.
 
 Для класса *XpsDevice* доступен альтернативный конструктор, который позволяет получить результирующий файл XPS другим способом.
 
-{{< gist "aspose-com-gists""68d217858f0be40062562ce2bb2cd908""Aspose.TeX.Examples-Conversion-LaTeXToXps-Alternative.py" >}}
+{{< gist "aspose-com-gists" "3616f5e300517031e6a4ae4158e24776" "Aspose.TeX.Examples-Conversion-LaTeXToXps-Alternative.py" >}}
 
-Эффект тот же, что мы получаем [здесь](/tex/{{lang.url-fragment}}python-net/latex-to-pdf/#an-alternative-way-to-write-main-output-pdf-file).
+Двоичный поток записывает `any-name.xps` в настроенный выходной каталог. Дополнительный файл XPS с именем по умолчанию не создаётся; вспомогательные файлы и протокол по-прежнему сохраняются в `output_working_directory`.
 
 **Вы также можете изучить бесплатное [веб-приложение для преобразования LaTeX в XPS](https://products.aspose.app/tex/conversion/latex-to-xps), разработанное с использованием [Aspose.TeX for .NET API](https://products.aspose.com/tex/net/).**

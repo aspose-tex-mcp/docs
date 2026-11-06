@@ -17,9 +17,9 @@ lastmod: "2026-04-20"
 
 ## Создание пользовательского формата
 
-Давайте помнить, что файл формата представляет собой двоичное представление внутреннего состояния движка TeX.
+Файл формата — это двоичное представление внутреннего состояния движка TeX. Сначала примените [лицензию](/tex/{{lang.url-fragment}}python-net/licensing/). Поместите `customtex.tex` в подкаталог `CustomTeXFormat` каталога `ASPOSE_TEX_INPUT_DIR` (по умолчанию: `input`). `ASPOSE_TEX_OUTPUT_DIR` задаёт папку вывода (по умолчанию: `output`), в которой первый пример создаёт `customtex.fmt`.
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-CreateCustomTeXFormatFile.py" >}}
+{{< gist "aspose-com-gists" "fce5c70784ba7a4d2597b459d63adbf1" "Aspose.TeX.Examples-CreateCustomTeXFormatFile.py" >}}
 
 Как видите, код похож на код конвертации файла TeX. Однако есть несколько различий.
 
@@ -31,13 +31,13 @@ lastmod: "2026-04-20"
 
 ## Набор текста TeX-файла в вашем пользовательском формате
 
-Теперь, когда мы создали собственный формат TeX, мы можем приступить к верстке файла TeX, написанного в этом формате. Вот код:
+Следующий пример сначала создаёт `customtex.fmt`, поэтому его можно запускать независимо. Затем он загружает формат и выполняет набор текста из двоичного потока в `typeset-with-custom-format.xps`.
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-TypesetWithCustomTeXFormat.py" >}}
+{{< gist "aspose-com-gists" "fce5c70784ba7a4d2597b459d63adbf1" "Aspose.TeX.Examples-TypesetWithCustomTeXFormat.py" >}}
 
 Чтобы указать формат, нам нужно создать экземпляр класса [FormatProvider](https://reference.aspose.com/tex/python-net/aspose.tex.resourceproviders/formatprovider/). В конструкторе параметров мы используем конфигурацию [TeXConfig.object_tex()](https://reference.aspose.com/tex/python-net/aspose.tex/texconfig/object_tex/#aspose.tex.resourceproviders.FormatProvider), которая требует нашего поставщика формата в качестве аргумента и загружает формат поверх «девственного» состояния движка.
 
-Оставшийся код должен быть вам знаком, поскольку он использует функции, обсуждавшиеся ранее в этом [руководстве](/tex/{{lang.url-fragment}}net/conversion/).
+Оставшийся код должен быть вам знаком, поскольку он использует функции, обсуждавшиеся ранее в этом [руководстве](/tex/{{lang.url-fragment}}python-net/conversion/).
 
 ## Набор текста файла TeX в формате Plain TeX
 

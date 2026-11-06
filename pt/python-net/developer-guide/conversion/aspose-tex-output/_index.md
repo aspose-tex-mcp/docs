@@ -24,15 +24,19 @@ Como mencionado [acima](/tex/{{lang.url-fragment}}net/latex-to-image/), o [outpu
 
 Aqui está como nós o definiríamos:
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Conversion-OutputFileSystemDirectory.py" >}}
+Defina `ASPOSE_TEX_OUTPUT_DIR` como o diretório de saída (padrão: `output`). Aplique uma licença primeiro. [Licensing](/tex/pt/python-net/licensing/).
 
-Esse caso de uso específico é direto, portanto, não há necessidade de se aprofundar nele ainda mais.
+{{< gist "aspose-com-gists" "edcfdfad622f09d57fa03bedd01e0e38" "Aspose.TeX.Examples-Conversion-OutputFileSystemDirectory.py" >}}
+
+O fluxo TeX simples incluído gera `texput.xps` e `texput.log` no diretório de saída.
 
 ### Salvando a saída como um arquivo de arquivo zip.
 
 Outra opção é criar um arquivo ou fluxo e usá -lo como um arquivo zip para armazenar os arquivos de saída. Aqui está um exemplo:
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Conversion-OutputZipDirectory.py" >}}
+{{< gist "aspose-com-gists" "edcfdfad622f09d57fa03bedd01e0e38" "Aspose.TeX.Examples-Conversion-OutputZipDirectory.py" >}}
+
+`zip-xps-out.zip` é aberto no modo binário `wb`. Chame `finish()` em `OutputZipDirectory` antes de fechar o fluxo. O arquivo contém `texput.xps` e `texput.log`.
 
 Para começar, criamos um fluxo de saída para o arquivo zip. Então, depois de criar as opções de conversão, definimos a opção *output_working_directory* para ser uma instância da classe [outputzipDirectory](https://reference.aspose.com/tex/python-net/aspose.tex.io/outputzipdirectory/).
 
@@ -44,7 +48,7 @@ A saída do terminal é outro aspecto importante da saída. Para isso, **Aspose.
 
 Para conseguir isso, precisamos definir a opção [terminal_out](https://reference.aspose.com/tex/python-net/aspose.tex/texoptions/terminal_out/) como uma instância da classe [outputConsoleterminal](https://reference.aspose.com/tex/python-net/aspose.tex.io/outputconsoleterminal/).
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Conversion-OutputConsoleTerminal.py" >}}
+{{< gist "aspose-com-gists" "edcfdfad622f09d57fa03bedd01e0e38" "Aspose.TeX.Examples-Conversion-OutputConsoleTerminal.py" >}}
 
 Mais uma vez, esse é o valor padrão da opção; portanto, não há necessidade real de especificá -lo. Portanto, esta seção é fornecida apenas para fins de demonstração.
 
@@ -52,6 +56,6 @@ Mais uma vez, esse é o valor padrão da opção; portanto, não há necessidade
 
 Em contraste com o terminal de entrada, **Aspose.TeX para Python** inclui uma implementação da interface*ioutputMerminal*que nos permite escrever a saída do terminal em um arquivo em um diretório de saída especificado.
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Conversion-OutputFileTerminal.py" >}} 
+{{< gist "aspose-com-gists" "edcfdfad622f09d57fa03bedd01e0e38" "Aspose.TeX.Examples-Conversion-OutputFileTerminal.py" >}}
 
-Nesse caso, instruímos o mecanismo Tex a escrever a saída do terminal em um arquivo chamado [<Job_Name>](/tex/{{lang.url-fragment}}net/tex-io/#tex-output) .TRM, que estará localizado no mesmo diretório de saída do restante da saída. No entanto, isso não é obrigatório. Também podemos fornecer qualquer outra instância de uma implementação do *ioutputMerminal* ao construtor.
+O construtor de `OutputFileTerminal` recebe o diretório de trabalho de saída e grava nele `texput.trm`, ao lado de `texput.xps` e `texput.log`.

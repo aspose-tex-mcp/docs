@@ -17,9 +17,9 @@ Para comenzar, crearemos un formato personalizado.
 
 ## Creando un formato personalizado
 
-Tengamos en cuenta que el archivo de formato es una representación binaria del estado interno del motor TeX.
+Un archivo de formato es una representación binaria del estado interno del motor TeX. Aplique primero una [licencia](/tex/{{lang.url-fragment}}python-net/licensing/). Coloque `customtex.tex` en el subdirectorio `CustomTeXFormat` de `ASPOSE_TEX_INPUT_DIR` (predeterminado: `input`). `ASPOSE_TEX_OUTPUT_DIR` indica la carpeta de salida (predeterminada: `output`), donde el primer ejemplo crea `customtex.fmt`.
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-CreateCustomTeXFormatFile.py" >}}
+{{< gist "aspose-com-gists" "fce5c70784ba7a4d2597b459d63adbf1" "Aspose.TeX.Examples-CreateCustomTeXFormatFile.py" >}}
 
 Como puede ver, el código se parece al código para convertir un archivo TeX. Sin embargo, hay algunas distinciones.
 
@@ -31,13 +31,13 @@ Y la segunda gran diferencia es el método mediante el cual ejecutamos el trabaj
 
 ## Componer un archivo TeX en su formato personalizado
 
-Ahora que hemos creado nuestro propio formato TeX, podemos proceder a componer un archivo TeX escrito en este formato. Aquí está el código:
+El siguiente ejemplo crea primero `customtex.fmt` para poder ejecutarse de forma independiente. Después carga el formato y compone el texto de un flujo binario en `typeset-with-custom-format.xps`.
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-TypesetWithCustomTeXFormat.py" >}}
+{{< gist "aspose-com-gists" "fce5c70784ba7a4d2597b459d63adbf1" "Aspose.TeX.Examples-TypesetWithCustomTeXFormat.py" >}}
 
 Para especificar el formato, necesitamos crear una instancia de la clase [FormatProvider](https://reference.aspose.com/tex/python-net/aspose.tex.resourceproviders/formatprovider/). En el constructor de opciones, usamos la configuración [TeXConfig.object_tex()](https://reference.aspose.com/tex/python-net/aspose.tex/texconfig/object_tex/#aspose.tex.resourceproviders.FormatProvider), que requiere nuestro proveedor de formato como argumento y carga el formato encima del estado "virgen" del motor.
 
-El código restante debería resultarle familiar, ya que utiliza las funciones que se analizaron anteriormente en esta [guía](/tex/{{lang.url-fragment}}net/conversion/).
+El código restante debería resultarle familiar, ya que utiliza las funciones que se analizaron anteriormente en esta [guía](/tex/{{lang.url-fragment}}python-net/conversion/).
 
 ## Composición tipográfica de un archivo TeX en formato Plain TeX
 

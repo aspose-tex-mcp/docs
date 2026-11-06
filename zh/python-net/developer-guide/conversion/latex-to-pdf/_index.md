@@ -16,7 +16,9 @@ lastmod: "2025-06-10"
 
 现在，让我们研究Python代码，该代码提供了将乳胶转换为PDF格式的最直接方法。
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Conversion-LaTeXToPdf-Simplest.py" >}}
+将 `ASPOSE_TEX_INPUT_FILE` 设置为 LaTeX 文件路径，将 `ASPOSE_TEX_OUTPUT_DIR` 设置为输出目录，或修改示例中的路径。默认值为 `hello-world.ltx` 和 `output`。请先应用许可证。示例在主文档所在目录查找其他输入文件，并以非交互方式处理。 [许可证](/tex/zh/python-net/licensing/)
+
+{{< gist "aspose-com-gists" "3616f5e300517031e6a4ae4158e24776" "Aspose.TeX.Examples-Conversion-LaTeXToPdf-Simplest.py" >}}
 
 首先，我们需要创建一个[Texoptions](https://reference.aspose.com/tex/python-net/aspose.tex/texoptions/)类的实例。 [console_app_options()](https://reference.aspose.com/tex/python-net/aspose.tex/texoptions/console_app_options/#aspose.tex.TeXConfig)  方法是实现此目的的唯一静态方法，因此不必担心其名称。此方法采用[texconfig](https://reference.aspose.com/tex/python-net/aspose.tex/texconfig/)类的[Object_Latex](https://reference.aspose.com/tex/python-net/aspose.tex/texconfig/object_latex/)实例，该实例非常适合转换[latex文件](/tex/{{lang.url-fragment}}net/latex-io/#latex-file)。该配置指示对象Tex引擎加载对象乳胶格式，并准备好处理乳胶文件。对象乳胶格式与[latex](/tex/{{lang.url-fragment}}net/what-is-latex/)格式基本相同，但它利用[object tex](/tex/{{lang.url-fragment}}net/aspose-tex-and-object-tex/#object-tex)特定的原始图来定义页面指标。
 
@@ -28,7 +30,7 @@ lastmod: "2025-06-10"
 
 现在，剩下的就是[运行](https://reference.aspose.com/tex/python-net/aspose.tex/texjob/run/#)工作。
 
-执行后，无论它是否成功，我们将看到的第一件事是终端输出。如果执行成功，输出将看起来与此相似：
+示例将终端输出保存在 `OutputMemoryTerminal` 中。输出目录还包含 `.log` 日志。转换成功时，日志类似如下内容；版本信息可能不同：
 
 ```text
 This is ObjectTeX, Version 3.1415926-1.0 (Aspose.TeX 21.8)
@@ -52,13 +54,13 @@ Transcript written on hello-world.log.
 
 * pdfdevice *类有另一个[构造函数](https://reference.aspose.com/tex/python-net/aspose.tex.presentation.pdf/pdfdevice/__init__/#io.RawIOBase)，它允许我们以不同的方式获得所得的PDF文件。
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Conversion-LaTeXToPdf-Alternative.py" >}}
+{{< gist "aspose-com-gists" "3616f5e300517031e6a4ae4158e24776" "Aspose.TeX.Examples-Conversion-LaTeXToPdf-Alternative.py" >}}
 
-主输出PDF文件将命名为`任何name.pdf`，并将位于指定目录中。但是，与[图像输出](/tex/{{lang.url-fragment}}python-net/latex-to-image/#an-alternative-way-to-write-the-main-output-png-files)不同，转换选项指定的输出目录中没有其他PDF文件。例外是使用 *outputfilesystemdirectory*分配给 *output_working_directory *选项的同一文件系统目录
+二进制流将 `any-name.pdf` 写入指定的输出目录，不会另外生成使用默认名称的 PDF 文件。辅助文件和日志仍保存到 `output_working_directory`。
 
 ## 关于输入选项
 
-如果我们的主要输入文件需要依赖项，例如未包含在基本乳胶系统和受支持的软件包中的软件包，则有必要以类似的方式设置[queld_input_directory](https://reference.aspose.com/tex/python-net/aspose.tex/texoptions/required_input_directory/)选项，因为我们设置 *output_working_directory*选项，并将依赖项放在该目录中。依赖项可以根据需要在子目录中组织。此外，如果我们有自己的文件要包含在排版过程中，例如外部图形文件，我们还必须使用通往存储这些文件的位置的路径来设置[input_working_directory](https://reference.aspose.com/tex/python-net/aspose.tex/texoptions/input_working_directory/)。我们还可以将主输入文件放置在输入目录内，并在`run()`方法中指定相对路径，或者如果主输入文件在root中，则根本没有指定路径。有关python **的** aspose.tex中输入目录概念的更多详细信息以及提供的实现，请参阅[此处](/tex/{{lang.url-fragment}}python-net/aspose-tex-input/)。
+如果我们的主要输入文件需要依赖项，例如未包含在基本乳胶系统和受支持的软件包中的软件包，则有必要以类似的方式设置[queld_input_directory](https://reference.aspose.com/tex/python-net/aspose.tex/texoptions/required_input_directory/)选项，因为我们设置 *output_working_directory*选项，并将依赖项放在该目录中。依赖项可以根据需要在子目录中组织。此外，如果我们有自己的文件要包含在排版过程中，例如外部图形文件，我们还必须使用通往存储这些文件的位置的路径来设置[input_working_directory](https://reference.aspose.com/tex/python-net/aspose.tex/texoptions/input_working_directory/)。我们还可以将主输入文件放置在输入目录内，并向 `TeXJob` 构造函数传入相对路径，或者如果主输入文件在root中，则根本没有指定路径。有关python **的** aspose.tex中输入目录概念的更多详细信息以及提供的实现，请参阅[此处](/tex/{{lang.url-fragment}}python-net/aspose-tex-input/)。
 
 也讨论了[其他TEX的工作选择](/tex/{{lang.url-fragment}}python-net/other-options/)。
 

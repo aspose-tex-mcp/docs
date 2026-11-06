@@ -19,14 +19,16 @@ Existe a biblioteca [**Aspose.Page**](https://products.aspose.com/page/), que of
 
 O processo de conversão de LaTeX em XPS é igualmente direto, semelhante à [conversão em formatos de imagem raster](/tex/{{lang.url-fragment}}python-net/latex-to-image/). No entanto, requer a definição da [Save_Options](https://reference.aspose.com/tex/python-net/aspose.tex/texoptions/save_options/) em uma instância da classe [XPSSaveOptions](https://reference.aspose.com/tex/python-net/aspose.tex.presentation.xps/xpssaveoptions/) (por padrão ou explicitamente) e alterando o dispositivo para uma instância da classe [XPSDevice](https://reference.aspose.com/tex/python-net/aspose.tex.presentation.xps/xpsdevice/).
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Conversion-LaTeXToXps-Simplest.py" >}}
+Defina `ASPOSE_TEX_INPUT_FILE` como o arquivo LaTeX e `ASPOSE_TEX_OUTPUT_DIR` como o diretório de saída, ou edite os caminhos do exemplo. Os valores padrão são `hello-world.ltx` e `output`. Aplique uma licença antes da conversão. Os arquivos de entrada adicionais são procurados junto ao documento principal; o processamento não é interativo. [Licenciamento](/tex/pt/python-net/licensing/)
+
+{{< gist "aspose-com-gists" "3616f5e300517031e6a4ae4158e24776" "Aspose.TeX.Examples-Conversion-LaTeXToXps-Simplest.py" >}}
 
 ### Uma maneira alternativa de escrever o arquivo XPS de saída principal
 
 Existe um construtor alternativo disponível para a classe * xpsDevice *, que permite obter o arquivo XPS resultante de uma maneira diferente.
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Conversion-LaTeXToXps-Alternative.py" >}}
+{{< gist "aspose-com-gists" "3616f5e300517031e6a4ae4158e24776" "Aspose.TeX.Examples-Conversion-LaTeXToXps-Alternative.py" >}}
 
-O efeito é o mesmo que chegamos [aqui](/tex/{{lang.url-fragment}}python-net/latex-to-pdf/#an-alternative-way-to-write-main-output-pdf-file).
+O fluxo binário grava `any-name.xps` no diretório de saída configurado. Não é criado outro arquivo XPS com o nome padrão; os arquivos auxiliares e o registro continuam em `output_working_directory`.
 
 **Você também pode explorar o aplicativo gratuito [da web para conversão Latex-para-XPS](https://products.aspose.app/tex/conversion/latex-to-xps), que é desenvolvido usando o [Aspose.TeX para .NET API](https://products.aspose.com/tex/net/).**

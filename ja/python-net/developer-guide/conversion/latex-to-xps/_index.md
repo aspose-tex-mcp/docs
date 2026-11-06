@@ -19,14 +19,16 @@ lastmod: "2025-06-09"
 
 ラテックスをXPSに変換するプロセスは、[ラスター画像形式への変換](/tex/{{lang.url-fragment}}python-net/latex-to-image/)と同様に、同様に簡単です。ただし、[save_options](https://reference.aspose.com/tex/python-net/Aspose.TeX/texoptions/save_options/)を[xpssaveoptions](https://reference.aspose.com/tex/python-net/aspose.tex.presentation.xps/xpssaveoptions/)クラス(デフォルトまたは明示的に)のインスタンスに設定し、[xpsdevice](https://reference.aspose.com/tex/python-net/aspose.tex.presentation.xps/xpsdevice/)クラスのインスタンスにデバイスを変更する必要があります。
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Conversion-LaTeXToXps-Simplest.py" >}}
+`ASPOSE_TEX_INPUT_FILE` に LaTeX ファイル、`ASPOSE_TEX_OUTPUT_DIR` に出力ディレクトリを指定するか、例のパスを編集してください。既定値は `hello-world.ltx` と `output` です。事前にライセンスを適用してください。追加の入力ファイルはメイン文書と同じディレクトリから読み込まれ、処理は対話入力なしで実行されます。 [ライセンス](/tex/ja/python-net/licensing/)
+
+{{< gist "aspose-com-gists" "3616f5e300517031e6a4ae4158e24776" "Aspose.TeX.Examples-Conversion-LaTeXToXps-Simplest.py" >}}
 
 ### メイン出力XPSファイルを書き込む代替方法
 
 * XPSDevice *クラスで使用できる代替コンストラクターがあり、結果のXPSファイルを別の方法で取得できます。
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Conversion-LaTeXToXps-Alternative.py" >}}
+{{< gist "aspose-com-gists" "3616f5e300517031e6a4ae4158e24776" "Aspose.TeX.Examples-Conversion-LaTeXToXps-Alternative.py" >}}
 
-効果は[ここ](https://products.aspose.app/tex/conversion/latex-to-xps)を取得するのと同じです。
+バイナリストリームは、設定された出力ディレクトリに `any-name.xps` を書き込みます。既定名の追加 XPS ファイルは作成されません。補助ファイルとログは引き続き `output_working_directory` に保存されます。
 
 **また、[Aspose.TeX for .NET API](https://products.aspose.com/tex/net/) を使用して開発された無料の [LaTeX から XPS への変換用 Web アプリ](https://products.aspose.app/tex/conversion/latex-to-xps) を調べることもできます。**

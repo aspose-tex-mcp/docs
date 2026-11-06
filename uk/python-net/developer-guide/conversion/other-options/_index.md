@@ -11,55 +11,59 @@ lastmod: "2025-06-13"
 
 {{<section overview>}}
 
+Приклади створюють файли XPS. Спочатку застосуйте [ліцензію](/tex/{{lang.url-fragment}}python-net/licensing/) та задайте папку виведення в `ASPOSE_TEX_OUTPUT_DIR` (типово: `output`). Запускайте кожен приклад в окремій папці виведення, щоб зберегти всі результати.
+
 ## Налаштування режиму взаємодії
 
 Як згадувалося [в абзаці про взаємодію TeX](/tex/{{lang.url-fragment}}net/tex-io/#tex-interaction-modes), **Aspose.TeX для Python** надає можливість установити початковий режим взаємодії, у якому запускається механізм. Ось приклад того, як це можна зробити:
 
-{{< gist "aspose-com-gists""68d217858f0be40062562ce2bb2cd908""Aspose.TeX.Examples-Conversion-InteractionMode.py" >}}
+{{< gist "aspose-com-gists" "fce5c70784ba7a4d2597b459d63adbf1" "Aspose.TeX.Examples-Conversion-InteractionMode.py" >}}
 
 ## Встановлення назви завдання
 
 Якщо основний вхідний файл надається як ім’я файлу, отримані вихідні файли матимуть однакові назви, але з різними розширеннями. Механізм TeX називає ім'я вхідного файлу *ім'ям завдання* і використовує його для вихідних файлів. Винятком є ​​допоміжні файли з явно вказаними іменами. Однак, коли основний вхідний файл передається як [потік](/tex/{{lang.url-fragment}}python-net/other-ways-of-main-input/#supplying-the-main-input-file-as-a-stream), механізм TeX використовує типову назву завдання, яка є *texput*. В обох сценаріях можливе перевизначення імені завдання шляхом призначення відповідного параметра перетворення.
 
-{{< gist "aspose-com-gists""68d217858f0be40062562ce2bb2cd908""Aspose.TeX.Examples-Conversion-JobName.py" >}}
+{{< gist "aspose-com-gists" "fce5c70784ba7a4d2597b459d63adbf1" "Aspose.TeX.Examples-Conversion-JobName.py" >}}
 
 ## «Зупинка часу»
 
 Для автоматичного створення заголовка з певних визначень у преамбулі LaTeX пропонує функцію, яка зазвичай включає поточну дату. Однак можуть бути випадки, коли ми хочемо зафіксувати певне значення дати. Ось спосіб цього досягти:
 
-{{< gist "aspose-com-gists""68d217858f0be40062562ce2bb2cd908""Aspose.TeX.Examples-Conversion-DateTime.py" >}}
+{{< gist "aspose-com-gists" "fce5c70784ba7a4d2597b459d63adbf1" "Aspose.TeX.Examples-Conversion-DateTime.py" >}}
 
 ## Ігнорування відсутніх пакетів
 
 Якщо у нас є файл LaTeX, який містить посилання на пакети, які не підтримуються бібліотекою **Aspose.TeX для Python**, система TeX зустріне помилку та зупиниться під час спроби завантажити ці пакети. Щоб запобігти цьому, ми можемо скористатися наступним варіантом:
 
-{{< gist "aspose-com-gists""68d217858f0be40062562ce2bb2cd908""Aspose.TeX.Examples-Conversion-IgnoreMissingPackages.py" >}}
+{{< gist "aspose-com-gists" "fce5c70784ba7a4d2597b459d63adbf1" "Aspose.TeX.Examples-Conversion-IgnoreMissingPackages.py" >}}
 
 ## Як уникнути нарощування лігатур
 
 За замовчуванням механізм TeX створює лігатури для певних пар символів, якщо шрифт містить необхідні дані. Однак ми можемо наказати двигуну обійти конструкцію лігатури за допомогою наступного коду:
 
-{{< gist "aspose-com-gists""68d217858f0be40062562ce2bb2cd908""Aspose.TeX.Examples-Conversion-NoLigatures.py" >}}
+{{< gist "aspose-com-gists" "fce5c70784ba7a4d2597b459d63adbf1" "Aspose.TeX.Examples-Conversion-NoLigatures.py" >}}
 
 ## Повторення роботи
 
 Як згадувалося [в абзаці вхідного файлу LaTeX](/tex/{{lang.url-fragment}}net/latex-io/#latex-input-file), мітки та посилання, є ситуації, коли нам може знадобитися двічі виконати те саме завдання. Ось спосіб цього досягти:
 
-{{< gist "aspose-com-gists""68d217858f0be40062562ce2bb2cd908""Aspose.TeX.Examples-Conversion-Repeat.py" >}}
+{{< gist "aspose-com-gists" "fce5c70784ba7a4d2597b459d63adbf1" "Aspose.TeX.Examples-Conversion-Repeat.py" >}}
 
 ## Перетворення математичних формул на растрові зображення
 
 Якщо є потреба перетворити математичні формули на растрові зображення, а не відобразити їх за допомогою шрифтів, для цього можна використати наступний параметр:
 
-{{< gist "aspose-com-gists""68d217858f0be40062562ce2bb2cd908""Aspose.TeX.Examples-Conversion-RasterizeFormulas.py" >}}
+{{< gist "aspose-com-gists" "fce5c70784ba7a4d2597b459d63adbf1" "Aspose.TeX.Examples-Conversion-RasterizeFormulas.py" >}}
 
 ## Перетворення графіки в растрові зображення
 
 Механізм ObjectTeX надає можливість включати графічні файли в растрових форматах, таких як PNG і JPG, а також у форматах PS (EPS) і XPS (OXPS). Останні два формати зазвичай містять векторні елементи та текст. Якщо ми хочемо растеризувати та включити їх як суцільні зображення, ми можемо використати такий параметр:
 
-{{< gist "aspose-com-gists""68d217858f0be40062562ce2bb2cd908""Aspose.TeX.Examples-Conversion-RasterizeIncludedGraphics.py" >}}
+{{< gist "aspose-com-gists" "fce5c70784ba7a4d2597b459d63adbf1" "Aspose.TeX.Examples-Conversion-RasterizeIncludedGraphics.py" >}}
+
+Приклад із графікою читає `Typesetting/triangle.eps` з каталогу `ASPOSE_TEX_INPUT_DIR` (типово: `input`). Збережіть цей підкаталог під час підготовки ресурсів.
 
 ## Піднабір шрифтів
 Якщо ми бажаємо зменшити розмір вихідного файлу, ми можемо застосувати піднабір шрифтів, що означає, що шрифти в кінцевому документі не включатимуть дані для тих гліфів, яких немає в документі. Ось рішення для досягнення цієї мети:
 
-{{< gist "aspose-com-gists""68d217858f0be40062562ce2bb2cd908""Aspose.TeX.Examples-Conversion-SubsetFonts.py" >}}
+{{< gist "aspose-com-gists" "fce5c70784ba7a4d2597b459d63adbf1" "Aspose.TeX.Examples-Conversion-SubsetFonts.py" >}}

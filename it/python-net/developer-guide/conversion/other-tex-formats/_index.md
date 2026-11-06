@@ -17,9 +17,9 @@ Per iniziare, creeremo un formato personalizzato.
 
 ## Creazione di un formato personalizzato
 
-Teniamo presente che il file di formato è una rappresentazione binaria dello stato interno del motore Tex.
+Un file di formato è una rappresentazione binaria dello stato interno del motore TeX. Applicare prima una [licenza](/tex/{{lang.url-fragment}}python-net/licensing/). Inserire `customtex.tex` nella sottocartella `CustomTeXFormat` di `ASPOSE_TEX_INPUT_DIR` (predefinita: `input`). `ASPOSE_TEX_OUTPUT_DIR` indica la cartella di output (predefinita: `output`), dove il primo esempio crea `customtex.fmt`.
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-CreateCustomTeXFormatFile.py" >}}
+{{< gist "aspose-com-gists" "fce5c70784ba7a4d2597b459d63adbf1" "Aspose.TeX.Examples-CreateCustomTeXFormatFile.py" >}}
 
 Come puoi vedere, il codice ha una somiglianza con il codice per la conversione di un file Tex. Tuttavia, ci sono alcune distinzioni.
 
@@ -31,13 +31,13 @@ E la seconda grande differenza è il metodo con cui eseguiamo il lavoro. In ques
 
 ## Compromettere un file tex nel tuo formato personalizzato
 
-Ora che abbiamo creato il nostro formato tex, possiamo procedere a compensare un file tex scritto in questo formato. Ecco il codice:
+L’esempio seguente crea prima `customtex.fmt` per poter essere eseguito autonomamente. Poi carica il formato e compone il testo di un flusso binario in `typeset-with-custom-format.xps`.
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-TypesetWithCustomTeXFormat.py" >}}
+{{< gist "aspose-com-gists" "fce5c70784ba7a4d2597b459d63adbf1" "Aspose.TeX.Examples-TypesetWithCustomTeXFormat.py" >}}
 
 Per specificare il formato, dobbiamo creare un'istanza della classe [FormatProvider](https://reference.aspose.com/tex/python-net/aspose.tex.resourceproviders/formatprovider/). Nel costruttore di opzioni, utilizziamo la configurazione [TexConfig.Object_tex()](https://reference.aspose.com/tex/python-net/aspose.tex/texconfig/object_tex/#aspose.tex.resourceproviders.FormatProvider), che richiede il nostro provider di formato come argomento e carica il formato in cima allo stato "vergine" del motore.
 
-Il codice rimanente dovrebbe essere familiare, in quanto utilizza le caratteristiche discusse in precedenza in questa [guida](/tex/{{lang.url-fragment}}net/conversion/).
+Il codice rimanente dovrebbe essere familiare, in quanto utilizza le caratteristiche discusse in precedenza in questa [guida](/tex/{{lang.url-fragment}}python-net/conversion/).
 
 ## Testa di un file tex in un formato Tex semplice
 

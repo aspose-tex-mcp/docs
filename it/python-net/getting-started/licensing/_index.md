@@ -35,24 +35,24 @@ Segui queste linee guida:
 
 - La licenza deve essere impostata solo una volta per dominio dell'applicazione.
 - Impostare la licenza prima di utilizzare qualsiasi altra classe Aspose.TeX.
-- Chiamare "setLicense" più volte non è dannoso ma spreca il tempo del processore.
+- Chiamare "set_license" più volte non è dannoso ma spreca il tempo del processore.
 
 #### Caricamento di una licenza dal file
 
-Il seguente frammento di codice dimostra come inizializzare una licenza memorizzata in un file.
+Applicare la licenza prima di utilizzare le altre classi Aspose.TeX. Impostare `ASPOSE_TEX_PYTHON_NET_LICENSE_PATH` sul percorso della licenza oppure collocare `Aspose.TeX.Python-net.lic` nella directory di lavoro.
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-LoadLicenseFromFile.py" >}}
+{{< gist "aspose-com-gists" "593d1652856be08ad2ec145fbe3796a2" "Aspose.TeX.Examples-LoadLicenseFromFile.py" >}}
 
 #### Caricamento di una licenza da un oggetto Stream
 
-Il codice successivo inizializza la licenza da un flusso.
+L’esempio seguente apre il file di licenza come flusso binario e lo chiude dopo aver applicato la licenza. Utilizza la stessa impostazione del percorso dell’esempio da file.
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-LoadLicenseFromStream.py" >}}
+{{< gist "aspose-com-gists" "593d1652856be08ad2ec145fbe3796a2" "Aspose.TeX.Examples-LoadLicenseFromStream.py" >}}
 
 ### Licenza misurata
 
 Aspose.Tex offre un meccanismo di licenza alternativo chiamato *Misurate Licensing*, che consente ai clienti di essere fatturati in base al loro utilizzo delle funzionalità API. L'applicazione di una *licenza misurata* è semplice come applicare una coppia di chiavi crittografiche. Per ulteriori informazioni, consultare la sezione [FAQ di licenza misurata](https://purchase.aspose.com/faqs/licensing/metered/).
 
-Per impostare le chiavi pubbliche e private di una licenza misurata, è possibile utilizzare un'istanza della classe [*misurata*](https://reference.aspose.com/tex/python-net/aspose.tex/metered/), come mostrato nell'esempio seguente:
+Per impostare le chiavi pubbliche e private di una licenza misurata, è possibile utilizzare un'istanza della classe [*misurata*](https://reference.aspose.com/tex/python-net/aspose.tex/metered/), come mostrato nell'esempio seguente: Fornire le chiavi tramite `ASPOSE_TEX_METERED_PUBLIC_KEY` e `ASPOSE_TEX_METERED_PRIVATE_KEY`.
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-SetMeteredLicense.py" >}}
+{{< gist "aspose-com-gists" "593d1652856be08ad2ec145fbe3796a2" "Aspose.TeX.Examples-SetMeteredLicense.py" >}}

@@ -35,24 +35,24 @@ lastmod: "2025-06-13"
 
 - Ліцензію потрібно встановлювати лише один раз для домену програми.
 - Встановіть ліцензію перед використанням будь-яких інших класів Aspose.TeX.
-- Багаторазовий виклик `SetLicense` не є шкідливим, але витрачає час процесора.
+- Багаторазовий виклик `set_license` не є шкідливим, але витрачає час процесора.
 
 #### Завантаження ліцензії з файлу
 
-Наведений нижче фрагмент коду демонструє, як ініціалізувати ліцензію, що зберігається у файлі.
+Застосуйте ліцензію перед використанням інших класів Aspose.TeX. Укажіть шлях до ліцензії в `ASPOSE_TEX_PYTHON_NET_LICENSE_PATH` або розмістіть `Aspose.TeX.Python-net.lic` у робочому каталозі.
 
-{{< gist "aspose-com-gists""68d217858f0be40062562ce2bb2cd908""Aspose.TeX.Examples-LoadLicenseFromFile.py" >}}
+{{< gist "aspose-com-gists" "593d1652856be08ad2ec145fbe3796a2" "Aspose.TeX.Examples-LoadLicenseFromFile.py" >}}
 
 #### Завантаження ліцензії з потокового об’єкта
 
-Наступний код ініціалізує ліцензію з потоку.
+Наступний приклад відкриває файл ліцензії як двійковий потік і закриває його після застосування ліцензії. Використовується те саме налаштування шляху, що й у прикладі завантаження з файлу.
 
-{{< gist "aspose-com-gists""68d217858f0be40062562ce2bb2cd908""Aspose.TeX.Examples-LoadLicenseFromStream.py" >}}
+{{< gist "aspose-com-gists" "593d1652856be08ad2ec145fbe3796a2" "Aspose.TeX.Examples-LoadLicenseFromStream.py" >}}
 
 ### Ліцензія з виміром
 
 Aspose.TeX пропонує альтернативний механізм ліцензування під назвою *Metered Licensing*, який дозволяє клієнтам виставляти рахунок на основі використання ними функцій API. Застосувати *Metered License* так само просто, як застосувати пару криптографічних ключів. Для отримання додаткової інформації зверніться до [розділу поширених запитань щодо обмеженого ліцензування](https://purchase.aspose.com/faqs/licensing/metered/).
 
-Щоб установити відкритий і закритий ключі обмеженої ліцензії, ви можете використати екземпляр класу [*Metered*](https://reference.aspose.com/tex/python-net/aspose.tex/metered/), як показано в наступному прикладі:
+Щоб установити відкритий і закритий ключі обмеженої ліцензії, ви можете використати екземпляр класу [*Metered*](https://reference.aspose.com/tex/python-net/aspose.tex/metered/), як показано в наступному прикладі: Передайте ключі через `ASPOSE_TEX_METERED_PUBLIC_KEY` і `ASPOSE_TEX_METERED_PRIVATE_KEY`.
 
-{{< gist "aspose-com-gists""68d217858f0be40062562ce2bb2cd908""Aspose.TeX.Examples-SetMeteredLicense.py" >}}
+{{< gist "aspose-com-gists" "593d1652856be08ad2ec145fbe3796a2" "Aspose.TeX.Examples-SetMeteredLicense.py" >}}

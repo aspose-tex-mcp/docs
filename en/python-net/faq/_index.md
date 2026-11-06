@@ -37,52 +37,35 @@ print(tex.__version__)
 
 **Q: How can I convert a `.tex` file to PDF with a few lines of code?**  
 <br>
-**A:** 
+**A:** Create a `TeXJob` with the Object LaTeX configuration, `PdfSaveOptions` and a `PdfDevice`. Set `ASPOSE_TEX_INPUT_FILE` to your input file and `ASPOSE_TEX_OUTPUT_DIR` to the output directory, or edit the default paths. Apply a license before conversion as described in [Licensing](/tex/python-net/licensing/).
 
-```python
-import aspose.tex as tex
+{{< gist "aspose-com-gists" "3616f5e300517031e6a4ae4158e24776" "Aspose.TeX.Examples-Conversion-LaTeXToPdf-Simplest.py" >}}
 
-doc = tex.Document("sample.tex")          # load LaTeX source
-doc.save("sample.pdf", tex.SaveFormat.PDF)  # write PDF
-```  
-
-You can also create a document from a string (`tex.Document(latex_source)`) or an in‑memory stream.  
+The default output filename follows the input stem: `hello-world.ltx` produces `hello-world.pdf`. See [LaTeX to PDF](/tex/python-net/latex-to-pdf/) for details.
 <br><br>
 
 **Q: Which output formats can Aspose TeX for Python generate?**  
 <br>
-**A:** PDF, XPS, SVG, PNG, JPEG, BMP, and TIFF. Each format can be controlled via specific `SaveOptions` objects (e.g., `PdfSaveOptions`, `ImageSaveOptions`, `SvgSaveOptions`).  
+**A:** PDF, XPS, SVG, PNG, JPEG, BMP, and TIFF. Each format can be controlled via specific `SaveOptions` objects (e.g., `PdfSaveOptions`, `PngSaveOptions`, `SvgSaveOptions`).
 <br><br>
 
 **Q: How do I embed custom fonts into the generated PDF?**  
 <br>
-**A:** Register a custom font folder before rendering:
-
-```python
-font_src = tex.FontSource()
-font_src.add_folder(r"C:\MyFonts")   # or "/home/user/fonts"
-tex.FontSettings.set_default_sources([font_src])
-doc.save("out.pdf", tex.PdfSaveOptions())
-```  
-
-By default all used fonts are embedded; disable embedding with `PdfSaveOptions.embed_fonts = False`.  
+**A:** Fonts are selected by the TeX or LaTeX document and its packages. For package resources, see [External LaTeX packages](/tex/{{lang.url-fragment}}python-net/external-latex-packages/). To control whether only used glyphs are embedded, use the [`subset_fonts`](https://reference.aspose.com/tex/python-net/aspose.tex.presentation.pdf/pdfsaveoptions/) property of `PdfSaveOptions`; this is different from selecting a custom font. See [Subsetting fonts](/tex/{{lang.url-fragment}}python-net/other-options/#subsetting-fonts) for a complete XPS example using the same option.
 <br><br>
 
 **Q: What LaTeX packages and classes are supported out of the box?**  
 <br>
-**A:** More than 300 core packages (e.g., `amsmath`, `graphicx`, `hyperref`, `xcolor`, `tikz`, `pgfplots`, `booktabs`) and common classes (`article`, `report`, `book`, `memoir`).  
+**A:** The library includes common LaTeX packages and classes. Consult the [embedded package list](/tex/{{lang.url-fragment}}net/embedded-packages/) for coverage. The [external package example](/tex/{{lang.url-fragment}}python-net/external-latex-packages/) for `pgfplots` supplies its package sources externally through `required_input_directory`.
 <br><br>
 
 **Q: How can I use a third‑party `.sty` or class file that is not built‑in?**  
 <br>
-**A:** Place the `.sty`/`.cls` file in the same directory as the source document or add its folder to the document’s resource loaders:
+**A:** Set `TeXOptions.required_input_directory` to an `InputFileSystemDirectory` containing the required package files. The complete example below loads `fancybox.sty` from `ExternalLaTeXPackages/packages` and converts `required-input-fs.tex` to PNG. Set `ASPOSE_TEX_INPUT_DIR` to the parent of `ExternalLaTeXPackages` (default: `input`) and `ASPOSE_TEX_OUTPUT_DIR` to the output folder (default: `output`). Apply a [license](/tex/{{lang.url-fragment}}python-net/licensing/) first.
 
-```python
-doc = tex.Document("mydoc.tex")
-doc.resource_loaders.append(tex.FolderResourceLoader(r"C:\MyLatexPackages"))
-```  
+{{< gist "aspose-com-gists" "fce5c70784ba7a4d2597b459d63adbf1" "Aspose.TeX.Examples-Conversion-RequiredInput-FileSystem.py" >}}
 
-The engine will load the custom files automatically on the next conversion.  
+For ZIP archives and package compatibility restrictions, see [External LaTeX packages](/tex/{{lang.url-fragment}}python-net/external-latex-packages/).
 <br><br>
 
 **Q: What are the main limitations of the engine?**  
@@ -99,14 +82,11 @@ The engine will load the custom files automatically on the next conversion.
 
 **Q: How do I apply a license key and what licensing models are available?**  
 <br>
-**A:** Apply the license once per process:
+**A:** Apply the license before using other Aspose.TeX classes. Set `ASPOSE_TEX_PYTHON_NET_LICENSE_PATH` to your license file, or place `Aspose.TeX.Python-net.lic` in the working directory:
 
-```python
-import aspose.tex as tex
-tex.License().set_license("Aspose.Total.NET.lic")
-```  
+{{< gist "aspose-com-gists" "593d1652856be08ad2ec145fbe3796a2" "Aspose.TeX.Examples-LoadLicenseFromFile.py" >}}
 
-Licensing options: Free Trial (10‑page limit, no watermark), Developer/Single‑Machine (unlimited pages on one machine), Enterprise/Multi‑Seat (unlimited across organization with priority support).  
+For file, stream and metered examples and evaluation limitations, see [Licensing](/tex/python-net/licensing/).
 <br><br>
 
 **Q: Is the library thread‑safe for parallel conversions?**  
@@ -122,29 +102,30 @@ Licensing options: Free Trial (10‑page limit, no watermark), Developer/Single�
 
 **Q: How can I set page size, orientation, and DPI for raster outputs?**  
 <br>
-**A:** Use the `PageSetup` and `ImageSaveOptions` objects:
+**A:** Define page size and orientation in the LaTeX source. For example, save this A4 landscape document as `landscape.ltx`:
 
-```python
-doc.page_setup.size = tex.PageSize.A4
-doc.page_setup.orientation = tex.PageOrientation.LANDSCAPE
+```latex
+\documentclass{article}
+\usepackage[a4paper,landscape]{geometry}
+\begin{document}
+Hello, World!
+\end{document}
+```
 
-opts = tex.ImageSaveOptions()
-opts.dpi = 300
-doc.save("out.png", opts)
-```  
+Set `PngSaveOptions.resolution` before assigning the save options to the job. This example uses 300 DPI. Set `ASPOSE_TEX_INPUT_FILE` to `landscape.ltx` and `ASPOSE_TEX_OUTPUT_DIR` to your output directory, or use the example's default paths:
+
+{{< gist "aspose-com-gists" "3616f5e300517031e6a4ae4158e24776" "Aspose.TeX.Examples-Conversion-LaTeXToPng-PageLayout.py" >}}
+
+The result is `landscape.png`, approximately 3508 by 2480 pixels.
 <br><br>
 
 **Q: Can I render LaTeX directly from a string or an in‑memory stream?**  
 <br>
-**A:** Absolutely. Pass the LaTeX source string to the constructor or use a `io.BytesIO` stream:
+**A:** Encode a complete LaTeX document into a binary `BytesIO` stream and pass it to `TeXJob` with `TeXConfig.object_latex`. Set `ASPOSE_TEX_OUTPUT_DIR` to the output folder, or use the default `output`. Apply a license first as described in [Licensing](/tex/python-net/licensing/).
 
-```python
-src = r"\section{Hello}\textbf{World}"
-doc = tex.Document(src)          # from string
-# or
-stream = io.BytesIO(src.encode())
-doc = tex.Document(stream)       # from stream
-```  
+{{< gist "aspose-com-gists" "edcfdfad622f09d57fa03bedd01e0e38" "Aspose.TeX.Examples-Conversion-InputStream.py" >}}
+
+The example creates `texput.xps` and `texput.log`. See [Other ways to provide main input](/tex/python-net/other-ways-of-main-input/) for details.
 <br><br>
 
 **Q: Where can I find official documentation, code samples, and support channels?**  

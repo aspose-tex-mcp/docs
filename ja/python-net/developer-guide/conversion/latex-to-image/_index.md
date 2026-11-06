@@ -18,7 +18,9 @@ lastmod: "2025-06-09"
 
 次に、ラテックスをPNG形式に深く変換するための最も簡単なアプローチを提供するPythonコードを調べましょう。
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Conversion-LaTeXToPng-Simplest.py" >}}
+`ASPOSE_TEX_INPUT_FILE` に LaTeX ファイル、`ASPOSE_TEX_OUTPUT_DIR` に出力ディレクトリを指定するか、例のパスを編集してください。既定値は `hello-world.ltx` と `output` です。事前にライセンスを適用してください。追加の入力ファイルはメイン文書と同じディレクトリから読み込まれ、処理は対話入力なしで実行されます。 [ライセンス](/tex/ja/python-net/licensing/)
+
+{{< gist "aspose-com-gists" "3616f5e300517031e6a4ae4158e24776" "Aspose.TeX.Examples-Conversion-LaTeXToPng-Simplest.py" >}}
 
 まず、[console_app_options()](https://reference.aspose.com/tex/python-net/aspose.tex/texoptions/console_app_options/#aspose.tex.TeXConfig)  メソッドを使用して[texoptions](https://reference.aspose.com/tex/python-net/Aspose.TeX/texoptions/)クラスのインスタンスを作成する必要があります。名前を心配しないでください。インスタンスを作成するのは静的な方法だけです。この方法では、[texconfig](https://reference.aspose.com/tex/python-net/Aspose.TeX/texconfig/)クラスの[object_latex](https://reference.aspose.com/tex/python-net/Aspose.TeX/texconfig/object_latex/)インスタンスを取ります。これは、[latexファイル](/tex/{{lang.url-fragment}}net/latex-io/#latex-file)を変換するのに最適です。この構成により、オブジェクトTexエンジンを設定して、オブジェクトラテックス形式をロードし、ラテックスファイルを処理する準備ができています。オブジェクトラテックス形式は基本的に[ラテックス形式](/tex/{{lang.url-fragment}}net/what-is-latex/)と同じですが、[Object Tex](/tex/{{lang.url-fragment}}net/aspose-tex-and-object-tex/#object-tex)特定のプリミティブを使用してページメトリックを定義します。
 
@@ -30,8 +32,7 @@ lastmod: "2025-06-09"
 
 さて、残っているのは、仕事を[実行](https://reference.aspose.com/tex/python-net/Aspose.TeX/texjob/run/#)することです。
 
-ジョブが実行された後、その成功や失敗に関係なく、最初に遭遇する出力は端末出力です。実行が成功した場合、出力は次のものに似ています。
-
+この例では端末出力を `OutputMemoryTerminal` に保存します。出力ディレクトリには `.log` ファイルも作成されます。変換が成功すると、ログは次のようになります。バージョン情報は異なる場合があります。
 
 ```text
 This is ObjectTeX, Version 3.1415926-1.0 (Aspose.TeX 21.8)
@@ -55,13 +56,13 @@ Transcript written on hello-world.log.
 
 2番目のディメンションの各配列が個別のページの画像データを表すバイト配列の配列として画像データを取得する代替方法があります。
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Conversion-LaTeXToPng-Alternative.py" >}}
+{{< gist "aspose-com-gists" "3616f5e300517031e6a4ae4158e24776" "Aspose.TeX.Examples-Conversion-LaTeXToPng-Alternative.py" >}}
 
-「page-n.png」ファイルは、指定されたパスに書き込むことができます。 [PDF出力](/tex/{{lang.url-fragment}}python-net/latex-to-pdf/#an-alternative-way-to-write-the-main-output-pdf-file)とは異なり、これらのPNGファイルは、出力ディレクトリに書き込まれる出力PNGファイルを複製します。
+この例では `PngSaveOptions` の `device_writes_images = False` を設定してから、`options.save_options` に代入します。返された各ページのバイト列を `page-1.png`、`page-2.png` などに保存するため、デバイスは重複する PNG ファイルを作成しません。
 
 ## 入力オプションについて
 
-メインの入力ファイルに、基本的なラテックスシステムやサポートされているパッケージに含まれていないパッケージなどの依存関係が必要な場合、[rebuse_input_directory](https://reference.aspose.com/tex/python-net/Aspose.TeX/texoptions/required_input_directory/)オプションを * output_working_directory *オプションの設定方法と同様の方法で設定し、そのディレクトリに依存関係を配置する必要があります。依存関係は、必要に応じてサブディレクトリで編成できます。外部グラフィックファイルなどの版形セットプロセスに含めるファイルがある場合は、[input_working_directory](https://reference.aspose.com/tex/python-net/Aspose.TeX/texoptions/input_working_directory/)をそれらのファイルが保存されている場所に設定する必要があります。また、入力ディレクトリ内にメイン入力ファイルを配置し、 `run()`メソッドの相対パスを指定したり、メイン入力ファイルがルートディレクトリにある場合はパスをまったく指定したりすることもできます。また、[入力ディレクトリの概念](/tex/{{lang.url-fragment}}python-net/aspose-tex-input/)の詳細については、**Aspose.TeX**と説明されている実装が記載されています。
+メインの入力ファイルに、基本的なラテックスシステムやサポートされているパッケージに含まれていないパッケージなどの依存関係が必要な場合、[rebuse_input_directory](https://reference.aspose.com/tex/python-net/Aspose.TeX/texoptions/required_input_directory/)オプションを * output_working_directory *オプションの設定方法と同様の方法で設定し、そのディレクトリに依存関係を配置する必要があります。依存関係は、必要に応じてサブディレクトリで編成できます。外部グラフィックファイルなどの版形セットプロセスに含めるファイルがある場合は、[input_working_directory](https://reference.aspose.com/tex/python-net/Aspose.TeX/texoptions/input_working_directory/)をそれらのファイルが保存されている場所に設定する必要があります。また、入力ディレクトリ内にメイン入力ファイルを配置し、 `TeXJob` コンストラクターに相対パスを指定したり、メイン入力ファイルがルートディレクトリにある場合はパスをまったく指定したりすることもできます。また、[入力ディレクトリの概念](/tex/{{lang.url-fragment}}python-net/aspose-tex-input/)の詳細については、**Aspose.TeX**と説明されている実装が記載されています。
 
 また、[他のTEXジョブオプションはこちら](/tex/{{lang.url-fragment}}python-net/other-options/)を学びます。
 
@@ -71,19 +72,19 @@ Transcript written on hello-world.log.
 
 ## ラテックスをJPGに変換します
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Conversion-LaTeXToJpeg.py" >}}
+{{< gist "aspose-com-gists" "3616f5e300517031e6a4ae4158e24776" "Aspose.TeX.Examples-Conversion-LaTeXToJpeg.py" >}}
 
 ** [LaTex-to-JPG変換用のWebアプリ](https://products.aspose.app/tex/conversion/latex-to-jpg)を探索することもできます。
 
 ## ラテックスをTIFFに変換します
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Conversion-LaTeXToTiff.py" >}}
+{{< gist "aspose-com-gists" "3616f5e300517031e6a4ae4158e24776" "Aspose.TeX.Examples-Conversion-LaTeXToTiff.py" >}}
 
 **また、[Aspose.TeX for .NET API](https://products.aspose.com/tex/net/) を使用して開発された無料の [LaTeX から TIFF への変換用 Web アプリ](https://products.aspose.app/tex/conversion/latex-to-tiff) を調べることもできます。**
 
 ## ラテックスをBMPに変換します
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Conversion-LaTeXToBmp.py" >}}
+{{< gist "aspose-com-gists" "3616f5e300517031e6a4ae4158e24776" "Aspose.TeX.Examples-Conversion-LaTeXToBmp.py" >}}
 
 ** [LaTex-to-BMP変換用のWebアプリ](https://products.aspose.app/tex/conversion/latex-to-bmp)を探索することもできます。
 
@@ -98,6 +99,6 @@ Transcript written on hello-world.log.
 
 ラテックスをSVGに変換することは[ラスター画像形式に変換](/tex/{{lang.url-fragment}}python-net/latex-to-image/)と同じくらい簡単です。唯一の違いは、[save_options](https://reference.aspose.com/tex/python-net/Aspose.TeX/texoptions/save_options/)を[svgsaveoptions](https://reference.aspose.com/tex/python-net/aspose.tex.presentation.svg/svgsaveoptions/)クラスのインスタンスに設定する必要があることです。
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Conversion-LaTeXToSvg-Simplest.py" >}}
+{{< gist "aspose-com-gists" "3616f5e300517031e6a4ae4158e24776" "Aspose.TeX.Examples-Conversion-LaTeXToSvg-Simplest.py" >}}
 
 ** [LaTex-to-SVG変換用のWebアプリ](https://products.aspose.app/tex/conversion/latex-to-svg)を探索することもできます。

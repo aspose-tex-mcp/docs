@@ -35,24 +35,24 @@ Please follow these guidelines:
 
 - The license only needs to be set once per application domain.
 - Set the license before using any other Aspose.TeX classes.
-- Calling `SetLicense` multiple times is not harmful but wastes processor time.
+- Calling `set_license` multiple times is not harmful but wastes processor time.
 
 #### Loading a License from File
 
-The following code snippet demonstrates how to initialize a license stored in a file.
+The following example applies a license from a file. Set `ASPOSE_TEX_PYTHON_NET_LICENSE_PATH` to the license path, or place `Aspose.TeX.Python-net.lic` in the working directory.
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-LoadLicenseFromFile.py" >}}
+{{< gist "aspose-com-gists" "593d1652856be08ad2ec145fbe3796a2" "Aspose.TeX.Examples-LoadLicenseFromFile.py" >}}
 
 #### Loading a License from a Stream Object
 
-The next code initializes the license from a stream.
+The next example opens the license file as a binary stream and closes it after applying the license. It uses the same license path setting as the file example.
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-LoadLicenseFromStream.py" >}}
+{{< gist "aspose-com-gists" "593d1652856be08ad2ec145fbe3796a2" "Aspose.TeX.Examples-LoadLicenseFromStream.py" >}}
 
 ### Metered License
 
 Aspose.TeX offers an alternative licensing mechanism called *Metered Licensing*, which allows customers to be billed based on their usage of the API features. Applying a *Metered License* is as simple as applying a pair of cryptographic keys. For more information, please refer to the [Metered Licensing FAQ section](https://purchase.aspose.com/faqs/licensing/metered/).
 
-To set the public and private keys of a metered license, you can use an instance of the [*Metered*](https://reference.aspose.com/tex/python-net/aspose.tex/metered/) class, as shown in the following example:
+To set the public and private keys of a metered license, you can use an instance of the [*Metered*](https://reference.aspose.com/tex/python-net/aspose.tex/metered/) class, as shown below. Supply your keys through `ASPOSE_TEX_METERED_PUBLIC_KEY` and `ASPOSE_TEX_METERED_PRIVATE_KEY`:
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-SetMeteredLicense.py" >}}
+{{< gist "aspose-com-gists" "593d1652856be08ad2ec145fbe3796a2" "Aspose.TeX.Examples-SetMeteredLicense.py" >}}

@@ -18,7 +18,9 @@ En determinadas situaciones, es posible que necesites extraer contenido específ
 
 Si es necesario, primero eche un vistazo a la [sección de referencia de API para este tema](https://reference.aspose.com/tex/python-net/aspose.tex.features/). De manera similar a la representación de fórmulas, comenzaremos con un ejemplo. Aquí lo tienes:
 
-{{< gist "aspose-com-gists""68d217858f0be40062562ce2bb2cd908""Aspose.TeX.Examples-Features-PngLaTeXFigureRendering.py" >}}
+Establezca `ASPOSE_TEX_OUTPUT_DIR` en su directorio de salida o use la carpeta predeterminada `output`. Todo el código LaTeX está incluido en los ejemplos; no se necesitan archivos de entrada externos. Aplique primero una licencia. [Licencias](/tex/es/python-net/licensing/).
+
+{{< gist "aspose-com-gists" "cbf380b84d7f2067481756d42da32b08" "Aspose.TeX.Examples-Features-PngLaTeXFigureRendering.py" >}}
 
 Para comenzar, creamos una instancia de la clase [opciones de renderizado de figuras LaTeX](https://reference.aspose.com/tex/python-net/aspose.tex.features/figurerendereroptions/), donde especificamos simultáneamente la resolución de la imagen de salida.
 
@@ -28,21 +30,21 @@ A continuación, debemos especificar el preámbulo. A diferencia de la represent
 \usepackage{pict2e}
 ```
 
-Luego le indicamos al renderizador que escale la salida en un 300%.
+Se usa `scale = 3000` para una escala del 300 % y `margin = 5` para dejar espacio alrededor del fragmento. El ejemplo PNG utiliza `resolution = 150` DPI.
 
 La siguiente opción determina el color de fondo. A diferencia de la representación de fórmulas matemáticas, no necesitamos especificar un color de primer plano, ya que asumimos que los colores están completamente controlados por el código LaTeX. De manera similar, el color de fondo también está controlado por el código LaTeX, por lo que esta opción se proporciona simplemente por conveniencia.
 
-Es posible que la siguiente línea del ejemplo no sea particularmente significativa. Simplemente pretende demostrar que tiene la opción de dirigir la salida del registro a una secuencia específica.
+El ejemplo asigna un flujo de archivo binario a `log_stream` y guarda el registro como `text-and-formula.png.log` junto a `text-and-formula.png`. La instrucción `with` cierra ambos flujos automáticamente.
 
-La última opción, `ShowTerminal`, le permite controlar si la salida del terminal debe mostrarse en la consola.
+`show_terminal` controla la salida del terminal en la consola. Los ejemplos lo establecen en `False`; el registro sigue escribiéndose en el archivo.
 
 El método responsable de renderizar la figura es [FigureRenderer.render()](https://reference.aspose.com/tex/python-net/aspose.tex.features/figurerenderer/render/#str-io.RawIOBase-aspose.tex.features.FigureRendererOptions) . Devuelve el tamaño de la figura en puntos.
 
-El método acepta una secuencia como segundo argumento, que es la secuencia donde se escribirá la imagen. Creamos la secuencia en la siguiente línea.
+El segundo argumento es el flujo de salida binario abierto para la imagen. El tercero proporciona las opciones de renderizado.
 
 Finalmente, invocamos el método `FigureRenderer.render()`, pasando las opciones como tercer argumento. El código LaTeX de la figura se proporciona como primer argumento.
 
-Las últimas líneas del ejemplo muestran dos datos relacionados con la representación de la figura: el tamaño de la figura y un breve informe de errores (si hay algún error).
+Las últimas líneas muestran el informe de errores, o `No rendering errors.` si está vacío, seguido del ancho y la altura en puntos.
 
 Aquí está el resultado del renderizado.
 
@@ -54,7 +56,9 @@ Este representa el caso de uso más general para la función **Representación d
 
 De manera similar, también podemos renderizar una figura LaTeX en formato SVG.
 
-{{< gist "aspose-com-gists""68d217858f0be40062562ce2bb2cd908""Aspose.TeX.Examples-Features-SvgLaTeXFigureRendering.py" >}}
+{{< gist "aspose-com-gists" "cbf380b84d7f2067481756d42da32b08" "Aspose.TeX.Examples-Features-SvgLaTeXFigureRendering.py" >}}
+
+Este ejemplo crea `text-and-formula.svg` y su registro `text-and-formula.svg.log` en el mismo directorio de salida.
 
 Las diferencias son:
 

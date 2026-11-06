@@ -24,15 +24,19 @@ Aspose.TeXは、データのバルクがファイル、ストリーム、配列�
 
 これが私たちがそれを設定する方法です：
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Conversion-OutputFileSystemDirectory.py" >}}
+`ASPOSE_TEX_OUTPUT_DIR` に出力ディレクトリを指定します（既定値：`output`）。事前にライセンスを適用してください。 [Licensing](/tex/ja/python-net/licensing/).
 
-この特定のユースケースは簡単なので、さらに詳しく説明する必要はありません。
+{{< gist "aspose-com-gists" "edcfdfad622f09d57fa03bedd01e0e38" "Aspose.TeX.Examples-Conversion-OutputFileSystemDirectory.py" >}}
+
+埋め込まれた plain TeX ストリームから、出力ディレクトリに `texput.xps` と `texput.log` を生成します。
 
 ### zipアーカイブファイルとして出力を保存します。
 
 別のオプションは、ファイルまたはストリームを作成し、zipアーカイブとして使用して出力ファイルを保存することです。これが例です：
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Conversion-OutputZipDirectory.py" >}}
+{{< gist "aspose-com-gists" "edcfdfad622f09d57fa03bedd01e0e38" "Aspose.TeX.Examples-Conversion-OutputZipDirectory.py" >}}
+
+`zip-xps-out.zip` をバイナリモード `wb` で開きます。ストリームを閉じる前に `OutputZipDirectory` の `finish()` を呼び出してください。アーカイブには `texput.xps` と `texput.log` が含まれます。
 
 まず、zipファイルの出力ストリームを作成します。次に、変換オプションを作成した後、[outputzipdirectory](https://reference.aspose.com/tex/python-net/aspose.tex.io/outputzipdirectory/)クラスのインスタンスにするように * output_working_directory *オプションを設定します。
 
@@ -44,7 +48,7 @@ Aspose.TeXは、データのバルクがファイル、ストリーム、配列�
 
 これを達成するには、[outputconsoleterminal](https://reference.aspose.com/tex/python-net/aspose.tex.io/outputconsoleterminal/)クラスのインスタンスとして[terminal_out](https://reference.aspose.com/tex/python-net/Aspose.TeX/texoptions/terminal_out/)オプションを設定する必要があります。
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Conversion-OutputConsoleTerminal.py" >}}
+{{< gist "aspose-com-gists" "edcfdfad622f09d57fa03bedd01e0e38" "Aspose.TeX.Examples-Conversion-OutputConsoleTerminal.py" >}}
 
 繰り返しますが、これはオプションのデフォルト値であるため、指定する必要はありません。したがって、このセクションは、デモンストレーションのためにのみ提供されます。
 
@@ -52,6 +56,6 @@ Aspose.TeXは、データのバルクがファイル、ストリーム、配列�
 
 入力端子とは対照的に、**python** for python **のtexには、指定された出力ディレクトリ内のファイルに端子出力を書き込むことができる*ioutputterminal*インターフェイスの実装が含まれています。
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Conversion-OutputFileTerminal.py" >}} 
+{{< gist "aspose-com-gists" "edcfdfad622f09d57fa03bedd01e0e38" "Aspose.TeX.Examples-Conversion-OutputFileTerminal.py" >}}
 
-この場合、TEXエンジンに、[<job_name>](/tex/{{lang.url-fragment}}net/tex-io/#tex-output).trmという名前のファイルに端子出力を書き込むように指示します。これは、出力の残りの部分と同じ出力ディレクトリにあります。ただし、これは必須ではありません。また、 *ioutputterminal* の実装の他のインスタンスをコンストラクターに提供することもできます。
+`OutputFileTerminal` のコンストラクターは出力作業ディレクトリを受け取り、`texput.xps` と `texput.log` の隣に `texput.trm` を書き込みます。

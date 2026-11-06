@@ -21,15 +21,24 @@ lastmod: "2024-09-24"
 
 Вот какой подход мы бы выбрали:
 
-{{< gist "aspose-com-gists""68d217858f0be40062562ce2bb2cd908""Aspose.TeX.Examples-Conversion-InputFileSystemDirectory.py" >}}
+Укажите выходной каталог в `ASPOSE_TEX_OUTPUT_DIR` (по умолчанию `output`). Предварительно примените лицензию. [Licensing](/tex/ru/python-net/licensing/).
 
-Этот конкретный вариант использования довольно прост, поэтому мы можем двигаться дальше.
+{{< gist "aspose-com-gists" "edcfdfad622f09d57fa03bedd01e0e38" "Aspose.TeX.Examples-Conversion-InputFileSystemDirectory.py" >}}
+
+Укажите в `ASPOSE_TEX_INPUT_DIR` папку с `hello-world.tex` (по умолчанию `input`). Пример использует plain TeX с `TeXConfig.object_tex()` и создаёт `hello-world.xps` и `hello-world.log`. Входной файл:
+
+```tex
+Hello, World!
+\end
+```
 
 ### Получение ввода файла из ZIP-архива
 
 Другой вариант — сохранить входные файлы в ZIP-архиве и использовать его как входной каталог. В таком случае следует выполнить следующие шаги:
 
-{{< gist "aspose-com-gists""68d217858f0be40062562ce2bb2cd908""Aspose.TeX.Examples-Conversion-InputZipDirectory.py" >}}
+{{< gist "aspose-com-gists" "edcfdfad622f09d57fa03bedd01e0e38" "Aspose.TeX.Examples-Conversion-InputZipDirectory.py" >}}
+
+`ASPOSE_TEX_INPUT_ZIP` задаёт архив с `in/hello-world.tex` (по умолчанию `zip-in.zip`). Откройте его в двоичном режиме `rb` и сохраняйте поток открытым до завершения задания.
 
 Для начала мы создаем поток, содержащий ZIP-файл. Впоследствии, после создания параметров преобразования, мы присваиваем экземпляр класса [InputZipDirectory](https://reference.aspose.com/tex/python-net/aspose.tex.io/inputzipdirectory/) свойству [input_working_directory](https://reference.aspose.com/tex/python-net/aspose.tex/texoptions/input_working_directory/). Второй параметр конструктора представляет базовый путь внутри архива. Если мы хотим, чтобы весь архив функционировал как входной каталог, мы должны предоставить в качестве аргумента пустую строку.
 
@@ -41,8 +50,6 @@ lastmod: "2024-09-24"
 
 Для этого нам нужно назначить экземпляр класса [InputConsoleTerminal](https://reference.aspose.com/tex/python-net/aspose.tex.io/inputconsoleterminal/) опции [terminal_in](https://reference.aspose.com/tex/python-net/aspose.tex/texoptions/terminal_in/).
 
-{{< gist "aspose-com-gists""68d217858f0be40062562ce2bb2cd908""Aspose.TeX.Examples-Conversion-InputConsoleTerminal.py" >}}
+{{< gist "aspose-com-gists" "edcfdfad622f09d57fa03bedd01e0e38" "Aspose.TeX.Examples-Conversion-InputConsoleTerminal.py" >}}
 
-Однако, честно говоря, это значение параметра по умолчанию, поэтому нет необходимости явно указывать его. Учитывая отсутствие других реализаций, этот раздел предназначен исключительно для демонстрационных целей.
-
-Теоретически, если у нас есть интерактивный файл (или сценарий) TeX с предсказуемым поведением, может быть желательно реализовать версию входного терминала, включающую соответствующий сценарий для ответа на запросы движка TeX. Не стесняйтесь попробовать, когда у вас будет возможность!
+Пример читает строку командой `\read` и записывает её в `texput.xps`. Введите в терминале, например, `Terminal input works!` или передайте строку через стандартный ввод. `SCROLL_MODE` допускает такой запрос ввода.

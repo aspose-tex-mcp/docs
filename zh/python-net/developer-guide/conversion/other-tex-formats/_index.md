@@ -17,9 +17,9 @@ lastmod: "2025-06-10"
 
 ## 创建自定义格式
 
-请记住，格式文件是Tex发动机内部状态的二进制表示。
+格式文件是 TeX 引擎内部状态的二进制表示。请先应用[许可证](/tex/{{lang.url-fragment}}python-net/licensing/)。将 `customtex.tex` 放入 `ASPOSE_TEX_INPUT_DIR`（默认为 `input`）下的 `CustomTeXFormat` 子目录。`ASPOSE_TEX_OUTPUT_DIR` 指定输出文件夹（默认为 `output`），第一个示例会在其中创建 `customtex.fmt`。
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-CreateCustomTeXFormatFile.py" >}}
+{{< gist "aspose-com-gists" "fce5c70784ba7a4d2597b459d63adbf1" "Aspose.TeX.Examples-CreateCustomTeXFormatFile.py" >}}
 
 如您所见，代码与转换Tex文件的代码相似。但是，有一些区别。
 
@@ -31,13 +31,13 @@ lastmod: "2025-06-10"
 
 ## 以您的自定义格式排版TEX文件
 
-现在，我们已经创建了自己的TEX格式，我们可以开始以这种格式编写的TEX文件。这是代码：
+以下示例首先创建 `customtex.fmt`，因此可以独立运行。随后它加载该格式，将二进制流中的文本排版并输出到 `typeset-with-custom-format.xps`。
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-TypesetWithCustomTeXFormat.py" >}}
+{{< gist "aspose-com-gists" "fce5c70784ba7a4d2597b459d63adbf1" "Aspose.TeX.Examples-TypesetWithCustomTeXFormat.py" >}}
 
 要指定格式，我们需要创建[formatprovider](https://reference.aspose.com/tex/python-net/aspose.tex.resourceproviders/formatprovider/)类的实例。在选项构造函数中，我们使用[texconfig.object_tex()](https://reference.aspose.com/tex/python-net/aspose.tex/texconfig/object_tex/#aspose.tex.resourceproviders.FormatProvider)配置，该配置要求我们的格式提供商作为参数，并将格式加载到引擎的“ Virgin”状态之上。
 
-其余的代码应该对您熟悉，因为它利用了[指南](/tex/{{lang.url-fragment}}net/conversion/)早期讨论的功能。
+其余的代码应该对您熟悉，因为它利用了[指南](/tex/{{lang.url-fragment}}python-net/conversion/)早期讨论的功能。
 
 ## 以普通Tex格式排版Tex文件
 

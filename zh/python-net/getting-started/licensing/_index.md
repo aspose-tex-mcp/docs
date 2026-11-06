@@ -35,24 +35,24 @@ Aspose 许可证是一个纯文本 XML 文件，其中包含产品名称、授�
 
 - 每个应用程序域只需设置一次许可证。
 - 在使用任何其他 Aspose.TeX 类之前，请先设置许可证。
-- 多次调用 `SetLicense` 函数不会造成损害，但会浪费处理器时间。
+- 多次调用 `set_license` 函数不会造成损害，但会浪费处理器时间。
 
 #### 从文件中加载许可证
 
-以下代码片段演示了如何初始化存储在文件中的许可证。
+请在使用其他 Aspose.TeX 类之前应用许可证。将 `ASPOSE_TEX_PYTHON_NET_LICENSE_PATH` 设置为许可证文件路径，或将 `Aspose.TeX.Python-net.lic` 放在工作目录中。
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-LoadLicenseFromFile.py" >}}
+{{< gist "aspose-com-gists" "593d1652856be08ad2ec145fbe3796a2" "Aspose.TeX.Examples-LoadLicenseFromFile.py" >}}
 
 #### 从流对象加载许可证
 
-下一个代码从流来初始化许可证。
+以下示例将许可证文件作为二进制流打开，并在应用许可证后关闭该流。它使用与文件加载示例相同的路径设置。
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-LoadLicenseFromStream.py" >}}
+{{< gist "aspose-com-gists" "593d1652856be08ad2ec145fbe3796a2" "Aspose.TeX.Examples-LoadLicenseFromStream.py" >}}
 
 ### 计量许可证
 
 Aspose.TeX 提供了一种名为“计量许可”的替代许可机制，允许客户根据其 API 功能的使用情况付费。应用“计量许可”非常简单，只需应用一对加密密钥即可。更多信息，请参阅[计量许可常见问题解答](https://purchase.aspose.com/faqs/licensing/metered/)。
 
-要设置计量许可的公钥和私钥，您可以使用[*Metered*](https://reference.aspose.com/tex/python-net/aspose.tex/metered/)类的实例，如下例所示：
+要设置计量许可的公钥和私钥，您可以使用[*Metered*](https://reference.aspose.com/tex/python-net/aspose.tex/metered/)类的实例，如下例所示： 请通过 `ASPOSE_TEX_METERED_PUBLIC_KEY` 和 `ASPOSE_TEX_METERED_PRIVATE_KEY` 提供密钥。
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-SetMeteredLicense.py" >}}
+{{< gist "aspose-com-gists" "593d1652856be08ad2ec145fbe3796a2" "Aspose.TeX.Examples-SetMeteredLicense.py" >}}

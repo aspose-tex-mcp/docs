@@ -35,24 +35,24 @@ Asposeのライセンスは、製品名、ライセンスされた開発者の�
 
 - ライセンスは、アプリケーションドメインごとに1回設定する必要があります。
 - 他のAsops.texクラスを使用する前に、ライセンスを設定します。
-- 「setlicense」を複数回呼び出すことは有害ではなく、プロセッサ時間を無駄にします。
+- 「set_license」を複数回呼び出すことは有害ではなく、プロセッサ時間を無駄にします。
 
 #### ファイルからライセンスをロードします
 
-次のコードスニペットは、ファイルに保存されているライセンスを初期化する方法を示しています。
+他の Aspose.TeX クラスを使用する前にライセンスを適用してください。`ASPOSE_TEX_PYTHON_NET_LICENSE_PATH` にライセンスファイルのパスを設定するか、作業ディレクトリに `Aspose.TeX.Python-net.lic` を配置します。
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-LoadLicenseFromFile.py" >}}
+{{< gist "aspose-com-gists" "593d1652856be08ad2ec145fbe3796a2" "Aspose.TeX.Examples-LoadLicenseFromFile.py" >}}
 
 #### ストリームオブジェクトからライセンスをロードします
 
-次のコードは、ストリームからライセンスを初期化します。
+次の例では、ライセンスファイルをバイナリストリームとして開き、ライセンスの適用後に閉じます。ファイルから読み込む例と同じパス設定を使用します。
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-LoadLicenseFromStream.py" >}}
+{{< gist "aspose-com-gists" "593d1652856be08ad2ec145fbe3796a2" "Aspose.TeX.Examples-LoadLicenseFromStream.py" >}}
 
 ### メーター付きライセンス
 
 Aspose.TeXは、 *Meteredライセンス *と呼ばれる代替ライセンスメカニズムを提供します。これにより、API機能の使用に基づいて顧客に請求できます。 *メーター付きライセンス *を適用することは、暗号化キーのペアを適用するのと同じくらい簡単です。詳細については、[メーターライセンスFAQセクション](https://purchase.aspose.com/faqs/licensing/metered/)を参照してください。
 
-メーター付きライセンスのパブリックキーとプライベートキーを設定するには、次の例に示すように、[*Metered*](https://reference.aspose.com/tex/python-net/Aspose.TeX/metered/)クラスのインスタンスを使用できます。
+メーター付きライセンスのパブリックキーとプライベートキーを設定するには、次の例に示すように、[*Metered*](https://reference.aspose.com/tex/python-net/Aspose.TeX/metered/)クラスのインスタンスを使用できます。 キーは `ASPOSE_TEX_METERED_PUBLIC_KEY` と `ASPOSE_TEX_METERED_PRIVATE_KEY` で指定してください。
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-SetMeteredLicense.py" >}}
+{{< gist "aspose-com-gists" "593d1652856be08ad2ec145fbe3796a2" "Aspose.TeX.Examples-SetMeteredLicense.py" >}}

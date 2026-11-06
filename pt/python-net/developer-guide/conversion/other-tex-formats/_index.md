@@ -17,9 +17,9 @@ Para começar, criaremos um formato personalizado.
 
 ## Criando um formato personalizado
 
-Lembre -se de que o arquivo de formato é uma representação binária do estado interno do mecanismo Tex.
+Um arquivo de formato é uma representação binária do estado interno do mecanismo TeX. Aplique primeiro uma [licença](/tex/{{lang.url-fragment}}python-net/licensing/). Coloque `customtex.tex` no subdiretório `CustomTeXFormat` de `ASPOSE_TEX_INPUT_DIR` (padrão: `input`). `ASPOSE_TEX_OUTPUT_DIR` indica a pasta de saída (padrão: `output`), onde o primeiro exemplo cria `customtex.fmt`.
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-CreateCustomTeXFormatFile.py" >}}
+{{< gist "aspose-com-gists" "fce5c70784ba7a4d2597b459d63adbf1" "Aspose.TeX.Examples-CreateCustomTeXFormatFile.py" >}}
 
 Como você pode ver, o código tem uma semelhança com o código para converter um arquivo tex. No entanto, existem algumas distinções.
 
@@ -31,13 +31,13 @@ E a segunda grande diferença é o método pelo qual executamos o trabalho. Ness
 
 ## Tipando um arquivo tex em seu formato personalizado
 
-Agora que criamos nosso próprio formato TEX, podemos prosseguir para digitar um arquivo tex escrito neste formato. Aqui está o código:
+O exemplo a seguir cria primeiro `customtex.fmt` para poder ser executado de forma independente. Depois carrega o formato e compõe o texto de um fluxo binário em `typeset-with-custom-format.xps`.
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-TypesetWithCustomTeXFormat.py" >}}
+{{< gist "aspose-com-gists" "fce5c70784ba7a4d2597b459d63adbf1" "Aspose.TeX.Examples-TypesetWithCustomTeXFormat.py" >}}
 
 Para especificar o formato, precisamos criar uma instância da classe [FormatProvider](https://reference.aspose.com/tex/python-net/aspose.tex.resourceproviders/formatprovider/). No construtor de opções, usamos a configuração [texconfig.object_tex()](https://reference.aspose.com/tex/python-net/aspose.tex/texconfig/object_tex/#aspose.tex.resourceproviders.FormatProvider), que requer nosso provedor de formato como argumento e carrega o formato na parte superior do estado "virgem" do motor.
 
-O código restante deve ser familiar para você, pois utiliza os recursos discutidos anteriormente neste [guia](/tex/{{lang.url-fragment}}net/conversion/).
+O código restante deve ser familiar para você, pois utiliza os recursos discutidos anteriormente neste [guia](/tex/{{lang.url-fragment}}python-net/conversion/).
 
 ## Tipando um arquivo tex no formato PLAin Tex
 

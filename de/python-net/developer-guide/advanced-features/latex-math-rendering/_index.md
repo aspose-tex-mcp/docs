@@ -15,7 +15,9 @@ lastmod: "2026-04-03"
 
 Werfen Sie bei Bedarf einen Blick auf den [API-Referenzabschnitt für dieses Thema](https://reference.aspose.com/tex/python-net/aspose.tex.features/). Tatsächlich lässt sich die Renderfunktion für **LaTeX-Matheformeln** am besten demonstrieren, indem man mit einem Beispiel beginnt. Hier ist es:
 
-{{< gist "aspose-com-gists""68d217858f0be40062562ce2bb2cd908""Aspose.TeX.Examples-Features-PngLaTeXMathRendering.py" >}}
+Setzen Sie `ASPOSE_TEX_OUTPUT_DIR` auf Ihr Ausgabeverzeichnis oder verwenden Sie den Standardordner `output`. Der LaTeX-Code ist vollständig in den Beispielen enthalten; externe Eingabedateien sind nicht erforderlich. Wenden Sie zuerst eine Lizenz an. [Lizenzierung](/tex/de/python-net/licensing/).
+
+{{< gist "aspose-com-gists" "cbf380b84d7f2067481756d42da32b08" "Aspose.TeX.Examples-Features-PngLaTeXMathRendering.py" >}}
 
 Kommen wir zu den Details. Zuerst initiieren wir ein [rendering options](https://reference.aspose.com/tex/python-net/aspose.tex.features/mathrendereroptions/)-Objekt, ähnlich dem TeX/LaTeX-Schriftsatz, das die Spezifikation für die gewünschte Ausgabebildauflösung enthält.
 
@@ -29,21 +31,21 @@ Als nächstes spezifizieren wir die Präambel. Die Standardpräambel lautet:
 
 das im Vergleich zum Standard-LaTeX eine verbesserte Unterstützung für mathematische Formeln bietet. Sie können beispielsweise das Paket „color“ einschließen, um die Hervorhebung in der Formel anzupassen, wie im bereitgestellten Codebeispiel gezeigt.
 
-Dann weisen wir den Renderer an, die Ausgabe um 300 % zu skalieren.
+Mit `scale = 3000` wird die Ausgabe auf 300 % skaliert; `margin = 5` lässt Platz um das Fragment. Das PNG-Beispiel verwendet `resolution = 150` DPI.
 
-Die nächsten beiden Optionen bestimmen die Vordergrund- und Hintergrundfarben. Alle Teile der Formel, die von der benutzerdefinierten Hervorhebung nicht betroffen sind, werden in der Farbe „TextColor“ angezeigt.
+Die nächsten beiden Optionen bestimmen die Vordergrund- und Hintergrundfarben. Alle Teile der Formel, die von der benutzerdefinierten Hervorhebung nicht betroffen sind, werden in der Farbe „text_color“ angezeigt.
 
-Die folgende Zeile im Beispiel dient zur Veranschaulichung, dass Sie die Möglichkeit haben, die Protokollausgabe auf einen bestimmten Stream umzuleiten.
+Das Beispiel weist `log_stream` einen binären Dateistream zu und speichert das Protokoll als `math-formula.png.log` neben `math-formula.png`. Die `with`-Anweisung schließt beide Streams automatisch.
 
-Und schließlich können Sie mit der Option „ShowTerminal“ steuern, ob die Terminalausgabe in der Konsole angezeigt werden soll.
+`show_terminal` steuert die Terminalausgabe in der Konsole. Die Beispiele setzen diese Option auf `False`; das Protokoll wird weiterhin in die Datei geschrieben.
 
 Der eigentliche Rendervorgang wird von der Methode [MathRenderer.render()](https://reference.aspose.com/tex/python-net/aspose.tex.features/mathrenderer/render/) durchgeführt, die die Größe der Formel in Punkten zurückgibt.
 
-Die Methode akzeptiert den Stream, in den das Bild geschrieben wird, als zweites Argument. Anschließend erstellen wir den Stream.
+Das zweite Argument ist der binäre Ausgabestream für das Bild. Das dritte Argument enthält die Rendering-Optionen.
 
 Und schließlich wird die Methode „MathRenderer.render()“ aufgerufen, wobei die Optionen als drittes Argument übergeben werden. Als erstes Argument wird der LaTeX-Code der Formel bereitgestellt.
 
-Die letzten Zeilen des Beispiels zeigen zwei Ausgaben des Rendering-Prozesses der mathematischen Formel – die Größe der Formel und einen kurzen Fehlerbericht, falls Fehler auftreten.
+Die letzten Zeilen geben den Fehlerbericht oder bei leerem Bericht `No rendering errors.` aus, gefolgt von Breite und Höhe in Punkten.
 
 Hier ist das Ergebnis des Renderings.
 
@@ -57,7 +59,9 @@ Dies stellt die häufigste und umfassendste Anwendung der **LaTeX-Funktion zum R
 
 Ebenso können wir mit dem gleichen Ansatz eine LaTeX-Matheformel in das SVG-Format konvertieren.
 
-{{< gist "aspose-com-gists""68d217858f0be40062562ce2bb2cd908""Aspose.TeX.Examples-Features-SvgLaTeXMathRendering.py" >}}
+{{< gist "aspose-com-gists" "cbf380b84d7f2067481756d42da32b08" "Aspose.TeX.Examples-Features-SvgLaTeXMathRendering.py" >}}
+
+Dieses Beispiel erstellt `math-formula.svg` und das Protokoll `math-formula.svg.log` im selben Ausgabeverzeichnis.
 
 Die Unterschiede sind:
 

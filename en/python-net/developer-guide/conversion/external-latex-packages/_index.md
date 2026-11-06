@@ -13,7 +13,7 @@ lastmod: "2024-09-20"
 
 ## External LaTeX packages
 
-The **Aspose.TeX** library comes with a variety of [common LaTeX packages](/tex/{{lang.url-fragment}}net/embedded-packages/), so there is no need to manually provide these packages to the TeX engine. However, there may be situations where your LaTeX file requires a package that is not included in the library's "bundle" of packages. In such cases, you can try providing the necessary input, such as the source files of the required package, through the [required_input_directory](https://reference.aspose.com/tex/python-net/aspose.tex/texoptions/required_input_directory/) option of the [TeXOptions](https://reference.aspose.com/tex/python-net/aspose.tex/texoptions/) class instance. We will explore how this works with two examples.
+The **Aspose.TeX** library comes with a variety of [common LaTeX packages](/tex/{{lang.url-fragment}}net/embedded-packages/), so there is no need to manually provide these packages to the TeX engine. However, there may be situations where your LaTeX file requires a package that is not included in the library's "bundle" of packages. In such cases, you can try providing the necessary input, such as the source files of the required package, through the [required_input_directory](https://reference.aspose.com/tex/python-net/aspose.tex/texoptions/required_input_directory/) option of the [TeXOptions](https://reference.aspose.com/tex/python-net/aspose.tex/texoptions/) class instance. We will explore how this works with two examples. Apply a [license](/tex/{{lang.url-fragment}}python-net/licensing/) first. Set `ASPOSE_TEX_INPUT_DIR` to a folder containing `ExternalLaTeXPackages`, with the two `.tex` files and the `packages` subdirectory shown in the examples (default root: `input`). Set `ASPOSE_TEX_OUTPUT_DIR` to the output directory, or use the default `output`.
 
 ### Required input provided in an unpacked form (the `fancybox` package).
 
@@ -46,6 +46,9 @@ The 3rd line of the file indicates that it requires the `fancybox` package, whic
 
 
 ```Python
+from aspose.tex.io import InputFileSystemDirectory
+
+# Configure an existing TeXOptions instance.
 options.required_input_directory = InputFileSystemDirectory('path-to-directory-where-fancybox.sty-located')
 ```
 
@@ -55,7 +58,7 @@ Once we run a TeX job with this option (remember to adjust the other options as 
 
 Here is the complete source code for the example:
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Conversion-RequiredInput-FileSystem.py" >}}
+{{< gist "aspose-com-gists" "fce5c70784ba7a4d2597b459d63adbf1" "Aspose.TeX.Examples-Conversion-RequiredInput-FileSystem.py" >}}
 
 ### Providing required input in an archived form (the `pgfplots` package)
 
@@ -100,10 +103,12 @@ On the third line, it can be observed that the file necessitates the `pgfplots` 
 And here is the method by which we define the accessibility to these source files:
 
 ```Python
-with open("path-to-zip-with-pgfplots-sources") as zipStream:
-    ...
-    options.required_input_directory = InputZipDirectory(zipStream)
-    ...
+from aspose.tex.io import InputZipDirectory
+
+# Configure an existing TeXOptions instance and run the job while the stream is open.
+with open("path-to-zip-with-pgfplots-sources", "rb") as zip_stream:
+    options.required_input_directory = InputZipDirectory(zip_stream, "")
+    # Run TeXJob here, as shown in the complete example below.
 ```
 
 After running a TeX job with this option, we get the output document:
@@ -112,7 +117,7 @@ After running a TeX job with this option, we get the output document:
 
 Here is the complete source code for the example:
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Conversion-RequiredInput-Zip.py" >}}
+{{< gist "aspose-com-gists" "fce5c70784ba7a4d2597b459d63adbf1" "Aspose.TeX.Examples-Conversion-RequiredInput-Zip.py" >}}
 
 > **_NOTE:_** The result was verified using the `pgfplots` package version 1.18.1. While the version of the `pfg` package included in the **Aspose.TeX** library is 3.1.9a.
 
@@ -125,7 +130,7 @@ The **Aspose.TeX**'s *Object TeX* engine extension requires font maps, which are
 
 Below is an example of a custom required input directory that demonstrates how to implement the [IFileCollector](https://reference.aspose.com/tex/python-net/aspose.tex.io/ifilecollector/) interface. This example focuses on collecting file names by extension and intentionally omits the details of file storage and retrieval.
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Conversion-RequiredInput-Zip.py" >}}
+
 -->
 
 ### Restrictions

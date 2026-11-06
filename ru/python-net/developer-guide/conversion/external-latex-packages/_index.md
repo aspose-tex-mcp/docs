@@ -15,6 +15,8 @@ lastmod: "2024-09-24"
 
 Библиотека **Aspose.TeX** поставляется с множеством [общих пакетов LaTeX](/tex/{{lang.url-fragment}}net/embedded-packages/), поэтому нет необходимости вручную предоставлять эти пакеты движку TeX. Однако могут возникнуть ситуации, когда вашему файлу LaTeX потребуется пакет, который не включен в «набор» пакетов библиотеки. В таких случаях вы можете попробовать предоставить необходимые входные данные, например исходные файлы требуемого пакета, через опцию [required_input_directory](https://reference.aspose.com/tex/python-net/aspose.tex/texoptions/required_input_directory/) экземпляра класса [TeXOptions](https://reference.aspose.com/tex/python-net/aspose.tex/texoptions/). Мы рассмотрим, как это работает, на двух примерах.
 
+Сначала примените [лицензию](/tex/{{lang.url-fragment}}python-net/licensing/). Укажите в `ASPOSE_TEX_INPUT_DIR` папку, содержащую `ExternalLaTeXPackages` с двумя файлами `.tex` и подкаталогом `packages` (по умолчанию: `input`). Задайте папку вывода в `ASPOSE_TEX_OUTPUT_DIR` (по умолчанию: `output`).
+
 ### Необходимые данные предоставляются в распакованном виде (пакетfancybox).
 
 Предположим, у нас есть следующий базовый файл LaTeX с именем `required-input-fs.tex`, который является частью нашего [примера решения](https://GitHub.com/aspose-tex/Aspose.TeX-for-Python-.NET):
@@ -46,6 +48,9 @@ Test: \fbox{
 
 
 ```Python
+from aspose.tex.io import InputFileSystemDirectory
+
+# Configure an existing TeXOptions instance.
 options.required_input_directory = InputFileSystemDirectory('path-to-directory-where-fancybox.sty-located')
 ```
 
@@ -55,7 +60,7 @@ options.required_input_directory = InputFileSystemDirectory('path-to-directory-w
 
 Вот полный исходный код примера:
 
-{{< gist "aspose-com-gists""68d217858f0be40062562ce2bb2cd908""Aspose.TeX.Examples-Conversion-RequiredInput-FileSystem.py" >}}
+{{< gist "aspose-com-gists" "fce5c70784ba7a4d2597b459d63adbf1" "Aspose.TeX.Examples-Conversion-RequiredInput-FileSystem.py" >}}
 
 ### Предоставление необходимых данных в заархивированном виде (пакет pgfplots)
 
@@ -100,10 +105,12 @@ First example is 2D and 3D math expressions plotted side-by-side.
 А вот метод, которым мы определяем доступность к этим исходным файлам:
 
 ```Python
-with open("path-to-zip-with-pgfplots-sources") as zipStream:
-    ...
-    options.required_input_directory = InputZipDirectory(zipStream)
-    ...
+from aspose.tex.io import InputZipDirectory
+
+# Configure an existing TeXOptions instance and run the job while the stream is open.
+with open("path-to-zip-with-pgfplots-sources", "rb") as zip_stream:
+    options.required_input_directory = InputZipDirectory(zip_stream, "")
+    # Run TeXJob here, as shown in the complete example below.
 ```
 
 После запуска задания TeX с этой опцией мы получим выходной документ:
@@ -112,7 +119,7 @@ with open("path-to-zip-with-pgfplots-sources") as zipStream:
 
 Вот полный исходный код примера:
 
-{{< gist "aspose-com-gists""68d217858f0be40062562ce2bb2cd908""Aspose.TeX.Examples-Conversion-RequiredInput-Zip.py" >}}
+{{< gist "aspose-com-gists" "fce5c70784ba7a4d2597b459d63adbf1" "Aspose.TeX.Examples-Conversion-RequiredInput-Zip.py" >}}
 
 > **_ПРИМЕЧАНИЕ:_** Результат был проверен с использованием пакета `pgfplots` версии 1.18.1. В то время как версия пакета `pfg`, включенного в библиотеку **Aspose.TeX**, - 3.1.9a.
 
@@ -125,7 +132,7 @@ with open("path-to-zip-with-pgfplots-sources") as zipStream:
 
 Ниже приведен пример пользовательского требуемого входного каталога, демонстрирующий, как реализовать интерфейс [IFileCollector](https://reference.aspose.com/tex/python-net/aspose.tex.io/ifilecollector/). Этот пример фокусируется на сборе имен файлов по расширению и намеренно опускает детали хранения и извлечения файлов.
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Conversion-RequiredInput-Zip.py" >}}
+
 -->
 
 ### Ограничения

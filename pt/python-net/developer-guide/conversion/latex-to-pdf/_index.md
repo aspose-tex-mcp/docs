@@ -16,7 +16,9 @@ lastmod: "2025-06-16"
 
 Agora, vamos examinar o código Python que oferece a abordagem mais direta para converter o LATEX em formato PDF em profundidade.
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Conversion-LaTeXToPdf-Simplest.py" >}}
+Defina `ASPOSE_TEX_INPUT_FILE` como o arquivo LaTeX e `ASPOSE_TEX_OUTPUT_DIR` como o diretório de saída, ou edite os caminhos do exemplo. Os valores padrão são `hello-world.ltx` e `output`. Aplique uma licença antes da conversão. Os arquivos de entrada adicionais são procurados junto ao documento principal; o processamento não é interativo. [Licenciamento](/tex/pt/python-net/licensing/)
+
+{{< gist "aspose-com-gists" "3616f5e300517031e6a4ae4158e24776" "Aspose.TeX.Examples-Conversion-LaTeXToPdf-Simplest.py" >}}
 
 Para começar, precisamos criar uma instância da classe [Texoptions](https://reference.aspose.com/tex/python-net/aspose.tex/texoptions/). O método [Console_App_Options ()](https://reference.aspose.com/tex/python-net/aspose.tex/texoptions/console_app_options/#aspose.tex.TeXConfig)   é o único método estático que realiza isso, portanto, não se preocupe com o nome. Este método pega uma instância [object_latex](https://reference.aspose.com/tex/python-net/aspose.tex/texconfig/object_latex/) da classe [texconfig](https://reference.aspose.com/tex/python-net/aspose.tex/texconfig/), que é perfeita para converter um [arquivo de LaTeX](/tex/{{lang.url-fragment}}net/latex-io/#latex-file). Essa configuração instrui o mecanismo Tex do objeto a carregar o formato de LaTeX de objeto e estar preparado para processar o arquivo LATEX. O formato LATEX de objeto é essencialmente o mesmo que o formato [LATEX](/tex/{{lang.url-fragment}}net/what-is-latex/), mas utiliza [objeto tex](/tex/{{lang.url-fragment}}net/aspose-tex-and-object-tex/#object-tex) primitivos específicos para definir as métricas da página.
 
@@ -28,7 +30,7 @@ Para converter um ficheiro LaTeX armazenado no sistema de ficheiros, necessitamo
 
 Agora, tudo o que resta é [correr](https://reference.aspose.com/tex/python-net/aspose.tex/texjob/run/#) o trabalho.
 
-Após a execução, independentemente de ter sido bem -sucedido ou não, a primeira coisa que veremos é a saída do terminal. Se a execução for bem -sucedida, a saída será semelhante a isso:
+O exemplo captura a saída do terminal em `OutputMemoryTerminal`. O diretório de saída também contém um registro `.log`. Uma conversão bem-sucedida gera um registro semelhante ao seguinte; os dados da versão podem variar:
 
 ```text
 This is ObjectTeX, Version 3.1415926-1.0 (Aspose.TeX 21.8)
@@ -52,13 +54,13 @@ Na pasta que especificamos como diretório de saída, encontraremos o arquivo de
 
 A classe *pdfDevice* possui outro [construtor](https://reference.aspose.com/tex/python-net/aspose.tex.presentation.pdf/pdfdevice/__init__/#io.RawIOBase) que nos permite obter o arquivo PDF resultante de maneira diferente.
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Conversion-LaTeXToPdf-Alternative.py" >}}
+{{< gist "aspose-com-gists" "3616f5e300517031e6a4ae4158e24776" "Aspose.TeX.Examples-Conversion-LaTeXToPdf-Alternative.py" >}}
 
-O ficheiro PDF de saída principal será denominado `any-name. pdf` e estará localizado no diretório especificado. No entanto, ao contrário da [saída da imagem](/tex/{{lang.url-fragment}}python-net/latex-to-image/#an-alternative-way-to-write-the-main-output-png-files), não existirão outros ficheiros PDF no diretório de saída especificado pelas opções de conversão. A exceção será se `any-name. pdf` estiver localizado no mesmo diretório do sistema de ficheiros atribuído à opção *output_working_directory* utilizando *OutputFileSystemDirectory*.
+O fluxo binário grava `any-name.pdf` no diretório de saída configurado. Não é criado outro arquivo PDF com o nome padrão; os arquivos auxiliares e o registro continuam em `output_working_directory`.
 
 ## Sobre opções de entrada
 
-Se nosso arquivo de entrada principal exigir dependências, como pacotes que não estão incluídos no sistema de LaTeX básico e pacotes suportados, é necessário definir a opção [requerir_input_directory](https://reference.aspose.com/tex/python-net/aspose.tex/texoptions/required_input_directory/) de uma maneira semelhante à opção * output_working_directory * e colocar as dependências nesse diretório. As dependências podem ser organizadas nos subdiretos, conforme desejado. Além disso, se tivermos nossos próprios arquivos a serem incluídos no processo de tipoTTing, como arquivos gráficos externos, também devemos definir o [input_working_directory](https://reference.aspose.com/tex/python-net/aspose.tex/texoptions/input_working_directory/) usando o caminho para o local em que esses arquivos são armazenados. Também podemos colocar o arquivo de entrada principal dentro do diretório de entrada e especificar o caminho relativo no método `run()` ou especificar nenhum caminho se o arquivo de entrada principal estiver na raiz. Para obter mais detalhes sobre o conceito de diretório de entrada em **aspose.tex para python** e as implementações fornecidas, consulte [aqui](/tex/{{lang.url-fragment}}python-net/aspose-tex-input/).
+Se nosso arquivo de entrada principal exigir dependências, como pacotes que não estão incluídos no sistema de LaTeX básico e pacotes suportados, é necessário definir a opção [requerir_input_directory](https://reference.aspose.com/tex/python-net/aspose.tex/texoptions/required_input_directory/) de uma maneira semelhante à opção * output_working_directory * e colocar as dependências nesse diretório. As dependências podem ser organizadas nos subdiretos, conforme desejado. Além disso, se tivermos nossos próprios arquivos a serem incluídos no processo de tipoTTing, como arquivos gráficos externos, também devemos definir o [input_working_directory](https://reference.aspose.com/tex/python-net/aspose.tex/texoptions/input_working_directory/) usando o caminho para o local em que esses arquivos são armazenados. Também podemos colocar o arquivo de entrada principal dentro do diretório de entrada e especificar o caminho relativo ao construtor `TeXJob` ou especificar nenhum caminho se o arquivo de entrada principal estiver na raiz. Para obter mais detalhes sobre o conceito de diretório de entrada em **aspose.tex para python** e as implementações fornecidas, consulte [aqui](/tex/{{lang.url-fragment}}python-net/aspose-tex-input/).
 
 Há também [outras opções de emprego no TEX](/tex/{{lang.url-fragment}}python-net/other-options/) discutidas.
 

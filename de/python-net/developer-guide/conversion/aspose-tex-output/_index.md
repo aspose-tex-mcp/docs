@@ -23,15 +23,19 @@ Wie [oben](/tex/{{lang.url-fragment}}net/latex-to-image/) erwähnt, wird das [ou
 
 So würden wir es einstellen:
 
-{{< gist "aspose-com-gists""68d217858f0be40062562ce2bb2cd908""Aspose.TeX.Examples-Conversion-OutputFileSystemDirectory.py" >}}
+Setzen Sie `ASPOSE_TEX_OUTPUT_DIR` auf das Ausgabeverzeichnis (Standard: `output`). Wenden Sie zuerst eine Lizenz an. [Licensing](/tex/de/python-net/licensing/).
 
-Dieser spezielle Anwendungsfall ist unkompliziert, sodass es nicht erforderlich ist, sich weiter damit zu befassen.
+{{< gist "aspose-com-gists" "edcfdfad622f09d57fa03bedd01e0e38" "Aspose.TeX.Examples-Conversion-OutputFileSystemDirectory.py" >}}
+
+Der eingebettete plain-TeX-Stream erzeugt `texput.xps` und `texput.log` im Ausgabeverzeichnis.
 
 ### Speichern der Ausgabe als ZIP-Archivdatei.
 
 Eine andere Möglichkeit besteht darin, eine Datei oder einen Stream zu erstellen und diese als ZIP-Archiv zum Speichern der Ausgabedateien zu verwenden. Hier ist ein Beispiel:
 
-{{< gist "aspose-com-gists""68d217858f0be40062562ce2bb2cd908""Aspose.TeX.Examples-Conversion-OutputZipDirectory.py" >}}
+{{< gist "aspose-com-gists" "edcfdfad622f09d57fa03bedd01e0e38" "Aspose.TeX.Examples-Conversion-OutputZipDirectory.py" >}}
+
+`zip-xps-out.zip` wird im Binärmodus `wb` geöffnet. Rufen Sie `finish()` auf `OutputZipDirectory` auf, bevor der Stream geschlossen wird. Das Archiv enthält `texput.xps` und `texput.log`.
 
 Zunächst erstellen wir einen Ausgabestream für die ZIP-Datei. Nachdem wir die Konvertierungsoptionen erstellt haben, legen wir dann die Option *output_working_directory* als Instanz der Klasse [OutputZipDirectory](https://reference.aspose.com/tex/python-net/aspose.tex.io/outputzipdirectory/) fest.
 
@@ -43,7 +47,7 @@ Die Terminalausgabe ist ein weiterer wichtiger Aspekt der Ausgabe. Zu diesem Zwe
 
 Um dies zu erreichen, müssen wir die Option [terminal_out](https://reference.aspose.com/tex/python-net/aspose.tex/texoptions/terminal_out/) als Instanz der Klasse [OutputConsoleTerminal](https://reference.aspose.com/tex/python-net/aspose.tex.io/outputconsoleterminal/) festlegen.
 
-{{< gist "aspose-com-gists""68d217858f0be40062562ce2bb2cd908""Aspose.TeX.Examples-Conversion-OutputConsoleTerminal.py" >}}
+{{< gist "aspose-com-gists" "edcfdfad622f09d57fa03bedd01e0e38" "Aspose.TeX.Examples-Conversion-OutputConsoleTerminal.py" >}}
 
 Auch hier handelt es sich um den Standardwert der Option, sodass keine wirkliche Notwendigkeit besteht, ihn anzugeben. Daher dient dieser Abschnitt ausschließlich zu Demonstrationszwecken.
 
@@ -51,6 +55,6 @@ Auch hier handelt es sich um den Standardwert der Option, sodass keine wirkliche
 
 Im Gegensatz zum Eingabeterminal enthält **Aspose.TeX für Python** eine Implementierung der *IOutputTerminal*-Schnittstelle, die es uns ermöglicht, die Terminalausgabe in eine Datei innerhalb eines angegebenen Ausgabeverzeichnisses zu schreiben.
 
-{{< gist "aspose-com-gists""68d217858f0be40062562ce2bb2cd908""Aspose.TeX.Examples-Conversion-OutputFileTerminal.py" >}} 
+{{< gist "aspose-com-gists" "edcfdfad622f09d57fa03bedd01e0e38" "Aspose.TeX.Examples-Conversion-OutputFileTerminal.py" >}}
 
-In diesem Fall weisen wir die TeX-Engine an, die Terminalausgabe in eine Datei mit dem Namen [<job_name>](/tex/{{lang.url-fragment}}net/tex-io/#tex-output).trm zu schreiben, die sich im selben Ausgabeverzeichnis wie der Rest der Ausgabe befindet. Dies ist jedoch nicht zwingend. Wir können dem Konstruktor auch jede andere Instanz einer Implementierung von *IOutputTerminal* bereitstellen.
+`OutputFileTerminal` erhält das Ausgabearbeitsverzeichnis im Konstruktor und schreibt dort `texput.trm` neben `texput.xps` und `texput.log`.

@@ -15,7 +15,11 @@ lastmod: "2025-06-09"
 
 これまでのところ、[メイン入力ファイル](/tex/{{lang.url-fragment}}net/tex-io/#tex-input)をTEXエンジンにファイル名として提供する方法を学びました。ただし、最初の引数としてストリームを受け入れる[Texjob](https://reference.aspose.com/tex/python-net/aspose.tex/texjob/)クラスで利用可能な[別のコンストラクター](https://reference.aspose.com/tex/python-net/aspose.tex/texjob/__init__/#io.RawIOBase-aspose.tex.presentation.Device-aspose.tex.TeXOptions)があります。これは、何らかの理由で、メインの入力ファイルがディスクファイルシステム上のファイルの形式でない場合に役立ちます。これがどのように実装できるかの例です。
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Conversion-InputStream.py" >}}
+`ASPOSE_TEX_OUTPUT_DIR` に出力ディレクトリを指定します（既定値：`output`）。事前にライセンスを適用してください。 [Licensing](/tex/ja/python-net/licensing/).
+
+{{< gist "aspose-com-gists" "edcfdfad622f09d57fa03bedd01e0e38" "Aspose.TeX.Examples-Conversion-InputStream.py" >}}
+
+完全な LaTeX 文書をバイナリ `BytesIO` ストリームに変換し、`TeXConfig.object_latex` を設定した `TeXJob` に渡します。ジョブ中はストリームを開いたままにします。出力は `texput.xps` と `texput.log` です。
 
 すべての出力ファイルには「Texput」という名前が付けられていることに注意してください。これは、エンジンが他の名前にアクセスできないためです。 「Texput」はデフォルトのジョブ名です。ジョブ名[Tex Output](/tex/{{lang.url-fragment}}net/tex-io/#tex-output)および[ジョブ名の設定方法](/tex/{{lang.url-fragment}}net/other-options/#how-to-set-the-job-name)の段落に関する詳細情報を見つけることができます。
 
@@ -25,28 +29,11 @@ lastmod: "2025-06-09"
 
 これがコードです：
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Conversion-MainInputTerminal.py" >}}
+{{< gist "aspose-com-gists" "edcfdfad622f09d57fa03bedd01e0e38" "Aspose.TeX.Examples-Conversion-MainInputTerminal.py" >}}
 
+次の plain TeX を `hello-world.tex` として `ASPOSE_TEX_INPUT_DIR`（既定値：`input`）に保存してください。例は `TeXConfig.object_tex()` を使用します。入力を求められたら `hello-world.tex` と入力して Enter を押すか、標準入力からファイル名を渡します。出力は `hello-world.xps` と `hello-world.log` です。
 
-実行されるとすぐに、エンジンは一時停止し、ファイル名を入力するのを待ちます(パスの有無にかかわらず、延長の有無にかかわらず)：
-
-
-![端子ウィンドウ](/tex/images/python-net/.png)
-
-そして、これが出力端子(コンソール)にどのように表示されるかを次に示します。
-
-```text
-This is ObjectTeX, Version 3.1415926-1.0 (Aspose.TeX 21.8)
-entering extended mode
-**<path_to_the_file>/hello-world.ltx
-(<path_to_the_file>/hello-world.ltx
-LaTeX2e <2011/06/27>
-(article.cls
-Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
-(size10.clo))
-No file hello-world.aux.
-[1]
-(<output_directory>\hello-world.aux) )
-Output written on hello-world.xps (1 page).
-Transcript written on hello-world.log.
+```tex
+Hello, World!
+\end
 ```
