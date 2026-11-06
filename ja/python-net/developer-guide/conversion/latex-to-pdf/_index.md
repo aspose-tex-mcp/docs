@@ -16,7 +16,9 @@ lastmod: "2025-06-09"
 
 次に、ラテックスをPDF形式に深く変換するための最も簡単なアプローチを提供するPythonコードを調べてみましょう。
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Conversion-LaTeXToPdf-Simplest.py" >}}
+`ASPOSE_TEX_INPUT_FILE` に LaTeX ファイル、`ASPOSE_TEX_OUTPUT_DIR` に出力ディレクトリを指定するか、例のパスを編集してください。既定値は `hello-world.ltx` と `output` です。事前にライセンスを適用してください。追加の入力ファイルはメイン文書と同じディレクトリから読み込まれ、処理は対話入力なしで実行されます。 [ライセンス](/tex/ja/python-net/licensing/)
+
+{{< gist "aspose-com-gists" "3616f5e300517031e6a4ae4158e24776" "Aspose.TeX.Examples-Conversion-LaTeXToPdf-Simplest.py" >}}
 
 まず、[Texoptions](https://reference.aspose.com/tex/python-net/Aspose.TeX/texoptions/)クラスのインスタンスを作成する必要があります。 [console_app_options()](https://reference.aspose.com/tex/python-net/aspose.tex/texoptions/console_app_options/#aspose.tex.TeXConfig)  メソッドはこれを達成する唯一の静的メソッドです。そのため、その名前を心配しないでください。この方法では、[texconfig](https://reference.aspose.com/tex/python-net/Aspose.TeX/texconfig/)クラスの[object_latex](https://reference.aspose.com/tex/python-net/Aspose.TeX/texconfig/object_latex/)インスタンスを使用します。これは、[latexファイル](/tex/{{lang.url-fragment}}net/latex-io/#latex-file)を変換するのに最適です。この構成は、オブジェクトTex Engineにオブジェクトラテックス形式をロードし、ラテックスファイルを処理するように指示します。オブジェクトラテックス形式は、[LaTex](/tex/{{lang.url-fragment}}net/what-is-latex/)形式と本質的に同じですが、[Object Tex](/tex/{{lang.url-fragment}}net/aspose-tex-and-object-tex/#object-tex)固有のプリミティブを使用してページメトリックを定義します。
 
@@ -28,7 +30,7 @@ lastmod: "2025-06-09"
 
 さて、残っているのは、仕事を[実行](https://reference.aspose.com/tex/python-net/Aspose.TeX/texjob/run/#)することです。
 
-実行後、成功したかどうかに関係なく、最初に表示されるのは端子出力です。実行が成功した場合、出力はこれに似ています。
+この例では端末出力を `OutputMemoryTerminal` に保存します。出力ディレクトリには `.log` ファイルも作成されます。変換が成功すると、ログは次のようになります。バージョン情報は異なる場合があります。
 
 ```text
 This is ObjectTeX, Version 3.1415926-1.0 (Aspose.TeX 21.8)
@@ -52,13 +54,13 @@ Transcript written on hello-world.log.
 
 * pdfdevice *クラスには、結果のpdfファイルを異なる方法で取得できる別の[コンストラクター](https://reference.aspose.com/tex/python-net/aspose.tex.presentation.pdf/pdfdevice/__init__/#io.RawIOBase)があります。
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Conversion-LaTeXToPdf-Alternative.py" >}}
+{{< gist "aspose-com-gists" "3616f5e300517031e6a4ae4158e24776" "Aspose.TeX.Examples-Conversion-LaTeXToPdf-Alternative.py" >}}
 
-メインの出力PDFファイルは「any-name.pdf」という名前で、指定されたディレクトリに配置されます。ただし、[画像出力](/tex/{{lang.url-fragment}}python-net/latex-to-image/#an-alternative-way-to-write-the-main-output-png-files)とは異なり、変換オプションで指定された出力ディレクトリに他のPDFファイルはありません。例外は、「any-name.pdf」が *output_working_directory *オプションに割り当てられた同じファイルシステムディレクトリにある場合、 *outputFilesSystemDirectory *を使用している場合です。
+バイナリストリームは、設定された出力ディレクトリに `any-name.pdf` を書き込みます。既定名の追加 PDF ファイルは作成されません。補助ファイルとログは引き続き `output_working_directory` に保存されます。
 
 ## 入力オプションについて
 
-メインの入力ファイルに、基本的なラテックスシステムに含まれていないパッケージやサポートされているパッケージなどの依存関係が必要な場合、[reburce_input_directory](https://reference.aspose.com/tex/python-net/Aspose.TeX/texoptions/required_input_directory/)オプションを * output_working_directory *オプションを設定し、そのディレクトリに依存関係を配置する必要があります。依存関係は、必要に応じてサブディレクトリで編成できます。さらに、外部グラフィックファイルなどの版形設定プロセスに含める独自のファイルがある場合は、[input_working_directory](https://reference.aspose.com/tex/python-net/Aspose.TeX/texoptions/input_working_directory/)を設定する必要があります。また、入力ディレクトリ内にメイン入力ファイルを配置し、 `run()`メソッドの相対パスを指定したり、メインの入力ファイルがルートにある場合はまったくパスを指定したりすることもできます。 Python **の** Aspose.TeXの入力ディレクトリの概念の詳細および提供された実装については、[こちら](/tex/{{lang.url-fragment}}python-net/aspose-tex-input/)を参照してください。
+メインの入力ファイルに、基本的なラテックスシステムに含まれていないパッケージやサポートされているパッケージなどの依存関係が必要な場合、[reburce_input_directory](https://reference.aspose.com/tex/python-net/Aspose.TeX/texoptions/required_input_directory/)オプションを * output_working_directory *オプションを設定し、そのディレクトリに依存関係を配置する必要があります。依存関係は、必要に応じてサブディレクトリで編成できます。さらに、外部グラフィックファイルなどの版形設定プロセスに含める独自のファイルがある場合は、[input_working_directory](https://reference.aspose.com/tex/python-net/Aspose.TeX/texoptions/input_working_directory/)を設定する必要があります。また、入力ディレクトリ内にメイン入力ファイルを配置し、 `TeXJob` コンストラクターに相対パスを指定したり、メインの入力ファイルがルートにある場合はまったくパスを指定したりすることもできます。 Python **の** Aspose.TeXの入力ディレクトリの概念の詳細および提供された実装については、[こちら](/tex/{{lang.url-fragment}}python-net/aspose-tex-input/)を参照してください。
 
 [他のTexジョブオプション](/tex/{{lang.url-fragment}}python-net/other-options/)も議論されています。
 

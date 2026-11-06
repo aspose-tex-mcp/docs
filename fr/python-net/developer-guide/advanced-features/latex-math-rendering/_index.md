@@ -15,7 +15,9 @@ lastmod: "2026-04-03"
 
 Si nécessaire, jetez un œil à la [section de référence API pour ce sujet](https://reference.aspose.com/tex/python-net/aspose.tex.features/). En fait, la meilleure façon de démontrer la fonctionnalité de rendu de la **formule mathématique LaTeX** est de commencer par un exemple. C'est ici:
 
-{{< gist "aspose-com-gists""68d217858f0be40062562ce2bb2cd908""Aspose.TeX.Examples-Features-PngLaTeXMathRendering.py" >}}
+Définissez `ASPOSE_TEX_OUTPUT_DIR` sur votre répertoire de sortie ou utilisez le dossier par défaut `output`. Le code LaTeX est entièrement inclus dans les exemples ; aucun fichier d’entrée externe n’est nécessaire. Appliquez d’abord une licence. [Licences](/tex/fr/python-net/licensing/).
+
+{{< gist "aspose-com-gists" "cbf380b84d7f2067481756d42da32b08" "Aspose.TeX.Examples-Features-PngLaTeXMathRendering.py" >}}
 
 Passons aux détails. Tout d'abord, nous lançons un objet [options de rendu](https://reference.aspose.com/tex/python-net/aspose.tex.features/mathrendereroptions/), similaire à la composition TeX/LaTeX, qui inclut la spécification de la résolution de l'image de sortie souhaitée.
 
@@ -30,21 +32,21 @@ Ensuite, nous précisons le préambule. Le préambule par défaut est :
 
 qui offre une prise en charge améliorée des formules mathématiques par rapport au LaTeX standard. Par exemple, vous pouvez inclure le package « color » pour personnaliser la mise en évidence dans la formule, comme démontré dans l'exemple de code fourni.
 
-Ensuite, nous demandons au moteur de rendu de mettre à l'échelle la sortie de 300 %.
+Nous définissons `scale = 3000` pour une échelle de 300 % et `margin = 5` pour laisser de l’espace autour du fragment. L’exemple PNG utilise `resolution = 150` DPI.
 
-Les deux options suivantes déterminent les couleurs de premier plan et d’arrière-plan. Toutes les parties de la formule qui ne sont pas affectées par la surbrillance personnalisée seront affichées dans la couleur « TextColor ».
+Les deux options suivantes déterminent les couleurs de premier plan et d’arrière-plan. Toutes les parties de la formule qui ne sont pas affectées par la surbrillance personnalisée seront affichées dans la couleur « text_color ».
 
-La ligne suivante de l'exemple illustre que vous avez la possibilité de rediriger la sortie du journal vers un flux spécifique.
+L’exemple affecte un flux de fichier binaire à `log_stream` et enregistre le journal dans `math-formula.png.log`, à côté de `math-formula.png`. L’instruction `with` ferme automatiquement les deux flux.
 
-Et enfin, l'option `ShowTerminal` vous permet de contrôler si la sortie du terminal doit être affichée dans la console.
+`show_terminal` contrôle la sortie du terminal dans la console. Les exemples le définissent sur `False` ; le journal est toujours écrit dans le fichier.
 
 Le processus de rendu proprement dit est effectué par la méthode [MathRenderer.render()](https://reference.aspose.com/tex/python-net/aspose.tex.features/mathrenderer/render/), qui renvoie la taille de la formule en points.
 
-La méthode accepte le flux dans lequel l'image sera écrite comme deuxième argument. Par la suite, nous procédons à la création du flux.
+Le deuxième argument est le flux de sortie binaire ouvert pour l’image. Le troisième fournit les options de rendu.
 
 Et enfin, la méthode `MathRenderer.render()` est invoquée, les options étant passées comme troisième argument. Le code LaTeX de la formule est fourni comme premier argument.
 
-Les dernières lignes de l'exemple affichent deux résultats du processus de rendu de formule mathématique : la taille de la formule et un rapport d'erreur concis, si des erreurs se produisent.
+Les dernières lignes affichent le rapport d’erreurs, ou `No rendering errors.` s’il est vide, puis la largeur et la hauteur en points.
 
 Voici le résultat du rendu.
 
@@ -58,7 +60,9 @@ Il s'agit de l'application la plus courante et la plus large de la fonctionnalit
 
 De même, nous pouvons convertir une formule mathématique LaTeX au format SVG en utilisant la même approche.
 
-{{< gist "aspose-com-gists""68d217858f0be40062562ce2bb2cd908""Aspose.TeX.Examples-Features-SvgLaTeXMathRendering.py" >}}
+{{< gist "aspose-com-gists" "cbf380b84d7f2067481756d42da32b08" "Aspose.TeX.Examples-Features-SvgLaTeXMathRendering.py" >}}
+
+Cet exemple crée `math-formula.svg` et son journal `math-formula.svg.log` dans le même répertoire de sortie.
 
 Les différences sont :
 

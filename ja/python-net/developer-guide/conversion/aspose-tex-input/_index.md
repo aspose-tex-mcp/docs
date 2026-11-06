@@ -21,15 +21,24 @@ Tex言語のI/O Primitivesはファイル名のみを処理できることを考
 
 これが私たちが取るアプローチです：
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Conversion-InputFileSystemDirectory.py" >}}
+`ASPOSE_TEX_OUTPUT_DIR` に出力ディレクトリを指定します（既定値：`output`）。事前にライセンスを適用してください。 [Licensing](/tex/ja/python-net/licensing/).
 
-この特定のユースケースはかなり簡単なので、今すぐ先に進むことができます。
+{{< gist "aspose-com-gists" "edcfdfad622f09d57fa03bedd01e0e38" "Aspose.TeX.Examples-Conversion-InputFileSystemDirectory.py" >}}
+
+`ASPOSE_TEX_INPUT_DIR` に `hello-world.tex` のあるフォルダーを指定します（既定値：`input`）。例では `TeXConfig.object_tex()` で plain TeX を処理し、`hello-world.xps` と `hello-world.log` を生成します。入力：
+
+```tex
+Hello, World!
+\end
+```
 
 ### ZIPアーカイブからファイル入力を取得します
 
 別のオプションは、入力ファイルをzipアーカイブに保存し、入力ディレクトリとして扱うことです。このようなシナリオでは、次の手順に従う必要があります。
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Conversion-InputZipDirectory.py" >}}
+{{< gist "aspose-com-gists" "edcfdfad622f09d57fa03bedd01e0e38" "Aspose.TeX.Examples-Conversion-InputZipDirectory.py" >}}
+
+`ASPOSE_TEX_INPUT_ZIP` は `in/hello-world.tex` を含むアーカイブを指定します（既定値：`zip-in.zip`）。バイナリモード `rb` で開き、ジョブが終了するまでストリームを開いたままにします。
 
 そもそも、zipファイルを含むストリームを作成します。その後、変換オプションを作成した後、[inputzipdirectory](https://reference.aspose.com/tex/python-net/aspose.tex.io/inputzipdirectory/)クラスのインスタンスを[input_working_directory](https://reference.aspose.com/tex/python-net/Aspose.TeX/texoptions/input_working_directory/)プロパティに割り当てます。コンストラクターの2番目のパラメーターは、アーカイブ内のベースパスを表します。アーカイブ全体が入力ディレクトリとして機能することを望む場合は、引数として空の文字列を提供する必要があります。
 
@@ -41,8 +50,6 @@ Tex言語のI/O Primitivesはファイル名のみを処理できることを考
 
 これを達成するには、[inputConsoleterminal](https://reference.aspose.com/tex/python-net/aspose.tex.io/inputconsoleterminal/)クラスのインスタンスを[Terminal_in](https://reference.aspose.com/tex/python-net/Aspose.TeX/texoptions/terminal_in/)オプションに割り当てる必要があります。
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Conversion-InputConsoleTerminal.py" >}}
+{{< gist "aspose-com-gists" "edcfdfad622f09d57fa03bedd01e0e38" "Aspose.TeX.Examples-Conversion-InputConsoleTerminal.py" >}}
 
-ただし、正直なところ、これはオプションのデフォルト値であるため、明示的に指定する必要はありません。他の実装がないことを考えると、このセクションは純粋にデモンストレーションのためです。
-
-理論的には、予測可能な動作を備えたインタラクティブなTEXファイル(またはスクリプト)がある場合、TEXエンジンの要求に応答する対応するスクリプトを含む入力端子のバージョンを実装することが望ましい場合があります。機会があれば、お気軽にお試しください！
+例では `\read` で1行を読み、`texput.xps` に出力します。端末で `Terminal input works!` などを入力するか、標準入力から渡してください。`SCROLL_MODE` はこの入力要求を許可します。

@@ -17,9 +17,9 @@ lastmod: "2025-06-09"
 
 ## カスタム形式の作成
 
-フォーマットファイルは、TEXエンジンの内部状態のバイナリ表現であることに留意してください。
+フォーマットファイルは TeX エンジンの内部状態のバイナリ表現です。まず[ライセンス](/tex/{{lang.url-fragment}}python-net/licensing/)を適用します。`customtex.tex` を `ASPOSE_TEX_INPUT_DIR`（既定値：`input`）の `CustomTeXFormat` サブフォルダーに配置します。`ASPOSE_TEX_OUTPUT_DIR` は出力フォルダー（既定値：`output`）を指定し、最初の例はそこに `customtex.fmt` を生成します。
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-CreateCustomTeXFormatFile.py" >}}
+{{< gist "aspose-com-gists" "fce5c70784ba7a4d2597b459d63adbf1" "Aspose.TeX.Examples-CreateCustomTeXFormatFile.py" >}}
 
 ご覧のとおり、コードはTEXファイルを変換するためのコードに似ています。ただし、いくつかの区別があります。
 
@@ -29,16 +29,16 @@ lastmod: "2025-06-09"
 
 2番目の大きな違いは、ジョブを実行する方法です。この場合、static [create_format()](https://reference.aspose.com/tex/python-net/aspose.tex/texjob/create_format/#str-aspose.tex.TeXOptions)メソッドを使用します。これは、オプションと併せて、メインソースファイルの名前が形式名と同一であることを要求します。
 
-## カスタム形式でTEXファイルを植林します
+## カスタム形式で TeX ファイルを組版する
 
-独自のTex形式を作成したので、この形式で記述されたTEXファイルを型付けに進めることができます。これがコードです：
+次の例は単独で実行できるように、まず `customtex.fmt` を作成します。その後、フォーマットを読み込み、バイナリストリームのテキストを組版して `typeset-with-custom-format.xps` を生成します。
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-TypesetWithCustomTeXFormat.py" >}}
+{{< gist "aspose-com-gists" "fce5c70784ba7a4d2597b459d63adbf1" "Aspose.TeX.Examples-TypesetWithCustomTeXFormat.py" >}}
 
 形式を指定するには、[formatprovider](https://reference.aspose.com/tex/python-net/aspose.tex.resourceproviders/formatprovider/)クラスのインスタンスを作成する必要があります。 Options Constructorでは、[texconfig.object_tex()](https://reference.aspose.com/tex/python-net/aspose.tex/texconfig/object_tex/#aspose.tex.resourceproviders.FormatProvider)構成を使用します。これは、フォーマットプロバイダーが引数として必要で、エンジンの「処女」状態の上に形式をロードします。
 
-残りのコードは、この[ガイド](/tex/{{lang.url-fragment}}net/conversion/)で前述した機能を利用しているため、おなじみのものでなければなりません。
+残りのコードは、この[ガイド](/tex/{{lang.url-fragment}}python-net/conversion/)で前述した機能を利用しているため、おなじみのものでなければなりません。
 
-## Plain Tex形式でTexファイルを植林します
+## Plain TeX 形式で TeX ファイルを組版する
 
 上記のコードからフォーマットプロバイダーを削除すると、エンジンはデフォルト形式をロードします。これは[オブジェクトTex](/tex/{{lang.url-fragment}}net/aspose-tex-and-object-tex/)である4番目の意味でです。したがって、Plain Tex形式でTexファイルが記述されている場合は、このアプローチを使用してサポートされているターゲット形式に変換できます。

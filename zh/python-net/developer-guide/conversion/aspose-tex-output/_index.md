@@ -24,15 +24,19 @@ aspose.tex将目录定义为名称和大部分数据之间的映射，其中大�
 
 这是我们将其设置的方式：
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Conversion-OutputFileSystemDirectory.py" >}}
+将 `ASPOSE_TEX_OUTPUT_DIR` 设置为输出目录（默认 `output`）。请先应用许可证。 [Licensing](/tex/zh/python-net/licensing/).
 
-这种特殊的用例很简单，因此无需进一步深入研究。
+{{< gist "aspose-com-gists" "edcfdfad622f09d57fa03bedd01e0e38" "Aspose.TeX.Examples-Conversion-OutputFileSystemDirectory.py" >}}
+
+内嵌的 plain TeX 流在输出目录中生成 `texput.xps` 和 `texput.log`。
 
 ### 将输出作为邮政编码文件保存。
 
 另一个选项是创建文件或流，并将其用作zip存档来存储输出文件。这是一个示例：
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Conversion-OutputZipDirectory.py" >}}
+{{< gist "aspose-com-gists" "edcfdfad622f09d57fa03bedd01e0e38" "Aspose.TeX.Examples-Conversion-OutputZipDirectory.py" >}}
+
+以二进制模式 `wb` 打开 `zip-xps-out.zip`。关闭流之前调用 `OutputZipDirectory` 的 `finish()`。压缩包包含 `texput.xps` 和 `texput.log`。
 
 首先，我们为zip文件创建一个输出流。然后，在创建转换选项后，我们将 *output_working_directory*选项设置为[outputzipdirectory](https://reference.aspose.com/tex/python-net/aspose.tex.io/outputzipdirectory/)类的实例。
 
@@ -44,7 +48,7 @@ aspose.tex将目录定义为名称和大部分数据之间的映射，其中大�
 
 为此，我们需要将[terminal_out](https://reference.aspose.com/tex/python-net/aspose.tex/texoptions/terminal_out/)选项设置为[outputConsoleterminal](https://reference.aspose.com/tex/python-net/aspose.tex.io/outputconsoleterminal/)类的实例。
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Conversion-OutputConsoleTerminal.py" >}}
+{{< gist "aspose-com-gists" "edcfdfad622f09d57fa03bedd01e0e38" "Aspose.TeX.Examples-Conversion-OutputConsoleTerminal.py" >}}
 
 再次，这是该选项的默认值，因此无需指定它。因此，本节仅用于演示目的。
 
@@ -52,6 +56,6 @@ aspose.tex将目录定义为名称和大部分数据之间的映射，其中大�
 
 与输入终端相反，**aspose.tex的python**包括*iOutputterm*接口的实现，使我们能够将终端输出写入指定的输出目录中的文件。
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Conversion-OutputFileTerminal.py" >}} 
+{{< gist "aspose-com-gists" "edcfdfad622f09d57fa03bedd01e0e38" "Aspose.TeX.Examples-Conversion-OutputFileTerminal.py" >}}
 
-在这种情况下，我们指示TEX引擎将终端输出写入名为[<job_name>](/tex/{{lang.url-fragment}}net/tex-io/#tex-output).TRM的文件，该文件将位于与其余输出的同一输出目录中。但是，这不是强制性的。我们还可以向构造函数提供 *iOutputtermal*实现的任何其他实例。
+`OutputFileTerminal` 构造函数接收输出工作目录，并在其中将 `texput.trm` 写到 `texput.xps` 和 `texput.log` 旁。

@@ -39,57 +39,36 @@ print(tex.__version__)
 
 **F: Wie kann ich eine „.tex“-Datei mit ein paar Codezeilen in PDF konvertieren?**  
 <br>
-**A:** 
+**A:** Erstellen Sie einen `TeXJob` mit der Object-LaTeX-Konfiguration, `PdfSaveOptions` und `PdfDevice`. Setzen Sie `ASPOSE_TEX_INPUT_FILE` auf Ihre LaTeX-Datei und `ASPOSE_TEX_OUTPUT_DIR` auf das Ausgabeverzeichnis, oder ändern Sie die Pfade im Beispiel. Die Standardwerte sind `hello-world.ltx` und `output`. Wenden Sie vorher eine Lizenz an. Zusätzliche Eingabedateien werden neben dem Hauptdokument gesucht; die Verarbeitung erfolgt ohne interaktive Eingaben. [Lizenzierung](/tex/de/python-net/licensing/)
 
-```python
-import aspose.tex as tex
+{{< gist "aspose-com-gists" "3616f5e300517031e6a4ae4158e24776" "Aspose.TeX.Examples-Conversion-LaTeXToPdf-Simplest.py" >}}
 
-doc = tex.Document("sample.tex")          # load LaTeX source
-doc.save("sample.pdf", tex.SaveFormat.PDF)  # write PDF
-```  
-
-Sie können ein Dokument auch aus einer Zeichenfolge („tex.Document(latex_source)“) oder einem In-Memory-Stream erstellen.  
-
+Der Ausgabename folgt dem Eingabenamen: Aus `hello-world.ltx` wird `hello-world.pdf`. [LaTeX → PDF](/tex/de/python-net/latex-to-pdf/)
 <br><br>
 
 **F: Welche Ausgabeformate kann AsposeTeXforPython generieren?**  
 <br>
-**A:** PDF, XPS, SVG, PNG, JPEG, BMP und TIFF. Jedes Format kann über bestimmte „SaveOptions“-Objekte gesteuert werden (z. B. „PdfSaveOptions“, „ImageSaveOptions“, „SvgSaveOptions“).  
+**A:** PDF, XPS, SVG, PNG, JPEG, BMP und TIFF. Jedes Format kann über bestimmte „SaveOptions“-Objekte gesteuert werden (z. B. „PdfSaveOptions“, „PngSaveOptions“, „SvgSaveOptions“).
 
 <br><br>
 
 **F: Wie bette ich benutzerdefinierte Schriftarten in das generierte PDF ein?**  
 <br>
-**A:** Registrieren Sie vor dem Rendern einen benutzerdefinierten Schriftartenordner:
-
-```python
-font_src = tex.FontSource()
-font_src.add_folder(r"C:\MyFonts")   # or "/home/user/fonts"
-tex.FontSettings.set_default_sources([font_src])
-doc.save("out.pdf", tex.PdfSaveOptions())
-```  
-
-Standardmäßig sind alle verwendeten Schriftarten eingebettet. Deaktivieren Sie die Einbettung mit „PdfSaveOptions.embed_fonts = False“.  
-
+**A:** Schriftarten werden im TeX- oder LaTeX-Dokument und seinen Paketen ausgewählt. Für Paketressourcen siehe [externe LaTeX-Pakete](/tex/{{lang.url-fragment}}python-net/external-latex-packages/). Die Eigenschaft [`subset_fonts`](https://reference.aspose.com/tex/python-net/aspose.tex.presentation.pdf/pdfsaveoptions/) von `PdfSaveOptions` legt fest, ob nur verwendete Glyphen eingebettet werden; sie wählt keine benutzerdefinierte Schriftart aus. Ein vollständiges XPS-Beispiel mit derselben Option finden Sie unter [Schriftartuntergruppen](/tex/{{lang.url-fragment}}python-net/other-options/).
 <br><br>
 
 **F: Welche LaTeX-Pakete und -Klassen werden standardmäßig unterstützt?**  
 <br>
-**A:** Mehr als 300 Kernpakete (z. B. „amsmath“, „graphicx“, „hyperref“, „xcolor“, „tikz“, „pgfplots“, „booktabs“) und allgemeine Klassen („article“, „report“, „book“, „memoir“).  
-
+**A:** Die Bibliothek enthält gängige LaTeX-Pakete und Klassen. Den Umfang zeigt die [Liste eingebetteter Pakete](/tex/{{lang.url-fragment}}net/embedded-packages/). Das [Beispiel für externe Pakete](/tex/{{lang.url-fragment}}python-net/external-latex-packages/) stellt die Quellen von `pgfplots` über `required_input_directory` bereit.
 <br><br>
 
 **F: Wie kann ich eine „.sty“- oder Klassendatei eines Drittanbieters verwenden, die nicht integriert ist?**  
 <br>
-**A:** Platzieren Sie die Datei „.sty“/`.cls“ im selben Verzeichnis wie das Quelldokument oder fügen Sie ihren Ordner zu den Ressourcenladern des Dokuments hinzu:
+**A:** Setzen Sie `TeXOptions.required_input_directory` auf ein `InputFileSystemDirectory` mit den benötigten Paketdateien. Das vollständige Beispiel lädt `fancybox.sty` aus `ExternalLaTeXPackages/packages` und konvertiert `required-input-fs.tex` nach PNG. Informationen zu ZIP-Archiven und Einschränkungen finden Sie unter [externe LaTeX-Pakete](/tex/{{lang.url-fragment}}python-net/external-latex-packages/).
 
-```python
-doc = tex.Document("mydoc.tex")
-doc.resource_loaders.append(tex.FolderResourceLoader(r"C:\MyLatexPackages"))
-```  
+Wenden Sie zuerst eine [Lizenz](/tex/{{lang.url-fragment}}python-net/licensing/) an. `ASPOSE_TEX_INPUT_DIR` muss auf den Ordner zeigen, der `ExternalLaTeXPackages` mit den beiden `.tex`-Dateien und dem Unterverzeichnis `packages` enthält (Standard: `input`). Setzen Sie `ASPOSE_TEX_OUTPUT_DIR` auf den Ausgabeordner (Standard: `output`).
 
-Die Engine lädt die benutzerdefinierten Dateien bei der nächsten Konvertierung automatisch.  
-
+{{< gist "aspose-com-gists" "fce5c70784ba7a4d2597b459d63adbf1" "Aspose.TeX.Examples-Conversion-RequiredInput-FileSystem.py" >}}
 <br><br>
 
 **F: Was sind die Haupteinschränkungen der Engine?**  
@@ -107,14 +86,11 @@ Die Engine lädt die benutzerdefinierten Dateien bei der nächsten Konvertierung
 
 **F: Wie wende ich einen Lizenzschlüssel an und welche Lizenzmodelle sind verfügbar?**  
 <br>
-**A:** Wenden Sie die Lizenz einmal pro Vorgang an:
+**A:** Wenden Sie die Lizenz an, bevor Sie andere Aspose.TeX-Klassen verwenden. Setzen Sie `ASPOSE_TEX_PYTHON_NET_LICENSE_PATH` auf den Lizenzpfad oder legen Sie `Aspose.TeX.Python-net.lic` im Arbeitsverzeichnis ab.
 
-```python
-import aspose.tex as tex
-tex.License().set_license("Aspose.Total.NET.lic")
-```  
+{{< gist "aspose-com-gists" "593d1652856be08ad2ec145fbe3796a2" "Aspose.TeX.Examples-LoadLicenseFromFile.py" >}}
 
-Lizenzierungsoptionen: Kostenlose Testversion (10-Seiten-Limit, kein Wasserzeichen), Developer/Single-Machine (unbegrenzte Seiten auf einem Computer), Enterprise/Multi-Seat (unbegrenzt im gesamten Unternehmen mit vorrangigem Support).  
+Beispiele für die Lizenzierung per Datei, Stream und Metered sowie Einschränkungen der Testversion finden Sie unter [Lizenzierung](/tex/{{lang.url-fragment}}python-net/licensing/).
 
 <br><br>
 
@@ -131,30 +107,28 @@ Lizenzierungsoptionen: Kostenlose Testversion (10-Seiten-Limit, kein Wasserzeich
 
 **F: Wie kann ich Seitengröße, Ausrichtung und DPI für Rasterausgaben festlegen?**  
 <br>
-**A:** Verwenden Sie die Objekte „PageSetup“ und „ImageSaveOptions“:
+**A:** Legen Sie Seitengröße und Ausrichtung im LaTeX-Quelltext fest. Speichern Sie beispielsweise dieses A4-Dokument im Querformat als `landscape.ltx`:
 
-```python
-doc.page_setup.size = tex.PageSize.A4
-doc.page_setup.orientation = tex.PageOrientation.LANDSCAPE
+```latex
+\documentclass{article}
+\usepackage[a4paper,landscape]{geometry}
+\begin{document}
+Hello, World!
+\end{document}
+```
 
-opts = tex.ImageSaveOptions()
-opts.dpi = 300
-doc.save("out.png", opts)
-```  
+Setzen Sie `PngSaveOptions.resolution`, bevor Sie die Speicheroptionen dem Auftrag zuweisen. Das Beispiel verwendet 300 DPI. Setzen Sie `ASPOSE_TEX_INPUT_FILE` auf `landscape.ltx` und `ASPOSE_TEX_OUTPUT_DIR` auf das Ausgabeverzeichnis, oder verwenden Sie die Standardpfade:
+
+{{< gist "aspose-com-gists" "3616f5e300517031e6a4ae4158e24776" "Aspose.TeX.Examples-Conversion-LaTeXToPng-PageLayout.py" >}}
+
+Das Ergebnis ist `landscape.png` mit ungefähr 3508 × 2480 Pixeln.
 <br><br>
 
 **F: Kann ich LaTeX direkt aus einem String oder einem In-Memory-Stream rendern?**  
 <br>
-**A:** Absolut. Übergeben Sie die LaTeX-Quellzeichenfolge an den Konstruktor oder verwenden Sie einen `io.BytesIO`-Stream:
+**A:** Kodieren Sie ein vollständiges LaTeX-Dokument in einen binären `BytesIO`-Stream und übergeben Sie ihn an `TeXJob` mit `TeXConfig.object_latex`. Halten Sie den Stream während des Auftrags offen. Ergebnis: `texput.xps` und `texput.log`. Setzen Sie `ASPOSE_TEX_OUTPUT_DIR` auf das Ausgabeverzeichnis (Standard: `output`). Wenden Sie zuerst eine Lizenz an. [Licensing](/tex/de/python-net/licensing/).
 
-```python
-src = r"\section{Hello}\textbf{World}"
-doc = tex.Document(src)          # from string
-# or
-stream = io.BytesIO(src.encode())
-doc = tex.Document(stream)       # from stream
-```  
-
+{{< gist "aspose-com-gists" "edcfdfad622f09d57fa03bedd01e0e38" "Aspose.TeX.Examples-Conversion-InputStream.py" >}}
 <br><br>
 
 **F: Wo finde ich offizielle Dokumentation, Codebeispiele und Supportkanäle?**  

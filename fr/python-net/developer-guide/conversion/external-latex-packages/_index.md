@@ -15,9 +15,11 @@ lastmod: "2024-09-27"
 
 La bibliothèque **Aspose.TeX** est livrée avec une variété de [packages LaTeX courants](/tex/{{lang.url-fragment}}net/embedded-packages/), il n'est donc pas nécessaire de fournir manuellement ces packages au moteur TeX. Cependant, il peut y avoir des situations où votre fichier LaTeX nécessite un package qui n'est pas inclus dans le « bundle » de packages de la bibliothèque. Dans de tels cas, vous pouvez essayer de fournir les entrées nécessaires, telles que les fichiers sources du package requis, via l'option [required_input_directory](https://reference.aspose.com/tex/python-net/aspose.tex/texoptions/required_input_directory/) de l'instance de classe [TeXOptions](https://reference.aspose.com/tex/python-net/aspose.tex/texoptions/). Nous allons explorer comment cela fonctionne avec deux exemples.
 
+Appliquez d’abord une [licence](/tex/{{lang.url-fragment}}python-net/licensing/). Définissez `ASPOSE_TEX_INPUT_DIR` sur le dossier contenant `ExternalLaTeXPackages`, avec les deux fichiers `.tex` et le sous-dossier `packages` (par défaut : `input`). Définissez `ASPOSE_TEX_OUTPUT_DIR` sur le dossier de sortie (par défaut : `output`).
+
 ### Entrée requise fournie sous une forme décompressée (le package `fancybox`).
 
-Supposons que nous ayons le fichier LaTeX de base suivant nommé « require-input-fs.tex », qui fait partie de notre [exemple de solution](https://GitHub.com/aspose-tex/Aspose.TeX-for-Python-.NET) :
+Supposons que nous ayons le fichier LaTeX de base suivant nommé « required-input-fs.tex », qui fait partie de notre [exemple de solution](https://GitHub.com/aspose-tex/Aspose.TeX-for-Python-.NET) :
 
 ```tex
 \documentclass{article}
@@ -45,6 +47,9 @@ Test: \fbox{
 La 3ème ligne du fichier indique qu'il nécessite le package `fancybox`, qui n'est pas inclus dans le support "natif". Supposons que nous ayons le fichier source du package `fancybox`. Puisqu'il s'agit d'un simple package composé d'un seul fichier, nous pouvons placer ce fichier n'importe où dans notre système de fichiers et spécifier le chemin du répertoire comme suit :
 
 ```Python
+from aspose.tex.io import InputFileSystemDirectory
+
+# Configure an existing TeXOptions instance.
 options.required_input_directory = InputFileSystemDirectory('path-to-directory-where-fancybox.sty-located')
 ```
 
@@ -54,7 +59,7 @@ Une fois que nous exécutons un travail TeX avec cette option (n'oubliez pas d'a
 
 Voici le code source complet de l'exemple :
 
-{{< gist "aspose-com-gists""68d217858f0be40062562ce2bb2cd908""Aspose.TeX.Examples-Conversion-RequiredInput-FileSystem.py" >}}
+{{< gist "aspose-com-gists" "fce5c70784ba7a4d2597b459d63adbf1" "Aspose.TeX.Examples-Conversion-RequiredInput-FileSystem.py" >}}
 
 ### Fournir les entrées requises sous une forme archivée (le package `pgfplots`)
 
@@ -99,10 +104,12 @@ Sur la troisième ligne, on peut observer que le fichier nécessite le package `
 Et voici la méthode par laquelle nous définissons l'accessibilité à ces fichiers sources :
 
 ```Python
-with open("path-to-zip-with-pgfplots-sources") as zipStream:
-    ...
-    options.required_input_directory = InputZipDirectory(zipStream)
-    ...
+from aspose.tex.io import InputZipDirectory
+
+# Configure an existing TeXOptions instance and run the job while the stream is open.
+with open("path-to-zip-with-pgfplots-sources", "rb") as zip_stream:
+    options.required_input_directory = InputZipDirectory(zip_stream, "")
+    # Run TeXJob here, as shown in the complete example below.
 ```
 
 Après avoir exécuté un travail TeX avec cette option, nous obtenons le document de sortie :
@@ -111,7 +118,7 @@ Après avoir exécuté un travail TeX avec cette option, nous obtenons le docume
 
 Voici le code source complet de l'exemple :
 
-{{< gist "aspose-com-gists""68d217858f0be40062562ce2bb2cd908""Aspose.TeX.Examples-Conversion-RequiredInput-Zip.py" >}}
+{{< gist "aspose-com-gists" "fce5c70784ba7a4d2597b459d63adbf1" "Aspose.TeX.Examples-Conversion-RequiredInput-Zip.py" >}}
 
 > **_REMARQUE :_** Le résultat a été vérifié à l'aide du package `pgfplots` version 1.18.1. La version du package `pfg` inclus dans la bibliothèque **Aspose.TeX** est la 3.1.9a.
 
@@ -124,7 +131,7 @@ L'extension du moteur *Object TeX* d'**Aspose.TeX** nécessite des tables de pol
 
 Vous trouverez ci-dessous un exemple de répertoire d'entrée personnalisé requis qui montre comment implémenter l'interface [IFileCollector](https://reference.aspose.com/tex/python-net/aspose.tex.io/ifilecollector/). Cet exemple se concentre sur la collecte des noms de fichiers par extension et omet intentionnellement les détails du stockage et de la récupération des fichiers.
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Conversion-RequiredInput-Zip.py" >}}
+
 -->
 
 ### Restrictions

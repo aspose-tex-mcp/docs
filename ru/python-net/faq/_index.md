@@ -37,52 +37,35 @@ print(tex.__version__)
 
 **В: Как преобразовать файл `.tex` в PDF с помощью нескольких строк кода?**  
 <br>
-**О:** 
+**О:** Создайте `TeXJob` с конфигурацией Object LaTeX, `PdfSaveOptions` и `PdfDevice`. Укажите путь к файлу LaTeX в `ASPOSE_TEX_INPUT_FILE`, а выходной каталог — в `ASPOSE_TEX_OUTPUT_DIR`, либо измените пути в примере. По умолчанию используются `hello-world.ltx` и `output`. Предварительно примените лицензию. Дополнительные входные файлы ищутся рядом с основным документом; обработка выполняется без интерактивного ввода. [Лицензирование](/tex/ru/python-net/licensing/)
 
-```python
-import aspose.tex as tex
+{{< gist "aspose-com-gists" "3616f5e300517031e6a4ae4158e24776" "Aspose.TeX.Examples-Conversion-LaTeXToPdf-Simplest.py" >}}
 
-doc = tex.Document("sample.tex")          # load LaTeX source
-doc.save("sample.pdf", tex.SaveFormat.PDF)  # write PDF
-```  
-
-Вы также можете создать документ из строки («tex.Document(latex_source)») или потока в памяти.  
+Имя результата соответствует входному файлу: из `hello-world.ltx` получается `hello-world.pdf`. [LaTeX → PDF](/tex/ru/python-net/latex-to-pdf/)
 <br><br>
 
 **В: Какие форматы вывода может генерировать AsposeTeXforPython?**  
 <br>
-**О:** PDF, XPS, SVG, PNG, JPEG, BMP и TIFF. Каждым форматом можно управлять с помощью определенных объектов SaveOptions (например, PdfSaveOptions, ImageSaveOptions, SvgSaveOptions).  
+**О:** PDF, XPS, SVG, PNG, JPEG, BMP и TIFF. Каждым форматом можно управлять с помощью определенных объектов SaveOptions (например, PdfSaveOptions, PngSaveOptions, SvgSaveOptions).
 <br><br>
 
 **В: Как встроить собственные шрифты в созданный PDF-файл?**  
 <br>
-**О:** Перед рендерингом зарегистрируйте папку со шрифтами:
-
-```python
-font_src = tex.FontSource()
-font_src.add_folder(r"C:\MyFonts")   # or "/home/user/fonts"
-tex.FontSettings.set_default_sources([font_src])
-doc.save("out.pdf", tex.PdfSaveOptions())
-```  
-
-По умолчанию все используемые шрифты встроены; отключите встраивание с помощью `PdfSaveOptions.embed_fonts = False`.  
+**О:** Шрифты выбираются в документе TeX или LaTeX и его пакетах. О ресурсах пакетов см. [Внешние пакеты LaTeX](/tex/{{lang.url-fragment}}python-net/external-latex-packages/). Свойство [`subset_fonts`](https://reference.aspose.com/tex/python-net/aspose.tex.presentation.pdf/pdfsaveoptions/) класса `PdfSaveOptions` определяет, следует ли встраивать только используемые глифы; оно не выбирает пользовательский шрифт. Полный пример XPS с этой же настройкой приведён в разделе [Подмножества шрифтов](/tex/{{lang.url-fragment}}python-net/other-options/).
 <br><br>
 
 **В: Какие пакеты и классы LaTeX поддерживаются «из коробки»?**  
 <br>
-**О:** Более 300 основных пакетов (например, `amsmath`, `graphicx`, `hyperref`, `xcolor`, `tikz`, `pgfplots`, `booktabs`) и общих классов (`article`, `report`, `book`, `memoir`).  
+**О:** Библиотека включает распространённые пакеты и классы LaTeX. Их состав указан в [списке встроенных пакетов](/tex/{{lang.url-fragment}}net/embedded-packages/). В [примере внешних пакетов](/tex/{{lang.url-fragment}}python-net/external-latex-packages/) исходные файлы `pgfplots` передаются через `required_input_directory`.
 <br><br>
 
 **В: Как я могу использовать сторонний файл `.sty` или файл класса, который не является встроенным?**  
 <br>
-**A:** Поместите файл `.sty`/`.cls` в тот же каталог, что и исходный документ, или добавьте его папку в загрузчики ресурсов документа:
+**A:** Задайте для `TeXOptions.required_input_directory` объект `InputFileSystemDirectory`, указывающий на файлы нужного пакета. Полный пример загружает `fancybox.sty` из `ExternalLaTeXPackages/packages` и преобразует `required-input-fs.tex` в PNG. О ZIP-архивах и ограничениях совместимости см. [Внешние пакеты LaTeX](/tex/{{lang.url-fragment}}python-net/external-latex-packages/).
 
-```python
-doc = tex.Document("mydoc.tex")
-doc.resource_loaders.append(tex.FolderResourceLoader(r"C:\MyLatexPackages"))
-```  
+Сначала примените [лицензию](/tex/{{lang.url-fragment}}python-net/licensing/). Укажите в `ASPOSE_TEX_INPUT_DIR` папку, содержащую `ExternalLaTeXPackages` с двумя файлами `.tex` и подкаталогом `packages` (по умолчанию: `input`). Задайте папку вывода в `ASPOSE_TEX_OUTPUT_DIR` (по умолчанию: `output`).
 
-Движок автоматически загрузит пользовательские файлы при следующем преобразовании.  
+{{< gist "aspose-com-gists" "fce5c70784ba7a4d2597b459d63adbf1" "Aspose.TeX.Examples-Conversion-RequiredInput-FileSystem.py" >}}
 <br><br>
 
 **В: Каковы основные ограничения движка?**  
@@ -99,14 +82,11 @@ doc.resource_loaders.append(tex.FolderResourceLoader(r"C:\MyLatexPackages"))
 
 **В: Как применить лицензионный ключ и какие модели лицензирования доступны?**  
 <br>
-**О:** Примените лицензию один раз для каждого процесса:
+**О:** Примените лицензию перед использованием других классов Aspose.TeX. Укажите путь к лицензии в `ASPOSE_TEX_PYTHON_NET_LICENSE_PATH` или поместите `Aspose.TeX.Python-net.lic` в рабочий каталог.
 
-```python
-import aspose.tex as tex
-tex.License().set_license("Aspose.Total.NET.lic")
-```  
+{{< gist "aspose-com-gists" "593d1652856be08ad2ec145fbe3796a2" "Aspose.TeX.Examples-LoadLicenseFromFile.py" >}}
 
-Варианты лицензирования: Бесплатная пробная версия (ограничение на 10 страниц, без водяных знаков), Разработчик/Одна машина (неограниченное количество страниц на одной машине), Корпоративная/Многопользовательская (неограниченно для всей организации с приоритетной поддержкой).  
+Примеры загрузки лицензии из файла и потока, Metered-лицензирования и ограничения ознакомительной версии приведены в разделе [Лицензирование](/tex/{{lang.url-fragment}}python-net/licensing/).
 <br><br>
 
 **В: Является ли библиотека потокобезопасной для параллельных преобразований?**  
@@ -121,30 +101,28 @@ tex.License().set_license("Aspose.Total.NET.lic")
 
 **В: Как настроить размер страницы, ориентацию и разрешение на дюйм для растровых изображений?**  
 <br>
-**A:** Используйте объекты PageSetup и ImageSaveOptions:
+**A:** Задайте размер и ориентацию страницы в исходном коде LaTeX. Например, сохраните этот документ A4 с альбомной ориентацией как `landscape.ltx`:
 
-```python
-doc.page_setup.size = tex.PageSize.A4
-doc.page_setup.orientation = tex.PageOrientation.LANDSCAPE
+```latex
+\documentclass{article}
+\usepackage[a4paper,landscape]{geometry}
+\begin{document}
+Hello, World!
+\end{document}
+```
 
-opts = tex.ImageSaveOptions()
-opts.dpi = 300
-doc.save("out.png", opts)
-```  
+Установите `PngSaveOptions.resolution` до передачи параметров сохранения заданию. В примере используется 300 DPI. Укажите `landscape.ltx` в `ASPOSE_TEX_INPUT_FILE`, а выходной каталог — в `ASPOSE_TEX_OUTPUT_DIR`, либо используйте пути по умолчанию:
+
+{{< gist "aspose-com-gists" "3616f5e300517031e6a4ae4158e24776" "Aspose.TeX.Examples-Conversion-LaTeXToPng-PageLayout.py" >}}
+
+Результат — `landscape.png` размером примерно 3508 × 2480 пикселей.
 <br><br>
 
 **В: Могу ли я визуализировать LaTeX непосредственно из строки или потока в памяти?**  
 <br>
-**О:** Абсолютно. Передайте исходную строку LaTeX конструктору или используйте поток io.BytesIO:
+**О:** Закодируйте полный документ LaTeX в двоичный поток `BytesIO` и передайте его в `TeXJob` с `TeXConfig.object_latex`. Сохраняйте поток открытым во время задания. Результат: `texput.xps` и `texput.log`. Укажите выходной каталог в `ASPOSE_TEX_OUTPUT_DIR` (по умолчанию `output`). Предварительно примените лицензию. [Licensing](/tex/ru/python-net/licensing/).
 
-```python
-src = r"\section{Hello}\textbf{World}"
-doc = tex.Document(src)          # from string
-# or
-stream = io.BytesIO(src.encode())
-doc = tex.Document(stream)       # from stream
-```  
-
+{{< gist "aspose-com-gists" "edcfdfad622f09d57fa03bedd01e0e38" "Aspose.TeX.Examples-Conversion-InputStream.py" >}}
 <br><br>
 
 **В: Где я могу найти официальную документацию, примеры кода и каналы поддержки?**  

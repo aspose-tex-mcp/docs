@@ -15,7 +15,9 @@ lastmod: "2024-09-20"
 
 If needed, take a look at the [API reference section for this topic](https://reference.aspose.com/tex/python-net/aspose.tex.features/). In fact, the best way to demonstrate the **LaTeX math formula** rendering feature is to start with an example. Here it is:
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Features-PngLaTeXMathRendering.py" >}}
+Set `ASPOSE_TEX_OUTPUT_DIR` to your output directory, or use the default `output` folder. All LaTeX input is included in the examples; no external input files are needed. Apply a license first as described in [Licensing](/tex/{{lang.url-fragment}}python-net/licensing/).
+
+{{< gist "aspose-com-gists" "cbf380b84d7f2067481756d42da32b08" "Aspose.TeX.Examples-Features-PngLaTeXMathRendering.py" >}}
 
 Let's get to the details. Firstly, we initiate a [rendering options](https://reference.aspose.com/tex/python-net/aspose.tex.features/mathrendereroptions/) object, similar to the TeX/LaTeX typesetting, which includes the specification for the desired output image resolution.
 
@@ -30,21 +32,21 @@ Next, we specify the preamble. The default preamble is:
 
 which offers enhanced support for mathematical formulas compared to standard LaTeX. For instance, you can include the `color` package to customize the highlighting in the formula, as demonstrated in the provided code example.
 
-Then we instruct the renderer to scale the output by 300%.
+Then we set `scale = 3000` for 300% scaling and `margin = 5` to leave space around the rendered fragment. The PNG example uses `resolution = 150` DPI.
 
-The next two options determine the foreground and background colors. Any parts of the formula that are not affected by the custom highlighting will be displayed in the `TextColor` color.
+The next two options determine the foreground and background colors. Any parts of the formula that are not affected by the custom highlighting will be displayed in the `text_color` color.
 
-The following line in the example serves as an illustration that you have the option to redirect the log output to a specific stream.
+The example assigns a binary file stream to `log_stream`, saving the rendering log as `math-formula.png.log` beside `math-formula.png`. Both streams are closed automatically by the `with` statement.
 
-And finally, the `ShowTerminal` option enables you to control whether the terminal output should be displayed in the console.
+The `show_terminal` option controls terminal output in the console. These examples set it to `False`; the log is still written to the file.
 
 The actual rendering process is carried out by the [MathRenderer.render()](https://reference.aspose.com/tex/python-net/aspose.tex.features/mathrenderer/render/) method, which returns the size of the formula in points.
 
-The method accepts the stream where the image will be written as its second argument. Subsequently, we proceed to create the stream.
+The second argument is the binary output stream opened for the image. The third argument supplies the rendering options.
 
 And finally, the `MathRenderer.render()` method is invoked, with the options being passed as the third argument. The LaTeX code of the formula is provided as the first argument.
 
-The final lines of the example display two outputs of the math formula rendering process - the size of the formula and a concise error report, if any errors occur.
+The final lines print the rendering error report, or `No rendering errors.` when it is empty, followed by the width and height in points.
 
 Here is the result of the rendering.
 
@@ -58,7 +60,9 @@ This represents the most common and broad application of the **LaTeX math formul
 
 Similarly, we can convert a LaTeX math formula into SVG format using the same approach.
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Features-SvgLaTeXMathRendering.py" >}}
+{{< gist "aspose-com-gists" "cbf380b84d7f2067481756d42da32b08" "Aspose.TeX.Examples-Features-SvgLaTeXMathRendering.py" >}}
+
+This example creates `math-formula.svg` and its rendering log, `math-formula.svg.log`, in the same output directory.
 
 The differences are:
 

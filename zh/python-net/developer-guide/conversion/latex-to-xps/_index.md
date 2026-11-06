@@ -19,14 +19,16 @@ lastmod: "2025-06-10"
 
 将乳胶转换为XPS的过程同样简单，类似于[转换为栅格图像格式](/tex/{{lang.url-fragment}}python-net/latex-to-image/)。但是，它需要将[save_options](https://reference.aspose.com/tex/python-net/aspose.tex/texoptions/save_options/)设置为[xpsSaveOptions](https://reference.aspose.com/tex/python-net/aspose.tex.presentation.xps/xpssaveoptions/)类的实例(默认情况下或显式)，然后将设备更改为[xpsdevice](https://reference.aspose.com/tex/python-net/aspose.tex.presentation.xps/xpsdevice/)类的实例。
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Conversion-LaTeXToXps-Simplest.py" >}}
+将 `ASPOSE_TEX_INPUT_FILE` 设置为 LaTeX 文件路径，将 `ASPOSE_TEX_OUTPUT_DIR` 设置为输出目录，或修改示例中的路径。默认值为 `hello-world.ltx` 和 `output`。请先应用许可证。示例在主文档所在目录查找其他输入文件，并以非交互方式处理。 [许可证](/tex/zh/python-net/licensing/)
+
+{{< gist "aspose-com-gists" "3616f5e300517031e6a4ae4158e24776" "Aspose.TeX.Examples-Conversion-LaTeXToXps-Simplest.py" >}}
 
 ### 编写主输出XPS文件的另一种方法
 
 *XpsDevice*类有一个替代构造函数，它允许以不同的方式获得所得的XPS文件。
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Conversion-LaTeXToXps-Alternative.py" >}}
+{{< gist "aspose-com-gists" "3616f5e300517031e6a4ae4158e24776" "Aspose.TeX.Examples-Conversion-LaTeXToXps-Alternative.py" >}}
 
-效果与我们得到[这里](/tex/{{lang.url-fragment}}python-net/latex-to-pdf/#an-alternative-way-to-write-main-output-pdf-file)相同。
+二进制流将 `any-name.xps` 写入指定的输出目录，不会另外生成使用默认名称的 XPS 文件。辅助文件和日志仍保存到 `output_working_directory`。
 
 **您还可以探索免费的[用于 LaTeX 到 XPS 转换的 Web 应用程序](https://products.aspose.app/tex/conversion/latex-to-xps)，它是使用 [Aspose.TeX for .NET API](https://products.aspose.com/tex/net/) 开发的。**

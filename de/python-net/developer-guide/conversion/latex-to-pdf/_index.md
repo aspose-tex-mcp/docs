@@ -16,7 +16,9 @@ lastmod: "2024-09-26"
 
 Schauen wir uns nun den Python-Code genauer an, der den einfachsten Ansatz zur Konvertierung von LaTeX in das PDF-Format bietet.
 
-{{< gist "aspose-com-gists""68d217858f0be40062562ce2bb2cd908""Aspose.TeX.Examples-Conversion-LaTeXToPdf-Simplest.py" >}}
+Setzen Sie `ASPOSE_TEX_INPUT_FILE` auf Ihre LaTeX-Datei und `ASPOSE_TEX_OUTPUT_DIR` auf das Ausgabeverzeichnis, oder ändern Sie die Pfade im Beispiel. Die Standardwerte sind `hello-world.ltx` und `output`. Wenden Sie vorher eine Lizenz an. Zusätzliche Eingabedateien werden neben dem Hauptdokument gesucht; die Verarbeitung erfolgt ohne interaktive Eingaben. [Lizenzierung](/tex/de/python-net/licensing/)
+
+{{< gist "aspose-com-gists" "3616f5e300517031e6a4ae4158e24776" "Aspose.TeX.Examples-Conversion-LaTeXToPdf-Simplest.py" >}}
 
 Zunächst müssen wir eine Instanz der Klasse [TeXOptions](https://reference.aspose.com/tex/python-net/aspose.tex/texoptions/) erstellen. Die Methode [console_app_options()](https://reference.aspose.com/tex/python-net/aspose.tex/texoptions/console_app_options/#aspose.tex.TeXConfig)   ist die einzige statische Methode, die dies erreicht, also machen Sie sich über ihren Namen keine Sorgen. Diese Methode benötigt eine [object_latex](https://reference.aspose.com/tex/python-net/aspose.tex/texconfig/object_latex/)-Instanz der Klasse [TeXConfig](https://reference.aspose.com/tex/python-net/aspose.tex/texconfig/), die sich perfekt zum Konvertieren einer [LaTeX-Datei](/tex/{{lang.url-fragment}}net/latex-io/#latex-file) eignet. Diese Konfiguration weist die Object-TeX-Engine an, das Object-LaTeX-Format zu laden und sich auf die Verarbeitung der LaTeX-Datei vorzubereiten. Das Object LaTeX-Format ist im Wesentlichen dasselbe wie das [LaTeX](/tex/{{lang.url-fragment}}net/what-is-latex/)-Format, verwendet jedoch [Object TeX](/tex/{{lang.url-fragment}}net/aspose-tex-and-object-tex/#object-tex)-spezifische Grundelemente, um die Seitenmetriken zu definieren.
 
@@ -28,7 +30,7 @@ Um eine im Dateisystem gespeicherte LaTeX-Datei zu konvertieren, müssen wir ein
 
 Jetzt müssen Sie nur noch den Job [ausführen](https://reference.aspose.com/tex/python-net/aspose.tex/texjob/run/#).
 
-Nach der Ausführung, unabhängig davon, ob sie erfolgreich war oder nicht, sehen wir als Erstes die Terminalausgabe. Bei erfolgreicher Ausführung sieht die Ausgabe etwa so aus:
+Das Beispiel erfasst die Terminalausgabe in `OutputMemoryTerminal`. Im Ausgabeverzeichnis liegt außerdem ein `.log`-Protokoll. Bei erfolgreicher Konvertierung sieht es etwa so aus; Versionsangaben können abweichen:
 
 ```text
 This is ObjectTeX, Version 3.1415926-1.0 (Aspose.TeX 21.8)
@@ -52,13 +54,13 @@ In dem Ordner, den wir als Ausgabeverzeichnis angegeben haben, finden wir neben 
 
 Die Klasse *PdfDevice* verfügt über einen weiteren [Konstruktor](https://reference.aspose.com/tex/python-net/aspose.tex.presentation.pdf/pdfdevice/__init__/#io.RawIOBase), der es uns ermöglicht, die resultierende PDF-Datei auf andere Weise zu erhalten.
 
-{{< gist "aspose-com-gists""68d217858f0be40062562ce2bb2cd908""Aspose.TeX.Examples-Conversion-LaTeXToPdf-Alternative.py" >}}
+{{< gist "aspose-com-gists" "3616f5e300517031e6a4ae4158e24776" "Aspose.TeX.Examples-Conversion-LaTeXToPdf-Alternative.py" >}}
 
-Die Hauptausgabe-PDF-Datei erhält den Namen „any-name.pdf“ und befindet sich im angegebenen Verzeichnis. Im Gegensatz zur [Bildausgabe](/tex/{{lang.url-fragment}}python-net/latex-to-image/#an-alternative-way-to-write-the-main-output-png-files) befinden sich jedoch keine anderen PDF-Dateien im durch die Konvertierungsoptionen angegebenen Ausgabeverzeichnis. Die Ausnahme besteht, wenn sich „any-name.pdf“ im selben Dateisystemverzeichnis befindet, das der Option *output_working_directory* über *OutputFileSystemDirectory* zugewiesen wurde.
+Der Binärstream schreibt `any-name.pdf` in das konfigurierte Ausgabeverzeichnis. Es wird keine zusätzliche PDF-Datei mit Standardnamen erzeugt; Hilfsdateien und Protokoll werden weiterhin in `output_working_directory` gespeichert.
 
 ## Über Eingabemöglichkeiten
 
-Wenn unsere Haupteingabedatei Abhängigkeiten erfordert, wie z. B. Pakete, die nicht im grundlegenden LaTeX-System enthalten sind, und unterstützte Pakete, ist es notwendig, die Option [required_input_directory](https://reference.aspose.com/tex/python-net/aspose.tex/texoptions/required_input_directory/) auf ähnliche Weise festzulegen, wie wir die Option *output_working_directory* festlegen Platzieren Sie die Abhängigkeiten in diesem Verzeichnis. Die Abhängigkeiten können beliebig in Unterverzeichnissen organisiert werden. Wenn wir darüber hinaus unsere eigenen Dateien in den Schriftsatzprozess einbeziehen möchten, beispielsweise externe Grafikdateien, müssen wir außerdem das [input_working_directory](https://reference.aspose.com/tex/python-net/aspose.tex/texoptions/input_working_directory/) festlegen, indem wir den Pfad zum Speicherort dieser Dateien verwenden. Wir können die Haupteingabedatei auch im Eingabeverzeichnis platzieren und den relativen Pfad in der Methode „run()“ angeben oder überhaupt keinen Pfad angeben, wenn sich die Haupteingabedatei im Stammverzeichnis befindet. Weitere Einzelheiten zum Eingabeverzeichniskonzept in **Aspose.TeX für Python** und den bereitgestellten Implementierungen finden Sie [hier](/tex/{{lang.url-fragment}}python-net/aspose-tex-input/).
+Wenn unsere Haupteingabedatei Abhängigkeiten erfordert, wie z. B. Pakete, die nicht im grundlegenden LaTeX-System enthalten sind, und unterstützte Pakete, ist es notwendig, die Option [required_input_directory](https://reference.aspose.com/tex/python-net/aspose.tex/texoptions/required_input_directory/) auf ähnliche Weise festzulegen, wie wir die Option *output_working_directory* festlegen Platzieren Sie die Abhängigkeiten in diesem Verzeichnis. Die Abhängigkeiten können beliebig in Unterverzeichnissen organisiert werden. Wenn wir darüber hinaus unsere eigenen Dateien in den Schriftsatzprozess einbeziehen möchten, beispielsweise externe Grafikdateien, müssen wir außerdem das [input_working_directory](https://reference.aspose.com/tex/python-net/aspose.tex/texoptions/input_working_directory/) festlegen, indem wir den Pfad zum Speicherort dieser Dateien verwenden. Wir können die Haupteingabedatei auch im Eingabeverzeichnis platzieren und den relativen Pfad an den Konstruktor `TeXJob` angeben oder überhaupt keinen Pfad angeben, wenn sich die Haupteingabedatei im Stammverzeichnis befindet. Weitere Einzelheiten zum Eingabeverzeichniskonzept in **Aspose.TeX für Python** und den bereitgestellten Implementierungen finden Sie [hier](/tex/{{lang.url-fragment}}python-net/aspose-tex-input/).
 
 Es werden auch [andere TeX-Joboptionen](/tex/{{lang.url-fragment}}python-net/other-options/) besprochen.
 

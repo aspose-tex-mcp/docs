@@ -15,7 +15,11 @@ lastmod: "2024-09-20"
 
 So far, we have only learned how to provide the [main input file](/tex/{{lang.url-fragment}}net/tex-io/#tex-input) to the TeX engine as a file name, whether in its full form or in a shortened form, with or without an extension. However, there is [another constructor](https://reference.aspose.com/tex/python-net/aspose.tex/texjob/__init__/#io.RawIOBase-aspose.tex.presentation.Device-aspose.tex.TeXOptions) available in the [TeXJob](https://reference.aspose.com/tex/python-net/aspose.tex/texjob/) class that accepts a stream as the first argument. This is useful if, for some reason, the main input file is not in the form of a file on the disk file system. Here is an example of how it can be implemented:
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Conversion-InputStream.py" >}}
+Set `ASPOSE_TEX_OUTPUT_DIR` to an output directory, or use the default `output`. Apply a license first as described in [Licensing](/tex/{{lang.url-fragment}}python-net/licensing/).
+
+{{< gist "aspose-com-gists" "edcfdfad622f09d57fa03bedd01e0e38" "Aspose.TeX.Examples-Conversion-InputStream.py" >}}
+
+This example uses a complete LaTeX document and `TeXConfig.object_latex`. The binary stream remains open for the duration of the job; the output is XPS.
 
 Note that all output files will be named `texput`. This is because the engine does not have access to any other name. `texput` is the default job name. You can find more detailed information about job names [TeX output](/tex/{{lang.url-fragment}}net/tex-io/#tex-output) and [How to set the job name](/tex/{{lang.url-fragment}}net/other-options/#how-to-set-the-job-name) paragraphs.
 
@@ -25,27 +29,13 @@ There is [one more constructor](https://reference.aspose.com/tex/python-net/aspo
 
 Here is the code:
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Conversion-MainInputTerminal.py" >}}
+{{< gist "aspose-com-gists" "edcfdfad622f09d57fa03bedd01e0e38" "Aspose.TeX.Examples-Conversion-MainInputTerminal.py" >}}
 
-As soon as it's run, the engine will pause and wait for us to input the file name (with or without a path, and with or without an extension):
+Set `ASPOSE_TEX_INPUT_DIR` to a folder containing the following plain TeX file named `hello-world.tex` (default folder: `input`):
 
-
-![Terminal Window](/tex/images/python-net/.png)
-
-And here is how it would appear on the output terminal (console):
-
-```text
-This is ObjectTeX, Version 3.1415926-1.0 (Aspose.TeX 21.8)
-entering extended mode
-**<path_to_the_file>/hello-world.ltx
-(<path_to_the_file>/hello-world.ltx
-LaTeX2e <2011/06/27>
-(article.cls
-Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
-(size10.clo))
-No file hello-world.aux.
-[1]
-(<output_directory>\hello-world.aux) )
-Output written on hello-world.xps (1 page).
-Transcript written on hello-world.log.
+```tex
+Hello, World!
+\end
 ```
+
+This terminal example uses `TeXConfig.object_tex()`. When prompted, enter `hello-world.tex` and press Enter, or supply that filename through standard input. The job creates `hello-world.xps` and `hello-world.log`.

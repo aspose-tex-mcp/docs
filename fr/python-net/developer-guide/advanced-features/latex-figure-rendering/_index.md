@@ -18,7 +18,9 @@ Dans certaines situations, vous devrez peut-être extraire du contenu spécifiqu
 
 Si nécessaire, jetez d'abord un œil à la [section de référence API pour ce sujet](https://reference.aspose.com/tex/python-net/aspose.tex.features/). Semblable au rendu de formule, nous commencerons par un exemple. C'est ici:
 
-{{< gist "aspose-com-gists""68d217858f0be40062562ce2bb2cd908""Aspose.TeX.Examples-Features-PngLaTeXFigureRendering.py" >}}
+Définissez `ASPOSE_TEX_OUTPUT_DIR` sur votre répertoire de sortie ou utilisez le dossier par défaut `output`. Le code LaTeX est entièrement inclus dans les exemples ; aucun fichier d’entrée externe n’est nécessaire. Appliquez d’abord une licence. [Licences](/tex/fr/python-net/licensing/).
+
+{{< gist "aspose-com-gists" "cbf380b84d7f2067481756d42da32b08" "Aspose.TeX.Examples-Features-PngLaTeXFigureRendering.py" >}}
 
 Pour commencer, nous créons une instance de la classe [LaTeX figure renderer options](https://reference.aspose.com/tex/python-net/aspose.tex.features/figurerendereroptions/), où nous spécifions simultanément la résolution de l'image de sortie.
 
@@ -28,21 +30,21 @@ Ensuite, nous devons préciser le préambule. Contrairement au rendu des formule
 \usepackage{pict2e}
 ```
 
-Ensuite, nous demandons au moteur de rendu de mettre à l'échelle la sortie de 300 %.
+Nous définissons `scale = 3000` pour une échelle de 300 % et `margin = 5` pour laisser de l’espace autour du fragment. L’exemple PNG utilise `resolution = 150` DPI.
 
 L'option suivante détermine la couleur d'arrière-plan. Contrairement au rendu des formules mathématiques, nous n'avons pas besoin de spécifier une couleur de premier plan, car nous supposons que les couleurs sont entièrement contrôlées par le code LaTeX. De même, la couleur d'arrière-plan est également contrôlée par le code LaTeX, cette option est donc simplement fournie pour plus de commodité.
 
-La ligne suivante dans l'exemple n'est peut-être pas particulièrement significative. Il est simplement destiné à démontrer que vous avez la possibilité de diriger la sortie du journal vers un flux spécifique.
+L’exemple affecte un flux de fichier binaire à `log_stream` et enregistre le journal dans `text-and-formula.png.log`, à côté de `text-and-formula.png`. L’instruction `with` ferme automatiquement les deux flux.
 
-La dernière option, `ShowTerminal`, vous permet de contrôler si la sortie du terminal doit être affichée dans la console.
+`show_terminal` contrôle la sortie du terminal dans la console. Les exemples le définissent sur `False` ; le journal est toujours écrit dans le fichier.
 
 La méthode responsable du rendu de la figure est [FigureRenderer.render()](https://reference.aspose.com/tex/python-net/aspose.tex.features/figurerenderer/render/#str-io.RawIOBase-aspose.tex.features.FigureRendererOptions) . Il renvoie la taille de la figure en points.
 
-La méthode accepte un flux comme deuxième argument, qui est le flux dans lequel l'image sera écrite. Nous créons le flux dans la ligne suivante.
+Le deuxième argument est le flux de sortie binaire ouvert pour l’image. Le troisième fournit les options de rendu.
 
 Enfin, nous invoquons la méthode `FigureRenderer.render()` elle-même, en passant les options comme troisième argument. Le code LaTeX de la figure est fourni comme premier argument.
 
-Les dernières lignes de l'exemple affichent deux informations liées au rendu de la figure : la taille de la figure et un bref rapport d'erreur (s'il y a des erreurs).
+Les dernières lignes affichent le rapport d’erreurs, ou `No rendering errors.` s’il est vide, puis la largeur et la hauteur en points.
 
 Voici le résultat du rendu.
 
@@ -54,7 +56,9 @@ Il s'agit du cas d'utilisation le plus général de la fonctionnalité **Rendu d
 
 De même, nous pouvons également restituer une figure LaTeX au format SVG.
 
-{{< gist "aspose-com-gists""68d217858f0be40062562ce2bb2cd908""Aspose.TeX.Examples-Features-SvgLaTeXFigureRendering.py" >}}
+{{< gist "aspose-com-gists" "cbf380b84d7f2067481756d42da32b08" "Aspose.TeX.Examples-Features-SvgLaTeXFigureRendering.py" >}}
+
+Cet exemple crée `text-and-formula.svg` et son journal `text-and-formula.svg.log` dans le même répertoire de sortie.
 
 Les différences sont :
 

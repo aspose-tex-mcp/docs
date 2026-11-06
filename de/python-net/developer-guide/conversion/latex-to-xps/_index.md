@@ -19,14 +19,16 @@ Es gibt die Bibliothek [**Aspose.Page**](https://products.aspose.com/page/), die
 
 Der Prozess der Konvertierung von LaTeX in XPS ist ebenso unkompliziert, ähnlich der [Konvertierung in Rasterbildformate](/tex/{{lang.url-fragment}}python-net/latex-to-image/). Allerdings ist es erforderlich, [save_options](https://reference.aspose.com/tex/python-net/aspose.tex/texoptions/save_options/) auf eine Instanz der Klasse [XpsSaveOptions](https://reference.aspose.com/tex/python-net/aspose.tex.presentation.xps/xpssaveoptions/) zu setzen (entweder standardmäßig oder explizit) und das Gerät in eine Instanz der Klasse [XpsDevice](https://reference.aspose.com/tex/python-net/aspose.tex.presentation.xps/xpsdevice/) zu ändern.
 
-{{< gist "aspose-com-gists""68d217858f0be40062562ce2bb2cd908""Aspose.TeX.Examples-Conversion-LaTeXToXps-Simplest.py" >}}
+Setzen Sie `ASPOSE_TEX_INPUT_FILE` auf Ihre LaTeX-Datei und `ASPOSE_TEX_OUTPUT_DIR` auf das Ausgabeverzeichnis, oder ändern Sie die Pfade im Beispiel. Die Standardwerte sind `hello-world.ltx` und `output`. Wenden Sie vorher eine Lizenz an. Zusätzliche Eingabedateien werden neben dem Hauptdokument gesucht; die Verarbeitung erfolgt ohne interaktive Eingaben. [Lizenzierung](/tex/de/python-net/licensing/)
+
+{{< gist "aspose-com-gists" "3616f5e300517031e6a4ae4158e24776" "Aspose.TeX.Examples-Conversion-LaTeXToXps-Simplest.py" >}}
 
 ### Eine alternative Möglichkeit, die XPS-Hauptausgabedatei zu schreiben
 
 Für die Klasse *XpsDevice* steht ein alternativer Konstruktor zur Verfügung, der es ermöglicht, die resultierende XPS-Datei auf andere Weise abzurufen.
 
-{{< gist "aspose-com-gists""68d217858f0be40062562ce2bb2cd908""Aspose.TeX.Examples-Conversion-LaTeXToXps-Alternative.py" >}}
+{{< gist "aspose-com-gists" "3616f5e300517031e6a4ae4158e24776" "Aspose.TeX.Examples-Conversion-LaTeXToXps-Alternative.py" >}}
 
-Der Effekt ist derselbe, den wir [hier](/tex/{{lang.url-fragment}}python-net/latex-to-pdf/#an-alternative-way-to-write-main-output-pdf-file) erhalten.
+Der Binärstream schreibt `any-name.xps` in das konfigurierte Ausgabeverzeichnis. Es wird keine zusätzliche XPS-Datei mit Standardnamen erzeugt; Hilfsdateien und Protokoll werden weiterhin in `output_working_directory` gespeichert.
 
 **Sie können auch die kostenlose [Web-App für die Konvertierung von LaTeX in XPS](https://products.aspose.app/tex/conversion/latex-to-xps) erkunden, die mit der [Aspose.TeX für .NET API](https://products.aspose.com/tex/net/) entwickelt wurde.**

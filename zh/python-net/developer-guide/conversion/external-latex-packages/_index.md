@@ -15,6 +15,8 @@ lastmod: "2025-06-10"
 
 **Aspose.TeX**库带有各种[常见的乳胶包裹](/tex/{{lang.url-fragment}}net/embedded-packages/)，因此无需手动向Tex发动机提供这些软件包。但是，在某些情况下，您的乳胶文件需要一个包装中未包含的软件包。在这种情况下，您可以尝试通过[queld_input_directory](https://reference.aspose.com/tex/python-net/aspose.tex/texoptions/required_input_directory/)[texoptions](https://reference.aspose.com/tex/python-net/aspose.tex/texoptions/)类实例提供必要的输入，例如所需软件包的源文件。我们将探讨这两个示例的工作方式。
 
+请先应用[许可证](/tex/{{lang.url-fragment}}python-net/licensing/)。将 `ASPOSE_TEX_INPUT_DIR` 设置为包含 `ExternalLaTeXPackages` 的文件夹（默认为 `input`），其中应保留两个 `.tex` 文件和 `packages` 子目录。将 `ASPOSE_TEX_OUTPUT_DIR` 设置为输出文件夹（默认为 `output`）。
+
 ### 所需的输入以未包装的形式(``Fancybox''软件包)提供。
 
 假设我们有以下名为`ruild-Input-fs.tex`的基本乳胶文件，这是我们[示例解决方案](https://GitHub.com/aspose-tex/Aspose.TeX-for-Python-.NET)的一部分：
@@ -46,6 +48,9 @@ Test: \fbox{
 
 
 ```Python
+from aspose.tex.io import InputFileSystemDirectory
+
+# Configure an existing TeXOptions instance.
 options.required_input_directory = InputFileSystemDirectory('path-to-directory-where-fancybox.sty-located')
 ```
 
@@ -55,7 +60,7 @@ options.required_input_directory = InputFileSystemDirectory('path-to-directory-w
 
 这是该示例的完整源代码：
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Conversion-RequiredInput-FileSystem.py" >}}
+{{< gist "aspose-com-gists" "fce5c70784ba7a4d2597b459d63adbf1" "Aspose.TeX.Examples-Conversion-RequiredInput-FileSystem.py" >}}
 
 ### 提供所需的输入以存档的形式(``pgfplots'软件包)提供
 
@@ -100,10 +105,12 @@ First example is 2D and 3D math expressions plotted side-by-side.
 这是我们定义这些源文件的可访问性的方法：
 
 ```Python
-with open("path-to-zip-with-pgfplots-sources") as zipStream:
-    ...
-    options.required_input_directory = InputZipDirectory(zipStream)
-    ...
+from aspose.tex.io import InputZipDirectory
+
+# Configure an existing TeXOptions instance and run the job while the stream is open.
+with open("path-to-zip-with-pgfplots-sources", "rb") as zip_stream:
+    options.required_input_directory = InputZipDirectory(zip_stream, "")
+    # Run TeXJob here, as shown in the complete example below.
 ```
 
 通过此选项运行Tex作业后，我们将获得输出文档：
@@ -112,7 +119,7 @@ with open("path-to-zip-with-pgfplots-sources") as zipStream:
 
 这是该示例的完整源代码：
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Conversion-RequiredInput-Zip.py" >}}
+{{< gist "aspose-com-gists" "fce5c70784ba7a4d2597b459d63adbf1" "Aspose.TeX.Examples-Conversion-RequiredInput-Zip.py" >}}
 
 > **_注意：_** 结果是使用 `pgfplots` 软件包版本 1.18.1 验证的。而 **Aspose.TeX** 库中包含的 `pfg` 软件包版本为 3.1.9a。
 
@@ -125,7 +132,7 @@ with open("path-to-zip-with-pgfplots-sources") as zipStream:
 
 下面是一个自定义必需输入目录的示例，演示了如何实现 [IFileCollector](https://reference.aspose.com/tex/python-net/aspose.tex.io/ifilecollector/) 接口。此示例重点介绍按扩展名收集文件名，并有意省略了文件存储和检索的细节。
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Conversion-RequiredInput-Zip.py" >}}
+
 -->
 
 ### 限制

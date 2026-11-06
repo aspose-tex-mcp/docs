@@ -36,52 +36,35 @@ print(tex.__version__)
 
 **Q: 数行のコードで「.tex」ファイルを PDF に変換するにはどうすればよいですか?**  
 <br>
-**A:** 
+**A:** Object LaTeX 構成、`PdfSaveOptions`、`PdfDevice` を使用して `TeXJob` を作成します。 `ASPOSE_TEX_INPUT_FILE` に LaTeX ファイル、`ASPOSE_TEX_OUTPUT_DIR` に出力ディレクトリを指定するか、例のパスを編集してください。既定値は `hello-world.ltx` と `output` です。事前にライセンスを適用してください。追加の入力ファイルはメイン文書と同じディレクトリから読み込まれ、処理は対話入力なしで実行されます。 [ライセンス](/tex/ja/python-net/licensing/)
 
-```python
-import aspose.tex as tex
+{{< gist "aspose-com-gists" "3616f5e300517031e6a4ae4158e24776" "Aspose.TeX.Examples-Conversion-LaTeXToPdf-Simplest.py" >}}
 
-doc = tex.Document("sample.tex")          # load LaTeX source
-doc.save("sample.pdf", tex.SaveFormat.PDF)  # write PDF
-```  
-
-文字列 (`tex.Document(latex_source)`) またはメモリ内ストリームからドキュメントを作成することもできます。  
+出力名は入力名に対応します。`hello-world.ltx` から `hello-world.pdf` が生成されます。 [LaTeX → PDF](/tex/ja/python-net/latex-to-pdf/)
 <br><br>
 
 **Q: AsposeTeXforPython はどの出力形式を生成できますか?**  
 <br>
-**A:** PDF、XPS、SVG、PNG、JPEG、BMP、および TIFF。各形式は、特定の `SaveOptions` オブジェクト (例: `PdfSaveOptions`、`ImageSaveOptions`、`SvgSaveOptions`) を介して制御できます。  
+**A:** PDF、XPS、SVG、PNG、JPEG、BMP、および TIFF。各形式は、特定の `SaveOptions` オブジェクト (例: `PdfSaveOptions`、`PngSaveOptions`、`SvgSaveOptions`) を介して制御できます。
 <br><br>
 
 **Q: 生成された PDF にカスタム フォントを埋め込むにはどうすればよいですか?**  
 <br>
-**A:** レンダリングする前にカスタム フォント フォルダーを登録します。
-
-```python
-font_src = tex.FontSource()
-font_src.add_folder(r"C:\MyFonts")   # or "/home/user/fonts"
-tex.FontSettings.set_default_sources([font_src])
-doc.save("out.pdf", tex.PdfSaveOptions())
-```  
-
-デフォルトでは、使用されているすべてのフォントが埋め込まれます。 `PdfSaveOptions.embed_fonts = False` で埋め込みを無効にします。  
+**A:** フォントは TeX または LaTeX ドキュメントとそのパッケージで選択します。リソースについては[外部 LaTeX パッケージ](/tex/{{lang.url-fragment}}python-net/external-latex-packages/)を参照してください。`PdfSaveOptions` の [`subset_fonts`](https://reference.aspose.com/tex/python-net/aspose.tex.presentation.pdf/pdfsaveoptions/) プロパティは使用したグリフのみを埋め込むかどうかを制御するもので、カスタムフォントを選択するものではありません。同じオプションを使う完全な XPS の例は[フォントのサブセット化](/tex/{{lang.url-fragment}}python-net/other-options/)を参照してください。
 <br><br>
 
 **Q: どのような LaTeX パッケージとクラスがそのままサポートされていますか?**  
 <br>
-**A:** 300 を超えるコア パッケージ (例: `amsmath`、`graphicx`、`hyperref`、`xcolor`、`tikz`、`pgfplots`、`booktabs`) および共通クラス (`article`、`report`、`book`、`memoir`)。  
+**A:** ライブラリには一般的な LaTeX パッケージとクラスが含まれます。対応範囲は[組み込みパッケージ一覧](/tex/{{lang.url-fragment}}net/embedded-packages/)を参照してください。[外部パッケージの例](/tex/{{lang.url-fragment}}python-net/external-latex-packages/)では、`required_input_directory` を通じて `pgfplots` のソースファイルを提供します。
 <br><br>
 
 **Q: 組み込みではないサードパーティの `.sty` またはクラス ファイルを使用するにはどうすればよいですか?**  
 <br>
-**A:** `.sty`/`.cls` ファイルをソース ドキュメントと同じディレクトリに配置するか、そのフォルダをドキュメントのリソース ローダーに追加します。
+**A:** `TeXOptions.required_input_directory` に、必要なパッケージファイルを含む `InputFileSystemDirectory` を設定します。完全な例では `ExternalLaTeXPackages/packages` から `fancybox.sty` を読み込み、`required-input-fs.tex` を PNG に変換します。ZIP アーカイブと互換性の制限については[外部 LaTeX パッケージ](/tex/{{lang.url-fragment}}python-net/external-latex-packages/)を参照してください。
 
-```python
-doc = tex.Document("mydoc.tex")
-doc.resource_loaders.append(tex.FolderResourceLoader(r"C:\MyLatexPackages"))
-```  
+まず[ライセンス](/tex/{{lang.url-fragment}}python-net/licensing/)を適用します。`ASPOSE_TEX_INPUT_DIR` に、2 つの `.tex` ファイルと `packages` サブフォルダーを含む `ExternalLaTeXPackages` の親フォルダーを指定します（既定値：`input`）。`ASPOSE_TEX_OUTPUT_DIR` に出力フォルダーを指定します（既定値：`output`）。
 
-エンジンは次回の変換時にカスタム ファイルを自動的に読み込みます。  
+{{< gist "aspose-com-gists" "fce5c70784ba7a4d2597b459d63adbf1" "Aspose.TeX.Examples-Conversion-RequiredInput-FileSystem.py" >}}
 <br><br>
 
 **Q: エンジンの主な制限は何ですか?**  
@@ -98,14 +81,11 @@ doc.resource_loaders.append(tex.FolderResourceLoader(r"C:\MyLatexPackages"))
 
 **Q: ライセンス キーを適用するにはどうすればよいですか?また、利用可能なライセンス モデルは何ですか?**  
 <br>
-**A:** プロセスごとに 1 回ライセンスを適用します。
+**A:** 他の Aspose.TeX クラスを使用する前にライセンスを適用してください。`ASPOSE_TEX_PYTHON_NET_LICENSE_PATH` にライセンスファイルのパスを設定するか、作業ディレクトリに `Aspose.TeX.Python-net.lic` を配置します。
 
-```python
-import aspose.tex as tex
-tex.License().set_license("Aspose.Total.NET.lic")
-```  
+{{< gist "aspose-com-gists" "593d1652856be08ad2ec145fbe3796a2" "Aspose.TeX.Examples-LoadLicenseFromFile.py" >}}
 
-ライセンス オプション: 無料トライアル (10 ページ制限、ウォーターマークなし)、開発者/シングルマシン (1 台のマシンで無制限のページ)、エンタープライズ/マルチシート (優先サポートにより組織全体で無制限)。  
+ファイル、ストリーム、Metered によるライセンス適用例と評価版の制限については、[ライセンス](/tex/{{lang.url-fragment}}python-net/licensing/)を参照してください。
 <br><br>
 
 **Q: ライブラリは並列変換に対してスレッドセーフですか?**  
@@ -120,29 +100,28 @@ tex.License().set_license("Aspose.Total.NET.lic")
 
 **Q: ラスター出力のページ サイズ、方向、DPI を設定するにはどうすればよいですか?**  
 <br>
-**A:** `PageSetup` オブジェクトと `ImageSaveOptions` オブジェクトを使用します。
+**A:** ページのサイズと向きは LaTeX ソースで指定します。例えば、この A4 横向き文書を `landscape.ltx` として保存してください。
 
-```python
-doc.page_setup.size = tex.PageSize.A4
-doc.page_setup.orientation = tex.PageOrientation.LANDSCAPE
+```latex
+\documentclass{article}
+\usepackage[a4paper,landscape]{geometry}
+\begin{document}
+Hello, World!
+\end{document}
+```
 
-opts = tex.ImageSaveOptions()
-opts.dpi = 300
-doc.save("out.png", opts)
-```  
+保存オプションをジョブに設定する前に `PngSaveOptions.resolution` を指定します。この例では 300 DPI を使用します。`ASPOSE_TEX_INPUT_FILE` に `landscape.ltx`、`ASPOSE_TEX_OUTPUT_DIR` に出力ディレクトリを指定するか、既定のパスを使用してください。
+
+{{< gist "aspose-com-gists" "3616f5e300517031e6a4ae4158e24776" "Aspose.TeX.Examples-Conversion-LaTeXToPng-PageLayout.py" >}}
+
+結果は約 3508 × 2480 ピクセルの `landscape.png` です。
 <br><br>
 
 **Q: LaTeX を文字列またはメモリ内ストリームから直接レンダリングできますか?**  
 <br>
-**A:** その通りです。 LaTeX ソース文字列をコンストラクターに渡すか、`io.BytesIO` ストリームを使用します。
+**A:** 完全な LaTeX 文書をバイナリ `BytesIO` ストリームに変換し、`TeXConfig.object_latex` を設定した `TeXJob` に渡します。ジョブ中はストリームを開いたままにします。出力は `texput.xps` と `texput.log` です。 `ASPOSE_TEX_OUTPUT_DIR` に出力ディレクトリを指定します（既定値：`output`）。事前にライセンスを適用してください。 [Licensing](/tex/ja/python-net/licensing/).
 
-```python
-src = r"\section{Hello}\textbf{World}"
-doc = tex.Document(src)          # from string
-# or
-stream = io.BytesIO(src.encode())
-doc = tex.Document(stream)       # from stream
-```  
+{{< gist "aspose-com-gists" "edcfdfad622f09d57fa03bedd01e0e38" "Aspose.TeX.Examples-Conversion-InputStream.py" >}}
 <br><br>
 
 **Q: 公式ドキュメント、コード サンプル、サポート チャネルはどこで見つけられますか?**  

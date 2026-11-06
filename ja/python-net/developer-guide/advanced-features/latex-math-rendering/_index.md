@@ -15,7 +15,9 @@ lastmod: "2026-04-03"
 
 必要に応じて、[このトピックのAPIリファレンスセクション](https://reference.aspose.com/tex/python-net/aspose.tex.features/)をご覧ください。実際、**LaTeX数式**レンダリング機能を理解するには、まず例を挙げるのが最も効果的です。以下に例を示します。
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Features-PngLaTeXMathRendering.py" >}}
+`ASPOSE_TEX_OUTPUT_DIR` に出力ディレクトリを指定するか、既定の `output` フォルダーを使用してください。LaTeX コードはすべて例に含まれているため、外部入力ファイルは不要です。事前にライセンスを適用してください。 [ライセンス](/tex/ja/python-net/licensing/).
+
+{{< gist "aspose-com-gists" "cbf380b84d7f2067481756d42da32b08" "Aspose.TeX.Examples-Features-PngLaTeXMathRendering.py" >}}
 
 詳細を見ていきましょう。まず、TeX/LaTeXタイプッティングに似た[レンダリングオプション](https://reference.aspose.com/tex/python-net/aspose.tex.features/mathrendereroptions/)オブジェクトを初期化します。このオブジェクトには、必要な出力画像解像度の指定が含まれています。
 
@@ -30,21 +32,21 @@ lastmod: "2026-04-03"
 
 これは、標準的なLaTeXに比べて数式のサポートが強化されています。例えば、提供されているコード例に示すように、`color`パッケージをインクルードすることで、数式内のハイライト表示をカスタマイズできます。
 
-次に、レンダラーに出力を300%に拡大するように指示します。
+`scale = 3000` で 300% に拡大し、`margin = 5` でフラグメントの周囲に余白を設けます。PNG の例では `resolution = 150` DPI を使用します。
 
-次の2つのオプションは、前景色と背景色を決定します。数式の中でカスタムハイライトの影響を受けない部分は、`TextColor`カラーで表示されます。
+次の2つのオプションは、前景色と背景色を決定します。数式の中でカスタムハイライトの影響を受けない部分は、`text_color`カラーで表示されます。
 
-例の次の行は、ログ出力を特定のストリームにリダイレクトするオプションがあることを示しています。
+この例ではバイナリファイルストリームを `log_stream` に設定し、`math-formula.png` と同じ場所に `math-formula.png.log` を保存します。`with` 文が両方のストリームを自動的に閉じます。
 
-最後に、`ShowTerminal` オプションを使用すると、ターミナル出力をコンソールに表示するかどうかを制御できます。
+`show_terminal` はコンソールへの端末出力を制御します。例では `False` に設定していますが、ログはファイルに書き込まれます。
 
 実際のレンダリング処理は [MathRenderer.render()](https://reference.aspose.com/tex/python-net/aspose.tex.features/mathrenderer/render/) メソッドによって実行され、数式のサイズをポイント単位で返します。
 
-このメソッドは、画像を書き込むストリームを第2引数として受け取ります。その後、ストリームの作成に進みます。
+第2引数は画像用に開いたバイナリ出力ストリームです。第3引数はレンダリングオプションです。
 
 最後に、`MathRenderer.render()` メソッドが呼び出され、オプションが3番目の引数として渡されます。数式の LaTeX コードは1番目の引数として提供されます。
 
-例の最後の行には、数式レンダリング処理の2つの出力（数式のサイズと、エラーが発生した場合の簡潔なエラーレポート）が表示されます。
+最後の行ではエラーレポート、またはレポートが空なら `No rendering errors.` を表示し、その後に幅と高さをポイント単位で表示します。
 
 レンダリングの結果は次のとおりです。
 
@@ -58,7 +60,9 @@ lastmod: "2026-04-03"
 
 同様に、同じ方法でLaTeXの数式をSVG形式に変換できます。
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Features-SvgLaTeXMathRendering.py" >}}
+{{< gist "aspose-com-gists" "cbf380b84d7f2067481756d42da32b08" "Aspose.TeX.Examples-Features-SvgLaTeXMathRendering.py" >}}
+
+この例では同じ出力ディレクトリに `math-formula.svg` とログ `math-formula.svg.log` を作成します。
 
 違いは以下のとおりです。
 

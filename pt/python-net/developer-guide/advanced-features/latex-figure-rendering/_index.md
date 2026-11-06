@@ -18,7 +18,9 @@ Em determinadas situações, pode ser necessário extrair conteúdo específico 
 
 Se necessário, primeiro dê uma olhada na [seção de referência da API para este tópico](https://reference.aspose.com/tex/python-net/aspose.tex.features/). Semelhante à renderização da fórmula, começaremos com um exemplo. Aqui está:
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Features-PngLaTeXFigureRendering.py" >}}
+Defina `ASPOSE_TEX_OUTPUT_DIR` como o diretório de saída ou use a pasta padrão `output`. Todo o código LaTeX está incluído nos exemplos; não são necessários arquivos de entrada externos. Aplique uma licença primeiro. [Licenciamento](/tex/pt/python-net/licensing/).
+
+{{< gist "aspose-com-gists" "cbf380b84d7f2067481756d42da32b08" "Aspose.TeX.Examples-Features-PngLaTeXFigureRendering.py" >}}
 
 Para começar, criamos uma instância da classe [Opções do renderizador de figuras do LATEX](https://reference.aspose.com/tex/python-net/aspose.tex.features/figurerendereroptions/), onde especificamos simultaneamente a resolução da imagem de saída.
 
@@ -28,21 +30,21 @@ Em seguida, precisamos especificar o preâmbulo. Ao contrário da renderização
 \usepackage{pict2e}
 ```
 
-Em seguida, instruímos o renderizador a escalar a saída em 300%.
+Definimos `scale = 3000` para uma escala de 300% e `margin = 5` para deixar espaço ao redor do fragmento. O exemplo PNG usa `resolution = 150` DPI.
 
 A próxima opção determina a cor do fundo. Ao contrário da renderização da fórmula matemática, não precisamos especificar uma cor de primeiro plano, pois assumimos que as cores são totalmente controladas pelo código do LATEX. Da mesma forma, a cor do plano de fundo também é controlada pelo código do LATEX; portanto, essa opção é simplesmente fornecida por conveniência.
 
-A linha a seguir no exemplo pode não ser particularmente significativa. É simplesmente destinado a demonstrar que você tem a opção de direcionar a saída de log para um fluxo específico.
+O exemplo atribui um fluxo de arquivo binário a `log_stream` e salva o registro como `text-and-formula.png.log` ao lado de `text-and-formula.png`. A instrução `with` fecha ambos os fluxos automaticamente.
 
-A opção final, `ShowTerminal`, permite controlar se a saída do terminal deve ser exibida no console.
+`show_terminal` controla a saída do terminal no console. Os exemplos o definem como `False`; o registro continua sendo gravado no arquivo.
 
 O método responsável por renderizar a figura é [FigureRenderer.render()](https://reference.aspose.com/tex/python-net/aspose.tex.features/figurerenderer/render/). Ele retorna o tamanho da figura em pontos.
 
-O método aceita um fluxo como o segundo argumento, que é o fluxo em que a imagem será gravada. Criamos o fluxo na próxima linha.
+O segundo argumento é o fluxo de saída binário aberto para a imagem. O terceiro fornece as opções de renderização.
 
 Por fim, invocamos o método `FigureRenderer.render()`, passando as opções como o terceiro argumento. O código do LATEX da figura é fornecido como o primeiro argumento.
 
-As últimas linhas do exemplo exibem duas informações relacionadas à renderização de figuras - o tamanho da figura e um breve relatório de erro (se houver algum erro).
+As últimas linhas mostram o relatório de erros, ou `No rendering errors.` quando ele está vazio, seguido da largura e da altura em pontos.
 
 Aqui está o resultado da renderização.
 
@@ -54,7 +56,9 @@ Isso representa o caso de uso mais geral para o recurso de **renderização de f
 
 Da mesma forma, também podemos renderizar uma figura de LaTeX no formato SVG.
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Features-SvgLaTeXFigureRendering.py" >}}
+{{< gist "aspose-com-gists" "cbf380b84d7f2067481756d42da32b08" "Aspose.TeX.Examples-Features-SvgLaTeXFigureRendering.py" >}}
+
+Este exemplo cria `text-and-formula.svg` e o registro `text-and-formula.svg.log` no mesmo diretório de saída.
 
 As diferenças são:
 

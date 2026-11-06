@@ -18,7 +18,9 @@ In determinate situazioni, potrebbe essere necessario estrarre contenuti specifi
 
 Se necessario, prima dai un'occhiata alla sezione di riferimento [API per questo argomento](https://reference.aspose.com/tex/python-net/aspose.tex.features/). Simile al rendering della formula, inizieremo con un esempio. Ecco qui:
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Features-PngLaTeXFigureRendering.py" >}}
+Impostare `ASPOSE_TEX_OUTPUT_DIR` sulla directory di output oppure usare la cartella predefinita `output`. Tutto il codice LaTeX è incluso negli esempi; non servono file di input esterni. Applicare prima una licenza. [Licenze](/tex/it/python-net/licensing/).
+
+{{< gist "aspose-com-gists" "cbf380b84d7f2067481756d42da32b08" "Aspose.TeX.Examples-Features-PngLaTeXFigureRendering.py" >}}
 
 Per iniziare, creiamo un'istanza della classe [Opzioni di rendering di figura in LaTeX](https://reference.aspose.com/tex/python-net/aspose.tex.features/figurerendereroptions/), in cui specifichiamo contemporaneamente la risoluzione dell'immagine di output.
 
@@ -28,21 +30,21 @@ Successivamente, dobbiamo specificare il preambolo. A differenza del rendering d
 \usepackage{pict2e}
 ```
 
-Quindi istruiamo il rendering di ridimensionare l'output del 300%.
+Si imposta `scale = 3000` per una scala del 300% e `margin = 5` per lasciare spazio intorno al frammento. L’esempio PNG usa `resolution = 150` DPI.
 
 L'opzione successiva determina il colore di sfondo. A differenza del rendering della formula matematica, non abbiamo bisogno di specificare un colore in primo piano, poiché supponiamo che i colori siano interamente controllati dal codice LaTeX. Allo stesso modo, il colore di sfondo è anche controllato dal codice LaTeX, quindi questa opzione è semplicemente fornita per comodità.
 
-La seguente riga nell'esempio potrebbe non essere particolarmente significativa. È semplicemente destinato a dimostrare che hai la possibilità di dirigere l'output del registro su un flusso specifico.
+L’esempio assegna un flusso di file binario a `log_stream` e salva il registro come `text-and-formula.png.log` accanto a `text-and-formula.png`. L’istruzione `with` chiude automaticamente entrambi i flussi.
 
-L'opzione finale, `ShowTerminal`, consente di controllare se l'uscita del terminale deve essere visualizzata nella console.
+`show_terminal` controlla l’output del terminale nella console. Gli esempi lo impostano su `False`; il registro viene comunque scritto nel file.
 
 Il metodo responsabile del rendering della figura è [FigureRenderer.render()](https://reference.aspose.com/tex/python-net/aspose.tex.features/figurerenderer/render/). Restituisce le dimensioni della figura in punti.
 
-Il metodo accetta un flusso come secondo argomento, che è il flusso in cui verrà scritto l'immagine. Creiamo il flusso nella riga successiva.
+Il secondo argomento è il flusso di output binario aperto per l’immagine. Il terzo fornisce le opzioni di rendering.
 
 Infine, invochiamo il metodo `FigureRenderer.render()`, passando le opzioni come terzo argomento. Il codice in LaTeX della figura è fornito come primo argomento.
 
-Le ultime righe dell'esempio visualizzano due informazioni relative al rendering della figura: le dimensioni della figura e un breve rapporto di errore (se ci sono errori).
+Le ultime righe mostrano il rapporto degli errori, oppure `No rendering errors.` se è vuoto, seguito dalla larghezza e dall’altezza in punti.
 
 Ecco il risultato del rendering.
 
@@ -54,7 +56,9 @@ Questo rappresenta il caso d'uso più generale per la funzione **Figura Latex**.
 
 Allo stesso modo, possiamo anche rendere una figura in LaTeX in formato SVG.
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Features-SvgLaTeXFigureRendering.py" >}}
+{{< gist "aspose-com-gists" "cbf380b84d7f2067481756d42da32b08" "Aspose.TeX.Examples-Features-SvgLaTeXFigureRendering.py" >}}
+
+Questo esempio crea `text-and-formula.svg` e il registro `text-and-formula.svg.log` nella stessa directory di output.
 
 Le differenze sono:
 

@@ -15,6 +15,8 @@ lastmod: "2024-09-26"
 
 Die **Aspose.TeX**-Bibliothek enthält eine Vielzahl [gängiger LaTeX-Pakete](/tex/{{lang.url-fragment}}net/embedded-packages/), sodass diese Pakete nicht manuell für die TeX-Engine bereitgestellt werden müssen. Es kann jedoch Situationen geben, in denen Ihre LaTeX-Datei ein Paket erfordert, das nicht im „Paketpaket“ der Bibliothek enthalten ist. In solchen Fällen können Sie versuchen, die erforderliche Eingabe, beispielsweise die Quelldateien des erforderlichen Pakets, über die Option [required_input_directory](https://reference.aspose.com/tex/python-net/aspose.tex/texoptions/required_input_directory/) der Klasseninstanz [TeXOptions](https://reference.aspose.com/tex/python-net/aspose.tex/texoptions/) bereitzustellen. Wir werden anhand von zwei Beispielen untersuchen, wie das funktioniert.
 
+Wenden Sie zuerst eine [Lizenz](/tex/{{lang.url-fragment}}python-net/licensing/) an. `ASPOSE_TEX_INPUT_DIR` muss auf den Ordner zeigen, der `ExternalLaTeXPackages` mit den beiden `.tex`-Dateien und dem Unterverzeichnis `packages` enthält (Standard: `input`). Setzen Sie `ASPOSE_TEX_OUTPUT_DIR` auf den Ausgabeordner (Standard: `output`).
+
 ### Erforderliche Eingaben in entpackter Form (das „fancybox“-Paket).
 
 Angenommen, wir haben die folgende grundlegende LaTeX-Datei mit dem Namen „required-input-fs.tex“, die Teil unserer [Beispiellösung](https://GitHub.com/aspose-tex/Aspose.TeX-for-Python-.NET) ist:
@@ -46,6 +48,9 @@ Die 3. Zeile der Datei weist darauf hin, dass das Paket „fancybox“ erforderl
 
 
 ```Python
+from aspose.tex.io import InputFileSystemDirectory
+
+# Configure an existing TeXOptions instance.
 options.required_input_directory = InputFileSystemDirectory('path-to-directory-where-fancybox.sty-located')
 ```
 
@@ -55,7 +60,7 @@ Sobald wir einen TeX-Job mit dieser Option ausführen (denken Sie daran, die and
 
 Hier ist der vollständige Quellcode für das Beispiel:
 
-{{< gist "aspose-com-gists""68d217858f0be40062562ce2bb2cd908""Aspose.TeX.Examples-Conversion-RequiredInput-FileSystem.py" >}}
+{{< gist "aspose-com-gists" "fce5c70784ba7a4d2597b459d63adbf1" "Aspose.TeX.Examples-Conversion-RequiredInput-FileSystem.py" >}}
 
 ### Bereitstellung erforderlicher Eingaben in archivierter Form (Paket „pgfplots“)
 
@@ -100,10 +105,12 @@ In der dritten Zeile ist zu erkennen, dass die Datei das Paket „pgfplots“ er
 Und hier ist die Methode, mit der wir den Zugriff auf diese Quelldateien definieren:
 
 ```Python
-with open("path-to-zip-with-pgfplots-sources") as zipStream:
-    ...
-    options.required_input_directory = InputZipDirectory(zipStream)
-    ...
+from aspose.tex.io import InputZipDirectory
+
+# Configure an existing TeXOptions instance and run the job while the stream is open.
+with open("path-to-zip-with-pgfplots-sources", "rb") as zip_stream:
+    options.required_input_directory = InputZipDirectory(zip_stream, "")
+    # Run TeXJob here, as shown in the complete example below.
 ```
 
 Nachdem wir einen TeX-Job mit dieser Option ausgeführt haben, erhalten wir das Ausgabedokument:
@@ -112,7 +119,7 @@ Nachdem wir einen TeX-Job mit dieser Option ausgeführt haben, erhalten wir das 
 
 Hier ist der vollständige Quellcode für das Beispiel:
 
-{{< gist "aspose-com-gists""68d217858f0be40062562ce2bb2cd908""Aspose.TeX.Examples-Conversion-RequiredInput-Zip.py" >}}
+{{< gist "aspose-com-gists" "fce5c70784ba7a4d2597b459d63adbf1" "Aspose.TeX.Examples-Conversion-RequiredInput-Zip.py" >}}
 
 > **_HINWEIS:_** Das Ergebnis wurde mit dem Paket `pgfplots`, Version 1.18.1, überprüft. Die Version des `pfg`-Pakets, das in der **Aspose.TeX**-Bibliothek enthalten ist, ist 3.1.9a.
 
@@ -125,7 +132,7 @@ Die *Object TeX*-Engine-Erweiterung von **Aspose.TeX** erfordert Fontmaps, also 
 
 Unten sehen Sie ein Beispiel für ein benutzerdefiniertes erforderliches Eingabeverzeichnis, das zeigt, wie die Schnittstelle [IFileCollector](https://reference.aspose.com/tex/python-net/aspose.tex.io/ifilecollector/) implementiert wird. Dieses Beispiel konzentriert sich auf das Sammeln von Dateinamen nach Erweiterung und lässt absichtlich die Details der Dateispeicherung und des Dateiabrufs aus.
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Conversion-RequiredInput-Zip.py" >}}
+
 -->
 
 ### Einschränkungen

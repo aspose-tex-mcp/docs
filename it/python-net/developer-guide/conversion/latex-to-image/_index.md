@@ -18,7 +18,9 @@ lastmod: "2025-06-13"
 
 Ora, esaminiamo il codice Python che offre l'approccio più semplice alla conversione del formato di LaTeX in PNG in profondità.
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Conversion-LaTeXToPng-Simplest.py" >}}
+Impostare `ASPOSE_TEX_INPUT_FILE` sul file LaTeX e `ASPOSE_TEX_OUTPUT_DIR` sulla directory di output, oppure modificare i percorsi nell’esempio. I valori predefiniti sono `hello-world.ltx` e `output`. Applicare prima una licenza. I file di input aggiuntivi vengono cercati accanto al documento principale; l’elaborazione non è interattiva. [Licenze](/tex/it/python-net/licensing/)
+
+{{< gist "aspose-com-gists" "3616f5e300517031e6a4ae4158e24776" "Aspose.TeX.Examples-Conversion-LaTeXToPng-Simplest.py" >}}
 
 Per cominciare, dobbiamo creare un'istanza della classe [texoptions](https://reference.aspose.com/tex/python-net/aspose.tex/texoptions/) usando il metodo [Console_app_options()](https://reference.aspose.com/tex/python-net/aspose.tex/texoptions/console_app_options/#aspose.tex.TeXConfig)  . Non preoccuparti del nome, è solo il metodo statico che crea l'istanza. Questo metodo prende l'istanza [Object_Latex](https://reference.aspose.com/tex/python-net/aspose.tex/texconfig/object_latex/) della classe [TexConfig](https://reference.aspose.com/tex/python-net/aspose.tex/texconfig/), che è perfetta per convertire un [file latex](/tex/{{lang.url-fragment}}net/latex-io/#latex-file). Questa configurazione imposta il motore Object Tex per caricare il formato Object Latex ed essere pronto a elaborare il file Latex. Il formato di LaTeX oggetto è essenzialmente lo stesso del [formato latex](/tex/{{lang.url-fragment}}net/what-is-latex/), ma utilizza [oggetto tex](/tex/{{lang.url-fragment}}net/aspose-tex-and-object-tex/#object-tex) primitive specifiche per definire le metriche di pagina.
 
@@ -30,8 +32,7 @@ Successivamente, creiamo un'istanza della classe [Texjob](https://reference.aspo
 
 Ora, tutto ciò che rimane è [correre](https://reference.aspose.com/tex/python-net/aspose.tex/texjob/run/#) il lavoro.
 
-Dopo che il lavoro è stato eseguito, indipendentemente dal suo successo o fallimento, il primo output che incontreremo è l'output del terminale. Nel caso di una corsa riuscita, l'output assomigliarà a quanto segue:
-
+L’esempio acquisisce l’output del terminale in `OutputMemoryTerminal`. La directory di output contiene anche un registro `.log`. Una conversione riuscita produce un registro simile al seguente; le informazioni sulla versione possono variare:
 
 ```text
 This is ObjectTeX, Version 3.1415926-1.0 (Aspose.TeX 21.8)
@@ -55,13 +56,13 @@ I risultati del lavoro del motore sono disponibili nella directory di output che
 
 Esiste un metodo alternativo per ottenere i dati dell'immagine come array di array di byte, in cui ciascun array nella seconda dimensione rappresenta i dati dell'immagine per una pagina separata.
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Conversion-LaTeXToPng-Alternative.py" >}}
+{{< gist "aspose-com-gists" "3616f5e300517031e6a4ae4158e24776" "Aspose.TeX.Examples-Conversion-LaTeXToPng-Alternative.py" >}}
 
-I file "Page-N.Png" possono essere scritti su qualsiasi percorso specificato. A differenza di [PDF output](/tex/{{lang.url-fragment}}python-net/latex-to-pdf/#an-alternative-way-to-write-the-main-output-pdf-file), questi file PNG duplicheranno i file PNG di output scritti nella directory di output.
+L’esempio imposta `device_writes_images = False` su `PngSaveOptions` prima di assegnarlo a `options.save_options`. Salva i byte delle pagine restituite come `page-1.png`, `page-2.png` e così via. Il dispositivo non crea quindi file PNG duplicati.
 
 ## Per quanto riguarda le opzioni di input
 
-Se il nostro file di input principale richiede dipendenze, come pacchetti che non sono inclusi nel sistema di base in LaTeX o pacchetti supportati, è necessario impostare l'opzione [Recome_input_directory](https://reference.aspose.com/tex/python-net/aspose.tex/texoptions/required_input_directory/) in modo simile a come impostiamo l'opzione * output_working_directory * e posizionare le dipendenze in quella directory. Le dipendenze possono essere organizzate nelle sottodirectory se necessario. Se abbiamo i nostri file da includere nel processo di composizione, come i file grafici esterni, dobbiamo anche impostare [input_working_directory](https://reference.aspose.com/tex/python-net/aspose.tex/texoptions/input_working_directory/) nella posizione in cui tali file sono archiviati. Possiamo anche posizionare il file di input principale all'interno della directory di input e specificare il percorso relativo nel metodo `run()` o specificare alcun percorso se il file di input principale è nella directory di root. Ci sono anche maggiori dettagli sul [concetto di directory di input](/tex/{{lang.url-fragment}}python-net/aspose-tex-input/) in **aspose.tex** e le implementazioni fornite descritte.
+Se il nostro file di input principale richiede dipendenze, come pacchetti che non sono inclusi nel sistema di base in LaTeX o pacchetti supportati, è necessario impostare l'opzione [Recome_input_directory](https://reference.aspose.com/tex/python-net/aspose.tex/texoptions/required_input_directory/) in modo simile a come impostiamo l'opzione * output_working_directory * e posizionare le dipendenze in quella directory. Le dipendenze possono essere organizzate nelle sottodirectory se necessario. Se abbiamo i nostri file da includere nel processo di composizione, come i file grafici esterni, dobbiamo anche impostare [input_working_directory](https://reference.aspose.com/tex/python-net/aspose.tex/texoptions/input_working_directory/) nella posizione in cui tali file sono archiviati. Possiamo anche posizionare il file di input principale all'interno della directory di input e specificare il percorso relativo al costruttore `TeXJob` o specificare alcun percorso se il file di input principale è nella directory di root. Ci sono anche maggiori dettagli sul [concetto di directory di input](/tex/{{lang.url-fragment}}python-net/aspose-tex-input/) in **aspose.tex** e le implementazioni fornite descritte.
 
 Impara anche le [altre opzioni di lavoro di Tex qui](/tex/{{lang.url-fragment}}python-net/other-options/).
 
@@ -71,19 +72,19 @@ Di seguito, spiegheremo brevemente la conversione del LaTeX ad altri formati di 
 
 ## Convertire il LaTeX in jpg
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Conversion-LaTeXToJpeg.py" >}}
+{{< gist "aspose-com-gists" "3616f5e300517031e6a4ae4158e24776" "Aspose.TeX.Examples-Conversion-LaTeXToJpeg.py" >}}
 
 **Puoi anche esplorare la conversione gratuita [app Web per LaTeX a jpg](https://products.aspose.app/tex/conversion/latex-to-jpg), che viene sviluppata utilizzando [Aspose.TeX per .NET API](https://products.aspose.com/tex/net/).**
 
 ## Convertire il LaTeX in TIFF
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Conversion-LaTeXToTiff.py" >}}
+{{< gist "aspose-com-gists" "3616f5e300517031e6a4ae4158e24776" "Aspose.TeX.Examples-Conversion-LaTeXToTiff.py" >}}
 
 **Puoi anche esplorare la conversione gratuita [app Web per LaTeX-tiff](https://products.aspose.app/tex/conversion/latex-to-tiff), che viene sviluppata utilizzando [Aspose.TeX per .NET API](https://products.aspose.com/tex/net/).**
 
 ## Convertire il LaTeX in BMP
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Conversion-LaTeXToBmp.py" >}}
+{{< gist "aspose-com-gists" "3616f5e300517031e6a4ae4158e24776" "Aspose.TeX.Examples-Conversion-LaTeXToBmp.py" >}}
 
 **Puoi anche esplorare la conversione gratuita [app Web per LaTeX-a-BMP](https://products.aspose.app/tex/conversion/latex-to-bmp), che viene sviluppata utilizzando [Aspose.TeX per .NET API](https://products.aspose.com/tex/net/).**
 
@@ -98,6 +99,6 @@ L'API [**Aspose.svg**](https://products.aspose.com/svg/) offre una gamma di funz
 
 La conversione del LaTeX in SVG è semplice quanto [la conversione in formati di immagini raster](/tex/{{lang.url-fragment}}python-net/latex-to-image/), con l'unica differenza è che i [Save_options](https://reference.aspose.com/tex/python-net/aspose.tex/texoptions/save_options/) devono essere impostati su un'istanza della classe [SVGSaveOptions](https://reference.aspose.com/tex/python-net/aspose.tex.presentation.svg/svgsaveoptions/) e il dispositivo deve essere modificato in un'istanza della classe [SvgDevice](https://reference.aspose.com/tex/python-net/aspose.tex.presentation.svg/svgdevice/).
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Conversion-LaTeXToSvg-Simplest.py" >}}
+{{< gist "aspose-com-gists" "3616f5e300517031e6a4ae4158e24776" "Aspose.TeX.Examples-Conversion-LaTeXToSvg-Simplest.py" >}}
 
 **Puoi anche esplorare la conversione gratuita [app Web per la latex-a-SVG](https://products.aspose.app/tex/conversion/latex-to-svg), che viene sviluppata utilizzando [Aspose.TeX per .NET API](https://products.aspose.com/tex/net/).**

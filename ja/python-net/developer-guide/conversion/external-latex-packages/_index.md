@@ -15,6 +15,8 @@ lastmod: "2025-06-09"
 
 **Aspose.TeX**ライブラリには、さまざまな[一般的なラテックスパッケージ](/tex/{{lang.url-fragment}}net/embedded-packages/)が付属しているため、これらのパッケージをTexエンジンに手動で提供する必要はありません。ただし、ラテックスファイルには、ライブラリのパッケージの「バンドル」に含まれていないパッケージが必要な状況がある場合があります。そのような場合、[rebused_input_directory](https://reference.aspose.com/tex/python-net/Aspose.TeX/texoptions/required_input_directory/)[texoptions](https://reference.aspose.com/tex/python-net/Aspose.TeX/texoptions/)クラスインスタンスのオプションを介して、必要なパッケージのソースファイルなど、必要な入力を提供してみてください。これが2つの例でどのように機能するかを探ります。
 
+まず[ライセンス](/tex/{{lang.url-fragment}}python-net/licensing/)を適用します。`ASPOSE_TEX_INPUT_DIR` に、2 つの `.tex` ファイルと `packages` サブフォルダーを含む `ExternalLaTeXPackages` の親フォルダーを指定します（既定値：`input`）。`ASPOSE_TEX_OUTPUT_DIR` に出力フォルダーを指定します（既定値：`output`）。
+
 ### 未梱包のフォーム(`fancybox`パッケージ)で提供される必要な入力。
 
 「required-input-fs.tex」という名前の次の基本的なラテックスファイルがあるとします。これは[サンプルソリューション](https://GitHub.com/aspose-tex/Aspose.TeX-for-Python-.NET)の一部です。
@@ -46,6 +48,9 @@ Test: \fbox{
 
 
 ```Python
+from aspose.tex.io import InputFileSystemDirectory
+
+# Configure an existing TeXOptions instance.
 options.required_input_directory = InputFileSystemDirectory('path-to-directory-where-fancybox.sty-located')
 ```
 
@@ -55,7 +60,7 @@ options.required_input_directory = InputFileSystemDirectory('path-to-directory-w
 
 これが例の完全なソースコードです。
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Conversion-RequiredInput-FileSystem.py" >}}
+{{< gist "aspose-com-gists" "fce5c70784ba7a4d2597b459d63adbf1" "Aspose.TeX.Examples-Conversion-RequiredInput-FileSystem.py" >}}
 
 ### アーカイブフォームで必要な入力を提供する(`pgfplots`パッケージ)
 
@@ -100,10 +105,12 @@ First example is 2D and 3D math expressions plotted side-by-side.
 そして、これらのソースファイルへのアクセシビリティを定義する方法は次のとおりです。
 
 ```Python
-with open("path-to-zip-with-pgfplots-sources") as zipStream:
-    ...
-    options.required_input_directory = InputZipDirectory(zipStream)
-    ...
+from aspose.tex.io import InputZipDirectory
+
+# Configure an existing TeXOptions instance and run the job while the stream is open.
+with open("path-to-zip-with-pgfplots-sources", "rb") as zip_stream:
+    options.required_input_directory = InputZipDirectory(zip_stream, "")
+    # Run TeXJob here, as shown in the complete example below.
 ```
 
 このオプションでTEXジョブを実行した後、出力ドキュメントを取得します。
@@ -112,7 +119,7 @@ with open("path-to-zip-with-pgfplots-sources") as zipStream:
 
 これが例の完全なソースコードです。
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Conversion-RequiredInput-Zip.py" >}}
+{{< gist "aspose-com-gists" "fce5c70784ba7a4d2597b459d63adbf1" "Aspose.TeX.Examples-Conversion-RequiredInput-Zip.py" >}}
 
 > **_注意:_** この結果は `pgfplots` パッケージのバージョン 1.18.1 を使用して検証されました。**Aspose.TeX** ライブラリに含まれる `pfg` パッケージのバージョンは 3.1.9a です。
 
@@ -125,7 +132,7 @@ with open("path-to-zip-with-pgfplots-sources") as zipStream:
 
 以下は、[IFileCollector](https://reference.aspose.com/tex/python-net/aspose.tex.io/ifilecollector/) インターフェイスの実装方法を示す、カスタムの必須入力ディレクトリの例です。この例では、拡張子によるファイル名の収集に重点を置き、ファイルの保存と取得の詳細は意図的に省略しています。
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Conversion-RequiredInput-Zip.py" >}}
+
 -->
 
 ### 制限

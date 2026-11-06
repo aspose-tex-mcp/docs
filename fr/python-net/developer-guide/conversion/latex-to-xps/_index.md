@@ -19,14 +19,16 @@ Il existe la bibliothèque [**Aspose.Page**](https://products.aspose.com/page/),
 
 Le processus de conversion de LaTeX en XPS est tout aussi simple, similaire à la [conversion aux formats d'image raster](/tex/{{lang.url-fragment}}python-net/latex-to-image/). Cependant, cela nécessite de définir [save_options](https://reference.aspose.com/tex/python-net/aspose.tex/texoptions/save_options/) sur une instance de la classe [XpsSaveOptions](https://reference.aspose.com/tex/python-net/aspose.tex.presentation.xps/xpssaveoptions/) (soit par défaut, soit explicitement) et de changer le périphérique en une instance de la classe [XpsDevice](https://reference.aspose.com/tex/python-net/aspose.tex.presentation.xps/xpsdevice/).
 
-{{< gist "aspose-com-gists""68d217858f0be40062562ce2bb2cd908""Aspose.TeX.Examples-Conversion-LaTeXToXps-Simplest.py" >}}
+Définissez `ASPOSE_TEX_INPUT_FILE` sur votre fichier LaTeX et `ASPOSE_TEX_OUTPUT_DIR` sur le répertoire de sortie, ou modifiez les chemins de l’exemple. Les valeurs par défaut sont `hello-world.ltx` et `output`. Appliquez d’abord une licence. Les fichiers d’entrée supplémentaires sont recherchés à côté du document principal ; le traitement est non interactif. [Licences](/tex/fr/python-net/licensing/)
+
+{{< gist "aspose-com-gists" "3616f5e300517031e6a4ae4158e24776" "Aspose.TeX.Examples-Conversion-LaTeXToXps-Simplest.py" >}}
 
 ### Une autre façon d'écrire le fichier XPS de sortie principal
 
 Il existe un constructeur alternatif disponible pour la classe *XpsDevice*, qui permet d'obtenir le fichier XPS résultant d'une manière différente.
 
-{{< gist "aspose-com-gists""68d217858f0be40062562ce2bb2cd908""Aspose.TeX.Examples-Conversion-LaTeXToXps-Alternative.py" >}}
+{{< gist "aspose-com-gists" "3616f5e300517031e6a4ae4158e24776" "Aspose.TeX.Examples-Conversion-LaTeXToXps-Alternative.py" >}}
 
-L’effet est le même que celui que nous obtenons [ici](/tex/{{lang.url-fragment}}python-net/latex-to-pdf/#an-alternative-way-to-write-main-output-pdf-file).
+Le flux binaire écrit `any-name.xps` dans le répertoire de sortie configuré. Aucun fichier XPS supplémentaire portant le nom par défaut n’est créé ; les fichiers auxiliaires et le journal restent dans `output_working_directory`.
 
 **Vous pouvez également explorer l'[application Web gratuite pour la conversion LaTeX vers XPS](https://products.aspose.app/tex/conversion/latex-to-xps), développée à l'aide de l'[API Aspose.TeX pour .NET](https://products.aspose.com/tex/net/).**

@@ -18,7 +18,9 @@ lastmod: "2026-04-03"
 
 如有需要，首先查看此主题的 [API 参考章节](https://reference.aspose.com/tex/python-net/aspose.tex.features/)。与公式渲染类似，我们将从一个示例开始。示例代码如下：
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Features-PngLaTeXFigureRendering.py" >}}
+将 `ASPOSE_TEX_OUTPUT_DIR` 设置为输出目录，或使用默认的 `output` 文件夹。示例包含全部 LaTeX 代码，无需外部输入文件。请先应用许可证。 [许可证](/tex/zh/python-net/licensing/).
+
+{{< gist "aspose-com-gists" "cbf380b84d7f2067481756d42da32b08" "Aspose.TeX.Examples-Features-PngLaTeXFigureRendering.py" >}}
 
 首先，我们创建 [LaTeX 图形渲染器选项](https://reference.aspose.com/tex/python-net/aspose.tex.features/figurerendereroptions/) 类的实例，并同时指定输出图像的分辨率。
 
@@ -28,21 +30,21 @@ lastmod: "2026-04-03"
 \usepackage{pict2e}
 ```
 
-然后我们指示渲染器将输出放大 300%。
+设置 `scale = 3000` 将比例设为 300%，并通过 `margin = 5` 在片段周围留出空白。PNG 示例使用 `resolution = 150` DPI。
 
 下一个选项决定背景颜色。与公式渲染不同，我们不需要指定前景颜色，因为我们假设颜色完全由 LaTeX 代码控制。同样，背景颜色也由 LaTeX 代码控制，此选项仅为方便而提供。
 
-示例中的下一行可能没有太大意义，它仅用于演示您可以将日志输出定向到特定流。
+示例将二进制文件流赋给 `log_stream`，在 `text-and-formula.png` 旁保存日志 `text-and-formula.png.log`。`with` 语句会自动关闭这两个流。
 
-最后一个选项 `ShowTerminal` 允许您控制是否在控制台显示终端输出。
+`show_terminal` 控制是否在控制台显示终端输出。示例将其设为 `False`，但仍将日志写入文件。
 
 负责渲染图形的方法是 [FigureRenderer.render()](https://reference.aspose.com/tex/python-net/aspose.tex.features/figurerenderer/render/#str-io.RawIOBase-aspose.tex.features.FigureRendererOptions) 。该方法返回图形的点数大小。
 
-该方法接受第二个参数作为流，即图像将被写入的流。我们在下一行创建该流。
+第二个参数是为图像打开的二进制输出流，第三个参数提供渲染选项。
 
 最后，我们调用 `FigureRenderer.render()` 方法本身，将选项作为第三个参数传入。图形的 LaTeX 代码作为第一个参数提供。
 
-示例的最后几行显示了与图形渲染相关的两条信息——图形的大小以及简要的错误报告（如果有错误）。
+最后几行输出错误报告；如果报告为空，则输出 `No rendering errors.`，然后显示以点为单位的宽度和高度。
 
 以下是渲染结果。
 
@@ -54,7 +56,9 @@ lastmod: "2026-04-03"
 
 同样，我们也可以将 LaTeX 图形渲染为 SVG 格式。
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Features-SvgLaTeXFigureRendering.py" >}}
+{{< gist "aspose-com-gists" "cbf380b84d7f2067481756d42da32b08" "Aspose.TeX.Examples-Features-SvgLaTeXFigureRendering.py" >}}
+
+此示例在同一输出目录中创建 `text-and-formula.svg` 和日志 `text-and-formula.svg.log`。
 
 区别如下：
 

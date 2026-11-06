@@ -20,14 +20,16 @@ There exists the [**Aspose.Page**](https://products.aspose.com/page/) library, w
 
 The process of converting LaTeX to XPS is equally straightforward, similar to the [conversion to raster image formats](/tex/{{lang.url-fragment}}python-net/latex-to-image/). However, it requires setting the [save_options](https://reference.aspose.com/tex/python-net/aspose.tex/texoptions/save_options/) to an instance of the [XpsSaveOptions](https://reference.aspose.com/tex/python-net/aspose.tex.presentation.xps/xpssaveoptions/) class (either by default or explicitly), and changing the device to an instance of the [XpsDevice](https://reference.aspose.com/tex/python-net/aspose.tex.presentation.xps/xpsdevice/) class.
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Conversion-LaTeXToXps-Simplest.py" >}}
+Set `ASPOSE_TEX_INPUT_FILE` to your LaTeX file and `ASPOSE_TEX_OUTPUT_DIR` to the output directory, or edit the paths in the example. The defaults are `hello-world.ltx` and `output`. Apply a license first as described in [Licensing](/tex/{{lang.url-fragment}}python-net/licensing/). The examples resolve additional input files beside the main document and use noninteractive processing.
+
+{{< gist "aspose-com-gists" "3616f5e300517031e6a4ae4158e24776" "Aspose.TeX.Examples-Conversion-LaTeXToXps-Simplest.py" >}}
 
 ### An alternative way to write the main output XPS file
 
 There is an alternative constructor available for the *XpsDevice* class, which allows for obtaining the resulting XPS file in a different manner.
 
-{{< gist "aspose-com-gists" "68d217858f0be40062562ce2bb2cd908" "Aspose.TeX.Examples-Conversion-LaTeXToXps-Alternative.py" >}}
+{{< gist "aspose-com-gists" "3616f5e300517031e6a4ae4158e24776" "Aspose.TeX.Examples-Conversion-LaTeXToXps-Alternative.py" >}}
 
-The effect is the same as we get [here](/tex/{{lang.url-fragment}}python-net/latex-to-pdf/#an-alternative-way-to-write-main-output-pdf-file).
+The binary stream writes `any-name.xps` into the configured output directory without creating an additional default-named XPS file, just as in the [PDF stream example](/tex/{{lang.url-fragment}}python-net/latex-to-pdf/#an-alternative-way-to-write-the-main-output-pdf-file).
 
 **You can also explore the free [web app for LaTeX-to-XPS conversion](https://products.aspose.app/tex/conversion/latex-to-xps), which is developed using the [Aspose.TeX for .NET API](https://products.aspose.com/tex/net/).**

@@ -24,15 +24,19 @@ Aspose.TeX визначає каталог як відображення між 
 
 Ось як ми це встановимо:
 
-{{< gist "aspose-com-gists""68d217858f0be40062562ce2bb2cd908""Aspose.TeX.Examples-Conversion-OutputFileSystemDirectory.py" >}}
+Укажіть вихідний каталог у `ASPOSE_TEX_OUTPUT_DIR` (типово `output`). Спочатку застосуйте ліцензію. [Licensing](/tex/uk/python-net/licensing/).
 
-Цей конкретний випадок використання простий, тому немає потреби заглиблюватися в нього далі.
+{{< gist "aspose-com-gists" "edcfdfad622f09d57fa03bedd01e0e38" "Aspose.TeX.Examples-Conversion-OutputFileSystemDirectory.py" >}}
+
+Вбудований потік plain TeX створює `texput.xps` і `texput.log` у вихідному каталозі.
 
 ### Збереження результату як архівний файл ZIP.
 
 Інший варіант — створити файл або потік і використовувати його як ZIP-архів для зберігання вихідних файлів. Ось приклад:
 
-{{< gist "aspose-com-gists""68d217858f0be40062562ce2bb2cd908""Aspose.TeX.Examples-Conversion-OutputZipDirectory.py" >}}
+{{< gist "aspose-com-gists" "edcfdfad622f09d57fa03bedd01e0e38" "Aspose.TeX.Examples-Conversion-OutputZipDirectory.py" >}}
+
+`zip-xps-out.zip` відкривається у двійковому режимі `wb`. Викличте `finish()` в `OutputZipDirectory` перед закриттям потоку. Архів містить `texput.xps` і `texput.log`.
 
 Для початку ми створюємо вихідний потік для файлу ZIP. Потім, після створення параметрів перетворення, ми встановлюємо параметр *output_working_directory* як екземпляр класу [OutputZipDirectory](https://reference.aspose.com/tex/python-net/aspose.tex.io/outputzipdirectory/).
 
@@ -44,7 +48,7 @@ Aspose.TeX визначає каталог як відображення між 
 
 Щоб досягти цього, нам потрібно встановити параметр [terminal_out](https://reference.aspose.com/tex/python-net/aspose.tex/texoptions/terminal_out/) як екземпляр класу [OutputConsoleTerminal](https://reference.aspose.com/tex/python-net/aspose.tex.io/outputconsoleterminal/).
 
-{{< gist "aspose-com-gists""68d217858f0be40062562ce2bb2cd908""Aspose.TeX.Examples-Conversion-OutputConsoleTerminal.py" >}}
+{{< gist "aspose-com-gists" "edcfdfad622f09d57fa03bedd01e0e38" "Aspose.TeX.Examples-Conversion-OutputConsoleTerminal.py" >}}
 
 Знову ж таки, це значення параметра за замовчуванням, тому немає справжньої потреби вказувати його. Тому цей розділ надається виключно для демонстрації.
 
@@ -52,6 +56,6 @@ Aspose.TeX визначає каталог як відображення між 
 
 На відміну від вхідного терміналу, **Aspose.TeX для Python** містить реалізацію інтерфейсу *IOutputTerminal*, який дозволяє нам записувати вихідні дані терміналу у файл у вказаному каталозі виведення.
 
-{{< gist "aspose-com-gists""68d217858f0be40062562ce2bb2cd908""Aspose.TeX.Examples-Conversion-OutputFileTerminal.py" >}} 
+{{< gist "aspose-com-gists" "edcfdfad622f09d57fa03bedd01e0e38" "Aspose.TeX.Examples-Conversion-OutputFileTerminal.py" >}}
 
-У цьому випадку ми наказуємо механізму TeX записати вихідні дані терміналу до файлу з іменем [<назва_завдання>](/tex/{{lang.url-fragment}}net/tex-io/#tex-output).trm, який буде розташований у тому самому каталозі виведення, що й решта виведення. Однак це не є обов'язковим. Ми також можемо надати будь-який інший екземпляр реалізації *IOutputTerminal* для конструктора.
+Конструктор `OutputFileTerminal` приймає вихідний робочий каталог і записує туди `texput.trm` поруч із `texput.xps` і `texput.log`.

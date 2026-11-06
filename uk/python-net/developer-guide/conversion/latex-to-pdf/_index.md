@@ -16,7 +16,9 @@ lastmod: "2025-06-13"
 
 Тепер давайте детально розглянемо код Python, який пропонує найпростіший підхід до перетворення LaTeX у формат PDF.
 
-{{< gist "aspose-com-gists""68d217858f0be40062562ce2bb2cd908""Aspose.TeX.Examples-Conversion-LaTeXToPdf-Simplest.py" >}}
+Укажіть шлях до файлу LaTeX у `ASPOSE_TEX_INPUT_FILE`, а вихідний каталог — у `ASPOSE_TEX_OUTPUT_DIR`, або змініть шляхи в прикладі. Типові значення — `hello-world.ltx` і `output`. Спочатку застосуйте ліцензію. Додаткові вхідні файли шукаються поруч з основним документом; обробка виконується без інтерактивного введення. [Ліцензування](/tex/uk/python-net/licensing/)
+
+{{< gist "aspose-com-gists" "3616f5e300517031e6a4ae4158e24776" "Aspose.TeX.Examples-Conversion-LaTeXToPdf-Simplest.py" >}}
 
 Для початку нам потрібно створити екземпляр класу [TeXOptions](https://reference.aspose.com/tex/python-net/aspose.tex/texoptions/). Метод [console_app_options()](https://reference.aspose.com/tex/python-net/aspose.tex/texoptions/console_app_options/#aspose.tex.TeXConfig)   є єдиним статичним методом, який виконує це, тому не турбуйтеся про його назву. Цей метод використовує екземпляр [object_latex](https://reference.aspose.com/tex/python-net/aspose.tex/texconfig/object_latex/) класу [TeXConfig](https://reference.aspose.com/tex/python-net/aspose.tex/texconfig/), який ідеально підходить для перетворення [файлу LaTeX](/tex/{{lang.url-fragment}}net/latex-io/#latex-file). Ця конфігурація наказує механізму Object TeX завантажити формат Object LaTeX і підготуватися до обробки файлу LaTeX. Формат Object LaTeX по суті такий же, як і формат [LaTeX](/tex/{{lang.url-fragment}}net/what-is-latex/), але він використовує специфічні примітиви [Object TeX](/tex/{{lang.url-fragment}}net/aspose-tex-and-object-tex/#object-tex) для визначення показників сторінки.
 
@@ -28,7 +30,7 @@ lastmod: "2025-06-13"
 
 Тепер залишається лише [запустити](https://reference.aspose.com/tex/python-net/aspose.tex/texjob/run/#) роботу.
 
-Після виконання, незалежно від того, було воно успішним чи ні, перше, що ми побачимо, це вихід терміналу. Якщо виконання виконано успішно, результат виглядатиме приблизно так:
+Приклад зберігає виведення термінала в `OutputMemoryTerminal`. Вихідний каталог також містить журнал `.log`. За успішного перетворення журнал має приблизно такий вигляд; відомості про версію можуть відрізнятися:
 
 ```text
 This is ObjectTeX, Version 3.1415926-1.0 (Aspose.TeX 21.8)
@@ -52,13 +54,13 @@ Transcript written on hello-world.log.
 
 Клас *PdfDevice* має ще один [конструктор](https://reference.aspose.com/tex/python-net/aspose.tex.presentation.pdf/pdfdevice/__init__/#io.RawIOBase), який дозволяє нам отримувати кінцевий PDF-файл інакше.
 
-{{< gist "aspose-com-gists""68d217858f0be40062562ce2bb2cd908""Aspose.TeX.Examples-Conversion-LaTeXToPdf-Alternative.py" >}}
+{{< gist "aspose-com-gists" "3616f5e300517031e6a4ae4158e24776" "Aspose.TeX.Examples-Conversion-LaTeXToPdf-Alternative.py" >}}
 
-Основний вихідний файл PDF матиме назву `any-name.pdf` і буде розміщено у вказаному каталозі. Однак, на відміну від [виведення зображення](/tex/{{lang.url-fragment}}python-net/latex-to-image/#an-alternative-way-to-write-the-main-output-png-files), у вихідному каталозі, визначеному параметрами перетворення, не буде інших PDF-файлів. Винятком є ​​випадки, коли `any-name.pdf` знаходиться в тому самому каталозі файлової системи, призначеному параметру *output_working_directory* за допомогою *OutputFileSystemDirectory*.
+Двійковий потік записує `any-name.pdf` у налаштований вихідний каталог. Додатковий файл PDF із типовим ім’ям не створюється; допоміжні файли та журнал і надалі зберігаються в `output_working_directory`.
 
 ## Про параметри введення
 
-Якщо наш основний вхідний файл потребує залежностей, таких як Пакети, які не входять до базової системи LaTeX, і підтримувані Пакети, необхідно встановити опцію [required_input_directory](https://reference.aspose.com/tex/python-net/aspose.tex/texoptions/required_input_directory/) подібним чином, як ми встановлюємо опцію *output_working_directory* і розмістіть залежності в цьому каталозі. Залежності можна організовувати у підкаталоги за бажанням. Крім того, якщо у нас є власні файли для включення в процес верстки, наприклад зовнішні графічні файли, ми також повинні встановити [input_working_directory](https://reference.aspose.com/tex/python-net/aspose.tex/texoptions/input_working_directory/), використовуючи шлях до місця, де зберігаються ці файли. Ми також можемо розмістити головний вхідний файл у вхідному каталозі та вказати відносний шлях у методі `run()` або взагалі не вказати шлях, якщо основний вхідний файл знаходиться в корені. Щоб отримати докладніші відомості про концепцію каталогу введення в **Aspose.TeX для Python** і надані реалізації, зверніться до [тут](/tex/{{lang.url-fragment}}python-net/aspose-tex-input/).
+Якщо наш основний вхідний файл потребує залежностей, таких як Пакети, які не входять до базової системи LaTeX, і підтримувані Пакети, необхідно встановити опцію [required_input_directory](https://reference.aspose.com/tex/python-net/aspose.tex/texoptions/required_input_directory/) подібним чином, як ми встановлюємо опцію *output_working_directory* і розмістіть залежності в цьому каталозі. Залежності можна організовувати у підкаталоги за бажанням. Крім того, якщо у нас є власні файли для включення в процес верстки, наприклад зовнішні графічні файли, ми також повинні встановити [input_working_directory](https://reference.aspose.com/tex/python-net/aspose.tex/texoptions/input_working_directory/), використовуючи шлях до місця, де зберігаються ці файли. Ми також можемо розмістити головний вхідний файл у вхідному каталозі та вказати відносний шлях у конструкторі `TeXJob` або взагалі не вказати шлях, якщо основний вхідний файл знаходиться в корені. Щоб отримати докладніші відомості про концепцію каталогу введення в **Aspose.TeX для Python** і надані реалізації, зверніться до [тут](/tex/{{lang.url-fragment}}python-net/aspose-tex-input/).
 
 Також обговорюються [інші варіанти завдань TeX](/tex/{{lang.url-fragment}}python-net/other-options/).
 

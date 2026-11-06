@@ -21,15 +21,24 @@ Da die I/O-Primitive der TeX-Sprache nur Dateinamen verarbeiten können, definie
 
 Hier ist der Ansatz, den wir wählen würden:
 
-{{< gist "aspose-com-gists""68d217858f0be40062562ce2bb2cd908""Aspose.TeX.Examples-Conversion-InputFileSystemDirectory.py" >}}
+Setzen Sie `ASPOSE_TEX_OUTPUT_DIR` auf das Ausgabeverzeichnis (Standard: `output`). Wenden Sie zuerst eine Lizenz an. [Licensing](/tex/de/python-net/licensing/).
 
-Dieser spezielle Anwendungsfall ist ziemlich einfach, sodass wir jetzt damit fortfahren können.
+{{< gist "aspose-com-gists" "edcfdfad622f09d57fa03bedd01e0e38" "Aspose.TeX.Examples-Conversion-InputFileSystemDirectory.py" >}}
+
+Setzen Sie `ASPOSE_TEX_INPUT_DIR` auf den Ordner mit `hello-world.tex` (Standard: `input`). Das Beispiel verwendet plain TeX mit `TeXConfig.object_tex()` und erzeugt `hello-world.xps` sowie `hello-world.log`. Eingabe:
+
+```tex
+Hello, World!
+\end
+```
 
 ### Dateieingaben aus einem ZIP-Archiv abrufen
 
 Eine andere Möglichkeit besteht darin, die Eingabedateien in einem ZIP-Archiv zu speichern und es als Eingabeverzeichnis zu behandeln. In einem solchen Szenario sollten die folgenden Schritte befolgt werden:
 
-{{< gist "aspose-com-gists""68d217858f0be40062562ce2bb2cd908""Aspose.TeX.Examples-Conversion-InputZipDirectory.py" >}}
+{{< gist "aspose-com-gists" "edcfdfad622f09d57fa03bedd01e0e38" "Aspose.TeX.Examples-Conversion-InputZipDirectory.py" >}}
+
+`ASPOSE_TEX_INPUT_ZIP` bezeichnet ein Archiv mit `in/hello-world.tex` (Standard: `zip-in.zip`). Öffnen Sie es im Binärmodus `rb` und halten Sie den Stream bis zum Auftragsende offen.
 
 Zunächst erstellen wir den Stream, der die ZIP-Datei enthält. Anschließend weisen wir nach dem Erstellen der Konvertierungsoptionen eine Instanz der Klasse [InputZipDirectory](https://reference.aspose.com/tex/python-net/aspose.tex.io/inputzipdirectory/) der Eigenschaft [input_working_directory](https://reference.aspose.com/tex/python-net/aspose.tex/texoptions/input_working_directory/) zu. Der zweite Parameter des Konstruktors stellt den Basispfad innerhalb des Archivs dar. Wenn wir möchten, dass das gesamte Archiv als Eingabeverzeichnis fungiert, sollten wir als Argument eine leere Zeichenfolge angeben.
 
@@ -41,8 +50,6 @@ Betrachten wir nun das Konzept der Terminaleingabe. **Aspose.TeX für Python** d
 
 Um dies zu erreichen, müssen wir der Option [terminal_in](https://reference.aspose.com/tex/python-net/aspose.tex/texoptions/terminal_in/) eine Instanz der Klasse [InputConsoleTerminal](https://reference.aspose.com/tex/python-net/aspose.tex.io/inputconsoleterminal/) zuweisen.
 
-{{< gist "aspose-com-gists""68d217858f0be40062562ce2bb2cd908""Aspose.TeX.Examples-Conversion-InputConsoleTerminal.py" >}}
+{{< gist "aspose-com-gists" "edcfdfad622f09d57fa03bedd01e0e38" "Aspose.TeX.Examples-Conversion-InputConsoleTerminal.py" >}}
 
-Ehrlich gesagt ist dies jedoch der Standardwert für die Option, sodass keine wirkliche Notwendigkeit besteht, ihn explizit anzugeben. Da es keine anderen Implementierungen gibt, dient dieser Abschnitt nur zu Demonstrationszwecken.
-
-Wenn wir eine interaktive TeX-Datei (oder ein interaktives Skript) mit vorhersehbarem Verhalten haben, könnte es theoretisch wünschenswert sein, eine Version des Eingabeterminals zu implementieren, die ein entsprechendes Skript enthält, um auf die Anfragen der TeX-Engine zu reagieren. Probieren Sie es einfach aus, wenn Sie die Gelegenheit dazu haben!
+Das Beispiel liest mit `\read` eine Zeile und schreibt sie nach `texput.xps`. Geben Sie im Terminal etwa `Terminal input works!` ein oder leiten Sie die Zeile über die Standardeingabe ein. `SCROLL_MODE` erlaubt diese Eingabeanforderung.

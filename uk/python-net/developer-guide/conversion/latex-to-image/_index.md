@@ -18,7 +18,9 @@ lastmod: "2025-06-13"
 
 Тепер давайте детально розглянемо код Python, який пропонує найпростіший підхід до перетворення LaTeX у формат PNG.
 
-{{< gist "aspose-com-gists""68d217858f0be40062562ce2bb2cd908""Aspose.TeX.Examples-Conversion-LaTeXToPng-Simplest.py" >}}
+Укажіть шлях до файлу LaTeX у `ASPOSE_TEX_INPUT_FILE`, а вихідний каталог — у `ASPOSE_TEX_OUTPUT_DIR`, або змініть шляхи в прикладі. Типові значення — `hello-world.ltx` і `output`. Спочатку застосуйте ліцензію. Додаткові вхідні файли шукаються поруч з основним документом; обробка виконується без інтерактивного введення. [Ліцензування](/tex/uk/python-net/licensing/)
+
+{{< gist "aspose-com-gists" "3616f5e300517031e6a4ae4158e24776" "Aspose.TeX.Examples-Conversion-LaTeXToPng-Simplest.py" >}}
 
 Для початку нам потрібно створити екземпляр класу [TeXOptions](https://reference.aspose.com/tex/python-net/aspose.tex/texoptions/) за допомогою методу [console_app_options()](https://reference.aspose.com/tex/python-net/aspose.tex/texoptions/console_app_options/#aspose.tex.TeXConfig)  . Не турбуйтеся про назву, це лише статичний метод, який створює екземпляр. Цей метод використовує екземпляр [object_latex](https://reference.aspose.com/tex/python-net/aspose.tex/texconfig/object_latex/) класу [TeXConfig](https://reference.aspose.com/tex/python-net/aspose.tex/texconfig/), який ідеально підходить для перетворення [файлу LaTeX](/tex/{{lang.url-fragment}}net/latex-io/#latex-file). Ця конфігурація налаштовує механізм Object TeX для завантаження формату Object LaTeX і готовності до обробки файлу LaTeX. Формат Object LaTeX по суті такий самий, як [формат LaTeX](/tex/{{lang.url-fragment}}net/what-is-latex/), але він використовує специфічні примітиви [Object TeX](/tex/{{lang.url-fragment}}net/aspose-tex-and-object-tex/#object-tex) для визначення показників сторінки.
 
@@ -30,8 +32,7 @@ lastmod: "2025-06-13"
 
 Тепер залишається лише [запустити](https://reference.aspose.com/tex/python-net/aspose.tex/texjob/run/#) роботу.
 
-Після виконання завдання, незалежно від його успіху чи невдачі, першим виходом, який ми зустрінемо, є вихід терміналу. У разі успішного запуску результат буде приблизно таким:
-
+Приклад зберігає виведення термінала в `OutputMemoryTerminal`. Вихідний каталог також містить журнал `.log`. За успішного перетворення журнал має приблизно такий вигляд; відомості про версію можуть відрізнятися:
 
 ```text
 This is ObjectTeX, Version 3.1415926-1.0 (Aspose.TeX 21.8)
@@ -55,13 +56,13 @@ Transcript written on hello-world.log.
 
 Існує альтернативний метод отримання даних зображення у вигляді масиву масивів байтів, де кожен масив у другому вимірі представляє дані зображення для окремої сторінки.
 
-{{< gist "aspose-com-gists""68d217858f0be40062562ce2bb2cd908""Aspose.TeX.Examples-Conversion-LaTeXToPng-Alternative.py" >}}
+{{< gist "aspose-com-gists" "3616f5e300517031e6a4ae4158e24776" "Aspose.TeX.Examples-Conversion-LaTeXToPng-Alternative.py" >}}
 
-Файл(и) "page-n.png" можна записати до будь-якого вказаного шляху. На відміну від [PDF output](/tex/{{lang.url-fragment}}python-net/latex-to-pdf/#an-alternative-way-to-write-the-main-output-pdf-file), ці PNG-файли дублюватимуть вихідні PNG-файли, які записуються у вихідний каталог.
+Приклад задає `device_writes_images = False` у `PngSaveOptions` до присвоєння об’єкта властивості `options.save_options`. Повернуті байти сторінок записуються в `page-1.png`, `page-2.png` тощо. Тому пристрій не створює дублікатів PNG-файлів.
 
 ## Щодо варіантів введення
 
-Якщо наш основний вхідний файл потребує залежностей, наприклад пакетів, які не входять до базової системи LaTeX або підтримуваних пакунків, нам потрібно встановити параметр [required_input_directory](https://reference.aspose.com/tex/python-net/aspose.tex/texoptions/required_input_directory/) подібним чином до того, як ми встановлюємо параметр *output_working_directory* і розмістіть залежності в цьому каталозі. Залежності можна організовувати в підкаталоги за потреби. Якщо у нас є файли, які потрібно включити в процес верстки, наприклад зовнішні графічні файли, нам також потрібно встановити [input_working_directory](https://reference.aspose.com/tex/python-net/aspose.tex/texoptions/input_working_directory/) на місце, де зберігаються ці файли. Ми також можемо розмістити головний вхідний файл у вхідному каталозі та вказати відносний шлях у методі `run()` або взагалі не вказати шлях, якщо основний вхідний файл знаходиться в кореневому каталозі. Також є більше деталей про [концепцію каталогу введення](/tex/{{lang.url-fragment}}python-net/aspose-tex-input/) в **Aspose.TeX** і описані надані реалізації.
+Якщо наш основний вхідний файл потребує залежностей, наприклад пакетів, які не входять до базової системи LaTeX або підтримуваних пакунків, нам потрібно встановити параметр [required_input_directory](https://reference.aspose.com/tex/python-net/aspose.tex/texoptions/required_input_directory/) подібним чином до того, як ми встановлюємо параметр *output_working_directory* і розмістіть залежності в цьому каталозі. Залежності можна організовувати в підкаталоги за потреби. Якщо у нас є файли, які потрібно включити в процес верстки, наприклад зовнішні графічні файли, нам також потрібно встановити [input_working_directory](https://reference.aspose.com/tex/python-net/aspose.tex/texoptions/input_working_directory/) на місце, де зберігаються ці файли. Ми також можемо розмістити головний вхідний файл у вхідному каталозі та вказати відносний шлях у конструкторі `TeXJob` або взагалі не вказати шлях, якщо основний вхідний файл знаходиться в кореневому каталозі. Також є більше деталей про [концепцію каталогу введення](/tex/{{lang.url-fragment}}python-net/aspose-tex-input/) в **Aspose.TeX** і описані надані реалізації.
 
 Також ознайомтеся з [іншими варіантами роботи TeX тут](/tex/{{lang.url-fragment}}python-net/other-options/).
 
@@ -71,19 +72,19 @@ Transcript written on hello-world.log.
 
 ## Перетворення LaTeX у JPG
 
-{{< gist "aspose-com-gists""68d217858f0be40062562ce2bb2cd908""Aspose.TeX.Examples-Conversion-LaTeXToJpeg.py" >}}
+{{< gist "aspose-com-gists" "3616f5e300517031e6a4ae4158e24776" "Aspose.TeX.Examples-Conversion-LaTeXToJpeg.py" >}}
 
 **Ви також можете дослідити безкоштовну [веб-програму для перетворення LaTeX у JPG](https://products.aspose.app/tex/conversion/latex-to-jpg), яка розроблена за допомогою [Aspose.TeX для .NET API](https://products.aspose.com/tex/net/).**
 
 ## Перетворення LaTeX у TIFF
 
-{{< gist "aspose-com-gists""68d217858f0be40062562ce2bb2cd908""Aspose.TeX.Examples-Conversion-LaTeXToTiff.py" >}}
+{{< gist "aspose-com-gists" "3616f5e300517031e6a4ae4158e24776" "Aspose.TeX.Examples-Conversion-LaTeXToTiff.py" >}}
 
 **Ви також можете дослідити безкоштовну [веб-програму для перетворення LaTeX у TIFF](https://products.aspose.app/tex/conversion/latex-to-tiff), яка розроблена за допомогою [Aspose.TeX для .NET API](https://products.aspose.com/tex/net/).**
 
 ## Перетворення LaTeX на BMP
 
-{{< gist "aspose-com-gists""68d217858f0be40062562ce2bb2cd908""Aspose.TeX.Examples-Conversion-LaTeXToBmp.py" >}}
+{{< gist "aspose-com-gists" "3616f5e300517031e6a4ae4158e24776" "Aspose.TeX.Examples-Conversion-LaTeXToBmp.py" >}}
 
 **Ви також можете дослідити безкоштовну [веб-програму для перетворення LaTeX у BMP](https://products.aspose.app/tex/conversion/latex-to-bmp), яка розроблена за допомогою [Aspose.TeX для .NET API](https://products.aspose.com/tex/net/).**
 
@@ -98,6 +99,6 @@ API [**Aspose.SVG**](https://products.aspose.com/svg/) пропонує низк
 
 Перетворення LaTeX у SVG так само просте, як [перетворення у формати растрових зображень](/tex/{{lang.url-fragment}}python-net/latex-to-image/), з тією лише різницею, що [save_options](https://reference.aspose.com/tex/python-net/aspose.tex/texoptions/save_options/) має бути встановлено на екземпляр класу [SvgSaveOptions](https://reference.aspose.com/tex/python-net/aspose.tex.presentation.svg/svgsaveoptions/) і пристрій має бути змінено на екземпляр класу [SvgDevice](https://reference.aspose.com/tex/python-net/aspose.tex.presentation.svg/svgdevice/).
 
-{{< gist "aspose-com-gists""68d217858f0be40062562ce2bb2cd908""Aspose.TeX.Examples-Conversion-LaTeXToSvg-Simplest.py" >}}
+{{< gist "aspose-com-gists" "3616f5e300517031e6a4ae4158e24776" "Aspose.TeX.Examples-Conversion-LaTeXToSvg-Simplest.py" >}}
 
 **Ви також можете дослідити безкоштовну [веб-програму для перетворення LaTeX у SVG](https://products.aspose.app/tex/conversion/latex-to-svg), яка розроблена за допомогою [Aspose.TeX для .NET API](https://products.aspose.com/tex/net/).**

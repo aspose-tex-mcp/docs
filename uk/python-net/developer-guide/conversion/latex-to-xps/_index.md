@@ -19,14 +19,16 @@ lastmod: "2025-06-13"
 
 Процес перетворення LaTeX на XPS настільки ж простий, подібний до [перетворення у формати растрових зображень](/tex/{{lang.url-fragment}}python-net/latex-to-image/). Однак для цього потрібно встановити [save_options](https://reference.aspose.com/tex/python-net/aspose.tex/texoptions/save_options/) на екземпляр класу [XpsSaveOptions](https://reference.aspose.com/tex/python-net/aspose.tex.presentation.xps/xpssaveoptions/) (за замовчуванням або явно) і змінити пристрій на екземпляр класу [XpsDevice](https://reference.aspose.com/tex/python-net/aspose.tex.presentation.xps/xpsdevice/).
 
-{{< gist "aspose-com-gists""68d217858f0be40062562ce2bb2cd908""Aspose.TeX.Examples-Conversion-LaTeXToXps-Simplest.py" >}}
+Укажіть шлях до файлу LaTeX у `ASPOSE_TEX_INPUT_FILE`, а вихідний каталог — у `ASPOSE_TEX_OUTPUT_DIR`, або змініть шляхи в прикладі. Типові значення — `hello-world.ltx` і `output`. Спочатку застосуйте ліцензію. Додаткові вхідні файли шукаються поруч з основним документом; обробка виконується без інтерактивного введення. [Ліцензування](/tex/uk/python-net/licensing/)
+
+{{< gist "aspose-com-gists" "3616f5e300517031e6a4ae4158e24776" "Aspose.TeX.Examples-Conversion-LaTeXToXps-Simplest.py" >}}
 
 ### Альтернативний спосіб запису основного вихідного файлу XPS
 
 Для класу *XpsDevice* доступний альтернативний конструктор, який дозволяє отримати кінцевий файл XPS іншим способом.
 
-{{< gist "aspose-com-gists""68d217858f0be40062562ce2bb2cd908""Aspose.TeX.Examples-Conversion-LaTeXToXps-Alternative.py" >}}
+{{< gist "aspose-com-gists" "3616f5e300517031e6a4ae4158e24776" "Aspose.TeX.Examples-Conversion-LaTeXToXps-Alternative.py" >}}
 
-Ефект такий самий, як ми отримуємо [тут](/tex/{{lang.url-fragment}}python-net/latex-to-pdf/#an-alternative-way-to-write-main-output-pdf-file).
+Двійковий потік записує `any-name.xps` у налаштований вихідний каталог. Додатковий файл XPS із типовим ім’ям не створюється; допоміжні файли та журнал і надалі зберігаються в `output_working_directory`.
 
 **Ви також можете дослідити безкоштовну [веб-програму для перетворення LaTeX у XPS](https://products.aspose.app/tex/conversion/latex-to-xps), яка розроблена за допомогою [Aspose.TeX для .NET API](https://products.aspose.com/tex/net/).**
